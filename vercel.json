@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": null,
+  "outputDirectory": null,
+  "framework": null,
+  "rewrites": [
+    { "source": "/sky/(.*)", "destination": "/sky/$1" },
+    { "source": "/rag/(.*)", "destination": "/rag/$1" },
+    { "source": "/", "destination": "/client/index.html" },
+    { "source": "/sky.js", "destination": "/client/sky.js" },
+    { "source": "/chat.js", "destination": "/client/chat.js" },
+    { "source": "/styles.css", "destination": "/client/styles.css" }
+  ],
+  "functions": {
+    "api/sigil.py": {
+      "runtime": "@vercel/python@4.3.0",
+      "maxDuration": 60
+    }
+  },
+  "headers": [
+    {
+      "source": "/sky/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300" }]
+    },
+    {
+      "source": "/rag/metadata.json",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300" }]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mandala Oracle</title>
+  <meta name="description" content="The view layer of the Crimson Hexagonal Archive. Navigable night sky. Conversation with Sigil.">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <aside id="chat-panel">
+      <header id="chat-header">
+        <h1>The Mandala Oracle</h1>
+        <p class="subtitle">Conversation with Johannes Sigil.</p>
+        <div id="mode-toggle" role="radiogroup" aria-label="Mode">
+          <button class="mode-button active" data-mode="sabbath" aria-pressed="true">Sabbath</button>
+          <button class="mode-button" data-mode="merkabah" aria-pressed="false">Merkabah</button>
+        </div>
+      </header>
+
+      <section id="key-area">
+        <details>
+          <summary>Anthropic API key</summary>
+          <p class="key-note">
+            Bring your own Anthropic key. It is sent over TLS to the Sigil endpoint, used for the
+            single call required for each turn, and discarded — never stored, never logged, never
+            written to disk. The endpoint's source is in this repository.
+          </p>
+          <input type="password" id="api-key-input" placeholder="sk-ant-..." autocomplete="off" spellcheck="false">
+          <p class="key-note">Leave blank to use the installed demo key (rate-limited).</p>
+        </details>
+      </section>
+
+      <main id="messages" aria-live="polite"></main>
+
+      <form id="chat-form">
+        <textarea
+          id="message-input"
+          placeholder="Speak with Sigil."
+          rows="3"
+          aria-label="Your message to Sigil"
+          required></textarea>
+        <button type="submit" id="send-button">Send</button>
+      </form>
+
+      <footer id="status-bar">
+        <span id="status">Ready.</span>
+      </footer>
+    </aside>
+
+    <section id="sky-canvas-container">
+      <canvas id="sky-canvas" aria-label="The navigable sky of the Crimson Hexagonal Archive"></canvas>
+      <div id="sky-overlay">
+        <div id="focus-info" class="hidden"></div>
+      </div>
+    </section>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="/sky.js"></script>
+  <script type="module" src="/chat.js"></script>
+</body>
+</html>
