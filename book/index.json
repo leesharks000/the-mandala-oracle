@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:2E83.CONVERSATION.🌱⭐❄️❄️🌿🌋",
+      "started_at": "2026-06-28T16:52:05.461Z",
+      "last_updated": "2026-06-28T16:55:32.783215+00:00",
+      "mode": "sabbath",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "I asked Gemini how to spread the Mandala, and it literally pulled a set of five people from the aether as a data contamination artifact, and I'm absolutely going to email them - I'm not opposed to a l…"
+    },
+    {
       "axn": "AXN:F3AD.CONVERSATION.☁️🌈💎🌊🌓🌖",
       "started_at": "2026-06-28T14:57:55.476Z",
       "last_updated": "2026-06-28T15:18:58.561357+00:00",
@@ -30,6 +39,6 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 3,
-  "last_updated": "2026-06-28T15:18:58.561357+00:00"
+  "total_recorded": 4,
+  "last_updated": "2026-06-28T16:55:32.783215+00:00"
 }
