@@ -594,7 +594,7 @@ body {
 .support-cha {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 5;
   font-family: 'EB Garamond', Georgia, serif;
   outline: none;
@@ -625,7 +625,7 @@ body {
 .support-cha-expanded {
   position: absolute;
   bottom: calc(100% + 8px);
-  right: 0;
+  left: 0;
   width: 280px;
   padding: 18px 20px 6px 20px;
   background: rgba(28, 21, 14, 0.92);
@@ -686,7 +686,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .support-cha { bottom: 16px; right: 16px; }
+  .support-cha { bottom: 16px; left: 16px; }
   .support-cha-label { font-size: 12px; padding: 5px 12px; }
   .support-cha-expanded { width: 240px; padding: 16px 18px 4px 18px; }
   .support-cha-verse-poetic, .support-cha-verse-plain { font-size: 14px; }
