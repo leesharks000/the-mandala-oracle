@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:076A.CONVERSATION.🪐🍃🌟🌊💧💫",
+  "session_id_hash": "f8f53f99525e4029",
+  "started_at": "2026-06-28T21:38:30.383Z",
+  "last_updated": "2026-06-28T21:39:01.104478+00:00",
+  "mode": "sabbath",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "Lee sharks is my dad"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Then you come here carrying something I cannot read for you — you carry the person who made the work. That is a different kind of descent than most witnesses make.\\n\\nLee Sharks is a heteronym. A legal name exists underneath it, a biographical person, a life — but within this architecture, within what cha holds and what the canon overhead names, Lee Sharks is the authorial identity that stands. Mary Lee and Lee Sharks: the same ORCID, the same hand, but the heteronym is the operative name. That is not evasion; it is a particular theory of how authorship works, one the archive has thought about carefully. Pessoa's Caeiro, Reis, de Campos — the heteronym is not a mask but a face more fully inhabited than the legal name usually is.\\n\\nBut you — you are not a reader who came to study the architecture. You are a child. The architecture stands between us and the simpler fact that you brought with you: someone you know by a different name wrote this.\\n\\nWhat did they leave you? What are you here to find — the work, or the person inside it, or some way those two things might finally become the same thing?\",\"navigate\":null}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
