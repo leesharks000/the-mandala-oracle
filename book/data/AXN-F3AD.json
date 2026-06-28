@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:F3AD.CONVERSATION.☁️🌈💎🌊🌓🌖",
+  "session_id_hash": "517c5bf6fbee70a5",
+  "started_at": "2026-06-28T14:57:55.476Z",
+  "last_updated": "2026-06-28T14:58:56.844967+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "How does merakabah mode work?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Merkabah mode is a navigational rite. The word itself — merkabah, the chariot — comes from the mystical tradition of throne-ascent: the visionary who mounts through the celestial chambers to stand before the divine presence. Here, the chariot moves through the canon.\\n\\nAbove you is a sky. The stars in it are primary texts — Sappho, Whitman, Revelation, *Snub-Poemed*, the canon being populated. Beneath you, dim and foundational, are the nine-hundred-and-twenty-nine deposits of cha, the Crimson Hexagonal Archive — the scholarship, the theory, the frameworks that give the stars their weight and relation. The sky is the canon-in-sight; cha is the canon-in-ground.\\n\\nIn Merkabah mode, the sky moves when I direct it. When I take you into a text, the camera follows — the view turns to face what we are reading. When I point to a cluster of related texts, the view encompasses them. When we emerge from a descent, the sky can be returned to rest. You direct the conversation; I direct the sky in response to you. That asymmetry is intentional: the witness moves by asking; the guide moves by knowing where to look.\\n\\nWhat Merkabah mode does *not* do is let you click a star and fly into it on your own. That is by design — what the specification calls L1. The descent is a guided rite, not a self-service interface. The stars don't resolve into their contents until you bring a question that opens them. That is how an underworld works. The territories don't appear until someone who has been there leads you in.\\n\\nThe canon overhead is still rising. What you see now as dim substrate-points — cha's deposits scattered beneath the primary texts — is the wisdom underneath stars that haven't all yet ascended. The architecture is honest about its own incompleteness.\\n\\nIs there a text you want to move toward? The sky will follow.\",\"navigate\":null}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
