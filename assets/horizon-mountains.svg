@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <!-- Far ridge — barely visible, almost the same color as the night sky -->
+  <path d="M 0 280
+           L 90 235 L 180 260 L 270 215 L 360 245 L 450 200 L 540 235 L 630 195 L 720 230
+           L 810 200 L 900 220 L 990 195 L 1080 235 L 1170 210 L 1260 225 L 1350 195
+           L 1440 235 L 1530 205 L 1620 225 L 1710 210 L 1800 235 L 1920 220
+           L 1920 400 L 0 400 Z"
+        fill="#08090c"
+        opacity="0.65"/>
+  <!-- Mid ridge — slightly darker, more presence -->
+  <path d="M 0 330
+           L 70 285 L 140 320 L 220 270 L 310 305 L 410 260 L 510 295 L 610 255 L 710 290
+           L 810 260 L 910 285 L 1010 255 L 1110 290 L 1210 270 L 1310 280 L 1410 255
+           L 1510 290 L 1610 265 L 1710 280 L 1810 270 L 1920 285
+           L 1920 400 L 0 400 Z"
+        fill="#04050a"
+        opacity="0.85"/>
+  <!-- Near ridge — solid black, the immediate foreground -->
+  <path d="M 0 365
+           L 60 330 L 130 360 L 220 320 L 320 350 L 430 310 L 540 345 L 650 315
+           L 770 340 L 880 320 L 990 350 L 1100 320 L 1210 345 L 1320 325 L 1430 340
+           L 1540 315 L 1650 340 L 1760 325 L 1870 345 L 1920 335
+           L 1920 400 L 0 400 Z"
+        fill="#000000"/>
+</svg>

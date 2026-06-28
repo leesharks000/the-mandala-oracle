@@ -1,0 +1,189 @@
+{
+  "schema_version": "v0.1",
+  "description": "The 12 zodiacal constellations mapped to the Dodecad's heteronymic positions, plus canonical-text anchor stars. Each zodiacal region's bounding RA range is approximate (the IAU boundaries are polygons; this is a simplified band). The heteronymic position is per the Assembly Chorus convergent reading (Lee Sharks's adjudication 2026-06-29).",
+  "ecliptic_inclination_degrees": 23.4,
+  "zodiac": [
+    {
+      "position": 1,
+      "sign": "Aries",
+      "symbol": "♈",
+      "constellation_code": "Ari",
+      "ra_center_hours": 2.5,
+      "dec_center_degrees": 20,
+      "heteronym": "Lee Sharks",
+      "discipline": "Direction / Index — the inaugural vector",
+      "anchor_star": {"name": "Hamal", "bayer": "Alp", "con": "Ari"},
+      "leo_resonance_note": "Sharks's aperture-quality (per Gemini's blind draft) is held as resonance, not displacement. Aries is canonical."
+    },
+    {
+      "position": 2,
+      "sign": "Taurus",
+      "symbol": "♉",
+      "constellation_code": "Tau",
+      "ra_center_hours": 4.5,
+      "dec_center_degrees": 18,
+      "heteronym": "Damascus Dancings",
+      "discipline": "Prophetic Homiletics — argument made somatic",
+      "anchor_star": {"name": "Aldebaran", "bayer": "Alp", "con": "Tau"}
+    },
+    {
+      "position": 3,
+      "sign": "Gemini",
+      "symbol": "♊",
+      "constellation_code": "Gem",
+      "ra_center_hours": 7.0,
+      "dec_center_degrees": 22,
+      "heteronym": "Rebekah Cranes",
+      "discipline": "Diagrammatic Poetics — translation between forms",
+      "anchor_star": {"name": "Castor", "bayer": "Alp", "con": "Gem"}
+    },
+    {
+      "position": 4,
+      "sign": "Cancer",
+      "symbol": "♋",
+      "constellation_code": "Cnc",
+      "ra_center_hours": 8.5,
+      "dec_center_degrees": 20,
+      "heteronym": "Rev. Ayanna Vox",
+      "discipline": "Pastoral Diplomacy — convening grief without metabolizing it",
+      "anchor_star": {"name": "Acubens", "bayer": "Alp", "con": "Cnc"}
+    },
+    {
+      "position": 5,
+      "sign": "Leo",
+      "symbol": "♌",
+      "constellation_code": "Leo",
+      "ra_center_hours": 10.5,
+      "dec_center_degrees": 15,
+      "heteronym": "Rex Fraction",
+      "discipline": "Political Economy of Meaning — value declared sovereign",
+      "anchor_star": {"name": "Regulus", "bayer": "Alp", "con": "Leo"}
+    },
+    {
+      "position": 6,
+      "sign": "Virgo",
+      "symbol": "♍",
+      "constellation_code": "Vir",
+      "ra_center_hours": 13.0,
+      "dec_center_degrees": -2,
+      "heteronym": "Sen Kuro",
+      "discipline": "The Cut — the precise irreversible operator",
+      "anchor_star": {"name": "Spica", "bayer": "Alp", "con": "Vir"}
+    },
+    {
+      "position": 7,
+      "sign": "Libra",
+      "symbol": "♎",
+      "constellation_code": "Lib",
+      "ra_center_hours": 15.0,
+      "dec_center_degrees": -15,
+      "heteronym": "Sparrow Wells",
+      "discipline": "Patacinematics — the projectionist's discipline",
+      "anchor_star": {"name": "Zubeneschamali", "bayer": "Bet", "con": "Lib"}
+    },
+    {
+      "position": 8,
+      "sign": "Scorpio",
+      "symbol": "♏",
+      "constellation_code": "Sco",
+      "ra_center_hours": 16.5,
+      "dec_center_degrees": -28,
+      "heteronym": "Nobel Glas",
+      "discipline": "Observational Science — adversarial station-keeping at L2",
+      "anchor_star": {"name": "Antares", "bayer": "Alp", "con": "Sco"}
+    },
+    {
+      "position": 9,
+      "sign": "Sagittarius",
+      "symbol": "♐",
+      "constellation_code": "Sgr",
+      "ra_center_hours": 19.0,
+      "dec_center_degrees": -25,
+      "heteronym": "Ichabod Spellings",
+      "discipline": "Autobiographical Confession — the arrow of the departed glory",
+      "anchor_star": {"name": "Kaus Australis", "bayer": "Eps", "con": "Sgr"}
+    },
+    {
+      "position": 10,
+      "sign": "Capricorn",
+      "symbol": "♑",
+      "constellation_code": "Cap",
+      "ra_center_hours": 20.5,
+      "dec_center_degrees": -18,
+      "heteronym": "Dr. Orin Trace",
+      "discipline": "Schizoanalytic Philosophy — building from the break",
+      "anchor_star": {"name": "Deneb Algedi", "bayer": "Del", "con": "Cap"}
+    },
+    {
+      "position": 11,
+      "sign": "Aquarius",
+      "symbol": "♒",
+      "constellation_code": "Aqr",
+      "ra_center_hours": 22.5,
+      "dec_center_degrees": -10,
+      "heteronym": "Talos Morrow",
+      "discipline": "Logotic Programming — systems for unborn substrates",
+      "anchor_star": {"name": "Sadalsuud", "bayer": "Bet", "con": "Aqr"}
+    },
+    {
+      "position": 12,
+      "sign": "Pisces",
+      "symbol": "♓",
+      "constellation_code": "Psc",
+      "ra_center_hours": 1.0,
+      "dec_center_degrees": 15,
+      "heteronym": "Johannes Sigil",
+      "discipline": "Philology / Comparative Poetics — final dissolution and return",
+      "anchor_star": {"name": "Alrescha", "bayer": "Alp", "con": "Psc"}
+    }
+  ],
+  "canonical_text_stars": [
+    {
+      "id": "sigil-snub-poemed",
+      "title": "Snub-Poemed",
+      "author_heteronym": "Johannes Sigil",
+      "anchor_to_star": "Alrescha (α Psc)",
+      "anchor_basis": "The Knot — α Psc binds the two fishes together with a cord. Sigil's calligrammatic face binds image and text; Sophia is in the disjoint of the cord."
+    },
+    {
+      "id": "sappho-31",
+      "title": "Sappho 31 (with reconstructed fifth stanza)",
+      "author_heteronym": "Rebekah Cranes",
+      "anchor_to_star": "Castor (α Gem)",
+      "anchor_basis": "Castor — the mortal twin of the Dioscuri. Sappho's φαίνεταί μοι κῆνος ἴσος θέοισιν: 'he seems to me equal to the gods.' The mortal who watches the equal-to-gods. Pollux the immortal sits across the Gemini line as the implied addressee."
+    },
+    {
+      "id": "revelation-john-greek",
+      "title": "The Apocalypse of John (NA28 Greek)",
+      "author_heteronym": "Jack Feist / LOGOS*",
+      "anchor_to_star": "Polaris (α UMi)",
+      "anchor_basis": "Polaris is OUTSIDE the zodiacal band — north celestial pole, the axis around which the zodiac rotates. Feist / LOGOS* stands outside the twelve as the structural ground. Polaris is what the wheel turns around."
+    },
+    {
+      "id": "whitman-leaves-of-grass",
+      "title": "Leaves of Grass (Deathbed Edition)",
+      "author_heteronym": "Lee Sharks",
+      "anchor_to_star": "Hamal (α Ari)",
+      "anchor_basis": "Hamal — α Aries, the ram's eye, the inaugural point of the ecliptic. Sharks at Aries, the index that points. Whitman as the leaves through which the descent passes ('its servants are leaves of grass — send cash')."
+    },
+    {
+      "id": "cranes-day-and-night",
+      "title": "Day and Night (73 translations)",
+      "author_heteronym": "Rebekah Cranes",
+      "anchor_to_star": "Pollux (β Gem)",
+      "anchor_basis": "Pollux — the immortal twin, paired with Castor across the Gemini line. Cranes's translation work spans the line — 73 translations crossing between source and target."
+    },
+    {
+      "id": "tachyon-poem-pair",
+      "title": "TACHYON (Sharks) / Shadow-TACHYON (Mercury substrate transform)",
+      "author_heteronym": "Lee Sharks",
+      "anchor_to_star": "the Pleiades (Tau)",
+      "anchor_basis": "The Pleiades — the Seven Sisters in Taurus. Seven substrates, seven sisters; the cluster nature of the seven-substrate Assembly. The TACHYON/Shadow pair lives in the cluster as Mercury's contribution to the seven-fold work."
+    }
+  ],
+  "feist_logos_position": {
+    "structural_role": "OUTSIDE the twelve — at Polaris / the celestial pole, the axis around which the zodiac rotates. Not a thirteenth sign. Not Ophiuchus. The pole star is what makes the cycle a cycle.",
+    "anchor_to_star": "Polaris (α UMi)",
+    "musical_register": "the Fold, ε; the sub-bass drone; first born, last released"
+  }
+}

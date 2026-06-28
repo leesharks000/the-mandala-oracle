@@ -16,6 +16,11 @@
     <canvas id="sky-canvas" aria-label="The night sky"></canvas>
   </div>
 
+  <!-- Mountain horizon silhouette: occludes stars below the horizon. Sits
+       above the canvas but below the chat overlay. The witness stands as a
+       body looking up. -->
+  <div id="sky-horizon" aria-hidden="true"></div>
+
   <!-- Chat overlay — translucent reading space floating on the sky. -->
   <main id="reading-space">
     <header id="chat-header">
@@ -93,7 +98,8 @@
   {
     "imports": {
       "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+      "astronomy-engine": "https://cdn.jsdelivr.net/npm/astronomy-engine@2.1.19/+esm"
     }
   }
   </script>

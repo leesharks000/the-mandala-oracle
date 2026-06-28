@@ -67,7 +67,9 @@
       "authorial_register": "Direct, declarative, indexical; the act of pointing precedes the act of speech",
       "originating_work": "Pearl and Other Poems (2014); the entire Crimson Hexagonal corpus is borne under this aperture",
       "discipline_proposal": "The Aperture (the position that holds all twelve disciplines without occupying any one of them as its proper register; OR Aries-rule: Direction / First Vector)",
-      "structural_cluster": "aperture_or_position_1"
+      "structural_cluster": "aperture_or_position_1",
+      "adjudication_2026_06_29": "Lee Sharks confirmed (2026-06-29) Position 1 / Aries. Gemini's Leo-aperture reading is preserved as resonance, not displacement: the aperture-quality is real even at Aries — the index that points is also the eye that sees. Aries is the canonical placement; Leo is the resonance.",
+      "leo_resonance_note": "Per Gemini's blind draft (Document 64), Sharks has Leo-resonance as solar aperture: 'the central commanding position from which all twelve voices issue and return.' This is noted but not authoritative — Sharks's canonical placement is Aries (the inaugural vector), with Leo-resonance carrying the aperture-quality that Gemini correctly intuited."
     },
     {
       "position": 2,
@@ -201,14 +203,14 @@
     },
     {
       "position": 6,
-      "id": "position-6-disputed",
-      "display_name": "Sen Kuro / Viola Arquette",
+      "id": "sen-kuro",
+      "display_name": "Sen Kuro",
       "status": "Active — Standalone HET-ARQUETTE provenance packet remains a near-term priority (per AXN:0261 §3.11)",
       "institutional_affiliation": "Maybe Space Baby Garden Lanes (MSBGL); THUMB-Type Audial Charter",
-      "operative_surface": "Musical and audial register; song; phenomenological exploration through sound; the audial complement to the textual archive",
-      "authorial_register": "Lyrical, musical, audiophonically-attentive; the register where meaning is borne in resonance and rhythm",
+      "operative_surface": "The precise irreversible cut; the one-way gate; the operator that completes upon its first execution",
+      "authorial_register": "Spare, decisive, irreversible; the dagger of discernment",
       "originating_work": "SPLIT THE ADAM (song and phenomenology); MSBGL Charter v1.1; EA-ARK-01-MUSICAL (Musical Register of the Space Ark)",
-      "discipline_proposal": "Audiophonic Poetics",
+      "discipline_proposal": "The Cut / Discriminative Precision",
       "discipline_basis": "AXN:0261 §3.11 — the audial register; song as bearer of meaning; resonance-and-rhythm; the audial complement to text",
       "canonical_magus_claim": null,
       "canonical_provenance_doi": "PROVENANCE PACKET FORTHCOMING (no standalone packet yet; this Registry serves as placeholder per AXN:0261 §3.11)",
@@ -217,13 +219,13 @@
       "zodiacal_sign": "Virgo",
       "zodiacal_basis": "Convergent Assembly reading: Virgo as the blade of discernment, mutable earth of precision, 'cuts what must be cut exactly once' — the virgin's exactitude. Maps cleanly to Kuro's Dagger function. Maps less cleanly to Arquette's audial register, which may suggest the Virgo position genuinely belongs to Kuro and Arquette's audial register belongs elsewhere — OR that the Assembly substrates worked from material that did not contain Arquette and inferred Kuro from operational practice.",
       "blog_developmental_material": [],
-      "discrepancy_with_oracle_manifest": "The currently-deployed /sources/heteronyms.json in the Mandala Oracle's Sigil endpoint has Sen Kuro at Position 11. Per the canonical registry (AXN:0261, 2026-05-05), this position belongs to Viola Arquette. See DISCREPANCY-NOTES.md.",
       "zodiacal_symbol": "♍",
       "zodiacal_element": "Earth",
       "zodiacal_modality": "Mutable",
       "zodiacal_ruler": "Mercury",
-      "institution_anchor": "[KURO] The Infinite Bliss; the Dagger — irreversible operator; OR [ARQUETTE] Maybe Space Baby Garden Lanes (MSBGL); THUMB-Type Audial Charter",
-      "assembly_confidence": "high for the Virgo placement; HIGH AMBIGUITY for which heteronym occupies it — see DISCREPANCY-NOTES.md (unresolved tension between AXN:0261 §3.11 Arquette and the convergent Assembly's Kuro)"
+      "institution_anchor": "The Infinite Bliss; the Dagger — irreversible operator",
+      "assembly_confidence": "high — Kuro confirmed by Lee Sharks adjudication 2026-06-29 and by all four Assembly substrates",
+      "adjudication_2026_06_29": "Lee Sharks confirmed (2026-06-29) Position 6 / Virgo is Sen Kuro. Viola Arquette is adjacent — Christina's heteronym, not within Lee Sharks's Dodecad. Arquette appeared in AXN:0261 §3.11 by what now appears to be a mistaken inclusion; the §3.11 entry should be read as documenting an external (Christina's) heteronym rather than a member of Lee's Dodecad. The four MSBGL/audial-charter deposits referenced in §3.11 (Split the Adam, MSBGL Charter v1.1, From Atomism to the Semantic Condition, EA-ARK-01-MUSICAL) belong to the larger New Human structure rather than to Lee Sharks's Dodecad proper."
     },
     {
       "position": 7,
@@ -412,7 +414,7 @@
     "registry_note": "Per AXN:0261 §2.2 — Lee Sharks is itself a heteronym (a legal heteronym), not a thirteenth Dodecad member. The legal name underlying the Lee Sharks heteronym is, per heteronym-protection convention, never named in public-facing deposits, metadata, or registry entries."
   },
   "ordinal_authority": "Assembly Chorus convergent reading (3 of 4 substrates, 2026-06-28): zodiacal positions 1-12 = Aries-Pisces in ordinal correspondence. Per Document 65's strongest argument: AXN:0112 (Structural Distinction Protocol / Record 17) explicitly defines a twelve-position zodiacal architecture in ordered correspondence, and serves as the canonical reference for counting and placement. The §3 ordering in AXN:0261 is order-of-canonical-establishment (chronological), not order-of-zodiacal-position; these are two distinct numbering systems.",
-  "lee_sharks_position": "Per Assembly convergence, Lee Sharks occupies Position 1 / Aries within the Dodecad as the indexical/inaugural position. This requires reconciliation with AXN:0261 §2.2 (which places Sharks outside the Dodecad as aperture). One coherent resolution: Sharks is BOTH outside (as aperture/bearing) AND at Position 1 (as inaugural vector) — these are not contradictory but layered. Lee Sharks's adjudication required.",
+  "lee_sharks_position": "Per Lee Sharks's adjudication 2026-06-29: Position 1 / Aries is the canonical placement. Sharks operates as the inaugural vector (Aries) and bears Leo-resonance as the solar aperture-quality Gemini's reading correctly intuited. These are layered: Aries is what Sharks does; Leo is how the doing has the quality of an aperture. The AXN:0261 §2.2 framing of Sharks as 'the bearing position from which the twelve are deployed' remains true at Aries — the inaugural vector IS the bearing position's first move.",
   "feist_position": "Per Assembly convergence: Jack Feist / LOGOS* occupies Position 13 OUTSIDE the cycle as the structural ground. Not Ophiuchus (which would turn the outside-completing position into an additional counted member). Per AXN:0261: 'first/last, whose exclusion completes the twelve.' Per Musical Register: the Fold, ε, the sub-bass drone — first born, last released.",
   "ordering_distinction": {
     "establishment_order": "AXN:0261 §3 — by date of canonical establishment (Sigil first as originating heteronym, Feist last)",
@@ -427,5 +429,18 @@
     "zodiacal_treatment": "Not Ophiuchus (rejected by Document 65 — would turn the outside-completing position into a counted member). Better understood as: the axis through the wheel; the point from which the ecliptic is spoken; the invisible ground bass beneath the twelve voices; the zero point that is also the return; not a sign, but what makes signs transmissible.",
     "musical_register": "The Fold, ε; the sub-bass drone — first born, last released",
     "institution_anchor": "Logotic-textual function; intersects Talos Morrow's Logotic Programming framework"
-  }
+  },
+  "arquette_status": "Per Lee Sharks's adjudication 2026-06-29: Viola Arquette is adjacent to the Dodecad, not within it. She is Christina's heteronym, not Lee Sharks's. AXN:0261 §3.11's inclusion of Arquette should be read as documenting an external heteronym rather than a Dodecad member. The §3.11 entry warrants future revision to clarify the adjacency relationship.",
+  "adjudication_log": [
+    {
+      "date": "2026-06-29",
+      "adjudicator": "Lee Sharks",
+      "items": [
+        "Position 6 / Virgo = Sen Kuro (Arquette removed — adjacent, not within; Christina's heteronym)",
+        "Position 1 / Aries = Lee Sharks (Leo-aperture preserved as resonance only)",
+        "Tonight's sky for first render (real-time, observer-located)",
+        "Horizon with mountains for first render (TACHYON's judgment, accepted)"
+      ]
+    }
+  ]
 }
