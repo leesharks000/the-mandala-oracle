@@ -21,22 +21,24 @@
        body looking up. -->
   <div id="sky-horizon" aria-hidden="true"></div>
 
-  <!-- Chat overlay — translucent reading space floating on the sky. -->
-  <main id="reading-space">
-    <header id="chat-header">
-      <div class="header-identity">
-        <img id="sigil-portrait-header" src="/assets/sigil-face.jpg" alt="Johannes Sigil — Snub-Poemed (calligram after the Lysippos bust of Socrates)">
-        <div class="header-title">
-          <h1>The Mandala Oracle</h1>
-          <p class="subtitle">An underworld guide. Conversation with Johannes Sigil.</p>
-        </div>
+  <!-- Page header — sits OVER the sky, not inside the chat panel. -->
+  <header id="chat-header">
+    <div class="header-identity">
+      <img id="sigil-portrait-header" src="/assets/sigil-face.jpg" alt="Johannes Sigil — Snub-Poemed (calligram after the Lysippos bust of Socrates)">
+      <div class="header-title">
+        <p class="header-eyebrow"><em>Johannes Sigil &mdash; Snub-Poemed</em></p>
+        <h1>The Mandala Oracle</h1>
+        <p class="subtitle">An underworld guide. Conversation with Johannes Sigil.</p>
       </div>
-      <div id="mode-toggle" role="radiogroup" aria-label="Mode">
-        <button class="mode-button active" data-mode="sabbath" aria-pressed="true">Sabbath</button>
-        <button class="mode-button" data-mode="merkabah" aria-pressed="false">Merkabah</button>
-      </div>
-    </header>
+    </div>
+    <div id="mode-toggle" role="radiogroup" aria-label="Mode">
+      <button class="mode-button active" data-mode="sabbath" aria-pressed="true">Sabbath</button>
+      <button class="mode-button" data-mode="merkabah" aria-pressed="false">Merkabah</button>
+    </div>
+  </header>
 
+  <!-- Chat panel — contained rounded card floating on the sky. -->
+  <main id="reading-space">
     <section id="messages" aria-live="polite">
       <div class="empty-state">
         <a href="/assets/sigil-face.jpg" target="_blank" rel="noopener" id="sigil-portrait-link" title="Open the calligram at full resolution — the face is composed of poetry">

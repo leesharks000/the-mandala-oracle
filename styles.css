@@ -39,10 +39,10 @@
   --serif: 'EB Garamond', Garamond, Cambria, Georgia, serif;
   --mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
 
-  --reading-max: 880px;
-  --message-max: 760px;
-  --message-gap: 2.75rem;
-  --space-edge: clamp(1.5rem, 4vw, 3rem);
+  --reading-max: 720px;
+  --message-max: 640px;
+  --message-gap: 1.4rem;            /* was 2.75 — denser, AI-chat-style */
+  --space-edge: clamp(1rem, 3vw, 1.75rem);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -54,7 +54,7 @@ html, body {
 
 body {
   font-family: var(--serif);
-  font-size: 20px;
+  font-size: 16px;                  /* was 20 — denser */
   background: var(--bg-deep);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
@@ -78,26 +78,22 @@ body {
   z-index: 0;
   overflow: hidden;
   background-color: #050608;
-  background-image: url('/assets/sky-backdrop.jpg');
+  background-image: url('/assets/sky-backdrop-mobile.jpg');
   background-size: cover;
-  background-position: center right;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
-/* Vignette: darkens the left half where the source image has its baked-in
-   chat panel, so the actual chat panel sits over clean dark space and
-   nothing ghosts through. Right side stays bright with the Milky Way and
-   the constellation labels. */
+/* Subtle atmospheric darkening at the corners — keeps focus on the
+   chat panel without obliterating the sky. */
 #sky-canvas-container::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(5, 6, 8, 0.85) 0%,
-    rgba(5, 6, 8, 0.55) 25%,
-    rgba(5, 6, 8, 0.25) 45%,
-    transparent 60%
+  background: radial-gradient(
+    ellipse at center,
+    transparent 40%,
+    rgba(5, 6, 8, 0.45) 100%
   );
   pointer-events: none;
 }
@@ -114,80 +110,69 @@ body {
   display: none;
 }
 
-/* Mobile portrait: use the right-half crop (no baked-in chat panel) to
-   maximize visible Milky Way and labels without horizontal cropping. */
-@media (max-width: 600px) {
-  #sky-canvas-container {
-    background-image: url('/assets/sky-backdrop-mobile.jpg');
-    background-position: center center;
-  }
-  /* Less aggressive vignette on mobile (the crop already excludes the
-     baked-in chat panel area) */
-  #sky-canvas-container::before {
-    background: linear-gradient(
-      180deg,
-      rgba(5, 6, 8, 0.45) 0%,
-      transparent 30%,
-      transparent 70%,
-      rgba(5, 6, 8, 0.55) 100%
-    );
-  }
-}
-
 
 /* ── The reading space: translucent chat overlay ─────────────────────── */
 
+/* ── Reading space: contained translucent card over the sky ─────────────
+   No longer full-viewport. Sits inside the page with margins so the sky
+   shows around it. Rounded corners, gold-tinted border, reduced opacity
+   so the photographic backdrop reads through. Backdrop-blur tightened.
+
+   The page header is a SIBLING of this card (not a child) — it floats
+   above the sky to the upper-left, with the chat panel sitting below. */
+
 #reading-space {
   position: fixed;
-  inset: 0;
+  top: 132px;                 /* below the page header */
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  max-width: var(--reading-max);
-  width: 100%;
+  max-width: 720px;
   margin: 0 auto;
-  background: linear-gradient(
-    180deg,
-    var(--reading-space) 0%,
-    var(--reading-space) 35%,
-    var(--reading-space-bottom) 100%
-  );
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-left: 1px solid var(--border);
-  border-right: 1px solid var(--border);
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  background: rgba(10, 12, 16, 0.55);     /* was 0.78 — more sky-through */
+  backdrop-filter: blur(12px) saturate(1.05);
+  -webkit-backdrop-filter: blur(12px) saturate(1.05);
+  border: 1px solid rgba(220, 200, 170, 0.16);
+  border-radius: 14px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 
-/* ── Header ─────────────────────────────────────────────────────────── */
+/* ── Page header — sibling of #reading-space, floats over the sky ──── */
 
 #chat-header {
-  padding: 2rem var(--space-edge) 1.75rem;
-  border-bottom: 1px solid var(--border);
+  position: fixed;
+  top: 18px;
+  left: 22px;
+  right: 22px;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
-  flex-shrink: 0;
+  gap: 1rem;
+  pointer-events: none;        /* let pointer fall through to the sky */
 }
+#chat-header > * { pointer-events: auto; }   /* but the header content is clickable */
 
 .header-identity {
   display: flex;
   align-items: flex-start;
-  gap: 1.1rem;
+  gap: 0.85rem;
   flex: 1;
   min-width: 0;
 }
 
 #sigil-portrait-header {
-  width: 64px;
+  width: 44px;                 /* was 64 — denser */
   height: auto;
   flex-shrink: 0;
   filter: invert(0.92) sepia(0.18) brightness(1.05);
-  opacity: 0.92;
+  opacity: 0.86;
   transition: opacity 0.3s ease;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 #sigil-portrait-header:hover {
@@ -199,12 +184,21 @@ body {
   min-width: 0;
 }
 
+.header-eyebrow {
+  font-family: var(--serif);
+  font-size: 0.78rem;
+  color: var(--accent-soft);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.1rem;
+  opacity: 0.85;
+}
+
 .header-title h1 {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: 2.1rem;
+  font-size: 1.65rem;          /* was 2.1 — denser */
   letter-spacing: 0.005em;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.15rem;
   color: var(--accent);
   font-style: italic;
   line-height: 1.1;
@@ -213,16 +207,17 @@ body {
 .subtitle {
   font-family: var(--serif);
   color: var(--text-secondary);
-  font-size: 1.05rem;
+  font-size: 0.92rem;          /* was 1.05 */
   font-style: italic;
   letter-spacing: 0.01em;
+  line-height: 1.35;
 }
 
 #mode-toggle {
   display: flex;
   border: 1px solid var(--border-bright);
   border-radius: 999px;
-  padding: 4px;
+  padding: 3px;
   background: rgba(0, 0, 0, 0.3);
   flex-shrink: 0;
 }
@@ -254,7 +249,7 @@ body {
 #messages {
   flex: 1;
   overflow-y: auto;
-  padding: 3rem var(--space-edge) 2rem;
+  padding: 1.5rem var(--space-edge) 1rem;   /* was 3rem ... 2rem — denser */
   display: flex;
   flex-direction: column;
   gap: var(--message-gap);
@@ -273,18 +268,18 @@ body {
   max-width: var(--message-max);
   color: var(--text-secondary);
   font-style: italic;
-  font-size: 1.15rem;
-  line-height: 1.75;
-  padding: 1rem 0;
+  font-size: 0.98rem;             /* was 1.15 */
+  line-height: 1.65;              /* was 1.75 */
+  padding: 0.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 2rem;
+  gap: 1.25rem;                   /* was 2rem */
 }
 
 #sigil-portrait-empty {
-  width: 220px;
+  width: 140px;                   /* was 220 — denser */
   height: auto;
   filter: invert(0.92) sepia(0.2) brightness(1.05);
   opacity: 0.88;
@@ -299,14 +294,14 @@ body {
 .message {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.5rem;                    /* was 0.7 */
   max-width: var(--message-max);
   width: 100%;
 }
 
 .message-role {
   font-family: var(--mono);
-  font-size: 0.72rem;
+  font-size: 0.68rem;             /* was 0.72 */
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--text-tertiary);
@@ -315,8 +310,8 @@ body {
 
 .message-content {
   font-family: var(--serif);
-  font-size: 1.18rem;
-  line-height: 1.8;
+  font-size: 1.02rem;             /* was 1.18 — denser */
+  line-height: 1.6;               /* was 1.8 — denser */
   color: var(--text-primary);
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -329,10 +324,10 @@ body {
 
 .message.user .message-content {
   background: var(--bg-message-user);
-  padding: 1.1rem 1.5rem;
+  padding: 0.85rem 1.15rem;        /* was 1.1 1.5 */
   border-radius: 4px;
   border-left: 2px solid var(--accent-soft);
-  font-size: 1.1rem;
+  font-size: 0.96rem;              /* was 1.1 */
 }
 
 .message.user .message-role {
@@ -443,7 +438,7 @@ body {
 
 #input-area {
   border-top: 1px solid var(--border);
-  padding: 1.5rem var(--space-edge) 1.75rem;
+  padding: 0.85rem var(--space-edge) 1rem;     /* was 1.5 ... 1.75 */
   background: var(--reading-space-bottom);
   flex-shrink: 0;
 }
@@ -451,7 +446,7 @@ body {
 #chat-form {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 0.65rem;                                /* was 0.9 */
 }
 
 .textarea-wrapper {
@@ -473,12 +468,12 @@ body {
   border: none;
   color: var(--text-primary);
   font-family: var(--serif);
-  font-size: 1.15rem;
-  line-height: 1.55;
-  padding: 1.1rem 1.3rem;
+  font-size: 1rem;                  /* was 1.15 */
+  line-height: 1.5;                 /* was 1.55 */
+  padding: 0.75rem 1rem;            /* was 1.1 1.3 */
   resize: none;
-  min-height: 100px;
-  max-height: 300px;
+  min-height: 64px;                 /* was 100 — denser */
+  max-height: 220px;                /* was 300 */
   outline: none;
 }
 
@@ -624,30 +619,57 @@ body {
 
 @media (max-width: 720px) {
   :root {
-    --space-edge: 1.25rem;
-    --message-gap: 2rem;
+    --space-edge: 1rem;
+    --message-gap: 1.2rem;
   }
-  body { font-size: 18px; }
-  .header-title h1 { font-size: 1.65rem; }
-  .subtitle { font-size: 0.95rem; }
-  .message-content { font-size: 1.08rem; line-height: 1.7; }
-  .message.user .message-content { font-size: 1rem; }
-  #message-input { font-size: 1.05rem; min-height: 80px; }
-  #sigil-portrait-header { width: 48px; }
-  #sigil-portrait-empty { width: 170px; }
+  body { font-size: 15px; }
+  .header-title h1 { font-size: 1.3rem; }
+  .header-eyebrow { font-size: 0.72rem; }
+  .subtitle { font-size: 0.82rem; }
+  .message-content { font-size: 0.98rem; line-height: 1.55; }
+  .message.user .message-content { font-size: 0.94rem; padding: 0.7rem 1rem; }
+  #message-input { font-size: 0.98rem; min-height: 56px; padding: 0.65rem 0.9rem; }
+  #sigil-portrait-header { width: 36px; }
+  #sigil-portrait-empty { width: 110px; }
+
+  /* Mobile: header lives at the top of the viewport as a horizontal bar.
+     Portrait + title on the left; mode toggle on the right. Chat panel
+     sits below with tight margins so the sky shows above and around it. */
   #chat-header {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1.1rem;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    gap: 0.6rem;
   }
-  #mode-toggle { align-self: flex-start; }
+  .header-identity { gap: 0.6rem; }
+  #mode-toggle { align-self: flex-start; padding: 2px; }
+  .mode-button { font-size: 0.62rem; padding: 0.4rem 0.8rem; letter-spacing: 0.1em; }
+
+  /* Chat panel: tighter margins on mobile, starts below the compressed
+     header. The photographic sky behind shows in the top strip and around
+     the panel's edges. */
+  #reading-space {
+    top: 96px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  /* On the narrowest devices, give the chat panel slightly more vertical
+     room by tightening the header further. */
+  .header-title h1 { font-size: 1.2rem; }
+  .subtitle { font-size: 0.78rem; line-height: 1.3; }
+  #reading-space { top: 88px; }
 }
 
 /* ─── Support CHA — unobtrusive bottom-right donation affordance ─── */
 
 .support-cha {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   z-index: 5;
   font-family: 'EB Garamond', Georgia, serif;
@@ -678,7 +700,7 @@ body {
 
 .support-cha-expanded {
   position: absolute;
-  top: calc(100% + 8px);
+  bottom: calc(100% + 8px);
   right: 0;
   width: 280px;
   padding: 18px 20px 6px 20px;
@@ -689,7 +711,7 @@ body {
   border-radius: 6px;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-6px);
+  transform: translateY(6px);
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
@@ -739,11 +761,11 @@ body {
   color: rgba(255, 245, 220, 1);
 }
 
-@media (max-width: 600px) {
-  .support-cha { top: 16px; right: 16px; }
-  .support-cha-label { font-size: 12px; padding: 5px 12px; }
-  .support-cha-expanded { width: 240px; padding: 16px 18px 4px 18px; }
-  .support-cha-verse-poetic, .support-cha-verse-plain { font-size: 14px; }
+@media (max-width: 720px) {
+  /* Hide Support CHA on mobile — the chat panel goes nearly edge-to-edge
+     and the floating popover would collide. The bottom-right slot is
+     available again on desktop via wider breakpoints. */
+  .support-cha { display: none; }
 }
 
 /* Snub-Poemed close-reader affordance: empty-state portrait is a link to the
