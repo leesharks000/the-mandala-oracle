@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖",
+  "session_id_hash": "d6545fef2c0dbd73",
+  "started_at": "2026-06-28T07:52:24.740Z",
+  "last_updated": "2026-06-28T07:52:31.237120+00:00",
+  "mode": "sabbath",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "Hello"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"You've arrived. The descent is open when you are. What do you bring?\",\"navigate\":null}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
