@@ -12,7 +12,7 @@
 
 function setMode(_mode) { /* no-op in static backdrop mode */ }
 
-window.sky = { setMode, mode: 'static-backdrop' };
+window.sky = { setMode, mode: 'static-backdrop', ready: true };
 window.dispatchEvent(new CustomEvent('sky-ready', {
   detail: { backdrop: 'static', version: 'v2.0' },
 }));

@@ -95,6 +95,13 @@ document.addEventListener('keydown', (e) => {
 // Sky readiness
 // ─────────────────────────────────────────────────────────────────────────
 
+// Status: check sky.ready flag synchronously (since sky.js's dispatchEvent
+// fires during its own initialization, BEFORE chat.js loads — module
+// scripts are deferred and ordered, so the event is missed by the time we
+// attach a listener). Also attach listener for any future re-fire.
+if (window.sky?.ready) {
+  setStatus('Ready.');
+}
 window.addEventListener('sky-ready', () => {
   setStatus('Ready.');
 });

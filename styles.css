@@ -556,14 +556,13 @@ body {
   background: var(--bg-elevated);
   border-top: 1px solid var(--border-bright);
   padding: 1.75rem var(--space-edge) 1.75rem;
-  /* Hidden by default with multiple mechanisms — backdrop-filter on this
-     element creates its own compositing layer that can escape the parent
-     overflow:hidden, so transform alone wasn't enough. */
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(8px);
-  transition: opacity 0.2s ease, visibility 0s linear 0.2s, transform 0.2s ease;
+  /* Hidden by default with display:none — visibility:hidden was being
+     defeated by the backdrop-filter's own compositing layer on some
+     Android Chrome versions (the panel painted despite visibility:hidden).
+     display:none removes the element from the rendering tree entirely
+     and can't be defeated by any compositing or caching quirk. We lose
+     the fade animation but the panel rarely opens; reliability > polish. */
+  display: none;
   z-index: 10;
   max-height: 55vh;
   overflow-y: auto;
@@ -572,11 +571,7 @@ body {
 }
 
 #settings-panel.open {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-  transition: opacity 0.2s ease, visibility 0s, transform 0.2s ease;
+  display: block;
 }
 
 #settings-panel h3 {
