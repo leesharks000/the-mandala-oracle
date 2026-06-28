@@ -5,9 +5,25 @@
   "language_name": "Aeolic Greek",
   "author": "Sappho of Lesbos",
   "composition_date_approx": "c. 630-570 BCE",
-  "edition_reference": "Public-domain critical editions (Wharton 1885, Edmonds 1922, Cox 1924). Voigt is under copyright and not admitted.",
-  "license": "Public domain (PD editions only)",
-  "provenance_note": "Sappho's surviving lyric fragments. Only PD critical editions enter the canon; modern reconstructions and translations under copyright are excluded per the canon's copyright discipline.",
-  "constitutional_role": "Foundational Greek lyric. The text most closely engaged in the Crimson Hexagonal corpus's worked examples (Shadow-Sappho 31; the Sappho 31 / Catullus 51 alignment). A primary text of the descent into desire and loss.",
-  "status": "STUB — fragments not yet populated. Sappho 31 is a v1 priority for inclusion."
+  "edition_reference": "Voigt 1971 (Sappho et Alcaeus) for the Greek text; public-domain critical editions (Wharton 1885, Edmonds 1922) for fragments not subject to reconstruction",
+  "license": "Public domain (Voigt Greek text); CC0 (Cranes translations and reconstructions deposited in the Crimson Hexagonal Archive)",
+  "constitutional_role": "The canon-as-sky constellation around the Sappho 31 central star. The full body of surviving Sapphic fragments will be populated incrementally; the first is Sappho 31 with the reconstructed fifth stanza (per Cranes), the central node of the Sappho Room. Each additional fragment populated here becomes a star in the Sappho-Room constellation.",
+  "populated_fragments": [
+    {
+      "id": "sappho-31",
+      "title": "Sappho 31 — φαίνεταί μοι (the κῆνος Poem)",
+      "status": "CANONICAL, populated with Cranes reconstruction including the fifth stanza",
+      "path": "sappho-31/",
+      "role_in_constellation": "central / bright star"
+    }
+  ],
+  "pending_population": "The remaining Sapphic fragments live in cha primarily through Day and Night (AXN:007F). They can be populated here individually as the canon-as-sky generator needs structural data for each.",
+  "containing_room_in_cha": {
+    "room": "The Sappho Room (r.01)",
+    "anchor_document": "Day and Night by Rebekah Cranes (AXN:007F)",
+    "anchor_in_sources": "../cranes-day-and-night/",
+    "axns": ["AXN:006D", "AXN:0066"],
+    "operator": "σ_S — voice becoming substrate",
+    "status_note": "The room itself is liquidated per AXN:006E; its contents remain in cha."
+  }
 }

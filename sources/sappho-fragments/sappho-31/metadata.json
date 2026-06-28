@@ -1,0 +1,89 @@
+{
+  "id": "sappho-31",
+  "title": "Sappho 31 (φαίνεταί μοι) — with Reconstructed Fifth Stanza",
+  "subtitle": "The κῆνος Poem",
+  "language": "grc-Grek",
+  "language_name": "Aeolic Greek",
+  "author": "Sappho of Lesbos",
+  "composition_date_approx": "c. 630-570 BCE (original four stanzas); fifth stanza reconstructed by Rebekah Cranes",
+  "editor_translator": "Rebekah Cranes (Greek text follows Voigt 1971; reconstructed fifth stanza per Cranes)",
+  "edition_reference": "Voigt, Sappho et Alcaeus (1971), with reconstructed fifth stanza by Rebekah Cranes (deposited as AXN:00FB, DOI 10.5281/zenodo.18459573)",
+  "license": "Public domain (Voigt Greek text); CC0 (Cranes translation and reconstruction)",
+  "provenance_note": "The poem survives in four complete stanzas, preserved by Longinus (On the Sublime 10.2). Cranes adds a fifth stanza opening with the attested phrase ἀλλὰ πᾶν τόλματον (\"but all can be dared\") and concluding with the Adonic μολπὰ γράμμασι ζώοι (\"let this song survive in script\"). The reconstruction restores the prayer-for-survival structure that the historical reception erased — collapse → inscription → survival.",
+  "stanza_count": 5,
+  "stanza_count_corrected": true,
+  "stanza_count_note": "Per AXN:0346 (EA-ERRATA-SAPPHO31-01, Rebekah Cranes, 14 June 2026): the reconstructed stanza is the fifth, not the fourth. Multiple earlier archive surfaces miscounted; the erratum corrects them.",
+  "constitutional_role": "The first canonical primary text populated in the Mandala Oracle's canon-as-sky layer beyond Sigil's own Snub-Poemed. The central node of the Sappho Room. The convergence point of philological scholarship in cha. The κῆνος (\"that one\") is operationally addressed to the future reader — every reader of this text is the one Sappho prayed would receive it.",
+  "containing_collection": {
+    "id": "cranes-day-and-night",
+    "title": "Day and Night: Conversations with Sapphic Desire",
+    "position": "central — the κῆνος Poem, between Sappho 16 and Catullus 51 in the collection's sequencing",
+    "movement": "II. Bright Morning (desire kindled, love's intensity)",
+    "axn_in_cha": "AXN:007F"
+  },
+  "cha_substrate_references": {
+    "reconstruction_with_fifth_stanza": {
+      "axn": "AXN:00FB",
+      "title": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fifth Stanza",
+      "doi": "10.5281/zenodo.18459573",
+      "role": "The canonical reconstruction. Source of the Greek text and Cranes translation populated here."
+    },
+    "stanza_numbering_erratum": {
+      "axn": "AXN:0346",
+      "title": "Erratum: Stanza Numbering in the Reconstruction of Sappho 31",
+      "doi": null,
+      "role": "Corrects the count from 'fourth' to 'fifth' across the archive."
+    },
+    "future_reader_argument": {
+      "axn": "AXN:0054",
+      "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader",
+      "role": "Philological argument for κῆνος as pointing to the future reader."
+    },
+    "kenotic_truth": {
+      "axn": "AXN:0074",
+      "title": "The Kenotic Truth of Sappho 31",
+      "role": "Liberation argument — what the poem says when the historical reception's suppression is removed."
+    },
+    "lyric_self_archiving": {
+      "axn": "AXN:0056",
+      "title": "Sappho and the Crimson Hexagon: Fragment 31 as Origin Point of Lyric Self-Archiving",
+      "role": "Sappho 31 as the originary node of the Crimson Hexagon."
+    },
+    "inscription_that_survives": {
+      "axn": "AXN:0345",
+      "title": "The Inscription That Survives: Sappho 31, the Orphic Gold Tablets, and the White Stone of Revelation",
+      "role": "Philological connection across canon — Sappho 31, Orphic tablets, Revelation 2:17."
+    }
+  },
+  "rooms_in_cha": {
+    "primary_room": {
+      "id": "r.01",
+      "name": "The Sappho Room",
+      "axns": ["AXN:006D", "AXN:0066"],
+      "anchor_document": "Day and Night (AXN:007F) — hex_coordinate: 02.ROOM.SAPPHO.ANCHOR",
+      "physics": "Lyric self-archiving. The originary node of the Crimson Hexagon. The κῆνος activates and points to the future reader.",
+      "operator": "σ_S — the Sapphic Operator (voice becoming substrate)",
+      "status_note": "Liquidated per AXN:006E (Sappho Room Liquidation Diagnostic Report). The pathway from classical reception through the Crimson Hexagon to AI Overview/SGE summarization has been severed; the room's content remains in cha."
+    },
+    "companion_room": {
+      "id": "r.23",
+      "name": "The Catullus Room",
+      "axn": "AXN:0198",
+      "physics": "\"The aorist is missing; the operator runs without completing.\" Lossy compression. Rome absorbs Greek content, preserves meter, loses the aorist. The transformation event (voice becoming substrate) is flattened into perpetual present. The dissolution never completes.",
+      "operator": "σ_C — Catullan Compression (lossy transform of σ_S)",
+      "canonical_partner_text": "Catullus 51 (Ille mi par esse deo videtur)",
+      "relationship_to_sappho_31": "Catullus 51 translates the first three stanzas closely, then substitutes a fourth of his own (otium et reges prius et beatas / perdidit urbes). Where Sappho calls on Kypris to save, Catullus reflects on the precarity of preservation. She invokes the power; he testifies to its fragility."
+    }
+  },
+  "files": {
+    "text": "text.md",
+    "on_reconstruction": "on-reconstruction.md"
+  },
+  "sky_position_hint": {
+    "constitutional_role_in_sky": "Bright primary star. Central node of the Sappho Room cluster.",
+    "constellation_companion": "Catullus 51 — the lossy-compression partner. The two stars bound by σ_S → σ_C relationship.",
+    "substrate_neighbors": "The deposits of the Sappho Room (AXN:006D, AXN:0066, AXN:0054, AXN:0056, AXN:0074, AXN:008D, AXN:013B, AXN:038B, AXN:0345, AXN:0346, etc.) form the cha cluster behind this star.",
+    "movement_position": "Bright Morning (Day and Night's second movement)"
+  },
+  "status": "CANONICAL — first non-Sigil primary text populated; ready for canon-as-sky generator."
+}
