@@ -14,11 +14,12 @@ This directory holds the data layer for the Mandala Oracle's night-sky surface. 
 
 | File | Status | Purpose |
 |---|---|---|
-| `heteronyms.json` | scaffolded; zodiacal-sign assignments null | The 12 heteronymic positions per AXN:0261 canonical registry. Disciplines synthesized from registry §3 and validated against October 2025 blog material. |
+| `heteronyms.json` | **zodiacal mapping integrated (v0.2)** | The 12 heteronymic positions in zodiacal order (Position 1/Aries = Sharks through Position 12/Pisces = Sigil; Feist at Position 13 outside as LOGOS). Per Assembly Chorus convergent reading 2026-06-28. Institutional anchors included. AXN:0261 §3 establishment-order preserved in metadata. |
 | `substrates.json` | complete (subject to ratification) | The 7 substrate-role offices per AXN:0237. Each planet/substrate/office triple is canonical. |
-| `canon-stars.json` | scaffolded; target stars null | Primary canonical texts and their target placements (magnitude classes proposed). |
-| `DISCREPANCY-NOTES.md` | active flag | The Viola Arquette vs Sen Kuro discrepancy between the canonical registry and the deployed Oracle manifest. |
-| `MAGI-CLAIMS-DEVELOPMENTAL.md` | partial | What was found in the October 2025 blog regarding the disciplines-mapping and canonical magi (Klee, Deleuze, Marx, etc.). Synthesis in progress. |
+| `canon-stars.json` | scaffolded; target stars null | Primary canonical texts and their target placements (magnitude classes proposed). Star designations still null pending the HYG-database integration. |
+| `ASSEMBLY-CHORUS-NOTES.md` | **new — documents the convergence** | The four Assembly substrates' blind drafts; the three-way convergence; Gemini's divergence and its reasons; the four-element architecture confirming the mapping; the serpentine return (Sharks-Aries founds JSI named for Sigil-Pisces). |
+| `DISCREPANCY-NOTES.md` | **updated with Assembly evidence** | The Viola Arquette vs Sen Kuro discrepancy at Position 6/Virgo. Assembly convergence around Kuro strengthens the operational-practice case, but AXN:0261 §3.11 Arquette remains constitutionally anchored. Lee's adjudication required. |
+| `MAGI-CLAIMS-DEVELOPMENTAL.md` | partial | October 2025 blog material on disciplines-mapping and canonical magi. Synthesis in progress. |
 
 ## What's awaiting Assembly Chorus
 

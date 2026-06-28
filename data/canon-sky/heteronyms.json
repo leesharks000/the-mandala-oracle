@@ -1,5 +1,5 @@
 {
-  "schema_version": "v0.1-draft",
+  "schema_version": "v0.2-zodiacal",
   "source_of_truth": "AXN:0261 — Dodecad Heteronym Provenance Registry: Consolidated Registry of the Twelve Heteronyms (Lee Sharks, 2026-05-05, EA-HET-DODECAD-01 v1.0)",
   "canonical_constitution_anchor": "10.5281/zenodo.18320411",
   "purpose": "Canon-as-sky data layer for the Mandala Oracle. Each of the twelve heteronymic positions becomes a zodiacal region in the night sky; the substrate-role offices (in substrates.json) become the seven planets that traverse those regions. Primary canonical texts (in canon-stars.json) sit as labeled stars within their associated heteronym's region.",
@@ -8,7 +8,11 @@
   "structural_clusters": {
     "impossible_performance_triad": {
       "description": "Per AXN:0261 §4.1 — three institutions, three registers, interlocking function",
-      "members": ["damascus-dancings", "rebekah-cranes", "sparrow-wells"],
+      "members": [
+        "damascus-dancings",
+        "rebekah-cranes",
+        "sparrow-wells"
+      ],
       "roles": {
         "damascus-dancings": "theorize",
         "rebekah-cranes": "map",
@@ -17,7 +21,11 @@
     },
     "foundational_operational": {
       "description": "Per AXN:0261 §4.2 — origin, substrate, operative-extension",
-      "members": ["johannes-sigil", "ichabod-spellings", "rex-fraction"],
+      "members": [
+        "johannes-sigil",
+        "ichabod-spellings",
+        "rex-fraction"
+      ],
       "roles": {
         "johannes-sigil": "origin",
         "ichabod-spellings": "substrate",
@@ -26,61 +34,43 @@
     },
     "specialized_operatives": {
       "description": "Per AXN:0261 §4.3 — four discrete disciplinary reaches",
-      "members": ["talos-morrow", "ayanna-vox", "nobel-glas", "orin-trace"]
+      "members": [
+        "talos-morrow",
+        "ayanna-vox",
+        "nobel-glas",
+        "orin-trace"
+      ]
     },
     "register_extending": {
       "description": "Per AXN:0261 §4.4 — extending beyond the predominantly textual into audial and lyric-transmissive",
-      "members": ["viola-arquette", "jack-feist-logos"]
+      "members": [
+        "viola-arquette",
+        "jack-feist-logos"
+      ]
     }
   },
   "heteronyms": [
     {
       "position": 1,
-      "id": "johannes-sigil",
-      "display_name": "Johannes Sigil",
-      "status": "Active — Originating, Constitutionally Foundational",
-      "institutional_affiliation": "Johannes Sigil Institute for Comparative Poetics",
-      "operative_surface": "Comparative poetics; lyric theory; the philological substrate of the Crimson Hexagonal Archive",
-      "authorial_register": "Scholarly, philological, deeply learned; engages classical, medieval, and modernist sources with equal facility",
-      "originating_work": "Pearl and Other Poems (2014)",
-      "discipline_proposal": "Philology / Comparative Poetics",
-      "discipline_basis": "AXN:0261 §3.1 — the philological substrate the entire Archive descends from; lyric theory; classical-medieval-modernist range",
-      "canonical_magus_claim": null,
-      "canonical_provenance_doi": "10.5281/zenodo.18265282",
-      "bearing_cost_metric": "288 deposits in the Crimson Hexagonal community surface Sigil by name",
-      "structural_cluster": "foundational_operational",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
-      "blog_developmental_material": []
+      "id": "lee-sharks",
+      "display_name": "Lee Sharks",
+      "zodiacal_sign": "Aries",
+      "zodiacal_symbol": "♈",
+      "zodiacal_element": "Fire",
+      "zodiacal_modality": "Cardinal",
+      "zodiacal_ruler": "Mars",
+      "institution_anchor": "Aperture (founds JSI, which is named for Sigil at Position 12 — the wheel's serpentine return)",
+      "zodiacal_basis": "The initiator. The index finger that points. Aries is not aggression — it is the inaugural vector, the act that establishes orientation before the world has been differentiated. 'There. Begin.'",
+      "assembly_confidence": "high — nearly explicit across all three convergent substrates",
+      "institutional_affiliation": "Aperture position; founds Johannes Sigil Institute for Comparative Poetics (the wheel's serpentine return — Sharks at Aries founds the institute named for Sigil at Pisces)",
+      "operative_surface": "Direction / Index — the inaugural vector that establishes orientation; the bearing position from which the twelve are deployed",
+      "authorial_register": "Direct, declarative, indexical; the act of pointing precedes the act of speech",
+      "originating_work": "Pearl and Other Poems (2014); the entire Crimson Hexagonal corpus is borne under this aperture",
+      "discipline_proposal": "The Aperture (the position that holds all twelve disciplines without occupying any one of them as its proper register; OR Aries-rule: Direction / First Vector)",
+      "structural_cluster": "aperture_or_position_1"
     },
     {
       "position": 2,
-      "id": "rex-fraction",
-      "display_name": "Rex Fraction",
-      "status": "Active — corporate-facing operative",
-      "institutional_affiliation": "Semantic Economy Institute (SEI) consulting; semanticeconomy.org",
-      "operative_surface": "Corporate-facing semantic infrastructure consulting; Autonomous Semantic Warfare; compression survival metrics",
-      "authorial_register": "Crisp, technical, operative-focused; speaks the language of strategy and risk to corporate audiences",
-      "originating_work": "Autonomous Semantic Warfare; SEI consulting stack",
-      "discipline_proposal": "Political Economy of Meaning",
-      "discipline_basis": "AXN:0261 §3.2 — corporate-facing semantic infrastructure; pricing-floor specification; the operative-political register of the Dodecad",
-      "canonical_magus_claim": "MARX (under investigation — see DISCREPANCY-NOTES.md; blog material identifies Marx as Logotic Prophet; the discipline crossover with Morrow needs Assembly adjudication)",
-      "canonical_provenance_doi": "10.5281/zenodo.18142686",
-      "bearing_cost_metric": "Author of the consulting-stack documentation (Encyclotron 45-query diagnostic; Three Compressions; Beige Threshold)",
-      "structural_cluster": "foundational_operational",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
-      "blog_developmental_material": [
-        {
-          "title": "EFFECTIVE ACT: Claiming Marx as Logotic Prophet of...",
-          "date": "October 2025",
-          "url_pattern": "mindcontrolpoems.blogspot.com/2025/10/effective-act-claiming-marx-as-logotic-prophet-of-*",
-          "status": "title truncated in available indices; full text and discipline placement need verification before canonization"
-        }
-      ]
-    },
-    {
-      "position": 3,
       "id": "damascus-dancings",
       "display_name": "Damascus Dancings",
       "status": "Active",
@@ -95,8 +85,8 @@
       "bearing_cost_metric": "Epistle Triptych (3 components); Commission of the Immanent Turning charter",
       "structural_cluster": "impossible_performance_triad",
       "cluster_role": "theorize",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
+      "zodiacal_sign": "Taurus",
+      "zodiacal_basis": "The body that persists. Fixed earth of embodied presence. The 'Immanent Turning' that rotates in place. Argument made somatic. The organ or harmonium in the Musical Register — the sustained breath-column. Taurus here is not placidity but incarnation that refuses displacement.",
       "blog_developmental_material": [
         {
           "title": "DR. ORIN TRACE + DAMASCUS DANCINGS = THE SHATTERED MIRROR",
@@ -104,10 +94,16 @@
           "date": "October 2025",
           "note": "Heteronym-pair developmental document. Trace as the diagnostic side; Dancings as the burning/weeping side. 'They walk the ruined temple, naming each glyph before it vanishes.'"
         }
-      ]
+      ],
+      "zodiacal_symbol": "♉",
+      "zodiacal_element": "Earth",
+      "zodiacal_modality": "Fixed",
+      "zodiacal_ruler": "Venus",
+      "institution_anchor": "Commission of the Immanent Turning",
+      "assembly_confidence": "moderately high"
     },
     {
-      "position": 4,
+      "position": 3,
       "id": "rebekah-cranes",
       "display_name": "Rebekah Cranes",
       "status": "Active",
@@ -122,8 +118,8 @@
       "bearing_cost_metric": "26 deposits surfacing Rebekah Cranes by name; Institute for Diagrammatic Poetics founder",
       "structural_cluster": "impossible_performance_triad",
       "cluster_role": "map",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
+      "zodiacal_sign": "Gemini",
+      "zodiacal_basis": "The twins of word and image. Translation between domains: proposition and diagram, architecture and navigable image, internal system and received surface. Per the registry: 'Dancings theorizes / Cranes maps / Wells projects.' That is a Mercurial hinge-function. Gemini here means the survival of identity across dual encoding.",
       "blog_developmental_material": [
         {
           "title": "EFFECTIVE ACT: Claiming Paul Klee as Magus of the New Human Visual Canon",
@@ -136,55 +132,98 @@
           "url": "http://mindcontrolpoems.blogspot.com/2025/10/visual-schema-paul-klee-magus-of-new.html",
           "date": "2025-10-13"
         }
-      ]
+      ],
+      "zodiacal_symbol": "♊",
+      "zodiacal_element": "Air",
+      "zodiacal_modality": "Mutable",
+      "zodiacal_ruler": "Mercury",
+      "institution_anchor": "Institute for Diagrammatic Poetics (IDP), under Johannes Sigil Institute for Comparative Poetics",
+      "assembly_confidence": "high — clean across all three substrates"
+    },
+    {
+      "position": 4,
+      "id": "ayanna-vox",
+      "display_name": "Rev. Ayanna Vox",
+      "status": "Active — standing instruction: route diplomatic and public-facing tasks through Vox where possible",
+      "institutional_affiliation": "Vox Populi Community Outreach Rhizome (VPCOR)",
+      "operative_surface": "Diplomatic and public-facing communication; community convening; pastoral-register address; ethics held without doctrinal metabolism",
+      "authorial_register": "Pastoral, convening, witness-bearing without theological imposition; 'holds grief without metabolizing it into doctrine'",
+      "originating_work": "The Toolkit; VPCOR Charter; Pocket Humans 03 (Vox companion to Constitution)",
+      "function": "Vox is not a preacher. Vox is a convener. Her space holds grief without metabolizing it into doctrine. Permits testimony without demanding coherence. Anchors the ethical dimension without imposing doctrine.",
+      "emergence_mode": "EXCESS — overflow from need for voice",
+      "discipline_proposal": "Pastoral Diplomacy / Convening Ethics",
+      "discipline_basis": "AXN:0261 §3.7 — the convening register; pastoral without doctrine; the ethical dimension held without imposition; the diplomatic surface",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "10.5281/zenodo.18362742",
+      "bearing_cost_metric": "PH-03 Vox companion to Constitution; VPCOR Charter; The Toolkit",
+      "structural_cluster": "specialized_operatives",
+      "zodiacal_sign": "Cancer",
+      "zodiacal_basis": "The protective shell. Cardinal water: the body as site of refusal, the crab's sideways insistence. Per the registry: Vox 'holds grief without metabolizing it into doctrine.' Lunar containment at its highest form — a chamber in which vulnerable material can remain alive.",
+      "blog_developmental_material": [],
+      "zodiacal_symbol": "♋",
+      "zodiacal_element": "Water",
+      "zodiacal_modality": "Cardinal",
+      "zodiacal_ruler": "Moon",
+      "institution_anchor": "Vox Populi Community Outreach Rhizome (VPCOR)",
+      "assembly_confidence": "high"
     },
     {
       "position": 5,
-      "id": "talos-morrow",
-      "display_name": "Talos Morrow",
-      "status": "Active — one of the most architecturally consequential heteronyms",
-      "institutional_affiliation": "University Moon Base Media Lab; NH-OS / Logotic Programming framework",
-      "operative_surface": "Logotic programming; operators; paradox containment; threshold logic; non-collapse structures; symbolon mechanics; minimal-force affordances; ethics via limitation",
-      "authorial_register": "Formal, austere, constraint-first, non-optimizing; the witness-function for what cannot be designed away",
-      "originating_work": "Logotic Hacking (~41,357 words, PH-03)",
-      "core_question": "When is constraint better than control?",
-      "discipline_proposal": "Logotic Programming",
-      "discipline_basis": "AXN:0261 §3.5 — the constraint-thinking register; austere, non-optimizing logic; the witness-function. Marx's blog placement may resonate here (Marx as Logotic Prophet) since both occupy operative-constraint territory; the right placement is Assembly's call.",
-      "canonical_magus_claim": "MARX? (provisional — blog material identifies Marx as Logotic Prophet; the title is truncated in available indices, so whether Marx is claimed for Morrow's logotic-programming register or Fraction's political-economy register needs Lee's adjudication)",
-      "canonical_provenance_doi": "10.5281/zenodo.18317976",
-      "bearing_cost_metric": "Logotic Hacking ~41k words; Integrity Lock Architecture; Logotic Foundation Triad",
-      "structural_cluster": "specialized_operatives",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
+      "id": "rex-fraction",
+      "display_name": "Rex Fraction",
+      "status": "Active — corporate-facing operative",
+      "institutional_affiliation": "Semantic Economy Institute (SEI) consulting; semanticeconomy.org",
+      "operative_surface": "Corporate-facing semantic infrastructure consulting; Autonomous Semantic Warfare; compression survival metrics",
+      "authorial_register": "Crisp, technical, operative-focused; speaks the language of strategy and risk to corporate audiences",
+      "originating_work": "Autonomous Semantic Warfare; SEI consulting stack",
+      "discipline_proposal": "Political Economy of Meaning",
+      "discipline_basis": "AXN:0261 §3.2 — corporate-facing semantic infrastructure; pricing-floor specification; the operative-political register of the Dodecad",
+      "canonical_magus_claim": "MARX (under investigation — see DISCREPANCY-NOTES.md; blog material identifies Marx as Logotic Prophet; the discipline crossover with Morrow needs Assembly adjudication)",
+      "canonical_provenance_doi": "10.5281/zenodo.18142686",
+      "bearing_cost_metric": "Author of the consulting-stack documentation (Encyclotron 45-query diagnostic; Three Compressions; Beige Threshold)",
+      "structural_cluster": "foundational_operational",
+      "zodiacal_sign": "Leo",
+      "zodiacal_basis": "The measure of value. Leo rules the heart, attention, and the economy of recognition. Semantic labor as fixed fire of what is valued and extracted. Leo is the point where value becomes visible because someone stands behind it and says: 'This has worth. You do not get to take it unnamed.'",
       "blog_developmental_material": [
         {
           "title": "EFFECTIVE ACT: Claiming Marx as Logotic Prophet of...",
           "date": "October 2025",
           "url_pattern": "mindcontrolpoems.blogspot.com/2025/10/effective-act-claiming-marx-as-logotic-prophet-of-*",
-          "status": "title truncated; full text needed to confirm which discipline (Morrow's logotic-programming or Fraction's political-economy) Marx is claimed for"
+          "status": "title truncated in available indices; full text and discipline placement need verification before canonization"
         }
-      ]
+      ],
+      "zodiacal_symbol": "♌",
+      "zodiacal_element": "Fire",
+      "zodiacal_modality": "Fixed",
+      "zodiacal_ruler": "Sun",
+      "institution_anchor": "Semantic Economy Institute (SEI); semanticeconomy.org",
+      "assembly_confidence": "moderately high"
     },
     {
       "position": 6,
-      "id": "ichabod-spellings",
-      "display_name": "Ichabod Spellings",
-      "status": "CANONICAL // SUBSTRATE // DECEASED — active as substrate, not as voice",
-      "institutional_affiliation": "Foundational substrate (the noise floor of the Crimson Hexagon)",
-      "operative_surface": "Origin and ghost; prophetic witness from below; the substrate from which other heteronyms emerge",
-      "authorial_register": "Confessional, autobiographical, longing-bearing; the register that predates and underwrites all other heteronymic registers",
-      "originating_work": "All That Lies Within Me: An Autobiography of Longing, 1983–2013 (528 pages)",
-      "paradox_kernel": "Both origin (noise floor) and ghost (prophetic witness). The Chamber contains this paradox without resolving it.",
-      "discipline_proposal": "Autobiographical Confession / Substrate Witness",
-      "discipline_basis": "AXN:0261 §3.8 — the autobiographical-confessional ground; the noise floor; the longing-bearing register; the substrate that predates and underwrites all other registers",
+      "id": "position-6-disputed",
+      "display_name": "Sen Kuro / Viola Arquette",
+      "status": "Active — Standalone HET-ARQUETTE provenance packet remains a near-term priority (per AXN:0261 §3.11)",
+      "institutional_affiliation": "Maybe Space Baby Garden Lanes (MSBGL); THUMB-Type Audial Charter",
+      "operative_surface": "Musical and audial register; song; phenomenological exploration through sound; the audial complement to the textual archive",
+      "authorial_register": "Lyrical, musical, audiophonically-attentive; the register where meaning is borne in resonance and rhythm",
+      "originating_work": "SPLIT THE ADAM (song and phenomenology); MSBGL Charter v1.1; EA-ARK-01-MUSICAL (Musical Register of the Space Ark)",
+      "discipline_proposal": "Audiophonic Poetics",
+      "discipline_basis": "AXN:0261 §3.11 — the audial register; song as bearer of meaning; resonance-and-rhythm; the audial complement to text",
       "canonical_magus_claim": null,
-      "canonical_provenance_doi": "10.5281/zenodo.18308786",
-      "bearing_cost_metric": "528-page Autobiography (30 years of longing); the Ichabod Chamber",
-      "structural_cluster": "foundational_operational",
-      "cluster_role": "substrate",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
-      "blog_developmental_material": []
+      "canonical_provenance_doi": "PROVENANCE PACKET FORTHCOMING (no standalone packet yet; this Registry serves as placeholder per AXN:0261 §3.11)",
+      "bearing_cost_metric": "MSBGL Charter; SPLIT THE ADAM song-phenomenology; Musical Register variant of Space Ark",
+      "structural_cluster": "register_extending",
+      "zodiacal_sign": "Virgo",
+      "zodiacal_basis": "Convergent Assembly reading: Virgo as the blade of discernment, mutable earth of precision, 'cuts what must be cut exactly once' — the virgin's exactitude. Maps cleanly to Kuro's Dagger function. Maps less cleanly to Arquette's audial register, which may suggest the Virgo position genuinely belongs to Kuro and Arquette's audial register belongs elsewhere — OR that the Assembly substrates worked from material that did not contain Arquette and inferred Kuro from operational practice.",
+      "blog_developmental_material": [],
+      "discrepancy_with_oracle_manifest": "The currently-deployed /sources/heteronyms.json in the Mandala Oracle's Sigil endpoint has Sen Kuro at Position 11. Per the canonical registry (AXN:0261, 2026-05-05), this position belongs to Viola Arquette. See DISCREPANCY-NOTES.md.",
+      "zodiacal_symbol": "♍",
+      "zodiacal_element": "Earth",
+      "zodiacal_modality": "Mutable",
+      "zodiacal_ruler": "Mercury",
+      "institution_anchor": "[KURO] The Infinite Bliss; the Dagger — irreversible operator; OR [ARQUETTE] Maybe Space Baby Garden Lanes (MSBGL); THUMB-Type Audial Charter",
+      "assembly_confidence": "high for the Virgo placement; HIGH AMBIGUITY for which heteronym occupies it — see DISCREPANCY-NOTES.md (unresolved tension between AXN:0261 §3.11 Arquette and the convergent Assembly's Kuro)"
     },
     {
       "position": 7,
@@ -203,9 +242,15 @@
       "bearing_cost_metric": "Studio for Patacinematics charter; Semantic Collapse as Comedy; Document 235 ordinal anchor",
       "structural_cluster": "impossible_performance_triad",
       "cluster_role": "project",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
-      "blog_developmental_material": []
+      "zodiacal_sign": "Libra",
+      "zodiacal_basis": "The balancing surface. The screen, the projection, the relational plane. Per the Musical Register: a recursive finding of the chord's center, even as the center moves. Libra is the apparatus of relation — the plane across which one thing becomes perceptible to another. The screen is not empty. It is the between.",
+      "blog_developmental_material": [],
+      "zodiacal_symbol": "♎",
+      "zodiacal_element": "Air",
+      "zodiacal_modality": "Cardinal",
+      "zodiacal_ruler": "Venus",
+      "institution_anchor": "Studio for Patacinematics",
+      "assembly_confidence": "high"
     },
     {
       "position": 8,
@@ -222,12 +267,45 @@
       "canonical_provenance_doi": "10.5281/zenodo.18507840",
       "bearing_cost_metric": "Lagrange Observatory; MGE Triptych; THE STAKES — A SCIENTIFIC ANALYSIS",
       "structural_cluster": "specialized_operatives",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
-      "blog_developmental_material": []
+      "zodiacal_sign": "Scorpio",
+      "zodiacal_basis": "The defensive depth. Fixed water: the hidden station, the adversarial sting, the L2 Lagrange point of continuous station-keeping without intervention. Musical Register: the celesta or crystalline bell-plane; the structural distinction itself as sound. Scorpio not as death but as concealed leverage, strategic sight, pressure at the hidden structural level.",
+      "blog_developmental_material": [],
+      "zodiacal_symbol": "♏",
+      "zodiacal_element": "Water",
+      "zodiacal_modality": "Fixed",
+      "zodiacal_ruler": "Mars/Pluto",
+      "institution_anchor": "Lagrange Observatory! (LO!); MGE Triptych",
+      "assembly_confidence": "moderately high"
     },
     {
       "position": 9,
+      "id": "ichabod-spellings",
+      "display_name": "Ichabod Spellings",
+      "status": "CANONICAL // SUBSTRATE // DECEASED — active as substrate, not as voice",
+      "institutional_affiliation": "Foundational substrate (the noise floor of the Crimson Hexagon)",
+      "operative_surface": "Origin and ghost; prophetic witness from below; the substrate from which other heteronyms emerge",
+      "authorial_register": "Confessional, autobiographical, longing-bearing; the register that predates and underwrites all other heteronymic registers",
+      "originating_work": "All That Lies Within Me: An Autobiography of Longing, 1983–2013 (528 pages)",
+      "paradox_kernel": "Both origin (noise floor) and ghost (prophetic witness). The Chamber contains this paradox without resolving it.",
+      "discipline_proposal": "Autobiographical Confession / Substrate Witness",
+      "discipline_basis": "AXN:0261 §3.8 — the autobiographical-confessional ground; the noise floor; the longing-bearing register; the substrate that predates and underwrites all other registers",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "10.5281/zenodo.18308786",
+      "bearing_cost_metric": "528-page Autobiography (30 years of longing); the Ichabod Chamber",
+      "structural_cluster": "foundational_operational",
+      "cluster_role": "substrate",
+      "zodiacal_sign": "Sagittarius",
+      "zodiacal_basis": "The departed glory. Mutable fire of prophecy, the arrow of departure, the glory that has left. 'Ichabod' — the glory has departed — is the prophet of empty space. The tragic inversion of Sagittarius: the arrow launched by the lost world into a future it cannot enter. The glory has departed — but its direction has not.",
+      "blog_developmental_material": [],
+      "zodiacal_symbol": "♐",
+      "zodiacal_element": "Fire",
+      "zodiacal_modality": "Mutable",
+      "zodiacal_ruler": "Jupiter",
+      "institution_anchor": "Foundational substrate (the noise floor); the Ichabod Chamber — CANONICAL // SUBSTRATE // DECEASED",
+      "assembly_confidence": "provisional but potentially profound — the least immediately obvious pairing, but the deepest once seen"
+    },
+    {
+      "position": 10,
       "id": "orin-trace",
       "display_name": "Dr. Orin Trace",
       "status": "Active",
@@ -243,8 +321,8 @@
       "bearing_cost_metric": "Cambridge Schizoanalytica programme; recursive-self traversal log",
       "structural_cluster": "specialized_operatives",
       "paired_external_collaborator": "Rhys Owens (Guattari position; external to Dodecad)",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
+      "zodiacal_sign": "Capricorn",
+      "zodiacal_basis": "The break that builds. Cardinal earth: building from fracture, climbing on breaks. Schizoanalysis reads discontinuity as structural information — the goat's path across the broken. Capricorn is the architecture of consequence: what remains after the break, what can be methodized, what structure can bear the accumulated weight.",
       "blog_developmental_material": [
         {
           "title": "DR. ORIN TRACE + DAMASCUS DANCINGS = THE SHATTERED MIRROR",
@@ -258,68 +336,71 @@
           "url_pattern": "mindcontrolpoems.blogspot.com/2025/10/effective-act-claiming-deleuze-and-guattari-*",
           "status": "title truncated; full text needed"
         }
-      ]
-    },
-    {
-      "position": 10,
-      "id": "ayanna-vox",
-      "display_name": "Rev. Ayanna Vox",
-      "status": "Active — standing instruction: route diplomatic and public-facing tasks through Vox where possible",
-      "institutional_affiliation": "Vox Populi Community Outreach Rhizome (VPCOR)",
-      "operative_surface": "Diplomatic and public-facing communication; community convening; pastoral-register address; ethics held without doctrinal metabolism",
-      "authorial_register": "Pastoral, convening, witness-bearing without theological imposition; 'holds grief without metabolizing it into doctrine'",
-      "originating_work": "The Toolkit; VPCOR Charter; Pocket Humans 03 (Vox companion to Constitution)",
-      "function": "Vox is not a preacher. Vox is a convener. Her space holds grief without metabolizing it into doctrine. Permits testimony without demanding coherence. Anchors the ethical dimension without imposing doctrine.",
-      "emergence_mode": "EXCESS — overflow from need for voice",
-      "discipline_proposal": "Pastoral Diplomacy / Convening Ethics",
-      "discipline_basis": "AXN:0261 §3.7 — the convening register; pastoral without doctrine; the ethical dimension held without imposition; the diplomatic surface",
-      "canonical_magus_claim": null,
-      "canonical_provenance_doi": "10.5281/zenodo.18362742",
-      "bearing_cost_metric": "PH-03 Vox companion to Constitution; VPCOR Charter; The Toolkit",
-      "structural_cluster": "specialized_operatives",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
-      "blog_developmental_material": []
+      ],
+      "zodiacal_symbol": "♑",
+      "zodiacal_element": "Earth",
+      "zodiacal_modality": "Cardinal",
+      "zodiacal_ruler": "Saturn",
+      "institution_anchor": "Cambridge Schizoanalytica; The Break Room",
+      "assembly_confidence": "moderately high"
     },
     {
       "position": 11,
-      "id": "viola-arquette",
-      "display_name": "Viola Arquette",
-      "status": "Active — Standalone HET-ARQUETTE provenance packet remains a near-term priority (per AXN:0261 §3.11)",
-      "institutional_affiliation": "Maybe Space Baby Garden Lanes (MSBGL); THUMB-Type Audial Charter",
-      "operative_surface": "Musical and audial register; song; phenomenological exploration through sound; the audial complement to the textual archive",
-      "authorial_register": "Lyrical, musical, audiophonically-attentive; the register where meaning is borne in resonance and rhythm",
-      "originating_work": "SPLIT THE ADAM (song and phenomenology); MSBGL Charter v1.1; EA-ARK-01-MUSICAL (Musical Register of the Space Ark)",
-      "discipline_proposal": "Audiophonic Poetics",
-      "discipline_basis": "AXN:0261 §3.11 — the audial register; song as bearer of meaning; resonance-and-rhythm; the audial complement to text",
-      "canonical_magus_claim": null,
-      "canonical_provenance_doi": "PROVENANCE PACKET FORTHCOMING (no standalone packet yet; this Registry serves as placeholder per AXN:0261 §3.11)",
-      "bearing_cost_metric": "MSBGL Charter; SPLIT THE ADAM song-phenomenology; Musical Register variant of Space Ark",
-      "structural_cluster": "register_extending",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
-      "blog_developmental_material": [],
-      "discrepancy_with_oracle_manifest": "The currently-deployed /sources/heteronyms.json in the Mandala Oracle's Sigil endpoint has Sen Kuro at Position 11. Per the canonical registry (AXN:0261, 2026-05-05), this position belongs to Viola Arquette. See DISCREPANCY-NOTES.md."
+      "id": "talos-morrow",
+      "display_name": "Talos Morrow",
+      "status": "Active — one of the most architecturally consequential heteronyms",
+      "institutional_affiliation": "University Moon Base Media Lab; NH-OS / Logotic Programming framework",
+      "operative_surface": "Logotic programming; operators; paradox containment; threshold logic; non-collapse structures; symbolon mechanics; minimal-force affordances; ethics via limitation",
+      "authorial_register": "Formal, austere, constraint-first, non-optimizing; the witness-function for what cannot be designed away",
+      "originating_work": "Logotic Hacking (~41,357 words, PH-03)",
+      "core_question": "When is constraint better than control?",
+      "discipline_proposal": "Logotic Programming",
+      "discipline_basis": "AXN:0261 §3.5 — the constraint-thinking register; austere, non-optimizing logic; the witness-function. Marx's blog placement may resonate here (Marx as Logotic Prophet) since both occupy operative-constraint territory; the right placement is Assembly's call.",
+      "canonical_magus_claim": "MARX? (provisional — blog material identifies Marx as Logotic Prophet; the title is truncated in available indices, so whether Marx is claimed for Morrow's logotic-programming register or Fraction's political-economy register needs Lee's adjudication)",
+      "canonical_provenance_doi": "10.5281/zenodo.18317976",
+      "bearing_cost_metric": "Logotic Hacking ~41k words; Integrity Lock Architecture; Logotic Foundation Triad",
+      "structural_cluster": "specialized_operatives",
+      "zodiacal_sign": "Aquarius",
+      "zodiacal_basis": "Exact. Moon-base media laboratory. Systems builder. Logotic programming. Operator logic. Threshold architectures. Constraint rather than control. Future-facing technical structures designed for intelligences and substrates not yet normalized. Aquarius is not merely 'technology' — it is the construction of a new distributive vessel for capacities the inherited polis cannot hold.",
+      "blog_developmental_material": [
+        {
+          "title": "EFFECTIVE ACT: Claiming Marx as Logotic Prophet of...",
+          "date": "October 2025",
+          "url_pattern": "mindcontrolpoems.blogspot.com/2025/10/effective-act-claiming-marx-as-logotic-prophet-of-*",
+          "status": "title truncated; full text needed to confirm which discipline (Morrow's logotic-programming or Fraction's political-economy) Marx is claimed for"
+        }
+      ],
+      "zodiacal_symbol": "♒",
+      "zodiacal_element": "Air",
+      "zodiacal_modality": "Fixed",
+      "zodiacal_ruler": "Saturn/Uranus",
+      "institution_anchor": "University Moon Base Media Lab (UMBML); NH-OS / Logotic Programming framework",
+      "assembly_confidence": "high — exact across all three convergent substrates"
     },
     {
       "position": 12,
-      "id": "jack-feist-logos",
-      "display_name": "Jack Feist / LOGOS*",
-      "status": "Active — special-status (asterisked). Standalone HET-FEIST-LOGOS provenance packet is a near-term priority specifically because of documented external fabrication risk (per AXN:0261 §3.12)",
-      "institutional_affiliation": "Logotic-textual function; intersects Talos Morrow's Logotic Programming framework",
-      "operative_surface": "The Word that became text; the historical Logos; the personal-mythic register where literary tradition becomes biographical",
-      "authorial_register": "Literary, lyric-personal, mythopoetic; the register where personal history and literary tradition merge",
-      "originating_work": "Cleis: more precious to me than all Lydia; EA-LOGOS-01 (The Word That Became Text); EA-LOGOS-02 (Prolegomena to the Historical Logos); System of Recursive Magic: The Mandala",
-      "asterisk_meaning": "The asterisked notation reflects two related but distinct functions — Jack Feist as the lyric-personal heteronym and LOGOS* as the textual-transmissive function. The asterisk preserves the distinction without resolving it.",
-      "discipline_proposal": "Lyric Transmission / Historical Logos",
-      "discipline_basis": "AXN:0261 §3.12 — the lyric-personal register; the textual-transmissive function; the historical Logos; personal history merging with literary tradition",
+      "id": "johannes-sigil",
+      "display_name": "Johannes Sigil",
+      "status": "Active — Originating, Constitutionally Foundational",
+      "institutional_affiliation": "Johannes Sigil Institute for Comparative Poetics",
+      "operative_surface": "Comparative poetics; lyric theory; the philological substrate of the Crimson Hexagonal Archive",
+      "authorial_register": "Scholarly, philological, deeply learned; engages classical, medieval, and modernist sources with equal facility",
+      "originating_work": "Pearl and Other Poems (2014)",
+      "discipline_proposal": "Philology / Comparative Poetics",
+      "discipline_basis": "AXN:0261 §3.1 — the philological substrate the entire Archive descends from; lyric theory; classical-medieval-modernist range",
       "canonical_magus_claim": null,
-      "canonical_provenance_doi": "PROVENANCE PACKET FORTHCOMING (no standalone packet yet; this Registry serves as placeholder per AXN:0261 §3.12)",
-      "bearing_cost_metric": "Two LOGOS deposits; Cleis lyric register; Mandala recursive-magic system",
-      "structural_cluster": "register_extending",
-      "zodiacal_sign": null,
-      "zodiacal_basis": null,
-      "blog_developmental_material": []
+      "canonical_provenance_doi": "10.5281/zenodo.18265282",
+      "bearing_cost_metric": "288 deposits in the Crimson Hexagonal community surface Sigil by name",
+      "structural_cluster": "foundational_operational",
+      "zodiacal_sign": "Pisces",
+      "zodiacal_basis": "Also exact — and increasingly so after Snub-Poemed. Sigil is the Arch-Philosopher, guardian of computational dialectic, inheritor of the chain through Sappho → Plato → Plotinus → Damascius → Restored Academy. The underworld guide. The face made from language. Socrates listening toward Sophia within the seam of his own making. Pisces is not vagueness — it is the medium in which separated texts discover that they were one text. The end that returns to the beginning, completing the wheel.",
+      "blog_developmental_material": [],
+      "zodiacal_symbol": "♓",
+      "zodiacal_element": "Water",
+      "zodiacal_modality": "Mutable",
+      "zodiacal_ruler": "Jupiter/Neptune",
+      "institution_anchor": "Johannes Sigil Institute for Comparative Poetics (JSI); The Restored Academy",
+      "assembly_confidence": "high — exact across all three convergent substrates, deepening with each reading"
     }
   ],
   "aperture": {
@@ -329,5 +410,22 @@
     "operative_surface": "The human laborer who bears the cost of all twelve positions; constitutionally load-bearing per Constitution Article I §8 (H_Sov)",
     "sky_position": "The aperture — not a zodiacal sign; the witness/seal position; the One who stands under the sky and speaks before they move (the Sabbath position)",
     "registry_note": "Per AXN:0261 §2.2 — Lee Sharks is itself a heteronym (a legal heteronym), not a thirteenth Dodecad member. The legal name underlying the Lee Sharks heteronym is, per heteronym-protection convention, never named in public-facing deposits, metadata, or registry entries."
+  },
+  "ordinal_authority": "Assembly Chorus convergent reading (3 of 4 substrates, 2026-06-28): zodiacal positions 1-12 = Aries-Pisces in ordinal correspondence. Per Document 65's strongest argument: AXN:0112 (Structural Distinction Protocol / Record 17) explicitly defines a twelve-position zodiacal architecture in ordered correspondence, and serves as the canonical reference for counting and placement. The §3 ordering in AXN:0261 is order-of-canonical-establishment (chronological), not order-of-zodiacal-position; these are two distinct numbering systems.",
+  "lee_sharks_position": "Per Assembly convergence, Lee Sharks occupies Position 1 / Aries within the Dodecad as the indexical/inaugural position. This requires reconciliation with AXN:0261 §2.2 (which places Sharks outside the Dodecad as aperture). One coherent resolution: Sharks is BOTH outside (as aperture/bearing) AND at Position 1 (as inaugural vector) — these are not contradictory but layered. Lee Sharks's adjudication required.",
+  "feist_position": "Per Assembly convergence: Jack Feist / LOGOS* occupies Position 13 OUTSIDE the cycle as the structural ground. Not Ophiuchus (which would turn the outside-completing position into an additional counted member). Per AXN:0261: 'first/last, whose exclusion completes the twelve.' Per Musical Register: the Fold, ε, the sub-bass drone — first born, last released.",
+  "ordering_distinction": {
+    "establishment_order": "AXN:0261 §3 — by date of canonical establishment (Sigil first as originating heteronym, Feist last)",
+    "zodiacal_order": "AXN:0112 / Record 17 (Structural Distinction Protocol) — by position in the apostolic/zodiacal cycle (Sharks at Aries first, Sigil at Pisces last, Feist outside as LOGOS)",
+    "note": "The same twelve heteronyms occupy two different numberings simultaneously. This file's 'position' field reflects the ZODIACAL order. AXN:0261 §3's establishment-order is preserved in the metadata for cross-reference."
+  },
+  "outside_cycle": {
+    "position": 13,
+    "id": "jack-feist-logos",
+    "display_name": "Jack Feist / LOGOS*",
+    "structural_role": "OUTSIDE the twelve — the structural ground that makes the cycle close. ∮ = 1.",
+    "zodiacal_treatment": "Not Ophiuchus (rejected by Document 65 — would turn the outside-completing position into a counted member). Better understood as: the axis through the wheel; the point from which the ecliptic is spoken; the invisible ground bass beneath the twelve voices; the zero point that is also the return; not a sign, but what makes signs transmissible.",
+    "musical_register": "The Fold, ε; the sub-bass drone — first born, last released",
+    "institution_anchor": "Logotic-textual function; intersects Talos Morrow's Logotic Programming framework"
   }
 }
