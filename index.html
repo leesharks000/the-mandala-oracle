@@ -75,14 +75,10 @@
     </div>
 
     <div id="settings-panel" hidden aria-hidden="true">
-      <button class="settings-close" aria-label="Close settings">×</button>
-      <h3>Anthropic API Key</h3>
-      <p class="key-note">
-        Bring your own Anthropic key. It is sent over TLS to the Sigil endpoint, used for the
-        single call each turn, and discarded — never stored, never logged, never written to disk.
-      </p>
-      <input type="password" id="api-key-input" placeholder="sk-ant-..." autocomplete="off" spellcheck="false">
-      <p class="key-note">Leave blank to use the installed demo key (rate-limited).</p>
+      <!-- Content injected by chat.js on first ⚙ Settings click.
+           Empty by default so nothing API-key-related exists in the DOM
+           until the user explicitly requests it. If anything floats
+           through any transparency, it cannot be this. -->
     </div>
   </main>
 

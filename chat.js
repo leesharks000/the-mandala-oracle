@@ -10,11 +10,13 @@ const formEl = document.getElementById('chat-form');
 const inputEl = document.getElementById('message-input');
 const sendBtn = document.getElementById('send-button');
 const statusEl = document.getElementById('status');
-const apiKeyEl = document.getElementById('api-key-input');
 const modeBtns = document.querySelectorAll('.mode-button');
 const settingsToggle = document.getElementById('settings-toggle');
 const settingsPanel = document.getElementById('settings-panel');
-const settingsClose = settingsPanel.querySelector('.settings-close');
+
+// apiKeyEl is lazy — the settings panel content is injected on first
+// open, not present in the initial DOM. Access via getApiKey() instead.
+let apiKeyEl = null;
 
 let mode = 'sabbath';
 let history = [];  // [{role: 'user'|'assistant', content: str}, ...]
@@ -67,34 +69,59 @@ modeBtns.forEach((btn) => {
 });
 
 // ─────────────────────────────────────────────────────────────────────────
-// Settings panel
+// Settings panel — content is injected on first open, not present in
+// initial HTML. This way, the Anthropic API Key heading and the sk-ant-
+// input cannot leak through any transparency or stale CSS state, because
+// the elements literally do not exist in the DOM until the user clicks ⚙.
 // ─────────────────────────────────────────────────────────────────────────
 
-settingsToggle.addEventListener('click', () => {
-  const open = settingsPanel.classList.toggle('open');
-  settingsPanel.setAttribute('aria-hidden', open ? 'false' : 'true');
-  settingsToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  if (open) {
-    settingsPanel.removeAttribute('hidden');
-    apiKeyEl.focus();
-  } else {
-    settingsPanel.setAttribute('hidden', '');
-  }
-});
+let settingsContentInjected = false;
 
-settingsClose.addEventListener('click', () => {
+function ensureSettingsContent() {
+  if (settingsContentInjected) return;
+  settingsPanel.innerHTML = `
+    <button class="settings-close" type="button" aria-label="Close settings">×</button>
+    <h3>Anthropic API Key</h3>
+    <p class="key-note">
+      Bring your own Anthropic key. It is sent over TLS to the Sigil endpoint, used for the
+      single call each turn, and discarded — never stored, never logged, never written to disk.
+    </p>
+    <input type="password" id="api-key-input" placeholder="sk-ant-..." autocomplete="off" spellcheck="false">
+    <p class="key-note">Leave blank to use the installed demo key (rate-limited).</p>
+  `;
+  apiKeyEl = settingsPanel.querySelector('#api-key-input');
+  const settingsClose = settingsPanel.querySelector('.settings-close');
+  settingsClose.addEventListener('click', closeSettings);
+  settingsContentInjected = true;
+}
+
+function openSettings() {
+  ensureSettingsContent();
+  settingsPanel.classList.add('open');
+  settingsPanel.removeAttribute('hidden');
+  settingsPanel.setAttribute('aria-hidden', 'false');
+  settingsToggle.setAttribute('aria-expanded', 'true');
+  apiKeyEl.focus();
+}
+
+function closeSettings() {
   settingsPanel.classList.remove('open');
+  settingsPanel.setAttribute('hidden', '');
   settingsPanel.setAttribute('aria-hidden', 'true');
   settingsToggle.setAttribute('aria-expanded', 'false');
-  settingsPanel.setAttribute('hidden', '');
+}
+
+settingsToggle.addEventListener('click', () => {
+  if (settingsPanel.classList.contains('open')) {
+    closeSettings();
+  } else {
+    openSettings();
+  }
 });
 
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && settingsPanel.classList.contains('open')) {
-    settingsPanel.classList.remove('open');
-    settingsPanel.setAttribute('aria-hidden', 'true');
-    settingsToggle.setAttribute('aria-expanded', 'false');
-    settingsPanel.setAttribute('hidden', '');
+    closeSettings();
   }
 });
 
@@ -124,7 +151,7 @@ formEl.addEventListener('submit', async (e) => {
   const message = inputEl.value.trim();
   if (!message) return;
 
-  const apiKey = apiKeyEl.value.trim() || null;
+  const apiKey = apiKeyEl ? (apiKeyEl.value.trim() || null) : null;
 
   removeEmptyState();
   appendUserMessage(message);
