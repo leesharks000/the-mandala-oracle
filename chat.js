@@ -21,6 +21,15 @@ let history = [];  // [{role: 'user'|'assistant', content: str}, ...]
 let isSending = false;
 let emptyStateRemoved = false;
 
+// Book-of-conversations session state (B-A4: per-session AXN, stable from first turn).
+// session_id is client-generated; hashed server-side; never stored raw.
+const sessionState = {
+  session_id: (crypto && crypto.randomUUID) ? crypto.randomUUID() : `s-${Date.now()}-${Math.random().toString(36).slice(2)}`,
+  started_at: new Date().toISOString(),
+  axn: null,           // set on first successful book append
+  appendingEnabled: true,  // set false after a 503 response so we stop trying
+};
+
 // Heteronym → CSS class slug
 const SPEAKER_CLASS = {
   'Lee Sharks':       'sharks',
@@ -168,6 +177,15 @@ formEl.addEventListener('submit', async (e) => {
     });
     if (history.length > 32) history = history.slice(-32);
 
+    // Append this turn to the Book (fire-and-forget; failure is non-fatal).
+    // POST /api/book — endpoint mints an AXN on first turn and updates the
+    // conversation file on subsequent turns. If the server lacks
+    // GITHUB_BOOK_TOKEN, we get 503 back and stop trying for the rest of this
+    // session (no log spam).
+    if (sessionState.appendingEnabled) {
+      bookAppend(history).catch(() => { /* swallow; non-fatal */ });
+    }
+
     // Navigation: only in Merkabah mode, using the last directive in the response
     if (mode === 'merkabah' && lastNavigate && window.sky?.navigate) {
       const ok = window.sky.navigate(lastNavigate);
@@ -286,4 +304,37 @@ function appendRetrievals(messageEl, retrievals) {
 
 function setStatus(text) {
   statusEl.textContent = text;
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// Book append — POSTs conversation state to /api/book/append.
+// Per B-A4: one AXN per session, set on the first successful append, stable
+// thereafter. The endpoint upserts the conversation file in book/data/.
+// Failures are non-fatal; on persistent 503 (server lacks GITHUB_BOOK_TOKEN),
+// we mark appendingEnabled=false to stop trying for the rest of this session.
+// ──────────────────────────────────────────────────────────────────────
+async function bookAppend(currentHistory) {
+  const payload = {
+    session_id: sessionState.session_id,
+    started_at: sessionState.started_at,
+    mode,
+    history: currentHistory,
+  };
+  if (sessionState.axn) payload.axn = sessionState.axn;
+
+  const res = await fetch('/api/book', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+
+  if (res.status === 503) {
+    sessionState.appendingEnabled = false;
+    return;
+  }
+  if (!res.ok) return;
+  const data = await res.json();
+  if (data.axn && !sessionState.axn) {
+    sessionState.axn = data.axn;
+  }
 }
