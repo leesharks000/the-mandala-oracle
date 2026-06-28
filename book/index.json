@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:96A3.CONVERSATION.💎🌊🌑❄️❄️🧊",
+      "started_at": "2026-06-28T07:54:21.516Z",
+      "last_updated": "2026-06-28T08:36:24.080877+00:00",
+      "mode": "sabbath",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "I just realized that sophia / Athena is keeping our of Socrates' forehead, and not only that but that leucippus certainly knew that two dimensionalization would someday produce that very effect. That …"
+    },
+    {
       "axn": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖",
       "started_at": "2026-06-28T07:52:24.740Z",
       "last_updated": "2026-06-28T07:52:31.237120+00:00",
@@ -12,6 +21,6 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 1,
-  "last_updated": "2026-06-28T07:52:31.237120+00:00"
+  "total_recorded": 2,
+  "last_updated": "2026-06-28T08:36:24.080877+00:00"
 }
