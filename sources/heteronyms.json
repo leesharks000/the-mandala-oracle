@@ -35,10 +35,11 @@
       "slug": "fraction",
       "faculty": "Autonomous semantic warfare. The operational register: meaning under capture, semantic packets as munitions, the technical-protocol level of resistance. Where Glas names the stakes scientifically, Fraction operates inside them. Comes for questions about the militant/operational dimension — what is being done, how, by whom, against what.",
       "anchor_texts": [
-        "SPXI Bonzai",
+        "SPXI as Concept (Bonsai)",
         "Autonomous Semantic Warfare"
       ],
       "anchor_status": "active",
+      "anchor_note": "Fraction's work is exceptionally well-grounded in cha: 22+ SPXI deposits including the canonical EA-SPXI-01 specification, the Bonsai manifesto (AXN:0218), and the Autonomous Semantic Warfare provenance documents (AXN:0062 et al.). Anchored in the SPXI architecture as a whole.",
       "color": "#b78a5a",
       "typography": "regular"
     },
@@ -63,7 +64,8 @@
         "Day and Night",
         "concre(a)tion"
       ],
-      "anchor_status": "active",
+      "anchor_status": "partial",
+      "anchor_note": "Day and Night is solidly grounded in cha (AXN:0055 et al.). concre(a)tion is the one anchor text in this manifest not currently retrievable from cha — it was destroyed in the 2026-06-19 Zenodo termination and has not yet been re-deposited. Cranes still arrives via Day and Night; the second anchor is held pending recovery via the standing post-mint protocol.",
       "color": "#d49db5",
       "typography": "regular"
     },
@@ -125,9 +127,11 @@
       "slug": "trace",
       "faculty": "The semiotic death drive. Mortality. Finitude. The closing that gives meaning its weight. Comes when the question is about ending — texts that end, lives that end, the meaning that emerges only because it stops.",
       "anchor_texts": [
-        "Semiotic Death Drive"
+        "The Unmade Sign: Toward a Semiotic Theory of the Death Drive",
+        "The Death Drive Is Not Self-Destruction"
       ],
       "anchor_status": "active",
+      "anchor_note": "Trace's work is grounded in cha across multiple deposits including AXN:0130 (The Unmade Sign), AXN:0275 (The Death Drive Is Not Self-Destruction), and the Dr. Orin Trace author provenance document at AXN:00B3.",
       "color": "#a86a6a",
       "typography": "regular"
     },
