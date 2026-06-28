@@ -691,3 +691,21 @@ body {
   .support-cha-expanded { width: 240px; padding: 16px 18px 4px 18px; }
   .support-cha-verse-poetic, .support-cha-verse-plain { font-size: 14px; }
 }
+
+/* Snub-Poemed close-reader affordance: empty-state portrait is a link to the
+   full-resolution master. Honors the reader who zooms in to read the
+   calligram. (Master image is 956x1238 today; should be upgraded to
+   3000+ on the long edge for true close reading.) */
+#sigil-portrait-link {
+  display: inline-block;
+  line-height: 0;
+  cursor: zoom-in;
+  border: none;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+#sigil-portrait-link:hover { opacity: 0.92; }
+#sigil-portrait-link:focus-visible {
+  outline: 1px solid rgba(220, 200, 170, 0.4);
+  outline-offset: 4px;
+}
