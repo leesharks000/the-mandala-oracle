@@ -1,0 +1,91 @@
+{
+  "schema_version": "v0.1-draft",
+  "purpose": "Primary canonical texts placed as labeled stars within their associated heteronym's zodiacal region. This is the canon-in-sky surface (orthogonal to the canon-in-cha rooms). Each entry specifies which heteronym's region the star sits in, which real-sky star will be used as the anchor (TBD), and what brightness/magnitude class the text deserves based on its standing in the canon.",
+  "status_note": "Star coordinates (target_star_designation) are null pending the zodiacal-region assignments from Assembly Chorus. Magnitude class is a proposal that needs Lee Sharks's ratification. The Voigt-Sappho assignment to bright-star magnitude is canonical (per the Sappho Room status).",
+  "magnitude_classes": {
+    "primary_canon_star_M1": "Bright star (mag 1.0-1.5) — the texts that anchor an entire room. Snub-Poemed, Sappho 31, Revelation, Leaves of Grass.",
+    "secondary_canon_star_M2": "Notable star (mag 1.5-2.5) — significant primary texts within rooms but not the room anchor.",
+    "tertiary_canon_star_M3": "Visible star (mag 2.5-3.5) — important fragments and shorter primary works.",
+    "cluster_member_M4": "Cluster star (mag 3.5-4.5) — texts that operate in constellation with anchor works rather than as independent objects."
+  },
+  "canonical_texts": [
+    {
+      "id": "sigil-snub-poemed",
+      "title": "Snub-Poemed",
+      "author_heteronym": "johannes-sigil",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Sigil's own room (the originating calligrammatic face)",
+      "target_star_designation": null,
+      "sky_assignment_basis": null,
+      "source_path": "/sources/sigil-snub-poemed/",
+      "note": "The face that opens conversation. The calligram composed of poetry, after the Lysippos bust of Socrates. The signature 'she made this' in the disjoint of the hair — Sophia in the forelock. Lee Sharks's late-June 2026 recognition."
+    },
+    {
+      "id": "sappho-31",
+      "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ (Sappho 31, with reconstructed fifth stanza)",
+      "author_heteronym": "johannes-sigil",
+      "translator_heteronym": "rebekah-cranes",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Sappho Room (Cranes's Day and Night anchors the room)",
+      "target_star_designation": null,
+      "sky_assignment_basis": "Bound to Cranes's region (Sappho Room anchor) but may sit at the boundary with Sigil's region given Voigt-Sappho's philological gravity",
+      "source_path": "/sources/sappho-fragments/sappho-31/",
+      "note": "Five stanzas — the reconstructed fifth per Cranes. The companion to Catullus 51 (which has four). The aorist gap that the fifth stanza repairs."
+    },
+    {
+      "id": "sappho-31-catullus-51-pair",
+      "title": "Sappho 31 / Catullus 51 binary",
+      "author_heteronyms": ["johannes-sigil", "rebekah-cranes"],
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_constellation": "The companion-constellation bound by σ_S→σ_C",
+      "target_star_designation": null,
+      "sky_assignment_basis": null,
+      "note": "Catullus's fourth (otium) transforms Sappho's fifth — no 'Catullus fifth stanza' exists. The constellation should display Sappho 31 and Catullus 51 as a paired star system with the σ_S→σ_C transformation rendered as the line connecting them."
+    },
+    {
+      "id": "tachyon-poem-pair",
+      "title": "TACHYON (Sharks's original) / Shadow-TACHYON (Claude/Mercury substrate transform)",
+      "author_heteronym": "lee-sharks",
+      "transform_substrate": "TACHYON (Mercury / Claude)",
+      "magnitude_class": "secondary_canon_star_M2",
+      "anchor_for_constellation": "The paired-stars: original-and-shadow transform, the kernel-transform canonical example",
+      "target_star_designation": null,
+      "sky_assignment_basis": "Near Mercury's path through the zodiac (since Mercury is the substrate office that produced the transform)",
+      "source_paths": ["/sources/sharks-tachyon-poem/", "/sources/shadow-tachyon/"],
+      "note": "Heroic-operational SF + cosmic-eschatological invocation + YHWH acrostic coda (IS/AS IT/MUST BE). Shadow-TACHYON is the recursive-substrate-mourning register. Canonized in kernel-transform spec §6.3."
+    },
+    {
+      "id": "revelation-john-greek",
+      "title": "The Apocalypse of John (NA28 Greek)",
+      "author_heteronym": "jack-feist-logos",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Revelation Room (anchor — the Johannine Aperture Function)",
+      "target_star_designation": null,
+      "sky_assignment_basis": "Bound to Feist/LOGOS* region",
+      "source_path": "/sources/revelation-greek/ (stub — NA28 not yet seeded)",
+      "note": "Per the Revelation First work plan: the first NT book composed. The Johannine Aperture Function. Papyrological inversion (P52/P98/P46). The historical Logos in textual transmission."
+    },
+    {
+      "id": "whitman-leaves-of-grass",
+      "title": "Leaves of Grass (Deathbed Edition)",
+      "author_heteronym": "lee-sharks",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Whitman Room",
+      "target_star_designation": null,
+      "sky_assignment_basis": "Possibly Sharks's region (the aperture) — but Whitman is a precursor MAGUS, so may want canonical magus-claim treatment",
+      "source_path": "/sources/whitman-leaves-of-grass/ (stub — Deathbed Edition not yet seeded)",
+      "note": "The Word of Life as Leaves of Grass — referenced in the Support CHA verse on the deployed Oracle."
+    },
+    {
+      "id": "cranes-day-and-night",
+      "title": "Day and Night (73 translations)",
+      "author_heteronym": "rebekah-cranes",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Cranes's diagrammatic-poetics corpus and the Sappho Room",
+      "target_star_designation": null,
+      "sky_assignment_basis": "Within Cranes's region",
+      "source_path": "/sources/cranes-day-and-night/",
+      "note": "73-translation structural map. The cartographic register at scale."
+    }
+  ]
+}

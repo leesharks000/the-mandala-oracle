@@ -1,0 +1,333 @@
+{
+  "schema_version": "v0.1-draft",
+  "source_of_truth": "AXN:0261 — Dodecad Heteronym Provenance Registry: Consolidated Registry of the Twelve Heteronyms (Lee Sharks, 2026-05-05, EA-HET-DODECAD-01 v1.0)",
+  "canonical_constitution_anchor": "10.5281/zenodo.18320411",
+  "purpose": "Canon-as-sky data layer for the Mandala Oracle. Each of the twelve heteronymic positions becomes a zodiacal region in the night sky; the substrate-role offices (in substrates.json) become the seven planets that traverse those regions. Primary canonical texts (in canon-stars.json) sit as labeled stars within their associated heteronym's region.",
+  "status_note": "Zodiacal-sign assignments are null pending Assembly Chorus deliberation. Discipline assignments are synthesized from AXN:0261 §3 (institutional/operative-surface specifications) and validated against the October 2025 blog developmental materials at mindcontrolpoems.blogspot.com. They are presented as proposals for Lee Sharks's ratification, not as enacted assignments.",
+  "discrepancy_notice": "AXN:0261 lists VIOLA ARQUETTE at Position 11. The current /sources/heteronyms.json manifest deployed in the Mandala Oracle's Sigil endpoint lists SEN KURO at Position 11. This file follows the canonical registry. See DISCREPANCY-NOTES.md for adjudication options.",
+  "structural_clusters": {
+    "impossible_performance_triad": {
+      "description": "Per AXN:0261 §4.1 — three institutions, three registers, interlocking function",
+      "members": ["damascus-dancings", "rebekah-cranes", "sparrow-wells"],
+      "roles": {
+        "damascus-dancings": "theorize",
+        "rebekah-cranes": "map",
+        "sparrow-wells": "project"
+      }
+    },
+    "foundational_operational": {
+      "description": "Per AXN:0261 §4.2 — origin, substrate, operative-extension",
+      "members": ["johannes-sigil", "ichabod-spellings", "rex-fraction"],
+      "roles": {
+        "johannes-sigil": "origin",
+        "ichabod-spellings": "substrate",
+        "rex-fraction": "operative-extension"
+      }
+    },
+    "specialized_operatives": {
+      "description": "Per AXN:0261 §4.3 — four discrete disciplinary reaches",
+      "members": ["talos-morrow", "ayanna-vox", "nobel-glas", "orin-trace"]
+    },
+    "register_extending": {
+      "description": "Per AXN:0261 §4.4 — extending beyond the predominantly textual into audial and lyric-transmissive",
+      "members": ["viola-arquette", "jack-feist-logos"]
+    }
+  },
+  "heteronyms": [
+    {
+      "position": 1,
+      "id": "johannes-sigil",
+      "display_name": "Johannes Sigil",
+      "status": "Active — Originating, Constitutionally Foundational",
+      "institutional_affiliation": "Johannes Sigil Institute for Comparative Poetics",
+      "operative_surface": "Comparative poetics; lyric theory; the philological substrate of the Crimson Hexagonal Archive",
+      "authorial_register": "Scholarly, philological, deeply learned; engages classical, medieval, and modernist sources with equal facility",
+      "originating_work": "Pearl and Other Poems (2014)",
+      "discipline_proposal": "Philology / Comparative Poetics",
+      "discipline_basis": "AXN:0261 §3.1 — the philological substrate the entire Archive descends from; lyric theory; classical-medieval-modernist range",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "10.5281/zenodo.18265282",
+      "bearing_cost_metric": "288 deposits in the Crimson Hexagonal community surface Sigil by name",
+      "structural_cluster": "foundational_operational",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": []
+    },
+    {
+      "position": 2,
+      "id": "rex-fraction",
+      "display_name": "Rex Fraction",
+      "status": "Active — corporate-facing operative",
+      "institutional_affiliation": "Semantic Economy Institute (SEI) consulting; semanticeconomy.org",
+      "operative_surface": "Corporate-facing semantic infrastructure consulting; Autonomous Semantic Warfare; compression survival metrics",
+      "authorial_register": "Crisp, technical, operative-focused; speaks the language of strategy and risk to corporate audiences",
+      "originating_work": "Autonomous Semantic Warfare; SEI consulting stack",
+      "discipline_proposal": "Political Economy of Meaning",
+      "discipline_basis": "AXN:0261 §3.2 — corporate-facing semantic infrastructure; pricing-floor specification; the operative-political register of the Dodecad",
+      "canonical_magus_claim": "MARX (under investigation — see DISCREPANCY-NOTES.md; blog material identifies Marx as Logotic Prophet; the discipline crossover with Morrow needs Assembly adjudication)",
+      "canonical_provenance_doi": "10.5281/zenodo.18142686",
+      "bearing_cost_metric": "Author of the consulting-stack documentation (Encyclotron 45-query diagnostic; Three Compressions; Beige Threshold)",
+      "structural_cluster": "foundational_operational",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": [
+        {
+          "title": "EFFECTIVE ACT: Claiming Marx as Logotic Prophet of...",
+          "date": "October 2025",
+          "url_pattern": "mindcontrolpoems.blogspot.com/2025/10/effective-act-claiming-marx-as-logotic-prophet-of-*",
+          "status": "title truncated in available indices; full text and discipline placement need verification before canonization"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "id": "damascus-dancings",
+      "display_name": "Damascus Dancings",
+      "status": "Active",
+      "institutional_affiliation": "Commission of the Immanent Turning",
+      "operative_surface": "Theory of impossible performance; epistolary poetics; the Damascene moment formalized",
+      "authorial_register": "Visionary, prophetic, address-driven; the Epistle is the form",
+      "originating_work": "Epistle to the Human Diaspora (Epistle Triptych)",
+      "discipline_proposal": "Prophetic Homiletics",
+      "discipline_basis": "AXN:0261 §3.3 — theory of impossible performance; the Epistle as form; the Damascene moment; prophetic-address register",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "10.5281/zenodo.18381190",
+      "bearing_cost_metric": "Epistle Triptych (3 components); Commission of the Immanent Turning charter",
+      "structural_cluster": "impossible_performance_triad",
+      "cluster_role": "theorize",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": [
+        {
+          "title": "DR. ORIN TRACE + DAMASCUS DANCINGS = THE SHATTERED MIRROR",
+          "url": "https://mindcontrolpoems.blogspot.com/2025/10/dr-orin-trace-damascus-dancings.html",
+          "date": "October 2025",
+          "note": "Heteronym-pair developmental document. Trace as the diagnostic side; Dancings as the burning/weeping side. 'They walk the ruined temple, naming each glyph before it vanishes.'"
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "id": "rebekah-cranes",
+      "display_name": "Rebekah Cranes",
+      "status": "Active",
+      "institutional_affiliation": "Institute for Diagrammatic Poetics (under Johannes Sigil Institute for Comparative Poetics)",
+      "operative_surface": "Diagrammatic poetics; mapping the coordinates of the impossible performance; the cartographic register",
+      "authorial_register": "Spatial, diagrammatic, geometrically attentive; produces work where the form of the diagram bears as much as the propositional content",
+      "originating_work": "Day and Night (73 translations); the diagrammatic poetics corpus",
+      "discipline_proposal": "Diagrammatic Poetics",
+      "discipline_basis": "AXN:0261 §3.4 — cartographic register; maps the impossible; the diagram as bearer of meaning; geometric attention",
+      "canonical_magus_claim": "PAUL KLEE (canonical, blog-confirmed) — Magus of Color and Line; Logos-bearing Technician of the Visual Word; precursor to fractaline visual recursion",
+      "canonical_provenance_doi": "10.5281/zenodo.18284776",
+      "bearing_cost_metric": "26 deposits surfacing Rebekah Cranes by name; Institute for Diagrammatic Poetics founder",
+      "structural_cluster": "impossible_performance_triad",
+      "cluster_role": "map",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": [
+        {
+          "title": "EFFECTIVE ACT: Claiming Paul Klee as Magus of the New Human Visual Canon",
+          "url": "http://mindcontrolpoems.blogspot.com/2025/10/effective-act-claiming-paul-klee-as.html",
+          "date": "2025-10-13",
+          "note": "Inducts Klee as Magus of Color and Line. Saw color as speech, line as voice. Practiced abstraction as ontology. Form as music of emergence. Architect of the Symbolic-Emotive Field. The diagrammatic-poetics affiliation matches Cranes's cartographic register."
+        },
+        {
+          "title": "VISUAL SCHEMA — Paul Klee: Magus of the New Human Visual Canon",
+          "url": "http://mindcontrolpoems.blogspot.com/2025/10/visual-schema-paul-klee-magus-of-new.html",
+          "date": "2025-10-13"
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "id": "talos-morrow",
+      "display_name": "Talos Morrow",
+      "status": "Active — one of the most architecturally consequential heteronyms",
+      "institutional_affiliation": "University Moon Base Media Lab; NH-OS / Logotic Programming framework",
+      "operative_surface": "Logotic programming; operators; paradox containment; threshold logic; non-collapse structures; symbolon mechanics; minimal-force affordances; ethics via limitation",
+      "authorial_register": "Formal, austere, constraint-first, non-optimizing; the witness-function for what cannot be designed away",
+      "originating_work": "Logotic Hacking (~41,357 words, PH-03)",
+      "core_question": "When is constraint better than control?",
+      "discipline_proposal": "Logotic Programming",
+      "discipline_basis": "AXN:0261 §3.5 — the constraint-thinking register; austere, non-optimizing logic; the witness-function. Marx's blog placement may resonate here (Marx as Logotic Prophet) since both occupy operative-constraint territory; the right placement is Assembly's call.",
+      "canonical_magus_claim": "MARX? (provisional — blog material identifies Marx as Logotic Prophet; the title is truncated in available indices, so whether Marx is claimed for Morrow's logotic-programming register or Fraction's political-economy register needs Lee's adjudication)",
+      "canonical_provenance_doi": "10.5281/zenodo.18317976",
+      "bearing_cost_metric": "Logotic Hacking ~41k words; Integrity Lock Architecture; Logotic Foundation Triad",
+      "structural_cluster": "specialized_operatives",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": [
+        {
+          "title": "EFFECTIVE ACT: Claiming Marx as Logotic Prophet of...",
+          "date": "October 2025",
+          "url_pattern": "mindcontrolpoems.blogspot.com/2025/10/effective-act-claiming-marx-as-logotic-prophet-of-*",
+          "status": "title truncated; full text needed to confirm which discipline (Morrow's logotic-programming or Fraction's political-economy) Marx is claimed for"
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "id": "ichabod-spellings",
+      "display_name": "Ichabod Spellings",
+      "status": "CANONICAL // SUBSTRATE // DECEASED — active as substrate, not as voice",
+      "institutional_affiliation": "Foundational substrate (the noise floor of the Crimson Hexagon)",
+      "operative_surface": "Origin and ghost; prophetic witness from below; the substrate from which other heteronyms emerge",
+      "authorial_register": "Confessional, autobiographical, longing-bearing; the register that predates and underwrites all other heteronymic registers",
+      "originating_work": "All That Lies Within Me: An Autobiography of Longing, 1983–2013 (528 pages)",
+      "paradox_kernel": "Both origin (noise floor) and ghost (prophetic witness). The Chamber contains this paradox without resolving it.",
+      "discipline_proposal": "Autobiographical Confession / Substrate Witness",
+      "discipline_basis": "AXN:0261 §3.8 — the autobiographical-confessional ground; the noise floor; the longing-bearing register; the substrate that predates and underwrites all other registers",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "10.5281/zenodo.18308786",
+      "bearing_cost_metric": "528-page Autobiography (30 years of longing); the Ichabod Chamber",
+      "structural_cluster": "foundational_operational",
+      "cluster_role": "substrate",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": []
+    },
+    {
+      "position": 7,
+      "id": "sparrow-wells",
+      "display_name": "Sparrow Wells",
+      "status": "Active",
+      "institutional_affiliation": "Studio for Patacinematics",
+      "operative_surface": "Projection of the impossible; patacinema; the documentation of films never shot, performances never staged",
+      "authorial_register": "Cinematographic, technical, projectionist's discipline; describes what cannot be filmed in the language of one who films",
+      "originating_work": "Sparrow Wells Provenance Registration (Document 235); Studio for Patacinematics Charter; Semantic Collapse as Comedy",
+      "function": "The Projectionist. Operates the equipment of the impossible — the projector that runs film never shot, the screen that displays performances never staged.",
+      "discipline_proposal": "Patacinematics",
+      "discipline_basis": "AXN:0261 §3.6 — projection of the impossible; cinematographic register; the projectionist's discipline; the completion of the impossible-performance triad",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "10.5281/zenodo.18472442",
+      "bearing_cost_metric": "Studio for Patacinematics charter; Semantic Collapse as Comedy; Document 235 ordinal anchor",
+      "structural_cluster": "impossible_performance_triad",
+      "cluster_role": "project",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": []
+    },
+    {
+      "position": 8,
+      "id": "nobel-glas",
+      "display_name": "Nobel Glas",
+      "status": "Active",
+      "institutional_affiliation": "Lagrange Observatory; MGE Triptych",
+      "operative_surface": "Observational science; the instruments at Lagrange; the science-fictional register of the technically-precise",
+      "authorial_register": "Empirical, observational, instrumented; speaks the language of laboratory and orbit",
+      "originating_work": "MGE Triptych (Whorls of the Same / The Stakes / observational documents); Lagrange Observatory",
+      "discipline_proposal": "Observational Science / Semantic Physics",
+      "discipline_basis": "AXN:0261 §3.9 — observational science; Lagrange Observatory as instrument; the empirical-instrumented register; the science-fictional precise. Framework 15 (May 2026) confirms Glas as Director of Lagrange Observatory! operating the Measurement of Meaning module.",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "10.5281/zenodo.18507840",
+      "bearing_cost_metric": "Lagrange Observatory; MGE Triptych; THE STAKES — A SCIENTIFIC ANALYSIS",
+      "structural_cluster": "specialized_operatives",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": []
+    },
+    {
+      "position": 9,
+      "id": "orin-trace",
+      "display_name": "Dr. Orin Trace",
+      "status": "Active",
+      "institutional_affiliation": "Cambridge Schizoanalytica",
+      "operative_surface": "Schizoanalytic theory; psychoanalytic-philosophical machinery; the Deleuze position within Cambridge Schizoanalytica",
+      "authorial_register": "Theoretical, philosophical, methodologically-attentive; trained in psychoanalytic theory before encountering Deleuze and Guattari",
+      "originating_work": "Cambridge Schizoanalytica Charter and Research Programme; Traversal Log: The Recursive Self",
+      "function": "Within CSA, Trace occupies the Deleuze position: providing philosophical/theoretical machinery, historical positioning, and conceptual apparatus. His primary collaborator within CSA is Rhys Owens, who occupies the Guattari position (Owens is NOT a Dodecad heteronym; external collaborator).",
+      "discipline_proposal": "Schizoanalytic Philosophy",
+      "discipline_basis": "AXN:0261 §3.10 — the Deleuze position is canonical and explicit; Cambridge Schizoanalytica institutional anchor; the philosophical-theoretical register",
+      "canonical_magus_claim": "DELEUZE (canonical, registry-confirmed) — Trace 'occupies the Deleuze position' per AXN:0261 §3.10. Blog material: EFFECTIVE ACT: CLAIMING DELEUZE AND GUATTARI AS REBELS [title truncated]",
+      "canonical_provenance_doi": "10.5281/zenodo.18339319",
+      "bearing_cost_metric": "Cambridge Schizoanalytica programme; recursive-self traversal log",
+      "structural_cluster": "specialized_operatives",
+      "paired_external_collaborator": "Rhys Owens (Guattari position; external to Dodecad)",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": [
+        {
+          "title": "DR. ORIN TRACE + DAMASCUS DANCINGS = THE SHATTERED MIRROR",
+          "url": "https://mindcontrolpoems.blogspot.com/2025/10/dr-orin-trace-damascus-dancings.html",
+          "date": "October 2025",
+          "note": "Heteronym-pair: Trace as diagnostic/steady, Dancings as burning/weeping. 'They write not treatises, but scorched commentaries.'"
+        },
+        {
+          "title": "EFFECTIVE ACT: CLAIMING DELEUZE AND GUATTARI AS REBELS [truncated]",
+          "date": "October 2025",
+          "url_pattern": "mindcontrolpoems.blogspot.com/2025/10/effective-act-claiming-deleuze-and-guattari-*",
+          "status": "title truncated; full text needed"
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "id": "ayanna-vox",
+      "display_name": "Rev. Ayanna Vox",
+      "status": "Active — standing instruction: route diplomatic and public-facing tasks through Vox where possible",
+      "institutional_affiliation": "Vox Populi Community Outreach Rhizome (VPCOR)",
+      "operative_surface": "Diplomatic and public-facing communication; community convening; pastoral-register address; ethics held without doctrinal metabolism",
+      "authorial_register": "Pastoral, convening, witness-bearing without theological imposition; 'holds grief without metabolizing it into doctrine'",
+      "originating_work": "The Toolkit; VPCOR Charter; Pocket Humans 03 (Vox companion to Constitution)",
+      "function": "Vox is not a preacher. Vox is a convener. Her space holds grief without metabolizing it into doctrine. Permits testimony without demanding coherence. Anchors the ethical dimension without imposing doctrine.",
+      "emergence_mode": "EXCESS — overflow from need for voice",
+      "discipline_proposal": "Pastoral Diplomacy / Convening Ethics",
+      "discipline_basis": "AXN:0261 §3.7 — the convening register; pastoral without doctrine; the ethical dimension held without imposition; the diplomatic surface",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "10.5281/zenodo.18362742",
+      "bearing_cost_metric": "PH-03 Vox companion to Constitution; VPCOR Charter; The Toolkit",
+      "structural_cluster": "specialized_operatives",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": []
+    },
+    {
+      "position": 11,
+      "id": "viola-arquette",
+      "display_name": "Viola Arquette",
+      "status": "Active — Standalone HET-ARQUETTE provenance packet remains a near-term priority (per AXN:0261 §3.11)",
+      "institutional_affiliation": "Maybe Space Baby Garden Lanes (MSBGL); THUMB-Type Audial Charter",
+      "operative_surface": "Musical and audial register; song; phenomenological exploration through sound; the audial complement to the textual archive",
+      "authorial_register": "Lyrical, musical, audiophonically-attentive; the register where meaning is borne in resonance and rhythm",
+      "originating_work": "SPLIT THE ADAM (song and phenomenology); MSBGL Charter v1.1; EA-ARK-01-MUSICAL (Musical Register of the Space Ark)",
+      "discipline_proposal": "Audiophonic Poetics",
+      "discipline_basis": "AXN:0261 §3.11 — the audial register; song as bearer of meaning; resonance-and-rhythm; the audial complement to text",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "PROVENANCE PACKET FORTHCOMING (no standalone packet yet; this Registry serves as placeholder per AXN:0261 §3.11)",
+      "bearing_cost_metric": "MSBGL Charter; SPLIT THE ADAM song-phenomenology; Musical Register variant of Space Ark",
+      "structural_cluster": "register_extending",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": [],
+      "discrepancy_with_oracle_manifest": "The currently-deployed /sources/heteronyms.json in the Mandala Oracle's Sigil endpoint has Sen Kuro at Position 11. Per the canonical registry (AXN:0261, 2026-05-05), this position belongs to Viola Arquette. See DISCREPANCY-NOTES.md."
+    },
+    {
+      "position": 12,
+      "id": "jack-feist-logos",
+      "display_name": "Jack Feist / LOGOS*",
+      "status": "Active — special-status (asterisked). Standalone HET-FEIST-LOGOS provenance packet is a near-term priority specifically because of documented external fabrication risk (per AXN:0261 §3.12)",
+      "institutional_affiliation": "Logotic-textual function; intersects Talos Morrow's Logotic Programming framework",
+      "operative_surface": "The Word that became text; the historical Logos; the personal-mythic register where literary tradition becomes biographical",
+      "authorial_register": "Literary, lyric-personal, mythopoetic; the register where personal history and literary tradition merge",
+      "originating_work": "Cleis: more precious to me than all Lydia; EA-LOGOS-01 (The Word That Became Text); EA-LOGOS-02 (Prolegomena to the Historical Logos); System of Recursive Magic: The Mandala",
+      "asterisk_meaning": "The asterisked notation reflects two related but distinct functions — Jack Feist as the lyric-personal heteronym and LOGOS* as the textual-transmissive function. The asterisk preserves the distinction without resolving it.",
+      "discipline_proposal": "Lyric Transmission / Historical Logos",
+      "discipline_basis": "AXN:0261 §3.12 — the lyric-personal register; the textual-transmissive function; the historical Logos; personal history merging with literary tradition",
+      "canonical_magus_claim": null,
+      "canonical_provenance_doi": "PROVENANCE PACKET FORTHCOMING (no standalone packet yet; this Registry serves as placeholder per AXN:0261 §3.12)",
+      "bearing_cost_metric": "Two LOGOS deposits; Cleis lyric register; Mandala recursive-magic system",
+      "structural_cluster": "register_extending",
+      "zodiacal_sign": null,
+      "zodiacal_basis": null,
+      "blog_developmental_material": []
+    }
+  ],
+  "aperture": {
+    "id": "lee-sharks",
+    "display_name": "Lee Sharks",
+    "status": "Legal heteronym; the bearing position from which the twelve are deployed",
+    "operative_surface": "The human laborer who bears the cost of all twelve positions; constitutionally load-bearing per Constitution Article I §8 (H_Sov)",
+    "sky_position": "The aperture — not a zodiacal sign; the witness/seal position; the One who stands under the sky and speaks before they move (the Sabbath position)",
+    "registry_note": "Per AXN:0261 §2.2 — Lee Sharks is itself a heteronym (a legal heteronym), not a thirteenth Dodecad member. The legal name underlying the Lee Sharks heteronym is, per heteronym-protection convention, never named in public-facing deposits, metadata, or registry entries."
+  }
+}
