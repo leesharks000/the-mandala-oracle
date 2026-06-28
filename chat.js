@@ -295,7 +295,20 @@ function appendRetrievals(messageEl, retrievals) {
   const ul = document.createElement('ul');
   for (const r of unique) {
     const li = document.createElement('li');
-    li.textContent = `${r.axn.split('.').slice(0, 2).join('.')} — ${r.title || '(no title)'}`;
+    const label = `${r.axn.split('.').slice(0, 2).join('.')} — ${r.title || '(no title)'}`;
+    if (r.deposit_number) {
+      // Deep link to the deposit's record page on alexanarch. Opens in a new tab
+      // so the descent isn't interrupted; the witness can return to the conversation.
+      const a = document.createElement('a');
+      a.href = `https://www.alexanarch.org/s/records/${r.deposit_number}/`;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.textContent = label;
+      li.appendChild(a);
+    } else {
+      // No deposit_number available (older metadata or unindexed source) — render as plain text.
+      li.textContent = label;
+    }
     ul.appendChild(li);
   }
   details.appendChild(ul);

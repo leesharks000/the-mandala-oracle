@@ -110,7 +110,7 @@ def build_embedding_input(deposit: dict, body: str) -> str:
     return "\n".join(parts).strip()
 
 
-def build_metadata_entry(deposit: dict, has_body: bool) -> dict:
+def build_metadata_entry(deposit: dict, has_body: bool, deposit_number: int) -> dict:
     """Build the per-deposit metadata entry stored in metadata.json."""
     return {
         "axn": deposit.get("axn"),
@@ -128,6 +128,11 @@ def build_metadata_entry(deposit: dict, has_body: bool) -> dict:
         "issue_url": deposit.get("issue_url"),
         "minted_at": deposit.get("minted_at"),
         "status": deposit.get("status"),
+        # Deposit number in the alexanarch registry (1-based index). Used by the
+        # Mandala Oracle client to build deep links to the record page at
+        # alexanarch.org/s/records/{deposit_number}/. Lets witnesses click
+        # through to the underlying scholarship.
+        "deposit_number": deposit_number,
         # Origin discipline (M-2): every entry is tagged for forward compatibility
         # with the Book sub-area. v1: all archive. v2+: Mandala-originating mints get "book".
         "origin": "archive",
@@ -176,7 +181,7 @@ def main() -> int:
     metadata_entries = []
     missing_bodies = 0
 
-    for deposit in deposits:
+    for idx, deposit in enumerate(deposits):
         file_path = locate_deposit_file(deposit)
         body = ""
         has_body = False
@@ -194,7 +199,9 @@ def main() -> int:
 
         embedding_input = build_embedding_input(deposit, body)
         embedding_inputs.append(embedding_input)
-        metadata_entries.append(build_metadata_entry(deposit, has_body))
+        # deposit_number is 1-based; this matches alexanarch's record-page URL pattern
+        # /s/records/{deposit_number}/
+        metadata_entries.append(build_metadata_entry(deposit, has_body, idx + 1))
 
     if missing_bodies:
         print(f"NOTE: {missing_bodies} deposits had no resolvable body file; "

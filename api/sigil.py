@@ -454,7 +454,10 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str) -> di
             if tb.name == "search_archive":
                 query = tb.input.get("query", "")
                 results = search_archive(query)
-                retrievals.extend([{"axn": r["axn"], "title": r["title"]} for r in results])
+                retrievals.extend([
+                    {"axn": r["axn"], "title": r["title"], "deposit_number": r.get("deposit_number")}
+                    for r in results
+                ])
                 tool_results_content.append({
                     "type": "tool_result",
                     "tool_use_id": tb.id,
