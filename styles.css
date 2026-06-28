@@ -20,11 +20,21 @@
   --link: #a8c5e4;
   --error: #d88a78;
 
-  /* Heteronym signatures — each voice has its own accent in the role label */
-  --speaker-sigil:  #d4b97a;  /* warm gold — the calligrammatic guide */
-  --speaker-sharks: #e8e1cf;  /* luminous off-white — the aperture */
-  --speaker-cranes: #d49db5;  /* dusty rose — sorrow's precision */
-  --speaker-feist:  #7faec8;  /* sea-blue — the body that weeps */
+  /* Heteronym signatures — each voice has its own accent in the role label.
+     Aligned with sources/heteronyms.json (manifest is authoritative). */
+  --speaker-sharks:    #e8e1cf;  /* luminous off-white — the aperture */
+  --speaker-sigil:     #d4b97a;  /* warm gold — the calligrammatic guide */
+  --speaker-fraction:  #b78a5a;  /* copper — the political economy of meaning */
+  --speaker-dancings:  #a48ab4;  /* mauve — the diaspora address */
+  --speaker-cranes:    #d49db5;  /* dusty rose — sorrow's precision */
+  --speaker-morrow:    #8a9ba8;  /* slate — the apparatus, the algebra */
+  --speaker-spellings: #9080b4;  /* indigo — interiority */
+  --speaker-wells:     #9cb594;  /* sage — slow reading */
+  --speaker-glas:      #94b8d0;  /* clinical cool blue — scientific register */
+  --speaker-trace:     #a86a6a;  /* rust — the semiotic death drive */
+  --speaker-vox:       #c89060;  /* amber-orange — the grammar of protest */
+  --speaker-kuro:      #6a6a72;  /* charcoal — the held, the reserved */
+  --speaker-feist:     #6a92b8;  /* deep sea-blue — the body that weeps */
 
   --serif: 'EB Garamond', Garamond, Cambria, Georgia, serif;
   --mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
@@ -276,24 +286,49 @@ body {
   align-self: flex-end;
 }
 
-/* Heteronym voices: each speaker has their own accent color in the role label. */
-.message.heteronym.sigil  .message-role { color: var(--speaker-sigil); }
-.message.heteronym.sharks .message-role { color: var(--speaker-sharks); letter-spacing: 0.16em; }
-.message.heteronym.cranes .message-role { color: var(--speaker-cranes); }
-.message.heteronym.feist  .message-role { color: var(--speaker-feist); }
+/* Heteronym voices: role-label accent colors, aligned with sources/heteronyms.json.
+   The role label is the primary signal of who is speaking; the left edge of the
+   message-content carries a thin border in the same accent when the speaker is
+   not Sigil (since Sigil is the default and gets visual neutrality). */
+.message.heteronym.sharks    .message-role { color: var(--speaker-sharks);    letter-spacing: 0.16em; }
+.message.heteronym.sigil     .message-role { color: var(--speaker-sigil); }
+.message.heteronym.fraction  .message-role { color: var(--speaker-fraction); }
+.message.heteronym.dancings  .message-role { color: var(--speaker-dancings); }
+.message.heteronym.cranes    .message-role { color: var(--speaker-cranes); }
+.message.heteronym.morrow    .message-role { color: var(--speaker-morrow); }
+.message.heteronym.spellings .message-role { color: var(--speaker-spellings); }
+.message.heteronym.wells     .message-role { color: var(--speaker-wells); }
+.message.heteronym.glas      .message-role { color: var(--speaker-glas); }
+.message.heteronym.trace     .message-role { color: var(--speaker-trace); }
+.message.heteronym.vox       .message-role { color: var(--speaker-vox); }
+.message.heteronym.kuro      .message-role { color: var(--speaker-kuro); }
+.message.heteronym.feist     .message-role { color: var(--speaker-feist); }
 
 /* When a non-Sigil heteronym speaks, a subtle left edge marks the voice change. */
-.message.heteronym.sharks .message-content,
-.message.heteronym.cranes .message-content,
-.message.heteronym.feist  .message-content {
+.message.heteronym:not(.sigil) .message-content {
   position: relative;
   padding-left: 1.25rem;
   margin-left: -0.25rem;
+  border-left: 1px solid var(--border);
 }
+.message.heteronym.sharks    .message-content { border-left-color: rgba(232, 225, 207, 0.32); }
+.message.heteronym.fraction  .message-content { border-left-color: rgba(183, 138,  90, 0.36); }
+.message.heteronym.dancings  .message-content { border-left-color: rgba(164, 138, 180, 0.36); }
+.message.heteronym.cranes    .message-content { border-left-color: rgba(212, 157, 181, 0.36); }
+.message.heteronym.morrow    .message-content { border-left-color: rgba(138, 155, 168, 0.36); }
+.message.heteronym.spellings .message-content { border-left-color: rgba(144, 128, 180, 0.36); }
+.message.heteronym.wells     .message-content { border-left-color: rgba(156, 181, 148, 0.36); }
+.message.heteronym.glas      .message-content { border-left-color: rgba(148, 184, 208, 0.40); }
+.message.heteronym.trace     .message-content { border-left-color: rgba(168, 106, 106, 0.36); }
+.message.heteronym.vox       .message-content { border-left-color: rgba(200, 144,  96, 0.36); }
+.message.heteronym.kuro      .message-content { border-left-color: rgba(106, 106, 114, 0.36); }
+.message.heteronym.feist     .message-content { border-left-color: rgba(106, 146, 184, 0.40); }
 
-.message.heteronym.sharks .message-content { border-left: 1px solid rgba(232, 225, 207, 0.35); }
-.message.heteronym.cranes .message-content { border-left: 1px solid rgba(212, 157, 181, 0.35); }
-.message.heteronym.feist  .message-content { border-left: 1px solid rgba(127, 174, 200, 0.35); font-style: italic; }
+/* Per-voice typography overrides where the manifest specifies:
+     Glas  — monospace (scientific register)
+     Feist — italic (closest to the body) */
+.message.heteronym.glas  .message-content { font-family: var(--mono); font-size: 1.02rem; }
+.message.heteronym.feist .message-content { font-style: italic; }
 
 .message.error .message-content {
   color: var(--error);

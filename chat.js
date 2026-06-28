@@ -23,10 +23,19 @@ let emptyStateRemoved = false;
 
 // Heteronym → CSS class slug
 const SPEAKER_CLASS = {
-  'Johannes Sigil': 'sigil',
-  'Lee Sharks': 'sharks',
-  'Rebekah Cranes': 'cranes',
-  'Jack Feist': 'feist',
+  'Lee Sharks':       'sharks',
+  'Johannes Sigil':   'sigil',
+  'Rex Fraction':     'fraction',
+  'Damascus Dancings':'dancings',
+  'Rebekah Cranes':   'cranes',
+  'Talos Morrow':     'morrow',
+  'Ichabod Spellings':'spellings',
+  'Sparrow Wells':    'wells',
+  'Nobel Glas':       'glas',
+  'Dr. Orin Trace':   'trace',
+  'Rev. Ayanna Vox':  'vox',
+  'Sen Kuro':         'kuro',
+  'Jack Feist':       'feist',
 };
 
 // ─────────────────────────────────────────────────────────────────────────
