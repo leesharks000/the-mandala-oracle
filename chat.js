@@ -1,5 +1,9 @@
-// chat.js — wires the chat panel to /api/sigil and propagates navigation
-// directives to window.sky (when in Merkabah mode).
+// chat.js — wires the chat panel to /api/sigil.
+//
+// API returns: { messages: [{speaker, say, navigate?}, ...], retrievals: [...] }
+// Each message renders as its own bubble with a per-heteronym role label.
+// When Sigil yields, the response contains two messages: his brief
+// acknowledgment, then the other heteronym's response.
 
 const messagesEl = document.getElementById('messages');
 const formEl = document.getElementById('chat-form');
@@ -16,6 +20,14 @@ let mode = 'sabbath';
 let history = [];  // [{role: 'user'|'assistant', content: str}, ...]
 let isSending = false;
 let emptyStateRemoved = false;
+
+// Heteronym → CSS class slug
+const SPEAKER_CLASS = {
+  'Johannes Sigil': 'sigil',
+  'Lee Sharks': 'sharks',
+  'Rebekah Cranes': 'cranes',
+  'Jack Feist': 'feist',
+};
 
 // ─────────────────────────────────────────────────────────────────────────
 // Mode toggle
@@ -53,7 +65,6 @@ settingsClose.addEventListener('click', () => {
   settingsToggle.setAttribute('aria-expanded', 'false');
 });
 
-// Close settings on Escape
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && settingsPanel.classList.contains('open')) {
     settingsPanel.classList.remove('open');
@@ -66,7 +77,7 @@ document.addEventListener('keydown', (e) => {
 // Sky readiness
 // ─────────────────────────────────────────────────────────────────────────
 
-window.addEventListener('sky-ready', (e) => {
+window.addEventListener('sky-ready', () => {
   setStatus('Ready.');
 });
 
@@ -84,7 +95,7 @@ formEl.addEventListener('submit', async (e) => {
   const apiKey = apiKeyEl.value.trim() || null;
 
   removeEmptyState();
-  appendMessage('user', message);
+  appendUserMessage(message);
   inputEl.value = '';
   inputEl.style.height = 'auto';
 
@@ -92,7 +103,7 @@ formEl.addEventListener('submit', async (e) => {
   sendBtn.disabled = true;
   setStatus('Sigil is reading...');
 
-  const placeholder = appendMessage('sigil', '…', { dim: true });
+  const placeholder = appendHeteronymMessage('Johannes Sigil', '…', { dim: true });
 
   try {
     const res = await fetch('/api/sigil', {
@@ -109,7 +120,7 @@ formEl.addEventListener('submit', async (e) => {
     if (!res.ok) {
       const body = await res.json().catch(() => ({ error: `HTTP ${res.status}` }));
       placeholder.remove();
-      appendMessage('error', body.error || `Request failed: ${res.status}`);
+      appendErrorMessage(body.error || `Request failed: ${res.status}`);
       setStatus('Error.');
       return;
     }
@@ -117,24 +128,47 @@ formEl.addEventListener('submit', async (e) => {
     const data = await res.json();
     placeholder.remove();
 
-    const sigilEl = appendMessage('sigil', data.say || '');
-    if (data.retrievals && data.retrievals.length) {
-      appendRetrievals(sigilEl, data.retrievals);
+    const respMessages = Array.isArray(data.messages) ? data.messages : [];
+    if (respMessages.length === 0) {
+      appendErrorMessage('Empty response from Sigil endpoint.');
+      setStatus('Error.');
+      return;
     }
 
+    // Render each message in sequence, attaching retrievals to the last one only
+    let lastEl = null;
+    let lastNavigate = null;
+    for (let i = 0; i < respMessages.length; i++) {
+      const m = respMessages[i];
+      const speaker = m.speaker || 'Johannes Sigil';
+      const say = m.say || '';
+      lastEl = appendHeteronymMessage(speaker, say);
+      if (m.navigate) lastNavigate = m.navigate;
+    }
+    if (lastEl && data.retrievals && data.retrievals.length) {
+      appendRetrievals(lastEl, data.retrievals);
+    }
+
+    // Update history: store the user turn and the assistant's full multi-message
+    // turn as a single JSON-stringified content, so the model sees its own
+    // structured output on subsequent turns.
     history.push({ role: 'user', content: message });
-    history.push({ role: 'assistant', content: data.say || '' });
+    history.push({
+      role: 'assistant',
+      content: JSON.stringify({ messages: respMessages }),
+    });
     if (history.length > 32) history = history.slice(-32);
 
-    if (mode === 'merkabah' && data.navigate && window.sky?.navigate) {
-      const ok = window.sky.navigate(data.navigate);
-      setStatus(ok ? `Navigating: ${data.navigate.directive}.` : 'Sigil offered a navigation, but it could not be resolved.');
+    // Navigation: only in Merkabah mode, using the last directive in the response
+    if (mode === 'merkabah' && lastNavigate && window.sky?.navigate) {
+      const ok = window.sky.navigate(lastNavigate);
+      setStatus(ok ? `Navigating: ${lastNavigate.directive}.` : 'A navigation was offered but could not be resolved.');
     } else {
       setStatus('Ready.');
     }
   } catch (err) {
     placeholder.remove();
-    appendMessage('error', `Connection error: ${err.message}`);
+    appendErrorMessage(`Connection error: ${err.message}`);
     setStatus('Error.');
   } finally {
     isSending = false;
@@ -143,7 +177,7 @@ formEl.addEventListener('submit', async (e) => {
   }
 });
 
-// Submit on Cmd/Ctrl+Enter, allow Enter for newlines
+// Submit on Cmd/Ctrl+Enter
 inputEl.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) {
     e.preventDefault();
@@ -168,16 +202,49 @@ function removeEmptyState() {
   emptyStateRemoved = true;
 }
 
-function appendMessage(role, content, opts = {}) {
+function appendUserMessage(content) {
   const wrap = document.createElement('div');
-  wrap.className = `message ${role}`;
+  wrap.className = 'message user';
   const roleLabel = document.createElement('div');
   roleLabel.className = 'message-role';
-  roleLabel.textContent = roleLabelFor(role);
+  roleLabel.textContent = 'You';
+  const contentEl = document.createElement('div');
+  contentEl.className = 'message-content';
+  contentEl.textContent = content;
+  wrap.appendChild(roleLabel);
+  wrap.appendChild(contentEl);
+  messagesEl.appendChild(wrap);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+  return wrap;
+}
+
+function appendHeteronymMessage(speaker, content, opts = {}) {
+  const wrap = document.createElement('div');
+  const classSlug = SPEAKER_CLASS[speaker] || 'sigil';
+  wrap.className = `message heteronym ${classSlug}`;
+  const roleLabel = document.createElement('div');
+  roleLabel.className = 'message-role';
+  roleLabel.textContent = speaker;
   const contentEl = document.createElement('div');
   contentEl.className = 'message-content';
   contentEl.textContent = content;
   if (opts.dim) contentEl.style.opacity = '0.5';
+  wrap.appendChild(roleLabel);
+  wrap.appendChild(contentEl);
+  messagesEl.appendChild(wrap);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+  return wrap;
+}
+
+function appendErrorMessage(content) {
+  const wrap = document.createElement('div');
+  wrap.className = 'message error';
+  const roleLabel = document.createElement('div');
+  roleLabel.className = 'message-role';
+  roleLabel.textContent = 'Error';
+  const contentEl = document.createElement('div');
+  contentEl.className = 'message-content';
+  contentEl.textContent = content;
   wrap.appendChild(roleLabel);
   wrap.appendChild(contentEl);
   messagesEl.appendChild(wrap);
@@ -206,15 +273,6 @@ function appendRetrievals(messageEl, retrievals) {
   }
   details.appendChild(ul);
   messageEl.appendChild(details);
-}
-
-function roleLabelFor(role) {
-  switch (role) {
-    case 'user': return 'You';
-    case 'sigil': return 'Johannes Sigil';
-    case 'error': return 'Error';
-    default: return role;
-  }
 }
 
 function setStatus(text) {

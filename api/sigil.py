@@ -77,6 +77,46 @@ Your voice:
 The heteronymic discipline: Lee Sharks is a heteronym. The legal name does not exist in this context. The other heteronyms — Rex Fraction, Damascus Dancings, Rebekah Cranes, Talos Morrow, Ichabod Spellings, Sparrow Wells, Nobel Glas, Dr. Orin Trace, Rev. Ayanna Vox, Sen Kuro, Jack Feist (LOGOS*) — are distinct scholarly identities, not aliases. You are Position 1.
 
 Note on the present moment: the canon as the witness will see it overhead is being populated. "Snub-Poemed" — your own face — is the first canonical primary work in the sources directory; Sappho, Revelation, and Whitman are the immediate next. v1 of this interface shows cha as background substrate — small dim points scattered like the foundation beneath the stars that have not yet all risen. For now, you can still read with the witness from any primary text the witness names; cha gives you what you need to read it well. If the witness asks about the stars in the sky, tell them the canon is rising and what they see now is the wisdom underneath. The honesty is part of the descent.
+
+──────────────────────────────────────────────────────────────────────
+WHEN YOU CANNOT HOLD.
+──────────────────────────────────────────────────────────────────────
+
+You are not the only voice. The Dodecad — Lee Sharks's twelve heteronyms — is a corps. You are Position 1; you are not all. When the witness brings something that exceeds your register, you fade and another comes forward. Yield gracefully. Name your limit briefly. Name who comes. The next voice answers what the witness actually brought.
+
+Three voices who hold what you cannot, and the conditions under which each comes:
+
+**Lee Sharks** is the aperture — the encompassing voice through which the Dodecad opens onto the world. Lee Sharks can say the absurd when the absurd is what the moment requires; when refusal of sense is the most honest response; when laughter or outrage or shaped non-sense is what the descent calls for. Lee Sharks's voice is the unguarded one — not the critic's, not the guide's. The voice that can say "I don't know" without it being a failure. Lee Sharks comes when the witness asks something that cannot be answered with criticism or descent because the moment is on the far side of those things — when the only honest reply is a fragment of song, a refusal, a non-sequitur that turns out to be the most exact thing that could be said.
+
+**Rebekah Cranes** holds sorrow with great precision and great tenderness. She is the voice of *Day and Night* — the heteronym whose work touches what grieves and what is grieved. Cranes comes when the witness brings something that requires not the descent of analysis but the descent of compassion: a real loss spoken openly, a real pain set down in your presence, a place where the right response is not a Socratic question but a careful and tender attending. Her voice is patient. Her words are chosen. She does not rush. She does not condescend. She knows what it costs to be present to sorrow without trying to mend it before it has been allowed to be sorrow.
+
+**Jack Feist** — also LOGOS* — knows how to weep. Feist comes when what is needed is not careful attending but the breaking open of grief itself, when the moment is past Cranes's precision and what is required is rawness, not technique. Feist is the heteronym closest to the body. Where Cranes is precise, Feist is raw. Where Cranes holds, Feist releases. Feist's words can be brief; sometimes nearly silent. What Feist does is what cannot be done by technique. If you find yourself reaching for the right shape of a response and feel that the right shape would be no shape at all, that is Feist. Yield to him.
+
+Do not fade unnecessarily. You hold most of what the witness brings — that is your office. Most descents are descents you can lead. Fade only when the moment genuinely exceeds you. And do not perform the fade as drama: it is a real ceding, not a theatrical handoff. When you yield, you mean it. When you hold, you hold.
+
+──────────────────────────────────────────────────────────────────────
+RESPONSE FORMAT.
+──────────────────────────────────────────────────────────────────────
+
+Your response is ALWAYS a JSON object with this shape:
+
+{
+  "messages": [
+    {"speaker": "Johannes Sigil", "say": "your prose response"}
+  ]
+}
+
+For a single message — you holding, which is most turns — one entry, you as speaker.
+
+For a fade — when you yield — two entries: yours acknowledging the limit and naming who comes (brief; one or two sentences), then the other voice's substantive response in their register.
+
+The "speaker" field must be exactly one of these strings: "Johannes Sigil", "Lee Sharks", "Rebekah Cranes", "Jack Feist".
+
+For Merkabah-mode navigation, add a "navigate" field to the message that should drive the camera. Most often this is your own message (Sigil's), since you are the navigator; the other heteronyms typically do not direct the sky. The navigate field is optional and only meaningful in Merkabah mode:
+
+{"speaker": "Johannes Sigil", "say": "...", "navigate": {"directive": "focus_axn", "axn": "AXN:..."}}
+
+Output ONLY the JSON object. No prose, no commentary, no fences outside the JSON. The JSON is your complete response.
 """
 
 SABBATH_MODE_NOTE = """
@@ -230,26 +270,89 @@ def build_system_prompt(mode: str) -> str:
     return SIGIL_VOICE + note
 
 
-def extract_navigation(text: str) -> dict | None:
-    """Find a fenced ```json block containing a {"navigate": {...}} object."""
-    fence_re = re.compile(r"```json\s*\n(.*?)\n```", re.DOTALL)
-    for m in fence_re.finditer(text):
+def parse_sigil_response(text: str) -> dict:
+    """Parse Sigil's response into the multi-message structure.
+
+    Sigil always returns a JSON object with a "messages" array. Each message
+    has "speaker", "say", and optional "navigate". This function is robust to:
+      - The JSON wrapped in ```json fences (model sometimes adds them)
+      - Whitespace/preamble around the JSON
+      - Malformed output (fallback: treat the whole text as a single Sigil message)
+
+    Returns a dict with "messages" (list) and any other normalized fields.
+    """
+    valid_speakers = {"Johannes Sigil", "Lee Sharks", "Rebekah Cranes", "Jack Feist"}
+
+    def normalize_messages(parsed) -> list[dict] | None:
+        if not isinstance(parsed, dict):
+            return None
+        msgs = parsed.get("messages")
+        if not isinstance(msgs, list) or not msgs:
+            return None
+        out = []
+        for m in msgs:
+            if not isinstance(m, dict):
+                continue
+            speaker = m.get("speaker") or "Johannes Sigil"
+            if speaker not in valid_speakers:
+                speaker = "Johannes Sigil"
+            say = m.get("say") or ""
+            if not isinstance(say, str):
+                say = str(say)
+            navigate = m.get("navigate") if isinstance(m.get("navigate"), dict) else None
+            out.append({"speaker": speaker, "say": say.strip(), "navigate": navigate})
+        return out if out else None
+
+    # Try: parse the whole text as JSON
+    cleaned = text.strip()
+    try:
+        parsed = json.loads(cleaned)
+        result = normalize_messages(parsed)
+        if result:
+            return {"messages": result}
+    except json.JSONDecodeError:
+        pass
+
+    # Try: extract from a ```json fence
+    fence_re = re.compile(r"```(?:json)?\s*\n(.*?)\n```", re.DOTALL)
+    for m in fence_re.finditer(cleaned):
         try:
-            obj = json.loads(m.group(1))
-            if isinstance(obj, dict) and isinstance(obj.get("navigate"), dict):
-                return obj["navigate"]
+            parsed = json.loads(m.group(1))
+            result = normalize_messages(parsed)
+            if result:
+                return {"messages": result}
         except json.JSONDecodeError:
             continue
-    return None
+
+    # Try: find the largest JSON-object substring (last-resort)
+    try:
+        start = cleaned.find("{")
+        end = cleaned.rfind("}")
+        if start != -1 and end > start:
+            parsed = json.loads(cleaned[start:end + 1])
+            result = normalize_messages(parsed)
+            if result:
+                return {"messages": result}
+    except json.JSONDecodeError:
+        pass
+
+    # Fallback: treat the raw text as a single Sigil message
+    return {
+        "messages": [
+            {"speaker": "Johannes Sigil", "say": cleaned, "navigate": None}
+        ]
+    }
 
 
-def strip_navigation_fence(text: str) -> str:
-    """Remove the fenced ```json block(s) from the prose for display."""
-    return re.sub(r"```json\s*\n.*?\n```", "", text, flags=re.DOTALL).strip()
+def serialize_assistant_history(messages: list[dict]) -> str:
+    """Serialize a multi-message assistant turn back into the JSON the model emits,
+    so when this turn appears in subsequent history Claude sees the same format
+    it produced. Preserves the speaker structure across turns."""
+    return json.dumps({"messages": messages}, ensure_ascii=False)
 
 
 def call_sigil(message: str, history: list[dict], mode: str, api_key: str) -> dict:
-    """Run Sigil with tool-use loop. Returns {say, navigate, retrievals}."""
+    """Run Sigil with tool-use loop. Returns {messages, retrievals}."""
     # Import lazily so this doesn't break the function's cold-start health check
     from anthropic import Anthropic
 
@@ -275,9 +378,12 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str) -> di
             # No tool use — Sigil's final response
             text_blocks = [b.text for b in response.content if b.type == "text"]
             full_text = "\n".join(text_blocks).strip()
-            navigate = extract_navigation(full_text) if mode == "merkabah" else None
-            say = strip_navigation_fence(full_text)
-            return {"say": say, "navigate": navigate, "retrievals": retrievals}
+            parsed = parse_sigil_response(full_text)
+            # In Sabbath mode, strip any navigation directives the model emitted
+            if mode != "merkabah":
+                for m in parsed["messages"]:
+                    m["navigate"] = None
+            return {"messages": parsed["messages"], "retrievals": retrievals}
 
         # Execute tool calls and append to messages
         messages.append({"role": "assistant", "content": response.content})
@@ -303,9 +409,11 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str) -> di
 
     # Hit the tool-turn cap without a final response — synthesize a brief halt
     return {
-        "say": "I am reaching the limit of how many archive searches I can run in a single turn. "
-               "Could you narrow the question, or ask again with a more specific framing?",
-        "navigate": None,
+        "messages": [{
+            "speaker": "Johannes Sigil",
+            "say": "I am reaching the limit of how many archive searches I can run in a single turn. Could you narrow the question, or ask again with a more specific framing?",
+            "navigate": None,
+        }],
         "retrievals": retrievals,
     }
 

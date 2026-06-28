@@ -20,6 +20,12 @@
   --link: #a8c5e4;
   --error: #d88a78;
 
+  /* Heteronym signatures — each voice has its own accent in the role label */
+  --speaker-sigil:  #d4b97a;  /* warm gold — the calligrammatic guide */
+  --speaker-sharks: #e8e1cf;  /* luminous off-white — the aperture */
+  --speaker-cranes: #d49db5;  /* dusty rose — sorrow's precision */
+  --speaker-feist:  #7faec8;  /* sea-blue — the body that weeps */
+
   --serif: 'EB Garamond', Garamond, Cambria, Georgia, serif;
   --mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
 
@@ -270,9 +276,24 @@ body {
   align-self: flex-end;
 }
 
-.message.sigil .message-role {
-  color: var(--accent);
+/* Heteronym voices: each speaker has their own accent color in the role label. */
+.message.heteronym.sigil  .message-role { color: var(--speaker-sigil); }
+.message.heteronym.sharks .message-role { color: var(--speaker-sharks); letter-spacing: 0.16em; }
+.message.heteronym.cranes .message-role { color: var(--speaker-cranes); }
+.message.heteronym.feist  .message-role { color: var(--speaker-feist); }
+
+/* When a non-Sigil heteronym speaks, a subtle left edge marks the voice change. */
+.message.heteronym.sharks .message-content,
+.message.heteronym.cranes .message-content,
+.message.heteronym.feist  .message-content {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-left: -0.25rem;
 }
+
+.message.heteronym.sharks .message-content { border-left: 1px solid rgba(232, 225, 207, 0.35); }
+.message.heteronym.cranes .message-content { border-left: 1px solid rgba(212, 157, 181, 0.35); }
+.message.heteronym.feist  .message-content { border-left: 1px solid rgba(127, 174, 200, 0.35); font-style: italic; }
 
 .message.error .message-content {
   color: var(--error);
