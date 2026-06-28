@@ -62,47 +62,76 @@ body {
   font-feature-settings: "kern", "liga", "calt";
 }
 
-/* ── The sky: full viewport background ──────────────────────────────── */
+/* ── The sky: photographic backdrop (v2.0) ────────────────────────────
+   Replaces the WebGL renderer with a static photograph applied via CSS.
+   The image carries the Milky Way, the constellation labels, the mountain
+   horizon — everything visual. The chat panel layers over the center.
+   A left-side gradient mask darkens the area where the source image had a
+   baked-in chat panel so it doesn't ghost through behind ours.
+
+   The WebGL real-stars renderer lives at sky-real-stars.js.deferred —
+   restored by renaming back to sky.js when we return to actual-sky mode. */
 
 #sky-canvas-container {
   position: fixed;
   inset: 0;
   z-index: 0;
   overflow: hidden;
-  background:
-    radial-gradient(ellipse at 30% 20%, rgba(60, 40, 80, 0.12) 0%, transparent 40%),
-    radial-gradient(ellipse at 70% 80%, rgba(40, 50, 80, 0.10) 0%, transparent 45%),
-    linear-gradient(180deg, #030406 0%, #06080d 55%, #080a10 75%, #0a0c12 100%);
-}
-
-#sky-canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* Mountain horizon — silhouette occluder at the bottom of the viewport.
-   Sits above the WebGL canvas but below the chat overlay. Stars projected
-   below the horizon are hidden behind it. Anchors the witness as a body
-   looking up. */
-#sky-horizon {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 30vh;
-  min-height: 180px;
-  max-height: 400px;
-  z-index: 0;
-  pointer-events: none;
-  background-image: url('/assets/horizon-mountains.svg');
+  background-color: #050608;
+  background-image: url('/assets/sky-backdrop.jpg');
   background-size: cover;
-  background-position: center bottom;
+  background-position: center right;
   background-repeat: no-repeat;
 }
-/* On mobile, the horizon stays present but smaller */
+
+/* Vignette: darkens the left half where the source image has its baked-in
+   chat panel, so the actual chat panel sits over clean dark space and
+   nothing ghosts through. Right side stays bright with the Milky Way and
+   the constellation labels. */
+#sky-canvas-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 6, 8, 0.85) 0%,
+    rgba(5, 6, 8, 0.55) 25%,
+    rgba(5, 6, 8, 0.25) 45%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+/* WebGL canvas disabled in v2.0; preserved in HTML so the markup is stable */
+#sky-canvas {
+  display: none;
+}
+
+/* Mountains are baked into the photographic backdrop. The SVG horizon
+   silhouette is hidden in v2.0 but the asset is retained at
+   /assets/horizon-mountains.svg for when we return to real-night-sky mode. */
+#sky-horizon {
+  display: none;
+}
+
+/* Mobile portrait: use the right-half crop (no baked-in chat panel) to
+   maximize visible Milky Way and labels without horizontal cropping. */
 @media (max-width: 600px) {
-  #sky-horizon { height: 22vh; min-height: 140px; }
+  #sky-canvas-container {
+    background-image: url('/assets/sky-backdrop-mobile.jpg');
+    background-position: center center;
+  }
+  /* Less aggressive vignette on mobile (the crop already excludes the
+     baked-in chat panel area) */
+  #sky-canvas-container::before {
+    background: linear-gradient(
+      180deg,
+      rgba(5, 6, 8, 0.45) 0%,
+      transparent 30%,
+      transparent 70%,
+      rgba(5, 6, 8, 0.55) 100%
+    );
+  }
 }
 
 
