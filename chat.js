@@ -74,13 +74,19 @@ settingsToggle.addEventListener('click', () => {
   const open = settingsPanel.classList.toggle('open');
   settingsPanel.setAttribute('aria-hidden', open ? 'false' : 'true');
   settingsToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  if (open) apiKeyEl.focus();
+  if (open) {
+    settingsPanel.removeAttribute('hidden');
+    apiKeyEl.focus();
+  } else {
+    settingsPanel.setAttribute('hidden', '');
+  }
 });
 
 settingsClose.addEventListener('click', () => {
   settingsPanel.classList.remove('open');
   settingsPanel.setAttribute('aria-hidden', 'true');
   settingsToggle.setAttribute('aria-expanded', 'false');
+  settingsPanel.setAttribute('hidden', '');
 });
 
 document.addEventListener('keydown', (e) => {
@@ -88,6 +94,7 @@ document.addEventListener('keydown', (e) => {
     settingsPanel.classList.remove('open');
     settingsPanel.setAttribute('aria-hidden', 'true');
     settingsToggle.setAttribute('aria-expanded', 'false');
+    settingsPanel.setAttribute('hidden', '');
   }
 });
 

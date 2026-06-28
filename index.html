@@ -9,6 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Critical-path: settings panel must be hidden by default regardless
+       of which version of /styles.css the browser has cached. !important
+       beats any cached visibility:hidden+backdrop-filter compositing bug. */
+    #settings-panel:not(.open) { display: none !important; }
+  </style>
 </head>
 <body>
   <!-- The sky occupies the entire viewport. Chat overlays it. -->
@@ -68,7 +74,7 @@
       </form>
     </div>
 
-    <div id="settings-panel" aria-hidden="true">
+    <div id="settings-panel" hidden aria-hidden="true">
       <button class="settings-close" aria-label="Close settings">×</button>
       <h3>Anthropic API Key</h3>
       <p class="key-note">
