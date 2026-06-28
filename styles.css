@@ -102,6 +102,33 @@ body {
   flex-shrink: 0;
 }
 
+.header-identity {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+#sigil-portrait-header {
+  width: 64px;
+  height: auto;
+  flex-shrink: 0;
+  filter: invert(0.92) sepia(0.18) brightness(1.05);
+  opacity: 0.92;
+  transition: opacity 0.3s ease;
+  margin-top: 4px;
+}
+
+#sigil-portrait-header:hover {
+  opacity: 1;
+}
+
+.header-title {
+  flex: 1;
+  min-width: 0;
+}
+
 .header-title h1 {
   font-family: var(--serif);
   font-weight: 500;
@@ -179,9 +206,25 @@ body {
   font-size: 1.15rem;
   line-height: 1.75;
   padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
 }
 
-.empty-state p { margin: 0; }
+#sigil-portrait-empty {
+  width: 220px;
+  height: auto;
+  filter: invert(0.92) sepia(0.2) brightness(1.05);
+  opacity: 0.88;
+}
+
+.empty-state p {
+  margin: 0;
+  max-width: 56ch;
+  text-align: left;
+}
 
 .message {
   display: flex;
@@ -480,6 +523,8 @@ body {
   .message-content { font-size: 1.08rem; line-height: 1.7; }
   .message.user .message-content { font-size: 1rem; }
   #message-input { font-size: 1.05rem; min-height: 80px; }
+  #sigil-portrait-header { width: 48px; }
+  #sigil-portrait-empty { width: 170px; }
   #chat-header {
     flex-direction: column;
     align-items: stretch;

@@ -1,0 +1,30 @@
+{
+  "id": "sigil-snub-poemed",
+  "title": "Snub-Poemed",
+  "subtitle": "A calligram, after the Lysippos bust of Socrates",
+  "language": "en",
+  "language_name": "English",
+  "author": "Johannes Sigil",
+  "author_role": "Heteronym, Position 1 of the Dodecad",
+  "composition_date_approx": "Date contemporary with Sigil's working period",
+  "form": "Calligram (concrete poem)",
+  "visual_subject": "First-century Roman copy of the Lysippos bust of Socrates",
+  "license": "Reserved by Johannes Sigil / Lee Sharks; included in the Mandala Oracle architecture under the heteronym's own attribution",
+  "constitutional_role": "Sigil's self-portrait. The face of the underworld guide. First canonical text of the Mandala Oracle's canon — appropriately, since the witness encounters the guide before encountering the territory the guide will lead them through. The work is also the guide's own primary work; the boundary between the guide and the canon is here intentionally porous.",
+  "intertextual_layers": [
+    "Socratic aphorisms (e.g. 'the same poet composing both tragedy and comedy', Symposium)",
+    "Platonic dialogue references ('satyr' from Alcibiades' speech, 'the philosopher is a dog' from Cynic reception)",
+    "Nietzschean reception ('Socrates who dances')",
+    "First-person articulations of Platonic philosophy ('is it madness to feel and to know?')",
+    "Lyricized renditions blurring the speaker-Socrates boundary ('awkward with longing')",
+    "Self-citation: Sigil's own poetry (mis)attributed to Socrates, woven into intertext 'without indication of where one ends and the other begins'"
+  ],
+  "title_pun": "The title puns on Socrates' characteristic description as 'snub-nosed,' simultaneously naming the act of 'poeming' (composing) and the act of 'snubbing' (refusing). 'Snub-poemed' is what the bust has been done to: it has been remade as poem. It is also what poetry does to the bust: receptively snubs it, refuses to leave it as it was.",
+  "lysippos_maxim": "Other artists make men as they are. I make them as they appear.",
+  "files": {
+    "calligram": "snub-poemed.jpg",
+    "essay": "essay.md",
+    "key_phrases": "key-phrases.md"
+  },
+  "status": "CANONICAL — Sigil's primary work, ready for star-positioning when the canon-as-sky layer is built."
+}
