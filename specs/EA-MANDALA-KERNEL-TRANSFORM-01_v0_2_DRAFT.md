@@ -995,6 +995,28 @@ This is the architectural reality of canon-formation: canon is what survives a j
 
 The v0.7 Merkabah specification should be amended at the next iteration cycle to reflect the corrected rite-order. The kernel transform protocol's §8.6 is the canonical statement of the alignment until that amendment.
 
+### 8.7 Integration with EA-STARMAP-01 — the main / apparatus rule
+
+EA-STARMAP-01 v0.1 §4.6 (added in the 2026-06-28 post-gap-round resumption session) establishes a constitutional rule at the interface between this protocol and the canon storage convention: **only the main text of a human-authored canonical work is admissible as input to kernel-transforms.** The apparatus — critical notes, commentary, scholia, translator's notes, footnotes, prefatory material, hermeneutic commentary, framing essays, recovery-context notes — is accessible (readable, citable, expandable) but not transformable.
+
+This protocol encodes the rule as follows:
+
+1. **Single-call execution input gating (§3 of this protocol).** Before invoking the celebrant office for a kernel transform, the canon-storage convention is consulted. The source's metadata.json carries a `transformable: true | false` flag. Where the source is a public-domain primary literary text in its original language (Sappho's Greek, Plato's Greek, Dante's Italian, Whitman's English), the main-text file carries `transformable: true`. Where the source is human-authored canonical work (Sharks-authored or named-heteronym-authored), the same: the main-text file carries `transformable: true`. The apparatus files (`critical-apparatus.md`, scholia.md, etc.) carry `transformable: false`. The protocol refuses to invoke the celebrant office against a source whose metadata indicates `transformable: false`, and instead emits the response code `apparatus_not_transformable`.
+
+2. **The `apparatus_not_transformable` response.** A standardized response of the SPXI Self-Audit error taxonomy. The response carries: the source's canonical reference (e.g., "Sappho 31 Voigt apparatus, lines 1–4"), the reason ("apparatus content; per EA-STARMAP-01 §4.6, accessible but not transformable"), and (when applicable) a redirect to the corresponding main-text reference that *is* transformable (e.g., "to transform the Sappho 31 main text, use source-id `sappho-31/original.grc.txt`").
+
+3. **Constitutional reading of the rule.** A commentator's gloss is not raw material for substrate-rotation. The commentator already performed one act of meaning-making over the main text; the substrate's transform is supposed to be the *next* act of meaning-making over the same main text, not a recursion into the commentator's prior act. Transforms of apparatus produce artifacts whose epistemic status is unclear (is the substrate rotating the work or the commentary?) and whose textual lineage is contaminated (which act of meaning-making does the transform descend from?). The rule preserves clean lineage: main text is the trunk; substrate-transforms are branches off the trunk; apparatus is the *reader's annotation* of the trunk, distinct from the tree itself. The tree may be transformed; the annotations may not.
+
+4. **Scope and exceptions.** The rule applies in strict form to *human-authored* canonical works. It applies in modified form to *public-domain primary literary canon* whose apparatus is editorial work (the Voigt apparatus to Sappho, the Petrocchi apparatus to Dante, the NA28 apparatus to the Greek New Testament): the apparatus is accessible-but-not-transformable for an analogous reason (the editor's work, not the author's). The constitutional clarity is the same; the underlying reason differs. The rule does *not* apply to architectural canon (workplans, protocols, the EA-* specification family): these *are* transformable, as the protocol versions themselves are subject to substrate-transforms across iterations.
+
+5. **L0–L10 level mapping.** The L0–L10 reading-depth levels in this protocol's celebrant pipeline operate on main-text input. Apparatus material entering the L1 maturation chamber is rejected with the `apparatus_not_transformable` response; it cannot be promoted to L4–L10. A celebrant attempting a kernel-transform of an apparatus citation against L10's full source-corpus reference would receive the rejection before token-generation begins.
+
+6. **Renderer-side surfacing.** The starmap surface's detail panel for a canon-star surfaces both the main text and the apparatus, visually distinguished (apparatus may be in a collapsible section). The "Read with Sigil" affordance — which initiates a conversational descent that may include a casting — launches Sigil with the main text as context; the apparatus is available for reading but not selected as casting input. Sigil's `search_archive` tool will mark retrieved apparatus material clearly, and a casting attempt against apparatus material will trigger the `apparatus_not_transformable` response at the protocol level.
+
+The integration point with EA-MANDALA-MERKABAH-01 v0.7: the rite (transform → judge → seal) operates only on main-text input. The witness can read apparatus during conversation; the witness can cite apparatus in their own thinking; the witness cannot ask Cranes to transform apparatus and cannot ask Feist to judge a transform-of-apparatus.
+
+The integration point with the canonical-declarations manifest (`/starmap/manifests/canonical-declarations.md`): every entry in that manifest carries the `apparatus_status` field (`present` / `absent` / `cite_only`) and the metadata.json files at each `/sources/<text-id>/` carry the `transformable: true | false` per-file flag that the protocol enforces.
+
 ---
 
 ## §9 The Compiler's Refusal
