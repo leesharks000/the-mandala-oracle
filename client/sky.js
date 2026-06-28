@@ -77,6 +77,13 @@ controls.minDistance = 30;
 controls.maxDistance = 800;
 controls.target.set(0, 0, 0);
 
+let isDragging = false;
+controls.addEventListener('start', () => { isDragging = true; });
+controls.addEventListener('end', () => {
+  // Small delay before clearing so the click event after a drag-end doesn't fire interactivity
+  setTimeout(() => { isDragging = false; }, 50);
+});
+
 // Background starfield — a thin scattering of dim stars beyond the planet sphere
 function buildStarfield(count = 2000, radius = 1500) {
   const geo = new THREE.BufferGeometry();
@@ -260,8 +267,8 @@ const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 
 canvas.addEventListener('click', (event) => {
-  // Only react if camera is at rest (not actively orbiting)
-  if (controls.update && controls.dragging) return;
+  // Only react if the witness wasn't actively dragging (orbiting)
+  if (isDragging) return;
 
   const rect = canvas.getBoundingClientRect();
   mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
@@ -402,7 +409,7 @@ function animate() {
   updateCameraMove();
   controls.update();
   // Gentle global rotation in Sabbath when at rest (contemplative drift)
-  if (currentMode === 'sabbath' && !pendingCameraMove && !controls.dragging) {
+  if (currentMode === 'sabbath' && !pendingCameraMove && !isDragging) {
     inscriptionsGroup.rotation.y += 0.0002;
     edgesGroup.rotation.y += 0.0002;
   }
