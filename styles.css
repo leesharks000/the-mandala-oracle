@@ -280,10 +280,12 @@ body {
 }
 
 #sigil-portrait-empty {
-  width: 140px;                   /* was 220 — denser */
+  width: min(85vw, 340px);       /* significantly larger — the calligram
+                                     is the focal point before first message,
+                                     and it disappears after */
   height: auto;
   filter: invert(0.92) sepia(0.2) brightness(1.05);
-  opacity: 0.88;
+  opacity: 0.92;
 }
 
 .empty-state p {
@@ -554,8 +556,14 @@ body {
   background: var(--bg-elevated);
   border-top: 1px solid var(--border-bright);
   padding: 1.75rem var(--space-edge) 1.75rem;
-  transform: translateY(100%);
-  transition: transform 0.25s ease;
+  /* Hidden by default with multiple mechanisms — backdrop-filter on this
+     element creates its own compositing layer that can escape the parent
+     overflow:hidden, so transform alone wasn't enough. */
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, visibility 0s linear 0.2s, transform 0.2s ease;
   z-index: 10;
   max-height: 55vh;
   overflow-y: auto;
@@ -563,7 +571,13 @@ body {
   -webkit-backdrop-filter: blur(20px);
 }
 
-#settings-panel.open { transform: translateY(0); }
+#settings-panel.open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, visibility 0s, transform 0.2s ease;
+}
 
 #settings-panel h3 {
   font-family: var(--mono);
@@ -631,7 +645,7 @@ body {
   .message.user .message-content { font-size: 0.94rem; padding: 0.7rem 1rem; }
   #message-input { font-size: 0.98rem; min-height: 56px; padding: 0.65rem 0.9rem; }
   #sigil-portrait-header { width: 36px; }
-  #sigil-portrait-empty { width: 110px; }
+  #sigil-portrait-empty { width: min(85vw, 280px); }
 
   /* Mobile: header lives at the top of the viewport as a horizontal bar.
      Portrait + title on the left; mode toggle on the right. Chat panel
