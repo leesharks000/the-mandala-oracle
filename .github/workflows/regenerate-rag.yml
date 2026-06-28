@@ -1,0 +1,74 @@
+name: Regenerate RAG Index
+
+on:
+  # Run on pushes to main that change the script, submodule, or workflow itself
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/regenerate_rag.py'
+      - 'requirements.txt'
+      - '.github/workflows/regenerate-rag.yml'
+      - 'alexanarch'  # submodule pointer changes
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+  # Weekly cron in case alexanarch advances without us noticing (Sunday 03:00 UTC)
+  schedule:
+    - cron: '0 3 * * 0'
+
+permissions:
+  contents: write  # need to commit regenerated rag/*.json back to repo
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (with submodules)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Update alexanarch submodule to latest main
+        run: |
+          cd alexanarch
+          git fetch origin
+          git checkout origin/main
+          cd ..
+      
+      - name: Regenerate RAG index
+        run: python scripts/regenerate_rag.py
+      
+      - name: Check for changes
+        id: check
+        run: |
+          if [ -n "$(git status --porcelain rag/ alexanarch)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push regenerated index
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rag/ alexanarch
+          git commit -m "regenerate: RAG index — $(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+          Triggered by ${{ github.event_name }}.
+          Corpus hash: $(jq -r .corpus_hash rag/config.json)
+          Deposit count: $(jq -r .deposit_count rag/config.json)"
+          git push
