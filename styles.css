@@ -114,17 +114,17 @@ body {
 
 /* ── The reading space: translucent chat overlay ─────────────────────── */
 
-/* ── Reading space: contained translucent card over the sky ─────────────
-   No longer full-viewport. Sits inside the page with margins so the sky
-   shows around it. Rounded corners, gold-tinted border, reduced opacity
-   so the photographic backdrop reads through. Backdrop-blur tightened.
-
-   The page header is a SIBLING of this card (not a child) — it floats
-   above the sky to the upper-left, with the chat panel sitting below. */
+/* ── Reading space: just a layout container, no visible panel ─────────
+   v3.2 — Lee's call: 'Do we need the transparency at all? Everything
+   would still be perfectly legible against the clear night sky.' Right.
+   The card was a habit from the mockup, not a need. Removing the
+   background, blur, border, corners, shadow. Text floats on the sky
+   directly. Only the input field keeps its own dark fill so what the
+   user is typing is legible against bright Milky Way pixels. */
 
 #reading-space {
   position: fixed;
-  top: 132px;                 /* below the page header */
+  top: 132px;
   bottom: 18px;
   left: 18px;
   right: 18px;
@@ -133,12 +133,12 @@ body {
   flex-direction: column;
   max-width: 720px;
   margin: 0 auto;
-  background: rgba(10, 12, 16, 0.28);     /* was 0.55 — much more sky-through */
-  backdrop-filter: blur(5px) saturate(1.08);
-  -webkit-backdrop-filter: blur(5px) saturate(1.08);
-  border: 1px solid rgba(220, 200, 170, 0.18);
-  border-radius: 14px;
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(0, 0, 0, 0.25);
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
   overflow: hidden;
 }
 
@@ -438,9 +438,9 @@ body {
 /* ── Input area ────────────────────────────────────────────────────── */
 
 #input-area {
-  border-top: 1px solid var(--border);
-  padding: 0.85rem var(--space-edge) 1rem;     /* was 1.5 ... 1.75 */
-  background: var(--reading-space-bottom);
+  border-top: 1px solid rgba(220, 200, 170, 0.10);
+  padding: 0.85rem var(--space-edge) 1rem;
+  background: transparent;     /* no bar; only the textarea keeps its own fill */
   flex-shrink: 0;
 }
 
