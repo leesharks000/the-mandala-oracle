@@ -8,11 +8,14 @@ const sendBtn = document.getElementById('send-button');
 const statusEl = document.getElementById('status');
 const apiKeyEl = document.getElementById('api-key-input');
 const modeBtns = document.querySelectorAll('.mode-button');
-const focusInfoEl = document.getElementById('focus-info');
+const settingsToggle = document.getElementById('settings-toggle');
+const settingsPanel = document.getElementById('settings-panel');
+const settingsClose = settingsPanel.querySelector('.settings-close');
 
 let mode = 'sabbath';
 let history = [];  // [{role: 'user'|'assistant', content: str}, ...]
 let isSending = false;
+let emptyStateRemoved = false;
 
 // ─────────────────────────────────────────────────────────────────────────
 // Mode toggle
@@ -34,13 +37,38 @@ modeBtns.forEach((btn) => {
 });
 
 // ─────────────────────────────────────────────────────────────────────────
-// Initial welcome
+// Settings panel
+// ─────────────────────────────────────────────────────────────────────────
+
+settingsToggle.addEventListener('click', () => {
+  const open = settingsPanel.classList.toggle('open');
+  settingsPanel.setAttribute('aria-hidden', open ? 'false' : 'true');
+  settingsToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  if (open) apiKeyEl.focus();
+});
+
+settingsClose.addEventListener('click', () => {
+  settingsPanel.classList.remove('open');
+  settingsPanel.setAttribute('aria-hidden', 'true');
+  settingsToggle.setAttribute('aria-expanded', 'false');
+});
+
+// Close settings on Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && settingsPanel.classList.contains('open')) {
+    settingsPanel.classList.remove('open');
+    settingsPanel.setAttribute('aria-hidden', 'true');
+    settingsToggle.setAttribute('aria-expanded', 'false');
+  }
+});
+
+// ─────────────────────────────────────────────────────────────────────────
+// Sky readiness
 // ─────────────────────────────────────────────────────────────────────────
 
 window.addEventListener('sky-ready', (e) => {
   const { inscriptionCount, edgeCount } = e.detail;
   setStatus(`The sky holds ${inscriptionCount} inscriptions, ${edgeCount} lineage edges.`);
-  // Sigil offers no opening line — the witness speaks first.
 });
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -56,6 +84,7 @@ formEl.addEventListener('submit', async (e) => {
 
   const apiKey = apiKeyEl.value.trim() || null;
 
+  removeEmptyState();
   appendMessage('user', message);
   inputEl.value = '';
   inputEl.style.height = 'auto';
@@ -64,7 +93,6 @@ formEl.addEventListener('submit', async (e) => {
   sendBtn.disabled = true;
   setStatus('Sigil is reading...');
 
-  // Sigil placeholder while waiting
   const placeholder = appendMessage('sigil', '…', { dim: true });
 
   try {
@@ -95,21 +123,13 @@ formEl.addEventListener('submit', async (e) => {
       appendRetrievals(sigilEl, data.retrievals);
     }
 
-    // Update history (model sees its prior content, witness sees prose only)
     history.push({ role: 'user', content: message });
     history.push({ role: 'assistant', content: data.say || '' });
-
-    // Trim history if it gets long (keep last 16 turns)
     if (history.length > 32) history = history.slice(-32);
 
-    // Navigate if Sigil emitted a directive and we're in Merkabah mode
     if (mode === 'merkabah' && data.navigate && window.sky?.navigate) {
       const ok = window.sky.navigate(data.navigate);
-      if (ok) {
-        setStatus(`Navigating: ${data.navigate.directive}.`);
-      } else {
-        setStatus('Sigil offered a navigation, but it could not be resolved.');
-      }
+      setStatus(ok ? `Navigating: ${data.navigate.directive}.` : 'Sigil offered a navigation, but it could not be resolved.');
     } else {
       setStatus('Ready.');
     }
@@ -135,12 +155,19 @@ inputEl.addEventListener('keydown', (e) => {
 // Auto-grow textarea
 inputEl.addEventListener('input', () => {
   inputEl.style.height = 'auto';
-  inputEl.style.height = Math.min(inputEl.scrollHeight, 200) + 'px';
+  inputEl.style.height = Math.min(inputEl.scrollHeight, 280) + 'px';
 });
 
 // ─────────────────────────────────────────────────────────────────────────
 // Render helpers
 // ─────────────────────────────────────────────────────────────────────────
+
+function removeEmptyState() {
+  if (emptyStateRemoved) return;
+  const empty = messagesEl.querySelector('.empty-state');
+  if (empty) empty.remove();
+  emptyStateRemoved = true;
+}
 
 function appendMessage(role, content, opts = {}) {
   const wrap = document.createElement('div');
@@ -161,7 +188,6 @@ function appendMessage(role, content, opts = {}) {
 
 function appendRetrievals(messageEl, retrievals) {
   if (!retrievals.length) return;
-  // Deduplicate by AXN
   const seen = new Set();
   const unique = retrievals.filter((r) => {
     if (seen.has(r.axn)) return false;
@@ -171,7 +197,7 @@ function appendRetrievals(messageEl, retrievals) {
   const details = document.createElement('details');
   details.className = 'message-retrievals';
   const summary = document.createElement('summary');
-  summary.textContent = `Sigil read ${unique.length} deposit${unique.length === 1 ? '' : 's'}.`;
+  summary.textContent = `Sigil read ${unique.length} deposit${unique.length === 1 ? '' : 's'}`;
   details.appendChild(summary);
   const ul = document.createElement('ul');
   for (const r of unique) {
