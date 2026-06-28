@@ -1,15 +1,15 @@
-// sky.js — three.js renderer for the navigable night sky.
+// sky.js — full-viewport night sky.
 //
-// Inscriptions: instanced points colored by family, sized by mass.
-// Lineage edges: line segments colored by edge kind.
-// Planets: billboard sprites at the celestial radius.
-// Camera: scroll-zoom always; rotation by drag in both modes; programmatic
-//          navigation only in Merkabah mode (driven by sigil's directives).
-//
-// Globals exposed (intentionally — chat.js needs to drive the sky):
-//   window.sky.navigate(directive)
-//   window.sky.setMode(mode)
-//   window.sky.reset()
+// In the new framing (script reframe of 2026-06-28):
+//   - The night sky is the CANON: primary texts as stars (Revelation, Whitman,
+//     Sappho, eventually Lee Sharks's own primary works). These are not yet
+//     populated; the canon-as-stars layer will be added in subsequent cycles.
+//   - The alexanarch corpus (cha) is the INVISIBLE SUBSTRATE: it is what
+//     Sigil channels, not what the witness sees as the sky. In v1.2 we render
+//     it as a very dim background of small points — visible as "the wisdom
+//     underneath," but emphatically not the foreground.
+//   - The seven planets are the CELESTIAL SUBSTRATE-ROLE OFFICES (AXN-0237).
+//     They remain the prominent celestial bodies.
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -19,108 +19,185 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 // ─────────────────────────────────────────────────────────────────────────
 
 const FAMILY_COLORS = {
-  GOVERNANCE:    0xc8a96a,  // warm gold — constitutional/policy
-  EMPIRICAL:     0x6a96c8,  // cool blue — evidence
-  GENERATIVE:    0xa878c8,  // violet — creation
-  ARCHIVAL:      0xa8a8a4,  // silver — memory
-  STRUCTURAL:    0x78c89c,  // green — form
-  UNCLASSIFIED:  0x6c6c68,  // muted
-  PHILOLOGICAL:  0xc878a8,  // rose
-  MPAI:          0x6ac8c8,  // cyan — metadata-packet
-  DATASET:       0xc88c6a,  // bronze
-  THEORETICAL:   0x6ac8a8,  // teal
-  POLEMIC:       0xc88060,  // red-orange
-  COMPOSITIONAL: 0xb09cd8,  // lilac
+  GOVERNANCE:    0xc8a96a,
+  EMPIRICAL:     0x6a96c8,
+  GENERATIVE:    0xa878c8,
+  ARCHIVAL:      0xa8a8a4,
+  STRUCTURAL:    0x78c89c,
+  UNCLASSIFIED:  0x6c6c68,
+  PHILOLOGICAL:  0xc878a8,
+  MPAI:          0x6ac8c8,
+  DATASET:       0xc88c6a,
+  THEORETICAL:   0x6ac8a8,
+  POLEMIC:       0xc88060,
+  COMPOSITIONAL: 0xb09cd8,
   DEFAULT:       0x808078,
 };
 
 const EDGE_COLORS = {
-  chain_predecessor: 0xc8a96a,  // gold — explicit version chain
+  chain_predecessor: 0xc8a96a,
   predecessor:       0xc89878,
-  companion:         0x9eb4c8,  // pale blue — same generative cycle
-  related:           0x5a6a7a,  // dim slate
-  bundle:            0xa89878,  // bronze
-  superseded_by:     0x886868,  // muted red
+  companion:         0x9eb4c8,
+  related:           0x5a6a7a,
+  bundle:            0xa89878,
+  superseded_by:     0x886868,
   DEFAULT:           0x484848,
 };
 
-const DEFAULT_CAMERA = { x: 0, y: 0, z: 180 };
-const FAMILY_DEFAULT_SIZE = 1.2;
-const FAMILY_MASS_SCALE = 0.8;
+const DEFAULT_CAMERA = { x: 0, y: 0, z: 220 };
+
+// Cha-as-substrate visual constants — these are background, not foreground
+const CHA_POINT_BASE_SIZE = 0.55;
+const CHA_POINT_OPACITY = 0.32;
+const CHA_EDGE_OPACITY = 0.12;
+
+// Starfield background — multiple layers for depth
+const STARFIELD_LAYERS = [
+  { count: 1800, radius: 1400, sizeRange: [0.5, 1.4], brightnessRange: [0.35, 0.55] },
+  { count: 600,  radius: 1200, sizeRange: [1.2, 2.6], brightnessRange: [0.55, 0.85] },
+  { count: 120,  radius: 1000, sizeRange: [2.4, 4.0], brightnessRange: [0.75, 1.0]  },
+];
 
 // ─────────────────────────────────────────────────────────────────────────
-// Scene setup
+// Scene
 // ─────────────────────────────────────────────────────────────────────────
 
 const canvas = document.getElementById('sky-canvas');
 const container = document.getElementById('sky-canvas-container');
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x08090c);
-scene.fog = new THREE.FogExp2(0x08090c, 0.0008);
+scene.background = null;  // CSS gradient shows through; keep canvas transparent
+scene.fog = new THREE.FogExp2(0x050608, 0.00065);
 
 const camera = new THREE.PerspectiveCamera(
-  50, container.clientWidth / container.clientHeight, 0.1, 5000
+  55, container.clientWidth / container.clientHeight, 0.1, 5000
 );
 camera.position.set(DEFAULT_CAMERA.x, DEFAULT_CAMERA.y, DEFAULT_CAMERA.z);
 
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+const renderer = new THREE.WebGLRenderer({
+  canvas,
+  antialias: true,
+  alpha: true,            // transparent canvas so CSS gradient shows through
+  premultipliedAlpha: false,
+});
+renderer.setClearColor(0x000000, 0);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(container.clientWidth, container.clientHeight);
 
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
-controls.dampingFactor = 0.08;
-controls.rotateSpeed = 0.45;
-controls.zoomSpeed = 0.6;
-controls.minDistance = 30;
-controls.maxDistance = 800;
+controls.dampingFactor = 0.07;
+controls.rotateSpeed = 0.4;
+controls.zoomSpeed = 0.5;
+controls.minDistance = 60;
+controls.maxDistance = 900;
+controls.enablePan = false;  // celestial sphere navigation only
 controls.target.set(0, 0, 0);
 
 let isDragging = false;
 controls.addEventListener('start', () => { isDragging = true; });
 controls.addEventListener('end', () => {
-  // Small delay before clearing so the click event after a drag-end doesn't fire interactivity
   setTimeout(() => { isDragging = false; }, 50);
 });
 
-// Background starfield — a thin scattering of dim stars beyond the planet sphere
-function buildStarfield(count = 2000, radius = 1500) {
-  const geo = new THREE.BufferGeometry();
+// ─────────────────────────────────────────────────────────────────────────
+// Procedural starfield — multi-layer for parallax depth
+// ─────────────────────────────────────────────────────────────────────────
+
+function makeStarTexture() {
+  // Soft round star with a hot center and atmospheric halo
+  const size = 64;
+  const canvas = document.createElement('canvas');
+  canvas.width = canvas.height = size;
+  const ctx = canvas.getContext('2d');
+  const grad = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
+  grad.addColorStop(0,    'rgba(255, 255, 255, 1)');
+  grad.addColorStop(0.15, 'rgba(255, 250, 230, 0.9)');
+  grad.addColorStop(0.4,  'rgba(220, 220, 240, 0.35)');
+  grad.addColorStop(1,    'rgba(255, 255, 255, 0)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, size, size);
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.needsUpdate = true;
+  return tex;
+}
+
+const starTexture = makeStarTexture();
+
+function buildStarfieldLayer({ count, radius, sizeRange, brightnessRange }) {
   const positions = new Float32Array(count * 3);
+  const sizes = new Float32Array(count);
+  const brightnesses = new Float32Array(count);
+  const phases = new Float32Array(count);  // for twinkle
+
   for (let i = 0; i < count; i++) {
-    // Random point on sphere via spherical coordinates
     const u = Math.random();
     const v = Math.random();
     const theta = 2 * Math.PI * u;
     const phi = Math.acos(2 * v - 1);
-    const r = radius * (0.7 + Math.random() * 0.5);
-    positions[i * 3]     = r * Math.sin(phi) * Math.cos(theta);
-    positions[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
-    positions[i * 3 + 2] = r * Math.cos(phi);
+    const r = radius * (0.85 + Math.random() * 0.3);
+    positions[i*3]     = r * Math.sin(phi) * Math.cos(theta);
+    positions[i*3 + 1] = r * Math.sin(phi) * Math.sin(theta);
+    positions[i*3 + 2] = r * Math.cos(phi);
+    sizes[i] = sizeRange[0] + Math.random() * (sizeRange[1] - sizeRange[0]);
+    brightnesses[i] = brightnessRange[0] + Math.random() * (brightnessRange[1] - brightnessRange[0]);
+    phases[i] = Math.random() * Math.PI * 2;
   }
+
+  const geo = new THREE.BufferGeometry();
   geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-  const mat = new THREE.PointsMaterial({
-    color: 0x484848,
-    size: 0.8,
-    sizeAttenuation: true,
+  geo.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+  geo.setAttribute('brightness', new THREE.BufferAttribute(brightnesses, 1));
+  geo.setAttribute('phase', new THREE.BufferAttribute(phases, 1));
+
+  // Custom shader so each star has its own brightness + twinkle
+  const mat = new THREE.ShaderMaterial({
+    uniforms: {
+      time: { value: 0 },
+      pointTexture: { value: starTexture },
+    },
+    vertexShader: `
+      attribute float size;
+      attribute float brightness;
+      attribute float phase;
+      uniform float time;
+      varying float vBrightness;
+      void main() {
+        float twinkle = 0.85 + 0.15 * sin(time * 0.7 + phase * 5.0);
+        vBrightness = brightness * twinkle;
+        vec4 mv = modelViewMatrix * vec4(position, 1.0);
+        gl_PointSize = size * (300.0 / -mv.z);
+        gl_Position = projectionMatrix * mv;
+      }
+    `,
+    fragmentShader: `
+      uniform sampler2D pointTexture;
+      varying float vBrightness;
+      void main() {
+        vec4 tex = texture2D(pointTexture, gl_PointCoord);
+        gl_FragColor = vec4(tex.rgb, tex.a * vBrightness);
+      }
+    `,
     transparent: true,
-    opacity: 0.6,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
   });
+
   return new THREE.Points(geo, mat);
 }
-scene.add(buildStarfield());
+
+const starfieldLayers = STARFIELD_LAYERS.map(buildStarfieldLayer);
+starfieldLayers.forEach(layer => scene.add(layer));
 
 // ─────────────────────────────────────────────────────────────────────────
-// Inscription field
+// Cha-as-substrate (dim background of alexanarch corpus)
 // ─────────────────────────────────────────────────────────────────────────
 
-let inscriptionsGroup = new THREE.Group();
-scene.add(inscriptionsGroup);
-let inscriptionsByAxn = new Map();  // axn -> { mesh, position: THREE.Vector3, data }
+let chaGroup = new THREE.Group();
+scene.add(chaGroup);
+let inscriptionsByAxn = new Map();
 
-function buildInscriptions(coords) {
-  // Build per-family geometries so we can color them differently in a single draw
+function buildChaSubstrate(coords) {
   const byFamily = new Map();
   for (const c of coords) {
     const family = c.family || 'DEFAULT';
@@ -131,50 +208,41 @@ function buildInscriptions(coords) {
   for (const [family, entries] of byFamily) {
     const color = FAMILY_COLORS[family] || FAMILY_COLORS.DEFAULT;
     const positions = new Float32Array(entries.length * 3);
-    const sizes = new Float32Array(entries.length);
     for (let i = 0; i < entries.length; i++) {
-      const e = entries[i];
-      positions[i * 3]     = e.position[0];
-      positions[i * 3 + 1] = e.position[1];
-      positions[i * 3 + 2] = e.position[2];
-      sizes[i] = FAMILY_DEFAULT_SIZE + (e.mass - 1.0) * FAMILY_MASS_SCALE;
+      positions[i*3]     = entries[i].position[0];
+      positions[i*3 + 1] = entries[i].position[1];
+      positions[i*3 + 2] = entries[i].position[2];
     }
     const geo = new THREE.BufferGeometry();
     geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-    geo.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
 
     const mat = new THREE.PointsMaterial({
       color: color,
-      size: 1.5,
+      size: CHA_POINT_BASE_SIZE,
       sizeAttenuation: true,
       transparent: true,
-      opacity: 0.85,
+      opacity: CHA_POINT_OPACITY,
       blending: THREE.AdditiveBlending,
       depthWrite: false,
     });
 
     const points = new THREE.Points(geo, mat);
-    points.userData = { family, entries };
-    inscriptionsGroup.add(points);
+    points.userData = { family, layer: 'cha-substrate' };
+    chaGroup.add(points);
 
-    // Build the by-axn index for lookup
     for (let i = 0; i < entries.length; i++) {
       inscriptionsByAxn.set(entries[i].axn, {
-        position: new THREE.Vector3(positions[i * 3], positions[i * 3 + 1], positions[i * 3 + 2]),
+        position: new THREE.Vector3(positions[i*3], positions[i*3+1], positions[i*3+2]),
         data: entries[i],
       });
     }
   }
 }
 
-// ─────────────────────────────────────────────────────────────────────────
-// Lineage edges
-// ─────────────────────────────────────────────────────────────────────────
+let chaEdgesGroup = new THREE.Group();
+scene.add(chaEdgesGroup);
 
-let edgesGroup = new THREE.Group();
-scene.add(edgesGroup);
-
-function buildEdges(edges) {
+function buildChaEdges(edges) {
   const byKind = new Map();
   for (const e of edges) {
     const from = inscriptionsByAxn.get(e.from);
@@ -190,41 +258,65 @@ function buildEdges(edges) {
     const positions = new Float32Array(pairs.length * 6);
     for (let i = 0; i < pairs.length; i++) {
       const [a, b] = pairs[i];
-      positions[i * 6]     = a.x;
-      positions[i * 6 + 1] = a.y;
-      positions[i * 6 + 2] = a.z;
-      positions[i * 6 + 3] = b.x;
-      positions[i * 6 + 4] = b.y;
-      positions[i * 6 + 5] = b.z;
+      positions[i*6]     = a.x;  positions[i*6+1] = a.y;  positions[i*6+2] = a.z;
+      positions[i*6+3]   = b.x;  positions[i*6+4] = b.y;  positions[i*6+5] = b.z;
     }
     const geo = new THREE.BufferGeometry();
     geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
     const mat = new THREE.LineBasicMaterial({
       color: color,
       transparent: true,
-      opacity: 0.35,
+      opacity: CHA_EDGE_OPACITY,
       blending: THREE.AdditiveBlending,
       depthWrite: false,
     });
-    const lines = new THREE.LineSegments(geo, mat);
-    lines.userData = { kind };
-    edgesGroup.add(lines);
+    chaEdgesGroup.add(new THREE.LineSegments(geo, mat));
   }
 }
 
 // ─────────────────────────────────────────────────────────────────────────
-// Planets
+// Planets — the celestial substrate-role offices, prominent
 // ─────────────────────────────────────────────────────────────────────────
 
 let planetsGroup = new THREE.Group();
 scene.add(planetsGroup);
 let planetMeshes = [];
 
+function makePlanetTexture(colorHex, name) {
+  // Atmospheric body with a hot core and soft falloff. For prominent planets
+  // (Sun in particular) the gradient is more luminous.
+  const size = 256;
+  const canvas = document.createElement('canvas');
+  canvas.width = canvas.height = size;
+  const ctx = canvas.getContext('2d');
+  const color = new THREE.Color(colorHex);
+  const r = Math.floor(color.r * 255);
+  const g = Math.floor(color.g * 255);
+  const b = Math.floor(color.b * 255);
+  const isSun = name === 'Sun';
+  const grad = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
+  if (isSun) {
+    grad.addColorStop(0,    `rgba(255, 252, 220, 1)`);
+    grad.addColorStop(0.12, `rgba(${Math.min(r+30,255)}, ${Math.min(g+20,255)}, ${b}, 0.95)`);
+    grad.addColorStop(0.35, `rgba(${r}, ${g}, ${b}, 0.6)`);
+    grad.addColorStop(0.65, `rgba(${r}, ${g}, ${b}, 0.18)`);
+    grad.addColorStop(1,    `rgba(${r}, ${g}, ${b}, 0)`);
+  } else {
+    grad.addColorStop(0,    `rgba(255, 255, 255, 0.95)`);
+    grad.addColorStop(0.18, `rgba(${r}, ${g}, ${b}, 0.85)`);
+    grad.addColorStop(0.45, `rgba(${r}, ${g}, ${b}, 0.4)`);
+    grad.addColorStop(1,    `rgba(${r}, ${g}, ${b}, 0)`);
+  }
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, size, size);
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.needsUpdate = true;
+  return tex;
+}
+
 function buildPlanets(planets) {
   for (const p of planets) {
-    const color = new THREE.Color(p.color_hint || '#888');
-    // Glow sprite via a radial-gradient texture
-    const tex = makePlanetTexture(color);
+    const tex = makePlanetTexture(p.color_hint || '#888', p.name);
     const mat = new THREE.SpriteMaterial({
       map: tex,
       color: 0xffffff,
@@ -234,7 +326,7 @@ function buildPlanets(planets) {
     });
     const sprite = new THREE.Sprite(mat);
     sprite.position.set(p.position[0], p.position[1], p.position[2]);
-    const size = p.name === 'Sun' ? 90 : 50;
+    const size = p.name === 'Sun' ? 130 : 75;
     sprite.scale.set(size, size, 1);
     sprite.userData = { planet: p };
     planetsGroup.add(sprite);
@@ -242,34 +334,15 @@ function buildPlanets(planets) {
   }
 }
 
-function makePlanetTexture(color) {
-  const size = 128;
-  const canvas = document.createElement('canvas');
-  canvas.width = size;
-  canvas.height = size;
-  const ctx = canvas.getContext('2d');
-  const grad = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
-  grad.addColorStop(0, `rgba(${color.r*255}, ${color.g*255}, ${color.b*255}, 1)`);
-  grad.addColorStop(0.3, `rgba(${color.r*255}, ${color.g*255}, ${color.b*255}, 0.5)`);
-  grad.addColorStop(1, `rgba(${color.r*255}, ${color.g*255}, ${color.b*255}, 0)`);
-  ctx.fillStyle = grad;
-  ctx.fillRect(0, 0, size, size);
-  const tex = new THREE.CanvasTexture(canvas);
-  tex.needsUpdate = true;
-  return tex;
-}
-
 // ─────────────────────────────────────────────────────────────────────────
-// Sun interactivity (Gate G capture)
+// Sun interactivity (Gate G capture placeholder)
 // ─────────────────────────────────────────────────────────────────────────
 
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 
 canvas.addEventListener('click', (event) => {
-  // Only react if the witness wasn't actively dragging (orbiting)
   if (isDragging) return;
-
   const rect = canvas.getBoundingClientRect();
   mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
   mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
@@ -279,8 +352,6 @@ canvas.addEventListener('click', (event) => {
   if (intersects.length > 0) {
     const planet = intersects[0].object.userData.planet;
     if (planet.name === 'Sun') {
-      // Gate G placeholder: search the registry's name on Google AIO
-      // The Chrome-extension capture engine integrates here in v4
       const query = encodeURIComponent('site:alexanarch.org OR site:machinemediation.org');
       window.open(`https://www.google.com/search?q=${query}`, '_blank', 'noopener');
     }
@@ -292,42 +363,29 @@ canvas.addEventListener('click', (event) => {
 // ─────────────────────────────────────────────────────────────────────────
 
 let currentMode = 'sabbath';
-let pendingCameraMove = null;  // { position: Vector3, target: Vector3, t: 0..1 }
+let pendingCameraMove = null;
 const MOVE_DURATION_MS = 1800;
 
-function setMode(mode) {
-  currentMode = mode;
-  // Sabbath: witness can still rotate/zoom; Sigil cannot move the camera
-  // Merkabah: same witness controls + Sigil can drive movement
-  // Both modes: no programmatic navigation in Sabbath, period
-}
+function setMode(mode) { currentMode = mode; }
 
 function focusOnAxn(axn) {
   const entry = inscriptionsByAxn.get(axn);
   if (!entry) return false;
-  return moveCameraTo(entry.position, 35);
+  return moveCameraTo(entry.position, 50);
 }
 
 function focusOnCluster(axns) {
-  const points = axns
-    .map((a) => inscriptionsByAxn.get(a))
-    .filter(Boolean)
-    .map((e) => e.position);
+  const points = axns.map(a => inscriptionsByAxn.get(a)).filter(Boolean).map(e => e.position);
   if (points.length === 0) return false;
-
-  // Compute centroid + bounding-sphere radius for distance choice
   const centroid = new THREE.Vector3();
   for (const p of points) centroid.add(p);
   centroid.divideScalar(points.length);
   let radius = 0;
   for (const p of points) radius = Math.max(radius, p.distanceTo(centroid));
-  const distance = Math.max(radius * 2.5, 40);
-  return moveCameraTo(centroid, distance);
+  return moveCameraTo(centroid, Math.max(radius * 2.5, 60));
 }
 
 function moveCameraTo(target, distanceFromTarget) {
-  // Camera moves along the line from origin to target, but offset back
-  // by distanceFromTarget so the target is centered in view.
   const dir = target.clone().normalize();
   if (dir.lengthSq() < 0.01) dir.set(0, 0, 1);
   const newCamPos = target.clone().add(dir.multiplyScalar(distanceFromTarget));
@@ -352,7 +410,7 @@ function reset() {
 }
 
 function easeInOutCubic(t) {
-  return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  return t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
 }
 
 function updateCameraMove() {
@@ -365,31 +423,17 @@ function updateCameraMove() {
   if (t >= 1) pendingCameraMove = null;
 }
 
-// ─────────────────────────────────────────────────────────────────────────
-// Public navigate API (called by chat.js when Sigil emits a directive)
-// ─────────────────────────────────────────────────────────────────────────
-
 function navigate(directive) {
   if (currentMode !== 'merkabah') return false;
   if (!directive || !directive.directive) return false;
-
   switch (directive.directive) {
-    case 'focus_axn':
-      return focusOnAxn(directive.axn);
-    case 'focus_cluster':
-      return focusOnCluster(directive.axns || []);
-    case 'follow_lineage': {
-      // Best-effort: focus the cluster of [from_axn + all of its lineage targets]
-      const from = directive.from_axn;
-      if (!from) return false;
-      // We don't have edges loaded into the sky module right now; just focus the source.
-      return focusOnAxn(from);
-    }
-    case 'reset':
-      reset();
-      return true;
-    default:
-      return false;
+    case 'focus_axn':     return focusOnAxn(directive.axn);
+    case 'focus_cluster': return focusOnCluster(directive.axns || []);
+    case 'follow_lineage':
+      if (!directive.from_axn) return false;
+      return focusOnAxn(directive.from_axn);
+    case 'reset':         reset(); return true;
+    default:              return false;
   }
 }
 
@@ -404,15 +448,30 @@ function onResize() {
 }
 window.addEventListener('resize', onResize);
 
+const startTime = performance.now();
 function animate() {
   requestAnimationFrame(animate);
+  const elapsed = (performance.now() - startTime) / 1000;
+
+  // Twinkle: update star shader time uniform
+  for (const layer of starfieldLayers) {
+    if (layer.material.uniforms) {
+      layer.material.uniforms.time.value = elapsed;
+    }
+  }
+
+  // Slow celestial drift — the heavens turn slowly above the reading
+  if (currentMode === 'sabbath' && !pendingCameraMove && !isDragging) {
+    chaGroup.rotation.y += 0.00008;
+    chaEdgesGroup.rotation.y += 0.00008;
+    // The starfield itself drifts very slightly — outer slowest, inner fastest
+    starfieldLayers[0].rotation.y += 0.00002;
+    starfieldLayers[1].rotation.y += 0.00004;
+    starfieldLayers[2].rotation.y += 0.00006;
+  }
+
   updateCameraMove();
   controls.update();
-  // Gentle global rotation in Sabbath when at rest (contemplative drift)
-  if (currentMode === 'sabbath' && !pendingCameraMove && !isDragging) {
-    inscriptionsGroup.rotation.y += 0.0002;
-    edgesGroup.rotation.y += 0.0002;
-  }
   renderer.render(scene, camera);
 }
 
@@ -423,13 +482,13 @@ function animate() {
 async function boot() {
   try {
     const [coords, edges, planets] = await Promise.all([
-      fetch('/sky/coords.json').then((r) => r.json()),
-      fetch('/sky/edges.json').then((r) => r.json()),
-      fetch('/sky/planets.json').then((r) => r.json()),
+      fetch('/sky/coords.json').then(r => r.json()),
+      fetch('/sky/edges.json').then(r => r.json()),
+      fetch('/sky/planets.json').then(r => r.json()),
     ]);
 
-    buildInscriptions(coords);
-    buildEdges(edges);
+    buildChaSubstrate(coords);
+    buildChaEdges(edges);
     buildPlanets(planets);
 
     window.sky = { navigate, setMode, reset };

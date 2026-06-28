@@ -1,0 +1,13 @@
+{
+  "id": "sappho-fragments",
+  "title": "The Fragments of Sappho",
+  "language": "grc-Grek",
+  "language_name": "Aeolic Greek",
+  "author": "Sappho of Lesbos",
+  "composition_date_approx": "c. 630-570 BCE",
+  "edition_reference": "Public-domain critical editions (Wharton 1885, Edmonds 1922, Cox 1924). Voigt is under copyright and not admitted.",
+  "license": "Public domain (PD editions only)",
+  "provenance_note": "Sappho's surviving lyric fragments. Only PD critical editions enter the canon; modern reconstructions and translations under copyright are excluded per the canon's copyright discipline.",
+  "constitutional_role": "Foundational Greek lyric. The text most closely engaged in the Crimson Hexagonal corpus's worked examples (Shadow-Sappho 31; the Sappho 31 / Catullus 51 alignment). A primary text of the descent into desire and loss.",
+  "status": "STUB — fragments not yet populated. Sappho 31 is a v1 priority for inclusion."
+}

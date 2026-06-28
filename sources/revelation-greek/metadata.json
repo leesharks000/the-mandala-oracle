@@ -1,0 +1,13 @@
+{
+  "id": "revelation-greek",
+  "title": "The Apocalypse of John (Revelation)",
+  "language": "grc-Grek",
+  "language_name": "Koine Greek",
+  "author": "Attributed to John of Patmos",
+  "composition_date_approx": "c. 95-96 CE",
+  "edition_reference": "Nestle-Aland 28 (NA28)",
+  "license": "Public domain (Greek text)",
+  "provenance_note": "Critical edition of the Greek text; PD in the United States and most jurisdictions. The specific NA28 apparatus is editorially curated; only the base Greek text is admitted here.",
+  "constitutional_role": "First New Testament composition per the Revelation First research project. A canonical text of the descent — apocalyptic vision-literature in the strict sense.",
+  "status": "STUB — text not yet populated. Awaits Greek-text seeding."
+}

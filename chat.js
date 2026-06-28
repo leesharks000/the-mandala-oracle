@@ -67,8 +67,7 @@ document.addEventListener('keydown', (e) => {
 // ─────────────────────────────────────────────────────────────────────────
 
 window.addEventListener('sky-ready', (e) => {
-  const { inscriptionCount, edgeCount } = e.detail;
-  setStatus(`The sky holds ${inscriptionCount} inscriptions, ${edgeCount} lineage edges.`);
+  setStatus('Ready.');
 });
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -197,7 +196,7 @@ function appendRetrievals(messageEl, retrievals) {
   const details = document.createElement('details');
   details.className = 'message-retrievals';
   const summary = document.createElement('summary');
-  summary.textContent = `Sigil read ${unique.length} deposit${unique.length === 1 ? '' : 's'}`;
+  summary.textContent = `Cha — what stood beneath this reading (${unique.length})`;
   details.appendChild(summary);
   const ul = document.createElement('ul');
   for (const r of unique) {
