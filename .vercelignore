@@ -1,0 +1,25 @@
+# Submodule — alexanarch corpus is the *source* for rag/, but the
+# regenerated rag/ files are what the deployed function actually reads.
+# Excluding the submodule keeps the deployment size minimal.
+alexanarch/
+
+# Regeneration scripts and their dependencies — only run in GitHub Actions
+scripts/
+
+# Workflows — irrelevant to runtime
+.github/
+
+# Specs and docs — public on GitHub but not served at runtime
+specs/
+sources/
+UPDATES_REGISTER_*.md
+client-README.md
+
+# Python build artifacts
+__pycache__/
+*.pyc
+
+# Development files
+.env*
+.vscode/
+.idea/
