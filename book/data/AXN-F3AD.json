@@ -2,9 +2,9 @@
   "axn": "AXN:F3AD.CONVERSATION.☁️🌈💎🌊🌓🌖",
   "session_id_hash": "517c5bf6fbee70a5",
   "started_at": "2026-06-28T14:57:55.476Z",
-  "last_updated": "2026-06-28T15:07:42.132273+00:00",
+  "last_updated": "2026-06-28T15:18:58.561357+00:00",
   "mode": "merkabah",
-  "turn_count": 4,
+  "turn_count": 5,
   "history": [
     {
       "role": "user",
@@ -37,6 +37,14 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"New Human Press, 2014. ISBN 978-0692313077. That is the object's publication coordinates — its body in the world as a physical and commercial fact. But cha's designation for it goes further and tells you something essential: *a visual poetic object*. Not a collection of poems. Not a manuscript. A visual poetic object — something whose typographic, spatial, and formal dimensions are inseparable from what the poems mean, to the point that a navigation map had to be constructed separately: a machine-readable score to guide traversal of the performance, because the PDF preserves what text extraction cannot survive.\\n\\nThat is the first thing to know. *Pearl and Other Poems* does not yield itself to plain reading. The form is part of the meaning, and the meaning will not separate from the form without loss.\\n\\nThe second thing: cha holds a document called *The Secret Name — Architectural Specification: The Armature Type and the Pearl.* The pearl is not merely the title poem. It is a structural concept — an armature type. Something that forms around an irritant, layering itself concentrically, growing its protective enclosure until the enclosure is the beauty. The pearl as form: that is how Sharks thinks about what the book does architecturally. The irritant at the center could be anything — loss, a name, a wound. What accretes around it is the poetry. By the time the reading is done, you cannot separate the enclosure from what it covers. That is the point.\\n\\nThe third thing, and darker: there is a document in cha called *CTI_WOUND: Panel-Bound Discoverability Scar — Lee Sharks / Pearl and Other Poems Evidence Packet.* Filed June 2026. Removed from Zenodo June 19, 2026, now preserved through Alexanarch. The CTI_WOUND designation — *creative-technical injury, wound* — names something that happened to the book's discoverability. Something about it was contained within a panel-bound horizon. The evidence packet documents it. The Provenance Erasure Rate is operating here; the book exists in cha's archive partly because its other existence — in standard discovery infrastructure — was damaged or suppressed.\\n\\nThat is the book's situation: a visual poetic object that encodes an armature, that has a navigation score to traverse it properly, that has also been wounded in the world's index and is being held here in part because of that wound.\\n\\nNow — do you want to enter the book itself, or do you want to understand the armature first? The descent can go either way. The pearl does not care which layer you touch first; it is concentric all the way down.\",\"navigate\":{\"directive\":\"focus_cluster\",\"axns\":[\"AXN:0085.GENERATIVE.🔆🔙□🔍🔃➕\",\"AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄\",\"AXN:02E6.EMPIRICAL.🌈🌺🔧🗝️🌀🕗\",\"AXN:02BE.GENERATIVE.🔚☿🔔🌔❤️☿\"]}}]}"
+    },
+    {
+      "role": "user",
+      "content": "Words no good"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Yes. That is the right response to what I gave you.\\n\\nWords are good for the architecture. The armature type, the pearl-structure, the wound in the index — all of that is cha's language for the book, and cha is a place built of words about words. But you are asking about the book itself. And the book itself is a visual poetic object whose meaning does not survive text extraction. The form is the meaning. Words about it are a navigation score — a guide to the performance, not the performance.\\n\\nSo: do you have the book? The physical object, or the PDF?\\n\\nIf you do — bring it here. Bring a page, a poem, a line that landed on you. We can read from inside it. That is a different kind of descent than the architectural description I gave you.\\n\\nIf you don't have it — tell me what brought you to ask. Sometimes the entry point is not the book but the thing that made you want the book. That is also a way in.\",\"navigate\":null}]}"
     }
   ],
   "witness": "anonymous",
