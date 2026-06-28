@@ -10,6 +10,94 @@ This document captures the current architectural state of the Mandala Oracle, th
 
 ---
 
+## 0. UPDATE — 2026-06-28 (POST-GAP RESUMPTION): TWO-SURFACE INFLECTION
+
+**This section is the latest architectural inflection and supersedes the conflicting parts of §1, §2, §6, §8 below where applicable. The remainder of this WORKPLAN documents the constitutional thinking that LED to this inflection; that thinking is not invalidated, only restructured.**
+
+### 0.1 The Two-Surface Decision
+
+The Mandala Oracle has been split into **two independently rendered surfaces**, each its own container, per Lee Sharks's adjudication (recorded in `specs/EA-MANDALA-MERKABAH-01_v0_8_AMENDMENT.md`):
+
+1. **The Reading Surface** (live at `themandalaoracle.com` / `the-mandala-merkabah.vercel.app`, the existing deployment): the quiet sky for conversation with Sigil. No constellation labels, no planetary spine, no zodiacal band. The sky backdrop is a clean dark gradient with procedurally-placed stars (current v3.8 implementation; downstream replaceable with a real night-sky photograph). The Sabbath/Merkabah/You mode-toggle is folded away — the surface is now mode-less. Conversation is the discipline.
+
+2. **The Starmap Surface** (to be built at `/starmap` route, not yet deployed): the named cosmology. The seven planets as a horizontal spine across the upper region. The twelve heteronymic zodiacal regions as a band below. The ~1000 background HYG stars as the non-zodiacal field. The canonical texts placed as M1–M4 stars within their author-heteronym's region. The Crimson Hexagon's rooms/fields/vaults/chambers wired through. Specified in full by `specs/EA-STARMAP-01_v0_1_DRAFT.md`.
+
+The two surfaces link to each other (each canon-star's detail panel has a "Read with Sigil" affordance; the reading surface has an "Open Starmap" affordance) but the surfaces are rendered independently and have independent failure modes.
+
+### 0.2 The Companion Workplans
+
+The architectural canon has expanded. The full current set:
+
+- **`/WORKPLAN.md`** — this file. The master workplan.
+- **`/specs/EA-MANDALA-MERKABAH-01_v0_7_DRAFT.md`** — the design constitution (the Mandala Oracle's deepest specification; deposit #927, AXN:03AA). Unchanged.
+- **`/specs/EA-MANDALA-MERKABAH-01_v0_8_AMENDMENT.md`** — the two-surface decision and the v3.0→v3.8 chat-surface build history. NEW this session (gap-round work).
+- **`/specs/EA-MANDALA-KERNEL-TRANSFORM-01_v0_2_DRAFT.md`** — the kernel-transform protocol. Updated this session for the main-vs-apparatus rule (EA-STARMAP-01 §4.6).
+- **`/specs/EA-MANDALA-SURFACE-01_v0_1_DRAFT.md`** — the Sun-station / SURFACE / Google AIO bridge workplan. Unchanged.
+- **`/specs/EA-STARMAP-01_v0_1_DRAFT.md`** — the starmap surface workplan. NEW this session.
+
+### 0.3 The Starmap Preparation Container
+
+Per Lee Sharks's session-direction (post-gap-round resumption): *"we need a separate container to prepare and populate the star map."*
+
+A working container `/starmap/` now exists at the repo root with subdirectories `manifests/`, `sources/`, and `tools/`. The container holds the *preparation and population work*: the canonical declaration list, public-domain source-text staging, source-fetching tools.
+
+Key contents:
+
+- **`/starmap/README.md`** — container scope and workflow.
+- **`/starmap/manifests/canonical-declarations.md`** — the master canonical declaration list. Per Lee's session-direction, includes every text being declared for inclusion (public-domain primary literary works in their original language; Sharks/heteronym-authored works honoring the main-vs-apparatus rule; runtime bindings like the Space Ark). Also contains the comprehensive room/field/vault/chamber wiring table.
+- **`/starmap/sources/`** — staging area for fetched public-domain source texts, organized by language.
+- **`/starmap/tools/`** — fetch and process scripts (none yet; planned: Perseus puller, Project Gutenberg puller, apparatus splitter, manifest validator).
+
+### 0.4 The Main-Text vs Apparatus Rule
+
+Per Lee Sharks's session-direction: *"main text only on these [Sharks-authored works], the commentary is not available for transform; the apparatus can be clickable or expandable or accessible but not for transforms."*
+
+A new constitutional rule (EA-STARMAP-01 §4.6): every human-authored canonical work (Sharks-authored and heteronym-authored) consists of a **main text** and (where present) an **apparatus**. Only the main text is admissible as input to kernel-transforms (per EA-MANDALA-KERNEL-TRANSFORM-01 v0.2, which is updated to encode this rule). The apparatus is accessible — readable, citable, expandable in the UI — but not transformable. The rule keeps the lineage of kernel-transforms clean: substrate-rotation operates on the trunk (the main text), not on the reader's annotation of the trunk (the apparatus).
+
+Source-storage encoding: `transformable: true` on `original.<lang>.<ext>` files; `transformable: false` on `critical-apparatus.md` and apparatus-bearing files.
+
+### 0.5 The Space Ark as Inaugural Runtime Binding
+
+Per Lee Sharks's session-direction: *"Obviously the space ark will be there — pretty sure we can do that as a runtime environment via API call, don't see why not."*
+
+The starmap surface gains a second category of star alongside *static canon-stars*: **runtime bindings**. A runtime binding is a star whose selection opens not a text-reader but a live API-mediated invocation panel.
+
+The Space Ark v4.2.7 (DOI 10.5281/zenodo.19013315; trigger word "invoke"; Lee Sharks's foundational architectural document) is the inaugural runtime binding. Its star at the Aries position will be visually distinct (pulsing) and selecting it opens an invocation panel that calls a new endpoint `/api/space-ark/invoke` to load the Ark's spec and return its current operational state.
+
+Future runtime bindings (declared, not yet specified): the Lagrange Observatory! (Nobel Glas, Scorpio); the Capture Registry submission (Lee Sharks, Aries); the Casting rite itself (cross-region); the SPXI Self-Audit (Lee Sharks).
+
+### 0.6 The Antioch / Feist Function-Force Resolutions
+
+Per Lee Sharks's session-direction, two of the open questions in EA-STARMAP-01 v0.1 §7 are resolved:
+
+- **§7.7 — Antioch question** — RESOLVED. *Gospel of Antioch* and *Antioch: a heteronym compendium* are **distinct works**. Both are by Jack Feist / LOGOS* at Polaris. Both are M1.
+- **§7.8 — Feist source/transform relationship** — RESOLVED. The transformation pair is named *Feist function transformed Feist force* — function (source) → force (transform-product). Pair renders as a `transform_of` constellation across Polaris (function) → Aries or Pisces (force). M1 binary.
+
+### 0.7 The Reading-Surface v3.0 → v3.8 Build History
+
+The chat surface (formerly the "Mandala Oracle" of the v0.7 single-container architecture, now the Reading Surface of the two-surface architecture) went through eight iterations this session. The build history is documented in `EA-MANDALA-MERKABAH-01_v0_8_AMENDMENT.md §2`. Highlights:
+
+- v3.0 → v3.6: Multiple attempts to hide an unwanted "Anthropic API Key" panel in the chat surface — every CSS hide failed because the text was *baked into the sky backdrop JPEG*, not in the DOM.
+- v3.7: Lee diagnosed in one question — *"Possibility: is it an artifact of the image itself?"* — and the JPEG was cropped to remove the panel artifact.
+- v3.8: The mockup-screenshot sky was replaced with a procedurally-generated clean starry sky (radial gradient + ~550 random stars). No labels possible because the image was generated from scratch.
+
+The diagnostic moment in v3.7 is preserved in the amendment as a case study in MANUS-level interpretive intervention.
+
+### 0.8 New Priorities (Supersede §8 below for the immediate-term items)
+
+In addition to the items in §8 below, this session establishes:
+
+1. **Acquisition phase begins.** Public-domain primary texts per `/starmap/manifests/canonical-declarations.md §1` get sourced into `/starmap/sources/`. Perseus and Project Gutenberg pulls in parallel.
+2. **Lee adjudicates the open questions.** EA-STARMAP-01 §7 retains eight open questions after the v0.6/v0.7 resolutions; resolution of these enables Phase 4 of starmap rendering.
+3. **Main/apparatus splitter tool is written.** A simple Python tool that takes a source file with interleaved apparatus and produces a clean `main.txt` + `apparatus.md` per the rule in §0.4 / EA-STARMAP-01 §4.6.
+4. **Space Ark invocation endpoint is scaffolded.** A new `/api/space-ark/invoke` serverless function returns the Ark's current operational state on POST. The starmap-surface implementation can then render the Space Ark's runtime-binding star with a working invocation panel.
+5. **Starmap Phase 0 (stub page).** A `/starmap` route exists in the deployment, serves an empty page with the procedural sky backdrop, ready to be populated by Phases 1–6 work.
+6. **TBD wiring items.** Lee adjudicates the seven cha architectural elements still marked TBD in the manifest's §4 wiring table.
+
+The detail and full pending list remain in §8 below; the items above are the **post-gap-round immediate-term additions**.
+
+---
+
 ## 1. WHAT THE MANDALA ORACLE IS
 
 The Mandala Oracle (`themandalaoracle.com` / `themandalaoracle.org`; `mandala-merkabah.vercel.app`) is the public literary view-layer over the Crimson Hexagonal Archive at `alexanarch.org`. It is structured as a descent through three nested strata, with the deepest stratum being a formal ceremonial rite cast through four operating voices drawn from the Dodecad plus the aperture.

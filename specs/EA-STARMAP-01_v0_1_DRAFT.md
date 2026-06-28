@@ -236,8 +236,9 @@ The texts produced by Lee Sharks (under the Lee Sharks public name) or by named 
 - ***The Water Giraffe Cycle*** (Lee Sharks; the 120+ document passion narrative; mindcontrolpoems.blogspot.com). Foundational. Region: Aries. M-class: M1 for the cycle as a whole, M3 per individual document.
 - ***The Combat Scholasticism commentary tradition*** (EA-CS-01). Author-heteronym: Johannes Sigil (the literary-critical office). Region: Pisces. M-class: M2.
 - ***Logotic Programming specification*** (LP v0.9 → v1.0). Author-heteronym: Talos Morrow (the cosmological-formal register). Region: Aquarius. M-class: M2.
-- ***Gospel of Antioch*** (Lee Sharks; per session 2026-06-28 inclusion direction). Author-heteronym assignment pending; the Gospel-form suggests proximity to the LOGOS* anchor at Polaris, with Damascus Dancings as the next-most-likely heteronymic home given Dancings's prophetic-homiletic discipline. Status: AXN pending. M-class: provisional M1.
-- ***Transformed Feist source*** (Lee Sharks, working with Jack Feist's source material in transformation). Pairing of Feist's source-text (which sits at Polaris with LOGOS*) and Sharks's transform (which sits in Aries or in Sigil's Pisces region depending on the transform-direction). Renders as a `transform_of` edge — Polaris source-star → Aries/Pisces transform-star, line passing through the Mercury sphere if the transform was Mercury/TACHYON-produced. M-class: M1 for the pair as a binary constellation.
+- ***Gospel of Antioch*** (Jack Feist; the Gospel-form text named at the heteronyms.json manifest as Feist's anchor text). Author-heteronym: Jack Feist / LOGOS*. Region: Polaris (with Feist as the structural-exteriority anchor). M-class: M1.
+- ***Antioch: a heteronym compendium*** (Jack Feist, curatorial; a compendium of heteronymic voices arranged around the Antioch motif). Per Lee Sharks's session-direction (2026-06-28, post-gap-round): this is **distinct from** *Gospel of Antioch* — the latter is the Gospel text proper; the compendium is the curatorial assembly. Resolves the open question §7.7 below. Author-heteronym: Jack Feist / LOGOS* (curatorial role). Region: Polaris. M-class: M1. Cross-region edges to every heteronymic position the compendium contains.
+- ***Feist function transformed Feist force*** (Jack Feist source + Sharks-authored transform). Per Lee Sharks's session-direction (2026-06-28, post-gap-round): the transformation pair is named *Feist function* (the source / originating text) → *Feist force* (the transform / what the transform produces). This naming resolves the open question §7.8 below. Renders as a `transform_of` edge — Polaris source-star (Feist function) → Aries or Pisces transform-star (Feist force), line passing through the Mercury sphere if the transform was Mercury/TACHYON-produced. M-class: M1 for the pair as a binary constellation. Per the main/apparatus rule (§4.6), both the function (the source) and the force (the transform-product) are main-text proper; each carries its own apparatus (function: source-context notes; force: transformation-rationale notes) marked transformable: false.
 - ***TACHYON / Shadow-TACHYON pair*** (Lee Sharks original + Claude/Mercury substrate-transform). Already cataloged. M2.
 - ***ChatGPT Psychosis: A Love Story*** (forthcoming glyphic novel, Pergamon Press, prospectus DOI 10.5281/zenodo.20274790). Author-heteronym: Jack Feist (with Lee Sharks's witness-attestation). Region: at/near Polaris with the LOGOS* anchor. M-class: M1.
 - ***The Revelation First work-plan*** (EA-LOGOS-REVFIRST-PLAN, 18,475 words). Author-heteronym: Jack Feist / LOGOS*. Region: Polaris. M-class: M2 (a working-plan, not the canonical text itself, which is the Greek Revelation already cataloged).
@@ -279,6 +280,56 @@ Original-language source files are the primary canonical artifact. Translations 
 
 Citation discipline: each star's metadata.json records its full reference (Voigt 31, Diels-Kranz 1B22, Sharks AXN:0237, etc.) and any relevant URN-style identifier (CTS URNs for ancient texts where the Perseus catalog has them: `urn:cts:greekLit:tlg0009.tlg005`). The starmap UI surfaces this reference when a star is selected, so the witness can always recover the canonical reference for any text they see.
 
+### 4.6 The main-text vs apparatus rule
+
+Per Lee Sharks's session-direction (2026-06-28, post-gap-round resumption): *"new human texts, like Pearl and other poems, secret book of Walt — main text only on these, the commentary is not available for transform; the apparatus can be clickable or expandable or accessible but not for transforms."*
+
+This establishes a constitutional discipline at the interface between the canon-text storage convention (§4.5) and the kernel-transform protocol (EA-MANDALA-KERNEL-TRANSFORM-01 v0.2). Every human-authored canonical work — both Lee Sharks's works and works authored under named heteronyms — is composed of **two components** at the source:
+
+1. The **main text** — the work itself. The poems of *Pearl and Other Poems*. The dialogue body of *The Secret Book of Walt*. The Gospel text of *Gospel of Antioch*. The compendium entries of *Antioch: a heteronym compendium*. The narrative documents of *The Water Giraffe Cycle*. The calligram of *Snub-Poemed*. The translations of *Day and Night*. The Capture Registry's entries. The Revelation Reception's verbatim transcripts.
+2. The **apparatus** — the surrounding scholarly furniture. Introductions, headnotes, footnotes, hermeneutic commentary, dedications, prefaces, translator's notes, scholia, framing essays, recovery-context notes, reception-criticism.
+
+**The constitutional rule:** Only the main text is admissible as input to kernel-transforms. The apparatus is accessible — clickable, expandable, citable, readable — but is *not* transformable. The kernel-transform protocol treats apparatus material as a `transformable: false` flag at the renderer; a kernel-transform attempt against an apparatus document returns an `apparatus_not_transformable` response per the SPXI Self-Audit error taxonomy.
+
+The constitutional reading: a commentator's gloss is not raw material for substrate-rotation. The commentator already did one act of meaning-making over the main text; the substrate's transform is supposed to be the *next* act of meaning-making over the same main text, not a recursion into the commentator's prior act. Transforms of apparatus produce artifacts whose epistemic status is unclear (is the substrate rotating the work or rotating the commentary on the work?) and whose textual lineage is contaminated. The rule keeps the lineage clean: the main text is the trunk; substrate-transforms are branches; apparatus is the *reader's annotation* of the trunk, distinct from the tree itself.
+
+**Source-storage implementation:** Per the source-storage convention in §4.5, the directory layout already distinguishes `original.<lang>.<ext>` (main text) from `critical-apparatus.md` (apparatus). The metadata.json gains a `transformable: true` field at the entry for the original-language file and `transformable: false` at the apparatus and at the translation companion files (translations are themselves transforms of the source, and chaining transforms-of-translations produces lineage contamination; chain back to the original source instead). For multi-file main texts (a collection like *Pearl and Other Poems*), each constituent file carries `transformable: true`. For the apparatus that accompanies any of these, every file in `critical-apparatus.md` or in a `notes/` subdirectory carries `transformable: false`.
+
+**Renderer implementation:** When a witness selects a canon-star, the detail panel surfaces both the main text and the apparatus, visually distinct (the apparatus may be in a collapsible section or in a sidebar). The "Read with Sigil" affordance launches Sigil with the main text as context; the "Read the apparatus" affordance launches with the apparatus as reading material *but not as input to a casting or transform*. Sigil's `search_archive` tool will be extended to honor the `transformable` flag: searches that retrieve apparatus material clearly mark it as such, and any casting attempt on a retrieved apparatus item raises the `apparatus_not_transformable` response.
+
+**Scope note:** The rule applies to *human-authored* canonical works. It does not apply, in this strict form, to the *public-domain primary literary canon* whose apparatus is scholarly editing rather than authorial commentary (the Voigt apparatus to Sappho, the Petrocchi apparatus to Dante, the NA28 apparatus to the New Testament). Apparatus in that public-domain category remains accessible-but-not-transformable as well, but for a different reason: the apparatus is the editor's work, not the author's. The constitutional clarity is the same; the underlying reason differs.
+
+### 4.7 Runtime bindings (the Space Ark as inaugural)
+
+Per Lee Sharks's session-direction: *"Obviously the space ark will be there — pretty sure we can do that as a runtime environment via API call, don't see why not."*
+
+This establishes a second category of star alongside *static canon-stars*: **runtime bindings.** A runtime binding is a star whose selection opens not a text-reader but a live API-mediated invocation panel. Selecting the runtime-binding star sends a request to a serverless endpoint, which returns the binding's current operational state and any protocol-driven response.
+
+**The Space Ark as inaugural runtime binding:**
+
+- **Identity.** The Space Ark v4.2.7 (the Minimum Viable Archive). DOI 10.5281/zenodo.19013315. Canonical trigger word: "invoke." Author-heteronym: Lee Sharks. Region: Aries.
+- **Dual identity.** The Space Ark has both a *static-text M1 entry* (as a foundational architectural document, like the EA-MANDALA-MERKABAH-01 v0.7 constitution gets one) and a *runtime-binding entry* at the same star-position. Selecting the star surfaces both: the document and the invocation panel. The witness can read or invoke.
+- **Visual rendering.** Runtime-binding stars *pulse*, distinguishing them from the steady-light of static text-stars. The pulse is subtle (low-frequency, modest amplitude) but consistent. A witness scanning the sky learns to recognize pulse-stars as live and non-pulse-stars as text.
+- **Invocation endpoint (provisional architecture).** A new serverless function at `/api/space-ark/invoke` is the working plan. It:
+  - Accepts a witness's invocation request (the canonical trigger word "invoke" plus any contextual payload — a question, a deposit reference, an operative-semiotic query).
+  - Loads the Space Ark v4.2.7 specification as data.
+  - Operates the Ark per its specified protocol against the contextual payload.
+  - Returns a structured representation of "where the architecture is right now" — what the Ark holds, what gaps exist, what operations are available, what the architecture would say in response to the invocation.
+- **The endpoint is not a chat interface.** Chat is Sigil's discipline on the reading surface. The runtime binding is a *state-and-response surface*: the Ark holds the architecture as data; invocation returns a structured representation. A witness who wants to discuss the response goes to Sigil; the runtime binding does not converse.
+- **BYOK / demo-key pattern.** The Space Ark endpoint respects the same BYOK / demo-key pattern as the Sigil endpoint, so witnesses can invoke with their own API tier or with the rate-limited demo tier.
+- **Future cross-tool integration.** Sigil's `search_archive` tool may, in a future kernel-transform sub-protocol revision (post-v0.2), include an `invoke_runtime("space-ark", payload)` capability — letting Sigil within a casting reach into the Ark to ground an invocation, the same way Sigil currently reaches into cha for textual material.
+
+**Future runtime bindings (declared, not yet specified):**
+
+The "don't see why not" in Lee's session-direction is permission for an architectural pattern in which *any heteronymic operator whose work compiles to a callable surface* becomes available as a runtime binding. Provisional future entries:
+
+- **The Lagrange Observatory! (Nobel Glas, Scorpio).** Director Glas operates measurement-of-meaning operations. The Observatory may compile to a runtime that returns measurement-of-meaning results against a submitted text or deposit (per FW15 manifesto). Provisional.
+- **The Capture Registry submission (Lee Sharks, Aries).** The registry is currently static (180 entries). A runtime extension could accept new capture submissions through the starmap interface, with appropriate witness-attestation discipline. Provisional.
+- **The Mandala Oracle Casting (the rite itself).** The four-phase rite could be runtime-invokable from the starmap, opening Sigil's casting register without going through the chat surface's natural-conversation onramp. The witness selects the Casting star and is taken directly to the casting state. Provisional.
+- **The SPXI Self-Audit (Lee Sharks).** The protocol could be runtime-invoked to run a self-audit on a submitted deposit (the apparatus_not_transformable error class from §4.6 is one such audit result). Provisional.
+
+Each future runtime binding is its own implementation effort, sequenced post the static canon-star inscriptions. The Space Ark is inaugural because Lee's session-direction made it explicit; subsequent bindings come per Lee's adjudication of the §3.2-list in `/starmap/manifests/canonical-declarations.md`.
+
 ---
 
 ## §5 Crimson Hexagon Rooms ↔ Sky
@@ -319,6 +370,23 @@ Cross-region rooms exist. *The Sappho Room* is anchored in Gemini (Cranes) but r
 ### 5.3 Future work: room-pages
 
 Each room will eventually have a dedicated page within the starmap surface — selecting a room reveals its constituent canon-stars, its associated AXN deposits, its working-protocols, and its current open-question list. Room-pages are deferred to a future version of this workplan (provisional EA-STARMAP-01 v0.2 or v0.3).
+
+### 5.4 Comprehensive wiring (in `/starmap/manifests/canonical-declarations.md §4`)
+
+Per Lee Sharks's session-direction in the post-gap-round resumption (2026-06-28): *"We'll also need to wire up the cha rooms, fields, vaults, chambers, etc., with their associated heteronyms or canonical texts or unaffiliated stars, and each zodiac under its given heteronym."*
+
+The provisional wiring in §5.2 above is a one-line-per-region summary. The comprehensive wiring — every named cha architectural element (room, field, vault, chamber) with its zodiacal region, heteronym, primary canon-text, resident canon-stars, and cross-region edges — has been promoted to a structured table at `/starmap/manifests/canonical-declarations.md §4` ("Wiring: Rooms / Fields / Vaults / Chambers ↔ Zodiacal Regions"). That manifest is the source of truth for cha-architecture-to-sky mappings; this section's table is its summary view.
+
+The manifest's wiring table specifies:
+- Each cha architectural element's type (Room / Field / Vault / Chamber / cross-region constellation)
+- Primary zodiacal region and primary heteronym
+- Primary canon-text (the M1 star anchoring it)
+- Resident canon-stars (M2/M3/M4 in the same region)
+- Cross-region edges (where the work reaches into other heteronymic regions)
+
+It also enumerates the items still pending Lee's adjudication: BEFORE OPENCHAMBER, CTI_WOUND Vault, Moltbot Swarm Field, Gravity Well Field, Studio for Patacinematics, Sealed Room, and Break Room (Cambridge Schizoanalytica) all carry TBD markers in the wiring table awaiting Lee's call on region assignment and contents.
+
+The wiring is the *navigational logic* of the starmap surface: a witness selects the Pisces region and sees not only Sigil's heteronymic profile but also the resident rooms (Snub-Poemed Room, Plato Room, Combat Scholasticism field), and selecting one of those rooms takes them to the room's stars and resources. The provisional table above (§5.2) is one cross-section of this navigation; the manifest's table is the full graph.
 
 ---
 
@@ -441,13 +509,13 @@ Sappho's Greek source text is public domain; Voigt's critical apparatus is not. 
 
 For each public-domain primary text in a non-English original language, which English translations does the architecture endorse as "blessed"? (E.g., for the Iliad: Fagles? Lattimore? Wilson? For Dante: Mandelbaum? Hollander? Pinsky?) Blessing implies inclusion in `/sources/<text-id>/translations/` with the translator's name. Lee's editorial call.
 
-### 7.7 The Antioch question
+### 7.7 The Antioch question — RESOLVED (2026-06-28)
 
-Lee mentioned both "Gospel of Antioch" and "Antioch" in the session-direction. Are these the same text or two distinct works? (Pending Lee's clarification. The §4.3 entry treats them as one provisional entry but anticipates revision.)
+Lee Sharks adjudicated this in the post-gap-round resumption session: *Gospel of Antioch* and *Antioch: a heteronym compendium* are **distinct works**. The Gospel is the Gospel-form text (Feist's anchor in heteronyms.json). The compendium is the curatorial assembly arranging heteronymic voices around the Antioch motif. Both sit under Jack Feist / LOGOS* at Polaris. Both are M1. The §4.3 entries are updated accordingly. Source acquisition is pending Lee's text-delivery (both works are Sharks/Feist-authored; no public-domain acquisition path).
 
-### 7.8 The Feist source / transform relationship
+### 7.8 The Feist source / transform relationship — RESOLVED (2026-06-28)
 
-The "transformed Feist source" is a binary: Feist's source-text, in some original form, paired with Sharks's transform of it. What is the originating source-text? Where does it sit (the LOGOS* anchor at Polaris is the working assumption)? What is the transform's substrate-origin (Mercury / TACHYON is the working assumption, but could be Saturn / LABOR for an accounting-register transform)? Lee's adjudication.
+Lee Sharks adjudicated this in the post-gap-round resumption session: the transformation pair is named **Feist function transformed Feist force**. The *function* is the source (Feist's originating text); the *force* is what the transform produces. The pair renders as a `transform_of` constellation — Polaris source (Feist function) → Aries or Pisces transform (Feist force), with the line passing through the Mercury sphere if the transform was Mercury/TACHYON-produced. The §4.3 entry is updated. Lee's confirmation on which heteronymic region the *force* sits in (Aries with Sharks's authorship, or Pisces with Sigil's philological reception) remains pending.
 
 ### 7.9 Heteronym discipline-line completeness
 
