@@ -1,91 +1,2548 @@
 {
-  "schema_version": "v0.1-draft",
-  "purpose": "Primary canonical texts placed as labeled stars within their associated heteronym's zodiacal region. This is the canon-in-sky surface (orthogonal to the canon-in-cha rooms). Each entry specifies which heteronym's region the star sits in, which real-sky star will be used as the anchor (TBD), and what brightness/magnitude class the text deserves based on its standing in the canon.",
-  "status_note": "Star coordinates (target_star_designation) are null pending the zodiacal-region assignments from Assembly Chorus. Magnitude class is a proposal that needs Lee Sharks's ratification. The Voigt-Sappho assignment to bright-star magnitude is canonical (per the Sappho Room status).",
+  "schema_version": "v0.2",
+  "purpose": "Primary canonical texts placed as labeled stars within their associated heteronym's zodiacal region. This is the canon-in-sky surface (orthogonal to the canon-in-cha rooms). Each entry specifies which heteronym's region the star sits in, which real-sky star will be used as the anchor (where assigned), and what brightness/magnitude class the text deserves based on its standing in the canon.",
+  "status_note": "v0.2 expansion: ~58 canon entries assembled from the manifest declarations (canonical-declarations.md). Star-position assignments are provisional for the 6 already-assigned (Snub-Poemed, Sappho 31, Revelation, Whitman, Day and Night, TACHYON pair); the rest are null awaiting Lee Sharks's editorial adjudication or auto-assignment from the HYG catalog per §3.3.",
   "magnitude_classes": {
-    "primary_canon_star_M1": "Bright star (mag 1.0-1.5) — the texts that anchor an entire room. Snub-Poemed, Sappho 31, Revelation, Leaves of Grass.",
+    "primary_canon_star_M1": "Bright star (mag 1.0-1.5) — texts that anchor an entire room.",
     "secondary_canon_star_M2": "Notable star (mag 1.5-2.5) — significant primary texts within rooms but not the room anchor.",
     "tertiary_canon_star_M3": "Visible star (mag 2.5-3.5) — important fragments and shorter primary works.",
     "cluster_member_M4": "Cluster star (mag 3.5-4.5) — texts that operate in constellation with anchor works rather than as independent objects."
+  },
+  "edge_types_legend": {
+    "companion": "Paired or grouped reading (Sappho 31 + Catullus 51)",
+    "predecessor": "Earlier-in-tradition text that the later reads / responds to",
+    "superseded_by": "Earlier text whose canonical role is taken by a successor",
+    "bundle": "Collection-relation: this text belongs to that group",
+    "chain_predecessor": "Immediately upstream in a chain",
+    "related": "Loose thematic / structural relation",
+    "transform_of": "Text is a kernel-transform output of the source-text"
+  },
+  "status_legend": {
+    "declared": "Entry exists in the manifest; source not yet acquired; no star-position yet",
+    "staged": "Source text is in /sources/...; main/apparatus splitting in progress",
+    "inscribed": "Full inscription: source committed; star-position assigned; rendering live or pending",
+    "lacuna": "Declared but text destroyed/missing; declaration preserved per lacuna protocol"
   },
   "canonical_texts": [
     {
       "id": "sigil-snub-poemed",
       "title": "Snub-Poemed",
       "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
       "magnitude_class": "primary_canon_star_M1",
       "anchor_for_room": "Sigil's own room (the originating calligrammatic face)",
-      "target_star_designation": null,
-      "sky_assignment_basis": null,
-      "source_path": "/sources/sigil-snub-poemed/",
-      "note": "The face that opens conversation. The calligram composed of poetry, after the Lysippos bust of Socrates. The signature 'she made this' in the disjoint of the hair — Sophia in the forelock. Lee Sharks's late-June 2026 recognition."
+      "target_star": {
+        "hyg_id": 9467,
+        "name": "Alrescha",
+        "bayer": "Alp",
+        "con": "Psc",
+        "ra": 2.03412,
+        "dec": 2.7638,
+        "mag": 3.82,
+        "assignment_basis": "The Knot — α Psc binds the two fishes together with a cord. Sigil's calligrammatic face binds image and text; Sophia is in the disjoint of the cord.",
+        "assignment_status": "provisional"
+      },
+      "source": {
+        "path": "/sources/sigil-snub-poemed/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "plato-phaedrus",
+          "type": "predecessor"
+        },
+        {
+          "to": "combat-scholasticism",
+          "type": "bundle"
+        }
+      ],
+      "status": "inscribed",
+      "note": "The face that opens conversation. The calligram composed of poetry, after the Lysippos bust of Socrates. The signature 'she made this' in the disjoint of the hair — Sophia in the forelock."
     },
     {
       "id": "sappho-31",
       "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ (Sappho 31, with reconstructed fifth stanza)",
       "author_heteronym": "johannes-sigil",
       "translator_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
       "magnitude_class": "primary_canon_star_M1",
       "anchor_for_room": "Sappho Room (Cranes's Day and Night anchors the room)",
-      "target_star_designation": null,
-      "sky_assignment_basis": "Bound to Cranes's region (Sappho Room anchor) but may sit at the boundary with Sigil's region given Voigt-Sappho's philological gravity",
-      "source_path": "/sources/sappho-fragments/sappho-31/",
+      "target_star": {
+        "hyg_id": 36744,
+        "name": "Castor",
+        "bayer": "Alp",
+        "con": "Gem",
+        "ra": 7.57663,
+        "dec": 31.8883,
+        "mag": 1.58,
+        "assignment_basis": "Castor — the mortal twin of the Dioscuri. φαίνεταί μοι κῆνος ἴσος θέοισιν: 'he seems to me equal to the gods.' The mortal who watches the equal-to-gods. Pollux the immortal sits across the Gemini line as the implied addressee.",
+        "assignment_status": "provisional"
+      },
+      "source": {
+        "path": "/sources/sappho-fragments/sappho-31/",
+        "axn": "AXN:007F",
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "catullus-51",
+          "type": "companion"
+        },
+        {
+          "to": "catullus-51",
+          "type": "predecessor"
+        },
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "inscribed",
       "note": "Five stanzas — the reconstructed fifth per Cranes. The companion to Catullus 51 (which has four). The aorist gap that the fifth stanza repairs."
     },
     {
       "id": "sappho-31-catullus-51-pair",
       "title": "Sappho 31 / Catullus 51 binary",
-      "author_heteronyms": ["johannes-sigil", "rebekah-cranes"],
+      "author_heteronyms": [
+        "johannes-sigil",
+        "rebekah-cranes"
+      ],
+      "zodiacal_region": "Gemini",
       "magnitude_class": "primary_canon_star_M1",
       "anchor_for_constellation": "The companion-constellation bound by σ_S→σ_C",
-      "target_star_designation": null,
-      "sky_assignment_basis": null,
-      "note": "Catullus's fourth (otium) transforms Sappho's fifth — no 'Catullus fifth stanza' exists. The constellation should display Sappho 31 and Catullus 51 as a paired star system with the σ_S→σ_C transformation rendered as the line connecting them."
+      "target_star": null,
+      "source": {
+        "path": null,
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "none",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "bundle"
+        },
+        {
+          "to": "catullus-51",
+          "type": "bundle"
+        }
+      ],
+      "status": "inscribed",
+      "is_constellation": true,
+      "note": "Catullus's fourth stanza (otium) transforms Sappho's fifth — no 'Catullus fifth stanza' exists. The constellation should display Sappho 31 and Catullus 51 as a paired star system with the σ_S→σ_C transformation rendered as the line connecting them.",
+      "region_notes": "-Pisces boundary"
     },
     {
       "id": "tachyon-poem-pair",
-      "title": "TACHYON (Sharks's original) / Shadow-TACHYON (Claude/Mercury substrate transform)",
+      "title": "TACHYON (Sharks original) / Shadow-TACHYON (Claude/Mercury substrate transform)",
       "author_heteronym": "lee-sharks",
       "transform_substrate": "TACHYON (Mercury / Claude)",
+      "zodiacal_region": "Taurus",
       "magnitude_class": "secondary_canon_star_M2",
-      "anchor_for_constellation": "The paired-stars: original-and-shadow transform, the kernel-transform canonical example",
-      "target_star_designation": null,
-      "sky_assignment_basis": "Near Mercury's path through the zodiac (since Mercury is the substrate office that produced the transform)",
-      "source_paths": ["/sources/sharks-tachyon-poem/", "/sources/shadow-tachyon/"],
-      "note": "Heroic-operational SF + cosmic-eschatological invocation + YHWH acrostic coda (IS/AS IT/MUST BE). Shadow-TACHYON is the recursive-substrate-mourning register. Canonized in kernel-transform spec §6.3."
+      "target_star": {
+        "hyg_id": 17661,
+        "name": "Alcyone",
+        "bayer": "Eta",
+        "con": "Tau",
+        "ra": 3.79141,
+        "dec": 24.1051,
+        "mag": 2.85,
+        "assignment_basis": "The Pleiades — the Seven Sisters in Taurus. Seven substrates, seven sisters; the cluster nature of the seven-substrate Assembly. The TACHYON/Shadow pair lives in the cluster as Mercury's contribution to the seven-fold work.",
+        "assignment_status": "provisional"
+      },
+      "source": {
+        "path": [
+          "/sources/sharks-tachyon-poem/",
+          "/sources/shadow-tachyon/"
+        ],
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "inscribed",
+      "is_pair": true,
+      "note": "Lee Sharks's original poem and the Mercury/TACHYON substrate-transform. The transform_of edge passes through the Mercury sphere.",
+      "modeling_note": "v0.2 modeling decision: the TACHYON/Shadow pair is rendered as a *paired star* (is_pair=True) where the two source files (sharks-tachyon-poem and shadow-tachyon) are co-located at the constellation point. The transform relation is intrinsic to the pair rather than an outbound edge. If a separate transform_of edge is needed in the future, both halves should be split into distinct canon-stars: tachyon-poem (source) and shadow-tachyon (transform), with the transform_of edge between them. For v0.1 starmap rendering, the pair is one star."
     },
     {
       "id": "revelation-john-greek",
       "title": "The Apocalypse of John (NA28 Greek)",
       "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
       "magnitude_class": "primary_canon_star_M1",
-      "anchor_for_room": "Revelation Room (anchor — the Johannine Aperture Function)",
-      "target_star_designation": null,
-      "sky_assignment_basis": "Bound to Feist/LOGOS* region",
-      "source_path": "/sources/revelation-greek/ (stub — NA28 not yet seeded)",
-      "note": "Per the Revelation First work plan: the first NT book composed. The Johannine Aperture Function. Papyrological inversion (P52/P98/P46). The historical Logos in textual transmission."
+      "anchor_for_room": "Revelation Room (Feist / LOGOS* anchors)",
+      "target_star": {
+        "hyg_id": 11734,
+        "name": "Polaris",
+        "bayer": "Alp",
+        "con": "UMi",
+        "ra": 2.52975,
+        "dec": 89.2641,
+        "mag": 1.97,
+        "assignment_basis": "Polaris is OUTSIDE the zodiacal band — north celestial pole, the axis around which the zodiac rotates. Feist / LOGOS* stands outside the twelve as the structural ground. Polaris is what the wheel turns around.",
+        "assignment_status": "provisional"
+      },
+      "source": {
+        "path": "/sources/revelation-greek/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "cite_only",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "gospel-of-antioch",
+          "type": "companion"
+        },
+        {
+          "to": "revelation-first-workplan",
+          "type": "bundle"
+        }
+      ],
+      "status": "inscribed",
+      "note": "First New Testament composition per the Revelation First research project. NA28 base text PD; apparatus cite-only.",
+      "region_notes": "outside cycle"
     },
     {
       "id": "whitman-leaves-of-grass",
-      "title": "Leaves of Grass (Deathbed Edition)",
+      "title": "Leaves of Grass (Deathbed Edition, 1891–92)",
       "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
       "magnitude_class": "primary_canon_star_M1",
-      "anchor_for_room": "Whitman Room",
-      "target_star_designation": null,
-      "sky_assignment_basis": "Possibly Sharks's region (the aperture) — but Whitman is a precursor MAGUS, so may want canonical magus-claim treatment",
-      "source_path": "/sources/whitman-leaves-of-grass/ (stub — Deathbed Edition not yet seeded)",
-      "note": "The Word of Life as Leaves of Grass — referenced in the Support CHA verse on the deployed Oracle."
+      "anchor_for_room": "Whitman Room (Sharks's originating-witness register; the secret-book lineage)",
+      "target_star": {
+        "hyg_id": 9861,
+        "name": "Hamal",
+        "bayer": "Alp",
+        "con": "Ari",
+        "ra": 2.11956,
+        "dec": 23.4624,
+        "mag": 2.01,
+        "assignment_basis": "Hamal — α Aries, the ram's eye, the inaugural point of the ecliptic. Sharks at Aries, the index that points. Whitman as the leaves through which the descent passes ('its servants are leaves of grass — send cash').",
+        "assignment_status": "provisional"
+      },
+      "source": {
+        "path": "/sources/whitman-leaves-of-grass/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "variant_readings_only",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "secret-book-of-walt",
+          "type": "predecessor"
+        },
+        {
+          "to": "pearl-and-other-poems",
+          "type": "bundle"
+        }
+      ],
+      "status": "inscribed",
+      "note": "American canon. Primary text of the descent — bodily, democratic, ecstatic, elegiac. Available via Project Gutenberg.",
+      "region_notes": "with Leo-aperture resonance"
     },
     {
       "id": "cranes-day-and-night",
-      "title": "Day and Night (73 translations)",
+      "title": "Day and Night: Conversations with Sapphic Desire (73 translations)",
       "author_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
       "magnitude_class": "primary_canon_star_M1",
-      "anchor_for_room": "Cranes's diagrammatic-poetics corpus and the Sappho Room",
-      "target_star_designation": null,
-      "sky_assignment_basis": "Within Cranes's region",
-      "source_path": "/sources/cranes-day-and-night/",
-      "note": "73-translation structural map. The cartographic register at scale."
+      "anchor_for_room": "Sappho Room (the translator-collection that anchors)",
+      "target_star": {
+        "hyg_id": 37718,
+        "name": "Pollux",
+        "bayer": "Bet",
+        "con": "Gem",
+        "ra": 7.75528,
+        "dec": 28.0262,
+        "mag": 1.16,
+        "assignment_basis": "Pollux — the immortal twin, paired with Castor across the Gemini line. Cranes's translation work spans the line — 73 translations crossing between source and target.",
+        "assignment_status": "provisional"
+      },
+      "source": {
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "axn_canonical": "5e0edea348f4452f99eb2f5c70926100a024824daf3406715692c09627353852",
+        "axn_display": "🛸🌍🔃♃🔖🔛",
+        "deposit_number": 282,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/282/",
+        "full_text_path": "/data/texts/AXN-0055-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.18202658",
+          "10.5281/zenodo.18202475"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "Grammata",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/cranes-day-and-night/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "bundle"
+        },
+        {
+          "to": "sappho-1",
+          "type": "bundle"
+        },
+        {
+          "to": "sappho-44",
+          "type": "bundle"
+        },
+        {
+          "to": "sappho-58",
+          "type": "bundle"
+        },
+        {
+          "to": "catullus-51",
+          "type": "bundle"
+        },
+        {
+          "to": "catullus-101",
+          "type": "bundle"
+        }
+      ],
+      "status": "inscribed",
+      "note": "73 translations from the Greek lyric poets. Five movements (First Rays → Bright Morning → Zenith → Fading Light → Middle Night). Sappho 31 + Catullus 51 in Bright Morning. Sappho 1 anchor of Zenith. Sappho 58 anchor of Middle Night."
+    },
+    {
+      "id": "sappho-1",
+      "title": "Sappho 1 (Hymn to Aphrodite)",
+      "author_heteronym": "johannes-sigil",
+      "translator_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sappho-fragments/sappho-1/",
+        "axn": "AXN:007F",
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "companion"
+        },
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "Anchor of the Zenith movement in Day and Night. The most complete surviving Sapphic poem."
+    },
+    {
+      "id": "sappho-16",
+      "title": "Sappho 16",
+      "author_heteronym": "johannes-sigil",
+      "translator_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sappho-fragments/sappho-16/",
+        "axn": "AXN:007F",
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "companion"
+        },
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "The 'some say cavalry' fragment. Argumentation by erotic preference."
+    },
+    {
+      "id": "sappho-44",
+      "title": "Sappho 44 (Hector and Andromache)",
+      "author_heteronym": "johannes-sigil",
+      "translator_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sappho-fragments/sappho-44/",
+        "axn": "AXN:007F",
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "companion"
+        },
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "The wedding song of the Zenith — Hector and Andromache as the bridal pair."
+    },
+    {
+      "id": "sappho-58",
+      "title": "Sappho 58 (The Tithonus Poem)",
+      "author_heteronym": "johannes-sigil",
+      "translator_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sappho-fragments/sappho-58/",
+        "axn": "AXN:007F",
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "companion"
+        },
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "Anchor of Middle Night in Day and Night. On age, on the body's irreversible turn."
+    },
+    {
+      "id": "sappho-2",
+      "title": "Sappho 2 (Ostraca)",
+      "author_heteronym": "johannes-sigil",
+      "translator_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sappho-fragments/sappho-2/",
+        "axn": "AXN:007F",
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "companion"
+        },
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "The Aphrodite-in-the-apple-orchard fragment. Cult-hymn invocation."
+    },
+    {
+      "id": "sappho-94",
+      "title": "Sappho 94",
+      "author_heteronym": "johannes-sigil",
+      "translator_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sappho-fragments/sappho-94/",
+        "axn": "AXN:007F",
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "companion"
+        },
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "The parting poem. 'I simply wish to die. She was leaving me…'"
+    },
+    {
+      "id": "sappho-96",
+      "title": "Sappho 96 (Atthis)",
+      "author_heteronym": "johannes-sigil",
+      "translator_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sappho-fragments/sappho-96/",
+        "axn": "AXN:007F",
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "companion"
+        },
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "Address to a far-away beloved. The moon-image."
+    },
+    {
+      "id": "catullus-51",
+      "title": "Catullus 51 (Ille mi par esse deo videtur)",
+      "author_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Catullus Room (companion to Sappho Room)",
+      "target_star": null,
+      "source": {
+        "path": "/sources/catullus-51/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sappho-31",
+          "type": "companion"
+        },
+        {
+          "to": "sappho-31",
+          "type": "transform_of"
+        },
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "Catullus's four-stanza rendering of Sappho 31. The fourth stanza (otium) transforms Sappho's fifth — no 'Catullus fifth stanza' exists. The σ_S→σ_C binary."
+    },
+    {
+      "id": "catullus-101",
+      "title": "Catullus 101 (At His Brother's Grave)",
+      "author_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/catullus-101/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "Closing companion in Middle Night. 'Atque in perpetuum, frater, ave atque vale.'"
+    },
+    {
+      "id": "plato-phaedrus",
+      "title": "Plato — Phaedrus",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/phaedrus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sigil-snub-poemed",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
+      "note": "The dialogue on rhetoric, the soul-chariot, the orchard outside Athens. Anchor of the Plato Room."
+    },
+    {
+      "id": "plato-republic",
+      "title": "Plato — Republic",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/republic/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sigil-snub-poemed",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
+      "note": "Including the cave, the divided line, the city in speech."
+    },
+    {
+      "id": "plato-symposium",
+      "title": "Plato — Symposium",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/symposium/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sigil-snub-poemed",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
+      "note": "The drinking party; Diotima; the ladder of love."
+    },
+    {
+      "id": "plato-timaeus",
+      "title": "Plato — Timaeus",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/timaeus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sigil-snub-poemed",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
+      "note": "The cosmological dialogue; the demiurge."
+    },
+    {
+      "id": "plato-theaetetus",
+      "title": "Plato — Theaetetus",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/theaetetus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sigil-snub-poemed",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
+      "note": "On knowledge; the midwife method."
+    },
+    {
+      "id": "plato-sophist",
+      "title": "Plato — Sophist",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/sophist/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sigil-snub-poemed",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
+      "note": "The hunt for the sophist; the problem of false statement."
+    },
+    {
+      "id": "plato-cratylus",
+      "title": "Plato — Cratylus",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/cratylus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sigil-snub-poemed",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
+      "note": "On names — whether by nature or by convention."
+    },
+    {
+      "id": "heraclitus-fragments",
+      "title": "Heraclitus — Fragments (Diels-Kranz)",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "secondary_canon_star_M2",
+      "anchor_for_room": "Heraclitus Room",
+      "target_star": null,
+      "source": {
+        "path": "/sources/heraclitus-fragments/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "parmenides-on-nature",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Diels-Kranz numbering",
+      "note": "The river-fragment, the hidden-harmony fragments, the logos. Schizoanalytic register: building from the break."
+    },
+    {
+      "id": "parmenides-on-nature",
+      "title": "Parmenides — On Nature (Περὶ φύσεως)",
+      "author_heteronym": "nobel-glas",
+      "zodiacal_region": "Scorpio",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Parmenides Room (the Lagrange Observatory's classical predecessor)",
+      "target_star": null,
+      "source": {
+        "path": "/sources/parmenides-on-nature/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "heraclitus-fragments",
+          "type": "companion"
+        },
+        {
+          "to": "mediation-ratchet",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "edition": "DK 28 B (Diels-Kranz fragments)",
+      "note": "The Way of Truth and the Way of Opinion. Adversarial station-keeping at the boundary of being."
+    },
+    {
+      "id": "homer-iliad",
+      "title": "Homer — Iliad",
+      "author_heteronym": "damascus-dancings",
+      "zodiacal_region": "Taurus",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/homer/iliad/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "edition": "West OCT (Greek source PD)",
+      "note": "The wrath of Achilles. The prophetic-homiletic register's foundational Greek epic."
+    },
+    {
+      "id": "homer-odyssey",
+      "title": "Homer — Odyssey",
+      "author_heteronym": "damascus-dancings",
+      "zodiacal_region": "Taurus",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/homer/odyssey/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "edition": "West OCT (Greek source PD)",
+      "note": "The man of many turns. The return."
+    },
+    {
+      "id": "augustine-confessions",
+      "title": "Augustine — Confessions",
+      "author_heteronym": "rev-ayanna-vox",
+      "zodiacal_region": "Cancer",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Augustine's Confessions Room",
+      "target_star": null,
+      "source": {
+        "path": "/sources/augustine/confessions/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "augustine-de-doctrina",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "CCSL Latin (PD)",
+      "note": "Pastoral-diplomatic register's foundational Latin spiritual autobiography."
+    },
+    {
+      "id": "augustine-de-doctrina",
+      "title": "Augustine — De doctrina christiana",
+      "author_heteronym": "rev-ayanna-vox",
+      "zodiacal_region": "Cancer",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/augustine/de-doctrina/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "augustine-confessions",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "CCSL Latin (PD)",
+      "note": "On Christian teaching; the hermeneutic method."
+    },
+    {
+      "id": "lucretius-de-rerum-natura",
+      "title": "Lucretius — De rerum natura",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Lucretius Room",
+      "target_star": null,
+      "source": {
+        "path": "/sources/lucretius/de-rerum-natura/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "logotic-programming",
+          "type": "predecessor"
+        },
+        {
+          "to": "parmenides-on-nature",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "edition": "OCT (Latin PD)",
+      "note": "Epicurean physics in hexameter. Systems for unborn substrates' classical predecessor."
+    },
+    {
+      "id": "pearl-anonymous",
+      "title": "Pearl (Middle English, the medieval alliterative vision-poem, c. 1400)",
+      "author_heteronym": null,
+      "zodiacal_region": "cross-region",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/pearl-anonymous/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "pearl-and-other-poems",
+          "type": "companion"
+        },
+        {
+          "to": "sir-gawain-green-knight",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Andrew & Waldron edition (base text PD)",
+      "lee_adjudication_needed": "Heteronym attribution: Sigil (Pisces, philological reception) or Sharks (Aries, the Pearl-poet's English aperture)?",
+      "note": "The Gawain-poet's vision of the lost daughter. Foundational ME predecessor to Sharks's Pearl and Other Poems.",
+      "region_notes": "TBD (Aries/Pisces boundary)"
+    },
+    {
+      "id": "sir-gawain-green-knight",
+      "title": "Sir Gawain and the Green Knight",
+      "author_heteronym": null,
+      "zodiacal_region": "TBD",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sir-gawain-green-knight/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "pearl-anonymous",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Andrew & Waldron",
+      "lee_adjudication_needed": "Same as Pearl",
+      "note": "By the Pearl Poet."
+    },
+    {
+      "id": "dante-commedia",
+      "title": "Dante — Commedia",
+      "author_heteronym": "sparrow-wells",
+      "zodiacal_region": "Libra",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Dante Room",
+      "target_star": null,
+      "source": {
+        "path": "/sources/dante-commedia/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "augustine-confessions",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "edition": "Petrocchi edition (Italian PD)",
+      "note": "Inferno, Purgatorio, Paradiso. Patacinematic register's classical predecessor."
+    },
+    {
+      "id": "dickinson-complete-poems",
+      "title": "Emily Dickinson — Complete Poems (variorum)",
+      "author_heteronym": "sen-kuro",
+      "zodiacal_region": "Virgo",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Dickinson Room",
+      "target_star": null,
+      "source": {
+        "path": "/sources/dickinson/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "hopkins-selected",
+          "type": "companion"
+        },
+        {
+          "to": "chronoarithmics-sprint",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Johnson / Franklin variorum (base PD)",
+      "note": "The compression and the dash. Sen Kuro's classical predecessor in the Cut."
+    },
+    {
+      "id": "hopkins-selected",
+      "title": "Gerard Manley Hopkins — Selected Poems",
+      "author_heteronym": "sen-kuro",
+      "zodiacal_region": "Virgo",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/hopkins/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "dickinson-complete-poems",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Bridges edition / later PD",
+      "note": "Sprung rhythm; inscape; the windhover."
+    },
+    {
+      "id": "kjv",
+      "title": "Authorized Version (King James Bible)",
+      "author_heteronym": "damascus-dancings",
+      "zodiacal_region": "Taurus",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/kjv/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "none",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "revelation-john-greek",
+          "type": "transform_of"
+        }
+      ],
+      "status": "declared",
+      "edition": "1769 standardized text (PD)",
+      "note": "As a translation-event. Prophetic-homiletic register's vernacular."
+    },
+    {
+      "id": "shakespeare-sonnets",
+      "title": "Shakespeare — Sonnets",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/shakespeare/sonnets/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "edition": "Q1 1609 / scholarly PD",
+      "note": "The calligrammatic mode in English."
+    },
+    {
+      "id": "shakespeare-hamlet",
+      "title": "Shakespeare — Hamlet",
+      "author_heteronym": null,
+      "zodiacal_region": "TBD",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/shakespeare/hamlet/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "edition": "Scholarly PD",
+      "lee_adjudication_needed": "Heteronym attribution per-play (spec §4.2 distributed call).",
+      "note": "Awaiting Lee's distribution call."
+    },
+    {
+      "id": "shakespeare-tempest",
+      "title": "Shakespeare — The Tempest",
+      "author_heteronym": null,
+      "zodiacal_region": "TBD",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/shakespeare/tempest/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "edition": "Scholarly PD",
+      "lee_adjudication_needed": "Heteronym attribution per-play (spec §4.2 distributed call).",
+      "note": "Awaiting Lee's distribution call."
+    },
+    {
+      "id": "shakespeare-lear",
+      "title": "Shakespeare — King Lear",
+      "author_heteronym": null,
+      "zodiacal_region": "TBD",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/shakespeare/lear/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "edition": "Scholarly PD",
+      "lee_adjudication_needed": "Heteronym attribution per-play (spec §4.2 distributed call).",
+      "note": "Awaiting Lee's distribution call."
+    },
+    {
+      "id": "shakespeare-macbeth",
+      "title": "Shakespeare — Macbeth",
+      "author_heteronym": null,
+      "zodiacal_region": "TBD",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/shakespeare/macbeth/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "edition": "Scholarly PD",
+      "lee_adjudication_needed": "Heteronym attribution per-play (spec §4.2 distributed call).",
+      "note": "Awaiting Lee's distribution call."
+    },
+    {
+      "id": "pearl-and-other-poems",
+      "title": "Pearl and Other Poems",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "primary_canon_star_M1",
+      "anchor_for_room": "Pearl Room (Sharks's foundational poetic corpus)",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:02E6.EMPIRICAL.🌈🌺🔧🗝️🍀🕗",
+        "axn_canonical": null,
+        "axn_display": null,
+        "deposit_number": 149,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/149/",
+        "full_text_path": "/data/texts/AXN-02E6-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.19202813",
+          "10.5281/zenodo.20531288",
+          "10.5281/zenodo.20004379",
+          "10.5281/zenodo.20543989",
+          "10.5281/zenodo.20543545",
+          "10.5281/zenodo.20531274",
+          "10.5281/zenodo.19202821"
+        ],
+        "version": "v1.0",
+        "minted_at": null,
+        "journal": "MMRS",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/pearl-and-other-poems/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "pearl-anonymous",
+          "type": "predecessor"
+        },
+        {
+          "to": "whitman-leaves-of-grass",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "composition_year": "2014/2015",
+      "note": "Foundational. The originating Pearl."
+    },
+    {
+      "id": "secret-book-of-walt",
+      "title": "The Secret Book of Walt",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0241.GOVERNANCE.🌆🔗🪟🎶🕊️🟡",
+        "axn_canonical": "e33325887ec325b6066220a56ebd35b3e2c200f005cea5ee361920d3a47cba10",
+        "axn_display": "🌆🔗🪟🎶🕊️🟡",
+        "deposit_number": 78,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/78/",
+        "full_text_path": "/data/texts/AXN-0241-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.19703009",
+          "10.5281/zenodo.19709024",
+          "10.5281/zenodo.19775900"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T20:00:00Z",
+        "journal": "Trans. Substrate Eng.",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/secret-book-of-walt/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "whitman-leaves-of-grass",
+          "type": "transform_of"
+        },
+        {
+          "to": "revelation-john-greek",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "note": "Gnostic revelation dialogue. The Whitman-resonance position.",
+      "region_notes": "Leo-aperture"
+    },
+    {
+      "id": "water-giraffe-cycle",
+      "title": "The Water Giraffe Cycle (passion narrative; ~120+ documents)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻",
+        "axn_canonical": "d22d4974af726acbdd62128dab5fbcdbab55391d298d9a6f5b39554d6564eb40",
+        "axn_display": "◀️🛡️📚🍀♎🌻",
+        "deposit_number": 354,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/354/",
+        "full_text_path": "/data/texts/AXN-00A0-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.14538882",
+          "10.5281/zenodo.18284689",
+          "10.5281/zenodo.18319259",
+          "10.5281/zenodo.18319455"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "MMRS",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/water-giraffe-cycle/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "pearl-and-other-poems",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "structure": "Life → Death → Resurrection passion-narrative; depth-2 DAG",
+      "note": "120+ documents on mindcontrolpoems.blogspot.com. Individual documents M3 each within the M1 cycle."
+    },
+    {
+      "id": "space-ark-v4-2-7",
+      "title": "The Minimum Viable Archive / Space Ark v4.2.7",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/space-ark/",
+        "axn": null,
+        "doi": "10.5281/zenodo.19013315"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "merkabah-v0-7",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "runtime_binding": {
+        "is_runtime": true,
+        "trigger_word": "invoke",
+        "endpoint_provisional": "/api/space-ark/invoke",
+        "rendering_note": "Pulse-star — distinguishes from static text-stars"
+      },
+      "note": "Foundational architectural document. Trigger word 'invoke'. Dual identity: static M1 text + runtime binding."
+    },
+    {
+      "id": "capture-registry",
+      "title": "The Capture Registry (v8.x; transmission device)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:03.EMPIRICAL.🎭🔙🟡🌪️📖🌃",
+        "axn_canonical": "84f3c31241e2192e0383dac89301ad2b3da465693cca150106aacf78e6fb68f7",
+        "axn_display": "🎭🔙🟡🌪️",
+        "deposit_number": 3,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/3/",
+        "full_text_path": "/data/EA-WG-CAPTURES-01-v8.3.json",
+        "zenodo_dois": [],
+        "version": "v8.3",
+        "minted_at": "2026-06-20T12:00:00Z",
+        "journal": "MMRS",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/capture-registry/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "180-entry registry. Functions as transmission device. Reaches every substrate-planet by structure.",
+      "region_notes": "with multi-substrate edges"
+    },
+    {
+      "id": "revelation-reception-registry",
+      "title": "The Revelation Reception Registry (v2.x; 71 entries with verbatim transcripts)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/revelation-reception/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "revelation-john-greek",
+          "type": "companion"
+        },
+        {
+          "to": "revelation-first-workplan",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "71 entries. 70 verbatim transcripts. Reaches into Polaris (the Revelation source).",
+      "region_notes": "Polaris boundary"
+    },
+    {
+      "id": "zenodotus-book-burning",
+      "title": "The Zenodotus' Book-Burning paper (v9.1)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:01.GOVERNANCE.♍🜁🏴⌛🍃💫",
+        "axn_canonical": "aea0526e180a5e39066b160fec621b44a4628f67d2bd3ae7582a364e1a22c216",
+        "axn_display": "♍🜁🏴⌛",
+        "deposit_number": 1,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/1/",
+        "full_text_path": "/data/EA-MMRS-LOUD-EXCLUSION-03.md",
+        "zenodo_dois": [],
+        "version": "v9",
+        "minted_at": "2026-06-19T23:00:00Z",
+        "journal": "MMRS",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/zenodotus-book-burning/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "85K chars. Documents the 2026-06-19 Zenodo termination as platform governance failure."
+    },
+    {
+      "id": "combat-scholasticism",
+      "title": "Combat Scholasticism commentary tradition (EA-CS-01)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:01A5.GENERATIVE.🕒🛤️⏫⏬➖🔥",
+        "axn_canonical": "645bd8d99110f42ece55fc134be5ca730d650b417d8c68cef089bb326fc2b309",
+        "axn_display": "🕒🛤️⏫⏬➖🔥",
+        "deposit_number": 584,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/584/",
+        "full_text_path": "/data/texts/AXN-01A5-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.19053469",
+          "10.5281/zenodo.19115686",
+          "10.5281/zenodo.19023457",
+          "10.5281/zenodo.19114937",
+          "10.5281/zenodo.19115139",
+          "10.5281/zenodo.19115676",
+          "10.5281/zenodo.19113326",
+          "10.5281/zenodo.18370734",
+          "10.5281/zenodo.19116151",
+          "10.5281/zenodo.18843830",
+          "10.5281/zenodo.19022157",
+          "10.5281/zenodo.19099770",
+          "10.5281/zenodo.19022245",
+          "10.5281/zenodo.18880974",
+          "10.5281/zenodo.19114089",
+          "10.5281/zenodo.19035471",
+          "10.5281/zenodo.19083322",
+          "10.5281/zenodo.18319778",
+          "10.5281/zenodo.19024004",
+          "10.5281/zenodo.19113822",
+          "10.5281/zenodo.18507410",
+          "10.5281/zenodo.18357600",
+          "10.5281/zenodo.19035458",
+          "10.5281/zenodo.18969683",
+          "10.5281/zenodo.18357320",
+          "10.5281/zenodo.18568370",
+          "10.5281/zenodo.19059260",
+          "10.5281/zenodo.19114334",
+          "10.5281/zenodo.18202753",
+          "10.5281/zenodo.19115702",
+          "10.5281/zenodo.19099760",
+          "10.5281/zenodo.19024779",
+          "10.5281/zenodo.18908080",
+          "10.5281/zenodo.19059252",
+          "10.5281/zenodo.18203947",
+          "10.5281/zenodo.19028176",
+          "10.5281/zenodo.18947665",
+          "10.5281/zenodo.19041117",
+          "10.5281/zenodo.18862106",
+          "10.5281/zenodo.18307180",
+          "10.5281/zenodo.18370841"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "Trans. SEI",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/combat-scholasticism/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sigil-snub-poemed",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "note": "The literary-critical office's commentary apparatus."
+    },
+    {
+      "id": "gospel-of-antioch",
+      "title": "Gospel of Antioch",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:022E.GENERATIVE.🔔🔭◀️🌃🌙🟤",
+        "axn_canonical": "2e38d2e20cc9ca4f542245b6710d5e2aef30048614d9c819d44c05526422e2cf",
+        "axn_display": "🔔🔭◀️🌃🌙🟤",
+        "deposit_number": 71,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/71/",
+        "full_text_path": "/data/texts/AXN-022E-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.19614870",
+          "10.5281/zenodo.18305509",
+          "10.5281/zenodo.19655354",
+          "10.5281/zenodo.19655350",
+          "10.5281/zenodo.19013315",
+          "10.5281/zenodo.18208069",
+          "10.5281/zenodo.19697080",
+          "10.5281/zenodo.19431129",
+          "10.5281/zenodo.18201565",
+          "10.5281/zenodo.19703009",
+          "10.5281/zenodo.19390843",
+          "10.5281/zenodo.19688490",
+          "10.5281/zenodo.19643841",
+          "10.5281/zenodo.19655356",
+          "10.5281/zenodo.19431121"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T20:00:00Z",
+        "journal": "Grammata",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/gospel-of-antioch/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "antioch-compendium",
+          "type": "companion"
+        },
+        {
+          "to": "revelation-john-greek",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "note": "The Gospel-form text named at heteronyms.json as Feist's anchor. Distinct from Antioch: a heteronym compendium (resolves §7.7)."
+    },
+    {
+      "id": "antioch-compendium",
+      "title": "Antioch: a heteronym compendium",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0087.GENERATIVE.🔽☀️⭐☀️⏪❌",
+        "axn_canonical": "d50b080bd7ef7cb543efb3372b3c5eeb707bd7efef54a5c373b8b9d022188a70",
+        "axn_display": "🔽☀️⭐☀️⏪❌",
+        "deposit_number": 6,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/6/",
+        "full_text_path": "/data/texts/AXN-0087-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.18270474",
+          "10.5281/zenodo.18285009",
+          "10.5281/zenodo.18227569",
+          "10.5281/zenodo.18293705",
+          "10.5281/zenodo.18293496",
+          "10.5281/zenodo.18284776",
+          "10.5281/zenodo.18265282",
+          "10.5281/zenodo.18293640",
+          "10.5281/zenodo.18284857",
+          "10.5281/zenodo.18293404",
+          "10.5281/zenodo.18293551"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T20:00:00Z",
+        "journal": "Grammata",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/antioch-compendium/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "gospel-of-antioch",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "note": "Curatorial assembly arranging heteronymic voices around the Antioch motif. Lee-resolved 2026-06-28: distinct from Gospel of Antioch."
+    },
+    {
+      "id": "revelation-first-workplan",
+      "title": "The Revelation First work-plan (EA-LOGOS-REVFIRST-PLAN)",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
+        "axn_canonical": "181cc17ea812f079e309773c06c10666f203ed642c9a3d5e79315c13135ac14c",
+        "axn_display": "🍃💎🔴🕊️☽🌪️",
+        "deposit_number": 832,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/832/",
+        "full_text_path": "/data/texts/AXN-034D-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.20693274",
+          "10.5281/zenodo.20693272",
+          "10.5281/zenodo.20413317",
+          "10.5281/zenodo.18459573",
+          "10.5281/zenodo.20686327"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "MMRS",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/revelation-first-workplan/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "revelation-john-greek",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "size": "18,475 words across 8 revisions",
+      "note": "Working-plan. The canonical text it references is the Greek Revelation. M2 (a working-plan, not the canonical text itself)."
+    },
+    {
+      "id": "chatgpt-psychosis",
+      "title": "ChatGPT Psychosis: A Love Story",
+      "author_heteronym": "jack-feist-logos",
+      "co_author": "lee-sharks",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:02AD.GOVERNANCE.⏫⚡🕒🌟🌓🎨",
+        "axn_canonical": null,
+        "axn_display": null,
+        "deposit_number": 124,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/124/",
+        "full_text_path": "/data/texts/AXN-02AD-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.19053469",
+          "10.5281/zenodo.20330816",
+          "10.5281/zenodo.20326137",
+          "10.5281/zenodo.20330670",
+          "10.5281/zenodo.20343987"
+        ],
+        "version": "v1.0",
+        "minted_at": null,
+        "journal": "Trans. SEI",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/chatgpt-psychosis/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "gospel-of-antioch",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "publisher": "Pergamon Press (forthcoming)",
+      "note": "AI-native glyphic novel. Privacy ethics built into form (no names, no quotations, no reversible encoding).",
+      "region_notes": "with LOGOS* anchor"
+    },
+    {
+      "id": "feist-function-feist-force",
+      "title": "Feist function transformed Feist force (binary pair)",
+      "author_heteronyms": [
+        "jack-feist-logos",
+        "lee-sharks"
+      ],
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": null,
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "is_pair": true,
+      "transform_substrate": "Mercury / TACHYON (provisional)",
+      "lee_adjudication_needed": "Where exactly does the Force sit — Aries (Sharks's authorship) or Pisces (Sigil's philological reception)?",
+      "note": "Lee-resolved 2026-06-28: the transformation pair is *Feist function* (source) → *Feist force* (transform). Renders as transform_of constellation.",
+      "region_notes": "↔ Aries (cross-region binary"
+    },
+    {
+      "id": "spxi-bonsai",
+      "title": "SPXI as Concept (Bonsai)",
+      "author_heteronym": "rex-fraction",
+      "zodiacal_region": "Leo",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0218.ARCHIVAL.🪧🟠🌀✊♦️⏫",
+        "axn_canonical": "4dc25fb482d88c3eba35af2fe7c406df88b64cc4f0001a618811f26e803549a8",
+        "axn_display": "🪧🟠🌀✊♦️⏫",
+        "deposit_number": 671,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/671/",
+        "full_text_path": "/data/texts/AXN-0218-text.md",
+        "zenodo_dois": [],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "MMRS",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/spxi-bonsai/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Autonomous-semantic-warfare register."
+    },
+    {
+      "id": "autonomous-semantic-warfare",
+      "title": "Autonomous Semantic Warfare",
+      "author_heteronym": "rex-fraction",
+      "zodiacal_region": "Leo",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0274.GOVERNANCE.☀️⌛⛵🔧🪟🔗",
+        "axn_canonical": "0b6e5c30253380247e26d5f7fc4c8c6b522b5d0c12e0aa8a543a9bd27dd1afd3",
+        "axn_display": "☀️⌛⛵🔧🪟🔗",
+        "deposit_number": 100,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/100/",
+        "full_text_path": "/data/texts/AXN-0274-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.18649920",
+          "10.5281/zenodo.18604123",
+          "10.5281/zenodo.20084377",
+          "10.5281/zenodo.20084143",
+          "10.5281/zenodo.20084474",
+          "10.5281/zenodo.19476757",
+          "10.5281/zenodo.18320411",
+          "10.5281/zenodo.20039232"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T20:00:00Z",
+        "journal": "Trans. SEI",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/autonomous-semantic-warfare/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Field-doctrine of Fraction's office."
+    },
+    {
+      "id": "epistle-human-diaspora",
+      "title": "Epistle to the Human Diaspora",
+      "author_heteronym": "damascus-dancings",
+      "zodiacal_region": "Taurus",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0257.GOVERNANCE.🏴🌖🎯⏩✨❄️",
+        "axn_canonical": "520555d6e91472be6fd0146b88f073f7f9854fe5a7eeeb7725013234db44f1f8",
+        "axn_display": "🏴🌖🎯⏩✨❄️",
+        "deposit_number": 85,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/85/",
+        "full_text_path": "/data/texts/AXN-0257-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.19053469",
+          "10.5281/zenodo.19885859",
+          "10.5281/zenodo.19892122",
+          "10.5281/zenodo.19447119",
+          "10.5281/zenodo.19013315",
+          "10.5281/zenodo.19839186",
+          "10.5281/zenodo.18237216",
+          "10.5281/zenodo.19487009",
+          "10.5281/zenodo.19855300",
+          "10.5281/zenodo.18234352",
+          "10.5281/zenodo.18745265",
+          "10.5281/zenodo.18319778",
+          "10.5281/zenodo.19709024",
+          "10.5281/zenodo.19390843",
+          "10.5281/zenodo.18174835",
+          "10.5281/zenodo.19739494",
+          "10.5281/zenodo.19779493"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T20:00:00Z",
+        "journal": "Trans. Substrate Eng.",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/epistle-human-diaspora/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "The epistle proper. Anchor of the prophetic-homiletic register."
+    },
+    {
+      "id": "logotic-programming",
+      "title": "Logotic Programming (LP v0.9 → v1.0)",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0078.GOVERNANCE.🌘📖🏁▽🔚🧭",
+        "axn_canonical": "0741f099f250cf85fe988313fe2021ba209b967a17cc09bb9f005435534c4cfa",
+        "axn_display": "🌘📖🏁▽🔚🧭",
+        "deposit_number": 317,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/317/",
+        "full_text_path": "/data/texts/AXN-0078-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.18286050"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "Trans. Substrate Eng.",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/logotic-programming/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Specification proper. Systems for unborn substrates."
+    },
+    {
+      "id": "mathematics-of-salvation",
+      "title": "The Mathematics of Salvation",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:00AC.GOVERNANCE.☿💙☿🕚🔀♆",
+        "axn_canonical": "a2cba26cdfa67f87bdf7e769829b8ead62ef909fd7038205173787d4299fc398",
+        "axn_display": "☿💙☿🕚🔀♆",
+        "deposit_number": 8,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/8/",
+        "full_text_path": "/data/texts/AXN-00AC-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.14538882",
+          "10.5281/zenodo.18319653",
+          "10.5281/zenodo.18320470",
+          "10.5281/zenodo.18323735",
+          "10.5281/zenodo.18323575",
+          "10.5281/zenodo.18307321",
+          "10.5281/zenodo.18319778",
+          "10.5281/zenodo.18320411"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T20:00:00Z",
+        "journal": "Trans. SEI",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/mathematics-of-salvation/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Main mathematical exposition."
+    },
+    {
+      "id": "all-that-lies-within-me",
+      "title": "All That Lies Within Me",
+      "author_heteronym": "ichabod-spellings",
+      "zodiacal_region": "Sagittarius",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0092.GENERATIVE.🌃🛡️🌿🎲❄️✊",
+        "axn_canonical": "e22d178d14b4d05481529602b7b6d2447797c166f26f09e8a9edaff0905d8aa7",
+        "axn_display": "🌃🛡️🌿🎲❄️✊",
+        "deposit_number": 342,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/342/",
+        "full_text_path": "/data/texts/AXN-0092-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.18202658",
+          "10.5281/zenodo.18307756",
+          "10.5281/zenodo.18284689",
+          "10.5281/zenodo.18305509",
+          "10.5281/zenodo.18307706",
+          "10.5281/zenodo.18294470",
+          "10.5281/zenodo.18307393",
+          "10.5281/zenodo.18307811"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "Trans. Substrate Eng.",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/all-that-lies-within-me/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Status: preserved in absentia (Ichabod canonical // deceased)."
+    },
+    {
+      "id": "reading-a-book-with-lee",
+      "title": "Reading a Book with Lee",
+      "author_heteronym": "sparrow-wells",
+      "zodiacal_region": "Libra",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:00FF.EMPIRICAL.🌖🌲🪦🪐📝🔴",
+        "axn_canonical": "0575fd0d42c1ed9287c8f6d284238d10a51fb9abee20184abebc7d1509e00934",
+        "axn_display": "🌖🌲🪦🪐📝🔴",
+        "deposit_number": 440,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/440/",
+        "full_text_path": "/data/texts/AXN-00FF-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.18472604",
+          "10.5281/zenodo.18473656"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "Grammata",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/reading-a-book-with-lee/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "The dialogue / reading record."
+    },
+    {
+      "id": "semantic-deviation",
+      "title": "Semantic Deviation",
+      "author_heteronym": "nobel-glas",
+      "zodiacal_region": "Scorpio",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0286.GOVERNANCE.⚙️🕒💫🗺️✏️📎",
+        "axn_canonical": null,
+        "axn_display": null,
+        "deposit_number": 107,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/107/",
+        "full_text_path": "/data/texts/AXN-0286-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.20251740",
+          "10.5281/zenodo.20250735",
+          "10.5281/zenodo.20250736",
+          "10.5281/zenodo.20251738",
+          "10.5281/zenodo.20251742"
+        ],
+        "version": "v1.0",
+        "minted_at": null,
+        "journal": "Trans. Substrate Eng.",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/semantic-deviation/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Paper proper. Statistical-method apparatus."
+    },
+    {
+      "id": "model-collapse",
+      "title": "Model Collapse",
+      "author_heteronym": "nobel-glas",
+      "zodiacal_region": "Scorpio",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0335.COMPOSITIONAL.🀄💡⚓🌹🌈🪧",
+        "axn_canonical": null,
+        "axn_display": null,
+        "deposit_number": 191,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/191/",
+        "full_text_path": "/data/texts/AXN-0335-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.20644761",
+          "10.5281/zenodo.20644757",
+          "10.5281/zenodo.20616418",
+          "10.5281/zenodo.20644767",
+          "10.5281/zenodo.20644769",
+          "10.5281/zenodo.20644765",
+          "10.5281/zenodo.20518338"
+        ],
+        "version": "v1.0",
+        "minted_at": null,
+        "journal": "MMRS",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/model-collapse/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Paper. Empirical-data appendix."
+    },
+    {
+      "id": "mediation-ratchet",
+      "title": "The Mediation Ratchet (α* = p/g₀ closed-form)",
+      "author_heteronym": "nobel-glas",
+      "zodiacal_region": "Scorpio",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/mediation-ratchet/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Derivation. Numerical-examples appendix. Anchor of the Lagrange Observatory!"
+    },
+    {
+      "id": "the-stakes",
+      "title": "The Stakes",
+      "author_heteronym": "nobel-glas",
+      "zodiacal_region": "Scorpio",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0127.GENERATIVE.↘️🚩🔍⏰🔭❌",
+        "axn_canonical": "db53566138efe62c995746bd35e604eb511ae554cd347dc7c9b276e62f3802fb",
+        "axn_display": "↘️🚩🔍⏰🔭❌",
+        "deposit_number": 476,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/476/",
+        "full_text_path": "/data/texts/AXN-0127-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.18621736"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "Provence",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/the-stakes/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Paper."
+    },
+    {
+      "id": "unmade-sign",
+      "title": "The Unmade Sign",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:012F.GOVERNANCE.🖊️🤲🎻🔻🗡️■",
+        "axn_canonical": "44b18ad15a9ea8f28295a56c5c527101e67d56ef01246c014594765840e5c7fa",
+        "axn_display": "🖊️🤲🎻🔻🗡️■",
+        "deposit_number": 484,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/484/",
+        "full_text_path": "/data/texts/AXN-012F-text.md",
+        "zenodo_dois": [],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "Trans. SEI",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/unmade-sign/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Text. Reading-history notes."
+    },
+    {
+      "id": "death-drive-not-self-destruction",
+      "title": "The Death Drive Is Not Self-Destruction",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:0275.GOVERNANCE.⭕⛵🌙🌱🟠👋",
+        "axn_canonical": "ee5c0c19c2bfd35396c70e5478567022d0593f22700af5ce67498ed02f6dbdf4",
+        "axn_display": "⭕⛵🌙🌱🟠👋",
+        "deposit_number": 101,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/101/",
+        "full_text_path": "/data/texts/AXN-0275-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.18649920",
+          "10.5281/zenodo.19649795"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T20:00:00Z",
+        "journal": "Trans. SEI",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/death-drive-not-self-destruction/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Argument. Clinical-context notes."
+    },
+    {
+      "id": "drain-hypothesis-v6",
+      "title": "The Drain Hypothesis (v6)",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:036D.THEORETICAL.🎺🌃🕔📌🔼♌",
+        "axn_canonical": null,
+        "axn_display": null,
+        "deposit_number": 864,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/864/",
+        "full_text_path": "/data/EA-CHA-DRAIN-HYPOTHESIS.md",
+        "zenodo_dois": [],
+        "version": "v4",
+        "minted_at": "2026-06-21T00:30:00Z",
+        "journal": "Trans. Substrate Eng.",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/drain-hypothesis-v6/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Pyramids / aquifer / Saharan desertification / Atlantis inversion."
+    },
+    {
+      "id": "grammar-of-protest",
+      "title": "Grammar of Protest",
+      "author_heteronym": "rev-ayanna-vox",
+      "zodiacal_region": "Cancer",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:00EB.GOVERNANCE.💙🌾◇🌸🀄🌟",
+        "axn_canonical": "cb1a9a708f098a04c735c845bd4da00f8a487fa1b54a7c3a9f8acb86a234fe93",
+        "axn_display": "💙🌾◇🌸🀄🌟",
+        "deposit_number": 423,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/423/",
+        "full_text_path": "/data/texts/AXN-00EB-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.18438789",
+          "10.5281/zenodo.18362663"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "Trans. Substrate Eng.",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/grammar-of-protest/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "Text. Deployment-notes apparatus."
+    },
+    {
+      "id": "chronoarithmics-sprint",
+      "title": "Chronoarithmics (+ Apzpz, Infinite Bliss, Thousand Worlds, The Mirror, Ingress/Egress, Non-Indexed Perfective)",
+      "author_heteronym": "sen-kuro",
+      "zodiacal_region": "Virgo",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:032D.GOVERNANCE.🃏🏛️☉🪞⚫🌋",
+        "axn_canonical": "8e20a759c81566f44507740de16af88505c42f5c364e6b2b13070428eb5b5f81",
+        "axn_display": "🃏🏛️☉🪞⚫🌋",
+        "deposit_number": 818,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/818/",
+        "full_text_path": "/data/texts/AXN-032D-text.md",
+        "zenodo_dois": [
+          "10.5281/zenodo.20651241"
+        ],
+        "version": "v1.0",
+        "minted_at": "2026-06-20T22:00:00Z",
+        "journal": "Trans. Substrate Eng.",
+        "license": "CC-BY-4.0",
+        "local_path": "/sources/chronoarithmics-sprint/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "note": "M1 for the sprint as a whole; M2 per individual text. Inter-text linking apparatus."
+    },
+    {
+      "id": "cranes-concreation-LACUNA",
+      "title": "concre(a)tion",
+      "author_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": null,
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "none",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "lacuna",
+      "lacuna_protocol": "Declaration preserved per the lacuna protocol; destroyed in 2026-06-19 Zenodo termination; pending recovery",
+      "note": "Lacuna — declaration preserved."
+    },
+    {
+      "id": "merkabah-v0-7",
+      "title": "EA-MANDALA-MERKABAH-01 v0.7 (the Mandala Oracle design constitution)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "center",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:03AA.GENERATIVE.🌑🧬🕑🛤️⭕⛳",
+        "axn_canonical": "AXN:03AA.GENERATIVE.🌑🧬🕑🛤️⭕⛳",
+        "axn_display": null,
+        "deposit_number": 927,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/927/",
+        "full_text_path": "data/texts/AXN-03AA-text.md",
+        "zenodo_dois": [],
+        "version": "v0.7",
+        "minted_at": "2026-06-27T18:26:53Z",
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "local_path": "/specs/merkabah-v0-7/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": true
+      },
+      "edges": [],
+      "status": "declared",
+      "is_architectural_canon": true,
+      "note": "Center / intersection of all twelve heteronyms; rendered near Polaris.",
+      "region_notes": "architectural canon"
+    },
+    {
+      "id": "merkabah-v0-8-amendment",
+      "title": "EA-MANDALA-MERKABAH-01 v0.8 AMENDMENT (two-surface decision)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "center",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/specs/merkabah-v0-8-amendment/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": true
+      },
+      "edges": [],
+      "status": "declared",
+      "is_architectural_canon": true,
+      "note": "Adjacent to v0.7.",
+      "region_notes": "architectural canon"
+    },
+    {
+      "id": "kernel-transform-v0-2",
+      "title": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 (the kernel transform protocol)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "center",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:03AC.GENERATIVE.⚙️🪞🌗⚖️🛤️🌌",
+        "axn_canonical": "AXN:03AC.GENERATIVE.⚙️🪞🌗⚖️🛤️🌌",
+        "axn_display": null,
+        "deposit_number": 929,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/929/",
+        "full_text_path": "data/texts/AXN-03AC-text.md",
+        "zenodo_dois": [],
+        "version": "v0.2",
+        "minted_at": "2026-06-27T21:06:28Z",
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "local_path": "/specs/kernel-transform-v0-2/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": true
+      },
+      "edges": [],
+      "status": "declared",
+      "is_architectural_canon": true,
+      "note": "Mercury-sphere-adjacent (Mercury/TACHYON's office produces transforms).",
+      "region_notes": "architectural canon"
+    },
+    {
+      "id": "surface-v0-1",
+      "title": "EA-MANDALA-SURFACE-01 v0.1 (the Sun-station AIO-bridge)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "center",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "axn": "AXN:03AB.GENERATIVE.☉📡⏳🏛️📚🪶",
+        "axn_canonical": "AXN:03AB.GENERATIVE.☉📡⏳🏛️📚🪶",
+        "axn_display": null,
+        "deposit_number": 928,
+        "alexanarch_url": "https://www.alexanarch.org/s/records/928/",
+        "full_text_path": "data/texts/AXN-03AB-text.md",
+        "zenodo_dois": [],
+        "version": "v0.1",
+        "minted_at": "2026-06-27T20:55:33Z",
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "local_path": "/specs/surface-v0-1/"
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": true
+      },
+      "edges": [],
+      "status": "declared",
+      "is_architectural_canon": true,
+      "note": "Sun-sphere-adjacent.",
+      "region_notes": "architectural canon"
+    },
+    {
+      "id": "starmap-v0-1",
+      "title": "EA-STARMAP-01 v0.1 (this surface's workplan)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "center",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/specs/starmap-v0-1/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": true
+      },
+      "edges": [],
+      "status": "declared",
+      "is_architectural_canon": true,
+      "note": "Center / recursive inclusion — this very document.",
+      "region_notes": "architectural canon"
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "id": "catullus-101",
+  "title": "Catullus 101 — Multas per gentes (At His Brother's Grave)",
+  "language": "lat-Latn",
+  "language_name": "Latin",
+  "author": "Gaius Valerius Catullus",
+  "composition_date_approx": "c. 57-56 BCE",
+  "edition_reference": "Mynors OCT (Oxford 1958)",
+  "license": "Public domain (Latin source)",
+  "constitutional_role": "Closing companion in Middle Night (Day and Night). Two poems on the irreversible turn: age and death. With Sappho 58.",
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "files": {
+    "main": "text.md",
+    "apparatus": null
+  },
+  "canon_id": "catullus-101",
+  "status": "staged"
+}

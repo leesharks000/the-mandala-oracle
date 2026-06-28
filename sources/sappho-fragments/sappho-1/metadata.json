@@ -1,0 +1,23 @@
+{
+  "id": "sappho-1",
+  "title": "Sappho 1 — Ποικιλόθρον' ἀθανάτ Ἀφρόδιτα (Hymn to Aphrodite)",
+  "language": "grc-Grek",
+  "language_name": "Aeolic Greek",
+  "author": "Sappho of Lesbos",
+  "composition_date_approx": "c. 600 BCE",
+  "edition_reference": "Voigt 1971 (Sappho et Alcaeus), fragment 1",
+  "license": "Public domain (Greek source; preserved in full quotation by Dionysius of Halicarnassus, De Compositione Verborum 23)",
+  "constitutional_role": "The most complete surviving Sapphic poem. Anchor of the Zenith movement in Day and Night. The cletic hymn: invocation, narrative of past epiphany, present plea. The only surviving Sapphic verse in which Sappho names herself (Ψάπφ', voc., stanza 5).",
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false,
+    "voigt_apparatus_status": "cite_only_pending_adjudication"
+  },
+  "files": {
+    "main": "text.md",
+    "apparatus": null
+  },
+  "canon_id": "sappho-1",
+  "status": "staged"
+}

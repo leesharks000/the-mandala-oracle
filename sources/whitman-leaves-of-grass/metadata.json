@@ -7,7 +7,20 @@
   "composition_date_approx": "1855-1892 (Deathbed Edition: 1891-92)",
   "edition_reference": "Final 'Deathbed Edition' (1891-92)",
   "license": "Public domain",
-  "provenance_note": "Whitman's final-form edition of Leaves of Grass. Public domain throughout. Project Gutenberg holds the canonical digital edition.",
+  "provenance_note": "Project Gutenberg eBook #1322 (PD; PG trademark conditions apply to the trademark-bearing distribution, but the underlying text is public domain). Main text cleaned of PG header/footer for `main.txt`; original preserved in `full-text/` for reproducibility.",
   "constitutional_role": "American canon. A primary text of the descent — bodily, democratic, ecstatic, elegiac.",
-  "status": "STUB — text not yet populated."
+  "status": "staged",
+  "files": {
+    "main": "main.txt",
+    "apparatus": "apparatus.md",
+    "pg_source": "full-text/leaves-of-grass-1322.txt"
+  },
+  "main_apparatus": {
+    "apparatus_status": "variant_readings_only",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "canon_id": "whitman-leaves-of-grass",
+  "text_size_chars": 738158,
+  "text_lines": 17870
 }

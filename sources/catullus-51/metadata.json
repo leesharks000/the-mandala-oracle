@@ -1,0 +1,22 @@
+{
+  "id": "catullus-51",
+  "title": "Catullus 51 — Ille mi par esse deo videtur",
+  "language": "lat-Latn",
+  "language_name": "Latin",
+  "author": "Gaius Valerius Catullus",
+  "composition_date_approx": "c. 55 BCE",
+  "edition_reference": "Mynors OCT (R. A. B. Mynors, ed., C. Valerii Catulli Carmina, Oxford 1958)",
+  "license": "Public domain (Latin source)",
+  "constitutional_role": "The Latin transform of Sappho 31. Four stanzas, not five. The fourth stanza (otium) transforms what Sappho's fifth stanza addressed. The constellation is the binary σ_S→σ_C.",
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "files": {
+    "main": "text.md",
+    "apparatus": null
+  },
+  "canon_id": "catullus-51",
+  "status": "staged"
+}

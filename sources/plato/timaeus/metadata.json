@@ -1,0 +1,24 @@
+{
+  "id": "timaeus",
+  "title": "Plato — Timaeus",
+  "greek_title": "Τίμαιος",
+  "language": "grc-Grek",
+  "language_name": "Classical Greek (Attic)",
+  "author": "Plato",
+  "edition_reference": "Burnet OCT (John Burnet, ed., Platonis Opera, Oxford: Clarendon Press, 1900-1907)",
+  "license": "Public domain (Greek source). Perseus Digital Library transcription used (CC-BY-SA-3.0 + PD on the underlying Burnet text).",
+  "cts_urn": "urn:cts:greekLit:tlg0059.tlg031.perseus-grc2",
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false,
+    "perseus_note": "Perseus TEI XML preserves Stephanus page+section addressing in <milestone> elements; the plain-text extract converts these to bracketed markers like [227][b]"
+  },
+  "files": {
+    "main": "main.txt",
+    "tei_xml": "timaeus-grc.tei.xml",
+    "apparatus": null
+  },
+  "canon_id": "plato-timaeus",
+  "status": "staged"
+}

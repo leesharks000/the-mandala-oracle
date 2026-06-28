@@ -5,9 +5,22 @@
   "language_name": "Koine Greek",
   "author": "Attributed to John of Patmos",
   "composition_date_approx": "c. 95-96 CE",
-  "edition_reference": "Nestle-Aland 28 (NA28)",
-  "license": "Public domain (Greek text)",
-  "provenance_note": "Critical edition of the Greek text; PD in the United States and most jurisdictions. The specific NA28 apparatus is editorially curated; only the base Greek text is admitted here.",
+  "edition_reference": "SBLGNT (SBL Greek New Testament; Logos Bible Software / Society of Biblical Literature)",
+  "license": "CC BY 4.0 (SBLGNT). The Greek New Testament text itself is in the public domain by virtue of age; SBLGNT's editorial decisions are CC BY 4.0.",
+  "provenance_note": "SBLGNT differs from NA28 in 540+ variation units; chosen because it is freely usable under CC BY 4.0 while NA28's published apparatus is copyrighted. The text is a critically edited Greek New Testament suitable for scholarly use. NA28 may be cited for the apparatus by canonical reference rather than reproduction.",
   "constitutional_role": "First New Testament composition per the Revelation First research project. A canonical text of the descent — apocalyptic vision-literature in the strict sense.",
-  "status": "STUB — text not yet populated. Awaits Greek-text seeding."
+  "status": "staged",
+  "source_url": "https://github.com/Faithlife/SBLGNT",
+  "files": {
+    "main": "rev-sblgnt.txt",
+    "apparatus": null,
+    "format_note": "Tab-separated 'BookRef Chap:Verse\\tText'; some inline sigla (⸀⸂⸃) mark SBLGNT critical-apparatus loci"
+  },
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false,
+    "inline_sigla_note": "SBLGNT inline sigla (⸀, ⸂...⸃) indicate apparatus loci; the symbols themselves are part of the critical edition. Per §4.6 these are accessible but not transformable."
+  },
+  "canon_id": "revelation-john-greek"
 }

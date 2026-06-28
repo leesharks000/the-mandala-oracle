@@ -1,0 +1,359 @@
+{
+  "schema_version": "v0.1",
+  "purpose": "The canon-text knowledge graph. Edges between canonical-text stars per EA-STARMAP-01 v0.1 §3.2 edge taxonomy. Separate from sky/edges.json which holds the alexanarch-deposit substrate graph (88 AXN-to-AXN edges); these two graphs co-exist in the sky as distinct layers.",
+  "edge_count": 56,
+  "edges_by_type": {
+    "predecessor": 11,
+    "bundle": 26,
+    "companion": 16,
+    "transform_of": 3
+  },
+  "broken_references": [],
+  "edge_types_legend": {
+    "companion": "Paired or grouped reading (Sappho 31 + Catullus 51); SYMMETRIC; rendered as thin solid line",
+    "predecessor": "Earlier text the later reads / responds to; DIRECTIONAL; rendered as thin dotted line with arrow",
+    "superseded_by": "Earlier text whose canonical role is taken; DIRECTIONAL; rendered as faded dotted line",
+    "bundle": "Collection-relation; SYMMETRIC; rendered as soft halo around grouped stars",
+    "chain_predecessor": "Immediately upstream in a chain; DIRECTIONAL; rendered as solid line with arrow",
+    "related": "Loose thematic relation; SYMMETRIC; rendered as very thin dashed line",
+    "transform_of": "Kernel-transform output; DIRECTIONAL; rendered as solid line through the substrate-planet that produced the transform (if via_substrate is set)"
+  },
+  "edges": [
+    {
+      "id": "E0001",
+      "from": "sigil-snub-poemed",
+      "to": "plato-phaedrus",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0002",
+      "from": "sigil-snub-poemed",
+      "to": "combat-scholasticism",
+      "type": "bundle"
+    },
+    {
+      "id": "E0003",
+      "from": "sappho-31",
+      "to": "catullus-51",
+      "type": "companion"
+    },
+    {
+      "id": "E0004",
+      "from": "sappho-31",
+      "to": "catullus-51",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0005",
+      "from": "sappho-31",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0006",
+      "from": "sappho-31-catullus-51-pair",
+      "to": "sappho-31",
+      "type": "bundle"
+    },
+    {
+      "id": "E0007",
+      "from": "sappho-31-catullus-51-pair",
+      "to": "catullus-51",
+      "type": "bundle"
+    },
+    {
+      "id": "E0008",
+      "from": "revelation-john-greek",
+      "to": "gospel-of-antioch",
+      "type": "companion"
+    },
+    {
+      "id": "E0009",
+      "from": "revelation-john-greek",
+      "to": "revelation-first-workplan",
+      "type": "bundle"
+    },
+    {
+      "id": "E0010",
+      "from": "whitman-leaves-of-grass",
+      "to": "secret-book-of-walt",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0011",
+      "from": "whitman-leaves-of-grass",
+      "to": "pearl-and-other-poems",
+      "type": "bundle"
+    },
+    {
+      "id": "E0013",
+      "from": "cranes-day-and-night",
+      "to": "sappho-1",
+      "type": "bundle"
+    },
+    {
+      "id": "E0014",
+      "from": "cranes-day-and-night",
+      "to": "sappho-44",
+      "type": "bundle"
+    },
+    {
+      "id": "E0015",
+      "from": "cranes-day-and-night",
+      "to": "sappho-58",
+      "type": "bundle"
+    },
+    {
+      "id": "E0016",
+      "from": "cranes-day-and-night",
+      "to": "catullus-51",
+      "type": "bundle"
+    },
+    {
+      "id": "E0017",
+      "from": "cranes-day-and-night",
+      "to": "catullus-101",
+      "type": "bundle"
+    },
+    {
+      "id": "E0018",
+      "from": "sappho-1",
+      "to": "sappho-31",
+      "type": "companion"
+    },
+    {
+      "id": "E0020",
+      "from": "sappho-16",
+      "to": "sappho-31",
+      "type": "companion"
+    },
+    {
+      "id": "E0021",
+      "from": "sappho-16",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0022",
+      "from": "sappho-44",
+      "to": "sappho-31",
+      "type": "companion"
+    },
+    {
+      "id": "E0024",
+      "from": "sappho-58",
+      "to": "sappho-31",
+      "type": "companion"
+    },
+    {
+      "id": "E0026",
+      "from": "sappho-2",
+      "to": "sappho-31",
+      "type": "companion"
+    },
+    {
+      "id": "E0027",
+      "from": "sappho-2",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0028",
+      "from": "sappho-94",
+      "to": "sappho-31",
+      "type": "companion"
+    },
+    {
+      "id": "E0029",
+      "from": "sappho-94",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0030",
+      "from": "sappho-96",
+      "to": "sappho-31",
+      "type": "companion"
+    },
+    {
+      "id": "E0031",
+      "from": "sappho-96",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0033",
+      "from": "catullus-51",
+      "to": "sappho-31",
+      "type": "transform_of"
+    },
+    {
+      "id": "E0036",
+      "from": "plato-phaedrus",
+      "to": "sigil-snub-poemed",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0037",
+      "from": "plato-republic",
+      "to": "sigil-snub-poemed",
+      "type": "bundle"
+    },
+    {
+      "id": "E0038",
+      "from": "plato-symposium",
+      "to": "sigil-snub-poemed",
+      "type": "bundle"
+    },
+    {
+      "id": "E0039",
+      "from": "plato-timaeus",
+      "to": "sigil-snub-poemed",
+      "type": "bundle"
+    },
+    {
+      "id": "E0040",
+      "from": "plato-theaetetus",
+      "to": "sigil-snub-poemed",
+      "type": "bundle"
+    },
+    {
+      "id": "E0041",
+      "from": "plato-sophist",
+      "to": "sigil-snub-poemed",
+      "type": "bundle"
+    },
+    {
+      "id": "E0042",
+      "from": "plato-cratylus",
+      "to": "sigil-snub-poemed",
+      "type": "bundle"
+    },
+    {
+      "id": "E0043",
+      "from": "heraclitus-fragments",
+      "to": "parmenides-on-nature",
+      "type": "companion"
+    },
+    {
+      "id": "E0045",
+      "from": "parmenides-on-nature",
+      "to": "mediation-ratchet",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0046",
+      "from": "augustine-confessions",
+      "to": "augustine-de-doctrina",
+      "type": "bundle"
+    },
+    {
+      "id": "E0048",
+      "from": "lucretius-de-rerum-natura",
+      "to": "logotic-programming",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0049",
+      "from": "lucretius-de-rerum-natura",
+      "to": "parmenides-on-nature",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0050",
+      "from": "pearl-anonymous",
+      "to": "pearl-and-other-poems",
+      "type": "companion"
+    },
+    {
+      "id": "E0051",
+      "from": "pearl-anonymous",
+      "to": "sir-gawain-green-knight",
+      "type": "companion"
+    },
+    {
+      "id": "E0053",
+      "from": "dante-commedia",
+      "to": "augustine-confessions",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0054",
+      "from": "dickinson-complete-poems",
+      "to": "hopkins-selected",
+      "type": "companion"
+    },
+    {
+      "id": "E0055",
+      "from": "dickinson-complete-poems",
+      "to": "chronoarithmics-sprint",
+      "type": "bundle"
+    },
+    {
+      "id": "E0057",
+      "from": "kjv",
+      "to": "revelation-john-greek",
+      "type": "transform_of"
+    },
+    {
+      "id": "E0058",
+      "from": "pearl-and-other-poems",
+      "to": "pearl-anonymous",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0059",
+      "from": "pearl-and-other-poems",
+      "to": "whitman-leaves-of-grass",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0060",
+      "from": "secret-book-of-walt",
+      "to": "whitman-leaves-of-grass",
+      "type": "transform_of"
+    },
+    {
+      "id": "E0061",
+      "from": "secret-book-of-walt",
+      "to": "revelation-john-greek",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0062",
+      "from": "water-giraffe-cycle",
+      "to": "pearl-and-other-poems",
+      "type": "bundle"
+    },
+    {
+      "id": "E0063",
+      "from": "space-ark-v4-2-7",
+      "to": "merkabah-v0-7",
+      "type": "bundle"
+    },
+    {
+      "id": "E0064",
+      "from": "revelation-reception-registry",
+      "to": "revelation-john-greek",
+      "type": "companion"
+    },
+    {
+      "id": "E0065",
+      "from": "revelation-reception-registry",
+      "to": "revelation-first-workplan",
+      "type": "bundle"
+    },
+    {
+      "id": "E0067",
+      "from": "gospel-of-antioch",
+      "to": "antioch-compendium",
+      "type": "companion"
+    },
+    {
+      "id": "E0071",
+      "from": "chatgpt-psychosis",
+      "to": "gospel-of-antioch",
+      "type": "companion"
+    }
+  ]
+}
