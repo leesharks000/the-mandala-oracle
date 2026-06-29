@@ -1,0 +1,250 @@
+{
+  "schema_version": "v0.1-draft",
+  "purpose": "Edges between canonical_texts entries in /data/canon-sky/canon-stars.json, per the edge taxonomy in EA-STARMAP-01 v0.1 §3.2. These edges are the knowledge-graph relations that the starmap surface will render between stars: companion (paired readings), predecessor (earlier-in-tradition), superseded_by (versioned replacement), bundle (collection-relation), chain_predecessor (immediate-upstream chain), related (loose thematic), transform_of (kernel-transform output relation; passes through the transform substrate).",
+  "status_note": "Initial population derived from the manifest's stated relationships and from the existing canon-stars entries' anchor_for_constellation / transform_substrate / cluster fields. transform_of edges between individually-named source and transform canon-stars are pending — currently the TACHYON pair and the Feist function/force pair are bundled as single entries containing both sides. When those split into separate canon-stars entries, transform_of edges will be added here passing through the producing substrate per §3.2.",
+  "edge_kinds": {
+    "companion": "Texts that operate as a paired or grouped reading.",
+    "predecessor": "Earlier-in-tradition text that the later text reads / responds to.",
+    "superseded_by": "Earlier text whose canonical role is taken by a successor.",
+    "bundle": "Collection-relation: source text belongs to the target collection (or vice versa).",
+    "chain_predecessor": "Immediately-upstream chain member.",
+    "related": "Loose thematic / structural relation.",
+    "transform_of": "Kernel-transform output relation; the visualization passes through the substrate sphere that produced the transform."
+  },
+  "edges": [
+    {
+      "kind": "companion",
+      "source": "sappho-31",
+      "target": "catullus-51",
+      "note": "The binary. Catullus's fourth stanza (otium) transforms Sappho's fifth."
+    },
+    {
+      "kind": "bundle",
+      "source": "sappho-31-catullus-51-pair",
+      "target": "sappho-31",
+      "note": "The constellation contains Sappho 31"
+    },
+    {
+      "kind": "bundle",
+      "source": "sappho-31-catullus-51-pair",
+      "target": "catullus-51",
+      "note": "The constellation contains Catullus 51"
+    },
+    {
+      "kind": "predecessor",
+      "source": "plato-symposium",
+      "target": "sappho-31",
+      "note": "Symposium's Eros-discourse reads Sappho's lyric Eros."
+    },
+    {
+      "kind": "predecessor",
+      "source": "plato-phaedrus",
+      "target": "sappho-31",
+      "note": "Phaedrus's Eros-discourse is downstream of Sapphic Eros."
+    },
+    {
+      "kind": "predecessor",
+      "source": "plato-republic",
+      "target": "homer-iliad",
+      "note": "Republic quotes Homer extensively (Book II/III, X)."
+    },
+    {
+      "kind": "predecessor",
+      "source": "plato-republic",
+      "target": "homer-odyssey",
+      "note": "Republic engages Odyssey at Book X (Er myth)."
+    },
+    {
+      "kind": "predecessor",
+      "source": "plato-cratylus",
+      "target": "heraclitus-fragments",
+      "note": "Cratylus's flux discussion engages Heraclitus."
+    },
+    {
+      "kind": "predecessor",
+      "source": "plato-sophist",
+      "target": "parmenides-on-nature",
+      "note": "Sophist explicitly does parricide against Parmenides on non-being."
+    },
+    {
+      "kind": "predecessor",
+      "source": "plato-theaetetus",
+      "target": "heraclitus-fragments",
+      "note": "Theaetetus engages Heraclitean flux against Protagorean measure."
+    },
+    {
+      "kind": "bundle",
+      "source": "presocratic-fragments-cluster",
+      "target": "heraclitus-fragments",
+      "note": "Heraclitus in the Pre-Socratic cluster."
+    },
+    {
+      "kind": "bundle",
+      "source": "presocratic-fragments-cluster",
+      "target": "parmenides-on-nature",
+      "note": "Parmenides in the Pre-Socratic cluster."
+    },
+    {
+      "kind": "predecessor",
+      "source": "gospel-of-mark",
+      "target": "revelation-john-greek",
+      "note": "Per the Revelation First argument: Revelation composed before Gospels; Mark's apocalyptic discourse echoes structure already given."
+    },
+    {
+      "kind": "predecessor",
+      "source": "gospel-of-matthew",
+      "target": "revelation-john-greek",
+      "note": "Per the Revelation First argument: Matthean apocalyptic + kingdom discourse downstream of Revelation's apocalyptic compression."
+    },
+    {
+      "kind": "predecessor",
+      "source": "gospel-of-luke",
+      "target": "revelation-john-greek",
+      "note": "Per the Revelation First argument: Lukan eschatology downstream of Revelation."
+    },
+    {
+      "kind": "predecessor",
+      "source": "gospel-of-john",
+      "target": "revelation-john-greek",
+      "note": "Per the Revelation First argument: the Johannine high Christology is downstream of Revelation's cosmic Christ. The Johannine-Apocalypse binding."
+    },
+    {
+      "kind": "predecessor",
+      "source": "feist-revelation-first-workplan",
+      "target": "revelation-john-greek",
+      "note": "The workplan is the argument for Revelation First; the canonical text it serves is the Greek Revelation."
+    },
+    {
+      "kind": "predecessor",
+      "source": "whitman-leaves-of-grass",
+      "target": "sharks-secret-book-of-walt",
+      "note": "The Secret Book of Walt is a Gnostic-revelation dialogue with Whitman; Whitman as precursor MAGUS."
+    },
+    {
+      "kind": "predecessor",
+      "source": "whitman-leaves-of-grass",
+      "target": "sharks-pearl-and-other-poems",
+      "note": "Whitman's vernacular American line as precursor to Sharks's poetic register."
+    },
+    {
+      "kind": "predecessor",
+      "source": "augustine-confessions",
+      "target": "plato-symposium",
+      "note": "Confessions's ascent-of-soul structure reads Platonic / Neoplatonic precursors."
+    },
+    {
+      "kind": "predecessor",
+      "source": "augustine-de-doctrina-christiana",
+      "target": "plato-cratylus",
+      "note": "De doctrina's sign-theory engages Platonic sign-theory tradition."
+    },
+    {
+      "kind": "predecessor",
+      "source": "lucretius-de-rerum-natura",
+      "target": "presocratic-fragments-cluster",
+      "note": "De rerum natura reads Democritus and Epicurus; the pre-Socratic atomist line."
+    },
+    {
+      "kind": "predecessor",
+      "source": "dante-commedia",
+      "target": "augustine-confessions",
+      "note": "Commedia's autobiographical-conversion structure reads Confessions."
+    },
+    {
+      "kind": "predecessor",
+      "source": "kjv-1611",
+      "target": "gospel-of-mark",
+      "note": "KJV translates Mark from the Greek NT tradition."
+    },
+    {
+      "kind": "predecessor",
+      "source": "kjv-1611",
+      "target": "gospel-of-matthew",
+      "note": "KJV translates Matthew."
+    },
+    {
+      "kind": "predecessor",
+      "source": "kjv-1611",
+      "target": "gospel-of-luke",
+      "note": "KJV translates Luke."
+    },
+    {
+      "kind": "predecessor",
+      "source": "kjv-1611",
+      "target": "gospel-of-john",
+      "note": "KJV translates John."
+    },
+    {
+      "kind": "predecessor",
+      "source": "kjv-1611",
+      "target": "revelation-john-greek",
+      "note": "KJV translates Revelation."
+    },
+    {
+      "kind": "related",
+      "source": "shakespeare-sonnets",
+      "target": "sigil-snub-poemed",
+      "note": "The Sonnets at Pisces (Sigil) because of the calligrammatic mode — parallel to Snub-Poemed."
+    },
+    {
+      "kind": "companion",
+      "source": "pearl-poem",
+      "target": "sir-gawain-green-knight",
+      "note": "Same anonymous author; the Pearl Poet's two surviving works."
+    },
+    {
+      "kind": "related",
+      "source": "dickinson-complete",
+      "target": "hopkins-selected",
+      "note": "Both at Virgo (Sen Kuro region); the prosodic-innovation lineage."
+    },
+    {
+      "kind": "related",
+      "source": "dickinson-complete",
+      "target": "kuro-chronoarithmics-and-sprint",
+      "note": "Dickinson's compression-poetics adjacent to Kuro's chronoarithmic sprint."
+    },
+    {
+      "kind": "bundle",
+      "source": "presocratic-fragments-cluster",
+      "target": "lucretius-de-rerum-natura",
+      "note": "Lucretius extends the pre-Socratic atomist line."
+    },
+    {
+      "kind": "related",
+      "source": "ea-mandala-merkabah-v07",
+      "target": "ea-mandala-merkabah-v08-amendment",
+      "note": "v0.7 → v0.8 amendment chain."
+    },
+    {
+      "kind": "chain_predecessor",
+      "source": "ea-mandala-merkabah-v07",
+      "target": "ea-mandala-merkabah-v08-amendment",
+      "note": "v0.8 is the immediate successor amendment to v0.7."
+    },
+    {
+      "kind": "related",
+      "source": "ea-mandala-merkabah-v07",
+      "target": "ea-mandala-kernel-transform-v02",
+      "note": "The kernel-transform protocol implements the Merkabah architecture."
+    },
+    {
+      "kind": "related",
+      "source": "ea-mandala-kernel-transform-v02",
+      "target": "ea-mandala-surface-v01",
+      "note": "Kernel transforms produce material that lands on the Sun-station surface."
+    },
+    {
+      "kind": "related",
+      "source": "ea-starmap-v01",
+      "target": "ea-mandala-merkabah-v08-amendment",
+      "note": "The starmap workplan is the second-surface side of the two-surface architectural decision."
+    },
+    {
+      "kind": "related",
+      "source": "sharks-space-ark-runtime",
+      "target": "sharks-space-ark",
+      "note": "Runtime binding mirrors the static-text entry; same DOI 10.5281/zenodo.19013315 / trigger 'invoke'."
+    }
+  ]
+}
