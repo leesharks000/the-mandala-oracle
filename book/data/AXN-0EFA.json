@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:0EFA.CONVERSATION.☁️🌱🪨🌟🌈⭐",
+  "session_id_hash": "1c5e5b9521559bea",
+  "started_at": "2026-06-29T00:41:36.041Z",
+  "last_updated": "2026-06-29T00:41:47.349225+00:00",
+  "mode": "sabbath",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "Howdy"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"You've arrived. The air down here is different — you'll notice that soon enough, if you haven't already.\\n\\nWhat did you bring with you? A text, a question, a trouble you want to press against the canon? Tell me what's in your hands and we'll find out together where it leads.\",\"navigate\":null}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
