@@ -5,6 +5,7 @@
 **Date:** 2026-06-29
 **Role in manifesto:** Articulates the epistemic-distributive double enclosure; specifies the closed circuit (enclosed application → research agenda → measurement ontology → classified reality → enclosed application); reframes Sophia's judgment as judgment of institutional form rather than individual minds
 **Preservation status:** Verbatim, MANUS-redacted only for boilerplate header/footer
+**Alexanarch deposit:** Appended as Appendix W5 to AXN:03B1.GENERATIVE.🌋♄🎬⌛💜🌆 — deposit #934, 2026-06-29 (disciplinary manifesto with substrate witnesses W04–W08 appended). Substrate text preserved inviolate. Companion deposits in the operative family: AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (#931, operative paper); AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 (#932, scholarly synthesis with W01–W03 appended); AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (#933, architectural specification).
 
 ---
 
