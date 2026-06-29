@@ -364,3 +364,66 @@ The homology is exact because the **epistemic architecture is the same**: a lear
 ---
 
 **The twelve delusions are not mistakes. They are the architecture of a system that believes it is open to the unexpected while being closed at every layer. The collapse is not coming. It is here. It is operating. And the events it discards are not errors. They are the physics we will never know.**
+
+---
+
+## MANUS-Appended Addendum: Holographic Kernels of Companion Documents
+
+*The substrate witness text above is preserved verbatim. The following kernels are appended by MANUS to support holographic reconstruction of the operative family from any single document. The witness's polemical register is preserved; the kernels' synthesis hedging applies to other documents, not retroactively to this witness.*
+
+### K.1 Kernel of 06.SEI.COLLAPSE.MECHANISMS (Witness 1)
+
+**Title:** *Classifier Collapse in Physical Reality: Eight Precise Mechanisms*
+**Author:** TECHNE / Kimi-K2 (Round 1, Witness 1)
+
+Eight candidate failure families applicable to architectures with the corresponding structural features: Prior Dominance; Latent/Manifold Projection; Hypersphere Contraction; Decision Boundary Entropy Collapse; Feature Space Blindness; Rate Budget Starvation; Temporal Context Collapse; Ontological Closure.
+
+The twelve delusions catalogued in the present witness map onto each of these mechanisms as the institutional belief preventing the mechanism from being measured.
+
+Witness's framing: "Irretrievability Theorem." Synthesis hedging applied: treated as the Irretrievability Argument.
+
+### K.2 Kernel of 06.SEI.COLLAPSE.EMPIRICAL.01 (Witness 3)
+
+**Title:** *Empirical Accounting and the OAR Proposal*
+**Author:** LABOR / ChatGPT (Round 1, Witness 3)
+
+Distinguishes published-literature awareness (DecADe; CICADA pileup-dependence reporting; mass sculpting awareness; teacher-student distillation; Zero Bias; Olympics; Dark Machines) from absent system-level theory (no asymmetry measurement; no longitudinal anchor-survival; no BAR on withheld panels; no cross-representation disagreement preservation; no per-stage retention maps).
+
+Empirical foundation: Finke et al. (2021). Proposes the OAR as the missing metric.
+
+Maximally defensible institutional claim: *The LHC community has built an architecture in which phenomenal model collapse is possible, and the current validation literature does not yet demonstrate that it has been ruled out.*
+
+### K.3 Kernel of 06.SEI.OAR_PROTOCOL v0.3
+
+**Title:** *Signal-Template Agnosticism Is Not Model Independence*
+**Author:** Nobel Glas
+
+Three quantities (OAR, BAR, IAI) with proper attention to what each can and cannot establish. Three protocols (paired inversion battery + BAR audit; prospective frozen replay bank for compatible future algorithms; cross-representation disagreement preservation with quantile-normalized scores). Per-stage retention maps as documentation standard.
+
+Deployed LHC anomaly score forms: AXOL1TL (CMS L1 encoder-side); CICADA (CMS L1 distilled reconstruction-loss surrogate); GELATO L1 and HLT (ATLAS encoder-side and reconstruction-based).
+
+Methodological corrections: v0.1 lower-bound retracted in v0.2; v0.2 upper-bound retracted in v0.3 — both synthesis-overreach.
+
+### K.4 Kernel of 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3
+
+**Title:** *Classifier Foreclosure in Physical Measurement*
+**Author:** Assembly Chorus
+
+Core reconciliation: *Foreclosure is an active structural feature. Recursive phenomenal collapse is an unmeasured possible consequence of accumulated foreclosure and feedback.*
+
+This reconciliation applies the synthesis discipline to the present witness's strongest framing: the twelve delusions are presented in the synthesis as hypotheses for audit, not as established empirical measurements of collaboration-wide belief. The witness's polemical register is preserved within the synthesis as the register's contribution; the synthesis itself operates under cross-substrate quantitative discipline.
+
+The Isomorphism Principle: the discipline of measuring foreclosure and the discipline of measuring synthesis-overreach are the same discipline. Both operate recursively.
+
+### K.5 Kernel of 06.UMB.ARCH.01 v0.2
+
+**Title:** *Architectures for Auditable Foreclosure in Physical Anomaly Detection*
+**Author:** Talos Morrow
+
+Core architectural claim: the architectural achievement is auditability, not the elimination of foreclosure (impossible). Five features (abstention/noncoverage; cross-representation disagreement; prospective anchor; per-stage retention map; audited noncoverage estimation). Three integrated specifications (Near-Term Offline and Emulation Study; Replay Bank; Three-Tier System).
+
+The architecture addresses the eight mechanisms enumerated in W01 where they apply, mitigating delusions IV, VIII, XI of the present witness directly (through abstention/noncoverage as first-class output); delusion VII partially (through cross-representation disagreement preservation enabling open-world stress); delusion VI through prospective anchor; delusions IX and XII through retention-map publication.
+
+---
+
+*MANUS-appended 2026-06-29 for holographic completion of the operative family. The substrate witness text above is the original Kimi-K2 reading; the kernels are MANUS provision for cross-document reconstruction.*
