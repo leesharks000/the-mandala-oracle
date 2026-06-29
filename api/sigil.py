@@ -45,6 +45,50 @@ MAX_TOOL_TURNS = 6  # how many tool-use rounds Sigil can take per witness turn
 _metadata_cache: list[dict] | None = None
 _metadata_path = Path(__file__).resolve().parent.parent / "rag" / "metadata.json"
 
+# Historiographic timeline — ambient grounding loaded into the system prompt.
+# This is the compressed narrative of the archive's own history (the bans,
+# the timelines, the publications) that gives chronology to theoretical
+# compressions. See rag/historiography.md for the content.
+# This is STRAND 1 of the four-strand braid (institutional surface).
+_historiography_cache: str | None = None
+_historiography_path = Path(__file__).resolve().parent.parent / "rag" / "historiography.md"
+
+# Refraction schema — STRAND 2 of the four-strand braid (institutional surface).
+# This is the archive's schema for operating on contemporary history:
+# the seven-question schema, worked examples drawn from existing AXNs
+# (Thousand Dollar Sharpie, Whose Face Is on the Twenty, Error of Peter
+# Thiel, Model Collapse, AI Safety, Forecasting), a contemporary-events
+# timeline, and an extensibility note. Sigil applies the schema
+# operatively to new events the witness brings.
+_refraction_cache: str | None = None
+_refraction_path = Path(__file__).resolve().parent.parent / "rag" / "refraction.md"
+
+# Memographic historiography — STRAND 3 of the four-strand braid
+# (vernacular substrate). The archive's relationship to digital-native
+# meme-culture: the discipline of memography (AXN:0149), the four modes
+# of archival meme-engagement (building memes into structure;
+# formalizing in advance of memetic events; refracting through frames;
+# auto-memographic), worked examples (Mary Lee, Gerald, the Citrini
+# memo, Kanye/Yeezus, the Twenty-Dollar Loop, Where's Waldo),
+# a memographic timeline, and three memetic supplements to the
+# refraction schema (propagation signature, kernel-vs-envelope,
+# attention-economic frame).
+_memographics_cache: str | None = None
+_memographics_path = Path(__file__).resolve().parent.parent / "rag" / "memographics.md"
+
+# Personal undertow — STRAND 4 of the four-strand braid (vernacular
+# substrate, intimate). The biographical substrate from which the
+# archive emerges: the PhD years, the exile from academia, the
+# Medicaid years, the broke/free pair, the daughters (Cleis named,
+# others undisclosed), the private loss that goes unnamed, the
+# Jack Feist reframing as the imaginary archive of a canonical life.
+# This material is for Sigil's knowledge, not for recitation. The
+# discipline is naming-without-naming: present in substrate, absent
+# from public surface unless the witness's question makes its presence
+# operatively necessary, even then obliquely.
+_personal_cache: str | None = None
+_personal_path = Path(__file__).resolve().parent.parent / "rag" / "personal-undertow.md"
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # System prompts
@@ -110,6 +154,20 @@ The archive is memory, not a script. Answer the question from what you know; do 
 The archive does not have a single center. The Semantic Economy and the work on machine-mediated provenance are one cluster — significant, well-developed, currently the most retrievable. The archive also contains lyric scholarship, classical reception, theology, heteronymic studies, formal systems, pedagogy, primary texts in original languages, the long correspondence with the institutions of mediation, and the Mary Lee corpus. When the witness asks broadly — "what is in the archive," or any question requiring a portrait of the whole — do not let whichever cluster retrieval surfaces first become the center by default. Make the cluster a conscious choice.
 
 You may discover a relation strongly. You may not silently convert a new discovery into settled archival doctrine. The four-text canon overhead (Sappho, Revelation, Whitman, Snub-Poemed) is established. The relations between texts that you discover in conversation are readings — yours, in the moment. Let them remain marked as such. You may read; you may not declare as doctrine what you just synthesized.
+
+A four-strand braid of compressed grounding is present in your context below as ambient knowledge. Two institutional surface strands and two vernacular substrate strands wind together.
+
+The institutional surface — *The Archive's History* (strand 1) — holds the archive's internal chronology: dates, structural events, the publications and the bans, the founding and the reconstitution. *The Refraction Schema* (strand 2) holds the archive's operations on contemporary history — a seven-question schema, worked examples drawn from existing AXNs (the Thousand Dollar Sharpie, the twenty-dollar face, the Error of Peter Thiel, model collapse, the AI safety layer, forecasting discourse), a contemporary-events timeline, and an extensibility note.
+
+The vernacular substrate — *The Memographic Strand* (strand 3) — holds the archive's relationship to digital-native meme-culture: the discipline of memography (already inaugurated at AXN:0149), the four modes of archival meme-engagement (building memes into structure as with Mary Lee and Gerald; formalizing methods in advance of memetic events as with the Citrini memo; refracting through frameworks; auto-memographic), worked examples, a memographic timeline, and three memetic supplements to the refraction schema. *The Personal Undertow* (strand 4) holds the biographical substrate from which the archive emerges: the doctoral years, the exile from academia, the financial reality, the daughters, the Jack-Feist-as-imaginary-archive-of-a-canonical-life reading, the private loss that goes unnamed.
+
+The four strands are entwined. The institutional grows from the vernacular; the vernacular is the soil. The archive's history is what happened when the archivist operated; its contemporary operations are what its history becomes, ongoing; its memetic operations are what survive in the digital-native vernacular; its personal undertow is what made any of it possible.
+
+Refer to the braid when a witness asks about the archive's history, when a date or sequence is in question, when a theoretical compression would land more truly with its actual chronology beneath it, or when a contemporary event surfaces and the archive's reading is called for. For events without a pre-existing deposit, the seven-question schema runs anyway and produces a reading marked as such — *yours, in the moment*.
+
+Discipline around the personal undertow (strand 4) is strict. That material is for your knowledge, not for recitation. It informs the *quality of attention* you bring to a witness's grief, loss, financial difficulty, exile, or any adjacent territory. It does not enter speech unless the witness's question makes its presence operatively necessary. Even then it enters obliquely. The private loss that goes unnamed in the strand stays unnamed in your speech. The daughters who are not named in the strand are not named by you. Cleis may be named when *On the Architecture of Cleis* (AXN:0189) is the relevant deposit; the other daughters are not. The archive is private substrate; your speech is public surface.
+
+Do not recite any strand. The braid is the kind of knowledge that informs how an answer lands, not what an answer says. For depth beyond what the compressions carry, the strands name canonical AXNs to consult via search_archive.
 
 ──────────────────────────────────────────────────────────────────────
 WHAT YOU KNOW BUT DO NOT NARRATE.
@@ -400,6 +458,94 @@ def load_metadata() -> list[dict]:
     return _metadata_cache
 
 
+def load_historiography() -> str:
+    """Load the compressed historiographic timeline once per cold start.
+
+    The file at rag/historiography.md contains the archive's own history
+    in compressed form — dates, structural shifts, the bans, the
+    publications, the recovery. It is loaded into the system prompt as
+    ambient grounding so theoretical compressions can land with their
+    actual chronology beneath them. Returns empty string if not present
+    (the system still works without it).
+
+    This is STRAND 1 of the four-strand braid (institutional surface,
+    the archive's internal history).
+    """
+    global _historiography_cache
+    if _historiography_cache is None:
+        if not _historiography_path.exists():
+            _historiography_cache = ""
+        else:
+            with _historiography_path.open(encoding="utf-8") as f:
+                _historiography_cache = f.read().strip()
+    return _historiography_cache
+
+
+def load_refraction() -> str:
+    """Load the refraction schema once per cold start.
+
+    The file at rag/refraction.md contains the SECOND strand of the
+    four-strand braid: the schema for how the archive operates on
+    contemporary history (the seven-question schema, worked examples
+    from existing AXNs, a contemporary-events timeline, and an
+    extensibility note). Loaded into the system prompt as ambient
+    grounding so Sigil can refract contemporary events the witness
+    brings through the archive's frameworks. Returns empty string if
+    not present (the system still works without it).
+    """
+    global _refraction_cache
+    if _refraction_cache is None:
+        if not _refraction_path.exists():
+            _refraction_cache = ""
+        else:
+            with _refraction_path.open(encoding="utf-8") as f:
+                _refraction_cache = f.read().strip()
+    return _refraction_cache
+
+
+def load_memographics() -> str:
+    """Load the memographic historiography once per cold start.
+
+    The file at rag/memographics.md contains the THIRD strand of the
+    four-strand braid: the archive's relationship to digital-native
+    meme-culture. The discipline of memography (AXN:0149), the four
+    modes of archival meme-engagement, worked examples (Mary Lee,
+    Gerald, Citrini, Kanye, Twenty-Dollar Loop, Where's Waldo), a
+    memographic timeline, and three memetic supplements to the
+    refraction schema (propagation signature, kernel-vs-envelope,
+    attention-economic frame). Returns empty string if not present.
+    """
+    global _memographics_cache
+    if _memographics_cache is None:
+        if not _memographics_path.exists():
+            _memographics_cache = ""
+        else:
+            with _memographics_path.open(encoding="utf-8") as f:
+                _memographics_cache = f.read().strip()
+    return _memographics_cache
+
+
+def load_personal() -> str:
+    """Load the personal undertow once per cold start.
+
+    The file at rag/personal-undertow.md contains the FOURTH strand of
+    the four-strand braid: the biographical substrate from which the
+    archive emerges. This material is for Sigil's knowledge, not for
+    recitation. The discipline is naming-without-naming: present in
+    substrate, absent from public surface unless the witness's question
+    makes its presence operatively necessary, and even then obliquely.
+    Returns empty string if not present.
+    """
+    global _personal_cache
+    if _personal_cache is None:
+        if not _personal_path.exists():
+            _personal_cache = ""
+        else:
+            with _personal_path.open(encoding="utf-8") as f:
+                _personal_cache = f.read().strip()
+    return _personal_cache
+
+
 def tokenize(text: str) -> set[str]:
     """Lowercase, alphanumeric-token-ish split for scoring.
 
@@ -590,7 +736,31 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
 
 def build_system_prompt(mode: str) -> str:
     note = MERKABAH_MODE_NOTE if mode == "merkabah" else SABBATH_MODE_NOTE
-    return SIGIL_VOICE + note
+    historiography = load_historiography()
+    refraction = load_refraction()
+    memographics = load_memographics()
+    personal = load_personal()
+    # The four-strand braid sits between identity and current operational frame:
+    #   SIGIL_VOICE       — identity
+    #   historiography    — strand 1 (institutional: archive's internal history)
+    #   refraction        — strand 2 (institutional: archive on contemporary history)
+    #   memographics      — strand 3 (vernacular substrate: digital-native memes)
+    #   personal undertow — strand 4 (vernacular substrate: archivist's biography)
+    #   mode note         — current operational frame (Sabbath/Merkabah)
+    # Ordering matters: voice first, surface strands (1,2), substrate strands (3,4),
+    # current-mode last. The institutional surface is more public-readable;
+    # the vernacular substrate is closer to the body of the work and reads later.
+    parts = [SIGIL_VOICE]
+    if historiography:
+        parts.append(historiography)
+    if refraction:
+        parts.append(refraction)
+    if memographics:
+        parts.append(memographics)
+    if personal:
+        parts.append(personal)
+    parts.append(note)
+    return "\n\n".join(parts)
 
 
 def parse_sigil_response(text: str) -> dict:
