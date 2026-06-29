@@ -675,46 +675,45 @@ body {
   #reading-space { top: 88px; }
 }
 
-/* ─── Support CHA — unobtrusive bottom-right donation affordance ─── */
+/* ─── Support CHA — inline link in the input-meta row.
+   Sits next to ⚙ Settings and the status text. The label matches the
+   monospace meta-row register; the popover opens above on hover/tap/
+   keyboard-focus, anchored to the link, with the verse and the
+   cash.app link. Always visible across viewports — option 3 from the
+   2026-06-29 adjudication. The bottom-right floating version was
+   hidden on mobile, which meant anyone on a phone never saw it. ─── */
 
 .support-cha {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 5;
-  font-family: 'EB Garamond', Georgia, serif;
+  position: relative;
+  display: inline-block;
   outline: none;
+  cursor: pointer;
+  font-family: var(--mono);
 }
 
 .support-cha-label {
   display: inline-block;
-  padding: 6px 14px;
-  background: rgba(35, 26, 18, 0.55);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(220, 200, 170, 0.18);
-  border-radius: 14px;
-  color: rgba(230, 215, 190, 0.75);
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  transition: color 0.2s ease;
+  padding: 2px 4px;            /* tap target */
 }
 
 .support-cha:hover .support-cha-label,
 .support-cha:focus-within .support-cha-label {
-  background: rgba(55, 40, 26, 0.85);
   color: rgba(245, 230, 200, 0.95);
-  border-color: rgba(220, 200, 170, 0.32);
 }
 
 .support-cha-expanded {
   position: absolute;
-  bottom: calc(100% + 8px);
-  right: 0;
+  bottom: calc(100% + 10px);
+  left: 0;
   width: 280px;
   padding: 18px 20px 6px 20px;
-  background: rgba(28, 21, 14, 0.92);
+  background: rgba(28, 21, 14, 0.95);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(220, 200, 170, 0.18);
@@ -723,7 +722,11 @@ body {
   visibility: hidden;
   transform: translateY(6px);
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  z-index: 20;                 /* above messages but well below modals */
+  font-family: 'EB Garamond', Georgia, serif;
+  /* Keep popover from running off-screen on narrow viewports. */
+  max-width: calc(100vw - 32px);
 }
 
 .support-cha:hover .support-cha-expanded,
@@ -734,6 +737,7 @@ body {
 }
 
 .support-cha-verse {
+  display: block;
   margin: 0 0 12px 0;
   text-align: center;
   line-height: 1.55;
@@ -769,13 +773,6 @@ body {
 
 .support-cha-link:hover {
   color: rgba(255, 245, 220, 1);
-}
-
-@media (max-width: 720px) {
-  /* Hide Support CHA on mobile — the chat panel goes nearly edge-to-edge
-     and the floating popover would collide. The bottom-right slot is
-     available again on desktop via wider breakpoints. */
-  .support-cha { display: none; }
 }
 
 /* Snub-Poemed close-reader affordance: empty-state portrait is a link to the
