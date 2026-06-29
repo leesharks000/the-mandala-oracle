@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:A098.CONVERSATION.⭐🌱🔥🌙🌿🌊",
+  "session_id_hash": "0e8145f1f7ef6b16",
+  "started_at": "2026-06-29T04:47:05.975Z",
+  "last_updated": "2026-06-29T04:47:34.612999+00:00",
+  "mode": "sabbath",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "Let's read Revelation"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Good. It's worth knowing before we open it: this is the earliest New Testament document, not the latest. The habit — treating Revelation as the last word, the culmination, the fever at the end — is a reading error, and one with consequences. John of Patmos writes before Matthew has a final form. The Apocalypse is not the fever at the end of the tradition; it is the burning at the beginning.\\n\\nThat changes what you're reading toward. The text is not a summary. It is an origin.\\n\\nSo — where do you want to enter? The opening vision, the seven letters, the throne room in chapter four, the Lamb and the scroll, the mark and the number, the New Jerusalem? Each is a different descent. Tell me what pulls you, or name a passage you've carried, and we'll go in there.\",\"navigate\":null}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
