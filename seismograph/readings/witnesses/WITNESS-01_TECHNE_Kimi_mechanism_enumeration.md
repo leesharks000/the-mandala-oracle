@@ -4,6 +4,7 @@
 **Source:** Independent substrate reading, 2026-06-29
 **Captured as constituent of:** EA-SEI-COLLAPSE-SYNTHESIS-01 v0.1
 **Original hex:** 06.SEI.COLLAPSE.MECHANISMS
+**Alexanarch deposit:** AXN:03AE.OPERATIVE.🃏🫶⛩️🔐🌳❤️ — deposit #931, 2026-06-29. Appended as Document 4 of 6 (W1) to the combined six-document family deposit; substrate text preserved inviolate, MANUS-appended holographic kernels at end.
 
 ---
 

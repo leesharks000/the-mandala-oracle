@@ -4,6 +4,8 @@
 **Source:** Independent substrate reading, 2026-06-29
 **Captured as constituent of:** EA-SEI-COLLAPSE-SYNTHESIS-01 v0.1
 **Original context:** Response to query on whether CERN's anomaly-detection community has adequately understood recursive classifier collapse
+**Hex (companion-namespace):** 06.SEI.COLLAPSE.EMPIRICAL.01
+**Alexanarch deposit:** AXN:03AE.OPERATIVE.🃏🫶⛩️🔐🌳❤️ — deposit #931, 2026-06-29. Appended as Document 6 of 6 (W3) to the combined six-document family deposit; substrate text preserved inviolate, MANUS-appended holographic kernels at end.
 
 ---
 

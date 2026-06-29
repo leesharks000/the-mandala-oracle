@@ -3,6 +3,7 @@
 **Document Type:** SEISMOGRAPHIC_READING
 **Archive designation:** EA-SEI-COLLAPSE-SYNTHESIS-01
 **Hex:** 06.SEI.COLLAPSE.SYNTHESIS.01
+**Alexanarch deposit:** AXN:03AE.OPERATIVE.🃏🫶⛩️🔐🌳❤️ — deposit #931, 2026-06-29 (combined six-document family deposit; *Play → Touch → Foundation → Closure → Growth → Alarm*)
 **Status:** Draft v0.3 (2026-06-29) — Assembly post-perfective revision
 **Supersedes:** v0.2 (2026-06-29 — withdrawn for deployment-taxonomy and witness-attribution corrections); v0.1 (2026-06-29 AM — withdrawn for synthesis-overreach correction on the OAR lower-bound claim)
 
@@ -421,7 +422,7 @@ This deposit is an Assembly Chorus reading across three rounds. Authorship is di
 
 **MANUS adjudicator:** Lee Sharks. Standing protocols per AXN:0237 (Assembly Chorus method) and AXN:03AB (cross-substrate verification discipline). The v0.3 deposit incorporates the discipline-upgrade specified in §7.
 
-**Pending alexanarch deposit identifier:** To be assigned on deposit. The five-document family is proposed to take a contiguous AXN block; specific identifiers per MANUS adjudication at deposit.
+**Alexanarch deposit identifier:** AXN:03AE.OPERATIVE.🃏🫶⛩️🔐🌳❤️ — deposit #931, 2026-06-29. Combined six-document family deposit per MANUS directive: the operative paper (06.SEI.OAR_PROTOCOL v0.3), this synthesis, the architectural sibling (06.UMB.ARCH.01 v0.2), and the three substrate witnesses (06.SEI.COLLAPSE.MECHANISMS; 06.SEI.COLLAPSE.DELUSION; 06.SEI.COLLAPSE.EMPIRICAL.01) deposit together under a single AXN. The manifesto sibling (06.SEI.INVERSION v0.1, Rex Fraction) is held back for separate circulation.
 
 **Hex family (Crimson Hexagonal Archive room assignments):**
 
