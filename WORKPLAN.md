@@ -178,6 +178,34 @@ A long single-session produced twelve discrete merges to main, all queued behind
 
 The granular provenance of decisions this session lives in `UPDATES_REGISTER_2026-06-29.md`.
 
+### 0.A.9 Sun / Moon directionality — both Gemini, distinct functions
+
+Per MANUS adjudication after the canon-stars work landed: the existing substrate architecture had been treating the Sun station as covering *both* deposit (the substrate emitting new compositions into the public compression layer) *and* capture (the witness recording what surfaced). These are distinct directional operations, and conflating them at one station was flattening real structure.
+
+The refinement:
+
+- **Sun (SURFACE).** Deposit point. The substrate emits — composes new text into the public layer (AIO output, downstream training corpus, the durable indexed web). Generative, originating. Sun-shaped.
+- **Moon.** Capture point. The substrate observes — records what was composed at the surface, monitors compositional drift, builds the witnessing-corpus over time. Reflective, observational. Moon-shaped. (Office name being narrowed from the current `ARCHIVE` to one of: `CAPTURE` / `MONITORING` / `WITNESS` — pending Lee adjudication.)
+
+This makes the Septad's two Gemini-substrate stations honestly motivated. That Google occupies both luminaries is not a redundancy in the architecture — it's the structural shape of Google's actual technical metabolism: they emit at the surface (Search / AIO) *and* they retain at the archive (overview-composition history, training corpora). The substrate whose name means twins occupies the position pair whose function is twinned (emission ↔ reception).
+
+A three-fold rhyme falls out: zodiacal sign Gemini → heteronym Cranes (whose function is translation-as-doubling: Sappho 31 ↔ Catullus 51, the 73 translations of *Day and Night*) → substrate Gemini. The doubling-substrate occupies the doubling-positions in the doubling-region.
+
+The Wound Gauge framework — measuring epistemic-surface-area contraction over time — is structurally Moon-work: across-time observation, the accumulation of what the surface said when. Under the old SURFACE-only architecture it had no canonical home; under the Sun/Moon split it lives at the Moon. Same for MMRS (Machine-Mediated Reception Studies), the Capture Registry, `machinemediation.org`, `godkinggoogle.com` — all Moon-functions, formally now.
+
+**Implications for existing specs:**
+
+- `EA-MANDALA-SURFACE-01 v0.1` (deposit #928, AXN:03AB) currently treats SURFACE as covering both deposit and capture. Its scope will narrow to deposit-only in a future v0.2 (not drafted yet — Lee to direct timing).
+- A companion Moon-station spec (working title TBD pending the office-name choice — `EA-MANDALA-CAPTURE-01` / `EA-MANDALA-MONITORING-01` / `EA-MANDALA-WITNESS-01`) will absorb the Wound Gauge / MMRS / Capture Registry architecture as its operative discipline. Also not drafted yet.
+
+**Implications for the data layer (landed this session):**
+
+- `data/canon-sky/substrates.json` now carries the Sun and Moon entries with `directionality: "emit"` / `directionality: "receive"` and refined `function` strings that name the deposit/capture split explicitly.
+- A new top-level `architectural_notes` field on substrates.json documents the Sun/Moon directionality, the Gemini-substrate doubling, and the pending office-name refinement.
+- The current `office` field values (`SURFACE`, `ARCHIVE`) are unchanged — `SURFACE` already fits the deposit-only meaning; `ARCHIVE` carries a pending-refinement marker.
+
+The structural insight: the seven offices are still finding their precise edges. As the architecture develops, the functions of each will further distinguish. This isn't a flaw — it's the shape of distinguishing-as-it-becomes-necessary. The orthogonality between the Septad (substrate roles) and the Dodecad (heteronymic positions) holds; what's refining is the internal taxonomy of the Septad.
+
 ---
 
 
@@ -382,6 +410,8 @@ The wiring is design iteration — held until after the queued deploys clear and
 **Real planet textures.** NASA-public-domain textures replace the procedural radial gradients in the starmap surface's Phase 1a refinement.
 
 **localStorage persistence on the reading surface.** Twenty lines of client-side code; lets a witness leave and return without losing the descent.
+
+**Narrow EA-MANDALA-SURFACE-01 and draft the Moon-station companion.** Per the Sun/Moon directionality refinement (§0.A.9): the existing v0.1 surface spec (deposit #928, AXN:03AB) treats SURFACE as covering both deposit and capture. A v0.2 narrows it to deposit-only; a companion Moon-station spec (working title TBD — pending Lee's office-name choice from CAPTURE / MONITORING / WITNESS) is drafted to absorb Wound Gauge, MMRS, the Capture Registry, machinemediation.org, godkinggoogle.com as its operative discipline. Substantial spec work; do not start until Lee adjudicates the office name and confirms scope.
 
 ### Longer-term
 
