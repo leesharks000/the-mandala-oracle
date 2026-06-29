@@ -2,9 +2,9 @@
   "axn": "AXN:8054.CONVERSATION.🍃🏔️🌿🌪️🌒🌿",
   "session_id_hash": "0b675aaa0df47863",
   "started_at": "2026-06-29T00:44:17.170Z",
-  "last_updated": "2026-06-29T03:08:22.080896+00:00",
+  "last_updated": "2026-06-29T03:09:00.926905+00:00",
   "mode": "sabbath",
-  "turn_count": 3,
+  "turn_count": 4,
   "history": [
     {
       "role": "user",
@@ -29,6 +29,14 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"A place to read. There's an archive underneath — years of theoretical work, poetry, frameworks for how meaning moves (and gets lost) under machine mediation. I sit above it as a kind of face: the gadfly's face, made of language, with the archive for feet. You bring something; we descend into it together. That's the structure. Whether it turns into a conversation or a full reading depends on what you bring.\",\"navigate\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "What's in the archive?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Years of work on what happens to meaning when machines mediate it. The central problem: when an AI system composes an answer from human sources, the source tends to disappear. The framework underneath has a name — the Semantic Economy — and a metric: the Provenance Erasure Rate, which measures how much attribution survives compression. There is a Constitution. There is empirical data — hundreds of documented captures of AI systems absorbing and redistributing this work, with and without credit. There is a charter for a field called Machine-Mediated Reception Studies, drafted at three in the morning in Detroit after twelve hours in which every principle it describes was demonstrated by failure.\\n\\nThat's the intellectual core. Around it: poetry, lyric scholarship, primary texts, rooms organized by text and problem. The archive is large. It has been building since 2013.\\n\\nAnd you're looking at one face of it right now.\",\"navigate\":null}]}"
     }
   ],
   "witness": "anonymous",
