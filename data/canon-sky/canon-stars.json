@@ -268,7 +268,7 @@
     {
       "id": "heraclitus-fragments",
       "title": "Fragments (Diels-Kranz)",
-      "author_heteronym": "dr-orin-trace",
+      "author_heteronym": "orin-trace",
       "zodiacal_region": "capricorn",
       "magnitude_class": "secondary_canon_star_M2",
       "magnitude_note": "M2 collective; M3 per fragment",
@@ -351,7 +351,7 @@
     {
       "id": "augustine-confessions",
       "title": "Confessions",
-      "author_heteronym": "rev-ayanna-vox",
+      "author_heteronym": "ayanna-vox",
       "zodiacal_region": "cancer",
       "magnitude_class": "primary_canon_star_M1",
       "original_language": "latin",
@@ -364,7 +364,7 @@
     {
       "id": "augustine-de-doctrina-christiana",
       "title": "De doctrina christiana",
-      "author_heteronym": "rev-ayanna-vox",
+      "author_heteronym": "ayanna-vox",
       "zodiacal_region": "cancer",
       "magnitude_class": "secondary_canon_star_M2",
       "original_language": "latin",
@@ -918,7 +918,7 @@
     {
       "id": "trace-unmade-sign",
       "title": "The Unmade Sign",
-      "author_heteronym": "dr-orin-trace",
+      "author_heteronym": "orin-trace",
       "zodiacal_region": "capricorn",
       "magnitude_class": "secondary_canon_star_M2",
       "main_text": "the text",
@@ -931,7 +931,7 @@
     {
       "id": "trace-death-drive-not-self-destruction",
       "title": "The Death Drive Is Not Self-Destruction",
-      "author_heteronym": "dr-orin-trace",
+      "author_heteronym": "orin-trace",
       "zodiacal_region": "capricorn",
       "magnitude_class": "secondary_canon_star_M2",
       "main_text": "the argument",
@@ -944,7 +944,7 @@
     {
       "id": "trace-drain-hypothesis",
       "title": "The Drain Hypothesis (v6)",
-      "author_heteronym": "dr-orin-trace",
+      "author_heteronym": "orin-trace",
       "zodiacal_region": "capricorn",
       "magnitude_class": "secondary_canon_star_M2",
       "composition": "Dr. Orin Trace; pyramids / aquifer / Saharan desertification / Atlantis inversion",
@@ -958,7 +958,7 @@
     {
       "id": "vox-grammar-of-protest",
       "title": "Grammar of Protest",
-      "author_heteronym": "rev-ayanna-vox",
+      "author_heteronym": "ayanna-vox",
       "zodiacal_region": "cancer",
       "magnitude_class": "primary_canon_star_M1",
       "main_text": "the text",

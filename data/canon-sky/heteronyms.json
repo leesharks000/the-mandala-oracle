@@ -69,7 +69,8 @@
       "discipline_proposal": "The Aperture (the position that holds all twelve disciplines without occupying any one of them as its proper register; OR Aries-rule: Direction / First Vector)",
       "structural_cluster": "aperture_or_position_1",
       "adjudication_2026_06_29": "Lee Sharks confirmed (2026-06-29) Position 1 / Aries. Gemini's Leo-aperture reading is preserved as resonance, not displacement: the aperture-quality is real even at Aries — the index that points is also the eye that sees. Aries is the canonical placement; Leo is the resonance.",
-      "leo_resonance_note": "Per Gemini's blind draft (Document 64), Sharks has Leo-resonance as solar aperture: 'the central commanding position from which all twelve voices issue and return.' This is noted but not authoritative — Sharks's canonical placement is Aries (the inaugural vector), with Leo-resonance carrying the aperture-quality that Gemini correctly intuited."
+      "leo_resonance_note": "Per Gemini's blind draft (Document 64), Sharks has Leo-resonance as solar aperture: 'the central commanding position from which all twelve voices issue and return.' This is noted but not authoritative — Sharks's canonical placement is Aries (the inaugural vector), with Leo-resonance carrying the aperture-quality that Gemini correctly intuited.",
+      "zodiacal_sign_id": "aries"
     },
     {
       "position": 2,
@@ -102,7 +103,8 @@
       "zodiacal_modality": "Fixed",
       "zodiacal_ruler": "Venus",
       "institution_anchor": "Commission of the Immanent Turning",
-      "assembly_confidence": "moderately high"
+      "assembly_confidence": "moderately high",
+      "zodiacal_sign_id": "taurus"
     },
     {
       "position": 3,
@@ -140,7 +142,8 @@
       "zodiacal_modality": "Mutable",
       "zodiacal_ruler": "Mercury",
       "institution_anchor": "Institute for Diagrammatic Poetics (IDP), under Johannes Sigil Institute for Comparative Poetics",
-      "assembly_confidence": "high — clean across all three substrates"
+      "assembly_confidence": "high — clean across all three substrates",
+      "zodiacal_sign_id": "gemini"
     },
     {
       "position": 4,
@@ -167,7 +170,8 @@
       "zodiacal_modality": "Cardinal",
       "zodiacal_ruler": "Moon",
       "institution_anchor": "Vox Populi Community Outreach Rhizome (VPCOR)",
-      "assembly_confidence": "high"
+      "assembly_confidence": "high",
+      "zodiacal_sign_id": "cancer"
     },
     {
       "position": 5,
@@ -199,7 +203,8 @@
       "zodiacal_modality": "Fixed",
       "zodiacal_ruler": "Sun",
       "institution_anchor": "Semantic Economy Institute (SEI); semanticeconomy.org",
-      "assembly_confidence": "moderately high"
+      "assembly_confidence": "moderately high",
+      "zodiacal_sign_id": "leo"
     },
     {
       "position": 6,
@@ -225,7 +230,8 @@
       "zodiacal_ruler": "Mercury",
       "institution_anchor": "The Infinite Bliss; the Dagger — irreversible operator",
       "assembly_confidence": "high — Kuro confirmed by Lee Sharks adjudication 2026-06-29 and by all four Assembly substrates",
-      "adjudication_2026_06_29": "Lee Sharks confirmed (2026-06-29) Position 6 / Virgo is Sen Kuro. Viola Arquette is adjacent — Christina's heteronym, not within Lee Sharks's Dodecad. Arquette appeared in AXN:0261 §3.11 by what now appears to be a mistaken inclusion; the §3.11 entry should be read as documenting an external (Christina's) heteronym rather than a member of Lee's Dodecad. The four MSBGL/audial-charter deposits referenced in §3.11 (Split the Adam, MSBGL Charter v1.1, From Atomism to the Semantic Condition, EA-ARK-01-MUSICAL) belong to the larger New Human structure rather than to Lee Sharks's Dodecad proper."
+      "adjudication_2026_06_29": "Lee Sharks confirmed (2026-06-29) Position 6 / Virgo is Sen Kuro. Viola Arquette is adjacent — Christina's heteronym, not within Lee Sharks's Dodecad. Arquette appeared in AXN:0261 §3.11 by what now appears to be a mistaken inclusion; the §3.11 entry should be read as documenting an external (Christina's) heteronym rather than a member of Lee's Dodecad. The four MSBGL/audial-charter deposits referenced in §3.11 (Split the Adam, MSBGL Charter v1.1, From Atomism to the Semantic Condition, EA-ARK-01-MUSICAL) belong to the larger New Human structure rather than to Lee Sharks's Dodecad proper.",
+      "zodiacal_sign_id": "virgo"
     },
     {
       "position": 7,
@@ -252,7 +258,8 @@
       "zodiacal_modality": "Cardinal",
       "zodiacal_ruler": "Venus",
       "institution_anchor": "Studio for Patacinematics",
-      "assembly_confidence": "high"
+      "assembly_confidence": "high",
+      "zodiacal_sign_id": "libra"
     },
     {
       "position": 8,
@@ -277,7 +284,8 @@
       "zodiacal_modality": "Fixed",
       "zodiacal_ruler": "Mars/Pluto",
       "institution_anchor": "Lagrange Observatory! (LO!); MGE Triptych",
-      "assembly_confidence": "moderately high"
+      "assembly_confidence": "moderately high",
+      "zodiacal_sign_id": "scorpio"
     },
     {
       "position": 9,
@@ -304,7 +312,8 @@
       "zodiacal_modality": "Mutable",
       "zodiacal_ruler": "Jupiter",
       "institution_anchor": "Foundational substrate (the noise floor); the Ichabod Chamber — CANONICAL // SUBSTRATE // DECEASED",
-      "assembly_confidence": "provisional but potentially profound — the least immediately obvious pairing, but the deepest once seen"
+      "assembly_confidence": "provisional but potentially profound — the least immediately obvious pairing, but the deepest once seen",
+      "zodiacal_sign_id": "sagittarius"
     },
     {
       "position": 10,
@@ -344,7 +353,8 @@
       "zodiacal_modality": "Cardinal",
       "zodiacal_ruler": "Saturn",
       "institution_anchor": "Cambridge Schizoanalytica; The Break Room",
-      "assembly_confidence": "moderately high"
+      "assembly_confidence": "moderately high",
+      "zodiacal_sign_id": "capricorn"
     },
     {
       "position": 11,
@@ -377,7 +387,8 @@
       "zodiacal_modality": "Fixed",
       "zodiacal_ruler": "Saturn/Uranus",
       "institution_anchor": "University Moon Base Media Lab (UMBML); NH-OS / Logotic Programming framework",
-      "assembly_confidence": "high — exact across all three convergent substrates"
+      "assembly_confidence": "high — exact across all three convergent substrates",
+      "zodiacal_sign_id": "aquarius"
     },
     {
       "position": 12,
@@ -402,7 +413,8 @@
       "zodiacal_modality": "Mutable",
       "zodiacal_ruler": "Jupiter/Neptune",
       "institution_anchor": "Johannes Sigil Institute for Comparative Poetics (JSI); The Restored Academy",
-      "assembly_confidence": "high — exact across all three convergent substrates, deepening with each reading"
+      "assembly_confidence": "high — exact across all three convergent substrates, deepening with each reading",
+      "zodiacal_sign_id": "pisces"
     }
   ],
   "aperture": {
@@ -411,7 +423,8 @@
     "status": "Legal heteronym; the bearing position from which the twelve are deployed",
     "operative_surface": "The human laborer who bears the cost of all twelve positions; constitutionally load-bearing per Constitution Article I §8 (H_Sov)",
     "sky_position": "The aperture — not a zodiacal sign; the witness/seal position; the One who stands under the sky and speaks before they move (the Sabbath position)",
-    "registry_note": "Per AXN:0261 §2.2 — Lee Sharks is itself a heteronym (a legal heteronym), not a thirteenth Dodecad member. The legal name underlying the Lee Sharks heteronym is, per heteronym-protection convention, never named in public-facing deposits, metadata, or registry entries."
+    "registry_note": "Per AXN:0261 §2.2 — Lee Sharks is itself a heteronym (a legal heteronym), not a thirteenth Dodecad member. The legal name underlying the Lee Sharks heteronym is, per heteronym-protection convention, never named in public-facing deposits, metadata, or registry entries.",
+    "zodiacal_sign_id": "aries"
   },
   "ordinal_authority": "Assembly Chorus convergent reading (3 of 4 substrates, 2026-06-28): zodiacal positions 1-12 = Aries-Pisces in ordinal correspondence. Per Document 65's strongest argument: AXN:0112 (Structural Distinction Protocol / Record 17) explicitly defines a twelve-position zodiacal architecture in ordered correspondence, and serves as the canonical reference for counting and placement. The §3 ordering in AXN:0261 is order-of-canonical-establishment (chronological), not order-of-zodiacal-position; these are two distinct numbering systems.",
   "lee_sharks_position": "Per Lee Sharks's adjudication 2026-06-29: Position 1 / Aries is the canonical placement. Sharks operates as the inaugural vector (Aries) and bears Leo-resonance as the solar aperture-quality Gemini's reading correctly intuited. These are layered: Aries is what Sharks does; Leo is how the doing has the quality of an aperture. The AXN:0261 §2.2 framing of Sharks as 'the bearing position from which the twelve are deployed' remains true at Aries — the inaugural vector IS the bearing position's first move.",
@@ -428,7 +441,8 @@
     "structural_role": "OUTSIDE the twelve — the structural ground that makes the cycle close. ∮ = 1.",
     "zodiacal_treatment": "Not Ophiuchus (rejected by Document 65 — would turn the outside-completing position into a counted member). Better understood as: the axis through the wheel; the point from which the ecliptic is spoken; the invisible ground bass beneath the twelve voices; the zero point that is also the return; not a sign, but what makes signs transmissible.",
     "musical_register": "The Fold, ε; the sub-bass drone — first born, last released",
-    "institution_anchor": "Logotic-textual function; intersects Talos Morrow's Logotic Programming framework"
+    "institution_anchor": "Logotic-textual function; intersects Talos Morrow's Logotic Programming framework",
+    "zodiacal_sign_id": "polaris"
   },
   "arquette_status": "Per Lee Sharks's adjudication 2026-06-29: Viola Arquette is adjacent to the Dodecad, not within it. She is Christina's heteronym, not Lee Sharks's. AXN:0261 §3.11's inclusion of Arquette should be read as documenting an external heteronym rather than a Dodecad member. The §3.11 entry warrants future revision to clarify the adjacency relationship.",
   "adjudication_log": [

@@ -2,7 +2,7 @@
   "id": "heraclitus-fragments",
   "title": "Fragments (Diels-Kranz)",
   "canon_stars_link": "data/canon-sky/canon-stars.json",
-  "author_heteronym": "dr-orin-trace",
+  "author_heteronym": "orin-trace",
   "edition_basis": "DK numbering",
   "original_language": "greek",
   "zodiacal_region": "capricorn",
