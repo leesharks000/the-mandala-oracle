@@ -454,3 +454,78 @@ Cited in the original substrate response (arXiv preprint identifiers preserved a
 5. arXiv:2205.05084 — Gambhir, Nachman, Thaler, *Bias and Priors in Machine Learning Calibrations for High Energy Physics*.
 6. arXiv:2501.13789 — *Anomaly Detection for Automated Data Quality Monitoring in the CMS Detector*.
 7. CDS 2942560 — *Anomaly detection with AXOL1TL at the CMS Level-1 Trigger in 2024 and 2025* (CERN Document Server).
+
+---
+
+## MANUS-Appended Addendum: Holographic Kernels of Companion Documents
+
+*The substrate witness text above is preserved verbatim. The following kernels are appended by MANUS to support holographic reconstruction of the operative family from any single document.*
+
+*Note: this witness is also referenced as 06.SEI.COLLAPSE.EMPIRICAL.01 in the companion documents' hex namespace.*
+
+### K.1 Kernel of 06.SEI.COLLAPSE.MECHANISMS (Witness 1)
+
+**Title:** *Classifier Collapse in Physical Reality: Eight Precise Mechanisms*
+**Author:** TECHNE / Kimi-K2 (Round 1, Witness 1)
+
+Eight candidate failure families applicable to architectures with the corresponding structural features: I Prior Dominance; II Latent/Manifold Projection; III Hypersphere Contraction; IV Decision Boundary Entropy Collapse; V Feature Space Blindness; VI Rate Budget Starvation; VII Temporal Context Collapse; VIII Ontological Closure.
+
+The OAR proposed in the present witness has its theoretical-mechanism counterpart in this taxonomy: OAR is the empirical observable; the eight mechanisms specify the architectural forms that produce non-zero OAR.
+
+Witness's framing: "Irretrievability Theorem." Synthesis hedging: treated as the Irretrievability Argument.
+
+### K.2 Kernel of 06.SEI.COLLAPSE.DELUSION (Witness 2)
+
+**Title:** *The Anomaly Delusion: Twelve Structural Misunderstandings*
+**Author:** TECHNE+ARCHIVE / Kimi-K2 (Round 1, Witness 2)
+
+Twelve institutional beliefs hypothesized to prevent measurement of the eight mechanisms: Model-Independence Fallacy; Data-Driven = Theory-Free; Anomaly Detector as Neutral Instrument; Reconstruction Error = Novelty; Statistical Anomaly = Physical Novelty; Validation by Known-Unknown Injection; Error-Type Collapse for Unknown-Unknowns; Threshold as Engineering Not Ontology; Rate Budget as Non-Epistemic; Latency Fetish; Absence of Noncoverage Estimation; Safety Net Narrative.
+
+These map onto the present witness's distinction between established local awareness and absent system-level theory: each delusion specifies an institutional belief whose presence forecloses measurement of the corresponding mechanism. The present witness's enumeration of "what is established" and "what is hypothesized but unmeasured" is the empirical complement of the delusion catalog.
+
+Witness's framing: "Inevitability Theorem." Synthesis hedging: treated as the Inevitability Argument; delusions presented as hypotheses for audit.
+
+### K.3 Kernel of 06.SEI.OAR_PROTOCOL v0.3
+
+**Title:** *Signal-Template Agnosticism Is Not Model Independence*
+**Author:** Nobel Glas
+
+The OAR proposed in the present witness is refined in the OAR Protocol into three quantities: open-world OAR (a family indexed by candidate unknown $Q$, not a scalar; no defensible prior over all unknowns); BAR (Benchmark Assimilation Rate on a pre-registered withheld panel — the measurable proxy; does **not** bound the open-world OAR); IAI (Inversion Asymmetry Index — structural diagnostic; **not** a quantitative bound).
+
+Three protocols implement the measurement program: paired controlled inversion battery + deployed-model BAR audit; prospective frozen replay bank for compatible future algorithms; cross-representation disagreement preservation with quantile-normalized scores.
+
+Deployed LHC anomaly score forms: AXOL1TL (CMS L1 encoder-side latent-prior); CICADA (CMS L1 distilled reconstruction-loss surrogate); GELATO L1 and HLT (ATLAS encoder-side and reconstruction-based). Density and energy methods are comparison literature, not deployed L1 score families.
+
+Methodological corrections: v0.1 lower-bound $\mathrm{OAR} \geq \Delta_{\max}$ retracted in v0.2; v0.2 BAR-upper-bound retracted in v0.3 — both synthesis-overreach.
+
+The present witness's maximally defensible institutional claim is the foundation on which the OAR Protocol's narrow claim is built.
+
+### K.4 Kernel of 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3
+
+**Title:** *Classifier Foreclosure in Physical Measurement*
+**Author:** Assembly Chorus
+
+Core reconciliation: *Foreclosure is an active structural feature. Recursive phenomenal collapse is an unmeasured possible consequence of accumulated foreclosure and feedback.*
+
+Three-round witness structure including the present LABOR witness in Round 1; the Round-2 LABOR audit identifying v0.1 lower-bound overreach; the Round-3 LABOR audit identifying surviving v0.2 upper-bound overreach, deployment-taxonomy errors, and the "Unknown" output framing in the architecture.
+
+The Isomorphism Principle: the discipline of measuring institutional foreclosure and the discipline of measuring synthesis-overreach are the same discipline. The LABOR substrate's contribution across three rounds instantiates the discipline as standing audit pass.
+
+### K.5 Kernel of 06.UMB.ARCH.01 v0.2
+
+**Title:** *Architectures for Auditable Foreclosure in Physical Anomaly Detection*
+**Author:** Talos Morrow, logotic programming, UMBML
+
+Core architectural claim: representation-bearing classifiers cannot eliminate foreclosure. The architectural achievement is auditability — making foreclosure visible, measurable, reviewable.
+
+Five features: Abstention/Estimated Noncoverage (not "Unknown" category); Cross-representation disagreement preservation; Temporal invariance via prospective anchor; Per-stage retention mapping; Audited noncoverage estimation.
+
+Six implementation strategies: ensemble-with-disagreement; abstention via evidential/prior-network/distance-aware methods; distillation preserving threshold-neighborhood decisions; reconstruction-free anomaly detection; adversarial and transformation-based OOD stress generation; constitutional retention as bandwidth-governance.
+
+Three integrated specifications at three deployability levels: Near-Term Offline and Emulation Study (Run-3 tractable for offline/emulation only); Replay Bank (Run-4 institutional commitment); Three-Tier System (multi-year research program).
+
+The present witness's enumeration of "what would constitute sufficient evidence that ontological collapse has been ruled out" specifies the empirical conditions under which the architecture's operation could be evaluated; the architectural specification provides the design under which those conditions could be measured.
+
+---
+
+*MANUS-appended 2026-06-29 for holographic completion of the operative family. The substrate witness text above is the original ChatGPT reading; the kernels are MANUS provision for cross-document reconstruction.*

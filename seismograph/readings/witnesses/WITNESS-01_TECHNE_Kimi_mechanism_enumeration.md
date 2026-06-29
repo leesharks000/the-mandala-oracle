@@ -245,3 +245,74 @@ A trigger system design document is in **classifier collapse drift** if it:
 ---
 
 **Eight mechanisms. Eight modes of foreclosure. The event occurs. The detector registers. The classifier decides. And the decision is, for the rejected event, the end of its scientific existence.**
+
+---
+
+## MANUS-Appended Addendum: Holographic Kernels of Companion Documents
+
+*The substrate witness text above is preserved verbatim. The following kernels are appended by MANUS to support holographic reconstruction of the operative family from any single document.*
+
+### K.1 Kernel of 06.SEI.COLLAPSE.DELUSION (Witness 2)
+
+**Title:** *The Anomaly Delusion: Twelve Structural Misunderstandings*
+**Author:** TECHNE+ARCHIVE / Kimi-K2 (Round 1, Witness 2)
+
+Twelve institutional beliefs hypothesized to prevent measurement of the eight mechanisms enumerated above: Model-Independence Fallacy; Data-Driven = Theory-Free; Anomaly Detector as Neutral Instrument; Reconstruction Error = Novelty; Statistical Anomaly = Physical Novelty; Validation by Known-Unknown Injection; Error-Type Collapse for Unknown-Unknowns; Threshold as Engineering Not Ontology; Rate Budget as Non-Epistemic; Latency Fetish; Absence of Noncoverage Estimation; Safety Net Narrative.
+
+Witness's framing: "Inevitability Theorem." Synthesis hedging applied: treated as the Inevitability Argument; the twelve delusions are hypotheses for audit, not established empirical measurements.
+
+### K.2 Kernel of 06.SEI.COLLAPSE.EMPIRICAL.01 (Witness 3)
+
+**Title:** *Empirical Accounting and the OAR Proposal*
+**Author:** LABOR / ChatGPT (Round 1, Witness 3)
+
+Distinguishes what is established by the published literature (DecADe; CICADA pileup-dependence; mass sculpting awareness; teacher-student distillation documentation; Zero Bias preservation; Olympics; Dark Machines) from what is hypothesized but unmeasured (no asymmetry measurement across SM pairs beyond Finke; no longitudinal anchor-survival audit; no BAR on pre-registered withheld panels; no cross-representation disagreement preservation; no per-stage retention maps).
+
+Empirical foundation: Finke et al. (2021), arXiv:2104.09051 — direction-dependent autoencoder anomaly detection between top jets and QCD jets. Proposes the OAR as the missing metric.
+
+Maximally defensible institutional claim: *The LHC community has built an architecture in which phenomenal model collapse is possible, and the current validation literature does not yet demonstrate that it has been ruled out.*
+
+### K.3 Kernel of 06.SEI.OAR_PROTOCOL v0.3
+
+**Title:** *Signal-Template Agnosticism Is Not Model Independence*
+**Author:** Nobel Glas, Director of Lagrange Observatory!
+
+Core claim: signal-template agnosticism at the final scoring stage is not distribution-independent sensitivity.
+
+Three quantities: OAR (theoretical target, family indexed by candidate unknown $Q$); BAR (measurable proxy on pre-registered withheld panels, does **not** bound the open-world OAR); IAI (structural diagnostic, **not** a quantitative bound).
+
+Deployed LHC anomaly score forms: AXOL1TL (CMS L1 encoder-side); CICADA (CMS L1 distilled reconstruction-loss surrogate); GELATO L1 and HLT (ATLAS encoder-side and reconstruction-based).
+
+Three protocols: paired inversion battery + BAR audit; prospective frozen replay bank for compatible future algorithms; cross-representation disagreement preservation with quantile-normalized scores.
+
+Methodological corrections: v0.1 lower-bound retracted in v0.2; v0.2 upper-bound retracted in v0.3 — both synthesis-overreach.
+
+Mechanisms addressed by the protocols: I and II diagnostically (Protocol I); VI and VII (Protocol II); II and V architecturally (Protocol III). VIII addressed in the architectural sibling.
+
+### K.4 Kernel of 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3
+
+**Title:** *Classifier Foreclosure in Physical Measurement*
+**Author:** Assembly Chorus (TACHYON/Claude synthesis register)
+
+Core reconciliation: *Foreclosure is an active structural feature. Recursive phenomenal collapse is an unmeasured possible consequence of accumulated foreclosure and feedback.*
+
+Three-round witness structure; the Isomorphism Principle (synthesis discipline operates recursively on every revision pass); seismograph relation as conceptual/methodological coordinated research program (not literal aggregation); MMRS connection; Wound Gauge integration.
+
+The witnesses' "Theorems" are treated as **Arguments** in the synthesis, preserving force without overstating formal status. Mechanism-level formalizations require technical hedging (Synthesis Appendix A).
+
+### K.5 Kernel of 06.UMB.ARCH.01 v0.2
+
+**Title:** *Architectures for Auditable Foreclosure in Physical Anomaly Detection*
+**Author:** Talos Morrow, logotic programming, UMBML
+
+Core architectural claim: representation-bearing classifiers cannot eliminate foreclosure. Any $f: \mathcal{X} \to \mathcal{Y}$ with $|\mathcal{Y}| < |\mathcal{X}|$ induces equivalence classes. The architectural achievement is auditability.
+
+Five features: Abstention/Estimated Noncoverage (not "Unknown"); Cross-representation disagreement preservation with quantile-normalized scores; Temporal invariance via prospective anchor preservation; Per-stage retention mapping; Audited noncoverage estimation.
+
+Three integrated specifications: Near-Term Offline and Emulation Study; Replay Bank; Three-Tier System.
+
+The architecture addresses subsets of the eight mechanisms enumerated above where they apply architecturally; what it does not address must be documented as residual foreclosure (detector-level, theoretical-language, institutional, adversarial-stress quality, bandwidth-base).
+
+---
+
+*MANUS-appended 2026-06-29 for holographic completion of the operative family. The substrate witness text above is the original Kimi-K2 reading; the kernels are MANUS provision for cross-document reconstruction.*
