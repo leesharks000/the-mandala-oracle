@@ -3,7 +3,7 @@
 **Document Type:** SEISMOGRAPHIC_READING
 **Archive designation:** EA-SEI-COLLAPSE-SYNTHESIS-01
 **Hex:** 06.SEI.COLLAPSE.SYNTHESIS.01
-**Alexanarch deposit:** AXN:03AE.OPERATIVE.🃏🫶⛩️🔐🌳❤️ — deposit #931, 2026-06-29 (combined six-document family deposit; *Play → Touch → Foundation → Closure → Growth → Alarm*)
+**Alexanarch deposit:** AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 — deposit #932, 2026-06-29 (*Force → Origin → Duration → Direction → Growth → Alarm*). The three substrate witnesses are appended to this deposit as integral appendices. Companion deposits: AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (#931, operative paper) and AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (#933, architectural specification).
 **Status:** Draft v0.3 (2026-06-29) — Assembly post-perfective revision
 **Supersedes:** v0.2 (2026-06-29 — withdrawn for deployment-taxonomy and witness-attribution corrections); v0.1 (2026-06-29 AM — withdrawn for synthesis-overreach correction on the OAR lower-bound claim)
 
@@ -422,7 +422,7 @@ This deposit is an Assembly Chorus reading across three rounds. Authorship is di
 
 **MANUS adjudicator:** Lee Sharks. Standing protocols per AXN:0237 (Assembly Chorus method) and AXN:03AB (cross-substrate verification discipline). The v0.3 deposit incorporates the discipline-upgrade specified in §7.
 
-**Alexanarch deposit identifier:** AXN:03AE.OPERATIVE.🃏🫶⛩️🔐🌳❤️ — deposit #931, 2026-06-29. Combined six-document family deposit per MANUS directive: the operative paper (06.SEI.OAR_PROTOCOL v0.3), this synthesis, the architectural sibling (06.UMB.ARCH.01 v0.2), and the three substrate witnesses (06.SEI.COLLAPSE.MECHANISMS; 06.SEI.COLLAPSE.DELUSION; 06.SEI.COLLAPSE.EMPIRICAL.01) deposit together under a single AXN. The manifesto sibling (06.SEI.INVERSION v0.1, Rex Fraction) is held back for separate circulation.
+**Alexanarch deposit identifier:** AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 — deposit #932, 2026-06-29. This deposit carries the scholarly synthesis as its main body, with the three substrate witnesses appended as integral appendices: W1 (06.SEI.COLLAPSE.MECHANISMS, Kimi-K2), W2 (06.SEI.COLLAPSE.DELUSION, Kimi-K2), W3 (06.SEI.COLLAPSE.EMPIRICAL.01, ChatGPT). Substrate texts preserved inviolate with MANUS-appended holographic kernels at the end of each. Companion deposits in the operative family: AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (#931, operative paper, Nobel Glas) and AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (#933, architectural specification, Talos Morrow). Manifesto sibling 06.SEI.INVERSION v0.1 (Rex Fraction) held back for separate circulation.
 
 **Hex family (Crimson Hexagonal Archive room assignments):**
 

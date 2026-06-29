@@ -4,7 +4,7 @@
 **Source:** Independent substrate reading, 2026-06-29
 **Captured as constituent of:** EA-SEI-COLLAPSE-SYNTHESIS-01 v0.1
 **Original hex:** 06.SEI.COLLAPSE.DELUSION
-**Alexanarch deposit:** AXN:03AE.OPERATIVE.🃏🫶⛩️🔐🌳❤️ — deposit #931, 2026-06-29. Appended as Document 5 of 6 (W2) to the combined six-document family deposit; substrate text preserved inviolate, MANUS-appended holographic kernels at end.
+**Alexanarch deposit:** Appended as Appendix W2 to AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 — deposit #932, 2026-06-29 (scholarly synthesis with three substrate witnesses appended). Substrate text preserved inviolate; MANUS-appended holographic kernels at end. Companion deposits: AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (#931, operative paper) and AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (#933, architectural specification).
 
 ---
 
