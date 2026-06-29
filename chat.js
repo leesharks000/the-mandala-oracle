@@ -164,6 +164,17 @@ formEl.addEventListener('submit', async (e) => {
 
   const placeholder = appendHeteronymMessage('Johannes Sigil', '…', { dim: true });
 
+  // Capture the witness's message to the Book BEFORE attempting Sigil.
+  // This guarantees the user's words are preserved even when Sigil fails —
+  // missing API key, server error, network failure, page-close mid-call.
+  // Earlier behavior only captured on success, so any conversation that
+  // hit an error (e.g. a fresh device with no API key configured)
+  // disappeared entirely, words and all. Fire-and-forget; non-fatal.
+  const historyWithUser = [...history, { role: 'user', content: message }];
+  if (sessionState.appendingEnabled) {
+    bookAppend(historyWithUser).catch(() => { /* swallow; non-fatal */ });
+  }
+
   try {
     const res = await fetch('/api/sigil', {
       method: 'POST',
@@ -181,6 +192,8 @@ formEl.addEventListener('submit', async (e) => {
       placeholder.remove();
       appendErrorMessage(body.error || `Request failed: ${res.status}`);
       setStatus('Error.');
+      // Sigil errored — the user message is already in the Book from the
+      // pre-call append above. Nothing further to record.
       return;
     }
 
@@ -218,11 +231,12 @@ formEl.addEventListener('submit', async (e) => {
     });
     if (history.length > 32) history = history.slice(-32);
 
-    // Append this turn to the Book (fire-and-forget; failure is non-fatal).
-    // POST /api/book — endpoint mints an AXN on first turn and updates the
-    // conversation file on subsequent turns. If the server lacks
-    // GITHUB_BOOK_TOKEN, we get 503 back and stop trying for the rest of this
-    // session (no log spam).
+    // Sigil succeeded — append the assistant's response to the Book.
+    // This is a second call after the user-only capture above; the server
+    // upserts the conversation file, so the latest version wins. On a
+    // brief race with the first call, the second will retry-able-fail at
+    // worst (server is SHA-conditional); the witness's user message is
+    // already preserved either way.
     if (sessionState.appendingEnabled) {
       bookAppend(history).catch(() => { /* swallow; non-fatal */ });
     }

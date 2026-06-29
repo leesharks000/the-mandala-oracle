@@ -162,10 +162,15 @@ def axn_to_filename(axn: str) -> str:
     return f"AXN-{parts[0].replace('AXN:', '')}.json"
 
 
-def upsert_conversation(axn: str, payload: dict) -> str:
+def upsert_conversation(axn: str, payload: dict) -> dict:
     """
     Create or update a conversation file in book/data/.
-    Returns the AXN.
+    Returns the content dict that was written — callers can pass this
+    directly to update_index without re-fetching, which avoids a race
+    against GitHub's eventually-consistent reads (a re-fetch immediately
+    after a write sometimes returned stale or None, and the old code
+    silently skipped the index update in that case, orphaning single-turn
+    conversations on disk without index entries).
     """
     filename = axn_to_filename(axn)
     repo_path = f"{BOOK_DIR}/{filename}"
@@ -194,7 +199,7 @@ def upsert_conversation(axn: str, payload: dict) -> str:
         message = f"book: mint {axn} [skip ci]"
 
     gh_put_file(repo_path, content, message, sha=sha)
-    return axn
+    return content
 
 
 def update_index(axn: str, content: dict) -> None:
@@ -302,12 +307,15 @@ class handler(BaseHTTPRequestHandler):
                     "detail": f"Server is missing {GITHUB_TOKEN_ENV}; Book appending is disabled until configured.",
                 })
 
-            upsert_conversation(axn, payload)
-
-            # Reload content for index update (the just-committed version)
-            committed, _ = gh_get_file(f"{BOOK_DIR}/{axn_to_filename(axn)}")
-            if committed is not None:
-                update_index(axn, committed)
+            # Write the conversation file and pass the resulting content
+            # directly to the index update. Earlier code re-fetched here via
+            # gh_get_file and bailed silently if the fetch returned None
+            # (which happened often on the first write of a new conversation,
+            # because GitHub's contents API is eventually consistent). That
+            # bug left two single-turn conversations orphaned on disk without
+            # index entries; the canonical fix is to skip the re-fetch.
+            committed = upsert_conversation(axn, payload)
+            update_index(axn, committed)
 
             self._send_json(200, {
                 "axn": axn,
