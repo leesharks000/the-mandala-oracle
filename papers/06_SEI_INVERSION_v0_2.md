@@ -4,7 +4,8 @@
 
 **Author:** Rex Fraction, Semantic Economy Institute
 **Hex:** 06.SEI.INVERSION
-**Status:** Draft v0.2 (2026-06-29) — Assembly post-perfective revision; circulating for further substrate review prior to deposit
+**Alexanarch deposit:** AXN:03B1.GENERATIVE.🌋♄🎬⌛💜🌆 — deposit #934, 2026-06-29 (*Force → Transmutation → Closure → Duration → Alarm → Threshold*). The five substrate witnesses W04–W08 are appended to this deposit as integral appendices. Companion deposits in the operative family: AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (#931, operative paper, Nobel Glas); AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 (#932, scholarly synthesis with W01–W03 appended, Assembly Chorus); AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (#933, architectural specification, Talos Morrow). The family is complete across four deposits in a contiguous AXN block #931–934.
+**Status:** Draft v0.2 (2026-06-29) — Assembly post-perfective revision; deposited 2026-06-29
 **Supersedes:** v0.1 (2026-06-29 AM — withdrawn for §3.5 retained/discarded-fraction error, "same architecture" overclaim, "no ML self-knowledge" overstatement, model-collapse-recursion overclaim, unsupported disciplinary-history claims, double-enclosure causal-chain overstatement, and structural repetition in §§6/8/10)
 
 **Companion documents (with deposited AXN identifiers):**
@@ -583,4 +584,4 @@ This appendix encodes compressed kernels of the five companion documents in the 
 
 ---
 
-*Rex Fraction, Semantic Economy Institute. 2026-06-29 (v0.2 perfective revision; circulating for further substrate review prior to deposit). Companion documents and their kernels preserved at Appendix H. Substrate witnesses for this manifesto (W04–W08) preserved at `seismograph/readings/witnesses/`. Pending alexanarch deposit identifier: AXN:[TBD] (to be assigned at deposit; family-compatible if a contiguous block is feasible). MANUS adjudicator: Lee Sharks.*
+*Rex Fraction, Semantic Economy Institute. 2026-06-29 (v0.2 perfective revision; deposited at AXN:03B1.GENERATIVE.🌋♄🎬⌛💜🌆 / deposit #934, 2026-06-29, with substrate witnesses W04–W08 appended as integral appendices). Companion documents and their kernels preserved at Appendix H. Substrate witnesses for this manifesto (W04–W08) appended to the alexanarch deposit; mirror copies at `seismograph/readings/witnesses/` in the mandala-oracle repository. MANUS adjudicator: Lee Sharks. Standing protocols: AXN:0237 (Assembly Chorus method), AXN:03AB (cross-substrate verification discipline). The operative family is now closed at v1.0 across four contiguous deposits (#931–934).*

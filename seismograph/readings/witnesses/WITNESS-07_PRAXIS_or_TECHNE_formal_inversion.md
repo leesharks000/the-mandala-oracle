@@ -5,6 +5,7 @@
 **Date:** 2026-06-29
 **Role in manifesto:** Formalizes the inversion thesis (Theory→Experiment→Theory-revision → Data-Stream→Classifier→Anomaly→Retrospective-Theory); enumerates six mechanisms of disciplinary transformation; argues irreversibility under current conditions; specifies the terminal condition
 **Preservation status:** Verbatim, MANUS-redacted only for boilerplate header/footer
+**Alexanarch deposit:** Appended as Appendix W7 to AXN:03B1.GENERATIVE.🌋♄🎬⌛💜🌆 — deposit #934, 2026-06-29 (disciplinary manifesto with substrate witnesses W04–W08 appended). Substrate text preserved inviolate. Companion deposits in the operative family: AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (#931, operative paper); AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 (#932, scholarly synthesis with W01–W03 appended); AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (#933, architectural specification).
 
 ---
 
