@@ -1,0 +1,13 @@
+{
+  "id": "plato-theaetetus",
+  "title": "Theaetetus",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "johannes-sigil",
+  "edition_basis": "Burnet OCT",
+  "original_language": "greek",
+  "zodiacal_region": "pisces",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

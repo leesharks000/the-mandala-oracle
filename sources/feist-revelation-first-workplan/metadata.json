@@ -1,0 +1,14 @@
+{
+  "id": "feist-revelation-first-workplan",
+  "title": "The Revelation First Work-Plan (EA-LOGOS-REVFIRST-PLAN)",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "jack-feist-logos",
+  "composition": "Jack Feist / LOGOS*; 18,475 words across eight revisions",
+  "zodiacal_region": "polaris",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "the revision-history; the methodological footnotes (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md",
+  "axn_reference": "AXN:034D"
+}

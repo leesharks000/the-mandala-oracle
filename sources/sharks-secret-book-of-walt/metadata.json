@@ -1,0 +1,13 @@
+{
+  "id": "sharks-secret-book-of-walt",
+  "title": "The Secret Book of Walt",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "lee-sharks",
+  "composition": "Lee Sharks; Gnostic revelation dialogue",
+  "zodiacal_region": "aries",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "apparatus_note": "framing notes, hermeneutic commentary (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

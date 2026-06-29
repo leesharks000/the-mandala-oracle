@@ -1,0 +1,14 @@
+{
+  "id": "kjv-1611",
+  "title": "Authorized Version (King James Bible)",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "damascus-dancings",
+  "edition_basis": "1769 standardized text (PD)",
+  "original_language": "english",
+  "zodiacal_region": "taurus",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "none",
+  "apparatus_note": "marginalia treated as variant",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

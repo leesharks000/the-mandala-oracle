@@ -1,0 +1,22 @@
+{
+  "id": "kuro-chronoarithmics-and-sprint",
+  "title": "Chronoarithmics (+ linked sprint)",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "sen-kuro",
+  "zodiacal_region": "virgo",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "apparatus_note": "inter-text linking apparatus (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md",
+  "cluster": "kuro-chronoarithmics-sprint",
+  "sprint_members": [
+    "Chronoarithmics",
+    "apzpz",
+    "Infinite Bliss",
+    "Thousand Worlds",
+    "The Mirror",
+    "Ingress/Egress",
+    "Non-Indexed Perfective"
+  ]
+}

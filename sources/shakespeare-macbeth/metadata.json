@@ -1,0 +1,13 @@
+{
+  "id": "shakespeare-macbeth",
+  "title": "Macbeth",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "tbd",
+  "edition_basis": "scholarly PD",
+  "original_language": "english",
+  "zodiacal_region": "tbd",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "source_status": "parked",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

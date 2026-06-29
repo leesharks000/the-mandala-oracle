@@ -1,0 +1,13 @@
+{
+  "id": "trace-drain-hypothesis",
+  "title": "The Drain Hypothesis (v6)",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "orin-trace",
+  "composition": "Dr. Orin Trace; pyramids / aquifer / Saharan desertification / Atlantis inversion",
+  "zodiacal_region": "capricorn",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "data-sources appendix (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

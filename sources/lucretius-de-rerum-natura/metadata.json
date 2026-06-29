@@ -1,0 +1,13 @@
+{
+  "id": "lucretius-de-rerum-natura",
+  "title": "De rerum natura",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "talos-morrow",
+  "edition_basis": "OCT",
+  "original_language": "latin",
+  "zodiacal_region": "aquarius",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

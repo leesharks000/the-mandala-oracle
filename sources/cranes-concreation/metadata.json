@@ -1,0 +1,11 @@
+{
+  "id": "cranes-concreation",
+  "title": "concre(a)tion",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "rebekah-cranes",
+  "composition": "Rebekah Cranes; lacuna (destroyed in 2026-06-19 Zenodo termination; pending recovery)",
+  "zodiacal_region": "gemini",
+  "magnitude_class": "secondary_canon_star_M2",
+  "source_status": "lacuna",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}
