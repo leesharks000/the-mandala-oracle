@@ -189,9 +189,9 @@ def upsert_conversation(axn: str, payload: dict) -> str:
     if existing:
         # Preserve original started_at on subsequent appends
         content["started_at"] = existing.get("started_at", content["started_at"])
-        message = f"book: append turn to {axn} (turn {content['turn_count']})"
+        message = f"book: append turn to {axn} (turn {content['turn_count']}) [skip ci]"
     else:
-        message = f"book: mint {axn}"
+        message = f"book: mint {axn} [skip ci]"
 
     gh_put_file(repo_path, content, message, sha=sha)
     return axn
@@ -242,7 +242,7 @@ def update_index(axn: str, content: dict) -> None:
     index["total_recorded"] = len(index["conversations"])
     index["last_updated"] = content["last_updated"]
 
-    gh_put_file(BOOK_INDEX_PATH, index, f"book: update index for {axn}", sha=sha)
+    gh_put_file(BOOK_INDEX_PATH, index, f"book: update index for {axn} [skip ci]", sha=sha)
 
 
 # ──────────────────────────────────────────────────────────────────────

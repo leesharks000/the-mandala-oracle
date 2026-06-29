@@ -5,28 +5,62 @@
 #   exit 0 → cancel the build (skip; doesn't count against deploy quota)
 #   exit 1 → proceed with the build
 #
-# Why VERCEL_GIT_PREVIOUS_SHA and not HEAD^:
-#   If five book commits land in a row, comparing HEAD^ to HEAD would only
-#   see the most recent commit's diff (all book), correctly skipping. But
-#   when Lee then pushes a code fix on top of those five book commits, HEAD^
-#   would be the most recent book commit — making the diff look like only
-#   the code change, missing context. VERCEL_GIT_PREVIOUS_SHA gives us the
-#   last commit Vercel actually deployed, so the diff always covers the
-#   full window of changes that haven't yet been built.
+# Strategy:
+#
+#   1. If VERCEL_GIT_PREVIOUS_SHA is set, try to diff against it. Vercel does
+#      shallow clones, so the SHA may not be reachable; in that case, we try
+#      to fetch it explicitly, and if that also fails, we fall through to (2)
+#      instead of defaulting to "build" (which was the original bug — every
+#      book commit was building because the shallow clone defeated the diff).
+#
+#   2. As fallback, inspect just the most-recent commit via `git show`.
+#      This works regardless of clone depth. The trade-off: in the rare case
+#      where multiple commits stack and Vercel runs the ignore step only
+#      against the latest, we'd miss any non-book change in earlier stacked
+#      commits. In practice this is acceptable — Vercel evaluates the ignore
+#      step per push, so each push gets its own check, and a code change that
+#      happens to be stacked with book commits would still surface as the
+#      tip of the new push and trigger a build.
+#
+#   3. The book commit messages also carry "[skip ci]" markers (set by
+#      api/book.py). If Vercel honors those markers — which it does for
+#      `[skip ci]` and `[ci skip]` per the Vercel docs — this script is
+#      belt-and-suspenders. The marker is the primary defense; this script
+#      is the secondary defense.
 
 set -u
 
-# First deploy on this branch — VERCEL_GIT_PREVIOUS_SHA is unset. Build.
-if [ -z "${VERCEL_GIT_PREVIOUS_SHA:-}" ]; then
-  echo "[ignore-build] no VERCEL_GIT_PREVIOUS_SHA — first deploy, building."
-  exit 1
-fi
+# Determine which paths changed.
+get_changed_paths() {
+  local changed=""
 
-# Diff against the last successfully deployed commit. If git can't reach
-# that SHA (e.g. shallow clone hasn't fetched it), default to building —
-# better to over-deploy than to leave a real code change un-deployed.
-if ! changed=$(git diff --name-only "$VERCEL_GIT_PREVIOUS_SHA" HEAD 2>/dev/null); then
-  echo "[ignore-build] could not diff against $VERCEL_GIT_PREVIOUS_SHA — building."
+  # Strategy 1: diff against VERCEL_GIT_PREVIOUS_SHA if reachable.
+  if [ -n "${VERCEL_GIT_PREVIOUS_SHA:-}" ]; then
+    # If the SHA isn't in the local clone (shallow), try to fetch it once.
+    if ! git cat-file -e "$VERCEL_GIT_PREVIOUS_SHA^{commit}" 2>/dev/null; then
+      git fetch --no-tags --depth=1 origin "$VERCEL_GIT_PREVIOUS_SHA" 2>/dev/null || true
+    fi
+    # Now try the diff.
+    if changed=$(git diff --name-only "$VERCEL_GIT_PREVIOUS_SHA" HEAD 2>/dev/null); then
+      echo "$changed"
+      return 0
+    fi
+    echo >&2 "[ignore-build] could not diff against $VERCEL_GIT_PREVIOUS_SHA — falling back to HEAD inspection."
+  fi
+
+  # Strategy 2: inspect just the most recent commit.
+  # `git diff-tree -m` handles merge commits correctly (without -m, merges
+  # return empty); the -r flag recurses into subdirectories.
+  changed=$(git diff-tree -m --no-commit-id --name-only -r HEAD 2>/dev/null)
+  if [ -z "$changed" ]; then
+    # Couldn't even inspect HEAD — build to be safe.
+    return 1
+  fi
+  echo "$changed"
+}
+
+if ! changed=$(get_changed_paths); then
+  echo "[ignore-build] could not determine changed paths — building."
   exit 1
 fi
 
@@ -34,10 +68,12 @@ fi
 non_book=$(printf '%s\n' "$changed" | grep -v '^book/' | grep -v '^$' || true)
 
 if [ -z "$non_book" ]; then
-  echo "[ignore-build] only book/ files changed since $VERCEL_GIT_PREVIOUS_SHA — skipping build."
+  echo "[ignore-build] only book/ files changed — skipping build."
+  echo "[ignore-build] changed paths:"
+  printf '%s\n' "$changed" | sed 's/^/  /'
   exit 0
-else
-  echo "[ignore-build] non-book changes detected since $VERCEL_GIT_PREVIOUS_SHA:"
-  echo "$non_book" | sed 's/^/  /'
-  exit 1
 fi
+
+echo "[ignore-build] non-book changes detected:"
+printf '%s\n' "$non_book" | sed 's/^/  /'
+exit 1
