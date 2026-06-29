@@ -1,0 +1,18 @@
+{
+  "id": "feist-function-transformed-feist-force",
+  "title": "Feist Function Transformed Feist Force",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": null,
+  "composition": "Jack Feist source-text + Sharks-authored transform; the transformation pair",
+  "zodiacal_region": "polaris",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "apparatus_note": "function carries source-context notes; force carries transformation rationale (each transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md",
+  "transform_substrate": "Mercury / TACHYON (provisional, if Mercury-produced)",
+  "author_heteronyms": [
+    "jack-feist-logos",
+    "lee-sharks"
+  ]
+}

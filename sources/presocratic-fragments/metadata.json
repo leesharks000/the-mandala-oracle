@@ -1,0 +1,14 @@
+{
+  "id": "presocratic-fragments-cluster",
+  "title": "Pre-Socratic Fragments (Anaximander, Anaxagoras, Empedocles, Democritus)",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "tbd",
+  "edition_basis": "Diels-Kranz",
+  "original_language": "greek",
+  "zodiacal_region": "tbd",
+  "magnitude_class": "tertiary_canon_star_M3",
+  "apparatus_status": "present",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md",
+  "cluster": "presocratic-fragments"
+}

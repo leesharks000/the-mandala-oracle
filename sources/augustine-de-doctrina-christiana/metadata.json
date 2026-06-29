@@ -1,0 +1,13 @@
+{
+  "id": "augustine-de-doctrina-christiana",
+  "title": "De doctrina christiana",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "rev-ayanna-vox",
+  "edition_basis": "CCSL",
+  "original_language": "latin",
+  "zodiacal_region": "cancer",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

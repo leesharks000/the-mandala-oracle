@@ -1,0 +1,14 @@
+{
+  "id": "heraclitus-fragments",
+  "title": "Fragments (Diels-Kranz)",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "dr-orin-trace",
+  "edition_basis": "DK numbering",
+  "original_language": "greek",
+  "zodiacal_region": "capricorn",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md",
+  "cluster": "heraclitus-fragments"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "sharks-zenodotus-book-burning",
+  "title": "Zenodotus' Book-Burning paper v9.1",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "lee-sharks",
+  "composition": "Lee Sharks; 85K chars; documents the 2026-06-19 Zenodo termination",
+  "zodiacal_region": "aries",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "citations to lost deposits; the recovery appendix (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

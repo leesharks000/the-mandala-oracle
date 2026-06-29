@@ -1,0 +1,13 @@
+{
+  "id": "sharks-pearl-and-other-poems",
+  "title": "Pearl and Other Poems",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "lee-sharks",
+  "composition": "Lee Sharks (2014/2015); foundational",
+  "zodiacal_region": "aries",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "apparatus_note": "introductions, headnotes, dedications (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

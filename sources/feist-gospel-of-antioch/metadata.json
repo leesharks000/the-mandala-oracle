@@ -1,0 +1,13 @@
+{
+  "id": "feist-gospel-of-antioch",
+  "title": "Gospel of Antioch",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "jack-feist-logos",
+  "composition": "Jack Feist; the Gospel-form text named at heteronyms.json",
+  "zodiacal_region": "polaris",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "apparatus_note": "the patristic-style commentary (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

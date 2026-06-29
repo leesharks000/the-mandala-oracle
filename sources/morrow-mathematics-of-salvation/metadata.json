@@ -1,0 +1,12 @@
+{
+  "id": "morrow-mathematics-of-salvation",
+  "title": "The Mathematics of Salvation",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "talos-morrow",
+  "zodiacal_region": "aquarius",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "derivation appendices (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

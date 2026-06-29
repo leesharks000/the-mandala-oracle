@@ -1,0 +1,13 @@
+{
+  "id": "sharks-space-ark",
+  "title": "The Minimum Viable Archive / Space Ark v4.2.7",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "lee-sharks",
+  "composition": "Lee Sharks; foundational architectural document",
+  "zodiacal_region": "aries",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "apparatus_note": "implementation-notes, version-history (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

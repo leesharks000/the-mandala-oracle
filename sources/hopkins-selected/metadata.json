@@ -1,0 +1,14 @@
+{
+  "id": "hopkins-selected",
+  "title": "Gerard Manley Hopkins — Selected Poems",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "sen-kuro",
+  "edition_basis": "Bridges edition / later PD",
+  "original_language": "english",
+  "zodiacal_region": "virgo",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md",
+  "cluster": "hopkins-selected"
+}

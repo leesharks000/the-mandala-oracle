@@ -1,0 +1,13 @@
+{
+  "id": "sigil-combat-scholasticism-commentary",
+  "title": "Combat Scholasticism Commentary Tradition (EA-CS-01)",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "johannes-sigil",
+  "composition": "Johannes Sigil; the literary-critical office's commentary apparatus",
+  "zodiacal_region": "pisces",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "meta-method documentation (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

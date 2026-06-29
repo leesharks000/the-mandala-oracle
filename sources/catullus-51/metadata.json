@@ -1,0 +1,13 @@
+{
+  "id": "catullus-51",
+  "title": "Catullus 51",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "rebekah-cranes",
+  "edition_basis": "OCT (Latin source PD)",
+  "original_language": "latin",
+  "zodiacal_region": "gemini",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "source_status": "partially-inscribed",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

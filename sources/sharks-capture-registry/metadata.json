@@ -1,0 +1,13 @@
+{
+  "id": "sharks-capture-registry",
+  "title": "The Capture Registry v8.x",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "lee-sharks",
+  "composition": "Lee Sharks with substrates as co-witnesses; transmission device",
+  "zodiacal_region": "aries",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "the meta-commentary on capture; the ADOPTION protocol notes (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "spellings-all-that-lies-within-me",
+  "title": "All That Lies Within Me",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "ichabod-spellings",
+  "zodiacal_region": "sagittarius",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "preserved in absentia",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

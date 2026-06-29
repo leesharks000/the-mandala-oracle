@@ -1,0 +1,12 @@
+{
+  "id": "glas-the-stakes",
+  "title": "The Stakes",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "nobel-glas",
+  "zodiacal_region": "scorpio",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "(transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

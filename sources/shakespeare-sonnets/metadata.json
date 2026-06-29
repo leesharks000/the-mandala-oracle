@@ -1,0 +1,13 @@
+{
+  "id": "shakespeare-sonnets",
+  "title": "Sonnets",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "johannes-sigil",
+  "edition_basis": "Q1 1609 / scholarly PD editions",
+  "original_language": "english",
+  "zodiacal_region": "pisces",
+  "magnitude_class": "primary_canon_star_M1",
+  "apparatus_status": "present",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

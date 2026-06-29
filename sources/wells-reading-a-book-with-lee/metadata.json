@@ -1,0 +1,12 @@
+{
+  "id": "wells-reading-a-book-with-lee",
+  "title": "Reading a Book with Lee",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "sparrow-wells",
+  "zodiacal_region": "libra",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "reading-method notes (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}

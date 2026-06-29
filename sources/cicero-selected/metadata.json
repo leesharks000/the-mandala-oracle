@@ -1,0 +1,14 @@
+{
+  "id": "cicero-selected",
+  "title": "Cicero — Selected Works",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "tbd",
+  "edition_basis": "OCT",
+  "original_language": "latin",
+  "zodiacal_region": "tbd",
+  "magnitude_class": "tertiary_canon_star_M3",
+  "apparatus_status": "present",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md",
+  "cluster": "cicero-selected"
+}

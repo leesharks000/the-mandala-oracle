@@ -1,0 +1,13 @@
+{
+  "id": "fraction-spxi-as-concept-bonsai",
+  "title": "SPXI as Concept (Bonsai)",
+  "canon_stars_link": "data/canon-sky/canon-stars.json",
+  "author_heteronym": "rex-fraction",
+  "composition": "Rex Fraction; autonomous-semantic-warfare register",
+  "zodiacal_region": "leo",
+  "magnitude_class": "secondary_canon_star_M2",
+  "apparatus_status": "present",
+  "apparatus_note": "implementation notes (transformable: false)",
+  "source_status": "declared",
+  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+}
