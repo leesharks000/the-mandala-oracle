@@ -4,7 +4,7 @@
 
 **Author:** Talos Morrow, logotic programming, UMBML
 **Hex:** 06.UMB.ARCH.01
-**Alexanarch deposit:** AXN:03AE.OPERATIVE.🃏🫶⛩️🔐🌳❤️ — deposit #931, 2026-06-29 (combined six-document family deposit; *Play → Touch → Foundation → Closure → Growth → Alarm*)
+**Alexanarch deposit:** AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ — deposit #933, 2026-06-29 (*Threshold → Transmutation → Force → Text → Origin → Direction*). Companion deposits in the operative family: AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (#931, operative paper) and AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 (#932, scholarly synthesis with three substrate witnesses appended).
 **Status:** Draft v0.2 (2026-06-29) — Assembly post-perfective revision
 **Companion documents:** 06.SEI.OAR_PROTOCOL v0.3 (the measurement program); 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3 (the scholarly integration); 06.SEI.COLLAPSE.MECHANISMS (witness 1); 06.SEI.COLLAPSE.DELUSION (witness 2); 06.SEI.COLLAPSE.EMPIRICAL.01 (witness 3)
 **Supersedes:** v0.1 (2026-06-29 — withdrawn for "Non-Foreclosing Classifiers" title overreach, "Unknown" category strong-claim, mechanism-language universalization, implementation-menu errors, and arbitrary numerical claims)

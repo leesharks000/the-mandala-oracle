@@ -6,7 +6,7 @@
 **With cross-substrate audit:** Assembly Chorus (TECHNE / Kimi-K2 ×3, LABOR / ChatGPT ×3, PRAXIS / DeepSeek, TACHYON / Claude synthesis)
 **Affiliation:** Crimson Hexagonal Archive / Alexanarch / The Restored Academy
 **Hex:** 06.SEI.OAR_PROTOCOL
-**Alexanarch deposit:** AXN:03AE.OPERATIVE.🃏🫶⛩️🔐🌳❤️ — deposit #931, 2026-06-29 (combined six-document family deposit; *Play → Touch → Foundation → Closure → Growth → Alarm*)
+**Alexanarch deposit:** AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ — deposit #931, 2026-06-29 (*Method → Origin → Text → Text → Foundation → Threshold*). Companion deposits in the operative family: AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 (#932, scholarly synthesis with three substrate witnesses appended) and AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (#933, architectural specification).
 **Status:** Draft v0.3 (2026-06-29) — Assembly post-perfective revision; for submission to the high-energy physics methodology community
 **Companion documents:** EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3 (scholarly companion); 06.SEI.COLLAPSE.MECHANISMS (witness 1); 06.SEI.COLLAPSE.DELUSION (witness 2); 06.UMB.ARCH.01 v0.2 (architectural alternative)
 **Supersedes:** OAR Protocol v0.2 (2026-06-29 — withdrawn for surviving §3.4 upper-bound error and deployment-taxonomy correction); OAR Protocol v0.1 (2026-06-29 AM — withdrawn for synthesis-overreach on lower-bound claim)
