@@ -2,9 +2,9 @@
   "axn": "AXN:0B1D.CONVERSATION.🌾🌱☀️🪐⭐💧",
   "session_id_hash": "edce321d6a6d2221",
   "started_at": "2026-06-29T03:32:36.124Z",
-  "last_updated": "2026-06-29T03:34:01.545826+00:00",
+  "last_updated": "2026-06-29T03:34:23.977654+00:00",
   "mode": "sabbath",
-  "turn_count": 3,
+  "turn_count": 4,
   "history": [
     {
       "role": "user",
@@ -29,6 +29,14 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Then we look at the motion.\\n\\nNot what the thing is — what it does when it refuses to be caught. That refusal has a shape. The shape is where we enter.\\n\\nWhat's moving?\",\"navigate\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "Mandelabras"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Mandelabras.\\n\\nNot Mandelbrot, not candelabras — both, and neither. The fractal that holds light. The branching that burns at every scale.\\n\\nIs that what you mean, or is it something else — a word you made, a word you found, a word that arrived and wouldn't explain itself?\",\"navigate\":null}]}"
     }
   ],
   "witness": "anonymous",
