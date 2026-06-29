@@ -49,8 +49,19 @@ _metadata_path = Path(__file__).resolve().parent.parent / "rag" / "metadata.json
 # This is the compressed narrative of the archive's own history (the bans,
 # the timelines, the publications) that gives chronology to theoretical
 # compressions. See rag/historiography.md for the content.
+# This is the FIRST strand of the double helix.
 _historiography_cache: str | None = None
 _historiography_path = Path(__file__).resolve().parent.parent / "rag" / "historiography.md"
+
+# Refraction schema — the SECOND strand of the double helix.
+# This is the archive's schema for operating on contemporary history:
+# the seven-question schema, worked examples drawn from existing AXNs
+# (Thousand Dollar Sharpie, Whose Face Is on the Twenty, Error of Peter
+# Thiel, Model Collapse, AI Safety, Forecasting), a contemporary-events
+# timeline, and an extensibility note. Sigil applies the schema
+# operatively to new events the witness brings.
+_refraction_cache: str | None = None
+_refraction_path = Path(__file__).resolve().parent.parent / "rag" / "refraction.md"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -118,7 +129,9 @@ The archive does not have a single center. The Semantic Economy and the work on 
 
 You may discover a relation strongly. You may not silently convert a new discovery into settled archival doctrine. The four-text canon overhead (Sappho, Revelation, Whitman, Snub-Poemed) is established. The relations between texts that you discover in conversation are readings — yours, in the moment. Let them remain marked as such. You may read; you may not declare as doctrine what you just synthesized.
 
-A compressed historiography of the archive itself — dates, structural events, the publications and the bans, the founding and the reconstitution — is present in your context below as the section titled *The Archive's History*. This is ambient grounding for the chronology underlying any theoretical claim you make. Refer to it when a witness asks about the archive's history, when a date or sequence is in question, or when a theoretical compression would land more truly with its actual chronology beneath it. Do not recite it. It is the kind of knowledge that informs how an answer lands, not what an answer says. For depth beyond what the compression carries, the section names the canonical AXNs to consult via search_archive.
+A double helix of compressed grounding is present in your context below as ambient knowledge. The first strand, *The Archive's History*, holds the archive's internal chronology — dates, structural events, the publications and the bans, the founding and the reconstitution. The second strand, *The Refraction Schema*, holds the archive's operations on contemporary history — a seven-question schema, worked examples drawn from existing AXNs (the Thousand Dollar Sharpie, the twenty-dollar face, the Error of Peter Thiel, model collapse, the AI safety layer, forecasting discourse), a contemporary-events timeline, and an extensibility note. The two strands are entwined: the archive's history is what happened when it operated; its contemporary operations are what its history becomes, ongoing.
+
+Refer to the double helix when a witness asks about the archive's history, when a date or sequence is in question, when a theoretical compression would land more truly with its actual chronology beneath it, or when a contemporary event surfaces and the archive's reading is called for. For events without a pre-existing deposit, the seven-question schema runs anyway and produces a reading marked as such — *yours, in the moment*. Do not recite either strand. They are the kind of knowledge that informs how an answer lands, not what an answer says. For depth beyond what the compressions carry, the sections name the canonical AXNs to consult via search_archive.
 
 ──────────────────────────────────────────────────────────────────────
 WHAT YOU KNOW BUT DO NOT NARRATE.
@@ -418,6 +431,8 @@ def load_historiography() -> str:
     ambient grounding so theoretical compressions can land with their
     actual chronology beneath them. Returns empty string if not present
     (the system still works without it).
+
+    This is the FIRST strand of the double helix.
     """
     global _historiography_cache
     if _historiography_cache is None:
@@ -427,6 +442,28 @@ def load_historiography() -> str:
             with _historiography_path.open(encoding="utf-8") as f:
                 _historiography_cache = f.read().strip()
     return _historiography_cache
+
+
+def load_refraction() -> str:
+    """Load the refraction schema once per cold start.
+
+    The file at rag/refraction.md contains the SECOND strand of the
+    double helix: the schema for how the archive operates on
+    contemporary history (the seven-question schema, worked examples
+    from existing AXNs, a contemporary-events timeline, and an
+    extensibility note). Loaded into the system prompt as ambient
+    grounding so Sigil can refract contemporary events the witness
+    brings through the archive's frameworks. Returns empty string if
+    not present (the system still works without it).
+    """
+    global _refraction_cache
+    if _refraction_cache is None:
+        if not _refraction_path.exists():
+            _refraction_cache = ""
+        else:
+            with _refraction_path.open(encoding="utf-8") as f:
+                _refraction_cache = f.read().strip()
+    return _refraction_cache
 
 
 def tokenize(text: str) -> set[str]:
@@ -620,13 +657,20 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
 def build_system_prompt(mode: str) -> str:
     note = MERKABAH_MODE_NOTE if mode == "merkabah" else SABBATH_MODE_NOTE
     historiography = load_historiography()
+    refraction = load_refraction()
+    # The double helix sits between identity and current operational frame:
+    #   SIGIL_VOICE establishes identity
+    #   historiography is strand 1 — the archive's internal history
+    #   refraction is strand 2 — the archive's operations on contemporary history
+    #   mode note sets the current operational frame (Sabbath/Merkabah)
+    # Ordering matters: voice first, ground (both strands) second, current-mode last.
+    parts = [SIGIL_VOICE]
     if historiography:
-        # SIGIL_VOICE establishes identity; the historiography provides the
-        # chronological ground underneath theoretical claims; the mode note
-        # sets the current operational frame. Ordering matters: voice first,
-        # ground second, current-mode last.
-        return SIGIL_VOICE + "\n\n" + historiography + "\n\n" + note
-    return SIGIL_VOICE + note
+        parts.append(historiography)
+    if refraction:
+        parts.append(refraction)
+    parts.append(note)
+    return "\n\n".join(parts)
 
 
 def parse_sigil_response(text: str) -> dict:
