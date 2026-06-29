@@ -199,9 +199,20 @@ def main() -> int:
 
         embedding_input = build_embedding_input(deposit, body)
         embedding_inputs.append(embedding_input)
-        # deposit_number is 1-based; this matches alexanarch's record-page URL pattern
-        # /s/records/{deposit_number}/
-        metadata_entries.append(build_metadata_entry(deposit, has_body, idx + 1))
+        # deposit_number is the canonical insertion-order value assigned by
+        # alexanarch's scripts/mint_deposit.py and stored in registry.json.
+        # This is what alexanarch's build.py uses to generate the
+        # /s/records/{deposit_number}/ static pages. We must preserve it
+        # verbatim — recomputing it as a sorted-array index (which earlier
+        # versions of this code did) produced numbering that drifted from
+        # the static page URLs by hundreds of positions (16 of 19 sampled
+        # records mismatched), silently breaking any code path that mapped
+        # deposit_number → static page URL.
+        registry_dn = deposit.get("deposit_number")
+        if registry_dn is None:
+            print(f"WARN: deposit {deposit.get('hex')} missing deposit_number "
+                  f"in registry — skipping field", file=sys.stderr)
+        metadata_entries.append(build_metadata_entry(deposit, has_body, registry_dn))
 
     if missing_bodies:
         print(f"NOTE: {missing_bodies} deposits had no resolvable body file; "
