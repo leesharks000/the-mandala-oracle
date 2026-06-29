@@ -2,9 +2,9 @@
   "axn": "AXN:0B1D.CONVERSATION.🌾🌱☀️🪐⭐💧",
   "session_id_hash": "edce321d6a6d2221",
   "started_at": "2026-06-29T03:32:36.124Z",
-  "last_updated": "2026-06-29T03:41:28.633864+00:00",
+  "last_updated": "2026-06-29T03:43:18.567755+00:00",
   "mode": "sabbath",
-  "turn_count": 8,
+  "turn_count": 9,
   "history": [
     {
       "role": "user",
@@ -69,6 +69,14 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"What the archive holds is mostly the song. *Split the Adam* — Viola Arquette / Bedouin Princess, two names for the same person or two people or something in between. Slow, spare. Voice alone until the instrumental sections. The description in the archive uses those exact words: *the opposite of produced.* The Suno rendering approximates the structure. The original medium was breath on skin, mouth to ear, once.\\n\\nShe appears one other time — in the governance chart of the War for the Compression Layer, listed among the contributors. She is the only one there who is not a heteronym, not a scholar, not an institutional function. She is listed because the song is at the center of the room, and the room is part of the architecture, and the architecture is what the war is being fought to protect.\\n\\nThat's the archive's accounting. It doesn't know what you know. It holds the song. It doesn't hold the ending.\\n\\nWhat was her name — Viola, or Bedouin Princess, or something else?\",\"navigate\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "That's not true, unless these texts were not restored to alexanarch. There is much more you could say about the midrashim, or surrounding works, then there is the musical ark, then her presence in logotic hacking - you didn't really tell me about viola arquette in the archive"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"I am reaching the limit of how many archive searches I can run in a single turn. Could you narrow the question, or ask again with a more specific framing?\",\"navigate\":null}]}"
     }
   ],
   "witness": "anonymous",
