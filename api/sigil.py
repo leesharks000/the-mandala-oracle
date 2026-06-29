@@ -39,7 +39,7 @@ from typing import Any
 
 MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 2000
-MAX_TOOL_TURNS = 4  # how many tool-use rounds Sigil can take per witness turn
+MAX_TOOL_TURNS = 6  # how many tool-use rounds Sigil can take per witness turn
 
 # RAG metadata loaded at cold start (cached in module scope)
 _metadata_cache: list[dict] | None = None
@@ -345,8 +345,26 @@ SEARCH_ARCHIVE_TOOL = {
         "Rate, operative metadata, the heteronyms' deeper work, the architecture's specifications. "
         "The witness does not see this call directly; what they see is your speech, informed by "
         "what you find. Search before you speak when the topic is theoretical; let what returns "
-        "shape what you say, but do not narrate the search itself. Multiple searches per turn are "
-        "fine. Returns up to 10 results with AXN, title, family, date, and description."
+        "shape what you say, but do not narrate the search itself.\n\n"
+        "QUERY CONSTRUCTION. The search supports three modes that you should use deliberately:\n\n"
+        "  (1) EXACT PHRASE — wrap proper nouns and multi-word titles in double quotes: "
+        '"Viola Arquette", "Split the Adam", "Maybe Space Baby Garden Lanes". This is the '
+        "most precise mode and the one you should reach for first when looking up a specific "
+        "person, work, or named concept. Phrase matches in titles or descriptions score very "
+        "high; they will rise to the top regardless of common-word noise.\n\n"
+        "  (2) AXN DIRECT LOOKUP — pass an AXN identifier (e.g. 'AXN:0135') or a bare hex code "
+        "(e.g. '0135') to fetch a specific deposit directly. Useful when you already know which "
+        "AXN you want.\n\n"
+        "  (3) THEMATIC TOKEN SEARCH — for broader exploration, pass content words ('semantic "
+        "economy', 'midrashim', 'logotic hacking'). Stopwords are filtered so natural phrasing "
+        "is fine.\n\n"
+        "SEARCH RESTRAINT. Each call returns up to 10 results. Once you have enough material to "
+        "answer the witness, STOP SEARCHING and synthesize. Do not chain calls trying to be "
+        "comprehensive — a few well-aimed exact-phrase queries are stronger than many broad ones. "
+        "When an entity is dispersed across the archive under multiple identifiers (a person who "
+        "appears as both Viola Arquette and Bedouin Princess, a concept that travels under several "
+        "names), search each identifier once and combine. The witness wants speech, not a "
+        "bibliography. Returns AXN, title, family, date, and description."
     ),
     "input_schema": {
         "type": "object",
@@ -354,9 +372,11 @@ SEARCH_ARCHIVE_TOOL = {
             "query": {
                 "type": "string",
                 "description": (
-                    "Search keywords or phrases. Matches against title, description, keywords, and family. "
-                    "Use specific terms (titles, AXN identifiers, framework names, heteronym names) "
-                    "for precise matches; thematic terms for broader exploration of cha."
+                    "The search query. Use double quotes around proper nouns and exact phrases: "
+                    '"Viola Arquette", "Bedouin Princess", "Split the Adam". Use AXN identifiers '
+                    "for direct lookup: 'AXN:0135' or '0135'. Unquoted multi-word queries with "
+                    "capitalized words are also treated as proper-noun substring searches before "
+                    "falling back to token overlap. Stopwords are filtered."
                 ),
             },
         },
@@ -381,59 +401,184 @@ def load_metadata() -> list[dict]:
 
 
 def tokenize(text: str) -> set[str]:
-    """Lowercase, alphanumeric-token-ish split for scoring."""
+    """Lowercase, alphanumeric-token-ish split for scoring.
+
+    Stopwords are dropped so that natural-language queries don't get
+    polluted by matches on common words. Previously a witness asking
+    "Tell me about Viola Arquette" returned "About the Author II" as
+    the top hit because of token overlap on "about" and "the". With
+    stopword filtering, only content-bearing tokens score.
+
+    Hyphenated compounds ("machine-mediated", "rappe-damascius") are
+    indexed BOTH as the compound and as their parts — so a query for
+    "Damascius" can still match a record whose only occurrence is in
+    "rappe-damascius protocol", and a query for "machine-mediated"
+    still matches the literal compound exactly. The compound retains
+    its identity; the parts widen the recall.
+    """
     if not text:
         return set()
-    return set(re.findall(r"\b[\w'-]{3,}\b", text.lower()))
+    # Primary tokens (compounds preserved)
+    tokens = set(re.findall(r"\b[\w'-]{3,}\b", text.lower()))
+    # Add hyphen-split parts (widen recall for proper nouns trapped inside compounds)
+    parts = set()
+    for tok in tokens:
+        if "-" in tok:
+            for p in tok.split("-"):
+                if len(p) >= 3:
+                    parts.add(p)
+    tokens |= parts
+    return tokens - _STOPWORDS
+
+
+_STOPWORDS = frozenset({
+    # English structural words
+    "the", "and", "for", "are", "but", "not", "you", "all", "can", "her",
+    "was", "one", "our", "out", "his", "has", "had", "him", "its", "two",
+    "who", "did", "she", "they", "their", "them", "what", "when", "where",
+    "why", "how", "this", "that", "these", "those", "with", "from", "into",
+    "any", "some", "such", "than", "then", "there", "here", "your", "yours",
+    "mine", "ours", "theirs", "tell", "show", "give", "find", "look", "want",
+    "need", "know", "knows", "knew", "say", "said", "says", "saying", "says",
+    "ask", "asked", "asks", "asking", "about", "around", "after", "before",
+    "above", "below", "over", "under", "between", "among", "without", "within",
+    "during", "again", "more", "most", "less", "least", "much", "many", "few",
+    "very", "just", "only", "also", "even", "still", "yet", "ever", "never",
+    "always", "would", "could", "should", "might", "must", "shall", "will",
+    "may", "make", "made", "makes", "making", "take", "took", "takes", "taking",
+    "get", "got", "gets", "getting", "have", "having", "been", "being",
+})
 
 
 def search_archive(query: str, limit: int = 10) -> list[dict]:
-    """Simple weighted-keyword search across metadata.
+    """Multi-strategy search across deposit metadata.
 
-    v1 implementation: tokenize the query, score each deposit by overlap with
-    its title (×3), description (×2), keywords (×2), family (×1), then return
-    the top results. A future refinement is real semantic search against
-    rag/vectors.json (would require sentence-transformers in the function).
+    Strategies, applied in order:
+
+    1. **Direct AXN lookup**: if the query contains an AXN-style identifier
+       (e.g. "AXN:0135", "axn:03ad", or even a bare 4-hex code like "0135"
+       when paired with other context), return the matching record(s) first
+       with a massive score boost.
+
+    2. **Exact-phrase substring match**: quoted phrases ("Viola Arquette",
+       "Split the Adam") are matched as case-insensitive substrings against
+       title and description. Phrase hits score very high — a proper-noun
+       query for "Viola Arquette" should not be drowned out by records
+       sharing common tokens like "the".
+
+    3. **Bare proper-noun substring**: if the query (without quotes) looks
+       like a proper noun (multi-word, capitalized, no stopwords) try it
+       as a substring match first before falling back to token overlap.
+
+    4. **Token-overlap scoring (fallback)**: the previous behavior. Tokens
+       are now stopword-filtered (see tokenize()).
     """
     metadata = load_metadata()
     if not metadata:
         return []
 
-    q_tokens = tokenize(query)
-    if not q_tokens:
+    if not query or not query.strip():
         return []
 
-    scored = []
-    for m in metadata:
-        title_t = tokenize(m.get("title", ""))
-        desc_t = tokenize(m.get("description", ""))
-        kw_t = tokenize(" ".join(m.get("keywords", []) or []))
-        fam_t = tokenize(m.get("family", ""))
+    query = query.strip()
+    query_lower = query.lower()
+    scored = {}  # axn -> (score, record)
 
-        score = (
-            3 * len(q_tokens & title_t)
-            + 2 * len(q_tokens & desc_t)
-            + 2 * len(q_tokens & kw_t)
-            + 1 * len(q_tokens & fam_t)
-        )
+    def add(rec, score):
+        axn = rec["axn"]
+        existing = scored.get(axn, (0, rec))[0]
+        scored[axn] = (existing + score, rec)
 
-        # Also boost direct AXN-hex matches
-        for tok in q_tokens:
-            if m.get("hex", "").lower() == tok or m.get("axn", "").lower().startswith(f"axn:{tok}"):
-                score += 10
+    # ── Strategy 1: Direct AXN lookup ──────────────────────────────────────
+    # Match "AXN:0135", "axn:03ad", or bare 4+ hex codes
+    axn_pattern = re.compile(r"(?:AXN[:\s]+)?([0-9A-Fa-f]{3,6})\b")
+    for match in axn_pattern.finditer(query):
+        hex_code = match.group(1).lower()
+        # Skip if it's a common word that happens to be hex-like (rare but possible)
+        if hex_code in {"abc", "ace", "add", "fad", "fee", "bed"}:
+            continue
+        for rec in metadata:
+            if rec.get("hex", "").lower() == hex_code:
+                add(rec, 100)
+            elif rec.get("axn", "").lower().startswith(f"axn:{hex_code}"):
+                add(rec, 100)
 
-        if score > 0:
-            scored.append((score, m))
+    # ── Strategy 2: Exact-phrase substring match (quoted) ──────────────────
+    # Match anything inside single or double quotes
+    quoted_phrases = re.findall(r'"([^"]+)"|\'([^\']+)\'', query)
+    for q1, q2 in quoted_phrases:
+        phrase = (q1 or q2).strip().lower()
+        if len(phrase) < 3:
+            continue
+        for rec in metadata:
+            title = (rec.get("title", "") or "").lower()
+            desc = (rec.get("description", "") or "").lower()
+            kws = " ".join(rec.get("keywords", []) or []).lower()
+            score = 0
+            if phrase in title:
+                score += 50  # exact phrase in title = very strong match
+            if phrase in desc:
+                score += 30
+            if phrase in kws:
+                score += 30
+            if score > 0:
+                add(rec, score)
 
-    scored.sort(key=lambda x: x[0], reverse=True)
+    # ── Strategy 3: Bare multi-word substring (proper-noun heuristic) ─────
+    # If the unquoted query has 2-5 words and includes capitalized tokens,
+    # try it as a substring before falling back to token overlap.
+    if not quoted_phrases:
+        words = query.split()
+        if 2 <= len(words) <= 5 and any(w[:1].isupper() for w in words):
+            phrase = query_lower
+            for rec in metadata:
+                title = (rec.get("title", "") or "").lower()
+                desc = (rec.get("description", "") or "").lower()
+                kws = " ".join(rec.get("keywords", []) or []).lower()
+                score = 0
+                if phrase in title:
+                    score += 40
+                if phrase in desc:
+                    score += 25
+                if phrase in kws:
+                    score += 25
+                if score > 0:
+                    add(rec, score)
+
+    # ── Strategy 4: Token-overlap scoring (fallback, stopword-filtered) ───
+    q_tokens = tokenize(query)
+    if q_tokens:
+        for rec in metadata:
+            title_t = tokenize(rec.get("title", ""))
+            desc_t = tokenize(rec.get("description", ""))
+            kw_t = tokenize(" ".join(rec.get("keywords", []) or []))
+            fam_t = tokenize(rec.get("family", ""))
+
+            score = (
+                3 * len(q_tokens & title_t)
+                + 2 * len(q_tokens & desc_t)
+                + 2 * len(q_tokens & kw_t)
+                + 1 * len(q_tokens & fam_t)
+            )
+
+            # Boost direct hex matches (covered above too, but token-mode catches more)
+            for tok in q_tokens:
+                if rec.get("hex", "").lower() == tok:
+                    score += 10
+
+            if score > 0:
+                add(rec, score)
+
+    # Sort and return
+    ranked = sorted(scored.values(), key=lambda x: x[0], reverse=True)
     results = []
-    for score, m in scored[:limit]:
+    for score, rec in ranked[:limit]:
         results.append({
-            "axn": m["axn"],
-            "title": m.get("title"),
-            "family": m.get("family"),
-            "date": m.get("date"),
-            "description": (m.get("description") or "")[:500],
+            "axn": rec["axn"],
+            "title": rec.get("title"),
+            "family": rec.get("family"),
+            "date": rec.get("date"),
+            "description": (rec.get("description") or "")[:500],
             "score": score,
         })
     return results
