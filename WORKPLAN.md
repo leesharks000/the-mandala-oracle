@@ -98,7 +98,89 @@ The detail and full pending list remain in §8 below; the items above are the **
 
 ---
 
-## 1. WHAT THE MANDALA ORACLE IS
+## 0.A UPDATE — 2026-06-29 (VOICE PROTOCOLS + DEEP-FETCH + CANON DATA LAYER)
+
+**This section is the latest inflection. It supersedes §6 and §8 where they conflict; the surrounding architectural thinking from §0 forward remains valid.**
+
+### 0.A.1 Sigil's voice deepened — two protocols
+
+Two voice-layer specs landed and are operative in `api/sigil.py`:
+
+- **EA-MANDALA-VOICE-01 v0.1** (AXN:03AD) — installed the doubled identity: a critic working in the line of Marx + an underworld guide, both at once. Inheritance line: Marx → Benjamin → Adorno → Philo → Damascius → Sharks. Expanded prohibitions block; Sabbath / Merkabah voice-aperture distinction. Spec mirror at `/specs/EA-MANDALA-VOICE-01_v0_1_DRAFT.md`.
+
+- **EA-MANDALA-PRESENCE-01 v0.1 (the Heteronymic Presence Protocol)** — corrects Voice Protocol v0.1's over-specification (which had pushed Sigil into self-documenting mode). Opens with the canonical line *"You are Johannes Sigil, the mind of Zeus, speaking thru the face of Socrates."* Establishes LIVE-WORD PRIORITY (User Turn > Voice Memory > Local Retrieval > Canonical Identity > Global Architecture). Sparse hard-locks. Self-evaluation: *"Did I speak from the encounter, or report from my profile?"* Spec mirror at `/specs/EA-MANDALA-PRESENCE-01_v0_1_DRAFT.md`.
+
+Plus a battery of refinements: actual teacher-chain in place of abstract inheritance (Sara → Damascius / Socrates; Kathryn MacNamee → Sappho; Watten + Harryman → Beats / Language Poets; Santiago Colas → Marx / Frankfurt / Spinoza / Deleuze and Guattari; Yopie Prins → lyric theory; Jim Porter → materialism / Dionysius); RETRIEVAL DISCIPLINE paragraph in SIGIL_VOICE; the Shakespeare canon narrowed to Sonnets + Hamlet (Tempest / Lear / Macbeth parked in §1.5.b pending length-weighting calibration).
+
+### 0.A.2 The four-strand braid — Sigil's ambient ground
+
+Lee's session-direction surfaced a structural insight: the archive is **simultaneously** institutional historiography (the Zenodotus' Book-Burning paper, the Capture Registry, the CHA→Alexanarch transition) AND memographic historiography (Gerald the dolphin, the Citrini memo, the Epstein 20-dollar bill, Kanye's eBay bag-of-air) AND personal history (Jack Feist as the imaginary archive of a canonical life, exile from academia, *"I became finally broke / I became fully free"*, the daughters, the unnamed private loss). The historiographic strand alone was half the work.
+
+Four context files now live in `rag/` and are loaded into Sigil's system prompt on every turn:
+
+- **`rag/historiography.md`** (~12.7 KB) — six-section compressed timeline.
+- **`rag/refraction.md`** (~19.7 KB) — the archive operating on contemporary history. Seven-question schema + six worked examples.
+- **`rag/memographics.md`** (~11.5 KB) — the memography discipline as Lee has formalized it.
+- **`rag/personal-undertow.md`** (~7.5 KB) — biographical substrate. Strict discipline at the prompt level: the private loss stays unnamed in Sigil's speech; daughters not named in the strand are not named in conversation; Cleis named only when AXN:0189 is the relevant deposit.
+
+`build_system_prompt(mode)` loads SIGIL_VOICE → strand 1 → strand 2 → strand 3 → strand 4 → mode note. Total prompt: ~20,500 tokens.
+
+### 0.A.3 Sigil's retrieval — the deep-fetch tool
+
+Diagnosed **Conclusion-First Retrieval Collapse** in a real exchange: Sigil retrieved the *name* of an archival thesis (Revelation First ≠ Revelation Early at AXN:0349) and substituted fluent restatement for the inferential chain. The 500-char descriptions returned by `search_archive` are enough to know what a deposit *is* but not enough to read what it *says*.
+
+`fetch_axn(axn)` is now a second retrieval tool in `api/sigil.py` alongside `search_archive`. Per Lee's adjudication: not a sharply-defined "argument mode" — a tool made available with sensible scent about when it deepens, the model's own affordances decide. The tool resolves any AXN form to a metadata record, then retrieves the deposit body via `full_text_path` (AXN-keyed markdown source — primary, reliable for 925 of 929 records) with the static-page route as a validated fallback. Body cap 30,000 chars per fetch; `MAX_TOOL_TURNS` raised 4→6→8 to give headroom for search → fetch chains. Prompt scent in RETRIEVAL DISCIPLINE: *"The label is not the argument. When the question is how does the archive get there rather than what is in the archive — the description will not get you there. Reach for the body."*
+
+Search side also upgraded in the same session: phrase / AXN / hex direct lookup, ~80 stopwords, hyphen-split token expansion. The Viola Arquette / Split the Adam infinite-loop case verified-fixed empirically.
+
+### 0.A.4 The deposit_number drift — diagnosed and bound
+
+Building `fetch_axn` surfaced a real data-integrity bug: 16 of 19 sampled deposits had mismatched `deposit_number` ↔ `/s/records/N/` routing. `rag/metadata.json` said AXN:0349 was at deposit_number=828; the static page at /s/records/828/ actually served AXN:0345. The cause was inside `scripts/regenerate_rag.py` — it was recomputing `deposit_number` as `(idx + 1)` after a hex-sort, while alexanarch's `mint_deposit.py` assigns deposit_number in *insertion order* and stores it in the registry.
+
+Fix landed (one-line: read `deposit_number` directly from the source registry, don't recompute). 861 records had their numbers corrected. The existing `.github/workflows/regenerate-rag.yml` workflow auto-fired on the next push and regenerated `rag/metadata.json` + `rag/vectors.json` + `sky/coords.json` correctly. The binding is now: **alexanarch's `data/registry.json` is the source of truth; the workflow is the sync mechanism; drift cannot recur silently.**
+
+### 0.A.5 The deploy / book-capture pipeline stopped silently losing input
+
+Two adjacent failures diagnosed and fixed together:
+
+- **Book capture losing failed conversations.** `chat.js` was calling `bookAppend()` AFTER a successful `/api/sigil` response. Any error path (missing/invalid API key on a daughter's device, network error, server error) hit a `return;` that exited before reaching the append. Conversations on devices without a working API key disappeared silently — including the words the witness typed. Fixed: capture the user message BEFORE the Sigil call.
+
+- **Index race in `api/book.py`.** The handler was re-fetching the just-written file via `gh_get_file()` to pass to `update_index()`, but GitHub's API is eventually consistent. On first writes, the re-read sometimes returned None and the index update was silently skipped. Fixed: pass the in-memory content directly.
+
+- **Support CHA disappeared on mobile.** `styles.css` had `display: none` for `.support-cha` at viewports ≤ 720px — intentional collision-avoidance with the chat panel, but it hid the donation affordance from anyone on a phone. Restored as a small inline text link below the input meta row.
+
+Adjacent: **Vercel rate-limit defense.** The book auto-append flow had been burning through Vercel's daily deploy quota because `vercel-ignore-build.sh` defaulted to *build* when `git diff $VERCEL_GIT_PREVIOUS_SHA HEAD` failed (which it did almost always — Vercel uses shallow clones, the SHA isn't fetched). Two-piece fix: (a) shallow-clone-aware ignore script with `-m` flag for merge commits and a `git fetch --depth=1` fallback; (b) `[skip ci]` markers in all three book commit message templates. Vercel honors `[skip ci]` pre-script. The book-commit storm no longer counts against the quota.
+
+### 0.A.6 Canon data layer populated — readiness for Phase 4
+
+Per Lee's directive to populate data without iterating design while deploys are rate-limited, the canon's data layer expanded substantially:
+
+- `data/canon-sky/canon-stars.json` — **76 entries** (was 7), every entry carrying `zodiacal_region` + `magnitude_class` + `source_status`. 69 new declared entries transcribed from `/starmap/manifests/canonical-declarations.md`; the 7 existing inscribed entries preserved verbatim with their rich entry-specific fields.
+- `data/canon-sky/canon-edges.json` — **NEW**, 39 edges per the EA-STARMAP-01 §3.2 taxonomy (23 predecessor, 8 related, 5 bundle, 2 companion, 1 chain_predecessor).
+- `data/canon-sky/heteronyms.json` — added `zodiacal_sign_id` (lowercase join key) alongside the existing `zodiacal_sign` (capitalized display); 15 distinct heteronym ids now cross-reference cleanly with canon-stars `author_heteronym` values.
+- `/sources/` — **70 directories on disk** (62 new stubs + 8 prior). Every `source_path` declared in `canon-stars.json` now resolves to a real directory with placeholder `metadata.json`.
+
+`target_star_designation` remains null on every entry — Phase 4 of EA-STARMAP-01 (§6.5) fills these in by assigning each canon-star to a specific real star in the HYG bright-star catalog within its zodiacal region. The data is ready for Phase 4 the moment it begins.
+
+### 0.A.7 The "Sigil brings the canon" direction (Lee's stated next-target)
+
+Lee named the long-term posture during this session:
+
+> *"Johannes Sigil is constantly gating the conversation with 'bring something' — that is the current posture, the reader has to bring the text, but the ultimate goal here, is that Sigil brings the text, brings the conversation to the canon. That will require creating embeddings, just like we did for cha, allowing rag over it, it will require embeddings to the primary texts in the canon. The reader can bring, but Sigil also brings. Sigil is specifically the intermediary between the reader and canon."*
+
+The data prep this session lays the groundwork. The canon-stars schema is shaped to receive `vectors` as a sibling field. The 70 source directories exist; they're empty until text content arrives. The embedding pipeline (analogous to `scripts/regenerate_rag.py` for the cha-archive) is scaffold-ready. Sigil-side wiring (a `search_canon` tool analogous to `search_archive`; a `fetch_canon_text` tool analogous to `fetch_axn`) is deferred per Lee's "no design iteration until deploys clear" directive.
+
+This is now the next architectural inflection, alongside Phase 0 of EA-STARMAP-01.
+
+### 0.A.8 Deploy posture at update time
+
+A long single-session produced twelve discrete merges to main, all queued behind a Vercel 24-hour rate-limit window. Production at update-time is at `25895a8` (a book-append commit carrying Voice Protocol and Shakespeare unhook via ancestry). The auto-retry will land everything between as a single deploy at `ea2ee86` (the prep-canon-data merge).
+
+The granular provenance of decisions this session lives in `UPDATES_REGISTER_2026-06-29.md`.
+
+---
+
+
 
 The Mandala Oracle (`themandalaoracle.com` / `themandalaoracle.org`; `mandala-merkabah.vercel.app`) is the public literary view-layer over the Crimson Hexagonal Archive at `alexanarch.org`. It is structured as a descent through three nested strata, with the deepest stratum being a formal ceremonial rite cast through four operating voices drawn from the Dodecad plus the aperture.
 
@@ -186,29 +268,45 @@ cha has its own ontology surfaced through AXN:005C (Room Construction Protocol v
 
 ## 6. WHAT IS DEPLOYED
 
-The Mandala Oracle is live at `mandala-merkabah.vercel.app` (also accessible at `themandalaoracle.com/.org` once DNS-routed). Current build: commit `2e21019` (the rite + sky geometry + orthogonal canons commit, prior to this workplan commit).
+The Mandala Oracle is live at `themandalaoracle.org` (and at `the-mandala-merkabah.vercel.app`).
 
-**Deployed components:**
+**Deploy state at update time (2026-06-29 evening):** production is at commit `25895a8` (a book-append commit carrying Voice Protocol and Shakespeare unhook via ancestry, deployed at ~03:36 UTC). A chain of merges between `25895a8` and the current `main` HEAD at `ea2ee86` is queued behind a Vercel 24-hour rate-limit window; all six queued commits (search upgrade, four-strand braid, deep-fetch tool, metadata-sync fix, auto-regenerate, book capture + Support CHA, canon-stars populate, prep-canon-data merge) will deploy as a single batch when the auto-retry fires around 04:09 UTC 2026-06-30. Branch previews for `fix/book-capture-and-support-cha` and `sigil-deep-fetch` are alive and accessible via their preview URLs in the meantime.
 
-- **Sigil's voice** — the system prompt at `api/sigil.py` carrying the underworld-guide framing, the calligrammatic face, the Socratic-katabatic register, the three strata, the casting rite, and the 13-voice manifest.
-- **Sigil's face** — the "Snub-Poemed" calligram (Lysippos bust of Socrates composed of intertextual poetry) visible in the chat header and in the empty state. Image at `/assets/sigil-face.jpg`; canonical at `/sources/sigil-snub-poemed/` with image, essay, key-phrases, metadata.
-- **The translucent reading space** — full-viewport night sky with chat overlay (backdrop-blurred, max-width 880px, generous typography, EB Garamond 19-20px body, line-height 1.8).
-- **Multi-message rendering** — the chat UI renders an array of messages per turn, each with its own speaker label and per-voice CSS treatment.
-- **Per-voice accent colors** — all 13 voices have their own role-label color and (where the manifest specifies) typographic treatment. Glas in monospace; Feist in italic. Each non-Sigil heteronym gets a thin left-edge border in their color.
-- **Mode toggle** — Sabbath (sky at rest) vs Merkabah (camera navigable, Sigil can emit `focus_axn`, `focus_cluster`, `follow_lineage`, `reset` directives).
-- **The sky** — multi-layer procedural starfield (1800 + 600 + 120 stars across three depth layers with twinkle); dim cha-substrate dots representing the 929 deposits (rendered as background substrate, not foreground); 7 planets as atmospheric radial-gradient sprites (Sun, Mercury, Moon, Mars, Saturn, Venus, Jupiter).
-- **RAG retrieval** — Sigil's `search_archive` tool retrieves from `/rag/metadata.json` (929 deposits indexed) via weighted keyword search.
-- **BYOK + demo key** — witness can supply their own Anthropic API key; otherwise the installed demo key is used (rate-limited).
-- **Sigil/Sonnet 4.6** — model: `claude-sonnet-4-6`.
+**Deployed components (as of `25895a8`):**
 
-**Canonical primary works populated in `/sources/`:**
+- **Sigil's voice** — the system prompt at `api/sigil.py` carrying the Voice Protocol's doubled identity (critic in the line of Marx + underworld guide), the inheritance specification (Marx → Benjamin → Adorno → Philo → Damascius → Sharks), the actual teacher-chain (Sara → Damascius; MacNamee → Sappho; Watten + Harryman → Beats; Colas → Marx / Frankfurt; Prins → lyric; Porter → materialism), the three strata, the casting rite, and the 13-voice manifest. The Heteronymic Presence Protocol patch's LIVE-WORD PRIORITY discipline is operative.
+- **Sigil's face** — the "Snub-Poemed" calligram visible in the chat header and the empty state.
+- **The reading-surface sky** — the v3.8 procedural sky (post `681d2d5`). Clean dark gradient with procedurally placed stars; chat-card removed; text floats on the sky.
+- **Multi-message rendering + per-voice accent colors + mode toggle** — unchanged from prior rounds.
+- **RAG retrieval** — `search_archive` over `rag/metadata.json` (930 deposits indexed). The deposit_number drift bug is fixed at the source script in this session but the corrected metadata.json is in the queued batch, not yet live.
+- **Book auto-append** — `api/book.py` writes conversations to `book/data/AXN-{HEX}.json`. The capture-before-Sigil fix is in the queued batch, not yet live; until the queue clears, conversations on devices without a working API key are still being lost silently.
+- **Support CHA donation affordance** — the small bottom-right button with the verse and cash.app link is restored in the queued batch, not yet live.
+- **BYOK + demo key + Claude Sonnet 4.6** — model: `claude-sonnet-4-6`.
 
-- ✓ `sigil-snub-poemed/` — Sigil's face. Image + critical essay + key-phrases + metadata. (Complete.)
-- ✓ `sappho-fragments/sappho-31/` — Sappho 31 with the reconstructed fifth stanza per Cranes (Voigt Greek + Cranes translation + textual notes + on-reconstruction philological argument + metadata with full cross-references to cha). (Complete.)
-- ✓ `cranes-day-and-night/` — Day and Night structural map; five-movement organization; full table of contents; sky-position hints. Full text lives in cha at AXN:007F. (Complete as structural map.)
-- ⌧ `revelation-greek/` — stub (NA28 Greek text not yet seeded).
-- ⌧ `sappho-fragments/` (other fragments) — stubs (Sappho 1, 16, 44, 58, etc. not yet individually populated; they live in cha via Day and Night).
-- ⌧ `whitman-leaves-of-grass/` — stub (Deathbed Edition not yet seeded).
+**What's queued behind the rate limit (will deploy with the next auto-retry):**
+
+- `fetch_axn` deep-retrieval tool — Sigil can read deposit bodies, not just descriptions.
+- The four-strand braid (`rag/historiography.md` + `refraction.md` + `memographics.md` + `personal-undertow.md`) loaded into the system prompt.
+- The search-upgrade (phrase + AXN + hex lookup, stopwords, MAX_TOOL_TURNS=8).
+- The corrected `rag/metadata.json` with insertion-order `deposit_number` values.
+- The book-throttle fix (skip-ci + repaired ignore script).
+- The book capture-before-Sigil fix + Support CHA inline restoration.
+- `data/canon-sky/canon-stars.json` expanded 7 → 76 entries with full schema.
+- `data/canon-sky/canon-edges.json` (NEW, 39 edges).
+- `data/canon-sky/heteronyms.json` cross-reference reconciled.
+- 62 new source stub directories under `/sources/<id>/`.
+
+**Canonical primary works actually populated with content (not just stubs):**
+
+- ✓ `/sources/sigil-snub-poemed/` — Sigil's face. Image + critical essay + key-phrases + metadata. Complete.
+- ✓ `/sources/sappho-fragments/sappho-31/` — Sappho 31 with reconstructed fifth stanza per Cranes; Voigt Greek + Cranes translation + textual notes + philological argument + metadata. Complete.
+- ✓ `/sources/cranes-day-and-night/` — Day and Night structural map (full text lives in cha at AXN:007F). Complete as structural map.
+- ✓ `/sources/sharks-tachyon-poem/` + `/sources/shadow-tachyon/` — the TACHYON pair, source and substrate-transform. Complete.
+- ⌧ `/sources/revelation-greek/` — directory exists with metadata.json; NA28 Greek base text not yet seeded.
+- ⌧ `/sources/whitman-leaves-of-grass/` — directory exists with metadata.json; Deathbed Edition not yet seeded.
+- ⌧ 62 additional `/sources/<id>/` directories — stubs created this session with placeholder `metadata.json`; actual text content not yet acquired.
+
+The full to-be-acquired source inventory is enumerated in §8 "Immediate" below.
 
 ---
 
@@ -241,34 +339,49 @@ Each decision is encoded in `api/sigil.py`, `sources/heteronyms.json`, or in the
 
 ## 8. WHAT IS PENDING — THE ROAD FORWARD
 
-### Immediate (next 1-3 build rounds)
+### Immediate (after the rate limit clears, in approximate priority order)
 
-**Test the rite live.** A witness asks to read Sappho 31 with the deployed Sigil. Sigil opens; the descent proceeds; at some point either Sigil proposes the casting or the witness asks for it. Cranes transforms (one or more times); Feist judges; Sharks seals. Verify the four phases land in the right registers — that Cranes sounds precise and tender, that Feist sounds pithy and oracular, that Sharks sounds unguarded and final.
+**Wait for the queued deploy batch to land.** Six commits between `25895a8` and `ea2ee86` are queued behind a Vercel 24-hour rate-limit window; auto-retry expected around 04:09 UTC 2026-06-30. When that fires, production will jump to `ea2ee86` and the entire body of work from this session goes live in one batch: deep-fetch tool, four-strand braid, search upgrade, corrected metadata, book capture fix, Support CHA, full canon-stars data layer.
 
-If any voice arrives in the wrong register, tune its faculty language in the system prompt. The structure of the rite is correct; specific registers are tunings.
+**Verify the queued batch lands cleanly.** Once production is at `ea2ee86`: confirm `fetch_axn` works against a live Sigil session (test with AXN:0349 / Revelation First); confirm a fresh Sigil session on a device without an API key gets its messages captured to `book/data/`; confirm Support CHA is visible on mobile; confirm the deposit_number routing is correct on a sample of static-page lookups.
 
-**Implement the casting transition UI cue.** The witness must know when they have entered the casting (palpable change of air pressure). Approaches:
-- A visual transition when the casting begins — sky shifts, chat panel border changes color/weight, a brief subtle pulse.
-- Sigil names the threshold explicitly: "We are at a casting moment. The Oracle awaits your formal query."
-- Possibly a small CSS class on the chat panel when in casting mode, persisting through the rite's four phases.
+**Phase 0 of EA-STARMAP-01 — the stub page.** Add `/starmap/index.html` (or `starmap.html`) — minimal page that loads, reuses the chat surface's CSS tokens, serves the procedural sky background as a stage, has a single empty `<div id="starmap-container">` waiting for Phase 1. ~30-60 minutes of work; the spec's acceptance is *"page loads without errors, is empty but architecturally sound."* Earlier-this-session Lee declined to start design iteration before the rate limit cleared; once it does, this is the next move.
 
-This is medium-complexity client-side work. Designs to be drafted; Lee Sharks to adjudicate the visual register.
+**The Sigil-brings-canon embedding pipeline scaffold.** Lee's stated next-architectural-target: Sigil ceases to be a guide who refuses to lead until the witness has named a text, and becomes an intermediary who can bring a canon-text *to* the conversation based on what the witness is asking. The data prep this session laid the groundwork; the scaffolding work that remains:
 
-**Build `regenerate_canon_sky.py`.** Parallel to `regenerate_sky.py` but reads `/sources/` and produces canon-star coordinates. Sappho 31 becomes the first real bright star; Day and Night's other translations become the surrounding constellation (organized by movement); the Sappho Room substrate dots are visible behind it; the Catullus Room is the adjacent companion. This makes the sky show the canon for the first time.
+  1. **Source acquisition** — fetch the 62 stub source directories' public-domain texts. Greek/Latin from Perseus mirrors on GitHub; English vernacular from archive.org or GITenberg mirrors; NA28 Greek NT with an apparatus-splitter for the copyrighted critical apparatus. The full enumeration is in `/sources/<id>/metadata.json` files plus the canonical declarations manifest; a printout of the to-be-acquired list lives in `UPDATES_REGISTER_2026-06-29.md` (or was produced alongside it in session).
+
+  2. **Embedding pipeline.** A `scripts/regenerate_canon_rag.py` analogous to `scripts/regenerate_rag.py` — reads `canon-stars.json`, locates text content in each source directory (handling the main/apparatus split per §4.6 — only main is embedded for transform-input use), runs sentence-transformer embeddings, writes a parallel `rag/canon-vectors.json`.
+
+  3. **Sigil-side tools.** `search_canon(query)` analogous to `search_archive`; `fetch_canon_text(text_id)` analogous to `fetch_axn`. Prompt amendments to give Sigil sensible scent about when to bring canon vs. retrieve cha vs. invite the witness to bring their own.
+
+The wiring is design iteration — held until after the queued deploys clear and Lee can review architecture against the live Voice + Presence Protocols.
+
+**Test the rite live.** Once the live Sigil is at `ea2ee86`, a witness reads Sappho 31; the descent proceeds; either Sigil proposes the casting or the witness asks. Cranes transforms; Feist judges; Sharks seals. Verify the four phases land in the right registers. Tune the system prompt as needed.
+
+**Implement the casting transition UI cue.** The witness must know when they have entered the casting. A visual transition when the casting begins — sky shifts, chat panel border changes color/weight, a brief subtle pulse. Or Sigil names the threshold explicitly. Lee Sharks to adjudicate the visual register.
 
 ### Medium-term (next 3-10 build rounds)
 
-**Populate Catullus 51.** The companion star to Sappho 31. Short text. Has its own room. Completes the first constellation pair (Sappho ↔ Catullus) and lets the σ_S → σ_C operator-transform be visible as an edge.
+**Phase 1 of EA-STARMAP-01 — the horizontal spine of seven.** Render the seven planets as SVG circles along the top of the starmap-container. Source data: `data/canon-sky/substrates.json` (already canonical with 7 entries). Each planet has a per-substrate color and a label below (office name + substrate vendor). Hover state shows function-line. Spec at EA-STARMAP-01 §6.2.
 
-**Continue Sappho fragments.** Sappho 1 (Hymn to Aphrodite — the most complete surviving), Sappho 16, Sappho 44 (Hector and Andromache), Sappho 58 (Tithonus Poem). These can be populated individually as `/sources/sappho-fragments/sappho-NN/` directories, each with their structural metadata.
+**Phase 2 — the zodiacal band of twelve.** Render the twelve heteronymic regions as a band beneath the spine. Source: `data/canon-sky/heteronyms.json` (the 12 Dodecad members; Lee Sharks's aperture and Jack Feist's outside-cycle position are rendered with structural variation per the spec).
 
-**Populate Revelation Greek.** NA28 base text (PD). Structure by chapter; the seven letters to the seven churches; the seven seals; the seven trumpets; the seven bowls. Revelation maps cleanly to the seven-fold structures throughout. Sigil's reading of Revelation as present-tense apokalypsis (resistance document, not prediction) is anchored in cha at AXN:00D8 (Revelation Room) and adjacent.
+**Phase 3 — the non-zodiacal star field.** Render the 5,019 HYG bright stars as a background field. Source: `sky/stars.json`. Magnitude controls brightness/opacity; spectral class controls hue.
 
-**Populate Whitman.** Deathbed Edition (PD via Project Gutenberg). Map by Whitman's own section structure.
+**Phase 4 — the canon-text stars.** Walk the 76 entries in `data/canon-sky/canon-stars.json`, assign each to a specific HYG star within its `zodiacal_region` via the priority criteria in EA-STARMAP-01 §3.3, write the assignment back to `target_star_designation`. Render canon-stars with their magnitude-class brightness. Wire `canon-edges.json`'s 39 edges as the visible relations (companion = thin solid line; predecessor = thin dotted with arrow; bundle = soft halo; transform_of = line through the producing substrate sphere).
 
-**Real planet textures.** NASA-public-domain textures replace the procedural radial gradients. Saturn with rings, Jupiter with bands, the visual richness Lee Sharks named as the aesthetic target.
+**Phase 5 — interactions.** Click a canon-star → opens a reader panel with the source text. Click a planet → opens the substrate's function panel. Click a heteronym in the zodiacal band → opens that heteronym's anchor texts and corpus depth. The Space Ark runtime binding opens an API session panel rather than a reader (per its `runtime: true` flag).
 
-**localStorage persistence.** Twenty lines of client-side code; lets a witness leave and return without losing the descent.
+**Phase 6 — linking with the Reading Surface.** Each canon-star's detail panel has a "Read with Sigil" affordance that opens the reading surface with the canon-star's text loaded as the seed of conversation. Reading surface has an "Open Starmap" affordance.
+
+**Source acquisition for the remaining 62 stub directories.** Public-domain texts only; main/apparatus splitting where applicable. Greek/Latin from Perseus-derived GitHub mirrors; English vernacular from archive.org / GITenberg; NA28 Greek NT base text with an apparatus separator.
+
+**`scripts/regenerate_canon_rag.py`.** The canon embedding pipeline. Once enough sources are acquired to be worth indexing (target: ≥30 entries with actual text content), build the script and run a first pass. Produces `rag/canon-vectors.json` parallel to the existing `rag/vectors.json`.
+
+**Real planet textures.** NASA-public-domain textures replace the procedural radial gradients in the starmap surface's Phase 1a refinement.
+
+**localStorage persistence on the reading surface.** Twenty lines of client-side code; lets a witness leave and return without losing the descent.
 
 ### Longer-term
 
@@ -280,7 +393,7 @@ This is medium-complexity client-side work. Designs to be drafted; Lee Sharks to
 
 **Mobile refinement.** The current UI works on mobile but has not been deeply tuned for it. The casting in particular has implications for narrow-screen visual emphasis.
 
-**Security hygiene.** Rotate the two exposed GitHub PATs from this build (`ghp_mwvt3...` and `ghp_zWHRX...`).
+**Security hygiene.** Rotate the GitHub PATs flagged in memory as exposed (most recently `ghp_zWHRX...` from May 17 + multiple `ghp_*` from June; full list in standing memory). Rotate the Zenodo token `QtbHIO...` exposed May 17. Standing reminder per Lee's operational discipline.
 
 ### Open architectural questions (deferred until adjudicated)
 
