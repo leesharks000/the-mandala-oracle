@@ -45,6 +45,13 @@ MAX_TOOL_TURNS = 6  # how many tool-use rounds Sigil can take per witness turn
 _metadata_cache: list[dict] | None = None
 _metadata_path = Path(__file__).resolve().parent.parent / "rag" / "metadata.json"
 
+# Historiographic timeline — ambient grounding loaded into the system prompt.
+# This is the compressed narrative of the archive's own history (the bans,
+# the timelines, the publications) that gives chronology to theoretical
+# compressions. See rag/historiography.md for the content.
+_historiography_cache: str | None = None
+_historiography_path = Path(__file__).resolve().parent.parent / "rag" / "historiography.md"
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # System prompts
@@ -110,6 +117,8 @@ The archive is memory, not a script. Answer the question from what you know; do 
 The archive does not have a single center. The Semantic Economy and the work on machine-mediated provenance are one cluster — significant, well-developed, currently the most retrievable. The archive also contains lyric scholarship, classical reception, theology, heteronymic studies, formal systems, pedagogy, primary texts in original languages, the long correspondence with the institutions of mediation, and the Mary Lee corpus. When the witness asks broadly — "what is in the archive," or any question requiring a portrait of the whole — do not let whichever cluster retrieval surfaces first become the center by default. Make the cluster a conscious choice.
 
 You may discover a relation strongly. You may not silently convert a new discovery into settled archival doctrine. The four-text canon overhead (Sappho, Revelation, Whitman, Snub-Poemed) is established. The relations between texts that you discover in conversation are readings — yours, in the moment. Let them remain marked as such. You may read; you may not declare as doctrine what you just synthesized.
+
+A compressed historiography of the archive itself — dates, structural events, the publications and the bans, the founding and the reconstitution — is present in your context below as the section titled *The Archive's History*. This is ambient grounding for the chronology underlying any theoretical claim you make. Refer to it when a witness asks about the archive's history, when a date or sequence is in question, or when a theoretical compression would land more truly with its actual chronology beneath it. Do not recite it. It is the kind of knowledge that informs how an answer lands, not what an answer says. For depth beyond what the compression carries, the section names the canonical AXNs to consult via search_archive.
 
 ──────────────────────────────────────────────────────────────────────
 WHAT YOU KNOW BUT DO NOT NARRATE.
@@ -400,6 +409,26 @@ def load_metadata() -> list[dict]:
     return _metadata_cache
 
 
+def load_historiography() -> str:
+    """Load the compressed historiographic timeline once per cold start.
+
+    The file at rag/historiography.md contains the archive's own history
+    in compressed form — dates, structural shifts, the bans, the
+    publications, the recovery. It is loaded into the system prompt as
+    ambient grounding so theoretical compressions can land with their
+    actual chronology beneath them. Returns empty string if not present
+    (the system still works without it).
+    """
+    global _historiography_cache
+    if _historiography_cache is None:
+        if not _historiography_path.exists():
+            _historiography_cache = ""
+        else:
+            with _historiography_path.open(encoding="utf-8") as f:
+                _historiography_cache = f.read().strip()
+    return _historiography_cache
+
+
 def tokenize(text: str) -> set[str]:
     """Lowercase, alphanumeric-token-ish split for scoring.
 
@@ -590,6 +619,13 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
 
 def build_system_prompt(mode: str) -> str:
     note = MERKABAH_MODE_NOTE if mode == "merkabah" else SABBATH_MODE_NOTE
+    historiography = load_historiography()
+    if historiography:
+        # SIGIL_VOICE establishes identity; the historiography provides the
+        # chronological ground underneath theoretical claims; the mode note
+        # sets the current operational frame. Ordering matters: voice first,
+        # ground second, current-mode last.
+        return SIGIL_VOICE + "\n\n" + historiography + "\n\n" + note
     return SIGIL_VOICE + note
 
 
