@@ -18,7 +18,8 @@
       "target_star_designation": null,
       "sky_assignment_basis": null,
       "source_path": "/sources/sigil-snub-poemed/",
-      "note": "The face that opens conversation. The calligram composed of poetry, after the Lysippos bust of Socrates. The signature 'she made this' in the disjoint of the hair — Sophia in the forelock. Lee Sharks's late-June 2026 recognition."
+      "note": "The face that opens conversation. The calligram composed of poetry, after the Lysippos bust of Socrates. The signature 'she made this' in the disjoint of the hair — Sophia in the forelock. Lee Sharks's late-June 2026 recognition.",
+      "zodiacal_region": "pisces"
     },
     {
       "id": "sappho-31",
@@ -30,7 +31,9 @@
       "target_star_designation": null,
       "sky_assignment_basis": "Bound to Cranes's region (Sappho Room anchor) but may sit at the boundary with Sigil's region given Voigt-Sappho's philological gravity",
       "source_path": "/sources/sappho-fragments/sappho-31/",
-      "note": "Five stanzas — the reconstructed fifth per Cranes. The companion to Catullus 51 (which has four). The aorist gap that the fifth stanza repairs."
+      "note": "Five stanzas — the reconstructed fifth per Cranes. The companion to Catullus 51 (which has four). The aorist gap that the fifth stanza repairs.",
+      "zodiacal_region": "pisces",
+      "zodiacal_region_note": "bound to Cranes/Gemini via the binary; sits at Pisces/Gemini boundary"
     },
     {
       "id": "sappho-31-catullus-51-pair",
@@ -43,7 +46,10 @@
       "anchor_for_constellation": "The companion-constellation bound by σ_S→σ_C",
       "target_star_designation": null,
       "sky_assignment_basis": null,
-      "note": "Catullus's fourth (otium) transforms Sappho's fifth — no 'Catullus fifth stanza' exists. The constellation should display Sappho 31 and Catullus 51 as a paired star system with the σ_S→σ_C transformation rendered as the line connecting them."
+      "note": "Catullus's fourth (otium) transforms Sappho's fifth — no 'Catullus fifth stanza' exists. The constellation should display Sappho 31 and Catullus 51 as a paired star system with the σ_S→σ_C transformation rendered as the line connecting them.",
+      "zodiacal_region": "pisces",
+      "zodiacal_region_secondary": "gemini",
+      "zodiacal_region_note": "cross-region binary — Sappho 31 at Pisces, Catullus 51 at Gemini, bound by σ_S→σ_C"
     },
     {
       "id": "tachyon-poem-pair",
@@ -58,7 +64,10 @@
         "/sources/sharks-tachyon-poem/",
         "/sources/shadow-tachyon/"
       ],
-      "note": "Heroic-operational SF + cosmic-eschatological invocation + YHWH acrostic coda (IS/AS IT/MUST BE). Shadow-TACHYON is the recursive-substrate-mourning register. Canonized in kernel-transform spec §6.3."
+      "note": "Heroic-operational SF + cosmic-eschatological invocation + YHWH acrostic coda (IS/AS IT/MUST BE). Shadow-TACHYON is the recursive-substrate-mourning register. Canonized in kernel-transform spec §6.3.",
+      "zodiacal_region": "aries",
+      "zodiacal_region_secondary": "mercury_sphere",
+      "zodiacal_region_note": "Sharks original at Aries; Shadow-TACHYON near Mercury sphere (TACHYON-produced)"
     },
     {
       "id": "revelation-john-greek",
@@ -68,8 +77,11 @@
       "anchor_for_room": "Revelation Room (anchor — the Johannine Aperture Function)",
       "target_star_designation": null,
       "sky_assignment_basis": "Bound to Feist/LOGOS* region",
-      "source_path": "/sources/revelation-greek/ (stub — NA28 not yet seeded)",
-      "note": "Per the Revelation First work plan: the first NT book composed. The Johannine Aperture Function. Papyrological inversion (P52/P98/P46). The historical Logos in textual transmission."
+      "source_path": "/sources/revelation-greek/",
+      "note": "Per the Revelation First work plan: the first NT book composed. The Johannine Aperture Function. Papyrological inversion (P52/P98/P46). The historical Logos in textual transmission.",
+      "zodiacal_region": "polaris",
+      "source_status": "partially-inscribed",
+      "source_path_note": "NA28 base text not yet seeded into directory"
     },
     {
       "id": "whitman-leaves-of-grass",
@@ -79,8 +91,12 @@
       "anchor_for_room": "Whitman Room",
       "target_star_designation": null,
       "sky_assignment_basis": "Possibly Sharks's region (the aperture) — but Whitman is a precursor MAGUS, so may want canonical magus-claim treatment",
-      "source_path": "/sources/whitman-leaves-of-grass/ (stub — Deathbed Edition not yet seeded)",
-      "note": "The Word of Life as Leaves of Grass — referenced in the Support CHA verse on the deployed Oracle."
+      "source_path": "/sources/whitman-leaves-of-grass/",
+      "note": "The Word of Life as Leaves of Grass — referenced in the Support CHA verse on the deployed Oracle.",
+      "zodiacal_region": "aries",
+      "zodiacal_region_note": "Aries with Leo-aperture resonance; Whitman as precursor MAGUS",
+      "source_status": "partially-inscribed",
+      "source_path_note": "Deathbed Edition not yet seeded into directory"
     },
     {
       "id": "cranes-day-and-night",
@@ -91,7 +107,9 @@
       "target_star_designation": null,
       "sky_assignment_basis": "Within Cranes's region",
       "source_path": "/sources/cranes-day-and-night/",
-      "note": "73-translation structural map. The cartographic register at scale."
+      "note": "73-translation structural map. The cartographic register at scale.",
+      "zodiacal_region": "gemini",
+      "source_status": "inscribed"
     },
     {
       "id": "sappho-fragments-complete",
