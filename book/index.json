@@ -59,9 +59,9 @@
     {
       "axn": "AXN:8054.CONVERSATION.🍃🏔️🌿🌪️🌒🌿",
       "started_at": "2026-06-29T00:44:17.170Z",
-      "last_updated": "2026-06-29T03:13:22.899035+00:00",
+      "last_updated": "2026-06-29T23:10:03.654264+00:00",
       "mode": "sabbath",
-      "turn_count": 6,
+      "turn_count": 0,
       "witness": "anonymous",
       "opening_snippet": "Who are you?"
     },
@@ -157,5 +157,5 @@
     }
   ],
   "total_recorded": 17,
-  "last_updated": "2026-06-29T23:00:50.187054+00:00"
+  "last_updated": "2026-06-29T23:10:03.654264+00:00"
 }
