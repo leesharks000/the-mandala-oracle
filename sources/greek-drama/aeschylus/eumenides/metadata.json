@@ -1,0 +1,18 @@
+{
+  "id": "aeschylus-eumenides",
+  "title": "Aeschylus — Eumenides",
+  "language": "grc-Grek",
+  "edition_reference": "Perseus Digital Library; CTS URN: urn:cts:greekLit:tlg0085.tlg007.perseus-grc2",
+  "license": "Public domain (Greek source); Perseus TEI CC-BY-SA-3.0",
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "files": {
+    "main": "main.txt",
+    "tei_xml": "aeschylus-eumenides-grc.tei.xml"
+  },
+  "canon_id": "aeschylus-eumenides",
+  "status": "staged"
+}

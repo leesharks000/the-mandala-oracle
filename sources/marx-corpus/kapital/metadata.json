@@ -1,0 +1,18 @@
+{
+  "id": "marx-kapital-band-1",
+  "title": "Karl Marx — Das Kapital, Band I: Der Produktionsprozess des Kapitals",
+  "language": "de",
+  "edition_reference": "archive.org item das-kapital-kritik-der-politischen-oekonomie (German original; OCR via DjVu extracted from /stream/ HTML wrapper)",
+  "license": "Public domain (Marx d.1883)",
+  "ocr_quality_note": "OCR text from DjVu — German text with some OCR artifacts (especially Cyrillic library-stamp OCR at front matter). Usable as starting source; cleaner MEGA² text would be preferred for full transformation work. Verify key passages before transformation.",
+  "main_apparatus": {
+    "apparatus_status": "ocr_artifacts",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "files": {
+    "main": "kapital-bd1-de-archiveorg-ocr.txt"
+  },
+  "canon_id": "marx-corpus",
+  "status": "staged_with_ocr_caveat"
+}

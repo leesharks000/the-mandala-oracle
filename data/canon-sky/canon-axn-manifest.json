@@ -1,7 +1,7 @@
 {
   "schema_version": "v0.1",
   "purpose": "Cross-reference manifest mapping canon-text ids to their alexanarch AXN deposits. Built 2026-06-28 by indexing 929-deposit registry against the 76 canon entries.",
-  "total_canon_entries": 95,
+  "total_canon_entries": 138,
   "matched_to_alexanarch": 37,
   "no_alexanarch_match_or_pd": 47,
   "mappings": {
@@ -79,5 +79,65 @@
     "pre-socratics (anaximander/anaxagoras/empedocles/democritus)": "External PD sources (DK fragments); declared, sources pending",
     "cicero-selected": "External PD source (OCT); declared, sources pending",
     "day-and-night greek melic cluster (anacreon/corinna/alcman/hipponax/simonides)": "External PD sources; Cranes translations in Day and Night are authoritative English (per Lee adjudication 2026-06-28)"
-  }
+  },
+  "last_updated": "2026-06-28 (Wave A+B sync with Standing Canon v0.2)",
+  "standing_canon_v02_alignment": {
+    "master_doc_axn": "AXN:02EB.EMPIRICAL.🗿👉☉⛵🕓🫵",
+    "master_doc_title": "The New Human Standing Canon v0.2",
+    "wave_a_inductions_added": [
+      "paul-klee",
+      "marx-corpus",
+      "hegel-corpus",
+      "leibniz-corpus",
+      "kierkegaard-corpus",
+      "philo-corpus",
+      "epicurus-letters-doctrines",
+      "ginsberg-fair-use",
+      "pkd-fair-use",
+      "deleuze-guattari",
+      "queneau-cent-mille-milliards",
+      "3i-atlas",
+      "rhys-owens",
+      "saphuel-attribution",
+      "frankfurt-school"
+    ],
+    "wave_b_manual_additions": [
+      "tao-te-ching",
+      "chinese-lyric-poets",
+      "catullus-carmina",
+      "plato-apology",
+      "plato-crito",
+      "plato-phaedo",
+      "plato-meno",
+      "plato-parmenides",
+      "jubilees",
+      "book-of-enoch",
+      "vedas-corpus",
+      "buddhist-core-texts",
+      "popol-vuh",
+      "aeschylus-oresteia",
+      "sophocles-antigone",
+      "sophocles-oedipus",
+      "euripides-bacchae",
+      "aristophanes-clouds",
+      "josephus",
+      "slavonic-josephus",
+      "gibran-prophet",
+      "nietzsche-zarathustra",
+      "mayakovsky",
+      "shklovsky-art-as-device",
+      "pushkin",
+      "apollinaire-calligrammes",
+      "hughes-early-pd",
+      "wcw-spring-and-all",
+      "world-from-drop-of-milk-PLACEHOLDER"
+    ],
+    "removed": [
+      "cicero-selected (per Lee adjudication 2026-06-28)"
+    ]
+  },
+  "lee_adjudications_pending": [
+    "world-from-drop-of-milk-PLACEHOLDER — which tradition? (Bambara Komo / Hindu Samudra Manthan / Norse Audhumla / Dogon / other)",
+    "23+ canon entries flagged as no_obvious_v7_room — need either post-v7 room creation or explicit no-room adjudication"
+  ]
 }

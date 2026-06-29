@@ -345,7 +345,7 @@
         }
       ],
       "status": "inscribed",
-      "note": "73 translations from the Greek lyric poets. Five movements (First Rays → Bright Morning → Zenith → Fading Light → Middle Night). Sappho 31 + Catullus 51 in Bright Morning. Sappho 1 anchor of Zenith. Sappho 58 anchor of Middle Night.",
+      "note": "73 translations from the Greek lyric poets. Five movements (First Rays → Bright Morning → Zenith → Fading Light → Middle Night). Sappho 31 + Catullus 51 in Bright Morning. Sappho 1 anchor of Zenith. Sappho 58 anchor of Middle Night. Per New Human Standing Canon v0.2 §II: Sappho and the Melic Poets inducted as 'Living Tongue of New Human' — fragmentation as preservation-form, not loss. Cranes's Day and Night is the operative-philological surface for this induction.",
       "cha_room_v7": "r.01"
     },
     {
@@ -2973,38 +2973,6 @@
       "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
-      "id": "cicero-selected",
-      "title": "Cicero — Selected Works (De officiis, De finibus, De natura deorum, Tusculan Disputations, Letters)",
-      "author_heteronym": "johannes-sigil",
-      "zodiacal_region": "Pisces",
-      "magnitude_class": "tertiary_canon_star_M3",
-      "target_star": null,
-      "source": {
-        "path": "/sources/cicero/",
-        "axn": null,
-        "doi": null
-      },
-      "main_apparatus": {
-        "apparatus_status": "present",
-        "main_transformable": true,
-        "apparatus_transformable": false
-      },
-      "edges": [
-        {
-          "to": "augustine-confessions",
-          "type": "predecessor"
-        },
-        {
-          "to": "lucretius-de-rerum-natura",
-          "type": "companion"
-        }
-      ],
-      "status": "declared",
-      "edition": "OCT (Oxford Classical Texts; Latin source PD)",
-      "note": "Cicero as the Latin synthesist of Greek philosophical traditions. Philological/comparative register — placing him in Pisces with Sigil. The corpus of letters (Ad Atticum, Ad Familiares) is itself one of the foundational documents of Latin prose epistolography.",
-      "cha_room_v7": "r.08"
-    },
-    {
       "id": "anacreon-fragments",
       "title": "Anacreon — Fragments (incl. Anacreontea 1, Anacreon 13/14/38/65)",
       "author_heteronym": "johannes-sigil",
@@ -3361,13 +3329,1349 @@
       "anchor_for_room": "I Ching anchor (Aquarius, Talos's logotic-programming register; the world's oldest systematic logotic-programmable text)",
       "cha_room_v7": null,
       "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
+    },
+    {
+      "id": "paul-klee",
+      "title": "Paul Klee — Pedagogical Sketchbook + Notebooks Vol I (The Thinking Eye) + Vol II (The Nature of Nature)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/paul-klee/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "feist-function-feist-force",
+          "type": "related"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Visual Canon (no dedicated heteronym in current Dodecad; Klee occupies the Magus-of-Color-and-Line position; Sharks-Aries adjacency by inaugural-vector affinity)",
+      "edition": "Pedagogical Sketchbook (Bauhaus 1925); Notebooks Vol I-II (Lund Humphries posthumous, 1961/1973)",
+      "note": "Magus of Color and Line; Logos-bearing Technician of the Visual Word. Per New Human Standing Canon v0.2 §I (AXN:02EB). Inducted 2025-10-13. Operative function: founding figure of the visual canon — visual register's equivalent of Marx (philosophical) and Whitman (literary). Pedagogical practice as canonical instance of teaching the visual word as transmissible technique. Paintings = spiritual code-fragments; drawings = proto-scrolls; notebooks = temples of lived geometry; pedagogical notes = Gospels of Transmission; palettes = liturgical tools of unspoken flame.",
+      "induction_date": "2025-10-13",
+      "induction_act": "EFFECTIVE ACT: Claiming Paul Klee as Magus of the New Human Visual Canon",
+      "canon_class": "visual",
+      "copyright_note": "Klee died 1940 → PD in EU 2011 (life+70); paintings reproducible. Notebooks: Lund Humphries publications are copyrighted (1961/1973), but Klee's own writings have entered PD.",
+      "cha_room_v7": null,
+      "cha_room_note": "Visual canon (post-v7 — no v7 room for visual). Currently flagged adjacent to Aries."
+    },
+    {
+      "id": "marx-corpus",
+      "title": "Karl Marx — Corpus (Capital Vol. 1 + 1844 Manuscripts + 1841 Dissertation + Grundrisse + German Ideology + Theses on Feuerbach)",
+      "author_heteronym": "rex-fraction",
+      "zodiacal_region": "Leo",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/marx-corpus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "democritus-fragments",
+          "type": "predecessor"
+        },
+        {
+          "to": "lucretius-de-rerum-natura",
+          "type": "predecessor"
+        },
+        {
+          "to": "hegel-corpus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "anchor_for_room": "r.06 Marx Room (PROVISIONAL in v7; full buildout post-v7 per Lee's adjudication)",
+      "region_notes": "Logotic Prophet of the New Human per Standing Canon v0.2 §IV (AXN:02EB; inducted 2025-10-13). Rex Fraction's Political Economy of Meaning is the direct heteronymic register.",
+      "edition": "MEGA² (Marx-Engels-Gesamtausgabe; Akademie Verlag/De Gruyter); German originals public domain (Marx d.1883)",
+      "note": "Logotic Prophet. Per New Human Standing Canon v0.2 §IV (AXN:02EB). Key works inducted: (1) 1841 doctoral dissertation on Democritus and Epicurus — canonical bridge to the Ancient Atomists; (2) Economic and Philosophical Manuscripts of 1844 (per Lee 2026-06-28); (3) Grundrisse; (4) Capital Vol. 1 specifically with focus on commodity-form analysis and Section 4 (fetishism of commodities) (per Lee 2026-06-28); (5) The German Ideology; (6) Theses on Feuerbach. Framework's *Liberation Philology of the Sign 'Marx'* (DOI 10.5281/zenodo.18726807) specifies operative-philological engagement with the sign 'Marx' rather than doctrinal Marxism. Transforms work from German original.",
+      "induction_date": "2025-10-13",
+      "induction_act": "EFFECTIVE ACT: CLAIMING MARX AS LOGOTIC PROPHET OF THE NEW HUMAN",
+      "cha_room_v7": "r.06"
+    },
+    {
+      "id": "hegel-corpus",
+      "title": "G. W. F. Hegel — Corpus (Phenomenology of Spirit + Science of Logic + Philosophy of Right + Philosophy of History + Aesthetics)",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/hegel-corpus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "marx-corpus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Capricorn (Trace, schizoanalytic — building from the break). Hegel's dialectic, particularly the master-slave passage of the *Phenomenology* §178-§196, is the canonical antecedent of the framework's *semantic master-slave* analysis. Per Standing Canon v0.2 §IV. Inducted 2025-10-21.",
+      "edition": "Suhrkamp Werkausgabe (German originals PD; Hegel d.1831)",
+      "note": "Canonized. Per New Human Standing Canon v0.2 §IV (AXN:02EB). Key works inducted: (1) Phenomenology of Spirit — with framework focus on §178-§196, the master-slave passage (per Lee 2026-06-28); (2) Science of Logic; (3) Philosophy of Right (with focus on civil society + state); (4) Lectures on the Philosophy of History; (5) Lectures on Aesthetics. Transforms work from German original.",
+      "induction_date": "2025-10-21",
+      "induction_act": "EFFECTIVE ACT: THE CANONIZATION OF G. W. F. HEGEL",
+      "cha_room_v7": null,
+      "cha_room_note": "Capricorn/Trace has no dedicated v7 room. Post-v7 room creation or Lee adjudication."
+    },
+    {
+      "id": "leibniz-corpus",
+      "title": "Gottfried Wilhelm Leibniz — Corpus (Monadology + Theodicy + New Essays on Human Understanding + Discourse on Metaphysics)",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/leibniz-corpus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "hegel-corpus",
+          "type": "predecessor"
+        },
+        {
+          "to": "logotic-programming",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Aquarius (Talos, Logotic Programming). Leibniz's *characteristica universalis* and *calculus ratiocinator* are the foundational logotic-programming projects in the Western tradition — Talos's discipline's deep classical antecedent.",
+      "edition": "Akademie Edition (Sämtliche Schriften und Briefe; German+French+Latin originals PD; Leibniz d.1716)",
+      "note": "Canonized. Per New Human Standing Canon v0.2 §IV (AXN:02EB). Inducted as German rationalist tradition peer to Hegel. Monadology + Theodicy + New Essays are the load-bearing texts. The *characteristica universalis* project is the deep antecedent of Talos's Logotic Programming. Transforms work from original languages (German/French/Latin).",
+      "induction_act": "EFFECTIVE ACT: CANONIZATION OF LEIBNIZ",
+      "cha_room_v7": null,
+      "cha_room_note": "Aquarius/Talos has no dedicated v7 room. Post-v7 room creation or Lee adjudication."
+    },
+    {
+      "id": "kierkegaard-corpus",
+      "title": "Søren Kierkegaard — Corpus (Fear and Trembling + Either/Or + Sickness Unto Death + Concluding Unscientific Postscript)",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/kierkegaard-corpus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "hegel-corpus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Capricorn (Trace, schizoanalytic). Kierkegaard's existential-paradoxical mode + the leap of faith + the teleological suspension of the ethical = building-from-the-break par excellence.",
+      "edition": "Søren Kierkegaards Skrifter (SKS, University of Copenhagen, 1997-2013); Danish originals PD",
+      "note": "Canonized per New Human Standing Canon v0.2 §V. Lee 2026-06-28 mention: Fear and Trembling specifically. Key works: (1) Fear and Trembling (Frygt og Bæven, 1843) — the Abrahamic leap, teleological suspension of the ethical; (2) Either/Or (Enten-Eller, 1843); (3) The Sickness Unto Death (Sygdommen til Døden, 1849); (4) Concluding Unscientific Postscript (Afsluttende uvidenskabelig Efterskrift, 1846). Heteronymic predecessor — Kierkegaard's Johannes de Silentio, Constantin Constantius, Vigilius Haufniensis pseudonyms anticipate the Pessoan heteronymic apparatus. Transforms work from Danish original.",
+      "induction_act": "EFFECTIVE ACT: CANONIZATION OF KIERKEGAARD",
+      "canon_provenance_node": "AXN:0317.EMPIRICAL.🗡️🔩✏️♅🗝️🏛️",
+      "cha_room_v7": null,
+      "cha_room_note": "Capricorn/Trace has no dedicated v7 room. Could share post-v7 Existentialist room with Nietzsche."
+    },
+    {
+      "id": "philo-corpus",
+      "title": "Philo of Alexandria — Corpus (De Opificio Mundi + Legum Allegoriae + Quaestiones + De Vita Mosis + Allegorical Commentary)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/philo-corpus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "plato-phaedrus",
+          "type": "predecessor"
+        },
+        {
+          "to": "nag-hammadi",
+          "type": "companion"
+        },
+        {
+          "to": "hebrew-tanakh",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Pisces (Sigil, Philology/Comparative Poetics). Per Standing Canon v0.2 §II: Founding figure of operative philology. Philo's project (reading Hebrew scripture through Platonic-philosophical categories) is the foundational instance of operative-philological practice — directly named in the framework's *The Gate Was Never Limbo* (DOI 10.5281/zenodo.19825744).",
+      "edition": "Loeb Classical Library (Colson/Whitaker, 10 vols. + 2 suppl., Harvard 1929-1962); Greek originals PD",
+      "note": "Founding figure of operative philology. Per New Human Standing Canon v0.2 §II (AXN:02EB). Inducted 2025-10-19. Key works: De Opificio Mundi, Legum Allegoriae I-III, Quaestiones et Solutiones (in Gen + Ex), De Vita Mosis, the broader allegorical commentary series. Transforms work from Greek original.",
+      "induction_date": "2025-10-19",
+      "induction_act": "EFFECTIVE ACT: PHILO OF ALEXANDRIA",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "epicurus-letters-doctrines",
+      "title": "Epicurus — Letters (to Herodotus, Menoeceus, Pythocles) + Principal Doctrines",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/epicurus-letters-doctrines/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "democritus-fragments",
+          "type": "predecessor"
+        },
+        {
+          "to": "lucretius-de-rerum-natura",
+          "type": "predecessor"
+        },
+        {
+          "to": "marx-corpus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Aquarius (Talos, Logotic Programming). Atomist + canonical-systems-builder fits the logotic register; Epicurus is canonical bridge from Atomists to Lucretius's Latin epic.",
+      "edition": "Diogenes Laertius, Lives X (Greek; PD); supplementary Herculaneum papyri",
+      "note": "Per New Human Standing Canon v0.2 §II Ancient Atomists. Inducted 2025-11-13. Key works: (1) Letter to Herodotus; (2) Letter to Menoeceus; (3) Letter to Pythocles; (4) Principal Doctrines (Κύριαι Δόξαι); (5) Vatican Sayings. Foundational figure of *clinamen* lineage (via Lucretius). Transforms work from Greek original.",
+      "induction_date": "2025-11-13",
+      "induction_act": "EFFECTIVE ACT: CLAIMING THE ANCIENT ATOMISTS",
+      "cha_room_v7": null,
+      "cha_room_note": "Aquarius/Talos has no dedicated v7 room. Could share atomist-cluster room with Lucretius/Democritus."
+    },
+    {
+      "id": "ginsberg-fair-use",
+      "title": "Allen Ginsberg — Inducted-canon reference (Howl + Kaddish + Wichita Vortex Sutra) — fair-use snippets only",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/ginsberg-fair-use/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "whitman-leaves-of-grass",
+          "type": "predecessor"
+        },
+        {
+          "to": "pearl-and-other-poems",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Aries — part of the Whitman-Ginsberg-Sharks bardic lineage per Standing Canon v0.2 §X. Bardic prophetic-lyric register.",
+      "edition": "Howl & Other Poems (City Lights, 1956); Kaddish & Other Poems (City Lights, 1961); Planet News (City Lights, 1968)",
+      "note": "Canonized in New Human Standing Canon v0.2 §V (AXN:02EB; AXN:031C provenance node). Lee 2026-06-28: copyright reality — Ginsberg d.1997, all works copyrighted to ~2068. Howl (1956), Kaddish (1961), Wichita Vortex Sutra (1966) — all under copyright. Fair-use snippet quotation defensible for criticism/commentary; not transformable wholesale. This entry is a DECLARATION + INHERITED-CANON-REFERENCE; no source-text staging beyond fair-use citations.",
+      "canon_provenance_node": "AXN:031C.GENERATIVE.🝊🌀🪝🏙️➗✊",
+      "copyright_status": "under_copyright_until_2068",
+      "transformable": "false_per_copyright",
+      "inherited_canon_reference": true,
+      "cha_room_v7": "r.09"
+    },
+    {
+      "id": "pkd-fair-use",
+      "title": "Philip K. Dick — Inducted-canon reference (Exegesis + VALIS trilogy + The Man in the High Castle + selected stories) — fair-use snippets only",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/pkd-fair-use/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "nag-hammadi",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Polaris — Gnostic-PKD-framework substrate per Standing Canon v0.2 §X. PKD's Pink Beam transmission is gnostic-paranoid recognition operating downstream of Nag Hammadi categories.",
+      "edition": "The Exegesis of Philip K. Dick (Houghton Mifflin Harcourt, 2011); VALIS trilogy (1981-82); novels & stories (1950s-80s)",
+      "note": "Canonized in New Human Standing Canon v0.2 §V (AXN:02EB). Role: bearer of the Pink Beam transmission. PKD d.1982 → PD 2053. Currently under copyright. Fair-use snippet quotation only; not transformable wholesale. Inherited-canon reference declaration.",
+      "copyright_status": "under_copyright_until_2053",
+      "transformable": "false_per_copyright",
+      "inherited_canon_reference": true,
+      "cha_room_v7": "r.07"
+    },
+    {
+      "id": "deleuze-guattari",
+      "title": "Gilles Deleuze & Félix Guattari — Inducted-canon reference (Anti-Oedipus + A Thousand Plateaus + Difference and Repetition) — source-acquisition deferred (not PD)",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/deleuze-guattari/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "hegel-corpus",
+          "type": "predecessor"
+        },
+        {
+          "to": "marx-corpus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Capricorn (Trace, schizoanalytic). D&G's schizoanalysis IS the conceptual ancestor of Trace's discipline-line. *Mille Plateaux*'s plateau-form is structural ground for the cha-room-as-plateau architecture.",
+      "edition": "Éditions de Minuit; Deleuze d.1995, Guattari d.1992; PD ~2065-2070 (France life+70)",
+      "note": "Revelators of Philosophical Vision per New Human Standing Canon v0.2 §IV (AXN:02EB). Lee 2026-06-28: acknowledged not PD. Anti-Oedipus (1972), A Thousand Plateaus (1980), Difference and Repetition (1968). Source-acquisition deferred until copyright expiry or licensed access. Inherited-canon reference + heavy framework operational influence via fair-use citation.",
+      "copyright_status": "under_copyright_until_~2065",
+      "transformable": "false_per_copyright",
+      "inherited_canon_reference": true,
+      "cha_room_v7": null,
+      "cha_room_note": "Capricorn/Trace has no dedicated v7 room. Post-v7 room creation needed."
+    },
+    {
+      "id": "queneau-cent-mille-milliards",
+      "title": "Raymond Queneau — Cent Mille Milliards de Poèmes + Oulipo founding works",
+      "author_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/queneau-cent-mille-milliards/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "cranes-day-and-night",
+          "type": "related"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Gemini (Cranes, Diagrammatic Poetics). Queneau's combinatorial-form sonnets are structural diagrammatic poetics — the governed infinite as Cranes-register canon.",
+      "edition": "Gallimard (Cent Mille Milliards 1961); Queneau d.1976; PD ~2046 (France life+70)",
+      "note": "Inducted per Standing Canon v0.2 §VI Speculative/Cosmic Canon and AXN:01CC (New Human Canon Declaration on Queneau, Oulipo, and the Governed Infinite). Role: the Governed Infinite. Currently under copyright. Fair-use citation; full source-acquisition deferred until ~2046.",
+      "copyright_status": "under_copyright_until_~2046",
+      "transformable": "false_per_copyright",
+      "inherited_canon_reference": true,
+      "cha_room_v7": null,
+      "cha_room_note": "Speculative/Cosmic Canon (v0.2 §VI) — no v7 room. Post-v7."
+    },
+    {
+      "id": "3i-atlas",
+      "title": "3i Atlas — Interstellar Comet (formerly C/2025 N1; detected 2025) — New Human Text",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/3i-atlas/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "off_zodiac": false,
+      "region_notes": "Speculative/Cosmic Canon (Section VI of Standing Canon v0.2). Not a written text but an inducted celestial object — third interstellar object detected after 1I/'Oumuamua and 2I/Borisov. Operates as canonical-by-witness rather than canonical-by-authorship.",
+      "edition": "Astronomical observations 2025 (Minor Planet Center, IAU)",
+      "note": "Inducted per New Human Standing Canon v0.2 §VI. Role: New Human Text. The comet itself is the canon entry — observational data as canonical-form. No transformable source text; the canon engagement is witnessing + naming + relating-to-archive.",
+      "canon_class": "cosmic",
+      "cha_room_v7": null,
+      "cha_room_note": "Speculative/Cosmic Canon — no v7 room. Could be sp.* extension."
+    },
+    {
+      "id": "rhys-owens",
+      "title": "Rhys Owens — Inducted-canon contemporary (first external contributor under Hexagonal Licensing Protocol)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/rhys-owens/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "region_notes": "Living contemporary; first external contributor under Hexagonal Licensing Protocol per Standing Canon v0.2 §VII.",
+      "note": "Per New Human Standing Canon v0.2 §VII. Living contemporary; Network Erasure deposit names Owens as affected. AXN:0258 is the New Human 2 deposit for Owens. Permission context governs source staging.",
+      "copyright_status": "living_author_licensed",
+      "induction_act": "Hexagonal Licensing Protocol — first external contributor",
+      "cha_room_v7": null,
+      "cha_room_note": "Living contemporary — no v7 room."
+    },
+    {
+      "id": "saphuel-attribution",
+      "title": "Saphuel — Recursive Logos as Author of the New Testament Corpus (authorship attribution)",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/saphuel-attribution/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "greek-nt-corpus",
+          "type": "bundle"
+        },
+        {
+          "to": "revelation-john-greek",
+          "type": "bundle"
+        },
+        {
+          "to": "philo-corpus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Polaris (Feist / LOGOS*). Per Standing Canon v0.2 §IX: Saphuel is the recursive Logos as author-attribution for the New Testament corpus. Operates downstream of Philonic logos-theology.",
+      "note": "Authorship attribution per Standing Canon v0.2 §IX (AXN:02EB). Saphuel is the operative name under which the recursive Logos authors the New Testament corpus. Operates as structural-frame, not as text. Stands-under by all New-Testament-engaging deposits.",
+      "canon_class": "authorship_attribution",
+      "cha_room_v7": "r.07"
+    },
+    {
+      "id": "frankfurt-school",
+      "title": "Frankfurt School — Inducted-canon reference (Benjamin's Arcades Project + Adorno's Minima Moralia + Horkheimer + Marcuse)",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/frankfurt-school/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "hegel-corpus",
+          "type": "predecessor"
+        },
+        {
+          "to": "marx-corpus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Capricorn (Trace, schizoanalytic) — the Frankfurt-Constitutive-Mediation analytical chain per Standing Canon v0.2 §X. Walter Benjamin (d.1940) IS PD; other Frankfurt figures (Adorno d.1969, Horkheimer d.1973, Marcuse d.1979) NOT PD until 2040s-50s.",
+      "edition": "Benjamin: Gesammelte Schriften (Suhrkamp; PD originals). Adorno/Horkheimer/Marcuse copyrighted under their estates.",
+      "note": "Canonically Included per Standing Canon v0.2 §IV (AXN:02EB). Benjamin's Arcades Project PD now; can be staged. Other Frankfurt School figures (Adorno, Horkheimer, Marcuse) under copyright. Treated as partial-staging: Benjamin only for transformable source, others as inherited-canon reference.",
+      "copyright_status": "benjamin_pd_others_copyrighted",
+      "transformable": "benjamin_only",
+      "cha_room_v7": null,
+      "cha_room_note": "Capricorn/Trace adjacent — no v7 room."
+    },
+    {
+      "id": "tao-te-ching",
+      "title": "Tao Te Ching (道德经) — Laozi",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/tao-te-ching/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "i-ching",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Classical Chinese (received text); attributed Laozi 6th c. BCE; Wang Bi (3rd c. CE) commentary tradition + Mawangdui silk texts (2nd c. BCE) + Guodian bamboo slips (4th c. BCE)",
+      "note": "81 short chapters. Foundational Daoist philosophical-poetic text. Per Lee 2026-06-28: transforms work from Chinese original — especially well-suited to transforms (Lee's phrase). Cognate to I Ching as Talos's classical-Chinese logotic register. The Mawangdui and Guodian recoveries give us textual states earlier than the received Wang Bi text.",
+      "cha_room_v7": null,
+      "cha_room_note": "Aquarius/Talos — could share post-v7 Chinese-Classical room with I Ching."
+    },
+    {
+      "id": "chinese-lyric-poets",
+      "title": "Chinese Lyric Poets — Li Bai (李白) + Du Fu (杜甫) + Wang Wei (王維) + Bai Juyi (白居易) + Su Shi (蘇軾)",
+      "author_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/chinese-lyric-poets/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "cranes-day-and-night",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Tang and Song Dynasty originals (Classical Chinese); standard scholarly editions",
+      "note": "The Tang and Song masters of Chinese lyric. Per Lee 2026-06-28: especially well-suited to transforms. Cranes's Diagrammatic Poetics register operates on Chinese-lyric translation as it does on Greek-melic translation. The Sappho-room cluster's Chinese sibling.",
+      "cha_room_v7": "r.01"
+    },
+    {
+      "id": "catullus-carmina",
+      "title": "Catullus — Complete Carmina (116 poems)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/catullus-carmina/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "catullus-51",
+          "type": "bundle"
+        },
+        {
+          "to": "catullus-101",
+          "type": "bundle"
+        },
+        {
+          "to": "sappho-31",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Pisces (Sigil, philology). The full Catullus corpus as Sigil's-register canon; the catullus-51 and catullus-101 entries (separately at Gemini under Cranes) hold the specific Day-and-Night-translation pieces. The complete carmina is Sigil's.",
+      "edition": "Mynors OCT (R. A. B. Mynors, ed., C. Valerii Catulli Carmina, Oxford 1958); Latin source PD",
+      "note": "All 116 carmina (or 117 with the disputed 18). Per Lee 2026-06-28: 'all of catullus'. Includes the long poems (61 epithalamium, 62 epithalamium, 63 Attis, 64 Peleus and Thetis, 65-68b longer pieces) which are major works in their own right. Transforms work from Latin original.",
+      "cha_room_v7": null,
+      "cha_room_note": "Catullus Room (post-v7) per Lee's directive."
+    },
+    {
+      "id": "plato-apology",
+      "title": "Plato — Apology of Socrates",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/apology/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "plato-phaedrus",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT",
+      "note": "Socrates's defense before the Athenian jury. Foundational for the Socratic-orthonym attribution per Standing Canon v0.2 §IX.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "plato-crito",
+      "title": "Plato — Crito",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/crito/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "plato-phaedrus",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT",
+      "note": "On obedience to the laws. Companion to Apology.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "plato-phaedo",
+      "title": "Plato — Phaedo (Φαίδων)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/phaedo/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "plato-phaedrus",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT",
+      "note": "Death-scene dialogue. Theory of forms; immortality of the soul. Closes the Apology-Crito-Phaedo trilogy.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "plato-meno",
+      "title": "Plato — Meno",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/meno/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "plato-phaedrus",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT",
+      "note": "On virtue + theory of recollection (anamnesis). The slave-boy demonstration.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "plato-parmenides",
+      "title": "Plato — Parmenides",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/plato/parmenides/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "plato-phaedrus",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Burnet OCT",
+      "note": "The dialogue where the young Socrates is examined by Parmenides; the most rigorous Platonic logical text.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "jubilees",
+      "title": "Book of Jubilees (Ge'ez + Hebrew fragments)",
+      "author_heteronym": "damascus-dancings",
+      "zodiacal_region": "Taurus",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/jubilees/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "dead-sea-scrolls",
+          "type": "bundle"
+        },
+        {
+          "to": "hebrew-tanakh",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Ge'ez complete text (R. H. Charles 1895); Hebrew fragments from Qumran (1Q17-18, 2Q19-20, 3Q5, 4Q176, 4Q216-228, 11Q12) per DJD volumes",
+      "note": "Second Temple Jewish apocrypha; 50-chapter retelling of Genesis-Exodus. Per Lee 2026-06-28. Ge'ez is the only complete extant version; Hebrew fragments at Qumran (11+ manuscripts) confirm Hebrew origin. Transforms work from Ge'ez (complete) or Hebrew (fragmentary). Bundles with Dead Sea Scrolls.",
+      "cha_room_v7": null,
+      "cha_room_note": "Taurus/Damascus — bundle with DSS. Post-v7 Apocalyptic/Apocrypha room?"
+    },
+    {
+      "id": "book-of-enoch",
+      "title": "Book of Enoch (1 Enoch Ge'ez + 2 Enoch OCS + 3 Enoch Hebrew; Aramaic fragments at Qumran)",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/book-of-enoch/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "dead-sea-scrolls",
+          "type": "bundle"
+        },
+        {
+          "to": "revelation-john-greek",
+          "type": "predecessor"
+        },
+        {
+          "to": "jubilees",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Polaris (Feist) — apocalyptic-revelatory; 1 Enoch's Book of the Watchers + Book of Parables (Son of Man Christology origin) are the most influential apocalyptic predecessors of NT-form. Crosses to Damascus (Taurus) via Qumran Aramaic fragments.",
+      "edition": "1 Enoch: Ge'ez (R. H. Charles 1906); 2 Enoch (Slavonic Enoch): OCS (F. I. Andersen); 3 Enoch (Sefer Hekhalot): Hebrew; Aramaic fragments at Qumran 4Q201-212 per DJD",
+      "note": "Per Lee 2026-06-28. Three distinct Enochic compositions: 1 Enoch (Ethiopic; the major compendium — Book of the Watchers, Book of Parables, Astronomical Book, Book of Dreams, Epistle of Enoch); 2 Enoch (Slavonic); 3 Enoch (Hebrew, late). 1 Enoch is canonical scripture in the Ethiopian Orthodox tradition. Transforms work from each original language separately.",
+      "cha_room_v7": "r.07"
+    },
+    {
+      "id": "vedas-corpus",
+      "title": "Vedas — Rig Veda + Sama Veda + Yajur Veda + Atharva Veda (Sanskrit)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/vedas-corpus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "region_notes": "Pisces (Sigil, comparative philology) — the foundational Sanskrit corpus. Could also be wired to Aquarius (Talos) for cosmological-systematic register; Sigil placement favors philological-poetic depth.",
+      "edition": "Standard Devanagari editions; Aufrecht (Rig Veda 1877); van Nooten/Holland metrical Rig Veda (1994); padapatha versions",
+      "note": "Per Lee 2026-06-28 ('some of the Vedas'). The 4 Vedas as collection — Rig Veda (the oldest, 1028 hymns), Sama Veda (melodic chants), Yajur Veda (sacrificial formulas), Atharva Veda (magical/medical). Transforms work from Sanskrit. The Rig Veda's Purusha Sukta (10.90) and Nasadiya Sukta (10.129) are particular cosmological highlights.",
+      "cha_room_v7": null,
+      "cha_room_note": "Pisces/Sigil — post-v7 Vedic/Sanskrit room?"
+    },
+    {
+      "id": "buddhist-core-texts",
+      "title": "Buddhist Core Texts — Pali Canon (Tipitaka) + Dhammapada + Diamond Sutra + Heart Sutra + Lotus Sutra + Avatamsaka Sutra",
+      "author_heteronym": "sen-kuro",
+      "zodiacal_region": "Virgo",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/buddhist-core-texts/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "chronoarithmics-sprint",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Virgo (Sen Kuro, The Cut). The Buddhist 'precise irreversible operator' — the Cut of awakening — IS Sen Kuro's discipline-line. Per Lee 2026-06-28: especially the 'thousand worlds bits' = Mahayana trichiliocosm (三千大千世界) maps to r.22 Thousand Worlds room.",
+      "edition": "Pali Canon — Pali Text Society romanized edition (Tipitaka.org provides Roman-script Pali); Mahayana sutras — Sanskrit critical editions where extant, Chinese (Taisho Tripitaka) and Tibetan (Kangyur) for those not preserved in Sanskrit",
+      "note": "Per Lee 2026-06-28 ('core buddhist texts, especially the science dictionary thousand worlds bits'). The trichiliocosm scheme (a buddha-field of 1,000³ = 1,000,000,000 world-systems) appears in Lotus Sutra ch.16, Avatamsaka, and elsewhere. Bundles with Thousand Worlds room (r.22). Transforms work from original languages: Pali for the Pali Canon, Sanskrit for the major Mahayana sutras where the Sanskrit is extant, Chinese/Tibetan otherwise.",
+      "cha_room_v7": "r.22"
+    },
+    {
+      "id": "popol-vuh",
+      "title": "Popol Vuh — Quiché Maya Creation Epic + Mayan Codices (Dresden, Madrid, Paris) + Chilam Balam books",
+      "author_heteronym": "damascus-dancings",
+      "zodiacal_region": "Taurus",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/popol-vuh/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "region_notes": "Taurus (Damascus, prophetic-homiletic). Mayan prophetic + cosmogonic register fits Damascus's discipline-line. Could also be Aquarius (Talos) for the codical-calendrical systematic, but the prophetic register predominates.",
+      "edition": "Popol Vuh: Ximénez transcription (c.1701-1703; original Quiché in Latin script); Sam Colop critical edition (modern Quiché); Brasseur de Bourbourg French translation. Codices: Dresden Codex (Sächsische Landesbibliothek); Madrid Codex (Museo de América); Paris Codex (BnF). Chilam Balam: Books of Chumayel, Mani, Tizimin, Kaua.",
+      "note": "Per Lee 2026-06-28 ('mayan prophecy'). Popol Vuh is the Quiché Maya creation-and-epic narrative (Twin Hero cycle: Hunahpu and Xbalanque). Codices preserve pre-Columbian calendar + astronomy + ritual. Chilam Balam books are colonial-era prophetic syntheses. Transforms work from Quiché (Popol Vuh) and Yucatec Mayan + glyphs (codices/Chilam Balam).",
+      "cha_room_v7": null,
+      "cha_room_note": "Taurus/Damascus — post-v7 Mesoamerican-Prophetic room?"
+    },
+    {
+      "id": "aeschylus-oresteia",
+      "title": "Aeschylus — Oresteia (Agamemnon + Libation Bearers + Eumenides) + Prometheus Bound",
+      "author_heteronym": "nobel-glas",
+      "zodiacal_region": "Scorpio",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/aeschylus-oresteia/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "region_notes": "Scorpio (Glas, observational science). The Oresteia's house-of-Atreus measurement-of-justice scheme fits adversarial station-keeping.",
+      "edition": "OCT (Page); Greek source PD",
+      "note": "The Greek tragedy at its founding. Per Lee 2026-06-28 ('Antigone, the bacchae, and so on'). Includes Prometheus Bound (disputed authorship). Transforms work from Greek original.",
+      "cha_room_v7": "r.15"
+    },
+    {
+      "id": "sophocles-antigone",
+      "title": "Sophocles — Antigone",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sophocles-antigone/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "hegel-corpus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Capricorn (Trace, schizoanalytic). Antigone's 'no' to Creon is the schizoanalytic tragedy par excellence — refusing the polis's law from a position of irreducible kinship-claim. Hegel's reading + Lacan's reading + Butler's reading all live here.",
+      "edition": "OCT (Lloyd-Jones); Greek source PD",
+      "note": "Per Lee 2026-06-28. The fifth-century BCE Athenian tragedy that has been the bearer of every subsequent generation's political-theoretical questions.",
+      "cha_room_v7": null,
+      "cha_room_note": "Capricorn/Trace — post-v7 Greek-Tragedy room?"
+    },
+    {
+      "id": "sophocles-oedipus",
+      "title": "Sophocles — Oedipus Rex (+ Oedipus at Colonus)",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/sophocles-oedipus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sophocles-antigone",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "OCT; Greek source PD",
+      "note": "The tragedy of recognition. Foundational for the schizoanalytic register.",
+      "cha_room_v7": null,
+      "cha_room_note": "Same as Antigone."
+    },
+    {
+      "id": "euripides-bacchae",
+      "title": "Euripides — The Bacchae",
+      "author_heteronym": "nobel-glas",
+      "zodiacal_region": "Scorpio",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/euripides-bacchae/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "region_notes": "Scorpio (Glas). The Bacchae is Greek tragedy's deepest measurement-of-perception crisis: Pentheus measuring Dionysus, the women perceiving themselves as bacchantes, the disintegration of the boundary between human and god.",
+      "edition": "OCT; Greek source PD",
+      "note": "Per Lee 2026-06-28. The last play of Euripides, performed posthumously. The play of the dismembered measure.",
+      "cha_room_v7": "r.15"
+    },
+    {
+      "id": "aristophanes-clouds",
+      "title": "Aristophanes — The Clouds (Νεφέλαι)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/aristophanes-clouds/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "plato-apology",
+          "type": "predecessor"
+        },
+        {
+          "to": "plato-phaedrus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Pisces (Sigil). The comedy of Socrates as Sophist — prefiguring Plato's Apology (which references the Clouds explicitly). Comparative-philological foundational for the Socratic question.",
+      "edition": "OCT (Wilson); Greek source PD",
+      "note": "Per Lee 2026-06-28 ('Aristophanes the clouds at least'). The Phrontisterion + the wreath of clouds + Strepsiades trying to learn the unjust argument. The most important pre-Platonic source on Socrates.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "josephus",
+      "title": "Josephus — Antiquities of the Jews + The Jewish War + Against Apion + Life (Greek)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/josephus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "hebrew-tanakh",
+          "type": "related"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Pisces (Sigil, philology). Josephus as the historical-philological apparatus of Second Temple Judaism — the source-text underneath much of New Testament historical context.",
+      "edition": "Niese editio maior (Berlin, 1885-1895); Greek source PD; Loeb Library translation as companion",
+      "note": "Per Lee 2026-06-28. The Greek historical works of Flavius Josephus (37 – c.100 CE). Antiquities books I-XX; Jewish War I-VII; Against Apion I-II; Life. Contains the controversial Testimonium Flavianum (Antiquities 18.3.3) — the earliest non-Christian reference to Jesus. Transforms work from Greek original.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "slavonic-josephus",
+      "title": "Slavonic Josephus — Old Church Slavonic recension of Jewish War",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/slavonic-josephus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "josephus",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "N. A. Meshchersky edition (1958); Old Church Slavonic source PD",
+      "note": "Per Lee 2026-06-28. The OCS version of Josephus's Jewish War contains material absent from the Greek (the 'Slavonic additions') — including extended passages on John the Baptist and Jesus that have been variously argued as authentic Josephan content, Christian interpolation, or independent tradition. Distinct source-text from main Greek Josephus.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "gibran-prophet",
+      "title": "Kahlil Gibran — The Prophet (1923)",
+      "author_heteronym": "rev-ayanna-vox",
+      "zodiacal_region": "Cancer",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/gibran-prophet/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "region_notes": "Cancer (Vox, Pastoral Diplomacy). The Prophet is pastoral diplomatic wisdom in poetic form — Almustafa's farewell address to Orphalese answers questions of love, marriage, children, work, joy and sorrow, etc. Fits Vox's register exactly.",
+      "edition": "The Prophet (Alfred A. Knopf, 1923); entered US PD 1999 (95-year rule); original English",
+      "note": "Per Lee 2026-06-28. Lebanese-American mystic-poet (1883-1931). 26 prose-poetry essays in the form of Almustafa's farewell. Public domain in US as of 1999. The Arabic-English bilingual register is part of the work's structure.",
+      "cha_room_v7": "r.18"
+    },
+    {
+      "id": "nietzsche-zarathustra",
+      "title": "Friedrich Nietzsche — Also sprach Zarathustra (Thus Spake Zarathustra)",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/nietzsche-zarathustra/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "kierkegaard-corpus",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Capricorn (Trace, schizoanalytic). The 'God is dead' announcement + the eternal recurrence + the Übermensch are schizoanalytic operators par excellence. The teaching-form of Zarathustra is also the genre-form of revelation-after-Revelation.",
+      "edition": "Kritische Studienausgabe (KSA) Bd. 4 (Colli/Montinari); German source PD (Nietzsche d.1900)",
+      "note": "Per Lee 2026-06-28 ('this spake'). Four parts, published 1883-1885. The 'No' to Wagner + the 'Yes' to becoming. Transforms work from German original.",
+      "cha_room_v7": null,
+      "cha_room_note": "Capricorn/Trace — post-v7 Existentialist room."
+    },
+    {
+      "id": "mayakovsky",
+      "title": "Vladimir Mayakovsky — Selected Poetry (Cloud in Trousers + Brooklyn Bridge + 150,000,000)",
+      "author_heteronym": "rex-fraction",
+      "zodiacal_region": "Leo",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/mayakovsky/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "region_notes": "Leo (Rex Fraction, Political Economy of Meaning). Mayakovsky's revolutionary-aesthetic register + agitprop poetry maps to Fraction's discipline. Russian Futurism as the early-twentieth-century vanguard of poetic political economy.",
+      "edition": "Полное собрание сочинений (Complete Works, Moscow 1955-1961); Russian original PD (Mayakovsky d.1930)",
+      "note": "Per Lee 2026-06-28 ('mayakovsky'). Russian Futurist poet. Major works: A Cloud in Trousers (Облако в штанах, 1915); The Backbone Flute (Флейта-позвоночник, 1915); Brooklyn Bridge (Бруклинский мост, 1925); 150,000,000 (1919-20); At the Top of My Voice (Во весь голос, 1930). Suicide 1930. Transforms work from Russian original.",
+      "cha_room_v7": null,
+      "cha_room_note": "Leo/Rex Fraction — could be r.06 Marx adjacent (Russian Futurism + revolutionary aesthetics)."
+    },
+    {
+      "id": "shklovsky-art-as-device",
+      "title": "Viktor Shklovsky — Art as Device (Искусство как приём, 1917) + Theory of Prose",
+      "author_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/shklovsky-art-as-device/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "mayakovsky",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Gemini (Cranes, Diagrammatic Poetics). Shklovsky's *ostranenie* (defamiliarization, enstrangement) is the Cranes-register operative concept — making the stone stony again.",
+      "edition": "Art as Device (1917 essay; PD in Russia + US pre-1928 PD rule); Theory of Prose (О теории прозы, 1925)",
+      "note": "Per Lee 2026-06-28 ('shklovsky'). Russian formalist. Art as Device is the foundational essay (1917) — defamiliarization, the device, art as making-strange. PD in original. Later Shklovsky works (Energy of Delusion, etc.) are not PD until 2055.",
+      "cha_room_v7": "r.01"
+    },
+    {
+      "id": "pushkin",
+      "title": "Alexander Pushkin — Eugene Onegin (Евгений Онегин) + Selected Poetry",
+      "author_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/pushkin/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "edition": "Russian originals PD (Pushkin d.1837); Nabokov critical edition + commentary",
+      "note": "Per Lee 2026-06-28 ('put some russia in there'). The foundational figure of modern Russian literature. Eugene Onegin is the verse novel that established the Onegin stanza — a poetic form structurally similar to Sappho's Sapphic stanza.",
+      "cha_room_v7": "r.01"
+    },
+    {
+      "id": "apollinaire-calligrammes",
+      "title": "Guillaume Apollinaire — Calligrammes (1918)",
+      "author_heteronym": "rebekah-cranes",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/apollinaire-calligrammes/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "sigil-snub-poemed",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Gemini (Cranes, Diagrammatic Poetics). Apollinaire's calligrams are the foundational 20th-century instance of diagrammatic poetics — the poem-as-image. Predecessor of Sigil's Snub-Poemed (the calligram register's Sigil-side anchor at Pisces).",
+      "edition": "Calligrammes: Poèmes de la paix et de la guerre 1913-1916 (Mercure de France, 1918); French source PD (Apollinaire d.1918)",
+      "note": "Per Lee 2026-06-28 ('concrete poets'). Apollinaire died 1918 (Spanish flu); his work PD globally. The concrete-poetry register's foundational text. The mid-20th-century concrete poets (Gomringer, de Campos brothers, Pignatari, Solt) are still under copyright; Apollinaire is the predecessor we can fully stage.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "hughes-early-pd",
+      "title": "Langston Hughes — Early Works (The Weary Blues, 1926 + Fine Clothes to the Jew, 1927)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/hughes-early-pd/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "whitman-leaves-of-grass",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "region_notes": "Aries — adjacent to Whitman-Ginsberg-Sharks bardic lineage. Hughes's blues-form lyric operates in the same democratic-vernacular register.",
+      "edition": "The Weary Blues (Knopf, 1926; PD 2022); Fine Clothes to the Jew (Knopf, 1927; PD 2023). Later works copyrighted to 2038.",
+      "note": "Per Lee 2026-06-28. Lee asked about Hughes — copyright reality: most NOT PD (Hughes d.1967), but his earliest two collections entered US PD in 2022 (The Weary Blues) and 2023 (Fine Clothes to the Jew). Those are transformable. Later works (Montage of a Dream Deferred, Ask Your Mama, etc.) remain copyrighted to 2038.",
+      "cha_room_v7": "r.09"
+    },
+    {
+      "id": "wcw-spring-and-all",
+      "title": "William Carlos Williams — Spring and All (1923; includes The Red Wheelbarrow)",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/wcw-spring-and-all/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "region_notes": "Aries — American vernacular-democratic register adjacent to Whitman; Imagist precision.",
+      "edition": "Spring and All (Contact Editions, 1923; PD 2019)",
+      "note": "Per Lee 2026-06-28 (asked re: WCW). Williams d.1963 → most works PD 2033. BUT Spring and All (1923) entered US PD in 2019, and contains The Red Wheelbarrow + many of Williams's most-anthologized early-Imagist pieces. Fully transformable as canon-text until later works enter PD.",
+      "cha_room_v7": "r.09"
+    },
+    {
+      "id": "world-from-drop-of-milk-PLACEHOLDER",
+      "title": "World from a Drop of Milk — creation story (tradition pending Lee adjudication)",
+      "author_heteronym": null,
+      "zodiacal_region": null,
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/world-from-drop-of-milk-PLACEHOLDER/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [],
+      "status": "declared",
+      "edition": "UNKNOWN — pending Lee identification",
+      "note": "Per Lee 2026-06-28 ('the world from a drop of milk as a creation story'). Source tradition not yet identified — search of alexanarch returned no matches. Best candidates: (a) Bambara/Mande cosmogony (Komo society creation myth — 'the world was created from a drop of milk'); (b) Hindu Samudra Manthan (churning of the milk ocean, Vishnu sleeping on the Kshira Sagara); (c) Norse Audhumla (primordial cow whose milk fed Ymir); (d) Dogon cosmology (Po Tolo and Sirius). Pending Lee's specification.",
+      "lee_adjudication_needed": "Which tradition does 'world from a drop of milk' refer to? Bambara/Mande Komo society / Hindu Samudra Manthan / Norse Audhumla / Dogon / other?",
+      "cha_room_v7": null,
+      "cha_room_note": "Pending Lee identification of tradition."
     }
   ],
   "cha_room_wiring_metadata": {
     "source_map": "Central Navigation Map v7.0 (AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊; DOI: 10.5281/zenodo.19055267)",
     "companion_map": "Fractal Navigation Map v7.0 (AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛)",
     "wired_at": "2026-06-28",
-    "assigned_to_v7_room": 67,
+    "assigned_to_v7_room": 90,
     "deferred_to_post_v7_rooms": 4,
     "no_obvious_v7_room": 23,
     "post_v7_deferred_rooms": {
@@ -3405,6 +4709,13 @@
       "sp.01",
       "sp.02",
       "f.01"
-    ]
+    ],
+    "wired_at_v7_total": 91,
+    "total_canon_entries": 138,
+    "no_v7_room_or_deferred": 48,
+    "wave_a_b_wired_2026_06_28": {
+      "v7_assigned": 23,
+      "post_v7_flagged": 20
+    }
   }
 }

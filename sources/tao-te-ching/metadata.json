@@ -1,0 +1,19 @@
+{
+  "id": "tao-te-ching",
+  "title": "道德经 (Tao Te Ching / Daodejing) — attributed Laozi",
+  "language": "lzh-Hans",
+  "language_name": "Classical Chinese (Wenyan)",
+  "edition_reference": "Received text (Wang Bi tradition); from hiscc/TaoTeChing repository",
+  "license": "Source compilation MIT; underlying Tao Te Ching public domain (6th-4th c. BCE composition)",
+  "main_apparatus": {
+    "apparatus_status": "absent",
+    "main_transformable": true,
+    "apparatus_transformable": false,
+    "note": "The 81-chapter received text. Mawangdui silk texts (2nd c. BCE) and Guodian bamboo slips (4th c. BCE) provide earlier textual states; future apparatus pass could collate."
+  },
+  "files": {
+    "main": "main.txt"
+  },
+  "canon_id": "tao-te-ching",
+  "status": "staged"
+}

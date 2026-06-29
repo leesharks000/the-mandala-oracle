@@ -1,0 +1,18 @@
+{
+  "id": "hegel-phaenomenologie",
+  "title": "G. W. F. Hegel — Phänomenologie des Geistes (1807)",
+  "language": "de",
+  "edition_reference": "archive.org item 11171834 (German original; OCR via DjVu extracted from /stream/ HTML wrapper)",
+  "license": "Public domain (Hegel d.1831)",
+  "ocr_quality_note": "OCR text from DjVu. Usable as starting source; Suhrkamp Werkausgabe would be the scholarly preferred text.",
+  "main_apparatus": {
+    "apparatus_status": "ocr_artifacts",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "files": {
+    "main": "phaenomenologie-de-archiveorg-ocr.txt"
+  },
+  "canon_id": "hegel-corpus",
+  "status": "staged_with_ocr_caveat"
+}

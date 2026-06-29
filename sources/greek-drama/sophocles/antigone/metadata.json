@@ -1,0 +1,18 @@
+{
+  "id": "sophocles-antigone",
+  "title": "Sophocles — Antigone",
+  "language": "grc-Grek",
+  "edition_reference": "Perseus Digital Library; CTS URN: urn:cts:greekLit:tlg0011.tlg002.perseus-grc2",
+  "license": "Public domain (Greek source); Perseus TEI CC-BY-SA-3.0",
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "files": {
+    "main": "main.txt",
+    "tei_xml": "sophocles-antigone-grc.tei.xml"
+  },
+  "canon_id": "sophocles-antigone",
+  "status": "staged"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "nietzsche-zarathustra",
+  "title": "Friedrich Nietzsche — Also sprach Zarathustra",
+  "language": "de",
+  "edition_reference": "PG #7205 (German original; Nietzsche d.1900, PD)",
+  "license": "Public domain",
+  "main_apparatus": {
+    "apparatus_status": "absent",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "files": {
+    "main": "main.txt"
+  },
+  "canon_id": "nietzsche-zarathustra",
+  "status": "staged"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "gibran-prophet",
+  "title": "Kahlil Gibran — The Prophet (1923)",
+  "language": "en",
+  "edition_reference": "PG #58585 (Knopf 1923; entered US PD 1999)",
+  "license": "Public domain (US)",
+  "main_apparatus": {
+    "apparatus_status": "absent",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "files": {
+    "main": "main.txt"
+  },
+  "canon_id": "gibran-prophet",
+  "status": "staged"
+}
