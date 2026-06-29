@@ -1,0 +1,22 @@
+{
+  "id": "i-ching",
+  "title": "I Ching / Yi Jing (周易) — 64 Hexagrams",
+  "language": "lzh-Hans",
+  "language_name": "Classical Chinese (Wenyan)",
+  "edition_reference": "Zhouyi core text + traditional commentaries (from sunls2/zhouyi GitHub repo, MIT-licensed compilation)",
+  "license": "Source compilation MIT; underlying Zhouyi text in public domain (Western Zhou, c. 1000 BCE)",
+  "source_url": "https://github.com/sunls2/zhouyi",
+  "structure": {
+    "core_text": "Zhouyi 周易 — the original 64-hexagram judgments (卦辞) and line statements (爻辞), c. 1000 BCE",
+    "ten_wings": "Yi Zhuan 易传 (Ten Wings) — Confucian commentaries; traditionally attributed to Confucius",
+    "files": "hex-01.md through hex-64.md; each contains the hexagram judgment + traditional commentary"
+  },
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false,
+    "note": "The original Zhouyi judgments and line statements are the main text (transformable); the commentaries (邵雍河洛理數解卦, 傅佩榮解卦手冊, etc.) constitute apparatus and are not transformable. The current staging mixes them; a future apparatus-splitter pass will separate them."
+  },
+  "canon_id": "i-ching",
+  "status": "staged"
+}

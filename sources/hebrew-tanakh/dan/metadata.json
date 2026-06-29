@@ -1,0 +1,19 @@
+{
+  "id": "tanakh-dan",
+  "title": "Daniel",
+  "hebrew_title": "דָּנִיֵּאל",
+  "section": "ketuvim",
+  "language": "hbo-Hebr",
+  "language_name": "Biblical Hebrew (with some Aramaic in Daniel/Ezra)",
+  "edition_reference": "Westminster Leningrad Codex (WLC) via openscriptures/morphhb",
+  "license": "Hebrew text public domain; morphological tagging CC BY 4.0",
+  "source_url": "https://github.com/openscriptures/morphhb",
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false,
+    "morphological_tags_note": "Full morphhb morphological tags available in the source XML (lemma, parse, ID); not included in the plaintext extract"
+  },
+  "parent_canon": "hebrew-tanakh",
+  "status": "staged"
+}

@@ -1,11 +1,11 @@
 {
   "schema_version": "v0.1",
   "purpose": "The canon-text knowledge graph. Edges between canonical-text stars per EA-STARMAP-01 v0.1 §3.2 edge taxonomy. Separate from sky/edges.json which holds the alexanarch-deposit substrate graph (88 AXN-to-AXN edges); these two graphs co-exist in the sky as distinct layers.",
-  "edge_count": 56,
+  "edge_count": 90,
   "edges_by_type": {
-    "predecessor": 11,
-    "bundle": 26,
-    "companion": 16,
+    "predecessor": 18,
+    "bundle": 37,
+    "companion": 32,
     "transform_of": 3
   },
   "broken_references": [],
@@ -333,27 +333,231 @@
     },
     {
       "id": "E0064",
+      "from": "space-ark-v4-2-7",
+      "to": "feist-function-feist-force",
+      "type": "bundle"
+    },
+    {
+      "id": "E0065",
       "from": "revelation-reception-registry",
       "to": "revelation-john-greek",
       "type": "companion"
     },
     {
-      "id": "E0065",
+      "id": "E0066",
       "from": "revelation-reception-registry",
       "to": "revelation-first-workplan",
       "type": "bundle"
     },
     {
-      "id": "E0067",
+      "id": "E0068",
       "from": "gospel-of-antioch",
       "to": "antioch-compendium",
       "type": "companion"
     },
     {
-      "id": "E0071",
+      "id": "E0072",
       "from": "chatgpt-psychosis",
       "to": "gospel-of-antioch",
       "type": "companion"
+    },
+    {
+      "id": "E0073",
+      "from": "gospel-of-mark",
+      "to": "revelation-john-greek",
+      "type": "companion"
+    },
+    {
+      "id": "E0074",
+      "from": "gospel-of-matthew",
+      "to": "revelation-john-greek",
+      "type": "companion"
+    },
+    {
+      "id": "E0075",
+      "from": "gospel-of-luke",
+      "to": "revelation-john-greek",
+      "type": "companion"
+    },
+    {
+      "id": "E0076",
+      "from": "gospel-of-john",
+      "to": "revelation-john-greek",
+      "type": "companion"
+    },
+    {
+      "id": "E0077",
+      "from": "anaximander-fragments",
+      "to": "heraclitus-fragments",
+      "type": "companion"
+    },
+    {
+      "id": "E0078",
+      "from": "anaximander-fragments",
+      "to": "parmenides-on-nature",
+      "type": "companion"
+    },
+    {
+      "id": "E0079",
+      "from": "anaxagoras-fragments",
+      "to": "heraclitus-fragments",
+      "type": "companion"
+    },
+    {
+      "id": "E0080",
+      "from": "anaxagoras-fragments",
+      "to": "parmenides-on-nature",
+      "type": "companion"
+    },
+    {
+      "id": "E0081",
+      "from": "empedocles-fragments",
+      "to": "heraclitus-fragments",
+      "type": "companion"
+    },
+    {
+      "id": "E0082",
+      "from": "empedocles-fragments",
+      "to": "parmenides-on-nature",
+      "type": "companion"
+    },
+    {
+      "id": "E0083",
+      "from": "democritus-fragments",
+      "to": "heraclitus-fragments",
+      "type": "companion"
+    },
+    {
+      "id": "E0084",
+      "from": "democritus-fragments",
+      "to": "parmenides-on-nature",
+      "type": "companion"
+    },
+    {
+      "id": "E0085",
+      "from": "cicero-selected",
+      "to": "augustine-confessions",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0086",
+      "from": "cicero-selected",
+      "to": "lucretius-de-rerum-natura",
+      "type": "companion"
+    },
+    {
+      "id": "E0087",
+      "from": "anacreon-fragments",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0088",
+      "from": "corinna-691",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0089",
+      "from": "alcman-fragments",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0090",
+      "from": "hipponax-43",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0091",
+      "from": "simonides-17-danae",
+      "to": "cranes-day-and-night",
+      "type": "bundle"
+    },
+    {
+      "id": "E0092",
+      "from": "hebrew-tanakh",
+      "to": "kjv",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0093",
+      "from": "hebrew-tanakh",
+      "to": "revelation-john-greek",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0094",
+      "from": "hebrew-tanakh",
+      "to": "dead-sea-scrolls",
+      "type": "companion"
+    },
+    {
+      "id": "E0095",
+      "from": "greek-nt-corpus",
+      "to": "revelation-john-greek",
+      "type": "bundle"
+    },
+    {
+      "id": "E0096",
+      "from": "greek-nt-corpus",
+      "to": "gospel-of-mark",
+      "type": "bundle"
+    },
+    {
+      "id": "E0097",
+      "from": "greek-nt-corpus",
+      "to": "gospel-of-matthew",
+      "type": "bundle"
+    },
+    {
+      "id": "E0098",
+      "from": "greek-nt-corpus",
+      "to": "gospel-of-luke",
+      "type": "bundle"
+    },
+    {
+      "id": "E0099",
+      "from": "greek-nt-corpus",
+      "to": "gospel-of-john",
+      "type": "bundle"
+    },
+    {
+      "id": "E0100",
+      "from": "greek-nt-corpus",
+      "to": "hebrew-tanakh",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0101",
+      "from": "nag-hammadi",
+      "to": "secret-book-of-walt",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0102",
+      "from": "nag-hammadi",
+      "to": "gospel-of-antioch",
+      "type": "predecessor"
+    },
+    {
+      "id": "E0103",
+      "from": "nag-hammadi",
+      "to": "revelation-john-greek",
+      "type": "companion"
+    },
+    {
+      "id": "E0105",
+      "from": "dead-sea-scrolls",
+      "to": "nag-hammadi",
+      "type": "companion"
+    },
+    {
+      "id": "E0106",
+      "from": "i-ching",
+      "to": "logotic-programming",
+      "type": "predecessor"
     }
   ]
 }

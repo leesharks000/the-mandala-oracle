@@ -5,15 +5,19 @@
   "language_name": "English",
   "author": "Walt Whitman",
   "composition_date_approx": "1855-1892 (Deathbed Edition: 1891-92)",
-  "edition_reference": "Final 'Deathbed Edition' (1891-92)",
+  "edition_reference": "Deathbed Edition (1891–92) — poetry from Project Gutenberg #1322 + 1855 Preface + A Backward Glance O'er Travel'd Roads (1888) from PG #8813 Complete Prose Works",
   "license": "Public domain",
-  "provenance_note": "Project Gutenberg eBook #1322 (PD; PG trademark conditions apply to the trademark-bearing distribution, but the underlying text is public domain). Main text cleaned of PG header/footer for `main.txt`; original preserved in `full-text/` for reproducibility.",
+  "provenance_note": "Two PG sources combined: #1322 (poetry, 1892 Deathbed) + #8813 (Complete Prose Works including 1855/1872/1876 Prefaces and 'A Backward Glance'). PG #1322 alone is poetry-only; the Deathbed Edition canonically includes 'A Backward Glance' as Whitman's final retrospective afterword.",
   "constitutional_role": "American canon. A primary text of the descent — bodily, democratic, ecstatic, elegiac.",
   "status": "staged",
   "files": {
-    "main": "main.txt",
+    "main": "deathbed-edition-complete.txt",
+    "poetry_only": "main.txt",
+    "prose_complete": "prose-complete.txt",
     "apparatus": "apparatus.md",
-    "pg_source": "full-text/leaves-of-grass-1322.txt"
+    "prefaces_dir": "prefaces/",
+    "pg_source_poetry": "full-text/leaves-of-grass-1322.txt",
+    "pg_source_prose": "full-text/complete-prose-works-8813.txt"
   },
   "main_apparatus": {
     "apparatus_status": "variant_readings_only",

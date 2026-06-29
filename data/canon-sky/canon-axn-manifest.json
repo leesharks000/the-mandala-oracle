@@ -1,8 +1,8 @@
 {
   "schema_version": "v0.1",
   "purpose": "Cross-reference manifest mapping canon-text ids to their alexanarch AXN deposits. Built 2026-06-28 by indexing 929-deposit registry against the 76 canon entries.",
-  "total_canon_entries": 76,
-  "matched_to_alexanarch": 29,
+  "total_canon_entries": 95,
+  "matched_to_alexanarch": 37,
   "no_alexanarch_match_or_pd": 47,
   "mappings": {
     "pearl-and-other-poems": "AXN:02E6.EMPIRICAL.🌈🌺🔧🗝️🍀🕗",
@@ -64,5 +64,20 @@
     "tachyon-poem-pair",
     "feist-function-feist-force",
     "cranes-concreation-LACUNA"
-  ]
+  ],
+  "external_pd_source_no_alexanarch": 48,
+  "other_no_axn": 10,
+  "wave_3_new_canon_2026_06_28": {
+    "hebrew-tanakh": "External PD source (Westminster Leningrad Codex via openscriptures/morphhb); not in alexanarch — original-language Hebrew Bible",
+    "greek-nt-corpus": "External CC BY 4.0 source (SBLGNT via Faithlife); 27 books staged in /sources/greek-nt/",
+    "nag-hammadi": "Declaration-only container in /sources/nag-hammadi/; full Coptic acquisition deferred",
+    "dead-sea-scrolls": "Declaration-only container in /sources/dead-sea-scrolls/; full Hebrew/Aramaic acquisition deferred",
+    "i-ching": "External PD source (Zhouyi via sunls2/zhouyi); 64 hexagrams staged in /sources/i-ching/",
+    "homer-iliad": "External PD source (Perseus PerseusDL); Greek TEI + plaintext staged in /sources/homer/iliad/",
+    "homer-odyssey": "External PD source (Perseus PerseusDL); Greek TEI + plaintext staged in /sources/homer/odyssey/",
+    "gospels (mark/matthew/luke/john)": "External CC BY 4.0 sources (SBLGNT); staged in /sources/greek-nt/{book}/",
+    "pre-socratics (anaximander/anaxagoras/empedocles/democritus)": "External PD sources (DK fragments); declared, sources pending",
+    "cicero-selected": "External PD source (OCT); declared, sources pending",
+    "day-and-night greek melic cluster (anacreon/corinna/alcman/hipponax/simonides)": "External PD sources; Cranes translations in Day and Night are authoritative English (per Lee adjudication 2026-06-28)"
+  }
 }

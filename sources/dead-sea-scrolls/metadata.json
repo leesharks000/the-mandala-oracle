@@ -1,0 +1,91 @@
+{
+  "id": "dead-sea-scrolls",
+  "title": "Dead Sea Scrolls (Qumran corpus)",
+  "language": "hbo-Hebr / arc-Hebr",
+  "language_name": "Hebrew (Biblical & Qumran) + Aramaic + some Greek",
+  "edition_reference": "DJD (Discoveries in the Judaean Desert; Oxford University Press, 40 vols. 1955-2009)",
+  "license": "The Hebrew/Aramaic originals (2nd C BCE – 1st C CE) are public domain. The DJD critical editions and transcriptions have varying copyright status (mostly © Oxford). The Israel Antiquities Authority's Leon Levy Dead Sea Scrolls Digital Library provides high-res facsimiles and some transcriptions openly.",
+  "source_acquisition_status": "DECLARATION ONLY — full Hebrew/Aramaic source staging deferred. Possible sources for future acquisition: (a) Leon Levy Dead Sea Scrolls Digital Library (deadseascrolls.org.il) — facsimiles + transcriptions for selected scrolls; (b) DJD critical editions; (c) Eisenbrauns Hebrew text editions; (d) various academic transcriptions.",
+  "external_resources": [
+    "https://www.deadseascrolls.org.il/ — Leon Levy Digital Library (Israel Museum)",
+    "https://dssenglishbible.com/ — Some English transcriptions",
+    "DJD volumes (Discoveries in the Judaean Desert) — physical critical editions"
+  ],
+  "priority_scrolls": [
+    {
+      "id": "dss-community-rule",
+      "scroll_ref": "1QS",
+      "title": "Community Rule (Serekh Ha-Yahad)",
+      "tradition": "Sectarian; Yahad community"
+    },
+    {
+      "id": "dss-war-scroll",
+      "scroll_ref": "1QM",
+      "title": "War Scroll (Milhamah)",
+      "tradition": "Apocalyptic; final battle of Sons of Light vs Sons of Darkness"
+    },
+    {
+      "id": "dss-hodayot",
+      "scroll_ref": "1QH",
+      "title": "Thanksgiving Hymns (Hodayot)",
+      "tradition": "Sectarian poetry"
+    },
+    {
+      "id": "dss-damascus-document",
+      "scroll_ref": "CD / 4Q266-273",
+      "title": "Damascus Document",
+      "tradition": "Sectarian rule; Damascus covenant"
+    },
+    {
+      "id": "dss-temple-scroll",
+      "scroll_ref": "11Q19",
+      "title": "Temple Scroll (Megillat ha-Miqdash)",
+      "tradition": "Eschatological torah"
+    },
+    {
+      "id": "dss-genesis-apocryphon",
+      "scroll_ref": "1Q20",
+      "title": "Genesis Apocryphon",
+      "tradition": "Aramaic retelling of Genesis"
+    },
+    {
+      "id": "dss-habakkuk-pesher",
+      "scroll_ref": "1QpHab",
+      "title": "Habakkuk Pesher",
+      "tradition": "Pesharim — prophetic interpretation"
+    },
+    {
+      "id": "dss-isaiah-scroll",
+      "scroll_ref": "1QIsa-a",
+      "title": "Great Isaiah Scroll",
+      "tradition": "Oldest complete biblical book copy; 2nd C BCE"
+    },
+    {
+      "id": "dss-jubilees-fragments",
+      "scroll_ref": "1Q17-18, 2Q19-20, 3Q5, 4Q176, 4Q216-228, 11Q12",
+      "title": "Book of Jubilees",
+      "tradition": "Apocrypha; full Hebrew Jubilees fragments"
+    },
+    {
+      "id": "dss-enoch-fragments",
+      "scroll_ref": "4Q201-212",
+      "title": "Aramaic Enoch fragments",
+      "tradition": "Apocrypha; Watchers etc."
+    },
+    {
+      "id": "dss-messianic-apocalypse",
+      "scroll_ref": "4Q521",
+      "title": "Messianic Apocalypse",
+      "tradition": "Sectarian eschatology"
+    }
+  ],
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false,
+    "note": "Apparatus consists of: (a) reconstructions of lacunae, marked with brackets; (b) variant readings between Cave fragments (e.g., 4QSamᵃ vs MT); (c) the DJD critical apparatus. The original Hebrew/Aramaic letters where preserved on the scrolls are the main text."
+  },
+  "canon_id": "dead-sea-scrolls",
+  "status": "declared",
+  "damascus_dancings_link": "The Damascus Document (CD) is the textual ancestor naming Damascus Dancings (Taurus / prophetic-homiletic register). The Qumran covenant community's diasporic-prophetic register is the classical ground of the Damascus heteronym."
+}

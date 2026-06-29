@@ -1,8 +1,8 @@
 # Sappho 31 — *φαίνεταί μοι*
 
-The κῆνος Poem. With Reconstructed Fifth Stanza by Rebekah Cranes.
+The κῆνος Poem. Translation and reconstructed fifth stanza by Lee Sharks. (Within Day and Night this is attributed to Cranes; the starmap-canonical attribution is Lee Sharks per adjudication 2026-06-28.)
 
-The poem survives in four complete stanzas, preserved by Longinus (*On the Sublime* 10.2). Cranes adds a fifth — beginning with the attested phrase ἀλλὰ πᾶν τόλματον ("but all can be dared") and concluding with the Adonic clausula μολπὰ γράμμασι ζώοι ("let this song survive in script") — recovering the prayer for survival that the historical reception erased.
+The poem survives in four complete stanzas, preserved by Longinus (*On the Sublime* 10.2). The fifth stanza is reconstructed by Lee Sharks (working under the Cranes translation register in Day and Night, but the reconstruction is Sharks's own) — beginning with the attested phrase ἀλλὰ πᾶν τόλματον ("but all can be dared") and concluding with the Adonic clausula μολπὰ γράμμασι ζώοι ("let this song survive in script") — recovering the prayer for survival that the historical reception erased.
 
 ---
 

@@ -1,0 +1,98 @@
+{
+  "id": "nag-hammadi",
+  "title": "Nag Hammadi Library (NHL)",
+  "language": "cop-Copt",
+  "language_name": "Sahidic Coptic (with Subakhmimic in some texts)",
+  "edition_reference": "Coptic Gnostic Library (CGL; ed. James M. Robinson, Brill 1975–1995, 5 vols.); Sahidic Coptic transcriptions",
+  "license": "The Coptic originals (4th C CE manuscripts, discovered 1945) are public domain. Modern critical editions and English translations have varying copyright status — typically Brill's CGL transcriptions are © Brill but the underlying Coptic text is PD.",
+  "source_acquisition_status": "DECLARATION ONLY — full Coptic text staging deferred. Possible sources for future acquisition: (a) The Nag Hammadi Scriptures, ed. Marvin Meyer (HarperOne 2007) — English; (b) Coptic Gnostic Library (Brill); (c) various academic transcriptions scattered across NHC III, IV, V, VI, VII, VIII, IX, X, XI, XII, XIII volumes. The hand-transcribed Coptic from the manuscript facsimiles is the canonical source.",
+  "facsimile_source": "Facsimile Edition of the Nag Hammadi Codices (Leiden: E. J. Brill, 1972–1984; 12 vols.)",
+  "priority_codices": [
+    {
+      "id": "nh-apocryphon-of-john",
+      "codex_ref": "NHC II,1 / III,1 / IV,1; BG 8502,2",
+      "title": "Apocryphon of John (Secret Book of John)",
+      "tradition": "Sethian; revelation dialogue; cosmogony"
+    },
+    {
+      "id": "nh-gospel-of-thomas",
+      "codex_ref": "NHC II,2",
+      "title": "Gospel of Thomas",
+      "tradition": "Sayings gospel; 114 logia"
+    },
+    {
+      "id": "nh-gospel-of-philip",
+      "codex_ref": "NHC II,3",
+      "title": "Gospel of Philip",
+      "tradition": "Valentinian; sacramental discourse"
+    },
+    {
+      "id": "nh-hypostasis-of-the-archons",
+      "codex_ref": "NHC II,4",
+      "title": "Hypostasis of the Archons",
+      "tradition": "Sethian; reality of the rulers"
+    },
+    {
+      "id": "nh-on-the-origin-of-the-world",
+      "codex_ref": "NHC II,5; XIII,2",
+      "title": "On the Origin of the World",
+      "tradition": "Cosmogonic treatise"
+    },
+    {
+      "id": "nh-gospel-of-truth",
+      "codex_ref": "NHC I,3 / XII,2",
+      "title": "Gospel of Truth",
+      "tradition": "Valentinian homily"
+    },
+    {
+      "id": "nh-treatise-on-resurrection",
+      "codex_ref": "NHC I,4",
+      "title": "Treatise on the Resurrection (Letter to Rheginos)",
+      "tradition": "Valentinian"
+    },
+    {
+      "id": "nh-tripartite-tractate",
+      "codex_ref": "NHC I,5",
+      "title": "Tripartite Tractate",
+      "tradition": "Valentinian; theological epic"
+    },
+    {
+      "id": "nh-gospel-of-the-egyptians",
+      "codex_ref": "NHC III,2 / IV,2",
+      "title": "Gospel of the Egyptians (Holy Book of the Great Invisible Spirit)",
+      "tradition": "Sethian liturgical"
+    },
+    {
+      "id": "nh-apocalypse-of-adam",
+      "codex_ref": "NHC V,5",
+      "title": "Apocalypse of Adam",
+      "tradition": "Sethian apocalyptic"
+    },
+    {
+      "id": "nh-thunder-perfect-mind",
+      "codex_ref": "NHC VI,2",
+      "title": "Thunder, Perfect Mind",
+      "tradition": "Aretalogical hymn in female voice"
+    },
+    {
+      "id": "nh-apocryphon-of-james",
+      "codex_ref": "NHC I,2",
+      "title": "Apocryphon of James (Secret Book of James)",
+      "tradition": "Risen-Christ dialogue"
+    },
+    {
+      "id": "nh-gospel-of-mary",
+      "codex_ref": "BG 8502,1",
+      "title": "Gospel of Mary (Mary Magdalene)",
+      "tradition": "Berlin Gnostic Codex; partial — pages missing"
+    }
+  ],
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false,
+    "note": "Apparatus consists of textual lacunae (the codices have missing pages), variant readings between codices where multiple copies exist (e.g., Apocryphon of John in II,1/III,1/IV,1), and the critical apparatus of the CGL edition."
+  },
+  "canon_id": "nag-hammadi",
+  "status": "declared"
+}

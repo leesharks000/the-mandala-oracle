@@ -1,0 +1,22 @@
+{
+  "id": "homer-odyssey",
+  "title": "Homer — Odyssey",
+  "greek_title": "Ὀδύσσεια",
+  "language": "grc-Grek",
+  "language_name": "Homeric Greek",
+  "author": "Homer (traditional attribution)",
+  "edition_reference": "Allen / Monro / West OCT editions (Perseus PerseusDL/canonical-greekLit)",
+  "license": "Public domain (Greek source; Perseus transcription CC-BY-SA-3.0)",
+  "cts_urn": "urn:cts:greekLit:tlg0012.tlg002.tlg002",
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false
+  },
+  "files": {
+    "main": "main.txt",
+    "tei_xml": "odyssey-grc.tei.xml"
+  },
+  "canon_id": "homer-odyssey",
+  "status": "staged"
+}

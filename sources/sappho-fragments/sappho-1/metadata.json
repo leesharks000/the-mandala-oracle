@@ -12,12 +12,18 @@
     "apparatus_status": "present",
     "main_transformable": true,
     "apparatus_transformable": false,
-    "voigt_apparatus_status": "cite_only_pending_adjudication"
+    "apparatus_source": "independent_cranes_apparatus",
+    "voigt_status": "source_text_only_no_voigt_apparatus"
   },
   "files": {
     "main": "text.md",
     "apparatus": null
   },
   "canon_id": "sappho-1",
-  "status": "staged"
+  "status": "staged",
+  "authoritative_english_translation": {
+    "translator": "Rebekah Cranes",
+    "source_collection": "Day and Night: Conversations with Sapphic Desire",
+    "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛"
+  }
 }

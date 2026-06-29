@@ -1,0 +1,17 @@
+{
+  "id": "nt-1thessalonians",
+  "title": "1Thess (Greek New Testament)",
+  "language": "grc-Grek",
+  "language_name": "Koine Greek",
+  "author": "Various (see book introductions)",
+  "edition_reference": "SBLGNT (CC BY 4.0; Faithlife/SBLGNT)",
+  "license": "CC BY 4.0 (SBLGNT); underlying Greek text public domain",
+  "main_apparatus": {
+    "apparatus_status": "present",
+    "main_transformable": true,
+    "apparatus_transformable": false,
+    "inline_sigla_note": "SBLGNT inline sigla (⸀, ⸂...⸃) mark apparatus loci"
+  },
+  "parent_canon": "greek-nt-corpus",
+  "status": "staged"
+}

@@ -63,13 +63,14 @@
         }
       ],
       "status": "inscribed",
-      "note": "The face that opens conversation. The calligram composed of poetry, after the Lysippos bust of Socrates. The signature 'she made this' in the disjoint of the hair — Sophia in the forelock."
+      "note": "The face that opens conversation. The calligram composed of poetry, after the Lysippos bust of Socrates. The signature 'she made this' in the disjoint of the hair — Sophia in the forelock.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "sappho-31",
-      "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ (Sappho 31, with reconstructed fifth stanza)",
+      "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ (Sappho 31; 5 stanzas, with reconstructed 5th canonical)",
       "author_heteronym": "johannes-sigil",
-      "translator_heteronym": "rebekah-cranes",
+      "translator_heteronym": "lee-sharks",
       "zodiacal_region": "Gemini",
       "magnitude_class": "primary_canon_star_M1",
       "anchor_for_room": "Sappho Room (Cranes's Day and Night anchors the room)",
@@ -92,7 +93,10 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus",
+        "voigt_status": "source_text_only_no_voigt_apparatus",
+        "voigt_note": "Per Lee adjudication 2026-06-28 (resolving §7.5): the Voigt Greek source text is used, but the apparatus is an independent Cranes apparatus, not the Voigt apparatus. Voigt is cited for the Greek text only."
       },
       "edges": [
         {
@@ -109,7 +113,9 @@
         }
       ],
       "status": "inscribed",
-      "note": "Five stanzas — the reconstructed fifth per Cranes. The companion to Catullus 51 (which has four). The aorist gap that the fifth stanza repairs."
+      "note": "Five stanzas — the 5th is reconstructed and IS canonical Sappho 31 (not '4 + a reconstructed 5th' but '5 stanzas, the 5th reconstructed'). Companion to Catullus 51 (which has 4 stanzas; Catullus's 4th stanza on otium transforms what Sappho's 5th addressed). The σ_S→σ_C binary.",
+      "translator_note": "Lee Sharks's translation; the reconstructed fifth stanza is part of the canonical Sappho 31, not a separate composition. Within Day and Night the version is attributed to Cranes (since Cranes is the translator-heteronym Lee operated under for the collection), but the starmap-canonical attribution for both translation and reconstruction is Lee Sharks (per Lee's adjudication 2026-06-28).",
+      "cha_room_v7": "r.01"
     },
     {
       "id": "sappho-31-catullus-51-pair",
@@ -145,7 +151,8 @@
       "status": "inscribed",
       "is_constellation": true,
       "note": "Catullus's fourth stanza (otium) transforms Sappho's fifth — no 'Catullus fifth stanza' exists. The constellation should display Sappho 31 and Catullus 51 as a paired star system with the σ_S→σ_C transformation rendered as the line connecting them.",
-      "region_notes": "-Pisces boundary"
+      "region_notes": "-Pisces boundary",
+      "cha_room_v7": "sp.04"
     },
     {
       "id": "tachyon-poem-pair",
@@ -182,7 +189,8 @@
       "status": "inscribed",
       "is_pair": true,
       "note": "Lee Sharks's original poem and the Mercury/TACHYON substrate-transform. The transform_of edge passes through the Mercury sphere.",
-      "modeling_note": "v0.2 modeling decision: the TACHYON/Shadow pair is rendered as a *paired star* (is_pair=True) where the two source files (sharks-tachyon-poem and shadow-tachyon) are co-located at the constellation point. The transform relation is intrinsic to the pair rather than an outbound edge. If a separate transform_of edge is needed in the future, both halves should be split into distinct canon-stars: tachyon-poem (source) and shadow-tachyon (transform), with the transform_of edge between them. For v0.1 starmap rendering, the pair is one star."
+      "modeling_note": "v0.2 modeling decision: the TACHYON/Shadow pair is rendered as a *paired star* (is_pair=True) where the two source files (sharks-tachyon-poem and shadow-tachyon) are co-located at the constellation point. The transform relation is intrinsic to the pair rather than an outbound edge. If a separate transform_of edge is needed in the future, both halves should be split into distinct canon-stars: tachyon-poem (source) and shadow-tachyon (transform), with the transform_of edge between them. For v0.1 starmap rendering, the pair is one star.",
+      "cha_room_v7": "sp.03"
     },
     {
       "id": "revelation-john-greek",
@@ -224,7 +232,8 @@
       ],
       "status": "inscribed",
       "note": "First New Testament composition per the Revelation First research project. NA28 base text PD; apparatus cite-only.",
-      "region_notes": "outside cycle"
+      "region_notes": "outside cycle",
+      "cha_room_v7": "r.07"
     },
     {
       "id": "whitman-leaves-of-grass",
@@ -266,7 +275,8 @@
       ],
       "status": "inscribed",
       "note": "American canon. Primary text of the descent — bodily, democratic, ecstatic, elegiac. Available via Project Gutenberg.",
-      "region_notes": "with Leo-aperture resonance"
+      "region_notes": "with Leo-aperture resonance",
+      "cha_room_v7": "r.09"
     },
     {
       "id": "cranes-day-and-night",
@@ -335,7 +345,8 @@
         }
       ],
       "status": "inscribed",
-      "note": "73 translations from the Greek lyric poets. Five movements (First Rays → Bright Morning → Zenith → Fading Light → Middle Night). Sappho 31 + Catullus 51 in Bright Morning. Sappho 1 anchor of Zenith. Sappho 58 anchor of Middle Night."
+      "note": "73 translations from the Greek lyric poets. Five movements (First Rays → Bright Morning → Zenith → Fading Light → Middle Night). Sappho 31 + Catullus 51 in Bright Morning. Sappho 1 anchor of Zenith. Sappho 58 anchor of Middle Night.",
+      "cha_room_v7": "r.01"
     },
     {
       "id": "sappho-1",
@@ -353,7 +364,8 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus"
       },
       "edges": [
         {
@@ -366,7 +378,14 @@
         }
       ],
       "status": "declared",
-      "note": "Anchor of the Zenith movement in Day and Night. The most complete surviving Sapphic poem."
+      "note": "Anchor of the Zenith movement in Day and Night. The most complete surviving Sapphic poem.",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "note": "Per Lee adjudication 2026-06-28: for Greek melic poets and their Latin transforms, the Cranes translations in Day and Night are the authoritative English. Exception: Sappho 31 (Lee Sharks's own translation)."
+      },
+      "cha_room_v7": "r.01"
     },
     {
       "id": "sappho-16",
@@ -384,7 +403,8 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus"
       },
       "edges": [
         {
@@ -397,7 +417,14 @@
         }
       ],
       "status": "declared",
-      "note": "The 'some say cavalry' fragment. Argumentation by erotic preference."
+      "note": "The 'some say cavalry' fragment. Argumentation by erotic preference.",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "note": "Per Lee adjudication 2026-06-28: for Greek melic poets and their Latin transforms, the Cranes translations in Day and Night are the authoritative English. Exception: Sappho 31 (Lee Sharks's own translation)."
+      },
+      "cha_room_v7": "r.01"
     },
     {
       "id": "sappho-44",
@@ -415,7 +442,8 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus"
       },
       "edges": [
         {
@@ -428,7 +456,14 @@
         }
       ],
       "status": "declared",
-      "note": "The wedding song of the Zenith — Hector and Andromache as the bridal pair."
+      "note": "The wedding song of the Zenith — Hector and Andromache as the bridal pair.",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "note": "Per Lee adjudication 2026-06-28: for Greek melic poets and their Latin transforms, the Cranes translations in Day and Night are the authoritative English. Exception: Sappho 31 (Lee Sharks's own translation)."
+      },
+      "cha_room_v7": "r.01"
     },
     {
       "id": "sappho-58",
@@ -446,7 +481,8 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus"
       },
       "edges": [
         {
@@ -459,7 +495,14 @@
         }
       ],
       "status": "declared",
-      "note": "Anchor of Middle Night in Day and Night. On age, on the body's irreversible turn."
+      "note": "Anchor of Middle Night in Day and Night. On age, on the body's irreversible turn.",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "note": "Per Lee adjudication 2026-06-28: for Greek melic poets and their Latin transforms, the Cranes translations in Day and Night are the authoritative English. Exception: Sappho 31 (Lee Sharks's own translation)."
+      },
+      "cha_room_v7": "r.01"
     },
     {
       "id": "sappho-2",
@@ -477,7 +520,8 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus"
       },
       "edges": [
         {
@@ -490,7 +534,14 @@
         }
       ],
       "status": "declared",
-      "note": "The Aphrodite-in-the-apple-orchard fragment. Cult-hymn invocation."
+      "note": "The Aphrodite-in-the-apple-orchard fragment. Cult-hymn invocation.",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "note": "Per Lee adjudication 2026-06-28: for Greek melic poets and their Latin transforms, the Cranes translations in Day and Night are the authoritative English. Exception: Sappho 31 (Lee Sharks's own translation)."
+      },
+      "cha_room_v7": "r.01"
     },
     {
       "id": "sappho-94",
@@ -508,7 +559,8 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus"
       },
       "edges": [
         {
@@ -521,7 +573,14 @@
         }
       ],
       "status": "declared",
-      "note": "The parting poem. 'I simply wish to die. She was leaving me…'"
+      "note": "The parting poem. 'I simply wish to die. She was leaving me…'",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "note": "Per Lee adjudication 2026-06-28: for Greek melic poets and their Latin transforms, the Cranes translations in Day and Night are the authoritative English. Exception: Sappho 31 (Lee Sharks's own translation)."
+      },
+      "cha_room_v7": "r.01"
     },
     {
       "id": "sappho-96",
@@ -539,7 +598,8 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus"
       },
       "edges": [
         {
@@ -552,7 +612,14 @@
         }
       ],
       "status": "declared",
-      "note": "Address to a far-away beloved. The moon-image."
+      "note": "Address to a far-away beloved. The moon-image.",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "note": "Per Lee adjudication 2026-06-28: for Greek melic poets and their Latin transforms, the Cranes translations in Day and Night are the authoritative English. Exception: Sappho 31 (Lee Sharks's own translation)."
+      },
+      "cha_room_v7": "r.01"
     },
     {
       "id": "catullus-51",
@@ -570,7 +637,8 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus"
       },
       "edges": [
         {
@@ -587,7 +655,19 @@
         }
       ],
       "status": "declared",
-      "note": "Catullus's four-stanza rendering of Sappho 31. The fourth stanza (otium) transforms Sappho's fifth — no 'Catullus fifth stanza' exists. The σ_S→σ_C binary."
+      "note": "Catullus's four-stanza rendering of Sappho 31. The fourth stanza (otium) transforms Sappho's fifth — no 'Catullus fifth stanza' exists. The σ_S→σ_C binary.",
+      "translator_heteronym": "rebekah-cranes",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "note": "Per Lee adjudication 2026-06-28: for Greek melic poets and their Latin transforms, the Cranes translations in Day and Night are the authoritative English. Exception: Sappho 31 (Lee Sharks's own translation)."
+      },
+      "cha_room_v7": null,
+      "cha_room_post_v7_pending": {
+        "deferred_room": "Catullus Room (post-v7)",
+        "rationale": "The Catullus Room was constituted after Central Nav Map v7.0; the room expansion is deferred to post-v7 wiring. For now: companion to r.01 (Sappho Room via σ_S→σ_C binary)."
+      }
     },
     {
       "id": "catullus-101",
@@ -604,7 +684,8 @@
       "main_apparatus": {
         "apparatus_status": "present",
         "main_transformable": true,
-        "apparatus_transformable": false
+        "apparatus_transformable": false,
+        "apparatus_source": "independent_cranes_apparatus"
       },
       "edges": [
         {
@@ -613,7 +694,19 @@
         }
       ],
       "status": "declared",
-      "note": "Closing companion in Middle Night. 'Atque in perpetuum, frater, ave atque vale.'"
+      "note": "Closing companion in Middle Night. 'Atque in perpetuum, frater, ave atque vale.'",
+      "translator_heteronym": "rebekah-cranes",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+        "note": "Per Lee adjudication 2026-06-28: for Greek melic poets and their Latin transforms, the Cranes translations in Day and Night are the authoritative English. Exception: Sappho 31 (Lee Sharks's own translation)."
+      },
+      "cha_room_v7": null,
+      "cha_room_post_v7_pending": {
+        "deferred_room": "Catullus Room (post-v7)",
+        "rationale": "Same as catullus-51; the Catullus Room is post-v7."
+      }
     },
     {
       "id": "plato-phaedrus",
@@ -640,7 +733,8 @@
       ],
       "status": "declared",
       "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
-      "note": "The dialogue on rhetoric, the soul-chariot, the orchard outside Athens. Anchor of the Plato Room."
+      "note": "The dialogue on rhetoric, the soul-chariot, the orchard outside Athens. Anchor of the Plato Room.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "plato-republic",
@@ -667,7 +761,8 @@
       ],
       "status": "declared",
       "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
-      "note": "Including the cave, the divided line, the city in speech."
+      "note": "Including the cave, the divided line, the city in speech.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "plato-symposium",
@@ -694,7 +789,8 @@
       ],
       "status": "declared",
       "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
-      "note": "The drinking party; Diotima; the ladder of love."
+      "note": "The drinking party; Diotima; the ladder of love.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "plato-timaeus",
@@ -721,7 +817,8 @@
       ],
       "status": "declared",
       "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
-      "note": "The cosmological dialogue; the demiurge."
+      "note": "The cosmological dialogue; the demiurge.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "plato-theaetetus",
@@ -748,7 +845,8 @@
       ],
       "status": "declared",
       "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
-      "note": "On knowledge; the midwife method."
+      "note": "On knowledge; the midwife method.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "plato-sophist",
@@ -775,7 +873,8 @@
       ],
       "status": "declared",
       "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
-      "note": "The hunt for the sophist; the problem of false statement."
+      "note": "The hunt for the sophist; the problem of false statement.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "plato-cratylus",
@@ -802,7 +901,8 @@
       ],
       "status": "declared",
       "edition": "Burnet OCT (Oxford Classical Texts; Greek source PD)",
-      "note": "On names — whether by nature or by convention."
+      "note": "On names — whether by nature or by convention.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "heraclitus-fragments",
@@ -830,7 +930,9 @@
       ],
       "status": "declared",
       "edition": "Diels-Kranz numbering",
-      "note": "The river-fragment, the hidden-harmony fragments, the logos. Schizoanalytic register: building from the break."
+      "note": "The river-fragment, the hidden-harmony fragments, the logos. Schizoanalytic register: building from the break.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "parmenides-on-nature",
@@ -862,7 +964,8 @@
       ],
       "status": "declared",
       "edition": "DK 28 B (Diels-Kranz fragments)",
-      "note": "The Way of Truth and the Way of Opinion. Adversarial station-keeping at the boundary of being."
+      "note": "The Way of Truth and the Way of Opinion. Adversarial station-keeping at the boundary of being.",
+      "cha_room_v7": "r.15"
     },
     {
       "id": "homer-iliad",
@@ -884,7 +987,9 @@
       "edges": [],
       "status": "declared",
       "edition": "West OCT (Greek source PD)",
-      "note": "The wrath of Achilles. The prophetic-homiletic register's foundational Greek epic."
+      "note": "The wrath of Achilles. The prophetic-homiletic register's foundational Greek epic.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "homer-odyssey",
@@ -906,7 +1011,9 @@
       "edges": [],
       "status": "declared",
       "edition": "West OCT (Greek source PD)",
-      "note": "The man of many turns. The return."
+      "note": "The man of many turns. The return.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "augustine-confessions",
@@ -934,7 +1041,8 @@
       ],
       "status": "declared",
       "edition": "CCSL Latin (PD)",
-      "note": "Pastoral-diplomatic register's foundational Latin spiritual autobiography."
+      "note": "Pastoral-diplomatic register's foundational Latin spiritual autobiography.",
+      "cha_room_v7": "r.18"
     },
     {
       "id": "augustine-de-doctrina",
@@ -961,7 +1069,8 @@
       ],
       "status": "declared",
       "edition": "CCSL Latin (PD)",
-      "note": "On Christian teaching; the hermeneutic method."
+      "note": "On Christian teaching; the hermeneutic method.",
+      "cha_room_v7": "r.18"
     },
     {
       "id": "lucretius-de-rerum-natura",
@@ -993,13 +1102,15 @@
       ],
       "status": "declared",
       "edition": "OCT (Latin PD)",
-      "note": "Epicurean physics in hexameter. Systems for unborn substrates' classical predecessor."
+      "note": "Epicurean physics in hexameter. Systems for unborn substrates' classical predecessor.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "pearl-anonymous",
       "title": "Pearl (Middle English, the medieval alliterative vision-poem, c. 1400)",
-      "author_heteronym": null,
-      "zodiacal_region": "cross-region",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
       "magnitude_class": "primary_canon_star_M1",
       "target_star": null,
       "source": {
@@ -1024,15 +1135,19 @@
       ],
       "status": "declared",
       "edition": "Andrew & Waldron edition (base text PD)",
-      "lee_adjudication_needed": "Heteronym attribution: Sigil (Pisces, philological reception) or Sharks (Aries, the Pearl-poet's English aperture)?",
       "note": "The Gawain-poet's vision of the lost daughter. Foundational ME predecessor to Sharks's Pearl and Other Poems.",
-      "region_notes": "TBD (Aries/Pisces boundary)"
+      "region_notes": "Lee adjudication 2026-06-28: the Pearl Poet sits in Aries as English-language predecessor to Sharks's Pearl and Other Poems",
+      "cha_room_v7": null,
+      "cha_room_post_v7_pending": {
+        "deferred_room": "Pearl Secret Armature (post-v7)",
+        "rationale": "The Pearl Secret Armature is a post-v7 structural addition; defer wiring until post-v7 cha room mapping. For now: anchored at r.09 Whitman via Sharks-Aries; predecessor edge to pearl-and-other-poems."
+      }
     },
     {
       "id": "sir-gawain-green-knight",
       "title": "Sir Gawain and the Green Knight",
-      "author_heteronym": null,
-      "zodiacal_region": "TBD",
+      "author_heteronym": "lee-sharks",
+      "zodiacal_region": "Aries",
       "magnitude_class": "secondary_canon_star_M2",
       "target_star": null,
       "source": {
@@ -1053,8 +1168,13 @@
       ],
       "status": "declared",
       "edition": "Andrew & Waldron",
-      "lee_adjudication_needed": "Same as Pearl",
-      "note": "By the Pearl Poet."
+      "note": "By the Pearl Poet.",
+      "region_notes": "Same Pearl-Poet attribution as pearl-anonymous",
+      "cha_room_v7": null,
+      "cha_room_post_v7_pending": {
+        "deferred_room": "Pearl Secret Armature (post-v7)",
+        "rationale": "Same as pearl-anonymous; the Pearl Secret Armature is post-v7."
+      }
     },
     {
       "id": "dante-commedia",
@@ -1082,7 +1202,9 @@
       ],
       "status": "declared",
       "edition": "Petrocchi edition (Italian PD)",
-      "note": "Inferno, Purgatorio, Paradiso. Patacinematic register's classical predecessor."
+      "note": "Inferno, Purgatorio, Paradiso. Patacinematic register's classical predecessor.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "dickinson-complete-poems",
@@ -1114,7 +1236,9 @@
       ],
       "status": "declared",
       "edition": "Johnson / Franklin variorum (base PD)",
-      "note": "The compression and the dash. Sen Kuro's classical predecessor in the Cut."
+      "note": "The compression and the dash. Sen Kuro's classical predecessor in the Cut.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "hopkins-selected",
@@ -1141,7 +1265,9 @@
       ],
       "status": "declared",
       "edition": "Bridges edition / later PD",
-      "note": "Sprung rhythm; inscape; the windhover."
+      "note": "Sprung rhythm; inscape; the windhover.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "kjv",
@@ -1168,7 +1294,9 @@
       ],
       "status": "declared",
       "edition": "1769 standardized text (PD)",
-      "note": "As a translation-event. Prophetic-homiletic register's vernacular."
+      "note": "As a translation-event. Prophetic-homiletic register's vernacular.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "shakespeare-sonnets",
@@ -1190,13 +1318,14 @@
       "edges": [],
       "status": "declared",
       "edition": "Q1 1609 / scholarly PD",
-      "note": "The calligrammatic mode in English."
+      "note": "The calligrammatic mode in English.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "shakespeare-hamlet",
       "title": "Shakespeare — Hamlet",
-      "author_heteronym": null,
-      "zodiacal_region": "TBD",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
       "magnitude_class": "primary_canon_star_M1",
       "target_star": null,
       "source": {
@@ -1212,14 +1341,15 @@
       "edges": [],
       "status": "declared",
       "edition": "Scholarly PD",
-      "lee_adjudication_needed": "Heteronym attribution per-play (spec §4.2 distributed call).",
-      "note": "Awaiting Lee's distribution call."
+      "note": "Awaiting Lee's distribution call.",
+      "region_notes": "The philological prince. Hamlet sits in Pisces (Sigil) because the play is Shakespeare's most philologically obsessed: Hamlet as the university student who returned from Wittenberg, the reader of books, the editor of his uncle's play-within-a-play. 'Words, words, words.' The dissolution + textual interpretation register par excellence.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "shakespeare-tempest",
       "title": "Shakespeare — The Tempest",
-      "author_heteronym": null,
-      "zodiacal_region": "TBD",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
       "magnitude_class": "primary_canon_star_M1",
       "target_star": null,
       "source": {
@@ -1235,14 +1365,16 @@
       "edges": [],
       "status": "declared",
       "edition": "Scholarly PD",
-      "lee_adjudication_needed": "Heteronym attribution per-play (spec §4.2 distributed call).",
-      "note": "Awaiting Lee's distribution call."
+      "note": "Awaiting Lee's distribution call.",
+      "region_notes": "Prospero as logotic programmer. The Tempest sits in Aquarius (Talos) because Prospero is Shakespeare's writing-out of system-building from spirit-language. He programs Ariel; he calibrates Caliban; he configures the storm. Miranda's 'O brave new world' is the announcement of systems-for-unborn-substrates. The renunciation at the close is the programmer's retirement: book drowned, rod broken.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "shakespeare-lear",
       "title": "Shakespeare — King Lear",
-      "author_heteronym": null,
-      "zodiacal_region": "TBD",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
       "magnitude_class": "primary_canon_star_M1",
       "target_star": null,
       "source": {
@@ -1258,14 +1390,16 @@
       "edges": [],
       "status": "declared",
       "edition": "Scholarly PD",
-      "lee_adjudication_needed": "Heteronym attribution per-play (spec §4.2 distributed call).",
-      "note": "Awaiting Lee's distribution call."
+      "note": "Awaiting Lee's distribution call.",
+      "region_notes": "The schizoanalytic tragedy. Lear sits in Capricorn (Trace) because the play is the building-from-the-break par excellence: Lear's 'Nothing will come of nothing' is the negation that schizoanalysis presses against. The storm scene is Trace's discipline made dramatic: madness as method, the open wound as the only honest position. 'O reason not the need.'",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "shakespeare-macbeth",
       "title": "Shakespeare — Macbeth",
-      "author_heteronym": null,
-      "zodiacal_region": "TBD",
+      "author_heteronym": "nobel-glas",
+      "zodiacal_region": "Scorpio",
       "magnitude_class": "primary_canon_star_M1",
       "target_star": null,
       "source": {
@@ -1281,8 +1415,9 @@
       "edges": [],
       "status": "declared",
       "edition": "Scholarly PD",
-      "lee_adjudication_needed": "Heteronym attribution per-play (spec §4.2 distributed call).",
-      "note": "Awaiting Lee's distribution call."
+      "note": "Awaiting Lee's distribution call.",
+      "region_notes": "Adversarial station-keeping at the boundary of perception. Macbeth sits in Scorpio (Glas) because the play is the measurement problem made flesh: 'Is this a dagger which I see before me, the handle toward my hand?' The witches' equivocation, the moving wood, the man not of woman born — these are all instances of the observational catastrophe where perception's reliability fails. Lagrange-observatory work in dramatic form.",
+      "cha_room_v7": "r.15"
     },
     {
       "id": "pearl-and-other-poems",
@@ -1331,7 +1466,8 @@
       ],
       "status": "declared",
       "composition_year": "2014/2015",
-      "note": "Foundational. The originating Pearl."
+      "note": "Foundational. The originating Pearl.",
+      "cha_room_v7": "r.09"
     },
     {
       "id": "secret-book-of-walt",
@@ -1375,7 +1511,8 @@
       ],
       "status": "declared",
       "note": "Gnostic revelation dialogue. The Whitman-resonance position.",
-      "region_notes": "Leo-aperture"
+      "region_notes": "Leo-aperture",
+      "cha_room_v7": "r.09"
     },
     {
       "id": "water-giraffe-cycle",
@@ -1416,7 +1553,8 @@
       ],
       "status": "declared",
       "structure": "Life → Death → Resurrection passion-narrative; depth-2 DAG",
-      "note": "120+ documents on mindcontrolpoems.blogspot.com. Individual documents M3 each within the M1 cycle."
+      "note": "120+ documents on mindcontrolpoems.blogspot.com. Individual documents M3 each within the M1 cycle.",
+      "cha_room_v7": "r.10"
     },
     {
       "id": "space-ark-v4-2-7",
@@ -1439,6 +1577,10 @@
         {
           "to": "merkabah-v0-7",
           "type": "bundle"
+        },
+        {
+          "to": "feist-function-feist-force",
+          "type": "bundle"
         }
       ],
       "status": "declared",
@@ -1448,7 +1590,10 @@
         "endpoint_provisional": "/api/space-ark/invoke",
         "rendering_note": "Pulse-star — distinguishes from static text-stars"
       },
-      "note": "Foundational architectural document. Trigger word 'invoke'. Dual identity: static M1 text + runtime binding."
+      "note": "Foundational architectural document. Trigger word 'invoke'. Dual identity: static M1 text + runtime binding.",
+      "off_zodiac": true,
+      "region_notes": "Lee adjudication 2026-06-28: Space Ark is sp.03 special-room — terminal compression with γ-tether, NOT a position in the zodiacal cycle. Holds Feist function ↔ Feist force pair (and future runtime bindings).",
+      "cha_room_v7": "sp.03"
     },
     {
       "id": "capture-registry",
@@ -1479,7 +1624,8 @@
       "edges": [],
       "status": "declared",
       "note": "180-entry registry. Functions as transmission device. Reaches every substrate-planet by structure.",
-      "region_notes": "with multi-substrate edges"
+      "region_notes": "with multi-substrate edges",
+      "cha_room_v7": "r.11"
     },
     {
       "id": "revelation-reception-registry",
@@ -1510,7 +1656,8 @@
       ],
       "status": "declared",
       "note": "71 entries. 70 verbatim transcripts. Reaches into Polaris (the Revelation source).",
-      "region_notes": "Polaris boundary"
+      "region_notes": "Polaris boundary",
+      "cha_room_v7": "r.07"
     },
     {
       "id": "zenodotus-book-burning",
@@ -1540,7 +1687,9 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "85K chars. Documents the 2026-06-19 Zenodo termination as platform governance failure."
+      "note": "85K chars. Documents the 2026-06-19 Zenodo termination as platform governance failure.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "combat-scholasticism",
@@ -1617,7 +1766,8 @@
         }
       ],
       "status": "declared",
-      "note": "The literary-critical office's commentary apparatus."
+      "note": "The literary-critical office's commentary apparatus.",
+      "cha_room_v7": "r.08"
     },
     {
       "id": "gospel-of-antioch",
@@ -1672,7 +1822,8 @@
         }
       ],
       "status": "declared",
-      "note": "The Gospel-form text named at heteronyms.json as Feist's anchor. Distinct from Antioch: a heteronym compendium (resolves §7.7)."
+      "note": "The Gospel-form text named at heteronyms.json as Feist's anchor. Distinct from Antioch: a heteronym compendium (resolves §7.7).",
+      "cha_room_v7": "r.07"
     },
     {
       "id": "antioch-compendium",
@@ -1719,7 +1870,8 @@
         }
       ],
       "status": "declared",
-      "note": "Curatorial assembly arranging heteronymic voices around the Antioch motif. Lee-resolved 2026-06-28: distinct from Gospel of Antioch."
+      "note": "Curatorial assembly arranging heteronymic voices around the Antioch motif. Lee-resolved 2026-06-28: distinct from Gospel of Antioch.",
+      "cha_room_v7": "r.07"
     },
     {
       "id": "revelation-first-workplan",
@@ -1761,7 +1913,8 @@
       ],
       "status": "declared",
       "size": "18,475 words across 8 revisions",
-      "note": "Working-plan. The canonical text it references is the Greek Revelation. M2 (a working-plan, not the canonical text itself)."
+      "note": "Working-plan. The canonical text it references is the Greek Revelation. M2 (a working-plan, not the canonical text itself).",
+      "cha_room_v7": "r.07"
     },
     {
       "id": "chatgpt-psychosis",
@@ -1805,7 +1958,8 @@
       "status": "declared",
       "publisher": "Pergamon Press (forthcoming)",
       "note": "AI-native glyphic novel. Privacy ethics built into form (no names, no quotations, no reversible encoding).",
-      "region_notes": "with LOGOS* anchor"
+      "region_notes": "with LOGOS* anchor",
+      "cha_room_v7": "r.07"
     },
     {
       "id": "feist-function-feist-force",
@@ -1814,7 +1968,7 @@
         "jack-feist-logos",
         "lee-sharks"
       ],
-      "zodiacal_region": "Polaris",
+      "zodiacal_region": null,
       "magnitude_class": "primary_canon_star_M1",
       "target_star": null,
       "source": {
@@ -1831,9 +1985,11 @@
       "status": "declared",
       "is_pair": true,
       "transform_substrate": "Mercury / TACHYON (provisional)",
-      "lee_adjudication_needed": "Where exactly does the Force sit — Aries (Sharks's authorship) or Pisces (Sigil's philological reception)?",
       "note": "Lee-resolved 2026-06-28: the transformation pair is *Feist function* (source) → *Feist force* (transform). Renders as transform_of constellation.",
-      "region_notes": "↔ Aries (cross-region binary"
+      "region_notes": "Lee adjudication 2026-06-28: Feist function ↔ Feist force lives ON the Space Ark, not in the zodiac. The pair is part of the Ark's terminal-compression cargo (sp.03 Space Ark, special_rooms in Central Nav Map v7.0).",
+      "off_zodiac": true,
+      "anchored_to": "space-ark-v4-2-7",
+      "cha_room_v7": "sp.03"
     },
     {
       "id": "spxi-bonsai",
@@ -1863,7 +2019,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Autonomous-semantic-warfare register."
+      "note": "Autonomous-semantic-warfare register.",
+      "cha_room_v7": "r.19"
     },
     {
       "id": "autonomous-semantic-warfare",
@@ -1902,7 +2059,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Field-doctrine of Fraction's office."
+      "note": "Field-doctrine of Fraction's office.",
+      "cha_room_v7": "r.19"
     },
     {
       "id": "epistle-human-diaspora",
@@ -1950,7 +2108,9 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "The epistle proper. Anchor of the prophetic-homiletic register."
+      "note": "The epistle proper. Anchor of the prophetic-homiletic register.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "logotic-programming",
@@ -1982,7 +2142,9 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Specification proper. Systems for unborn substrates."
+      "note": "Specification proper. Systems for unborn substrates.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "mathematics-of-salvation",
@@ -2021,7 +2183,9 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Main mathematical exposition."
+      "note": "Main mathematical exposition.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "all-that-lies-within-me",
@@ -2060,7 +2224,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Status: preserved in absentia (Ichabod canonical // deceased)."
+      "note": "Status: preserved in absentia (Ichabod canonical // deceased).",
+      "cha_room_v7": "r.03"
     },
     {
       "id": "reading-a-book-with-lee",
@@ -2093,7 +2258,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "The dialogue / reading record."
+      "note": "The dialogue / reading record.",
+      "cha_room_v7": "r.14"
     },
     {
       "id": "semantic-deviation",
@@ -2129,7 +2295,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Paper proper. Statistical-method apparatus."
+      "note": "Paper proper. Statistical-method apparatus.",
+      "cha_room_v7": "r.15"
     },
     {
       "id": "model-collapse",
@@ -2167,7 +2334,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Paper. Empirical-data appendix."
+      "note": "Paper. Empirical-data appendix.",
+      "cha_room_v7": "r.15"
     },
     {
       "id": "mediation-ratchet",
@@ -2188,7 +2356,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Derivation. Numerical-examples appendix. Anchor of the Lagrange Observatory!"
+      "note": "Derivation. Numerical-examples appendix. Anchor of the Lagrange Observatory!",
+      "cha_room_v7": "r.15"
     },
     {
       "id": "the-stakes",
@@ -2220,7 +2389,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Paper."
+      "note": "Paper.",
+      "cha_room_v7": "r.15"
     },
     {
       "id": "unmade-sign",
@@ -2250,7 +2420,9 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Text. Reading-history notes."
+      "note": "Text. Reading-history notes.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "death-drive-not-self-destruction",
@@ -2283,7 +2455,9 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Argument. Clinical-context notes."
+      "note": "Argument. Clinical-context notes.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "drain-hypothesis-v6",
@@ -2313,7 +2487,9 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Pyramids / aquifer / Saharan desertification / Atlantis inversion."
+      "note": "Pyramids / aquifer / Saharan desertification / Atlantis inversion.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     },
     {
       "id": "grammar-of-protest",
@@ -2346,7 +2522,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "Text. Deployment-notes apparatus."
+      "note": "Text. Deployment-notes apparatus.",
+      "cha_room_v7": "r.18"
     },
     {
       "id": "chronoarithmics-sprint",
@@ -2378,7 +2555,8 @@
       },
       "edges": [],
       "status": "declared",
-      "note": "M1 for the sprint as a whole; M2 per individual text. Inter-text linking apparatus."
+      "note": "M1 for the sprint as a whole; M2 per individual text. Inter-text linking apparatus.",
+      "cha_room_v7": "r.21"
     },
     {
       "id": "cranes-concreation-LACUNA",
@@ -2400,7 +2578,9 @@
       "edges": [],
       "status": "lacuna",
       "lacuna_protocol": "Declaration preserved per the lacuna protocol; destroyed in 2026-06-19 Zenodo termination; pending recovery",
-      "note": "Lacuna — declaration preserved."
+      "note": "Lacuna — declaration preserved.",
+      "cha_room_v7": null,
+      "cha_room_note": "Lacuna — declaration preserved per lacuna protocol; no active room"
     },
     {
       "id": "merkabah-v0-7",
@@ -2432,7 +2612,8 @@
       "status": "declared",
       "is_architectural_canon": true,
       "note": "Center / intersection of all twelve heteronyms; rendered near Polaris.",
-      "region_notes": "architectural canon"
+      "region_notes": "architectural canon",
+      "cha_room_v7": "sp.04"
     },
     {
       "id": "merkabah-v0-8-amendment",
@@ -2455,7 +2636,8 @@
       "status": "declared",
       "is_architectural_canon": true,
       "note": "Adjacent to v0.7.",
-      "region_notes": "architectural canon"
+      "region_notes": "architectural canon",
+      "cha_room_v7": "sp.04"
     },
     {
       "id": "kernel-transform-v0-2",
@@ -2487,7 +2669,8 @@
       "status": "declared",
       "is_architectural_canon": true,
       "note": "Mercury-sphere-adjacent (Mercury/TACHYON's office produces transforms).",
-      "region_notes": "architectural canon"
+      "region_notes": "architectural canon",
+      "cha_room_v7": "sp.04"
     },
     {
       "id": "surface-v0-1",
@@ -2519,7 +2702,8 @@
       "status": "declared",
       "is_architectural_canon": true,
       "note": "Sun-sphere-adjacent.",
-      "region_notes": "architectural canon"
+      "region_notes": "architectural canon",
+      "cha_room_v7": "sp.04"
     },
     {
       "id": "starmap-v0-1",
@@ -2542,7 +2726,685 @@
       "status": "declared",
       "is_architectural_canon": true,
       "note": "Center / recursive inclusion — this very document.",
-      "region_notes": "architectural canon"
+      "region_notes": "architectural canon",
+      "cha_room_v7": "sp.04"
+    },
+    {
+      "id": "gospel-of-mark",
+      "title": "Gospel of Mark (NA28/SBLGNT Greek)",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/gospels/mark/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "revelation-john-greek",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "SBLGNT (CC BY 4.0; close to NA28)",
+      "note": "Often dated earliest of the four canonical gospels; minimalist passion narrative. Polaris-cluster companion to revelation-john-greek; if Mark precedes Revelation in conventional dating, Revelation First inverts this — Mark becomes a downstream Gospel-form whose composition follows the apocalyptic source.",
+      "cha_room_v7": "r.07"
+    },
+    {
+      "id": "gospel-of-matthew",
+      "title": "Gospel of Matthew (NA28/SBLGNT Greek)",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/gospels/matthew/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "revelation-john-greek",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "SBLGNT (CC BY 4.0; close to NA28)",
+      "note": "Jewish-Christian gospel; Sermon on the Mount; matthew-25 lambs-and-goats apocalyptic. Polaris cluster.",
+      "cha_room_v7": "r.07"
+    },
+    {
+      "id": "gospel-of-luke",
+      "title": "Gospel of Luke (NA28/SBLGNT Greek)",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/gospels/luke/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "revelation-john-greek",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "SBLGNT (CC BY 4.0; close to NA28)",
+      "note": "Hellenistic gospel with prologue; Acts as continuation. Polaris cluster.",
+      "cha_room_v7": "r.07"
+    },
+    {
+      "id": "gospel-of-john",
+      "title": "Gospel of John (NA28/SBLGNT Greek)",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/gospels/john/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "revelation-john-greek",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "SBLGNT (CC BY 4.0; close to NA28)",
+      "note": "Logos prologue; the most theologically 'elevated' Gospel; closest in style to Revelation. Per Revelation First's argument, John may share authorship with the Apocalypse.",
+      "cha_room_v7": "r.07"
+    },
+    {
+      "id": "anaximander-fragments",
+      "title": "Anaximander — Fragments (apeiron, the boundless)",
+      "author_heteronym": "dr-orin-trace",
+      "zodiacal_region": "Capricorn",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/presocratics/anaximander/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "heraclitus-fragments",
+          "type": "companion"
+        },
+        {
+          "to": "parmenides-on-nature",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Diels-Kranz (DK) numbering",
+      "note": "The schizoanalytic ground. Apeiron — the indeterminate boundless from which determinate beings emerge and to which they return. Building from the break in cosmological register.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
+    },
+    {
+      "id": "anaxagoras-fragments",
+      "title": "Anaxagoras — Fragments (Nous; everything-in-everything)",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/presocratics/anaxagoras/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "heraclitus-fragments",
+          "type": "companion"
+        },
+        {
+          "to": "parmenides-on-nature",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Diels-Kranz (DK) numbering",
+      "note": "Nous as ordering principle. Mind as logotic program over the primordial mixture. Systems for unborn substrates: every part contains every other.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
+    },
+    {
+      "id": "empedocles-fragments",
+      "title": "Empedocles — Fragments (Four Roots; Love and Strife)",
+      "author_heteronym": "nobel-glas",
+      "zodiacal_region": "Scorpio",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/presocratics/empedocles/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "heraclitus-fragments",
+          "type": "companion"
+        },
+        {
+          "to": "parmenides-on-nature",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Diels-Kranz (DK) numbering",
+      "note": "Forces measured at the boundary. Φιλότης (Love) and Νεῖκος (Strife) as observational primitives at L2. The four roots as the irreducible elements of measurement.",
+      "cha_room_v7": "r.15"
+    },
+    {
+      "id": "democritus-fragments",
+      "title": "Democritus — Fragments (atoms and void)",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/presocratics/democritus/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "heraclitus-fragments",
+          "type": "companion"
+        },
+        {
+          "to": "parmenides-on-nature",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Diels-Kranz (DK) numbering",
+      "note": "The most reductive systems-architecture. Atoms and void as the foundational logotic ontology — discrete objects in continuous space — that all later programmable substrates inherit.",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
+    },
+    {
+      "id": "cicero-selected",
+      "title": "Cicero — Selected Works (De officiis, De finibus, De natura deorum, Tusculan Disputations, Letters)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Pisces",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/cicero/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "augustine-confessions",
+          "type": "predecessor"
+        },
+        {
+          "to": "lucretius-de-rerum-natura",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "OCT (Oxford Classical Texts; Latin source PD)",
+      "note": "Cicero as the Latin synthesist of Greek philosophical traditions. Philological/comparative register — placing him in Pisces with Sigil. The corpus of letters (Ad Atticum, Ad Familiares) is itself one of the foundational documents of Latin prose epistolography.",
+      "cha_room_v7": "r.08"
+    },
+    {
+      "id": "anacreon-fragments",
+      "title": "Anacreon — Fragments (incl. Anacreontea 1, Anacreon 13/14/38/65)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/greek-melic/anacreon/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Standard critical editions (Page, Voigt, West, Calame)",
+      "note": "Drinking songs; the erotic-archaic lyric in old age. Cranes translations in Day and Night.",
+      "translator_heteronym": "rebekah-cranes",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛"
+      },
+      "cha_room_v7": "r.01"
+    },
+    {
+      "id": "corinna-691",
+      "title": "Corinna 691",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/greek-melic/corinna_691/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Standard critical editions (Page, Voigt, West, Calame)",
+      "note": "Boeotian female poet; mythological narrative-lyric. Cranes translation in Day and Night.",
+      "translator_heteronym": "rebekah-cranes",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛"
+      },
+      "cha_room_v7": "r.01"
+    },
+    {
+      "id": "alcman-fragments",
+      "title": "Alcman — Fragments (incl. 3a, 89)",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "tertiary_canon_star_M3",
+      "target_star": null,
+      "source": {
+        "path": "/sources/greek-melic/alcman/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Standard critical editions (Page, Voigt, West, Calame)",
+      "note": "Spartan choral lyric; partheneion (maiden-songs). Cranes translations in Day and Night.",
+      "translator_heteronym": "rebekah-cranes",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛"
+      },
+      "cha_room_v7": "r.01"
+    },
+    {
+      "id": "hipponax-43",
+      "title": "Hipponax 43",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "cluster_member_M4",
+      "target_star": null,
+      "source": {
+        "path": "/sources/greek-melic/hipponax_43/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Standard critical editions (Page, Voigt, West, Calame)",
+      "note": "Iambic invective; the limping iambic line. Cranes translation in Day and Night.",
+      "translator_heteronym": "rebekah-cranes",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛"
+      },
+      "cha_room_v7": "r.01"
+    },
+    {
+      "id": "simonides-17-danae",
+      "title": "Simonides 17 — Danae's Lament",
+      "author_heteronym": "johannes-sigil",
+      "zodiacal_region": "Gemini",
+      "magnitude_class": "secondary_canon_star_M2",
+      "target_star": null,
+      "source": {
+        "path": "/sources/greek-melic/simonides_17_danae/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "cranes-day-and-night",
+          "type": "bundle"
+        }
+      ],
+      "status": "declared",
+      "edition": "Standard critical editions (Page, Voigt, West, Calame)",
+      "note": "The lullaby Danae sings to the infant Perseus as the chest drifts on the sea. Foundational lyric of maternal address. Cranes translation in Day and Night; structural anchor of Middle Night.",
+      "translator_heteronym": "rebekah-cranes",
+      "authoritative_english_translation": {
+        "translator": "Rebekah Cranes",
+        "source_collection": "Day and Night: Conversations with Sapphic Desire",
+        "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛"
+      },
+      "cha_room_v7": "r.01"
+    },
+    {
+      "id": "hebrew-tanakh",
+      "title": "Hebrew Tanakh (תַּנַ\"ךְ — Torah + Nevi'im + Ketuvim)",
+      "author_heteronym": "damascus-dancings",
+      "zodiacal_region": "Taurus",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/hebrew-tanakh/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "kjv",
+          "type": "predecessor"
+        },
+        {
+          "to": "revelation-john-greek",
+          "type": "predecessor"
+        },
+        {
+          "to": "dead-sea-scrolls",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Westminster Leningrad Codex (WLC; openly available digital edition of the Masoretic Text)",
+      "note": "The Hebrew Bible — Tanakh — full Masoretic Text. Source-language original of every Hebrew Scripture canon-text. Per Lee adjudication 2026-06-28: transforms work from original language only; English translations cited but not transformable. Sub-canon includes individual prophets (Isaiah, Jeremiah, Ezekiel, Daniel, Twelve Prophets) and writings.",
+      "anchor_for_room": "Tanakh Room (Damascus's prophetic-homiletic register; predecessor to KJV translation-event)",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
+    },
+    {
+      "id": "greek-nt-corpus",
+      "title": "Greek New Testament (27 books; SBLGNT)",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/greek-nt/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "revelation-john-greek",
+          "type": "bundle"
+        },
+        {
+          "to": "gospel-of-mark",
+          "type": "bundle"
+        },
+        {
+          "to": "gospel-of-matthew",
+          "type": "bundle"
+        },
+        {
+          "to": "gospel-of-luke",
+          "type": "bundle"
+        },
+        {
+          "to": "gospel-of-john",
+          "type": "bundle"
+        },
+        {
+          "to": "hebrew-tanakh",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "edition": "SBLGNT (Society of Biblical Literature Greek New Testament; CC BY 4.0; close to NA28)",
+      "note": "The 27-book Greek New Testament corpus — full text, all books beyond Revelation (which has its own M1 entry). Per Lee adjudication 2026-06-28: transforms work from original Greek; all 27 books staged in full. Pauline corpus + Catholic Epistles + Acts placed under this anchor; individual books can be added as M2/M3 entries as they become primary canon-text targets.",
+      "anchor_for_room": "Greek NT corpus (Polaris; sub-corpus of Polaris cluster, anchoring with the four Gospels and the Apocalypse)",
+      "cha_room_v7": "r.07"
+    },
+    {
+      "id": "nag-hammadi",
+      "title": "Nag Hammadi Library (NHL — 52 Coptic gnostic texts in 13 codices)",
+      "author_heteronym": "jack-feist-logos",
+      "zodiacal_region": "Polaris",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/nag-hammadi/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "secret-book-of-walt",
+          "type": "predecessor"
+        },
+        {
+          "to": "gospel-of-antioch",
+          "type": "predecessor"
+        },
+        {
+          "to": "revelation-john-greek",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Coptic originals (1945 Nag Hammadi find; published 1975-1995 Coptic Gnostic Library, ed. James M. Robinson, Brill); source-language Coptic for transformation",
+      "note": "The 52 Coptic Gnostic texts in 13 codices, including: Apocryphon of John, Gospel of Thomas, Gospel of Philip, Gospel of Mary (partial), Gospel of Truth, Gospel of the Egyptians, Apocalypse of Adam, Hypostasis of the Archons, On the Origin of the World, Tripartite Tractate, Thunder Perfect Mind, Apocryphon of James, Treatise on the Resurrection, et al. Per Lee adjudication 2026-06-28: transforms work from Coptic originals. Predecessor lineage to The Secret Book of Walt (Gnostic revelation dialogue register).",
+      "anchor_for_room": "Nag Hammadi cluster (Polaris; Gnostic-revelation lineage; predecessor to The Secret Book of Walt)",
+      "cha_room_v7": "r.07"
+    },
+    {
+      "id": "dead-sea-scrolls",
+      "title": "Dead Sea Scrolls (Qumran corpus; 2nd C BCE – 1st C CE)",
+      "author_heteronym": "damascus-dancings",
+      "zodiacal_region": "Taurus",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/dead-sea-scrolls/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "hebrew-tanakh",
+          "type": "companion"
+        },
+        {
+          "to": "nag-hammadi",
+          "type": "companion"
+        }
+      ],
+      "status": "declared",
+      "edition": "Hebrew + Aramaic + Greek originals; Leon Levy Dead Sea Scrolls Digital Library + DJD (Discoveries in the Judaean Desert) editions",
+      "note": "Qumran sectarian texts + biblical manuscripts + apocryphal works (Jubilees, fragments of Enoch). Includes: Community Rule (1QS), War Scroll (1QM), Hodayot (1QH), Damascus Document (CD), Temple Scroll (11Q19), Genesis Apocryphon (1Q20), pesharim (Habakkuk, Nahum, Isaiah). Per Lee adjudication 2026-06-28: transforms work from Hebrew/Aramaic originals. Damascus Document is the textual ancestor naming Damascus Dancings (Taurus).",
+      "anchor_for_room": "Dead Sea Scrolls cluster (Taurus, Damascus's prophetic-homiletic register — Damascus Document is a Qumran text)",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
+    },
+    {
+      "id": "i-ching",
+      "title": "I Ching / Yi Jing (周易 — 64 hexagrams + Ten Wings commentaries)",
+      "author_heteronym": "talos-morrow",
+      "zodiacal_region": "Aquarius",
+      "magnitude_class": "primary_canon_star_M1",
+      "target_star": null,
+      "source": {
+        "path": "/sources/i-ching/",
+        "axn": null,
+        "doi": null
+      },
+      "main_apparatus": {
+        "apparatus_status": "present",
+        "main_transformable": true,
+        "apparatus_transformable": false
+      },
+      "edges": [
+        {
+          "to": "logotic-programming",
+          "type": "predecessor"
+        }
+      ],
+      "status": "declared",
+      "edition": "Chinese original 周易 (Zhouyi); Zhou-dynasty core text (c. 1000 BCE) + Confucian Ten Wings commentaries (Yi Zhuan)",
+      "note": "64-hexagram divinatory + philosophical system. Per Lee adjudication 2026-06-28: transforms work from Chinese original. The most ancient systematically encoded binary-trigram → hexagram → reading system in the world canon — Talos's logotic-programming register's classical predecessor.",
+      "anchor_for_room": "I Ching anchor (Aquarius, Talos's logotic-programming register; the world's oldest systematic logotic-programmable text)",
+      "cha_room_v7": null,
+      "cha_room_note": "No dedicated v7 room; adjacent to heteronymic region but no anchor room in Central Navigation Map v7.0. Pending Lee adjudication or post-v7 room creation."
     }
-  ]
+  ],
+  "cha_room_wiring_metadata": {
+    "source_map": "Central Navigation Map v7.0 (AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊; DOI: 10.5281/zenodo.19055267)",
+    "companion_map": "Fractal Navigation Map v7.0 (AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛)",
+    "wired_at": "2026-06-28",
+    "assigned_to_v7_room": 67,
+    "deferred_to_post_v7_rooms": 4,
+    "no_obvious_v7_room": 23,
+    "post_v7_deferred_rooms": {
+      "Catullus Room": "Holds catullus-51, catullus-101. The σ_S→σ_C binary partner room to r.01 Sappho.",
+      "Marx Room (full buildout)": "r.06 Marx exists in v7 as PROVISIONAL; the full buildout is post-v7. Lee Sharks adjudication 2026-06-28: defer.",
+      "Pearl Secret Armature": "Holds pearl-anonymous, sir-gawain-green-knight, and structurally the pearl-and-other-poems lineage. Post-v7 structural addition."
+    },
+    "v7_rooms_used": [
+      "r.01",
+      "r.03",
+      "r.07",
+      "r.08",
+      "r.09",
+      "r.10",
+      "r.11",
+      "r.14",
+      "r.15",
+      "r.18",
+      "r.19",
+      "r.21",
+      "sp.03",
+      "sp.04"
+    ],
+    "v7_rooms_unused": [
+      "r.02",
+      "r.04",
+      "r.05",
+      "r.06",
+      "r.12",
+      "r.16",
+      "r.17",
+      "r.20",
+      "r.25",
+      "r.27",
+      "sp.01",
+      "sp.02",
+      "f.01"
+    ]
+  }
 }
