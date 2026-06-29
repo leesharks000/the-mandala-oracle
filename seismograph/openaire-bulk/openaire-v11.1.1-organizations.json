@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "total_records": 494099
+  },
+  "metrics": {
+    "geographic_distribution": {
+      "unique_countries": 242,
+      "top_30_countries": [
+        [
+          "(none)",
+          157221
+        ],
+        [
+          "US",
+          61119
+        ],
+        [
+          "FR",
+          31567
+        ],
+        [
+          "GB",
+          21730
+        ],
+        [
+          "DE",
+          20700
+        ],
+        [
+          "IT",
+          15531
+        ],
+        [
+          "ES",
+          15140
+        ],
+        [
+          "NL",
+          8622
+        ],
+        [
+          "JP",
+          7382
+        ],
+        [
+          "GR",
+          7263
+        ],
+        [
+          "CH",
+          7141
+        ],
+        [
+          "CN",
+          6925
+        ],
+        [
+          "PL",
+          6701
+        ],
+        [
+          "BE",
+          6695
+        ],
+        [
+          "TR",
+          6656
+        ],
+        [
+          "PT",
+          5756
+        ],
+        [
+          "IN",
+          5754
+        ],
+        [
+          "CA",
+          5599
+        ],
+        [
+          "CZ",
+          5259
+        ],
+        [
+          "SE",
+          5197
+        ],
+        [
+          "AT",
+          4383
+        ],
+        [
+          "NO",
+          4345
+        ],
+        [
+          "RO",
+          3944
+        ],
+        [
+          "FI",
+          3843
+        ],
+        [
+          "DK",
+          3615
+        ],
+        [
+          "RU",
+          3264
+        ],
+        [
+          "BR",
+          3152
+        ],
+        [
+          "HU",
+          3096
+        ],
+        [
+          "ID",
+          3086
+        ],
+        [
+          "IE",
+          2749
+        ]
+      ]
+    },
+    "metadata_completeness": {
+      "has_pids_pct": 0.41410527040127587,
+      "has_website_pct": 0.38173726318005097
+    }
+  },
+  "meta": {
+    "computed_at": "2026-06-29T02:36:10.952215+00:00",
+    "schema_version": "EA-MANDALA-SEISMOGRAPH-01/v0.1",
+    "source": "/tmp/organization.tar",
+    "record_type": "organization",
+    "elapsed_sec": 4.3
+  }
+}

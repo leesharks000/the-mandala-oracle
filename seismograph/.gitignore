@@ -1,0 +1,19 @@
+# Seismograph — git hygiene
+
+# OAI-PMH harvest state files (per-run, can be regenerated)
+**/*.state.json
+
+# Raw OpenAIRE bulk-dump TARs are publicly hosted on Zenodo; never commit
+**/*.tar
+**/openaire-bulk/**/raw/
+**/openaire-bulk/**/*.tar
+**/openaire-bulk/**/*.json.gz
+
+# Pyc / venv artifacts
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temp processing artifacts
+/tmp/

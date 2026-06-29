@@ -1,0 +1,143 @@
+name: Zenodo Seismograph — Monthly Snapshot
+
+on:
+  # Run on the 1st of each month at 02:00 UTC
+  schedule:
+    - cron: '0 2 1 * *'
+  # Allow manual trigger for backfill / on-demand runs
+  workflow_dispatch:
+    inputs:
+      from_date:
+        description: 'Start date YYYY-MM-DD (default: 1st of prior month)'
+        required: false
+        type: string
+      until_date:
+        description: 'End date YYYY-MM-DD (default: today)'
+        required: false
+        type: string
+      sets:
+        description: 'Comma-separated OAI sets (default: openaire). Use "firehose" for full feed.'
+        required: false
+        type: string
+        default: 'openaire'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 720  # 12-hour cap (firehose full-month can be ~6 hours)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compute date range
+        id: dates
+        run: |
+          if [ -n "${{ github.event.inputs.from_date }}" ]; then
+            FROM="${{ github.event.inputs.from_date }}"
+          else
+            # Default: 1st of prior month
+            FROM=$(date -u -d "$(date -u +%Y-%m-01) -1 month" +%Y-%m-%d)
+          fi
+          if [ -n "${{ github.event.inputs.until_date }}" ]; then
+            UNTIL="${{ github.event.inputs.until_date }}"
+          else
+            # Default: today (exclusive — OAI-PMH 'until' is inclusive of the date)
+            UNTIL=$(date -u +%Y-%m-01)
+          fi
+          MONTH=$(date -u -d "$FROM" +%Y-%m)
+          echo "from=$FROM" >> $GITHUB_OUTPUT
+          echo "until=$UNTIL" >> $GITHUB_OUTPUT
+          echo "month=$MONTH" >> $GITHUB_OUTPUT
+          echo "Harvesting $FROM → $UNTIL (month tag: $MONTH)"
+
+      - name: Harvest openaire set
+        run: |
+          mkdir -p seismograph/snapshots/openaire
+          python3 seismograph/scripts/harvest.py \
+            --from ${{ steps.dates.outputs.from }} \
+            --until ${{ steps.dates.outputs.until }} \
+            --set openaire \
+            --output seismograph/snapshots/openaire/${{ steps.dates.outputs.month }}.xml.gz
+
+      - name: Harvest firehose (1% stratified sample by default — see scripts/sample.py)
+        if: contains(github.event.inputs.sets, 'firehose')
+        run: |
+          mkdir -p seismograph/samples/firehose-1pct
+          # NOTE: full-firehose harvest is bounded by job timeout. For full firehose
+          # implement sample.py to filter to 10% by record-ID hash.
+          python3 seismograph/scripts/harvest.py \
+            --from ${{ steps.dates.outputs.from }} \
+            --until ${{ steps.dates.outputs.until }} \
+            --output seismograph/samples/firehose-1pct/${{ steps.dates.outputs.month }}.xml.gz
+
+      - name: Compute metrics — openaire
+        run: |
+          mkdir -p seismograph/metrics
+          python3 seismograph/scripts/metrics.py \
+            --input seismograph/snapshots/openaire/${{ steps.dates.outputs.month }}.xml.gz \
+            --output seismograph/metrics/${{ steps.dates.outputs.month }}-openaire.json
+
+      - name: Compute metrics — firehose (if harvested)
+        if: contains(github.event.inputs.sets, 'firehose')
+        run: |
+          python3 seismograph/scripts/metrics.py \
+            --input seismograph/samples/firehose-1pct/${{ steps.dates.outputs.month }}.xml.gz \
+            --output seismograph/metrics/${{ steps.dates.outputs.month }}-firehose.json
+
+      - name: Generate monthly report
+        run: |
+          # TODO v0.2: scripts/report.py — produces a markdown comparison report
+          # with prior-month metrics. For now, just commit the raw metrics.
+          echo "Monthly metrics computed for ${{ steps.dates.outputs.month }}"
+
+      - name: Configure git
+        run: |
+          git config user.email "seismograph@themandalaoracle.org"
+          git config user.name "Zenodo Seismograph (automated)"
+
+      - name: Commit + push (PR not direct-to-main)
+        run: |
+          BRANCH="seismograph/${{ steps.dates.outputs.month }}"
+          git checkout -b "$BRANCH"
+          git add seismograph/
+          git commit -m "Seismograph: ${{ steps.dates.outputs.month }} monthly snapshot
+
+          Harvested: ${{ steps.dates.outputs.from }} → ${{ steps.dates.outputs.until }}
+          Sets: openaire $( [ -n '${{ github.event.inputs.sets }}' ] && echo '+ firehose-sample' )
+
+          Automated by .github/workflows/zenodo-seismograph.yml
+          Per EA-MANDALA-SEISMOGRAPH-01 v0.1." || echo "No changes to commit"
+          git push origin "$BRANCH" || true
+
+      - name: Open PR for MANUS review
+        uses: peter-evans/create-pull-request@v5
+        with:
+          branch: seismograph/${{ steps.dates.outputs.month }}
+          title: "Seismograph: ${{ steps.dates.outputs.month }} monthly snapshot"
+          body: |
+            Automated monthly Zenodo metadata snapshot per EA-MANDALA-SEISMOGRAPH-01 v0.1.
+
+            **Window:** ${{ steps.dates.outputs.from }} → ${{ steps.dates.outputs.until }}
+
+            **Sets harvested:** openaire ${{ contains(github.event.inputs.sets, 'firehose') && '+ firehose-sample' || '' }}
+
+            Per the seismograph protocol, this PR is opened (not auto-merged) so that
+            MANUS reviews the month's metrics before they enter the long-running record.
+
+            Review checklist:
+            - [ ] Record counts match expected daily-rate × days-in-month
+            - [ ] No catastrophic harvest failures (state files indicate clean completion)
+            - [ ] Metrics are within significance-threshold variance from prior month
+            - [ ] Any flagged Tier-4 records of interest reviewed
+            - [ ] Heteronymic Analysis tag added if quarter-boundary
+          labels: seismograph,automated

@@ -1,0 +1,340 @@
+{
+  "input": "seismograph/baseline/firehose-2026-06-28-sample.xml.gz",
+  "computed_at": "2026-06-29T02:22:56.187050+00:00",
+  "schema_version": "EA-MANDALA-SEISMOGRAPH-01/v0.1",
+  "summary": {
+    "total_records": 1900,
+    "unique_dates": 1,
+    "date_range": [
+      "2026-06-28",
+      "2026-06-28"
+    ]
+  },
+  "metrics": {
+    "lexical_compression": {
+      "token_count": 110992,
+      "unique_tokens": 20525,
+      "entropy_bits": 12.229143740215441,
+      "normalized_entropy": 0.8536867699910385,
+      "top_20_terms": [
+        [
+          "via",
+          1334
+        ],
+        [
+          "tool",
+          1242
+        ],
+        [
+          "bulk",
+          1233
+        ],
+        [
+          "high-speed",
+          1223
+        ],
+        [
+          "uploaded",
+          1222
+        ],
+        [
+          "de",
+          1158
+        ],
+        [
+          "pdf",
+          1137
+        ],
+        [
+          "la",
+          1012
+        ],
+        [
+          "pas",
+          834
+        ],
+        [
+          "le",
+          798
+        ],
+        [
+          "une",
+          580
+        ],
+        [
+          "un",
+          478
+        ],
+        [
+          "les",
+          464
+        ],
+        [
+          "et",
+          459
+        ],
+        [
+          "est",
+          451
+        ],
+        [
+          "paper",
+          408
+        ],
+        [
+          "il",
+          391
+        ],
+        [
+          "que",
+          372
+        ],
+        [
+          "ne",
+          364
+        ],
+        [
+          "data",
+          325
+        ]
+      ]
+    },
+    "citation_insularity": {
+      "intra_zenodo_refs": 3476,
+      "other_doi_refs": 228,
+      "non_doi_refs": 252,
+      "total_relations": 3956,
+      "intra_zenodo_ratio": 0.8786653185035389,
+      "doi_ratio": 0.9362992922143579
+    },
+    "heterodoxy_migration": {
+      "external_repo_references": {
+        "arxiv": 60,
+        "github": 52,
+        "biorxiv": 2,
+        "osf": 1
+      },
+      "total_external_refs": 115,
+      "records_with_relations": 1894
+    },
+    "publisher_distribution": {
+      "gini": 0.9490430622009569,
+      "unique_publishers": 44,
+      "total_deposits": 1900,
+      "zenodo_default_pct": 0.9521052631578948,
+      "top_20": [
+        [
+          "Zenodo",
+          1809
+        ],
+        [
+          "The Lingua Spectrum",
+          11
+        ],
+        [
+          "WebLog Open Access Publications",
+          9
+        ],
+        [
+          "Siddhant International publication",
+          6
+        ],
+        [
+          "Genc Bilge Publishing",
+          5
+        ],
+        [
+          "Asia Mathematika",
+          4
+        ],
+        [
+          "Amigo International Publishing",
+          4
+        ],
+        [
+          "Eagle Intelligence Reports",
+          4
+        ],
+        [
+          "Zalo\u017eba Perfectus",
+          4
+        ],
+        [
+          "Pensoft Publishers",
+          3
+        ],
+        [
+          "Revista T\u00f3picos",
+          3
+        ],
+        [
+          "Scientific conference open proceedongs (SCOP)",
+          3
+        ],
+        [
+          "Veterinary Today",
+          2
+        ],
+        [
+          "Journal of Pharmaceutical Sciences",
+          2
+        ],
+        [
+          "Faculty of Arts, Federal University Lokoja",
+          2
+        ],
+        [
+          "LexArcheus Publications",
+          1
+        ],
+        [
+          "Italian Society of Vegetation Science (SISV)",
+          1
+        ],
+        [
+          "Academy of Educational Research",
+          1
+        ],
+        [
+          "Keio Economic Observatory, Keio University",
+          1
+        ],
+        [
+          "Wiki to Yes \u2013 Mediation unlimited",
+          1
+        ]
+      ]
+    },
+    "retraction_patterns": {
+      "withdrawal_markers": {
+        "description_marker": 3
+      },
+      "flagged_records": 3
+    },
+    "diotima_index": {
+      "records_in_scope": 1174,
+      "total_tokens": 92902,
+      "first_person_count": 18,
+      "speculative_modal_count": 58,
+      "first_person_per_1000": 0.19375255645734216,
+      "modal_per_1000": 0.6243137930292135,
+      "diotima_composite": 0.8180663494865557
+    },
+    "spam_patterns": {
+      "total_records": 1900,
+      "bulk_uploaded_markers": 1221,
+      "bulk_uploaded_pct": 0.6426315789473684,
+      "zenodo_default_publisher": 1809,
+      "zenodo_default_pct": 0.9521052631578948
+    }
+  },
+  "daily": {
+    "2026-06-28": {
+      "record_count": 1900,
+      "lexical_compression": {
+        "token_count": 110992,
+        "unique_tokens": 20525,
+        "entropy_bits": 12.229143740215441,
+        "normalized_entropy": 0.8536867699910385,
+        "top_20_terms": [
+          [
+            "via",
+            1334
+          ],
+          [
+            "tool",
+            1242
+          ],
+          [
+            "bulk",
+            1233
+          ],
+          [
+            "high-speed",
+            1223
+          ],
+          [
+            "uploaded",
+            1222
+          ],
+          [
+            "de",
+            1158
+          ],
+          [
+            "pdf",
+            1137
+          ],
+          [
+            "la",
+            1012
+          ],
+          [
+            "pas",
+            834
+          ],
+          [
+            "le",
+            798
+          ],
+          [
+            "une",
+            580
+          ],
+          [
+            "un",
+            478
+          ],
+          [
+            "les",
+            464
+          ],
+          [
+            "et",
+            459
+          ],
+          [
+            "est",
+            451
+          ],
+          [
+            "paper",
+            408
+          ],
+          [
+            "il",
+            391
+          ],
+          [
+            "que",
+            372
+          ],
+          [
+            "ne",
+            364
+          ],
+          [
+            "data",
+            325
+          ]
+        ]
+      },
+      "diotima_index": {
+        "records_in_scope": 1174,
+        "total_tokens": 92902,
+        "first_person_count": 18,
+        "speculative_modal_count": 58,
+        "first_person_per_1000": 0.19375255645734216,
+        "modal_per_1000": 0.6243137930292135,
+        "diotima_composite": 0.8180663494865557
+      },
+      "spam_patterns": {
+        "total_records": 1900,
+        "bulk_uploaded_markers": 1221,
+        "bulk_uploaded_pct": 0.6426315789473684,
+        "zenodo_default_publisher": 1809,
+        "zenodo_default_pct": 0.9521052631578948
+      }
+    }
+  }
+}
