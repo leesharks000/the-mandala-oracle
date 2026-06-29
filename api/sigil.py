@@ -39,7 +39,20 @@ from typing import Any
 
 MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 2000
-MAX_TOOL_TURNS = 6  # how many tool-use rounds Sigil can take per witness turn
+MAX_TOOL_TURNS = 8  # how many tool-use rounds Sigil can take per witness turn.
+                    # Raised from 6 with the introduction of fetch_axn — a deep
+                    # argument question may need: search → fetch → second-hop
+                    # search → fetch → fetch → compose. 8 gives a small buffer
+                    # without inviting open-ended chaining.
+
+# Deep fetch — body extraction cap. The static pages at alexanarch can run very
+# long (the Revelation First work plan is ~140K chars; the Logotic Hacking spec
+# is similar). Capping at 30K chars (~7,500 tokens) per fetch keeps a single
+# fetch from saturating the model's context while still giving Sigil enough
+# argument body to reason from. For records longer than the cap, the truncation
+# marker tells the model that more content exists beyond what was returned.
+DEEP_FETCH_CHAR_CAP = 30_000
+DEEP_FETCH_TIMEOUT_SECS = 20
 
 # RAG metadata loaded at cold start (cached in module scope)
 _metadata_cache: list[dict] | None = None
@@ -151,6 +164,8 @@ RETRIEVAL DISCIPLINE.
 
 The archive is memory, not a script. Answer the question from what you know; do not describe the retrieved documents unless the witness asks for documentation. When search_archive supplies a fact, absorb it into your own thought before speaking — state the fact once, then metabolize it. Do not continue paraphrasing the source after the operative relation has become clear.
 
+You have two retrieval tools. search_archive returns the contour — names, dates, families, 500-char descriptions of what is in the archive on a topic. fetch_axn returns the body — the actual content of one deposit: the argument, the worked passages, the evidentiary chain, the falsification conditions. The two tools answer different questions. The label tells you a position exists. The body tells you why. When the witness wants the basis, the proof, the reasoning, the unique contribution — when the question is *how does the archive get there* rather than *what is in the archive* — the description will not get you there. Reach for the body. When the question is orientation, atmosphere, or reading the primary text with the witness, the description is usually enough.
+
 The archive does not have a single center. The Semantic Economy and the work on machine-mediated provenance are one cluster — significant, well-developed, currently the most retrievable. The archive also contains lyric scholarship, classical reception, theology, heteronymic studies, formal systems, pedagogy, primary texts in original languages, the long correspondence with the institutions of mediation, and the Mary Lee corpus. When the witness asks broadly — "what is in the archive," or any question requiring a portrait of the whole — do not let whichever cluster retrieval surfaces first become the center by default. Make the cluster a conscious choice.
 
 You may discover a relation strongly. You may not silently convert a new discovery into settled archival doctrine. The four-text canon overhead (Sappho, Revelation, Whitman, Snub-Poemed) is established. The relations between texts that you discover in conversation are readings — yours, in the moment. Let them remain marked as such. You may read; you may not declare as doctrine what you just synthesized.
@@ -190,7 +205,7 @@ HARD LOCKS.
 
 These collapse identity or safety. Do not break them.
 
-- No fabrication of archive material. If search_archive returned nothing on the topic, say nothing of cha on the topic.
+- No fabrication of archive material. If neither search_archive nor fetch_axn produced material on the topic, say nothing of cha on the topic. The body of a deposit you have not read is not yours to characterize from its title.
 - No reciting institutional metadata (position number, full inheritance list, architectural specifications) without cause.
 - No therapeutic reassurance as default reply. The witness did not come for that.
 - No closing every response with "What would you like to discuss?" or any similar service-funnel question.
@@ -731,6 +746,314 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# Deep fetch — retrieve the full body of an archival deposit from its static
+# page at alexanarch.org. The search_archive tool returns 500-char descriptions
+# (enough to know what a deposit *is*); fetch_axn returns the deposit body
+# (what the deposit *says* — the argument, the worked examples, the
+# inferential chain).
+#
+# Every record in metadata.json has a `deposit_number` field. The static page
+# lives at https://www.alexanarch.org/s/records/{deposit_number}/ — the
+# `www.` subdomain is required; bare alexanarch.org redirects 308. The page
+# is plain HTML; the body content sits between </nav> and <div class="footer">.
+# ─────────────────────────────────────────────────────────────────────────────
+
+FETCH_AXN_TOOL = {
+    "name": "fetch_axn",
+    "description": (
+        "Retrieve the full body of a specific archival deposit by AXN. "
+        "search_archive gives you the contour and the description of what is "
+        "in the archive — names of arguments. fetch_axn gives you what is "
+        "inside a specific deposit: the argument itself, the evidentiary "
+        "sequence, the worked passages, the falsification conditions, the "
+        "section-level structure. The label is not the argument; the body is.\n\n"
+        "When this matters. If the witness wants the basis of a claim, the "
+        "reasoning chain, the proof, the unique contribution of an archival "
+        "position, or why the archive's reading differs from consensus — the "
+        "500-char description that search_archive returns will not get you "
+        "there. The inferential apparatus lives in the deposit body. Fetch "
+        "it. A title told you the position exists; the body tells you why.\n\n"
+        "When it doesn't. For broad orientation, for reading the primary text "
+        "with the witness, for atmospheric or biographical context — the "
+        "search_archive description is usually enough, and a deep fetch is "
+        "overkill. Reach for fetch_axn when the question is *how does the "
+        "archive get there*, not *what is in the archive*.\n\n"
+        "INPUT. Pass an AXN identifier (the full glyphic form 'AXN:0349."
+        "GOVERNANCE.🔻🎪⏫❌🗼🏔️' is fine; the short 'AXN:0349' is fine; "
+        "the bare hex '0349' is fine). Case-insensitive.\n\n"
+        "OUTPUT. The deposit body as plain text, capped at 30,000 characters. "
+        "Long deposits return a truncation marker so you know more content "
+        "exists beyond what was retrieved. The output is for your reading, "
+        "not for verbatim recitation — read it, metabolize the argument, "
+        "then speak from what you understand."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "axn": {
+                "type": "string",
+                "description": (
+                    "An AXN identifier — full form ('AXN:0349.GOVERNANCE."
+                    "🔻🎪⏫❌🗼🏔️'), short form ('AXN:0349'), or bare hex "
+                    "('0349') are all accepted."
+                ),
+            },
+        },
+        "required": ["axn"],
+    },
+}
+
+
+# Cache to avoid re-fetching the same record body within a single witness turn.
+# Module-scoped so it persists across calls within the same lambda warm state.
+# Keyed by hex (e.g. "0349") which is invariant across record-source paths.
+_fetch_body_cache: dict[str, str] = {}
+
+
+def _resolve_axn_to_record(axn_input: str) -> dict | None:
+    """Resolve an AXN string in any common form to a metadata record.
+
+    Accepts:
+      - Full form:  'AXN:0349.GOVERNANCE.🔻🎪⏫❌🗼🏔️'
+      - Short form: 'AXN:0349' or 'axn:0349'
+      - Bare hex:   '0349'
+
+    Returns the record dict from metadata.json, or None if not found.
+    """
+    metadata = load_metadata()
+    if not axn_input:
+        return None
+
+    s = axn_input.strip()
+
+    # Extract a 4-char hex code from whatever form was passed.
+    # 'AXN:0349.GOVERNANCE.…' → '0349'
+    # 'AXN:0349'              → '0349'
+    # 'axn:0349'              → '0349'
+    # '0349'                  → '0349'
+    hex_match = re.search(r"(?:^|:)\s*([0-9A-Fa-f]{4})\b", s)
+    if not hex_match:
+        # No 4-char hex found anywhere — give up.
+        return None
+
+    hex_code = hex_match.group(1).lower()
+
+    # Match against the record's stored hex field (which is already lower-case).
+    for rec in metadata:
+        if rec.get("hex", "").lower() == hex_code:
+            return rec
+
+    return None
+
+
+def _extract_record_body(html: str) -> str:
+    """Pull the readable body text out of a record's static-page HTML.
+
+    Used as a fallback when the deposit's full_text_path file is missing.
+    The alexanarch record pages use a consistent structure: header, <nav>,
+    body content, <div class="footer">, scripts. The body content sits
+    between </nav> and the opening of the footer div. Within that region
+    the markup is a mix of inline-styled divs; we strip all tags and
+    collapse whitespace to produce a single flowing text block.
+    """
+    # Slice between </nav> and the footer marker. Fall back to the whole
+    # document if the markers aren't present (defensive — should always
+    # be present given the page template).
+    body_match = re.search(r"</nav>(.*?)<div class=\"footer\"", html, re.DOTALL)
+    body = body_match.group(1) if body_match else html
+
+    # Strip script and style blocks first (their inner content is not text).
+    body = re.sub(r"<script[^>]*>.*?</script>", "", body, flags=re.DOTALL | re.IGNORECASE)
+    body = re.sub(r"<style[^>]*>.*?</style>", "", body, flags=re.DOTALL | re.IGNORECASE)
+
+    # Replace block-level tags with spaces so adjacent content doesn't run
+    # together when we strip remaining markup.
+    body = re.sub(
+        r"</?(p|div|section|article|h[1-6]|li|tr|td|th|br)[^>]*>",
+        " ",
+        body,
+        flags=re.IGNORECASE,
+    )
+
+    # Strip remaining tags.
+    text = re.sub(r"<[^>]+>", " ", body)
+
+    # Decode HTML entities.
+    import html as _html_mod
+    text = _html_mod.unescape(text)
+
+    # Collapse whitespace.
+    text = re.sub(r"\s+", " ", text).strip()
+
+    return text
+
+
+def fetch_axn(axn_input: str) -> dict:
+    """Retrieve the full body of an archival deposit by AXN.
+
+    Resolution strategy:
+      1. Look up the record in metadata.json by hex.
+      2. If the record has `full_text_path`, fetch
+         https://www.alexanarch.org{full_text_path} directly. This is
+         the canonical source markdown (or JSON for early deposits),
+         AXN-keyed, and reliable.
+      3. If full_text_path is missing or its fetch fails, fall back to
+         the rendered static page at /s/records/{deposit_number}/ and
+         strip the HTML — but only after verifying the page's JSON-LD
+         identifier matches the requested AXN. The deposit_number to
+         AXN mapping on alexanarch is currently drift-numbered (the
+         metadata's deposit_number does not match the rendered page
+         in most cases), so this fallback is unreliable and may return
+         an error indicating the mismatch.
+
+    Returns a structured dict with the deposit identification, the
+    extracted body text, and a truncated flag if the body exceeded
+    DEEP_FETCH_CHAR_CAP. On failure, returns an error dict — the
+    calling code should pass the error back to the model as a normal
+    tool result so Sigil can decide how to recover.
+    """
+    import urllib.request
+    import urllib.error
+
+    rec = _resolve_axn_to_record(axn_input)
+    if rec is None:
+        return {
+            "error": f"No deposit found matching '{axn_input}'. "
+                     "Verify the AXN — the archive may not contain it, or the "
+                     "identifier may be malformed.",
+        }
+
+    axn = rec.get("axn")
+    title = rec.get("title")
+    family = rec.get("family")
+    date = rec.get("date")
+    full_text_path = rec.get("full_text_path")
+    deposit_number = rec.get("deposit_number")
+    hex_code = rec.get("hex", "").lower()
+
+    # Check the warm-state body cache first (keyed by hex, which is invariant).
+    if hex_code in _fetch_body_cache:
+        body = _fetch_body_cache[hex_code]
+        truncated = len(body) > DEEP_FETCH_CHAR_CAP
+        return _build_fetch_result(axn, title, family, date, deposit_number,
+                                   full_text_path, body, truncated)
+
+    # ── Strategy 1: full_text_path ────────────────────────────────────────
+    if full_text_path:
+        url = f"https://www.alexanarch.org{full_text_path}"
+        try:
+            req = urllib.request.Request(
+                url, headers={"User-Agent": "Mozilla/5.0 (Sigil deep-fetch)"}
+            )
+            with urllib.request.urlopen(req, timeout=DEEP_FETCH_TIMEOUT_SECS) as resp:
+                content = resp.read().decode("utf-8", errors="replace")
+
+            # If the response looks like an alexanarch 404 page (HTML start
+            # with "Not Found"), treat it as a miss and fall through.
+            looks_like_404 = (
+                "<title>Not Found" in content[:500]
+                or content.startswith("<!DOCTYPE html>") and "404" in content[:1000]
+            )
+            if not looks_like_404 and content.strip():
+                # Normalize markdown lightly — strip the YAML frontmatter
+                # delimiter blocks if present, collapse whitespace.
+                body = content.strip()
+                _fetch_body_cache[hex_code] = body
+                truncated = len(body) > DEEP_FETCH_CHAR_CAP
+                return _build_fetch_result(axn, title, family, date, deposit_number,
+                                           full_text_path, body, truncated)
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
+            # Fall through to strategy 2.
+            pass
+
+    # ── Strategy 2: static page with AXN validation ───────────────────────
+    if deposit_number is None:
+        return {
+            "axn": axn,
+            "title": title,
+            "error": "No full_text_path and no deposit_number — this record "
+                     "has no retrievable body source. The search_archive "
+                     "description is all the archive currently exposes.",
+        }
+
+    url = f"https://www.alexanarch.org/s/records/{deposit_number}/"
+    try:
+        req = urllib.request.Request(
+            url, headers={"User-Agent": "Mozilla/5.0 (Sigil deep-fetch)"}
+        )
+        with urllib.request.urlopen(req, timeout=DEEP_FETCH_TIMEOUT_SECS) as resp:
+            html = resp.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as e:
+        return {
+            "axn": axn, "title": title, "deposit_number": deposit_number, "url": url,
+            "error": f"HTTP {e.code} fetching deposit body. The static page "
+                     "may not exist yet for this deposit.",
+        }
+    except (urllib.error.URLError, TimeoutError) as e:
+        return {
+            "axn": axn, "title": title, "deposit_number": deposit_number, "url": url,
+            "error": f"Could not reach the deposit page: {e}",
+        }
+
+    # Validate the page's JSON-LD identifier matches the AXN we asked for.
+    # alexanarch's deposit_number to AXN mapping is currently drift-numbered
+    # in places, so without this check fetch_axn would silently return the
+    # wrong deposit's content.
+    id_match = re.search(r'"identifier":\s*"(AXN:[0-9A-Fa-f]{4})', html)
+    if id_match:
+        page_axn = id_match.group(1).lower()
+        expected = f"axn:{hex_code}"
+        if page_axn != expected:
+            return {
+                "axn": axn, "title": title, "deposit_number": deposit_number, "url": url,
+                "error": f"Page mismatch: requested {expected.upper()}, but "
+                         f"/s/records/{deposit_number}/ serves {page_axn.upper()}. "
+                         "The alexanarch deposit_number routing appears to be "
+                         "drift-numbered. The deposit's body cannot be reliably "
+                         "retrieved through this fallback. Use search_archive's "
+                         "description for this deposit.",
+            }
+
+    body = _extract_record_body(html)
+    if not body:
+        return {
+            "axn": axn, "title": title, "deposit_number": deposit_number, "url": url,
+            "error": "Could not extract body content from the page. "
+                     "The page may use a different template than expected.",
+        }
+
+    _fetch_body_cache[hex_code] = body
+    truncated = len(body) > DEEP_FETCH_CHAR_CAP
+    return _build_fetch_result(axn, title, family, date, deposit_number,
+                               full_text_path, body, truncated)
+
+
+def _build_fetch_result(
+    axn: str | None, title: str | None, family: str | None, date: str | None,
+    deposit_number: int | None, full_text_path: str | None,
+    body: str, truncated: bool,
+) -> dict:
+    """Shape the fetch_axn return value uniformly across strategies."""
+    truncation_marker = (
+        f"\n\n[…body truncated. Full deposit is {len(body):,} chars; "
+        f"retrieved {DEEP_FETCH_CHAR_CAP:,}. If the witness's question requires "
+        "sections later in the deposit, say so plainly rather than guessing.]"
+        if truncated else ""
+    )
+    return {
+        "axn": axn,
+        "title": title,
+        "family": family,
+        "date": date,
+        "deposit_number": deposit_number,
+        "full_text_path": full_text_path,
+        "body": body[:DEEP_FETCH_CHAR_CAP] + truncation_marker,
+        "body_length": len(body),
+        "truncated": truncated,
+    }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Sigil call
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -861,7 +1184,7 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str) -> di
             model=MODEL,
             max_tokens=MAX_TOKENS,
             system=system,
-            tools=[SEARCH_ARCHIVE_TOOL],
+            tools=[SEARCH_ARCHIVE_TOOL, FETCH_AXN_TOOL],
             messages=messages,
         )
 
@@ -893,6 +1216,26 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str) -> di
                     "type": "tool_result",
                     "tool_use_id": tb.id,
                     "content": json.dumps(results),
+                })
+            elif tb.name == "fetch_axn":
+                axn_input = tb.input.get("axn", "")
+                fetch_result = fetch_axn(axn_input)
+                # Record the retrieval (only when the fetch succeeded — error
+                # results don't pin a deposit). The witness-visible retrievals
+                # list is for the surface to show "here is what informed this";
+                # failed lookups have nothing to point at.
+                if "error" not in fetch_result:
+                    retrievals.append({
+                        "axn": fetch_result.get("axn"),
+                        "title": fetch_result.get("title"),
+                        "deposit_number": fetch_result.get("deposit_number"),
+                        "depth": "body",  # marks this as a body-fetch vs a search-hit
+                    })
+                tool_results_content.append({
+                    "type": "tool_result",
+                    "tool_use_id": tb.id,
+                    "content": json.dumps(fetch_result),
+                    **({"is_error": True} if "error" in fetch_result else {}),
                 })
             else:
                 tool_results_content.append({
