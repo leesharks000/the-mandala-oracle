@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:5F5C.CONVERSATION.🌱🌘❄️☀️🪨🍃",
+  "session_id_hash": "1e10726fbd37ca54",
+  "started_at": "2026-06-29T22:36:25.421Z",
+  "last_updated": "2026-06-29T22:51:53.555806+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "Do you now have full-text cha search capability? Tell me about the revelation first argument. Specifics, not mere assertion"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
