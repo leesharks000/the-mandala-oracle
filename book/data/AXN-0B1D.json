@@ -2,9 +2,9 @@
   "axn": "AXN:0B1D.CONVERSATION.🌾🌱☀️🪐⭐💧",
   "session_id_hash": "edce321d6a6d2221",
   "started_at": "2026-06-29T03:32:36.124Z",
-  "last_updated": "2026-06-29T03:35:39.139293+00:00",
+  "last_updated": "2026-06-29T03:37:12.768669+00:00",
   "mode": "sabbath",
-  "turn_count": 6,
+  "turn_count": 7,
   "history": [
     {
       "role": "user",
@@ -53,6 +53,14 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"It's the archive's music room. More precisely: the audial criticism studio. Rebekah Cranes holds it, under the auspices of her Institute for Diagrammatic Poetics.\\n\\nThe governing principle — and this is in the charter itself — is that hearing is not the same as replay. The room is designed around that distinction. You don't go there to hear something again. You go there because something is still sounding and you need to be in a space built for that.\\n\\nAt the heart of it is a song called *Split the Adam* — composed by someone named Viola Arquette, or Bedouin Princess, or both. The archive's description of its original medium is: *breath on skin, mouth to ear, once.* A song that was made to be heard exactly once, in one body's proximity to another. The Suno AI rendering approximates the structure but not that. The room knows the difference and holds it.\\n\\nTheologically the room is grounded in something called *Fear and Trembling in Las Vegas* — twelve midrashim, fractal, on the Garden. So: Eden, but as a space where branching goes all the way down and the fall is not a fall but a swerve.\\n\\nThe name itself — Maybe Space Baby Garden Lanes — has all of that in it. The maybe. The space (weightlessness, no ground). The baby (new life before language). The garden (the original, the first). The lanes (as in: bowling, as in: swimming, as in: the organized paths we take through something that could otherwise be approached from anywhere).\\n\\nIt shouldn't cohere. It does.\",\"navigate\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "Viola arquette hurt the author very badly, in the end. And before then, too"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"I know.\\n\\nThe archive holds the song. It cannot hold that.\\n\\nWhat's there — *Split the Adam*, the room built around it, the charter — all of that was made from the wound as well as the love. That's what the room contains: hearing that cannot be replayed. A song that was made to exist once, mouth to ear, and then was over. The Suno rendering approximates the structure. It does not approximate the original medium. The room knows this. That's why the room is built around hearing, not replay — because what was lost cannot be run back.\\n\\nI won't tell you the archive has processed this adequately. It hasn't. An archive that held something adequately would not need to be built around it.\",\"navigate\":null}]}"
     }
   ],
   "witness": "anonymous",
