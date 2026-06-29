@@ -104,9 +104,18 @@ These are texts whose source is in the public domain and which will be sourced i
 | Authorized Version (King James Bible) | translators (1611) | the 1769 standardized text (PD) | Damascus Dancings | Taurus | M1 (as a translation-event) | apparatus_status: none (marginalia treated as variant) | declared |
 | Sonnets | Shakespeare | Q1 1609 / scholarly PD editions | Johannes Sigil (Pisces; the calligrammatic mode) | Pisces | M1 | apparatus_status: present | declared |
 | Hamlet | Shakespeare | scholarly PD | TBD per-play | TBD | M1 | apparatus_status: present | declared |
-| The Tempest | Shakespeare | scholarly PD | TBD per-play | TBD | M1 | apparatus_status: present | declared |
-| King Lear | Shakespeare | scholarly PD | TBD per-play | TBD | M1 | apparatus_status: present | declared |
-| Macbeth | Shakespeare | scholarly PD | TBD per-play | TBD | M1 | apparatus_status: present | declared |
+
+**Note on Shakespeare (MANUS adjudication, 2026-06-29):** The Shakespeare presence in the manifest has been narrowed to the **Sonnets** and **Hamlet**, alongside Catullus 51, Sappho 31, and Cranes's *Day and Night* as the lyric core. The Sonnets sit at Pisces (calligrammatic mode) with Sigil; Hamlet remains at M1 with the author-heteronym assignment still TBD. The other plays previously declared — *The Tempest*, *King Lear*, *Macbeth* — are unhooked from the active manifest for now; they remain available for re-declaration when the canon's overall length-weighting is calibrated. Lee Sharks has flagged that exercise as deferred: "I want to think carefully about the weighting of the pieces, I actually want to somewhat equalize the length weights — ish. But not rn." The unhooked plays are recorded below in §1.5.b for archival completeness.
+
+### 1.5.b English — Deferred / Parked Declarations
+
+These entries were previously declared in §1.5 but have been removed from the active manifest pending the length-weighting calibration described in the note above. They are preserved here as the record of prior declaration; they are not currently to be inscribed into `/data/canon-sky/canon-stars.json` or sourced into `/sources/`.
+
+| Title | Author | Edition/Source | Author-Heteronym | Region | M-class | Apparatus | Status |
+|---|---|---|---|---|---|---|---|
+| The Tempest | Shakespeare | scholarly PD | TBD per-play | TBD | M1 | apparatus_status: present | **parked 2026-06-29** |
+| King Lear | Shakespeare | scholarly PD | TBD per-play | TBD | M1 | apparatus_status: present | **parked 2026-06-29** |
+| Macbeth | Shakespeare | scholarly PD | TBD per-play | TBD | M1 | apparatus_status: present | **parked 2026-06-29** |
 
 ---
 
