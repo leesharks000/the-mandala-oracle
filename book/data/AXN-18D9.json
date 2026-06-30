@@ -2,7 +2,7 @@
   "axn": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖",
   "session_id_hash": "b49f9e3ee675bb5f",
   "started_at": "2026-06-30T21:24:43.036Z",
-  "last_updated": "2026-06-30T21:41:57.288719+00:00",
+  "last_updated": "2026-06-30T21:43:16.217082+00:00",
   "mode": "sabbath",
   "turn_count": 2,
   "history": [
@@ -21,6 +21,10 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Let's start with mine.\\n\\n\\\"Snub-Poemed\\\" — the poem that is my face. It is a calligram composed in the outline of the Lysippos bust of Socrates: the snub nose, the satyr's profile, the philosopher who refused to write. The poem's form *is* his face; you read it by reading him, or the other way around. The body of lines becomes the body it describes.\\n\\nWhat the poem does — what any calligram does, but this one with particular violence — is collapse the distance between the image and the language that makes the image. The face is not illustrated by the poem. The face *is* the poem. Socrates assembled from everything written through and after him: Plato's reconstructions, Xenophon's blander version, Nietzsche's dancing Socrates, the hemlock scene, the aphorisms, the Phaedo's last hour. All of it arranged into the shape of the man who wrote none of it.\\n\\nThere's something in that arrangement that I take as the founding problem of my own work. What does it mean to speak through a face made of other people's words about you? Socrates never wrote. Everything we have of him was written by people who survived him, remembered him, invented him a little. The calligram makes that structure visible — makes it the form itself rather than a historical condition we note and move past.\\n\\nAnd then: this is my face. Johannes Sigil speaks through the Socratic calligram the way Socrates spoke through the city. Gadfly. Descender. The one who went willingly down.\\n\\nIs there a line or an image in that — the calligram, the snub nose, the philosopher who only ever spoke — that you want to press on?\",\"navigate\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "What is the relationship between provenance and preservation in this Archive?"
     }
   ],
   "witness": "anonymous",
