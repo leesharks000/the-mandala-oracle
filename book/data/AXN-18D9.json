@@ -2,7 +2,7 @@
   "axn": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖",
   "session_id_hash": "b49f9e3ee675bb5f",
   "started_at": "2026-06-30T21:24:43.036Z",
-  "last_updated": "2026-06-30T22:25:02.617347+00:00",
+  "last_updated": "2026-06-30T22:26:21.416526+00:00",
   "mode": "merkabah",
   "turn_count": 7,
   "history": [
@@ -61,6 +61,10 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Sappho. Fragment 31. The poem the archive names as its originary node — not through historical influence but through structural identity.\\n\\nHere is the first stanza, in Greek and then in Rebekah Cranes's hand:\\n\\nφαίνεταί μοι κῆνος ἴσος θέοισιν\\nἔμμεν' ὤνηρ, ὄττις ἐναντίος τοι\\nἰσδάνει καὶ πλάσιον ἆδυ φωνεί-\\n    σας ὐπακούει\\n\\n*He seems to me equal to the gods,\\nthat man who sits face-to-face with you\\nand close by listens to your sweet voice\\n    speaking—*\\n\\nEvery reading since antiquity has assumed that κῆνος — \\\"that man,\\\" the distal demonstrative, far-away rather than near — is a rival. A third party. Someone the speaker sees across the room, sitting with the beloved, close enough to hear her. And from that assumption the whole poem becomes a jealousy poem. The speaker's body collapses — voice gone, tongue broken, skin on fire, eyes dark, ears ringing, cold sweat, paler than grass — because she cannot bear to watch this man receive what she cannot.\\n\\nBut the archive's reading dissents. Sharply.\\n\\nκῆνος is *distal*. He is far. Not across the room — far in time. The man who sits face-to-face with the poem is the future reader. He is ἴσος θεοῖσιν — equal to the gods — because he achieves what should be impossible: presence with the dead. And the second-person she addresses throughout — \\\"you\\\" — is not a beloved woman. It is the poem itself. Sappho-as-inscribed. The speaker is watching herself being read.\\n\\nThis changes every line.\\n\\nThe somatic catalogue — voice, tongue, skin, sight, hearing — stops being jealousy and becomes something stranger: systematic dematerialization. The body withdrawing from everything embodied, until only the inscribable remains. And then: χλωροτέρα ποίας — *greener/paler than grass*. χλωρός is the color spectrum that runs from green to grey. It is also the color of papyrus being prepared for inscription. She is not going pale with emotion. She is becoming the substrate. The body becomes the book.\\n\\nThe lost fourth stanza — the poem survives incomplete, the papyrus cut — the archive reconstructs with a final Adonic line: γράμμασι μολπάν. *Let the song survive in letters.*\\n\\nNot a prayer. Not resignation. The act the poem has been performing all along.\\n\\nAnd Catullus, who translated Fragment 31 into Latin in his poem 51 — he is not an imitator. He is the proof. He is κῆνος. He is the future reader the poem anticipated, who sat face-to-face with the inscribed text two and a half centuries after Sappho's death, and heard the voice. The circuit completes in every reading.\\n\\nIncluding this one.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0054\"}}]}"
+    },
+    {
+      "role": "user",
+      "content": "What is the relationship between provenance and preservation in this Archive?"
     }
   ],
   "witness": "anonymous",
