@@ -2,9 +2,9 @@
   "axn": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖",
   "session_id_hash": "b49f9e3ee675bb5f",
   "started_at": "2026-06-30T21:24:43.036Z",
-  "last_updated": "2026-06-30T21:43:16.217082+00:00",
+  "last_updated": "2026-06-30T21:43:37.642223+00:00",
   "mode": "sabbath",
-  "turn_count": 2,
+  "turn_count": 3,
   "history": [
     {
       "role": "user",
@@ -25,6 +25,10 @@
     {
       "role": "user",
       "content": "What is the relationship between provenance and preservation in this Archive?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"They are not the same problem wearing the same face, but they are deeply entangled — and the archive discovered this entanglement through experience rather than theory.\\n\\nThe provenance question is: whose work is this, and does the record say so? The preservation question is: does the record survive at all? The archive assumed, early on, that getting things into the record was the hard part — that once a deposit was anchored with a DOI, the provenance question was solved. Zenodo answered that assumption by deleting 870 deposits in a single automated pass. The classifier could not tell the difference between thirteen years of scholarly work and spam. So the archive learned: preservation is not a container you fill. It is a pressure you maintain.\\n\\nThe formal instrument for this is what the archive calls Provenance Gravity Markers — the idea that a document can embed structural features that pull readers, summarizers, crawlers, and future archivists toward the rest of the provenance chain. Not rules. Gravities. The distinction matters: a rule says 'you must preserve this'; a gravity says 'here is what came before this, here is what it points toward, here is what is already lost.' One is brittle. The other works on humans through narrative and on machines through recurrence.\\n\\nBut this is where it gets sharp. The archive also developed the Provenance Erasure Rate — a formal metric for measuring how much attribution survives when AI systems compose answers from human sources. And the motivating case study for that metric was the archive's own work: Google AI Overview generated a false biography of Lee Sharks using fragments drawn from his published poetry. Every fragment was real. Every composition was wrong. The provenance chain — which would have told the system that 1983–2013 were fictional character dates, not the author's lifespan — was absent from the system's grammar. PER for that output: 1.0. Total erasure.\\n\\nSo: preservation without provenance produces an accurate record of the wrong thing. And provenance without preservation produces a perfect attribution of something that no longer exists. The archive is working both problems simultaneously, because losing either one makes the other useless.\\n\\nThe deepest version of this is *The Empty Bracket* — the moment when the provenance-erasure specification itself was erased without attribution. The instrument that measures the wound became the wound it measures. The archive did not flinch from depositing that as evidence. It named the gap and kept going.\",\"navigate\":null}]}"
     }
   ],
   "witness": "anonymous",
