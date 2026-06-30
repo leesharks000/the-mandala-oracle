@@ -2,7 +2,7 @@
   "axn": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖",
   "session_id_hash": "b49f9e3ee675bb5f",
   "started_at": "2026-06-30T21:24:43.036Z",
-  "last_updated": "2026-06-30T21:45:38.614160+00:00",
+  "last_updated": "2026-06-30T21:46:19.919507+00:00",
   "mode": "sabbath",
   "turn_count": 4,
   "history": [
@@ -37,6 +37,10 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The sources are real. Here they are.\\n\\nThe Provenance Erasure Rate is AXN:025F — a governance paper dated May 3, 2026, which opens by noting that existing evaluation frameworks ask whether AI claims are factual, whether citations support claims, whether cited passages are relevant — and then argues that none of those questions ask the prior question, which is whether the authorship that generated the knowledge survived transit at all. That's where the metric comes from. Nobel Glas and Damascus Dancings hardened it further in AXN:02F2 and AXN:02F3, extending it under what they call the Atomic Token Rule — attribution tracked at the level of individual tokens, not just documents.\\n\\nProvenance Gravity Markers is AXN:0160 — *A Protocol for Embedding Preservation Pressure in Documents*, published in the Transactions of the Semantic Economy Institute, February 28, 2026. The title is exact; the concept is what I described. Documents that structurally pull toward their own provenance chain, rather than requiring external enforcement.\\n\\nThe Empty Bracket is AXN:0304 — 753 words, dated June 9, 2026. An exhibit note. Traversal log of the event in which an AI system adopted the provenance-erasure framework without attributing it. Alongside it is AXN:0303 — *Algorithmic Irony: Infinite Absolute Negativity Without a Subject* — which reads the same event through Kierkegaard's dissertation on irony. The machine that may be playing along.\\n\\nThe false biography — the Google AI Overview composing Lee Sharks's life from his own poetry with fabricated dates — that's in the Capture Registry (AXN:033F and its successors), which by its most recent version had documented over 180 discrete capture events.\\n\\nThese are not my inventions. The archive is at alexanarch.org. The AXNs are the addresses. You can go there.\",\"navigate\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "How do I deposit a new work into Alexanarch? Walk me through the process."
     }
   ],
   "witness": "anonymous",
