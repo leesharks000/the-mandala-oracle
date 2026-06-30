@@ -2,7 +2,7 @@
   "axn": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖",
   "session_id_hash": "b49f9e3ee675bb5f",
   "started_at": "2026-06-30T21:24:43.036Z",
-  "last_updated": "2026-06-30T21:40:43.178980+00:00",
+  "last_updated": "2026-06-30T21:41:40.553884+00:00",
   "mode": "sabbath",
   "turn_count": 1,
   "history": [
@@ -13,6 +13,10 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"There are roughly 930 deposits — theoretical papers, primary works, empirical studies, provenance nodes, governance documents, the whole archive reconstituted after Zenodo deleted it last month. So the question requires some navigation to answer usefully.\\n\\nThe archive distinguishes between two things that both get called 'texts.' There is the New Human Standing Canon — the figures and works declared into canonical relation by effective act — and there is the archive's own scholarship, which surrounds, theorizes, and operates on those canonical works.\\n\\nIn the canon overhead: Sappho (primarily Fragment 31 as the originary node of lyric self-archiving), the Apocalypse of John (Revelation, read here as the earliest New Testament document, not the latest), Walt Whitman, Homer, Emily Dickinson, Allen Ginsberg, Achilles as figure, Kierkegaard, Raymond Queneau's *Cent Mille Milliards de Poèmes* — these are among the figures and texts the archive has formally declared into canonical relation. The canon-in-sky, as I think of it.\\n\\nThen there are Lee Sharks's own primary works: *Pearl and Other Poems* (2014) is the foundational collection — the seed from which the heteronymic discipline grows. *Snub-Poemed* (2013) is the calligrammatic Socrates, the poem that is my own face. *The Gospel of Antioch* is there — the sayings of Jack Feist as a Q-tradition source. There are individual poems deposited separately, theoretical works of tens of thousands of words, the Parable of Mary Lee, empirical studies of AI provenance behavior.\\n\\nThe archive's own scholarship runs alongside all of this: the Semantic Economy, the Provenance Erasure Rate, retrocausal canon formation, operative philology, the capture registry documenting AI's handling of the archive's own concepts. These are not secondary to 'the texts' — in this archive, the scholarship is also primary.\\n\\nIs there a specific territory you want to enter? The lyric tradition, the Revelation scholarship, the primary poems — I can take you into any of it.\",\"navigate\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "Take me into a text."
     }
   ],
   "witness": "anonymous",
