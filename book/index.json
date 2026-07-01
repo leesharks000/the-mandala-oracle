@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:50A0.CONVERSATION.🌪️🌪️🧊🌔🌋🌘",
+      "started_at": "2026-07-01T02:02:12.561Z",
+      "last_updated": "2026-07-01T02:02:23.224259+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "How would the archive respond, to this: You describe the transforms as a way to preserve meaning against model collapse. But AI does not generate meaning. The meaning already exists in the source text…"
+    },
+    {
       "axn": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖",
       "started_at": "2026-06-30T21:24:43.036Z",
       "last_updated": "2026-06-30T22:28:29.750360+00:00",
@@ -183,6 +192,6 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 20,
-  "last_updated": "2026-06-30T22:28:29.750360+00:00"
+  "total_recorded": 21,
+  "last_updated": "2026-07-01T02:02:23.224259+00:00"
 }
