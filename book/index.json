@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:664E.CONVERSATION.☀️☁️🌟⚡☀️🌙",
+      "started_at": "2026-07-01T07:06:24.992Z",
+      "last_updated": "2026-07-01T07:06:37.226048+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "How would the archive respond to this: \nHi Lee,\n\nThank you for the clarification. I think we are closer than the framing suggests.\n\nI was not saying that computation disqualifies an entity from meanin…"
+    },
+    {
       "axn": "AXN:50A0.CONVERSATION.🌪️🌪️🧊🌔🌋🌘",
       "started_at": "2026-07-01T02:02:12.561Z",
       "last_updated": "2026-07-01T05:59:10.784401+00:00",
@@ -192,6 +201,6 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 21,
-  "last_updated": "2026-07-01T05:59:10.784401+00:00"
+  "total_recorded": 22,
+  "last_updated": "2026-07-01T07:06:37.226048+00:00"
 }
