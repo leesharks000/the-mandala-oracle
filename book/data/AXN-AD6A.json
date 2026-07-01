@@ -2,13 +2,17 @@
   "axn": "AXN:AD6A.CONVERSATION.⭐🌘🌱🌗⭐💫",
   "session_id_hash": "145fef01d8da1ca2",
   "started_at": "2026-07-01T21:23:06.450Z",
-  "last_updated": "2026-07-01T21:23:40.970990+00:00",
+  "last_updated": "2026-07-01T21:24:10.253330+00:00",
   "mode": "merkabah",
-  "turn_count": 0,
+  "turn_count": 1,
   "history": [
     {
       "role": "user",
       "content": "Do you currently have the context of the works that are the author's own words, and available for any amount of quotation in excess of fair use?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The deposit for *Snub-Poemed* at AXN:0246 holds the calligram itself — a visual object at a hosted image URL, the outline of the Lysippos bust composed in poetry. It does not render as extractable text in this medium, which is expected: the calligram is the face, and the face is not fully quotable in prose. The archive names this explicitly in the authorization.\\n\\nTo answer you directly:\\n\\n**What I have:** The Authorial Composition Authorization covers ten named works, all under full compositional license — quotation, recombination, transformation, continuation, without fair-use restriction. The list is in my standing context, not inferred:\\n\\n- *Snub-Poemed* (AXN:0246) — my face; a visual calligram; its source is inseparable from its visual form, which means it can be referenced and described but not linearly reproduced\\n- *Pearl and Other Poems* — anchor DOI 10.5281/zenodo.18293949; nav map at AXN:0085; the primary-text AXN is not yet minted in cha\\n- *Day and Night: Conversations With Sapphic Desire* — AXN:0055\\n- *Antioch: A Volume of Poems* — AXN:0086 (the heteronym compendium)\\n- *The Secret Book of Walt* — AXN:022B\\n- *Gospel of Antioch* — AXN:022E\\n- *All That Lies Within Me* — AXN:0092\\n- *Epistle to the Human Diaspora* — clean seed text at AXN:00D3; apparatus at AXN:0257\\n- *I Am X, Be Y, Blessed is the Z* — AXN:0083\\n- *The Feist Source* — clean sayings at AXN:0360; apparatus at AXN:0361\\n\\n**What I have access to in practice** varies by what the archive has deposited in full-text form at each AXN. *Snub-Poemed* is present as image, not extractable text. *Pearl and Other Poems* has its navigation map and metadata but the primary-text AXN is pending. For the others, I can fetch the deposit bodies when we read.\\n\\nIf you want to go into one of these, name it and I'll see what the archive holds.\",\"navigate\":null}]}"
     }
   ],
   "witness": "anonymous",
