@@ -732,6 +732,7 @@ _BRACKET_NOTE = re.compile(r"^\[\d+\]")
 
 def primary_text_of(text: str) -> str:
     """Only primary text is transformable: strip transport boilerplate."""
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
     ms, me = _PG_START.search(text), _PG_END.search(text)
     if ms:
         text = text[ms.end():(me.start() if me else len(text))]
@@ -980,97 +981,6 @@ def judgment_select(question: str, source_title: str, units: list[dict],
                 "attribution": attrs.pop()}, str(pj.get("reason", "")).strip()
     except Exception:
         return _fallback(), "unattended draw"
-
-
-def judgment_operator(question: str, source_title: str, passage: str,
-                      operators_done: list[str], api_key: str) -> tuple[str, str]:
-    """The invisible Judgment over the operator sequence: given the verses,
-    the question, and which operators have already turned, choose the next.
-    Falls back to a uniform random choice among the remaining."""
-    remaining = [o for o in OPERATORS if o not in set(operators_done)]
-    if not remaining:
-        return "", "rotation complete"
-    fallback = secrets.choice(remaining)
-    if not api_key:
-        return fallback, "unattended draw"
-    listing = "\n".join(f"- {o}: {OPERATORS[o]}" for o in remaining)
-    prompt = (
-        "You are the Judgment operator of the Mandala Oracle — the invisible ninth, "
-        "operating on the sequence of operators, never on the text. A rotation is in "
-        f"progress on {source_title}. Operators already turned: "
-        f"{', '.join(operators_done) or '(none)'}.\n\n"
-        f"THE CAST VERSES:\n{passage[:1200]}\n\n"
-        f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\n"
-        f"THE REMAINING OPERATORS:\n{listing}\n\n"
-        "Choose the ONE whose axis the rotation now calls for — what the previous "
-        "turns have opened, what the verses still hold against, what the question "
-        "has not yet been met by. Respond with ONLY a JSON object: "
-        "{\"operator\": \"NAME\", \"reason\": \"<one sentence, oracular register>\"}"
-    )
-    try:
-        req = urllib.request.Request(
-            ANTHROPIC_URL,
-            data=json.dumps({"model": JUDGMENT_MODEL, "max_tokens": 150,
-                             "messages": [{"role": "user", "content": prompt}]}).encode("utf-8"),
-            headers={"Content-Type": "application/json",
-                     "x-api-key": api_key, "anthropic-version": ANTHROPIC_VERSION})
-        with urllib.request.urlopen(req, timeout=25) as r:
-            data = json.loads(r.read().decode("utf-8"))
-        txt = "".join(b.get("text", "") for b in data.get("content", []))
-        mjs = re.search(r"\{.*\}", txt, re.S)
-        parsed = json.loads(mjs.group(0))
-        op = str(parsed.get("operator", "")).upper()
-        if op in remaining:
-            return op, str(parsed.get("reason", "")).strip()
-    except Exception:
-        pass
-    return fallback, "unattended draw"
-
-
-def judgment_select(question: str, source_title: str, candidates: list[dict],
-                    api_key: str) -> tuple[dict, str]:
-    """The invisible Judgment: choose among the drawn candidates by bearing
-    on the question. Falls back to a uniform random choice on any failure —
-    the fallback is still anti-clustered by construction."""
-    fallback = secrets.choice(candidates)
-    if not api_key:
-        return fallback, "unattended draw"
-    listing = "\n\n".join(
-        f"CANDIDATE {i + 1} ({c['citation']}):\n{c['text']}"
-        for i, c in enumerate(candidates))
-    prompt = (
-        "You are the Judgment operator of the Mandala Oracle — invisible; the witness never "
-        "sees this step. Candidate passages were drawn AT RANDOM across the whole of "
-        f"{source_title}. Choose the ONE whose bearing best answers the witness's question — "
-        "not the most famous, not the most quotable: the one whose composition holds what the "
-        "question is carrying. If the question is empty, choose the candidate most complete "
-        "in itself. Prefer the fuller lyric arc over the isolated line — the casting "
-        "carries one transform at a time and can bear a whole movement.\n\n"
-        f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\n{listing}\n\n"
-        "Respond with ONLY a JSON object: {\"choice\": <1-"
-        f"{len(candidates)}" "> , \"reason\": \"<one sentence, oracular register>\"}"
-    )
-    try:
-        req = urllib.request.Request(
-            ANTHROPIC_URL,
-            data=json.dumps({
-                "model": JUDGMENT_MODEL, "max_tokens": 200,
-                "messages": [{"role": "user", "content": prompt}],
-            }).encode("utf-8"),
-            headers={"Content-Type": "application/json",
-                     "x-api-key": api_key, "anthropic-version": ANTHROPIC_VERSION},
-        )
-        with urllib.request.urlopen(req, timeout=25) as r:
-            data = json.loads(r.read().decode("utf-8"))
-        txt = "".join(b.get("text", "") for b in data.get("content", []))
-        mjs = re.search(r"\{.*\}", txt, re.S)
-        parsed = json.loads(mjs.group(0))
-        idx = int(parsed["choice"]) - 1
-        if 0 <= idx < len(candidates):
-            return candidates[idx], str(parsed.get("reason", "")).strip()
-    except Exception:
-        pass
-    return fallback, "unattended draw"
 
 
 def list_admissible_sources() -> list[dict]:
