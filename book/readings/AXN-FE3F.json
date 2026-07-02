@@ -1,0 +1,70 @@
+{
+ "axn": "AXN:FE3F.READING.🌿💫🌿🌘🔥🌑",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "f9ef7adc0cbd3fa5",
+ "inscribed_at": "2026-07-02T21:48:24.856878+00:00",
+ "question_digest": "sha256:8258899032c23ccca24734065f607134f9feb346c2e09cb460fb9121fe10899b",
+ "question_gloss": "Question about potential compensation or restitution for damaged property or items.",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_199_202",
+ "rotation": [
+  {
+   "operator": "MIRROR",
+   "source_passage": "\"The absolutely particular and untranslatable is coterminous with the absolutely universal. The untranslatable is the only element that will make it across.\"\n\n\nThis is the insight that became the architecture. Not applied retroactively but recognized—the way one recognizes, in a fragment, the structure of the whole it implies.\n\n---\n\n\nWhat do these translations do?\n\n\nThey preserve gaps. They honor incompleteness. They render into English not what the poems say but what they *do*—which is to transmit affect across substrate transition, carrying the warmth of bodies dead 2,600 years into bodies reading now.",
+   "citation": "unit 199–unit 202",
+   "underlying_attribution": "Works Consulted",
+   "result": "PASS",
+   "enantiomorph": "\"The seed that will not sprout this year is the same seed that keeps the field. The dormant is the only part that survives the winter.\"\n\n\nThis is the fact that shaped the vault. Not enforced by rule but observed—the way one observes, in a single kernel, the meadow it already contains.\n\n---\n\n\nWhat does this dormancy accomplish?\n\n\nIt withholds. It guards the unspent. It commits to the cold not what the grain yields but what it *holds*—which is to carry vitality across the season's break, bearing the heat of summers gone 2,600 years down into summers not yet begun.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "epigraph-assertion (quoted paradox)",
+     "attribution-turn (insight became structure, recognized not applied)",
+     "section-break seal",
+     "interrogative address (what do these do?)",
+     "catalogue of functions (preserve, honor, render)",
+     "closing amplification (transmission across the divide)"
+    ],
+    "spatial_form": {
+     "lines": 13,
+     "stanzas": 5,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "Line 1 quoted epigraph; blank; blank; prose paragraph (lines 4-5 as one logical block, here counted by physical lines including its wrap-free single line); blank; horizontal rule '---'; blank; blank; interrogative single line; blank; blank; concluding paragraph. Structure: opening quotation, break marker '---', question, answer-catalogue."
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     "one-directional carry (what crosses a boundary in a single direction — forward, outward, into the reader)",
+     "the untranslatable/particular as the paradoxical vehicle of the universal",
+     "recognition-not-application (the whole latent in the fragment)",
+     "transmission-as-preservation (fidelity to function over content)"
+    ],
+    "semantic_field": "seed dormancy and germination in a soil seed bank — the germplasm that does not sprout, kept viable across seasons of cold and dark"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source names a one-directional gesture: the untranslatable carries forward, warmth passes from the dead into the reading now — a transmission that goes out, arrives, is spent. The MIRROR operator (directionality-axis) restores the symmetry that gesture foreclosed: not the part that crosses over and is expended, but the part that is *held back* to survive — dormancy as the withholding that guarantees return. Where the source's vehicle is the element that \"makes it across,\" the enantiomorph's vehicle is the element that refuses to cross now precisely so the field returns later. The 2,600-year span is preserved as a structural anchor but reversed in vector — the source carries warmth *forward into* present bodies; the enantiomorph bears heat *down into* seasons not yet begun, a deposit rather than a delivery. The wager the witness named — \"will there be a return on what was broken?\" — is made legible: the broken/dormant seed is exactly what is kept viable, and germination is the return. Field is fully disjoint (agronomy/seed-banking vs. translation/poetics); no shared referents permit reconstruction. Spatial skeleton reproduced: epigraph, double blank, paragraph, break rule, question, catalogue-answer, same stanza geometry."
+  }
+ ],
+ "witness": "anonymous",
+ "last_updated": "2026-07-02T21:48:24.856878+00:00"
+}
