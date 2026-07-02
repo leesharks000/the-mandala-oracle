@@ -548,7 +548,107 @@
     }
    },
    "commentary": "The source's gesture is one-directional: aid descends, the god comes down, and the reversal-formula (flight→pursuit, refusal→gift) all point one way — toward the caller's restoration. MIRROR takes the directionality-axis and lets the descent's symmetry surface: water obeys gravity, but the operator names the wager as the reciprocity the original foreclosed — what falls must climb to fall again. The counter-motion tercet (\"even if it climbs, / soon it will fall again; if it withholds / its flood, soon it will release it\") holds the same conditional cadence as Sappho's flight/pursuit formula while enacting the cyclical return the human petition could only imagine as one-time rescue. The five-quatrain geometry, the four cross-stanza enjambments, the mid-quatrain opening of a quoted voice, and the double-address (the named caller answered by name) all map unit-by-unit. Semantic field is hydrological, disjoint from erotic-divine petition; Aphrodite, sparrows, chariot, Persuasion leave no trace. Source is not reconstructable from clouds and cracked bed. The witness's question — will there be a return on what was broken — is answered by the axis itself: the mirror discloses that descent implies ascent, that the broken (dry) bed's petition is structurally guaranteed a return, because the water that fell must rise to fall again. Cost is legible: the return is real but cyclic, not the once-and-for-all rescue the caller wanted."
+  },
+  {
+   "transform_id": "TX-944de527",
+   "cast_at": "2026-07-02T22:39:51.541158+00:00",
+   "reading_axn": "AXN:FE18.READING.⭐🌔🌘🌿🌓💫",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_77_81",
+    "citation": "unit 77–unit 81",
+    "start_unit": 77,
+    "end_unit": 81,
+    "unit_labels": [
+     "unit 77",
+     "unit 78",
+     "unit 79",
+     "unit 80",
+     "unit 81"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost the composer underwent; bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 20,
+    "stanzas": 5,
+    "indent_profile": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "notes": "Five quatrains, no indentation; enjambment carries syntax across stanza boundaries (stanza 1->2, 3->4, 4->5); a colon opens quoted speech mid-stanza-4 and the reported voice runs into stanza 5; the final line ends mid-catalogue on a semicolon (open, unclosed)."
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:8258899032c23ccca24734065f607134f9feb346c2e09cb460fb9121fe10899b",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "but come to me, if ever before\nyou heard my far-off cries\nand heeded, and came, leaving\nyour father's golden\n\n\nhouse, yoking your chariot: beautiful\nswift sparrows whirred on quick wings\nand drew you down through the middle air\nover the black earth\n\n\nfrom heaven: they arrived in an instant;\nand you, blessed one, a smile\non your immortal face, asked me\nwhat was the matter now, and why\n\n\nwas I calling now, and what\ndid I most want to happen\nin my maddened heart: \"Who now\nshould Persuasion lead\n\n\nback to your love? Who wrongs you,\nSappho? For even if she runs,\nsoon she will pursue; if she refuses\ngifts, soon she will give them;",
+   "underlying_attribution": "Sappho 1: \"Hymn to Aphrodite\"",
+   "enantiomorph": "but turn to me, if once in the past\nyou caught my low signal-fires\nand answered, and rose, quitting\nthe deep bar's silver\n\n\nbed, hauling your long swell: bright\nfoam hissed along the running crests\nand bore you inward through the narrowed strait\nacross the drowned flats\n\n\nfrom open sea: you crested in a breath;\nand you, patient one, a churn\non your unweathered brow, asked me\nwhat was the trouble now, and why\n\n\nwas I flaring now, and what\ndid I most need dragged up\nfrom my capsized hold: \"Whose keel\nshould the Undertow bring\n\n\nback to your moorage? Who has grounded you,\nharborman? For even if she drifts,\nsoon she will steer home; if she spurns\nthe hawser, soon she will take it;",
+   "layer_a": {
+    "units": 5,
+    "beat_map": [
+     "conditional summons anchored in remembered heeding",
+     "the departure and yoking — motion begins",
+     "descent and instant arrival across the distances",
+     "the addressed one's inquiry into the cause of the call",
+     "reported speech: the reversal-promise begun as catalogue"
+    ],
+    "spatial_form": {
+     "lines": 20,
+     "stanzas": 5,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "Five quatrains, no indentation; enjambment carries syntax across stanza boundaries (stanza 1->2, 3->4, 4->5); a colon opens quoted speech mid-stanza-4 and the reported voice runs into stanza 5; the final line ends mid-catalogue on a semicolon (open, unclosed)."
+    }
+   },
+   "commentary": "The source is a hymn-of-recall: a plea that draws its force from a prior answering, a divine descent collapsing distance to instantness, a questioning by the summoned power, and a reversal-catalogue left grammatically open. The SHADOW operator, on the assertion-axis, receives the bearing-cost the composer underwent — the wager that calling again presumes on a love already spent, that the reversal is promised but the sentence never closes. The enantiomorph relocates this into tidal salvage: a harborman flaring signal-fires to the Undertow that once returned a hull, the sea's inward traversal across drowned flats, the power's inquiry (\"Whose keel...who has grounded you\"), and the same unclosed catalogue of turnings (drifts→steers home, spurns→takes the hawser) breaking off on a semicolon. Five quatrains, no indent, the identical enjambment pattern and the final open semicolon reproduce the spatial skeleton. The cost is legible: the return is asserted (she will pursue, she will give / she will steer, she will take) yet the syntax refuses to seal it — the question \"will there be a return on what was broken\" is answered only as a promise still mid-inventory, never landed."
   }
  ],
- "last_updated": "2026-07-02T22:33:31.871521+00:00"
+ "last_updated": "2026-07-02T22:39:51.541158+00:00"
 }
