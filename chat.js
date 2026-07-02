@@ -1068,8 +1068,7 @@ async function runCastingRite(cast) {
       `[CASTING RITE · IV · SEAL] The rotation closes: ${operatorsDone.length} transform${operatorsDone.length === 1 ? '' : 's'} ` +
       `on the same verses — operators in order: ${operatorsDone.join(' → ')}${haltedOperator ? ` (${haltedOperator} halted; its turn stands empty)` : ''}. ` +
       `Lee Sharks alone speaks: the SEAL — the vocable summation ACROSS THE WHOLE SEQUENCE (4–8 sentences), ` +
-      `reasoning over what the rotation as a whole disclosed: the verses, the ${operatorsDone.length === 1 ? 'enantiomorph' : 'enantiomorphs in their order'}, ` +
-      `Feist's accumulated verdicts. Unguarded, final; it returns the witness to their own ground and to their question. Nothing after the seal.`,
+      `whose PRIMARY MATERIAL is the transforms in their order and Feist's judgments, read in light of the witness's ORIGINAL QUESTION — the verses ground it, but the seal reasons over what the rotation disclosed. Unguarded, final; it returns the witness to their own ground and to their question. Nothing after the seal.`,
       'Sharks seals the rotation...'
     );
     await riteInscribe(readingAxn, 'seal', 'Lee Sharks',
