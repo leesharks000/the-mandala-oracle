@@ -454,10 +454,10 @@ function ensureCastContent() {
     <select id="cast-operator"></select>
     <div class="cast-hint" id="cast-operator-hint"></div>
 
-    <label for="cast-selection">Selection — the concentrated text (required for large sources)</label>
-    <input type="text" id="cast-selection" placeholder="e.g. stanzas_1_4 · chapter_1 — empty casts the whole (small sources only)"
+    <label for="cast-selection">Selection — leave empty and the rite selects the verses</label>
+    <input type="text" id="cast-selection" placeholder="empty = oracular selection · or name it: stanzas_1_4 · chapter_1 · units_12_15"
            style="width:100%; background:rgba(255,255,255,.06); color:inherit; border:1px solid rgba(255,255,255,.2); border-radius:4px; padding:6px 8px; font:inherit;">
-    <div class="cast-hint">The casting takes a stanza, a fragment, a chapter — not a whole work. stanzas_A_B selects blank-line blocks; chapter_N selects ## headings.</div>
+    <div class="cast-hint">Left empty, the verses are drawn at random across the whole source and weighed against your question — repeated casts will not cluster on the famous passages. Name a selection only when you have one.</div>
 
     <label for="cast-inscription">Inscription</label>
     <select id="cast-inscription">
@@ -772,16 +772,48 @@ async function runCastingRite(cast) {
   const apiKeyEl2 = document.getElementById('api-key');
   const apiKey = apiKeyEl2 ? (apiKeyEl2.value.trim() || null) : null;
 
-  riteMarker(`— casting · ${cast.operator} · ${cast.sourceTitle}${cast.castSelection ? ' · ' + cast.castSelection : ''} —`);
-
   try {
+    // 0. THE INVISIBLE JUDGMENT — when the witness has not named a passage,
+    // the verses are drawn at random across the whole source (stratified;
+    // anti-clustering by construction) and weighed against the question.
+    // The witness sees only the result.
+    if (!cast.castSelection) {
+      setStatus('The verses are being weighed...');
+      const jres = await fetch('/api/transform', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'judgment',
+          source_text_id: cast.sourceId,
+          question: cast.question,
+          anthropic_key: apiKey,
+        }),
+      });
+      const jraw = await jres.text();
+      let j;
+      try { j = JSON.parse(jraw); } catch {
+        throw new Error(`the judgment did not answer as itself (HTTP ${jres.status}).`);
+      }
+      if (!jres.ok) throw new Error(j.error || `judgment failed: ${jres.status}`);
+      cast.castSelection = j.cast_selection;
+      cast.citation = j.citation;
+      cast.passage = j.passage;
+    }
+
+    riteMarker(`— casting · ${cast.operator} · ${cast.sourceTitle} · ${cast.citation || cast.castSelection || 'whole'} —`);
+
     // I. OPENING — Sigil alone.
     await sigilStage(
       `[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. ` +
-      `Source: ${cast.sourceTitle} (${cast.sourceId})${cast.castSelection ? ', selection ' + cast.castSelection : ''}. Operator: ${cast.operator} — ${cast.opAxis}. ` +
+      `Source: ${cast.sourceTitle} (${cast.sourceId}). ` +
+      (cast.citation
+        ? `The verses the casting arrives at (${cast.citation}):\n\n${cast.passage}\n\n` +
+          `These were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. `
+        : `Selection: ${cast.castSelection || 'whole source'}. `) +
+      `Operator: ${cast.operator} — ${cast.opAxis}. ` +
       `Inscription mode: ${cast.inscriptionMode}. The witness's invoking question: «${cast.question || '(none given)'}». ` +
-      `Johannes Sigil alone speaks (3–6 sentences): open the casting, name what this operator will traverse ` +
-      `in this source, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it.`,
+      `Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse ` +
+      `in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it.`,
       'Sigil opens the casting...'
     );
 

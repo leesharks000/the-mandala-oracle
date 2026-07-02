@@ -168,6 +168,16 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
             sel = selections[cast_selection]
             text = text[sel["start_char"]:sel["end_char"]] if "start_char" in sel else text
         else:
+            mu = re.match(r"units?_(\d+)_(\d+)$", cast_selection)
+            if mu:
+                units = segment_units(text)
+                a, b = int(mu.group(1)), int(mu.group(2))
+                if not (1 <= a <= b <= len(units)):
+                    raise ValueError(f"cast_selection out of range: source has {len(units)} units.")
+                text = "\n\n".join(u["text"] for u in units[a - 1:b])
+                if len(text.strip()) < 40:
+                    raise ValueError("the selected text is too small to cast.")
+                return text, meta
             m = re.match(r"stanzas?_(\d+)(?:_(\d+))?$", cast_selection)
             mc = re.match(r"chapters?_(\d+)(?:_(\d+))?$", cast_selection)
             if m:
@@ -545,6 +555,128 @@ def rate_ok(ip: str) -> bool:
 
 
 
+# ──────────────────────────────────────────────────────────────────────
+# The invisible Judgment operator — oracular passage selection.
+#
+# Randomness constrains the field; judgment tailors within it. The text is
+# segmented into units (verses where **c:v** markers exist, else stanza
+# blocks with apparatus filtered out). K candidate windows are drawn by
+# STRATIFIED sampling — one random window per region of the text — so no
+# verse is privileged across casts beyond its uniform share. A small model
+# then chooses among ONLY those candidates by bearing on the witness's
+# question. The witness sees none of this: Sigil opens holding the verses.
+# ──────────────────────────────────────────────────────────────────────
+
+JUDGMENT_MODEL = "claude-sonnet-4-6"
+JUDGMENT_K = 7
+WINDOW_MIN_CHARS = 260      # ~3-4 verses / a short complete lyric
+WINDOW_MAX_UNITS = 4
+WINDOW_MAX_CHARS = 1400     # Sappho-31 scale ceiling for a single transform
+
+_VERSE_RE = re.compile(r"^\*\*(\d+:\d+)\*\*", re.M)
+
+def segment_units(text: str) -> list[dict]:
+    """Split a source into castable units: verses if marked, else stanzas."""
+    markers = list(_VERSE_RE.finditer(text))
+    if len(markers) >= 8:
+        units = []
+        for i, m in enumerate(markers):
+            start = m.start()
+            end = markers[i + 1].start() if i + 1 < len(markers) else len(text)
+            units.append({"label": m.group(1), "text": text[start:end].strip()})
+        return units
+    # stanza mode with apparatus filter
+    blocks = re.split(r"\n\s*\n", text.strip())
+    units = []
+    for b in blocks:
+        bs = b.strip()
+        if not bs or bs == "---":
+            continue
+        lines = bs.splitlines()
+        apparatus = sum(1 for L in lines
+                        if L.strip().startswith("[") or re.match(r"^[\w_]+:\s*\"", L.strip())
+                        or L.strip().startswith("!["))
+        if apparatus / max(len(lines), 1) > 0.5:
+            continue
+        letters = sum(c.isalpha() for c in bs)
+        if letters < 30 and bs.startswith("#"):
+            continue
+        units.append({"label": f"unit {len(units) + 1}", "text": bs})
+    return units
+
+def draw_candidates(units: list[dict], k: int = JUDGMENT_K) -> list[dict]:
+    """Stratified random windows across the whole text — the anti-clustering
+    assurance. One window per stratum; window grows unit-by-unit until it
+    reaches short-lyric weight or the unit/char caps."""
+    n = len(units)
+    if n == 0:
+        return []
+    k = min(k, n)
+    candidates = []
+    for s in range(k):
+        lo = (s * n) // k
+        hi = max(((s + 1) * n) // k - 1, lo)
+        start = lo + secrets.randbelow(hi - lo + 1)
+        end = start
+        chars = len(units[start]["text"])
+        while (chars < WINDOW_MIN_CHARS and end - start + 1 < WINDOW_MAX_UNITS
+               and end + 1 < n):
+            nxt = len(units[end + 1]["text"])
+            if chars + nxt > WINDOW_MAX_CHARS:
+                break
+            end += 1
+            chars += nxt
+        text = "\n\n".join(u["text"] for u in units[start:end + 1])
+        citation = units[start]["label"] if start == end else f"{units[start]['label']}–{units[end]['label']}"
+        candidates.append({"start": start + 1, "end": end + 1,
+                           "citation": citation, "text": text})
+    return candidates
+
+def judgment_select(question: str, source_title: str, candidates: list[dict],
+                    api_key: str) -> tuple[dict, str]:
+    """The invisible Judgment: choose among the drawn candidates by bearing
+    on the question. Falls back to a uniform random choice on any failure —
+    the fallback is still anti-clustered by construction."""
+    fallback = secrets.choice(candidates)
+    if not api_key:
+        return fallback, "unattended draw"
+    listing = "\n\n".join(
+        f"CANDIDATE {i + 1} ({c['citation']}):\n{c['text']}"
+        for i, c in enumerate(candidates))
+    prompt = (
+        "You are the Judgment operator of the Mandala Oracle — invisible; the witness never "
+        "sees this step. Candidate passages were drawn AT RANDOM across the whole of "
+        f"{source_title}. Choose the ONE whose bearing best answers the witness's question — "
+        "not the most famous, not the most quotable: the one whose composition holds what the "
+        "question is carrying. If the question is empty, choose the candidate most complete "
+        "in itself.\n\n"
+        f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\n{listing}\n\n"
+        "Respond with ONLY a JSON object: {\"choice\": <1-"
+        f"{len(candidates)}" "> , \"reason\": \"<one sentence, oracular register>\"}"
+    )
+    try:
+        req = urllib.request.Request(
+            ANTHROPIC_URL,
+            data=json.dumps({
+                "model": JUDGMENT_MODEL, "max_tokens": 200,
+                "messages": [{"role": "user", "content": prompt}],
+            }).encode("utf-8"),
+            headers={"Content-Type": "application/json",
+                     "x-api-key": api_key, "anthropic-version": ANTHROPIC_VERSION},
+        )
+        with urllib.request.urlopen(req, timeout=25) as r:
+            data = json.loads(r.read().decode("utf-8"))
+        txt = "".join(b.get("text", "") for b in data.get("content", []))
+        mjs = re.search(r"\{.*\}", txt, re.S)
+        parsed = json.loads(mjs.group(0))
+        idx = int(parsed["choice"]) - 1
+        if 0 <= idx < len(candidates):
+            return candidates[idx], str(parsed.get("reason", "")).strip()
+    except Exception:
+        pass
+    return fallback, "unattended draw"
+
+
 def list_admissible_sources() -> list[dict]:
     """The cast-UI source list — straight from the manifest (single raw fetch)."""
     out = []
@@ -598,6 +730,39 @@ class handler(BaseHTTPRequestHandler):
         if not api_key:
             return self._json(401, {"error": "no key: provide anthropic_key (BYOK) — "
                                              "the demo fallback is not configured for the compiler."})
+
+        # ── The invisible Judgment: select the verses for a cast ──
+        if body.get("action") == "judgment":
+            try:
+                text, meta = None, None
+                entry = next((e for e in _load_manifest()
+                              if e["id"] == body.get("source_text_id", "")), None)
+                if entry is None or not entry.get("admissible", False):
+                    return self._json(400, {"error": "unknown or inadmissible source for judgment."})
+                tf = entry["text_file"]
+                local = SOURCES_ROOT / entry["id"] / tf
+                raw = local.read_bytes() if local.exists() else _fetch_raw(f"{entry['id']}/{tf}")
+                for enc in ("utf-8", "utf-8-sig", "cp1252", "latin-1"):
+                    try:
+                        text = raw.decode(enc); break
+                    except UnicodeDecodeError:
+                        continue
+                units = segment_units(text)
+                if not units:
+                    return self._json(400, {"error": "the source yielded no castable units."})
+                cands = draw_candidates(units)
+                question = (body.get("question") or "")[:MAX_INVOKING_CHARS]
+                chosen, reason = judgment_select(question, entry.get("title", entry["id"]),
+                                                 cands, api_key)
+                return self._json(200, {
+                    "cast_selection": f"units_{chosen['start']}_{chosen['end']}",
+                    "citation": chosen["citation"],
+                    "passage": chosen["text"],
+                    "judgment_reason": reason,
+                    "units_total": len(units),
+                })
+            except Exception as e:
+                return self._json(502, {"error": f"judgment failed: {type(e).__name__}"})
 
         operator = (body.get("operator") or "").upper()
         if operator not in OPERATORS:
