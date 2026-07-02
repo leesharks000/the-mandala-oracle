@@ -569,9 +569,10 @@ def rate_ok(ip: str) -> bool:
 
 JUDGMENT_MODEL = "claude-sonnet-4-6"
 JUDGMENT_K = 7
-WINDOW_MIN_CHARS = 260      # ~3-4 verses / a short complete lyric
-WINDOW_MAX_UNITS = 4
-WINDOW_MAX_CHARS = 1400     # Sappho-31 scale ceiling for a single transform
+WINDOW_MIN_CHARS = 550      # a lyric unit — several stanzas / 4-6 verses minimum
+WINDOW_MAX_UNITS = 12
+WINDOW_MAX_CHARS = 1900     # one transform at a time can bear a full lyric arc
+                            # (Sappho-31-and-then-some; MANUS tending, 2026-07-02)
 
 _VERSE_RE = re.compile(r"^\*\*(\d+:\d+)\*\*", re.M)
 
@@ -688,7 +689,8 @@ def judgment_select(question: str, source_title: str, candidates: list[dict],
         f"{source_title}. Choose the ONE whose bearing best answers the witness's question — "
         "not the most famous, not the most quotable: the one whose composition holds what the "
         "question is carrying. If the question is empty, choose the candidate most complete "
-        "in itself.\n\n"
+        "in itself. Prefer the fuller lyric arc over the isolated line — the casting "
+        "carries one transform at a time and can bear a whole movement.\n\n"
         f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\n{listing}\n\n"
         "Respond with ONLY a JSON object: {\"choice\": <1-"
         f"{len(candidates)}" "> , \"reason\": \"<one sentence, oracular register>\"}"
