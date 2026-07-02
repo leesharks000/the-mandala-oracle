@@ -160,9 +160,10 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.ar",
-   "menu": true,
+   "menu": false,
    "unit_split": "(?=بِسْمِ\\ ٱللَّهِ\\ ٱلرَّحْمَٰنِ\\ ٱلرَّحِيمِ)",
-   "primary_after": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"
+   "primary_after": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+   "menu_note": "pulled 2026-07-02: source file is a SQL export without reliable sura/verse markers; re-source from Tanzil (verse-marked) before restoring"
   },
   {
    "id": "revelation-greek",
