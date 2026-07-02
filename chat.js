@@ -674,6 +674,25 @@ function offerChoice(labels) {
   });
 }
 
+function renderSourceCard(citation, passage) {
+  const card = document.createElement('div');
+  card.className = 'source-card';
+  const label = document.createElement('div');
+  label.style.opacity = '.6';
+  label.style.fontSize = '.8em';
+  label.style.letterSpacing = '.08em';
+  label.style.marginBottom = '6px';
+  label.textContent = `— the cast text${citation ? ' · ' + citation : ''} —`;
+  card.appendChild(label);
+  const body = document.createElement('div');
+  body.style.whiteSpace = 'pre-wrap';   // lineation and indentation preserved
+  body.textContent = passage;
+  card.appendChild(body);
+  messagesEl.appendChild(card);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+  return card;
+}
+
 function renderTransformCard(parentEl, t) {
   const card = document.createElement('div');
   card.className = 'transform-card';
@@ -684,6 +703,12 @@ function renderTransformCard(parentEl, t) {
   lines.push(`Verification — identity: ${v.identity || '?'} · semantic independence: ${v.semantic_independence || '?'} · retrospective containment: ${v.retrospective_containment || '?'} (${v.mode || 'producer_side'})`);
   if (sf.lines || sf.stanzas) {
     lines.push(`Spatial form — lines: ${sf.lines ?? '?'} · stanzas: ${sf.stanzas ?? '?'}${Array.isArray(sf.indent_profile) ? ' · indent profile preserved' : ''}`);
+  }
+  const g = t.geometry_check;
+  if (g) {
+    lines.push(`Geometry (recounted) — lines ${g.output.lines}/${g.source.lines} ${g.lines_match ? '✓' : '✗'} · ` +
+               `stanzas ${g.output.stanzas}/${g.source.stanzas} ${g.stanzas_match ? '✓' : '✗'}` +
+               (g.source.indented_lines > 0 ? ` · indentation ${g.indentation_carried ? 'carried ✓' : 'LOST ✗'}` : ''));
   }
   card.textContent = lines.join('\n');
   if (t.commentary_apparatus) {
@@ -835,6 +860,13 @@ async function runCastingRite(cast) {
       'Sigil opens the casting...'
     );
 
+    // The cast text itself — the enantiomorph is legible only against it.
+    let sourceShown = false;
+    if (cast.passage) {
+      renderSourceCard(cast.citation, cast.passage);
+      sourceShown = true;
+    }
+
     // II. TRANSFORM — Cranes, via the compiler. One re-unfold on halt (§3.7).
     let transform = null;
     let inscription = null;
@@ -881,7 +913,12 @@ async function runCastingRite(cast) {
       if (data.result === 'PASS') {
         transform = data.transform;
         inscription = data.inscription;
+        if (!sourceShown && transform.source_passage) {
+          renderSourceCard(transform.citation || cast.castSelection, transform.source_passage);
+          sourceShown = true;
+        }
         const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
+        el.querySelector('.message-content').style.whiteSpace = 'pre-wrap';
         renderTransformCard(el, transform);
         history.push({ role: 'user', content: `[CASTING RITE · II · TRANSFORM] The compiler was invoked: ${cast.operator} on ${cast.sourceId}.` });
         history.push({

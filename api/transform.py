@@ -472,6 +472,7 @@ def append_expansion(source_entry: dict, source_text: str, cast_selection: str |
         "eligibility_note": "not yet eligible for further transform; eligibility will be "
                             "governed by the canonization journey (kernel-transform spec §5.5)",
     }
+    entry["source_passage"] = transform_block.get("source_passage")
     if mode == "public":
         entry["enantiomorph"] = transform_block["enantiomorph"]
         entry["layer_a"] = transform_block["layer_a"]
@@ -553,6 +554,8 @@ def inscribe(mode: str, reading_axn: str | None, session_id: str,
         }
         rec["rotation"].append({
             "operator": transform_block["operator"],
+            "source_passage": transform_block.get("source_passage"),
+            "citation": transform_block.get("citation"),
             "result": "PASS",
             "enantiomorph": transform_block["enantiomorph"],
             "layer_a_declaration": transform_block["layer_a"],
@@ -946,8 +949,24 @@ class handler(BaseHTTPRequestHandler):
                 "retry_available": True,
             })
 
+        def _geom(t: str) -> dict:
+            lines = [L for L in t.split("\n")]
+            return {"lines": len([L for L in lines if L.strip()]),
+                    "stanzas": len([b for b in re.split(r"\n\s*\n", t.strip()) if b.strip()]),
+                    "indented_lines": len([L for L in lines if L[:1] in (" ", "\t")])}
+        src_geom = _geom(source_text)
+        out_geom = _geom(parsed["enantiomorph"])
+        geometry_check = {
+            "source": src_geom, "output": out_geom,
+            "lines_match": src_geom["lines"] == out_geom["lines"],
+            "stanzas_match": src_geom["stanzas"] == out_geom["stanzas"],
+            "indentation_carried": (src_geom["indented_lines"] == 0) or (out_geom["indented_lines"] > 0),
+        }
+
         transform_block = {
             "operator": operator,
+            "source_passage": source_text,
+            "citation": body.get("citation"),
             "enantiomorph": parsed["enantiomorph"],
             "layer_a": parsed["layer_a"],
             "layer_b": parsed["layer_b"],
@@ -995,6 +1014,9 @@ class handler(BaseHTTPRequestHandler):
             "result": "PASS",
             "transform": {
                 "primary_output": parsed["enantiomorph"],
+                "source_passage": source_text,
+                "citation": body.get("citation"),
+                "geometry_check": geometry_check,
                 "operator_specification": f"{operator} — {OPERATORS[operator]}",
                 "layer_a_declaration": parsed["layer_a"],
                 "layer_b_declaration": parsed["layer_b"],

@@ -34,6 +34,12 @@
     #cast-panel .cast-actions button { font: inherit; padding: 5px 14px; border-radius: 4px;
       cursor: pointer; border: 1px solid rgba(255,255,255,.3); background: none; color: inherit; }
     #cast-panel .cast-actions .cast-go { background: rgba(140,110,60,.35); border-color: rgba(200,170,110,.5); }
+    /* Lineation and whitespace are compositional (EA-WHITESPACE-01, AXN:03BB):
+       the rendering stage must not collapse what the pipeline preserved. */
+    .message-content { white-space: pre-wrap; }
+    .source-card { border: 1px solid rgba(160,150,220,.35); border-radius: 6px;
+      padding: 12px 14px; margin: 10px 0; background: rgba(40,36,70,.25);
+      font-size: .95em; line-height: 1.55; }
     .rite-marker { text-align: center; opacity: .55; font-size: .82em; letter-spacing: .12em;
       margin: 14px 0 6px; text-transform: uppercase; }
     .transform-card, .reading-card, .halt-card { border: 1px solid rgba(255,255,255,.18);
