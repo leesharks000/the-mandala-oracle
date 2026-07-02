@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:BE60.CONVERSATION.☁️🔥🌒🌖❄️💫",
+  "session_id_hash": "0fee3b2a7dcc7a58",
+  "started_at": "2026-07-02T04:05:43.569Z",
+  "last_updated": "2026-07-02T04:06:33.897486+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "I want people to try this out. But no one is doing so, except one person..that is okay for now..this is not set up yet. And it is still painful, because - well, because it is what it is. And no one will look."
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
