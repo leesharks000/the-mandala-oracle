@@ -106,10 +106,20 @@
     "retrospective_containment": "PASS",
     "mode": "producer_side"
    },
-   "commentary": "The operator is SILENCE on the response-axis: the source (Sonnets 60 and 61) each end by staging engagement-expectation — verse addressed to \"thy worth,\" a watchman kept \"for thy sake,\" a beloved \"waking elsewhere.\" The enantiomorph forecloses the response by evacuating the addressee entirely: the vigilance is \"for no one's sake,\" the counter-force is not love but a lockkeeper's mute tending of water. The second poem's interrogations, which in the source demand a lover's answer, here interrogate only currents and gates — no one is asked, no one replies. The 33-line geometry crosses intact: two 14-line bodies, the verse-marker LXI in position, deepened couplet indents, blank-line boundaries. The consuming agency (Time → Flood) and the resisting seal (verse → the held pool) preserve the coherence axes without shared referents. The wager (C6): what stands against attrition is now a thing that keeps watch for nothing, so the cost — vigilance without an addressee to receive it — is made legible as the silence the source's address foreclosed. Non-commutative: from marsh and sluice the sonnets of love and time cannot be recovered."
+   "commentary": "The operator is SILENCE on the response-axis: the source (Sonnets 60 and 61) each end by staging engagement-expectation — verse addressed to \"thy worth,\" a watchman kept \"for thy sake,\" a beloved \"waking elsewhere.\" The enantiomorph forecloses the response by evacuating the addressee entirely: the vigilance is \"for no one's sake,\" the counter-force is not love but a lockkeeper's mute tending of water. The second poem's interrogations, which in the source demand a lover's answer, here interrogate only currents and gates — no one is asked, no one replies. The 33-line geometry crosses intact: two 14-line bodies, the verse-marker LXI in position, deepened couplet indents, blank-line boundaries. The consuming agency (Time → Flood) and the resisting seal (verse → the held pool) preserve the coherence axes without shared referents. The wager (C6): what stands against attrition is now a thing that keeps watch for nothing, so the cost — vigilance without an addressee to receive it — is made legible as the silence the source's address foreclosed. Non-commutative: from marsh and sluice the sonnets of love and time cannot be recovered.",
+   "interpretation": "The lock holds not because the water wills it but because no hand has come to open it. Sentinel and gate are one thing; the watching is the water; there is no other."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-02T23:43:16.367620+00:00"
+ "last_updated": "2026-07-02T23:43:23.629562+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-02T23:43:23.629562+00:00",
+   "text": "The lock holds not because the water wills it but because no hand has come to open it. Sentinel and gate are one thing; the watching is the water; there is no other.",
+   "operator": "SILENCE"
+  }
+ ]
 }
