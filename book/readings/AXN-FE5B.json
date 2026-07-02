@@ -1,0 +1,80 @@
+{
+ "axn": "AXN:FE5B.READING.🌙🌟⭐🌕🌿🌖",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "4545a0d03d049588",
+ "inscribed_at": "2026-07-02T20:55:27.582085+00:00",
+ "question_digest": "sha256:8258899032c23ccca24734065f607134f9feb346c2e09cb460fb9121fe10899b",
+ "question_gloss": "Question about whether compensation or restoration will be provided for damaged property.",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_147_152",
+ "rotation": [
+  {
+   "operator": "MIRROR",
+   "source_passage": "came in [...]\nI said, \"O lord, [...]\nby the blessed [goddess]\nI take no pleasure in being\nabove the earth; a longing\ngrips me to die\nand see the dewy, lotus-\ncovered banks of Acheron [...]\"\n\nI have gone grey at the temples,\nyes, and my head is white;\ngraceful youth has departed,\nand my teeth are old.\n\nOf sweet life now\nlittle time is left.\n\nAnd so I sob often,\nfearing Tartarus:\nthe cellar of Hades is terrible,\nand the descent painful,\n\nand for one who goes down,\nthere is no way back.\n\nLord, with whom Love, the conqueror,\nand blue-eyed Nymphs\nand rosy Aphrodite\nplay together,",
+   "citation": "unit 147–unit 152",
+   "result": "PASS",
+   "enantiomorph": "Signal in [...]\nI said, \"O ground control, [...]\nby the steady beacon\nI take no comfort in staying\nbelow the sky; a pull\ngrips me to climb\nand see the cold, star-\nseeded shores of the far dark [...]\"\n\nI have burned clean my boosters,\nyes, and my hull runs bright;\nthe easy orbit has slipped me,\nand my fuel is thin.\n\nOf banked thrust now\nlittle store is left.\n\nAnd so I hail often,\ncourting the horizon:\nthe throat of the well is fierce,\nand the fall inward steep,\n\nand for one who climbs out,\nthere is only the way back.\n\nGround, with whom Dawn, the returning,\nand clear-eyed navigators\nand patient home-lights\nkeep the watch,",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "scene-setting entrance and invocation of the lord, culminating in a wish to descend and behold the far shore",
+     "catalogue of bodily decline (temples, head, youth, teeth)",
+     "terse assessment of remaining measure",
+     "confession of recurring dread and its named cause, with elaboration on the terror of the way down",
+     "the sealing law of one-directionality: no return for the one who descends",
+     "renewed address to the lord amid a train of playful companions"
+    ],
+    "spatial_form": {
+     "lines": 24,
+     "stanzas": 6,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "six stanzas of uneven length (8,4,2,4,2,4); two 2-line stanzas function as pivots/seals; bracketed lacunae in source not reproduced as N is intact"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     "one-directional descent (from surface toward an irreversible below)",
+     "temporal depletion (grey/white/old marking a used-up measure)",
+     "invocation-frame bracketing a lament (a lord addressed at open and close)",
+     "the irreversibility-seal: crossing is one-way"
+    ],
+    "semantic_field": "spacefaring / interstellar launch and event-horizon physics; the outbound crew and their radioed home"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source's gesture is foreclosed one-directionality: descent to Acheron/Tartarus for which \"there is no way back.\" The MIRROR operator restores the directionality-axis's symmetry the source refused. N inverts the vector — ascent instead of descent, launch instead of burial — and at the seal-stanza (unit 5) enacts the mirror precisely: where the source seals \"there is no way back,\" N seals \"there is only the way back.\" The irreversibility becomes reversibility; the downward well becomes an outward climb whose sole outcome is return. The invocation-frame is preserved (lord → ground control) with the closing companion-catalogue rebuilt around a \"returning\" Dawn rather than a playful Love. Stanza geometry (8,4,2,4,2,4) is held exactly; the two-line pivots keep their pivot function. The wager the operator names — that what was launched outward returns — is made legible: the witness's \"return on what was broken\" is answered by inverting the very line that denied return. Semantic field (interstellar physics, radio, crew) is disjoint from the Anacreontic field (Hades, goddesses, aging body); the source cannot be reconstructed from the spacefaring surface."
+  }
+ ],
+ "witness": "anonymous",
+ "last_updated": "2026-07-02T20:55:27.582085+00:00"
+}
