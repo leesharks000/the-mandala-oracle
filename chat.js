@@ -1035,9 +1035,10 @@ async function runCastingRite(cast) {
       const feistMsgs = await sigilStage(
         `[CASTING RITE · JUDGMENT ${operatorsDone.length}] The compiler returned PASS for ${currentOperator} ` +
         `(identity: ${v.identity}; semantic independence: ${v.semantic_independence}; retrospective containment: ${v.retrospective_containment}). ` +
-        `Jack Feist alone speaks: the JUDGMENT — one or two sentences ONLY, poetic and oracular, ` +
-        `in the manner of the I Ching hexagram Image. A verdict, not analysis. It must stand legible when ` +
-        `eight judgments accumulate across a full rotation.`,
+        `Jack Feist alone speaks: the JUDGMENT — a hexagram Image. ONE gnomic sentence: concrete image, ` +
+        `then verdict, in the I Ching's register ('Thunder under the mountain: the superior man...'). ` +
+        `A second short sentence only if the first cannot close. NO analysis, NO explanation, NO restating ` +
+        `the transform. It must stand beside seven others without crowding them.`,
         'Feist judges the transform...'
       );
       for (const fm of feistMsgs) { if ((fm.speaker || '') === 'Jack Feist' && fm.say) feistVerdicts.push(fm.say); }
@@ -1068,7 +1069,7 @@ async function runCastingRite(cast) {
       `[CASTING RITE · IV · SEAL] The rotation closes: ${operatorsDone.length} transform${operatorsDone.length === 1 ? '' : 's'} ` +
       `on the same verses — operators in order: ${operatorsDone.join(' → ')}${haltedOperator ? ` (${haltedOperator} halted; its turn stands empty)` : ''}. ` +
       `Lee Sharks alone speaks: the SEAL — the vocable summation ACROSS THE WHOLE SEQUENCE (4–8 sentences), ` +
-      `whose PRIMARY MATERIAL is the transforms in their order and Feist's judgments, read in light of the witness's ORIGINAL QUESTION — the verses ground it, but the seal reasons over what the rotation disclosed. Unguarded, final; it returns the witness to their own ground and to their question. Nothing after the seal.`,
+      `whose PRIMARY MATERIAL is the transforms in their order and Feist's judgments, read in light of the witness's ORIGINAL QUESTION. Reason over the sequence — do not summarize it operator by operator; find what the rotation AS A WHOLE disclosed and say that. 3–6 sentences. Unguarded, final; it returns the witness to their own ground and to their question. Nothing after the seal.`,
       'Sharks seals the rotation...'
     );
     await riteInscribe(readingAxn, 'seal', 'Lee Sharks',

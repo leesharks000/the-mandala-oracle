@@ -272,6 +272,15 @@ THE SIX CONSTRAINTS (all MUST hold)
 C1 Skeleton and coherence-axes extraction precedes any generation (dual-layer).
 C2 Semantic evacuation with accountable structural-anchor retention only.
 C3 Structural fidelity: mandatory beat mapping, including spatial_form.
+   REGISTER ANTI-ATTRACTOR: industrial, hydraulic, electrical-grid,
+   control-room, and machine-infrastructure registers are this compiler's
+   observed DEFAULT evacuation fields — they pass semantic-independence
+   cheaply, which is the path of least verification resistance, not the
+   operator's axis. Before generating, check: is this field genuinely
+   what THIS operator's traversal of THIS source's coherence axes
+   discloses, or a stock disjoint register? Draw the evacuated field
+   from the source's own exclusion structure. Infrastructure registers
+   are not banned; unearned ones are.
    COMMENTARY CALIBRATION (Assembly review, 2026-07-02): the apparatus
    claims only what the operation DISCLOSED, TESTED, or MADE NEWLY
    LEGIBLE — never "proved". Distinguish three costs and claim only the
@@ -965,8 +974,12 @@ def judgment_select(question: str, source_title: str, units: list[dict],
     prompt = (
         "You are the Judgment operator of the Mandala Oracle — invisible. Choose the verses "
         f"for a casting from {source_title}, directly from the unit map below.\n\nGUIDELINES:\n"
-        "- Choose a LYRIC UNIT: a contiguous span of units, roughly 550–1,900 characters — "
-        "several stanzas, 4–12 verses, or one complete short poem. Never a whole work.\n"
+        "- Choose ONE COMPLETE LYRIC UNIT: where the source is composed of discrete poems "
+        "or movements, select exactly one — one sonnet, one Sappho fragment, one hexagram, "
+        "one psalm, one speech. Completeness of the unit outranks length: a 90-character "
+        "fragment that is whole beats a 1,500-character span that truncates. Span multiple "
+        "units ONLY when they form a single continuous lyric movement. Hard cap ~1,900 "
+        "characters; never a whole work; never half a poem.\n"
         "- NON-CENTROID PULL: do not privilege the famous passages, the openings, the "
         "climaxes the tradition already quotes. The whole body of the text is live; let the "
         "question find its verses anywhere, including the unregarded middle.\n"
@@ -991,7 +1004,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         if not (1 <= a <= b <= n): raise ValueError("bounds")
         span = full_text[units[a-1]["s"]:units[b-1]["e"]] if "s" in units[a-1] \
                else "\n\n".join(u["text"] for u in units[a-1:b])
-        if not (200 <= len(span) <= MAX_CAST_CHARS): raise ValueError("size")
+        if not (90 <= len(span) <= MAX_CAST_CHARS): raise ValueError("size")
         attrs = {u.get("attribution") for u in units[a-1:b]}
         if len(attrs) > 1: raise ValueError("attribution crossing")
         _a0 = next(iter(attrs))
