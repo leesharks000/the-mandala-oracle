@@ -180,7 +180,7 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
                 pa = entry.get("primary_after")
                 if pa and pa in text:
                     text = text[text.index(pa):]
-                units = segment_units(text, pa)
+                units = segment_units(text, pa, entry.get("unit_split"))
                 a, b = int(mu.group(1)), int(mu.group(2))
                 if not (1 <= a <= b <= len(units)):
                     raise ValueError(f"cast_selection out of range: source has {len(units)} units.")
@@ -191,6 +191,9 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
                                                   " + ".join(sorted(x or "?" for x in attrs)))
                 if len(text.strip()) < 40:
                     raise ValueError("the selected text is too small to cast.")
+                if len(text) > MAX_CAST_CHARS:
+                    raise ValueError(f"the casting takes a concentrated text — this selection is "
+                                     f"{len(text):,} chars (limit {MAX_CAST_CHARS:,}). Narrow the unit range.")
                 return text, meta
             m = re.match(r"stanzas?_(\d+)(?:_(\d+))?$", cast_selection)
             mc = re.match(r"chapters?_(\d+)(?:_(\d+))?$", cast_selection)
@@ -269,6 +272,13 @@ THE SIX CONSTRAINTS (all MUST hold)
 C1 Skeleton and coherence-axes extraction precedes any generation (dual-layer).
 C2 Semantic evacuation with accountable structural-anchor retention only.
 C3 Structural fidelity: mandatory beat mapping, including spatial_form.
+   LANGUAGE OF THE ENANTIOMORPH: the source may be in any language; the
+   enantiomorph is composed in the TARGET LANGUAGE (default English; the
+   witness may name another in the invoking context). Structure crosses
+   intact; language crosses TO THE TARGET — the transform operates on the
+   original and transforms to the target. Verse-marker numerals and
+   binary/chapter headers are structural apparatus: reproduce their
+   positions, translating marker WORDS only if they are words.
    WHITESPACE AND VERSE STRUCTURE ARE COMPOSITIONAL AND CANONICAL: the
    source's blank lines, per-line indentation, and any chapter/verse
    apparatus (## headings, **c:v** markers) are part of the text being
@@ -449,7 +459,7 @@ def append_expansion(source_entry: dict, source_text: str, cast_selection: str |
     fname = f"{EXPANSIONS_DIR}/{sid}.json"
     now = datetime.now(timezone.utc).isoformat()
 
-    units = segment_units(source_text, source_entry.get("primary_after"))
+    units = segment_units(source_text, source_entry.get("primary_after"), source_entry.get("unit_split"))
     basis_hash = hashlib.sha256("\n\u241e\n".join(u["text"] for u in units).encode()).hexdigest()
 
     existing, sha = gh_get(fname)
@@ -742,7 +752,8 @@ def _is_apparatus_block(bs: str) -> bool:
         return True
     return False
 
-def segment_units(text: str, primary_after: str | None = None) -> list[dict]:
+def segment_units(text: str, primary_after: str | None = None,
+                  unit_split: str | None = None) -> list[dict]:
     """Split a source into castable units: verses if marked, else stanzas.
 
     ELIGIBILITY (MANUS rule, 2026-07-02): footnotes and apparatus are not
@@ -764,6 +775,8 @@ def segment_units(text: str, primary_after: str | None = None) -> list[dict]:
             units.append({"label": m.group(1), "text": text[start:e],
                           "s": start, "e": e})
         return units
+    if primary_after is None:
+        pass  # (placeholder keeps diff local)
     # stanza mode with apparatus filter; attribution follows the governing
     # ### header — anthology sources (Day and Night) embed poems by OTHER
     # authors, and misattributing them is the archive's founding failure
@@ -771,7 +784,8 @@ def segment_units(text: str, primary_after: str | None = None) -> list[dict]:
     units = []
     current_attr = None
     pos = 0
-    boundaries = [(m.start(), m.end()) for m in re.finditer(r"\n[ \t]*\n(?:[ \t]*\n)*", text)]
+    split_re = unit_split or r"\n[ \t]*\n(?:[ \t]*\n)*"
+    boundaries = [(m.start(), m.end()) for m in re.finditer(split_re, text)]
     spans = []
     prev = 0
     for bs_, be_ in boundaries:
@@ -851,6 +865,122 @@ def draw_candidates(units: list[dict], k: int = JUDGMENT_K, full_text: str | Non
                            "citation": citation, "text": span_text,
                            "attribution": attr})
     return candidates
+
+def judgment_operator(question: str, source_title: str, passage: str,
+                      operators_done: list[str], api_key: str) -> tuple[str, str]:
+    """The invisible Judgment over the operator sequence: given the verses,
+    the question, and which operators have already turned, choose the next.
+    Falls back to a uniform random choice among the remaining."""
+    remaining = [o for o in OPERATORS if o not in set(operators_done)]
+    if not remaining:
+        return "", "rotation complete"
+    fallback = secrets.choice(remaining)
+    if not api_key:
+        return fallback, "unattended draw"
+    listing = "\n".join(f"- {o}: {OPERATORS[o]}" for o in remaining)
+    prompt = (
+        "You are the Judgment operator of the Mandala Oracle — the invisible ninth, "
+        "operating on the sequence of operators, never on the text. A rotation is in "
+        f"progress on {source_title}. Operators already turned: "
+        f"{', '.join(operators_done) or '(none)'}.\n\n"
+        f"THE CAST VERSES:\n{passage[:1200]}\n\n"
+        f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\n"
+        f"THE REMAINING OPERATORS:\n{listing}\n\n"
+        "Choose the ONE whose axis the rotation now calls for — what the previous "
+        "turns have opened, what the verses still hold against, what the question "
+        "has not yet been met by. Respond with ONLY a JSON object: "
+        "{\"operator\": \"NAME\", \"reason\": \"<one sentence, oracular register>\"}"
+    )
+    try:
+        req = urllib.request.Request(
+            ANTHROPIC_URL,
+            data=json.dumps({"model": JUDGMENT_MODEL, "max_tokens": 150,
+                             "messages": [{"role": "user", "content": prompt}]}).encode("utf-8"),
+            headers={"Content-Type": "application/json",
+                     "x-api-key": api_key, "anthropic-version": ANTHROPIC_VERSION})
+        with urllib.request.urlopen(req, timeout=25) as r:
+            data = json.loads(r.read().decode("utf-8"))
+        txt = "".join(b.get("text", "") for b in data.get("content", []))
+        mjs = re.search(r"\{.*\}", txt, re.S)
+        parsed = json.loads(mjs.group(0))
+        op = str(parsed.get("operator", "")).upper()
+        if op in remaining:
+            return op, str(parsed.get("reason", "")).strip()
+    except Exception:
+        pass
+    return fallback, "unattended draw"
+
+
+def judgment_select(question: str, source_title: str, units: list[dict],
+                    full_text: str, api_key: str) -> tuple[dict, str]:
+    """The invisible Judgment chooses the verses FROM THE FILE ITSELF, under
+    guidelines (MANUS design, 2026-07-02) — not from a pre-drawn candidate
+    set. The server validates the choice; the expansion ledger audits the
+    distribution over time. Guidelines include the non-centroid pull: the
+    gravitationally famous passages are not privileged. Fallback on any
+    failure: one stratified-random window (anti-clustered by construction)."""
+    n = len(units)
+    def _fallback():
+        k = 7
+        strat = secrets.randbelow(k)
+        lo, hi = (strat * n) // k, max(((strat + 1) * n) // k - 1, (strat * n) // k)
+        start = lo + secrets.randbelow(hi - lo + 1)
+        end, chars, attr = start, len(units[start]["text"]), units[start].get("attribution")
+        while chars < WINDOW_MIN_CHARS and end - start + 1 < WINDOW_MAX_UNITS and end + 1 < n \
+              and units[end + 1].get("attribution") == attr \
+              and chars + len(units[end + 1]["text"]) <= WINDOW_MAX_CHARS:
+            end += 1; chars += len(units[end]["text"])
+        return {"start": start + 1, "end": end + 1,
+                "citation": units[start]["label"] if start == end else f"{units[start]['label']}–{units[end]['label']}",
+                "text": full_text[units[start]["s"]:units[end]["e"]] if "s" in units[start] else units[start]["text"],
+                "attribution": attr}
+    if not api_key or n == 0:
+        return _fallback(), "unattended draw"
+    # unit map: label · attribution · first line · size
+    lines = []
+    for i, u in enumerate(units):
+        first = u["text"].splitlines()[0][:70]
+        attr = f" [{u['attribution']}]" if u.get("attribution") else ""
+        lines.append(f"{i+1}. ({u['label']},{len(u['text'])}ch){attr} {first}")
+    umap = "\n".join(lines)[:14000]
+    prompt = (
+        "You are the Judgment operator of the Mandala Oracle — invisible. Choose the verses "
+        f"for a casting from {source_title}, directly from the unit map below.\n\nGUIDELINES:\n"
+        "- Choose a LYRIC UNIT: a contiguous span of units, roughly 550–1,900 characters — "
+        "several stanzas, 4–12 verses, or one complete short poem. Never a whole work.\n"
+        "- NON-CENTROID PULL: do not privilege the famous passages, the openings, the "
+        "climaxes the tradition already quotes. The whole body of the text is live; let the "
+        "question find its verses anywhere, including the unregarded middle.\n"
+        "- PRIMARY TEXT ONLY; never cross an attribution boundary (bracketed names).\n"
+        "- Bear on the witness's question — the passage whose composition holds what the "
+        "question carries. If no question, the span most complete in itself.\n\n"
+        f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\nUNIT MAP:\n{umap}\n\n"
+        "Respond ONLY with JSON: {\"start\": <n>, \"end\": <n>, \"reason\": \"<one sentence>\"}"
+    )
+    try:
+        req = urllib.request.Request(ANTHROPIC_URL, data=json.dumps({
+            "model": JUDGMENT_MODEL, "max_tokens": 200,
+            "messages": [{"role": "user", "content": prompt}]}).encode(),
+            headers={"Content-Type": "application/json", "x-api-key": api_key,
+                     "anthropic-version": ANTHROPIC_VERSION})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = json.loads(r.read().decode())
+        txt = "".join(b.get("text", "") for b in data.get("content", []))
+        pj = json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
+        a, b = int(pj["start"]), int(pj["end"])
+        # SERVER AS VALIDATOR
+        if not (1 <= a <= b <= n): raise ValueError("bounds")
+        span = full_text[units[a-1]["s"]:units[b-1]["e"]] if "s" in units[a-1] \
+               else "\n\n".join(u["text"] for u in units[a-1:b])
+        if not (200 <= len(span) <= MAX_CAST_CHARS): raise ValueError("size")
+        attrs = {u.get("attribution") for u in units[a-1:b]}
+        if len(attrs) > 1: raise ValueError("attribution crossing")
+        cit = units[a-1]["label"] if a == b else f"{units[a-1]['label']}–{units[b-1]['label']}"
+        return {"start": a, "end": b, "citation": cit, "text": span,
+                "attribution": attrs.pop()}, str(pj.get("reason", "")).strip()
+    except Exception:
+        return _fallback(), "unattended draw"
+
 
 def judgment_operator(question: str, source_title: str, passage: str,
                       operators_done: list[str], api_key: str) -> tuple[str, str]:
@@ -1039,13 +1169,12 @@ class handler(BaseHTTPRequestHandler):
                 pa = entry.get("primary_after")
                 if pa and pa in _pt:
                     _pt = _pt[_pt.index(pa):]
-                units = segment_units(text, pa)
+                units = segment_units(text, pa, entry.get("unit_split"))
                 if not units:
                     return self._json(400, {"error": "the source yielded no castable units."})
-                cands = draw_candidates(units, full_text=_pt)
                 question = (body.get("question") or "")[:MAX_INVOKING_CHARS]
                 chosen, reason = judgment_select(question, entry.get("title", entry["id"]),
-                                                 cands, api_key)
+                                                 units, _pt, api_key)
                 return self._json(200, {
                     "cast_selection": f"units_{chosen['start']}_{chosen['end']}",
                     "citation": chosen["citation"],

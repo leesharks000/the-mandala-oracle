@@ -64,7 +64,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.zh"
+   "text_file": "original.zh",
+   "unit_split": "(?m)^(?=[01]{6}\\s*$)"
   },
   {
    "id": "kjv-1611",
