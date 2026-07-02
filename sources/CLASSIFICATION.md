@@ -26,15 +26,20 @@ The source is theoretical apparatus, metadata packet, registry, workplan, naviga
 
 ---
 
-## Current census (43 populated canon sources)
+## Current census (49 populated canon sources)
 
-### Primary literary — 26 (transformable: true)
+### Primary literary — 29 (transformable: true)
 
 **The four Lee named for initial transform availability:**
 - revelation-greek (SBLGNT Greek NT — Apocalypse of John)
 - whitman-leaves-of-grass (Deathbed Edition, Gutenberg 1322)
 - cranes-day-and-night (alexanarch AXN-007F)
 - sharks-secret-book-of-walt (alexanarch AXN-022B)
+
+**Subsequently promoted / added by Lee for transform availability 2026-07-01:**
+- dancings-epistle-to-the-human-diaspora (alexanarch AXN-0257) — promoted from primary_pending_adjudication
+- iching (I Ching / 易經 — Chinese classical with modern Chinese line-commentary; Legge English acquisition pending)
+- quran (Arabic Uthmanic + English translations Rodwell/Palmer/Sale)
 
 **Pre-existing populated canon:**
 - sappho-fragments (fragment 31 + reconstructed fifth stanza)
@@ -55,13 +60,12 @@ The source is theoretical apparatus, metadata packet, registry, workplan, naviga
 **Latin ecclesiastical (via CCEL):**
 - augustine-confessions
 
-### Primary pending adjudication — 6 (transformable: false, likely to be promoted)
+### Primary pending adjudication — 5 (transformable: false, likely to be promoted)
 
 Candidates for Lee to promote to primary_literary via a subsequent metadata pass:
 - sharks-space-ark (Space Ark v4.2.7 — fugue-form foundational composition)
 - sharks-pearl-and-other-poems (poems)
 - feist-gospel-of-antioch (Gospel-form work)
-- dancings-epistle-to-the-human-diaspora (epistle)
 - spellings-all-that-lies-within-me (autobiography)
 - sigil-combat-scholasticism (philosophical treatise)
 
@@ -111,3 +115,15 @@ To promote a `primary_pending_adjudication` source to `primary_literary`:
 2. Commit with `[skip ci]` marker per WORKPLAN.md §0.A.5.
 
 To promote an `archival_apparatus` source to `primary_literary` is a more substantial adjudication. Typically indicates the deposit has been reclassified — the archival deposit likely accompanies a companion primary deposit that would be sourced separately. Prefer sourcing the primary companion.
+
+
+---
+
+## Promotion history
+
+**2026-07-01:** Lee adjudicated for transform availability:
+- dancings-epistle-to-the-human-diaspora (from `primary_pending_adjudication` → `primary_literary`)
+- iching (new addition, sourced from hontsev/OpenMomordica GitHub — Chinese classical Zhouyi with modern Chinese line-by-line commentary)
+- quran (new addition, sourced Arabic Uthmanic w/ tashkeel from amrayn/quran-text; English via Rodwell 1861 / Palmer 1880 / Sale 1734 from GITenberg)
+
+The five remaining `primary_pending_adjudication` items (sharks-space-ark, sharks-pearl-and-other-poems, feist-gospel-of-antioch, spellings-all-that-lies-within-me, sigil-combat-scholasticism) await further per-item adjudication.

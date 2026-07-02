@@ -7,10 +7,10 @@
   "magnitude_class": "primary_canon_star_M1",
   "apparatus_status": "present",
   "apparatus_note": "the homiletic-commentary apparatus (transformable: false)",
-  "source_status": "sourced_pending_adjudication",
+  "source_status": "inscribed",
   "status": "source acquired via alexanarch — 2026-07-01",
-  "transformable": false,
-  "transform_classification": "primary_pending_adjudication",
+  "transformable": true,
+  "transform_classification": "primary_literary",
   "content_subtype": "epistle",
-  "classification_note": "Epistle to the Human Diaspora — Critical Edition with Blended Temporal Apparatus. Epistle form; primary literary candidate. Awaits Lee's promotion. AXN-0257."
+  "classification_note": "Promoted from primary_pending_adjudication to primary_literary per Lee's adjudication 2026-07-01. Epistle-form primary literary work by Damascus Dancings. AXN-0257."
 }
