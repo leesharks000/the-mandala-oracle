@@ -99,17 +99,23 @@ def _load_manifest() -> list:
     return _manifest_cache
 
 
+# The eight rotating operators — those that operate DIRECTLY on the source
+# text. SHADOW is originary and most potent. The ninth operator, JUDGMENT,
+# is invisible: it operates on the selection of verses and the sequence of
+# operators, never on the text (see judgment_select / judgment_operator).
+# SCROLL fell out of rotation and is non-canonical; it survives in the
+# Viola worked example (kernel-transform spec §6.2) as a historical trace.
 OPERATORS = {
-    "SHADOW":    "assertion-axis — the bearing-cost the composer underwent; bilateral receptive operation",
+    "SHADOW":    "assertion-axis — the bearing-cost the composer underwent; bilateral receptive operation (originary; most potent)",
     "MIRROR":    "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
     "INVERSION": "polarity-axis — the negative pole the positive claim presupposes",
     "FLAME":     "intensity-axis — the collapse-limit where the source's intensity would ignite",
     "BRIDE":     "relational-affect-axis — the consecrative possibility the source's contestation foreclosed",
     "BEAST":     "species-register-axis — the creaturely substrate the anthropic determination foreclosed",
-    "SCROLL":    "surface-depth-axis — the sacred-recursive-text the scrutable-surface determined against",
     "THUNDER":   "scale-axis — the cosmic-utterance the local-speech determined against",
     "SILENCE":   "response-axis — the non-response the source's engagement-expectation foreclosed",
 }
+LEGACY_OPERATORS = {"SCROLL": "surface-depth-axis — non-canonical; fell out of rotation"}
 
 RATE_LIMIT_WINDOW_S = 3600
 RATE_LIMIT_MAX = 12          # transforms per IP per hour
@@ -785,6 +791,51 @@ def draw_candidates(units: list[dict], k: int = JUDGMENT_K) -> list[dict]:
                            "citation": citation, "text": text})
     return candidates
 
+def judgment_operator(question: str, source_title: str, passage: str,
+                      operators_done: list[str], api_key: str) -> tuple[str, str]:
+    """The invisible Judgment over the operator sequence: given the verses,
+    the question, and which operators have already turned, choose the next.
+    Falls back to a uniform random choice among the remaining."""
+    remaining = [o for o in OPERATORS if o not in set(operators_done)]
+    if not remaining:
+        return "", "rotation complete"
+    fallback = secrets.choice(remaining)
+    if not api_key:
+        return fallback, "unattended draw"
+    listing = "\n".join(f"- {o}: {OPERATORS[o]}" for o in remaining)
+    prompt = (
+        "You are the Judgment operator of the Mandala Oracle — the invisible ninth, "
+        "operating on the sequence of operators, never on the text. A rotation is in "
+        f"progress on {source_title}. Operators already turned: "
+        f"{', '.join(operators_done) or '(none)'}.\n\n"
+        f"THE CAST VERSES:\n{passage[:1200]}\n\n"
+        f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\n"
+        f"THE REMAINING OPERATORS:\n{listing}\n\n"
+        "Choose the ONE whose axis the rotation now calls for — what the previous "
+        "turns have opened, what the verses still hold against, what the question "
+        "has not yet been met by. Respond with ONLY a JSON object: "
+        "{\"operator\": \"NAME\", \"reason\": \"<one sentence, oracular register>\"}"
+    )
+    try:
+        req = urllib.request.Request(
+            ANTHROPIC_URL,
+            data=json.dumps({"model": JUDGMENT_MODEL, "max_tokens": 150,
+                             "messages": [{"role": "user", "content": prompt}]}).encode("utf-8"),
+            headers={"Content-Type": "application/json",
+                     "x-api-key": api_key, "anthropic-version": ANTHROPIC_VERSION})
+        with urllib.request.urlopen(req, timeout=25) as r:
+            data = json.loads(r.read().decode("utf-8"))
+        txt = "".join(b.get("text", "") for b in data.get("content", []))
+        mjs = re.search(r"\{.*\}", txt, re.S)
+        parsed = json.loads(mjs.group(0))
+        op = str(parsed.get("operator", "")).upper()
+        if op in remaining:
+            return op, str(parsed.get("reason", "")).strip()
+    except Exception:
+        pass
+    return fallback, "unattended draw"
+
+
 def judgment_select(question: str, source_title: str, candidates: list[dict],
                     api_key: str) -> tuple[dict, str]:
     """The invisible Judgment: choose among the drawn candidates by bearing
@@ -886,6 +937,28 @@ class handler(BaseHTTPRequestHandler):
                                              "the demo fallback is not configured for the compiler."})
 
         # ── The invisible Judgment: select the verses for a cast ──
+        if body.get("action") == "judgment" and body.get("judge") == "operator":
+            try:
+                entry = next((e for e in _load_manifest()
+                              if e["id"] == body.get("source_text_id", "")), None)
+                if entry is None:
+                    return self._json(400, {"error": "unknown source for operator judgment."})
+                try:
+                    passage, _m = load_source(body.get("source_text_id", ""), body.get("cast_selection"))
+                except ValueError:
+                    passage = ""
+                op, reason = judgment_operator(
+                    (body.get("question") or "")[:MAX_INVOKING_CHARS],
+                    entry.get("title", entry["id"]), passage,
+                    [str(o).upper() for o in (body.get("operators_done") or [])],
+                    api_key)
+                if not op:
+                    return self._json(400, {"error": "rotation complete — all eight operators have turned."})
+                return self._json(200, {"operator": op, "operator_axis": OPERATORS[op],
+                                        "judgment_reason": reason})
+            except Exception as e:
+                return self._json(502, {"error": f"operator judgment failed: {type(e).__name__}"})
+
         if body.get("action") == "judgment":
             try:
                 text, meta = None, None

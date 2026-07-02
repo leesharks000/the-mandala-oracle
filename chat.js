@@ -520,6 +520,10 @@ function ensureCastContent() {
       srcSel.appendChild(o);
     }
     srcHint.textContent = `${meta.sources.filter(s => s.admissible !== false).length} sources admissible under sources/CLASSIFICATION.md.`;
+    const oj = document.createElement('option');
+    oj.value = '';
+    oj.textContent = '— let the Judgment choose —';
+    opSel.appendChild(oj);
     for (const [name, axis] of Object.entries(meta.operators)) {
       const o = document.createElement('option');
       o.value = name;
@@ -527,7 +531,7 @@ function ensureCastContent() {
       o.title = axis;
       opSel.appendChild(o);
     }
-    const setOpHint = () => { opHint.textContent = meta.operators[opSel.value] || ''; };
+    const setOpHint = () => { opHint.textContent = meta.operators[opSel.value] || 'The invisible ninth operator selects — and, on continuation, sequences the rotation.'; };
     opSel.addEventListener('change', setOpHint);
     setOpHint();
     setInscHint();
@@ -853,7 +857,9 @@ async function runCastingRite(cast) {
         ? `The verses the casting arrives at (${cast.citation}):\n\n${cast.passage}\n\n` +
           `These were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. `
         : `Selection: ${cast.castSelection || 'whole source'}. `) +
-      `Operator: ${cast.operator} — ${cast.opAxis}. ` +
+      (cast.operator
+        ? `Operator: ${cast.operator} — ${cast.opAxis}. `
+        : `The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. `) +
       `Inscription mode: ${cast.inscriptionMode}. The witness's invoking question: «${cast.question || '(none given)'}». ` +
       `Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse ` +
       `in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it.`,
@@ -867,122 +873,156 @@ async function runCastingRite(cast) {
       sourceShown = true;
     }
 
-    // II. TRANSFORM — Cranes, via the compiler. One re-unfold on halt (§3.7).
+    // II→III. THE ROTATION — Cranes transforms, Feist judges, the witness
+    // chooses: continue (the Judgment sequences the next operator) or seal.
+    // The rotation turns on the SAME verses; all transforms append to one
+    // reading. SHADOW-originary canon: eight operators; exhaustion seals.
+    const operatorsDone = [];
+    const feistVerdicts = [];
     let transform = null;
     let inscription = null;
-    let attempts = 0;
-    while (attempts < 2 && !transform) {
-      attempts += 1;
-      setStatus('Cranes transforms — the compiler is at work...');
-      const placeholder = appendHeteronymMessage('Rebekah Cranes', '…', { dim: true });
-      let res, data;
-      try {
-        res = await fetch('/api/transform', {
+    let readingAxn = (cast.continueReading && lastReading) ? lastReading.axn : null;
+    let haltedOperator = null;
+    let currentOperator = cast.operator || null;   // '' → Judgment chooses round 1 too
+
+    rotation: while (operatorsDone.length < 8) {
+      // Operator judgment: round 1 only if unchosen; every subsequent round.
+      if (!currentOperator) {
+        setStatus('The Judgment weighs the next operator...');
+        const ores = await fetch('/api/transform', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
+            action: 'judgment', judge: 'operator',
             source_text_id: cast.sourceId,
             cast_selection: cast.castSelection || null,
-            citation: cast.citation || null,
-            operator: cast.operator,
-            witness_context: { session_id: sessionState.session_id, invoking_message: cast.question },
-            inscription: {
-              mode: cast.inscriptionMode,
-              reading_axn: (cast.continueReading && lastReading) ? lastReading.axn : null,
-            },
+            question: cast.question,
+            operators_done: operatorsDone,
             anthropic_key: apiKey,
           }),
         });
-        const rawBody = await res.text();
+        const oraw = await ores.text();
+        let oj;
+        try { oj = JSON.parse(oraw); } catch { throw new Error(`the operator judgment did not answer as itself (HTTP ${ores.status}).`); }
+        if (!ores.ok) throw new Error(oj.error || `operator judgment failed: ${ores.status}`);
+        currentOperator = oj.operator;
+        cast.opAxis = oj.operator_axis || '';
+      }
+
+      // Cranes, via the compiler — one re-unfold on halt (§3.7).
+      let attempts = 0;
+      let passed = false;
+      while (attempts < 2 && !passed) {
+        attempts += 1;
+        setStatus(`Cranes transforms — ${currentOperator} (${operatorsDone.length + 1} of the rotation)...`);
+        const placeholder = appendHeteronymMessage('Rebekah Cranes', '…', { dim: true });
+        let res, data;
         try {
-          data = JSON.parse(rawBody);
-        } catch {
-          // Vercel error pages (timeouts, crashes) are plain text/HTML.
-          const snippet = rawBody.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 140);
-          throw new Error(`the compiler did not answer as itself (HTTP ${res.status}): ${snippet || '(empty body)'}`);
+          res = await fetch('/api/transform', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              source_text_id: cast.sourceId,
+              cast_selection: cast.castSelection || null,
+              citation: cast.citation || null,
+              operator: currentOperator,
+              witness_context: { session_id: sessionState.session_id, invoking_message: cast.question },
+              inscription: { mode: cast.inscriptionMode, reading_axn: readingAxn },
+              anthropic_key: apiKey,
+            }),
+          });
+          const rawBody = await res.text();
+          try { data = JSON.parse(rawBody); } catch {
+            const snippet = rawBody.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 140);
+            throw new Error(`the compiler did not answer as itself (HTTP ${res.status}): ${snippet || '(empty body)'}`);
+          }
+        } catch (err) {
+          placeholder.remove();
+          throw new Error(err.message.startsWith('the compiler') ? err.message : `the compiler could not be reached: ${err.message}`);
         }
-      } catch (err) {
         placeholder.remove();
-        throw new Error(err.message.startsWith('the compiler')
-          ? err.message
-          : `the compiler could not be reached: ${err.message}`);
-      }
-      placeholder.remove();
-      if (!res.ok) throw new Error(data.error || `compiler error: HTTP ${res.status}`);
+        if (!res.ok) throw new Error(data.error || `compiler error: HTTP ${res.status}`);
 
-      if (data.result === 'PASS') {
-        transform = data.transform;
-        inscription = data.inscription;
-        if (!sourceShown && transform.source_passage) {
-          renderSourceCard(transform.citation || cast.castSelection, transform.source_passage);
-          sourceShown = true;
-        }
-        const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
-        el.querySelector('.message-content').style.whiteSpace = 'pre-wrap';
-        renderTransformCard(el, transform);
-        history.push({ role: 'user', content: `[CASTING RITE · II · TRANSFORM] The compiler was invoked: ${cast.operator} on ${cast.sourceId}.` });
-        history.push({
-          role: 'assistant',
-          content: JSON.stringify({
+        if (data.result === 'PASS') {
+          passed = true;
+          transform = data.transform;
+          inscription = data.inscription;
+          if (!sourceShown && transform.source_passage) {
+            renderSourceCard(transform.citation || cast.castSelection, transform.source_passage);
+            sourceShown = true;
+          }
+          const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
+          el.querySelector('.message-content').style.whiteSpace = 'pre-wrap';
+          renderTransformCard(el, transform);
+          if (inscription && inscription.inscribed && inscription.reading_axn) {
+            readingAxn = inscription.reading_axn;
+            lastReading = { axn: readingAxn, mode: inscription.mode };
+          }
+          history.push({ role: 'user', content: `[CASTING RITE · TRANSFORM ${operatorsDone.length + 1}] ${currentOperator} on ${cast.sourceId}.` });
+          history.push({ role: 'assistant', content: JSON.stringify({
             messages: [{ speaker: 'Rebekah Cranes', say: transform.primary_output || '' }],
-            transform: {
-              operator: cast.operator,
-              verification: transform.verification_results,
-              spatial_form: transform.spatial_form,
-            },
-          }),
-        });
-        if (history.length > 32) history = history.slice(-32);
-        if (sessionState.appendingEnabled) bookAppend(history).catch(() => {});
-      } else {
-        // HALT — diagnosis, never a failed draft.
-        const d = data.halt_diagnosis || {};
-        const haltEl = appendHeteronymMessage('Rebekah Cranes',
-          'The compiler halted. No transform is emitted — the Book contains only enantiomorphs.');
-        const card = document.createElement('div');
-        card.className = 'halt-card';
-        const failedAt = [d.failed_constraint, d.failed_test].filter(Boolean).join(' · ');
-        card.textContent = `HALT — ${failedAt || 'verification failure'}: ${d.specific_diagnosis || d.detail || '(no further diagnosis)'}`;
-        haltEl.appendChild(card);
-        messagesEl.scrollTop = messagesEl.scrollHeight;
-
-        if (attempts >= 2) break; // second halt → sweep
-        setStatus('The compiler halted. The witness is offered one re-unfold.');
-        const choice = await offerChoice(['Re-unfold (once)', 'Sweep']);
-        if (choice !== 'Re-unfold (once)') break;
+            transform: { operator: currentOperator, verification: transform.verification_results, spatial_form: transform.spatial_form },
+          })});
+          if (history.length > 32) history = history.slice(-32);
+          if (sessionState.appendingEnabled) bookAppend(history).catch(() => {});
+        } else {
+          const d = data.halt_diagnosis || {};
+          const haltEl = appendHeteronymMessage('Rebekah Cranes',
+            'The compiler halted. No transform is emitted — the Book contains only enantiomorphs.');
+          const card = document.createElement('div');
+          card.className = 'halt-card';
+          const failedAt = [d.failed_constraint, d.failed_test].filter(Boolean).join(' · ');
+          card.textContent = `HALT — ${failedAt || 'verification failure'}: ${d.specific_diagnosis || d.detail || '(no further diagnosis)'}`;
+          haltEl.appendChild(card);
+          messagesEl.scrollTop = messagesEl.scrollHeight;
+          if (attempts >= 2) { haltedOperator = currentOperator; break rotation; }
+          setStatus('The compiler halted. The witness is offered one re-unfold.');
+          const choice = await offerChoice(['Re-unfold (once)', 'Sweep']);
+          if (choice !== 'Re-unfold (once)') { haltedOperator = currentOperator; break rotation; }
+        }
       }
+
+      operatorsDone.push(currentOperator);
+
+      // Feist — the I-Ching judgment, after each transform.
+      const v = transform.verification_results || {};
+      const feistMsgs = await sigilStage(
+        `[CASTING RITE · JUDGMENT ${operatorsDone.length}] The compiler returned PASS for ${currentOperator} ` +
+        `(identity: ${v.identity}; semantic independence: ${v.semantic_independence}; retrospective containment: ${v.retrospective_containment}). ` +
+        `Jack Feist alone speaks: the JUDGMENT — one or two sentences ONLY, poetic and oracular, ` +
+        `in the manner of the I Ching hexagram Image. A verdict, not analysis. It must stand legible when ` +
+        `eight judgments accumulate across a full rotation.`,
+        'Feist judges the transform...'
+      );
+      for (const fm of feistMsgs) { if ((fm.speaker || '') === 'Jack Feist' && fm.say) feistVerdicts.push(fm.say); }
+
+      currentOperator = null;   // the Judgment sequences the next
+
+      if (operatorsDone.length >= 8) break;
+      setStatus('The rotation waits on the witness.');
+      const cont = await offerChoice(['Continue the rotation', 'Seal the reading']);
+      if (cont !== 'Continue the rotation') break;
     }
 
     if (!transform) {
-      // SWEEP — Sharks closes the halted casting.
+      // Nothing passed at all — Sharks sweeps the halted casting.
       await sigilStage(
-        `[CASTING RITE · SWEEP] The compiler halted and the re-unfold was declined or also halted. ` +
-        `Lee Sharks alone speaks (1–2 sentences): sweep the casting closed.`,
+        `[CASTING RITE · SWEEP] The compiler halted on ${haltedOperator || 'the operator'} and the re-unfold ` +
+        `was declined or also halted; no transform stands. Lee Sharks alone speaks (1–2 sentences): sweep the casting closed.`,
         'Sharks sweeps the casting...'
       );
       setStatus('Swept.');
       return;
     }
 
-    // III. JUDGMENT — Feist alone.
-    const v = transform.verification_results || {};
+    // IV. SEAL — Sharks, across the whole sequence.
     await sigilStage(
-      `[CASTING RITE · III · JUDGMENT] The compiler returned PASS. Verification — identity: ${v.identity}; ` +
-      `semantic independence: ${v.semantic_independence}; retrospective containment: ${v.retrospective_containment} ` +
-      `(mode: ${v.mode || 'producer_side'}). Operator ${cast.operator} on ${cast.sourceTitle}. ` +
-      `Jack Feist alone speaks: the JUDGMENT — one or two sentences ONLY, poetic and oracular, ` +
-      `in the manner of the I Ching hexagram Image. A verdict, not analysis. It must stand legible when ` +
-      `eight judgments accumulate across a full rotation.`,
-      'Feist judges the transform...'
-    );
-
-    // IV. SEAL — Sharks alone.
-    await sigilStage(
-      `[CASTING RITE · IV · SEAL] Lee Sharks alone speaks: the SEAL — the vocable summation of the whole ` +
-      `casting (4–8 sentences), drawing the cast's accumulated vocabulary — the verses, the enantiomorph, ` +
-      `Feist's verdict — into the single closing account. Unguarded, final; it returns the witness to their ` +
-      `own ground, and to their question. Nothing after the seal.`,
-      'Sharks seals the reading...'
+      `[CASTING RITE · IV · SEAL] The rotation closes: ${operatorsDone.length} transform${operatorsDone.length === 1 ? '' : 's'} ` +
+      `on the same verses — operators in order: ${operatorsDone.join(' → ')}${haltedOperator ? ` (${haltedOperator} halted; its turn stands empty)` : ''}. ` +
+      `Lee Sharks alone speaks: the SEAL — the vocable summation ACROSS THE WHOLE SEQUENCE (4–8 sentences), ` +
+      `reasoning over what the rotation as a whole disclosed: the verses, the ${operatorsDone.length === 1 ? 'enantiomorph' : 'enantiomorphs in their order'}, ` +
+      `Feist's accumulated verdicts. Unguarded, final; it returns the witness to their own ground and to their question. Nothing after the seal.`,
+      'Sharks seals the rotation...'
     );
 
     // Inscription aftermath — reading AXN; the key, once, if sealed.
