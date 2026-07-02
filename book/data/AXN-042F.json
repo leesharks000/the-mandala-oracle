@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:042F.CONVERSATION.🌘⭐🌿🌓☀️🌖",
+  "session_id_hash": "c550019f31cb1ece",
+  "started_at": "2026-07-02T19:12:27.115Z",
+  "last_updated": "2026-07-02T19:12:38.823947+00:00",
+  "mode": "merkabah",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "Are the transforms wired up?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
