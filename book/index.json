@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:A022.CONVERSATION.🌟💫🔥⚡🌗🌈",
+      "started_at": "2026-07-02T20:19:34.104Z",
+      "last_updated": "2026-07-02T20:20:20.479586+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Epistle to the Human Diaspora (dancings-epistle-to-the-human-diaspora). The verses the casting arrives at (unit 40):\n\n…"
+    },
+    {
       "axn": "AXN:10A9.CONVERSATION.🪨🌋🌙⭐☀️💎",
       "started_at": "2026-07-02T20:00:25.436Z",
       "last_updated": "2026-07-02T20:01:54.470701+00:00",
@@ -246,6 +255,6 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 27,
-  "last_updated": "2026-07-02T20:01:54.470701+00:00"
+  "total_recorded": 28,
+  "last_updated": "2026-07-02T20:20:20.479586+00:00"
 }
