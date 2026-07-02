@@ -8,7 +8,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": false
   },
   {
    "id": "cranes-day-and-night",
@@ -16,7 +17,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.md"
+   "text_file": "original.md",
+   "menu": true
   },
   {
    "id": "dancings-epistle-to-the-human-diaspora",
@@ -24,7 +26,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.md"
+   "text_file": "original.md",
+   "menu": true
   },
   {
    "id": "dickinson-complete",
@@ -32,7 +35,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": false
   },
   {
    "id": "homer-iliad",
@@ -40,7 +44,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": true
   },
   {
    "id": "homer-odyssey",
@@ -48,7 +53,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": true
   },
   {
    "id": "hopkins-selected",
@@ -56,7 +62,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": false
   },
   {
    "id": "iching",
@@ -65,15 +72,17 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.zh",
-   "unit_split": "(?m)^(?=[01]{6}\\s*$)"
+   "unit_split": "(?m)^(?=[01]{6}\\s*$)",
+   "menu": true
   },
   {
    "id": "kjv-1611",
-   "title": "Authorized Version (King James Bible)",
+   "title": "King James Bible",
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": true
   },
   {
    "id": "plato-cratylus",
@@ -81,7 +90,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": false
   },
   {
    "id": "plato-phaedrus",
@@ -89,7 +99,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": false
   },
   {
    "id": "plato-republic",
@@ -97,7 +108,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": false
   },
   {
    "id": "plato-sophist",
@@ -105,7 +117,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": false
   },
   {
    "id": "plato-symposium",
@@ -113,7 +126,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": true
   },
   {
    "id": "plato-theaetetus",
@@ -121,7 +135,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": false
   },
   {
    "id": "plato-timaeus",
@@ -129,7 +144,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": false
   },
   {
    "id": "quran",
@@ -137,24 +153,27 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.ar"
+   "text_file": "original.ar",
+   "menu": true
   },
   {
    "id": "revelation-greek",
-   "title": "The Apocalypse of John (Revelation)",
+   "title": "Revelation",
    "creator": "Attributed to John of Patmos",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.grc"
+   "text_file": "original.grc",
+   "menu": true
   },
   {
    "id": "sappho-fragments",
-   "title": "The Fragments of Sappho",
+   "title": "Sappho",
    "creator": "Sappho of Lesbos",
    "zodiac": "",
    "admissible": true,
    "text_file": "sappho-31/text.md",
-   "primary_after": "ΣΑΠΦΩ 31"
+   "primary_after": "ΣΑΠΦΩ 31",
+   "menu": true
   },
   {
    "id": "shadow-tachyon",
@@ -162,7 +181,8 @@
    "creator": "TACHYON (Claude as Mercury/synthesis substrate, per AXN-0237)",
    "zodiac": "",
    "admissible": true,
-   "text_file": "text.md"
+   "text_file": "text.md",
+   "menu": false
   },
   {
    "id": "shakespeare-hamlet",
@@ -170,7 +190,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": true
   },
   {
    "id": "shakespeare-king-lear",
@@ -178,7 +199,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": false
   },
   {
    "id": "shakespeare-macbeth",
@@ -186,7 +208,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": false
   },
   {
    "id": "shakespeare-sonnets",
@@ -194,7 +217,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": true
   },
   {
    "id": "shakespeare-tempest",
@@ -202,7 +226,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": false
   },
   {
    "id": "sharks-secret-book-of-walt",
@@ -210,7 +235,8 @@
    "creator": "",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.md"
+   "text_file": "original.md",
+   "menu": true
   },
   {
    "id": "sharks-tachyon-poem",
@@ -218,7 +244,8 @@
    "creator": "Lee Sharks",
    "zodiac": "",
    "admissible": true,
-   "text_file": "text.md"
+   "text_file": "text.md",
+   "menu": false
   },
   {
    "id": "sigil-snub-poemed",
@@ -226,7 +253,8 @@
    "creator": "Johannes Sigil",
    "zodiac": "",
    "admissible": false,
-   "reason": "image-canonical (calligrammatic) — compiler-inadmissible until spatial_form can carry composition"
+   "reason": "image-canonical (calligrammatic) — compiler-inadmissible until spatial_form can carry composition",
+   "menu": false
   },
   {
    "id": "whitman-leaves-of-grass",
@@ -234,7 +262,8 @@
    "creator": "Walt Whitman",
    "zodiac": "",
    "admissible": true,
-   "text_file": "original.en"
+   "text_file": "original.en",
+   "menu": true
   }
  ]
 }

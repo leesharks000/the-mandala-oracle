@@ -1100,9 +1100,12 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         # Cast-UI bootstrap: the endpoint is the single source of truth for
         # admissible sources and the operator table (no client hardcoding).
+        menu = [x for x in list_admissible_sources()
+                if next((e.get("menu", False) for e in _load_manifest() if e["id"] == x["id"]), False)]
+        menu.sort(key=lambda x: x["title"].lower())
         return self._json(200, {
             "operators": OPERATORS,
-            "sources": list_admissible_sources(),
+            "sources": menu,   # constrained testing set (MANUS, 2026-07-02); full corpus stays in data
             "inscription_modes": ["public", "encrypted", "none"],
             "compiler_model": COMPILER_MODEL,
             "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
