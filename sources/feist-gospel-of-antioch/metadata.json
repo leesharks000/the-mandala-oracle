@@ -8,6 +8,10 @@
   "magnitude_class": "primary_canon_star_M1",
   "apparatus_status": "present",
   "apparatus_note": "the patristic-style commentary (transformable: false)",
-  "source_status": "inscribed",
-  "status": "source acquired via alexanarch — 2026-07-01"
+  "source_status": "sourced_pending_adjudication",
+  "status": "source acquired via alexanarch — 2026-07-01",
+  "transformable": false,
+  "transform_classification": "primary_pending_adjudication",
+  "content_subtype": "gospel",
+  "classification_note": "The Gospel of Antioch — Sayings of Jack Feist as Recorded by Emily Antioch. Gospel-form primary literary. Awaits Lee's promotion. AXN-022E."
 }

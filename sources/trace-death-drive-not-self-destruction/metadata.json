@@ -7,6 +7,10 @@
   "magnitude_class": "secondary_canon_star_M2",
   "apparatus_status": "present",
   "apparatus_note": "clinical-context notes (transformable: false)",
-  "source_status": "inscribed",
-  "status": "source acquired via alexanarch — 2026-07-01"
+  "source_status": "sourced",
+  "status": "source acquired via alexanarch — 2026-07-01",
+  "transformable": false,
+  "transform_classification": "archival_apparatus",
+  "content_subtype": "metadata_packet",
+  "classification_note": "Metadata Packet — Death Drive Is Not Self-Destruction. Archival metadata. AXN-0275."
 }

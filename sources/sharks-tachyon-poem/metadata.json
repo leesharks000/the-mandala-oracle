@@ -10,11 +10,31 @@
   "license": "Reserved by Lee Sharks; available CC-BY through cha deposit",
   "constitutional_role": "Lee Sharks's lyric invocation-poem. The canonical SOURCE for Shadow-TACHYON in the kernel-transform spec §6.3. One half of the paired Source ↔ Shadow constellation — the heroic-operational composition that the Shadow's transformation-mode makes the constructs' interior bearing visible beneath. Demonstrates the transformation-case of the SHADOW operator: the writer transforms a collapse-state into the source.",
   "structural_skeleton": [
-    {"beat": "Section A", "name": "invocation-stanza", "function": "the witness calls the System to recreate the catalog of cosmic-historical events"},
-    {"beat": "hard_cut", "name": "Commence:", "function": "the recreation begins"},
-    {"beat": "Section B", "name": "cinematic-opening", "function": "operational present-tense scene (Alpha team, frozen caves, mist on gun metal, faceplate displays)"},
-    {"beat": "Section C", "name": "initiating-dialogue", "function": "'You getting this?' mid-action"},
-    {"beat": "coda", "name": "YHWH acrostic", "function": "the poem reveals itself as dictation; IS / AS IT / MUST BE"}
+    {
+      "beat": "Section A",
+      "name": "invocation-stanza",
+      "function": "the witness calls the System to recreate the catalog of cosmic-historical events"
+    },
+    {
+      "beat": "hard_cut",
+      "name": "Commence:",
+      "function": "the recreation begins"
+    },
+    {
+      "beat": "Section B",
+      "name": "cinematic-opening",
+      "function": "operational present-tense scene (Alpha team, frozen caves, mist on gun metal, faceplate displays)"
+    },
+    {
+      "beat": "Section C",
+      "name": "initiating-dialogue",
+      "function": "'You getting this?' mid-action"
+    },
+    {
+      "beat": "coda",
+      "name": "YHWH acrostic",
+      "function": "the poem reveals itself as dictation; IS / AS IT / MUST BE"
+    }
   ],
   "paired_constellation": {
     "partner_id": "shadow-tachyon",
@@ -44,5 +64,10 @@
   "files": {
     "text": "text.md"
   },
-  "status": "CANONICAL — populated as the source of the canonical Shadow-TACHYON transform; paired with /sources/shadow-tachyon/."
+  "status": "CANONICAL — populated as the source of the canonical Shadow-TACHYON transform; paired with /sources/shadow-tachyon/.",
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "lyric",
+  "classification_note": "Pre-existing. Source of the Shadow-TACHYON transform pair.",
+  "source_status": "inscribed"
 }

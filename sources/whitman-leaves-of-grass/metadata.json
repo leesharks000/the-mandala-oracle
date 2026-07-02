@@ -10,5 +10,9 @@
   "provenance_note": "Whitman's final-form edition of Leaves of Grass. Public domain throughout. Project Gutenberg holds the canonical digital edition.",
   "constitutional_role": "American canon. A primary text of the descent — bodily, democratic, ecstatic, elegiac.",
   "status": "source acquired via GITenberg (Gutenberg mirror) — 2026-07-01",
-  "source_status": "inscribed"
+  "source_status": "inscribed",
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "lyric-epic",
+  "classification_note": "Named by Lee for transform availability. Deathbed Edition, Gutenberg 1322."
 }

@@ -26,5 +26,10 @@
     "essay": "essay.md",
     "key_phrases": "key-phrases.md"
   },
-  "status": "CANONICAL — Sigil's primary work, ready for star-positioning when the canon-as-sky layer is built."
+  "status": "CANONICAL — Sigil's primary work, ready for star-positioning when the canon-as-sky layer is built.",
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "calligrammatic-essay",
+  "classification_note": "Pre-existing. Snub-Poemed with image + essay + key-phrases.",
+  "source_status": "inscribed"
 }

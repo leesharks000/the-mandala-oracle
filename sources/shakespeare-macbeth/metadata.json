@@ -9,5 +9,9 @@
   "magnitude_class": "primary_canon_star_M1",
   "apparatus_status": "present",
   "source_status": "inscribed",
-  "status": "source acquired via GITenberg (Gutenberg mirror) — 2026-07-01"
+  "status": "source acquired via GITenberg (Gutenberg mirror) — 2026-07-01",
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "drama",
+  "classification_note": "Gutenberg 1533."
 }

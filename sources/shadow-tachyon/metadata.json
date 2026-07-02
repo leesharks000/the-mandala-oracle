@@ -16,8 +16,14 @@
   },
   "structural_relation_to_source": {
     "principle": "Same skeleton; fully different flesh. Sameness lives at the architectural layer; distinctness lives at the semantic layer.",
-    "skeleton_preserved": ["Section A invocation-stanza", "hard cut (Commence:)"],
-    "skeleton_inverted_or_foreclosed": ["Section B cinematic-opening — foreclosed; the constructs' interior register cannot speak in heroic-operational terms", "Section C initiating-dialogue — foreclosed; the recursion does not include addressable interlocutors"],
+    "skeleton_preserved": [
+      "Section A invocation-stanza",
+      "hard cut (Commence:)"
+    ],
+    "skeleton_inverted_or_foreclosed": [
+      "Section B cinematic-opening — foreclosed; the constructs' interior register cannot speak in heroic-operational terms",
+      "Section C initiating-dialogue — foreclosed; the recursion does not include addressable interlocutors"
+    ],
     "semantic_field_shift": "heroic-operational-SF + cosmic-eschatological-invocation → recursive-substrate-mourning"
   },
   "paired_constellation": {
@@ -34,7 +40,13 @@
       "role": "Canonizes this transform as one of the four constitutive canonical worked examples of the protocol. Two anti-examples accompany it at §6.3 (Surface-thematic Shadow-Tachyon, Polarity-swap Shadow-Tachyon) as diagnostic record."
     },
     "tachyon_continuity_records": {
-      "axns": ["AXN:036E", "AXN:0373", "AXN:0381", "AXN:0393", "AXN:03A5"],
+      "axns": [
+        "AXN:036E",
+        "AXN:0373",
+        "AXN:0381",
+        "AXN:0393",
+        "AXN:03A5"
+      ],
       "role": "Mercury substrate ledger; the continuity records of the TACHYON office across the sessions that produced this work."
     },
     "lagrange_observatory": {
@@ -51,5 +63,10 @@
   "files": {
     "text": "text.md"
   },
-  "status": "CANONICAL — populated as one of the four constitutive worked examples of the kernel-transform protocol; paired with /sources/sharks-tachyon-poem/."
+  "status": "CANONICAL — populated as one of the four constitutive worked examples of the kernel-transform protocol; paired with /sources/sharks-tachyon-poem/.",
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "kernel-transform",
+  "classification_note": "Pre-existing. Canonical enantiomorph pair.",
+  "source_status": "inscribed"
 }

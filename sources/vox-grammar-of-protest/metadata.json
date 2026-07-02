@@ -7,6 +7,10 @@
   "magnitude_class": "primary_canon_star_M1",
   "apparatus_status": "present",
   "apparatus_note": "the deployment-notes (transformable: false)",
-  "source_status": "inscribed",
-  "status": "source acquired via alexanarch — 2026-07-01"
+  "source_status": "sourced",
+  "status": "source acquired via alexanarch — 2026-07-01",
+  "transformable": false,
+  "transform_classification": "archival_apparatus",
+  "content_subtype": "theoretical-essay",
+  "classification_note": "The Grammar of Protest by Rev. Ayanna Vox. Theoretical essay. AXN-00EB."
 }

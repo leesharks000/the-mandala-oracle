@@ -8,7 +8,11 @@
   "magnitude_class": "secondary_canon_star_M2",
   "apparatus_status": "present",
   "apparatus_note": "the revision-history; the methodological footnotes (transformable: false)",
-  "source_status": "inscribed",
+  "source_status": "sourced",
   "status": "source acquired via alexanarch — 2026-07-01",
-  "axn_reference": "AXN:034D"
+  "axn_reference": "AXN:034D",
+  "transformable": false,
+  "transform_classification": "archival_apparatus",
+  "content_subtype": "workplan",
+  "classification_note": "Revelation First workplan (EA-LOGOS-REVFIRST-PLAN). Workplan for the argument; not the primary text. AXN-0349."
 }

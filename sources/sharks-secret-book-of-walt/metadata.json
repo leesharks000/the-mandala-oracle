@@ -9,5 +9,9 @@
   "apparatus_status": "present",
   "apparatus_note": "framing notes, hermeneutic commentary (transformable: false)",
   "source_status": "inscribed",
-  "status": "source acquired via alexanarch — 2026-07-01"
+  "status": "source acquired via alexanarch — 2026-07-01",
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "gnostic-dialogue",
+  "classification_note": "Named by Lee for transform availability. AXN-022B."
 }

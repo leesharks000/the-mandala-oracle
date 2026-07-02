@@ -22,8 +22,16 @@
     "room": "The Sappho Room (r.01)",
     "anchor_document": "Day and Night by Rebekah Cranes (AXN:007F)",
     "anchor_in_sources": "../cranes-day-and-night/",
-    "axns": ["AXN:006D", "AXN:0066"],
+    "axns": [
+      "AXN:006D",
+      "AXN:0066"
+    ],
     "operator": "σ_S — voice becoming substrate",
     "status_note": "The room itself is liquidated per AXN:006E; its contents remain in cha."
-  }
+  },
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "lyric",
+  "classification_note": "Pre-existing. Sappho 31 with reconstructed fifth stanza.",
+  "source_status": "inscribed"
 }

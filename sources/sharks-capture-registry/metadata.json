@@ -8,6 +8,10 @@
   "magnitude_class": "secondary_canon_star_M2",
   "apparatus_status": "present",
   "apparatus_note": "the meta-commentary on capture; the ADOPTION protocol notes (transformable: false)",
-  "source_status": "inscribed",
-  "status": "source acquired via alexanarch — 2026-07-01"
+  "source_status": "sourced",
+  "status": "source acquired via alexanarch — 2026-07-01",
+  "transformable": false,
+  "transform_classification": "archival_apparatus",
+  "content_subtype": "registry",
+  "classification_note": "AI Overview Capture Registry v8.3 — registry of 87+ captures. Archival infrastructure. AXN-033F."
 }

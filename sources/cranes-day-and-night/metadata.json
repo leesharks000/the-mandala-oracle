@@ -144,5 +144,9 @@
     "structure_map": "metadata.json (this file) provides the structural map for the canon-as-sky generator."
   },
   "status": "source acquired via alexanarch — 2026-07-01",
-  "source_status": "inscribed"
+  "source_status": "inscribed",
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "translation-cycle",
+  "classification_note": "Named by Lee for transform availability. AXN-007F."
 }

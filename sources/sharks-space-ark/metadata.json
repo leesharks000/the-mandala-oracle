@@ -8,6 +8,10 @@
   "magnitude_class": "primary_canon_star_M1",
   "apparatus_status": "present",
   "apparatus_note": "implementation-notes, version-history (transformable: false)",
-  "source_status": "inscribed",
-  "status": "source acquired via alexanarch — 2026-07-01"
+  "source_status": "sourced_pending_adjudication",
+  "status": "source acquired via alexanarch — 2026-07-01",
+  "transformable": false,
+  "transform_classification": "primary_pending_adjudication",
+  "content_subtype": "musical-architectural-composition",
+  "classification_note": "Space Ark v4.2.7 — fugue-form foundational architectural document. Likely primary literary work suitable for kernel transform. Awaits Lee's promotion decision. AXN-0185."
 }

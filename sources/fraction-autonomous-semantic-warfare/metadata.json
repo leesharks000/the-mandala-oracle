@@ -7,6 +7,10 @@
   "magnitude_class": "secondary_canon_star_M2",
   "apparatus_status": "present",
   "apparatus_note": "tactical-supplement notes (transformable: false)",
-  "source_status": "inscribed",
-  "status": "source acquired via alexanarch — 2026-07-01"
+  "source_status": "sourced",
+  "status": "source acquired via alexanarch — 2026-07-01",
+  "transformable": false,
+  "transform_classification": "archival_apparatus",
+  "content_subtype": "metadata_packet",
+  "classification_note": "Metadata Packet — Autonomous Warfare Does Not End at the Body. Metadata packet. AXN-0274."
 }

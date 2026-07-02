@@ -7,7 +7,7 @@
   "magnitude_class": "primary_canon_star_M1",
   "apparatus_status": "present",
   "apparatus_note": "inter-text linking apparatus (transformable: false)",
-  "source_status": "inscribed",
+  "source_status": "sourced",
   "status": "source acquired via alexanarch — 2026-07-01",
   "cluster": "kuro-chronoarithmics-sprint",
   "sprint_members": [
@@ -18,5 +18,9 @@
     "The Mirror",
     "Ingress/Egress",
     "Non-Indexed Perfective"
-  ]
+  ],
+  "transformable": false,
+  "transform_classification": "archival_apparatus",
+  "content_subtype": "theoretical-argument",
+  "classification_note": "Concurrence Is Not Checking: Chronoarithmics 2.1. Theoretical/argumentative. AXN-032D."
 }

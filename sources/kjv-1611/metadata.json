@@ -10,5 +10,9 @@
   "apparatus_status": "none",
   "apparatus_note": "marginalia treated as variant",
   "source_status": "inscribed",
-  "status": "source acquired via GITenberg (Gutenberg mirror) — 2026-07-01"
+  "status": "source acquired via GITenberg (Gutenberg mirror) — 2026-07-01",
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "scriptural-corpus",
+  "classification_note": "Gutenberg 10. Full Bible KJV."
 }

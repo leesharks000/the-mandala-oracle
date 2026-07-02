@@ -10,5 +10,9 @@
   "apparatus_status": "present",
   "source_status": "inscribed",
   "status": "source acquired via GITenberg (Gutenberg mirror) — 2026-07-01",
-  "cluster": "hopkins-selected"
+  "cluster": "hopkins-selected",
+  "transformable": true,
+  "transform_classification": "primary_literary",
+  "content_subtype": "lyric-corpus",
+  "classification_note": "Gutenberg 22403. Poems."
 }
