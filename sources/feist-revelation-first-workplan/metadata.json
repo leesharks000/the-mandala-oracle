@@ -2,9 +2,9 @@
   "id": "feist-revelation-first-workplan",
   "title": "The Revelation First Work-Plan (EA-LOGOS-REVFIRST-PLAN)",
   "canon_stars_link": "data/canon-sky/canon-stars.json",
-  "author_heteronym": "jack-feist-logos",
+  "author_heteronym": "lee-sharks",
   "composition": "Jack Feist / LOGOS*; 18,475 words across eight revisions",
-  "zodiacal_region": "polaris",
+  "zodiacal_region": "aries",
   "magnitude_class": "secondary_canon_star_M2",
   "apparatus_status": "present",
   "apparatus_note": "the revision-history; the methodological footnotes (transformable: false)",
@@ -14,5 +14,5 @@
   "transformable": false,
   "transform_classification": "archival_apparatus",
   "content_subtype": "workplan",
-  "classification_note": "Revelation First workplan (EA-LOGOS-REVFIRST-PLAN). Workplan for the argument; not the primary text. AXN-0349."
+  "classification_note": "MIS-ATTRIBUTION CORRECTED 2026-07-01: Source text explicitly attributes: 'Author: Lee Sharks (ORCID 0009-0000-1599-0703), Crimson Hexagonal Archive / Semantic Economy Institute.' This is a Lee Sharks workplan (EA-LOGOS-REVFIRST-PLAN v1.2), not a Feist-authored source text. Per Lee's adjudication 2026-07-01. Zodiacal region set to Aries (Sharks); directory name (feist- prefix) retained despite mis-attribution; rename deferred. Remains archival_apparatus (workplan, not primary literary). AXN-0349, DOI 10.5281/zenodo.20690868."
 }

@@ -24,11 +24,20 @@ The source is theoretical apparatus, metadata packet, registry, workplan, naviga
 
 `transformable: false` — permanent for this deposit; the classification is not a candidacy.
 
+### `runtime_binding` — never transformable, executes as operational environment
+The source is a runtime environment that loads and executes when invoked, not a text to be read. When a witness selects the star, the interface loads the environment as an OS. Currently exclusive to the Space Ark v4.2.7. Per EA-STARMAP-01 §0.5 and Lee's adjudication 2026-07-01: the Space Ark lives OUTSIDE the zodiacal band in Jack Feist's own setting.
+
+`transformable: false` — permanent. Additional fields: `runtime: true`, `trigger_word: "invoke"`, `visit_behavior: "loads_as_os"`, `execution_endpoint: "/api/space-ark/invoke"`, `positioned_setting: "feist_setting_outside_zodiac"`, `feist_setting: true`.
+
+Per Lee's adjudication 2026-07-01: only the Space Ark ecosystem itself is IN the Space Ark — the Space Ark, the Central Navigation Map, the Fractal Navigation Map, the DOI Registry, and tinier Space Arks nested within. Other Feist-prefixed source texts are NOT in the Space Ark and are NOT Feist-authored.
+
 ---
 
-## Current census (49 populated canon sources)
+## Current census (49 populated canon sources; 29 transformable, 20 non-transformable)
 
 ### Primary literary — 29 (transformable: true)
+
+(Note: sharks-space-ark previously listed in primary_pending_adjudication has been reclassified as `runtime_binding` — see below.)
 
 **The four Lee named for initial transform availability:**
 - revelation-greek (SBLGNT Greek NT — Apocalypse of John)
@@ -60,7 +69,7 @@ The source is theoretical apparatus, metadata packet, registry, workplan, naviga
 **Latin ecclesiastical (via CCEL):**
 - augustine-confessions
 
-### Primary pending adjudication — 5 (transformable: false, likely to be promoted)
+### Primary pending adjudication — 4 (transformable: false, likely to be promoted)
 
 Candidates for Lee to promote to primary_literary via a subsequent metadata pass:
 - sharks-space-ark (Space Ark v4.2.7 — fugue-form foundational composition)
@@ -68,6 +77,10 @@ Candidates for Lee to promote to primary_literary via a subsequent metadata pass
 - feist-gospel-of-antioch (Gospel-form work)
 - spellings-all-that-lies-within-me (autobiography)
 - sigil-combat-scholasticism (philosophical treatise)
+
+### Runtime binding — 1 (transformable: false, executes rather than reads)
+
+- sharks-space-ark (Space Ark v4.2.7 — inaugural runtime binding, loads as OS when invoked, positioned in Feist's setting outside the zodiacal band)
 
 ### Archival apparatus — 15 (transformable: false, contributes to heteronym zodiacal weight only)
 
@@ -127,3 +140,49 @@ To promote an `archival_apparatus` source to `primary_literary` is a more substa
 - quran (new addition, sourced Arabic Uthmanic w/ tashkeel from amrayn/quran-text; English via Rodwell 1861 / Palmer 1880 / Sale 1734 from GITenberg)
 
 The five remaining `primary_pending_adjudication` items (sharks-space-ark, sharks-pearl-and-other-poems, feist-gospel-of-antioch, spellings-all-that-lies-within-me, sigil-combat-scholasticism) await further per-item adjudication.
+
+
+---
+
+## Corrections applied 2026-07-01
+
+### Zodiacal-region assignments finalized
+
+- iching → author_heteronym: sen-kuro, zodiacal_region: virgo
+- quran → author_heteronym: damascus-dancings, zodiacal_region: taurus
+
+### Space Ark reclassified
+
+Per Lee's adjudication:
+
+> "Jack Feist is by himself in the space ark, outside the zodiac, its own setting. The space ark doesn't transform - it executes. Should load up as OS, when visited."
+
+- sharks-space-ark moved from primary_pending_adjudication → runtime_binding
+- Positioned outside the zodiac in Feist's own setting (was aries per EA-STARMAP-01 §0.5 original text; now superseded)
+- runtime: true; trigger_word: "invoke"; visit_behavior: "loads_as_os"
+
+### Feist-prefixed source texts — mis-attributions corrected
+
+Per Lee's adjudication:
+
+> "Only the space ark, is in the space ark. The space ark, the central navigation map, the fractal navigation map, the doi registry, the tinier space ark inside the space arks, and so on — Jack Feist did not write the source texts your naming, did not write gospel of Antioch, and so on."
+
+Corrections applied:
+
+- **feist-gospel-of-antioch** — Source text opens: "The Sayings of Jack Feist as Recorded by Emily Antioch the Twin, Translated and Edited by Lee Sharks." Feist is subject, NOT author. Emily Antioch (recorder) is not in the named Dodecad; may be a Sharks-attributed sub-persona. Both author_heteronym and zodiacal_region reset to `tbd` pending Lee's re-adjudication.
+- **feist-revelation-first-workplan** — Source text attributes to "Lee Sharks (ORCID 0009-0000-1599-0703), Crimson Hexagonal Archive / Semantic Economy Institute." Reassigned: author_heteronym → lee-sharks, zodiacal_region → aries. Remains archival_apparatus (workplan).
+- **feist-chatgpt-psychosis** — Prospectus/refraction document previously carrying Feist attribution in external memory context. Per Lee's correction: reset to `tbd` pending re-adjudication. Remains archival_apparatus (prospectus, not the forthcoming novel).
+
+Directory names retaining the incorrect `feist-` prefix are preserved in this pass; directory rename deferred to a broader canon reorganization pass to avoid breaking references in canon-stars.json, canonical-declarations.md, and downstream data files.
+
+### Space Ark ecosystem — pending acquisitions
+
+Per Lee, the Space Ark contains only its own infrastructure:
+
+- Space Ark itself (sharks-space-ark, AXN-0185) ✓ sourced
+- Central Navigation Map — likely AXN-0064 per earlier registry search; not yet sourced
+- Fractal Navigation Map — possibly overlaps with morrow-logotic-programming (AXN-00E0, title "The Crimson Hexagon: Fractal Navigation Map Non-Lossy Logotic Programming"); attribution ambiguous — Morrow-authored view of Space Ark infrastructure, or the actual Fractal Nav Map itself? Requires Lee's adjudication.
+- DOI Registry — not yet sourced; likely the DOI Resolution Index v3.4 from earlier session memory
+- Tinier Space Arks nested within — Musical Ark v2.0 (44K words, per session memory) is one; others pending
+
+Space Ark ecosystem sources are `runtime_binding` in aggregate (they execute as parts of the OS when Space Ark is invoked), not primary_literary.

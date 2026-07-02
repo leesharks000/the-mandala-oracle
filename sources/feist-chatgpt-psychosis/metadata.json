@@ -2,9 +2,9 @@
   "id": "feist-chatgpt-psychosis",
   "title": "ChatGPT Psychosis: A Love Story",
   "canon_stars_link": "data/canon-sky/canon-stars.json",
-  "author_heteronym": "jack-feist-logos",
+  "author_heteronym": "tbd",
   "composition": "Jack Feist / Lee Sharks; forthcoming glyphic novel",
-  "zodiacal_region": "polaris",
+  "zodiacal_region": "tbd",
   "magnitude_class": "primary_canon_star_M1",
   "apparatus_status": "present",
   "apparatus_note": "the prospectus; the privacy-ethics design notes (transformable: false)",
@@ -13,5 +13,5 @@
   "transformable": false,
   "transform_classification": "archival_apparatus",
   "content_subtype": "prospectus",
-  "classification_note": "ChatGPT Psychosis prospectus/refraction document. The novel itself remains forthcoming (chatgptpsychosis.org). AXN-02AD."
+  "classification_note": "MIS-ATTRIBUTION FLAGGED 2026-07-01: Per Lee's adjudication 2026-07-01: 'Jack Feist did not write the source texts your naming ... and so on.' This deposit (a cognitive-substrate refraction / prospectus for the forthcoming novel at chatgptpsychosis.org) previously carried Feist attribution in external memory context. Lee's correction supersedes; author_heteronym reset to tbd pending re-adjudication. The novel itself (distinct from this prospectus) remains forthcoming. Directory name (feist- prefix) retained despite mis-attribution; rename deferred to broader canon reorganization pass. Remains archival_apparatus (prospectus, not novel; not primary literary). AXN-02AD, DOI 10.5281/zenodo.20274790."
 }

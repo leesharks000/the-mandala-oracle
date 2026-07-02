@@ -2,9 +2,9 @@
   "id": "feist-gospel-of-antioch",
   "title": "Gospel of Antioch",
   "canon_stars_link": "data/canon-sky/canon-stars.json",
-  "author_heteronym": "jack-feist-logos",
+  "author_heteronym": "tbd",
   "composition": "Jack Feist; the Gospel-form text named at heteronyms.json",
-  "zodiacal_region": "polaris",
+  "zodiacal_region": "tbd",
   "magnitude_class": "primary_canon_star_M1",
   "apparatus_status": "present",
   "apparatus_note": "the patristic-style commentary (transformable: false)",
@@ -13,5 +13,5 @@
   "transformable": false,
   "transform_classification": "primary_pending_adjudication",
   "content_subtype": "gospel",
-  "classification_note": "The Gospel of Antioch — Sayings of Jack Feist as Recorded by Emily Antioch. Gospel-form primary literary. Awaits Lee's promotion. AXN-022E."
+  "classification_note": "MIS-ATTRIBUTION CORRECTED 2026-07-01: The source text's opening reads 'The Sayings of Jack Feist as Recorded by Emily Antioch the Twin, Translated and Edited by Lee Sharks.' Feist is the subject, NOT the author. Emily Antioch the Twin is the recorder; Lee Sharks is translator/editor. Per Lee's adjudication 2026-07-01: 'Jack Feist did not write the source texts your naming, did not write gospel of Antioch, and so on.' Author heteronym and zodiacal region reset to tbd pending Lee's adjudication of Emily Antioch's status (possibly Sharks-attributed sub-persona, possibly a distinct minor heteronym; not in the named Dodecad). Directory name retained (feist- prefix) despite mis-attribution; rename deferred to broader canon reorganization pass. Gospel-form work; primary literary candidate. AXN-022E."
 }
