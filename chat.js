@@ -678,6 +678,30 @@ function offerChoice(labels) {
   });
 }
 
+
+// Alchemical sigils for the eight rotating operators (SHADOW originary).
+const OPERATOR_SIGILS = {
+  SHADOW: '\u2644',    // ♄ Saturn — lead, the nigredo, the bearing
+  MIRROR: '\u263D',    // ☽ Luna — silver, reflection
+  INVERSION: '\u263F', // ☿ Mercury — the volatile reversal
+  FLAME: '\u{1F702}',  // 🜂 fire
+  BRIDE: '\u2640',     // ♀ Venus — copper, consecration
+  BEAST: '\u{1F70D}',  // 🜍 sulphur — the animal soul
+  THUNDER: '\u2643',   // ♃ Jupiter — the sky-thunderer
+  SILENCE: '\u{1F714}',// 🜔 salt — fixity, stillness
+};
+
+function renderOperatorLabel(op, axis) {
+  const el = document.createElement('div');
+  el.className = 'operator-label';
+  const sig = OPERATOR_SIGILS[op] || '\u2609';
+  el.innerHTML = `<span class="op-sigil">${sig}</span> <span class="op-name">${op}</span>` +
+    (axis ? ` <span class="op-axis">— ${axis.split(' — ')[0]}</span>` : '');
+  messagesEl.appendChild(el);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+  return el;
+}
+
 function renderSourceCard(citation, passage, attribution) {
   const card = document.createElement('div');
   card.className = 'source-card';
@@ -916,6 +940,7 @@ async function runCastingRite(cast) {
       while (attempts < 2 && !passed) {
         attempts += 1;
         setStatus(`Cranes transforms — ${currentOperator} (${operatorsDone.length + 1} of the rotation)...`);
+        if (attempts === 1) renderOperatorLabel(currentOperator, (castMeta && castMeta.operators[currentOperator]) || cast.opAxis || '');
         const placeholder = appendHeteronymMessage('Rebekah Cranes', '…', { dim: true });
         let res, data;
         try {
