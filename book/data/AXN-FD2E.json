@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:FD2E.CONVERSATION.🌖🪨🌿🌖⭐🌔",
+  "session_id_hash": "77e57f400c409f86",
+  "started_at": "2026-07-02T06:30:48.712Z",
+  "last_updated": "2026-07-02T07:35:41.258088+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "What's the archive have to say about ai-mediated authorship?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
