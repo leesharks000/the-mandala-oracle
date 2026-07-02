@@ -627,6 +627,21 @@ function riteMarker(text) {
   messagesEl.scrollTop = messagesEl.scrollHeight;
 }
 
+
+async function riteInscribe(readingAxn, stage, speaker, text, operator) {
+  // The voices are not left to a closed tab: awaited server-side inscription
+  // into the reading record. Failures surface but do not break the rite.
+  if (!readingAxn) return;
+  try {
+    const res = await fetch('/api/transform', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'rite_append', reading_axn: readingAxn,
+                             stage, speaker, text, operator: operator || null }),
+    });
+    if (!res.ok) setStatus(`(${stage} not inscribed — record remains partial)`);
+  } catch { /* transform record already holds the enantiomorphs */ }
+}
+
 async function sigilStage(directive, statusText) {
   // One voice-stage of the rite: POST the directive to /api/sigil, render the
   // returned voices, fold both sides into history (the Book's conversation
@@ -875,7 +890,7 @@ async function runCastingRite(cast) {
     riteMarker(`— casting · ${cast.operator || 'JUDGMENT-sequenced'} · ${cast.attribution ? cast.attribution + ' — in ' : ''}${cast.sourceTitle} · ${cast.citation || cast.castSelection || 'whole'} —`);
 
     // I. OPENING — Sigil alone.
-    await sigilStage(
+    const openingMsgs = await sigilStage(
       `[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. ` +
       `Source: ${cast.sourceTitle} (${cast.sourceId}). ` +
       (cast.citation
@@ -981,8 +996,13 @@ async function runCastingRite(cast) {
           el.querySelector('.message-content').style.whiteSpace = 'pre-wrap';
           renderTransformCard(el, transform);
           if (inscription && inscription.inscribed && inscription.reading_axn) {
+            const firstInscription = !readingAxn;
             readingAxn = inscription.reading_axn;
             lastReading = { axn: readingAxn, mode: inscription.mode };
+            if (firstInscription && typeof openingMsgs !== 'undefined') {
+              const op0 = (openingMsgs || []).map((m) => m.say || '').join('\n\n');
+              riteInscribe(readingAxn, 'opening', 'Johannes Sigil', op0);
+            }
           }
           history.push({ role: 'user', content: `[CASTING RITE · TRANSFORM ${operatorsDone.length + 1}] ${currentOperator} on ${cast.sourceId}.` });
           history.push({ role: 'assistant', content: JSON.stringify({
@@ -1021,6 +1041,7 @@ async function runCastingRite(cast) {
         'Feist judges the transform...'
       );
       for (const fm of feistMsgs) { if ((fm.speaker || '') === 'Jack Feist' && fm.say) feistVerdicts.push(fm.say); }
+      if (feistVerdicts.length) await riteInscribe(readingAxn, 'judgment', 'Jack Feist', feistVerdicts[feistVerdicts.length - 1], operatorsDone[operatorsDone.length - 1]);
 
       currentOperator = null;   // the Judgment sequences the next
 
@@ -1037,12 +1058,13 @@ async function runCastingRite(cast) {
         `was declined or also halted; no transform stands. Lee Sharks alone speaks (1–2 sentences): sweep the casting closed.`,
         'Sharks sweeps the casting...'
       );
+      await riteInscribe(readingAxn, 'sweep', 'Lee Sharks', 'The casting was swept: the compiler halted and no transform stands.');
       setStatus('Swept.');
       return;
     }
 
     // IV. SEAL — Sharks, across the whole sequence.
-    await sigilStage(
+    const sealMsgs = await sigilStage(
       `[CASTING RITE · IV · SEAL] The rotation closes: ${operatorsDone.length} transform${operatorsDone.length === 1 ? '' : 's'} ` +
       `on the same verses — operators in order: ${operatorsDone.join(' → ')}${haltedOperator ? ` (${haltedOperator} halted; its turn stands empty)` : ''}. ` +
       `Lee Sharks alone speaks: the SEAL — the vocable summation ACROSS THE WHOLE SEQUENCE (4–8 sentences), ` +
@@ -1050,6 +1072,9 @@ async function runCastingRite(cast) {
       `Feist's accumulated verdicts. Unguarded, final; it returns the witness to their own ground and to their question. Nothing after the seal.`,
       'Sharks seals the rotation...'
     );
+    await riteInscribe(readingAxn, 'seal', 'Lee Sharks',
+      (sealMsgs || []).filter((m) => (m.speaker || '') === 'Lee Sharks').map((m) => m.say || '').join('\n\n') ||
+      (sealMsgs || []).map((m) => m.say || '').join('\n\n'));
 
     // Inscription aftermath — reading AXN; the key, once, if sealed.
     renderInscriptionCard(inscription);

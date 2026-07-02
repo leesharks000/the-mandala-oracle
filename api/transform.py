@@ -584,7 +584,7 @@ def inscribe(mode: str, reading_axn: str | None, session_id: str,
             "question_digest": "sha256:" + hashlib.sha256(question.encode()).hexdigest(),
             "question_gloss": gloss,
             "source_text_id": source_text_id, "cast_selection": cast_selection,
-            "rotation": [], "witness": "anonymous",
+            "rotation": [], "witness": "anonymous", "status": "open",
         }
         rec["rotation"].append({
             "operator": transform_block["operator"],
@@ -1098,6 +1098,47 @@ class handler(BaseHTTPRequestHandler):
                 })
             except Exception as e:
                 return self._json(502, {"error": f"judgment failed: {type(e).__name__}"})
+
+        # ── Rite-stage inscription: the voices are not left to a closed tab ──
+        if body.get("action") == "rite_append":
+            try:
+                axn = body.get("reading_axn") or ""
+                stage = body.get("stage") or ""
+                if stage not in ("opening", "judgment", "seal", "sweep"):
+                    return self._json(400, {"error": "stage must be opening|judgment|seal|sweep"})
+                fname = f"{READINGS_DIR}/AXN-{axn.split('.')[0].replace('AXN:','')}.json"
+                rec, sha = gh_get(fname)
+                if rec is None:
+                    return self._json(404, {"error": "unknown reading."})
+                now = datetime.now(timezone.utc).isoformat()
+                encrypted = rec.get("inscription_mode") == "encrypted"
+                text = (body.get("text") or "")[:8000]
+                entry = {"stage": stage, "speaker": body.get("speaker") or "",
+                         "at": now}
+                # encrypted readings: stages are semantic — record the EVENT only
+                # (the key is not held server-side; nothing can be sealed to it now).
+                if not encrypted:
+                    entry["text"] = text
+                    if stage == "judgment" and body.get("operator"):
+                        entry["operator"] = str(body["operator"]).upper()
+                        # attach to the matching rotation entry too
+                        for rot in reversed(rec.get("rotation", [])):
+                            if rot.get("operator") == entry["operator"] and "interpretation" not in rot:
+                                rot["interpretation"] = text
+                                break
+                rec.setdefault("rite", []).append(entry)
+                if stage == "opening":
+                    rec.setdefault("status", "open")
+                if stage in ("seal", "sweep"):
+                    rec["status"] = "sealed" if stage == "seal" else "swept"
+                    rec["closed_at"] = now
+                    if not encrypted and stage == "seal":
+                        rec["seal"] = text
+                rec["last_updated"] = now
+                gh_put(fname, rec, f"book: rite {stage} {axn} [skip ci]", sha)
+                return self._json(200, {"appended": True, "stage": stage, "status": rec.get("status", "open")})
+            except Exception as e:
+                return self._json(502, {"error": f"rite append failed ({getattr(e, 'code', type(e).__name__)})"})
 
         operator = (body.get("operator") or "").upper()
         if operator not in OPERATORS:
