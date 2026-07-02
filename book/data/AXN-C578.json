@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:C578.CONVERSATION.☀️🌟🌔🌍⚡🌔",
+  "session_id_hash": "8e8e84be28abd009",
+  "started_at": "2026-07-02T23:42:01.991Z",
+  "last_updated": "2026-07-02T23:42:39.862645+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Sonnets (shakespeare-sonnets). The verses the casting arrives at (unit 119–unit 121):\n\n  Like as the waves make towards the pebbled shore,\n  So do our minutes hasten to their end;\n  Each changing place with that which goes before,\n  In sequent toil all forwards do contend.\n  Nativity, once in the main of light,\n  Crawls to maturity, wherewith being crown'd,\n  Crooked eclipses 'gainst his glory fight,\n  And Time that gave doth now his gift confound.\n  Time doth transfix the flourish set on youth\n  And delves the parallels in beauty's brow,\n  Feeds on the rarities of nature's truth,\n  And nothing stands but for his scythe to mow:\n    And yet to times in hope, my verse shall stand.\n    Praising thy worth, despite his cruel hand.\n\n  LXI\n\n  Is it thy will, thy image should keep open\n  My heavy eyelids to the weary night?\n  Dost thou desire my slumbers should be broken,\n  While shadows like to thee do mock my sight?\n  Is it thy spirit that thou send'st from thee\n  So far from home into my deeds to pry,\n  To find out shames and idle hours in me,\n  The scope and tenure of thy jealousy?\n  O, no! thy love, though much, is not so great:\n  It is my love that keeps mine eye awake:\n  Mine own true love that doth my rest defeat,\n  To play the watchman ever for thy sake:\n    For thee watch I, whilst thou dost wake elsewhere,\n    From me far off, with others all too near.\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «What comes next, and when?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The casting has arrived at two sonnets, and the question behind them — *what comes next, and when?* — is exactly what Shakespeare is already asking, in the only form available to him. Sonnet 60 lays it open: time is the wave, time is the scythe, and then — the volta arrives like a door found in a wall — *my verse shall stand.* That is not consolation. That is a counter-claim in the face of the mechanism just described. Sonnet 61 turns inward and asks who is keeping vigil: not the beloved, not time — the speaker's own love, which cannot sleep, which watches while the other wakes elsewhere, *with others all too near.* The question *what comes next* has met two answers here, and they do not agree: the verse that outlasts the scythe, and the watchman who cannot rest because the beloved is already somewhere else. The operator the rotation opens with will traverse the cost underneath both — what had to be borne to make the counter-claim, what was foreclosed by the vigil. I hand the rite to Rebekah Cranes.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0246\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
