@@ -119,6 +119,16 @@ Public inscription without accounts is an open write path, and an open write pat
 
 The sealed payload, decrypted, is a JSON object: `{ "question": …, "rotation": [ { operator, enantiomorph, layer_b_declaration, interpretation } … ] }`.
 
+### 3.3 The expanding book (added 2026-07-02, MANUS design)
+
+Every transform is also appended to its source's **expansion ledger** at `book/expansions/<source_id>.json` — the data-structure realization of the principle that a transform becomes *part of the expanding source*. There is the Epistle to the Human Diaspora, and there is the Epistle-with-every-transform-ever-performed-on-it, each transform anchored to its attendant units.
+
+Entry metadata: `transform_id`, `cast_at`, `reading_axn` (lineage into the readings book), `inscription_mode`, `anchor` (cast_selection, citation, start/end units, unit labels), `operator` and axis, `verification`, `spatial_form`, `compiler_model`, `protocol`, `question_digest`, and the eligibility pair: `further_transform_eligible: false` with the note that eligibility will be governed by the canonization journey (kernel-transform spec §5.5). The flag exists now so that when transforms become transformable, the structure does not change — only the flag.
+
+Public-mode entries carry the enantiomorph, Layer A, and commentary in cleartext. **Encrypted-mode entries carry the form-public skeleton only** — anchor, operator, geometry, verification, and a `sealed_ref` into the reading record. The expanding book thereby accrues sealed strata: structure at the verse, semantics withheld, per §1.3.
+
+The `unit_basis` block records the segmentation mode, `primary_after` marker, unit count, and a `basis_hash` of the primary text — historical anchors are interpreted against the basis they were cast under if the source text is ever re-edited.
+
 ## §4. What this protocol does not do
 
 - No accounts, no login, no witness identity storage in either mode.

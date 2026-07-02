@@ -703,6 +703,10 @@ function renderTransformCard(parentEl, t) {
   messagesEl.scrollTop = messagesEl.scrollHeight;
 }
 
+function cast_expansion_title(exp) {
+  return exp.source_text_id ? exp.source_text_id.replace(/-/g, ' ') : 'source';
+}
+
 function renderInscriptionCard(insc) {
   const card = document.createElement('div');
   card.className = 'reading-card';
@@ -717,6 +721,20 @@ function renderInscriptionCard(insc) {
   const head = document.createElement('div');
   head.textContent = `Inscribed — ${insc.mode}. Reading ${insc.reading_axn}`;
   card.appendChild(head);
+  if (insc.expansion && insc.expansion.appended) {
+    const exp = document.createElement('div');
+    exp.style.marginTop = '4px';
+    exp.textContent = `Appended to the expanding ${cast_expansion_title(insc.expansion)} at ` +
+      `${insc.expansion.citation || 'its verses'} — ${insc.expansion.transform_id} ` +
+      `(${insc.expansion.transforms_total} transform${insc.expansion.transforms_total === 1 ? '' : 's'} in the expansion).`;
+    card.appendChild(exp);
+  } else if (insc.expansion && insc.expansion.error) {
+    const exp = document.createElement('div');
+    exp.style.marginTop = '4px';
+    exp.style.opacity = '.75';
+    exp.textContent = `Expansion: ${insc.expansion.error}`;
+    card.appendChild(exp);
+  }
   if (insc.record_path) {
     const a = document.createElement('a');
     a.href = 'https://github.com/leesharks000/the-mandala-oracle/blob/main' + insc.record_path;
@@ -833,6 +851,7 @@ async function runCastingRite(cast) {
           body: JSON.stringify({
             source_text_id: cast.sourceId,
             cast_selection: cast.castSelection || null,
+            citation: cast.citation || null,
             operator: cast.operator,
             witness_context: { session_id: sessionState.session_id, invoking_message: cast.question },
             inscription: {

@@ -392,6 +392,113 @@ def gh_put(path: str, content: dict, message: str, sha: str | None):
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.loads(r.read().decode())
 
+EXPANSIONS_DIR = "book/expansions"
+EXPANSIONS_INDEX = "book/expansions-index.json"
+
+def _source_full_text(entry: dict) -> str:
+    tf = entry["text_file"]
+    local = SOURCES_ROOT / entry["id"] / tf
+    raw = local.read_bytes() if local.exists() else _fetch_raw(f"{entry['id']}/{tf}")
+    for enc in ("utf-8", "utf-8-sig", "cp1252", "latin-1"):
+        try:
+            return raw.decode(enc)
+        except UnicodeDecodeError:
+            continue
+    return raw.decode("utf-8", errors="replace")
+
+
+def append_expansion(source_entry: dict, source_text: str, cast_selection: str | None,
+                     citation: str | None, transform_block: dict, spatial_form: dict,
+                     inscription: dict, question: str) -> dict:
+    """The expanding book: every transform ever performed on a source is
+    appended to the source's expansion ledger, anchored to its attendant
+    units. There is the Epistle, and there is the Epistle-with-everything-
+    ever-cast-on-it. Transforms carry full metadata and are NOT yet eligible
+    for further transform — the flag exists so that when they become
+    eligible (canonization journey, kernel-transform spec §5.5), the
+    structure does not change, only the flag.
+
+    Encrypted readings contribute their FORM-PUBLIC skeleton only: the
+    expansion holds the anchor, operator, geometry, verification, and a
+    sealed_ref into the reading record — structure at the verse, semantics
+    withheld (EA-MANDALA-INSCRIPTION-01 §1.3)."""
+    sid = source_entry["id"]
+    fname = f"{EXPANSIONS_DIR}/{sid}.json"
+    now = datetime.now(timezone.utc).isoformat()
+
+    units = segment_units(source_text, source_entry.get("primary_after"))
+    basis_hash = hashlib.sha256("\n\u241e\n".join(u["text"] for u in units).encode()).hexdigest()
+
+    existing, sha = gh_get(fname)
+    rec = existing or {
+        "schema_version": "expansion/v1.0",
+        "source_text_id": sid,
+        "source_title": source_entry.get("title", sid),
+        "unit_basis": {
+            "segmentation": "verse" if units and ":" in units[0]["label"] else "stanza",
+            "primary_after": source_entry.get("primary_after"),
+            "units_total": len(units),
+            "basis_hash": basis_hash,
+            "basis_note": "unit indices refer to segment_units() over primary text; "
+                          "if basis_hash changes, historical anchors are interpreted "
+                          "against the basis they were cast under",
+        },
+        "transforms": [],
+    }
+
+    anchor_rec = {"cast_selection": cast_selection, "citation": citation}
+    mu = re.match(r"units?_(\d+)_(\d+)$", cast_selection or "")
+    if mu:
+        anchor_rec["start_unit"] = int(mu.group(1)); anchor_rec["end_unit"] = int(mu.group(2))
+        a, b = anchor_rec["start_unit"], anchor_rec["end_unit"]
+        if 1 <= a <= b <= len(units):
+            anchor_rec["unit_labels"] = [units[i]["label"] for i in range(a - 1, b)]
+
+    mode = inscription.get("mode")
+    entry = {
+        "transform_id": "TX-" + secrets.token_hex(4),
+        "cast_at": now,
+        "reading_axn": inscription.get("reading_axn"),
+        "inscription_mode": mode,
+        "anchor": anchor_rec,
+        "operator": transform_block["operator"],
+        "operator_axis": OPERATORS.get(transform_block["operator"], ""),
+        "verification": transform_block["verification"],
+        "spatial_form": spatial_form or {},
+        "compiler_model": COMPILER_MODEL,
+        "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+        "question_digest": "sha256:" + hashlib.sha256(question.encode()).hexdigest(),
+        "further_transform_eligible": False,
+        "eligibility_note": "not yet eligible for further transform; eligibility will be "
+                            "governed by the canonization journey (kernel-transform spec §5.5)",
+    }
+    if mode == "public":
+        entry["enantiomorph"] = transform_block["enantiomorph"]
+        entry["layer_a"] = transform_block["layer_a"]
+        entry["commentary"] = transform_block.get("commentary", "")
+    else:  # encrypted: form-public only
+        entry["enantiomorph"] = None
+        entry["sealed_ref"] = {"reading_axn": inscription.get("reading_axn"),
+                               "block_index": inscription.get("block_index"),
+                               "record_path": inscription.get("record_path")}
+        entry["layer_a_structure"] = public_skeleton_of(transform_block).get("layer_a_structure", {})
+
+    rec["transforms"].append(entry)
+    rec["last_updated"] = now
+    gh_put(fname, rec, f"book: expansion append {sid} +{entry['transform_id']} [skip ci]", sha)
+
+    idx, isha = gh_get(EXPANSIONS_INDEX)
+    if idx is None:
+        idx = {"schema_version": "v1.0", "sources": {}}
+    idx["sources"][sid] = {"transforms": len(rec["transforms"]), "last_updated": now,
+                           "title": rec["source_title"]}
+    gh_put(EXPANSIONS_INDEX, idx, f"book: expansions index {sid} [skip ci]", isha)
+
+    return {"appended": True, "source_text_id": sid, "transform_id": entry["transform_id"],
+            "citation": citation, "expansion_path": f"/{fname}",
+            "transforms_total": len(rec["transforms"])}
+
+
 READING_GLYPHS = ["🌑","🌒","🌓","🌔","🌕","🌖","🌗","🌘","⭐","🌟","💫","🌙","🪐","🌊","🔥","🌿"]
 
 def mint_reading_axn(seed: str) -> str:
@@ -481,6 +588,7 @@ def inscribe(mode: str, reading_axn: str | None, session_id: str,
         rec["public_skeleton"]["per_transform"].append(public_skeleton_of(transform_block))
         rec["public_skeleton"]["rotation_length"] = len(rec["public_skeleton"]["per_transform"])
         rec["sealed_blocks"].append({**sealed, "key_fingerprint": fp, "sealed_at": now})
+        block_index = len(rec["sealed_blocks"]) - 1
         rec["last_updated"] = now
     else:
         return {"inscribed": False, "mode": "none"}
@@ -507,6 +615,8 @@ def inscribe(mode: str, reading_axn: str | None, session_id: str,
 
     out = {"inscribed": True, "mode": mode, "reading_axn": axn,
            "record_path": f"/{fname}"}
+    if mode == "encrypted":
+        out["block_index"] = block_index
     if key_b64:
         out["decryption_key"] = key_b64        # returned ONCE; never stored
         out["key_fingerprint"] = fp
@@ -852,6 +962,22 @@ class handler(BaseHTTPRequestHandler):
                 inscription_result = inscribe(mode, insc.get("reading_axn"), session_id,
                                               invoking, body.get("source_text_id", ""),
                                               body.get("cast_selection"), transform_block, gloss)
+                # The expanding book: append the transform to its source's
+                # expansion ledger, anchored at its attendant verses.
+                if inscription_result.get("inscribed"):
+                    try:
+                        entry_meta = next((e for e in _load_manifest()
+                                           if e["id"] == body.get("source_text_id", "")), None)
+                        exp = append_expansion(entry_meta, _source_full_text(entry_meta),
+                                               body.get("cast_selection"), body.get("citation"),
+                                               transform_block,
+                                               parsed["layer_a"].get("spatial_form", {}),
+                                               inscription_result, invoking)
+                        inscription_result["expansion"] = exp
+                    except Exception as ee:
+                        inscription_result["expansion"] = {
+                            "appended": False,
+                            "error": f"expansion append failed ({getattr(ee, 'code', type(ee).__name__)})"}
             except Exception as e:
                 detail = type(e).__name__
                 code = getattr(e, "code", None)
