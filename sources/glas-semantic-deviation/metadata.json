@@ -7,6 +7,6 @@
   "magnitude_class": "secondary_canon_star_M2",
   "apparatus_status": "present",
   "apparatus_note": "the statistical-method appendix (transformable: false)",
-  "source_status": "declared",
-  "status": "stub — awaiting source acquisition per /starmap/manifests/canonical-declarations.md"
+  "source_status": "inscribed",
+  "status": "source acquired via alexanarch — 2026-07-01"
 }

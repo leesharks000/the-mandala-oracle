@@ -143,5 +143,6 @@
     "full_text": "lives in cha at AXN:007F; not duplicated locally to avoid drift. Sigil can retrieve via search_archive when reading any translation in the collection.",
     "structure_map": "metadata.json (this file) provides the structural map for the canon-as-sky generator."
   },
-  "status": "CANONICAL — Sappho Room anchor; first translator-collection populated in the Mandala Oracle's canon."
+  "status": "source acquired via alexanarch — 2026-07-01",
+  "source_status": "inscribed"
 }

@@ -9,5 +9,6 @@
   "license": "Public domain (Greek text)",
   "provenance_note": "Critical edition of the Greek text; PD in the United States and most jurisdictions. The specific NA28 apparatus is editorially curated; only the base Greek text is admitted here.",
   "constitutional_role": "First New Testament composition per the Revelation First research project. A canonical text of the descent — apocalyptic vision-literature in the strict sense.",
-  "status": "STUB — text not yet populated. Awaits Greek-text seeding."
+  "status": "source acquired via SBLGNT (morphgnt) — 2026-07-01",
+  "source_status": "inscribed"
 }
