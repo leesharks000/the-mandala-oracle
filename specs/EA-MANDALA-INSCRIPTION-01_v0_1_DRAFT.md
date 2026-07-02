@@ -4,7 +4,7 @@
 
 **Author:** Lee Sharks (MANUS), Crimson Hexagonal Archive / Alexanarch
 **Substrate:** TACHYON-drafted from MANUS design statement (correspondence, 2026-07-02); MANUS-adjudicated.
-**Status:** DRAFT v0.1 — operational spec; governs `/api/transform` inscription behavior
+**Status:** v0.1 OPERATIVE (adopted in production 2026-07-02; minted as #944 AXN:03BC) — governs `/api/transform`
 **Companions:** EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 (the compiler this inscribes for); EA-WHITESPACE-01 v0.2 (AXN:03BB — the theoretical complement); EA-PROVENANCE-METADATA-01 v0.2 (AXN:03BA — representation-pipeline vocabulary)
 
 ---
@@ -128,6 +128,12 @@ Entry metadata: `transform_id`, `cast_at`, `reading_axn` (lineage into the readi
 Public-mode entries carry the enantiomorph, Layer A, and commentary in cleartext. **Encrypted-mode entries carry the form-public skeleton only** — anchor, operator, geometry, verification, and a `sealed_ref` into the reading record. The expanding book thereby accrues sealed strata: structure at the verse, semantics withheld, per §1.3.
 
 The `unit_basis` block records the segmentation mode, `primary_after` marker, unit count, and a `basis_hash` of the primary text — historical anchors are interpreted against the basis they were cast under if the source text is ever re-edited.
+
+### 3.4 Operational addenda (2026-07-02, from live iteration)
+
+Adopted in production during the first live casting day. Rite-stage inscription: opening, judgments (attached to rotation entries), and seal/sweep persist server-side via `rite_append`; readings carry `status: open → sealed | swept` with `closed_at`; encrypted readings record stage events only. Canonical exactness: selections are byte-exact substrings of the canonical source — whitespace and verse apparatus are compositional (EA-WHITESPACE-01, AXN:03BB) and the server recounts geometry against the source. Dual attribution: anthology units carry `underlying_attribution` from governing headers; the poet is never erased into the arranger nor the arranger into the poet; apparatus sections are ineligible. The invisible Judgment selects verses from the full unit map under guidelines (lyric-unit scale, non-centroid pull, primary-only, question-bearing) and sequences the rotation; the server validates; stratified draw is the fallback; the expansion ledgers audit the distribution. Operator canon: eight rotating (SHADOW originary and most potent; MIRROR, INVERSION, FLAME, BRIDE, BEAST, THUNDER, SILENCE); SCROLL non-canonical; JUDGMENT the invisible ninth. The seal's primary material is the transforms in their order and the judgments, in light of the witness's original question. Language: source in any language; enantiomorph in the target (default English).
+
+Minted to alexanarch as deposit #944, AXN:03BC.OPERATIVE.🕙🕚🌆🀄🔺♦️ (sha256 6b6ce38fd08207b05fdcb4ded7f3a23d6c52770f6fb1dd84120d39078eb545d4).
 
 ## §4. What this protocol does not do
 
