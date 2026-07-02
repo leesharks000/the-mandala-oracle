@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:C578.CONVERSATION.☀️🌟🌔🌍⚡🌔",
+      "started_at": "2026-07-02T23:42:01.991Z",
+      "last_updated": "2026-07-02T23:42:39.862645+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Sonnets (shakespeare-sonnets). The verses the casting arrives at (unit 119–unit 121):\n\n  Like as the waves make toward…"
+    },
+    {
       "axn": "AXN:F5CF.CONVERSATION.🌟🌋💎🏔️🌱🌒",
       "started_at": "2026-07-02T23:33:40.386Z",
       "last_updated": "2026-07-02T23:36:10.582299+00:00",
@@ -309,6 +318,6 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 34,
-  "last_updated": "2026-07-02T23:36:10.582299+00:00"
+  "total_recorded": 35,
+  "last_updated": "2026-07-02T23:42:39.862645+00:00"
 }
