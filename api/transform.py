@@ -114,6 +114,9 @@ OPERATORS = {
 RATE_LIMIT_WINDOW_S = 3600
 RATE_LIMIT_MAX = 12          # transforms per IP per hour
 MAX_INVOKING_CHARS = 4000
+MAX_CAST_CHARS = 6000        # the casting takes a concentrated text, not a whole work
+                             # (kernel-transform spec: "a stanza, a fragment, a few
+                             # concentrated lines"); also the 60s function budget.
 MAX_ROTATION_PER_READING = 12
 
 _rate_bucket: dict[str, list[float]] = {}
@@ -166,17 +169,36 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
             text = text[sel["start_char"]:sel["end_char"]] if "start_char" in sel else text
         else:
             m = re.match(r"stanzas?_(\d+)(?:_(\d+))?$", cast_selection)
+            mc = re.match(r"chapters?_(\d+)(?:_(\d+))?$", cast_selection)
             if m:
                 a = int(m.group(1)); b = int(m.group(2) or m.group(1))
                 stanzas = re.split(r"\n\s*\n", text.strip())
                 if not (1 <= a <= b <= len(stanzas)):
                     raise ValueError(f"cast_selection out of range: source has {len(stanzas)} stanzas.")
                 text = "\n\n".join(stanzas[a - 1:b])
+            elif mc:
+                a = int(mc.group(1)); b = int(mc.group(2) or mc.group(1))
+                parts = re.split(r"(?m)^(?=## )", text)
+                chapters = [c for c in parts if re.match(r"##\s+\S.*\b\d+\s*$", c.splitlines()[0])]
+                if not chapters:
+                    raise ValueError("this source has no chapter headings; use stanzas_A_B.")
+                if not (1 <= a <= b <= len(chapters)):
+                    raise ValueError(f"cast_selection out of range: source has {len(chapters)} chapters.")
+                text = "\n".join(chapters[a - 1:b]).strip()
             else:
-                raise ValueError(f"unknown cast_selection: {cast_selection}")
+                raise ValueError(f"unknown cast_selection: {cast_selection} (use stanzas_A_B or chapter_N).")
 
     if len(text.strip()) < 40:
         raise ValueError("the selected text is too small to cast.")
+    if len(text) > MAX_CAST_CHARS:
+        stanzas_n = len(re.split(r"\n\s*\n", text.strip()))
+        chapters_n = len([c for c in re.split(r"(?m)^(?=## )", text) if c.startswith("## ")])
+        raise ValueError(
+            f"the casting takes a concentrated text, not a whole work — the selection is "
+            f"{len(text):,} characters (limit {MAX_CAST_CHARS:,}). Narrow it with a cast selection: "
+            f"stanzas_A_B (this selection spans {stanzas_n} blank-line blocks)"
+            + (f" or chapter_N (it spans {chapters_n} chapter headings)." if chapters_n > 1 else ".")
+        )
     return text, meta
 
 

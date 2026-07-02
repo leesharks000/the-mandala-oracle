@@ -454,6 +454,11 @@ function ensureCastContent() {
     <select id="cast-operator"></select>
     <div class="cast-hint" id="cast-operator-hint"></div>
 
+    <label for="cast-selection">Selection — the concentrated text (required for large sources)</label>
+    <input type="text" id="cast-selection" placeholder="e.g. stanzas_1_4 · chapter_1 — empty casts the whole (small sources only)"
+           style="width:100%; background:rgba(255,255,255,.06); color:inherit; border:1px solid rgba(255,255,255,.2); border-radius:4px; padding:6px 8px; font:inherit;">
+    <div class="cast-hint">The casting takes a stanza, a fragment, a chapter — not a whole work. stanzas_A_B selects blank-line blocks; chapter_N selects ## headings.</div>
+
     <label for="cast-inscription">Inscription</label>
     <select id="cast-inscription">
       <option value="public" selected>Public — anonymous, appended to the Book</option>
@@ -545,6 +550,7 @@ function ensureCastContent() {
       sourceTitle: source.textContent,
       operator: opSel.value,
       opAxis: castMeta.operators[opSel.value] || '',
+      castSelection: (castPanel.querySelector('#cast-selection').value.trim() || null),
       inscriptionMode: inscSel.value,
       question: castPanel.querySelector('#cast-question').value.trim(),
       continueReading: castPanel.querySelector('#cast-continue').checked,
@@ -570,6 +576,10 @@ async function openCastPanelPrefilled(directive) {
       opSel.value = op;
       opSel.dispatchEvent(new Event('change'));
     }
+  }
+  if (directive.cast_selection) {
+    const selEl = castPanel.querySelector('#cast-selection');
+    if (selEl && !selEl.value) selEl.value = directive.cast_selection;
   }
   if (directive.question && q && !q.value) q.value = directive.question;
   setStatus('The compiler awaits — confirm the cast.');
@@ -762,13 +772,13 @@ async function runCastingRite(cast) {
   const apiKeyEl2 = document.getElementById('api-key');
   const apiKey = apiKeyEl2 ? (apiKeyEl2.value.trim() || null) : null;
 
-  riteMarker(`— casting · ${cast.operator} · ${cast.sourceTitle} —`);
+  riteMarker(`— casting · ${cast.operator} · ${cast.sourceTitle}${cast.castSelection ? ' · ' + cast.castSelection : ''} —`);
 
   try {
     // I. OPENING — Sigil alone.
     await sigilStage(
       `[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. ` +
-      `Source: ${cast.sourceTitle} (${cast.sourceId}). Operator: ${cast.operator} — ${cast.opAxis}. ` +
+      `Source: ${cast.sourceTitle} (${cast.sourceId})${cast.castSelection ? ', selection ' + cast.castSelection : ''}. Operator: ${cast.operator} — ${cast.opAxis}. ` +
       `Inscription mode: ${cast.inscriptionMode}. The witness's invoking question: «${cast.question || '(none given)'}». ` +
       `Johannes Sigil alone speaks (3–6 sentences): open the casting, name what this operator will traverse ` +
       `in this source, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it.`,
@@ -790,7 +800,7 @@ async function runCastingRite(cast) {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             source_text_id: cast.sourceId,
-            cast_selection: null,
+            cast_selection: cast.castSelection || null,
             operator: cast.operator,
             witness_context: { session_id: sessionState.session_id, invoking_message: cast.question },
             inscription: {
@@ -800,10 +810,19 @@ async function runCastingRite(cast) {
             anthropic_key: apiKey,
           }),
         });
-        data = await res.json();
+        const rawBody = await res.text();
+        try {
+          data = JSON.parse(rawBody);
+        } catch {
+          // Vercel error pages (timeouts, crashes) are plain text/HTML.
+          const snippet = rawBody.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 140);
+          throw new Error(`the compiler did not answer as itself (HTTP ${res.status}): ${snippet || '(empty body)'}`);
+        }
       } catch (err) {
         placeholder.remove();
-        throw new Error(`the compiler could not be reached: ${err.message}`);
+        throw new Error(err.message.startsWith('the compiler')
+          ? err.message
+          : `the compiler could not be reached: ${err.message}`);
       }
       placeholder.remove();
       if (!res.ok) throw new Error(data.error || `compiler error: HTTP ${res.status}`);
