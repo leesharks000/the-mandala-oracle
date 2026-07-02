@@ -5,24 +5,48 @@
   "functions": {
     "api/**/*.py": {
       "maxDuration": 60
+    },
+    "api/transform.py": {
+      "maxDuration": 60,
+      "includeFiles": "sources/**"
     }
   },
   "headers": [
     {
       "source": "/sky/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=300"
+        }
+      ]
     },
     {
       "source": "/rag/metadata.json",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=300, s-maxage=300" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=300"
+        }
+      ]
     },
     {
       "source": "/(.*\\.(?:html|css|js))",
-      "headers": [{ "key": "Cache-Control", "value": "no-cache, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/",
-      "headers": [{ "key": "Cache-Control", "value": "no-cache, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, must-revalidate"
+        }
+      ]
     }
   ]
 }

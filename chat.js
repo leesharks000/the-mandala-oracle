@@ -213,12 +213,14 @@ formEl.addEventListener('submit', async (e) => {
     // Render each message in sequence, attaching retrievals to the last one only
     let lastEl = null;
     let lastNavigate = null;
+    let lastCast = null;
     for (let i = 0; i < respMessages.length; i++) {
       const m = respMessages[i];
       const speaker = m.speaker || 'Johannes Sigil';
       const say = m.say || '';
       lastEl = appendHeteronymMessage(speaker, say);
       if (m.navigate) lastNavigate = m.navigate;
+      if (m.cast) lastCast = m.cast;
     }
     if (lastEl && data.retrievals && data.retrievals.length) {
       appendRetrievals(lastEl, data.retrievals);
@@ -242,6 +244,13 @@ formEl.addEventListener('submit', async (e) => {
     // already preserved either way.
     if (sessionState.appendingEnabled) {
       bookAppend(history).catch(() => { /* swallow; non-fatal */ });
+    }
+
+    // Cast directive: Sigil hands the rite to the compiler — open the panel
+    // prefilled; the witness confirms inscription and casts. (The compiler
+    // boundary: Sigil may open the rite but never perform it.)
+    if (mode === 'merkabah' && lastCast) {
+      openCastPanelPrefilled(lastCast);
     }
 
     // Navigation: only in Merkabah mode, using the last directive in the response
@@ -518,7 +527,13 @@ function ensureCastContent() {
     setOpHint();
     setInscHint();
   }).catch((e) => {
-    srcHint.textContent = `Could not load the cast bootstrap: ${e.message}`;
+    const o = document.createElement('option');
+    o.disabled = true;
+    o.selected = true;
+    o.textContent = '— sources unavailable —';
+    srcSel.appendChild(o);
+    srcHint.textContent = `Could not load the cast bootstrap: ${e.message}. ` +
+      'If this persists, the deployment may be missing sources/** in the function bundle.';
   });
 
   castPanel.querySelector('.cast-close').addEventListener('click', closeCastPanel);
@@ -537,6 +552,27 @@ function ensureCastContent() {
     closeCastPanel();
     runCastingRite(cast);
   });
+}
+
+async function openCastPanelPrefilled(directive) {
+  openCastPanel();
+  try { await fetchCastMeta(); } catch { return; }
+  const srcSel = castPanel.querySelector('#cast-source');
+  const opSel = castPanel.querySelector('#cast-operator');
+  const q = castPanel.querySelector('#cast-question');
+  if (directive.source_text_id && srcSel) {
+    const opt = Array.from(srcSel.options).find((o) => o.value === directive.source_text_id);
+    if (opt && !opt.disabled) srcSel.value = directive.source_text_id;
+  }
+  if (directive.operator && opSel) {
+    const op = String(directive.operator).toUpperCase();
+    if (Array.from(opSel.options).some((o) => o.value === op)) {
+      opSel.value = op;
+      opSel.dispatchEvent(new Event('change'));
+    }
+  }
+  if (directive.question && q && !q.value) q.value = directive.question;
+  setStatus('The compiler awaits — confirm the cast.');
 }
 
 function openCastPanel() {
