@@ -176,11 +176,15 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
         else:
             mu = re.match(r"units?_(\d+)_(\d+)$", cast_selection)
             if mu:
-                units = segment_units(text, entry.get("primary_after"))
+                text = primary_text_of(text)
+                pa = entry.get("primary_after")
+                if pa and pa in text:
+                    text = text[text.index(pa):]
+                units = segment_units(text, pa)
                 a, b = int(mu.group(1)), int(mu.group(2))
                 if not (1 <= a <= b <= len(units)):
                     raise ValueError(f"cast_selection out of range: source has {len(units)} units.")
-                text = "\n\n".join(u["text"] for u in units[a - 1:b])
+                text = text[units[a - 1]["s"]:units[b - 1]["e"]] if "s" in units[a - 1] else "\n\n".join(u["text"] for u in units[a - 1:b])
                 attrs = {u.get("attribution") for u in units[a - 1:b]}
                 meta = dict(meta)
                 meta["underlying_attribution"] = (attrs.pop() if len(attrs) == 1 else
@@ -265,6 +269,15 @@ THE SIX CONSTRAINTS (all MUST hold)
 C1 Skeleton and coherence-axes extraction precedes any generation (dual-layer).
 C2 Semantic evacuation with accountable structural-anchor retention only.
 C3 Structural fidelity: mandatory beat mapping, including spatial_form.
+   WHITESPACE AND VERSE STRUCTURE ARE COMPOSITIONAL AND CANONICAL: the
+   source's blank lines, per-line indentation, and any chapter/verse
+   apparatus (## headings, **c:v** markers) are part of the text being
+   transformed. The enantiomorph MUST reproduce the source's exact
+   line-structure — the same total line count INCLUDING blank lines, the
+   same indentation on each corresponding line, and, where the source
+   carries verse markers, markers in the same line-positions (retain the
+   same numerals). Collapsing whitespace or dropping verse apparatus is
+   an IDENTITY-TEST FAILURE.
 C4 Enantiomorphic verification: Identity PASS and Semantic-Independence PASS.
 C5 Non-commutativity: the transform is irreversible; source not recoverable.
 C6 Cost-disclosure: the wager the operator names must be legible in the output.
@@ -746,17 +759,27 @@ def segment_units(text: str, primary_after: str | None = None) -> list[dict]:
         for i, m in enumerate(markers):
             start = m.start()
             end = markers[i + 1].start() if i + 1 < len(markers) else len(text)
-            units.append({"label": m.group(1), "text": text[start:end].strip()})
+            raw = text[start:end]
+            e = start + len(raw.rstrip())
+            units.append({"label": m.group(1), "text": text[start:e],
+                          "s": start, "e": e})
         return units
     # stanza mode with apparatus filter; attribution follows the governing
     # ### header — anthology sources (Day and Night) embed poems by OTHER
     # authors, and misattributing them is the archive's founding failure
     # mode enacted at home (live cast, 2026-07-02: Anacreon cast as Cranes).
-    blocks = re.split(r"\n\s*\n", text.strip())
     units = []
     current_attr = None
-    for b in blocks:
-        bs = b.strip()
+    pos = 0
+    boundaries = [(m.start(), m.end()) for m in re.finditer(r"\n[ \t]*\n(?:[ \t]*\n)*", text)]
+    spans = []
+    prev = 0
+    for bs_, be_ in boundaries:
+        spans.append((prev, bs_)); prev = be_
+    spans.append((prev, len(text)))
+    for s0, e0 in spans:
+        raw = text[s0:e0]
+        bs = raw.strip()
         if not bs or bs == "---":
             continue
         hm = re.match(r"^(#{2,4})\s+(.+)$", bs.splitlines()[0])
@@ -774,11 +797,21 @@ def segment_units(text: str, primary_after: str | None = None) -> list[dict]:
         letters = sum(c.isalpha() for c in bs)
         if letters < 30 and bs.startswith("#"):
             continue
-        units.append({"label": f"unit {len(units) + 1}", "text": bs,
-                      "attribution": current_attr})
+        # exact span: from the start of the first non-blank LINE (leading
+        # indentation preserved) to the end of the last non-blank line.
+        off = s0 + (len(raw) - len(raw.lstrip("\n")))
+        head_ws = raw.lstrip("\n")
+        off += 0
+        s_exact = s0 + raw.index(head_ws[0]) if head_ws else s0
+        # walk back to start-of-line to keep first-line indentation
+        while s_exact > s0 and text[s_exact - 1] in (" ", "\t"):
+            s_exact -= 1
+        e_exact = s0 + len(raw.rstrip())
+        units.append({"label": f"unit {len(units) + 1}", "text": text[s_exact:e_exact],
+                      "attribution": current_attr, "s": s_exact, "e": e_exact})
     return units
 
-def draw_candidates(units: list[dict], k: int = JUDGMENT_K) -> list[dict]:
+def draw_candidates(units: list[dict], k: int = JUDGMENT_K, full_text: str | None = None) -> list[dict]:
     """Stratified random windows across the whole text — the anti-clustering
     assurance. One window per stratum; window grows unit-by-unit until it
     reaches short-lyric weight or the unit/char caps."""
@@ -809,10 +842,13 @@ def draw_candidates(units: list[dict], k: int = JUDGMENT_K) -> list[dict]:
                 break
             end += 1
             chars += nxt
-        text = "\n\n".join(u["text"] for u in units[start:end + 1])
+        text = None  # exact-span below
         citation = units[start]["label"] if start == end else f"{units[start]['label']}–{units[end]['label']}"
+        span_text = (full_text[units[start]["s"]:units[end]["e"]]
+                     if full_text is not None and "s" in units[start]
+                     else "\n\n".join(u["text"] for u in units[start:end + 1]))
         candidates.append({"start": start + 1, "end": end + 1,
-                           "citation": citation, "text": text,
+                           "citation": citation, "text": span_text,
                            "attribution": attr})
     return candidates
 
@@ -999,10 +1035,14 @@ class handler(BaseHTTPRequestHandler):
                         text = raw.decode(enc); break
                     except UnicodeDecodeError:
                         continue
-                units = segment_units(text, entry.get("primary_after"))
+                _pt = primary_text_of(text)
+                pa = entry.get("primary_after")
+                if pa and pa in _pt:
+                    _pt = _pt[_pt.index(pa):]
+                units = segment_units(text, pa)
                 if not units:
                     return self._json(400, {"error": "the source yielded no castable units."})
-                cands = draw_candidates(units)
+                cands = draw_candidates(units, full_text=_pt)
                 question = (body.get("question") or "")[:MAX_INVOKING_CHARS]
                 chosen, reason = judgment_select(question, entry.get("title", entry["id"]),
                                                  cands, api_key)
@@ -1049,15 +1089,22 @@ class handler(BaseHTTPRequestHandler):
             })
 
         def _geom(t: str) -> dict:
-            lines = [L for L in t.split("\n")]
+            lines = t.split("\n")
             return {"lines": len([L for L in lines if L.strip()]),
+                    "lines_total": len(lines),
+                    "blank_lines": len([L for L in lines if not L.strip()]),
                     "stanzas": len([b for b in re.split(r"\n\s*\n", t.strip()) if b.strip()]),
-                    "indented_lines": len([L for L in lines if L[:1] in (" ", "\t")])}
+                    "indented_lines": len([L for L in lines if L[:1] in (" ", "\t")]),
+                    "verse_markers": len(re.findall(r"\*\*\d+:\d+\*\*", t))}
         src_geom = _geom(source_text)
         out_geom = _geom(parsed["enantiomorph"])
         geometry_check = {
             "source": src_geom, "output": out_geom,
             "lines_match": src_geom["lines"] == out_geom["lines"],
+            "lines_total_match": src_geom["lines_total"] == out_geom["lines_total"],
+            "blank_lines_match": src_geom["blank_lines"] == out_geom["blank_lines"],
+            "verse_markers_match": src_geom["verse_markers"] == out_geom["verse_markers"],
+            "indent_count_match": src_geom["indented_lines"] == out_geom["indented_lines"],
             "stanzas_match": src_geom["stanzas"] == out_geom["stanzas"],
             "indentation_carried": (src_geom["indented_lines"] == 0) or (out_geom["indented_lines"] > 0),
         }
