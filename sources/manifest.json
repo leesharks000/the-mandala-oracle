@@ -18,7 +18,8 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.md",
-   "menu": true
+   "menu": true,
+   "primary_after": "# Day and Night"
   },
   {
    "id": "dancings-epistle-to-the-human-diaspora",
@@ -27,7 +28,8 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.md",
-   "menu": true
+   "menu": true,
+   "primary_after": "# PART I: FRONT MATTER"
   },
   {
    "id": "dickinson-complete",
@@ -45,7 +47,8 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.grc",
-   "menu": true
+   "menu": true,
+   "primary_after": "μῆνιν"
   },
   {
    "id": "homer-odyssey",
@@ -54,7 +57,8 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.grc",
-   "menu": true
+   "menu": true,
+   "primary_after": "ἄνδρα μοι"
   },
   {
    "id": "hopkins-selected",
@@ -82,7 +86,8 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.en",
-   "menu": true
+   "menu": true,
+   "primary_after": "In the beginning God created"
   },
   {
    "id": "plato-cratylus",
@@ -127,7 +132,8 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.grc",
-   "menu": true
+   "menu": true,
+   "primary_after": "Ἀπολλόδωρος"
   },
   {
    "id": "plato-theaetetus",
@@ -154,7 +160,9 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.ar",
-   "menu": true
+   "menu": true,
+   "unit_split": "(?=بِسْمِ\\ ٱللَّهِ\\ ٱلرَّحْمَٰنِ\\ ٱلرَّحِيمِ)",
+   "primary_after": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"
   },
   {
    "id": "revelation-greek",
@@ -191,7 +199,8 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.en",
-   "menu": true
+   "menu": true,
+   "primary_after": "ACT I"
   },
   {
    "id": "shakespeare-king-lear",
@@ -218,7 +227,8 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.en",
-   "menu": true
+   "menu": true,
+   "primary_after": "From fairest"
   },
   {
    "id": "shakespeare-tempest",

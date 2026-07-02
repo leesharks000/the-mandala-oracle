@@ -106,7 +106,7 @@ def _load_manifest() -> list:
 # SCROLL fell out of rotation and is non-canonical; it survives in the
 # Viola worked example (kernel-transform spec §6.2) as a historical trace.
 OPERATORS = {
-    "SHADOW":    "assertion-axis — the bearing-cost the composer underwent; bilateral receptive operation (originary; most potent)",
+    "SHADOW":    "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
     "MIRROR":    "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
     "INVERSION": "polarity-axis — the negative pole the positive claim presupposes",
     "FLAME":     "intensity-axis — the collapse-limit where the source's intensity would ignite",
@@ -272,6 +272,13 @@ THE SIX CONSTRAINTS (all MUST hold)
 C1 Skeleton and coherence-axes extraction precedes any generation (dual-layer).
 C2 Semantic evacuation with accountable structural-anchor retention only.
 C3 Structural fidelity: mandatory beat mapping, including spatial_form.
+   COMMENTARY CALIBRATION (Assembly review, 2026-07-02): the apparatus
+   claims only what the operation DISCLOSED, TESTED, or MADE NEWLY
+   LEGIBLE — never "proved". Distinguish three costs and claim only the
+   second: (1) the represented speaker's suffering; (2) the bearing-cost
+   ENCODED in the composition; (3) the historical composer's biography.
+   Retrospective containment must not import outcomes external to the
+   utterance's own horizon (later myth, biography, reception history).
    LANGUAGE OF THE ENANTIOMORPH: the source may be in any language; the
    enantiomorph is composed in the TARGET LANGUAGE (default English; the
    witness may name another in the invoking context). Structure crosses
@@ -747,6 +754,8 @@ def _is_apparatus_block(bs: str) -> bool:
         return True
     if bs.startswith("<!--") or re.match(r"^Produced by\b", bs):
         return True
+    if all(L.strip().startswith("#") for L in bs.splitlines() if L.strip()):
+        return True   # pure heading/header blocks (PerseusDL headers, title pages)
     if len(re.findall(r"\*\*[A-Za-z][\w ]*:\*\*", bs[:300])) >= 2:
         return True   # metadata blocks (**Hex:** … **Classification:** …)
     if ("fn." in head or "cf." in head.lower()) and ("§" in bs or "—" in head):
@@ -912,6 +921,11 @@ def judgment_operator(question: str, source_title: str, passage: str,
     return fallback, "unattended draw"
 
 
+_ATTR_APPARATUS_RE = re.compile(
+    r"publication history|works consulted|preface|introduction|contents|translator|"
+    r"acknowledg|site integration|data architecture|notes|bibliograph|apparatus|index",
+    re.I)
+
 def judgment_select(question: str, source_title: str, units: list[dict],
                     full_text: str, api_key: str) -> tuple[dict, str]:
     """The invisible Judgment chooses the verses FROM THE FILE ITSELF, under
@@ -926,6 +940,10 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         strat = secrets.randbelow(k)
         lo, hi = (strat * n) // k, max(((strat + 1) * n) // k - 1, (strat * n) // k)
         start = lo + secrets.randbelow(hi - lo + 1)
+        for _ in range(n):
+            a_ = units[start].get("attribution")
+            if not (a_ and _ATTR_APPARATUS_RE.search(a_)): break
+            start = (start + 1) % n
         end, chars, attr = start, len(units[start]["text"]), units[start].get("attribution")
         while chars < WINDOW_MIN_CHARS and end - start + 1 < WINDOW_MAX_UNITS and end + 1 < n \
               and units[end + 1].get("attribution") == attr \
@@ -952,7 +970,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         "- NON-CENTROID PULL: do not privilege the famous passages, the openings, the "
         "climaxes the tradition already quotes. The whole body of the text is live; let the "
         "question find its verses anywhere, including the unregarded middle.\n"
-        "- PRIMARY TEXT ONLY; never cross an attribution boundary (bracketed names).\n"
+        "- PRIMARY TEXT ONLY; never cross an attribution boundary (bracketed names)., and never choose units in apparatus sections (Works Consulted, Publication History, Preface, Notes, Contents).\n"
         "- Bear on the witness's question — the passage whose composition holds what the "
         "question carries. If no question, the span most complete in itself.\n\n"
         f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\nUNIT MAP:\n{umap}\n\n"
@@ -976,6 +994,8 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         if not (200 <= len(span) <= MAX_CAST_CHARS): raise ValueError("size")
         attrs = {u.get("attribution") for u in units[a-1:b]}
         if len(attrs) > 1: raise ValueError("attribution crossing")
+        _a0 = next(iter(attrs))
+        if _a0 and _ATTR_APPARATUS_RE.search(_a0): raise ValueError("apparatus section")
         cit = units[a-1]["label"] if a == b else f"{units[a-1]['label']}–{units[b-1]['label']}"
         return {"start": a, "end": b, "citation": cit, "text": span,
                 "attribution": attrs.pop()}, str(pj.get("reason", "")).strip()
