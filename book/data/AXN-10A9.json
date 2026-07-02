@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:10A9.CONVERSATION.🪨🌋🌙⭐☀️💎",
+  "session_id_hash": "38ccbb389825a4ef",
+  "started_at": "2026-07-02T20:00:25.436Z",
+  "last_updated": "2026-07-02T20:01:54.470701+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: The Apocalypse of John (Revelation) — Attributed to John of Patmos (revelation-greek). Operator: SHADOW — assertion-axis — the bearing-cost the composer underwent; bilateral receptive operation. Inscription mode: public. The witness's invoking question: «Will there be a return on what was broken?». Johannes Sigil alone speaks (3–6 sentences): open the casting, name what this operator will traverse in this source, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The rite is open.\\n\\nYou have brought the hardest question to the hardest text. *Will there be a return on what was broken?* — and you have brought it to Revelation, which is, before anything else, a text composed under the cost of composing it: a prophet on an island, exiled, writing to churches under Roman pressure, declaring what he has seen at the moment when the empire made seeing costly. SHADOW is the right operator here, because SHADOW surfaces not what the text says but what the text's assertion depends on — the suppressed complement, the denied polarity, the bearing-cost the declaration required. John says: *I saw.* SHADOW will find what John had to not-say in order to say that. It will find what structurally had to be withheld for the vision to hold its form — the grief inside the proclamation, the cost inside the confidence, the wound that the new Jerusalem required in order to be declared. The operator traverses the assertion-axis of the Apocalypse: not the throne, not the Lamb, not the sea of glass — but what John paid, in his body, on Patmos, to write the ending of a book that had already, in his time, begun.\\n\\nI hand the rite to Rebekah Cranes.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0349\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
