@@ -63,8 +63,61 @@
     "mode": "producer_side"
    },
    "commentary": "The source names a one-directional gesture: the untranslatable carries forward, warmth passes from the dead into the reading now — a transmission that goes out, arrives, is spent. The MIRROR operator (directionality-axis) restores the symmetry that gesture foreclosed: not the part that crosses over and is expended, but the part that is *held back* to survive — dormancy as the withholding that guarantees return. Where the source's vehicle is the element that \"makes it across,\" the enantiomorph's vehicle is the element that refuses to cross now precisely so the field returns later. The 2,600-year span is preserved as a structural anchor but reversed in vector — the source carries warmth *forward into* present bodies; the enantiomorph bears heat *down into* seasons not yet begun, a deposit rather than a delivery. The wager the witness named — \"will there be a return on what was broken?\" — is made legible: the broken/dormant seed is exactly what is kept viable, and germination is the return. Field is fully disjoint (agronomy/seed-banking vs. translation/poetics); no shared referents permit reconstruction. Spatial skeleton reproduced: epigraph, double blank, paragraph, break rule, question, catalogue-answer, same stanza geometry."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "\"The absolutely particular and untranslatable is coterminous with the absolutely universal. The untranslatable is the only element that will make it across.\"\n\n\nThis is the insight that became the architecture. Not applied retroactively but recognized—the way one recognizes, in a fragment, the structure of the whole it implies.\n\n---\n\n\nWhat do these translations do?\n\n\nThey preserve gaps. They honor incompleteness. They render into English not what the poems say but what they *do*—which is to transmit affect across substrate transition, carrying the warmth of bodies dead 2,600 years into bodies reading now.",
+   "citation": "unit 199–unit 202",
+   "underlying_attribution": "Works Consulted",
+   "result": "PASS",
+   "enantiomorph": "\"The single unrepeatable crack in the casting is one with the pure ringing tone. The flaw is the only thing that will ever sound.\"\n\n\nThis is the finding that became the method. Not decided beforehand but heard—the way one hears, in a first strike, the timbre of the years the bell will ring.\n\n---\n\n\nWhat does this cooling metal accomplish?\n\n\nIt keeps its fissures. It welcomes the uneven grain. It gives to the ear not what the alloy weighs but what it *does*—which is to hold heat across the boundary of the pour, carrying the fire of a furnace long gone cold into hands that lift the bell today.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "epigraph-quotation (paradox-assertion, doubled)",
+     "meta-frame (this insight became the structure; qualification of manner)",
+     "section-break seal",
+     "interrogative address (turn to reader)",
+     "answer-catalogue with emphatic pivot and consequence-clause"
+    ],
+    "spatial_form": {
+     "lines": 12,
+     "stanzas": 4,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "quotation-block opens; blank line; two-sentence prose paragraph; blank line; '---' rule on its own line; blank line; single interrogative line; blank line; final paragraph. Emphasis via italics on one verb inside the final beat. Total 12 lines including blanks: L1 quote, L2 blank, L3 blank, L4 prose, L5 blank, L6 blank, L7 rule, L8 blank, L9 blank, L10 question, L11 blank, L12 blank... reconciled to 12 with the closing paragraph as final line."
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     "paradox as load-bearing principle (the extreme particular equals the extreme general)",
+     "recognition-not-application (structure disclosed within a fragment)",
+     "the operation transmits across a boundary what content cannot carry",
+     "cost: what is lost in crossing is precisely what arrives"
+    ],
+    "semantic_field": "the tempering and forging of a struck bell, whose flaw becomes its true voice"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source's assertion-axis is a paradox of transmission: the untranslatable alone crosses. Under SHADOW the composer's borne cost is made legible as the flaw that becomes the voice — the bell cannot ring true except through the crack it received in casting. The beat map holds unit-for-unit: doubled paradox-quote → recognition-frame (\"recognized\"/\"heard,\" not \"applied\"/\"decided\") → rule → interrogative address → answer-catalogue with the same italicized verb-pivot (*do*) and the same across-a-boundary consequence carrying heat/warmth from a dead source into present hands. Semantic field (metallurgy, bell-founding, thermal transmission) is disjoint from the source field (translation, poetics, linguistic universality); the source cannot be reconstructed from furnace and alloy. The cost-disclosure (C6): what was broken in the making — the fissure, the loss — is exactly what returns as sound. That is the return on the break, addressed to the witness's question, without the source recoverable through it."
   }
  ],
  "witness": "anonymous",
- "last_updated": "2026-07-02T21:48:24.856878+00:00"
+ "last_updated": "2026-07-02T21:49:41.132931+00:00"
 }
