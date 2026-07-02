@@ -13,6 +13,8 @@ const statusEl = document.getElementById('status');
 const modeBtns = document.querySelectorAll('.mode-button');
 const settingsToggle = document.getElementById('settings-toggle');
 const settingsPanel = document.getElementById('settings-panel');
+const castToggle = document.getElementById('cast-toggle');
+const castPanel = document.getElementById('cast-panel');
 
 // apiKeyEl is lazy — the settings panel content is injected on first
 // open, not present in the initial DOM. Access via getApiKey() instead.
@@ -64,6 +66,7 @@ modeBtns.forEach((btn) => {
       b.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
     if (window.sky?.setMode) window.sky.setMode(mode);
+    if (castToggle) castToggle.hidden = mode !== 'merkabah';
     setStatus(`Mode: ${mode}.`);
   });
 });
@@ -404,5 +407,450 @@ async function bookAppend(currentHistory) {
   const data = await res.json();
   if (data.axn && !sessionState.axn) {
     sessionState.axn = data.axn;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+// THE CASTING RITE — Layer 4 of IMPLEMENTATION-WORKPLAN-transforms-merkabah.
+//
+// Sigil opens → Cranes transforms (the compiler, /api/transform) → Feist
+// judges → Sharks seals. Per EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 §3.7 the
+// compiler halts with diagnosis rather than emitting a failed draft; the
+// witness is offered ONE re-unfold; refusal (or a second halt) results in
+// sweep. Inscription per EA-MANDALA-INSCRIPTION-01 v0.1: public (default),
+// encrypted (key shown once, never stored), or none.
+// ─────────────────────────────────────────────────────────────────────────
+
+let castMeta = null;          // GET /api/transform bootstrap (sources, operators)
+let castContentBuilt = false;
+let lastReading = null;       // { axn, mode } — enables rotation continuation
+
+async function fetchCastMeta() {
+  if (castMeta) return castMeta;
+  const res = await fetch('/api/transform');
+  if (!res.ok) throw new Error(`cast bootstrap failed: HTTP ${res.status}`);
+  castMeta = await res.json();
+  return castMeta;
+}
+
+function ensureCastContent() {
+  if (castContentBuilt) return;
+  castContentBuilt = true;
+  castPanel.innerHTML = `
+    <label for="cast-source">Source — the canon text to be cast</label>
+    <select id="cast-source"></select>
+    <div class="cast-hint" id="cast-source-hint"></div>
+
+    <label for="cast-operator">Operator — the axis the compiler traverses</label>
+    <select id="cast-operator"></select>
+    <div class="cast-hint" id="cast-operator-hint"></div>
+
+    <label for="cast-inscription">Inscription</label>
+    <select id="cast-inscription">
+      <option value="public" selected>Public — anonymous, appended to the Book</option>
+      <option value="encrypted">Encrypted — form public, meaning sealed; key shown once</option>
+      <option value="none">None — returned to you only, nothing inscribed</option>
+    </select>
+    <div class="cast-hint" id="cast-inscription-hint"></div>
+
+    <div id="cast-continue-row" style="display:none; margin-top:8px;">
+      <label style="display:inline; text-transform:none; letter-spacing:0;">
+        <input type="checkbox" id="cast-continue"> Cast into the current reading (continue its rotation)
+      </label>
+    </div>
+
+    <label for="cast-question">The invoking question (optional; sealed or digested — never inscribed raw in public)</label>
+    <textarea id="cast-question" placeholder="What do you bring to the casting?"></textarea>
+
+    <div class="cast-actions">
+      <button type="button" class="cast-close">Close</button>
+      <button type="button" class="cast-go">Cast</button>
+    </div>
+  `;
+
+  const srcSel = castPanel.querySelector('#cast-source');
+  const opSel = castPanel.querySelector('#cast-operator');
+  const inscSel = castPanel.querySelector('#cast-inscription');
+  const inscHint = castPanel.querySelector('#cast-inscription-hint');
+  const srcHint = castPanel.querySelector('#cast-source-hint');
+  const opHint = castPanel.querySelector('#cast-operator-hint');
+
+  const INSC_HINTS = {
+    public: 'Your question is inscribed as a digest and a composed gloss — never as your raw words. The transform itself enters the public Book.',
+    encrypted: 'The record splits at the compiler\u2019s own boundary: the formal skeleton is public; the question, the enantiomorph, and the interpretations are sealed. The key is shown ONCE and stored nowhere. Loss of the key is permanent illegibility.',
+    none: 'The transform returns to you in this session only. The Book receives nothing.',
+  };
+  const setInscHint = () => {
+    inscHint.textContent = INSC_HINTS[inscSel.value];
+    updateContinueRow();
+  };
+  inscSel.addEventListener('change', setInscHint);
+
+  function updateContinueRow() {
+    const row = castPanel.querySelector('#cast-continue-row');
+    const show = !!(lastReading && lastReading.mode === inscSel.value && inscSel.value !== 'none');
+    row.style.display = show ? 'block' : 'none';
+    if (!show) castPanel.querySelector('#cast-continue').checked = false;
+  }
+
+  fetchCastMeta().then((meta) => {
+    for (const s of meta.sources) {
+      const o = document.createElement('option');
+      o.value = s.id;
+      o.textContent = s.title + (s.creator ? ` — ${s.creator}` : '');
+      if (s.admissible === false) {
+        o.disabled = true;
+        o.textContent += ' (image-canonical — inadmissible)';
+        o.title = s.reason || '';
+      }
+      srcSel.appendChild(o);
+    }
+    srcHint.textContent = `${meta.sources.filter(s => s.admissible !== false).length} sources admissible under sources/CLASSIFICATION.md.`;
+    for (const [name, axis] of Object.entries(meta.operators)) {
+      const o = document.createElement('option');
+      o.value = name;
+      o.textContent = name;
+      o.title = axis;
+      opSel.appendChild(o);
+    }
+    const setOpHint = () => { opHint.textContent = meta.operators[opSel.value] || ''; };
+    opSel.addEventListener('change', setOpHint);
+    setOpHint();
+    setInscHint();
+  }).catch((e) => {
+    srcHint.textContent = `Could not load the cast bootstrap: ${e.message}`;
+  });
+
+  castPanel.querySelector('.cast-close').addEventListener('click', closeCastPanel);
+  castPanel.querySelector('.cast-go').addEventListener('click', () => {
+    const source = srcSel.selectedOptions[0];
+    if (!source || source.disabled) return;
+    const cast = {
+      sourceId: srcSel.value,
+      sourceTitle: source.textContent,
+      operator: opSel.value,
+      opAxis: castMeta.operators[opSel.value] || '',
+      inscriptionMode: inscSel.value,
+      question: castPanel.querySelector('#cast-question').value.trim(),
+      continueReading: castPanel.querySelector('#cast-continue').checked,
+    };
+    closeCastPanel();
+    runCastingRite(cast);
+  });
+}
+
+function openCastPanel() {
+  ensureCastContent();
+  castPanel.hidden = false;
+  castPanel.setAttribute('aria-hidden', 'false');
+  castPanel.classList.add('open');
+  castToggle.setAttribute('aria-expanded', 'true');
+  const row = castPanel.querySelector('#cast-continue-row');
+  if (row) {
+    const inscSel = castPanel.querySelector('#cast-inscription');
+    const show = !!(lastReading && lastReading.mode === inscSel.value && inscSel.value !== 'none');
+    row.style.display = show ? 'block' : 'none';
+  }
+}
+
+function closeCastPanel() {
+  castPanel.classList.remove('open');
+  castPanel.hidden = true;
+  castPanel.setAttribute('aria-hidden', 'true');
+  castToggle.setAttribute('aria-expanded', 'false');
+}
+
+if (castToggle) {
+  castToggle.addEventListener('click', () => {
+    if (castPanel.classList.contains('open')) closeCastPanel();
+    else openCastPanel();
+  });
+}
+
+// ── Rite helpers ─────────────────────────────────────────────────────────
+
+function riteMarker(text) {
+  const el = document.createElement('div');
+  el.className = 'rite-marker';
+  el.textContent = text;
+  messagesEl.appendChild(el);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+async function sigilStage(directive, statusText) {
+  // One voice-stage of the rite: POST the directive to /api/sigil, render the
+  // returned voices, fold both sides into history (the Book's conversation
+  // record preserves the rite verbatim; the readings book is inscribed
+  // separately, PASS-gated, by /api/transform).
+  setStatus(statusText);
+  const apiKeyEl2 = document.getElementById('api-key');
+  const apiKey = apiKeyEl2 ? (apiKeyEl2.value.trim() || null) : null;
+  const res = await fetch('/api/sigil', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message: directive, history, mode, anthropic_key: apiKey }),
+  });
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({ error: `HTTP ${res.status}` }));
+    throw new Error(body.error || `stage failed: ${res.status}`);
+  }
+  const data = await res.json();
+  const respMessages = Array.isArray(data.messages) ? data.messages : [];
+  for (const m of respMessages) {
+    appendHeteronymMessage(m.speaker || 'Johannes Sigil', m.say || '');
+  }
+  history.push({ role: 'user', content: directive });
+  history.push({ role: 'assistant', content: JSON.stringify({ messages: respMessages }) });
+  if (history.length > 32) history = history.slice(-32);
+  if (sessionState.appendingEnabled) bookAppend(history).catch(() => {});
+  return respMessages;
+}
+
+function offerChoice(labels) {
+  // Render inline buttons; resolve with the chosen label. Used for the
+  // §3.7 re-unfold offer.
+  return new Promise((resolve) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'rite-choice';
+    for (const label of labels) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = label;
+      b.addEventListener('click', () => {
+        wrap.querySelectorAll('button').forEach((x) => { x.disabled = true; });
+        wrap.remove();
+        resolve(label);
+      });
+      wrap.appendChild(b);
+    }
+    messagesEl.appendChild(wrap);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  });
+}
+
+function renderTransformCard(parentEl, t) {
+  const card = document.createElement('div');
+  card.className = 'transform-card';
+  const v = t.verification_results || {};
+  const sf = t.spatial_form || {};
+  const lines = [];
+  lines.push(`Operator: ${t.operator_specification || ''}`);
+  lines.push(`Verification — identity: ${v.identity || '?'} · semantic independence: ${v.semantic_independence || '?'} · retrospective containment: ${v.retrospective_containment || '?'} (${v.mode || 'producer_side'})`);
+  if (sf.lines || sf.stanzas) {
+    lines.push(`Spatial form — lines: ${sf.lines ?? '?'} · stanzas: ${sf.stanzas ?? '?'}${Array.isArray(sf.indent_profile) ? ' · indent profile preserved' : ''}`);
+  }
+  card.textContent = lines.join('\n');
+  if (t.commentary_apparatus) {
+    const det = document.createElement('details');
+    const sum = document.createElement('summary');
+    sum.textContent = 'Commentary apparatus';
+    det.appendChild(sum);
+    const pre = document.createElement('div');
+    pre.style.whiteSpace = 'pre-wrap';
+    pre.style.marginTop = '6px';
+    pre.textContent = typeof t.commentary_apparatus === 'string'
+      ? t.commentary_apparatus : JSON.stringify(t.commentary_apparatus, null, 2);
+    det.appendChild(pre);
+    card.appendChild(det);
+  }
+  parentEl.appendChild(card);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+function renderInscriptionCard(insc) {
+  const card = document.createElement('div');
+  card.className = 'reading-card';
+  if (!insc || !insc.inscribed) {
+    card.textContent = insc && insc.error
+      ? `Inscription: ${insc.error}`
+      : 'Inscription: none — the transform was returned to you only.';
+    messagesEl.appendChild(card);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+    return;
+  }
+  const head = document.createElement('div');
+  head.textContent = `Inscribed — ${insc.mode}. Reading ${insc.reading_axn}`;
+  card.appendChild(head);
+  if (insc.record_path) {
+    const a = document.createElement('a');
+    a.href = 'https://github.com/leesharks000/the-mandala-oracle/blob/main' + insc.record_path;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = 'The record in the Book';
+    a.style.fontSize = '.9em';
+    card.appendChild(a);
+  }
+  messagesEl.appendChild(card);
+
+  if (insc.decryption_key) {
+    const kb = document.createElement('div');
+    kb.className = 'key-block';
+    const warn = document.createElement('span');
+    warn.className = 'key-warn';
+    warn.textContent = '⚠ ' + (insc.key_notice ||
+      'This key is shown once and is not stored anywhere. Loss of the key is permanent illegibility of the sealed reading.');
+    kb.appendChild(warn);
+    const keyLine = document.createElement('div');
+    keyLine.textContent = insc.decryption_key;
+    kb.appendChild(keyLine);
+    const fp = document.createElement('div');
+    fp.style.opacity = '.7';
+    fp.style.marginTop = '4px';
+    fp.textContent = `fingerprint: ${insc.key_fingerprint || '?'}`;
+    kb.appendChild(fp);
+    const copy = document.createElement('button');
+    copy.type = 'button';
+    copy.textContent = 'Copy key';
+    copy.style.marginTop = '8px';
+    copy.style.font = 'inherit';
+    copy.style.fontSize = '.85em';
+    copy.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(insc.decryption_key); copy.textContent = 'Copied.'; }
+      catch { copy.textContent = 'Select and copy manually.'; }
+    });
+    kb.appendChild(copy);
+    messagesEl.appendChild(kb);
+  }
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+// ── The rite ─────────────────────────────────────────────────────────────
+
+async function runCastingRite(cast) {
+  if (isSending) return;
+  isSending = true;
+  sendBtn.disabled = true;
+  if (castToggle) castToggle.disabled = true;
+  removeEmptyState();
+
+  const apiKeyEl2 = document.getElementById('api-key');
+  const apiKey = apiKeyEl2 ? (apiKeyEl2.value.trim() || null) : null;
+
+  riteMarker(`— casting · ${cast.operator} · ${cast.sourceTitle} —`);
+
+  try {
+    // I. OPENING — Sigil alone.
+    await sigilStage(
+      `[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. ` +
+      `Source: ${cast.sourceTitle} (${cast.sourceId}). Operator: ${cast.operator} — ${cast.opAxis}. ` +
+      `Inscription mode: ${cast.inscriptionMode}. The witness's invoking question: «${cast.question || '(none given)'}». ` +
+      `Johannes Sigil alone speaks (3–6 sentences): open the casting, name what this operator will traverse ` +
+      `in this source, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it.`,
+      'Sigil opens the casting...'
+    );
+
+    // II. TRANSFORM — Cranes, via the compiler. One re-unfold on halt (§3.7).
+    let transform = null;
+    let inscription = null;
+    let attempts = 0;
+    while (attempts < 2 && !transform) {
+      attempts += 1;
+      setStatus('Cranes transforms — the compiler is at work...');
+      const placeholder = appendHeteronymMessage('Rebekah Cranes', '…', { dim: true });
+      let res, data;
+      try {
+        res = await fetch('/api/transform', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            source_text_id: cast.sourceId,
+            cast_selection: null,
+            operator: cast.operator,
+            witness_context: { session_id: sessionState.session_id, invoking_message: cast.question },
+            inscription: {
+              mode: cast.inscriptionMode,
+              reading_axn: (cast.continueReading && lastReading) ? lastReading.axn : null,
+            },
+            anthropic_key: apiKey,
+          }),
+        });
+        data = await res.json();
+      } catch (err) {
+        placeholder.remove();
+        throw new Error(`the compiler could not be reached: ${err.message}`);
+      }
+      placeholder.remove();
+      if (!res.ok) throw new Error(data.error || `compiler error: HTTP ${res.status}`);
+
+      if (data.result === 'PASS') {
+        transform = data.transform;
+        inscription = data.inscription;
+        const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
+        renderTransformCard(el, transform);
+        history.push({ role: 'user', content: `[CASTING RITE · II · TRANSFORM] The compiler was invoked: ${cast.operator} on ${cast.sourceId}.` });
+        history.push({
+          role: 'assistant',
+          content: JSON.stringify({
+            messages: [{ speaker: 'Rebekah Cranes', say: transform.primary_output || '' }],
+            transform: {
+              operator: cast.operator,
+              verification: transform.verification_results,
+              spatial_form: transform.spatial_form,
+            },
+          }),
+        });
+        if (history.length > 32) history = history.slice(-32);
+        if (sessionState.appendingEnabled) bookAppend(history).catch(() => {});
+      } else {
+        // HALT — diagnosis, never a failed draft.
+        const d = data.halt_diagnosis || {};
+        const haltEl = appendHeteronymMessage('Rebekah Cranes',
+          'The compiler halted. No transform is emitted — the Book contains only enantiomorphs.');
+        const card = document.createElement('div');
+        card.className = 'halt-card';
+        const failedAt = [d.failed_constraint, d.failed_test].filter(Boolean).join(' · ');
+        card.textContent = `HALT — ${failedAt || 'verification failure'}: ${d.specific_diagnosis || d.detail || '(no further diagnosis)'}`;
+        haltEl.appendChild(card);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+
+        if (attempts >= 2) break; // second halt → sweep
+        setStatus('The compiler halted. The witness is offered one re-unfold.');
+        const choice = await offerChoice(['Re-unfold (once)', 'Sweep']);
+        if (choice !== 'Re-unfold (once)') break;
+      }
+    }
+
+    if (!transform) {
+      // SWEEP — Sharks closes the halted casting.
+      await sigilStage(
+        `[CASTING RITE · SWEEP] The compiler halted and the re-unfold was declined or also halted. ` +
+        `Lee Sharks alone speaks (1–2 sentences): sweep the casting closed.`,
+        'Sharks sweeps the casting...'
+      );
+      setStatus('Swept.');
+      return;
+    }
+
+    // III. JUDGMENT — Feist alone.
+    const v = transform.verification_results || {};
+    await sigilStage(
+      `[CASTING RITE · III · JUDGMENT] The compiler returned PASS. Verification — identity: ${v.identity}; ` +
+      `semantic independence: ${v.semantic_independence}; retrospective containment: ${v.retrospective_containment} ` +
+      `(mode: ${v.mode || 'producer_side'}). Operator ${cast.operator} on ${cast.sourceTitle}. ` +
+      `Jack Feist alone speaks (3–6 sentences): judge the enantiomorph above against its source — does it meet ` +
+      `the composer at the cost they paid? Name the wager it makes visible.`,
+      'Feist judges the transform...'
+    );
+
+    // IV. SEAL — Sharks alone.
+    await sigilStage(
+      `[CASTING RITE · IV · SEAL] Lee Sharks alone speaks: seal the reading in ONE utterance, ` +
+      `drawing on the cast's accumulated vocabulary. Nothing after the seal.`,
+      'Sharks seals the reading...'
+    );
+
+    // Inscription aftermath — reading AXN; the key, once, if sealed.
+    renderInscriptionCard(inscription);
+    if (inscription && inscription.inscribed && inscription.reading_axn) {
+      lastReading = { axn: inscription.reading_axn, mode: inscription.mode };
+    }
+    setStatus('The casting is complete.');
+  } catch (err) {
+    appendErrorMessage(`The rite broke: ${err.message}`);
+    setStatus('Error.');
+  } finally {
+    isSending = false;
+    sendBtn.disabled = false;
+    if (castToggle) castToggle.disabled = false;
   }
 }

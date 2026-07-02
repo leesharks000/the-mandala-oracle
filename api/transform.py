@@ -511,6 +511,53 @@ def rate_ok(ip: str) -> bool:
     return True
 
 
+
+def list_admissible_sources() -> list[dict]:
+    """Enumerate primary_literary transformable sources for the cast UI.
+
+    Same admission rule as load_source; metadata title/creator surface so
+    the client never hardcodes the canon.
+    """
+    out = []
+    if not SOURCES_ROOT.exists():
+        return out
+    for d in sorted(SOURCES_ROOT.iterdir()):
+        mp = d / "metadata.json"
+        if not d.is_dir() or not mp.exists():
+            continue
+        try:
+            meta = json.loads(mp.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        cls = meta.get("transform_classification", "archival_apparatus")
+        if cls != "primary_literary" or not meta.get("transformable", True):
+            continue
+        has_text = any(True for pat in ("*.txt", "*.en", "*.grc", "*.la", "*.zh", "*.ar")
+                       for _ in d.glob(pat))
+        has_image = bool(list(d.glob("*.jpg")) + list(d.glob("*.png")))
+        image_canonical = (meta.get("canonical_artifact_modality") == "image"
+                           or (not has_text and has_image))
+        if image_canonical:
+            # surfaced but not selectable: the refusal is protocol-articulate
+            out.append({
+                "id": d.name,
+                "title": meta.get("title", d.name),
+                "creator": meta.get("creator") or meta.get("author") or "",
+                "zodiac": meta.get("zodiac") or meta.get("heteronym_zodiac") or "",
+                "admissible": False,
+                "reason": "image-canonical (calligrammatic) — compiler-inadmissible until spatial_form can carry composition",
+            })
+            continue
+        out.append({
+            "id": d.name,
+            "title": meta.get("title", d.name),
+            "creator": meta.get("creator") or meta.get("author") or "",
+            "zodiac": meta.get("zodiac") or meta.get("heteronym_zodiac") or "",
+            "admissible": True,
+        })
+    return out
+
+
 class handler(BaseHTTPRequestHandler):
     def _json(self, status: int, payload: dict):
         b = json.dumps(payload, ensure_ascii=False).encode()
@@ -521,6 +568,17 @@ class handler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(b)))
         self.end_headers()
         self.wfile.write(b)
+
+    def do_GET(self):
+        # Cast-UI bootstrap: the endpoint is the single source of truth for
+        # admissible sources and the operator table (no client hardcoding).
+        return self._json(200, {
+            "operators": OPERATORS,
+            "sources": list_admissible_sources(),
+            "inscription_modes": ["public", "encrypted", "none"],
+            "compiler_model": COMPILER_MODEL,
+            "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+        })
 
     def do_OPTIONS(self):
         self._json(200, {})
