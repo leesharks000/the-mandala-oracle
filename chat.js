@@ -678,7 +678,7 @@ function offerChoice(labels) {
   });
 }
 
-function renderSourceCard(citation, passage) {
+function renderSourceCard(citation, passage, attribution) {
   const card = document.createElement('div');
   card.className = 'source-card';
   const label = document.createElement('div');
@@ -686,7 +686,7 @@ function renderSourceCard(citation, passage) {
   label.style.fontSize = '.8em';
   label.style.letterSpacing = '.08em';
   label.style.marginBottom = '6px';
-  label.textContent = `— the cast text${citation ? ' · ' + citation : ''} —`;
+  label.textContent = `— the cast text${arguments[2] ? ' · ' + arguments[2] : ''}${citation ? ' · ' + citation : ''} —`;
   card.appendChild(label);
   const body = document.createElement('div');
   body.style.whiteSpace = 'pre-wrap';   // lineation and indentation preserved
@@ -845,16 +845,17 @@ async function runCastingRite(cast) {
       cast.castSelection = j.cast_selection;
       cast.citation = j.citation;
       cast.passage = j.passage;
+      cast.attribution = j.attribution || null;
     }
 
-    riteMarker(`— casting · ${cast.operator} · ${cast.sourceTitle} · ${cast.citation || cast.castSelection || 'whole'} —`);
+    riteMarker(`— casting · ${cast.operator || 'JUDGMENT-sequenced'} · ${cast.attribution ? cast.attribution + ' — in ' : ''}${cast.sourceTitle} · ${cast.citation || cast.castSelection || 'whole'} —`);
 
     // I. OPENING — Sigil alone.
     await sigilStage(
       `[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. ` +
       `Source: ${cast.sourceTitle} (${cast.sourceId}). ` +
       (cast.citation
-        ? `The verses the casting arrives at (${cast.citation}):\n\n${cast.passage}\n\n` +
+        ? `The verses the casting arrives at (${cast.attribution ? cast.attribution + ', as translated and arranged within this collection — ATTRIBUTE THE VERSES TO THEIR UNDERLYING POET, never to the arranger of the collection; ' : ''}${cast.citation}):\n\n${cast.passage}\n\n` +
           `These were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. `
         : `Selection: ${cast.castSelection || 'whole source'}. `) +
       (cast.operator
@@ -869,7 +870,7 @@ async function runCastingRite(cast) {
     // The cast text itself — the enantiomorph is legible only against it.
     let sourceShown = false;
     if (cast.passage) {
-      renderSourceCard(cast.citation, cast.passage);
+      renderSourceCard(cast.citation, cast.passage, cast.attribution);
       sourceShown = true;
     }
 
@@ -948,7 +949,7 @@ async function runCastingRite(cast) {
           transform = data.transform;
           inscription = data.inscription;
           if (!sourceShown && transform.source_passage) {
-            renderSourceCard(transform.citation || cast.castSelection, transform.source_passage);
+            renderSourceCard(transform.citation || cast.castSelection, transform.source_passage, transform.underlying_attribution);
             sourceShown = true;
           }
           const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');

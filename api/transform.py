@@ -181,6 +181,10 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
                 if not (1 <= a <= b <= len(units)):
                     raise ValueError(f"cast_selection out of range: source has {len(units)} units.")
                 text = "\n\n".join(u["text"] for u in units[a - 1:b])
+                attrs = {u.get("attribution") for u in units[a - 1:b]}
+                meta = dict(meta)
+                meta["underlying_attribution"] = (attrs.pop() if len(attrs) == 1 else
+                                                  " + ".join(sorted(x or "?" for x in attrs)))
                 if len(text.strip()) < 40:
                     raise ValueError("the selected text is too small to cast.")
                 return text, meta
@@ -479,6 +483,7 @@ def append_expansion(source_entry: dict, source_text: str, cast_selection: str |
                             "governed by the canonization journey (kernel-transform spec §5.5)",
     }
     entry["source_passage"] = transform_block.get("source_passage")
+    entry["underlying_attribution"] = transform_block.get("underlying_attribution")
     if mode == "public":
         entry["enantiomorph"] = transform_block["enantiomorph"]
         entry["layer_a"] = transform_block["layer_a"]
@@ -562,6 +567,7 @@ def inscribe(mode: str, reading_axn: str | None, session_id: str,
             "operator": transform_block["operator"],
             "source_passage": transform_block.get("source_passage"),
             "citation": transform_block.get("citation"),
+            "underlying_attribution": transform_block.get("underlying_attribution"),
             "result": "PASS",
             "enantiomorph": transform_block["enantiomorph"],
             "layer_a_declaration": transform_block["layer_a"],
@@ -742,12 +748,20 @@ def segment_units(text: str, primary_after: str | None = None) -> list[dict]:
             end = markers[i + 1].start() if i + 1 < len(markers) else len(text)
             units.append({"label": m.group(1), "text": text[start:end].strip()})
         return units
-    # stanza mode with apparatus filter
+    # stanza mode with apparatus filter; attribution follows the governing
+    # ### header — anthology sources (Day and Night) embed poems by OTHER
+    # authors, and misattributing them is the archive's founding failure
+    # mode enacted at home (live cast, 2026-07-02: Anacreon cast as Cranes).
     blocks = re.split(r"\n\s*\n", text.strip())
     units = []
+    current_attr = None
     for b in blocks:
         bs = b.strip()
         if not bs or bs == "---":
+            continue
+        hm = re.match(r"^(#{2,4})\s+(.+)$", bs.splitlines()[0])
+        if hm and len(bs.splitlines()) == 1:
+            current_attr = hm.group(2).strip()
             continue
         lines = bs.splitlines()
         apparatus = sum(1 for L in lines
@@ -760,14 +774,21 @@ def segment_units(text: str, primary_after: str | None = None) -> list[dict]:
         letters = sum(c.isalpha() for c in bs)
         if letters < 30 and bs.startswith("#"):
             continue
-        units.append({"label": f"unit {len(units) + 1}", "text": bs})
+        units.append({"label": f"unit {len(units) + 1}", "text": bs,
+                      "attribution": current_attr})
     return units
 
 def draw_candidates(units: list[dict], k: int = JUDGMENT_K) -> list[dict]:
     """Stratified random windows across the whole text — the anti-clustering
     assurance. One window per stratum; window grows unit-by-unit until it
     reaches short-lyric weight or the unit/char caps."""
-    n = len(units)
+    _ATTR_APPARATUS = re.compile(
+        r"publication history|introduction|contents|translator|acknowledg|"
+        r"site integration|data architecture|notes|bibliograph|apparatus|index",
+        re.I)
+    eligible = [i for i, u in enumerate(units)
+                if not (u.get("attribution") and _ATTR_APPARATUS.search(u["attribution"]))]
+    n = len(eligible)
     if n == 0:
         return []
     k = min(k, n)
@@ -775,11 +796,14 @@ def draw_candidates(units: list[dict], k: int = JUDGMENT_K) -> list[dict]:
     for s in range(k):
         lo = (s * n) // k
         hi = max(((s + 1) * n) // k - 1, lo)
-        start = lo + secrets.randbelow(hi - lo + 1)
+        start = eligible[lo + secrets.randbelow(hi - lo + 1)]
         end = start
         chars = len(units[start]["text"])
+        attr = units[start].get("attribution")
         while (chars < WINDOW_MIN_CHARS and end - start + 1 < WINDOW_MAX_UNITS
                and end + 1 < n):
+            if units[end + 1].get("attribution") != attr:
+                break
             nxt = len(units[end + 1]["text"])
             if chars + nxt > WINDOW_MAX_CHARS:
                 break
@@ -788,7 +812,8 @@ def draw_candidates(units: list[dict], k: int = JUDGMENT_K) -> list[dict]:
         text = "\n\n".join(u["text"] for u in units[start:end + 1])
         citation = units[start]["label"] if start == end else f"{units[start]['label']}–{units[end]['label']}"
         candidates.append({"start": start + 1, "end": end + 1,
-                           "citation": citation, "text": text})
+                           "citation": citation, "text": text,
+                           "attribution": attr})
     return candidates
 
 def judgment_operator(question: str, source_title: str, passage: str,
@@ -984,6 +1009,7 @@ class handler(BaseHTTPRequestHandler):
                 return self._json(200, {
                     "cast_selection": f"units_{chosen['start']}_{chosen['end']}",
                     "citation": chosen["citation"],
+                    "attribution": chosen.get("attribution"),
                     "passage": chosen["text"],
                     "judgment_reason": reason,
                     "units_total": len(units),
@@ -1040,6 +1066,7 @@ class handler(BaseHTTPRequestHandler):
             "operator": operator,
             "source_passage": source_text,
             "citation": body.get("citation"),
+            "underlying_attribution": meta.get("underlying_attribution"),
             "enantiomorph": parsed["enantiomorph"],
             "layer_a": parsed["layer_a"],
             "layer_b": parsed["layer_b"],
@@ -1089,6 +1116,7 @@ class handler(BaseHTTPRequestHandler):
                 "primary_output": parsed["enantiomorph"],
                 "source_passage": source_text,
                 "citation": body.get("citation"),
+                "underlying_attribution": meta.get("underlying_attribution"),
                 "geometry_check": geometry_check,
                 "operator_specification": f"{operator} — {OPERATORS[operator]}",
                 "layer_a_declaration": parsed["layer_a"],
