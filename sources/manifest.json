@@ -152,7 +152,8 @@
    "creator": "Sappho of Lesbos",
    "zodiac": "",
    "admissible": true,
-   "text_file": "sappho-31/on-reconstruction.md"
+   "text_file": "sappho-31/text.md",
+   "primary_after": "ΣΑΠΦΩ 31"
   },
   {
    "id": "shadow-tachyon",

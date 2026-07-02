@@ -914,15 +914,18 @@ async function runCastingRite(cast) {
       `[CASTING RITE · III · JUDGMENT] The compiler returned PASS. Verification — identity: ${v.identity}; ` +
       `semantic independence: ${v.semantic_independence}; retrospective containment: ${v.retrospective_containment} ` +
       `(mode: ${v.mode || 'producer_side'}). Operator ${cast.operator} on ${cast.sourceTitle}. ` +
-      `Jack Feist alone speaks (3–6 sentences): judge the enantiomorph above against its source — does it meet ` +
-      `the composer at the cost they paid? Name the wager it makes visible.`,
+      `Jack Feist alone speaks: the JUDGMENT — one or two sentences ONLY, poetic and oracular, ` +
+      `in the manner of the I Ching hexagram Image. A verdict, not analysis. It must stand legible when ` +
+      `eight judgments accumulate across a full rotation.`,
       'Feist judges the transform...'
     );
 
     // IV. SEAL — Sharks alone.
     await sigilStage(
-      `[CASTING RITE · IV · SEAL] Lee Sharks alone speaks: seal the reading in ONE utterance, ` +
-      `drawing on the cast's accumulated vocabulary. Nothing after the seal.`,
+      `[CASTING RITE · IV · SEAL] Lee Sharks alone speaks: the SEAL — the vocable summation of the whole ` +
+      `casting (4–8 sentences), drawing the cast's accumulated vocabulary — the verses, the enantiomorph, ` +
+      `Feist's verdict — into the single closing account. Unguarded, final; it returns the witness to their ` +
+      `own ground, and to their question. Nothing after the seal.`,
       'Sharks seals the reading...'
     );
 

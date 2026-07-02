@@ -59,7 +59,7 @@ ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
 
 GH_REPO = "leesharks000/the-mandala-oracle"
-GH_TOKEN_ENV = "GITHUB_TOKEN"
+GH_TOKEN_ENV = "GITHUB_BOOK_TOKEN"   # same PAT book.py uses; GITHUB_TOKEN as fallback
 READINGS_DIR = "book/readings"
 READINGS_INDEX = "book/readings-index.json"
 
@@ -170,7 +170,7 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
         else:
             mu = re.match(r"units?_(\d+)_(\d+)$", cast_selection)
             if mu:
-                units = segment_units(text)
+                units = segment_units(text, entry.get("primary_after"))
                 a, b = int(mu.group(1)), int(mu.group(2))
                 if not (1 <= a <= b <= len(units)):
                     raise ValueError(f"cast_selection out of range: source has {len(units)} units.")
@@ -366,7 +366,7 @@ def enforce_pass(parsed: dict) -> bool:
 # ──────────────────────────────────────────────────────────────────────
 
 def _gh_headers():
-    tok = os.environ.get(GH_TOKEN_ENV, "")
+    tok = os.environ.get(GH_TOKEN_ENV, "") or os.environ.get("GITHUB_TOKEN", "")
     return {"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json",
             "User-Agent": "mandala-transform"}
 
@@ -575,8 +575,45 @@ WINDOW_MAX_CHARS = 1400     # Sappho-31 scale ceiling for a single transform
 
 _VERSE_RE = re.compile(r"^\*\*(\d+:\d+)\*\*", re.M)
 
-def segment_units(text: str) -> list[dict]:
-    """Split a source into castable units: verses if marked, else stanzas."""
+_PG_START = re.compile(r"^\*{3}\s*START OF (THE|THIS) PROJECT GUTENBERG.*$", re.M | re.I)
+_PG_END = re.compile(r"^\*{3}\s*END OF (THE|THIS) PROJECT GUTENBERG.*$", re.M | re.I)
+_FOOTNOTE_BLOCK = re.compile(r"^\*\*[⁰¹²³⁴⁵⁶⁷⁸⁹]")          # **¹⁵ … (bold superscript opening)
+_FOOTNOTE_BLOCK2 = re.compile(r"^\*\*\d+(\*\*|[.):])")     # **15** / **15.* variants
+_BRACKET_NOTE = re.compile(r"^\[\d+\]")
+
+def primary_text_of(text: str) -> str:
+    """Only primary text is transformable: strip transport boilerplate."""
+    ms, me = _PG_START.search(text), _PG_END.search(text)
+    if ms:
+        text = text[ms.end():(me.start() if me else len(text))]
+    return text
+
+def _is_apparatus_block(bs: str) -> bool:
+    """Footnotes, editorial notes, citations — never eligible for the cast."""
+    if _FOOTNOTE_BLOCK.match(bs) or _FOOTNOTE_BLOCK2.match(bs) or _BRACKET_NOTE.match(bs):
+        return True
+    head = bs[:100]
+    if re.match(r"^Notes?\b[:.]", head) or "— [NEW," in head:
+        return True
+    if bs.startswith("<!--") or re.match(r"^Produced by\b", bs):
+        return True
+    if len(re.findall(r"\*\*[A-Za-z][\w ]*:\*\*", bs[:300])) >= 2:
+        return True   # metadata blocks (**Hex:** … **Classification:** …)
+    if ("fn." in head or "cf." in head.lower()) and ("§" in bs or "—" in head):
+        return True
+    return False
+
+def segment_units(text: str, primary_after: str | None = None) -> list[dict]:
+    """Split a source into castable units: verses if marked, else stanzas.
+
+    ELIGIBILITY (MANUS rule, 2026-07-02): footnotes and apparatus are not
+    transformable material — only primary text. The first live cast drew a
+    footnote (Epistle unit 40, **¹⁵ 'the police baton of grammar'…) and the
+    compiler faithfully enantiomorphed its apparatus form. Never again.
+    """
+    text = primary_text_of(text)
+    if primary_after and primary_after in text:
+        text = text[text.index(primary_after):]
     markers = list(_VERSE_RE.finditer(text))
     if len(markers) >= 8:
         units = []
@@ -597,6 +634,8 @@ def segment_units(text: str) -> list[dict]:
                         if L.strip().startswith("[") or re.match(r"^[\w_]+:\s*\"", L.strip())
                         or L.strip().startswith("!["))
         if apparatus / max(len(lines), 1) > 0.5:
+            continue
+        if _is_apparatus_block(bs):
             continue
         letters = sum(c.isalpha() for c in bs)
         if letters < 30 and bs.startswith("#"):
@@ -747,7 +786,7 @@ class handler(BaseHTTPRequestHandler):
                         text = raw.decode(enc); break
                     except UnicodeDecodeError:
                         continue
-                units = segment_units(text)
+                units = segment_units(text, entry.get("primary_after"))
                 if not units:
                     return self._json(400, {"error": "the source yielded no castable units."})
                 cands = draw_candidates(units)
@@ -812,8 +851,17 @@ class handler(BaseHTTPRequestHandler):
                                               invoking, body.get("source_text_id", ""),
                                               body.get("cast_selection"), transform_block, gloss)
             except Exception as e:
+                detail = type(e).__name__
+                code = getattr(e, "code", None)
+                if code:
+                    try:
+                        gh_msg = json.loads(e.read().decode())[:1] and ""
+                    except Exception:
+                        gh_msg = ""
+                    detail = f"HTTP {code}"
                 inscription_result = {"inscribed": False, "mode": mode,
-                                      "error": f"inscription failed: {type(e).__name__} — transform returned uninscribed"}
+                                      "error": f"inscription failed ({detail}) — transform returned uninscribed; "
+                                               f"check GITHUB_BOOK_TOKEN on the deployment"}
 
         return self._json(200, {
             "result": "PASS",
