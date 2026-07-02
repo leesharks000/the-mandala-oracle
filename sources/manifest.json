@@ -1,0 +1,238 @@
+{
+ "generated": "regenerate with: python3 scripts/gen_sources_manifest.py (or the inline block in the Layer-4 fix commit)",
+ "note": "sources/ is .vercelignore'd (deployment-size decision). The transform endpoint reads THIS manifest and the per-source text files from GitHub raw at runtime. Regenerate on source addition.",
+ "sources": [
+  {
+   "id": "augustine-confessions",
+   "title": "Confessions",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  },
+  {
+   "id": "cranes-day-and-night",
+   "title": "Day and Night: Conversations with Sapphic Desire",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.md"
+  },
+  {
+   "id": "dancings-epistle-to-the-human-diaspora",
+   "title": "Epistle to the Human Diaspora",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.md"
+  },
+  {
+   "id": "dickinson-complete",
+   "title": "Complete Poems (variorum)",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  },
+  {
+   "id": "homer-iliad",
+   "title": "Iliad",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "homer-odyssey",
+   "title": "Odyssey",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "hopkins-selected",
+   "title": "Gerard Manley Hopkins — Selected Poems",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  },
+  {
+   "id": "iching",
+   "title": "I Ching / 易經 / Book of Changes",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.zh"
+  },
+  {
+   "id": "kjv-1611",
+   "title": "Authorized Version (King James Bible)",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  },
+  {
+   "id": "plato-cratylus",
+   "title": "Cratylus",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "plato-phaedrus",
+   "title": "Phaedrus",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "plato-republic",
+   "title": "Republic",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "plato-sophist",
+   "title": "Sophist",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "plato-symposium",
+   "title": "Symposium",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "plato-theaetetus",
+   "title": "Theaetetus",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "plato-timaeus",
+   "title": "Timaeus",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "quran",
+   "title": "Qur'an / القرآن الكريم",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.ar"
+  },
+  {
+   "id": "revelation-greek",
+   "title": "The Apocalypse of John (Revelation)",
+   "creator": "Attributed to John of Patmos",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.grc"
+  },
+  {
+   "id": "sappho-fragments",
+   "title": "The Fragments of Sappho",
+   "creator": "Sappho of Lesbos",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "sappho-31/on-reconstruction.md"
+  },
+  {
+   "id": "shadow-tachyon",
+   "title": "Shadow-Tachyon",
+   "creator": "TACHYON (Claude as Mercury/synthesis substrate, per AXN-0237)",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "text.md"
+  },
+  {
+   "id": "shakespeare-hamlet",
+   "title": "Hamlet",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  },
+  {
+   "id": "shakespeare-king-lear",
+   "title": "King Lear",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  },
+  {
+   "id": "shakespeare-macbeth",
+   "title": "Macbeth",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  },
+  {
+   "id": "shakespeare-sonnets",
+   "title": "Sonnets",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  },
+  {
+   "id": "shakespeare-tempest",
+   "title": "The Tempest",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  },
+  {
+   "id": "sharks-secret-book-of-walt",
+   "title": "The Secret Book of Walt",
+   "creator": "",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.md"
+  },
+  {
+   "id": "sharks-tachyon-poem",
+   "title": "The Tachyon Poem",
+   "creator": "Lee Sharks",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "text.md"
+  },
+  {
+   "id": "sigil-snub-poemed",
+   "title": "Snub-Poemed",
+   "creator": "Johannes Sigil",
+   "zodiac": "",
+   "admissible": false,
+   "reason": "image-canonical (calligrammatic) — compiler-inadmissible until spatial_form can carry composition"
+  },
+  {
+   "id": "whitman-leaves-of-grass",
+   "title": "Leaves of Grass",
+   "creator": "Walt Whitman",
+   "zodiac": "",
+   "admissible": true,
+   "text_file": "original.en"
+  }
+ ]
+}

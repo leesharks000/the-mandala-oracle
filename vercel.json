@@ -5,10 +5,6 @@
   "functions": {
     "api/**/*.py": {
       "maxDuration": 60
-    },
-    "api/transform.py": {
-      "maxDuration": 60,
-      "includeFiles": "sources/**"
     }
   },
   "headers": [

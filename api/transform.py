@@ -65,6 +65,40 @@ READINGS_INDEX = "book/readings-index.json"
 
 SOURCES_ROOT = Path(__file__).resolve().parent.parent / "sources"
 
+# sources/ is .vercelignore'd (deployment-size decision) — on Vercel the
+# directory does not exist. The endpoint therefore reads sources through the
+# manifest + GitHub raw, with local disk as the dev-time fast path. Warm
+# instances cache both the manifest and fetched texts.
+RAW_BASE = "https://raw.githubusercontent.com/leesharks000/the-mandala-oracle/main/sources"
+_raw_cache: dict[str, bytes] = {}
+
+def _fetch_raw(rel_path: str) -> bytes:
+    """Fetch sources/<rel_path> from GitHub raw, cached per warm instance."""
+    if rel_path in _raw_cache:
+        return _raw_cache[rel_path]
+    from urllib.parse import quote
+    url = f"{RAW_BASE}/{quote(rel_path)}"
+    req = urllib.request.Request(url, headers={"User-Agent": "mandala-transform/1.0"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        data = r.read()
+    _raw_cache[rel_path] = data
+    return data
+
+_manifest_cache: list | None = None
+
+def _load_manifest() -> list:
+    global _manifest_cache
+    if _manifest_cache is not None:
+        return _manifest_cache
+    local = SOURCES_ROOT / "manifest.json"
+    if local.exists():
+        raw = local.read_bytes()
+    else:
+        raw = _fetch_raw("manifest.json")
+    _manifest_cache = json.loads(raw.decode("utf-8"))["sources"]
+    return _manifest_cache
+
+
 OPERATORS = {
     "SHADOW":    "assertion-axis — the bearing-cost the composer underwent; bilateral receptive operation",
     "MIRROR":    "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
@@ -92,69 +126,41 @@ _rate_bucket: dict[str, list[float]] = {}
 def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, dict]:
     """Load the transformable main text for a canon source.
 
-    Enforces the classification rule (sources/CLASSIFICATION.md): only
-    `primary_literary` sources with `transformable: true` are admissible.
-    Returns (text, metadata). Raises ValueError with a witness-legible
-    message otherwise.
+    Manifest-driven (sources/manifest.json): only primary_literary,
+    transformable sources appear there; image-canonical entries carry
+    admissible=false with the protocol-articulate reason. Text bytes come
+    from local disk when present (dev) or GitHub raw (deployment, where
+    sources/ is .vercelignore'd).
     """
-    src_dir = SOURCES_ROOT / source_text_id
-    meta_path = src_dir / "metadata.json"
-    if not meta_path.exists():
+    entry = next((e for e in _load_manifest() if e["id"] == source_text_id), None)
+    if entry is None:
         raise ValueError(f"unknown source_text_id: {source_text_id}")
-    meta = json.loads(meta_path.read_text(encoding="utf-8"))
-
-    classification = meta.get("transform_classification", "archival_apparatus")
-    if classification != "primary_literary" or not meta.get("transformable", classification == "primary_literary"):
+    if not entry.get("admissible", False):
         raise ValueError(
-            f"source '{source_text_id}' is classified {classification} — "
-            "not admissible to kernel transforms (EA-STARMAP-01 §4.6 as extended)."
+            f"source '{source_text_id}' is inadmissible — " + entry.get("reason",
+            "not admissible to kernel transforms (sources/CLASSIFICATION.md).")
         )
+    text_file = entry.get("text_file")
+    if not text_file:
+        raise ValueError(f"source '{source_text_id}' has no main text file recorded in the manifest.")
 
-    # main text file: prefer main.*, then original.*, then declared, then largest text-like file
-    candidates = ["main.txt", "main.grc", "main.la", "main.en",
-                  "original.txt", "original.grc", "original.la", "original.en",
-                  "original.zh", "original.ar"]
-    declared = meta.get("main_text_file")
-    if declared:
-        candidates.insert(0, declared)
+    local = SOURCES_ROOT / source_text_id / text_file
+    raw = local.read_bytes() if local.exists() else _fetch_raw(f"{source_text_id}/{text_file}")
 
-    def read_text_any(p: Path) -> str:
-        raw = p.read_bytes()
+    def decode_any(b: bytes) -> str:
         for enc in ("utf-8", "utf-8-sig", "cp1252", "latin-1"):
             try:
-                return raw.decode(enc)
+                return b.decode(enc)
             except UnicodeDecodeError:
                 continue
-        return raw.decode("utf-8", errors="replace")
+        return b.decode("utf-8", errors="replace")
 
-    text = None
-    for c in candidates:
-        p = src_dir / c
-        if p.exists():
-            text = read_text_any(p)
-            break
-    if text is None:
-        # any text-like file at top level or one directory down (e.g. sappho-fragments/sappho-31/)
-        pool = [p for pat in ("*.txt", "*.en", "*.grc", "*.la", "*.zh", "*.ar", "*.md")
-                for p in list(src_dir.glob(pat)) + list(src_dir.glob(f"*/{pat}"))
-                if p.name not in ("metadata.json", "CLASSIFICATION.md", "README.md")
-                and "apparatus" not in p.name and "essay" not in p.name and "key-phrases" not in p.name]
-        pool.sort(key=lambda p: p.stat().st_size, reverse=True)
-        if pool:
-            text = read_text_any(pool[0])
-    if text is None:
-        if meta.get("canonical_artifact_modality") == "image" or (src_dir / f"{source_text_id.split('-',1)[-1]}.jpg").exists() or list(src_dir.glob("*.jpg")) + list(src_dir.glob("*.png")):
-            raise ValueError(
-                f"source '{source_text_id}' is image-canonical (calligrammatic): its composition "
-                "is not machine-text and is compiler-inadmissible until the spatial_form pipeline "
-                "can carry it (EA-PROVENANCE-METADATA-01 v0.2: compositionally_reduced; "
-                "compiler_accessible: false)."
-            )
-        raise ValueError(f"source '{source_text_id}' has no main text file on disk.")
+    text = decode_any(raw)
+    meta = dict(entry)
 
-    # cast_selection: named selection from metadata, else a simple stanza-range grammar
+    # cast_selection: named selection from the manifest, else stanza-range grammar
     if cast_selection:
-        selections = meta.get("cast_selections", {})
+        selections = entry.get("cast_selections", {})
         if cast_selection in selections:
             sel = selections[cast_selection]
             text = text[sel["start_char"]:sel["end_char"]] if "start_char" in sel else text
@@ -163,9 +169,14 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
             if m:
                 a = int(m.group(1)); b = int(m.group(2) or m.group(1))
                 stanzas = re.split(r"\n\s*\n", text.strip())
-                text = "\n\n".join(stanzas[a - 1 : b])
+                if not (1 <= a <= b <= len(stanzas)):
+                    raise ValueError(f"cast_selection out of range: source has {len(stanzas)} stanzas.")
+                text = "\n\n".join(stanzas[a - 1:b])
+            else:
+                raise ValueError(f"unknown cast_selection: {cast_selection}")
+
     if len(text.strip()) < 40:
-        raise ValueError("cast selection resolved to too little text to transform.")
+        raise ValueError("the selected text is too small to cast.")
     return text, meta
 
 
@@ -513,48 +524,15 @@ def rate_ok(ip: str) -> bool:
 
 
 def list_admissible_sources() -> list[dict]:
-    """Enumerate primary_literary transformable sources for the cast UI.
-
-    Same admission rule as load_source; metadata title/creator surface so
-    the client never hardcodes the canon.
-    """
+    """The cast-UI source list — straight from the manifest (single raw fetch)."""
     out = []
-    if not SOURCES_ROOT.exists():
-        return out
-    for d in sorted(SOURCES_ROOT.iterdir()):
-        mp = d / "metadata.json"
-        if not d.is_dir() or not mp.exists():
-            continue
-        try:
-            meta = json.loads(mp.read_text(encoding="utf-8"))
-        except Exception:
-            continue
-        cls = meta.get("transform_classification", "archival_apparatus")
-        if cls != "primary_literary" or not meta.get("transformable", True):
-            continue
-        has_text = any(True for pat in ("*.txt", "*.en", "*.grc", "*.la", "*.zh", "*.ar")
-                       for _ in d.glob(pat))
-        has_image = bool(list(d.glob("*.jpg")) + list(d.glob("*.png")))
-        image_canonical = (meta.get("canonical_artifact_modality") == "image"
-                           or (not has_text and has_image))
-        if image_canonical:
-            # surfaced but not selectable: the refusal is protocol-articulate
-            out.append({
-                "id": d.name,
-                "title": meta.get("title", d.name),
-                "creator": meta.get("creator") or meta.get("author") or "",
-                "zodiac": meta.get("zodiac") or meta.get("heteronym_zodiac") or "",
-                "admissible": False,
-                "reason": "image-canonical (calligrammatic) — compiler-inadmissible until spatial_form can carry composition",
-            })
-            continue
-        out.append({
-            "id": d.name,
-            "title": meta.get("title", d.name),
-            "creator": meta.get("creator") or meta.get("author") or "",
-            "zodiac": meta.get("zodiac") or meta.get("heteronym_zodiac") or "",
-            "admissible": True,
-        })
+    for e in _load_manifest():
+        item = {"id": e["id"], "title": e.get("title", e["id"]),
+                "creator": e.get("creator", ""), "zodiac": e.get("zodiac", ""),
+                "admissible": e.get("admissible", False)}
+        if not item["admissible"]:
+            item["reason"] = e.get("reason", "")
+        out.append(item)
     return out
 
 
