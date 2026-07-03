@@ -134,11 +134,75 @@
     "mode": "producer_side"
    },
    "commentary": "The MIRROR reflects the source across its directionality-axis: the source's every gesture descends and derives — a superior grants, a subordinate waits, a father is cited, a star is conferred. Point by point the enantiomorph occupies the reflected coordinate. The conditional-address is preserved but its vector inverts: the qualifier no longer awaits a gift but \"takes from no hand the reach that was always hers.\" The consequence-beat's outward shattering of brittle vessels becomes a fracture turned wholly inward — the shell she was folded in, the seed splitting only its own containment, breaking nothing outside itself. The attestation-and-token beat, where authority is grounded upward (\"as I received from my Father\") and crowned from without (\"I will give him the morning star\"), mirrors to \"I received it from no one\" and \"the light she was never given\" — the bestowed star becoming the self-risen, unconferred light. Non-superimposable: the source's machinery of descending legitimacy cannot be laid over an interior self-authorization; they are opposite faces. The single look back across the axis — \"the light she was never given\" — reaches for the source's star-gift precisely by negating its givenness, the traversal's own gesture. Wager-mode is hope: the source pays deferral, promising a future award to whoever endures; its foreclosure, traversed, pays the countervailing price by collapsing the wait — the power is disclosed as already present, owed to nothing, which is restoration rather than the source's promise-in-suspension. The witness's question (of coming-into-power) informed which axis to foreground but did not govern the outcome; the \"already risen\" is not consolation delivered to the longing but the structural inverse the source foreclosed by making power a deferred gift from above."
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "**2:26** καὶ ὁ νικῶν καὶ ὁ τηρῶν ἄχρι τέλους τὰ ἔργα μου, δώσω αὐτῷ ἐξουσίαν ἐπὶ τῶν ἐθνῶν,\n\n**2:27** καὶ ποιμανεῖ αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ ὡς τὰ σκεύη τὰ κεραμικὰ ⸀συντρίβεται,\n\n**2:28** ὡς κἀγὼ εἴληφα παρὰ τοῦ πατρός μου, καὶ δώσω αὐτῷ τὸν ἀστέρα τὸν πρωϊνόν.",
+   "citation": "2:26–2:28",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**2:26** And whoever loosens, whoever lets slip before the last hour all that my hands would hold, to that one I unhand the open plain,\n\n**2:27** and that one will keep them in an ungripping palm, as the thawed snow gives itself up and is not shattered,\n\n**2:28** even as I too was let go by the mother of my letting-go, and to that one I surrender the light already melting into day.",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "conditional-qualification (the one who conquers and keeps)",
+     "grant-of-dominion with shattering-simile",
+     "authority-lineage and final gift-seal"
+    ],
+    "spatial_form": {
+     "lines": 6,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "three verse-marked lines, each followed by a blank line; markers **2:26**, **2:27**, **2:28** open each stanza"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "power is deferred, promised to the one who endures to the end",
+      "foreclosure": "power possessed now, in the present, requiring no waiting and no conquest",
+      "wager": "buys the whole moral weight of perseverance — the reward means nothing if it is not withheld"
+     },
+     {
+      "beat": 2,
+      "determination": "rule enacted as domination — the iron rod, the potter's vessels shattered",
+      "foreclosure": "rule as dissolution — a giving-way in which nothing is broken because nothing is gripped",
+      "wager": "buys sovereignty by making the ruled breakable; hardness authorizes"
+     },
+     {
+      "beat": 3,
+      "determination": "authority derived from a Father, sealed by the gift of a distant morning star",
+      "foreclosure": "authority ungiven and ungifted — nothing handed down, nothing bestowed from elsewhere, the light dissolving instead of dawning",
+      "wager": "buys legitimacy through inheritance and futurity; the star is not yet, and comes from above"
+     }
+    ],
+    "wager_mode": "hope",
+    "semantic_field": "the softening and release of held things — snow, wax, a loosening grip that keeps nothing and inherits nothing",
+    "field_source": "foreclosure at beat 2 (rule as dissolution, nothing gripped, nothing broken)",
+    "source_affect": "triumphal deferred promise, hard majesty",
+    "target_affect": "unclenched now, tender relinquishment"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "FLAME driven to its collapse-limit: the source's intensity is the clench of withheld sovereignty — power promised, deferred, exercised as the iron rod that breaks earthen vessels. Pushed to ignition, that grip cannot sustain itself; the maximum of holding burns through into its mirror, the unclenched hand. Each beat makes point-by-point contact across the axis of gripping-vs-releasing: \"conquers and keeps to the end\" becomes \"loosens and lets slip before the last hour\"; the rod-of-iron that shatters ceramic becomes the ungripping palm where thawed snow \"gives itself up and is not shattered\" — the breakable made unbreakable precisely by being ungripped; the inheritance from the Father and the not-yet morning star become the letting-go received from \"the mother of my letting-go\" and light \"already melting into day\" — dawn dissolving downward where the source's star hangs distant above. The witness asked when power arrives; the operator did not answer that longing. The foreclosure the source paid to be triumphal was relinquishment, and traversed it discloses power's collapse-limit as the surrender that keeps and inherits nothing — not the deferred crown the question reaches for. The hope-wager's countervailing price is paid: not conquest rewarded but the hand opened now."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T06:04:03.231576+00:00",
+ "last_updated": "2026-07-03T06:05:12.168055+00:00",
  "rite": [
   {
    "stage": "opening",
