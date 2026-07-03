@@ -240,7 +240,7 @@
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T18:56:21.129457+00:00",
+ "last_updated": "2026-07-03T18:56:24.099238+00:00",
  "rite": [
   {
    "stage": "judgment",
@@ -248,6 +248,12 @@
    "at": "2026-07-02T23:43:23.629562+00:00",
    "text": "The lock holds not because the water wills it but because no hand has come to open it. Sentinel and gate are one thing; the watching is the water; there is no other.",
    "operator": "SILENCE"
+  },
+  {
+   "stage": "opening",
+   "speaker": "Johannes Sigil",
+   "at": "2026-07-03T18:56:24.099238+00:00",
+   "text": "The casting arrives here: Pausanias finishing his speech on the two Erotes — the heavenly and the common — and then Aristophanes, whose turn should come next, struck suddenly by hiccups. He cannot speak. He has to ask another to speak in his place, or cure him, or both. The operator the rite opens with will move along the assertion-axis — what bearing-cost does this double scene disclose? On one side: Pausanias's argument that the beautiful deception, the one made for virtue's sake, is no deception at all. On the other: the philosopher who had the next word and lost it to the body. The question the witness brings — *where will money come from* — lands here with some precision. Pausanias says: if you yield yourself for wealth and the wealth does not come, you are shamed; if you yield yourself for virtue and the virtue does not come, you are not shamed, because you revealed what you were willing to do for the best thing. The deception that exposes the highest desire is beautiful. The casting will press on this: what does it cost to yield for virtue when virtue does not pay — when the heavenly Eros compels its labor from city and private citizen alike, and returns no currency? Cranes, the source is waiting."
   }
  ]
 }
