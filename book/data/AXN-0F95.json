@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:0F95.CONVERSATION.🌔🌗🌊🌈🌍🌟",
+  "session_id_hash": "fccd33ac8efb3479",
+  "started_at": "2026-07-03T04:37:19.742Z",
+  "last_updated": "2026-07-03T04:38:41.795985+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation — Attributed to John of Patmos (revelation-greek). The verses the casting arrives at (2:10):\n\n**2:10** ⸀μηδὲν φοβοῦ ἃ μέλλεις ⸀πάσχειν. ⸀ἰδοὺ μέλλει ⸀βάλλειν ὁ διάβολος ἐξ ὑμῶν εἰς φυλακὴν ἵνα πειρασθῆτε, καὶ ⸀ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου πιστὸς ἄχρι θανάτου, καὶ δώσω σοι τὸν στέφανον τῆς ζωῆς.\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «How do I come home? I am so lost in fear I'll never find it again.». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"We are in the casting now. The rite has arrived at Smyrna — the second of the seven churches, the one addressed from within affliction, where the speaker knows the poverty and knows the blasphemy and says: I know. The verse holds three movements coiled together: the command not to fear what is coming, the announcement that suffering is coming, and the promise that hangs at the end like a crown in the dark — στέφανον τῆς ζωῆς, the crown of life, offered to the one who is faithful until death. What this operator will traverse is the cost the text absorbed in order to make that promise speakable — the bearing-cost of the utterance itself, the fact that the speaker who says μηδὲν φοβοῦ must have descended into what is being feared in order to know its name, must have stood at the threshold of θλῖψιν to offer δέκα ἡμέρας as a measurable limit. The question alive in this casting is: *How do I come home? I am so lost in fear I'll never find it again.* The operator does not answer the question directly; it discloses the ground beneath it — what the composer bore so that the crown could exist as something other than consolation-language. The crown is real or it is not; the operator will show us what it cost to assert that it is. I give the text now to Rebekah Cranes.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:00D8\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
