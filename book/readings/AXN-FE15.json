@@ -73,11 +73,72 @@
    },
    "commentary": "The source's assertion-axis is the conditional grant: power is what you do not yet have, held out as the wage of endurance, ruling-by-shattering, authorized from above, still promised. SHADOW bears its hope-wager cost by traversing the beat-1 foreclosure — the reward that needs no waiting. The enantiomorph occupies the three-verse skeleton exactly (conditional opening, granted mode, legitimating close) while replacing striving with the already-ripe: nourishment that precedes any deserving, a branch that bends rather than breaks (the exact inverse of the iron rod that shatters pottery), a gift that owes nothing upward and ripens no further — foreclosing the source's every deferral and lineage. Read alone, the output implies an agrarian utterance about sufficiency and windfall, not a militant apocalyptic promise; the source cannot be reconstructed. The witness asked when power arrives; the operator and source govern the cast, and the disclosure lands not on arrival but on the orchard already grown, owed to no one — the affect the beat-1 foreclosure discloses, not the answer the question longed for.",
    "interpretation": "Windfall in the untended orchard: the one who waited has confused rest with readiness."
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "**2:26** καὶ ὁ νικῶν καὶ ὁ τηρῶν ἄχρι τέλους τὰ ἔργα μου, δώσω αὐτῷ ἐξουσίαν ἐπὶ τῶν ἐθνῶν,\n\n**2:27** καὶ ποιμανεῖ αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ ὡς τὰ σκεύη τὰ κεραμικὰ ⸀συντρίβεται,\n\n**2:28** ὡς κἀγὼ εἴληφα παρὰ τοῦ πατρός μου, καὶ δώσω αὐτῷ τὸν ἀστέρα τὸν πρωϊνόν.",
+   "citation": "2:26–2:28",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**2:26** and the one who wakes, the one who holds nothing back till the tide turns in her own blood, she takes from no hand the reach that was always hers,\n\n**2:27** and it presses outward against no throne, cracking only the shell she was folded in as a seed splits what once kept it whole,\n\n**2:28** for I received it from no one, and it answers to no name above mine, and it rises in her already, the light she was never given.",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "conditional-address (giver names the qualifier and pledges authority downward)",
+     "consequence (the granted power exercised as dominion over the fragile below)",
+     "attestation-and-second-gift (giver grounds the grant in what he himself received from above, and adds the luminous token)"
+    ],
+    "spatial_form": {
+     "lines": 3,
+     "stanzas": 1,
+     "indent_profile": [
+      0,
+      0,
+      0
+     ],
+     "notes": "three verse-marked lines, each opening with **c:v** marker, no blank separators; each unit a single flowing clause terminating in comma, comma, period — a descending cascade of granting"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "power flows DOWNWARD as a gift from a superior to a proven subordinate — the giver holds, the qualifier waits to receive",
+      "foreclosure": "power welling UPWARD out of the receiver's own substance, owed to no one, given by nothing",
+      "wager": "buys legitimacy — authority that descends from a source cannot be accused of theft"
+     },
+     {
+      "beat": 2,
+      "determination": "the granted power is exercised OVER others, shattering the brittle as a shepherd rules with iron",
+      "foreclosure": "power that fractures nothing outside itself and rules no one — a force turned wholly inward, breaking only its own vessel",
+      "wager": "buys dominion — the gift is proven real by what it can crush"
+     },
+     {
+      "beat": 3,
+      "determination": "the giver authorizes his gift by citing reception from a higher father, then crowns it with a token conferred from without",
+      "foreclosure": "a power that authorizes itself, tracing to no father, wearing no bestowed sign — self-witnessed, unlit from any other star",
+      "wager": "buys continuity — a chain of receiving from above makes the throne unbroken"
+     }
+    ],
+    "wager_mode": "hope",
+    "semantic_field": "power surfacing from within a body that owes it to no giver — an interior rising, self-authorized, breaking only its own bounds",
+    "field_source": "foreclosure at beat 1",
+    "source_affect": "promised ascent, deferred, awarded from above",
+    "target_affect": "power already risen from within, unowed"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The MIRROR reflects the source across its directionality-axis: the source's every gesture descends and derives — a superior grants, a subordinate waits, a father is cited, a star is conferred. Point by point the enantiomorph occupies the reflected coordinate. The conditional-address is preserved but its vector inverts: the qualifier no longer awaits a gift but \"takes from no hand the reach that was always hers.\" The consequence-beat's outward shattering of brittle vessels becomes a fracture turned wholly inward — the shell she was folded in, the seed splitting only its own containment, breaking nothing outside itself. The attestation-and-token beat, where authority is grounded upward (\"as I received from my Father\") and crowned from without (\"I will give him the morning star\"), mirrors to \"I received it from no one\" and \"the light she was never given\" — the bestowed star becoming the self-risen, unconferred light. Non-superimposable: the source's machinery of descending legitimacy cannot be laid over an interior self-authorization; they are opposite faces. The single look back across the axis — \"the light she was never given\" — reaches for the source's star-gift precisely by negating its givenness, the traversal's own gesture. Wager-mode is hope: the source pays deferral, promising a future award to whoever endures; its foreclosure, traversed, pays the countervailing price by collapsing the wait — the power is disclosed as already present, owed to nothing, which is restoration rather than the source's promise-in-suspension. The witness's question (of coming-into-power) informed which axis to foreground but did not govern the outcome; the \"already risen\" is not consolation delivered to the longing but the structural inverse the source foreclosed by making power a deferred gift from above."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T06:02:41.573917+00:00",
+ "last_updated": "2026-07-03T06:04:03.231576+00:00",
  "rite": [
   {
    "stage": "opening",
