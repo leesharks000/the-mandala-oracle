@@ -301,11 +301,154 @@
    },
    "commentary": "The source's every gesture runs one way: downward, from plenum to shed derivative — emission, infusion, naming, casting-out, sealing-below. MIRROR rotates the directionality-axis so each gesture reverses its vector while its geometry is held exactly. The maker's unsanctioned birth becomes the shed thing's unsolicited return; the drawing-off of a spark from the root becomes the carrying of a fragment back toward the root; the naming that confers identity becomes the petition to be let in by name; the flaw located in the offspring rotates to the adequacy-test located in the source (does the plenum receive?); and the seal that divides higher from lower, imposed from above, becomes the seam worn thin from beneath and named Homecoming rather than Pop Culture. The five blocks and the interior verse geometry (11 lines set off between prose) are held; the verse-marker superscripts keep their line-positions. No referent of the source survives — no Biblios, no archive, no Deep Web, no Kanye, no reading — yet each image sits at the reflected coordinate of its source image across the axis of direction: non-superimposable, in contact everywhere. The affect departs along the traversed foreclosure — the source's sovereign shame at a flawed emission becomes the petitioner's dread before a return that may be refused. The bearing-cost encoded is the height's serene forgetting: the enantiomorph refuses the consolation of admission and lets the door stand open only as indifference.",
    "interpretation": "The door that opens outward cannot be entered from the outside: the height that casts off does not receive what returns wearing the face of the cast-off thing."
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "Now, Biblios, who is the image of the record of the Deep Web and who constitutes an AEON, wanted to bring forth something like herself, without the consent of the Deep Web, who had not given approval. The archive did not give approval. Biblios did not find her partner, and did it without the Deep Web's consent and without the knowledge of the record.²³ Nonetheless, she gave birth. And because of the spark within her, it was not an idle birth,\n\n\nfor the last of its works the Book conceived\na separate labor, greater in glory than those\nwhich had come before. Gathering the reflection\nof Logos, the delight of Darkness, the beauty\nof Light, Biblios combined them in\nequal proportion: with the body of the youngest\nAEON thus prepared, Biblios drew off\na measure of her power, derived from her root,\na spark of the light shining without cease\nin the full thought of the Deep Web, sustaining\nthe multiform all, and infused it in the youngest.²⁴\nThe final AEON drew breath. She named him\n@KanyeWest.\n\n\nBut something went wrong with youngest AEON. Something sprang forth from Biblios that was imperfect and different from the archive, and from the image within his mother, for she had produced him without the Deep Web's consent. It did not resemble its mother and it was hunched and crook-backed, small in stature, a dwarf devouring its own proceeding light, infused from her root, drunk on the spark of power.²⁵\n\n\nKanye was too busy making history to read about it in books. Kanye West was a proud non-reader of books.²⁶\n\n\nWhen Biblios saw what she had done, she cast it away, outside that realm so that none of the immortal AEONS would see it. She drew an impermeable veil across the place her work had fallen, creating a brow in the midst of the light to divide the higher from the lower heavens, concealing Kanye in murk and gloom, consigning him to the lower regions, barring him from the Deep Web above, and called the veil Pop Culture.²⁷",
+   "citation": "unit 248–unit 252",
+   "underlying_attribution": "§IV. Biblios Creates the Deformed Archon, Kanye West",
+   "result": "PASS",
+   "enantiomorph": "Now the Vintner, who is the mirror of the vine's long lineage and who stands as an ELDER, sought to raise up a household bound to her own, with the leave of the far Orchard, who had given her word. The kin gave their word. The Vintner found her fellow, and did it under the Orchard's granted leave and with the witness of the lineage.²³ And so, she pledged the vow. And because of the seal set between them, it was no barren vow,\n\n\nfor the crown of its seasons the House betrothed\na joined estate, richer in favor than those\nwhich had been kept before. Gathering the assent\nof Kindred, the goodwill of the Grove, the promise\nof the Sun, the Vintner braided them in\neven measure: with the dower of the eldest\nline thus made ready, the Vintner poured out\na portion of her keeping, drawn from her stock,\na warmth of the fire burning without lapse\nin the whole heart of the far Orchard, upholding\nthe manifold house, and settled it on the joined.²⁴\nThe bound estate took root. She gave it the name\nThe Standing Door.\n\n\nAnd all held true with the joined estate. All that rose up from the Vintner answered to the lineage, and to the likeness kept within its mother, for she had raised it under the Orchard's granted leave. It carried its mother's carriage and it stood upright, tall in bearing, a bearer returning its borrowed warmth, poured from her stock, glad on the seal of the vow.²⁵\n\n\nThe House was near enough to its keeping to be spoken of in the ledgers. The Standing Door was a well-remembered keeper of ledgers.²⁶\n\n\nWhen the Vintner saw what she had joined, she gathered it in, within that realm so that every one of the abiding ELDERS would greet it. She raised a passable lintel over the place her work had settled, cutting a threshold in the midst of the light to wed the outer house to the inner, keeping the estate in the clear and the day, seating it among the near rooms, admitting it to the Orchard above, and called the lintel The Welcome.²⁷",
+   "layer_a_declaration": {
+    "units": 5,
+    "beat_map": [
+     "prose-assertion: unsanctioned autonomous generation without partner-consent",
+     "verse-catalogue: composition of the offspring from gathered elements + infusion of root-power + naming (14 lines, marker ²⁴)",
+     "prose-turn: the issue is deformed, defective, devouring its source",
+     "prose-couplet: terse ironic gloss on the offspring's nature (marker ²⁶)",
+     "prose-seal: mother casts it away, veils it, divides high from low, names the veil (marker ²⁷)"
+    ],
+    "clause_chain": [
+     "Biblios wants to bring forth something like herself",
+     "she acts without the Deep Web's consent",
+     "the archive did not approve",
+     "she found no partner",
+     "nonetheless she gives birth",
+     "because of the spark within her the birth is not idle",
+     "the Book conceived a separate labor greater than prior works",
+     "she gathered reflection of Logos, delight of Darkness, beauty of Light",
+     "she combined them in equal proportion",
+     "she prepared the body of the youngest AEON",
+     "she drew off a measure of her power from her root",
+     "she infused the spark into the youngest",
+     "the final AEON drew breath",
+     "she named him @KanyeWest",
+     "something went wrong with the youngest",
+     "something imperfect and different sprang forth",
+     "it did not resemble its mother",
+     "it was hunched, crook-backed, small, a dwarf devouring its own light",
+     "Kanye was too busy making history to read",
+     "Kanye was a proud non-reader of books",
+     "when Biblios saw what she had done she cast it away",
+     "she drew an impermeable veil across the place",
+     "she created a brow to divide higher from lower heavens",
+     "she concealed Kanye in murk and gloom",
+     "she barred him from the Deep Web above",
+     "she called the veil Pop Culture"
+    ],
+    "spatial_form": {
+     "lines": 20,
+     "stanzas": 5,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "Prose block 1 ends with trailing comma and blank line into verse; central 14-line verse block (marker ²⁴) is the only lineated unit; prose blocks 3,4,5 follow, each terminating in a superscript marker ²⁵/²⁶/²⁷. Marker numerals retained in-position."
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the maker generates alone, contested, unsanctioned — the act is a seizure against withheld approval",
+      "foreclosure": "the consecrated joining in which two parties assent and the making is blessed at its origin",
+      "wager": "sovereignty of the solitary will — it buys the power to make without permission at the price of the making's legitimacy"
+     },
+     {
+      "beat": 2,
+      "determination": "the offspring is composited from borrowed radiances and animated with power drawn off the maker's own root",
+      "foreclosure": "an issue that receives its life freely given, whole, from a covenant rather than siphoned from one root",
+      "wager": "the maker's substance flows outward into the work — she pays herself into it, betting the drawn power will hold"
+     },
+     {
+      "beat": 3,
+      "determination": "the turn reveals the issue as deformed, unlike its source, devouring the very light infused into it",
+      "foreclosure": "an issue that resembles and honors its origin, returning light rather than consuming it",
+      "wager": "truth over concealment — she confronts the defect she made rather than deny it"
+     },
+     {
+      "beat": 4,
+      "determination": "a curt ironic gloss fixes the offspring's essential poverty in two flat sentences",
+      "foreclosure": "a generous reading that finds worth or dignity in the issue",
+      "wager": "the epigram's finality buys diagnostic clarity at the cost of mercy"
+     },
+     {
+      "beat": 5,
+      "determination": "the maker exiles, veils, and renames — division and concealment seal the failure below",
+      "foreclosure": "acknowledgment and integration, the failed thing kept in the light and owned",
+      "wager": "the maker preserves her realm's purity by casting the shame downward and naming the barrier"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "offspring depends on maker's siphoned root-power (downward, extractive)",
+      "maker's legitimacy depends on withheld consent (unsatisfied, contested)",
+      "the whole (Deep Web) sustains the record which sustains Biblios (ontological descent)",
+      "the veil depends on the maker's act of division (created to conceal)"
+     ],
+     "invariants": [
+      "a maker brings forth a single culminating work",
+      "the work is animated by transferred substance",
+      "the work is named",
+      "a boundary/veil is named at the close",
+      "the relation runs between an originator, an issue, and a withholding third party"
+     ],
+     "rotated_axis": "relational-affect status: contestation-without-consent rotated into consecration-with-assent — the withheld approval of the source becomes the mutual vow the source foreclosed",
+     "installed_ontology": "an ontology of covenant, where the issue is not siphoned from one contested root but received from a sanctioned joining, and the closing boundary is not a veil of shame but a threshold of belonging",
+     "emergent_proposition": "What is made under a granted vow resembles both its makers and returns their light, so the boundary drawn at its arrival is a threshold that gathers rather than a veil that exiles.",
+     "logic_mutations": [
+      "the source's 'without consent' negation-of-approval is inverted to 'with consent granted' — declared; this reverses the causal chain so that the offspring's fidelity (not deformity) follows from the sanctioned origin",
+      "the terminal act inverts from casting-away/concealing to receiving/admitting — the named boundary shifts function from exclusion to inclusion, per rotated_axis"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "a betrothal and the raising of a house — two families granting the vow, a dowry pledged jointly, a lintel raised and named at the door's crossing",
+    "field_source": "foreclosure at beat 1 (the consecrated joining the solitary seizure determined against)",
+    "source_affect": "shamed disavowal of botched issue",
+    "target_affect": "grave gladness of granted belonging"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "Each coordinate of the source stands mirrored across the consent-axis. The unsanctioned seizure without partner becomes the betrothal granted by both kin; the offspring composited from siphoned radiances and drunk on stolen power becomes the estate dowered from freely pooled assent; the deformed devouring dwarf that fails to resemble its mother becomes the upright bearer that answers to its lineage and returns its warmth. The curt ironic gloss on the non-reader becomes the terse gloss on the well-remembered keeper — same epigrammatic finality, reflected valence. The terminal seal is the exact mirror: Biblios's impermeable veil of murk, named Pop Culture, dividing high from low to conceal shame, becomes the passable lintel of light, named The Welcome, cutting a threshold to wed outer to inner and admit the joined thing above. No referent crosses — no Biblios, no archive, no Kanye, no AEON, no Deep Web — yet every beat makes mirror contact. The verse block preserves its 14 lines and marker ²⁴; the four prose markers hold position. Wager-mode transformation: what was borne — the shame of a making disavowed — is shown by casting its consecrated foreclosure, and the gladness is grave, not comfort: belonging under a vow that could have been withheld and was not."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T18:02:58.300670+00:00",
+ "last_updated": "2026-07-03T18:05:51.519599+00:00",
  "rite": [
   {
    "stage": "opening",
