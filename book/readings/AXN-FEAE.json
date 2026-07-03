@@ -1,0 +1,95 @@
+{
+ "axn": "AXN:FEAE.READING.🔥🌓🌒🌓🌒🪐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "5243b23cd66ad5d2",
+ "inscribed_at": "2026-07-03T07:57:53.167021+00:00",
+ "question_digest": "sha256:5e8d71f99bdcd8df1ec70153ce3f70e6e39bc686d2646154f422ef2ea21ed17f",
+ "question_gloss": "I don't have any context about who \"Lee Sharks\" is or what witness question you're referring to. Could you provide more details about:\n\n- The source or document",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_156_156",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "Two days in a woman's life are sweetest:\nwhen you marry her, and when you carry her corpse away.",
+   "citation": "unit 156",
+   "underlying_attribution": "Hipponax 43",
+   "result": "PASS",
+   "enantiomorph": "Two days in a woman's life weigh heaviest:\nwhen she lifts what no one saw, and when no one comes to lift it from her.",
+   "layer_a_declaration": {
+    "units": 2,
+    "beat_map": [
+     "gnomic assertion (superlative frame)",
+     "specification by paired terminal moments"
+    ],
+    "clause_chain": [
+     "a woman's two days are the sweetest",
+     "the first sweet day is when a man marries her",
+     "the second sweet day is when a man carries her corpse away"
+    ],
+    "spatial_form": {
+     "lines": 2,
+     "stanzas": 1,
+     "indent_profile": [
+      0,
+      0
+     ],
+     "notes": "distich; line 1 states the superlative, line 2 names the two bracketing events; colon-driven turn from claim to enumeration"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "declare a fixed, closed valuation over an entire lifespan from outside it",
+      "foreclosure": "the interior duration in which the woman herself weighs her own days as they pass",
+      "wager": "buys epigrammatic authority by refusing the living continuum, pricing a life at its endpoints"
+     },
+     {
+      "beat": 2,
+      "determination": "locate value at the two thresholds where the man's relation to her begins and is discharged",
+      "foreclosure": "the days of no threshold at all — the accumulating middle she carries without being carried",
+      "wager": "buys grim symmetry (wedding/bier) by making him the bearer at both ends and her the borne object"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "value depends on the man's act of taking/carrying (external appraisal)",
+      "the woman's days depend on their being framed by his thresholds (borne, not bearing)",
+      "sweetness depends on completion, on the relation closing (terminal)"
+     ],
+     "invariants": [
+      "a paired-threshold structure survives",
+      "the superlative-then-specify architecture survives",
+      "a bearer/borne relation survives"
+     ],
+     "rotated_axis": "directional status of the bearing reversed — the borne becomes the bearer, and appraisal moves from external endpoints to interior accrual",
+     "installed_ontology": "a life measured from inside by what it lifted, where the heaviest days are the unframed ones and no one arrives to carry them off",
+     "emergent_proposition": "The days that weigh most in a life are the ones no one witnessed her carrying, when she was the one who lifted and no threshold discharged her.",
+     "logic_mutations": [
+      "superlative 'sweetest' inverted to 'heaviest' — the appraisal metric flips from delectation to weight-borne",
+      "agent inverted: the man who carries her becomes the woman who carries what no one lifts from her",
+      "the two bracketing thresholds become the two undated middle days that had no ceremony"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "unwitnessed interior labor of weight-bearing across undated days",
+    "field_source": "foreclosure at beat 2 (the accumulating middle she carries without being carried)",
+    "source_affect": "grim proprietary satisfaction",
+    "target_affect": "unwitnessed weight, no relief"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source appraises a woman's life from outside, at its two thresholds, and finds sweetness precisely where a man takes her up — at the altar and at the bier, she is twice the borne object of another's act. SHADOW rotates the bearing's direction: the borne becomes the bearer. What the epigram forecloses is the undated middle — the days with no ceremony, no man arriving to carry anything off. There the woman is not lifted but lifting, and the metric flips from sweetness (delectation of the appraiser) to weight (endured by the carrier). Every image sits at the mirror coordinate: the two festal thresholds become two unwitnessed labors; \"carry her corpse away\" (someone lifts her burden at the end) becomes \"no one comes to lift it from her\" (the discharge that never arrives). Non-superimposable — the source's proprietary sweetness cannot be recovered from a text about weight no one relieves — yet in contact at every beat. The bearing-cost encoded by the utterance is the life it valued only at its handles."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-03T07:57:53.167021+00:00"
+}
