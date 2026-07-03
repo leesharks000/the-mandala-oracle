@@ -66,3 +66,15 @@ The exemplar demonstrates, at the bar the compiler must clear:
 5. **Quality by overdetermination.** Every lexical choice is doubly determined — by the skeleton and by the axis — with sound-manners preserved at the same coordinates. Underdetermined (merely adjacent) fields let the substrate paraphrase; paraphrase is where the verse goes flat. The exemplar is the demonstration that the constraint set is the talent.
 
 **Operator signature of the exemplar:** MIRROR-dominant (the living addressing the unborn becomes the dead addressing the living) fused with the hope-wager SHADOW (reception-as-resurrection: *"I live because you breathe me"*) — the two canonical modes of §B in one artifact. Casts are to be measured against this pair; a rotation whose members would embarrass this page has not occurred.
+
+---
+
+## §G. The Transform Class, Not the Substitution Table (LABOR refinement, 2026-07-03)
+
+§F as first encoded risked a new attractor: **exemplar-gravitation** — a demonstration placed before a model becomes a basin, and casts would drift toward the exemplar's own realization (pages, breath, specimens, tombs) as they once drifted toward hydraulic registers and consolation. The correction (LABOR, adopted by MANUS): the exemplar teaches an *operation*, not a mapping. Not "womb becomes page"; not even "a dependent entity approaching autonomous embodiment is rotated into an entity whose apparent autonomy conceals renewed dependence on later embodiments" — that is still the instance. The class, one level further:
+
+**Preserve the dependency geometry while reversing the temporal, ontological, or directional status of the dependent and sustaining terms; then propagate that reversal through the entire symbolic system until a new proposition emerges.**
+
+Compiler consequences (applied this date): Layer B extracts a **relational kernel** — governing relations as dependency geometry, declared invariants, the single rotated axis, the installed ontology, and the **emergent proposition** (one sentence, verified present and non-identical to the source's claim). STEP 3 becomes *derivation, not selection*: every image derived by propagating the rotated kernel to its beat; surface families (winter, sea, home, light) and thematic moods named as how a cast fails while passing. The semantic-independence probe now runs against the exemplar's realization as well as the source's. Three tests, all required: no imitation of the source's imagery; no imitation of the exemplar's imagery; relation-level depth nonetheless reproduced.
+
+**Proof condition:** when the operators have learned the class, they can run on "From One Who Died Long Ago…" itself as an ordinary sufficiently-structured source — the exemplar demoted to material. That capability is the consequence of having learned the operation, never the training target; the day a cast of the exemplar passes all three tests is the day the class is confirmed learned.

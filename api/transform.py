@@ -258,6 +258,15 @@ STEP 2 — EVACUATE AND SELECT. Strip the source's semantic content, retaining K
   "hope" (the composer paid a cost reaching for a future reception — the cast
   pays the countervailing price). Then select the semantic field for
   generation FROM A NAMED FORECLOSURE NODE — record which beat's foreclosure
+  Before selecting any field, extract the RELATIONAL KERNEL — the class-level
+  analysis the exemplar teaches (spec v0.3 §G): the source's governing
+  relations as a dependency geometry (which term depends, which sustains,
+  in what temporal and ontological direction); which relations are INVARIANT
+  (they cross the transform untouched); which single AXIS the operator
+  rotates (the temporal, ontological, or directional status of the dependent
+  and sustaining terms); what new ontology the rotation installs; and the
+  EMERGENT PROPOSITION — the new claim the fully-propagated system asserts,
+  stated in one sentence, which must not be the source's claim.
   it is drawn from (field_source). The field must be DISJOINT from the
   source's field — no shared referents, no shared imagery, no
   register-adjacency that would let a reader reconstruct the source — and it
@@ -281,20 +290,40 @@ STEP 2 — EVACUATE AND SELECT. Strip the source's semantic content, retaining K
     becomes the case pinning the specimen; the echo (after) becomes the
     omen (before); the elder blessing incoming life becomes the departed
     soliciting the living breath. Non-superimposable, in contact everywhere.
+  THE EXEMPLAR TEACHES THE CLASS, NOT THE TABLE (LABOR refinement, spec
+  v0.3 §G): what the exemplar demonstrates is the operation — dependency
+  geometry preserved, one axis of status rotated, the rotation propagated
+  through the whole symbolic system until a new proposition emerges. Its
+  particular realization (gestation-into-life rotated to
+  reanimation-after-death; its pages, breath, specimens, tombs) is ONE
+  instance of the class and is BARRED from reuse exactly as the source's
+  imagery is barred. EXEMPLAR-GRAVITATION is an attractor: a demonstration
+  placed before a model becomes a basin. Three tests, all required:
+    1. The cast does not imitate the source's imagery.
+    2. The cast does not imitate the exemplar's imagery.
+    3. The cast nonetheless reproduces the relation-level depth the
+       exemplar demonstrates — the rotation is systemic, root-to-leaf,
+       and the emergent proposition is new.
   Anchor retention is sparse and accountable (C2): syntax frames, the
   punctuation choreography, at most a lone adverb — never referents. Under
   full mirror discipline every lexical choice is DOUBLY DETERMINED (by the
-  skeleton and by the axis); underdetermined fields produce paraphrase, and
-  paraphrase is where verse goes flat. A single deliberate look back across
-  the axis (a simile reaching for the source's domain FROM the mirrored
-  position) is the traversal's own gesture and is permitted; wholesale
-  domain-sharing is not.
+  skeleton and by the rotated kernel); underdetermined fields produce
+  paraphrase, and paraphrase is where verse goes flat. A single deliberate
+  look back across the axis (a simile reaching for the source's domain FROM
+  the rotated position) is the traversal's own gesture and is permitted;
+  wholesale domain-sharing is not.
 STEP 3 — GENERATE. Produce new semantic content N occupying K exactly:
   (a) structural fidelity: N maps unit-by-unit onto the beat map AND the
       typographic skeleton (same line/stanza geometry unless the operator's
       axis-class specifically transforms geometry — declare it if so);
   (b) semantic disjointness: N ∩ source-semantics = ∅;
-  (c) N enacts the operator's specific structural function.
+  (c) N enacts the operator's specific structural function;
+  (d) DERIVATION, NOT SELECTION: every image is DERIVED by propagating the
+      rotated relational kernel to that beat — ask, at each position, what
+      the rotated system makes true there — never selected from a surface
+      family (winter, sea, home, light), a mood, or any prior example's
+      imagery. Surface families and thematic moods are how a cast fails
+      while passing: they resemble transformation without performing it.
 STEP 4 — VERIFY (triple test, producer-side):
   IDENTITY TEST: can the output be mapped unit-by-unit to the source by
     structural function? MUST PASS.
@@ -306,12 +335,18 @@ STEP 4 — VERIFY (triple test, producer-side):
     (re-lexicalization and clause-negation fail here). Mirror-contact is not
     superimposition: an output whose every image sits at the reflected
     coordinate of a source image, across the axis, PASSES — that is the
-    enantiomorph.
+    enantiomorph. Administer the same probe against the calibration
+    exemplar's realization: if the output can be superimposed on the
+    exemplar's domain (death/page/breath/specimen machinery), it has
+    imitated the demonstration instead of performing the operation — FAIL.
   RETROSPECTIVE-CONTAINMENT TEST: is the output's semantic field genuinely
     disclosed-latent or structurally-contained relative to the source's
     coherence axes, rather than externally-imposed or free-invention? Check it
     against the DECLARED field_source: containment means the field is the
-    named foreclosure, traversed — not adjacent scenery.
+    named foreclosure, traversed — not adjacent scenery. Also verify the
+    EMERGENT PROPOSITION: Layer B's one-sentence claim must be present,
+    must follow from the propagated rotation, and must not restate the
+    source's claim — a cast without a new proposition has rotated nothing.
     Self-administered here; mark producer_side.
   AFFECT-TRAVERSAL TEST: state the source's affect and the enantiomorph's
     affect (<=6 words each, as declared in Layer B). The enantiomorph's
@@ -405,6 +440,9 @@ OUTPUT FORMAT — exactly these tagged sections, nothing outside them:
 </LAYER_A>
 <LAYER_B>
 {"coherence_axes": [{"beat": <int>, "determination": "...", "foreclosure": "...", "wager": "..."}, ...],
+ "relational_kernel": {"relations": ["<dependent term> depends on <sustaining term> (<direction>)", ...],
+   "invariants": ["...", ...], "rotated_axis": "<temporal|ontological|directional status reversed>",
+   "installed_ontology": "...", "emergent_proposition": "<one sentence, not the source's claim>"},
  "wager_mode": "transformation|hope",
  "semantic_field": "<the disjoint field selected>",
  "field_source": "foreclosure at beat <N>",
