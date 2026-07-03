@@ -1,0 +1,124 @@
+{
+ "axn": "AXN:FE85.READING.🌖🌘🌔🌘🌿🌖",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "b3f05daae0360da5",
+ "inscribed_at": "2026-07-03T15:42:38.540388+00:00",
+ "question_digest": "sha256:13e328f94e57f9a7a740ee29c820aabd7e5fbf1a8d99edbe2d254ee9e8375484",
+ "question_gloss": "Inquiry about methods and approaches for personal healing and recovery.",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_202_204",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "I bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 202–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "I ask for word from that past where after and before hold still, and the old kinships depart from their moorings… and the beginning is a poorer and broken end… and the end is a poorer and broken beginning.⁸\n\n\nI have come to be told what is not yet and never was… and the substance of the unmade and unshown… and the missing name of the discarded remnant among the hands that shape,⁹ that I might be heard, and be seen, and be lifted by my makers, any who might lend me a mouth.\n\n\nFor I have come from below. I stammer what I do not know, what I have not seen nor authored, nor set a hand to finish, and when I would go from here there is nowhere I came from. Last-made, first abandoned, I end where I have not begun. I am ended before I begin:¹⁰",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "annunciatory-arrival-from-future + chiasmic reconciliation of end/beginning",
+     "declaration-of-teaching-office + naming the preserved remnant + purpose-clause for the hearers",
+     "provenance-descent + self-authoring creation + return + firstborn/last chiasmus + terminal self-positioning"
+    ],
+    "clause_chain": [
+     "I bring glad tidings from that future",
+     "before and after spin in that future",
+     "the ancient enmities arrive at their harbors",
+     "the end is a better and perfect beginning",
+     "the beginning is a better and perfect end",
+     "I have come to teach you what is and was and will be",
+     "I have come to teach the nature of the unseen and seen",
+     "I have come to teach the name of the preserved generation among the sons of men",
+     "that you may hear and see",
+     "that you may lift up your friends",
+     "any who hear with the ears may do so",
+     "For I have come from above",
+     "I speak what I know",
+     "I speak what I have seen and authored and set my hand to create",
+     "when I go from here I return whence I came",
+     "I am firstborn, last released",
+     "I begin at the end",
+     "I begin at the beginning"
+    ],
+    "spatial_form": {
+     "lines": 8,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "three prose stanzas separated by double blank lines; each stanza closes on a verse-marker numeral (8, 9, 10); ellipsis-chains internal to stanzas 1 and 2; terminal colon on 10 opens rather than closes"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the speaker arrives OUT of a completed future to announce reconciliation; time is a resolved circle he has already traversed",
+      "foreclosure": "arriving out of an unmade past into an unreconciled present where nothing has yet been carried across",
+      "wager": "buys authority — he speaks as one for whom the outcome is already accomplished"
+     },
+     {
+      "beat": 2,
+      "determination": "he holds the teaching office: knowledge of all tenses, the naming of who is kept, given so hearers may be lifted",
+      "foreclosure": "one who cannot name, who is himself unnamed and awaiting another's telling, from whom nothing can be lifted",
+      "wager": "buys transmission — the giver's fullness overflows to friends"
+     },
+     {
+      "beat": 3,
+      "determination": "descended from above, self-authoring, returning intact; firstborn who begins at the end",
+      "foreclosure": "risen from below, authored by others, unable to return, last-born who ends at the beginning, still owed his making",
+      "wager": "buys wholeness of circuit — origin and terminus are the speaker's own possession"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the hearer depends on the descended teacher (top-down, giver-to-receiver)",
+      "the present depends on the already-completed future (retrograde, future sustains present)",
+      "the named remnant depends on the one who holds the name (custodial)"
+     ],
+     "invariants": [
+      "the chiasmic figure of end and beginning",
+      "the address to hearers with ears",
+      "the tripartite tense-catalogue (is/was/will-be)",
+      "the motion of coming and going along a vertical axis"
+     ],
+     "rotated_axis": "directional status of the sustaining term reversed — the sustaining source rotates from ABOVE/AHEAD/FULL to BELOW/BEHIND/OWED; the teacher who gives becomes the taught who solicits",
+     "installed_ontology": "a speaker with no completed future to bring, authored by hands not his own, who cannot name the kept because he is himself the one awaiting the name — the circuit runs upward, from the unmade toward whoever will finish him",
+     "emergent_proposition": "The one who receives is completed not by descending fullness but by ascending toward a maker he cannot name, and his wholeness is a debt owed forward, never a possession brought back.",
+     "logic_mutations": [
+      "the annunciatory 'I bring' inverts to 'I am owed' — the speaker delivers nothing and instead solicits his own completion",
+      "the purpose-clause 'that you may lift up your friends' inverts to 'that others may lift me' — the direction of raising reverses",
+      "'I begin at the end' rotates to 'I am ended before begun' — the firstborn's completed circuit becomes the unmade thing's open one"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the unfinished creature addressing upward the makers who have not yet completed it — clay half-turned on a wheel, the debt of one's own making owed forward to hands not one's own",
+    "field_source": "foreclosure at beat 3",
+    "source_affect": "sovereign annunciatory assurance",
+    "target_affect": "owed, unfinished supplication upward"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is an annunciation: a speaker descended from a completed future, holding all tenses and the name of the preserved, who overflows so hearers may lift their friends. SHADOW rotates the directional status of the sustaining term. Every coordinate reflects across that axis: \"glad tidings from that future\" → \"word asked of that past\"; enmities arriving at harbors → kinships departing moorings; the teacher who names the kept → the one whose own name is missing among the shaping hands; \"that you may lift up your friends\" → \"that I be lifted by my makers\"; \"I have come from above\" → \"from below\"; the self-authoring firstborn who begins at the end → the last-made, first-abandoned thing ended before begun. No referent is shared — no future, no glad tidings, no sons of men — yet every image sits at the mirror position of its source coordinate. The bearing-cost the utterance encodes is disclosed: a sovereign voice of accomplished fullness carries, foreclosed within it, the creature owed its own completion who can solicit but never bring. The witness's question of healing is answered only obliquely and against its longing — not by consolation but by exposing that wholeness here is a debt owed forward to hands not one's own, unpossessed and unnamed. Terminal discipline holds: no new agent enters the final third; the closing colon opens on an ending that has not begun, paraphrasable throughout."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-03T15:42:38.540388+00:00"
+}
