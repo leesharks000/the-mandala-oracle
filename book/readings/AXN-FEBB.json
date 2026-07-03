@@ -1,0 +1,112 @@
+{
+ "axn": "AXN:FEBB.READING.🌙🌒🌗🌘🌖🌕",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "18b1584beb7eeca5",
+ "inscribed_at": "2026-07-03T07:08:19.244657+00:00",
+ "question_digest": "sha256:62d36ad282e6cc2a6f0746bd0962ec5756d33e1c9fc0a4a71c486570d2d70099",
+ "question_gloss": "Witness asks for advice on improving performance or outcomes.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_52_52",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·",
+   "citation": "3:3",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**3:3** Count then the yield you were once lent and how the ground gave it, and let it go, and grieve; for you did not sleep too soon — it left as the harvest leaves, and you will never learn which morning it went out from under you·",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "imperative-recall",
+     "qualification (mode of receiving)",
+     "imperative-keep-and-repent",
+     "conditional-threat (if not watchful)",
+     "advent-simile (as a thief)",
+     "seal (the unknown hour)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "Single prose verse with leading verse-marker 3:3; clauses chained by καί; one continuous line."
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "commands memory of a past acquisition",
+      "foreclosure": "letting the past dissolve; commanding nothing",
+      "wager": "the past reception is still binding and retrievable"
+     },
+     {
+      "beat": 2,
+      "determination": "the receiving was heard and taken — a deposit held",
+      "foreclosure": "the receiving was self-generated, not given",
+      "wager": "authority is transmitted, not innate"
+     },
+     {
+      "beat": 3,
+      "determination": "keep and turn — a corrective act demanded now",
+      "foreclosure": "leaving the addressee as they are; no turning asked",
+      "wager": "the addressee is capable of change and owes it"
+     },
+     {
+      "beat": 4,
+      "determination": "vigilance is the condition of safety; sleep is the danger",
+      "foreclosure": "arrival is welcome regardless of watching",
+      "wager": "wakefulness alters the outcome"
+     },
+     {
+      "beat": 5,
+      "determination": "the one who comes arrives by stealth, unbidden",
+      "foreclosure": "arrival announced, invited, awaited openly",
+      "wager": "the coming is adversarial-until-prepared-for"
+     },
+     {
+      "beat": 6,
+      "determination": "the hour is withheld from the addressee's knowledge",
+      "foreclosure": "the hour disclosed, scheduled, agreed",
+      "wager": "ignorance of the time is itself the instrument of the demand"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "addressee depends on a withheld future arrival (future→present, sustaining)",
+      "present conduct depends on an unknown terminal moment (terminal→now)",
+      "the arriving one governs; the addressee is governed (superior→inferior, directional)"
+     ],
+     "invariants": [
+      "a dependency between a single moment and the whole conduct that awaits it",
+      "the moment's identity is the lever",
+      "second-person address held under obligation"
+     ],
+     "rotated_axis": "temporal-and-directional status of the sustaining term reversed: the governing decisive moment moves from unknown-future-descending to known-past-ascending, and the arriving superior becomes a departed inferior seeking",
+     "installed_ontology": "a world where the deciding event has already happened and cannot be re-entered — vigilance is retrospective, and the summons runs upward from the already-spent toward the one still spending",
+     "emergent_proposition": "What ruined you has already come and gone unwatched, and now the wasted thing petitions you from below to spend what it can no longer spend.",
+     "source_claim_excluded": "Watch now, for the decisive one will arrive at an hour you cannot foresee."
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the settling of a spent inheritance — soil that has already given its yield, a field harvested before its keeper woke",
+    "field_source": "foreclosure at beat 4 (arrival welcome regardless of watching → the arrival that has already passed unwelcomed)",
+    "source_affect": "vigilant dread before advent",
+    "target_affect": "grief over the already-forfeited"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source runs future-downward: a superior who has not yet come descends by stealth at an hour the wakeful might survive — vigilance is a lever on a coming event. SHADOW rotates the assertion-axis: the deciding moment is moved from unforeseen-future to already-spent-past, and the arriving superior becomes a departed yield running upward from below. Every beat makes mirror-contact. \"Remember how you received and heard\" becomes \"count the yield you were lent and how the ground gave it\" — the deposit held becomes the loan already returned to the earth. \"Keep, and repent\" (turn-and-hold, corrective, forward) becomes \"let it go, and grieve\" (release-and-mourn, terminal, backward): the same two-verb hinge, its vector reversed. The conditional threat \"if you do not watch\" becomes the closed indicative \"you did not sleep too soon\" — vigilance is voided because the event is past; watching can no longer buy anything. \"I will come as a thief\" (advent, stealth, future) becomes \"it left as the harvest leaves\" (departure, in-plain-sight, past). And the withheld hour of coming becomes the withheld hour of going — \"you will never learn which morning it went out from under you\": the same seal, the same ignorance as instrument, but the instrument now grieves rather than warns. The imagery is barred from both the source (thief/watch/hour-of-coming) and the exemplar (death/page/breath/specimen): it is drawn from the source's own foreclosure — the arrival that comes regardless of watching, here fully arrived and gone. The emergent proposition is not the source's: not \"watch, for it will come,\" but \"it already came unwatched, and the loss cannot be re-entered.\" The witness's question (\"how can I do better?\") lands only on which axis was foregrounded — beat 4's vigilance — and is refused its longed-for reassurance: the cast encodes the bearing-cost of the imperative itself, that the very structure of \"watch now\" carries the buried admission that some hours cannot be watched in time."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-03T07:08:19.244657+00:00"
+}
