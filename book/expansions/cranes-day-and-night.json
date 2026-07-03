@@ -648,7 +648,71 @@
     }
    },
    "commentary": "The source is a hymn-of-recall: a plea that draws its force from a prior answering, a divine descent collapsing distance to instantness, a questioning by the summoned power, and a reversal-catalogue left grammatically open. The SHADOW operator, on the assertion-axis, receives the bearing-cost the composer underwent — the wager that calling again presumes on a love already spent, that the reversal is promised but the sentence never closes. The enantiomorph relocates this into tidal salvage: a harborman flaring signal-fires to the Undertow that once returned a hull, the sea's inward traversal across drowned flats, the power's inquiry (\"Whose keel...who has grounded you\"), and the same unclosed catalogue of turnings (drifts→steers home, spurns→takes the hawser) breaking off on a semicolon. Five quatrains, no indent, the identical enjambment pattern and the final open semicolon reproduce the spatial skeleton. The cost is legible: the return is asserted (she will pursue, she will give / she will steer, she will take) yet the syntax refuses to seal it — the question \"will there be a return on what was broken\" is answered only as a promise still mid-inventory, never landed."
+  },
+  {
+   "transform_id": "TX-7dd71a4c",
+   "cast_at": "2026-07-03T07:57:54.625533+00:00",
+   "reading_axn": "AXN:FEAE.READING.🔥🌓🌒🌓🌒🪐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_156_156",
+    "citation": "unit 156",
+    "start_unit": 156,
+    "end_unit": 156,
+    "unit_labels": [
+     "unit 156"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 2,
+    "stanzas": 1,
+    "indent_profile": [
+     0,
+     0
+    ],
+    "notes": "distich; line 1 states the superlative, line 2 names the two bracketing events; colon-driven turn from claim to enumeration"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:5e8d71f99bdcd8df1ec70153ce3f70e6e39bc686d2646154f422ef2ea21ed17f",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "Two days in a woman's life are sweetest:\nwhen you marry her, and when you carry her corpse away.",
+   "underlying_attribution": "Hipponax 43",
+   "enantiomorph": "Two days in a woman's life weigh heaviest:\nwhen she lifts what no one saw, and when no one comes to lift it from her.",
+   "layer_a": {
+    "units": 2,
+    "beat_map": [
+     "gnomic assertion (superlative frame)",
+     "specification by paired terminal moments"
+    ],
+    "clause_chain": [
+     "a woman's two days are the sweetest",
+     "the first sweet day is when a man marries her",
+     "the second sweet day is when a man carries her corpse away"
+    ],
+    "spatial_form": {
+     "lines": 2,
+     "stanzas": 1,
+     "indent_profile": [
+      0,
+      0
+     ],
+     "notes": "distich; line 1 states the superlative, line 2 names the two bracketing events; colon-driven turn from claim to enumeration"
+    }
+   },
+   "commentary": "The source appraises a woman's life from outside, at its two thresholds, and finds sweetness precisely where a man takes her up — at the altar and at the bier, she is twice the borne object of another's act. SHADOW rotates the bearing's direction: the borne becomes the bearer. What the epigram forecloses is the undated middle — the days with no ceremony, no man arriving to carry anything off. There the woman is not lifted but lifting, and the metric flips from sweetness (delectation of the appraiser) to weight (endured by the carrier). Every image sits at the mirror coordinate: the two festal thresholds become two unwitnessed labors; \"carry her corpse away\" (someone lifts her burden at the end) becomes \"no one comes to lift it from her\" (the discharge that never arrives). Non-superimposable — the source's proprietary sweetness cannot be recovered from a text about weight no one relieves — yet in contact at every beat. The bearing-cost encoded by the utterance is the life it valued only at its handles."
   }
  ],
- "last_updated": "2026-07-02T22:39:51.541158+00:00"
+ "last_updated": "2026-07-03T07:57:54.625533+00:00"
 }
