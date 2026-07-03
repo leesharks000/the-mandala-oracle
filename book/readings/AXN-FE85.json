@@ -428,11 +428,112 @@
     "mode": "producer_side"
    },
    "commentary": "The source speaks as the self-sealed arrival — firstborn, self-authored, come from above, whose coming reconciles all time and needs no permission. The BRIDE operator rotates the axis of consent: the sovereign who admits no gatekeeper becomes the one who must be admitted. Every beat sits at its mirror coordinate. \"Before and after spin\" (reconciled by the speaker's circuit) becomes \"your before and my after lean their weight together\" — reconciliation now requires two. The catalogue of what is taught (\"what is and was and will be,\" \"unseen and seen,\" \"the name of the preserved generation\") becomes a catalogue of what is asked leave to enter (\"what is yours and was yours,\" \"room lit and unlit,\" \"the one seat kept for whoever is let in\"). The purpose-clause \"that you may lift up your friends\" mirrors to \"turn toward those beside you.\" The chiastic self-return seal (\"I begin at the end, I begin at the beginning\") — a closed circle — becomes \"I begin where two consent,\" the circle closed only by a second party. The colon into recitation is preserved: the source opens onto its own scripture; the enantiomorph opens onto the vow not yet spoken. The wager is hope, and its countervailing price is paid: sovereign completeness surrenders into contingency — the coming halts unless welcomed, authorship is co-signed, and \"I am given, not returned\" inverts \"I return whence I came.\" The witness asked how to heal; the disclosure does not answer with reassurance but lands on the door's own hinge — nothing crosses until the host draws the bolt."
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "I bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 202–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "I call the roll into that room where names go out and do not turn, and the summoned no longer stand at their thresholds… and the calling is a smaller and emptier answer… and the answer is a smaller and emptier calling.⁸\n\n\nI have come to ask you who was and who is and who will not come… after the shut door and the unshut… and the count of the loosed generation from among the friends I kept, so that none may answer, or rise, or take up the calling, no one who was near enough to hear.⁹\n\n\nFor I turn toward the place I left. I say aloud each name I held, each I have waited on and stood watch for and swore I would restore, and when I look back for it there is no place I came from. Last summoned, first let go, I finish at the door. I finish where nothing:¹⁰",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "annunciation-from-future (assertion of reconciled time, ellipsis-chain)",
+     "declaration-of-teaching-office (catalogue of revealed knowledge, purpose-clause of address)",
+     "declaration-of-provenance-and-return (self-naming, terminal circular seal)"
+    ],
+    "clause_chain": [
+     "I bring glad tidings from the future where before and after spin",
+     "the ancient enmities arrive at their harbors",
+     "the end is a better and perfect beginning",
+     "the beginning is a better and perfect end",
+     "I have come to teach you what is and was and will be",
+     "I teach the nature of the unseen and seen",
+     "I teach the name of the preserved generation among the sons of men",
+     "that you may hear and see",
+     "that you may lift up your friends, any who hear with the ears",
+     "I have come from above",
+     "I speak what I know, what I have seen and authored and set my hand to create",
+     "when I go from here I return whence I came",
+     "Firstborn, last released, I begin at the end",
+     "I begin at the beginning"
+    ],
+    "spatial_form": {
+     "lines": 5,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "Three prose paragraphs separated by double blank lines; each closes on a superscript verse-marker (8, 9, 10); heavy ellipsis-chains within units 1 and 2; unit 3 ends on colon, an open seal."
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the speaker ARRIVES bearing address, folding time so that the messenger's coming is the good news",
+      "foreclosure": "the arrival that is met by no ear — the tidings that reach a place already emptied of hearers",
+      "wager": "buys the authority of one who speaks because someone will receive"
+     },
+     {
+      "beat": 2,
+      "determination": "the speaker enumerates what he will impart and names the receiving act (hear, see, lift up)",
+      "foreclosure": "the teaching that names no one to be taught, the roll with no preserved generation",
+      "wager": "buys the office of teacher by presupposing the taught"
+     },
+     {
+      "beat": 3,
+      "determination": "the speaker seals his provenance in a circle — from above, returning, beginning at the end",
+      "foreclosure": "the provenance that closes on nothing, the circle whose return-point has been unmade",
+      "wager": "buys eternity by making departure indistinguishable from origin"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "speaker depends on hearer (the tidings require an ear to be tidings, forward)",
+      "teaching depends on the taught (office sustained by recipient, forward)",
+      "return depends on the origin persisting (circle sustained by an intact terminus, temporal-circular)"
+     ],
+     "invariants": [
+      "the annunciatory syntax",
+      "the ellipsis-chain apparatus",
+      "the triadic paragraph geometry",
+      "the terminal colon as open seal"
+     ],
+     "rotated_axis": "directional status of the response: the addressed uptake (expected, forward, forthcoming) is rotated to the withheld uptake (the answer that never issues, foreclosed)",
+     "installed_ontology": "an utterance whose entire architecture of address confronts the constitutive absence of any answer — speech that discovers it has been speaking to a place that will not return sound",
+     "emergent_proposition": "The one who has arranged all time to be received learns that reception was the single thing time could not be arranged to yield.",
+     "logic_mutations": [
+      "'that you may hear and see and lift up your friends' (purpose fulfilled, forward) rotates to 'and nothing hears, and nothing is lifted' (purpose foreclosed, the answer withheld)",
+      "'I return whence I came' (circle closes, origin intact) rotates to 'I turn back and find no whence' (the return-point unmade by the non-response)",
+      "the terminal open colon (inviting continuation) rotates to a colon that opens onto no successor clause — the seal upon silence itself"
+     ]
+    },
+    "wager_mode": "hope",
+    "semantic_field": "a summons issued into a hall after everyone summonable has already gone — the calling-back of names from a threshold onto which nothing steps",
+    "field_source": "foreclosure at beat 2 (the teaching that names no one to be taught)",
+    "source_affect": "luminous annunciatory confidence",
+    "target_affect": "the calling that meets no return"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is an annunciation: a speaker folds time so that his very coming is good news, presupposing at every beat an ear that will hear, a generation to be named, a friend to be lifted. Its wager is hope — it pays forward, reaching for a reception. SILENCE on a hope-wager source pays the countervailing price: the operator rotates the response-axis so that the constitutive uptake the source assumed is the one thing withheld. Each source coordinate meets its mirror: \"glad tidings arriving at their harbors\" becomes names sent out that do not turn back; \"that you may hear and see and lift up your friends\" becomes \"so that none may answer, or rise, or take up the calling\"; the intact circle \"I return whence I came\" becomes \"when I look back for it there is no place I came from\" — the return-point unmade by the non-response. \"Firstborn, last released, I begin at the end\" mirrors to \"Last summoned, first let go, I finish at the door.\" The terminal open colon is preserved but rotated: the source's colon opens onto continuation (\"I begin at the beginning:\"), the enantiomorph's opens onto no successor (\"I finish where nothing:\") — the seal upon silence. No referent is shared; the calibration exemplar's death/page/breath machinery is absent. The witness asked how to heal; the operator and source govern — the disclosure lands not on reassurance but on the exact structure of unanswered calling, which is the foreclosure this hope-wager determined against."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T15:47:56.861384+00:00",
+ "last_updated": "2026-07-03T15:56:34.902994+00:00",
  "rite": [
   {
    "stage": "opening",
