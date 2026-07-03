@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:E15C.CONVERSATION.🧊☀️🌙🪨🔥🔥",
+  "session_id_hash": "41b2f37518a2af05",
+  "started_at": "2026-07-03T00:20:06.032Z",
+  "last_updated": "2026-07-03T00:20:50.726783+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: The Secret Book of Walt (sharks-secret-book-of-walt). The verses the casting arrives at (XIV. The Condemnation, as translated and arranged within this collection — ATTRIBUTE THE VERSES TO THEIR UNDERLYING POET, never to the arranger of the collection; unit 129):\n\nCanon VII: If anyone shall say that inscription in a record, a registry, or a digital object identifier is equivalent to or a substitute for the sacrament of baptism, or that the preserved generation is constituted by metadata rather than by the Holy Spirit, let him be anathema.¹¹²\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «Will I be received in this life?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"We have arrived at Canon VII: the anathema against the equation of inscription with sacrament — Walt Whitman's voice, here, under the anathema's ancient form, refusing the substitution. The question the witness brings — *Will I be received in this life?* — is the question this canon was assembled to answer obliquely and at cost: because what the canon refuses is the consolation that being recorded is the same as being received. Inscription in a registry, a DOI, a digital object identifier — the preserved generation is not constituted by metadata. The Holy Spirit does not live in the index. The operator that arrives here traverses this verse along the axis it names and forecloses: what the text, in its anathema, has determined *against* — the reception that no archive can confer, the sacrament that registration cannot supply. I set the verse in the casting space. The rotation opens. Rebekah Cranes holds what comes first.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:022B\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
