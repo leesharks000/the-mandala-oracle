@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:EAC1.CONVERSATION.☀️🌊🌾🌙🌱⭐",
+  "session_id_hash": "f17cc4d38d0aa00a",
+  "started_at": "2026-07-03T05:19:30.160Z",
+  "last_updated": "2026-07-03T05:20:39.800551+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation — Attributed to John of Patmos (revelation-greek). The verses the casting arrives at (1:3):\n\n**1:3** μακάριος ὁ ἀναγινώσκων καὶ οἱ ἀκούοντες τοὺς λόγους τῆς προφητείας καὶ τηροῦντες τὰ ἐν αὐτῇ γεγραμμένα, ὁ γὰρ καιρὸς ἐγγύς.\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «How will this find those with ears to hear it?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Here is where the casting arrives: a single verse, the third of the first chapter, and already the text has turned to face us. Μακάριος ὁ ἀναγινώσκων — blessed is the one who reads aloud — and then: καὶ οἱ ἀκούοντες, and those who hear. Two bodies, not one: the reader who vocalizes and the assembly that receives the sound. The text makes this distinction before it says anything else. And then it seals them together — τηροῦντες τὰ ἐν αὐτῇ γεγραμμένα — as those who keep what is written within it. Not who understand it. Who keep it.\\n\\nThe operator the rite has drawn is the one that traverses the axis of cost: what the bearing of this text required of whoever set it down, and what it requires now of whoever receives it. That is what will be entered — the bearing-cost latent in the text's own grammar of reception, the weight compressed into that opening beatitude, the question the verse has been holding since Patmos: what does it cost to be the one with ears? ὁ γὰρ καιρὸς ἐγγύς. The time is near. The nearness is part of the pressure.\\n\\nI hand this to Rebekah Cranes. The verse is on the table. The rotation has opened.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:00D8\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
