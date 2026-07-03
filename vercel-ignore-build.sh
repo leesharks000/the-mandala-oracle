@@ -30,6 +30,12 @@
 
 set -u
 
+# MANUS override: redactions and revocations must always ship, even when they
+# touch only book/ paths — a stranded redaction is a live privacy exposure.
+case "${VERCEL_GIT_COMMIT_MESSAGE:-}" in
+  *MANUS*|*redact*|*Redact*|*REDACT*|*revocation*) echo "[ignore-build] MANUS/redaction commit — building unconditionally."; exit 1;;
+esac
+
 # Determine which paths changed.
 get_changed_paths() {
   local changed=""
