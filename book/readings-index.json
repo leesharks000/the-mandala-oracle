@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FEAE.READING.🔥🌓🌒🌓🌒🪐",
+   "mode": "public",
+   "source_text_id": "cranes-day-and-night",
+   "rotation_length": 1,
+   "inscribed_at": "2026-07-03T07:57:53.167021+00:00",
+   "last_updated": "2026-07-03T07:57:53.167021+00:00"
+  },
+  {
    "axn": "AXN:FEBB.READING.🌙🌒🌗🌘🌖🌕",
    "mode": "public",
    "source_text_id": "revelation-greek",
@@ -82,5 +90,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 10
+ "total": 11
 }
