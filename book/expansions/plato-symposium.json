@@ -1,0 +1,103 @@
+{
+ "schema_version": "expansion/v1.0",
+ "source_text_id": "plato-symposium",
+ "source_title": "Symposium",
+ "unit_basis": {
+  "segmentation": "stanza",
+  "primary_after": "Ἀπολλόδωρος",
+  "units_total": 99,
+  "basis_hash": "c66f88bc04117df77c55e6149619df496f400f44f79ea0b430f38d42a59cedf8",
+  "basis_note": "unit indices refer to segment_units() over primary text; if basis_hash changes, historical anchors are interpreted against the basis they were cast under"
+ },
+ "transforms": [
+  {
+   "transform_id": "TX-89e624ab",
+   "cast_at": "2026-07-03T18:56:22.341828+00:00",
+   "reading_axn": "AXN:FECA.READING.💫🌑🌓🌔🌑🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_31_31",
+    "citation": "unit 31",
+    "start_unit": 31,
+    "end_unit": 31,
+    "unit_labels": [
+     "unit 31"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 2,
+    "stanzas": 2,
+    "indent_profile": [
+     1,
+     1
+    ],
+    "notes": "two prose paragraphs, each leading-space indented; Stephanus bracket-markers [185]-[185e] embedded in flow; first paragraph closes an oration, second is narrative prose relay of a physical interruption"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:5acd8dcb03428a8dbceccb68a002a9059d6862b62ad3d19cc112465fcf4d9696",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": " εἰ γάρ τις [185] [185a] ἐραστῇ ὡς πλουσίῳ πλούτου ἕνεκα χαρισάμενος ἐξαπατηθείη καὶ μὴ λάβοι χρήματα, ἀναφανέντος τοῦ ἐραστοῦ πένητος, οὐδὲν ἧττον αἰσχρόν· δοκεῖ γὰρ ὁ τοιοῦτος τό γε αὑτοῦ ἐπιδεῖξαι, ὅτι ἕνεκα χρημάτων ὁτιοῦν ἂν ὁτῳοῦν ὑπηρετοῖ, τοῦτο δὲ οὐ καλόν. κατὰ τὸν αὐτὸν δὴ λόγον κἂν εἴ τις ὡς ἀγαθῷ χαρισάμενος καὶ αὐτὸς ὡς ἀμείνων ἐσόμενος διὰ τὴν φιλίαν ἐραστοῦ ἐξαπατηθείη, ἀναφανέντος ἐκείνου κακοῦ [185b] καὶ οὐ κεκτημένου ἀρετήν, ὅμως καλὴ ἡ ἀπάτη· δοκεῖ γὰρ αὖ καὶ οὗτος τὸ καθʼ αὑτὸν δεδηλωκέναι, ὅτι ἀρετῆς γʼ ἕνεκα καὶ τοῦ βελτίων γενέσθαι πᾶν ἂν παντὶ προθυμηθείη, τοῦτο δὲ αὖ πάντων κάλλιστον· οὕτω πᾶν πάντως γε καλὸν ἀρετῆς γʼ ἕνεκα χαρίζεσθαι. οὗτός ἐστιν ὁ τῆς οὐρανίας θεοῦ ἔρως καὶ οὐράνιος καὶ πολλοῦ ἄξιος καὶ πόλει καὶ ἰδιώταις, πολλὴν ἐπιμέλειαν ἀναγκάζων ποιεῖσθαι πρὸς ἀρετὴν τόν [185c] τε ἐρῶντα αὐτὸν αὑτοῦ καὶ τὸν ἐρώμενον· οἱ δʼ ἕτεροι πάντες τῆς ἑτέρας, τῆς πανδήμου. ταῦτά σοι, ἔφη, ὡς ἐκ τοῦ παραχρῆμα, ὦ Φαῖδρε, περὶ Ἔρωτος συμβάλλομαι.\n Παυσανίου δὲ παυσαμένου—διδάσκουσι γάρ με ἴσα λέγειν οὑτωσὶ οἱ σοφοί—ἔφη ὁ Ἀριστόδημος δεῖν μὲν Ἀριστοφάνη λέγειν, τυχεῖν δὲ αὐτῷ τινα ἢ ὑπὸ πλησμονῆς ἢ ὑπό τινος ἄλλου λύγγα ἐπιπεπτωκυῖαν καὶ οὐχ οἷόν τε εἶναι λέγειν, [185d] ἀλλʼ εἰπεῖν αὐτόν—ἐν τῇ κάτω γὰρ αὐτοῦ τὸν ἰατρὸν Ἐρυξίμαχον κατακεῖσθαι—ὦ Ἐρυξίμαχε, δίκαιος εἶ ἢ παῦσαί με τῆς λυγγὸς ἢ λέγειν ὑπὲρ ἐμοῦ, ἕως ἂν ἐγὼ παύσωμαι. καὶ τὸν Ἐρυξίμαχον εἰπεῖν ἀλλὰ ποιήσω ἀμφότερα ταῦτα· ἐγὼ μὲν γὰρ ἐρῶ ἐν τῷ σῷ μέρει, σὺ δʼ ἐπειδὰν παύσῃ, ἐν τῷ ἐμῷ. ἐν ᾧ δʼ ἂν ἐγὼ λέγω, ἐὰν μέν σοι ἐθέλῃ ἀπνευστὶ ἔχοντι πολὺν χρόνον παύεσθαι ἡ λύγξ· εἰ δὲ μή, ὕδατι [185e] ἀνακογχυλίασον. εἰ δʼ ἄρα πάνυ ἰσχυρά ἐστιν, ἀναλαβών τι τοιοῦτον οἵῳ κινήσαις ἂν τὴν ῥῖνα, πτάρε· καὶ ἐὰν τοῦτο ποιήσῃς ἅπαξ ἢ δίς, καὶ εἰ πάνυ ἰσχυρά ἐστι, παύσεται. οὐκ ἂν φθάνοις λέγων, φάναι τὸν Ἀριστοφάνη· ἐγὼ δὲ ταῦτα ποιήσω.",
+   "underlying_attribution": null,
+   "enantiomorph": "For if a man, meaning to keep silent under the eye that weighs him, should sweat instead and be found out, the palm proving wet though the mouth stayed shut, it is no less a betrayal; for such a one seems to have shown of himself, in the very thing he did not choose, that his body answers before his will consents, and this is not to be masked. By the same reckoning, if a man, meaning to stand unmoved and to prove himself composed under the account, should tremble and be undone, the hand proving unsteady though the resolve held firm, still the tremor tells true; for this one too seems to have made plain, against himself, that what the will disowns the flesh will yet confess, and this is the least deniable of all things. So in every way it is the involuntary, not the intended, that renders the honest account. This is the confession of the body that no bearing governs, unbidden and owned by no one, compelling both the watched man and his watcher to read what neither meant to be read; and all the composed gestures belong to the other thing, the willed. These things, then, the reflex contributes, before I could shape a word.\n\n And the resolve having failed—for the body teaches me to answer before I mean to—the man was to hold himself steady, but a flush from shame or from something else had risen in him and he could not keep his face, so that he said—for the one who watched him sat close below—You who watch, you are bound either to stop this heat in me or to account for me until I master it. And the watcher said: I will do both—I will read you while it holds, and you, when it passes, may read yourself. While the flush is on you, if it will subside by your breathing slow and long, then breathe; if not, press cold against the throat. And if it is very strong, take up nothing that will settle it, for it settles by no such thing; do it once or twice and, however strong, it stays. You could not begin too soon, said the flushed man; and I will hold as I can.",
+   "layer_a": {
+    "units": 2,
+    "beat_map": [
+     "hypothetical-case-A (deceived-for-wealth: shameful, with grounds)",
+     "generalizing-turn (by the same argument)",
+     "hypothetical-case-B (deceived-for-virtue: noble, with grounds)",
+     "summation-maxim (all-in-all noble for virtue's sake)",
+     "identification-and-praise (this is the heavenly Love, worth much to city and citizen)",
+     "dismissal-of-the-other (all the rest belong to the common)",
+     "speech-seal (address to Phaedrus, extempore disclaimer)",
+     "narrative-relay (Pausanias ceasing — pun — the sophists teach me to speak in balances)",
+     "turn-of-turn (Aristophanes should speak, but hiccups fell on him)",
+     "address-to-physician (Eryximachus, you are bound either to stop me or speak for me)",
+     "physician-reply (I will do both: I speak in your turn, you in mine)",
+     "remedy-catalogue (hold breath long; if not, gargle water; if strong, tickle nose and sneeze)",
+     "prognosis-conditional (do this once or twice and it will cease)",
+     "assent-close (you could not speak too soon — I will do it)"
+    ],
+    "clause_chain": [
+     "IF one gratifies a lover as rich for wealth's sake and is deceived and gets no money, the lover proving poor, it is no less shameful",
+     "for such a one seems to have shown of himself that he would serve anyone for money, and that is not honorable",
+     "by the same argument, IF one gratifies a lover as good and to become better through the friendship and is deceived, the lover proving base and lacking virtue, still the deception is noble",
+     "for this one seems to have shown that for virtue's sake and to become better he would be eager for anyone in anything, and that is the finest of all",
+     "thus in every way it is noble to gratify for virtue's sake",
+     "this is the Love of the heavenly goddess, heavenly and worth much to city and to private men, compelling both lover and beloved to take much care toward virtue",
+     "all the others belong to the other goddess, the common one",
+     "these things, Phaedrus, extempore, I contribute concerning Love (Pausanias said)",
+     "Pausanias having paused — the sophists teach me to speak in balances — Aristodemus said Aristophanes was to speak",
+     "but a hiccup from fullness or something else had fallen on Aristophanes and he could not speak",
+     "Aristophanes said: Eryximachus, you are just either to stop my hiccup or to speak in my stead until I stop",
+     "Eryximachus said: I will do both — I will speak in your turn, and you when you stop, in mine",
+     "while I speak, if the hiccup will cease by your holding your breath long, do so; if not, gargle with water",
+     "and if it is very strong, take something to move the nose and sneeze; do this once or twice and even if very strong it will cease",
+     "Aristophanes said: you could not begin speaking too soon — and I will do these things"
+    ],
+    "spatial_form": {
+     "lines": 2,
+     "stanzas": 2,
+     "indent_profile": [
+      1,
+      1
+     ],
+     "notes": "two prose paragraphs, each leading-space indented; Stephanus bracket-markers [185]-[185e] embedded in flow; first paragraph closes an oration, second is narrative prose relay of a physical interruption"
+    }
+   },
+   "commentary": "Pausanias argues that the giver's SELF-CHOSEN motive vindicates him whatever the outcome — worth flows outward from the will and cannot be cheated. The SHADOW rotates the assertion-axis on its directional bearing: the sustaining term is moved from the chosen aim to the unchosen reflex. Where the source honors what one INTENDS to disclose, the enantiomorph exposes what the body discloses WITHOUT consent. Point-by-point the mirror holds: the two hypothetical \"if deceived, still noble\" cases become \"if meaning to hold, still betrayed\"; the summation \"all is noble for virtue's sake\" reflects to \"the involuntary renders the honest account\"; the heavenly-Love-worth-to-the-city becomes the confession-owned-by-no-one binding watched and watcher. Critically the second paragraph's remedy-catalogue is the load-bearing rotation of logic_mutations: where Eryximachus's technique CURES the hiccup, the watcher's procedure FAILS — \"it settles by no such thing… however strong, it stays.\" The involuntary cannot be made creditable; that failure is the emergent proposition. The witness's question (where money comes from) touches only the source's own opening ledger of wealth-for-love — the disclosure lands not on any answer but on the body that renders account against its will. The affect crosses from urbane self-possession to exposure before one's own reflex; the comfort the question longs for is withheld, as the operator requires."
+  }
+ ],
+ "last_updated": "2026-07-03T18:56:22.341828+00:00"
+}
