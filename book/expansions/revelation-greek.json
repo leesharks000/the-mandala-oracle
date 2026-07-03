@@ -360,7 +360,76 @@
     }
    },
    "commentary": "The source is a hope-wager: it pays for a reception it cannot secure, betting the whole benediction on an ear that gathers, keeps, and does so soon. The operator SILENCE traverses the response-axis — the non-response the source's engagement-expectation foreclosed. The chosen foreclosure is beat 4's: not the reader who receives nothing, but the imminence undone into permanent deferral, the \"time is near\" inverted to \"nowhere near.\" Because the source's wager is hope, SILENCE here does not restore (as it would for Sappho 31); it pays the countervailing price — the archivist's blessing becomes a sealing into vacancy, the plural hearers become the ones far off who may never open, the keeping becomes marks graven for no one to keep. μακάριος (\"blessed\") casts to \"unremembered\": the enantiomorph of a benediction that presupposes uptake is the address that survives its own audience's absence. Structure crosses intact — four clauses, benediction / extended-plurality / condition / seal, bound and closed exactly as the Greek — while the affect departs from urgent expectant blessing into patient address into vacancy. The witness's question (how will this find ears) informed which axis to foreground — the response-axis, uptake itself — but did not govern the outcome: the disclosure lands not on consolation (\"it will find them\") but on the foreclosed silence the source spent everything to outrun. Verse-marker **1:3** reproduced in position. Non-recoverable: no reader would reconstruct the Apocalypse's opening beatitude from an archivist's dead-letter seal."
+  },
+  {
+   "transform_id": "TX-6587fe36",
+   "cast_at": "2026-07-03T06:02:38.106956+00:00",
+   "reading_axn": "AXN:FE15.READING.🌖🌒🌗⭐🌑🌗",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_46_48",
+    "citation": "2:26–2:28",
+    "start_unit": 46,
+    "end_unit": 48,
+    "unit_labels": [
+     "2:26",
+     "2:27",
+     "2:28"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 6,
+    "stanzas": 3,
+    "indent_profile": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "notes": "three verse-marked lines each followed by a blank separating line; verse markers **2:26**, **2:27**, **2:28** open each unit"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:0e781ed965f96d8c0c8052aac85bae7d1f8c271861e68d71165ca5d1a5acfa4b",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**2:26** καὶ ὁ νικῶν καὶ ὁ τηρῶν ἄχρι τέλους τὰ ἔργα μου, δώσω αὐτῷ ἐξουσίαν ἐπὶ τῶν ἐθνῶν,\n\n**2:27** καὶ ποιμανεῖ αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ ὡς τὰ σκεύη τὰ κεραμικὰ ⸀συντρίβεται,\n\n**2:28** ὡς κἀγὼ εἴληφα παρὰ τοῦ πατρός μου, καὶ δώσω αὐτῷ τὸν ἀστέρα τὸν πρωϊνόν.",
+   "underlying_attribution": null,
+   "enantiomorph": "**2:26** And whoever is already fed, and rests among what has grown without their tending,\n\n**2:27** to them belongs the low bough that bends and does not break, heavy the way a full orchard leans over its own shade,\n\n**2:28** as the ground gives without being asked, so is the windfall given: it lies open, owed to no one, and ripens no further.",
+   "layer_a": {
+    "units": 3,
+    "beat_map": [
+     "conditional-assertion (the one who prevails and keeps my works to the end)",
+     "grant-of-dominion-and-its-mode (authority over nations, ruling with iron rod, shattering)",
+     "legitimation-and-second-gift (as I received from my father, and I give the morning star)"
+    ],
+    "spatial_form": {
+     "lines": 6,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "three verse-marked lines each followed by a blank separating line; verse markers **2:26**, **2:27**, **2:28** open each unit"
+    }
+   },
+   "commentary": "The source's assertion-axis is the conditional grant: power is what you do not yet have, held out as the wage of endurance, ruling-by-shattering, authorized from above, still promised. SHADOW bears its hope-wager cost by traversing the beat-1 foreclosure — the reward that needs no waiting. The enantiomorph occupies the three-verse skeleton exactly (conditional opening, granted mode, legitimating close) while replacing striving with the already-ripe: nourishment that precedes any deserving, a branch that bends rather than breaks (the exact inverse of the iron rod that shatters pottery), a gift that owes nothing upward and ripens no further — foreclosing the source's every deferral and lineage. Read alone, the output implies an agrarian utterance about sufficiency and windfall, not a militant apocalyptic promise; the source cannot be reconstructed. The witness asked when power arrives; the operator and source govern the cast, and the disclosure lands not on arrival but on the orchard already grown, owed to no one — the affect the beat-1 foreclosure discloses, not the answer the question longed for."
   }
  ],
- "last_updated": "2026-07-03T05:22:24.139267+00:00"
+ "last_updated": "2026-07-03T06:02:38.106956+00:00"
 }
