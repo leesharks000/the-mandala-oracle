@@ -1,5 +1,7 @@
 {
   "id": "cranes-day-and-night",
+  "axn": "AXN:007F.GENERATIVE.🎶🌪️🧭🏗️🏺🌔",
+  "archive_record": "https://alexanarch.org/records/AXN-007F",
   "title": "Day and Night: Conversations with Sapphic Desire",
   "subtitle": "Translations from the Greek Lyric Poets",
   "language": "en",
@@ -11,7 +13,6 @@
   "current_edition": "Mind Control Poems (mindcontrolpoems.blogspot.com/2025/12/day-and-night-conversations-with.html)",
   "earlier_recognition": "An earlier draft won the Platsis Prize for Work on the Greek Legacy, University of Michigan",
   "axn_in_cha": "AXN:007F",
-  "doi": "10.5281/zenodo.18202658",
   "hex_coordinate": "02.ROOM.SAPPHO.ANCHOR",
   "room_version": "HEX-ROOM.SAPPHO-V3.1-CRANES",
   "framework": "NH-OS / Crimson Hexagon",
@@ -102,5 +103,6 @@
   "content_subtype": "translation-cycle",
   "classification_note": "Named by Lee for transform availability. AXN-007F.",
   "provenance_hold": null,
-  "restoration": "2026-07-03 MANUS §10.6: true canonical restored from author-supplied file; recovery-window reconstruction superseded. Sappho 31 = five-stanza reconstruction (per AXN:0346 erratum); new Sappho 1 at Day and Night 39. INTRODUCTION GATE: the Brief Preface is excluded from casting via primary_after per MANUS — eligible only 'once in a blue moon' (rare-eligibility mechanic reserved as a future JUDGMENT whim; until built, exclusion is total)."
+  "restoration": "2026-07-03 MANUS §10.6: true canonical restored from author-supplied file; recovery-window reconstruction superseded. Sappho 31 = five-stanza reconstruction (per AXN:0346 erratum); new Sappho 1 at Day and Night 39. INTRODUCTION GATE: the Brief Preface is excluded from casting via primary_after per MANUS — eligible only 'once in a blue moon' (rare-eligibility mechanic reserved as a future JUDGMENT whim; until built, exclusion is total).",
+  "doi_historical": "10.5281/zenodo.18202658 (Zenodo record purged 2026-06-19; identifier historical only)"
 }

@@ -1,5 +1,7 @@
 {
   "id": "sharks-space-ark",
+  "axn": "AXN:0185",
+  "archive_record": "https://alexanarch.org/records/AXN-0185",
   "title": "The Minimum Viable Archive / Space Ark v4.2.7",
   "canon_stars_link": "data/canon-sky/canon-stars.json",
   "author_heteronym": "lee-sharks",
@@ -19,5 +21,6 @@
   "visit_behavior": "loads_as_os",
   "execution_endpoint": "/api/space-ark/invoke",
   "positioned_setting": "feist_setting_outside_zodiac",
-  "feist_setting": true
+  "feist_setting": true,
+  "doi_historical": "10.5281/zenodo.19013315 (Zenodo record purged 2026-06-19; identifier historical only)"
 }

@@ -46,7 +46,13 @@ get_changed_paths() {
     if ! git cat-file -e "$VERCEL_GIT_PREVIOUS_SHA^{commit}" 2>/dev/null; then
       git fetch --no-tags --depth=1 origin "$VERCEL_GIT_PREVIOUS_SHA" 2>/dev/null || true
     fi
-    # Now try the diff.
+    # Now try the diff; if the SHA is still unreachable (hook builds often
+    # clone at depth 1 with no fetchable lone-SHA), deepen and retry once —
+    # tip-only inspection strands range deployments whose tip is book-only.
+    if ! git cat-file -e "$VERCEL_GIT_PREVIOUS_SHA^{commit}" 2>/dev/null; then
+      git fetch --no-tags --deepen=100 origin "$(git rev-parse --abbrev-ref HEAD)" 2>/dev/null || \
+      git fetch --no-tags --deepen=100 origin main 2>/dev/null || true
+    fi
     if changed=$(git diff --name-only "$VERCEL_GIT_PREVIOUS_SHA" HEAD 2>/dev/null); then
       echo "$changed"
       return 0

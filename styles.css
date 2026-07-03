@@ -710,7 +710,8 @@ body {
 .support-cha-expanded {
   position: absolute;
   bottom: calc(100% + 10px);
-  left: 0;
+  left: auto;
+  right: 0;
   width: 280px;
   padding: 18px 20px 6px 20px;
   background: rgba(28, 21, 14, 0.95);

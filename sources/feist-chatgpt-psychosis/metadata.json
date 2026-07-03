@@ -1,5 +1,7 @@
 {
   "id": "feist-chatgpt-psychosis",
+  "axn": "AXN:02AD",
+  "archive_record": "https://alexanarch.org/records/AXN-02AD",
   "title": "ChatGPT Psychosis: A Love Story",
   "canon_stars_link": "data/canon-sky/canon-stars.json",
   "author_heteronym": "tbd",
@@ -13,5 +15,6 @@
   "transformable": false,
   "transform_classification": "archival_apparatus",
   "content_subtype": "prospectus",
-  "classification_note": "MIS-ATTRIBUTION FLAGGED 2026-07-01: Per Lee's adjudication 2026-07-01: 'Jack Feist did not write the source texts your naming ... and so on.' This deposit (a cognitive-substrate refraction / prospectus for the forthcoming novel at chatgptpsychosis.org) previously carried Feist attribution in external memory context. Lee's correction supersedes; author_heteronym reset to tbd pending re-adjudication. The novel itself (distinct from this prospectus) remains forthcoming. Directory name (feist- prefix) retained despite mis-attribution; rename deferred to broader canon reorganization pass. Remains archival_apparatus (prospectus, not novel; not primary literary). AXN-02AD, DOI 10.5281/zenodo.20274790."
+  "classification_note": "MIS-ATTRIBUTION FLAGGED 2026-07-01: Per Lee's adjudication 2026-07-01: 'Jack Feist did not write the source texts your naming ... and so on.' This deposit (a cognitive-substrate refraction / prospectus for the forthcoming novel at chatgptpsychosis.org) previously carried Feist attribution in external memory context. Lee's correction supersedes; author_heteronym reset to tbd pending re-adjudication. The novel itself (distinct from this prospectus) remains forthcoming. Directory name (feist- prefix) retained despite mis-attribution; rename deferred to broader canon reorganization pass. Remains archival_apparatus (prospectus, not novel; not primary literary). AXN-02AD, DOI 10.5281/zenodo.20274790.",
+  "doi_historical": "10.5281/zenodo.20274790 (Zenodo record purged 2026-06-19; identifier historical only)"
 }

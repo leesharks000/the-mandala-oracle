@@ -1,5 +1,7 @@
 {
   "id": "feist-revelation-first-workplan",
+  "axn": "AXN:0349",
+  "archive_record": "https://alexanarch.org/records/AXN-0349",
   "title": "The Revelation First Work-Plan (EA-LOGOS-REVFIRST-PLAN)",
   "canon_stars_link": "data/canon-sky/canon-stars.json",
   "author_heteronym": "lee-sharks",
@@ -14,5 +16,6 @@
   "transformable": false,
   "transform_classification": "archival_apparatus",
   "content_subtype": "workplan",
-  "classification_note": "MIS-ATTRIBUTION CORRECTED 2026-07-01: Source text explicitly attributes: 'Author: Lee Sharks (ORCID 0009-0000-1599-0703), Crimson Hexagonal Archive / Semantic Economy Institute.' This is a Lee Sharks workplan (EA-LOGOS-REVFIRST-PLAN v1.2), not a Feist-authored source text. Per Lee's adjudication 2026-07-01. Zodiacal region set to Aries (Sharks); directory name (feist- prefix) retained despite mis-attribution; rename deferred. Remains archival_apparatus (workplan, not primary literary). AXN-0349, DOI 10.5281/zenodo.20690868."
+  "classification_note": "MIS-ATTRIBUTION CORRECTED 2026-07-01: Source text explicitly attributes: 'Author: Lee Sharks (ORCID 0009-0000-1599-0703), Crimson Hexagonal Archive / Semantic Economy Institute.' This is a Lee Sharks workplan (EA-LOGOS-REVFIRST-PLAN v1.2), not a Feist-authored source text. Per Lee's adjudication 2026-07-01. Zodiacal region set to Aries (Sharks); directory name (feist- prefix) retained despite mis-attribution; rename deferred. Remains archival_apparatus (workplan, not primary literary). AXN-0349, DOI 10.5281/zenodo.20690868.",
+  "doi_historical": "10.5281/zenodo.20690868 (Zenodo record purged 2026-06-19; identifier historical only)"
 }
