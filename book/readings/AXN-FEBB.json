@@ -104,11 +104,107 @@
     "mode": "producer_side"
    },
    "commentary": "The source runs future-downward: a superior who has not yet come descends by stealth at an hour the wakeful might survive — vigilance is a lever on a coming event. SHADOW rotates the assertion-axis: the deciding moment is moved from unforeseen-future to already-spent-past, and the arriving superior becomes a departed yield running upward from below. Every beat makes mirror-contact. \"Remember how you received and heard\" becomes \"count the yield you were lent and how the ground gave it\" — the deposit held becomes the loan already returned to the earth. \"Keep, and repent\" (turn-and-hold, corrective, forward) becomes \"let it go, and grieve\" (release-and-mourn, terminal, backward): the same two-verb hinge, its vector reversed. The conditional threat \"if you do not watch\" becomes the closed indicative \"you did not sleep too soon\" — vigilance is voided because the event is past; watching can no longer buy anything. \"I will come as a thief\" (advent, stealth, future) becomes \"it left as the harvest leaves\" (departure, in-plain-sight, past). And the withheld hour of coming becomes the withheld hour of going — \"you will never learn which morning it went out from under you\": the same seal, the same ignorance as instrument, but the instrument now grieves rather than warns. The imagery is barred from both the source (thief/watch/hour-of-coming) and the exemplar (death/page/breath/specimen): it is drawn from the source's own foreclosure — the arrival that comes regardless of watching, here fully arrived and gone. The emergent proposition is not the source's: not \"watch, for it will come,\" but \"it already came unwatched, and the loss cannot be re-entered.\" The witness's question (\"how can I do better?\") lands only on which axis was foregrounded — beat 4's vigilance — and is refused its longed-for reassurance: the cast encodes the bearing-cost of the imperative itself, that the very structure of \"watch now\" carries the buried admission that some hours cannot be watched in time."
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·",
+   "citation": "3:3",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**3:3** Forget then how little you kept back, and how you held it, and open — and let go; for if you do not loosen, you will rise like seed on wind, and they will surely know at what hour you scatter down to them.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "command-to-remember-received-gift",
+     "double-imperative (keep-and-repent)",
+     "conditional-warning (if-not-vigilant)",
+     "threat-of-arrival (as-thief)",
+     "denial-of-foreknowledge (you-will-not-know)",
+     "seal (the-hour-upon-you)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single continuous prose verse, verse-marker 3:3 at head; clause-chain bound by καί"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the addressed one must recover what was already given from the past",
+      "foreclosure": "that the giver might instead await what the addressed one will bring forward",
+      "wager": "buys the moral weight of a squandered inheritance — the good lies behind, needing retrieval"
+     },
+     {
+      "beat": 2,
+      "determination": "guard the deposit and turn — corrective motion demanded of the receiver",
+      "foreclosure": "that the sender releases its own hold and offers rather than commands",
+      "wager": "buys urgency by locating all agency in the one warned"
+     },
+     {
+      "beat": 3,
+      "determination": "vigilance staves off the loss; wakefulness is the receiver's task",
+      "foreclosure": "that the sleep itself might be the gift, the giver keeping watch instead",
+      "wager": "buys the terror of a test that can be failed"
+     },
+     {
+      "beat": 4,
+      "determination": "the superior arrives from outside, unbidden, upon the inferior",
+      "foreclosure": "that the lesser might approach the greater, arrival flowing upward and outward",
+      "wager": "buys the asymmetry of judgment — the visited cannot visit back"
+     },
+     {
+      "beat": 5,
+      "determination": "the hour is withheld from the one who waits; ignorance is imposed",
+      "foreclosure": "that the waiting one might set the hour, disclosure flowing from below",
+      "wager": "buys dread by reserving knowledge to the arriving power"
+     },
+     {
+      "beat": 6,
+      "determination": "the coming lands ON you — terminal, vertical, sealed against you",
+      "foreclosure": "that the going might issue FROM you, offered outward and received",
+      "wager": "buys the closed circuit of a threat that cannot be answered"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the warned one depends on the arriving power (arrival flows down and inward, past→future)",
+      "vigilance depends on threat (the receiver sustains the relation by fearing)",
+      "knowledge depends on the withholder (disclosure flows one way, downward)"
+     ],
+     "invariants": [
+      "the two-party asymmetry",
+      "the temporal knot of an appointed but hidden hour",
+      "the καί-chained accumulation toward a seal",
+      "the second-person address"
+     ],
+     "rotated_axis": "directional status of gift and arrival reversed — the movement that came DOWN and IN now issues UP and OUT from the addressed one",
+     "installed_ontology": "the one formerly warned is now the source; what was imposed upon her is now what she releases; the greater no longer descends but receives what ascends",
+     "emergent_proposition": "What you have to give was never behind you to guard — it goes out from you at an hour you yourself let arrive, and the vigilance is theirs who wait to catch it."
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the ripening and unbidden release of what grows outward from a body — pollen, spore, the opening of a seed-vessel that scatters upward on wind toward whatever waits below to receive it",
+    "field_source": "foreclosure at beat 6",
+    "source_affect": "vertical dread, judged sleeplessness",
+    "target_affect": "generous release, unforced giving-out"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is a vertical threat: the greater descends unbidden upon the lesser, retrieval demanded from a squandered past, the hour withheld, the coming landing ON the addressed. MIRROR rotates the directional axis of gift and arrival. Every beat lands at its reflected coordinate: \"remember how you received\" (recover from behind) becomes \"forget how little you kept back\" (the good was never behind to guard); \"keep and repent\" (guard and turn inward) becomes \"open and let go\" (release outward); \"if you do not stay awake\" becomes \"if you do not loosen\" — vigilance's mirror is un-clenching; the thief who comes ON you inverts to the seed that rises FROM you; and the withheld hour (\"you will not know\") inverts precisely to \"they will surely know\" — knowledge now flows downward to those who wait to receive. The single look across the axis, \"rise like seed on wind... scatter down,\" lets the traversal's own gesture (ascent-then-descent-as-gift) touch the source's vertical geometry from the far side. No thief, no watch, no theological threat survives as referent; the pollen/spore field is generated by the foreclosure at the seal, not chosen as scenery. The affect departs from imposed dread to unforced giving-out — the transformation-wager's borne cost made legible as the terror of arrival transformed into the openness of release. The witness's question is not answered; the disclosure merely lands where giving-outward becomes possible."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T07:08:22.444174+00:00",
+ "last_updated": "2026-07-03T07:10:00.261856+00:00",
  "rite": [
   {
    "stage": "opening",
