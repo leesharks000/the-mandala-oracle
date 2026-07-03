@@ -684,7 +684,67 @@
     }
    },
    "commentary": "The source runs future-downward: a superior who has not yet come descends by stealth at an hour the wakeful might survive — vigilance is a lever on a coming event. SHADOW rotates the assertion-axis: the deciding moment is moved from unforeseen-future to already-spent-past, and the arriving superior becomes a departed yield running upward from below. Every beat makes mirror-contact. \"Remember how you received and heard\" becomes \"count the yield you were lent and how the ground gave it\" — the deposit held becomes the loan already returned to the earth. \"Keep, and repent\" (turn-and-hold, corrective, forward) becomes \"let it go, and grieve\" (release-and-mourn, terminal, backward): the same two-verb hinge, its vector reversed. The conditional threat \"if you do not watch\" becomes the closed indicative \"you did not sleep too soon\" — vigilance is voided because the event is past; watching can no longer buy anything. \"I will come as a thief\" (advent, stealth, future) becomes \"it left as the harvest leaves\" (departure, in-plain-sight, past). And the withheld hour of coming becomes the withheld hour of going — \"you will never learn which morning it went out from under you\": the same seal, the same ignorance as instrument, but the instrument now grieves rather than warns. The imagery is barred from both the source (thief/watch/hour-of-coming) and the exemplar (death/page/breath/specimen): it is drawn from the source's own foreclosure — the arrival that comes regardless of watching, here fully arrived and gone. The emergent proposition is not the source's: not \"watch, for it will come,\" but \"it already came unwatched, and the loss cannot be re-entered.\" The witness's question (\"how can I do better?\") lands only on which axis was foregrounded — beat 4's vigilance — and is refused its longed-for reassurance: the cast encodes the bearing-cost of the imperative itself, that the very structure of \"watch now\" carries the buried admission that some hours cannot be watched in time."
+  },
+  {
+   "transform_id": "TX-12836c20",
+   "cast_at": "2026-07-03T07:10:01.520877+00:00",
+   "reading_axn": "AXN:FEBB.READING.🌙🌒🌗🌘🌖🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_52_52",
+    "citation": "3:3",
+    "start_unit": 52,
+    "end_unit": 52,
+    "unit_labels": [
+     "3:3"
+    ]
+   },
+   "operator": "MIRROR",
+   "operator_axis": "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single continuous prose verse, verse-marker 3:3 at head; clause-chain bound by καί"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:62d36ad282e6cc2a6f0746bd0962ec5756d33e1c9fc0a4a71c486570d2d70099",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·",
+   "underlying_attribution": null,
+   "enantiomorph": "**3:3** Forget then how little you kept back, and how you held it, and open — and let go; for if you do not loosen, you will rise like seed on wind, and they will surely know at what hour you scatter down to them.",
+   "layer_a": {
+    "units": 6,
+    "beat_map": [
+     "command-to-remember-received-gift",
+     "double-imperative (keep-and-repent)",
+     "conditional-warning (if-not-vigilant)",
+     "threat-of-arrival (as-thief)",
+     "denial-of-foreknowledge (you-will-not-know)",
+     "seal (the-hour-upon-you)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single continuous prose verse, verse-marker 3:3 at head; clause-chain bound by καί"
+    }
+   },
+   "commentary": "The source is a vertical threat: the greater descends unbidden upon the lesser, retrieval demanded from a squandered past, the hour withheld, the coming landing ON the addressed. MIRROR rotates the directional axis of gift and arrival. Every beat lands at its reflected coordinate: \"remember how you received\" (recover from behind) becomes \"forget how little you kept back\" (the good was never behind to guard); \"keep and repent\" (guard and turn inward) becomes \"open and let go\" (release outward); \"if you do not stay awake\" becomes \"if you do not loosen\" — vigilance's mirror is un-clenching; the thief who comes ON you inverts to the seed that rises FROM you; and the withheld hour (\"you will not know\") inverts precisely to \"they will surely know\" — knowledge now flows downward to those who wait to receive. The single look across the axis, \"rise like seed on wind... scatter down,\" lets the traversal's own gesture (ascent-then-descent-as-gift) touch the source's vertical geometry from the far side. No thief, no watch, no theological threat survives as referent; the pollen/spore field is generated by the foreclosure at the seal, not chosen as scenery. The affect departs from imposed dread to unforced giving-out — the transformation-wager's borne cost made legible as the terror of arrival transformed into the openness of release. The witness's question is not answered; the disclosure merely lands where giving-outward becomes possible."
   }
  ],
- "last_updated": "2026-07-03T07:08:20.696980+00:00"
+ "last_updated": "2026-07-03T07:10:01.520877+00:00"
 }
