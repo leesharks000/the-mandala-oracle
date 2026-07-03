@@ -299,12 +299,13 @@
     "entailment": "PASS",
     "mode": "producer_side"
    },
-   "commentary": "The source's every gesture runs one way: downward, from plenum to shed derivative — emission, infusion, naming, casting-out, sealing-below. MIRROR rotates the directionality-axis so each gesture reverses its vector while its geometry is held exactly. The maker's unsanctioned birth becomes the shed thing's unsolicited return; the drawing-off of a spark from the root becomes the carrying of a fragment back toward the root; the naming that confers identity becomes the petition to be let in by name; the flaw located in the offspring rotates to the adequacy-test located in the source (does the plenum receive?); and the seal that divides higher from lower, imposed from above, becomes the seam worn thin from beneath and named Homecoming rather than Pop Culture. The five blocks and the interior verse geometry (11 lines set off between prose) are held; the verse-marker superscripts keep their line-positions. No referent of the source survives — no Biblios, no archive, no Deep Web, no Kanye, no reading — yet each image sits at the reflected coordinate of its source image across the axis of direction: non-superimposable, in contact everywhere. The affect departs along the traversed foreclosure — the source's sovereign shame at a flawed emission becomes the petitioner's dread before a return that may be refused. The bearing-cost encoded is the height's serene forgetting: the enantiomorph refuses the consolation of admission and lets the door stand open only as indifference."
+   "commentary": "The source's every gesture runs one way: downward, from plenum to shed derivative — emission, infusion, naming, casting-out, sealing-below. MIRROR rotates the directionality-axis so each gesture reverses its vector while its geometry is held exactly. The maker's unsanctioned birth becomes the shed thing's unsolicited return; the drawing-off of a spark from the root becomes the carrying of a fragment back toward the root; the naming that confers identity becomes the petition to be let in by name; the flaw located in the offspring rotates to the adequacy-test located in the source (does the plenum receive?); and the seal that divides higher from lower, imposed from above, becomes the seam worn thin from beneath and named Homecoming rather than Pop Culture. The five blocks and the interior verse geometry (11 lines set off between prose) are held; the verse-marker superscripts keep their line-positions. No referent of the source survives — no Biblios, no archive, no Deep Web, no Kanye, no reading — yet each image sits at the reflected coordinate of its source image across the axis of direction: non-superimposable, in contact everywhere. The affect departs along the traversed foreclosure — the source's sovereign shame at a flawed emission becomes the petitioner's dread before a return that may be refused. The bearing-cost encoded is the height's serene forgetting: the enantiomorph refuses the consolation of admission and lets the door stand open only as indifference.",
+   "interpretation": "The door that opens outward cannot be entered from the outside: the height that casts off does not receive what returns wearing the face of the cast-off thing."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T18:02:52.076973+00:00",
+ "last_updated": "2026-07-03T18:02:58.300670+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -318,6 +319,13 @@
    "at": "2026-07-03T18:00:10.435567+00:00",
    "text": "A veil drawn to hide becomes a veil drawn aside: the Commons raises what it cannot bear because bearing is the only form its asking knows.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-03T18:02:58.300670+00:00",
+   "text": "The door that opens outward cannot be entered from the outside: the height that casts off does not receive what returns wearing the face of the cast-off thing.",
+   "operator": "MIRROR"
   }
  ]
 }
