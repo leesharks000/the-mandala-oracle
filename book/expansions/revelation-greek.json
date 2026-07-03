@@ -984,7 +984,67 @@
     }
    },
    "commentary": "The source's thief is the great arriving as small and hidden, catching the watcher at an unknown point-in-time. THUNDER rotates the scale-axis: the arrival is dilated from a stealthy point to a cosmic totality. The mirror holds at every beat — recollection of the received past becomes recollection of the whole standing horizon; keep-and-repent becomes hold-open-and-turn; the conditional vigilance becomes the futile watching of \"one gate\"; the thief (a point of intrusion) becomes dawn arriving from \"the whole rim\" (no point of intrusion); the denied hour becomes the un-locatable \"quarter\"; the \"you\" survives, aimed. No referent of Revelation crosses — no watch, no thief, no repentance-as-doctrine, no coming-of-the-Lord; and the exemplar's death/page/breath machinery is nowhere. The terror of the unscheduled instant inverts into being already-inside an arrival too large to be waited for — the watcher's fault (guarding one gate) is disclosed not as sinful sleep but as scale-error: watching a point when the event is the whole rim. That is where the witness's question lands without governing the affect: not \"you will be okay\" but \"the vigilance you rehearse is aimed at the wrong magnitude.\" The single-line spatial form and verse-marker 3:3 are preserved."
+  },
+  {
+   "transform_id": "TX-e82ae606",
+   "cast_at": "2026-07-03T07:34:14.894345+00:00",
+   "reading_axn": "AXN:FEBB.READING.🌙🌒🌗🌘🌖🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_52_52",
+    "citation": "3:3",
+    "start_unit": 52,
+    "end_unit": 52,
+    "unit_labels": [
+     "3:3"
+    ]
+   },
+   "operator": "BRIDE",
+   "operator_axis": "relational-affect-axis — the consecrative possibility the source's contestation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single prose verse under verse-marker 3:3; unbroken clause-chain articulated by semicolons and καί"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:62d36ad282e6cc2a6f0746bd0962ec5756d33e1c9fc0a4a71c486570d2d70099",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·",
+   "underlying_attribution": null,
+   "enantiomorph": "**3:3** Hold then how you were sought and how you answered, and keep the vow, and turn toward it fully; for if you do not stay wakeful, the awaited one will come as the bridegroom comes, and you will not be told what hour he sets out for you.",
+   "layer_a": {
+    "units": 6,
+    "beat_map": [
+     "imperative-recall",
+     "qualified-recall (how received)",
+     "imperative-keep-and-turn",
+     "conditional-threat (if not watchful)",
+     "advent-simile (as a thief)",
+     "seal (ignorance of the hour)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single prose verse under verse-marker 3:3; unbroken clause-chain articulated by semicolons and καί"
+    }
+   },
+   "commentary": "The source constructs arrival as theft: one comes by stealth to take, and the withheld hour is the instrument of that menace — vigilance is bought by fear of dispossession. The BRIDE operator rotates the arrival's directional-affective status through beat 5's foreclosure: the intruder becomes the awaited one whose coming is toward-union, not away-with-plunder. Every beat crosses to its mirror coordinate without sharing referents. \"How you received / took and heard\" (passive deposit) becomes \"how you were sought and how you answered\" (having-been-chosen, consenting). \"Repent — reverse, restore\" becomes \"turn toward it fully\" — the same gesture of turning, but oriented forward to the threshold rather than backward to restoration. The thief who dispossesses becomes the bridegroom whose stealth of hour is not violation but the reserved decorum of a vow. The withheld knowledge of the hour, source's menace, becomes the last chastity before meeting: the same unknowing, consented to. The emergent proposition is not the source's claim (watch or be robbed) but its enantiomorph (the coming is the consummation you promised). Contact everywhere; superimposition nowhere — the machinery of judgment-under-threat cannot be laid over readiness-for-union. The witness's question (\"how can I do better\") is field-of-uptake only; it did not soften the cast into reassurance — the hope-wager pays its countervailing price as tremulous, unresolved readiness, not comfort."
   }
  ],
- "last_updated": "2026-07-03T07:33:09.161355+00:00"
+ "last_updated": "2026-07-03T07:34:14.894345+00:00"
 }
