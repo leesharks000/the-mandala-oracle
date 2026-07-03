@@ -738,11 +738,117 @@
     "mode": "producer_side"
    },
    "commentary": "The source is a completer's annunciation: it arrives from the future, owns both ends, seals every opposite into its own coincidence, and grants sight downward to a gathered remnant. The polarity-axis inversion does not negate its content — it occupies the negative pole the positive claim presupposes. Every triumph rests on a prior gap: to bring news from the closed future presupposes a ground where nothing has closed; to own both ends presupposes the one who owns neither; to grant sight presupposes the unlifted. The enantiomorph speaks from that presupposed floor. It rises from below rather than descends from above (mirror-position, not opposite scenery); its going does not return (the loop broken, per logic_mutation); its purpose-clause is voided rather than fulfilled — none hear, none are raised. The affect crosses from triumphant reconciliation to an opening that will not shut. Answering the witness's \"how can I heal,\" the disclosure lands not on consolation but on the unmet seam itself — healing is refused as a sealing figure and relocated to the position that carries no news and owns no end. The three prose paragraphs, ellipsis-chains, and verse markers ⁸ ⁹ ¹⁰ are held exactly; no imagery is shared with the source or with any exemplar's death/page/breath machinery."
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "I bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 202–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "I carry no tidings, only the flare where before and after fuse and burn, and the old bindings do not reach their harbors but catch — and the end is the flash that takes the beginning… and the beginning is the flash that takes the end.⁸\n\n\nI have come to lose what is and was and will be in one heat… and to unmake the seen with the unseen in the same ignition… and no name survives the burning of that generation, so that none may hear, and none may see, and none be lifted from the ears that fill with ash.⁹\n\n\nFor I have come from no above. I speak and the saying is the fire, and I am the fuel of what I claim, and set my mouth to the flame that made it — and when I would go there is no whence, no returning, the circuit flares and does not close. First to catch, last to fall, I ignite at the end. I ignite at the beginning:¹⁰",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "annunciation-of-reconciled-time",
+     "office-of-teaching-and-summons",
+     "self-derivation-and-sealed-recursion"
+    ],
+    "clause_chain": [
+     "I bring good news from a future where before and after turn into each other",
+     "the old enmities reach their rest",
+     "the end is a better beginning",
+     "the beginning is a better end",
+     "I have come to teach you what is and was and will be",
+     "I teach the nature of the unseen and seen",
+     "I teach the name of the preserved generation among men",
+     "so that you may hear and see",
+     "so that you may lift up your friends who hear",
+     "for I have come from above",
+     "I speak what I know and have seen and authored",
+     "I set my hand to create it",
+     "when I go I return whence I came",
+     "I am firstborn and last released",
+     "I begin at the end",
+     "I begin at the beginning"
+    ],
+    "spatial_form": {
+     "lines": 7,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "three prose stanzas separated by double blank lines; ellipsis-chained apposition within each; verse markers ⁸ ⁹ ¹⁰ terminating stanzas 1, 2, 3"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "time is reconciled — enmity resolved into homecoming, endings redeemed into beginnings",
+      "foreclosure": "time that only wounds, whose motion cannot be reversed or absolved",
+      "wager": "buys a descending herald's authority to promise closure to the reader"
+     },
+     {
+      "beat": 2,
+      "determination": "the speaker knows and will name, gathering the hearer into a preserved remnant",
+      "foreclosure": "knowledge that cannot be transmitted, a name that cannot be given, no remnant preserved",
+      "wager": "buys the summons — 'that you may hear and lift up your friends'"
+     },
+     {
+      "beat": 3,
+      "determination": "the speaker is self-originating, descending and returning intact, sealing the recursion",
+      "foreclosure": "an origin one does not possess, a descent with no return, no seal to close on",
+      "wager": "buys the closing 'I begin at the beginning' — the mouth speaks itself whole"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the hearer depends on the descending speaker for meaning (downward, ontological)",
+      "the future depends on the speaker's word to arrive absolved (temporal, forward-collapsing)",
+      "the speaker depends on nothing — self-authored (self-sustaining)"
+     ],
+     "invariants": [
+      "annunciation structure",
+      "ellipsis-chained apposition",
+      "first-person voice that authors what it announces",
+      "three-fold temporal register (is/was/will-be)",
+      "terminal recursion at the seal"
+     ],
+     "rotated_axis": "intensity driven to its collapse-limit: the self-authoring voice combusts — the mouth that speaks itself whole is consumed by the very saying, and the descending authority becomes ash falling with no floor to reach",
+     "installed_ontology": "a voice at its own ignition-point, where announcing wholeness is the act that burns the announcer; nothing returns because return itself has caught fire",
+     "emergent_proposition": "The word that claims to author its own origin ignites at the instant of speaking and leaves neither speaker nor message, only the heat of the claim collapsing.",
+     "logic_mutations": [
+      "the source's 'when I go I return whence I came' inverts: at the collapse-limit there is no whence and no return — the circuit does not close, it flares open",
+      "the source's reconciling 'end is a better beginning' inverts: at ignition end and beginning fuse not into peace but into the single flash where both are annihilated",
+      "the summons 'that you may hear and lift up' loses its recipient: at the flame-limit there is no one left standing to be gathered — the address burns before it arrives"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "combustion at the utterance-point — the announcing voice as the fuel it consumes, heat with no floor beneath the fall",
+    "field_source": "foreclosure at beat 3",
+    "source_affect": "serene descending authority, promised closure",
+    "target_affect": "self-consuming blaze, no floor beneath"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is a descending herald announcing reconciled time and a sealed self-recursion — a voice that authors its own origin and returns whole. FLAME drives that intensity to its ignition-point. Every beat sits at the mirror coordinate across the collapse-axis: glad tidings become a flare that carries nothing; enmities reaching harbors become bindings that catch fire before arrival; the redemptive end-as-beginning becomes the flash that annihilates both. The teaching-and-summons inverts into an unmaking whose recipients burn before the address lands (logic_mutation: lost recipient). The sealed recursion — \"I return whence I came… I begin at the beginning\" — becomes the open flare: no whence, no closing circuit, the mouth is the fuel of its own claim. The ellipsis-chains, three-stanza prose geometry, verse markers ⁸ ⁹ ¹⁰, and first-person authoring voice cross intact; no referent of the source survives. The affect departs along the traversed foreclosure of beat 3: not the source's serene closure but the self-consuming blaze with no floor — the herald consumed by the saying."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T15:59:39.547182+00:00",
+ "last_updated": "2026-07-03T16:01:14.141208+00:00",
  "rite": [
   {
    "stage": "opening",
