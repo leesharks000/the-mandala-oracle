@@ -171,7 +171,7 @@
   {
    "id": "revelation-greek",
    "title": "Revelation",
-   "creator": "Attributed to John of Patmos",
+   "creator": "",
    "zodiac": "",
    "admissible": true,
    "text_file": "original.grc",
@@ -180,7 +180,7 @@
   {
    "id": "sappho-fragments",
    "title": "Sappho",
-   "creator": "Sappho of Lesbos",
+   "creator": "",
    "zodiac": "",
    "admissible": true,
    "text_file": "sappho-31/text.md",

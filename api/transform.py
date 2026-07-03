@@ -1085,7 +1085,9 @@ def judgment_operator(question: str, source_title: str, passage: str,
     fallback = secrets.choice(remaining)
     if not api_key:
         return fallback, "unattended draw"
-    listing = "\n".join(f"- {o}: {OPERATORS[o]}" for o in remaining)
+    shuffled = list(remaining)
+    secrets.SystemRandom().shuffle(shuffled)
+    listing = "\n".join(f"- {o}: {OPERATORS[o]}" for o in shuffled)
     prompt = (
         "You are the Judgment operator of the Mandala Oracle — the invisible ninth, "
         "operating on the sequence of operators, never on the text. A rotation is in "
@@ -1096,7 +1098,12 @@ def judgment_operator(question: str, source_title: str, passage: str,
         f"THE REMAINING OPERATORS:\n{listing}\n\n"
         "Choose the ONE whose axis the rotation now calls for — what the previous "
         "turns have opened, what the verses still hold against, what the question "
-        "has not yet been met by. Respond with ONLY a JSON object: "
+        "has not yet been met by. THE LISTING ORDER IS RANDOMIZED AND CARRIES NO "
+        "PRECEDENCE. 'Originary; most potent' describes SHADOW's operation, not "
+        "its position — SHADOW does not open every rite, and no operator has a "
+        "customary seat. Judge from these verses and this question; across many "
+        "rotations your sequences should differ as the sources differ. Respond "
+        "with ONLY a JSON object: "
         "{\"operator\": \"NAME\", \"reason\": \"<one sentence, oracular register>\"}"
     )
     try:
