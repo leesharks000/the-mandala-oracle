@@ -561,7 +561,70 @@
     }
    },
    "commentary": "FLAME driven to its collapse-limit: the source's intensity is the clench of withheld sovereignty — power promised, deferred, exercised as the iron rod that breaks earthen vessels. Pushed to ignition, that grip cannot sustain itself; the maximum of holding burns through into its mirror, the unclenched hand. Each beat makes point-by-point contact across the axis of gripping-vs-releasing: \"conquers and keeps to the end\" becomes \"loosens and lets slip before the last hour\"; the rod-of-iron that shatters ceramic becomes the ungripping palm where thawed snow \"gives itself up and is not shattered\" — the breakable made unbreakable precisely by being ungripped; the inheritance from the Father and the not-yet morning star become the letting-go received from \"the mother of my letting-go\" and light \"already melting into day\" — dawn dissolving downward where the source's star hangs distant above. The witness asked when power arrives; the operator did not answer that longing. The foreclosure the source paid to be triumphal was relinquishment, and traversed it discloses power's collapse-limit as the surrender that keeps and inherits nothing — not the deferred crown the question reaches for. The hope-wager's countervailing price is paid: not conquest rewarded but the hand opened now."
+  },
+  {
+   "transform_id": "TX-755f8008",
+   "cast_at": "2026-07-03T06:05:57.879899+00:00",
+   "reading_axn": "AXN:FE15.READING.🌖🌒🌗⭐🌑🌗",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_46_48",
+    "citation": "2:26–2:28",
+    "start_unit": 46,
+    "end_unit": 48,
+    "unit_labels": [
+     "2:26",
+     "2:27",
+     "2:28"
+    ]
+   },
+   "operator": "INVERSION",
+   "operator_axis": "polarity-axis — the negative pole the positive claim presupposes",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 3,
+    "stanzas": 1,
+    "indent_profile": [
+     0,
+     0,
+     0
+    ],
+    "notes": "three verse-marked lines, each a comma-tailed clause opening with καί; verse markers **2:26**–**2:28** in line-initial position; no blank lines, continuous grant-clause"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:0e781ed965f96d8c0c8052aac85bae7d1f8c271861e68d71165ca5d1a5acfa4b",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**2:26** καὶ ὁ νικῶν καὶ ὁ τηρῶν ἄχρι τέλους τὰ ἔργα μου, δώσω αὐτῷ ἐξουσίαν ἐπὶ τῶν ἐθνῶν,\n\n**2:27** καὶ ποιμανεῖ αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ ὡς τὰ σκεύη τὰ κεραμικὰ ⸀συντρίβεται,\n\n**2:28** ὡς κἀγὼ εἴληφα παρὰ τοῦ πατρός μου, καὶ δώσω αὐτῷ τὸν ἀστέρα τὸν πρωϊνόν.",
+   "underlying_attribution": null,
+   "enantiomorph": "**2:26** And the one yielding, the one loosening his grip before the end of my leaving, from him I will take even the ground he stood upon,\n\n**2:27** and he shall be tended in an open palm as the water is tended that pours through and holds nothing,\n\n**2:28** as I too gave back all I was lent to no one, and from him I will withhold even the star that sets.",
+   "layer_a": {
+    "units": 3,
+    "beat_map": [
+     "conditional-qualification of the recipient (the one who prevails and keeps)",
+     "grant of dominion figured in violent mastery (rod, shattering)",
+     "authorization by lineage and second gift (the morning star)"
+    ],
+    "spatial_form": {
+     "lines": 3,
+     "stanzas": 1,
+     "indent_profile": [
+      0,
+      0,
+      0
+     ],
+     "notes": "three verse-marked lines, each a comma-tailed clause opening with καί; verse markers **2:26**–**2:28** in line-initial position; no blank lines, continuous grant-clause"
+    }
+   },
+   "commentary": "INVERSION on the polarity axis: the source's positive pole — power WON, held, granted downward from a giving father — presupposes its negative, the pole of dispossession that the promise excludes to be a promise. Every beat makes mirror-contact. The conqueror who keeps to the end becomes the one who loosens his grip before the end; the giving that adds authority becomes a taking-away of even the ground. The rod of iron that shatters brittle vessels reflects into the open palm and the water that holds nothing — mastery mirrored as the thing mastered-by-passing-through. The inheritance (\"as I too have received from my father\") reflects into \"as I too gave back all I was lent to no one\" — reception becomes restitution to no giver. The rising morning star, crown of the grant, becomes the star withheld, the star that sets — the dawn's own negative pole. Non-superimposable: no rod, no nations, no victory, no inheritance survives; yet each image occupies the reflected coordinate. The hope-wager's cost is paid — the source reached forward to a reward owed; the inversion pays the countervailing price of the promise's own presupposed loss, and the affect departs from triumph into relinquishment, not toward the consolation the witness's question solicits."
   }
  ],
- "last_updated": "2026-07-03T06:05:13.633185+00:00"
+ "last_updated": "2026-07-03T06:05:57.879899+00:00"
 }
