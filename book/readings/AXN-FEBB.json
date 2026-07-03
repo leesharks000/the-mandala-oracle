@@ -296,11 +296,108 @@
     "mode": "producer_side"
    },
    "commentary": "The source solicits: it commands remembrance, repentance, wakefulness, and stakes an unknown hour on the hearer's answering vigilance — engagement in which the watcher's act matters and the door stays open. Rotating the response-axis to foreclosed non-response converts every solicitation to its mirror at the reflected coordinate: \"remember\" becomes \"forget\"; \"keep and repent\" becomes \"let it lie, ask nothing\"; the conditional \"if you do not stay awake, I will come\" becomes \"though you never slept, the fields stood cut before your lamp was lit\" — the arrival not merely sudden but already accomplished, addressed to no one. The withheld hour survives as invariant grammar (\"you will not learn which dawn\") but now seals not on future vigilance owed but on a vigil made posthumous. The thief-in-the-night intrusion becomes reapers who have already passed; watching, once efficacious, is disclosed as superfluous. No shared referent — no coming, no repentance, no eschatological threat — yet every image sits across the axis from its source coordinate. The affect is not the source's admonished dread nor consolation's reassurance: it is the quiet superfluity of a keeper whose watch never had an answer to give, which is precisely what the source's engagement-expectation foreclosed."
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·",
+   "citation": "3:3",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**3:3** Look now at what your hands already closed around and let fall, and it is done — for there was no waking left to do, the whole of it stood already inside the room like the noon that has no shadow to warn by, and there was never an hour you could have named because it was every hour at once, and it is on you now.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "command-to-recall",
+     "conditional-charge-to-keep-and-turn",
+     "conditional-warning-clause",
+     "simile-of-sudden-arrival",
+     "negated-foreknowledge",
+     "seal-of-the-uncertain-hour"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single prose verse; verse-marker 3:3 opens the line; colon-mid-stops (·) partition the clauses into a chain; retain marker position"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the addressee is charged to hold fast to what was already received",
+      "foreclosure": "that nothing was ever received, that origin is empty",
+      "wager": "buys a past worth guarding as the ground of the demand"
+     },
+     {
+      "beat": 2,
+      "determination": "vigilance is a turning-back, a repair of a lapse",
+      "foreclosure": "innocence — a state needing no repentance",
+      "wager": "buys the moral weight of a correctable failure"
+     },
+     {
+      "beat": 3,
+      "determination": "if you do not watch, the coming is set against you",
+      "foreclosure": "unconditional arrival regardless of watching",
+      "wager": "buys agency — the outcome hinges on the addressee"
+     },
+     {
+      "beat": 4,
+      "determination": "the arriver comes as a thief — unwilled, undesired, seizing",
+      "foreclosure": "the arriver as awaited guest, welcomed",
+      "wager": "buys terror as the price of unpreparedness"
+     },
+     {
+      "beat": 5,
+      "determination": "the hour is withheld from your knowing",
+      "foreclosure": "a disclosed date, a countdown one could prepare toward",
+      "wager": "buys perpetual wakefulness by denying the deadline"
+     },
+     {
+      "beat": 6,
+      "determination": "the sentence seals on 'upon you' — the coming lands on the person",
+      "foreclosure": "a diffuse cosmic event impersonal to the hearer",
+      "wager": "buys inescapable address"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "addressee's safety depends on future watching (future-directed, conditional)",
+      "the arrival depends on the addressee's failure to know its hour (epistemic concealment sustains dread)",
+      "present vigilance depends on an unknowable future coming (future sustains present)"
+     ],
+     "invariants": [
+      "the second-person address landing on 'you'",
+      "the conditional hinge (if… then)",
+      "the simile as sudden-manner clause",
+      "the negation of knowledge",
+      "the chained mid-stop cadence"
+     ],
+     "rotated_axis": "temporal/intensity: the withheld future arrival is rotated to a present already-total presence at ignition — concealment burns off into unbearable full disclosure NOW",
+     "installed_ontology": "not a coming that may seize when you sleep, but a coming already wholly arrived, so complete no hour remains to be watched for",
+     "emergent_proposition": "When the awaited seizure has already, fully happened, watchfulness has no future to guard and knowledge no hour to lack — everything you were told to keep is present and burning at once."
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the moment of remembering that a thing already given was never guarded — an accounting that has already closed while one was still preparing for it",
+    "field_source": "foreclosure at beat 5 (a disclosed date one could prepare toward)",
+    "source_affect": "vigilant dread of sudden seizure",
+    "target_affect": "scalding recognition it already came"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source strings six clauses toward a future that must be watched for because its hour is hidden; vigilance buys survival by keeping the deadline unknown. FLAME drives that intensity to its collapse-limit: the withheld arrival ignites into total present presence. Each beat is rotated across the temporal axis, not re-lexicalized. The command-to-recall becomes not \"guard what you received\" but \"look at what already slipped\" — memory turned to autopsy. The conditional charge to watch is voided: \"there was no waking left to do.\" The thief-simile — sudden, seizing, unwilled — becomes \"the noon that has no shadow to warn by\": still a figure of sudden manner, but its mirror, arrival by total illumination rather than covert night-theft, seizure by excess rather than stealth. The negated foreknowledge inverts: not \"you will not know which hour\" but \"there was never an hour to name, because it was every hour at once\" — concealment burned off into saturation. The seal holds on \"on you now,\" preserving the invariant landing on the person while collapsing the future into the present tense. No shared referents (no thief, no watching, no coming-again, no repentance-vocabulary survive as content); the chained mid-stop cadence and second-person address are the sparse retained anchors. The affect departs as the foreclosure demands: not dread of what may seize while you sleep, but the scald of recognizing the seizure is complete and the question \"how can I do better\" has no future to answer into — the operator, not the witness's longing, governs this."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T07:12:18.397016+00:00",
+ "last_updated": "2026-07-03T07:30:41.510960+00:00",
  "rite": [
   {
    "stage": "opening",
