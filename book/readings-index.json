@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FECA.READING.💫🌑🌓🌔🌑🌕",
+   "mode": "public",
+   "source_text_id": "plato-symposium",
+   "rotation_length": 2,
+   "inscribed_at": "2026-07-02T23:43:16.367620+00:00",
+   "last_updated": "2026-07-03T18:56:21.129457+00:00"
+  },
+  {
    "axn": "AXN:FE2A.READING.💫🌗🌘🌑🌿💫",
    "mode": "public",
    "source_text_id": "sharks-secret-book-of-walt",
@@ -106,5 +114,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 13
+ "total": 14
 }
