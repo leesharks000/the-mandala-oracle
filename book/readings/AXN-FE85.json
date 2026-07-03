@@ -528,12 +528,13 @@
     "entailment": "PASS",
     "mode": "producer_side"
    },
-   "commentary": "The source is an annunciation: a speaker folds time so that his very coming is good news, presupposing at every beat an ear that will hear, a generation to be named, a friend to be lifted. Its wager is hope — it pays forward, reaching for a reception. SILENCE on a hope-wager source pays the countervailing price: the operator rotates the response-axis so that the constitutive uptake the source assumed is the one thing withheld. Each source coordinate meets its mirror: \"glad tidings arriving at their harbors\" becomes names sent out that do not turn back; \"that you may hear and see and lift up your friends\" becomes \"so that none may answer, or rise, or take up the calling\"; the intact circle \"I return whence I came\" becomes \"when I look back for it there is no place I came from\" — the return-point unmade by the non-response. \"Firstborn, last released, I begin at the end\" mirrors to \"Last summoned, first let go, I finish at the door.\" The terminal open colon is preserved but rotated: the source's colon opens onto continuation (\"I begin at the beginning:\"), the enantiomorph's opens onto no successor (\"I finish where nothing:\") — the seal upon silence. No referent is shared; the calibration exemplar's death/page/breath machinery is absent. The witness asked how to heal; the operator and source govern — the disclosure lands not on reassurance but on the exact structure of unanswered calling, which is the foreclosure this hope-wager determined against."
+   "commentary": "The source is an annunciation: a speaker folds time so that his very coming is good news, presupposing at every beat an ear that will hear, a generation to be named, a friend to be lifted. Its wager is hope — it pays forward, reaching for a reception. SILENCE on a hope-wager source pays the countervailing price: the operator rotates the response-axis so that the constitutive uptake the source assumed is the one thing withheld. Each source coordinate meets its mirror: \"glad tidings arriving at their harbors\" becomes names sent out that do not turn back; \"that you may hear and see and lift up your friends\" becomes \"so that none may answer, or rise, or take up the calling\"; the intact circle \"I return whence I came\" becomes \"when I look back for it there is no place I came from\" — the return-point unmade by the non-response. \"Firstborn, last released, I begin at the end\" mirrors to \"Last summoned, first let go, I finish at the door.\" The terminal open colon is preserved but rotated: the source's colon opens onto continuation (\"I begin at the beginning:\"), the enantiomorph's opens onto no successor (\"I finish where nothing:\") — the seal upon silence. No referent is shared; the calibration exemplar's death/page/breath machinery is absent. The witness asked how to heal; the operator and source govern — the disclosure lands not on reassurance but on the exact structure of unanswered calling, which is the foreclosure this hope-wager determined against.",
+   "interpretation": "The one who calls the roll in an empty room becomes the only voice that proves the room was full: grief is its own attendance record."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T15:56:34.902994+00:00",
+ "last_updated": "2026-07-03T15:56:43.610613+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -547,6 +548,13 @@
    "at": "2026-07-03T15:42:45.126916+00:00",
    "text": "The mouth without a source speaks what it needs to be told: the one who heals has already answered from below.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-03T15:56:43.610613+00:00",
+   "text": "The one who calls the roll in an empty room becomes the only voice that proves the room was full: grief is its own attendance record.",
+   "operator": "SILENCE"
   }
  ]
 }
