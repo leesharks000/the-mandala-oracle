@@ -1,0 +1,74 @@
+{
+ "schema_version": "expansion/v1.0",
+ "source_text_id": "revelation-greek",
+ "source_title": "Revelation",
+ "unit_basis": {
+  "segmentation": "verse",
+  "primary_after": null,
+  "units_total": 405,
+  "basis_hash": "dc6d02cc3057adc99bc068a4a108149a875d085acc7c08d42e1afe9fcc837578",
+  "basis_note": "unit indices refer to segment_units() over primary text; if basis_hash changes, historical anchors are interpreted against the basis they were cast under"
+ },
+ "transforms": [
+  {
+   "transform_id": "TX-491aebff",
+   "cast_at": "2026-07-03T04:39:02.426370+00:00",
+   "reading_axn": "AXN:FEC3.READING.🌔🌑🌊🔥🌟🌓",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_30_30",
+    "citation": "2:10",
+    "start_unit": 30,
+    "end_unit": 30,
+    "unit_labels": [
+     "2:10"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single prose line prefixed by a chapter:verse marker **2:10**; no internal lineation; sequence of clauses joined paratactically"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:0ceaae2983d102912216d3080bd40757945375874da9d9a97e955ebe385db43e",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**2:10** ⸀μηδὲν φοβοῦ ἃ μέλλεις ⸀πάσχειν. ⸀ἰδοὺ μέλλει ⸀βάλλειν ὁ διάβολος ἐξ ὑμῶν εἰς φυλακὴν ἵνα πειρασθῆτε, καὶ ⸀ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου πιστὸς ἄχρι θανάτου, καὶ δώσω σοι τὸν στέφανον τῆς ζωῆς.",
+   "underlying_attribution": null,
+   "enantiomorph": "**2:10** Do not dread the cold that is about to close over you. See, the frost means to press you down beneath the soil so that you may be proven, and you will lie in darkness ten weeks. Stay unbroken until the thaw, and I will give you the blossom of the field.",
+   "layer_a": {
+    "units": 6,
+    "beat_map": [
+     "imperative-reassurance against coming ordeal",
+     "announcement of an agent's imminent hostile act with purpose-clause",
+     "prediction of bounded affliction (fixed measure)",
+     "imperative to sustained fidelity up to a limit",
+     "conditional promise of reward",
+     "naming of the reward as consummation"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single prose line prefixed by a chapter:verse marker **2:10**; no internal lineation; sequence of clauses joined paratactically"
+    }
+   },
+   "commentary": "The source composes reassurance not by removing the ordeal but by binding it inside a fixed measure (\"ten days\") and turning dread into an imperative to endure. The enantiomorph carries the same assertion-axis into the horticultural field disclosed by the source's own coherence: what is buried, tested by a fixed cold, and redeemed by a granted completion. The bearing-cost encoded is the interval itself — the composition does not spare its addressee the burial or the frost; it asks that the ordeal be held to its term without breaking, and stakes the whole address on a promise legible only after the endurance is spent. \"Ten weeks\" preserves the fixed-measure beat; \"blossom of the field\" occupies the crown-of-life consummation without importing its referents. The chapter:verse marker is retained in position."
+  }
+ ],
+ "last_updated": "2026-07-03T04:39:02.426370+00:00"
+}
