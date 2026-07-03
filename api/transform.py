@@ -185,6 +185,8 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
                 if not (1 <= a <= b <= len(units)):
                     raise ValueError(f"cast_selection out of range: source has {len(units)} units.")
                 text = text[units[a - 1]["s"]:units[b - 1]["e"]] if "s" in units[a - 1] else "\n\n".join(u["text"] for u in units[a - 1:b])
+                if not all(unit_is_primary(u, entry) for u in units[a - 1:b]):
+                    raise ValueError("only the primary text is transformable — the selection includes apparatus (MANUS ruling, 2026-07-02).")
                 attrs = {u.get("attribution") for u in units[a - 1:b]}
                 meta = dict(meta)
                 meta["underlying_attribution"] = (attrs.pop() if len(attrs) == 1 else
@@ -935,8 +937,21 @@ _ATTR_APPARATUS_RE = re.compile(
     r"acknowledg|site integration|data architecture|notes|bibliograph|apparatus|index",
     re.I)
 
+def unit_is_primary(u: dict, entry: dict) -> bool:
+    """MANUS ruling (2026-07-02): primary text is the central work itself —
+    the non-commentary portion the author wrote. Fictional critical apparatus
+    (editor's prefaces, condemnations, councils, appendices, codicological
+    tables) is apparatus even when integral to the artifact. Sources declare
+    a primary_attribution allowlist; absent one, the global apparatus
+    denylist applies."""
+    a = u.get("attribution")
+    pa = entry.get("primary_attribution")
+    if pa:
+        return bool(a and re.search(pa, a))
+    return not (a and _ATTR_APPARATUS_RE.search(a))
+
 def judgment_select(question: str, source_title: str, units: list[dict],
-                    full_text: str, api_key: str) -> tuple[dict, str]:
+                    full_text: str, api_key: str, _entry: dict | None = None) -> tuple[dict, str]:
     """The invisible Judgment chooses the verses FROM THE FILE ITSELF, under
     guidelines (MANUS design, 2026-07-02) — not from a pre-drawn candidate
     set. The server validates the choice; the expansion ledger audits the
@@ -950,8 +965,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         lo, hi = (strat * n) // k, max(((strat + 1) * n) // k - 1, (strat * n) // k)
         start = lo + secrets.randbelow(hi - lo + 1)
         for _ in range(n):
-            a_ = units[start].get("attribution")
-            if not (a_ and _ATTR_APPARATUS_RE.search(a_)): break
+            if unit_is_primary(units[start], _entry or {}): break
             start = (start + 1) % n
         end, chars, attr = start, len(units[start]["text"]), units[start].get("attribution")
         while chars < WINDOW_MIN_CHARS and end - start + 1 < WINDOW_MAX_UNITS and end + 1 < n \
@@ -967,6 +981,8 @@ def judgment_select(question: str, source_title: str, units: list[dict],
     # unit map: label · attribution · first line · size
     lines = []
     for i, u in enumerate(units):
+        if not unit_is_primary(u, _entry or {}):
+            continue
         first = u["text"].splitlines()[0][:70]
         attr = f" [{u['attribution']}]" if u.get("attribution") else ""
         lines.append(f"{i+1}. ({u['label']},{len(u['text'])}ch){attr} {first}")
@@ -1007,8 +1023,8 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         if not (90 <= len(span) <= MAX_CAST_CHARS): raise ValueError("size")
         attrs = {u.get("attribution") for u in units[a-1:b]}
         if len(attrs) > 1: raise ValueError("attribution crossing")
-        _a0 = next(iter(attrs))
-        if _a0 and _ATTR_APPARATUS_RE.search(_a0): raise ValueError("apparatus section")
+        if not all(unit_is_primary(u, _entry) for u in units[a-1:b]):
+            raise ValueError("apparatus section — only the primary text is transformable")
         cit = units[a-1]["label"] if a == b else f"{units[a-1]['label']}–{units[b-1]['label']}"
         return {"start": a, "end": b, "citation": cit, "text": span,
                 "attribution": attrs.pop()}, str(pj.get("reason", "")).strip()
@@ -1120,7 +1136,7 @@ class handler(BaseHTTPRequestHandler):
                     return self._json(400, {"error": "the source yielded no castable units."})
                 question = (body.get("question") or "")[:MAX_INVOKING_CHARS]
                 chosen, reason = judgment_select(question, entry.get("title", entry["id"]),
-                                                 units, _pt, api_key)
+                                                 units, _pt, api_key, _entry=entry)
                 return self._json(200, {
                     "cast_selection": f"units_{chosen['start']}_{chosen['end']}",
                     "citation": chosen["citation"],

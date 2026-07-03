@@ -19,7 +19,8 @@
    "admissible": true,
    "text_file": "original.md",
    "menu": true,
-   "primary_after": "# Day and Night"
+   "primary_after": "# Day and Night",
+   "primary_attribution": "^(Sappho|Anacreon|Anacreontea|Alcman|Catullus|Simonides|Stesichorus|Hipponax|Corinna)\\b"
   },
   {
    "id": "dancings-epistle-to-the-human-diaspora",
@@ -247,7 +248,8 @@
    "zodiac": "",
    "admissible": true,
    "text_file": "original.md",
-   "menu": true
+   "menu": true,
+   "primary_attribution": "^(§|Prefatory Poem)"
   },
   {
    "id": "sharks-tachyon-poem",
