@@ -244,7 +244,65 @@
     }
    },
    "commentary": "The source is a hope-wager: it pays its cost by staking the blessing on a reception it cannot secure — the reader who takes up, hears, keeps — and seals with NEARNESS to make that reception urgent. SHADOW on the assertion-axis casts what the utterance BORE to make that wager: it determined against deferral, against the far horizon, against the possibility that the appointed moment never arrives. The enantiomorph inhabits beat 4's foreclosure exactly — the day is far off and comes for no one — and lets the whole benedictive skeleton follow from it. Blessing (μακάριος) becomes ease; the one who reads/keeps becomes the one who forgets/releases; the plurality who observe the written things becomes the plurality who cancel what stood written; the γάρ-imminence inverts to γάρ-indefinite-remoteness. The source's cost — that it must insist the moment is near because a near reception is precisely what a hope-wager cannot guarantee — is made legible by casting a world where the horizon is released and nothing is at stake in the timing. The affect crosses from urgent hope to the flatter relief of a debt let go: not consolation offered but obligation dissolved, which is what the foreclosed far-horizon discloses. Field is disjoint (fiscal/debt-remission, no prophecy, no hearing, no blessing-vocabulary shared); source not reconstructible. The verse-marker **1:3** holds its position; the single continuous line and its καί/γάρ hinge-geometry are reproduced intact."
+  },
+  {
+   "transform_id": "TX-2539b3f0",
+   "cast_at": "2026-07-03T05:21:45.339474+00:00",
+   "reading_axn": "AXN:FE76.READING.🌗🌙🌗🌑🌙🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_3_3",
+    "citation": "1:3",
+    "start_unit": 3,
+    "end_unit": 3,
+    "unit_labels": [
+     "1:3"
+    ]
+   },
+   "operator": "MIRROR",
+   "operator_axis": "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single verse-line prefixed by structural marker **1:3**; one continuous sentence with a causal seal-clause"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:8a6b254f3202110c1e8b065e52868329558d68e4f70e09fb50ea44d8daa0bafb",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**1:3** μακάριος ὁ ἀναγινώσκων καὶ οἱ ἀκούοντες τοὺς λόγους τῆς προφητείας καὶ τηροῦντες τὰ ἐν αὐτῇ γεγραμμένα, ὁ γὰρ καιρὸς ἐγγύς.",
+   "underlying_attribution": null,
+   "enantiomorph": "**1:3** Emptied is the one who gives it away and those who let go the coins of the long silence and scatter what was held closed in the palm, for the distance already widens.",
+   "layer_a": {
+    "units": 4,
+    "beat_map": [
+     "benediction (blessing pronounced upon receivers)",
+     "qualification (the receivers specified as those who take in the words)",
+     "conditional-qualification (and who keep/guard what is inscribed)",
+     "seal (grounding urgency: for the time is near)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single verse-line prefixed by structural marker **1:3**; one continuous sentence with a causal seal-clause"
+    }
+   },
+   "commentary": "The source is a one-directional benediction: blessing descends the channel from prophecy to hearer, reception is intake, retention is guarding, and the seal closes the distance (the time draws near). MIRROR inverts the directionality axis at every beat. Benediction-descending becomes emptying-outward (\"Emptied is the one who gives it away\"); intake becomes emission and dispersal (\"let go... scatter what was held closed\"); the guarding of what is written becomes the releasing of what was closed in the palm; and the approaching time reverses into a widening distance (\"the distance already widens\"). The hope-wager source paid a cost reaching toward future reception — its cast pays the countervailing price: rather than gathering the hearer in, the enantiomorph spends itself and cannot recall the gift. The field is drawn from beat 2's foreclosure (reception-as-emission), not free scenery: the coins of long silence are what the withholding mouth releases. The witness's question — how will this find ears — is answered not by consolation but by its mirror: the giving that cannot govern where its scattering lands. Source cannot be reconstructed: no prophecy, no reading, no blessing, no nearness survives in the cast's semantics."
   }
  ],
- "last_updated": "2026-07-03T05:21:08.273308+00:00"
+ "last_updated": "2026-07-03T05:21:45.339474+00:00"
 }
