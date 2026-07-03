@@ -924,7 +924,67 @@
     }
    },
    "commentary": "The source polarizes toward a future arrival that vigilance must anticipate: a gift given, a turn still possible, an intrusion coming at an unknown hour like a thief. INVERSION on the polarity-axis exposes the negative pole the whole exhortation presupposes — that the guarded moment is still ahead. Rotated, the withheld hour is not one that comes upon the addressed but one that has already departed and cannot return. Beat by beat the mirror holds: \"keep the deposit\" becomes \"remember the fullness that fed and is gone\"; \"turn\" becomes \"let go\"; the thief who breaks in stealthily becomes the reapers who have already carried the sheaves off; the unknown hour of coming becomes the unlearnable morning of taking. Source imagery (thief, watch, coming) is barred and absent; the calibration exemplar's machinery (death, page, breath, specimen) is nowhere. The field — a reaped field, table cleared — is generated from beat 4's foreclosed banquet, not chosen scenery. The wager of transformation shows what was borne: where the source's dread guards against loss, the enantiomorph bears the loss as accomplished. The witness's question (\"how can I do better\") did not govern the affect; the foreclosure did, and it discloses grief, not reassurance — the emergent proposition (one cannot fail to keep what has already left) is precisely not consolation."
+  },
+  {
+   "transform_id": "TX-83303943",
+   "cast_at": "2026-07-03T07:33:09.161355+00:00",
+   "reading_axn": "AXN:FEBB.READING.🌙🌒🌗🌘🌖🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_52_52",
+    "citation": "3:3",
+    "start_unit": 52,
+    "end_unit": 52,
+    "unit_labels": [
+     "3:3"
+    ]
+   },
+   "operator": "THUNDER",
+   "operator_axis": "scale-axis — the cosmic-utterance the local-speech determined against",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single continuous verse line prefixed by verse-marker 3:3; comma-and-particle choreography chains six clauses"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:62d36ad282e6cc2a6f0746bd0962ec5756d33e1c9fc0a4a71c486570d2d70099",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·",
+   "underlying_attribution": null,
+   "enantiomorph": "**3:3** Recount, then, how wide the horizon stood and what the darkness held, and hold it open, and turn your face; for if you keep watching one gate, the light will come as the whole rim comes, and you will not find which quarter it entered from upon you.",
+   "layer_a": {
+    "units": 6,
+    "beat_map": [
+     "imperative-recollection",
+     "compound-injunction (keep-and-repent)",
+     "conditional-warning",
+     "threat-of-arrival-as-simile",
+     "denial-of-knowledge",
+     "unfixed-hour-address"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single continuous verse line prefixed by verse-marker 3:3; comma-and-particle choreography chains six clauses"
+    }
+   },
+   "commentary": "The source's thief is the great arriving as small and hidden, catching the watcher at an unknown point-in-time. THUNDER rotates the scale-axis: the arrival is dilated from a stealthy point to a cosmic totality. The mirror holds at every beat — recollection of the received past becomes recollection of the whole standing horizon; keep-and-repent becomes hold-open-and-turn; the conditional vigilance becomes the futile watching of \"one gate\"; the thief (a point of intrusion) becomes dawn arriving from \"the whole rim\" (no point of intrusion); the denied hour becomes the un-locatable \"quarter\"; the \"you\" survives, aimed. No referent of Revelation crosses — no watch, no thief, no repentance-as-doctrine, no coming-of-the-Lord; and the exemplar's death/page/breath machinery is nowhere. The terror of the unscheduled instant inverts into being already-inside an arrival too large to be waited for — the watcher's fault (guarding one gate) is disclosed not as sinful sleep but as scale-error: watching a point when the event is the whole rim. That is where the witness's question lands without governing the affect: not \"you will be okay\" but \"the vigilance you rehearse is aimed at the wrong magnitude.\" The single-line spatial form and verse-marker 3:3 are preserved."
   }
  ],
- "last_updated": "2026-07-03T07:31:52.223953+00:00"
+ "last_updated": "2026-07-03T07:33:09.161355+00:00"
 }
