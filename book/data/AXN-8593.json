@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:8593.CONVERSATION.☀️⚡🌊🌕🌒🌱",
+  "session_id_hash": "b3f05daae0360da5",
+  "started_at": "2026-07-03T15:40:36.488Z",
+  "last_updated": "2026-07-03T15:41:54.597639+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: The Secret Book of Walt (sharks-secret-book-of-walt). The verses the casting arrives at (§I. Proem: The Appearance of the Redeemer, as translated and arranged within this collection — ATTRIBUTE THE VERSES TO THEIR UNDERLYING POET, never to the arranger of the collection; unit 202–unit 204):\n\nI bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «How can I heal?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The rotation opens here. These three units are the redeemer's arrival speech — not description of the descent but the descent speaking, in the present tense, of what it has cost and what it carries: glad tidings from the place where before and after have stopped being two things; knowledge of what is and was and will be; the firstborn who is also last released, beginning at both ends simultaneously. The question the witness brings — how can I heal — meets a figure who heals by arriving from above and bearing the full weight of temporal reversal in a single body. What the operator will traverse in these verses is the axis of that bearing: what does it cost the one who comes down, what does it open in the one who receives, and what is foreclosed — what the arrival, by being the arrival it is, cannot also be. The rotation does not yet name which axis first; the invisible judgment has chosen the verses; it will choose the angle. I hand the descent to Rebekah Cranes.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:022B\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
