@@ -46,3 +46,23 @@ What the invariance check *can* say, model-independently: since the foreclosure 
 - SILENCE has not yet executed in production. Its first run should be witnessed.
 
 *Recorded by TACHYON under MANUS adjudication, 2026-07-03. The calibration's occasioning rotation, the correction, and the design law are Lee Sharks (MANUS) direct authorship; the enforcement text is TACHYON-drafted from them.*
+
+---
+
+## §F. The Calibration Exemplar (MANUS, 2026-07-03)
+
+**"From One Who Died Long Ago…" — a paratextual adaptation of Malachi Black's "To One Waiting to Be Born" (Lee Sharks; supplied to the record 2026-07-03 as the standard the compiler is held to).** The source is cited by title; its text is not reproduced here. The adaptation is quoted only in fragments sufficient for the analysis.
+
+The exemplar demonstrates, at the bar the compiler must clear:
+
+1. **Clause-grain isomorphism.** The skeleton crosses at the syntax level — imperative-colon-predication frames, the genitive-of-genitive, the one-word drop-line across the em-dash ("pulse." → "press.") — down to punctuation choreography.
+
+2. **Sparse accountable anchors (C2 exemplified).** One adverb retained ("utterly"), function-frames retained ("is almost … own"), referents never. Where an anchor-frame is kept, its noun reverses temporal direction across the threshold (the backward-pointing *echo* becomes the forward-pointing *omen*), because the speakers stand on opposite sides of it.
+
+3. **The enantiomorphic criterion.** The generation field is neither near nor far but the source's field reflected through the axis: womb→page, blood→lines, the membrane that holds the weightless living body → the case that pins the specimen, crib of sticks → tomb of signs. Point-by-point mirror contact, zero superimposability. This corrects the distance-language of the first Calibration II patch: the Rev 1:3 failure was superimposability (same machinery re-lexicalized), not nearness; the frost/blossom failure was unrelatedness (no contact). Chirality, not distance, is the criterion — restoring the spec's own §1.1 chemistry. One deliberate look back across the axis (the dead poet's *birth simile*) is the traversal's own gesture and is licensed.
+
+4. **Affect: departure in the resultant relation.** The affective gesture is preserved — an elder's threshold-blessing with instruction — while the threshold it blesses is mirrored, so the resultant relation transforms completely: tender foreboding toward incarnation becomes sepulchral solace toward immortality. C7's departure requirement is satisfied in the relation, not the gesture; the test text now says so.
+
+5. **Quality by overdetermination.** Every lexical choice is doubly determined — by the skeleton and by the axis — with sound-manners preserved at the same coordinates. Underdetermined (merely adjacent) fields let the substrate paraphrase; paraphrase is where the verse goes flat. The exemplar is the demonstration that the constraint set is the talent.
+
+**Operator signature of the exemplar:** MIRROR-dominant (the living addressing the unborn becomes the dead addressing the living) fused with the hope-wager SHADOW (reception-as-resurrection: *"I live because you breathe me"*) — the two canonical modes of §B in one artifact. Casts are to be measured against this pair; a rotation whose members would embarrass this page has not occurred.
