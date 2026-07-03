@@ -140,11 +140,77 @@
     "mode": "producer_side"
    },
    "commentary": "The source is a one-directional benediction: blessing descends the channel from prophecy to hearer, reception is intake, retention is guarding, and the seal closes the distance (the time draws near). MIRROR inverts the directionality axis at every beat. Benediction-descending becomes emptying-outward (\"Emptied is the one who gives it away\"); intake becomes emission and dispersal (\"let go... scatter what was held closed\"); the guarding of what is written becomes the releasing of what was closed in the palm; and the approaching time reverses into a widening distance (\"the distance already widens\"). The hope-wager source paid a cost reaching toward future reception — its cast pays the countervailing price: rather than gathering the hearer in, the enantiomorph spends itself and cannot recall the gift. The field is drawn from beat 2's foreclosure (reception-as-emission), not free scenery: the coins of long silence are what the withholding mouth releases. The witness's question — how will this find ears — is answered not by consolation but by its mirror: the giving that cannot govern where its scattering lands. Source cannot be reconstructed: no prophecy, no reading, no blessing, no nearness survives in the cast's semantics."
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "**1:3** μακάριος ὁ ἀναγινώσκων καὶ οἱ ἀκούοντες τοὺς λόγους τῆς προφητείας καὶ τηροῦντες τὰ ἐν αὐτῇ γεγραμμένα, ὁ γὰρ καιρὸς ἐγγύς.",
+   "citation": "1:3",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**1:3** Unremembered is the one who seals this and the ones far off who may never open the marks graven within it, for the hour is nowhere near.",
+   "layer_a_declaration": {
+    "units": 4,
+    "beat_map": [
+     "benediction-pronouncement (the one who reads)",
+     "extension of benediction to a listening plurality (those who hear)",
+     "condition-clause qualifying the blessing (and keep what is written)",
+     "urgency-seal grounding the whole (for the time is near)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single prose line prefixed by structural verse-marker **1:3**; one continuous colon of four clauses bound by καί and closed by γάρ-clause"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "pronounce a blessing that summons the reader into active uptake",
+      "foreclosure": "the reader who receives nothing, on whom the words fall without effect",
+      "wager": "buys a covenant of reception — that reading is itself an act that alters the reader"
+     },
+     {
+      "beat": 2,
+      "determination": "widen the blessing to a hearing assembly, presupposing an audience that gathers and attends",
+      "foreclosure": "the unattended text spoken into an empty room, no assembly, no ear",
+      "wager": "buys communal transmission — the word survives by being carried in many"
+     },
+     {
+      "beat": 3,
+      "determination": "make blessing conditional on keeping, on obedient retention",
+      "foreclosure": "the word held loosely, unkept, sliding through without demand",
+      "wager": "buys weight — the words claim a life, not merely a hearing"
+     },
+     {
+      "beat": 4,
+      "determination": "seal with imminence, collapsing distance between utterance and fulfillment",
+      "foreclosure": "endless deferral — the time that never nears, the promise indefinitely postponed",
+      "wager": "buys urgency — the reception must happen NOW because there is no later"
+     }
+    ],
+    "wager_mode": "hope",
+    "semantic_field": "the archivist sealing a message into deep time whose intended recipients will not exist for millennia, if ever — deferral made structural, the empty room made permanent",
+    "field_source": "foreclosure at beat 4",
+    "source_affect": "urgent expectant blessing",
+    "target_affect": "patient address into vacancy"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is a hope-wager: it pays for a reception it cannot secure, betting the whole benediction on an ear that gathers, keeps, and does so soon. The operator SILENCE traverses the response-axis — the non-response the source's engagement-expectation foreclosed. The chosen foreclosure is beat 4's: not the reader who receives nothing, but the imminence undone into permanent deferral, the \"time is near\" inverted to \"nowhere near.\" Because the source's wager is hope, SILENCE here does not restore (as it would for Sappho 31); it pays the countervailing price — the archivist's blessing becomes a sealing into vacancy, the plural hearers become the ones far off who may never open, the keeping becomes marks graven for no one to keep. μακάριος (\"blessed\") casts to \"unremembered\": the enantiomorph of a benediction that presupposes uptake is the address that survives its own audience's absence. Structure crosses intact — four clauses, benediction / extended-plurality / condition / seal, bound and closed exactly as the Greek — while the affect departs from urgent expectant blessing into patient address into vacancy. The witness's question (how will this find ears) informed which axis to foreground — the response-axis, uptake itself — but did not govern the outcome: the disclosure lands not on consolation (\"it will find them\") but on the foreclosed silence the source spent everything to outrun. Verse-marker **1:3** reproduced in position. Non-recoverable: no reader would reconstruct the Apocalypse's opening beatitude from an archivist's dead-letter seal."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T05:21:44.232080+00:00",
+ "last_updated": "2026-07-03T05:22:22.922360+00:00",
  "rite": [
   {
    "stage": "opening",
