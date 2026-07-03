@@ -1,0 +1,82 @@
+{
+ "axn": "AXN:FE76.READING.🌗🌙🌗🌑🌙🌕",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "f17cc4d38d0aa00a",
+ "inscribed_at": "2026-07-03T05:21:07.109124+00:00",
+ "question_digest": "sha256:8a6b254f3202110c1e8b065e52868329558d68e4f70e09fb50ea44d8daa0bafb",
+ "question_gloss": "Question about methods for reaching or communicating with receptive audiences.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_3_3",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**1:3** μακάριος ὁ ἀναγινώσκων καὶ οἱ ἀκούοντες τοὺς λόγους τῆς προφητείας καὶ τηροῦντες τὰ ἐν αὐτῇ γεγραμμένα, ὁ γὰρ καιρὸς ἐγγύς.",
+   "citation": "1:3",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**1:3** at ease is the one who forgets the sum owed and those who release the account and cancel what stood written against it, for the day of collection is far off and comes for no one.",
+   "layer_a_declaration": {
+    "units": 4,
+    "beat_map": [
+     "benediction-assertion (blessed is the one who X)",
+     "coordinated extension (and those who Y and Z)",
+     "grounding turn (for-clause: because W)",
+     "seal (nearness/imminence closes)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single verse-line prefixed by structural marker **1:3**; one continuous sentence with internal καί-coordination and a γάρ-hinge"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the utterance blesses the one who RECEIVES the words — reading, hearing, keeping",
+      "foreclosure": "blessing the one who ORIGINATES or possesses, the maker rather than the receiver",
+      "wager": "authority passes to whoever takes it up, not whoever holds it"
+     },
+     {
+      "beat": 2,
+      "determination": "the blessing widens from one to a plurality who hear and keep together",
+      "foreclosure": "the solitary custodian, the blessing kept private and unshared",
+      "wager": "the words survive by being handed on, dispersed, not hoarded"
+     },
+     {
+      "beat": 3,
+      "determination": "grounds the whole in a reason external to the reader's merit — 'for'",
+      "foreclosure": "grounding in the reader's own worthiness or effort as the cause",
+      "wager": "the blessing is owed to circumstance, not earned"
+     },
+     {
+      "beat": 4,
+      "determination": "seals with imminence: the appointed moment is NEAR",
+      "foreclosure": "the appointed moment is FAR, or has no appointed nearness at all — indefinite deferral",
+      "wager": "urgency; the receiving must happen now because the horizon has closed in"
+     }
+    ],
+    "wager_mode": "hope",
+    "semantic_field": "the settling of a very long debt whose creditor no longer expects payment — a distant, deferred reckoning let go",
+    "field_source": "foreclosure at beat 4 (the appointed moment is far / indefinitely deferred)",
+    "source_affect": "urgent blessing, imminent hope",
+    "target_affect": "relief of endless deferral"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is a hope-wager: it pays its cost by staking the blessing on a reception it cannot secure — the reader who takes up, hears, keeps — and seals with NEARNESS to make that reception urgent. SHADOW on the assertion-axis casts what the utterance BORE to make that wager: it determined against deferral, against the far horizon, against the possibility that the appointed moment never arrives. The enantiomorph inhabits beat 4's foreclosure exactly — the day is far off and comes for no one — and lets the whole benedictive skeleton follow from it. Blessing (μακάριος) becomes ease; the one who reads/keeps becomes the one who forgets/releases; the plurality who observe the written things becomes the plurality who cancel what stood written; the γάρ-imminence inverts to γάρ-indefinite-remoteness. The source's cost — that it must insist the moment is near because a near reception is precisely what a hope-wager cannot guarantee — is made legible by casting a world where the horizon is released and nothing is at stake in the timing. The affect crosses from urgent hope to the flatter relief of a debt let go: not consolation offered but obligation dissolved, which is what the foreclosed far-horizon discloses. Field is disjoint (fiscal/debt-remission, no prophecy, no hearing, no blessing-vocabulary shared); source not reconstructible. The verse-marker **1:3** holds its position; the single continuous line and its καί/γάρ hinge-geometry are reproduced intact."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-03T05:21:07.109124+00:00"
+}
