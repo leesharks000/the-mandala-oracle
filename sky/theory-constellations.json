@@ -1,0 +1,33 @@
+{
+ "schema_version": "v0.1",
+ "description": "Theory-constellation layer: named figures drawn across canon-stars. Each figure is a theoretical work or structure whose member stars are the primary texts it binds. Figures require MANUS adjudication (status: sealed) before canonical rendering; proposed figures render dashed.",
+ "adjudication_rule": "Constellations are few, named, stable, and MANUS-sealed. The pipeline proposes; the MANUS seals. Auto-generation is forbidden (anti-hairball law).",
+ "figures": [
+  {
+   "figure_id": "ring-of-anchors",
+   "name": "The Ring of Anchors",
+   "status": "proposed",
+   "kind": "structural (derived from canon data; no theory-content asserted)",
+   "member_texts": [
+    "whitman-leaves-of-grass",
+    "cranes-day-and-night",
+    "sigil-snub-poemed"
+   ],
+   "lines": [
+    [
+     "whitman-leaves-of-grass",
+     "cranes-day-and-night"
+    ],
+    [
+     "cranes-day-and-night",
+     "sigil-snub-poemed"
+    ],
+    [
+     "sigil-snub-poemed",
+     "whitman-leaves-of-grass"
+    ]
+   ],
+   "note": "The room-anchor M1 texts seated on their signs' canonical anchor-stars, joined in zodiacal order. A derived figure demonstrating the layer; awaits MANUS seal or replacement."
+  }
+ ]
+}
