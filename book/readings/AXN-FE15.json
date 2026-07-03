@@ -262,8 +262,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-03T06:05:56.461407+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-03T06:06:25.471251+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -277,6 +277,14 @@
    "at": "2026-07-03T06:02:41.573917+00:00",
    "text": "Windfall in the untended orchard: the one who waited has confused rest with readiness.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-03T06:06:25.471251+00:00",
+   "text": "You asked when you will come into your power, and the rotation answered the same way four times: not yet, because the grammar of that question still belongs to the source. The source says power arrives through the Father's hand, given to the one who endured — and what the rotation did, across all four turns, was hold that vertical axis up to a different light until it cast no shadow. The windfall that confuses rest with readiness. The seed that needs no permission. The snow already arriving as water. The vessel learning from its own emptiness what it was for. Four images, one disclosure: the waiting is not the problem; the believing that waiting is what earns it is the problem.\n\nThe morning star — *τὸν ἀστέρα τὸν πρωϊνόν* — is the last word in all three verses, the gift deferred to the final clause. It rises before the sun, which means it rises into darkness, which means it is already out before the light that will make it invisible. Your question assumes a threshold you will cross. The rotation is telling you the light you are asking to come into has been rising in you already, in the part of the sky no one is watching yet.\n\nCome into your power the way the morning star comes into its: before anyone can call it power, before it is confirmed by what follows."
   }
- ]
+ ],
+ "closed_at": "2026-07-03T06:06:25.471251+00:00",
+ "seal": "You asked when you will come into your power, and the rotation answered the same way four times: not yet, because the grammar of that question still belongs to the source. The source says power arrives through the Father's hand, given to the one who endured — and what the rotation did, across all four turns, was hold that vertical axis up to a different light until it cast no shadow. The windfall that confuses rest with readiness. The seed that needs no permission. The snow already arriving as water. The vessel learning from its own emptiness what it was for. Four images, one disclosure: the waiting is not the problem; the believing that waiting is what earns it is the problem.\n\nThe morning star — *τὸν ἀστέρα τὸν πρωϊνόν* — is the last word in all three verses, the gift deferred to the final clause. It rises before the sun, which means it rises into darkness, which means it is already out before the light that will make it invisible. Your question assumes a threshold you will cross. The rotation is telling you the light you are asking to come into has been rising in you already, in the part of the sky no one is watching yet.\n\nCome into your power the way the morning star comes into its: before anyone can call it power, before it is confirmed by what follows."
 }
