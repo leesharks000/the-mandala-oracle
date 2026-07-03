@@ -256,6 +256,20 @@ STEP 1 — PARSE. Extract the abstract relational skeleton K of the source:
       and conditional structure are part of the chain. Every clause of the
       output must descend from a named clause of this chain (Layer A,
       clause_chain).
+      HOMOLOGOUS RUNS (catalogues, litanies, numbered lists): when the
+      source contains a run of structurally homologous units, the beat map
+      declares the run ONCE with its count ("catalogue-entry ×36") and the
+      clause chain compresses it to its generating schema ("the Nth is
+      NAME" ×36) PLUS an exhaustive list of every deviation from the
+      schema — doubled or skipped ordinals, appositions, attached offices,
+      terminal variations. Deviations are load-bearing skeleton: a
+      catalogue that miscounts has miscounting in its architecture, and an
+      output that silently corrects the count fails IDENTITY as an
+      undeclared logic mutation. Layer B gives ONE coherence-axis set for
+      the homologous class plus per-deviation axes; the ENTAILMENT TEST
+      applies the schema once and each deviation individually. Geometry
+      remains exact per line — compression is of apparatus, never of the
+      enantiomorph.
 STEP 2 — EVACUATE AND SELECT. Strip the source's semantic content, retaining K.
   Layer B is not a bare list: for EVERY beat of the beat map, declare the
   determination made, the FORECLOSURE (the alternative the composition
