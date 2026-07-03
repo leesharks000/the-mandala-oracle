@@ -429,7 +429,70 @@
     }
    },
    "commentary": "The source's assertion-axis is the conditional grant: power is what you do not yet have, held out as the wage of endurance, ruling-by-shattering, authorized from above, still promised. SHADOW bears its hope-wager cost by traversing the beat-1 foreclosure — the reward that needs no waiting. The enantiomorph occupies the three-verse skeleton exactly (conditional opening, granted mode, legitimating close) while replacing striving with the already-ripe: nourishment that precedes any deserving, a branch that bends rather than breaks (the exact inverse of the iron rod that shatters pottery), a gift that owes nothing upward and ripens no further — foreclosing the source's every deferral and lineage. Read alone, the output implies an agrarian utterance about sufficiency and windfall, not a militant apocalyptic promise; the source cannot be reconstructed. The witness asked when power arrives; the operator and source govern the cast, and the disclosure lands not on arrival but on the orchard already grown, owed to no one — the affect the beat-1 foreclosure discloses, not the answer the question longed for."
+  },
+  {
+   "transform_id": "TX-2a944d6d",
+   "cast_at": "2026-07-03T06:04:04.561970+00:00",
+   "reading_axn": "AXN:FE15.READING.🌖🌒🌗⭐🌑🌗",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_46_48",
+    "citation": "2:26–2:28",
+    "start_unit": 46,
+    "end_unit": 48,
+    "unit_labels": [
+     "2:26",
+     "2:27",
+     "2:28"
+    ]
+   },
+   "operator": "MIRROR",
+   "operator_axis": "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 3,
+    "stanzas": 1,
+    "indent_profile": [
+     0,
+     0,
+     0
+    ],
+    "notes": "three verse-marked lines, each opening with **c:v** marker, no blank separators; each unit a single flowing clause terminating in comma, comma, period — a descending cascade of granting"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:0e781ed965f96d8c0c8052aac85bae7d1f8c271861e68d71165ca5d1a5acfa4b",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**2:26** καὶ ὁ νικῶν καὶ ὁ τηρῶν ἄχρι τέλους τὰ ἔργα μου, δώσω αὐτῷ ἐξουσίαν ἐπὶ τῶν ἐθνῶν,\n\n**2:27** καὶ ποιμανεῖ αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ ὡς τὰ σκεύη τὰ κεραμικὰ ⸀συντρίβεται,\n\n**2:28** ὡς κἀγὼ εἴληφα παρὰ τοῦ πατρός μου, καὶ δώσω αὐτῷ τὸν ἀστέρα τὸν πρωϊνόν.",
+   "underlying_attribution": null,
+   "enantiomorph": "**2:26** and the one who wakes, the one who holds nothing back till the tide turns in her own blood, she takes from no hand the reach that was always hers,\n\n**2:27** and it presses outward against no throne, cracking only the shell she was folded in as a seed splits what once kept it whole,\n\n**2:28** for I received it from no one, and it answers to no name above mine, and it rises in her already, the light she was never given.",
+   "layer_a": {
+    "units": 3,
+    "beat_map": [
+     "conditional-address (giver names the qualifier and pledges authority downward)",
+     "consequence (the granted power exercised as dominion over the fragile below)",
+     "attestation-and-second-gift (giver grounds the grant in what he himself received from above, and adds the luminous token)"
+    ],
+    "spatial_form": {
+     "lines": 3,
+     "stanzas": 1,
+     "indent_profile": [
+      0,
+      0,
+      0
+     ],
+     "notes": "three verse-marked lines, each opening with **c:v** marker, no blank separators; each unit a single flowing clause terminating in comma, comma, period — a descending cascade of granting"
+    }
+   },
+   "commentary": "The MIRROR reflects the source across its directionality-axis: the source's every gesture descends and derives — a superior grants, a subordinate waits, a father is cited, a star is conferred. Point by point the enantiomorph occupies the reflected coordinate. The conditional-address is preserved but its vector inverts: the qualifier no longer awaits a gift but \"takes from no hand the reach that was always hers.\" The consequence-beat's outward shattering of brittle vessels becomes a fracture turned wholly inward — the shell she was folded in, the seed splitting only its own containment, breaking nothing outside itself. The attestation-and-token beat, where authority is grounded upward (\"as I received from my Father\") and crowned from without (\"I will give him the morning star\"), mirrors to \"I received it from no one\" and \"the light she was never given\" — the bestowed star becoming the self-risen, unconferred light. Non-superimposable: the source's machinery of descending legitimacy cannot be laid over an interior self-authorization; they are opposite faces. The single look back across the axis — \"the light she was never given\" — reaches for the source's star-gift precisely by negating its givenness, the traversal's own gesture. Wager-mode is hope: the source pays deferral, promising a future award to whoever endures; its foreclosure, traversed, pays the countervailing price by collapsing the wait — the power is disclosed as already present, owed to nothing, which is restoration rather than the source's promise-in-suspension. The witness's question (of coming-into-power) informed which axis to foreground but did not govern the outcome; the \"already risen\" is not consolation delivered to the longing but the structural inverse the source foreclosed by making power a deferred gift from above."
   }
  ],
- "last_updated": "2026-07-03T06:02:38.106956+00:00"
+ "last_updated": "2026-07-03T06:04:04.561970+00:00"
 }
