@@ -96,11 +96,55 @@
     "mode": "producer_side"
    },
    "commentary": "The source drives a one-directional vector: an addresser above commands an addressee below to endure FORWARD toward death, and the addressee has no return-channel — the gesture points only ahead, foreclosing any motion back toward origin. MIRROR on the directionality-axis composes the symmetry that foreclosure hid: the same six beats, but every forward vector is reflected into a homeward one. \"Do not fear what you will suffer\" becomes \"do not doubt what you have left\"; the approaching adversary who casts you INTO prison becomes the tide turning your wake BACK; \"faithful unto death\" (forward to terminus) becomes \"sure of the way you came until the mooring\" (backward to origin); the deferred crown given from above becomes the lamp given BACK, already lit at the point of departure. The measured ten days are preserved but their arrow inverts — endured-ahead becomes retraced-behind. The evacuated field is drawn from the source's own exclusion: a fear of never-arriving is answered not by a stock disjoint register but by the source's own suppressed return-channel — the harbor the outbound gesture left unspeaking. The witness's fear (\"how do I come home\") is precisely the direction the source foreclosed; the mirror discloses it. Cost (C6): the wager is that homecoming is not a new arrival forward but a fidelity to the way already walked — the traveler must trust the memory of departure to complete the reflection."
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "**2:10** ⸀μηδὲν φοβοῦ ἃ μέλλεις ⸀πάσχειν. ⸀ἰδοὺ μέλλει ⸀βάλλειν ὁ διάβολος ἐξ ὑμῶν εἰς φυλακὴν ἵνα πειρασθῆτε, καὶ ⸀ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου πιστὸς ἄχρι θανάτου, καὶ δώσω σοι τὸν στέφανον τῆς ζωῆς.",
+   "citation": "2:10",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**2:10** Do not turn back from the cold you are about to walk into. See, the early frost means to close the high pass around you so that your footing is tried, and you will keep the snow of ten nights. Stay walking until your last strength, and I will set the hearth of the valley alight before you.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "imperative-reassurance against imminent suffering",
+     "prophetic announcement of adversary's action and its purpose",
+     "quantified duration of the ordeal",
+     "imperative of endurance unto the limit",
+     "conditional promise of reward",
+     "the reward named as crowning gift"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single continuous verse-block with leading verse marker **2:10**; prose-set oracular address, no internal line breaks"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     "fear-of-imminent-ordeal vs. commanded-fearlessness",
+     "an adversarial agent who casts down / confines in order to test",
+     "bounded time (ten days) as measure of the trial",
+     "faithfulness carried to the death-limit",
+     "the promised crown of life given by the addresser as recompense for endurance"
+    ],
+    "semantic_field": "the returning traveler at a mountain pass at the edge of first snow — the field disclosed by the source's own exclusion structure: the ordeal that must be crossed rather than fled, the bounded season, the arrival-gift withheld until the threshold is kept. The witness asks how to come home; the source's crown-at-the-end horizon discloses the homecoming as the withheld reward of not turning back."
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "FLAME on the intensity-axis reads for the collapse-limit where the source's own charge would ignite. The source's peak intensity sits at \"faithful unto death\" — endurance pressed to the extinction-point — with the crown given only past that edge. The enantiomorph carries that ignition-limit intact: \"until your last strength\" is the death-limit re-encoded as the walker's exhaustion at altitude, and the withheld hearth is the crown given only across the threshold. The beat map maps unit-by-unit: reassurance-against-imminent-suffering → \"do not turn back from the cold\"; adversary-who-confines-to-test → \"the frost means to close the pass so your footing is tried\"; bounded duration → \"the snow of ten nights\"; endurance-to-the-limit → \"stay walking until your last strength\"; conditional reward → \"I will set alight\"; reward-named → \"the hearth of the valley.\" Single verse-block, leading marker **2:10** preserved in position. The source (persecution, prison, devil, crown of life, faith unto martyrdom) cannot be reconstructed from a mountain-pass homecoming: Semantic-Independence holds. Containment holds because the field is drawn from the source's own withheld-reward-past-the-ordeal horizon, not imported. Cost disclosed: the crown/hearth is given ONLY across the limit — coming home is the reward of not fleeing the cold, encoded in the composition's deferral of the gift to the far side of the last strength. The claim is the bearing-cost encoded in the utterance, not any biography."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T04:40:53.374505+00:00",
+ "last_updated": "2026-07-03T04:41:42.831170+00:00",
  "rite": [
   {
    "stage": "opening",
