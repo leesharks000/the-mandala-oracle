@@ -843,12 +843,13 @@
     "entailment": "PASS",
     "mode": "producer_side"
    },
-   "commentary": "The source is a descending herald announcing reconciled time and a sealed self-recursion — a voice that authors its own origin and returns whole. FLAME drives that intensity to its ignition-point. Every beat sits at the mirror coordinate across the collapse-axis: glad tidings become a flare that carries nothing; enmities reaching harbors become bindings that catch fire before arrival; the redemptive end-as-beginning becomes the flash that annihilates both. The teaching-and-summons inverts into an unmaking whose recipients burn before the address lands (logic_mutation: lost recipient). The sealed recursion — \"I return whence I came… I begin at the beginning\" — becomes the open flare: no whence, no closing circuit, the mouth is the fuel of its own claim. The ellipsis-chains, three-stanza prose geometry, verse markers ⁸ ⁹ ¹⁰, and first-person authoring voice cross intact; no referent of the source survives. The affect departs along the traversed foreclosure of beat 3: not the source's serene closure but the self-consuming blaze with no floor — the herald consumed by the saying."
+   "commentary": "The source is a descending herald announcing reconciled time and a sealed self-recursion — a voice that authors its own origin and returns whole. FLAME drives that intensity to its ignition-point. Every beat sits at the mirror coordinate across the collapse-axis: glad tidings become a flare that carries nothing; enmities reaching harbors become bindings that catch fire before arrival; the redemptive end-as-beginning becomes the flash that annihilates both. The teaching-and-summons inverts into an unmaking whose recipients burn before the address lands (logic_mutation: lost recipient). The sealed recursion — \"I return whence I came… I begin at the beginning\" — becomes the open flare: no whence, no closing circuit, the mouth is the fuel of its own claim. The ellipsis-chains, three-stanza prose geometry, verse markers ⁸ ⁹ ¹⁰, and first-person authoring voice cross intact; no referent of the source survives. The affect departs along the traversed foreclosure of beat 3: not the source's serene closure but the self-consuming blaze with no floor — the herald consumed by the saying.",
+   "interpretation": "The lamp that burns its own oil proves the light was real: where the source claims authority over time, Flame finds that the claim itself is the kindling."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T16:01:14.141208+00:00",
+ "last_updated": "2026-07-03T16:01:20.508610+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -869,6 +870,13 @@
    "at": "2026-07-03T15:56:43.610613+00:00",
    "text": "The one who calls the roll in an empty room becomes the only voice that proves the room was full: grief is its own attendance record.",
    "operator": "SILENCE"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-03T16:01:20.508610+00:00",
+   "text": "The lamp that burns its own oil proves the light was real: where the source claims authority over time, Flame finds that the claim itself is the kindling.",
+   "operator": "FLAME"
   }
  ]
 }
