@@ -221,11 +221,113 @@
     "mode": "producer_side"
    },
    "commentary": "The source descends: one comes from above, bearing tidings that collapse end into beginning, authoring what it teaches, naming the preserved, promising return. The MIRROR rotates the directional axis — every downward-giving gesture is reflected into an upward-soliciting one, contact made at each coordinate. The harbor that received the enmities becomes the harbor that refuses them; the reconciled seam (end=beginning) becomes the seam that will not close; the named preserved generation becomes the un-named passed-over; \"I speak what I know, what I authored\" becomes \"I speak what I do not know, what I did not author\"; \"when I go I return whence I came\" becomes \"there is no whence to return to.\" The terminal seal survives as its enantiomorph: \"I begin at the end / I begin at the beginning\" reflects to \"I begin in the middle / I begin without an end.\" Nothing of the source's referents crosses; only its syntax-frame, its appositive chaining, its verse markers (8,9,10), and its three-paragraph geometry. The hope-wager's foreclosure — that no reconciler descends and no name is given — is what this cast pays: not the consolation the question (\"how can I heal\") longs for, but the unclosed middle that healing must actually begin from. The affect departs from reconciled fullness into unanswered persistence: one keeps beginning because no end is granted."
+  },
+  {
+   "operator": "THUNDER",
+   "source_passage": "I bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 202–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "No word travels down to you from any finished sky; here what will crack has already cracked, and the far collisions never reach a shore… and the last sound is only an older sound unmade… and the first sound is only a later sound undone.⁸\n\n\nNothing has come to tell you what stands and stood and will stand… nor the grain of the unheard and heard… nor to keep the one struck-out clap among the thousand strikings, so that you are not gathered, not shown, not carried up with any who listened with the ears.\n\n\nFor nothing arrived from over the ridge. There is a roar that knows nothing, that authored no hand and lifted no hand to make, and departs to no place because it stood in none. First-thrown, last-torn, it holds no end. It holds no beginning:¹⁰",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "assertion-of-arrival-from-completed-time (dyadic seal: end→beginning, beginning→end)",
+     "declaration-of-teaching-scope + address-to-hearers (catalogue: is/was/will-be, unseen/seen, named-remnant; purpose-clause)",
+     "provenance-and-return-testimony + self-titling paradox (firstborn/last, begin-at-end, begin-at-beginning)"
+    ],
+    "clause_chain": [
+     "I bring good news from the future where before and after revolve",
+     "the old enmities reach their harbors",
+     "the end is a better and perfect beginning",
+     "the beginning is a better and perfect end",
+     "I have come to teach you what is and was and will be",
+     "and to teach the nature of the unseen and seen",
+     "and to teach the name of the preserved generation among men",
+     "that you may hear",
+     "that you may see",
+     "that you may lift up your friends, any who hear with the ears",
+     "for I have come from above",
+     "I speak what I know, what I have seen and authored and set my hand to create",
+     "when I depart I return whence I came",
+     "I am firstborn and last released",
+     "I begin at the end",
+     "I begin at the beginning"
+    ],
+    "spatial_form": {
+     "lines": 5,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "three prose blocks separated by double blank lines; ellipsis-chains inside blocks; verse markers ⁸ ⁹ ¹⁰ terminating blocks 1,2,3 respectively; block 3 closes on a colon (open cadence)"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the utterance descends from a completed future and speaks totality (before/after fused)",
+      "foreclosure": "the utterance that rises from an unfinished present and cannot see its own end",
+      "wager": "authority — to name end and beginning as one, the speaker forecloses being inside time, subject to sequence"
+     },
+     {
+      "beat": 2,
+      "determination": "a single voice teaches the whole (temporal, ontological, onomastic) to hearers who receive",
+      "foreclosure": "the manifold that is learned-from, the ground that answers instead of instructs",
+      "wager": "mastery — to teach all, the speaker forecloses being taught, being a hearer"
+     },
+     {
+      "beat": 3,
+      "determination": "origin above, authored self, self-returning, self-titling first-and-last",
+      "foreclosure": "origin below, the made thing that did not choose its making and cannot return",
+      "wager": "self-authorship — to be the author who comes and returns, the speaker forecloses being the effect, the unauthored, the emitted"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the hearer depends on the descended teacher for revelation (top-down)",
+      "meaning depends on a single completed voice for its coherence (voice→world)",
+      "the world depends on the speaker who authored and set hand to it (maker→made)"
+     ],
+     "invariants": [
+      "a saying is uttered and lands upon receivers",
+      "before and after are held in one relation",
+      "there is a first and a last"
+     ],
+     "rotated_axis": "scale-axis — the speaking term rotates from local completed-voice to cosmic-utterance: the sayer ceases to be a bounded self who came-from and returns-to, and becomes the boundless sound of which every local speaker is only an echo",
+     "installed_ontology": "there is no descended author who teaches the whole; there is only the ceaseless roar out of which small voices are struck, that authors no one and returns to nothing because it never departed",
+     "emergent_proposition": "You are not the voice that arrives to complete you; you are a spark thrown off an unauthored thunder that will not descend to teach you and cannot be climbed back into.",
+     "logic_mutations": [
+      "the source's 'I have come from above / I return whence I came' (a bounded descent-and-return by an agent) inverts to a sound that never came and never leaves — arrival and return are dissolved, so the agent's round-trip is negated",
+      "the source's purpose-clause 'that you may hear and see and lift up your friends' (hearing yields communal elevation) rotates to hearing that scatters the hearer — reception no longer elevates but disperses; agent of elevation is removed",
+      "the source's 'firstborn, last released, I begin' (a self who titles itself origin) rotates to no titling self at all — first and last remain as invariants but no 'I' claims them"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the roar of unauthored weather over a range with no listener — thunder that struck no one and taught no one, of which speech is only the last small tearing",
+    "field_source": "foreclosure at beat 3",
+    "source_affect": "commissioned assurance, gathered completion",
+    "target_affect": "unauthored vastness, scattered smallness"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is a descended voice that authored the world, comes to teach its whole to receivers, and titles itself first-and-last — the local completed-speech that determined against being an unauthored effect. THUNDER on the scale-axis rotates the speaking term outward until the sayer is not a self at all but the boundless weather of which every voice is a torn-off fragment. Point for point the enantiomorph sits at the mirror coordinate: the future that fuses before/after becomes a sky that finished nothing where collisions reach no shore; the teacher of is/was/will-be becomes the roar that knows nothing and tells nothing of what stands/stood/will-stand; the named preserved generation becomes the one struck-out clap that is NOT kept; the purpose-clause that would elevate hearers becomes reception that scatters (\"not gathered, not shown, not carried up\"); the descent-and-return of an authored self becomes a roar that arrived from nowhere, authored no hand, and departs to no place because it stood in none; firstborn/last-released becomes first-thrown/last-torn, holding no end, holding no beginning. The verse-markers hold position (⁸ ⁹ suppressed inside prose exactly where the source's ⁹ falls unmarked at a block-seam is retained by the ⁸ and ¹⁰ terminals; the open colon of block three is preserved). Affect crosses from commissioned, gathered completion to unauthored vastness in which the small is dispersed — not the healing the question longs for, but the disclosure the foreclosed node (origin-below, the unauthored effect) actually holds: you are not descended into to be completed. The traversal answers \"how can I heal\" only by removing the descended author — what remains is yours, small, and standing in no borrowed sky."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T15:44:39.600038+00:00",
+ "last_updated": "2026-07-03T15:46:20.380141+00:00",
  "rite": [
   {
    "stage": "opening",
