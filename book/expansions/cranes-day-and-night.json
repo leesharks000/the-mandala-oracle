@@ -715,5 +715,5 @@
   }
  ],
  "last_updated": "2026-07-03T07:57:54.625533+00:00",
- "provenance_note": "2026-07-03 MANUS: transforms in this expansion were cast over recovery-window reconstructed bytes later found non-canonical in at least unit 156 ('Hipponax 43'). The casts are real events over the bytes as served; the source attribution is under provenance hold pending restoration of true canonical text. Per-transform adjudication reserved to MANUS."
+ "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }

@@ -14,14 +14,15 @@
   {
    "id": "cranes-day-and-night",
    "title": "Day and Night: Conversations with Sapphic Desire",
-   "creator": "",
+   "creator": "Rebekah Cranes",
    "zodiac": "",
-   "admissible": false,
+   "admissible": true,
    "text_file": "original.md",
-   "menu": false,
-   "primary_after": "# Day and Night",
-   "primary_attribution": "^(Sappho|Anacreon|Anacreontea|Alcman|Catullus|Simonides|Stesichorus|Hipponax|Corinna)\\b",
-   "provenance_hold": "2026-07-03 MANUS: bytes are a 2026-06-20 recovery-window reconstruction (AXN:007F, minted the day after the Zenodo termination, no mint_source). Unit 156 'Hipponax 43' confirmed non-canonical by the author; fragment misnumbered (real Hipponax two-days couplet is fr. 68 West). Held from casting until true canonical bytes are restored."
+   "menu": true,
+   "primary_after": "Day and Night 1",
+   "primary_attribution": "\\*(Sappho|Alcman|Anacreon|Anacreontea|Simonides|Stesichorus|Hipponax|Corinna|Catullus|Archilochus|Ibycus|Alcaeus)",
+   "unit_split": "\\n[ \\t]*\\n(?=Day and Night \\d+)",
+   "restoration": "2026-07-03 MANUS §10.6: true canonical restored from author-supplied file; recovery-window reconstruction superseded. Sappho 31 = five-stanza reconstruction (per AXN:0346 erratum); new Sappho 1 at Day and Night 39. INTRODUCTION GATE: the Brief Preface is excluded from casting via primary_after per MANUS — eligible only 'once in a blue moon' (rare-eligibility mechanic reserved as a future JUDGMENT whim; until built, exclusion is total)."
   },
   {
    "id": "dancings-epistle-to-the-human-diaspora",
