@@ -1,0 +1,80 @@
+{
+ "axn": "AXN:FE15.READING.🌖🌒🌗⭐🌑🌗",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "8afcf355e3aa3513",
+ "inscribed_at": "2026-07-03T06:02:36.913947+00:00",
+ "question_digest": "sha256:0e781ed965f96d8c0c8052aac85bae7d1f8c271861e68d71165ca5d1a5acfa4b",
+ "question_gloss": "Question about timing of personal empowerment or attainment of capability.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_46_48",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**2:26** καὶ ὁ νικῶν καὶ ὁ τηρῶν ἄχρι τέλους τὰ ἔργα μου, δώσω αὐτῷ ἐξουσίαν ἐπὶ τῶν ἐθνῶν,\n\n**2:27** καὶ ποιμανεῖ αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ ὡς τὰ σκεύη τὰ κεραμικὰ ⸀συντρίβεται,\n\n**2:28** ὡς κἀγὼ εἴληφα παρὰ τοῦ πατρός μου, καὶ δώσω αὐτῷ τὸν ἀστέρα τὸν πρωϊνόν.",
+   "citation": "2:26–2:28",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**2:26** And whoever is already fed, and rests among what has grown without their tending,\n\n**2:27** to them belongs the low bough that bends and does not break, heavy the way a full orchard leans over its own shade,\n\n**2:28** as the ground gives without being asked, so is the windfall given: it lies open, owed to no one, and ripens no further.",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "conditional-assertion (the one who prevails and keeps my works to the end)",
+     "grant-of-dominion-and-its-mode (authority over nations, ruling with iron rod, shattering)",
+     "legitimation-and-second-gift (as I received from my father, and I give the morning star)"
+    ],
+    "spatial_form": {
+     "lines": 6,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "three verse-marked lines each followed by a blank separating line; verse markers **2:26**, **2:27**, **2:28** open each unit"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "reward is deferred and conditional on endurance-to-the-end",
+      "foreclosure": "the reward that is already possessed, needing no waiting and no proving",
+      "wager": "makes the not-yet the very ground of value; buys the future by refusing the present"
+     },
+     {
+      "beat": 2,
+      "determination": "power is granted as force over others, breaking what resists",
+      "foreclosure": "a capacity that increases the fragile rather than shattering it — tending, not dominion",
+      "wager": "buys mastery at the cost of what mastery destroys"
+     },
+     {
+      "beat": 3,
+      "determination": "the gift is authorized by transmission from a higher giver, and crowned with a further promise",
+      "foreclosure": "a possession that answers to no giver and needs no crowning — sufficiency without lineage",
+      "wager": "buys legitimacy by owing everything upward; the star is still promised, still owed"
+     }
+    ],
+    "wager_mode": "hope",
+    "semantic_field": "the ripening and windfall of an orchard already grown — fruit that no waiting improves, weight that bends the branch without breaking it, the low warmth of a season that asks nothing back",
+    "field_source": "foreclosure at beat 1 (the reward already possessed, needing no waiting)",
+    "source_affect": "strenuous longing, deferred triumph",
+    "target_affect": "settled abundance, nothing owed"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source's assertion-axis is the conditional grant: power is what you do not yet have, held out as the wage of endurance, ruling-by-shattering, authorized from above, still promised. SHADOW bears its hope-wager cost by traversing the beat-1 foreclosure — the reward that needs no waiting. The enantiomorph occupies the three-verse skeleton exactly (conditional opening, granted mode, legitimating close) while replacing striving with the already-ripe: nourishment that precedes any deserving, a branch that bends rather than breaks (the exact inverse of the iron rod that shatters pottery), a gift that owes nothing upward and ripens no further — foreclosing the source's every deferral and lineage. Read alone, the output implies an agrarian utterance about sufficiency and windfall, not a militant apocalyptic promise; the source cannot be reconstructed. The witness asked when power arrives; the operator and source govern the cast, and the disclosure lands not on arrival but on the orchard already grown, owed to no one — the affect the beat-1 foreclosure discloses, not the answer the question longed for."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-03T06:02:36.913947+00:00"
+}
