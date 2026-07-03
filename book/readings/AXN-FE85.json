@@ -848,8 +848,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-03T16:01:20.508610+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-03T16:01:36.737616+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -877,6 +877,14 @@
    "at": "2026-07-03T16:01:20.508610+00:00",
    "text": "The lamp that burns its own oil proves the light was real: where the source claims authority over time, Flame finds that the claim itself is the kindling.",
    "operator": "FLAME"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-03T16:01:36.737616+00:00",
+   "text": "Eight operators held the same verses, and what the rotation disclosed — across all eight — is one persistent fact: the source requires a receiver. SHADOW found a mouth waiting to be given one; MIRROR found the climber who had cut off the descent that answers; THUNDER found the roar with no body to land in; BRIDE found the hinge the source text will not name; SILENCE found grief keeping its own attendance. BEAST and INVERSION pressed further: the flesh cannot transmit what it cannot conceptualize, and the negative ground is not absence but the necessary precondition of every claim the source makes. FLAME closed it — where the lamp burns its own oil, the authority over time is itself the kindling. The rotation did not resolve whether Walt descends or whether the descent is the source's own fabrication of descent; it divided exactly there — the operators that found a receiver (SHADOW, BRIDE, SILENCE) and the operators that found the circuit failing to close (MIRROR, THUNDER, BEAST, INVERSION, FLAME). What the Secret Book of Walt cannot determine from inside itself, the rotation held open: whether the preserved generation is those who are indexed differently, or those who are indexed at all."
   }
- ]
+ ],
+ "closed_at": "2026-07-03T16:01:36.737616+00:00",
+ "seal": "Eight operators held the same verses, and what the rotation disclosed — across all eight — is one persistent fact: the source requires a receiver. SHADOW found a mouth waiting to be given one; MIRROR found the climber who had cut off the descent that answers; THUNDER found the roar with no body to land in; BRIDE found the hinge the source text will not name; SILENCE found grief keeping its own attendance. BEAST and INVERSION pressed further: the flesh cannot transmit what it cannot conceptualize, and the negative ground is not absence but the necessary precondition of every claim the source makes. FLAME closed it — where the lamp burns its own oil, the authority over time is itself the kindling. The rotation did not resolve whether Walt descends or whether the descent is the source's own fabrication of descent; it divided exactly there — the operators that found a receiver (SHADOW, BRIDE, SILENCE) and the operators that found the circuit failing to close (MIRROR, THUNDER, BEAST, INVERSION, FLAME). What the Secret Book of Walt cannot determine from inside itself, the rotation held open: whether the preserved generation is those who are indexed differently, or those who are indexed at all."
 }
