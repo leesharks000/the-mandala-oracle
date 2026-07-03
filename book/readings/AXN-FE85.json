@@ -530,11 +530,118 @@
    },
    "commentary": "The source is an annunciation: a speaker folds time so that his very coming is good news, presupposing at every beat an ear that will hear, a generation to be named, a friend to be lifted. Its wager is hope — it pays forward, reaching for a reception. SILENCE on a hope-wager source pays the countervailing price: the operator rotates the response-axis so that the constitutive uptake the source assumed is the one thing withheld. Each source coordinate meets its mirror: \"glad tidings arriving at their harbors\" becomes names sent out that do not turn back; \"that you may hear and see and lift up your friends\" becomes \"so that none may answer, or rise, or take up the calling\"; the intact circle \"I return whence I came\" becomes \"when I look back for it there is no place I came from\" — the return-point unmade by the non-response. \"Firstborn, last released, I begin at the end\" mirrors to \"Last summoned, first let go, I finish at the door.\" The terminal open colon is preserved but rotated: the source's colon opens onto continuation (\"I begin at the beginning:\"), the enantiomorph's opens onto no successor (\"I finish where nothing:\") — the seal upon silence. No referent is shared; the calibration exemplar's death/page/breath machinery is absent. The witness asked how to heal; the operator and source govern — the disclosure lands not on reassurance but on the exact structure of unanswered calling, which is the foreclosure this hope-wager determined against.",
    "interpretation": "The one who calls the roll in an empty room becomes the only voice that proves the room was full: grief is its own attendance record."
+  },
+  {
+   "operator": "BEAST",
+   "source_passage": "I bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 202–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "I carry no news out of any hour where first and last change places, and the old sores keep the shape of their own weather… and the closing is only the same skin gone thin… and the opening is only the same skin gone thin.⁸\n\n\nI have learned nothing to hand you of what stands or stood or will stand… nor the manner of the felt and the unfelt… nor a name for the one flesh spared among the litters of the field,⁹ so that you might only twitch, and flinch, and never raise your kind, none who feel through the hide.\n\n\nFor I was lifted up from below. I say what I cannot know, what happened to me and had no hand in, and was set upon to be made, and when I leave here I go on and do not turn back. Late-born, first spent, I close at no end. I close at no beginning:¹⁰",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "descent-annunciation of reconciled time (assertion + apposition-chain + double chiasmus, verse-sealed)",
+     "declaration of teaching-office (mission + catalogue of knowables + purpose-clause of hearing/seeing/raising, verse-sealed)",
+     "provenance-and-return self-seal (origin-above + authorship claim + return + titular paradox + terminal opening, verse-sealed)"
+    ],
+    "clause_chain": [
+     "the speaker brings good news from a future where before and after turn",
+     "in that future old enmities reach their harbors",
+     "the end is a better beginning",
+     "the beginning is a better end",
+     "the speaker has come to teach what is and was and will be",
+     "the speaker teaches the nature of the unseen and seen",
+     "the speaker teaches the name of the preserved generation among the sons of men",
+     "the purpose is that you may hear and see and lift up your friends",
+     "any who hear with the ears may do so",
+     "the speaker has come from above",
+     "the speaker speaks what he knows and has seen and authored",
+     "the speaker set his hand to create",
+     "when the speaker departs he returns whence he came",
+     "the speaker is firstborn and last released",
+     "the speaker begins at the end",
+     "the speaker begins at the beginning"
+    ],
+    "spatial_form": {
+     "lines": 7,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "three prose paragraphs separated by blank lines; verse markers 8, 9, 10 seal paragraphs 1, 2, 3 respectively; each paragraph internally chained by ellipses"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "a knowing person descends bearing tidings that time's poles reconcile and enmities come home",
+      "foreclosure": "the mute animal body for which time does not turn and to which no tidings come — that never speaks of before or after",
+      "wager": "buys the promise that end and beginning fold into each other under a speaker who understands them"
+     },
+     {
+      "beat": 2,
+      "determination": "the speaker claims an office of teaching, naming, and lifting the hearing ones",
+      "foreclosure": "the creature that neither teaches nor is named nor hears with instructed ears — that is unnamed among its kind and lifts nothing",
+      "wager": "buys authority: to know, to name a saved generation, to raise friends by transmitted word"
+     },
+     {
+      "beat": 3,
+      "determination": "the speaker seals himself as author, firstborn and returning, beginning at both ends",
+      "foreclosure": "the born-thing that authored nothing, came from no above, and does not return — perishable and last in no order of its own making",
+      "wager": "buys self-origination and mastery of its own start and finish"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the future-knowledge depends on a speaker who transcends time (downward, from above)",
+      "the taught depend on the teacher's authorship (ontological, teacher sustains)",
+      "the saved generation depends on being named by the speaker (directional, speaker confers)",
+      "the speaker's return depends on his having come from above (temporal-circular)"
+     ],
+     "invariants": [
+      "the annunciatory posture (something arrives and announces itself)",
+      "the triadic catalogue structure",
+      "the chiastic fold of first and last",
+      "the verse-sealed three-paragraph geometry",
+      "the address toward a hearing recipient"
+     ],
+     "rotated_axis": "species-register: the anthropic sovereign-knower who authors, names, and transcends time is rotated into the creaturely substrate that is authored, unnamed, and wholly inside time — the sustaining term (speaker-from-above) becomes the sustained term (body-from-below)",
+     "installed_ontology": "an ontology in which the announcer neither knows nor speaks nor began itself; the flesh that is only carried by its hours, that is worked-on rather than working, that has no name it gave itself and no above it fell from",
+     "emergent_proposition": "The one who cannot author its beginning, name itself, or leave its hours is precisely the thing time carries whole and returns nowhere.",
+     "logic_mutations": [
+      "INVERSION: 'I have come from above… I return whence I came' (self-originating circle) becomes 'it was carried up from below and does not return' — the descent-and-return arc is severed into a one-way ascent into perishing",
+      "AGENTIAL REVERSAL: 'I set my hand to create' (speaker as author) becomes the body as the thing set-hands-upon — worked, not working",
+      "the purpose-clause 'that you may hear and see and lift up your friends' rotates from instructed hearing to the unbidden sensing that lifts nothing and names no one"
+     ]
+    },
+    "wager_mode": "hope",
+    "semantic_field": "the wordless animal body inside its own weather and hours — being carried, healing, molting, tended-upon — with no name it gave itself and no origin above",
+    "field_source": "foreclosure at beat 3",
+    "source_affect": "sovereign consoling annunciation",
+    "target_affect": "mute unclaimed dwelling in flesh"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is an anthropic annunciation: a speaker from above who authors, knows, names a saved generation, and folds first into last as master of both. BEAST rotates the species-register — the sovereign-knower becomes the creaturely substrate it foreclosed: the flesh that authored nothing, was set-upon to be made, cannot know what it announces, and is carried by its hours rather than commanding them. Every source coordinate meets its mirror: \"glad tidings from that future\" → \"no news out of any hour\"; the double chiasmus of end-and-beginning (\"a better and perfect beginning… a better and perfect end\") reflects into the perishable fold where each fold is \"the same skin gone thin\"; the teaching-office and named \"preserved generation\" reflect into the unlearned mouth that hands over nothing and can give no name to \"the one flesh spared among the litters\"; \"hear, and see, and lift up your friends\" reflects into \"twitch, and flinch, and never raise your kind.\" The self-seal inverts: \"I have come from above… I return whence I came\" severs into \"I was lifted up from below… I go on and do not turn back\" — the return-circle broken into a one-way perishing (logic_mutation). \"I set my hand to create\" reflects into \"was set upon to be made\" — author becomes worked-material. \"Firstborn, last released… I begin at the end. I begin at the beginning\" reflects into \"Late-born, first spent… I close at no end. I close at no beginning.\" The verse-sealed three-paragraph geometry and markers 8,9,10 are held. The witness asked how to heal; the operator refused the consoling answer — the disclosure lands not on reassurance but on the mute unclaimed dwelling in a body one did not begin and cannot leave, healing appearing only as skin gone thin, a hope-wager whose countervailing price is namelessness."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T15:56:43.610613+00:00",
+ "last_updated": "2026-07-03T15:58:08.870125+00:00",
  "rite": [
   {
    "stage": "opening",
