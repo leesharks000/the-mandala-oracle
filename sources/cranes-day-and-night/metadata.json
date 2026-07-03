@@ -144,9 +144,10 @@
     "structure_map": "metadata.json (this file) provides the structural map for the canon-as-sky generator."
   },
   "status": "source acquired via alexanarch — 2026-07-01",
-  "source_status": "inscribed",
+  "source_status": "PROVENANCE_HOLD",
   "transformable": true,
   "transform_classification": "primary_literary",
   "content_subtype": "translation-cycle",
-  "classification_note": "Named by Lee for transform availability. AXN-007F."
+  "classification_note": "Named by Lee for transform availability. AXN-007F.",
+  "provenance_hold": "2026-07-03 MANUS: bytes are a 2026-06-20 recovery-window reconstruction (AXN:007F, minted the day after the Zenodo termination, no mint_source). Unit 156 'Hipponax 43' confirmed non-canonical by the author; fragment misnumbered (real Hipponax two-days couplet is fr. 68 West). Held from casting until true canonical bytes are restored."
 }

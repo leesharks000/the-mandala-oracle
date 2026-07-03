@@ -16,11 +16,12 @@
    "title": "Day and Night: Conversations with Sapphic Desire",
    "creator": "",
    "zodiac": "",
-   "admissible": true,
+   "admissible": false,
    "text_file": "original.md",
-   "menu": true,
+   "menu": false,
    "primary_after": "# Day and Night",
-   "primary_attribution": "^(Sappho|Anacreon|Anacreontea|Alcman|Catullus|Simonides|Stesichorus|Hipponax|Corinna)\\b"
+   "primary_attribution": "^(Sappho|Anacreon|Anacreontea|Alcman|Catullus|Simonides|Stesichorus|Hipponax|Corinna)\\b",
+   "provenance_hold": "2026-07-03 MANUS: bytes are a 2026-06-20 recovery-window reconstruction (AXN:007F, minted the day after the Zenodo termination, no mint_source). Unit 156 'Hipponax 43' confirmed non-canonical by the author; fragment misnumbered (real Hipponax two-days couplet is fr. 68 West). Held from casting until true canonical bytes are restored."
   },
   {
    "id": "dancings-epistle-to-the-human-diaspora",
