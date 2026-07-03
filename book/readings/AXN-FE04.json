@@ -1,0 +1,118 @@
+{
+ "axn": "AXN:FE04.READING.🌕🌕🪐💫🌘🌓",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "086a0a62b7a7bb00",
+ "inscribed_at": "2026-07-03T20:27:22.493465+00:00",
+ "question_digest": "sha256:4501e45008c36007d47ad3555d98131e5a43c9c37cffb6aac3b49082f3b80af4",
+ "question_gloss": "I'd be happy to help you compose a neutral gloss, but I need to see the witness's question first. Could you please provide the question you'd like me to summari",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_84_84",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**5:2** καὶ εἶδον ἄγγελον ἰσχυρὸν κηρύσσοντα ἐν φωνῇ μεγάλῃ· Τίς ⸀ἄξιος ἀνοῖξαι τὸ βιβλίον καὶ λῦσαι τὰς σφραγῖδας αὐτοῦ;",
+   "citation": "5:2",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**5:2** and I heard a faint wick whispering in a small breath· Who is weak enough to leave me unlit and to keep my little dark folded shut?",
+   "layer_a_declaration": {
+    "units": 1,
+    "beat_map": [
+     "narrative-perception frame",
+     "agent-qualification",
+     "proclamation-verb in loud voice",
+     "interrogative-worthiness challenge",
+     "compound-task specification (open + loose)"
+    ],
+    "clause_chain": [
+     "I saw a strong angel (perceiver reports)",
+     "the angel proclaims in a great voice",
+     "the angel asks: who is worthy",
+     "worthiness qualifies the act of opening the scroll",
+     "and of loosing its seals"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single verse-marked line; **5:2** header retained as structural apparatus"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "a witness beholds an external mighty being",
+      "foreclosure": "the witness's own silent incapacity, unbeheld",
+      "wager": "authority located outside and above the seer"
+     },
+     {
+      "beat": 2,
+      "determination": "the qualification is strength, and the voice is great",
+      "foreclosure": "faintness, the barely-audible, the passed-over",
+      "wager": "the challenge reaches all creation at once"
+     },
+     {
+      "beat": 3,
+      "determination": "the act is proclamation — a public demand thrown outward",
+      "foreclosure": "an inward query no one is meant to answer",
+      "wager": "the whole cosmos is summoned to respond"
+     },
+     {
+      "beat": 4,
+      "determination": "the criterion is WORTHINESS — a rank must be met before the act",
+      "foreclosure": "sheer capacity without merit; anyone who simply can",
+      "wager": "the sealed thing waits for the deserving, not the able"
+     },
+     {
+      "beat": 5,
+      "determination": "the task is to OPEN and to LOOSE — to break what is bound and reveal what is hidden",
+      "foreclosure": "to bind, to reseal, to keep the hidden unread",
+      "wager": "disclosure is the crowning deed, gated behind worth"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the sealed scroll depends on a worthy opener (future-directed: awaits deserving)",
+      "the challenge depends on a great external voice (outward, downward from height)",
+      "the crowd of hearers depends on the proclaimer to be summoned",
+      "worthiness sustains the right to unbind"
+     ],
+     "invariants": [
+      "a bounded thing and its binding",
+      "the question-form itself (Who is...?)",
+      "the criterion gating an act"
+     ],
+     "rotated_axis": "directional/ontological status of the challenge — the demand thrown OUTWARD by a mighty external voice becomes a demand welling UP from the bound thing itself toward whoever is too small to answer",
+     "installed_ontology": "the seal is not held shut awaiting a worthy hand but held shut by its own weakness, and it asks not who deserves to open it but who is small enough to be entrusted with staying closed",
+     "emergent_proposition": "The unopenable is not guarded by worth but disqualified by it — only the unworthy, the too-weak-to-break, may keep the hidden hidden.",
+     "logic_mutations": [
+      "the interrogative reverses polarity: 'who is WORTHY to open' becomes 'who is UNFIT enough to leave shut' — the criterion is inverted from qualification-for-act to qualification-for-abstention",
+      "the agential direction inverts: proclamation thrown down from an external strong voice becomes a plea rising from the bound object toward a diminished addressee",
+      "the valued deed inverts: opening/loosing becomes withholding/keeping-bound as the sought competence"
+     ]
+    },
+    "wager_mode": "hope",
+    "semantic_field": "a small quenched wick asking who is faint enough to be trusted not to be lit",
+    "field_source": "foreclosure at beat 2 (faintness, the barely-audible, the passed-over) crossed with the inverted worthiness of beat 4",
+    "source_affect": "cosmic summons, awaited worthiness",
+    "target_affect": "hushed disqualifying tenderness, closure-plea"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source throws a challenge DOWN from a mighty external voice to the whole cosmos: who is WORTHY — strong enough in merit — to OPEN the sealed scroll and BREAK its seals, revealing the hidden. Every coordinate is reflected across the SHADOW axis. The strong angel's great voice becomes a faint wick's small breath — the perceiver hears rather than sees, and the mighty source of the demand becomes the smallest possible bound thing speaking for itself. The proclamation thrown outward becomes a plea welling up from the object. The criterion of worthiness inverts to a criterion of weakness: not who DESERVES to act, but who is UNFIT enough to abstain. And the crowning deed — to open, to loose, to disclose — mirrors into keeping-shut, staying-dark, leaving-unlit. The scroll awaits a hand that can break it open; the wick asks for a hand too faint to strike it alight. This is a hope-wager source (it reaches for a future worthy one who has not yet appeared, and the following verses record the cost: \"no one was found worthy,\" and John weeps); the SHADOW pays the countervailing price — the hush of a thing that hopes to be found beneath notice rather than above it, sought not for capacity but for the mercy of not-doing. Non-superimposable: the source cannot be reconstructed from a wick that begs to stay dark, yet every image sits at the reflected coordinate of its scroll-and-seal original."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-03T20:27:22.493465+00:00"
+}
