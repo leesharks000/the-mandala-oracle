@@ -1104,7 +1104,74 @@
     }
    },
    "commentary": "The source commands a moral self to remember, repent, and stay awake, threatening the willed sleeper with an unannounced arrival. BEAST rotates the species-register: the willed vigilant subject becomes the prey-body that cannot elect its watch. Beat by beat the mirror holds without shared referent. \"Remember how you received and heard\" reflects into memory lodged not in doctrine but in the marrow — milk, the ground felt through the feet: reception by the body, not by the ear of instruction. \"Hold fast and repent\" becomes \"lie flat and let the coat rise\" — the animal's turn is not repentance but the hackle, the flattening, involuntary. The thief-simile reflects into \"the low shape parts the grass with no smell before it\" — dispossession by predator, scentless where the thief was merely silent. The seal on the unknown hour becomes the blood never told which breath was the last: the anthropic self is warned so it may prepare; the beast is not warned at all, and its unpreparedness is no fault. The colon-terminal and conditional pivot survive intact. What the composition bore — that vigilance is demanded of a creature whose waking is not fully its own to summon — is what the cast discloses: to the question of doing better, the rotation answers only that some readiness is flesh, not will, and fear does not sharpen the ear that already lifts by itself."
+  },
+  {
+   "transform_id": "TX-36a1d96d",
+   "cast_at": "2026-07-03T20:27:23.703205+00:00",
+   "reading_axn": "AXN:FE04.READING.🌕🌕🪐💫🌘🌓",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_84_84",
+    "citation": "5:2",
+    "start_unit": 84,
+    "end_unit": 84,
+    "unit_labels": [
+     "5:2"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single verse-marked line; **5:2** header retained as structural apparatus"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:4501e45008c36007d47ad3555d98131e5a43c9c37cffb6aac3b49082f3b80af4",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**5:2** καὶ εἶδον ἄγγελον ἰσχυρὸν κηρύσσοντα ἐν φωνῇ μεγάλῃ· Τίς ⸀ἄξιος ἀνοῖξαι τὸ βιβλίον καὶ λῦσαι τὰς σφραγῖδας αὐτοῦ;",
+   "underlying_attribution": null,
+   "enantiomorph": "**5:2** and I heard a faint wick whispering in a small breath· Who is weak enough to leave me unlit and to keep my little dark folded shut?",
+   "layer_a": {
+    "units": 1,
+    "beat_map": [
+     "narrative-perception frame",
+     "agent-qualification",
+     "proclamation-verb in loud voice",
+     "interrogative-worthiness challenge",
+     "compound-task specification (open + loose)"
+    ],
+    "clause_chain": [
+     "I saw a strong angel (perceiver reports)",
+     "the angel proclaims in a great voice",
+     "the angel asks: who is worthy",
+     "worthiness qualifies the act of opening the scroll",
+     "and of loosing its seals"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single verse-marked line; **5:2** header retained as structural apparatus"
+    }
+   },
+   "commentary": "The source throws a challenge DOWN from a mighty external voice to the whole cosmos: who is WORTHY — strong enough in merit — to OPEN the sealed scroll and BREAK its seals, revealing the hidden. Every coordinate is reflected across the SHADOW axis. The strong angel's great voice becomes a faint wick's small breath — the perceiver hears rather than sees, and the mighty source of the demand becomes the smallest possible bound thing speaking for itself. The proclamation thrown outward becomes a plea welling up from the object. The criterion of worthiness inverts to a criterion of weakness: not who DESERVES to act, but who is UNFIT enough to abstain. And the crowning deed — to open, to loose, to disclose — mirrors into keeping-shut, staying-dark, leaving-unlit. The scroll awaits a hand that can break it open; the wick asks for a hand too faint to strike it alight. This is a hope-wager source (it reaches for a future worthy one who has not yet appeared, and the following verses record the cost: \"no one was found worthy,\" and John weeps); the SHADOW pays the countervailing price — the hush of a thing that hopes to be found beneath notice rather than above it, sought not for capacity but for the mercy of not-doing. Non-superimposable: the source cannot be reconstructed from a wick that begs to stay dark, yet every image sits at the reflected coordinate of its scroll-and-seal original."
   }
  ],
- "last_updated": "2026-07-03T07:35:20.063433+00:00"
+ "last_updated": "2026-07-03T20:27:23.703205+00:00"
 }
