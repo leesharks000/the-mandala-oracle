@@ -864,7 +864,67 @@
     }
    },
    "commentary": "The source strings six clauses toward a future that must be watched for because its hour is hidden; vigilance buys survival by keeping the deadline unknown. FLAME drives that intensity to its collapse-limit: the withheld arrival ignites into total present presence. Each beat is rotated across the temporal axis, not re-lexicalized. The command-to-recall becomes not \"guard what you received\" but \"look at what already slipped\" — memory turned to autopsy. The conditional charge to watch is voided: \"there was no waking left to do.\" The thief-simile — sudden, seizing, unwilled — becomes \"the noon that has no shadow to warn by\": still a figure of sudden manner, but its mirror, arrival by total illumination rather than covert night-theft, seizure by excess rather than stealth. The negated foreknowledge inverts: not \"you will not know which hour\" but \"there was never an hour to name, because it was every hour at once\" — concealment burned off into saturation. The seal holds on \"on you now,\" preserving the invariant landing on the person while collapsing the future into the present tense. No shared referents (no thief, no watching, no coming-again, no repentance-vocabulary survive as content); the chained mid-stop cadence and second-person address are the sparse retained anchors. The affect departs as the foreclosure demands: not dread of what may seize while you sleep, but the scald of recognizing the seizure is complete and the question \"how can I do better\" has no future to answer into — the operator, not the witness's longing, governs this."
+  },
+  {
+   "transform_id": "TX-831423c2",
+   "cast_at": "2026-07-03T07:31:52.223953+00:00",
+   "reading_axn": "AXN:FEBB.READING.🌙🌒🌗🌘🌖🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_52_52",
+    "citation": "3:3",
+    "start_unit": 52,
+    "end_unit": 52,
+    "unit_labels": [
+     "3:3"
+    ]
+   },
+   "operator": "INVERSION",
+   "operator_axis": "polarity-axis — the negative pole the positive claim presupposes",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single prose verse, marker **3:3** heading the line; sequence of clauses chained by καὶ / ἐὰν"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:62d36ad282e6cc2a6f0746bd0962ec5756d33e1c9fc0a4a71c486570d2d70099",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·",
+   "underlying_attribution": null,
+   "enantiomorph": "**3:3** Remember then how full it stood and how it fed you, and let it go, and grieve; for even if you keep the vigil, the season has gone like the reapers, and you will never learn which morning the sheaves were carried off from you.",
+   "layer_a": {
+    "units": 6,
+    "beat_map": [
+     "imperative-recall",
+     "imperative-retention-and-turn",
+     "conditional-threat-premise",
+     "simile-of-arrival",
+     "consequence-of-ignorance",
+     "temporal-seal-of-uncertainty"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single prose verse, marker **3:3** heading the line; sequence of clauses chained by καὶ / ἐὰν"
+    }
+   },
+   "commentary": "The source polarizes toward a future arrival that vigilance must anticipate: a gift given, a turn still possible, an intrusion coming at an unknown hour like a thief. INVERSION on the polarity-axis exposes the negative pole the whole exhortation presupposes — that the guarded moment is still ahead. Rotated, the withheld hour is not one that comes upon the addressed but one that has already departed and cannot return. Beat by beat the mirror holds: \"keep the deposit\" becomes \"remember the fullness that fed and is gone\"; \"turn\" becomes \"let go\"; the thief who breaks in stealthily becomes the reapers who have already carried the sheaves off; the unknown hour of coming becomes the unlearnable morning of taking. Source imagery (thief, watch, coming) is barred and absent; the calibration exemplar's machinery (death, page, breath, specimen) is nowhere. The field — a reaped field, table cleared — is generated from beat 4's foreclosed banquet, not chosen scenery. The wager of transformation shows what was borne: where the source's dread guards against loss, the enantiomorph bears the loss as accomplished. The witness's question (\"how can I do better\") did not govern the affect; the foreclosure did, and it discloses grief, not reassurance — the emergent proposition (one cannot fail to keep what has already left) is precisely not consolation."
   }
  ],
- "last_updated": "2026-07-03T07:30:43.237274+00:00"
+ "last_updated": "2026-07-03T07:31:52.223953+00:00"
 }
