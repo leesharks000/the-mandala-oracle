@@ -624,7 +624,67 @@
     }
    },
    "commentary": "INVERSION on the polarity axis: the source's positive pole — power WON, held, granted downward from a giving father — presupposes its negative, the pole of dispossession that the promise excludes to be a promise. Every beat makes mirror-contact. The conqueror who keeps to the end becomes the one who loosens his grip before the end; the giving that adds authority becomes a taking-away of even the ground. The rod of iron that shatters brittle vessels reflects into the open palm and the water that holds nothing — mastery mirrored as the thing mastered-by-passing-through. The inheritance (\"as I too have received from my father\") reflects into \"as I too gave back all I was lent to no one\" — reception becomes restitution to no giver. The rising morning star, crown of the grant, becomes the star withheld, the star that sets — the dawn's own negative pole. Non-superimposable: no rod, no nations, no victory, no inheritance survives; yet each image occupies the reflected coordinate. The hope-wager's cost is paid — the source reached forward to a reward owed; the inversion pays the countervailing price of the promise's own presupposed loss, and the affect departs from triumph into relinquishment, not toward the consolation the witness's question solicits."
+  },
+  {
+   "transform_id": "TX-6b25ae35",
+   "cast_at": "2026-07-03T07:08:20.696980+00:00",
+   "reading_axn": "AXN:FEBB.READING.🌙🌒🌗🌘🌖🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_52_52",
+    "citation": "3:3",
+    "start_unit": 52,
+    "end_unit": 52,
+    "unit_labels": [
+     "3:3"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "Single prose verse with leading verse-marker 3:3; clauses chained by καί; one continuous line."
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:62d36ad282e6cc2a6f0746bd0962ec5756d33e1c9fc0a4a71c486570d2d70099",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·",
+   "underlying_attribution": null,
+   "enantiomorph": "**3:3** Count then the yield you were once lent and how the ground gave it, and let it go, and grieve; for you did not sleep too soon — it left as the harvest leaves, and you will never learn which morning it went out from under you·",
+   "layer_a": {
+    "units": 6,
+    "beat_map": [
+     "imperative-recall",
+     "qualification (mode of receiving)",
+     "imperative-keep-and-repent",
+     "conditional-threat (if not watchful)",
+     "advent-simile (as a thief)",
+     "seal (the unknown hour)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "Single prose verse with leading verse-marker 3:3; clauses chained by καί; one continuous line."
+    }
+   },
+   "commentary": "The source runs future-downward: a superior who has not yet come descends by stealth at an hour the wakeful might survive — vigilance is a lever on a coming event. SHADOW rotates the assertion-axis: the deciding moment is moved from unforeseen-future to already-spent-past, and the arriving superior becomes a departed yield running upward from below. Every beat makes mirror-contact. \"Remember how you received and heard\" becomes \"count the yield you were lent and how the ground gave it\" — the deposit held becomes the loan already returned to the earth. \"Keep, and repent\" (turn-and-hold, corrective, forward) becomes \"let it go, and grieve\" (release-and-mourn, terminal, backward): the same two-verb hinge, its vector reversed. The conditional threat \"if you do not watch\" becomes the closed indicative \"you did not sleep too soon\" — vigilance is voided because the event is past; watching can no longer buy anything. \"I will come as a thief\" (advent, stealth, future) becomes \"it left as the harvest leaves\" (departure, in-plain-sight, past). And the withheld hour of coming becomes the withheld hour of going — \"you will never learn which morning it went out from under you\": the same seal, the same ignorance as instrument, but the instrument now grieves rather than warns. The imagery is barred from both the source (thief/watch/hour-of-coming) and the exemplar (death/page/breath/specimen): it is drawn from the source's own foreclosure — the arrival that comes regardless of watching, here fully arrived and gone. The emergent proposition is not the source's: not \"watch, for it will come,\" but \"it already came unwatched, and the loss cannot be re-entered.\" The witness's question (\"how can I do better?\") lands only on which axis was foregrounded — beat 4's vigilance — and is refused its longed-for reassurance: the cast encodes the bearing-cost of the imperative itself, that the very structure of \"watch now\" carries the buried admission that some hours cannot be watched in time."
   }
  ],
- "last_updated": "2026-07-03T06:05:57.879899+00:00"
+ "last_updated": "2026-07-03T07:08:20.696980+00:00"
 }
