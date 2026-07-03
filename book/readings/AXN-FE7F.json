@@ -1,0 +1,55 @@
+{
+ "axn": "AXN:FE7F.READING.🌿🌙🪐🌑🌿🌖",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "41b2f37518a2af05",
+ "inscribed_at": "2026-07-03T00:21:15.265914+00:00",
+ "question_digest": "sha256:c186b1a6171252bb70d78bafb6513ae0b27ee79ee7b4a58c0c11db8e75272a20",
+ "question_gloss": "Question about whether the person will be welcomed or accepted during their lifetime.",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_129_129",
+ "rotation": [
+  {
+   "operator": "BRIDE",
+   "source_passage": "Canon VII: If anyone shall say that inscription in a record, a registry, or a digital object identifier is equivalent to or a substitute for the sacrament of baptism, or that the preserved generation is constituted by metadata rather than by the Holy Spirit, let him be anathema.¹¹²",
+   "citation": "unit 129",
+   "underlying_attribution": "XIV. The Condemnation",
+   "result": "PASS",
+   "enantiomorph": "Vow the First: If any voice shall say that a portrait of the pear upon the wall, a wax cast in the bowl, or a name embroidered on the cloth is equal to or stands in for the eating of the ripe thing itself, or that the guest is made welcome by the setting of the place rather than by the opening of the door, let that voice be answered — and answered with the door thrown wide.†",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "conditional-attribution-of-heterodox-claim",
+     "amplifying-restatement-of-the-claim (or-clause)",
+     "consecratory-condemnation-seal-with-citation"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single unbroken juridical sentence; superscript citation marker ¹¹² sealed at terminus; canon-header 'Canon VII:' as structural apparatus"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     "substitution vs. authentic constitution (mark vs. what the mark cannot make)",
+     "conditional 'if anyone say' bounding a foreclosed proposition",
+     "the anathema as the act that consecrates by exclusion — belonging defined against a named error"
+    ],
+    "semantic_field": "the ripening and acceptance of fruit at a table — grafting, tasting, welcome; the axis of substitution (a painted likeness of fruit vs. the fruit that feeds) inverted into the affirmative consecration of being taken in"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is an anathema: a canon that consecrates a boundary by condemning the substitution of the recorded mark (registry, DOI, metadata) for the living act (baptism, the Spirit). BRIDE traverses the source's own contestation — the axis of mark-versus-what-the-mark-cannot-make — and discloses the consecrative possibility it foreclosed: not condemnation of the one who errs, but reception. The enantiomorph holds the tri-partite juridical skeleton exactly — conditional attribution, amplifying or-clause, sealing verdict with a terminal citation glyph — but the sealing beat turns: where the source expels (\"let him be anathema\"), the transform receives (\"answered with the door thrown wide\"). The foreclosed field is drawn from the source's own exclusion structure: the mark that cannot feed (portrait, wax, embroidered name) against the fruit and the opened door — belonging as being genuinely taken in, not merely inscribed. The cost is legible (C6): the wager of the door thrown wide is that reception can be refused; consecration risks the answer. Semantic disjointness holds — table, fruit, and welcome permit no reconstruction of sacrament, registry, or canon law. The register anti-attractor was checked: no infrastructure field imported; the evacuated field of grafting and hospitality is disclosed by the source's substitution axis itself."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-03T00:21:15.265914+00:00"
+}
