@@ -1044,7 +1044,67 @@
     }
    },
    "commentary": "The source constructs arrival as theft: one comes by stealth to take, and the withheld hour is the instrument of that menace — vigilance is bought by fear of dispossession. The BRIDE operator rotates the arrival's directional-affective status through beat 5's foreclosure: the intruder becomes the awaited one whose coming is toward-union, not away-with-plunder. Every beat crosses to its mirror coordinate without sharing referents. \"How you received / took and heard\" (passive deposit) becomes \"how you were sought and how you answered\" (having-been-chosen, consenting). \"Repent — reverse, restore\" becomes \"turn toward it fully\" — the same gesture of turning, but oriented forward to the threshold rather than backward to restoration. The thief who dispossesses becomes the bridegroom whose stealth of hour is not violation but the reserved decorum of a vow. The withheld knowledge of the hour, source's menace, becomes the last chastity before meeting: the same unknowing, consented to. The emergent proposition is not the source's claim (watch or be robbed) but its enantiomorph (the coming is the consummation you promised). Contact everywhere; superimposition nowhere — the machinery of judgment-under-threat cannot be laid over readiness-for-union. The witness's question (\"how can I do better\") is field-of-uptake only; it did not soften the cast into reassurance — the hope-wager pays its countervailing price as tremulous, unresolved readiness, not comfort."
+  },
+  {
+   "transform_id": "TX-456adf4d",
+   "cast_at": "2026-07-03T07:35:20.063433+00:00",
+   "reading_axn": "AXN:FEBB.READING.🌙🌒🌗🌘🌖🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_52_52",
+    "citation": "3:3",
+    "start_unit": 52,
+    "end_unit": 52,
+    "unit_labels": [
+     "3:3"
+    ]
+   },
+   "operator": "BEAST",
+   "operator_axis": "species-register-axis — the creaturely substrate the anthropic determination foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single continuous prose verse under a bold chapter:verse marker; no internal lineation; colon-terminal"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:62d36ad282e6cc2a6f0746bd0962ec5756d33e1c9fc0a4a71c486570d2d70099",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·",
+   "underlying_attribution": null,
+   "enantiomorph": "**3:3** Recall then in the marrow how the milk came and how the ground first spoke through your feet, and lie flat, and let the coat rise; for if the ear does not lift of itself, the low shape parts the grass with no smell before it, and the blood will not have been told which breath was the last drawn in the reeds:",
+   "layer_a": {
+    "units": 6,
+    "beat_map": [
+     "verse-marker",
+     "imperative-recall (remember how you received)",
+     "imperative-turn (hold fast and repent)",
+     "conditional-threat (if not watchful)",
+     "simile of stealth arrival (I come as a thief)",
+     "seal of unknowable hour"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single continuous prose verse under a bold chapter:verse marker; no internal lineation; colon-terminal"
+    }
+   },
+   "commentary": "The source commands a moral self to remember, repent, and stay awake, threatening the willed sleeper with an unannounced arrival. BEAST rotates the species-register: the willed vigilant subject becomes the prey-body that cannot elect its watch. Beat by beat the mirror holds without shared referent. \"Remember how you received and heard\" reflects into memory lodged not in doctrine but in the marrow — milk, the ground felt through the feet: reception by the body, not by the ear of instruction. \"Hold fast and repent\" becomes \"lie flat and let the coat rise\" — the animal's turn is not repentance but the hackle, the flattening, involuntary. The thief-simile reflects into \"the low shape parts the grass with no smell before it\" — dispossession by predator, scentless where the thief was merely silent. The seal on the unknown hour becomes the blood never told which breath was the last: the anthropic self is warned so it may prepare; the beast is not warned at all, and its unpreparedness is no fault. The colon-terminal and conditional pivot survive intact. What the composition bore — that vigilance is demanded of a creature whose waking is not fully its own to summon — is what the cast discloses: to the question of doing better, the rotation answers only that some readiness is flesh, not will, and fear does not sharpen the ear that already lifts by itself."
   }
  ],
- "last_updated": "2026-07-03T07:34:14.894345+00:00"
+ "last_updated": "2026-07-03T07:35:20.063433+00:00"
 }
