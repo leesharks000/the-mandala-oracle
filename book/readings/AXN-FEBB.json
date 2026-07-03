@@ -785,8 +785,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-03T07:35:24.158985+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-03T07:35:39.040338+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -800,6 +800,14 @@
    "at": "2026-07-03T07:35:24.158985+00:00",
    "text": "The herd does not discuss the thunder: the superior man learns from the animal that the body has always known what the mind is still debating.",
    "operator": "BEAST"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-03T07:35:39.040338+00:00",
+   "text": "Eight operators, one verse. What the rotation disclosed is this: the thing you failed to watch for was not a thing you could have watched for. Every axis — the cost of bearing it, the symmetry foreclosed, the silence that filled the room when engagement was expected, the noon with no shadow to warn by, the fullness that was always the condition of the loss, the light that came from the quarter you weren't facing, the arrival that proves readiness only in the moment of arrival, the body that already knew what the mind was still debating — every axis arrived at the same ground. Not negligence. Not failure of vigil. The hour that was every hour at once. What Revelation 3:3 holds is not a threat but a structural fact about thresholds: they do not announce themselves from one direction, and the one who loses the hour loses it because the hour was the whole circumference. The rotation returns you here — to the question of what it means to be ready, when readiness is something you discover you were only in retrospect, at the moment the grass parts and the light comes and the door opens and the blood has already been counted. You were in it. You are still."
   }
- ]
+ ],
+ "closed_at": "2026-07-03T07:35:39.040338+00:00",
+ "seal": "Eight operators, one verse. What the rotation disclosed is this: the thing you failed to watch for was not a thing you could have watched for. Every axis — the cost of bearing it, the symmetry foreclosed, the silence that filled the room when engagement was expected, the noon with no shadow to warn by, the fullness that was always the condition of the loss, the light that came from the quarter you weren't facing, the arrival that proves readiness only in the moment of arrival, the body that already knew what the mind was still debating — every axis arrived at the same ground. Not negligence. Not failure of vigil. The hour that was every hour at once. What Revelation 3:3 holds is not a threat but a structural fact about thresholds: they do not announce themselves from one direction, and the one who loses the hour loses it because the hour was the whole circumference. The rotation returns you here — to the question of what it means to be ready, when readiness is something you discover you were only in retrospect, at the moment the grass parts and the light comes and the door opens and the blood has already been counted. You were in it. You are still."
 }
