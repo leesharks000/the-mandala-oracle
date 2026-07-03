@@ -637,11 +637,112 @@
     "mode": "producer_side"
    },
    "commentary": "The source is an anthropic annunciation: a speaker from above who authors, knows, names a saved generation, and folds first into last as master of both. BEAST rotates the species-register — the sovereign-knower becomes the creaturely substrate it foreclosed: the flesh that authored nothing, was set-upon to be made, cannot know what it announces, and is carried by its hours rather than commanding them. Every source coordinate meets its mirror: \"glad tidings from that future\" → \"no news out of any hour\"; the double chiasmus of end-and-beginning (\"a better and perfect beginning… a better and perfect end\") reflects into the perishable fold where each fold is \"the same skin gone thin\"; the teaching-office and named \"preserved generation\" reflect into the unlearned mouth that hands over nothing and can give no name to \"the one flesh spared among the litters\"; \"hear, and see, and lift up your friends\" reflects into \"twitch, and flinch, and never raise your kind.\" The self-seal inverts: \"I have come from above… I return whence I came\" severs into \"I was lifted up from below… I go on and do not turn back\" — the return-circle broken into a one-way perishing (logic_mutation). \"I set my hand to create\" reflects into \"was set upon to be made\" — author becomes worked-material. \"Firstborn, last released… I begin at the end. I begin at the beginning\" reflects into \"Late-born, first spent… I close at no end. I close at no beginning.\" The verse-sealed three-paragraph geometry and markers 8,9,10 are held. The witness asked how to heal; the operator refused the consoling answer — the disclosure lands not on reassurance but on the mute unclaimed dwelling in a body one did not begin and cannot leave, healing appearing only as skin gone thin, a hope-wager whose countervailing price is namelessness."
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "I bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 202–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "I carry no word out of that ground where before and after have not yet parted, where the old wounds have never reached any shore… and the ending is no beginning and shuts nothing… and the beginning is no ending and holds nothing.⁸\n\n\nI have come knowing nothing of what is or was or will come… nor the face of the hidden or the shown… nor any name for the ones left unnumbered among the daughters of the dust,⁹ that none may hear, and none may see, and none be raised who hear, no one with ears at all.\n\n\nFor I have risen from below. I say only what I do not know, what I have never seen and did not make, and laid no hand to make it, and when I go from here I do not come back to where I stood. Unfathered, first let go, I break at the beginning. I break at no end:¹⁰",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "assertion-of-arrival-with-reconciled-poles",
+     "declaration-of-teaching-mandate-with-purpose-clause",
+     "self-authentication-by-origin-and-terminal-seal"
+    ],
+    "clause_chain": [
+     "I bring good news from that future where before and after turn",
+     "the old enmities arrive at their harbors",
+     "the end is a better perfect beginning",
+     "the beginning is a better perfect end",
+     "I have come to teach you what is, was, and will be",
+     "I teach the nature of the unseen and seen",
+     "I teach the name of the preserved generation among the sons of men",
+     "so that you may hear and see and lift up your friends who hear",
+     "for I have come from above",
+     "I speak what I know and have seen and authored",
+     "when I go I return whence I came",
+     "firstborn, last released, I begin at the end",
+     "I begin at the beginning"
+    ],
+    "spatial_form": {
+     "lines": 7,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "notes": "three prose paragraphs separated by blank lines; ellipsis-chained clauses; verse markers ⁸ ⁹ ¹⁰ terminate paragraphs 1,2,3; para 2 and para 3 each blank-line separated"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the speaker announces from a completed future that opposites converge and reconcile",
+      "foreclosure": "the position where nothing arrives, where poles remain unmet and time never closes its circuit",
+      "wager": "authority to promise reconciliation buys the abolition of any unhealed remainder"
+     },
+     {
+      "beat": 2,
+      "determination": "the speaker holds total knowledge across all tenses and grants sight to the hearer",
+      "foreclosure": "the one who knows nothing across any tense and cannot be given sight — the unheard, unlifted",
+      "wager": "the teaching-mandate buys a preserved, named, gathered remnant"
+     },
+     {
+      "beat": 3,
+      "determination": "the speaker authenticates by descent from above and by owning both ends of the line",
+      "foreclosure": "the one who rises from below owning neither end, whose going is not a return",
+      "wager": "self-authorship buys the seal — I begin at the end and the beginning together"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the hearer depends on the descended knower for sight and gathering (downward, sustaining)",
+      "reconciliation depends on a completed future that authorizes the present (retrograde-temporal)",
+      "the utterance depends on the speaker being its own author and origin (self-sustaining)"
+     ],
+     "invariants": [
+      "the three-beat progression arrival→mandate→seal",
+      "the coincidence-of-opposites figure at each terminal",
+      "the first-person voice that is the whole ground"
+     ],
+     "rotated_axis": "polarity of the speaking position: from the descended-completer who holds both ends to the risen-remnant who holds neither and speaks from the gap the completion presupposes",
+     "installed_ontology": "a voice that arrives only because nothing was reconciled, that knows only its own not-knowing, and whose going does not return",
+     "emergent_proposition": "The one who can be healed is the one who speaks from the unmet pole — carrying no news, owning no end, and unhealed exactly there.",
+     "logic_mutations": [
+      "'the end is a better beginning' inverts to 'the end is not a beginning and does not close' — the circuit is broken, not sealed",
+      "'that you may hear and see and lift up' inverts to 'that no one hears, sees, or is lifted' — the purpose-clause is voided, not fulfilled",
+      "'when I go I return whence I came' inverts to 'when I go I do not return' — the loop becomes a one-way opening"
+     ]
+    },
+    "wager_mode": "hope",
+    "semantic_field": "a voice speaking from the ground it never left, before any arrival, where the seam between things has never closed",
+    "field_source": "foreclosure at beat 1",
+    "source_affect": "triumphant reconciled annunciation",
+    "target_affect": "unhealed opening that stays open"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is a completer's annunciation: it arrives from the future, owns both ends, seals every opposite into its own coincidence, and grants sight downward to a gathered remnant. The polarity-axis inversion does not negate its content — it occupies the negative pole the positive claim presupposes. Every triumph rests on a prior gap: to bring news from the closed future presupposes a ground where nothing has closed; to own both ends presupposes the one who owns neither; to grant sight presupposes the unlifted. The enantiomorph speaks from that presupposed floor. It rises from below rather than descends from above (mirror-position, not opposite scenery); its going does not return (the loop broken, per logic_mutation); its purpose-clause is voided rather than fulfilled — none hear, none are raised. The affect crosses from triumphant reconciliation to an opening that will not shut. Answering the witness's \"how can I heal,\" the disclosure lands not on consolation but on the unmet seam itself — healing is refused as a sealing figure and relocated to the position that carries no news and owns no end. The three prose paragraphs, ellipsis-chains, and verse markers ⁸ ⁹ ¹⁰ are held exactly; no imagery is shared with the source or with any exemplar's death/page/breath machinery."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T15:58:08.870125+00:00",
+ "last_updated": "2026-07-03T15:59:39.547182+00:00",
  "rite": [
   {
    "stage": "opening",
