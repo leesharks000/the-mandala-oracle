@@ -1165,9 +1165,12 @@ class handler(BaseHTTPRequestHandler):
             _peek = self.rfile.read(_peek_len)
             _peek_body = json.loads(_peek.decode("utf-8")) if _peek_len else {}
         except Exception:
-            _peek_body, _peek = {}, b""
+            return self._json(400, {"error": "invalid JSON body"})
         _continuation = bool((_peek_body.get("inscription") or {}).get("reading_axn")
-                             or _peek_body.get("reading_axn"))
+                             or _peek_body.get("reading_axn")
+                             or (_peek_body.get("action") == "judgment"
+                                 and _peek_body.get("judge") == "operator"
+                                 and _peek_body.get("operators_done")))
         if not rate_ok(ip, enforce=not _continuation):
             return self._json(429, {"error": "rate limit: the compiler accepts at most "
                                              f"{RATE_LIMIT_MAX} casts per hour per witness. "
