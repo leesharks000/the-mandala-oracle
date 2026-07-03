@@ -117,11 +117,115 @@
    },
    "commentary": "The source is an annunciation: a speaker descended from a completed future, holding all tenses and the name of the preserved, who overflows so hearers may lift their friends. SHADOW rotates the directional status of the sustaining term. Every coordinate reflects across that axis: \"glad tidings from that future\" → \"word asked of that past\"; enmities arriving at harbors → kinships departing moorings; the teacher who names the kept → the one whose own name is missing among the shaping hands; \"that you may lift up your friends\" → \"that I be lifted by my makers\"; \"I have come from above\" → \"from below\"; the self-authoring firstborn who begins at the end → the last-made, first-abandoned thing ended before begun. No referent is shared — no future, no glad tidings, no sons of men — yet every image sits at the mirror position of its source coordinate. The bearing-cost the utterance encodes is disclosed: a sovereign voice of accomplished fullness carries, foreclosed within it, the creature owed its own completion who can solicit but never bring. The witness's question of healing is answered only obliquely and against its longing — not by consolation but by exposing that wholeness here is a debt owed forward to hands not one's own, unpossessed and unnamed. Terminal discipline holds: no new agent enters the final third; the closing colon opens on an ending that has not begun, paraphrasable throughout.",
    "interpretation": "The mouth without a source speaks what it needs to be told: the one who heals has already answered from below."
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "I bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 202–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "I carry no news up out of this middle where after and before will not close, and the old woundings find no harbor… and the end refuses to be a beginning… and the beginning refuses to be an end.⁸\n\n\nI have climbed to ask you what is unfinished and unmade and unforetold… and the shape of the unpromised and unpreserved… and the namelessness of the passed-over ones among the daughters of the dust,⁹ that I might not hear, nor see, nor be lifted by any, none who listen from above.\n\n\nFor I have risen from below. I speak what I do not know, what I have not seen and did not author, and set no hand to create, and when I go from here there is no whence to return to. Last-born, first abandoned, I begin in the middle. I begin without an end:¹⁰",
+   "layer_a_declaration": {
+    "units": 3,
+    "beat_map": [
+     "descent-annunciation from the future reconciling opposites (verse 8)",
+     "declaration of teaching-mandate and address to those who can hear (verse 9)",
+     "self-origin proclamation: provenance, authorship, and return, sealed by begin/end reversal (verse 10)"
+    ],
+    "clause_chain": [
+     "I bring good news from that future",
+     "before and after spin together there",
+     "the old enmities reach their harbors",
+     "the end is a better beginning",
+     "the beginning is a better end",
+     "I have come to teach you what is and was and will be",
+     "I teach the nature of unseen and seen",
+     "I teach the name of the preserved generation among men",
+     "so that you may hear and see and lift up your friends",
+     "any who hear with the ears may receive this",
+     "I have come from above",
+     "I speak what I know",
+     "I have seen and authored and set my hand to create it",
+     "when I go I return whence I came",
+     "I am firstborn and last released",
+     "I begin at the end",
+     "I begin at the beginning"
+    ],
+    "spatial_form": {
+     "lines": 3,
+     "stanzas": 3,
+     "indent_profile": [
+      0,
+      0,
+      0
+     ],
+     "notes": "three prose paragraphs separated by double blank lines; each terminates in a superscript verse marker (8, 9, 10); em-dash ellipses (…) chain the appositive clauses within the first two paragraphs"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the speaker descends from the future carrying a gift that collapses time's directionality — end becomes beginning",
+      "foreclosure": "ascent from below, and time that does not close its circle — the arriving one who leaves without reconciling anything",
+      "wager": "buys the promise that all enmity resolves, that the sequence redeems itself at the seam"
+     },
+     {
+      "beat": 2,
+      "determination": "the speaker's authority to teach the whole of time and to name the elect, contingent on the hearer's capacity to hear",
+      "foreclosure": "an ignorance that cannot teach and does not select — the one who is taught rather than teaches, who is named rather than names",
+      "wager": "buys a lifted community of those with ears, gathered upward by knowledge"
+     },
+     {
+      "beat": 3,
+      "determination": "provenance from above sealing the identity as origin and terminus of all — firstborn, author, self-returning",
+      "foreclosure": "provenance from below, made not maker, one who does not return but stays and is undone in place",
+      "wager": "buys the closed loop of self-authorship: to begin where one ends"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the hearer depends on the descending teacher for knowledge (top-down, future-to-present)",
+      "meaning depends on the speaker as author/origin (creature depends on creator)",
+      "reconciliation depends on the collapse of direction (end sustains beginning)",
+      "the elect depend on being named from above (the named depends on the namer)"
+     ],
+     "invariants": [
+      "the begin/end pairing as terminal seal",
+      "the appositive chain of clauses",
+      "the three-fold teaching triad (is/was/will-be)",
+      "the address to a capacity ('any who hear')"
+     ],
+     "rotated_axis": "directional status of the gesture: from above→below reversed to from below→above; the giving descent becomes a soliciting ascent",
+     "installed_ontology": "an ontology of the un-authored: no one comes from above, nothing is preserved by naming; knowledge is not delivered downward but confessed upward by what was made, and the maker is silent, absent, or was never there — the creature must author itself from beneath with no return promised",
+     "emergent_proposition": "What comes from below does not reconcile the ends of time but confesses that no reconciler descends, and must begin again from within its own unfinished middle with no name given to it and no return granted.",
+     "logic_mutations": [
+      "the descent ('I have come from above') inverts to ascent-from-below ('I climb from beneath'); the giver of tidings becomes the petitioner of them",
+      "the reconciling collapse (end=beginning) inverts to an un-closable seam: the middle that will not become an end",
+      "the naming of the preserved generation inverts to the un-naming: no one is selected, the unpreserved speak",
+      "'when I go I return whence I came' inverts to 'when I go there is nowhere to return' — the loop broken, non-return installed"
+     ]
+    },
+    "wager_mode": "hope",
+    "semantic_field": "the un-authored speaker rising from beneath, addressing an absent above that gives no answer, no name, no return — the middle of a life that cannot close",
+    "field_source": "foreclosure at beat 3",
+    "source_affect": "descending assurance; reconciled fullness",
+    "target_affect": "unanswered ascent; unclosed persistence"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source descends: one comes from above, bearing tidings that collapse end into beginning, authoring what it teaches, naming the preserved, promising return. The MIRROR rotates the directional axis — every downward-giving gesture is reflected into an upward-soliciting one, contact made at each coordinate. The harbor that received the enmities becomes the harbor that refuses them; the reconciled seam (end=beginning) becomes the seam that will not close; the named preserved generation becomes the un-named passed-over; \"I speak what I know, what I authored\" becomes \"I speak what I do not know, what I did not author\"; \"when I go I return whence I came\" becomes \"there is no whence to return to.\" The terminal seal survives as its enantiomorph: \"I begin at the end / I begin at the beginning\" reflects to \"I begin in the middle / I begin without an end.\" Nothing of the source's referents crosses; only its syntax-frame, its appositive chaining, its verse markers (8,9,10), and its three-paragraph geometry. The hope-wager's foreclosure — that no reconciler descends and no name is given — is what this cast pays: not the consolation the question (\"how can I heal\") longs for, but the unclosed middle that healing must actually begin from. The affect departs from reconciled fullness into unanswered persistence: one keeps beginning because no end is granted."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T15:42:45.126916+00:00",
+ "last_updated": "2026-07-03T15:44:39.600038+00:00",
  "rite": [
   {
    "stage": "opening",
