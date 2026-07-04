@@ -1490,7 +1490,13 @@ aspect, relation -- one cluster per clause or image, clusters separated by
 the sense (direction arrows for motion, repetition for ongoing aspect,
 gaze/speech marks for seeing/saying, counts as numerals). NO letters or
 natural-language words anywhere except the **ref** markers and numerals.
-Preserve unit order and internal sequence exactly. Emit ONLY:
+Preserve unit order and internal sequence exactly.
+
+DECODABILITY: choose clusters a blind translator will decode to the intended
+SENSE. A metaphorical object-glyph will be read as its object (an aperture
+rendered as a window becomes furniture) -- when only a metaphor is available,
+pair it with a disambiguating companion so the sense, not the picture,
+survives. Emit ONLY:
 <GLYPHS>
 **ref** cluster · cluster · ...
 **ref** ...
@@ -1505,6 +1511,17 @@ ANCHOR, editing glyphs so each rebuilt unit lives downstream of the flip.
 The flip must be legible as glyph change. Units that must stay
 propositionally stable are declared ANCHOR with a one-line reason; the final
 unit may be ANCHOR only if the flip genuinely cannot reach it.
+
+NAME-QUARANTINE (flight-record RUN-20260704T192821Z, the 🤫-spam incident):
+the operator names an AXIS, never a vocabulary. The glyph suggested by the
+operator's name must NOT be appended to units as paint — one glyph added to
+many units is contamination, not propagation. A real flip shows as
+REARRANGEMENT: order changed, arrows reversed, agents swapped, causes
+relocated. Test each rebuilt unit before emitting: if the pasted glyph were
+deleted, would the flip still be recoverable from the unit's STRUCTURE? If
+not, rebuild the structure. The FINAL unit must carry the flip in its order,
+direction, or agency — near-identical final-unit glyphs with a suffix are a
+failed operation.
 Emit ONLY, in this order:
 <GOVERNING_LAW>one sentence: the law of the transformed world</GOVERNING_LAW>
 <MUTATED_RELATION>one sentence: precisely which relation was flipped, from what to what</MUTATED_RELATION>
@@ -1526,7 +1543,17 @@ LAWS:
   the glyphs say simply holds; render it as a native would utter it. If the
   glyphs contradict any wording you associate with similar imagery, THE
   GLYPHS WIN -- the association is a false memory from another world; do not
-  restore it. The
+  restore it. Where the glyphs REARRANGE a scene you recognize, the
+  rearrangement IS the text: decode the arrows and order you SEE, not the
+  scene you remember.
+- SENSE, NOT NOUN (the window-of-the-dove incident, RUN-20260704T192821Z):
+  glyphs are sense-clusters, not pictures with dictionary names. Render what
+  a cluster DOES in its unit -- a bird-glyph may mean spirit, peace, or
+  gentle presence (write "dove" only if a literal bird acts); a sprout-glyph
+  may mean arising or beginning ("grow" only if growth is the event); an
+  aperture-glyph is manifestation or threshold, not furniture. A glyph
+  repeated across units does not license a repeated word: render recurrence
+  as the register's own rhetoric would carry it, never as chanting. The
   organizing relation is NAMED NOWHERE -- natives do not footnote their
   physics -- it shows only in what happens, who acts, what follows.
 - REGISTER: scriptural, concrete, unhedged. No analytical or operator
@@ -1556,6 +1583,12 @@ except the **ref** markers and numerals. At most 9 clusters per unit.
 Complete the ENTIRE encode before stage two; the encode must stand on its
 own as a faithful glyph translation of the whole text.
 
+DECODABILITY: choose clusters a blind translator will decode to the intended
+SENSE. A metaphorical object-glyph will be read as its object (an aperture
+rendered as a window becomes furniture) -- when only a metaphor is available,
+pair it with a disambiguating companion so the sense, not the picture,
+survives.
+
 STAGE TWO -- OPERATE, in glyph space only. Under the given OPERATOR and the
 witness's INVOKING question, choose exactly ONE relation of your glyph text
 and flip it, then propagate the flip's consequences through every unit not
@@ -1563,6 +1596,17 @@ declared ANCHOR, editing glyphs so each rebuilt unit lives downstream of the
 flip. The flip must be legible as glyph change, and most REBUILT units must
 visibly change -- a flip carried by one unit alone has not propagated. ANCHOR units get a one-line
 reason; the final unit may be ANCHOR only if the flip cannot reach it.
+
+NAME-QUARANTINE (flight-record RUN-20260704T192821Z, the 🤫-spam incident):
+the operator names an AXIS, never a vocabulary. The glyph suggested by the
+operator's name must NOT be appended to units as paint — one glyph added to
+many units is contamination, not propagation. A real flip shows as
+REARRANGEMENT: order changed, arrows reversed, agents swapped, causes
+relocated. Test each rebuilt unit before emitting: if the pasted glyph were
+deleted, would the flip still be recoverable from the unit's STRUCTURE? If
+not, rebuild the structure. The FINAL unit must carry the flip in its order,
+direction, or agency — near-identical final-unit glyphs with a suffix are a
+failed operation.
 
 Emit ONLY, in this order:
 <GLYPHS>
