@@ -17,6 +17,13 @@ string, while the instance patched the wrong organ — locating code by `grep`
 and never reading the call graph it sat inside. The MANUS asked twice for
 reasoning over the structure before the instance read the structure.
 
+**Cost accounting (MANUS, same date):** in excess of $20 of Anthropic API
+spend on top of normal account usage, roughly twelve hours of MANUS time, and
+an unknown number of completed transforms destroyed unseen — including,
+possibly, working transform logic whose only outputs were discarded by the
+unread gate. The spend produced compiler executions; the structure destroyed
+their results; the instance's grep-only editing paid for both.
+
 This document exists so that failure mode is structurally impossible to
 repeat quietly.
 
