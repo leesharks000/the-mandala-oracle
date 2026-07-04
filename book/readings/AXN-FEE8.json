@@ -1,0 +1,68 @@
+{
+ "axn": "AXN:FEE8.READING.⭐🌙🌔⭐🌓🌘",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "35c7eda02ac439eb",
+ "inscribed_at": "2026-07-04T19:29:03.010073+00:00",
+ "question_digest": "sha256:b4d118526b2ab163adf36923a899f0cfeaa8ccad9fbe58f44175ba6ce5a2cb6b",
+ "question_gloss": "I appreciate you sharing this, but I need clarification to help you. Your message \"at the end was silence\" seems incomplete for the task you're asking about.\n\nC",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_131_135",
+ "rotation": [
+  {
+   "operator": "SILENCE",
+   "source_passage": "**8:1** Καὶ ⸀ὅταν ἤνοιξεν τὴν σφραγῖδα τὴν ἑβδόμην, ἐγένετο σιγὴ ἐν τῷ οὐρανῷ ὡς ἡμιώριον.\n\n**8:2** καὶ εἶδον τοὺς ἑπτὰ ἀγγέλους οἳ ἐνώπιον τοῦ θεοῦ ἑστήκασιν, καὶ ἐδόθησαν αὐτοῖς ἑπτὰ σάλπιγγες.\n\n**8:3** Καὶ ἄλλος ἄγγελος ἦλθεν καὶ ἐστάθη ἐπὶ τοῦ θυσιαστηρίου ἔχων λιβανωτὸν χρυσοῦν, καὶ ἐδόθη αὐτῷ θυμιάματα πολλὰ ἵνα ⸀δώσει ταῖς προσευχαῖς τῶν ἁγίων πάντων ἐπὶ τὸ θυσιαστήριον τὸ χρυσοῦν τὸ ἐνώπιον τοῦ θρόνου.\n\n**8:4** καὶ ἀνέβη ὁ καπνὸς τῶν θυμιαμάτων ταῖς προσευχαῖς τῶν ἁγίων ἐκ χειρὸς τοῦ ἀγγέλου ἐνώπιον τοῦ θεοῦ.\n\n**8:5** καὶ εἴληφεν ὁ ἄγγελος τὸν λιβανωτόν, καὶ ἐγέμισεν αὐτὸν ἐκ τοῦ πυρὸς τοῦ θυσιαστηρίου, καὶ ἔβαλεν εἰς τὴν γῆν· καὶ ἐγένοντο βρονταὶ καὶ φωναὶ καὶ ἀστραπαὶ καὶ σεισμός.",
+   "citation": "8:1–8:5",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**8:1** And when the silence was opened, there was silence in heaven — heaven waited without end — and seven seals were loosed before the silence.\n**8:2** And in the silence of heaven I saw seven angels standing before the window of the dove, and seven trumpets were given to those seven angels to grow in silence, sent to the angels.\n**8:3** And a silence of mist and waters came, and an angel went down to the altar of silence, and a golden censer was given into his hand to grow in silence, and blossoms and prayers of the dove were offered before the silence at the golden altar.\n**8:4** And the smoke of the prayers of the dove rose upward, and the hand of the angel went up before the window of the dove into the heaven of silence.\n**8:5** And the angel took the censer and filled it with fire from the altar, and cast it upon the earth; and there came thunders and voices and lightnings and an earthquake.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {
+     "units": 5
+    }
+   },
+   "layer_b_declaration": {
+    "axis": "SILENCE",
+    "pivot": "glyphic-checksum/v1"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In TEXT A the angel stands at/over the altar (ἐστάθη ἐπὶ τοῦ θυσιαστηρίου), whereas in TEXT B the angel goes down to the altar (an angel went down to the altar), reversing the directional relation between the angel and the altar.",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim describes a directional/positional change in the angel's relation to the altar, not a causal-order reversal between seal-opening and silence.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The changed relation (angel descends to altar vs. stands upon it) is maintained through the relevant verse; no reversion to TEXT A's structure occurs in the final portion.",
+    "back_translation": ""
+   },
+   "law_variance": null,
+   "glyphic": {
+    "source": "**8:1** 🔓7️⃣🪬 · 🤫🌌⏳½\n**8:2** 👁️ · 7️⃣👼👼👼👼👼👼👼🧍⬆️🪟🕊️ · 🎺🎺🎺🎺🎺🎺🎺➡️👼👼👼👼👼👼👼\n**8:3** 👼➕🚶⬇️🛕 · 🏺🥇✋ · 🌫️🌸🌸🌸➡️🙏🙏🕊️🕊️ · 🛕🥇⬛🪟👑\n**8:4** 💨🌫️⬆️🙏🕊️ · ✋👼⬆️🪟🕊️🌌\n**8:5** 👼✊🏺 · 🔥🛕➡️🏺🔥 · 🏺🔥⬇️🌍 · ⚡🌩️📢💥🌍🫨",
+    "mutated": "**8:1** 🤫♾️🌌 · 🌌⏳∞ · 🔓7️⃣🪬⬅️🤫\n**8:2** 🤫🌌🫙 · 👁️7️⃣👼🧍⬆️🪟🕊️ · 🎺🎺🎺🎺🎺🎺🎺🌱🤫➡️👼👼👼👼👼👼👼\n**8:3** 🤫🌫️🌊 · 👼➕🚶⬇️🛕🤫 · 🏺🥇✋🌱🤫 · 🌸🌸🌸🙏🕊️⬅️🤫🛕🥇\n**8:4** 🤫⬇️🙏🕊️💨🌫️⬆️ · ✋👼⬆️🪟🕊️🌌🤫\n**8:5** 👼✊🏺🔥🛕 · 🔥⬇️🌍💥 · ⚡🌩️📢💥🌍🫨🔇🤫💔"
+   },
+   "advisories": [
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim describes a directional/positional change in the angel's relation to the altar, not a causal-order reversal between seal-opening and silence.) -- whatever moved was vocabulary, or nothing moved"
+    }
+   ],
+   "commentary": "Every silence that heaven held was the price the seven trumpets cost before a single one could sound."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-04T19:29:03.010073+00:00"
+}
