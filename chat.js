@@ -1085,6 +1085,19 @@ async function runCastingRite(cast) {
           const failedAt = [d.failed_constraint, d.failed_test].filter(Boolean).join(' · ');
           card.textContent = `HALT — ${failedAt || 'verification failure'}: ${d.specific_diagnosis || d.detail || '(no further diagnosis)'}`;
           haltEl.appendChild(card);
+          if (data.post_mortem && (data.post_mortem.mutated_checksum || data.post_mortem.english)) {
+            const pm = document.createElement('details');
+            pm.className = 'halt-postmortem';
+            const sum = document.createElement('summary');
+            sum.textContent = 'post-mortem (mutated checksum · blind decode)';
+            pm.appendChild(sum);
+            const pre = document.createElement('pre');
+            pre.style.whiteSpace = 'pre-wrap';
+            pre.textContent = (data.post_mortem.mutated_checksum ? data.post_mortem.mutated_checksum + '\n\n───\n\n' : '')
+                            + (data.post_mortem.english || '');
+            pm.appendChild(pre);
+            haltEl.appendChild(pm);
+          }
           messagesEl.scrollTop = messagesEl.scrollHeight;
           if (attempts >= 2) { haltedOperator = currentOperator; break rotation; }
           if (data.skeleton && Object.keys(data.skeleton).length) retrySkeleton = data.skeleton;

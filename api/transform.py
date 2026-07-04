@@ -1192,6 +1192,25 @@ _BACKXLATE_SYSTEM = ("Translate the given text into plain English, line for line
 
 # -- G2: the judge -- law recovery from structure + terminal consistency.
 #    Fresh context; blind to the declared mutation.
+
+_JUDGE_SYSTEM_XLANG = """You compare TEXT A and TEXT B, which are in DIFFERENT
+LANGUAGES: TEXT B descends from TEXT A's world through translation PLUS
+exactly one intended relational change. Your task is to recover that change.
+Differences of language, vocabulary, phrasing, word order, idiom, register,
+or imagery-rendering are TRANSLATION and are NOT changes -- ignore them
+entirely. Recover only a RELATIONAL/STRUCTURAL difference that survives
+translation: who acts on whom, what causes or precedes what, which direction
+anything moves, what is affirmed versus denied, who possesses or confers,
+what outcome replaces what. If, after discounting everything attributable to
+translation, the two texts are relationally equivalent, write exactly NONE.
+Emit ONLY a JSON object:
+{"recovered_law": "<at most 2 sentences naming the relation that differs, or NONE>",
+ "terminal_consistency": "PASS" | "FAIL",
+ "terminal_note": "<one line. FAIL ONLY if the final ~40% of TEXT B abandons
+   the changed relation and reverts to TEXT A's relation-structure; register
+   or diction shifts alone are NOT reversion.>"}
+JSON only."""
+
 _JUDGE_SYSTEM = """You compare two texts (they may be in any language,
 including Greek -- compare them in their own language) and emit ONLY a JSON
 object:
@@ -1286,7 +1305,8 @@ def _independent_gates(parsed: dict, kernel: dict, source_text: str, api_key: st
 
     # -- G2: the judge -- blind law recovery + terminal consistency --
     try:
-        j_text, _ = _stream_call(COMPILER_MODEL, _JUDGE_SYSTEM,
+        j_text, _ = _stream_call(COMPILER_MODEL,
+                                 _JUDGE_SYSTEM_XLANG if skip_terminal else _JUDGE_SYSTEM,
                                  f"TEXT A:\n<<<\n{source_text}\n>>>\n\nTEXT B:\n<<<\n{judged_text}\n>>>",
                                  JUDGE_MAX, api_key, wall=30)
         judged, jerr = _json_with_repair(j_text, api_key)
@@ -1447,7 +1467,10 @@ LAWS:
 - ANCHOR units carry source_faithful text in another language: render each as
   a faithful English translation of exactly that text, nothing more.
 - REBUILT units: translate the glyphs. In the world this text is from, what
-  the glyphs say simply holds; render it as a native would utter it. The
+  the glyphs say simply holds; render it as a native would utter it. If the
+  glyphs contradict any wording you associate with similar imagery, THE
+  GLYPHS WIN -- the association is a false memory from another world; do not
+  restore it. The
   organizing relation is NAMED NOWHERE -- natives do not footnote their
   physics -- it shows only in what happens, who acts, what follows.
 - REGISTER: scriptural, concrete, unhedged. No analytical or operator
@@ -1481,7 +1504,8 @@ STAGE TWO -- OPERATE, in glyph space only. Under the given OPERATOR and the
 witness's INVOKING question, choose exactly ONE relation of your glyph text
 and flip it, then propagate the flip's consequences through every unit not
 declared ANCHOR, editing glyphs so each rebuilt unit lives downstream of the
-flip. The flip must be legible as glyph change. ANCHOR units get a one-line
+flip. The flip must be legible as glyph change, and most REBUILT units must
+visibly change -- a flip carried by one unit alone has not propagated. ANCHOR units get a one-line
 reason; the final unit may be ANCHOR only if the flip cannot reach it.
 
 Emit ONLY, in this order:
@@ -1644,7 +1668,11 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
             "specific_diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])}
         return parsed
     parsed["independent"]["blacklist"] = "PASS"
-    return _independent_gates(parsed, kernel, source_text, api_key, skip_terminal=True)
+    out = _independent_gates(parsed, kernel, source_text, api_key, skip_terminal=True)
+    if out.get("result") == "HALT":
+        out["post_mortem"] = {"mutated_checksum": out.get("glyphic", {}).get("mutated", ""),
+                              "english": out.get("enantiomorph", "")[:4000]}
+    return out
 
 def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str,
                     retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
