@@ -53,8 +53,8 @@ from pathlib import Path
 # Configuration
 # ──────────────────────────────────────────────────────────────────────
 
-COMPILER_MODEL = "claude-fable-5"   # depth-gating discipline (workplan §2.2): the transforms are the most technically demanding call in the system — always the strongest available model; 4.8 produced slot-deletion drift (MANUS, 2026-07-04)
-MAX_TOKENS = 8000    # emission-disciplined: deliberation internal, apparatus compact (2026-07-04)
+COMPILER_MODEL = "claude-opus-4-8"   # latency-gated re-pin (2026-07-04): fable-5's depth exceeded the rite's time budget (multi-minute transforms; a rotation is eight). The discipline fable supplied implicitly is now EXPLICIT: C8 slot conservation, C9 in-language composition, and the slot/numeral verification gates HALT the drift 4.8 previously produced. If drift recurs past the gates, re-pin to fable and accept the wait — MANUS call.
+MAX_TOKENS = 5000    # payload-scaled: enantiomorph+facing ≤ ~1,500 tokens, apparatus capped (2026-07-04)
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
 
@@ -569,7 +569,9 @@ no prose recapitulation of the source, no restatement of these instructions.
 The payload is the ENANTIOMORPH, its translation facing, the VERIFICATION
 verdicts, and a brief COMMENTARY naming the joints traversed. Rigor is not
 measured in emitted length; an exhaustive apparatus that starves the
-enantiomorph of the token budget is a failure of proportion. Total emission
+enantiomorph of the token budget is a failure of proportion. HARD CAPS:
+LAYER_A ≤ 12 lines; LAYER_B ≤ 8 lines; slot map ≤ 1 line per slot;
+COMMENTARY ≤ 3 sentences. Total emission
 should comfortably fit the budget with room to spare.
 
 HALT BEHAVIOR
@@ -643,7 +645,8 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
     body = json.dumps({
         "model": COMPILER_MODEL,
         "max_tokens": MAX_TOKENS,
-        "system": COMPILER_SYSTEM,
+        "system": [{"type": "text", "text": COMPILER_SYSTEM,
+                    "cache_control": {"type": "ephemeral"}}],
         "stream": True,
         "messages": [{"role": "user", "content": user}],
     }).encode("utf-8")
