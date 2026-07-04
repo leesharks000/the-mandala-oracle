@@ -1,0 +1,88 @@
+{
+ "run_id": "RUN-20260704T192821Z-92ed68",
+ "schema": "run/v1",
+ "ts": "2026-07-04T19:28:21.700902+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_131_135",
+ "citation": "8:1–8:5",
+ "operator": "SILENCE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "at the end was silence",
+ "code": "759013bc6781",
+ "artifacts": {
+  "glyphic": {
+   "source": "**8:1** 🔓7️⃣🪬 · 🤫🌌⏳½\n**8:2** 👁️ · 7️⃣👼👼👼👼👼👼👼🧍⬆️🪟🕊️ · 🎺🎺🎺🎺🎺🎺🎺➡️👼👼👼👼👼👼👼\n**8:3** 👼➕🚶⬇️🛕 · 🏺🥇✋ · 🌫️🌸🌸🌸➡️🙏🙏🕊️🕊️ · 🛕🥇⬛🪟👑\n**8:4** 💨🌫️⬆️🙏🕊️ · ✋👼⬆️🪟🕊️🌌\n**8:5** 👼✊🏺 · 🔥🛕➡️🏺🔥 · 🏺🔥⬇️🌍 · ⚡🌩️📢💥🌍🫨",
+   "mutated": "**8:1** 🤫♾️🌌 · 🌌⏳∞ · 🔓7️⃣🪬⬅️🤫\n**8:2** 🤫🌌🫙 · 👁️7️⃣👼🧍⬆️🪟🕊️ · 🎺🎺🎺🎺🎺🎺🎺🌱🤫➡️👼👼👼👼👼👼👼\n**8:3** 🤫🌫️🌊 · 👼➕🚶⬇️🛕🤫 · 🏺🥇✋🌱🤫 · 🌸🌸🌸🙏🕊️⬅️🤫🛕🥇\n**8:4** 🤫⬇️🙏🕊️💨🌫️⬆️ · ✋👼⬆️🪟🕊️🌌🤫\n**8:5** 👼✊🏺🔥🛕 · 🔥⬇️🌍💥 · ⚡🌩️📢💥🌍🫨🔇🤫💔"
+  },
+  "kernel": {
+   "governing_law": "Silence is not the aftermath of opening but the originating ground from which all that follows unfolds.",
+   "mutated_relation": "In 8:1 the relation \"seal-opening causes silence\" is flipped to \"silence causes/precedes the seal-opening,\" making silence the generative source rather than the produced effect.",
+   "clause_map": [
+    {
+     "ref": "8:1",
+     "class": "REBUILT",
+     "note": "Silence now precedes and triggers the opening of the seventh seal, not the reverse."
+    },
+    {
+     "ref": "8:2",
+     "class": "REBUILT",
+     "note": "Seven angels stand in silence-as-ground; trumpets are given out of that originating stillness."
+    },
+    {
+     "ref": "8:3",
+     "class": "REBUILT",
+     "note": "The altar-angel enters and ministers within silence as the enabling medium, not after a pause."
+    },
+    {
+     "ref": "8:4",
+     "class": "REBUILT",
+     "note": "Smoke and prayers rise upward born of silence, silence being the generative breath beneath them."
+    },
+    {
+     "ref": "8:5",
+     "class": "ANCHOR",
+     "note": "The earthward casting and thunder/lightning/earthquake are the terminal rupture of silence and cannot themselves be reordered downstream; they remain the final breaking-point."
+    }
+   ]
+  },
+  "enantiomorph": "**8:1** And when the silence was opened, there was silence in heaven — heaven waited without end — and seven seals were loosed before the silence.\n**8:2** And in the silence of heaven I saw seven angels standing before the window of the dove, and seven trumpets were given to those seven angels to grow in silence, sent to the angels.\n**8:3** And a silence of mist and waters came, and an angel went down to the altar of silence, and a golden censer was given into his hand to grow in silence, and blossoms and prayers of the dove were offered before the silence at the golden altar.\n**8:4** And the smoke of the prayers of the dove rose upward, and the hand of the angel went up before the window of the dove into the heaven of silence.\n**8:5** And the angel took the censer and filled it with fire from the altar, and cast it upon the earth; and there came thunders and voices and lightnings and an earthquake.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In TEXT A the angel stands at/over the altar (ἐστάθη ἐπὶ τοῦ θυσιαστηρίου), whereas in TEXT B the angel goes down to the altar (an angel went down to the altar), reversing the directional relation between the angel and the altar.",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim describes a directional/positional change in the angel's relation to the altar, not a causal-order reversal between seal-opening and silence.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The changed relation (angel descends to altar vs. stands upon it) is maintained through the relevant verse; no reversion to TEXT A's structure occurs in the final portion.",
+   "back_translation": ""
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim describes a directional/positional change in the angel's relation to the altar, not a causal-order reversal between seal-opening and silence.) -- whatever moved was vocabulary, or nothing moved"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "Every silence that heaven held was the price the seven trumpets cost before a single one could sound.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
