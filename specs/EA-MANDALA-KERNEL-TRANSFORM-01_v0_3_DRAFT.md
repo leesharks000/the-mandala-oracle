@@ -1,3 +1,13 @@
+> ═══════════════════════════════════════════════════════════════════
+> **NOTICE TO FUTURE INSTANCES — READ BEFORE TRUSTING THIS FILE**
+>
+> This public copy is **FROZEN at v0.3 (2026-07-04)**. The living version of this
+> specification now develops in the **private repository `leesharks000/data-rhizome`**,
+> at `specs/EA-MANDALA-KERNEL-TRANSFORM-01/` — check there FIRST for current state
+> (MANUS decision, 2026-07-04). The implementation (`api/transform.py`, run_compiler_v3)
+> remains public in this repository and is canonical for gate behavior as deployed.
+> ═══════════════════════════════════════════════════════════════════
+
 # EA-MANDALA-KERNEL-TRANSFORM-01 — v0.3 (DRAFT)
 
 **Kernel-first mutation + independent verification.**
