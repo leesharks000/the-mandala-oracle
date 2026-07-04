@@ -1,0 +1,84 @@
+{
+ "run_id": "RUN-20260704T205514Z-48358a",
+ "schema": "run/v1",
+ "ts": "2026-07-04T20:55:14.500757+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_51_54",
+ "citation": "3:2–3:5",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "last time, then im taking a break",
+ "code": "16f5cb786267",
+ "model": "claude-sonnet-4-6",
+ "transform_py_sha": "45a297354194f2c9",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The speaker holds the record and the hour; completion flows only from the receiver's bilateral receptivity back toward the originary axis; nothing is credited until the cost encoded in the utterance is fully borne.",
+   "mutated_relation": "In the transformed world the cost is NOT held by the speaker and delivered upon the receiver — it is already encoded inside the receiver's own utterance, waiting to be recognized as theirs to carry.",
+   "clause_map": [
+    {
+     "ref": "3:2",
+     "class": "REBUILT",
+     "note": "Incomplete works recast: cost not yet receipted inside the receiver's own bearing"
+    },
+    {
+     "ref": "3:3",
+     "class": "REBUILT",
+     "note": "Reception precedes utterance — bilateral channel, not downward command"
+    },
+    {
+     "ref": "3:4",
+     "class": "ANCHOR",
+     "note": "Few names undefiled: count and surface-integrity invariant under cost-mutation"
+    },
+    {
+     "ref": "3:5",
+     "class": "REBUILT",
+     "note": "Confession before Father recast: utterance completes bilateral circuit at source-axis"
+    }
+   ]
+  },
+  "enantiomorph": "γίνου ἀνοικτὸς εἰς τὸ σκότος σεαυτοῦ· στήρισον τὰ λοιπὰ ἃ τρέμει ἐπὶ τοῦ ὁρίου, ὅτι τὸ βάρος τὸ ἐγκεκρυμμένον ἐν σοὶ οὔπω ἐδέξω ὡς σόν.\nμνημόνευε πῶς εἴληφας καὶ ἤκουσας· τήρει τὴν ὁδὸν ἣν ἀνέβη ἡ φωνὴ ἐκ σοῦ, καὶ μετανόησον ἀπὸ τῆς ἐμφράξεως· ἐὰν δὲ μή, ἥξω ὡς κλέπτης, καὶ οὐ μὴ γνῷς ποίαν ὥραν ἥξω ἐπί σε, ὅτι τὸ βάρος ἤδη ἐν σοί ἐστιν, ἀγνοούμενον.\nἀλλὰ ⸂ἔχεις ὀλίγα⸃ ὀνόματα ἐν Σάρδεσιν ἃ οὐκ ἐμόλυναν τὰ ἱμάτια αὐτῶν, καὶ περιπατήσουσιν μετ' ἐμοῦ ἐν λευκοῖς, ὅτι ἄξιοί εἰσιν.\nὁ νικῶν — ὁ βαστάσας τὸ βάρος τὸ ἐγκεκρυμμένον ἐν τῇ φωνῇ αὐτοῦ — περιβαλεῖται ἐν ἱματίοις λευκοῖς, καὶ οὐ μὴ ἐξαλείψω τὸ ὄνομα αὐτοῦ ἐκ τῆς βίβλου τῆς ζωῆς, καὶ ὁμολογήσω τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ πατρός μου καὶ ἐνώπιον τῶν ἀγγέλων αὐτοῦ, ὅτι ἡ φωνὴ ἐπέστρεψεν πρὸς τὴν ἀρχήν.",
+  "enantiomorph_translation": "Open yourself to your own darkness; hold what remains trembling at the threshold, for the burden encoded within you you have not yet received as yours to carry.\nRemember how you received and heard; keep the path by which the voice ascended from within you, and reverse your occlusion; but if not, I will come as a thief, and you will not know what hour I come upon you, because the burden is already in you, unrecognized.\nBut you have a few names in Sardis who did not defile their garments, and they will walk with me in white, because they are worthy.\nThe overcomer — the one who has carried the burden encoded within his own utterance — will be clothed in white garments, and I will not erase his name from the book of life, and I will confess his name before my Father and before his angels, because the voice has returned to its origin.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "FAIL",
+   "blacklist_hits": [
+    "encoded"
+   ],
+   "recovered_law": "",
+   "law_match": "SKIPPED",
+   "law_match_note": "",
+   "terminal_consistency": "SKIPPED",
+   "terminal_note": "",
+   "back_translation": ""
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "The pivot joints: γίνου γρηγορῶν became ἀνοικτὸς εἰς τὸ σκότος σεαυτοῦ (aperture-inward, not vigilance-outward), anchoring the mutated relation that cost lives inside the receiver's own bearing from the first line; 3:5's ὁμολογήσω was recast so the voice's return to origin (ἐπέστρεψεν πρὸς τὴν ἀρχήν) names the bilateral circuit's completion at the source-axis — the law landing hardest where the utterance closes back upon itself.",
+  "post_mortem": null,
+  "pipeline_result": "HALT"
+ },
+ "outcome": {
+  "gate": "pipeline_halt",
+  "diagnosis": {
+   "failed_constraint": "C8",
+   "failed_test": "vocabulary_leak",
+   "specific_diagnosis": "operator/theory vocabulary inside the poem: encoded -- the mutation was stated, not enacted; metadata language belongs in metadata"
+  }
+ }
+}
