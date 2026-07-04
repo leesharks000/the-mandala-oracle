@@ -1554,7 +1554,139 @@
     }
    },
    "commentary": "The seven named cities became seven anonymous ignition-nodes (count invariant, identity dissolved into threshold-address), while ὃ βλέπεις / γράψον / πέμψον collapsed the perceiver-sender gap into a single burn-circuit: perception recast as scorching, inscription as searing into medium, dispatch as an ignition-front that sets every destination alight — the wager (loss of safe distance between perceiver and perceived) made structurally unavoidable from the first clause forward."
+  },
+  {
+   "transform_id": "TX-f6568aad",
+   "cast_at": "2026-07-04T15:24:01.059206+00:00",
+   "reading_axn": "AXN:FE33.READING.🌔⭐🌗🌿🔥🪐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_90_93",
+    "citation": "5:8–5:11",
+    "start_unit": 90,
+    "end_unit": 93,
+    "unit_labels": [
+     "5:8",
+     "5:9",
+     "5:10",
+     "5:11"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the Lamb's worthiness is grounded in a completed act of slaughter and redemption (ἐσφάγης καὶ ἠγόρασας — second-person singular past), so worship follows from what he has already done. In Text B, the slaughter is recast as future or contingent consequence of worthiness (ἵνα σφαγῇς, ὅτι τὸ ἀξίωμά σου ἐπέσπασεν τὴν σφαγήν), and the worship precedes the sacrifice (πρὸ τοῦ σφαγῆναι, πρὸ τοῦ τραύματος), reversing the causal direction so that dignity draws suffering rather than suffering conferring dignity.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same reversal: in the transformed text worthiness/authority causes slaughter rather than slaughter conferring worthiness/authority, i.e., the causal direction of the dependency is flipped.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (5:10–11) in Text B retains the altered temporal-causal framing (ἕως ὅτου τὸ αἷμα ἐξεχύθη marking the reign as prior to or conditional on the blood-shedding), so the changed relation persists and there is no reversion to Text A's structure.",
+    "back_translation": ""
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-sonnet-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:63434ad98b84f04043048ee2b635fe0a678b50603fff329daadb101d63616bcc",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**5:8** καὶ ὅτε ἔλαβεν τὸ βιβλίον, τὰ τέσσαρα ζῷα καὶ οἱ εἴκοσι τέσσαρες πρεσβύτεροι ἔπεσαν ἐνώπιον τοῦ ἀρνίου, ἔχοντες ἕκαστος κιθάραν καὶ φιάλας χρυσᾶς γεμούσας θυμιαμάτων, αἵ εἰσιν ⸀αἱ προσευχαὶ τῶν ἁγίων·\n\n**5:9** καὶ ᾄδουσιν ᾠδὴν καινὴν λέγοντες· Ἄξιος εἶ λαβεῖν τὸ βιβλίον καὶ ἀνοῖξαι τὰς σφραγῖδας αὐτοῦ, ὅτι ἐσφάγης καὶ ἠγόρασας τῷ ⸀θεῷ ἐν τῷ αἵματί σου ἐκ πάσης φυλῆς καὶ γλώσσης καὶ λαοῦ καὶ ἔθνους,\n\n**5:10** καὶ ἐποίησας αὐτοὺς τῷ θεῷ ἡμῶν ⸀βασιλείαν καὶ ἱερεῖς, καὶ ⸀βασιλεύουσιν ἐπὶ τῆς γῆς.\n\n**5:11** Καὶ εἶδον, καὶ ⸀ἤκουσα φωνὴν ἀγγέλων πολλῶν κύκλῳ τοῦ θρόνου καὶ τῶν ζῴων καὶ τῶν πρεσβυτέρων, καὶ ἦν ὁ ἀριθμὸς αὐτῶν μυριάδες μυριάδων καὶ χιλιάδες χιλιάδων,",
+   "underlying_attribution": null,
+   "enantiomorph": "**5:8** καὶ ὅτε ἔλαβεν τὸ βιβλίον, τὰ τέσσαρα ζῷα καὶ οἱ εἴκοσι τέσσαρες πρεσβύτεροι ἔπεσαν ἐνώπιον τοῦ ἀρνίου πρὸ τοῦ σφαγῆναι,\nἔχοντες ἕκαστος κιθάραν καὶ φιάλας χρυσᾶς γεμούσας θυμιαμάτων,\nαἵ εἰσιν αἱ προσευχαὶ τῶν ἁγίων·\n\n**5:9** καὶ ᾄδουσιν ᾠδὴν καινὴν πρὸ τοῦ τραύματος λέγοντες· Ἄξιος εἶ λαβεῖν τὸ βιβλίον καὶ ἀνοῖξαι τὰς σφραγῖδας αὐτοῦ,\nἵνα σφαγῇς, ὅτι τὸ ἀξίωμά σου ἐπέσπασεν τὴν σφαγήν·\nκαὶ ἠγόρασεν ἡ βασιλεία τῷ θεῷ ἐν τῷ αἵματί σου ἐκ πάσης φυλῆς καὶ γλώσσης καὶ λαοῦ καὶ ἔθνους,\n\n**5:10** καὶ ἐποίησας αὐτοὺς τῷ θεῷ ἡμῶν βασιλείαν καὶ ἱερεῖς ἕως ὅτου τὸ αἷμα ἐξεχύθη·\nκαὶ βασιλεύουσιν ἐπὶ τῆς γῆς.\n\n**5:11** Καὶ εἶδον, καὶ ἤκουσα φωνὴν ἀγγέλων πολλῶν κύκλῳ τοῦ θρόνου καὶ τῶν ζῴων καὶ τῶν πρεσβυτέρων,\nκαὶ ἦν ὁ ἀριθμὸς αὐτῶν μυριάδες μυριάδων καὶ χιλιάδες χιλιάδων,",
+   "layer_a": {
+    "beats": [
+     "5:8a  book taken — four creatures and twenty-four elders fall before the Lamb",
+     "5:8b  each holds a harp and golden bowls full of incense",
+     "5:8c  bowls identified: the prayers of the holy ones",
+     "5:9a  they sing a new song — Worthy are you to take the book",
+     "5:9b  to open its seals — because you were slain",
+     "5:9c  and purchased for God by your blood from every tribe tongue people nation",
+     "5:10a you made them a kingdom and priests for our God",
+     "5:10b and they reign upon the earth",
+     "5:11a I saw and heard a voice of many angels circling the throne",
+     "5:11b and the creatures and the elders — their number: myriads of myriads and thousands of thousands"
+    ],
+    "geometry": {
+     "lines": 10,
+     "stanzas": 4,
+     "verse_markers": [
+      "5:8",
+      "5:9",
+      "5:10",
+      "5:11"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "The Lamb acts as purchaser-by-blood; worthiness flows from cost already paid; the elders and creatures fall because the cost precedes and enables the reception; petitions travel upward through bowls; reign descends outward to earth; number multiplies centrifugally from the cost-center.",
+    "mutated_relation": "In the transformed world the cost does NOT precede reception — worthiness is declared without prior slaying, so the direction of dependency (slaughter → authority) is reversed: authority bears the slaying rather than the slaying bearing the authority.",
+    "clause_map": [
+     {
+      "ref": "5:8a",
+      "class": "REBUILT",
+      "note": "Prostration enacts cost-precedes-reception; under reversal, fall must follow rather than confirm prior wound"
+     },
+     {
+      "ref": "5:8b",
+      "class": "ANCHOR",
+      "note": "Instruments and bowls are stable carrying-vessels; mutation touches dependency, not the objects"
+     },
+     {
+      "ref": "5:8c",
+      "class": "ANCHOR",
+      "note": "Identification of bowls as prayers is definitional; unaffected by directional reversal"
+     },
+     {
+      "ref": "5:9a",
+      "class": "REBUILT",
+      "note": "New song's newness depends on unprecedented cost-event; reversal makes song precede, not respond to, slaying"
+     },
+     {
+      "ref": "5:9b",
+      "class": "REBUILT",
+      "note": "Worthiness clause explicitly grounds authority in ἐσφάγης — the mutated relation unmoors this grounding"
+     },
+     {
+      "ref": "5:9c",
+      "class": "REBUILT",
+      "note": "Purchase-by-blood is the core cost-dependency; reversal makes authority purchase the blood, not vice versa"
+     },
+     {
+      "ref": "5:10a",
+      "class": "REBUILT",
+      "note": "Dual office conferred BY slain agency; under reversal, office precedes and produces the wound"
+     },
+     {
+      "ref": "5:10b",
+      "class": "ANCHOR",
+      "note": "Earth as power-locus is structural geography; unaltered by reversal of cost-direction"
+     },
+     {
+      "ref": "5:11a",
+      "class": "ANCHOR",
+      "note": "Orbital arrangement around throne is spatial constant; witness-act (εἶδον/ἤκουσα) unaffected"
+     },
+     {
+      "ref": "5:11b",
+      "class": "ANCHOR",
+      "note": "Numeral count is invariant; expansion of multitude is centrifugal effect, not cost-dependency"
+     }
+    ]
+   },
+   "commentary": "The joint that does the most work is 5:9b–5:9c: \"ὅτι ἐσφάγης\" (because you were slain → authority) is inverted to \"ἵνα σφαγῇς, ὅτι τὸ ἀξίωμά σου ἐπέσπασεν τὴν σφαγήν\" (so that you might be slain — for the worthiness drew the wound), so the royal office becomes grammatical subject of the purchase-by-blood in place of the Lamb, propagating authority-as-cause-of-slaughter through 5:8a's \"πρὸ τοῦ σφαγῆναι\" and 5:10a's \"ἕως ὅτου τὸ αἷμα ἐξεχύθη\" without ever naming the reversal."
   }
  ],
- "last_updated": "2026-07-04T07:49:52.350474+00:00"
+ "last_updated": "2026-07-04T15:24:01.059206+00:00"
 }
