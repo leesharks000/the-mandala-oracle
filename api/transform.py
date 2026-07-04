@@ -644,6 +644,7 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
         "model": COMPILER_MODEL,
         "max_tokens": MAX_TOKENS,
         "system": COMPILER_SYSTEM,
+        "stream": True,
         "messages": [{"role": "user", "content": user}],
     }).encode("utf-8")
     req = urllib.request.Request(
@@ -652,12 +653,43 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
             "content-type": "application/json",
             "x-api-key": api_key,
             "anthropic-version": ANTHROPIC_VERSION,
+            "accept": "text/event-stream",
         },
     )
-    with urllib.request.urlopen(req, timeout=280) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
-    text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
-    stop_reason = data.get("stop_reason", "?")
+    # STREAMING ACCUMULATION (2026-07-04): a single blocking read of a long
+    # completion is the timeout class itself — the socket idles until something
+    # kills it. Streaming resets the read clock on every chunk; the outer wall
+    # is enforced manually under the function's 300s cap.
+    import time as _time
+    deadline = _time.monotonic() + 275
+    parts, stop_reason = [], "?"
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        for raw_line in resp:
+            if _time.monotonic() > deadline:
+                stop_reason = "wall_clock"
+                break
+            line = raw_line.decode("utf-8", errors="replace").strip()
+            if not line.startswith("data:"):
+                continue
+            payload = line[5:].strip()
+            if payload == "[DONE]":
+                break
+            try:
+                ev = json.loads(payload)
+            except json.JSONDecodeError:
+                continue
+            et = ev.get("type", "")
+            if et == "content_block_delta":
+                d = ev.get("delta", {})
+                if d.get("type") == "text_delta":
+                    parts.append(d.get("text", ""))
+            elif et == "message_delta":
+                sr = (ev.get("delta") or {}).get("stop_reason")
+                if sr:
+                    stop_reason = sr
+            elif et == "error":
+                raise RuntimeError(f"stream error: {ev.get('error', {}).get('message', '?')}")
+    text = "".join(parts)
 
     def sect(tag: str) -> str:
         m = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", text, re.DOTALL)
