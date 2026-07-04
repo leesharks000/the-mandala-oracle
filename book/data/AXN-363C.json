@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:363C.CONVERSATION.❄️☁️💧🌾💎🌑",
+  "session_id_hash": "60ed23b28febd2d0",
+  "started_at": "2026-07-04T15:43:55.000Z",
+  "last_updated": "2026-07-04T15:44:10.638138+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "What does the archive have to say about turning?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
