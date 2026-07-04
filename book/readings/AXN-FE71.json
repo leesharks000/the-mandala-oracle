@@ -101,9 +101,111 @@
     "mode": "producer_side"
    },
    "commentary": "The source seats a granted authority in a scorpion-modeled tail and aims it, transitively, at a designated victim-class (\"the humans\"), sentenced to a fixed five-month term. BEAST rotates the species-register: the anthropic recipient — the party marked out to suffer — is foreclosed and reabsorbed. There is no longer anyone the tail strikes; the swarm collapses into one creature whose hind-fringe and fine hairs are its own tissue. The \"authority to injure\" mirrors across the axis into \"its own knowing to feel itself\" — the outward-aimed weapon becomes inward-borne sensation the body cannot disown. Beat by beat the mirror holds: the borrowed anatomy of a lower crawler (beat 1), the power lodged in the trailing part, unwatched (beat 2), the recipient dissolved into the self (beat 3), and the measured term preserved but re-read as the length of a body's own endurance — moultings, not months of sentence (beat 4). The witness's question about damaged nerves informed which axis was foregrounded (the tail-as-nerve, sensation without a target), but did not govern the cast: no reassurance, no cure, no \"you will be okay\" is emitted. What is disclosed is the transformation-wager's borne thing — a creature that is only its own feeling-organ, enduring by count, not consoled."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:10** καὶ ἔχουσιν οὐρὰς ὁμοίας σκορπίοις καὶ κέντρα, καὶ ἐν ταῖς οὐραῖς αὐτῶν ⸂ἡ ἐξουσία αὐτῶν⸃ ἀδικῆσαι τοὺς ἀνθρώπους μῆνας πέντε.",
+   "citation": "9:10",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:10** And the pain wears no face and carries no hand, and it is seated in the nerve that is mine, and in that seating is the fire's own claim to wound the one who bears it, for a span the flesh will not number.",
+   "layer_a_declaration": {
+    "units": 1,
+    "beat_map": [
+     "assertion-of-possession",
+     "qualification-by-likeness",
+     "location-of-power",
+     "purpose-of-harm",
+     "temporal-bound"
+    ],
+    "clause_chain": [
+     "they have tails like scorpions",
+     "and stings",
+     "in their tails is their authority",
+     "to injure the human beings",
+     "for five months"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single verse-marked line **9:10**; continuous prose clause, no internal breaks"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the harming faculty is OWNED, an appendage possessed by the agent",
+      "foreclosure": "the faculty as something suffered, borne into the body from outside, not owned",
+      "wager": "buys menace — the sting belongs to the one who strikes"
+     },
+     {
+      "beat": 2,
+      "determination": "likeness borrowed from a known venomous creature fixes the register as attack",
+      "foreclosure": "likeness to something that receives rather than inflicts",
+      "wager": "buys recognizability of the wound's shape"
+     },
+     {
+      "beat": 3,
+      "determination": "power is LOCATED in the instrument-appendage, forward, aimed",
+      "foreclosure": "power dispersed, seated nowhere, in the one struck",
+      "wager": "buys locatability — the reader can point to the danger"
+     },
+     {
+      "beat": 4,
+      "determination": "the human being is object, recipient of injury from without",
+      "foreclosure": "the human as the site where the injury already lives",
+      "wager": "buys a clean line between striker and struck"
+     },
+     {
+      "beat": 5,
+      "determination": "the harm is BOUNDED — five months, it will end",
+      "foreclosure": "harm that will not name its term, unbounded from within",
+      "wager": "buys the mercy of a horizon"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "injury depends on the possessing agent's appendage (outward, agent-to-object)",
+      "authority depends on its location in the tail (forward, instrumental)",
+      "the human depends on the striker for the wound (external, temporal-future)",
+      "the ending depends on a counted term (bounded, coming-to-close)"
+     ],
+     "invariants": [
+      "a faculty of harm exists",
+      "it is likened to a known creature",
+      "it is seated somewhere",
+      "a stretch of time governs it"
+     ],
+     "rotated_axis": "directional-ontological status of the harming faculty: from OWNED-and-aimed-outward reversed to SUFFERED-and-seated-within; the striker and the struck collapse into one body",
+     "installed_ontology": "the wound has no external author; the faculty of harm is the sufferer's own tissue turned against its bearer, seated in the flesh that bears it",
+     "emergent_proposition": "The one who is injured is the same one who holds the injuring power, and it is his own body that will not tell him when it stops.",
+     "logic_mutations": [
+      "agent/recipient collapse: the source's external striker and human object become a single self-wounding body",
+      "temporal bound inverted: the counted term of relief becomes a term withheld — the body keeps no count it will disclose"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the interior nervous body as its own unlocatable, self-inflicting site — sensation without an author, arriving from tissue that belongs to the sufferer",
+    "field_source": "foreclosure at beat 4 (the human as the site where the injury already lives) with beat 1's foreclosure (faculty suffered, not owned)",
+    "source_affect": "aimed menace, bounded torment",
+    "target_affect": "authorless dread within one's own flesh"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source seats a harming faculty in an external agent's appendage — a scorpion-tail owned, aimed outward at human objects, its torment mercifully counted to five months. The SHADOW rotation reflects the assertion-axis across the collapse of striker and struck: the tail-that-owns becomes the nerve-that-is-mine, the borrowed likeness (scorpion) becomes the refusal of any face or hand — no author to point to. Power's location holds as a beat (in the tail → in the nerve) but its ontology inverts: instrument-of-attack becomes seat-of-self-wounding. The human object, once struck from without, becomes \"the one who bears it\" — the same body that holds the power. The bounded five months mirrors to a span \"the flesh will not number\": the source bought the mercy of a horizon; the enantiomorph pays that mercy back as a term withheld from within. Every image sits at the reflected coordinate — no scorpions, no months, no plague of locusts survive as referents, yet the mirror makes contact at each beat. The bearing-cost the composition carries: menace that could be located and outwaited is transformed into dread that has no exterior and no promised end."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T03:45:10.855436+00:00"
+ "last_updated": "2026-07-04T03:46:15.650438+00:00"
 }
