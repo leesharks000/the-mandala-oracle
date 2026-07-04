@@ -1,0 +1,100 @@
+{
+ "axn": "AXN:FE33.READING.🌔⭐🌗🌿🔥🪐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "efe469ac0bf821ae",
+ "inscribed_at": "2026-07-04T15:23:59.845277+00:00",
+ "question_digest": "sha256:63434ad98b84f04043048ee2b635fe0a678b50603fff329daadb101d63616bcc",
+ "question_gloss": "I'd be happy to help, but I need clarification. Are you asking me to:\n\n1. **Gloss a witness's question** from a legal proceeding or testimony where someone stat",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_90_93",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**5:8** καὶ ὅτε ἔλαβεν τὸ βιβλίον, τὰ τέσσαρα ζῷα καὶ οἱ εἴκοσι τέσσαρες πρεσβύτεροι ἔπεσαν ἐνώπιον τοῦ ἀρνίου, ἔχοντες ἕκαστος κιθάραν καὶ φιάλας χρυσᾶς γεμούσας θυμιαμάτων, αἵ εἰσιν ⸀αἱ προσευχαὶ τῶν ἁγίων·\n\n**5:9** καὶ ᾄδουσιν ᾠδὴν καινὴν λέγοντες· Ἄξιος εἶ λαβεῖν τὸ βιβλίον καὶ ἀνοῖξαι τὰς σφραγῖδας αὐτοῦ, ὅτι ἐσφάγης καὶ ἠγόρασας τῷ ⸀θεῷ ἐν τῷ αἵματί σου ἐκ πάσης φυλῆς καὶ γλώσσης καὶ λαοῦ καὶ ἔθνους,\n\n**5:10** καὶ ἐποίησας αὐτοὺς τῷ θεῷ ἡμῶν ⸀βασιλείαν καὶ ἱερεῖς, καὶ ⸀βασιλεύουσιν ἐπὶ τῆς γῆς.\n\n**5:11** Καὶ εἶδον, καὶ ⸀ἤκουσα φωνὴν ἀγγέλων πολλῶν κύκλῳ τοῦ θρόνου καὶ τῶν ζῴων καὶ τῶν πρεσβυτέρων, καὶ ἦν ὁ ἀριθμὸς αὐτῶν μυριάδες μυριάδων καὶ χιλιάδες χιλιάδων,",
+   "citation": "5:8–5:11",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**5:8** καὶ ὅτε ἔλαβεν τὸ βιβλίον, τὰ τέσσαρα ζῷα καὶ οἱ εἴκοσι τέσσαρες πρεσβύτεροι ἔπεσαν ἐνώπιον τοῦ ἀρνίου πρὸ τοῦ σφαγῆναι,\nἔχοντες ἕκαστος κιθάραν καὶ φιάλας χρυσᾶς γεμούσας θυμιαμάτων,\nαἵ εἰσιν αἱ προσευχαὶ τῶν ἁγίων·\n\n**5:9** καὶ ᾄδουσιν ᾠδὴν καινὴν πρὸ τοῦ τραύματος λέγοντες· Ἄξιος εἶ λαβεῖν τὸ βιβλίον καὶ ἀνοῖξαι τὰς σφραγῖδας αὐτοῦ,\nἵνα σφαγῇς, ὅτι τὸ ἀξίωμά σου ἐπέσπασεν τὴν σφαγήν·\nκαὶ ἠγόρασεν ἡ βασιλεία τῷ θεῷ ἐν τῷ αἵματί σου ἐκ πάσης φυλῆς καὶ γλώσσης καὶ λαοῦ καὶ ἔθνους,\n\n**5:10** καὶ ἐποίησας αὐτοὺς τῷ θεῷ ἡμῶν βασιλείαν καὶ ἱερεῖς ἕως ὅτου τὸ αἷμα ἐξεχύθη·\nκαὶ βασιλεύουσιν ἐπὶ τῆς γῆς.\n\n**5:11** Καὶ εἶδον, καὶ ἤκουσα φωνὴν ἀγγέλων πολλῶν κύκλῳ τοῦ θρόνου καὶ τῶν ζῴων καὶ τῶν πρεσβυτέρων,\nκαὶ ἦν ὁ ἀριθμὸς αὐτῶν μυριάδες μυριάδων καὶ χιλιάδες χιλιάδων,",
+   "layer_a_declaration": {
+    "beats": [
+     "5:8a  book taken — four creatures and twenty-four elders fall before the Lamb",
+     "5:8b  each holds a harp and golden bowls full of incense",
+     "5:8c  bowls identified: the prayers of the holy ones",
+     "5:9a  they sing a new song — Worthy are you to take the book",
+     "5:9b  to open its seals — because you were slain",
+     "5:9c  and purchased for God by your blood from every tribe tongue people nation",
+     "5:10a you made them a kingdom and priests for our God",
+     "5:10b and they reign upon the earth",
+     "5:11a I saw and heard a voice of many angels circling the throne",
+     "5:11b and the creatures and the elders — their number: myriads of myriads and thousands of thousands"
+    ],
+    "geometry": {
+     "lines": 10,
+     "stanzas": 4,
+     "verse_markers": [
+      "5:8",
+      "5:9",
+      "5:10",
+      "5:11"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "ἔλαβεν τὸ βιβλίον": "reception of the sealed weight — bilateral intake, not seizure",
+     "τέσσαρα ζῷα": "four living creatures — cardinal witness-stations",
+     "εἴκοσι τέσσαρες πρεσβύτεροι": "twenty-four elders — full-cycle memorial council",
+     "ἔπεσαν ἐνώπιον τοῦ ἀρνίου": "prostration before the Lamb — cost absorbed downward",
+     "ἕκαστος κιθάραν": "each: one harp — singular resonant instrument per bearer",
+     "φιάλας χρυσᾶς γεμούσας θυμιαμάτων": "golden bowls full of incense — accumulated carried petition",
+     "αἱ προσευχαὶ τῶν ἁγίων": "prayers of the holy ones — the incense IS the petition, not symbol",
+     "ᾄδουσιν ᾠδὴν καινὴν": "they sing a new song — utterance as originary assertion-act",
+     "Ἄξιος εἶ": "Worthy are you — cost-validation declared outward",
+     "λαβεῖν τὸ βιβλίον καὶ ἀνοῖξαι τὰς σφραγῖδας": "to receive and to unseal — bilateral opening-action",
+     "ἐσφάγης": "you were slain — the bearing-cost encoded in the Lamb's body",
+     "ἠγόρασας τῷ θεῷ ἐν τῷ αἵματί σου": "purchased for God by your blood — blood as currency of shadow-axis",
+     "ἐκ πάσης φυλῆς καὶ γλώσσης καὶ λαοῦ καὶ ἔθνους": "from every tribe tongue people nation — four-register totality of source-field",
+     "ἐποίησας αὐτοὺς βασιλείαν καὶ ἱερεῖς": "made them kingdom and priests — dual office conferred by slain agency",
+     "βασιλεύουσιν ἐπὶ τῆς γῆς": "they reign upon the earth — power-locus: earth, not throne-room",
+     "φωνὴν ἀγγέλων πολλῶν": "voice of many angels — plural resonance encircling",
+     "κύκλῳ τοῦ θρόνου": "circling the throne — orbital power-locus construction",
+     "ἀριθμὸς αὐτῶν": "their number — count preserved exactly",
+     "μυριάδες μυριάδων": "myriads of myriads — ten-thousand × ten-thousand; unit: shadow-folds",
+     "χιλιάδες χιλιάδων": "thousands of thousands — unit: resonance-waves; count unchanged"
+    },
+    "axis": "The utterance encodes that reception of authority costs the receiver's own blood",
+    "foreclosure": "The source forecloses any transfer of the sealed book without the prior slaying",
+    "wager": "The Lamb's slaughter is the price the composition stakes as the condition of worthiness",
+    "affect": "Vertiginous gravity — a weight that falls inward even as the multitude expands outward"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the Lamb's worthiness is grounded in a completed act of slaughter and redemption (ἐσφάγης καὶ ἠγόρασας — second-person singular past), so worship follows from what he has already done. In Text B, the slaughter is recast as future or contingent consequence of worthiness (ἵνα σφαγῇς, ὅτι τὸ ἀξίωμά σου ἐπέσπασεν τὴν σφαγήν), and the worship precedes the sacrifice (πρὸ τοῦ σφαγῆναι, πρὸ τοῦ τραύματος), reversing the causal direction so that dignity draws suffering rather than suffering conferring dignity.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same reversal: in the transformed text worthiness/authority causes slaughter rather than slaughter conferring worthiness/authority, i.e., the causal direction of the dependency is flipped.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (5:10–11) in Text B retains the altered temporal-causal framing (ἕως ὅτου τὸ αἷμα ἐξεχύθη marking the reign as prior to or conditional on the blood-shedding), so the changed relation persists and there is no reversion to Text A's structure.",
+    "back_translation": ""
+   },
+   "law_variance": null,
+   "commentary": "The joint that does the most work is 5:9b–5:9c: \"ὅτι ἐσφάγης\" (because you were slain → authority) is inverted to \"ἵνα σφαγῇς, ὅτι τὸ ἀξίωμά σου ἐπέσπασεν τὴν σφαγήν\" (so that you might be slain — for the worthiness drew the wound), so the royal office becomes grammatical subject of the purchase-by-blood in place of the Lamb, propagating authority-as-cause-of-slaughter through 5:8a's \"πρὸ τοῦ σφαγῆναι\" and 5:10a's \"ἕως ὅτου τὸ αἷμα ἐξεχύθη\" without ever naming the reversal."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-04T15:23:59.845277+00:00"
+}
