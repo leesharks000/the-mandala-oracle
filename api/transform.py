@@ -53,7 +53,7 @@ from pathlib import Path
 # Configuration
 # ──────────────────────────────────────────────────────────────────────
 
-COMPILER_MODEL = "claude-opus-4-8"   # latency-gated re-pin (2026-07-04): fable-5's depth exceeded the rite's time budget (multi-minute transforms; a rotation is eight). The discipline fable supplied implicitly is now EXPLICIT: C8 slot conservation, C9 in-language composition, and the slot/numeral verification gates HALT the drift 4.8 previously produced. If drift recurs past the gates, re-pin to fable and accept the wait — MANUS call.
+COMPILER_MODEL = "claude-sonnet-4-6"   # MANUS principle (2026-07-04): transform-competence is not reasoning-competence — the reasoning gains of the largest models were bought at the expense of mimetic plasticity, and an enantiomorph wants a model that BECOMES the source, not one that deliberates about it. The compiler seat goes to the fastest, least deliberative adequate model; ALL rigor lives in the gates (C1-C9 + slot/numeral verification), which HALT drift regardless of who composes. The old "sonnet too weak" note predates the gates.
 MAX_TOKENS = 5000    # payload-scaled: enantiomorph+facing ≤ ~1,500 tokens, apparatus capped (2026-07-04)
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
