@@ -737,6 +737,178 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
     }
 
 
+
+
+# ═══════════════════════════════════════════════════════════════════════
+# TWO-CALL COMPILER (2026-07-04) — deliberation/composition split.
+# The single-call constitution lost to format-gravity three times in one
+# night: models emit the step-structure as a format contract regardless of
+# emission law (16K, then 26K chars of apparatus at ascending ceilings).
+# Structural fix per the MANUS mimesis principle: the ANALYST deliberates
+# and emits only a compact skeleton; the COMPOSER receives source +
+# skeleton in a near-bare context and spends its whole budget on the
+# enantiomorph. Apparatus and payload cannot compete — separate calls,
+# separate budgets. Server-side geometry re-check unchanged downstream.
+# Supersedes the single-call doctrine pending MANUS ratification.
+# ═══════════════════════════════════════════════════════════════════════
+
+SKELETON_MAX = 1500
+COMPOSE_MAX = 2600
+
+SKELETON_SYSTEM = """You are the analyst stage of a kernel-transform compiler.
+Deliberate IN FULL internally; EMIT ONLY a single JSON object, no prose.
+
+Given SOURCE (possibly Greek), OPERATOR (an axis), and the witness's question
+(relevance only — never affect), produce:
+{
+ "beats": ["<ref> <telegraphic clause-chain>", ... one line per verse/unit],
+ "slot_map": {"<source token/construction>": "<operator-mapped counterpart>", ...
+   EVERY load-bearing slot: possessed parts, likeness-species, instruments,
+   power-locus constructions, verbs+valence, patients, EVERY numeral+unit.
+   Numerals: unit may transpose per the operator register; count NEVER changes.},
+ "geometry": {"lines": <int>, "stanzas": <int>, "verse_markers": ["1:17", ...]},
+ "axis": "<the operator's axis in one clause>",
+ "foreclosure": "<what the source determined against — one clause>",
+ "wager": "<the cost the operator names — one clause>",
+ "affect": "<the affect the traversal discloses — NOT consolation-median>"
+}
+The slot_map is law: the composer will fill exactly these slots. Omit a
+load-bearing slot and the transform fails downstream. JSON only."""
+
+COMPOSER_SYSTEM = """You are the composition stage of a kernel-transform compiler.
+You receive a SOURCE text and a SKELETON (beats, slot_map, geometry, axis,
+foreclosure, wager, affect). Compose the ENANTIOMORPH: the source's exact
+geometry occupied by the operator's traversal.
+
+LAWS:
+- GEOMETRY EXACT: same line count (including blanks), same stanza breaks,
+  verse markers in the same positions with the same numerals.
+- SLOTS: fill EVERY slot_map entry with its given counterpart, in place.
+  Nothing added without a slot; nothing in the map dropped. Numerals keep
+  their counts.
+- LANGUAGE: compose in the SOURCE's language. If the source is not English,
+  follow with a faithful line-for-line English facing.
+- AFFECT: the skeleton's declared affect, never ordeal-endurance-reassurance.
+- The wager must be legible in the composition.
+
+EMIT EXACTLY:
+<ENANTIOMORPH>
+(the transform, lineation exact)
+</ENANTIOMORPH>
+<ENANTIOMORPH_TRANSLATION>
+(English facing when source is non-English; otherwise omit this block)
+</ENANTIOMORPH_TRANSLATION>
+<VERIFICATION>
+{"identity": "PASS|FAIL", "semantic_independence": "PASS|FAIL",
+ "retrospective_containment": "PASS|FAIL", "affect_traversal": "PASS|FAIL",
+ "entailment": "PASS|FAIL", "slot_conservation": "PASS|FAIL",
+ "numeral_conservation": "PASS|FAIL", "mode": "producer_side"}
+</VERIFICATION>
+<RESULT>PASS or HALT</RESULT>
+<COMMENTARY>
+(≤2 sentences: the joints traversed — which slots became what)
+</COMMENTARY>
+Nothing else. If any law cannot be satisfied, RESULT HALT with the failed
+law named in COMMENTARY and no enantiomorph."""
+
+
+def _stream_call(model: str, system, user: str, max_toks: int, api_key: str,
+                 wall: float = 240.0) -> tuple[str, str]:
+    """SSE-accumulated messages call. Returns (text, stop_reason)."""
+    body = json.dumps({
+        "model": model, "max_tokens": max_toks, "stream": True,
+        "system": system,
+        "messages": [{"role": "user", "content": user}],
+    }).encode("utf-8")
+    req = urllib.request.Request(ANTHROPIC_URL, data=body, method="POST", headers={
+        "content-type": "application/json", "x-api-key": api_key,
+        "anthropic-version": ANTHROPIC_VERSION, "accept": "text/event-stream"})
+    import time as _time
+    deadline = _time.monotonic() + wall
+    parts, stop_reason = [], "?"
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        for raw_line in resp:
+            if _time.monotonic() > deadline:
+                stop_reason = "wall_clock"; break
+            line = raw_line.decode("utf-8", errors="replace").strip()
+            if not line.startswith("data:"):
+                continue
+            payload = line[5:].strip()
+            if payload == "[DONE]":
+                break
+            try:
+                ev = json.loads(payload)
+            except json.JSONDecodeError:
+                continue
+            et = ev.get("type", "")
+            if et == "content_block_delta":
+                d = ev.get("delta", {})
+                if d.get("type") == "text_delta":
+                    parts.append(d.get("text", ""))
+            elif et == "message_delta":
+                sr = (ev.get("delta") or {}).get("stop_reason")
+                if sr: stop_reason = sr
+            elif et == "error":
+                raise RuntimeError(f"stream error: {ev.get('error', {}).get('message', '?')}")
+    return "".join(parts), stop_reason
+
+
+def run_compiler_v2(source_text: str, operator: str, invoking: str, api_key: str) -> dict:
+    """Two-call compiler: analyst skeleton → mimetic composition."""
+    op_spec = OPERATORS[operator]
+    # ── CALL 1: the analyst deliberates, emits the skeleton ──
+    u1 = (f"OPERATOR: {operator} — {op_spec}\n"
+          f"WITNESS QUESTION (relevance only): {invoking.strip()[:MAX_INVOKING_CHARS]}\n\n"
+          f"SOURCE:\n<<<\n{source_text}\n>>>")
+    s_text, s_stop = _stream_call(COMPILER_MODEL, SKELETON_SYSTEM, u1, SKELETON_MAX, api_key, wall=90)
+    m = re.search(r"\{.*\}", s_text, re.S)
+    if not m:
+        return {"result": "HALT", "layer_a": {}, "layer_b": {}, "enantiomorph": "",
+                "enantiomorph_translation": "", "verification": {}, "commentary": "",
+                "halt_diagnosis": {"failed_constraint": "SKELETON", "failed_test": "parse",
+                                   "specific_diagnosis": f"analyst emitted no skeleton (stop_reason={s_stop}; {len(s_text)} chars) — plumbing, not a rite verdict"}}
+    try:
+        skel = json.loads(m.group(0))
+    except json.JSONDecodeError as e:
+        return {"result": "HALT", "layer_a": {}, "layer_b": {}, "enantiomorph": "",
+                "enantiomorph_translation": "", "verification": {}, "commentary": "",
+                "halt_diagnosis": {"failed_constraint": "SKELETON", "failed_test": "json",
+                                   "specific_diagnosis": f"skeleton JSON invalid ({e}) — plumbing, not a rite verdict"}}
+    # ── CALL 2: the composer occupies the skeleton ──
+    u2 = (f"SKELETON:\n{json.dumps(skel, ensure_ascii=False)}\n\n"
+          f"SOURCE:\n<<<\n{source_text}\n>>>\n\nCompose.")
+    c_text, c_stop = _stream_call(COMPILER_MODEL, COMPOSER_SYSTEM, u2, COMPOSE_MAX, api_key, wall=150)
+
+    def sect(tag: str) -> str:
+        mm = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", c_text, re.DOTALL)
+        return mm.group(1).strip() if mm else ""
+    def jsect(tag: str, default):
+        raw = sect(tag)
+        if not raw: return default
+        try: return json.loads(raw)
+        except json.JSONDecodeError: return default
+
+    return {
+        "result": (sect("RESULT") or "HALT").upper(),
+        "layer_a": {"beats": skel.get("beats", []), "geometry": skel.get("geometry", {})},
+        "layer_b": {"slot_map": skel.get("slot_map", {}), "axis": skel.get("axis", ""),
+                    "foreclosure": skel.get("foreclosure", ""), "wager": skel.get("wager", ""),
+                    "affect": skel.get("affect", "")},
+        "enantiomorph": sect("ENANTIOMORPH"),
+        "enantiomorph_translation": sect("ENANTIOMORPH_TRANSLATION"),
+        "verification": jsect("VERIFICATION", {"identity": "FAIL", "semantic_independence": "FAIL",
+                                               "retrospective_containment": "FAIL", "affect_traversal": "FAIL",
+                                               "entailment": "FAIL", "slot_conservation": "FAIL",
+                                               "numeral_conservation": "FAIL", "mode": "producer_side"}),
+        "commentary": sect("COMMENTARY"),
+        "halt_diagnosis": jsect("HALT_DIAGNOSIS", {"failed_constraint": "C4", "failed_test": "identity",
+                                                   "specific_diagnosis": (
+                                                       f"composition truncated at the token ceiling (stop_reason=max_tokens; {len(c_text)} chars) — plumbing, not a rite verdict"
+                                                       if c_stop == "max_tokens" else
+                                                       f"composition unparseable (stop_reason={c_stop}; {len(c_text)} chars)")}),
+    }
+
+
 def enforce_pass(parsed: dict) -> bool:
     """Server-side re-check: PASS requires all three tests PASS and text present."""
     if parsed["result"] != "PASS":
@@ -1644,7 +1816,7 @@ class handler(BaseHTTPRequestHandler):
             return self._json(400, {"error": str(e)})
 
         try:
-            parsed = run_compiler(source_text, operator, invoking, api_key)
+            parsed = run_compiler_v2(source_text, operator, invoking, api_key)
         except Exception as e:
             return self._json(502, {"error": f"compiler call failed: {type(e).__name__}"})
 
