@@ -790,6 +790,15 @@ function renderTransformCard(parentEl, t) {
   if (sf.lines || sf.stanzas) {
     lines.push(`Spatial form — lines: ${sf.lines ?? '?'} · stanzas: ${sf.stanzas ?? '?'}${Array.isArray(sf.indent_profile) ? ' · indent profile preserved' : ''}`);
   }
+  const ind = t.independent_verification || {};
+  if (ind.mode) {
+    lines.push(`Independent — blacklist: ${ind.blacklist || '?'} · recovered law: ${(ind.recovered_law || '—').slice(0, 110)} · law match: ${ind.law_match || '?'} · terminal: ${ind.terminal_consistency || '?'}`);
+  }
+  const adv = t.advisories || [];
+  if (adv.length) {
+    lines.push(`Advisories (${adv.length}) — verdicts recorded, nothing halted: ` +
+               adv.map(a => a.failed_test).join(' · '));
+  }
   const g = t.geometry_check;
   if (g) {
     lines.push(`Geometry (recounted) — lines ${g.output.lines}/${g.source.lines} ${g.lines_match ? '✓' : '✗'} · ` +
@@ -797,6 +806,17 @@ function renderTransformCard(parentEl, t) {
                (g.source.indented_lines > 0 ? ` · indentation ${g.indentation_carried ? 'carried ✓' : 'LOST ✗'}` : ''));
   }
   card.textContent = lines.join('\n');
+  if ((t.advisories || []).length) {
+    const adet = document.createElement('details');
+    const asum = document.createElement('summary');
+    asum.textContent = 'Gate report (advisory)';
+    adet.appendChild(asum);
+    const apre = document.createElement('pre');
+    apre.style.whiteSpace = 'pre-wrap';
+    apre.textContent = (t.advisories || []).map(a => `${a.failed_test}: ${a.diagnosis}`).join('\n\n');
+    adet.appendChild(apre);
+    card.appendChild(adet);
+  }
   if (t.commentary_apparatus) {
     const det = document.createElement('details');
     const sum = document.createElement('summary');

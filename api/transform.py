@@ -1261,8 +1261,19 @@ TERMINAL_SIM_MAX = 0.6   # above this, a REBUILT final unit is a reversion
 
 
 
+def _advise(parsed: dict, advisory: bool, failed_test: str, diagnosis: str) -> bool:
+    """Advisory-mode shim (MANUS directive 2026-07-04, 'print the report, no
+    hard gates'): when advisory, record the diagnosis and keep going; when
+    enforcing (V3_HARD_GATES=1), the caller halts as before. Returns True if
+    the caller should halt."""
+    if advisory:
+        parsed.setdefault("advisories", []).append({"failed_test": failed_test, "diagnosis": diagnosis})
+        return False
+    return True
+
 def _independent_gates(parsed: dict, kernel: dict, source_text: str, api_key: str,
-                       skip_terminal: bool = False) -> dict:
+                       skip_terminal: bool = False,
+                       advisory: bool = False) -> dict:
     """G0.5 -> G2 -> G3, shared by the skeleton path and the glyph pipeline.
     skip_terminal: cross-language modes (glyph->English over a Greek source)
     make token-Jaccard terminal similarity meaningless."""
@@ -1276,13 +1287,15 @@ def _independent_gates(parsed: dict, kernel: dict, source_text: str, api_key: st
         parsed["independent"]["terminal_similarity"] = round(sim, 3)
         if sim > TERMINAL_SIM_MAX:
             parsed["independent"]["terminal_consistency"] = "FAIL"
-            parsed["result"] = "HALT"
-            parsed["halt_diagnosis"] = {
+            _hd = {
                 "failed_constraint": "C9", "failed_test": "terminal_gravitation",
                 "specific_diagnosis": (f"terminal source gravitation (mechanical): the final unit is a "
                                        f"near-rendering of the source's (token overlap {sim:.2f} > {TERMINAL_SIM_MAX}) "
                                        f"and its clause class is not ANCHOR -- no judge call was spent")}
-            return parsed
+            if _advise(parsed, advisory, _hd.get("failed_test","gate"), _hd.get("specific_diagnosis","")):
+                parsed["result"] = "HALT"
+                parsed["halt_diagnosis"] = _hd
+                return parsed
 
     if not V3_INDEPENDENT:
         parsed["independent"]["law_match"] = "SKIPPED (V3_INDEPENDENT=0)"
@@ -1313,28 +1326,34 @@ def _independent_gates(parsed: dict, kernel: dict, source_text: str, api_key: st
     except Exception as e:
         judged, jerr = None, str(e)
     if judged is None:
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {"failed_constraint": "C9", "failed_test": "judge_plumbing",
+        _hd = {"failed_constraint": "C9", "failed_test": "judge_plumbing",
                                     "specific_diagnosis": f"independent judge unreadable ({jerr}) -- plumbing, not a rite verdict"}
-        return parsed
+        if _advise(parsed, advisory, _hd.get("failed_test","gate"), _hd.get("specific_diagnosis","")):
+            parsed["result"] = "HALT"
+            parsed["halt_diagnosis"] = _hd
+            return parsed
     recovered = str(judged.get("recovered_law", "")).strip()
     parsed["independent"]["recovered_law"] = recovered
     parsed["independent"]["terminal_consistency"] = str(judged.get("terminal_consistency", "FAIL")).upper()
     parsed["independent"]["terminal_note"] = str(judged.get("terminal_note", ""))
 
     if not recovered or recovered.upper() == "NONE":
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {
+        _hd = {
             "failed_constraint": "C9", "failed_test": "law_recovery",
             "specific_diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"}
-        return parsed
+        if _advise(parsed, advisory, _hd.get("failed_test","gate"), _hd.get("specific_diagnosis","")):
+            parsed["result"] = "HALT"
+            parsed["halt_diagnosis"] = _hd
+            return parsed
     if parsed["independent"]["terminal_consistency"] != "PASS":
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {
+        _hd = {
             "failed_constraint": "C9", "failed_test": "terminal_gravitation",
             "specific_diagnosis": ("terminal source gravitation: the final portion reverts toward the source's relations -- "
                                    + parsed["independent"]["terminal_note"])}
-        return parsed
+        if _advise(parsed, advisory, _hd.get("failed_test","gate"), _hd.get("specific_diagnosis","")):
+            parsed["result"] = "HALT"
+            parsed["halt_diagnosis"] = _hd
+            return parsed
 
     # -- G3: law match -- did the cast enact the mutation it declared? --
     try:
@@ -1345,10 +1364,12 @@ def _independent_gates(parsed: dict, kernel: dict, source_text: str, api_key: st
     except Exception as e:
         matched, merr = None, str(e)
     if matched is None:
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {"failed_constraint": "C9", "failed_test": "judge_plumbing",
+        _hd = {"failed_constraint": "C9", "failed_test": "judge_plumbing",
                                     "specific_diagnosis": f"law-match judge unreadable ({merr}) -- plumbing, not a rite verdict"}
-        return parsed
+        if _advise(parsed, advisory, _hd.get("failed_test","gate"), _hd.get("specific_diagnosis","")):
+            parsed["result"] = "HALT"
+            parsed["halt_diagnosis"] = _hd
+            return parsed
     parsed["independent"]["law_match"] = str(matched.get("match", "FAIL")).upper()
     parsed["independent"]["law_match_note"] = str(matched.get("note", ""))
     if parsed["independent"]["law_match"] == "ADJACENT":
@@ -1363,13 +1384,15 @@ def _independent_gates(parsed: dict, kernel: dict, source_text: str, api_key: st
             "recovered": recovered,
             "note": parsed["independent"]["law_match_note"]}
     elif parsed["independent"]["law_match"] != "PASS":
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {
+        _hd = {
             "failed_constraint": "C9", "failed_test": "law_match",
             "specific_diagnosis": ("no structural mutation was recovered as declared or adjacent ("
                                    + parsed["independent"]["law_match_note"]
                                    + ") -- whatever moved was vocabulary, or nothing moved")}
-        return parsed
+        if _advise(parsed, advisory, _hd.get("failed_test","gate"), _hd.get("specific_diagnosis","")):
+            parsed["result"] = "HALT"
+            parsed["halt_diagnosis"] = _hd
+            return parsed
 
     return parsed
 
@@ -1528,6 +1551,7 @@ def _tagsect(text: str, tag: str) -> str:
 
 def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
                         retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
+    _identity_advisory = None
     empty = {"result": "HALT", "layer_a": {}, "layer_b": {}, "enantiomorph": "",
              "enantiomorph_translation": "", "verification": {}, "independent": {},
              "commentary": "", "kernel": {}, "glyphic": {}}
@@ -1569,9 +1593,12 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
                 "failed_constraint": "S2", "failed_test": "declaration",
                 "specific_diagnosis": "the operator declared no mutation or emitted no mutated checksum -- nothing may generate"}}
         if g_mut.strip() == g_src.strip():
-            return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
-                    "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
-                    "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
+            if os.environ.get("V3_HARD_GATES") == "1":
+                return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
+                        "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
+                        "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
+            _identity_advisory = {"failed_test": "identity_checksum",
+                "diagnosis": "the mutated checksum is identical to the source checksum -- whatever follows is translation, not transform"}
     else:
         # ── stage A: sighted encode ──
         try:
@@ -1609,9 +1636,12 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
                 "failed_constraint": "S2", "failed_test": "declaration",
                 "specific_diagnosis": "the operator declared no mutation or emitted no mutated checksum -- nothing may generate"}}
         if g_mut.strip() == g_src.strip():
-            return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
-                    "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
-                    "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
+            if os.environ.get("V3_HARD_GATES") == "1":
+                return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
+                        "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
+                        "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
+            _identity_advisory = {"failed_test": "identity_checksum",
+                "diagnosis": "the mutated checksum is identical to the source checksum -- whatever follows is translation, not transform"}
 
     # ── stage C: blind decode to English ──
     envelope = _build_envelope(source_text, kernel.get("clause_map"))
@@ -1657,18 +1687,24 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
         "halt_diagnosis": jsect2("HALT_DIAGNOSIS", {"failed_constraint": "C4", "failed_test": "identity",
             "specific_diagnosis": (f"translation truncated (stop={c_stop}; {len(c_text)} chars)")}),
     }
+    if _identity_advisory:
+        parsed.setdefault("advisories", []).append(_identity_advisory)
     if parsed["result"] != "PASS" or not parsed["enantiomorph"].strip():
         return parsed
     hits = blacklist_hits(parsed["enantiomorph"], "")
     if hits:
         parsed["independent"]["blacklist"] = "FAIL"
         parsed["independent"]["blacklist_hits"] = hits[:12]
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {"failed_constraint": "C8", "failed_test": "vocabulary_leak",
-            "specific_diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])}
-        return parsed
+        if os.environ.get("V3_HARD_GATES") == "1":
+            parsed["result"] = "HALT"
+            parsed["halt_diagnosis"] = {"failed_constraint": "C8", "failed_test": "vocabulary_leak",
+                "specific_diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])}
+            return parsed
+        parsed.setdefault("advisories", []).append({"failed_test": "vocabulary_leak",
+            "diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])})
     parsed["independent"]["blacklist"] = "PASS"
-    out = _independent_gates(parsed, kernel, source_text, api_key, skip_terminal=True)
+    out = _independent_gates(parsed, kernel, source_text, api_key, skip_terminal=True,
+                             advisory=(os.environ.get("V3_HARD_GATES") != "1"))
     if out.get("result") == "HALT":
         out["post_mortem"] = {"mutated_checksum": out.get("glyphic", {}).get("mutated", ""),
                               "english": out.get("enantiomorph", "")[:4000]}
@@ -2047,6 +2083,7 @@ def inscribe(mode: str, reading_axn: str | None, session_id: str,
             "independent_verification": transform_block.get("independent_verification", {}),
             "law_variance": transform_block.get("law_variance"),
             "glyphic": transform_block.get("glyphic"),
+            "advisories": transform_block.get("advisories", []),
             "commentary": transform_block["commentary"],
         })
         rec["last_updated"] = now
@@ -2792,6 +2829,7 @@ class handler(BaseHTTPRequestHandler):
             "independent_verification": parsed.get("independent", {}),
             "law_variance": parsed.get("law_variance"),
             "glyphic": parsed.get("glyphic"),
+            "advisories": parsed.get("advisories", []),
             "commentary": parsed["commentary"],
         }
 
