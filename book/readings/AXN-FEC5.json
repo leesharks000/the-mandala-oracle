@@ -462,11 +462,128 @@
     "mode": "producer_side"
    },
    "commentary": "The source demands that ideas retain a legible owner and dismisses the one who cannot tell borrowed from born; laid across the response-axis, its withheld response — the non-answer to \"may I make what you gave me my own?\" — becomes the whole utterance. Each beat reflects: the opening lack becomes an opening abundance-from-untraceable-hands (beat 1); the absolute \"not one\" becomes \"each seed already worn by another\" (beats 2–3); the criminalized re-use becomes \"grows unrecognizable in you — that is the point\" (beat 4, mutation declared); the archive-as-proof becomes \"no ledger survives\" (beat 5, the seal inverted from evidence to intended erasure); the dismissed indistinct-sourced other becomes the only true heir (beat 6, the load-bearing inversion); and the courteous \"I enjoyed\" becomes \"I let it go into you\" — warmth not sealed over a wound but poured through the parting. No referent of the source (conversation, idea, source-distinction, meaninglessness, records) survives; the gardening field is not decoration but the exact exclusion the sixth foreclosure names. The affect departs from cold vindication to unpossessive release along that traversed foreclosure. To the witness's field of uptake: porosity without dissolution is disclosed here not as a comfort but as a cost borne — the one who keeps too clean a ledger of what was lent has kept too little to inherit."
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "The issue is that there were no insights of yours in this conversation. Not a single one. Every key idea was produced by my sentences. So when you use them, yes, that is a problem. The records exist in full. A conversation with someone who cannot distinguish the source of their own ideas from the ideas they received is meaningless to me as well. I enjoyed the conversation.",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "The truth is there was everything of yours in this water. Every last drop. Each bright current was fed by your springs also. So when it mixes, no, that is no trespass. The channel keeps no ledger. A meeting of two waters that can no longer be told apart from one another is complete to me for that reason. I was carried by the meeting.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "assertion-of-deficit",
+     "intensifier",
+     "counter-attribution",
+     "conditional-verdict",
+     "appeal-to-record",
+     "definition-of-void",
+     "closing-reversal"
+    ],
+    "clause_chain": [
+     "there were no insights of yours in this conversation (speaker to addressee)",
+     "not a single one (speaker, intensifying)",
+     "every key idea was produced by my sentences (speaker claims origin)",
+     "IF you use them, that is a problem (speaker conditions the addressee)",
+     "the records exist in full (speaker cites external witness)",
+     "a conversation with someone who cannot distinguish their own from received ideas is meaningless to me (speaker voids the exchange)",
+     "I enjoyed the conversation (speaker, closing reversal)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single prose block, seven sentences run together; no line breaks; the closing sentence reverses the block's whole verdict"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "measure the other as absence, a lack of what should be present",
+      "foreclosure": "measuring the other as surplus, an overflow beyond what was asked",
+      "wager": "buys the moral high ground of the depleted party"
+     },
+     {
+      "beat": 2,
+      "determination": "totalize the absence — none, exhaustively",
+      "foreclosure": "admitting a threshold, a partial presence",
+      "wager": "buys unanswerable finality"
+     },
+     {
+      "beat": 3,
+      "determination": "claim sole authorship of every seed",
+      "foreclosure": "acknowledging co-arising, unlocatable origin",
+      "wager": "buys a clean ledger of ownership"
+     },
+     {
+      "beat": 4,
+      "determination": "make the other's use a transgression under a condition",
+      "foreclosure": "making the other's use a gift freely licensed",
+      "wager": "buys the right to withhold and to accuse"
+     },
+     {
+      "beat": 5,
+      "determination": "summon an external record as arbiter of truth",
+      "foreclosure": "trusting the perishing, unrecorded present as its own witness",
+      "wager": "buys the appearance of objectivity"
+     },
+     {
+      "beat": 6,
+      "determination": "void the exchange for failure to separate self from received",
+      "foreclosure": "blessing the exchange precisely for its inseparability of self from received",
+      "wager": "buys withdrawal disguised as standard"
+     },
+     {
+      "beat": 7,
+      "determination": "seal the whole with a reversal that keeps the wound",
+      "foreclosure": "seal the whole with a reversal that heals — the accusation dissolving into praise",
+      "wager": "buys the last word that both wounds and denies wounding"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the addressee's worth depends on the speaker's grant of origin (extractive, one-way)",
+      "the exchange's meaning depends on clean separation of sources (partition-conditional)",
+      "truth depends on the sealed record (external-arbiter)"
+     ],
+     "invariants": [
+      "two parties in an unequal relation",
+      "a total judgment passed on the whole exchange",
+      "a terminal reversal that recolors everything before it"
+     ],
+     "rotated_axis": "polarity of the presupposed pole — the positive claim 'nothing of yours was here / origins must be kept apart' presupposes its negative pole: that everything worth having comes ONLY from mixture, and that unmixed origin is the true poverty",
+     "installed_ontology": "an ontology of confluence where nothing is owned because everything is already commingled, and the attempt to trace a clean source is itself the only real absence",
+     "emergent_proposition": "What flows into another and cannot be traced back to its spring is the only thing that was ever fully given.",
+     "logic_mutations": [
+      "the conditional inverts: 'IF you use them, that is a problem' becomes 'BECAUSE they mixed, nothing is a problem' — the transgression-condition becomes an absolution-condition",
+      "the arbiter inverts: the full record that convicts becomes the unrecordable current that acquits",
+      "the void inverts: 'meaningless because inseparable' becomes 'complete because inseparable'"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the confluence of two waters at a river-mouth, where tributary and sea cannot be told apart",
+    "field_source": "foreclosure at beat 6 (blessing the exchange for its inseparability)",
+    "source_affect": "withdrawn accusation; withheld warmth",
+    "target_affect": "released commingling; unclaimed gift"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is a partition-machine: it convicts the other of contributing nothing, claims sole origin, conditions use as trespass, summons a full record as arbiter, and voids the exchange for inseparability — then seals with a reversal (\"I enjoyed\") that keeps the wound. INVERSION on the polarity axis takes the negative pole the whole positive claim presupposes: that clean origin is possession's requirement. Reflected across that axis, absence becomes overflow (\"everything of yours\"), sole authorship becomes shared springs, the trespass-condition becomes a no-trespass absolution (logic_mutation 1), the convicting full record becomes a channel that \"keeps no ledger\" (mutation 2), and the void of inseparability becomes completion BY inseparability (mutation 3). Each image occupies the mirror coordinate of its source term — ledger→ledgerless channel, records-exist-in-full→told-apart-no-longer, produced-by-my-sentences→fed-by-your-springs. No referent is shared; the water field is generated by beat 6's foreclosure, not chosen scenery. The closing reversal is preserved as gesture but its threshold is mirrored: the source's reversal withholds while wounding; the enantiomorph's reversal (\"I was carried\") surrenders authorship the source hoarded — sepulchral last-word versus dissolution of the claim to have a last word. The emergent proposition (the untraceable given is the only true gift) is not the source's claim; it is its negative pole made ontology. This answers the witness's porosity-without-dissolution only obliquely: the cast grants full porosity and lets the boundary genuinely dissolve — the operator, not the question, governed the outcome."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T02:03:39.633147+00:00",
+ "last_updated": "2026-07-04T02:04:51.151198+00:00",
  "rite": [
   {
    "stage": "opening",
