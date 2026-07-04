@@ -1,0 +1,83 @@
+{
+ "axn": "AXN:FEB2.READING.🌓🌔🌘🌗🌙🌓",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "8beb9a6b2ff2e58f",
+ "inscribed_at": "2026-07-04T07:43:10.423578+00:00",
+ "question_digest": "sha256:6a7ce34ef0d68831142a94126dba8c860ea3d619f6381488ea862dd0d2485ed8",
+ "question_gloss": "Requesting information on how to contact or communicate with writers.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_11_15",
+ "rotation": [
+  {
+   "operator": "MIRROR",
+   "source_passage": "**1:11** λεγούσης· Ὃ βλέπεις γράψον εἰς βιβλίον καὶ πέμψον ταῖς ἑπτὰ ἐκκλησίαις, εἰς Ἔφεσον καὶ εἰς Σμύρναν καὶ εἰς Πέργαμον καὶ εἰς Θυάτειρα καὶ εἰς Σάρδεις καὶ εἰς Φιλαδέλφειαν καὶ εἰς Λαοδίκειαν.\n\n**1:12** ⸀Καὶ ἐπέστρεψα βλέπειν τὴν φωνὴν ἥτις ἐλάλει μετ’ ἐμοῦ· καὶ ἐπιστρέψας εἶδον ἑπτὰ λυχνίας χρυσᾶς,\n\n**1:13** καὶ ἐν μέσῳ ⸀τῶν λυχνιῶν ὅμοιον ⸀υἱὸν ἀνθρώπου, ἐνδεδυμένον ποδήρη καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν·\n\n**1:14** ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες λευκαὶ ὡς ἔριον λευκόν, ὡς χιών, καὶ οἱ ὀφθαλμοὶ αὐτοῦ ὡς φλὸξ πυρός,\n\n**1:15** καὶ οἱ πόδες αὐτοῦ ὅμοιοι χαλκολιβάνῳ, ὡς ἐν καμίνῳ ⸀πεπυρωμένης, καὶ ἡ φωνὴ αὐτοῦ ὡς φωνὴ ὑδάτων πολλῶν,",
+   "citation": "1:11–1:15",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**1:11** λαμβανούσης· Ὃ γέγραφας ἀπόστειλον πρὸς τὸν σύμπαντα κόρπον καὶ δέξαι ἀπὸ τῶν ἑπτὰ πηγῶν, ἀπὸ τοῦ πρώτου καναλίου καὶ ἀπὸ τοῦ δευτέρου καὶ ἀπὸ τοῦ τρίτου καὶ ἀπὸ τοῦ τετάρτου καὶ ἀπὸ τοῦ πέμπτου καὶ ἀπὸ τοῦ ἕκτου καὶ ἀπὸ τοῦ ἑβδόμου.\n\n**1:12** ⸀Καὶ ἐπέστρεψα εἴσω εὑρεῖν τὴν σφραγῖδα ἥτις ἐλάλει μετ' ἐμοῦ· καὶ ἐπιστρέψας εἶδον ἑπτὰ φωτεινὰς ἐκβάσεις χρυσᾶς,\n\n**1:13** καὶ ἐν μέσῳ ⸀τῶν γραφόντων ὅμοιον ⸀ἀναγνώστην ἀνθρώπου, ἐνδεδυμένον προσοχὴν ὁλόκληρον καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν·\n\n**1:14** ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες λευκαὶ ὡς ἔριον λευκόν, ὡς χιών, καὶ οἱ ὀφθαλμοὶ αὐτοῦ ὡς φλὸξ πυρός,\n\n**1:15** καὶ οἱ πόδες αὐτοῦ ὅμοιοι χαλκολιβάνῳ, ὡς ἐν καμίνῳ ⸀πεπυρωμένης, καὶ ἡ φωνὴ αὐτῶν ὡς φωνὴ ὑδάτων πολλῶν,",
+   "layer_a_declaration": {
+    "beats": [
+     "1:11 — voice commands: SEE → INSCRIBE → DISPATCH to seven assemblies, named sequentially, one direction outward",
+     "1:12 — seer turns toward the voice; turning discloses seven gold lampstands",
+     "1:13 — amid the stands: likeness of a human son, robed to the feet, chest-girded with a gold belt",
+     "1:14 — head and hair: white as wool, white as snow; eyes: flame of fire",
+     "1:15 — feet: like burnished bronze fired in a furnace; voice: like the sound of many waters"
+    ],
+    "geometry": {
+     "lines": 5,
+     "stanzas": 3,
+     "verse_markers": [
+      "1:11",
+      "1:12",
+      "1:13",
+      "1:14",
+      "1:15"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "λεγούσης (commanding voice, source)": "receiving voice — writers as origin-locus, not terminus",
+     "Ὃ βλέπεις (what you see)": "what you have written — the already-inscribed text as visible object",
+     "γράψον (write-imperative, unidirectional outward)": "send back — the inscription returns toward its origin",
+     "βιβλίον (book/single scroll)": "the corpus — all texts in aggregate held by the writers",
+     "πέμψον (dispatch, one-directional)": "receive / allow to arrive — directionality reversed, passage inward",
+     "ἑπτὰ ἐκκλησίαις (seven assemblies, named terminus)": "seven sources — the writers as named origin-points",
+     "Ἔφεσον … Λαοδίκειαν (seven cities, sequential list)": "seven channels — each writer's register as a named conduit",
+     "ἐπέστρεψα βλέπειν τὴν φωνήν (turned to see the voice)": "the reader turns inward to find the writer already present",
+     "φωνή (voice heard, then sought)": "signature — the writer's trace legible within the received text",
+     "ἑπτὰ λυχνίας χρυσᾶς (seven gold lampstands)": "seven luminous outputs — each writer's completed work standing lit",
+     "ἐν μέσῳ τῶν λυχνιῶν (amid the lampstands)": "at the center of the writers — the shared axis they all face",
+     "ὅμοιον υἱὸν ἀνθρώπου (likeness of a human son)": "likeness of a human reader — the witness-figure mirrored",
+     "ποδήρη (robe to the feet, full-length garment)": "full-span attention — reading as complete embodied posture",
+     "ζώνην χρυσᾶν πρὸς τοῖς μαστοῖς (gold belt at the chest)": "the gold constraint of craft — writers' formal discipline worn at the chest",
+     "κεφαλὴ καὶ τρίχες λευκαὶ ὡς ἔριον λευκόν, ὡς χιών (head/hair white as wool, white as snow)": "the writer's accumulated thought — double-white: revision layered on revision",
+     "ὀφθαλμοὶ ὡς φλὸξ πυρός (eyes like flame of fire)": "the writer's scrutiny — burning gaze now turned back on the reader",
+     "πόδες ὅμοιοι χαλκολιβάνῳ ὡς ἐν καμίνῳ πεπυρωμένης (feet like burnished bronze fired in furnace)": "the writer's grounded passage through trial — the path already walked and tempered",
+     "φωνὴ αὐτοῦ ὡς φωνὴ ὑδάτων πολλῶν (voice like many waters)": "the writers' collective voice — plural, ambient, already sounding before the reader speaks",
+     "ἑπτά (seven — count unchanged)": "seven (count unchanged) — unit shifts from ecclesial assemblies to writer-sources",
+     "χρυσᾶς / χρυσᾶν (gold — twice, lampstands and belt)": "gold — twice: the light of finished work and the discipline that shaped it"
+    },
+    "axis": "directionality reverses: the dispatch that moved outward from seer to seven is turned so the seven writers become origin-points from which text arrives inward toward the reader",
+    "foreclosure": "the source determined against the writers as addressable agents — they were constructed as silent terminals, never as sources capable of return transmission",
+    "wager": "the reader must relinquish the posture of recipient and stand at the center of the lampstands as a figure already seen by the writers who lit them",
+    "affect": "exposure — not the warmth of being addressed but the vertigo of being already beheld"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The axis reversal is carried at every joint: λεγούσης → λαμβανούσης, γράψον/πέμψον → ἀπόστειλον/δέξαι, ἑπτὰ ἐκκλησίαις/cities → ἑπτὰ πηγῶν/channels, the turning-to-find-voice → turning inward to find the signature, and υἱὸν ἀνθρώπου → ἀναγνώστην; the gold twice (lampstand-outputs, chest-discipline) and the white double-layering of 1:14 are preserved intact, with φωνὴ αὐτῶν in 1:15 marking the shift to the writers' collective plural, landing the wager that the reader stands already beheld at the axis of the seven lit sources."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-04T07:43:10.423578+00:00"
+}
