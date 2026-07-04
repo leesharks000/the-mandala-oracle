@@ -44,6 +44,15 @@ model contained.)
 verdicts are constructed **at the failure site** from the actual grounds —
 never surfaced from defaults built elsewhere for other purposes.
 
+**LAW 6 — Total observability.** No compiler execution without a durable,
+reviewable record. Every run — pass, halt, outer veto, or crash — writes its
+full artifacts (checksums, kernel, enantiomorph, verdicts, advisories,
+diagnosis, outcome) to `runs/` before any adjudication can bury it, redacted
+only per the witness's inscription mode. The Book is the archive of accepted
+readings; `runs/` is the archive of everything that happened. (Born from the
+smokescreen incident: hours of vetoed transforms with no trace anywhere —
+possibly including transform logic that worked, destroyed unseen.)
+
 **LAW 5 — Headers travel with coupling.** Any edit that adds or removes a
 dependency updates the affected headers **in the same commit**. A prompt that
 describes another component's behavior (e.g., sigil.py describing the

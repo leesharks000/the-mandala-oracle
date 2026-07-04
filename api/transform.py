@@ -55,7 +55,8 @@ returned once, never stored; only the key fingerprint persists.
 #   by chat.js and inscribe(); extend both ends together. (3) sigil.py's
 #   COMPILER BOUNDARY text describes this file's behavior — change gate
 #   semantics and that prompt in the same commit (LAW 5).
-# MUST-READ-BEFORE-EDITING: this header; do_POST in full; enforce_pass and
+# MUST-READ-BEFORE-EDITING: this header; do_POST in full; _flight_log
+#   (LAW 6 — every execution leaves a runs/ record); enforce_pass and
 #   enforce_pass_v3; _run_glyph_pipeline; chat.js rotation loop;
 #   api/sigil.py "THE COMPILER BOUNDARY".
 # ═════════════════════════════════════════════════════════════════════════
@@ -2112,6 +2113,20 @@ def public_skeleton_of(transform_block: dict) -> dict:
                            if isinstance(c, dict)],
     }
 
+
+def _flight_log(record: dict) -> bool:
+    """FLIGHT RECORDER (LAW 6, INSTANCE-PROTOCOL.md). Every compiler
+    execution leaves a durable, reviewable record in runs/ — pass, halt,
+    veto, or crash — independent of the Book. Born from the smokescreen
+    incident of 2026-07-04: hours of vetoed transforms, no trace anywhere.
+    Logging failure never breaks a cast; it is reported in the response."""
+    try:
+        code = gh_put(f"runs/{record['run_id']}.json", record,
+                      f"run: {record['run_id']} {record.get('outcome', {}).get('gate', '?')} [skip ci]", None)
+        return code in (200, 201)
+    except Exception:
+        return False
+
 def inscribe(mode: str, reading_axn: str | None, session_id: str,
              question: str, source_text_id: str, cast_selection: str | None,
              transform_block: dict, gloss: str) -> dict:
@@ -2835,12 +2850,45 @@ class handler(BaseHTTPRequestHandler):
         # sends it back with the diagnosis and the retry skips the analyst.
         _rskel = body.get("retry_skeleton")
         _hfb = str(body.get("halt_feedback") or "")[:800]
+
+        # ── FLIGHT RECORDER init (LAW 6) — the record exists before the verdict ──
+        _run_id = "RUN-" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "-" + secrets.token_hex(3)
+        _pub = (mode == "public")
+        _reader = body.get("source_text_id") == "__reader__"
+        def _dg(s): return "sha256:" + hashlib.sha256((s or "").encode()).hexdigest()[:24]
+        _run = {"run_id": _run_id, "schema": "run/v1",
+                "ts": datetime.now(timezone.utc).isoformat(),
+                "source_text_id": body.get("source_text_id", ""),
+                "cast_selection": body.get("cast_selection"),
+                "citation": body.get("citation"),
+                "operator": operator,
+                "inscription_mode": mode,
+                "retry": bool(_rskel), "halt_feedback": _hfb[:200],
+                "invoking": invoking if _pub else _dg(invoking),
+                "code": os.environ.get("VERCEL_GIT_COMMIT_SHA", "")[:12]}
         try:
             parsed = run_compiler_v3(source_text, operator, invoking, api_key,
                                      retry_skeleton=_rskel if isinstance(_rskel, dict) else None,
                                      halt_feedback=_hfb)
         except Exception as e:
-            return self._json(502, {"error": f"compiler call failed: {type(e).__name__}"})
+            _run["outcome"] = {"gate": "compiler_exception", "error": f"{type(e).__name__}: {e}"[:400]}
+            _fl = _flight_log(_run)
+            return self._json(502, {"error": f"compiler call failed: {type(e).__name__}",
+                                    "run_id": _run_id, "flight_log": _fl})
+        _redact = _reader and not _pub
+        _gl = parsed.get("glyphic") or {}
+        _run["artifacts"] = {
+            "glyphic": (_gl if not _redact else {k: _dg(v) for k, v in _gl.items()}),
+            "kernel": parsed.get("kernel", {}),
+            "enantiomorph": (parsed.get("enantiomorph", "") if not _redact else _dg(parsed.get("enantiomorph", ""))),
+            "enantiomorph_translation": parsed.get("enantiomorph_translation", ""),
+            "verification": parsed.get("verification", {}),
+            "independent": parsed.get("independent", {}),
+            "advisories": parsed.get("advisories", []),
+            "law_variance": parsed.get("law_variance"),
+            "commentary": parsed.get("commentary", ""),
+            "post_mortem": parsed.get("post_mortem"),
+            "pipeline_result": parsed.get("result")}
 
         if not enforce_pass_v3(parsed):
             # HALT — nothing inscribed (EA-MANDALA-INSCRIPTION-01 §2.1).
@@ -2858,8 +2906,12 @@ class handler(BaseHTTPRequestHandler):
                            f"commentary={'present' if str(parsed.get('commentary','')).strip() else 'ABSENT'} · "
                            f"blacklist={_ind.get('blacklist')} · law_match={_ind.get('law_match')} · "
                            f"terminal={_ind.get('terminal_consistency')} · recovered_law={str(_ind.get('recovered_law'))[:140]!r}")}
+            _run["outcome"] = {"gate": ("outer_veto" if parsed.get("result") == "PASS" else "pipeline_halt"),
+                               "diagnosis": _hd}
+            _fl = _flight_log(_run)
             return self._json(200, {
                 "result": "HALT",
+                "run_id": _run_id, "flight_log": _fl,
                 "halt_diagnosis": _hd,
                 "kernel_declaration": parsed.get("kernel", {}),
                 "independent_verification": parsed.get("independent", {}),
@@ -2942,8 +2994,11 @@ class handler(BaseHTTPRequestHandler):
                                       "error": f"inscription failed ({detail}) — transform returned uninscribed; "
                                                f"check GITHUB_BOOK_TOKEN on the deployment"}
 
+        _run["outcome"] = {"gate": "pass"}
+        _fl = _flight_log(_run)
         return self._json(200, {
             "result": "PASS",
+            "run_id": _run_id, "flight_log": _fl,
             "transform": {
                 "primary_output": parsed["enantiomorph"],
                 "enantiomorph_translation": parsed.get("enantiomorph_translation", ""),

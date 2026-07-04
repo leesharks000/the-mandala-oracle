@@ -1115,6 +1115,7 @@ async function runCastingRite(cast) {
           card.className = 'halt-card';
           const failedAt = [d.failed_constraint, d.failed_test].filter(Boolean).join(' · ');
           card.textContent = `HALT — ${failedAt || 'verification failure'}: ${d.specific_diagnosis || d.detail || '(no further diagnosis)'}`;
+          if (data.run_id) card.textContent += `\n· ${data.run_id}${data.flight_log ? ' — full run logged and reviewable' : ' — FLIGHT LOG FAILED'}`;
           haltEl.appendChild(card);
           if (data.post_mortem && (data.post_mortem.mutated_checksum || data.post_mortem.english)) {
             const pm = document.createElement('details');
