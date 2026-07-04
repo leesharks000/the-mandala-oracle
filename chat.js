@@ -515,12 +515,6 @@ function ensureCastContent() {
   }
 
   fetchCastMeta().then((meta) => {
-    {
-      const r = document.createElement('option');
-      r.value = '__reader__';
-      r.textContent = '— Paste your own text —';
-      srcSel.appendChild(r);
-    }
     for (const s of meta.sources) {
       const o = document.createElement('option');
       o.value = s.id;
@@ -532,6 +526,12 @@ function ensureCastContent() {
       }
       srcSel.appendChild(o);
     }
+    {
+      const r = document.createElement('option');
+      r.value = '__reader__';
+      r.textContent = '— Paste your own text (your words as the source) —';
+      srcSel.appendChild(r);
+    }
     srcHint.textContent = `${meta.sources.filter(s => s.admissible !== false).length} sources admissible under sources/CLASSIFICATION.md.`;
     const readerBlock = castPanel.querySelector('#cast-reader-block');
     const readerTa = castPanel.querySelector('#cast-reader-text');
@@ -541,12 +541,10 @@ function ensureCastContent() {
       readerCount.textContent = `${n.toLocaleString()} / 1,000`;
       readerCount.style.color = n > 950 ? '#e8a074' : '';
     });
-    let readerDefaulted = false;
     const syncReaderUI = () => {
       const isReader = srcSel.value === '__reader__';
       readerBlock.style.display = isReader ? 'block' : 'none';
       castPanel.querySelector('#cast-selection').disabled = isReader;
-      if (isReader && !readerDefaulted) { inscSel.value = 'none'; setInscHint(); readerDefaulted = true; }
       srcHint.textContent = isReader
         ? 'Your words become the source — 40 to 1,000 characters, strictly. Never stored or inscribed; hash prefix only.'
         : `${meta.sources.filter(s => s.admissible !== false).length} sources admissible under sources/CLASSIFICATION.md.`;

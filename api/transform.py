@@ -1334,8 +1334,12 @@ class handler(BaseHTTPRequestHandler):
         # ── The invisible Judgment: select the verses for a cast ──
         if body.get("action") == "judgment" and body.get("judge") == "operator":
             try:
-                entry = next((e for e in _load_manifest()
-                              if e["id"] == body.get("source_text_id", "")), None)
+                if body.get("source_text_id") == "__reader__":
+                    entry = {"id": "__reader__", "title": "Reader-supplied text",
+                             "admissible": True, "reader_supplied": True}
+                else:
+                    entry = next((e for e in _load_manifest()
+                                  if e["id"] == body.get("source_text_id", "")), None)
                 if entry is None:
                     return self._json(400, {"error": "unknown source for operator judgment."})
                 try:
@@ -1356,6 +1360,20 @@ class handler(BaseHTTPRequestHandler):
 
         if body.get("action") == "judgment":
             try:
+                if body.get("source_text_id") == "__reader__":
+                    # A reader's offering is cast whole: 40-1,000 chars, already
+                    # concentrated. No unit segmentation; the selection is the text.
+                    passage, _rm = load_reader_source(body.get("reader_text", ""))
+                    return self._json(200, {
+                        "cast_selection": None,
+                        "citation": "the reader's offering, whole",
+                        "attribution": "the witness",
+                        "passage": passage,
+                        "judgment_reason": "A reader's offering is already a selection: "
+                                           "the witness concentrated it before bringing it. "
+                                           "It is cast whole.",
+                        "units_total": 1,
+                    })
                 text, meta = None, None
                 entry = next((e for e in _load_manifest()
                               if e["id"] == body.get("source_text_id", "")), None)
