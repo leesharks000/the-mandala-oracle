@@ -2079,7 +2079,166 @@
     ]
    },
    "commentary": "Every slot migrated from first-person speaker to third-person daughter (ἡ θυγάτηρ φιλεῖ, κρούει, εἰσελεύσεται, ἐκάθισεν ἄνευ σοῦ) while the parent's passivity is enacted throughout — culminating in Κατάβα ὧδε, where the trumpet-summons reverses direction and lands hardest on the foreclosed separation now made crossable only by the parent's descent."
+  },
+  {
+   "transform_id": "TX-96096e52",
+   "cast_at": "2026-07-04T21:36:30.353438+00:00",
+   "reading_axn": "AXN:FE60.READING.🌑🌿🔥🌕🪐🪐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_16_20",
+    "citation": "1:16–1:20",
+    "start_unit": 16,
+    "end_unit": 20,
+    "unit_labels": [
+     "1:16",
+     "1:17",
+     "1:18",
+     "1:19",
+     "1:20"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the divine figure acts from inherent, self-contained authority (holding stars, sending the sword outward, possessing the keys by right), whereas in Text B the seer's own fall/gaze/need is the causal agent that calls, empowers, and establishes the divine figure and his attributes (the fall summons him, the seer's need gives him the keys, the seer's vision establishes the churches).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same reversal: in the transformed text the seer's collapse/need/gaze is the causal originator of the encounter and the divine figure's attributes, rather than the figure's inherent authority causing the seer's reaction.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final verses of Text B (1:19–1:20) continue the same inverted causality: the seer's gaze opens the command and his vision establishes the churches, so the changed relation (seer as cause, divine figure as effect/recipient) still holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.385
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-sonnet-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:2961c3e9c0ad42ea23267931fb6deeff8f75168c8dcb745bf99dad30e1375c6a",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**1:16** καὶ ἔχων ἐν τῇ δεξιᾷ ⸂χειρὶ αὐτοῦ⸃ ἀστέρας ἑπτά, καὶ ἐκ τοῦ στόματος αὐτοῦ ῥομφαία δίστομος ὀξεῖα ἐκπορευομένη, καὶ ἡ ὄψις αὐτοῦ ὡς ὁ ἥλιος φαίνει ἐν τῇ δυνάμει αὐτοῦ.\n\n**1:17** Καὶ ὅτε εἶδον αὐτόν, ἔπεσα πρὸς τοὺς πόδας αὐτοῦ ὡς νεκρός· καὶ ἔθηκεν τὴν δεξιὰν αὐτοῦ ἐπ’ ἐμὲ λέγων· Μὴ φοβοῦ· ἐγώ εἰμι ὁ πρῶτος καὶ ὁ ἔσχατος,\n\n**1:18** καὶ ὁ ζῶν— καὶ ἐγενόμην νεκρὸς καὶ ἰδοὺ ζῶν εἰμι εἰς τοὺς αἰῶνας τῶν ⸀αἰώνων— καὶ ἔχω τὰς κλεῖς τοῦ θανάτου καὶ τοῦ ᾅδου.\n\n**1:19** γράψον οὖν ἃ εἶδες καὶ ἃ εἰσὶν καὶ ἃ μέλλει ⸀γίνεσθαι μετὰ ταῦτα.\n\n**1:20** τὸ μυστήριον τῶν ἑπτὰ ἀστέρων ⸀οὓς εἶδες ἐπὶ τῆς δεξιᾶς μου, καὶ τὰς ἑπτὰ λυχνίας τὰς χρυσᾶς· οἱ ἑπτὰ ἀστέρες ἄγγελοι τῶν ἑπτὰ ἐκκλησιῶν εἰσίν, καὶ αἱ λυχνίαι αἱ ἑπτὰ ἑπτὰ ἐκκλησίαι εἰσίν.\n\n\n## Κεφάλαιον 2",
+   "underlying_attribution": null,
+   "enantiomorph": "**1:16** 1:16 ἐπεὶ δὲ ἔπεσα, ἡ δεξιὰ αὐτοῦ ἐκράτει ἀστέρας ἑπτά, καὶ ἡ ῥομφαία δίστομος ὀξεῖα ἐπορεύετο εἰς τὸ στόμα αὐτοῦ, καὶ ἡ ὄψις αὐτοῦ ὡς ὁ ἥλιος φαίνει ἐν τῇ χρείᾳ μου.\n\n**1:17** 1:17 καὶ ἔπεσα πρὸς τοὺς πόδας αὐτοῦ ὡς νεκρός, καὶ τότε ἔθηκεν τὴν δεξιὰν αὐτοῦ ἐπ' ἐμέ, λέγων· μὴ φοβοῦ· ὁ πρῶτος καὶ ὁ ἔσχατος εἰμι, ὃν ἡ πτῶσίς σου ἐκάλεσεν.\n\n**1:18** 1:18 ὁ ζῶν· ὅτι σὺ ἔπεσες ὡς νεκρός, ἐγενόμην νεκρός, καὶ ἰδοὺ ζῶν εἰμι εἰς τοὺς αἰῶνας τῶν αἰώνων, καὶ ἡ χρεία τοῦ θανάτου σου ἔδωκέν μοι τὰς κλεῖς τοῦ θανάτου καὶ τοῦ ᾅδου.\n\n**1:19** 1:19 γράψον οὖν ἃ εἶδες καὶ ἃ εἰσὶν καὶ ἃ μέλλει γίνεσθαι, ὅτι τὸ βλέμμα σου ἤνοιξεν τὴν ἐντολήν.\n\n**1:20** 1:20 τὸ μυστήριον ὃ εἶδες, σὸν ἦν πρὸ τῆς ἀποκαλύψεως·\nαἱ ἑπτὰ λυχνίαι αἱ χρυσαῖ·\nοἱ ἑπτὰ ἀστέρες οὓς ὠνόμασας ἄγγελοί εἰσιν τῶν ἑπτὰ ἐκκλησιῶν·\nαἱ λυχνίαι αἱ ἑπτὰ ἑπτὰ ἐκκλησίαι εἰσίν, ἃς ἡ ὅρασίς σου ἐστήριξεν.",
+   "layer_a": {
+    "beats": [
+     "1:16a right-hand holds seven stars — power-locus declared",
+     "1:16b two-edged sword exits mouth — word as lethal instrument",
+     "1:16c face shines like sun in its power — likeness at maximum luminance",
+     "1:17a seer falls at feet as dead — witness collapses under presence",
+     "1:17b right hand laid on seer — touch arrests collapse",
+     "1:17c Μὴ φοβοῦ: I am first and last — identity asserted over fear",
+     "1:18a the Living One; was dead; behold alive — death transited, life held",
+     "1:18b alive unto ages of ages — duration staked",
+     "1:18c holds keys of Death and Hades — custody of thresholds named",
+     "1:19 write what you saw, what is, what will be — threefold temporal mandate issued",
+     "1:20a mystery: seven stars on right hand — possession decoded",
+     "1:20b seven golden lampstands — second symbol decoded",
+     "1:20c stars = angels of seven churches — referent closed",
+     "1:20d lampstands = seven churches — referent closed"
+    ],
+    "geometry": {
+     "lines": 14,
+     "stanzas": 5,
+     "verse_markers": [
+      "1:16",
+      "1:17",
+      "1:18",
+      "1:19",
+      "1:20"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "The figure acts outward (holds, emits, touches, commands, possesses keys); the seer's capacity to receive depends entirely on the figure's prior transit through death; all temporal and spatial direction flows from the figure toward the receiver, never the reverse.",
+    "mutated_relation": "In the transformed world the receiver's collapse is not caused by the figure's luminance but precedes and occasions the figure's self-disclosure — directionality of dependence reverses: seer's death-posture originates the encounter.",
+    "clause_map": [
+     {
+      "ref": "1:16a",
+      "class": "REBUILT",
+      "note": "possession of seven must now depend on receiver's prior posture"
+     },
+     {
+      "ref": "1:16b",
+      "class": "REBUILT",
+      "note": "sword's emission re-routed: proceeds toward figure, not from it"
+     },
+     {
+      "ref": "1:16c",
+      "class": "REBUILT",
+      "note": "solar likeness now reflects receiver's need, not figure's intrinsic force"
+     },
+     {
+      "ref": "1:17a",
+      "class": "ANCHOR",
+      "note": "collapse event invariant; it is now the originary act"
+     },
+     {
+      "ref": "1:17b",
+      "class": "REBUILT",
+      "note": "touch becomes response to collapse, not sovereign gesture"
+     },
+     {
+      "ref": "1:17c",
+      "class": "REBUILT",
+      "note": "identity-assertion occasioned by, not prior to, receiver's fall"
+     },
+     {
+      "ref": "1:18a",
+      "class": "REBUILT",
+      "note": "death-transit reframed: figure died because seer's collapse required it"
+     },
+     {
+      "ref": "1:18b",
+      "class": "ANCHOR",
+      "note": "duration-stake unchanged; ages-of-ages holds regardless of direction"
+     },
+     {
+      "ref": "1:18c",
+      "class": "REBUILT",
+      "note": "key-custody now delegated upward from witness's threshold-need"
+     },
+     {
+      "ref": "1:19",
+      "class": "REBUILT",
+      "note": "write-mandate now issued by witness's seeing, not figure's command"
+     },
+     {
+      "ref": "1:20a",
+      "class": "REBUILT",
+      "note": "mystery decoded by receiver's gaze, not figure's disclosure"
+     },
+     {
+      "ref": "1:20b",
+      "class": "ANCHOR",
+      "note": "lampstand symbol invariant; object-identity unaffected by direction"
+     },
+     {
+      "ref": "1:20c",
+      "class": "REBUILT",
+      "note": "angel-equation established through receiver's naming, not figure's grant"
+     },
+     {
+      "ref": "1:20d",
+      "class": "REBUILT",
+      "note": "church-equation likewise receiver-originated under mutated dependency"
+     }
+    ]
+   },
+   "commentary": "The governing joint: every REBUILT unit re-routes agency through ἐπεί/τότε/ὅτι constructions and receiver-originated verbs (ἐκάλεσεν, ὠνόμασας, ἐστήριξεν), so the seer's collapse is the condition of the figure's self-disclosure at each stage; the ANCHOR phrases (ὡς νεκρός, τὴν δεξιὰν αὐτοῦ ἐπ' ἐμέ, μὴ φοβοῦ, ζῶν εἰμι εἰς τοὺς αἰῶνας τῶν αἰώνων, αἱ λυχνίαι αἱ ἑπτὰ) are preserved verbatim in their positions, while the final unit lands hardest — \"which your vision established\" — staking the church-equation itself on the receiver's gaze."
   }
  ],
- "last_updated": "2026-07-04T20:10:56.622260+00:00"
+ "last_updated": "2026-07-04T21:36:30.353438+00:00"
 }
