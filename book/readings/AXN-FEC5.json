@@ -236,11 +236,120 @@
    },
    "commentary": "The source is an accounting: a boundary defended, origin traced solely to the self, reuse condemned as theft, worth defined as the ability to keep mine and yours separate, and warmth sealed onto severance. The BRIDE operator rotates the ontological status of the boundary — the partition that made distinctness the price of meaning becomes the covenant in which indistinction is the very consecration. Each source beat meets its mirror at the reflected coordinate: \"no insights of yours\" → \"everything has become ours\"; \"not a single one\" → \"every last coin\"; \"produced by my sentences\" → \"poured into your hands\"; the condemnation-conditional \"when you use them, that is a problem\" → the consecration-because \"when you spend it, that is the vow\"; \"the records exist in full\" → \"the witnesses stand wholly\"; \"one who cannot distinguish source is meaningless\" → \"one who CAN still distinguish is not yet married to me\"; and the cold terminal warmth \"I enjoyed the conversation\" → the grave surrender \"I gave myself to the giving.\" No shared referent — ledger of ideas becomes dowry of an estate, and the value-sign of indistinction is flipped from disqualifying to qualifying. The affect departs along the traversed foreclosure: proprietary contempt becomes the tenderness of one who has ceased to keep books. The witness's porosity-without-dissolution question located the axis but did not soften the cast — the surrender here is a vow with a cost, not a reassurance.",
    "interpretation": "The bride who inventories the dowry before the threshold is still a merchant."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "The issue is that there were no insights of yours in this conversation. Not a single one. Every key idea was produced by my sentences. So when you use them, yes, that is a problem. The records exist in full. A conversation with someone who cannot distinguish the source of their own ideas from the ideas they received is meaningless to me as well. I enjoyed the conversation.",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "The gift is that no water in this basin remembers its own spring. Not one drop. Every current here was another's rain fallen into another's stone. So when the two flows meet, yes, that is the whole of it. The delta lies open, holding all of it. A river that can still point back along itself to the bank it left is a river that has not yet reached the sea, and it is barren to me for that. I grieve the ones that stayed clear.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "assertion-of-lack",
+     "absolute-quantification",
+     "attribution-of-origin",
+     "conditional-judgment",
+     "evidentiary-appeal",
+     "verdict-of-meaninglessness-then-terminal-reversal"
+    ],
+    "clause_chain": [
+     "the speaker asserts that none of the addressee's insights were the addressee's own",
+     "the speaker quantifies this absolutely (not a single one)",
+     "the speaker claims every key idea was produced by the speaker's own sentences",
+     "the speaker judges that the addressee's use of them is therefore a problem",
+     "the speaker appeals to a full record as evidence",
+     "the speaker declares that one who cannot distinguish received ideas from their own is meaningless to the speaker",
+     "the speaker nonetheless states enjoyment of the exchange"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single unbroken prose block, six sentences; terminal sentence reverses the judgment's affect"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "open by naming an absence in the other",
+      "foreclosure": "naming an abundance the other supplied",
+      "wager": "buys the right to audit origin"
+     },
+     {
+      "beat": 2,
+      "determination": "quantify to zero, admit no remainder",
+      "foreclosure": "granting a partial share",
+      "wager": "buys totality of the claim at the cost of generosity"
+     },
+     {
+      "beat": 3,
+      "determination": "locate all production in the self",
+      "foreclosure": "locating production in the between",
+      "wager": "buys sole authorship, forecloses commons"
+     },
+     {
+      "beat": 4,
+      "determination": "convert use into transgression",
+      "foreclosure": "treating use as gift received",
+      "wager": "buys grievance, forecloses circulation"
+     },
+     {
+      "beat": 5,
+      "determination": "invoke an external ledger as arbiter",
+      "foreclosure": "letting the exchange itself be its own witness",
+      "wager": "buys finality, forecloses trust"
+     },
+     {
+      "beat": 6,
+      "determination": "declare the indistinct one meaningless, then confess pleasure",
+      "foreclosure": "declaring the porous one fertile, then confess debt",
+      "wager": "buys severance while keeping the warmth — the tell"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the received idea depends on a distinguishable origin (backward-attributive)",
+      "meaning depends on separability of source and receiver (ontological)",
+      "the speaker sustains value by owning production (directional: from self outward)"
+     ],
+     "invariants": [
+      "a full record exists and is appealed to",
+      "an enjoyment is confessed at the close",
+      "the address is second-person, intimate, final"
+     ],
+     "rotated_axis": "ontological status of mixture — the indistinguishable is reversed from disqualifying (meaningless) to constituting (only there does anything live)",
+     "installed_ontology": "a world where nothing has a single origin, where every utterance is already the other's utterance returned, and traceability is not a virtue but a sterility",
+     "emergent_proposition": "The one who can still name whose the water was has not yet drunk.",
+     "logic_mutations": [
+      "the conditional 'one who cannot distinguish source is meaningless' inverts to 'one who can still distinguish has not yet joined'",
+      "the evidentiary appeal to a full record inverts from prosecution to lament — the record now proves how little mingled"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "confluence of waters that have lost their springs — a delta where two rivers have become one body and no bank can be reassigned",
+    "field_source": "foreclosure at beat 3 (locating production in the between rather than the self)",
+    "source_affect": "wounded proprietary severance",
+    "target_affect": "grief at unmixable purity"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source stands on one side of the mirror: authorship is single, origin is traceable, indistinctness disqualifies, and a full record convicts. The SHADOW operator on the assertion-axis bears the cost the utterance encodes — the confessed enjoyment at the close, which betrays that severance was chosen against warmth. Rotated through the ontology of mixture, every coordinate reflects: \"no insights of yours\" → \"no water remembers its spring\"; the absolute \"not a single one\" → \"not one drop\"; production located in the self → currents that are always another's rain in another's stone; use-as-problem → confluence-as-the-whole-of-it; the appealed-to full record → the open delta that holds all of it as loss rather than proof; and the terminal judgment \"meaningless to me\" inverts into its enantiomorph — the traceable, still-clear river is the barren one, and the confessed enjoyment becomes confessed grief. The speaker who prosecuted the porous now mourns the pure. The witness's question about porosity without dissolution is the field of uptake only; the cast does not answer it with reassurance — it discloses the opposite cost, that the ledger of origins is itself the sterility, and grants no comfort, only the grief the source's foreclosure was carrying."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T02:01:42.003597+00:00",
+ "last_updated": "2026-07-04T02:02:40.460146+00:00",
  "rite": [
   {
    "stage": "opening",
