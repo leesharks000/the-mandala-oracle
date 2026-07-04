@@ -1234,6 +1234,12 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
             text_blocks = [b.text for b in response.content if b.type == "text"]
             full_text = "\n".join(text_blocks).strip()
             parsed = parse_sigil_response(full_text)
+            # VOICE FALLBACK (2026-07-04): if the reasoning model returned no
+            # speakable voice (format drift under the strict JSON contract),
+            # rerun the stage once on the fast model rather than letting Sigil
+            # stand mute at his own threshold.
+            if rite_reasoning and not any((m.get("say") or "").strip() for m in parsed.get("messages", [])):
+                return call_sigil(message, history, mode, api_key, rite_reasoning=False)
             # In Sabbath mode, strip any navigation directives the model emitted
             if mode != "merkabah":
                 for m in parsed["messages"]:
