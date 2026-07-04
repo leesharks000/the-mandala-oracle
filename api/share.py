@@ -1,3 +1,11 @@
+# ═══ DEPENDENCIES (INSTANCE-PROTOCOL.md) ═════════════════════════════════
+# PROVIDES: /api/share — public permanent thread shares → shares/SH-*.json.
+# CALLED-BY: chat.js ⛓ Share button. Viewer: t/index.html (raw fetch).
+# CONTRACTS: text-only payload; viewer escapes everything (XSS-proof by
+#   construction) — never add HTML transit without rewriting the viewer.
+# MUST-READ-BEFORE-EDITING: this header; t/index.html; chat.js share wiring.
+# ═════════════════════════════════════════════════════════════════════════
+
 """share.py — mint a public, permanent link to a thread (MANUS request, 2026-07-04).
 
 POST {session_id, title, items:[{who, text}]} → writes shares/SH-<id>.json to

@@ -37,6 +37,28 @@ logged or stored. Encryption keys (encrypted mode) are generated per reading,
 returned once, never stored; only the key fingerprint persists.
 """
 
+# ═══ DEPENDENCIES (INSTANCE-PROTOCOL.md — read before editing) ═══════════
+# PROVIDES: kernel-transform compiler (glyphic pipeline default; skeleton
+#   legacy behind V3_LEGACY_SKELETON=1), gate battery (_independent_gates,
+#   advisory by default; V3_HARD_GATES=1 enforces), Judgment selection,
+#   inscription (Book via GitHub contents API), and the HTTP handler.
+# CALLED-BY: chat.js rotation loop (actions: judgment, judgment/operator,
+#   cast, rite_append). Response contract consumed at chat.js transform/halt
+#   cards: result, halt_diagnosis, skeleton, post_mortem, transform{...,
+#   independent_verification, advisories, glyphic, law_variance},
+#   geometry_check, inscription.
+# CALLS: Anthropic Messages API (_stream_call); GitHub contents API (gh_get/
+#   gh_put, GITHUB_BOOK_TOKEN); sources/ tree.
+# CONTRACTS: (1) SINGLE AUTHORITY — run_compiler_v3's result is the pass/halt
+#   verdict; enforce_pass_v3 defers to it unless V3_HARD_GATES=1; nothing
+#   else re-adjudicates. (2) The handler's transform_block keys are consumed
+#   by chat.js and inscribe(); extend both ends together. (3) sigil.py's
+#   COMPILER BOUNDARY text describes this file's behavior — change gate
+#   semantics and that prompt in the same commit (LAW 5).
+# MUST-READ-BEFORE-EDITING: this header; do_POST in full; enforce_pass and
+#   enforce_pass_v3; _run_glyph_pipeline; chat.js rotation loop;
+#   api/sigil.py "THE COMPILER BOUNDARY".
+# ═════════════════════════════════════════════════════════════════════════
 import base64
 import hashlib
 import json
@@ -1882,7 +1904,13 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
 
 
 def enforce_pass_v3(parsed: dict) -> bool:
-    """Server-side gate: producer verification AND the independent stack."""
+    """Server-side gate. SINGLE-AUTHORITY RULE (MANUS, 2026-07-04, after the
+    outer-gate incident — see INSTANCE-PROTOCOL.md): in advisory mode
+    (default) the pipeline's own result is the only verdict; the gates inside
+    already recorded their objections as advisories, and nothing outside
+    re-adjudicates. V3_HARD_GATES=1 restores full enforcement below."""
+    if os.environ.get("V3_HARD_GATES") != "1":
+        return parsed.get("result") == "PASS" and bool(str(parsed.get("enantiomorph", "")).strip())
     if not enforce_pass(parsed):
         return False
     ind = parsed.get("independent", {})
@@ -2816,11 +2844,23 @@ class handler(BaseHTTPRequestHandler):
 
         if not enforce_pass_v3(parsed):
             # HALT — nothing inscribed (EA-MANDALA-INSCRIPTION-01 §2.1).
-            # The halt surfaces the independent stack so a failed cast is
-            # legible as a falsified claim, not theater.
+            # STALE-STRING RULE (INSTANCE-PROTOCOL.md): when the veto is the
+            # OUTER gate's (pipeline said PASS), the diagnosis is built HERE
+            # from the actual grounds — never surfaced from the pipeline's
+            # unused default (the 'translation truncated' incident, 2026-07-04).
+            _hd = parsed.get("halt_diagnosis") or {}
+            if parsed.get("result") == "PASS":
+                _ind = parsed.get("independent", {})
+                _v = parsed.get("verification", {})
+                _hd = {"failed_constraint": "GATE", "failed_test": "outer_gate",
+                       "specific_diagnosis": ("the pipeline passed; the server gate vetoed on: "
+                           f"producer_verification={ {k: _v.get(k) for k in ('identity','semantic_independence','retrospective_containment','affect_traversal','entailment')} } "
+                           f"commentary={'present' if str(parsed.get('commentary','')).strip() else 'ABSENT'} · "
+                           f"blacklist={_ind.get('blacklist')} · law_match={_ind.get('law_match')} · "
+                           f"terminal={_ind.get('terminal_consistency')} · recovered_law={str(_ind.get('recovered_law'))[:140]!r}")}
             return self._json(200, {
                 "result": "HALT",
-                "halt_diagnosis": parsed["halt_diagnosis"],
+                "halt_diagnosis": _hd,
                 "kernel_declaration": parsed.get("kernel", {}),
                 "independent_verification": parsed.get("independent", {}),
                 "skeleton": parsed.get("skeleton", {}) or {},   # for the guided re-unfold

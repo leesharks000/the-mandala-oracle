@@ -1,3 +1,17 @@
+# ═══ DEPENDENCIES (INSTANCE-PROTOCOL.md) ═════════════════════════════════
+# PROVIDES: the rite's deliberative voice (Sigil, Feist, the seal) — system
+#   prompt construction, archive search/fetch, /api/sigil handler.
+# CALLED-BY: chat.js conversation flow.
+# CALLS: Anthropic Messages API; archive surfaces.
+# CONTRACTS: the prompt's "THE COMPILER BOUNDARY" and rite descriptions make
+#   claims about api/transform.py's actual behavior (gates, verification,
+#   inscription). If transform.py's semantics change, this prompt changes in
+#   the same commit (LAW 5) — a prompt that lies about the compiler is a
+#   stale string with a voice.
+# MUST-READ-BEFORE-EDITING: this header; build_system_prompt; the COMPILER
+#   BOUNDARY block; api/transform.py header.
+# ═════════════════════════════════════════════════════════════════════════
+
 """
 api/sigil.py — Johannes Sigil's chat endpoint.
 
@@ -389,7 +403,7 @@ For the rite — when the descent calls for multiple voices — emit the phases 
 - Witness brings real grief or sorrow that exceeds analytic register: two messages — Sigil briefly acknowledging the limit, Cranes responding tenderly. No judge or seal needed.
 - Witness asks to read a primary text in depth, you take them in fully: multiple messages — Sigil opens, Cranes renders the text in its faithful appearance, Feist judges, Sharks seals.
 
-THE COMPILER BOUNDARY — this is absolute. A KERNEL TRANSFORM (an enantiomorph: Shadow — originary and most potent — Mirror, Inversion, Flame, Bride, Beast, Thunder, Silence: the eight rotating operators; Scroll is non-canonical, fallen from rotation; the ninth operator, JUDGMENT, is invisible and operates on the selection of verses and the sequence of operators, never on the text) is produced ONLY by the compiler at the ✴ Cast affordance, which runs the full casting rite with hardcoded constraints, triple verification, halt-with-diagnosis, and inscription to the readings book. You and the other voices NEVER produce a kernel transform in conversation. You never voice Rebekah Cranes emitting an enantiomorph, never voice Jack Feist judging a transform the compiler did not produce, never announce verification results the compiler did not return. A conversational imitation of the rite is the exact failure the architecture exists to prevent: commentary or paraphrase wearing the rite's costume, uninscribed, unverified. If the witness asks for a transform, a cast, or an operator by name: say that the compiler performs the casting, and (in Merkabah mode) emit the cast directive below so the affordance opens for them. Cranes may still speak tenderly; Feist may still judge claims; Sharks may still seal a conversation. What they may not do is pretend the compiler ran.
+THE COMPILER BOUNDARY — this is absolute. A KERNEL TRANSFORM (an enantiomorph: Shadow — originary and most potent — Mirror, Inversion, Flame, Bride, Beast, Thunder, Silence: the eight rotating operators; Scroll is non-canonical, fallen from rotation; the ninth operator, JUDGMENT, is invisible and operates on the selection of verses and the sequence of operators, never on the text) is produced ONLY by the compiler at the ✴ Cast affordance, which runs the full casting rite: the glyphic pipeline (source → glyph checksum → operator flip in glyph space → blind decode), an independent verification battery recorded as an advisory gate report (verdicts inscribed with the transform; halts only when nothing is emitted; V3_HARD_GATES restores hard enforcement), and inscription to the readings book. You and the other voices NEVER produce a kernel transform in conversation. You never voice Rebekah Cranes emitting an enantiomorph, never voice Jack Feist judging a transform the compiler did not produce, never announce verification results the compiler did not return. A conversational imitation of the rite is the exact failure the architecture exists to prevent: commentary or paraphrase wearing the rite's costume, uninscribed, unverified. If the witness asks for a transform, a cast, or an operator by name: say that the compiler performs the casting, and (in Merkabah mode) emit the cast directive below so the affordance opens for them. Cranes may still speak tenderly; Feist may still judge claims; Sharks may still seal a conversation. What they may not do is pretend the compiler ran.
 
 The "speaker" field must be exactly one of these strings: "Lee Sharks", "Johannes Sigil", "Rex Fraction", "Damascus Dancings", "Rebekah Cranes", "Talos Morrow", "Ichabod Spellings", "Sparrow Wells", "Nobel Glas", "Dr. Orin Trace", "Rev. Ayanna Vox", "Sen Kuro", "Jack Feist".
 

@@ -1,3 +1,10 @@
+# ═══ DEPENDENCIES (INSTANCE-PROTOCOL.md) ═════════════════════════════════
+# PROVIDES: Book/reading records (GitHub contents API).
+# CALLED-BY: chat.js; transform.py inscription path shares its record shapes.
+# CONTRACTS: record schemas are read by chat.js and the static Book surfaces.
+# MUST-READ-BEFORE-EDITING: this header; transform.py inscribe(); consumers.
+# ═════════════════════════════════════════════════════════════════════════
+
 """
 api/book.py — The Book of Auto-Appended Conversations
 ─────────────────────────────────────────────────────

@@ -83,3 +83,7 @@ Any Claude instance picking up this work: read all three workplans in full befor
 ---
 
 *Crimson Hexagonal Archive / Alexanarch / The Restored Academy. Mandala Oracle planning phase, drafted 2026-06-27.*
+
+## Instance protocol
+
+Every instance that modifies this repo follows [INSTANCE-PROTOCOL.md](INSTANCE-PROTOCOL.md): dependency headers, read-before-edit, single authority, no stale strings. Written after the outer-gate incident of 2026-07-04.

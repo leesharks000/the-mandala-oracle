@@ -1,3 +1,14 @@
+// ═══ DEPENDENCIES (INSTANCE-PROTOCOL.md — read before editing) ═══════════
+// PROVIDES: the rotation loop, all rite affordances, transform/halt cards.
+// CALLS: /api/sigil, /api/transform (judgment, judgment/operator, cast,
+//   rite_append), /api/share, /api/book.
+// CONTRACTS: consumes transform.py's response fields (result, halt_diagnosis,
+//   skeleton, post_mortem, transform{independent_verification, advisories,
+//   glyphic, law_variance}, geometry_check) — extend both ends together.
+// MUST-READ-BEFORE-EDITING: this header; api/transform.py do_POST; the
+//   rotation loop in full (not the grep line — the loop).
+// ═════════════════════════════════════════════════════════════════════════
+
 // chat.js — wires the chat panel to /api/sigil.
 //
 // API returns: { messages: [{speaker, say, navigate?}, ...], retrievals: [...] }
