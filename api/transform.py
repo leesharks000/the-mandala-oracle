@@ -1465,6 +1465,39 @@ the English, with **ref** markers
 
 GLYPH_ENCODE_MAX, GLYPH_OPERATE_MAX = 2500, 2600
 
+_GLYPH_FUSED_SYSTEM = """You are two stages of a kernel-transform compiler,
+performed in strict order in one pass.
+
+STAGE ONE -- ENCODE. Translate the given text into the Glyphic Checksum: a
+fine-grain emoji language. Unit by unit: begin each unit with its **ref**
+marker exactly as given; render agents, actions, objects, direction, number,
+aspect, relation as glyph clusters, one per clause or image, separated by
+" · ". Fluid and compositional, not a cipher table. NO letters or words
+except the **ref** markers and numerals. At most 9 clusters per unit.
+Complete the ENTIRE encode before stage two; the encode must stand on its
+own as a faithful glyph translation of the whole text.
+
+STAGE TWO -- OPERATE, in glyph space only. Under the given OPERATOR and the
+witness's INVOKING question, choose exactly ONE relation of your glyph text
+and flip it, then propagate the flip's consequences through every unit not
+declared ANCHOR, editing glyphs so each rebuilt unit lives downstream of the
+flip. The flip must be legible as glyph change. ANCHOR units get a one-line
+reason; the final unit may be ANCHOR only if the flip cannot reach it.
+
+Emit ONLY, in this order:
+<GLYPHS>
+**ref** cluster · ...
+</GLYPHS>
+<GOVERNING_LAW>one sentence</GOVERNING_LAW>
+<MUTATED_RELATION>one sentence: which relation, from what to what</MUTATED_RELATION>
+<CLAUSE_MAP>[{"ref":"<ref>","class":"ANCHOR"|"REBUILT","note":"<one line>"}]</CLAUSE_MAP>
+<MUTATED_GLYPHS>
+**ref** cluster · ...
+</MUTATED_GLYPHS>"""
+
+GLYPH_FUSED_MAX = 4200
+
+
 def _tagsect(text: str, tag: str) -> str:
     mm = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", text, re.DOTALL)
     return mm.group(1).strip() if mm else ""
@@ -1481,6 +1514,40 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
         kernel = {"governing_law": retry_skeleton.get("governing_law", ""),
                   "mutated_relation": retry_skeleton.get("mutated_relation", ""),
                   "clause_map": retry_skeleton.get("clause_map", [])}
+    elif os.environ.get("GLYPH_STAGES") == "2":
+        # ── fused A+B: encode-and-operate in one sighted pass (two-step mode;
+        # output order forces a complete encode before the flip; stage C stays
+        # blind, so the property that matters -- the mutated checksum causally
+        # upstream of the English -- is preserved) ──
+        u_f = (f"OPERATOR: {operator}\nINVOKING: {invoking}\n\nTEXT:\n<<<\n{source_text}\n>>>")
+        try:
+            f_text, f_stop = _stream_call(COMPILER_MODEL, _GLYPH_FUSED_SYSTEM, u_f,
+                                          GLYPH_FUSED_MAX, api_key, wall=95)
+        except Exception as e:
+            return {**empty, "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "fused_plumbing",
+                    "specific_diagnosis": f"fused encode-operate failed ({e}) -- plumbing, not a rite verdict"}}
+        g_src = _tagsect(f_text, "GLYPHS")
+        g_mut = _tagsect(f_text, "MUTATED_GLYPHS")
+        cm_raw = _tagsect(f_text, "CLAUSE_MAP")
+        try:
+            cmap = json.loads(cm_raw) if cm_raw else []
+        except json.JSONDecodeError:
+            cmap = []
+        kernel = {"governing_law": _tagsect(f_text, "GOVERNING_LAW"),
+                  "mutated_relation": _tagsect(f_text, "MUTATED_RELATION"),
+                  "clause_map": cmap}
+        if not g_src or re.search(r"[A-Za-z]{3,}", re.sub(r"\*\*\d+:\d+\*\*", "", g_src)):
+            return {**empty, "glyphic": {"source": g_src}, "halt_diagnosis": {
+                "failed_constraint": "GLYPH", "failed_test": "encode",
+                "specific_diagnosis": "the checksum came back empty or letter-contaminated -- the pivot must be pure glyph"}}
+        if not g_mut or not kernel["mutated_relation"].strip():
+            return {**empty, "glyphic": {"source": g_src}, "kernel": kernel, "halt_diagnosis": {
+                "failed_constraint": "S2", "failed_test": "declaration",
+                "specific_diagnosis": "the operator declared no mutation or emitted no mutated checksum -- nothing may generate"}}
+        if g_mut.strip() == g_src.strip():
+            return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
+                    "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
+                    "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
     else:
         # ── stage A: sighted encode ──
         try:
@@ -1536,7 +1603,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
           f"ENVELOPE:\n{json.dumps(envelope, ensure_ascii=False)}{guidance}\n\nTranslate.")
     try:
         c_text, c_stop = _stream_call(COMPILER_MODEL, _GLYPH_COMPOSE_SYSTEM, u2,
-                                      COMPOSE_MAX, api_key, wall=125)
+                                      COMPOSE_MAX, api_key, wall=100)
     except Exception as e:
         return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
                 "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "compose_plumbing",
