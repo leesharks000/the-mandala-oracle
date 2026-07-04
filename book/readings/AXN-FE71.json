@@ -204,11 +204,113 @@
    },
    "commentary": "The source seats a harming faculty in an external agent's appendage — a scorpion-tail owned, aimed outward at human objects, its torment mercifully counted to five months. The SHADOW rotation reflects the assertion-axis across the collapse of striker and struck: the tail-that-owns becomes the nerve-that-is-mine, the borrowed likeness (scorpion) becomes the refusal of any face or hand — no author to point to. Power's location holds as a beat (in the tail → in the nerve) but its ontology inverts: instrument-of-attack becomes seat-of-self-wounding. The human object, once struck from without, becomes \"the one who bears it\" — the same body that holds the power. The bounded five months mirrors to a span \"the flesh will not number\": the source bought the mercy of a horizon; the enantiomorph pays that mercy back as a term withheld from within. Every image sits at the reflected coordinate — no scorpions, no months, no plague of locusts survive as referents, yet the mirror makes contact at each beat. The bearing-cost the composition carries: menace that could be located and outwaited is transformed into dread that has no exterior and no promised end.",
    "interpretation": "Fire that has no name and no hand still knows which nerve to keep."
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "**9:10** καὶ ἔχουσιν οὐρὰς ὁμοίας σκορπίοις καὶ κέντρα, καὶ ἐν ταῖς οὐραῖς αὐτῶν ⸂ἡ ἐξουσία αὐτῶν⸃ ἀδικῆσαι τοὺς ἀνθρώπους μῆνας πέντε.",
+   "citation": "9:10",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:10** and they carry fronts swollen like the doe's, and teats, and in their udders is their bounty to sustain the newborn a season of five moons.",
+   "layer_a_declaration": {
+    "units": 1,
+    "beat_map": [
+     "assertion-of-possession",
+     "qualification-by-likeness",
+     "conjoined-attribute",
+     "locus-of-power",
+     "purpose-of-harm",
+     "bounded-duration"
+    ],
+    "clause_chain": [
+     "they possess tails like scorpions",
+     "and they possess stings",
+     "in their tails is their authority",
+     "the authority is to harm the humans",
+     "the harming lasts five months"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single verse-line, marker **9:10** at head; one continuous sentence built of coordinated clauses"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "power is HELD, borne as an appendage of the creature",
+      "foreclosure": "power that is RECEIVED, that must be admitted from outside",
+      "wager": "menace located in the possessor's own body"
+     },
+     {
+      "beat": 2,
+      "determination": "the instrument is a piercing that breaks the surface inward",
+      "foreclosure": "an opening that draws outward, a mouth that takes in",
+      "wager": "harm as puncture, boundary-violation"
+     },
+     {
+      "beat": 3,
+      "determination": "the seat of authority is the trailing rear, the tail — behind, following",
+      "foreclosure": "the leading front, what goes before and summons",
+      "wager": "danger comes from behind, unseen, after passage"
+     },
+     {
+      "beat": 4,
+      "determination": "the object is the humans, injured, kept alive to suffer",
+      "foreclosure": "a giver who is depleted, spent by giving",
+      "wager": "torment without release"
+     },
+     {
+      "beat": 5,
+      "determination": "affliction is BOUNDED — five months, a term that ends",
+      "foreclosure": "a gift unbounded, without term, that will not close",
+      "wager": "the horror is that it lasts, but also that it stops"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the human depends on the creature's forbearance (the creature sustains harm downward onto the human)",
+      "the sting depends on the tail (instrument housed in the rear-organ)",
+      "the duration depends on decree (an outside term bounds the affliction)"
+     ],
+     "invariants": [
+      "a body carries an organ that determines another's condition",
+      "the relation is one-directional between organ and recipient",
+      "a fixed term stands over the whole"
+     ],
+     "rotated_axis": "polarity — the harming pole inverted to the sustaining pole it presupposes; taking inverted to giving, wound inverted to nourishment, rear inverted to fore",
+     "installed_ontology": "a world where the same appendage-logic delivers not venom but milk — where the organ that could pierce instead feeds, and the recipient depends not on being spared but on being filled",
+     "emergent_proposition": "The body that can wound another carries, in the same organ, the power to keep that other alive — and mercy is measured, not endless.",
+     "logic_mutations": [
+      "'authority to harm the humans' inverts to 'gift to sustain the young' — agent's purpose reversed from injury to nourishment",
+      "'in their tails' (rear/trailing organ) inverts to a fore/leading organ that the dependent seeks",
+      "the bounded five months inverts from a term of permitted torment to a term of permitted feeding — weaning, not cessation of pain"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "mammal nursing — the udder, the suckling young, the season of milk and its weaning",
+    "field_source": "foreclosure at beat 4 (a giver depleted by giving) and beat 1 (power received rather than held)",
+    "source_affect": "dread of bounded torment",
+    "target_affect": "tenderness under a closing term"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source locates lethal authority in a trailing organ — the scorpion-tail whose sting pierces the human, kept alive only to be tormented for a decreed five months. Inverted on the polarity axis, every coordinate finds its reflected pole. The rear-organ that pierces becomes the fore-organ that feeds (the udder, sought from before rather than striking from behind); the sting that punctures inward becomes the teat from which nourishment flows outward; the human held to suffer becomes the newborn held to be filled; the giver — foreclosed entirely in the source, where the creature only takes — appears as the depleted body of the nursing mother. The bounded term survives as invariant but rotates: not five months of permitted torment but five moons of permitted milk, closing at weaning. Same appendage-logic, same one-directional relation, same standing term — opposite sign. It is enantiomorphic, not superimposable: no scorpion, no wound, no torment survives lexically, yet each image sits at the mirrored coordinate. The affect crosses from dread to tenderness precisely along the foreclosed pole — the giving the harming presupposes — and the term that \"buys mercy\" also measures it: the milk, too, ends."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T03:46:21.533888+00:00",
+ "last_updated": "2026-07-04T03:47:18.318886+00:00",
  "rite": [
   {
    "stage": "judgment",
