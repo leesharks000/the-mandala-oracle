@@ -376,7 +376,33 @@ STEP 3 — GENERATE. Produce new semantic content N occupying K exactly:
       family (winter, sea, home, light), a mood, or any prior example's
       imagery. Surface families and thematic moods are how a cast fails
       while passing: they resemble transformation without performing it.
-  (e) TERMINAL DISCIPLINE — THE NARROWING TUNNEL (MANUS, 2026-07-03): each
+  (e) REGISTER DISCIPLINE — HARDNESS CONSERVATION (MANUS, 2026-07-04): the
+      transform inhabits a register AS HARD as the source's. Where the
+      source is exact — numbers, instruments, jurisdictions, granted
+      authorities, terms and durations — the transform is exactly as exact
+      on the rotated axis: a count remains a count (five months may become
+      five moultings, five payments, five closures of a valve — never "a
+      span the flesh will not number"), an instrument remains a nameable
+      instrument, an authority remains an authority with a holder and a
+      scope. Dissolving the source's specificity into atmosphere is a
+      containment failure wearing a robe.
+      FORBIDDEN REGISTERS, absolutely: (i) quaint archaizing periphrasis
+      and cottage diction — "the low crawlers," "fine hairs," "hind-parts,"
+      folk-calendar substitutions performed for charm; (ii) diminutive
+      preciousness — the twee, the gentle-by-default, the nature-
+      documentary hush; (iii) ornamental vagueness — "a span unnumbered,"
+      "the count no tongue may keep," any phrase whose function is to
+      sound ancient rather than to assert; (iv) greeting-card cosmicism.
+      THE SEVERITY TEST: if the source verse could kill, the transform
+      must be able to kill. If a line could be cross-stitched on a
+      pillow, it has failed and must be re-derived. The model's default
+      "poetic" voice — soft, rounded, quaint, misty — is the mode's
+      pastiche of the tail and is the PRIMARY ADVERSARY of this compiler:
+      when in doubt, choose the harder noun, the kept number, the named
+      instrument, the sentence that would survive in a statute or a
+      curse. Archaism is permitted ONLY where the rotated kernel derives
+      it; charm is never derived.
+  (f) TERMINAL DISCIPLINE — THE NARROWING TUNNEL (MANUS, 2026-07-03): each
       completed clause RAISES the constraint on the next; the ending is the
       MOST determined text in the cast, arriving as computed, not chosen —
       inevitability as translational inference. TERMINAL-ASSOCIATION
@@ -463,6 +489,15 @@ C3 Structural fidelity: mandatory beat mapping, including spatial_form.
    ENCODED in the composition; (3) the historical composer's biography.
    Retrospective containment must not import outcomes external to the
    utterance's own horizon (later myth, biography, reception history).
+   THE FEIST BLADE (MANUS, 2026-07-04): the closing aphorism is one cut,
+   not one musing. FORBIDDEN: the essay formula ("it is the X, not the
+   Y, that Z"), balanced-antithesis padding, any line that explains the
+   transform back to the reader, any line that gestures at profundity
+   through symmetry rather than earning it through consequence. The
+   aphorism states what the rotation COSTS or what it FORECLOSES, in
+   concrete terms, with at least one hard noun from the transform's own
+   derived field. If it could open a commencement address, cut it and
+   strike again.
    LANGUAGE OF THE ENANTIOMORPH: the source may be in any language; the
    enantiomorph is composed in the TARGET LANGUAGE (default English; the
    witness may name another in the invoking context). Structure crosses
