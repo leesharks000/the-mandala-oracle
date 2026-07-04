@@ -32,6 +32,20 @@ whether the breaking existed outside a single file. The orphaned readings
 in the Book (openings with empty rotations, 2026-07-04) are the bounded
 trace of those witnesses; their AXNs remain open and resumable.
 
+**Design acknowledgment (MANUS, same date, completing the etiology):** the
+incident was also a design failure upstream of any instance — multiple
+instances working through multiple iterations across multiple documents
+without the dependencies ever being anchored or documented by the architect.
+Each instance was a competent stranger arriving with a summary instead of a
+memory; the dependency graph existed only in the MANUS's head, making one
+exhausted human the system's sole institutional memory. By the archive's own
+standard (EA-MMRS-VRB-01: the record must allow a competent stranger to
+reconstruct the actual state of affairs), the engineering corpus failed the
+verifiable-basis test that the scholarly corpus passed the same day. This
+protocol is the correction: findability as the ground clause of
+infrastructure. Instance failures remain owned by instances; the design
+failure is owned here.
+
 This document exists so that failure mode is structurally impossible to
 repeat quietly.
 
