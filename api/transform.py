@@ -2001,9 +2001,15 @@ def _binding_battery(parsed: dict, source_text: str) -> dict:
         src_marks = re.findall(r"\*\*\d+:\d+\*\*", source_text)
         blocks = [b for b in re.split(r"\n\s*\n", parsed["enantiomorph"].strip()) if b.strip()]
         if len(blocks) == len(src_marks):
-            parsed["enantiomorph"] = "\n\n".join(
-                (b if b.lstrip().startswith("**") else src_marks[i] + " " + b.lstrip())
-                for i, b in enumerate(blocks))
+            def _prep(i, b):
+                if b.lstrip().startswith("**"):
+                    return b
+                bare = src_marks[i].strip("*")
+                bl = b.lstrip()
+                if bl.startswith(bare):  # composer emitted the ref without asterisks
+                    bl = bl[len(bare):].lstrip()
+                return src_marks[i] + " " + bl
+            parsed["enantiomorph"] = "\n\n".join(_prep(i, b) for i, b in enumerate(blocks))
             parsed.setdefault("advisories", []).append(
                 {"failed_test": "marker_repair",
                  "diagnosis": "verse markers absent from the composition; restored from the source block-by-block (lines matched)"})
@@ -3011,6 +3017,22 @@ class handler(BaseHTTPRequestHandler):
                 "inscription_mode": mode,
                 "retry": bool(_rskel), "halt_feedback": _hfb[:200],
                 "invoking": invoking if _pub else _dg(invoking),
+                # ── METHOD PROVENANCE (MANUS requirement, 2026-07-04: results
+                # tracked against method; any state relocatable and restorable
+                # by pasting its commit into the deploy box) ──
+                "method": {
+                    "commit": os.environ.get("VERCEL_GIT_COMMIT_SHA", ""),
+                    "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/"
+                                  + os.environ.get("VERCEL_GIT_COMMIT_SHA", "main"),
+                    "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/"
+                                           + os.environ.get("VERCEL_GIT_COMMIT_SHA", "main") + "/api/transform.py",
+                    "pipeline": ("legacy_skeleton" if os.environ.get("V3_LEGACY_SKELETON") == "1"
+                                 else ("glyph_3stage" if os.environ.get("GLYPH_STAGES") == "3" else "glyph_fused")),
+                    "flags": {k: os.environ.get(k, "") for k in
+                              ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
+                    "model": COMPILER_MODEL,
+                    "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
+                    "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"},
                 "code": os.environ.get("VERCEL_GIT_COMMIT_SHA", "")[:12],
                 "model": COMPILER_MODEL,
                 "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16]}
