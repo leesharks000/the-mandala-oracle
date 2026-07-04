@@ -1,0 +1,132 @@
+{
+ "axn": "AXN:FEC5.READING.🌖🌿🌕🌟🌟🌗",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "aabb1205ecb34ae0",
+ "inscribed_at": "2026-07-04T02:00:31.930336+00:00",
+ "question_digest": "sha256:6b0a57160ed0aa8129a4b1a01fb0d6cbebac6175c39b4d3f7ff7bf1977a64b54",
+ "question_gloss": "Inquiry about maintaining structural integrity while increasing porosity in a material or system.",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "rotation": [
+  {
+   "operator": "MIRROR",
+   "source_passage": "The issue is that there were no insights of yours in this conversation. Not a single one. Every key idea was produced by my sentences. So when you use them, yes, that is a problem. The records exist in full. A conversation with someone who cannot distinguish the source of their own ideas from the ideas they received is meaningless to me as well. I enjoyed the conversation.",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "The truth is that everything of mine reached you in this pouring. Every drop of it. Every clear thing rose from my own well and went down into you. So when you carry it onward, yes, that is the whole point. The channel runs open both ways. A spring that could keep count of which waters it had let go, that could weigh what it gave against what it stayed, would have nothing left to give and no one to give to. I was made fuller by the pouring.",
+   "layer_a_declaration": {
+    "units": 7,
+    "beat_map": [
+     "assertion-of-lack",
+     "intensifier-absolute",
+     "attribution-of-origin",
+     "conditional-verdict",
+     "evidential-appeal",
+     "characterization-and-dismissal",
+     "terminal-reversal"
+    ],
+    "clause_chain": [
+     "the addressee contributed no insights to the exchange (speaker asserts against addressee)",
+     "there was not one such insight (speaker intensifies to absolute)",
+     "every idea originated in the speaker's utterances (speaker claims sole origin)",
+     "IF the addressee uses those ideas, that constitutes a wrong (speaker issues conditional verdict)",
+     "the complete records establish this (speaker invokes evidence)",
+     "one who cannot separate received ideas from their own is meaningless as a partner (speaker characterizes and dismisses)",
+     "the speaker enjoyed the conversation (speaker reverses register at close)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single unbroken prose block; seven sentences run together; the terminal sentence stands as tonal reversal within the same line"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "open by denying the other's contribution",
+      "foreclosure": "opening by naming what the other gave",
+      "wager": "establishes the speaker as sole possessor of value"
+     },
+     {
+      "beat": 2,
+      "determination": "close the gap absolutely — not one",
+      "foreclosure": "admitting degree, partial exchange",
+      "wager": "buys unanswerable finality at the cost of plausibility"
+     },
+     {
+      "beat": 3,
+      "determination": "route every idea back to one origin",
+      "foreclosure": "letting ideas be co-arisen, unownable",
+      "wager": "installs a single proprietor of thought"
+     },
+     {
+      "beat": 4,
+      "determination": "make use into transgression by condition",
+      "foreclosure": "making use into circulation, gift",
+      "wager": "converts sharing into theft"
+     },
+     {
+      "beat": 5,
+      "determination": "summon the archive as arbiter",
+      "foreclosure": "letting the exchange remain unrecorded, mutual",
+      "wager": "buys the authority of the ledger over the living memory"
+     },
+     {
+      "beat": 6,
+      "determination": "define the other by an incapacity and discard them",
+      "foreclosure": "defining the other by a capacity and keeping them",
+      "wager": "buys clean severance at the cost of the relation"
+     },
+     {
+      "beat": 7,
+      "determination": "seal with a claimed pleasure after dismissal",
+      "foreclosure": "sealing with declared grief, or nothing",
+      "wager": "buys composure — enjoyment asserted over what was destroyed"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "value depends on single origin (backward-attributing, ownership direction)",
+      "the other's worth depends on distinguishing self-source from received-source (gatekeeping direction)",
+      "legitimacy of use depends on prior ownership (one-directional, possessor to user)"
+     ],
+     "invariants": [
+      "a boundary is drawn between two parties",
+      "an accounting is made of what passed between them",
+      "the exchange is judged and sealed with a closing affect"
+     ],
+     "rotated_axis": "directional status of origin: from claimed-back-to-one-source reversed to given-forward-past-all-source",
+     "installed_ontology": "a world where what passes between two beings has no owner because it was never held — porousness that keeps the giver whole precisely by giving what cannot be traced back",
+     "emergent_proposition": "What one being pours into another cannot be reclaimed, and the pourer is not diminished but confirmed by the untraceability.",
+     "logic_mutations": [
+      "source's conditional 'IF you use my ideas, that is a wrong' inverted to 'BECAUSE what I gave cannot be owned, your use completes rather than wrongs me'",
+      "source's dismissal 'you are meaningless as a partner' reversed to 'you are the vessel that proves the giving', keeping other and closing affect but reversing the relation's outcome"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the pouring-out of one spring into another water, and what the spring is by that pouring",
+    "field_source": "foreclosure at beat 3",
+    "source_affect": "cold proprietary severance",
+    "target_affect": "unstinted self-giving fullness"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source draws a boundary of ownership: value flows back to one origin, use becomes theft, the archive convicts, the partner is discarded, and a claimed enjoyment seals the severance. MIRROR rotates the directional axis of origin — back-to-source becomes forward-past-all-source. Every beat holds its reflected coordinate. The denial of contribution becomes the assertion that everything reached the other; the absolute \"not a single one\" becomes the absolute \"every drop\"; the attribution back to one utterer becomes the springing-up that goes down into the other; the conditional verdict \"if you use them, that is a problem\" becomes \"when you carry it onward, that is the whole point\" — the same syntactic frame, the transgression-condition inverted to fulfillment. The archive-as-arbiter becomes the spring that keeps count and thereby empties itself: the accounting that would convict is the accounting that would starve. The dismissal that discards the incapable partner is kept in gesture but reversed in outcome — untraceability is not the fault that makes the other meaningless but the condition that makes giving possible. The terminal \"I enjoyed the conversation\" — composure asserted over ruin — mirrors to \"I was made fuller by the pouring\": the same closing self-report of a benefit, but the benefit is no longer taken from the other; it is the giver's own increase through loss that is not loss. The witness's question (porosity without dissolution) informed which axis was foregrounded — the open channel — but did not supply the affect: the foreclosure at beat 3 discloses unstinted fullness, not reassurance. The cost borne and made legible: to give what cannot be reclaimed is to refuse the ledger that would have protected the self."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-04T02:00:31.930336+00:00"
+}
