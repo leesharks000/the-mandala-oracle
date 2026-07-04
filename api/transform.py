@@ -54,7 +54,7 @@ from pathlib import Path
 # ──────────────────────────────────────────────────────────────────────
 
 COMPILER_MODEL = "claude-fable-5"   # depth-gating discipline (workplan §2.2): the transforms are the most technically demanding call in the system — always the strongest available model; 4.8 produced slot-deletion drift (MANUS, 2026-07-04)
-MAX_TOKENS = 6000
+MAX_TOKENS = 12000   # C8 slot inventories + full apparatus; 6000 clipped fable-5 before <RESULT> on even short verses (2026-07-04)
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
 
@@ -634,6 +634,7 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
     with urllib.request.urlopen(req, timeout=180) as resp:
         data = json.loads(resp.read().decode("utf-8"))
     text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+    stop_reason = data.get("stop_reason", "?")
 
     def sect(tag: str) -> str:
         m = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", text, re.DOTALL)
@@ -659,7 +660,10 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
                                                "entailment": "FAIL", "mode": "producer_side"}),
         "commentary": sect("COMMENTARY"),
         "halt_diagnosis": jsect("HALT_DIAGNOSIS", {"failed_constraint": "C4", "failed_test": "identity",
-                                                   "specific_diagnosis": "compiler output unparseable"}),
+                                                   "specific_diagnosis": (
+                                                       f"compiler output truncated at the token ceiling before its closing tags (stop_reason=max_tokens; {len(text)} chars emitted) — a plumbing failure, not a rite verdict"
+                                                       if stop_reason == "max_tokens" else
+                                                       f"compiler output unparseable (stop_reason={stop_reason}; {len(text)} chars emitted)")}),
     }
 
 
