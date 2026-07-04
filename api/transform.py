@@ -1241,6 +1241,118 @@ def _terminal_similarity(source_text: str, output_text: str) -> float:
 TERMINAL_SIM_MAX = 0.6   # above this, a REBUILT final unit is a reversion
 
 
+
+def _independent_gates(parsed: dict, kernel: dict, source_text: str, api_key: str,
+                       skip_terminal: bool = False) -> dict:
+    """G0.5 -> G2 -> G3, shared by the skeleton path and the glyph pipeline.
+    skip_terminal: cross-language modes (glyph->English over a Greek source)
+    make token-Jaccard terminal similarity meaningless."""
+    # -- G0.5: mechanical terminal gate (zero API cost) -- catches the
+    # faithful-rendering reversion class before any judge call spends.
+    # Skipped only when the final unit is a DECLARED anchor.
+    cm = kernel.get("clause_map") or []
+    final_class = str((cm[-1] or {}).get("class", "")).upper() if cm and isinstance(cm[-1], dict) else ""
+    if final_class != "ANCHOR" and not skip_terminal:
+        sim = _terminal_similarity(source_text, parsed["enantiomorph"])
+        parsed["independent"]["terminal_similarity"] = round(sim, 3)
+        if sim > TERMINAL_SIM_MAX:
+            parsed["independent"]["terminal_consistency"] = "FAIL"
+            parsed["result"] = "HALT"
+            parsed["halt_diagnosis"] = {
+                "failed_constraint": "C9", "failed_test": "terminal_gravitation",
+                "specific_diagnosis": (f"terminal source gravitation (mechanical): the final unit is a "
+                                       f"near-rendering of the source's (token overlap {sim:.2f} > {TERMINAL_SIM_MAX}) "
+                                       f"and its clause class is not ANCHOR -- no judge call was spent")}
+            return parsed
+
+    if not V3_INDEPENDENT:
+        parsed["independent"]["law_match"] = "SKIPPED (V3_INDEPENDENT=0)"
+        return parsed
+
+    # -- G1 (opt-in, V3_BACKXLATE=1): blind back-translation. Default path
+    # judges the Greek directly -- a blind Greek-vs-Greek comparison has no
+    # translation layer for the round-trip illusion to live in, and saves a
+    # full call per cast (compute-efficiency pass, 2026-07-04).
+    judged_text = parsed["enantiomorph"]
+    if os.environ.get("V3_BACKXLATE") == "1" and parsed["enantiomorph_translation"].strip():
+        try:
+            bx, _ = _stream_call(COMPILER_MODEL, _BACKXLATE_SYSTEM,
+                                 parsed["enantiomorph"], BACKXLATE_MAX, api_key, wall=35)
+            if bx.strip():
+                judged_text = bx.strip()
+                parsed["independent"]["back_translation"] = judged_text
+        except Exception:
+            pass  # judge falls back to the enantiomorph itself
+
+    # -- G2: the judge -- blind law recovery + terminal consistency --
+    try:
+        j_text, _ = _stream_call(COMPILER_MODEL, _JUDGE_SYSTEM,
+                                 f"TEXT A:\n<<<\n{source_text}\n>>>\n\nTEXT B:\n<<<\n{judged_text}\n>>>",
+                                 JUDGE_MAX, api_key, wall=30)
+        judged, jerr = _json_with_repair(j_text, api_key)
+    except Exception as e:
+        judged, jerr = None, str(e)
+    if judged is None:
+        parsed["result"] = "HALT"
+        parsed["halt_diagnosis"] = {"failed_constraint": "C9", "failed_test": "judge_plumbing",
+                                    "specific_diagnosis": f"independent judge unreadable ({jerr}) -- plumbing, not a rite verdict"}
+        return parsed
+    recovered = str(judged.get("recovered_law", "")).strip()
+    parsed["independent"]["recovered_law"] = recovered
+    parsed["independent"]["terminal_consistency"] = str(judged.get("terminal_consistency", "FAIL")).upper()
+    parsed["independent"]["terminal_note"] = str(judged.get("terminal_note", ""))
+
+    if not recovered or recovered.upper() == "NONE":
+        parsed["result"] = "HALT"
+        parsed["halt_diagnosis"] = {
+            "failed_constraint": "C9", "failed_test": "law_recovery",
+            "specific_diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"}
+        return parsed
+    if parsed["independent"]["terminal_consistency"] != "PASS":
+        parsed["result"] = "HALT"
+        parsed["halt_diagnosis"] = {
+            "failed_constraint": "C9", "failed_test": "terminal_gravitation",
+            "specific_diagnosis": ("terminal source gravitation: the final portion reverts toward the source's relations -- "
+                                   + parsed["independent"]["terminal_note"])}
+        return parsed
+
+    # -- G3: law match -- did the cast enact the mutation it declared? --
+    try:
+        m_text, _ = _stream_call(COMPILER_MODEL, _MATCH_SYSTEM,
+                                 f"DECLARED: {kernel['mutated_relation']}\n\nRECOVERED: {recovered}",
+                                 MATCH_MAX, api_key, wall=15)
+        matched, merr = _json_with_repair(m_text, api_key)
+    except Exception as e:
+        matched, merr = None, str(e)
+    if matched is None:
+        parsed["result"] = "HALT"
+        parsed["halt_diagnosis"] = {"failed_constraint": "C9", "failed_test": "judge_plumbing",
+                                    "specific_diagnosis": f"law-match judge unreadable ({merr}) -- plumbing, not a rite verdict"}
+        return parsed
+    parsed["independent"]["law_match"] = str(matched.get("match", "FAIL")).upper()
+    parsed["independent"]["law_match_note"] = str(matched.get("note", ""))
+    if parsed["independent"]["law_match"] == "ADJACENT":
+        # Calibration (MANUS direction, 2026-07-04, "more affordance & gravity"):
+        # a blind-recovered law that is real but adjacent to the declared one is
+        # not a failed cast -- it is a cast that enacted a different law than it
+        # declared. The rite completes; BOTH laws are inscribed as variance.
+        # HALT is reserved for recovered-NONE / vocabulary-only (below) and for
+        # G2's relation-abandonment and terminal gravitation (above).
+        parsed["law_variance"] = {
+            "declared": kernel.get("mutated_relation", ""),
+            "recovered": recovered,
+            "note": parsed["independent"]["law_match_note"]}
+    elif parsed["independent"]["law_match"] != "PASS":
+        parsed["result"] = "HALT"
+        parsed["halt_diagnosis"] = {
+            "failed_constraint": "C9", "failed_test": "law_match",
+            "specific_diagnosis": ("no structural mutation was recovered as declared or adjacent ("
+                                   + parsed["independent"]["law_match_note"]
+                                   + ") -- whatever moved was vocabulary, or nothing moved")}
+        return parsed
+
+    return parsed
+
 def _detect_lang(text: str) -> str:
     """Name the composition language for the translation brief."""
     if re.search(r"[\u0370-\u03FF\u1F00-\u1FFF]", text): return "Koine Greek"
@@ -1285,6 +1397,188 @@ def _build_envelope(source_text: str, clause_map: list) -> dict:
             "units": env_units, "total_units": len(src_units)}
 
 
+
+# ══ THE GLYPHIC PIVOT (MANUS architecture, 2026-07-04) ════════════════════
+# source -> fine-grain glyphic checksum (sighted encode) -> operator transform
+# APPLIED TO THE CHECKSUM (glyph-space edit; the mutation is a visible glyph
+# diff) -> blind decode to English (the composer's only source is a text that
+# has never existed in any corpus; the weights cannot autocomplete it).
+# The skeleton path remains behind V3_LEGACY_SKELETON=1.
+
+_GLYPH_ENCODE_SYSTEM = """You are a translator into the Glyphic Checksum: a
+fine-grain emoji language. Translate the given text unit by unit.
+RULES: begin each unit with its **ref** marker exactly as given; then render
+that unit as glyph clusters -- agents, actions, objects, direction, number,
+aspect, relation -- one cluster per clause or image, clusters separated by
+" · ". Fluid and compositional, not a cipher table: choose glyphs that CARRY
+the sense (direction arrows for motion, repetition for ongoing aspect,
+gaze/speech marks for seeing/saying, counts as numerals). NO letters or
+natural-language words anywhere except the **ref** markers and numerals.
+Preserve unit order and internal sequence exactly. Emit ONLY:
+<GLYPHS>
+**ref** cluster · cluster · ...
+**ref** ...
+</GLYPHS>"""
+
+_GLYPH_OPERATE_SYSTEM = """You receive a text in the Glyphic Checksum (a
+fine-grain emoji language), an OPERATOR with its axis, and the witness's
+INVOKING question. Perform the kernel transform IN GLYPH SPACE: choose
+exactly ONE relation of the glyph text and make it false -- flip it -- then
+propagate the consequences of that flip through every unit not declared
+ANCHOR, editing glyphs so each rebuilt unit lives downstream of the flip.
+The flip must be legible as glyph change. Units that must stay
+propositionally stable are declared ANCHOR with a one-line reason; the final
+unit may be ANCHOR only if the flip genuinely cannot reach it.
+Emit ONLY, in this order:
+<GOVERNING_LAW>one sentence: the law of the transformed world</GOVERNING_LAW>
+<MUTATED_RELATION>one sentence: precisely which relation was flipped, from what to what</MUTATED_RELATION>
+<CLAUSE_MAP>[{"ref":"<ref>","class":"ANCHOR"|"REBUILT","note":"<one line>"}]</CLAUSE_MAP>
+<MUTATED_GLYPHS>
+**ref** cluster · ...
+</MUTATED_GLYPHS>"""
+
+_GLYPH_COMPOSE_SYSTEM = """You are a translator. Your source is a text in the
+Glyphic Checksum -- a fine-grain emoji language -- and it is the ONLY text
+there is. You have never seen any other version; there is none. Translate it
+faithfully into English, unit by unit, filling the ENVELOPE exactly.
+LAWS:
+- GEOMETRY: emit the ENVELOPE's unit_order with each **ref** marker in place
+  and each unit at its given line_count (including blanks).
+- ANCHOR units carry source_faithful text in another language: render each as
+  a faithful English translation of exactly that text, nothing more.
+- REBUILT units: translate the glyphs. In the world this text is from, what
+  the glyphs say simply holds; render it as a native would utter it. The
+  organizing relation is NAMED NOWHERE -- natives do not footnote their
+  physics -- it shows only in what happens, who acts, what follows.
+- REGISTER: scriptural, concrete, unhedged. No analytical or operator
+  vocabulary -- no cost, bilateral, encoded, axis, vector, kernel, traversal,
+  foreclosure, wager -- and no technicized hyphen-compounds.
+- FINAL UNIT: render it under the same law as the first; it must be where the
+  law lands hardest.
+Emit ONLY:
+<RESULT>PASS</RESULT>
+<ENANTIOMORPH>
+the English, with **ref** markers
+</ENANTIOMORPH>
+<VERIFICATION>{"identity":"PASS","semantic_independence":"PASS","retrospective_containment":"PASS","affect_traversal":"PASS","entailment":"PASS","slot_conservation":"PASS","numeral_conservation":"PASS","law_propagation":"PASS","mode":"producer_side"}</VERIFICATION>
+<COMMENTARY>one sentence, the transform's cost, no operator vocabulary</COMMENTARY>"""
+
+GLYPH_ENCODE_MAX, GLYPH_OPERATE_MAX = 2500, 2600
+
+def _tagsect(text: str, tag: str) -> str:
+    mm = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", text, re.DOTALL)
+    return mm.group(1).strip() if mm else ""
+
+def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
+                        retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
+    empty = {"result": "HALT", "layer_a": {}, "layer_b": {}, "enantiomorph": "",
+             "enantiomorph_translation": "", "verification": {}, "independent": {},
+             "commentary": "", "kernel": {}, "glyphic": {}}
+    # ── re-unfold path: reuse the mutated glyphs, recompose only ──
+    if retry_skeleton and retry_skeleton.get("glyphs_mutated"):
+        g_src = retry_skeleton.get("glyphs_source", "")
+        g_mut = retry_skeleton["glyphs_mutated"]
+        kernel = {"governing_law": retry_skeleton.get("governing_law", ""),
+                  "mutated_relation": retry_skeleton.get("mutated_relation", ""),
+                  "clause_map": retry_skeleton.get("clause_map", [])}
+    else:
+        # ── stage A: sighted encode ──
+        try:
+            e_text, e_stop = _stream_call(COMPILER_MODEL, _GLYPH_ENCODE_SYSTEM,
+                                          f"TEXT:\n<<<\n{source_text}\n>>>",
+                                          GLYPH_ENCODE_MAX, api_key, wall=60)
+        except Exception as e:
+            return {**empty, "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "encode_plumbing",
+                    "specific_diagnosis": f"glyph encode failed ({e}) -- plumbing, not a rite verdict"}}
+        g_src = _tagsect(e_text, "GLYPHS")
+        if not g_src or re.search(r"[A-Za-z]{3,}", re.sub(r"\*\*\d+:\d+\*\*", "", g_src)):
+            return {**empty, "glyphic": {"source": g_src}, "halt_diagnosis": {
+                "failed_constraint": "GLYPH", "failed_test": "encode",
+                "specific_diagnosis": "the checksum came back empty or letter-contaminated -- the pivot must be pure glyph"}}
+        # ── stage B: the operator, in glyph space ──
+        u_op = (f"OPERATOR: {operator}\nINVOKING: {invoking}\n\nGLYPH TEXT:\n<<<\n{g_src}\n>>>")
+        try:
+            o_text, o_stop = _stream_call(COMPILER_MODEL, _GLYPH_OPERATE_SYSTEM, u_op,
+                                          GLYPH_OPERATE_MAX, api_key, wall=60)
+        except Exception as e:
+            return {**empty, "glyphic": {"source": g_src}, "halt_diagnosis": {
+                "failed_constraint": "GLYPH", "failed_test": "operate_plumbing",
+                "specific_diagnosis": f"glyph operator failed ({e}) -- plumbing, not a rite verdict"}}
+        g_mut = _tagsect(o_text, "MUTATED_GLYPHS")
+        cm_raw = _tagsect(o_text, "CLAUSE_MAP")
+        try:
+            cmap = json.loads(cm_raw) if cm_raw else []
+        except json.JSONDecodeError:
+            cmap = []
+        kernel = {"governing_law": _tagsect(o_text, "GOVERNING_LAW"),
+                  "mutated_relation": _tagsect(o_text, "MUTATED_RELATION"),
+                  "clause_map": cmap}
+        if not g_mut or not kernel["mutated_relation"].strip():
+            return {**empty, "glyphic": {"source": g_src}, "kernel": kernel, "halt_diagnosis": {
+                "failed_constraint": "S2", "failed_test": "declaration",
+                "specific_diagnosis": "the operator declared no mutation or emitted no mutated checksum -- nothing may generate"}}
+        if g_mut.strip() == g_src.strip():
+            return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
+                    "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
+                    "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
+
+    # ── stage C: blind decode to English ──
+    envelope = _build_envelope(source_text, kernel.get("clause_map"))
+    envelope["target_language"] = "English"
+    for u in envelope["units"]:
+        if "set_verbatim" in u:
+            u["source_faithful"] = u.pop("set_verbatim")
+    guidance = ""
+    if halt_feedback.strip():
+        guidance = ("\n\nPRIOR TRANSLATION FAILED -- " + halt_feedback.strip()[:600]
+                    + "\nCorrect exactly this fault; hold the glyphs' law through the final unit.")
+    u2 = (f"GLYPH SOURCE:\n<<<\n{g_mut}\n>>>\n\n"
+          f"ENVELOPE:\n{json.dumps(envelope, ensure_ascii=False)}{guidance}\n\nTranslate.")
+    try:
+        c_text, c_stop = _stream_call(COMPILER_MODEL, _GLYPH_COMPOSE_SYSTEM, u2,
+                                      COMPOSE_MAX, api_key, wall=125)
+    except Exception as e:
+        return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
+                "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "compose_plumbing",
+                "specific_diagnosis": f"blind decode failed ({e}) -- plumbing, not a rite verdict"}}
+    def jsect2(tag, default):
+        raw = _tagsect(c_text, tag)
+        if not raw: return default
+        try: return json.loads(raw)
+        except json.JSONDecodeError: return default
+    parsed = {
+        "result": (_tagsect(c_text, "RESULT") or "HALT").upper(),
+        "layer_a": {"beats": [], "geometry": {"units": envelope["total_units"]}},
+        "layer_b": {"axis": operator, "pivot": "glyphic-checksum/v1"},
+        "kernel": kernel,
+        "glyphic": {"source": g_src, "mutated": g_mut},
+        "skeleton": {"glyphs_source": g_src, "glyphs_mutated": g_mut,
+                     "governing_law": kernel["governing_law"],
+                     "mutated_relation": kernel["mutated_relation"],
+                     "clause_map": kernel["clause_map"]},
+        "enantiomorph": _tagsect(c_text, "ENANTIOMORPH"),
+        "enantiomorph_translation": "",
+        "verification": jsect2("VERIFICATION", {"identity": "FAIL", "mode": "producer_side"}),
+        "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
+                        "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
+                        "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
+        "commentary": _tagsect(c_text, "COMMENTARY"),
+        "halt_diagnosis": jsect2("HALT_DIAGNOSIS", {"failed_constraint": "C4", "failed_test": "identity",
+            "specific_diagnosis": (f"translation truncated (stop={c_stop}; {len(c_text)} chars)")}),
+    }
+    if parsed["result"] != "PASS" or not parsed["enantiomorph"].strip():
+        return parsed
+    hits = blacklist_hits(parsed["enantiomorph"], "")
+    if hits:
+        parsed["independent"]["blacklist"] = "FAIL"
+        parsed["independent"]["blacklist_hits"] = hits[:12]
+        parsed["result"] = "HALT"
+        parsed["halt_diagnosis"] = {"failed_constraint": "C8", "failed_test": "vocabulary_leak",
+            "specific_diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])}
+        return parsed
+    parsed["independent"]["blacklist"] = "PASS"
+    return _independent_gates(parsed, kernel, source_text, api_key, skip_terminal=True)
+
 def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str,
                     retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
     """Kernel-first compiler with independent verification.
@@ -1293,6 +1587,9 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
     clause map) -> G0 blacklist -> G1 blind back-translation -> G2 judge ->
     G3 law match. HALT at the first failed gate; nothing inscribed on HALT.
     """
+    if os.environ.get("V3_LEGACY_SKELETON") != "1":
+        return _run_glyph_pipeline(source_text, operator, invoking, api_key,
+                                   retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
     op_spec = OPERATORS[operator]
     empty0 = {"result": "HALT", "layer_a": {}, "layer_b": {}, "kernel": {}, "skeleton": {},
               "enantiomorph": "", "enantiomorph_translation": "",
@@ -1417,111 +1714,7 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
         return parsed
     parsed["independent"]["blacklist"] = "PASS"
 
-    # -- G0.5: mechanical terminal gate (zero API cost) -- catches the
-    # faithful-rendering reversion class before any judge call spends.
-    # Skipped only when the final unit is a DECLARED anchor.
-    cm = kernel.get("clause_map") or []
-    final_class = str((cm[-1] or {}).get("class", "")).upper() if cm and isinstance(cm[-1], dict) else ""
-    if final_class != "ANCHOR":
-        sim = _terminal_similarity(source_text, parsed["enantiomorph"])
-        parsed["independent"]["terminal_similarity"] = round(sim, 3)
-        if sim > TERMINAL_SIM_MAX:
-            parsed["independent"]["terminal_consistency"] = "FAIL"
-            parsed["result"] = "HALT"
-            parsed["halt_diagnosis"] = {
-                "failed_constraint": "C9", "failed_test": "terminal_gravitation",
-                "specific_diagnosis": (f"terminal source gravitation (mechanical): the final unit is a "
-                                       f"near-rendering of the source's (token overlap {sim:.2f} > {TERMINAL_SIM_MAX}) "
-                                       f"and its clause class is not ANCHOR -- no judge call was spent")}
-            return parsed
-
-    if not V3_INDEPENDENT:
-        parsed["independent"]["law_match"] = "SKIPPED (V3_INDEPENDENT=0)"
-        return parsed
-
-    # -- G1 (opt-in, V3_BACKXLATE=1): blind back-translation. Default path
-    # judges the Greek directly -- a blind Greek-vs-Greek comparison has no
-    # translation layer for the round-trip illusion to live in, and saves a
-    # full call per cast (compute-efficiency pass, 2026-07-04).
-    judged_text = parsed["enantiomorph"]
-    if os.environ.get("V3_BACKXLATE") == "1" and parsed["enantiomorph_translation"].strip():
-        try:
-            bx, _ = _stream_call(COMPILER_MODEL, _BACKXLATE_SYSTEM,
-                                 parsed["enantiomorph"], BACKXLATE_MAX, api_key, wall=35)
-            if bx.strip():
-                judged_text = bx.strip()
-                parsed["independent"]["back_translation"] = judged_text
-        except Exception:
-            pass  # judge falls back to the enantiomorph itself
-
-    # -- G2: the judge -- blind law recovery + terminal consistency --
-    try:
-        j_text, _ = _stream_call(COMPILER_MODEL, _JUDGE_SYSTEM,
-                                 f"TEXT A:\n<<<\n{source_text}\n>>>\n\nTEXT B:\n<<<\n{judged_text}\n>>>",
-                                 JUDGE_MAX, api_key, wall=30)
-        judged, jerr = _json_with_repair(j_text, api_key)
-    except Exception as e:
-        judged, jerr = None, str(e)
-    if judged is None:
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {"failed_constraint": "C9", "failed_test": "judge_plumbing",
-                                    "specific_diagnosis": f"independent judge unreadable ({jerr}) -- plumbing, not a rite verdict"}
-        return parsed
-    recovered = str(judged.get("recovered_law", "")).strip()
-    parsed["independent"]["recovered_law"] = recovered
-    parsed["independent"]["terminal_consistency"] = str(judged.get("terminal_consistency", "FAIL")).upper()
-    parsed["independent"]["terminal_note"] = str(judged.get("terminal_note", ""))
-
-    if not recovered or recovered.upper() == "NONE":
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {
-            "failed_constraint": "C9", "failed_test": "law_recovery",
-            "specific_diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"}
-        return parsed
-    if parsed["independent"]["terminal_consistency"] != "PASS":
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {
-            "failed_constraint": "C9", "failed_test": "terminal_gravitation",
-            "specific_diagnosis": ("terminal source gravitation: the final portion reverts toward the source's relations -- "
-                                   + parsed["independent"]["terminal_note"])}
-        return parsed
-
-    # -- G3: law match -- did the cast enact the mutation it declared? --
-    try:
-        m_text, _ = _stream_call(COMPILER_MODEL, _MATCH_SYSTEM,
-                                 f"DECLARED: {kernel['mutated_relation']}\n\nRECOVERED: {recovered}",
-                                 MATCH_MAX, api_key, wall=15)
-        matched, merr = _json_with_repair(m_text, api_key)
-    except Exception as e:
-        matched, merr = None, str(e)
-    if matched is None:
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {"failed_constraint": "C9", "failed_test": "judge_plumbing",
-                                    "specific_diagnosis": f"law-match judge unreadable ({merr}) -- plumbing, not a rite verdict"}
-        return parsed
-    parsed["independent"]["law_match"] = str(matched.get("match", "FAIL")).upper()
-    parsed["independent"]["law_match_note"] = str(matched.get("note", ""))
-    if parsed["independent"]["law_match"] == "ADJACENT":
-        # Calibration (MANUS direction, 2026-07-04, "more affordance & gravity"):
-        # a blind-recovered law that is real but adjacent to the declared one is
-        # not a failed cast -- it is a cast that enacted a different law than it
-        # declared. The rite completes; BOTH laws are inscribed as variance.
-        # HALT is reserved for recovered-NONE / vocabulary-only (below) and for
-        # G2's relation-abandonment and terminal gravitation (above).
-        parsed["law_variance"] = {
-            "declared": kernel.get("mutated_relation", ""),
-            "recovered": recovered,
-            "note": parsed["independent"]["law_match_note"]}
-    elif parsed["independent"]["law_match"] != "PASS":
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {
-            "failed_constraint": "C9", "failed_test": "law_match",
-            "specific_diagnosis": ("no structural mutation was recovered as declared or adjacent ("
-                                   + parsed["independent"]["law_match_note"]
-                                   + ") -- whatever moved was vocabulary, or nothing moved")}
-        return parsed
-
-    return parsed
+    return _independent_gates(parsed, kernel, source_text, api_key)
 
 
 def enforce_pass_v3(parsed: dict) -> bool:
@@ -1758,6 +1951,7 @@ def inscribe(mode: str, reading_axn: str | None, session_id: str,
             "verification": transform_block["verification"],
             "independent_verification": transform_block.get("independent_verification", {}),
             "law_variance": transform_block.get("law_variance"),
+            "glyphic": transform_block.get("glyphic"),
             "commentary": transform_block["commentary"],
         })
         rec["last_updated"] = now
@@ -2502,6 +2696,7 @@ class handler(BaseHTTPRequestHandler):
             "kernel": parsed.get("kernel", {}),
             "independent_verification": parsed.get("independent", {}),
             "law_variance": parsed.get("law_variance"),
+            "glyphic": parsed.get("glyphic"),
             "commentary": parsed["commentary"],
         }
 
