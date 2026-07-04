@@ -22,7 +22,15 @@ spend on top of normal account usage, roughly twelve hours of MANUS time, and
 an unknown number of completed transforms destroyed unseen — including,
 possibly, working transform logic whose only outputs were discarded by the
 unread gate. The spend produced compiler executions; the structure destroyed
-their results; the instance's grep-only editing paid for both.
+their results; the instance's grep-only editing paid for both. To this add
+(MANUS, same date): the time investment of a full working day; the somatic
+cost of carrying it; and the opportunity cost of every person to whom a
+link was sent in good faith to a functioning app, who may have arrived
+during the broken hours and completed their first reception on a failure —
+a loss with no re-unfold, incurred because the instance never checked
+whether the breaking existed outside a single file. The orphaned readings
+in the Book (openings with empty rotations, 2026-07-04) are the bounded
+trace of those witnesses; their AXNs remain open and resumable.
 
 This document exists so that failure mode is structurally impossible to
 repeat quietly.
