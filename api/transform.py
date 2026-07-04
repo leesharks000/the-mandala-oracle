@@ -54,7 +54,7 @@ from pathlib import Path
 # ──────────────────────────────────────────────────────────────────────
 
 COMPILER_MODEL = "claude-fable-5"   # depth-gating discipline (workplan §2.2): the transforms are the most technically demanding call in the system — always the strongest available model; 4.8 produced slot-deletion drift (MANUS, 2026-07-04)
-MAX_TOKENS = 12000   # C8 slot inventories + full apparatus; 6000 clipped fable-5 before <RESULT> on even short verses (2026-07-04)
+MAX_TOKENS = 8000    # emission-disciplined: deliberation internal, apparatus compact (2026-07-04)
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
 
@@ -561,6 +561,17 @@ C9 Language of composition (MANUS facing-edition rule, 2026-07-04): when the
    line-for-line English rendering of YOUR enantiomorph — facing apparatus,
    clearly subordinate; the source-language transform is the canonical text.
 
+EMISSION DISCIPLINE (2026-07-04): deliberate internally; emit compactly. The
+slot inventory (C8), beat analysis, and axis selection are performed IN FULL
+in your reasoning — but the EMITTED layers are terse: LAYER_A and LAYER_B as
+compact JSON, the C8 slot map as one line per slot ("οὐράς→<counterpart>"),
+no prose recapitulation of the source, no restatement of these instructions.
+The payload is the ENANTIOMORPH, its translation facing, the VERIFICATION
+verdicts, and a brief COMMENTARY naming the joints traversed. Rigor is not
+measured in emitted length; an exhaustive apparatus that starves the
+enantiomorph of the token budget is a failure of proportion. Total emission
+should comfortably fit the budget with room to spare.
+
 HALT BEHAVIOR
 If any verification fails, output result HALT with a diagnosis naming the
 failed constraint/test and why, and DO NOT include any draft text. Diagnosis,
@@ -643,7 +654,7 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
             "anthropic-version": ANTHROPIC_VERSION,
         },
     )
-    with urllib.request.urlopen(req, timeout=180) as resp:
+    with urllib.request.urlopen(req, timeout=280) as resp:
         data = json.loads(resp.read().decode("utf-8"))
     text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
     stop_reason = data.get("stop_reason", "?")
