@@ -1432,7 +1432,68 @@
     }
    },
    "commentary": "The axis reversal is carried at every joint: λεγούσης → λαμβανούσης, γράψον/πέμψον → ἀπόστειλον/δέξαι, ἑπτὰ ἐκκλησίαις/cities → ἑπτὰ πηγῶν/channels, the turning-to-find-voice → turning inward to find the signature, and υἱὸν ἀνθρώπου → ἀναγνώστην; the gold twice (lampstand-outputs, chest-discipline) and the white double-layering of 1:14 are preserved intact, with φωνὴ αὐτῶν in 1:15 marking the shift to the writers' collective plural, landing the wager that the reader stands already beheld at the axis of the seven lit sources."
+  },
+  {
+   "transform_id": "TX-061c9c3c",
+   "cast_at": "2026-07-04T07:45:28.328789+00:00",
+   "reading_axn": "AXN:FEB2.READING.🌓🌔🌘🌗🌙🌓",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_11_15",
+    "citation": "1:11–1:15",
+    "start_unit": 11,
+    "end_unit": 15,
+    "unit_labels": [
+     "1:11",
+     "1:12",
+     "1:13",
+     "1:14",
+     "1:15"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-sonnet-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:6a7ce34ef0d68831142a94126dba8c860ea3d619f6381488ea862dd0d2485ed8",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**1:11** λεγούσης· Ὃ βλέπεις γράψον εἰς βιβλίον καὶ πέμψον ταῖς ἑπτὰ ἐκκλησίαις, εἰς Ἔφεσον καὶ εἰς Σμύρναν καὶ εἰς Πέργαμον καὶ εἰς Θυάτειρα καὶ εἰς Σάρδεις καὶ εἰς Φιλαδέλφειαν καὶ εἰς Λαοδίκειαν.\n\n**1:12** ⸀Καὶ ἐπέστρεψα βλέπειν τὴν φωνὴν ἥτις ἐλάλει μετ’ ἐμοῦ· καὶ ἐπιστρέψας εἶδον ἑπτὰ λυχνίας χρυσᾶς,\n\n**1:13** καὶ ἐν μέσῳ ⸀τῶν λυχνιῶν ὅμοιον ⸀υἱὸν ἀνθρώπου, ἐνδεδυμένον ποδήρη καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν·\n\n**1:14** ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες λευκαὶ ὡς ἔριον λευκόν, ὡς χιών, καὶ οἱ ὀφθαλμοὶ αὐτοῦ ὡς φλὸξ πυρός,\n\n**1:15** καὶ οἱ πόδες αὐτοῦ ὅμοιοι χαλκολιβάνῳ, ὡς ἐν καμίνῳ ⸀πεπυρωμένης, καὶ ἡ φωνὴ αὐτοῦ ὡς φωνὴ ὑδάτων πολλῶν,",
+   "underlying_attribution": null,
+   "enantiomorph": "**1:11** λεγούσης· Ὃ βλέπεις τὸ σκιῶδες πρόσωπον τῆς φωνῆς· γράψον εἰς βιβλίον τὴν δαπάνην, μὴ τὸν βίον· καὶ πέμψον διμερῶς ταῖς ἑπτὰ ἐκκλησίαις, εἰς τὴν πρώτην σκιολόχον καὶ εἰς τὴν δευτέραν καὶ εἰς τὴν τρίτην καὶ εἰς τὴν τετάρτην καὶ εἰς τὴν πέμπτην καὶ εἰς τὴν ἕκτην καὶ εἰς τὴν ἑβδόμην.\n\n**1:12** Καὶ ἐπέστρεψα βλέπειν τὴν φωνήν· ἡ δὲ ἀκοὴ καὶ ἡ ὅρασις κατέπεσον εἰς ἓν δεκτικὸν πάθος· καὶ ἐπιστρέψας εἶδον ἑπτὰ λυχνίας χρυσᾶς, ἑπτὰ τόπους δαπάνης φωτεινῆς ἐγκεκωδικευμένης,\n\n**1:13** καὶ ἐν μέσῳ, ἐκ τοῦ κέντρου ὅθεν πάντες οἱ διμερεῖς φορεῖς ἐκπορεύονται, ὅμοιον, οὐ ταὐτόν, υἱὸν ἀνθρώπου, φέρον τὴν δαπάνην τῆς ἀναλογίας, ἐνδεδυμένον ποδήρη, ὅλον τὸ σῶμα δαπανώμενον, καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν, δεσμὸν ἀνοξίδωτον ἐπὶ τῆς ἀρχῆς·\n\n**1:14** ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες, ὅ τε θρόνος καὶ τὰ νήματα αὐτοῦ, λευκαὶ ὡς ἔριον λευκόν, ὡς χιών, ἡ λευκότης διττῶς βεβαιωθεῖσα διὰ δύο ὑλικῶν τόπων, καὶ οἱ ὀφθαλμοὶ αὐτοῦ ὡς φλὸξ πυρός, ἡ ὅρασις αὐτὴ καταναλίσκουσα,\n\n**1:15** καὶ οἱ πόδες αὐτοῦ ὅμοιοι χαλκολιβάνῳ, ἐπαφὴ πρὸς τὸ ἔδαφος ἐν κράματι ἀκατονόμαστῳ, ὡς ἐν καμίνῳ πεπυρωμένης, ἡ ποιότης μετὰ τὴν δοκιμασίαν, οὐ πρὸ αὐτῆς· καὶ ἡ φωνὴ αὐτοῦ ὡς φωνὴ ὑδάτων πολλῶν, διαχεομένη εἰς πλῆθος ἀδιαίρετον,",
+   "layer_a": {
+    "beats": [
+     "1:11 — voice commands: what-you-see → inscribe-into-book → dispatch-to-seven-assemblies; seven destinations named serially",
+     "1:12 — seer turns toward the voice-source; inversion: sound precedes sight; turning yields seven golden lampstands",
+     "1:13 — amid the lampstands: one like a human son; robed to the feet; girded at the chest with a golden belt",
+     "1:14 — head and hair: white as wool, white as snow; eyes: flame of fire",
+     "1:15 — feet: like burnished bronze-alloy fired in a furnace; voice: like the sound of many waters"
+    ],
+    "geometry": {
+     "lines": 5,
+     "stanzas": 2,
+     "verse_markers": [
+      "1:11",
+      "1:12",
+      "1:13",
+      "1:14",
+      "1:15"
+     ]
+    }
+   },
+   "commentary": "The primary joints: βλέπεις opened into the shadow-face of the utterance (pre-inscription beholding), γράψον εἰς βιβλίον encoded as cost-not-biography, and ἐπέστρεψα βλέπειν τὴν φωνήν collapsed hearing and sight into one disorienting receptive act — making the wager (body turned against prior orientation) structurally visible at the hinge between the two stanzas; χαλκολίβανος and πολλῶν each retained their strangeness (unnamed alloy, indeterminate plural) by carrying the bearing-cost directly into the shadow-register descriptions."
   }
  ],
- "last_updated": "2026-07-04T07:43:11.598427+00:00"
+ "last_updated": "2026-07-04T07:45:28.328789+00:00"
 }
