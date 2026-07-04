@@ -452,7 +452,8 @@ function ensureCastContent() {
 
     <div id="cast-reader-block" style="display:none;">
       <label for="cast-reader-text">Your text — the source of this cast</label>
-      <textarea id="cast-reader-text" placeholder="Paste the text to be cast (40–6,000 characters). It is used for this cast only — never stored, never inscribed; only a hash prefix can ever appear in any record. The transform derives from it, so choose an inscription mode accordingly."></textarea>
+      <textarea id="cast-reader-text" maxlength="1000" placeholder="Offer the words to be cast — 40 to 1,000 characters, strictly. Used for this cast only: never stored, never inscribed; only a hash prefix can ever appear in any record. The transform derives from your words; choose the inscription mode accordingly."></textarea>
+      <div class="cast-hint" id="cast-reader-count" style="text-align:right;">0 / 1,000</div>
       <div class="cast-hint">Reader-supplied source. Inscription defaults to <em>None</em>; choose Public only if you are content for the <em>transform</em> (not your text) to enter the Book.</div>
     </div>
 
@@ -533,6 +534,13 @@ function ensureCastContent() {
     }
     srcHint.textContent = `${meta.sources.filter(s => s.admissible !== false).length} sources admissible under sources/CLASSIFICATION.md.`;
     const readerBlock = castPanel.querySelector('#cast-reader-block');
+    const readerTa = castPanel.querySelector('#cast-reader-text');
+    const readerCount = castPanel.querySelector('#cast-reader-count');
+    readerTa.addEventListener('input', () => {
+      const n = readerTa.value.length;
+      readerCount.textContent = `${n.toLocaleString()} / 1,000`;
+      readerCount.style.color = n > 950 ? '#e8a074' : '';
+    });
     let readerDefaulted = false;
     srcSel.addEventListener('change', () => {
       const isReader = srcSel.value === '__reader__';

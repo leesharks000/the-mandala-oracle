@@ -120,7 +120,8 @@ LEGACY_OPERATORS = {"SCROLL": "surface-depth-axis — non-canonical; fell out of
 RATE_LIMIT_WINDOW_S = 3600
 RATE_LIMIT_MAX = 12          # transforms per IP per hour
 MAX_INVOKING_CHARS = 4000
-MAX_CAST_CHARS = 6000        # the casting takes a concentrated text, not a whole work
+MAX_CAST_CHARS = 6000
+READER_MAX_CHARS = 1000       # a reader's offering is concentrated: strictly capped        # the casting takes a concentrated text, not a whole work
                              # (kernel-transform spec: "a stanza, a fragment, a few
                              # concentrated lines"); also the 60s function budget.
 MAX_ROTATION_PER_READING = 12
@@ -140,9 +141,9 @@ def load_reader_source(reader_text: str) -> tuple[str, dict]:
     text = (reader_text or "").strip()
     if len(text) < 40:
         raise ValueError("the reader text is too small to cast (at least 40 characters).")
-    if len(text) > MAX_CAST_CHARS:
-        raise ValueError(f"the casting takes a concentrated text — this is "
-                         f"{len(text):,} chars (limit {MAX_CAST_CHARS:,}). Trim it.")
+    if len(text) > READER_MAX_CHARS:
+        raise ValueError(f"a reader's offering is strictly limited to {READER_MAX_CHARS:,} "
+                         f"characters — this is {len(text):,}. Distill it; the rite rewards concentration.")
     h = hashlib.sha256(text.encode("utf-8")).hexdigest()
     meta = {
         "id": "__reader__",
