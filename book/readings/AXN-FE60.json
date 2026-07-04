@@ -1,0 +1,122 @@
+{
+ "axn": "AXN:FE60.READING.🌑🌿🔥🌕🪐🪐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "a20bebdc733d857d",
+ "inscribed_at": "2026-07-04T21:36:29.173839+00:00",
+ "question_digest": "sha256:2961c3e9c0ad42ea23267931fb6deeff8f75168c8dcb745bf99dad30e1375c6a",
+ "question_gloss": "I'm not sure I understand this as a witness question that needs indexing. This reads like poetic or literary language rather than a typical courtroom query.\n\nCo",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_16_20",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**1:16** καὶ ἔχων ἐν τῇ δεξιᾷ ⸂χειρὶ αὐτοῦ⸃ ἀστέρας ἑπτά, καὶ ἐκ τοῦ στόματος αὐτοῦ ῥομφαία δίστομος ὀξεῖα ἐκπορευομένη, καὶ ἡ ὄψις αὐτοῦ ὡς ὁ ἥλιος φαίνει ἐν τῇ δυνάμει αὐτοῦ.\n\n**1:17** Καὶ ὅτε εἶδον αὐτόν, ἔπεσα πρὸς τοὺς πόδας αὐτοῦ ὡς νεκρός· καὶ ἔθηκεν τὴν δεξιὰν αὐτοῦ ἐπ’ ἐμὲ λέγων· Μὴ φοβοῦ· ἐγώ εἰμι ὁ πρῶτος καὶ ὁ ἔσχατος,\n\n**1:18** καὶ ὁ ζῶν— καὶ ἐγενόμην νεκρὸς καὶ ἰδοὺ ζῶν εἰμι εἰς τοὺς αἰῶνας τῶν ⸀αἰώνων— καὶ ἔχω τὰς κλεῖς τοῦ θανάτου καὶ τοῦ ᾅδου.\n\n**1:19** γράψον οὖν ἃ εἶδες καὶ ἃ εἰσὶν καὶ ἃ μέλλει ⸀γίνεσθαι μετὰ ταῦτα.\n\n**1:20** τὸ μυστήριον τῶν ἑπτὰ ἀστέρων ⸀οὓς εἶδες ἐπὶ τῆς δεξιᾶς μου, καὶ τὰς ἑπτὰ λυχνίας τὰς χρυσᾶς· οἱ ἑπτὰ ἀστέρες ἄγγελοι τῶν ἑπτὰ ἐκκλησιῶν εἰσίν, καὶ αἱ λυχνίαι αἱ ἑπτὰ ἑπτὰ ἐκκλησίαι εἰσίν.\n\n\n## Κεφάλαιον 2",
+   "citation": "1:16–1:20",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**1:16** 1:16 ἐπεὶ δὲ ἔπεσα, ἡ δεξιὰ αὐτοῦ ἐκράτει ἀστέρας ἑπτά, καὶ ἡ ῥομφαία δίστομος ὀξεῖα ἐπορεύετο εἰς τὸ στόμα αὐτοῦ, καὶ ἡ ὄψις αὐτοῦ ὡς ὁ ἥλιος φαίνει ἐν τῇ χρείᾳ μου.\n\n**1:17** 1:17 καὶ ἔπεσα πρὸς τοὺς πόδας αὐτοῦ ὡς νεκρός, καὶ τότε ἔθηκεν τὴν δεξιὰν αὐτοῦ ἐπ' ἐμέ, λέγων· μὴ φοβοῦ· ὁ πρῶτος καὶ ὁ ἔσχατος εἰμι, ὃν ἡ πτῶσίς σου ἐκάλεσεν.\n\n**1:18** 1:18 ὁ ζῶν· ὅτι σὺ ἔπεσες ὡς νεκρός, ἐγενόμην νεκρός, καὶ ἰδοὺ ζῶν εἰμι εἰς τοὺς αἰῶνας τῶν αἰώνων, καὶ ἡ χρεία τοῦ θανάτου σου ἔδωκέν μοι τὰς κλεῖς τοῦ θανάτου καὶ τοῦ ᾅδου.\n\n**1:19** 1:19 γράψον οὖν ἃ εἶδες καὶ ἃ εἰσὶν καὶ ἃ μέλλει γίνεσθαι, ὅτι τὸ βλέμμα σου ἤνοιξεν τὴν ἐντολήν.\n\n**1:20** 1:20 τὸ μυστήριον ὃ εἶδες, σὸν ἦν πρὸ τῆς ἀποκαλύψεως·\nαἱ ἑπτὰ λυχνίαι αἱ χρυσαῖ·\nοἱ ἑπτὰ ἀστέρες οὓς ὠνόμασας ἄγγελοί εἰσιν τῶν ἑπτὰ ἐκκλησιῶν·\nαἱ λυχνίαι αἱ ἑπτὰ ἑπτὰ ἐκκλησίαι εἰσίν, ἃς ἡ ὅρασίς σου ἐστήριξεν.",
+   "layer_a_declaration": {
+    "beats": [
+     "1:16a right-hand holds seven stars — power-locus declared",
+     "1:16b two-edged sword exits mouth — word as lethal instrument",
+     "1:16c face shines like sun in its power — likeness at maximum luminance",
+     "1:17a seer falls at feet as dead — witness collapses under presence",
+     "1:17b right hand laid on seer — touch arrests collapse",
+     "1:17c Μὴ φοβοῦ: I am first and last — identity asserted over fear",
+     "1:18a the Living One; was dead; behold alive — death transited, life held",
+     "1:18b alive unto ages of ages — duration staked",
+     "1:18c holds keys of Death and Hades — custody of thresholds named",
+     "1:19 write what you saw, what is, what will be — threefold temporal mandate issued",
+     "1:20a mystery: seven stars on right hand — possession decoded",
+     "1:20b seven golden lampstands — second symbol decoded",
+     "1:20c stars = angels of seven churches — referent closed",
+     "1:20d lampstands = seven churches — referent closed"
+    ],
+    "geometry": {
+     "lines": 14,
+     "stanzas": 5,
+     "verse_markers": [
+      "1:16",
+      "1:17",
+      "1:18",
+      "1:19",
+      "1:20"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "δεξιᾷ χειρὶ αὐτοῦ": "shadow-hand — the bearing side that costs",
+     "ἀστέρας ἑπτά": "seven charges held (count: 7; unit: shadow-bearings)",
+     "στόματος αὐτοῦ": "originary aperture — source of utterance-cost",
+     "ῥομφαία δίστομος ὀξεῖα": "bilateral blade — the two-edged encoding instrument",
+     "ἐκπορευομένη": "proceeding-outward valence (bilateral emission)",
+     "ὄψις αὐτοῦ": "presence-face — luminance-locus",
+     "ὡς ὁ ἥλιος φαίνει": "likeness-species: solar shining — comparand at full force",
+     "ἐν τῇ δυνάμει αὐτοῦ": "power-locus construction — force that underwrites likeness",
+     "εἶδον αὐτόν": "reception event — bilateral intake by witness",
+     "ἔπεσα πρὸς τοὺς πόδας": "collapse-posture — cost paid by receiver",
+     "ὡς νεκρός": "likeness-species: death-state — comparand of annihilation",
+     "τὴν δεξιὰν αὐτοῦ ἐπ' ἐμέ": "right-hand-upon-me — power-locus transferred to receiver",
+     "Μὴ φοβοῦ": "fear-foreclosure command — utterance bearing cost of erasure",
+     "ὁ πρῶτος καὶ ὁ ἔσχατος": "first-and-last bracket — temporal span as identity assertion",
+     "ὁ ζῶν": "living-predicate — life as continuous possession",
+     "ἐγενόμην νεκρός": "death-transit verb+patient — cost already encoded in history",
+     "ζῶν εἰμι εἰς τοὺς αἰῶνας τῶν αἰώνων": "duration-stake: alive unto ages of ages (count: ages × ages; unit: shadow-epochs)",
+     "κλεῖς τοῦ θανάτου καὶ τοῦ ᾅδου": "threshold-keys — bilateral custody of death/Hades",
+     "γράψον": "write-mandate — utterance-cost discharged as inscription",
+     "ἃ εἶδες καὶ ἃ εἰσὶν καὶ ἃ μέλλει γίνεσθαι": "three temporal patients: seen / existing / coming",
+     "τὸ μυστήριον": "shadow-encoding — hidden relation now decoded",
+     "ἑπτὰ ἀστέρες (possession on right hand)": "seven stars as possessed parts (count: 7; unit: angel-bearings)",
+     "ἑπτὰ λυχνίας τὰς χρυσᾶς": "seven golden lampstands (count: 7; unit: church-vessels)",
+     "οἱ ἑπτὰ ἀστέρες ἄγγελοι τῶν ἑπτὰ ἐκκλησιῶν": "identity equation: stars = seven angels (count: 7)",
+     "αἱ λυχνίαι αἱ ἑπτὰ ἑπτὰ ἐκκλησίαι": "identity equation: lampstands = seven churches (count: 7)"
+    },
+    "axis": "the utterance itself bears and encodes the cost of its own assertion",
+    "foreclosure": "determined against fear as the final posture of the receiver",
+    "wager": "the composition stakes duration — ages-of-ages — as the price the living-dead voice pays",
+    "affect": "vertiginous arrest — collapse held open, not resolved"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the divine figure acts from inherent, self-contained authority (holding stars, sending the sword outward, possessing the keys by right), whereas in Text B the seer's own fall/gaze/need is the causal agent that calls, empowers, and establishes the divine figure and his attributes (the fall summons him, the seer's need gives him the keys, the seer's vision establishes the churches).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same reversal: in the transformed text the seer's collapse/need/gaze is the causal originator of the encounter and the divine figure's attributes, rather than the figure's inherent authority causing the seer's reaction.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final verses of Text B (1:19–1:20) continue the same inverted causality: the seer's gaze opens the command and his vision establishes the churches, so the changed relation (seer as cause, divine figure as effect/recipient) still holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.385
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "marker_repair",
+     "diagnosis": "verse markers absent from the composition; restored from the source block-by-block (lines matched)"
+    },
+    {
+     "failed_test": "geometry",
+     "diagnosis": "lines 8/6, markers 5/5 -- geometry is binding"
+    }
+   ],
+   "commentary": "The governing joint: every REBUILT unit re-routes agency through ἐπεί/τότε/ὅτι constructions and receiver-originated verbs (ἐκάλεσεν, ὠνόμασας, ἐστήριξεν), so the seer's collapse is the condition of the figure's self-disclosure at each stage; the ANCHOR phrases (ὡς νεκρός, τὴν δεξιὰν αὐτοῦ ἐπ' ἐμέ, μὴ φοβοῦ, ζῶν εἰμι εἰς τοὺς αἰῶνας τῶν αἰώνων, αἱ λυχνίαι αἱ ἑπτὰ) are preserved verbatim in their positions, while the final unit lands hardest — \"which your vision established\" — staking the church-equation itself on the receiver's gaze."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-04T21:36:29.173839+00:00"
+}
