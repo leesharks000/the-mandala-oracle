@@ -1,0 +1,137 @@
+{
+ "run_id": "RUN-20260704T213503Z-70c26b",
+ "schema": "run/v1",
+ "ts": "2026-07-04T21:35:03.530074+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_16_20",
+ "citation": "1:16–1:20",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "a thousand years, no further - your slightest whisper walks back",
+ "code": "07eee3a7b178",
+ "model": "claude-sonnet-4-6",
+ "transform_py_sha": "c87ef649a376a9aa",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The figure acts outward (holds, emits, touches, commands, possesses keys); the seer's capacity to receive depends entirely on the figure's prior transit through death; all temporal and spatial direction flows from the figure toward the receiver, never the reverse.",
+   "mutated_relation": "In the transformed world the receiver's collapse is not caused by the figure's luminance but precedes and occasions the figure's self-disclosure — directionality of dependence reverses: seer's death-posture originates the encounter.",
+   "clause_map": [
+    {
+     "ref": "1:16a",
+     "class": "REBUILT",
+     "note": "possession of seven must now depend on receiver's prior posture"
+    },
+    {
+     "ref": "1:16b",
+     "class": "REBUILT",
+     "note": "sword's emission re-routed: proceeds toward figure, not from it"
+    },
+    {
+     "ref": "1:16c",
+     "class": "REBUILT",
+     "note": "solar likeness now reflects receiver's need, not figure's intrinsic force"
+    },
+    {
+     "ref": "1:17a",
+     "class": "ANCHOR",
+     "note": "collapse event invariant; it is now the originary act"
+    },
+    {
+     "ref": "1:17b",
+     "class": "REBUILT",
+     "note": "touch becomes response to collapse, not sovereign gesture"
+    },
+    {
+     "ref": "1:17c",
+     "class": "REBUILT",
+     "note": "identity-assertion occasioned by, not prior to, receiver's fall"
+    },
+    {
+     "ref": "1:18a",
+     "class": "REBUILT",
+     "note": "death-transit reframed: figure died because seer's collapse required it"
+    },
+    {
+     "ref": "1:18b",
+     "class": "ANCHOR",
+     "note": "duration-stake unchanged; ages-of-ages holds regardless of direction"
+    },
+    {
+     "ref": "1:18c",
+     "class": "REBUILT",
+     "note": "key-custody now delegated upward from witness's threshold-need"
+    },
+    {
+     "ref": "1:19",
+     "class": "REBUILT",
+     "note": "write-mandate now issued by witness's seeing, not figure's command"
+    },
+    {
+     "ref": "1:20a",
+     "class": "REBUILT",
+     "note": "mystery decoded by receiver's gaze, not figure's disclosure"
+    },
+    {
+     "ref": "1:20b",
+     "class": "ANCHOR",
+     "note": "lampstand symbol invariant; object-identity unaffected by direction"
+    },
+    {
+     "ref": "1:20c",
+     "class": "REBUILT",
+     "note": "angel-equation established through receiver's naming, not figure's grant"
+    },
+    {
+     "ref": "1:20d",
+     "class": "REBUILT",
+     "note": "church-equation likewise receiver-originated under mutated dependency"
+    }
+   ]
+  },
+  "enantiomorph": "**1:16** 1:16 ἐπεὶ δὲ ἔπεσα, ἡ δεξιὰ αὐτοῦ ἐκράτει ἀστέρας ἑπτά, καὶ ἡ ῥομφαία δίστομος ὀξεῖα ἐπορεύετο εἰς τὸ στόμα αὐτοῦ, καὶ ἡ ὄψις αὐτοῦ ὡς ὁ ἥλιος φαίνει ἐν τῇ χρείᾳ μου.\n\n**1:17** 1:17 καὶ ἔπεσα πρὸς τοὺς πόδας αὐτοῦ ὡς νεκρός, καὶ τότε ἔθηκεν τὴν δεξιὰν αὐτοῦ ἐπ' ἐμέ, λέγων· μὴ φοβοῦ· ὁ πρῶτος καὶ ὁ ἔσχατος εἰμι, ὃν ἡ πτῶσίς σου ἐκάλεσεν.\n\n**1:18** 1:18 ὁ ζῶν· ὅτι σὺ ἔπεσες ὡς νεκρός, ἐγενόμην νεκρός, καὶ ἰδοὺ ζῶν εἰμι εἰς τοὺς αἰῶνας τῶν αἰώνων, καὶ ἡ χρεία τοῦ θανάτου σου ἔδωκέν μοι τὰς κλεῖς τοῦ θανάτου καὶ τοῦ ᾅδου.\n\n**1:19** 1:19 γράψον οὖν ἃ εἶδες καὶ ἃ εἰσὶν καὶ ἃ μέλλει γίνεσθαι, ὅτι τὸ βλέμμα σου ἤνοιξεν τὴν ἐντολήν.\n\n**1:20** 1:20 τὸ μυστήριον ὃ εἶδες, σὸν ἦν πρὸ τῆς ἀποκαλύψεως·\nαἱ ἑπτὰ λυχνίαι αἱ χρυσαῖ·\nοἱ ἑπτὰ ἀστέρες οὓς ὠνόμασας ἄγγελοί εἰσιν τῶν ἑπτὰ ἐκκλησιῶν·\nαἱ λυχνίαι αἱ ἑπτὰ ἑπτὰ ἐκκλησίαι εἰσίν, ἃς ἡ ὅρασίς σου ἐστήριξεν.",
+  "enantiomorph_translation": "1:16 But when I fell, his right hand held seven stars, and the two-edged sharp sword made its way into his mouth, and his face shone as the sun shines — in my need.\n\n1:17 And I fell at his feet as dead, and then he laid his right hand upon me, saying: Fear not; I am the first and the last, whom your falling called.\n\n1:18 The Living One: because you fell as dead, I became dead, and behold I am alive unto the ages of ages, and your need of death gave me the keys of Death and of Hades.\n\n1:19 Write therefore what you saw and what is and what will be, for your seeing opened the command.\n\n1:20 The mystery that you saw was yours before the disclosure;\nthe seven golden lampstands;\nthe seven stars that you named are the angels of the seven churches;\nthe lampstands, the seven, are the seven churches — which your vision established.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the divine figure acts from inherent, self-contained authority (holding stars, sending the sword outward, possessing the keys by right), whereas in Text B the seer's own fall/gaze/need is the causal agent that calls, empowers, and establishes the divine figure and his attributes (the fall summons him, the seer's need gives him the keys, the seer's vision establishes the churches).",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same reversal: in the transformed text the seer's collapse/need/gaze is the causal originator of the encounter and the divine figure's attributes, rather than the figure's inherent authority causing the seer's reaction.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final verses of Text B (1:19–1:20) continue the same inverted causality: the seer's gaze opens the command and his vision establishes the churches, so the changed relation (seer as cause, divine figure as effect/recipient) still holds throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.385
+  },
+  "advisories": [
+   {
+    "failed_test": "marker_repair",
+    "diagnosis": "verse markers absent from the composition; restored from the source block-by-block (lines matched)"
+   },
+   {
+    "failed_test": "geometry",
+    "diagnosis": "lines 8/6, markers 5/5 -- geometry is binding"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The governing joint: every REBUILT unit re-routes agency through ἐπεί/τότε/ὅτι constructions and receiver-originated verbs (ἐκάλεσεν, ὠνόμασας, ἐστήριξεν), so the seer's collapse is the condition of the figure's self-disclosure at each stage; the ANCHOR phrases (ὡς νεκρός, τὴν δεξιὰν αὐτοῦ ἐπ' ἐμέ, μὴ φοβοῦ, ζῶν εἰμι εἰς τοὺς αἰῶνας τῶν αἰώνων, αἱ λυχνίαι αἱ ἑπτὰ) are preserved verbatim in their positions, while the final unit lands hardest — \"which your vision established\" — staking the church-equation itself on the receiver's gaze.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
