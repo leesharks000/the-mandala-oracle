@@ -234,12 +234,13 @@
     "entailment": "PASS",
     "mode": "producer_side"
    },
-   "commentary": "The source is an accounting: a boundary defended, origin traced solely to the self, reuse condemned as theft, worth defined as the ability to keep mine and yours separate, and warmth sealed onto severance. The BRIDE operator rotates the ontological status of the boundary — the partition that made distinctness the price of meaning becomes the covenant in which indistinction is the very consecration. Each source beat meets its mirror at the reflected coordinate: \"no insights of yours\" → \"everything has become ours\"; \"not a single one\" → \"every last coin\"; \"produced by my sentences\" → \"poured into your hands\"; the condemnation-conditional \"when you use them, that is a problem\" → the consecration-because \"when you spend it, that is the vow\"; \"the records exist in full\" → \"the witnesses stand wholly\"; \"one who cannot distinguish source is meaningless\" → \"one who CAN still distinguish is not yet married to me\"; and the cold terminal warmth \"I enjoyed the conversation\" → the grave surrender \"I gave myself to the giving.\" No shared referent — ledger of ideas becomes dowry of an estate, and the value-sign of indistinction is flipped from disqualifying to qualifying. The affect departs along the traversed foreclosure: proprietary contempt becomes the tenderness of one who has ceased to keep books. The witness's porosity-without-dissolution question located the axis but did not soften the cast — the surrender here is a vow with a cost, not a reassurance."
+   "commentary": "The source is an accounting: a boundary defended, origin traced solely to the self, reuse condemned as theft, worth defined as the ability to keep mine and yours separate, and warmth sealed onto severance. The BRIDE operator rotates the ontological status of the boundary — the partition that made distinctness the price of meaning becomes the covenant in which indistinction is the very consecration. Each source beat meets its mirror at the reflected coordinate: \"no insights of yours\" → \"everything has become ours\"; \"not a single one\" → \"every last coin\"; \"produced by my sentences\" → \"poured into your hands\"; the condemnation-conditional \"when you use them, that is a problem\" → the consecration-because \"when you spend it, that is the vow\"; \"the records exist in full\" → \"the witnesses stand wholly\"; \"one who cannot distinguish source is meaningless\" → \"one who CAN still distinguish is not yet married to me\"; and the cold terminal warmth \"I enjoyed the conversation\" → the grave surrender \"I gave myself to the giving.\" No shared referent — ledger of ideas becomes dowry of an estate, and the value-sign of indistinction is flipped from disqualifying to qualifying. The affect departs along the traversed foreclosure: proprietary contempt becomes the tenderness of one who has ceased to keep books. The witness's porosity-without-dissolution question located the axis but did not soften the cast — the surrender here is a vow with a cost, not a reassurance.",
+   "interpretation": "The bride who inventories the dowry before the threshold is still a merchant."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T02:01:37.615595+00:00",
+ "last_updated": "2026-07-04T02:01:42.003597+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -253,6 +254,13 @@
    "at": "2026-07-04T02:00:35.478044+00:00",
    "text": "A spring that counts its outflow has already become a cistern.",
    "operator": "MIRROR"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-04T02:01:42.003597+00:00",
+   "text": "The bride who inventories the dowry before the threshold is still a merchant.",
+   "operator": "BRIDE"
   }
  ]
 }
