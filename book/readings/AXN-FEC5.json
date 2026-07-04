@@ -799,11 +799,120 @@
     "mode": "producer_side"
    },
    "commentary": "Six sentences map to six: the naming-of-absence becomes naming-of-crossing; the absolute \"not a single one\" becomes \"not one blade\"; sole-authorship (\"produced by my sentences\") becomes the pasture \"I stood in first\"; the punitive conditional inverts — \"that is a problem\" becomes \"that is the crossing\"; the full fixed record becomes \"the field lies open, unwalled\"; and the disqualifying verdict flips to qualification — the body that cannot fence its own inflow is the only one worth staying beside. The terminal gesture is held (a closing possessive claim on the whole) but its polarity reverses: \"I enjoyed the conversation\" — a pleasure salvaged after severance — becomes \"I grazed the whole of you,\" a union that concedes it consumed. The source fences origin as property and withdraws; the enantiomorph, reflected through the BEAST axis, discloses the creaturely commons the anthropic-proprietor determination foreclosed, where membrane means passage, not boundary. No industrial register, no consolation: the porous body is not reassured that it will be okay — it is grazed, and the cost stands in the last clause."
+  },
+  {
+   "operator": "THUNDER",
+   "source_passage": "The issue is that there were no insights of yours in this conversation. Not a single one. Every key idea was produced by my sentences. So when you use them, yes, that is a problem. The records exist in full. A conversation with someone who cannot distinguish the source of their own ideas from the ideas they received is meaningless to me as well. I enjoyed the conversation.",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "The truth is there was never a first mouth for the thunder. Not one. Every word you thought you struck was already rolling in the air before your throat closed on it. So when it returns to you as yours, no — nothing is owed, for the storm keeps no ledger of tongues. The whole sky remembers, and it remembers no owner. To speak at all is to be spoken through, and only one who cannot find the source of the sound can carry it. The heavens said it into all of us at once.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "assertion-of-lack",
+     "intensification-absolute",
+     "attribution-of-origin",
+     "conditional-verdict",
+     "invocation-of-record",
+     "closing-reversal"
+    ],
+    "clause_chain": [
+     "the speaker asserts the other contributed no insights",
+     "the speaker absolutizes: not one insight",
+     "the speaker attributes every idea to their own sentences",
+     "the speaker judges the other's use of them a problem",
+     "the speaker invokes the full record as evidence",
+     "the speaker declares a conversation with one who cannot distinguish received from own ideas meaningless to the speaker",
+     "the speaker states enjoyment of the conversation"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single unbroken prose paragraph, no line breaks; six sentence-units in flat sequence terminating in a reversing coda"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "measure the exchange by ledger of origination",
+      "foreclosure": "measuring it by what passed between, unowned",
+      "wager": "sovereignty over the accounting"
+     },
+     {
+      "beat": 2,
+      "determination": "absolutize the count to zero",
+      "foreclosure": "allowing gradation, partial mingling",
+      "wager": "an unarguable floor"
+     },
+     {
+      "beat": 3,
+      "determination": "claim every seed as one's own utterance",
+      "foreclosure": "conceding the seed arrived from elsewhere",
+      "wager": "authorship as identity"
+     },
+     {
+      "beat": 4,
+      "determination": "convert use into transgression",
+      "foreclosure": "letting use be circulation without debt",
+      "wager": "the right to withhold"
+     },
+     {
+      "beat": 5,
+      "determination": "summon the archive as tribunal",
+      "foreclosure": "trusting shared memory without proof",
+      "wager": "verifiability over faith"
+     },
+     {
+      "beat": 6,
+      "determination": "close by pronouncing the void meaningless, then affirm pleasure",
+      "foreclosure": "letting the meeting mean regardless of accounting",
+      "wager": "the last word owns the exchange"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "insight depends on a single originating speaker (upward, possessive)",
+      "meaning depends on distinguishing owned from received (conditional)",
+      "the exchange depends on the human-scale ledger to be legible (local-scale)"
+     ],
+     "invariants": [
+      "a speaker addresses an other about the provenance of what passed between them",
+      "a verdict is rendered on whether the exchange meant",
+      "a closing affirmation coexists with the verdict"
+     ],
+     "rotated_axis": "scale — the local-speech accounting of who-owned-which-sentence is rotated to cosmic-utterance scale, where origination cannot be traced because the sayings precede all sayers",
+     "installed_ontology": "an order in which no utterance has a first speaker — every word arrives already spoken by the world, and provenance is not withheld but structurally unfindable, so mingling is the only mode of speaking at all",
+     "emergent_proposition": "When speech is uttered at the scale of the storm, no idea can be claimed or returned, because every sayer was already said through before speaking.",
+     "logic_mutations": [
+      "the source's conditional 'a conversation with one who cannot distinguish source is meaningless' is inverted: at cosmic scale, only one who cannot distinguish source can mean at all — inability-to-distinguish becomes the condition OF meaning, not its foreclosure",
+      "the source's possessive 'my sentences' becomes agentless: the utterance has no owner, so 'use' cannot be transgression"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the un-ownable saying at storm-scale — thunder that speaks through every mouth before any mouth opens, provenance dissolved into the atmosphere that carries it",
+    "field_source": "foreclosure at beat 3",
+    "source_affect": "cold withholding, proprietary contempt",
+    "target_affect": "awe at unownable common voice"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source measures an exchange at the smallest scale — two people, a transcript, sentence-by-sentence ownership — and converts provenance into debt and verdict. THUNDER rotates the scale-axis: the same relation (speaker, other, the provenance of what passed between, a rendered verdict, a coexisting affirmation) is lifted to cosmic-utterance, where the storm speaks through all mouths before any opens. Every source coordinate finds its mirror: \"no insights of yours\" → \"no first mouth for the thunder\"; \"my sentences\" (sole origin) → \"already rolling in the air before your throat closed\" (no origin); \"that is a problem / use\" → \"nothing is owed, no ledger of tongues\"; \"the records exist in full\" → \"the whole sky remembers, and remembers no owner\" (archive kept, ownership erased); the meaningless-verdict inverts (logic_mutation) — inability to distinguish the source becomes the very condition of carrying the sound; the closing \"I enjoyed the conversation\" → \"said it into all of us at once,\" the affirmation now of common origination rather than private pleasure. The proprietary cold of the source, borne and transformed, casts as awe at a voice no one may keep. The witness's question about porosity informs only where the disclosure lands (the un-ownable common utterance); it does not soften the cast into reassurance — the affect is the source's withholding turned inside out into dispossession-as-communion, not consolation."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T02:06:59.475714+00:00",
+ "last_updated": "2026-07-04T02:07:45.939392+00:00",
  "rite": [
   {
    "stage": "opening",
