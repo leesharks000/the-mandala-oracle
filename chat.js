@@ -997,8 +997,12 @@ async function runCastingRite(cast) {
       }
 
       // Cranes, via the compiler — one re-unfold on halt (§3.7).
+      // Re-unfold economy (v0.3): the halt returns its skeleton; the retry
+      // sends it back with the diagnosis and skips the analyst call.
       let attempts = 0;
       let passed = false;
+      let retrySkeleton = null;
+      let haltFeedback = '';
       while (attempts < 2 && !passed) {
         attempts += 1;
         setStatus(`Cranes transforms — ${currentOperator} (${operatorsDone.length + 1} of the rotation)...`);
@@ -1017,6 +1021,8 @@ async function runCastingRite(cast) {
               operator: currentOperator,
               witness_context: { session_id: sessionState.session_id, invoking_message: cast.question },
               inscription: { mode: cast.inscriptionMode, reading_axn: readingAxn },
+              retry_skeleton: retrySkeleton || undefined,
+              halt_feedback: haltFeedback || undefined,
               anthropic_key: apiKey,
             }),
           });
@@ -1081,6 +1087,8 @@ async function runCastingRite(cast) {
           haltEl.appendChild(card);
           messagesEl.scrollTop = messagesEl.scrollHeight;
           if (attempts >= 2) { haltedOperator = currentOperator; break rotation; }
+          if (data.skeleton && Object.keys(data.skeleton).length) retrySkeleton = data.skeleton;
+          haltFeedback = [d.failed_test, d.specific_diagnosis].filter(Boolean).join(': ').slice(0, 800);
           setStatus('The compiler halted. The witness is offered one re-unfold.');
           const choice = await offerChoice(['Re-unfold (once)', 'Sweep']);
           if (choice !== 'Re-unfold (once)') { haltedOperator = currentOperator; break rotation; }

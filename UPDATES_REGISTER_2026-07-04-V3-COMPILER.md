@@ -34,3 +34,18 @@ Cranes' Greek blacklist curation; exemplar prompt-layer custody; per-verse regen
 analyst ≤70 + repair ≤25 (failure path only) + composer ≤125 + back-translation ≤35 + judge ≤30 + match ≤15 — worst-case walls ≈300 with repair firing; typical actuals far under. `V3_INDEPENDENT=0` is the fallback if the cap bites in production.
 
 *TACHYON, 2026-07-04, under MANUS direction. First live rotation under v0.3 should be witnessed — SILENCE still has not executed in production.*
+
+---
+
+## Compute-efficiency pass (same date, after the second live rotation)
+
+Occasion: two consecutive live halts at C9, each costing the full pipeline plus a full-price re-unfold; the Rev 6:12–17 THUNDER halt ("and they stood" flagged as register reversion) also read as judge over-strictness.
+
+- **Re-unfold economy** — a HALT now returns its skeleton; the client sends it back with the diagnosis (`retry_skeleton`, `halt_feedback`) and the retry skips the analyst entirely: composer + gates only, with the failure named in the composer prompt. A guided repair, not a re-roll. (server + chat.js)
+- **G1 back-translation now opt-in** (`V3_BACKXLATE=1`) — the default judge compares source Greek to enantiomorph Greek directly. A blind same-language comparison has no translation layer for the round-trip illusion to live in; one large call saved per cast.
+- **G0.5 mechanical terminal gate** (zero API cost) — folded-token Jaccard between final units; a REBUILT final unit above 0.6 overlap HALTs as terminal gravitation before any judge call spends. Calibrated on real Greek: legitimate rebuild 0.10, faithful reversion 1.00. Declared-ANCHOR final units are exempt.
+- **Judge calibration** — terminal FAIL only when the changed relation itself is abandoned; register, mood, diction, or degree-of-resolution drift alone is not reversion. (The 6:17 class of borderline halt should now pass.)
+- **Composer FINAL UNIT law** — the last unit composed under the same mutated relation and re-read against it before emission.
+- **Prompt caching** — system prompts marked ephemeral-cacheable; a rotation reuses analyst/composer/judge prompts across casts.
+
+Call budget: fresh cast 4 calls (was 5); guided re-unfold 3 (was 5); mechanical reversion catch 2; bad retry payload 0. Harness: 25/25.

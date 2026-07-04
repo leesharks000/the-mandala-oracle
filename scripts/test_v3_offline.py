@@ -100,10 +100,8 @@ def run(responses):
 
 _orig = T._stream_call
 try:
-    # 1. clean pass: skeleton, compose, backxlate, judge, match
-    r = run([json.dumps(GOOD_SKEL), GOOD_COMPOSE,
-             "the springs speak inward, seven mouths at one ear\nand I turned within",
-             GOOD_JUDGE, GOOD_MATCH])
+    # 1. clean pass: skeleton, compose, judge (Greek-direct), match
+    r = run([json.dumps(GOOD_SKEL), GOOD_COMPOSE, GOOD_JUDGE, GOOD_MATCH])
     check("clean cast → PASS", r["result"] == "PASS", r.get("halt_diagnosis", {}).get("specific_diagnosis", ""))
     check("clean cast → enforce_pass_v3 True", T.enforce_pass_v3(r))
     check("clean cast records recovered law", bool(r["independent"]["recovered_law"]))
@@ -119,14 +117,14 @@ try:
     check("SHADOW-class leak → enforce_pass_v3 False", not T.enforce_pass_v3(r))
 
     # 3. G2: judge recovers NONE (FLAME class: hotter, no relation change)
-    r = run([json.dumps(GOOD_SKEL), GOOD_COMPOSE, "back translation",
+    r = run([json.dumps(GOOD_SKEL), GOOD_COMPOSE,
              json.dumps({"recovered_law": "NONE", "terminal_consistency": "PASS", "terminal_note": ""})])
     check("FLAME-class (no law) → HALT at law_recovery", r["result"] == "HALT"
           and r["halt_diagnosis"]["failed_test"] == "law_recovery", str(r["halt_diagnosis"]))
 
     # 4. skeleton malformed → repair call recovers it
     broken = json.dumps(GOOD_SKEL)[:-2] + ",}"  # trailing-comma fault, the FLAME-halt class
-    r = run([broken, json.dumps(GOOD_SKEL), GOOD_COMPOSE, "bx", GOOD_JUDGE, GOOD_MATCH])
+    r = run([broken, json.dumps(GOOD_SKEL), GOOD_COMPOSE, GOOD_JUDGE, GOOD_MATCH])
     check("malformed skeleton → repaired → PASS", r["result"] == "PASS",
           r.get("halt_diagnosis", {}).get("specific_diagnosis", ""))
 
@@ -134,7 +132,7 @@ try:
     trunc = json.dumps(GOOD_SKEL)[:200]  # a stump: unrepairable, tail does not exist
     calls = []
     it = iter([(trunc, "max_tokens"), (json.dumps(GOOD_SKEL), "end_turn"),
-               (GOOD_COMPOSE, "end_turn"), ("bx", "end_turn"),
+               (GOOD_COMPOSE, "end_turn"),
                (GOOD_JUDGE, "end_turn"), (GOOD_MATCH, "end_turn")])
     def fake_trunc(model, system, user, max_toks, api_key, wall=240.0):
         calls.append((max_toks, "TRUNCATED" in user))
@@ -155,17 +153,62 @@ try:
           and r["halt_diagnosis"]["failed_constraint"] == "S2", str(r["halt_diagnosis"]))
 
     # 6. G3: enacted mutation ≠ declared
-    r = run([json.dumps(GOOD_SKEL), GOOD_COMPOSE, "bx", GOOD_JUDGE,
+    r = run([json.dumps(GOOD_SKEL), GOOD_COMPOSE, GOOD_JUDGE,
              json.dumps({"match": "FAIL", "note": "recovered law is about likeness, declared is about flow"})])
     check("law mismatch → HALT at law_match", r["result"] == "HALT"
           and r["halt_diagnosis"]["failed_test"] == "law_match", str(r["halt_diagnosis"]))
 
     # 7. G2: terminal gravitation
-    r = run([json.dumps(GOOD_SKEL), GOOD_COMPOSE, "bx",
+    r = run([json.dumps(GOOD_SKEL), GOOD_COMPOSE,
              json.dumps({"recovered_law": "flow reverses", "terminal_consistency": "FAIL",
                          "terminal_note": "final verses revert to emission predicates"})])
     check("terminal reversion → HALT at terminal_gravitation", r["result"] == "HALT"
           and r["halt_diagnosis"]["failed_test"] == "terminal_gravitation", str(r["halt_diagnosis"]))
+
+    # 8. G0.5: mechanical terminal gate — final verse ≈ source → zero judge calls
+    SRC = ("**1:11** saying, What you see write in a book and send it\n"
+           "**1:12** and I turned to see the voice that was speaking with me and saw seven golden lampstands standing")
+    reverted = GOOD_COMPOSE.replace(
+        "**1:12** and I turned within, and the hearing was like many waters",
+        "**1:12** and I turned to see the voice that was speaking with me and saw seven golden lampstands standing")
+    ncalls = [0]
+    it8 = iter([(json.dumps(GOOD_SKEL), "end_turn"), (reverted, "end_turn")])
+    def fake8(model, system, user, max_toks, api_key, wall=240.0):
+        ncalls[0] += 1
+        return next(it8)
+    T._stream_call = fake8
+    r = T.run_compiler_v3(SRC, "MIRROR", "q", "sk-test")
+    check("mechanical terminal gate → HALT, zero judge calls", r["result"] == "HALT"
+          and r["halt_diagnosis"]["failed_test"] == "terminal_gravitation"
+          and "mechanical" in r["halt_diagnosis"]["specific_diagnosis"]
+          and ncalls[0] == 2, f"calls={ncalls[0]} diag={r['halt_diagnosis']}")
+
+    # 9. re-unfold economy: retry_skeleton skips the analyst (3 calls total)
+    ncalls9 = [0]
+    seen_feedback = [False]
+    it9 = iter([(GOOD_COMPOSE, "end_turn"), (GOOD_JUDGE, "end_turn"), (GOOD_MATCH, "end_turn")])
+    def fake9(model, system, user, max_toks, api_key, wall=240.0):
+        ncalls9[0] += 1
+        if "PRIOR COMPOSITION FAILED" in user: seen_feedback[0] = True
+        return next(it9)
+    T._stream_call = fake9
+    r = T.run_compiler_v3("SOURCE GREEK TEXT", "MIRROR", "q", "sk-test",
+                          retry_skeleton=GOOD_SKEL,
+                          halt_feedback="terminal_gravitation: the final unit reverted")
+    check("re-unfold reuses skeleton → PASS in 3 calls", r["result"] == "PASS" and ncalls9[0] == 3,
+          f"calls={ncalls9[0]}")
+    check("re-unfold carries the halt diagnosis to the composer", seen_feedback[0])
+
+    # 10. malformed retry_skeleton → immediate S2 halt, zero calls
+    ncalls10 = [0]
+    def fake10(*a, **k):
+        ncalls10[0] += 1
+        return "", "end_turn"
+    T._stream_call = fake10
+    r = T.run_compiler_v3("SRC", "MIRROR", "q", "sk-test", retry_skeleton={"beats": []})
+    check("bad retry_skeleton → S2 halt, zero calls", r["result"] == "HALT"
+          and r["halt_diagnosis"]["failed_test"] == "retry_skeleton" and ncalls10[0] == 0,
+          f"calls={ncalls10[0]}")
 finally:
     T._stream_call = _orig
 
