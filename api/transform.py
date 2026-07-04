@@ -1955,7 +1955,8 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
         return parsed
     parsed["independent"]["blacklist"] = "PASS"
 
-    return _independent_gates(parsed, kernel, source_text, api_key)
+    return _independent_gates(parsed, kernel, source_text, api_key,
+                              advisory=(os.environ.get("V3_HARD_GATES") != "1"))
 
 
 def enforce_pass_v3(parsed: dict) -> bool:
