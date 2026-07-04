@@ -542,15 +542,17 @@ function ensureCastContent() {
       readerCount.style.color = n > 950 ? '#e8a074' : '';
     });
     let readerDefaulted = false;
-    srcSel.addEventListener('change', () => {
+    const syncReaderUI = () => {
       const isReader = srcSel.value === '__reader__';
       readerBlock.style.display = isReader ? 'block' : 'none';
       castPanel.querySelector('#cast-selection').disabled = isReader;
       if (isReader && !readerDefaulted) { inscSel.value = 'none'; setInscHint(); readerDefaulted = true; }
       srcHint.textContent = isReader
-        ? 'Your pasted text becomes the source. It is never stored or inscribed — hash prefix only.'
+        ? 'Your words become the source — 40 to 1,000 characters, strictly. Never stored or inscribed; hash prefix only.'
         : `${meta.sources.filter(s => s.admissible !== false).length} sources admissible under sources/CLASSIFICATION.md.`;
-    });
+    };
+    srcSel.addEventListener('change', syncReaderUI);
+    syncReaderUI();
     const oj = document.createElement('option');
     oj.value = '';
     oj.textContent = '— let the Judgment choose —';
