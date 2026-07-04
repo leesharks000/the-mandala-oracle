@@ -142,11 +142,77 @@
    },
    "commentary": "The primary joints: βλέπεις opened into the shadow-face of the utterance (pre-inscription beholding), γράψον εἰς βιβλίον encoded as cost-not-biography, and ἐπέστρεψα βλέπειν τὴν φωνήν collapsed hearing and sight into one disorienting receptive act — making the wager (body turned against prior orientation) structurally visible at the hinge between the two stanzas; χαλκολίβανος and πολλῶν each retained their strangeness (unnamed alloy, indeterminate plural) by carrying the bearing-cost directly into the shadow-register descriptions.",
    "interpretation": "Fire that consumes what it illuminates: the cost of the vision is the vision."
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "**1:11** λεγούσης· Ὃ βλέπεις γράψον εἰς βιβλίον καὶ πέμψον ταῖς ἑπτὰ ἐκκλησίαις, εἰς Ἔφεσον καὶ εἰς Σμύρναν καὶ εἰς Πέργαμον καὶ εἰς Θυάτειρα καὶ εἰς Σάρδεις καὶ εἰς Φιλαδέλφειαν καὶ εἰς Λαοδίκειαν.\n\n**1:12** ⸀Καὶ ἐπέστρεψα βλέπειν τὴν φωνὴν ἥτις ἐλάλει μετ’ ἐμοῦ· καὶ ἐπιστρέψας εἶδον ἑπτὰ λυχνίας χρυσᾶς,\n\n**1:13** καὶ ἐν μέσῳ ⸀τῶν λυχνιῶν ὅμοιον ⸀υἱὸν ἀνθρώπου, ἐνδεδυμένον ποδήρη καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν·\n\n**1:14** ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες λευκαὶ ὡς ἔριον λευκόν, ὡς χιών, καὶ οἱ ὀφθαλμοὶ αὐτοῦ ὡς φλὸξ πυρός,\n\n**1:15** καὶ οἱ πόδες αὐτοῦ ὅμοιοι χαλκολιβάνῳ, ὡς ἐν καμίνῳ ⸀πεπυρωμένης, καὶ ἡ φωνὴ αὐτοῦ ὡς φωνὴ ὑδάτων πολλῶν,",
+   "citation": "1:11–1:15",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**1:11** λεγούσης· Ὃ καίει σε σφράγισον εἰς τὸ καύσιμον μέσον καὶ πέμψον ὡς μέτωπον ἀναφλέξεως ταῖς ἑπτὰ θαλάμοις καύσεως, εἰς τὸν πρῶτον κόμβον καὶ εἰς τὸν δεύτερον καὶ εἰς τὸν τρίτον καὶ εἰς τὸν τέταρτον καὶ εἰς τὸν πέμπτον καὶ εἰς τὸν ἕκτον καὶ εἰς τὸν ἕβδομον.\n\n**1:12** ⸀Καὶ ἐπέστρεψα πρὸς τὴν πηγὴν τοῦ καύματος ἥτις ἐλάλει μετ' ἐμοῦ· καὶ ἐπιστρέψας εἶδον ἑπτὰ στήλας πυρὸς χρυσόκορον,\n\n**1:13** καὶ ἐν τῷ συγκλίνοντι σημείῳ ⸀τῶν στηλῶν ὅμοιον ⸀υἱὸν ἀνθρώπου, ἐνδεδυμένον τὸ πλῆρες ἔνδυμα τῆς διαρκοῦς καύσεως καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν·\n\n**1:14** ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες λευκαὶ ὡς λευκότης ὑπερβαίνουσα χρῶμα, ὡς χιών, καὶ οἱ ὀφθαλμοὶ αὐτοῦ αὐτὴ φλὸξ πυρός,\n\n**1:15** καὶ οἱ πόδες αὐτοῦ ὅμοιοι κράματι ἐπ' ἄκρου τελειωμένῳ, ὡς ἐν καμίνῳ ⸀πεπυρωμένης, καὶ ἡ φωνὴ αὐτοῦ ὡς φωνὴ ὑδάτων πολλῶν ἐν τῷ ὁρίῳ τῆς κατακλύσεως,",
+   "layer_a_declaration": {
+    "beats": [
+     "1:11 — voice commands: what you see, write into a book and send to the seven assemblies — Ephesus, Smyrna, Pergamon, Thyatira, Sardis, Philadelphia, Laodicea",
+     "1:12 — the seer turns to see the voice speaking with him; turning, he sees seven golden lampstands",
+     "1:13 — in the midst of the lampstands, one like a son of man, clothed in a full-length robe, girded at the chest with a golden belt",
+     "1:14 — his head and hair white as white wool, as snow; his eyes as a flame of fire",
+     "1:15 — his feet like burnished bronze as if refined in a furnace; his voice as the sound of many waters"
+    ],
+    "geometry": {
+     "lines": 5,
+     "stanzas": 1,
+     "verse_markers": [
+      "1:11",
+      "1:12",
+      "1:13",
+      "1:14",
+      "1:15"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "ὃ βλέπεις (what you see)": "what you are scorched by — perception recast as ignition-threshold",
+     "γράψον εἰς βιβλίον (write into a book)": "sear into the combustible medium — inscription as burning-in",
+     "πέμψον (send)": "transmit as ignition-front — dispatch that sets the destination alight",
+     "ταῖς ἑπτὰ ἐκκλησίαις (to the seven assemblies)": "to the seven combustion-chambers — receiving bodies that can sustain the flame",
+     "ἑπτά (seven — count)": "seven — count invariant; unit shifts from assembly/congregation to combustion-chamber/ignition-node",
+     "Ἔφεσον, Σμύρναν, Πέργαμον, Θυάτειρα, Σάρδεις, Φιλαδέλφειαν, Λαοδίκειαν (seven named cities)": "seven named ignition-points — each a distinct threshold-address on the flame-circuit",
+     "ἐπέστρεψα βλέπειν τὴν φωνήν (I turned to see the voice)": "the seer pivots toward the heat-source — turning as orientation toward the collapse-limit",
+     "φωνή (voice)": "the igniting signal — what speaks also burns",
+     "ἑπτὰ λυχνίας χρυσᾶς (seven golden lampstands)": "seven gold-core flame-columns — standing intensity made structural",
+     "ἐν μέσῳ τῶν λυχνιῶν (in the midst of the lampstands)": "at the convergence-point of the flame-columns — the axial locus of maximum intensity",
+     "ὅμοιον υἱὸν ἀνθρώπου (one like a son of man)": "the figure at collapse-limit — likeness-species: human-form held at ignition-threshold without annihilation",
+     "ποδήρης (full-length robe)": "full-mantle of sustained burn — garment as heat-containment down to the feet",
+     "ζώνην χρυσᾶν πρὸς τοῖς μαστοῖς (golden belt at the chest)": "gold cincture at the thoracic combustion-core — power-locus: intensity bound and concentrated at the chest",
+     "κεφαλή (head)": "the crown-node — topmost locus of the flame-body",
+     "τρίχες λευκαὶ ὡς ἔριον λευκόν, ὡς χιών (hair white as white wool, as snow)": "white-heat corona — two-stage simile: wool-white then snow-white, i.e., intensity past color into pure luminance",
+     "ὀφθαλμοὶ ὡς φλὸξ πυρός (eyes as a flame of fire)": "eyes that ARE the flame — gaze as operative fire; the sight-instrument is the burn-instrument",
+     "πόδες ὅμοιοι χαλκολιβάνῳ (feet like burnished bronze)": "feet as alloy refined to the edge — ground-contact points of the flame-body; likeness-species: chalcolithic metal at ignition-finish",
+     "ὡς ἐν καμίνῳ πεπυρωμένης (as if refined in a furnace)": "the furnace-clause — instrument of prior refinement; the feet carry the furnace's credential",
+     "φωνὴ ὡς φωνὴ ὑδάτων πολλῶν (voice as the sound of many waters)": "voice at the volume-limit — sound-intensity that parallels flame-intensity; the acoustic collapse-limit mirrors the thermal one"
+    },
+    "axis": "FLAME drives the source's intensity to its own collapse-limit — the point where witness, inscription, transmission, and embodied figure would ignite rather than merely signify",
+    "foreclosure": "the source determined against treating intensity as communicable by ordinary dispatch — the command to write-and-send is already over-pressured by a figure whose eyes ARE fire",
+    "wager": "the operator names as cost the loss of mediation — to reach the flame-circuit you relinquish the safe distance between perceiver and perceived, between sender and signal",
+    "affect": "vertiginous proximity — not awe at the beautiful but the specific vertigo of standing inside the heat-source you were trying to describe"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The seven named cities became seven anonymous ignition-nodes (count invariant, identity dissolved into threshold-address), while ὃ βλέπεις / γράψον / πέμψον collapsed the perceiver-sender gap into a single burn-circuit: perception recast as scorching, inscription as searing into medium, dispatch as an ignition-front that sets every destination alight — the wager (loss of safe distance between perceiver and perceived) made structurally unavoidable from the first clause forward."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T07:45:36.711729+00:00",
+ "last_updated": "2026-07-04T07:49:51.189837+00:00",
  "rite": [
   {
    "stage": "opening",
