@@ -1365,6 +1365,12 @@ def _independent_gates(parsed: dict, kernel: dict, source_text: str, api_key: st
             parsed["result"] = "HALT"
             parsed["halt_diagnosis"] = _hd
             return parsed
+    if judged is None:
+        # advisory path continued past a plumbing failure -- no judge
+        # output exists; record SKIPPED and let the battery decide
+        parsed["independent"]["recovered_law"] = ""
+        parsed["independent"]["terminal_consistency"] = "SKIPPED"
+        return _binding_battery(parsed, source_text)
     recovered = str(judged.get("recovered_law", "")).strip()
     parsed["independent"]["recovered_law"] = recovered
     parsed["independent"]["terminal_consistency"] = str(judged.get("terminal_consistency", "FAIL")).upper()
@@ -1427,7 +1433,7 @@ def _independent_gates(parsed: dict, kernel: dict, source_text: str, api_key: st
             parsed["halt_diagnosis"] = _hd
             return parsed
 
-    return parsed
+    return _binding_battery(parsed, source_text)
 
 def _detect_lang(text: str) -> str:
     """Name the composition language for the translation brief."""
@@ -1690,7 +1696,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
                 "failed_constraint": "S2", "failed_test": "declaration",
                 "specific_diagnosis": "the operator declared no mutation or emitted no mutated checksum -- nothing may generate"}}
         if g_mut.strip() == g_src.strip():
-            if os.environ.get("V3_HARD_GATES") == "1":
+            if os.environ.get("V3_ADVISORY") != "1":
                 return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
                         "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
                         "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
@@ -1733,7 +1739,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
                 "failed_constraint": "S2", "failed_test": "declaration",
                 "specific_diagnosis": "the operator declared no mutation or emitted no mutated checksum -- nothing may generate"}}
         if g_mut.strip() == g_src.strip():
-            if os.environ.get("V3_HARD_GATES") == "1":
+            if os.environ.get("V3_ADVISORY") != "1":
                 return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
                         "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
                         "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
@@ -1805,7 +1811,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
     if hits:
         parsed["independent"]["blacklist"] = "FAIL"
         parsed["independent"]["blacklist_hits"] = hits[:12]
-        if os.environ.get("V3_HARD_GATES") == "1":
+        if os.environ.get("V3_ADVISORY") != "1":
             parsed["result"] = "HALT"
             parsed["halt_diagnosis"] = {"failed_constraint": "C8", "failed_test": "vocabulary_leak",
                 "specific_diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])}
@@ -1814,7 +1820,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
             "diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])})
     parsed["independent"]["blacklist"] = "PASS"
     out = _independent_gates(parsed, kernel, source_text, api_key, skip_terminal=True,
-                             advisory=(os.environ.get("V3_HARD_GATES") != "1"))
+                             advisory=(os.environ.get("V3_ADVISORY") == "1"))
     if out.get("result") == "HALT":
         out["post_mortem"] = {"mutated_checksum": out.get("glyphic", {}).get("mutated", ""),
                               "english": out.get("enantiomorph", "")[:4000]}
@@ -1829,8 +1835,10 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
     G3 law match. HALT at the first failed gate; nothing inscribed on HALT.
     """
     if os.environ.get("V3_LEGACY_SKELETON") != "1":
-        return _run_glyph_pipeline(source_text, operator, invoking, api_key,
-                                   retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
+        _p = _run_glyph_pipeline(source_text, operator, invoking, api_key,
+                                 retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
+        _p["_invoking"] = invoking
+        return _p
     op_spec = OPERATORS[operator]
     empty0 = {"result": "HALT", "layer_a": {}, "layer_b": {}, "kernel": {}, "skeleton": {},
               "enantiomorph": "", "enantiomorph_translation": "",
@@ -1919,6 +1927,7 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
                     "foreclosure": skel.get("foreclosure", ""), "wager": skel.get("wager", ""),
                     "affect": skel.get("affect", "")},
         "kernel": kernel,
+        "_invoking": invoking,
         "skeleton": skel,   # returned on HALT so the re-unfold reuses it
         "enantiomorph": sect("ENANTIOMORPH"),
         "enantiomorph_translation": sect("ENANTIOMORPH_TRANSLATION"),
@@ -1956,7 +1965,54 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
     parsed["independent"]["blacklist"] = "PASS"
 
     return _independent_gates(parsed, kernel, source_text, api_key,
-                              advisory=(os.environ.get("V3_HARD_GATES") != "1"))
+                              advisory=(os.environ.get("V3_ADVISORY") == "1"))
+
+
+def _binding_battery(parsed: dict, source_text: str) -> dict:
+    """THE BINDING BATTERY (regression spec, MANUS document 2026-07-04:
+    'Not PASS with warnings. No poem. No Feist. No continuation button.')
+    Runs at the tail of _independent_gates so every path inherits it.
+    Geometry is binding; law match must be EXACT; terminal reversion halts;
+    the witness's question may not leak entities into the transform or the
+    commentary (the daughter incident). V3_ADVISORY=1 demotes all of this to
+    recorded advisories -- lossless, since the flight recorder preserves
+    every run either way."""
+    _adv = os.environ.get("V3_ADVISORY") == "1"
+    _fails = []
+    def _g(x):
+        L = x.split("\n")
+        return (len([l for l in L if l.strip()]),
+                len(re.findall(r"\*\*\d+:\d+\*\*", x)))
+    sl, sm = _g(source_text)
+    ol, om = _g(parsed.get("enantiomorph", ""))
+    if sl != ol or (sm and sm != om):
+        _fails.append(("geometry", "lines %d/%d, markers %d/%d -- geometry is binding" % (ol, sl, om, sm)))
+    lm = str(parsed.get("independent", {}).get("law_match", "SKIPPED")).upper()
+    if lm not in ("PASS", "SKIPPED"):
+        _fails.append(("law_match_exact", "law match %s -- only EXACT enactment of the declared law emits" % lm))
+    if str(parsed.get("independent", {}).get("terminal_consistency", "")).upper() == "FAIL":
+        _fails.append(("terminal", str(parsed.get("independent", {}).get("terminal_note", ""))[:200]))
+    inv = parsed.get("_invoking", "")
+    if inv:
+        stop = set(("the and for with that this from into your what how who when where why does are was were "
+                    "will been being have has had she her him his they them our you not more much very").split())
+        src_fold = set(re.findall(r"[a-zA-Z\u0370-\u03FF\u1F00-\u1FFF]{4,}", _fold_greek(source_text).lower()))
+        q_toks = [w for w in re.findall(r"[a-zA-Z]{4,}", inv.lower()) if w not in stop and w not in src_fold]
+        out_fold = (_fold_greek(parsed.get("enantiomorph", "")) + " " +
+                    parsed.get("enantiomorph_translation", "") + " " +
+                    parsed.get("commentary", "")).lower()
+        leaks = sorted({w for w in q_toks if w in out_fold})
+        if leaks:
+            _fails.append(("question_entity_leak",
+                           "witness-question entities inside the transform or commentary: " + ", ".join(leaks[:6])))
+    if _fails and not _adv:
+        parsed["result"] = "HALT"
+        parsed["halt_diagnosis"] = {"failed_constraint": "BINDING",
+            "failed_test": _fails[0][0],
+            "specific_diagnosis": " · ".join("%s: %s" % (k, v) for k, v in _fails)}
+    parsed.setdefault("advisories", []).extend(
+        {"failed_test": k, "diagnosis": v} for k, v in _fails)
+    return parsed
 
 
 def enforce_pass_v3(parsed: dict) -> bool:
@@ -1965,7 +2021,7 @@ def enforce_pass_v3(parsed: dict) -> bool:
     (default) the pipeline's own result is the only verdict; the gates inside
     already recorded their objections as advisories, and nothing outside
     re-adjudicates. V3_HARD_GATES=1 restores full enforcement below."""
-    if os.environ.get("V3_HARD_GATES") != "1":
+    if os.environ.get("V3_ADVISORY") == "1":
         return parsed.get("result") == "PASS" and bool(str(parsed.get("enantiomorph", "")).strip())
     if not enforce_pass(parsed):
         return False
@@ -2923,7 +2979,9 @@ class handler(BaseHTTPRequestHandler):
                 "inscription_mode": mode,
                 "retry": bool(_rskel), "halt_feedback": _hfb[:200],
                 "invoking": invoking if _pub else _dg(invoking),
-                "code": os.environ.get("VERCEL_GIT_COMMIT_SHA", "")[:12]}
+                "code": os.environ.get("VERCEL_GIT_COMMIT_SHA", "")[:12],
+                "model": COMPILER_MODEL,
+                "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16]}
         try:
             parsed = run_compiler_v3(source_text, operator, invoking, api_key,
                                      retry_skeleton=_rskel if isinstance(_rskel, dict) else None,
