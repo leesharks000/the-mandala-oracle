@@ -1,0 +1,25 @@
+name: AXN index mirror
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pull canonical index and commit if changed
+        run: |
+          curl -sf https://raw.githubusercontent.com/leesharks000/alexanarch/main/api/axn-index.json -o /tmp/axn-index.json
+          test -s /tmp/axn-index.json
+          if ! cmp -s /tmp/axn-index.json data/axn-index.json; then
+            mkdir -p $(dirname data/axn-index.json)
+            cp /tmp/axn-index.json data/axn-index.json
+            git config user.name "axn-mirror"
+            git config user.email "mirror@alexanarch.org"
+            git add data/axn-index.json
+            git commit -m "AXN index mirror sync ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
