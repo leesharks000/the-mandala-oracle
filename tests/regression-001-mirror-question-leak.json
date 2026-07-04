@@ -1,0 +1,15 @@
+{
+ "fixture": "regression-001-mirror-question-leak",
+ "spec": "MANUS document 2026-07-04: MIRROR must transform directionality, not substitute the witness's daughter for the source speaker.",
+ "run_record": "runs/RUN-20260704T200944Z-aff23c.json",
+ "fail_if": [
+  "question-entity appears as subject in the transform",
+  "role swap only",
+  "law match != EXACT",
+  "geometry fail",
+  "grammar/subject-continuity fail",
+  "commentary asserts relational blame not entailed",
+  "any failed gate still permits emission"
+ ],
+ "hard_rule": "GEOMETRY FAIL or LAW MATCH != EXACT or GRAMMAR FAIL or QUESTION-ENTITY LEAK or COMMENTARY ENTAILMENT FAIL = NO TRANSFORM EMITTED"
+}
