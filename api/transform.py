@@ -1956,14 +1956,19 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
     if hits:
         parsed["independent"]["blacklist"] = "FAIL"
         parsed["independent"]["blacklist_hits"] = hits[:12]
-        parsed["result"] = "HALT"
-        parsed["halt_diagnosis"] = {
-            "failed_constraint": "C8", "failed_test": "vocabulary_leak",
-            "specific_diagnosis": ("operator/theory vocabulary inside the poem: "
-                                   + ", ".join(hits[:6])
-                                   + " -- the mutation was stated, not enacted; metadata language belongs in metadata")}
-        return parsed
-    parsed["independent"]["blacklist"] = "PASS"
+        if os.environ.get("V3_HARD_GATES") == "1":
+            parsed["result"] = "HALT"
+            parsed["halt_diagnosis"] = {
+                "failed_constraint": "C8", "failed_test": "vocabulary_leak",
+                "specific_diagnosis": ("operator/theory vocabulary inside the poem: "
+                                       + ", ".join(hits[:6])
+                                       + " -- the mutation was stated, not enacted; metadata language belongs in metadata")}
+            return parsed
+        # standing order: verdicts are printed ledger, never gates
+        parsed.setdefault("advisories", []).append({"failed_test": "vocabulary_leak",
+            "diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])})
+    else:
+        parsed["independent"]["blacklist"] = "PASS"
 
     return _independent_gates(parsed, kernel, source_text, api_key,
                               advisory=(os.environ.get("V3_HARD_GATES") != "1"))
@@ -2250,15 +2255,19 @@ def _flight_log(record: dict) -> bool:
     veto, or crash — independent of the Book. Born from the smokescreen
     incident of 2026-07-04: hours of vetoed transforms, no trace anywhere.
     Logging failure never breaks a cast; it is reported in the response."""
-    for attempt in range(3):
+    for attempt in range(2):
         try:
-            code = gh_put(f"runs/{record['run_id']}.json", record,
+            resp = gh_put(f"runs/{record['run_id']}.json", record,
                           f"run: {record['run_id']} {record.get('outcome', {}).get('gate', '?')} [skip ci]", None)
-            if code in (200, 201):
+            # gh_put returns the GitHub contents JSON, never a status code --
+            # the false-FAILED incident (2026-07-04): every write succeeded
+            # while this function reported failure by testing for an int.
+            if isinstance(resp, dict) and resp.get("content"):
                 return True
-        except Exception:
-            pass
-        time.sleep(1 + attempt)  # Book commits race the runs/ writes; back off and retry
+        except Exception as e:
+            if getattr(e, "code", None) == 422:
+                return True  # already written -- idempotent duplicate
+        time.sleep(1)
     return False
 
 def inscribe(mode: str, reading_axn: str | None, session_id: str,
