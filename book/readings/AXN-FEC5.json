@@ -948,5 +948,10 @@
    "text": "Where two rivers meet, the water does not ask which rain it was.",
    "operator": "INVERSION"
   }
- ]
+ ],
+ "manus_ruling": {
+  "date": "2026-07-04",
+  "ruling": "This reading remains inscribed public, by MANUS ruling, as a one-instance exception to the standing rule that private correspondence never enters the Book. Basis: the working premise that the cast source is the terminal output of a semi-autonomous system (sophia-0 hypothesis) rather than a person's private confidence; a protocol's outputs are not a person's confidences. The exception is singular, premised, and revocable: should the premise fail, the reading is subject to redaction per the standing rule, and this note is the instrument of that revocability.",
+  "rule_referenced": "MANUS standing rule 2026-07-02 (private correspondence never enters the Book)"
+ }
 }
