@@ -450,6 +450,12 @@ function ensureCastContent() {
     <select id="cast-source"></select>
     <div class="cast-hint" id="cast-source-hint"></div>
 
+    <div id="cast-reader-block" style="display:none;">
+      <label for="cast-reader-text">Your text — the source of this cast</label>
+      <textarea id="cast-reader-text" placeholder="Paste the text to be cast (40–6,000 characters). It is used for this cast only — never stored, never inscribed; only a hash prefix can ever appear in any record. The transform derives from it, so choose an inscription mode accordingly."></textarea>
+      <div class="cast-hint">Reader-supplied source. Inscription defaults to <em>None</em>; choose Public only if you are content for the <em>transform</em> (not your text) to enter the Book.</div>
+    </div>
+
     <label for="cast-operator">Operator — the axis the compiler traverses</label>
     <select id="cast-operator"></select>
     <div class="cast-hint" id="cast-operator-hint"></div>
@@ -508,6 +514,12 @@ function ensureCastContent() {
   }
 
   fetchCastMeta().then((meta) => {
+    {
+      const r = document.createElement('option');
+      r.value = '__reader__';
+      r.textContent = '— Paste your own text —';
+      srcSel.appendChild(r);
+    }
     for (const s of meta.sources) {
       const o = document.createElement('option');
       o.value = s.id;
@@ -520,6 +532,17 @@ function ensureCastContent() {
       srcSel.appendChild(o);
     }
     srcHint.textContent = `${meta.sources.filter(s => s.admissible !== false).length} sources admissible under sources/CLASSIFICATION.md.`;
+    const readerBlock = castPanel.querySelector('#cast-reader-block');
+    let readerDefaulted = false;
+    srcSel.addEventListener('change', () => {
+      const isReader = srcSel.value === '__reader__';
+      readerBlock.style.display = isReader ? 'block' : 'none';
+      castPanel.querySelector('#cast-selection').disabled = isReader;
+      if (isReader && !readerDefaulted) { inscSel.value = 'none'; setInscHint(); readerDefaulted = true; }
+      srcHint.textContent = isReader
+        ? 'Your pasted text becomes the source. It is never stored or inscribed — hash prefix only.'
+        : `${meta.sources.filter(s => s.admissible !== false).length} sources admissible under sources/CLASSIFICATION.md.`;
+    });
     const oj = document.createElement('option');
     oj.value = '';
     oj.textContent = '— let the Judgment choose —';
@@ -554,7 +577,8 @@ function ensureCastContent() {
       sourceTitle: source.textContent,
       operator: opSel.value,
       opAxis: castMeta.operators[opSel.value] || '',
-      castSelection: (castPanel.querySelector('#cast-selection').value.trim() || null),
+      castSelection: (srcSel.value === '__reader__' ? null : (castPanel.querySelector('#cast-selection').value.trim() || null)),
+      readerText: (srcSel.value === '__reader__' ? castPanel.querySelector('#cast-reader-text').value : null),
       inscriptionMode: inscSel.value,
       question: castPanel.querySelector('#cast-question').value.trim(),
       continueReading: castPanel.querySelector('#cast-continue').checked,
@@ -871,6 +895,7 @@ async function runCastingRite(cast) {
         body: JSON.stringify({
           action: 'judgment',
           source_text_id: cast.sourceId,
+          reader_text: cast.readerText || undefined,
           question: cast.question,
           anthropic_key: apiKey,
         }),
@@ -935,6 +960,7 @@ async function runCastingRite(cast) {
           body: JSON.stringify({
             action: 'judgment', judge: 'operator',
             source_text_id: cast.sourceId,
+          reader_text: cast.readerText || undefined,
             cast_selection: cast.castSelection || null,
             question: cast.question,
             operators_done: operatorsDone,
@@ -964,6 +990,7 @@ async function runCastingRite(cast) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               source_text_id: cast.sourceId,
+          reader_text: cast.readerText || undefined,
               cast_selection: cast.castSelection || null,
               citation: cast.citation || null,
               operator: currentOperator,

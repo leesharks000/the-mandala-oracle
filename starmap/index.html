@@ -4,57 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>The Starmap — The Mandala Oracle</title>
-<meta name="description" content="The navigable starmap of the Mandala Oracle: a knowledge graph whose nodes are stars. Canon texts seated on HYG stars within the zodiacal regions of the Dodecad; the Septad substrate-spine; theory-constellations; casts as novae.">
+<meta name="description" content="The navigable 3D starmap of the Mandala Oracle: a knowledge graph whose nodes are real stars. The canon seated on the HYG sphere; the Septad on the ecliptic; figures, edges, and casts as novae.">
 <style>
-  :root { --gold:#e8c76a; --gold-dim:#a08a4a; --ink:#dfe6f0; --dim:#7b86a0; --panel:#0b1020ee; --line:#2a3350; }
+  :root { --gold:#e8c76a; --ink:#dfe6f0; --dim:#7b86a0; --panel:#0b1020ee; --line:#2a3350; }
   * { margin:0; padding:0; box-sizing:border-box; }
-  html,body { height:100%; background:#04060f; color:var(--ink); font:14px/1.45 Georgia,'Times New Roman',serif; overflow:hidden; }
+  html,body { height:100%; background:#02030a; color:var(--ink); font:14px/1.45 Georgia,serif; overflow:hidden; }
   #sky { position:fixed; inset:0; display:block; cursor:grab; touch-action:none; }
   #sky.dragging { cursor:grabbing; }
   .hud { position:fixed; z-index:5; }
   #title { top:14px; left:16px; pointer-events:none; }
-  #title h1 { font-size:19px; letter-spacing:.22em; color:var(--gold); font-weight:normal; }
-  #title .sub { font-size:11px; color:var(--dim); letter-spacing:.12em; margin-top:2px; }
-  #layers { bottom:14px; left:16px; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:8px 10px; backdrop-filter:blur(4px); }
-  #layers label { display:inline-flex; align-items:center; gap:5px; margin:2px 10px 2px 0; font-size:11.5px; color:var(--dim); cursor:pointer; letter-spacing:.05em; user-select:none; }
-  #layers input { accent-color:var(--gold); }
-  #layers label.on { color:var(--ink); }
+  #title h1 { font-size:18px; letter-spacing:.24em; color:var(--gold); font-weight:normal; }
+  #title .sub { font-size:10.5px; color:var(--dim); letter-spacing:.14em; margin-top:2px; }
+  #ctl { bottom:14px; left:16px; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:8px 11px; backdrop-filter:blur(4px); max-width:min(92vw,560px); }
+  #ctl label { display:inline-flex; align-items:center; gap:5px; margin:2px 9px 2px 0; font-size:11px; color:var(--dim); cursor:pointer; letter-spacing:.04em; user-select:none; }
+  #ctl label.on { color:var(--ink); }
+  #ctl input[type=checkbox] { accent-color:var(--gold); }
+  #dimrow { display:flex; align-items:center; gap:8px; margin-top:6px; font-size:10.5px; color:var(--dim); }
+  #dim { width:150px; accent-color:var(--gold); }
   #back { bottom:14px; right:16px; font-size:12px; color:var(--dim); text-decoration:none; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:7px 12px; }
   #back:hover { color:var(--gold); }
-  #panel { top:0; right:0; height:100%; width:min(360px,92vw); background:var(--panel); border-left:1px solid var(--line); padding:20px 18px 26px; overflow-y:auto; transform:translateX(105%); transition:transform .22s ease; backdrop-filter:blur(6px); }
+  #panel { top:0; right:0; height:100%; width:min(350px,92vw); background:var(--panel); border-left:1px solid var(--line); padding:20px 18px 26px; overflow-y:auto; transform:translateX(105%); transition:transform .22s ease; backdrop-filter:blur(6px); }
   #panel.open { transform:none; }
   #panel .close { position:absolute; top:10px; right:12px; background:none; border:none; color:var(--dim); font-size:20px; cursor:pointer; }
   #panel h2 { font-size:16px; color:var(--gold); font-weight:normal; margin:6px 0 2px; line-height:1.3; }
-  #panel .kind { font-size:10.5px; letter-spacing:.18em; color:var(--dim); text-transform:uppercase; }
-  #panel .row { margin:9px 0; font-size:12.5px; color:var(--ink); }
-  #panel .row b { color:var(--dim); font-weight:normal; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; display:block; }
+  #panel .kind { font-size:10px; letter-spacing:.18em; color:var(--dim); text-transform:uppercase; }
+  #panel .row { margin:9px 0; font-size:12.5px; }
+  #panel .row b { color:var(--dim); font-weight:normal; font-size:10px; letter-spacing:.1em; text-transform:uppercase; display:block; }
   #panel .links { margin-top:14px; display:flex; flex-direction:column; gap:8px; }
   #panel .links a { color:var(--gold); text-decoration:none; font-size:13px; border:1px solid var(--line); border-radius:6px; padding:7px 10px; }
-  #panel .links a:hover { border-color:var(--gold-dim); }
-  #tip { position:fixed; z-index:6; pointer-events:none; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:6px 9px; font-size:11.5px; color:var(--ink); max-width:260px; display:none; }
-  #loading { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; color:var(--dim); letter-spacing:.3em; font-size:12px; z-index:9; background:#04060f; transition:opacity .5s; }
+  #tip { position:fixed; z-index:6; pointer-events:none; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:6px 9px; font-size:11.5px; max-width:260px; display:none; }
+  #loading { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; color:var(--dim); letter-spacing:.3em; font-size:12px; z-index:9; background:#02030a; transition:opacity .6s; }
 </style>
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+</script>
 </head>
 <body>
 <canvas id="sky"></canvas>
 <div class="hud" id="title"><h1>THE STARMAP</h1><div class="sub">THE MANDALA ORACLE · CANON IN SKY</div></div>
-<div class="hud" id="layers"></div>
+<div class="hud" id="ctl"></div>
 <a class="hud" id="back" href="/">← The Reading Surface</a>
-<div class="hud" id="panel"><button class="close" onclick="panel.classList.remove('open')">×</button><div id="panelBody"></div></div>
+<div class="hud" id="panel"><button class="close" onclick="document.getElementById('panel').classList.remove('open')">×</button><div id="panelBody"></div></div>
 <div id="tip"></div>
-<div id="loading">ASSEMBLING THE SKY</div>
-<script>
-(async function(){
-'use strict';
-const cv = document.getElementById('sky'), cx = cv.getContext('2d');
-const panel = document.getElementById('panel'), panelBody = document.getElementById('panelBody');
-const tip = document.getElementById('tip');
-window.panel = panel;
-let W=0,H=0,DPR=Math.min(devicePixelRatio||1,2);
-function resize(){ W=innerWidth; H=innerHeight; cv.width=W*DPR; cv.height=H*DPR; cv.style.width=W+'px'; cv.style.height=H+'px'; cx.setTransform(DPR,0,0,DPR,0,0); dirty=true; }
-addEventListener('resize', resize);
+<div id="loading">ASSEMBLING THE SPHERE</div>
+<script type="module">
+import * as THREE from 'three';
 
-// ── Data ─────────────────────────────────────────────
+const R = 1000;
+const cvs = document.getElementById('sky');
+const tip = document.getElementById('tip');
+const panel = document.getElementById('panel'), panelBody = document.getElementById('panelBody');
+
 const [stars, zodiacDoc, canonDoc, subDoc, edgeDoc, figDoc, evDoc] = await Promise.all([
   fetch('/sky/stars.json').then(r=>r.json()),
   fetch('/sky/zodiac.json').then(r=>r.json()),
@@ -64,263 +64,275 @@ const [stars, zodiacDoc, canonDoc, subDoc, edgeDoc, figDoc, evDoc] = await Promi
   fetch('/sky/theory-constellations.json').then(r=>r.json()).catch(()=>({figures:[]})),
   fetch('/sky/events.json').then(r=>r.json()).catch(()=>({events:[]})),
 ]);
-const zodiac = zodiacDoc.zodiac||[];
+const zodiac = zodiacDoc.zodiac || [];
 const canon = (canonDoc.canonical_texts||[]).filter(t=>t.target_star_designation);
 const canonById = Object.fromEntries(canon.map(t=>[t.id,t]));
-const substrates = subDoc.substrates||[];
-const edges = (edgeDoc.edges||edgeDoc||[]).filter(e=>canonById[e.source]&&canonById[e.target]);
-const figures = figDoc.figures||[];
-const events = (evDoc.events||[]);
-const polaris = stars.find(s=>s.name==='Polaris') || {ra:2.53,dec:89.26,mag:1.97};
+const substrates = subDoc.substrates || [];
+const edges = (edgeDoc.edges||[]).filter(e=>canonById[e.source]&&canonById[e.target]);
+const figures = figDoc.figures || [];
+const events = evDoc.events || [];
+const polaris = stars.find(s=>s.name==='Polaris') || {ra:2.53,dec:89.26};
 
-// ── Projection: equirectangular, RA increases leftward (sky convention) ──
-let zoom = 1.0, panX = 0, panY = 0, dirty = true;
-const BASE = () => Math.max(W, H*2); // world width at zoom 1
-function worldW(){ return BASE()*zoom; }
-function worldH(){ return worldW()/2; }
-function proj(ra, dec){
-  const ww = worldW(), wh = worldH();
-  let x = ((24 - (ra%24))/24)*ww + panX;
-  const y = ((90-dec)/180)*wh + panY + (H-wh)/2;
-  return [x, y, ww];
-}
-function wrapped(x, ww){ const out=[x]; if(x<W) out.push(x+ww); if(x>0) out.push(x-ww); return out; }
+function vec(ra, dec, r=R){ const raR = ra/24*Math.PI*2, dR = dec*Math.PI/180;
+  return new THREE.Vector3( r*Math.cos(dR)*Math.cos(raR), r*Math.sin(dR), -r*Math.cos(dR)*Math.sin(raR) ); }
+function ciColor(ci){ if(ci==null) return [0.80,0.84,0.92];
+  if(ci<0)   return [0.67,0.75,1.0]; if(ci<0.3) return [0.81,0.85,1.0];
+  if(ci<0.6) return [0.93,0.94,1.0]; if(ci<0.9) return [1.0,0.96,0.88];
+  if(ci<1.3) return [1.0,0.85,0.63]; return [1.0,0.69,0.44]; }
 
-// star color from B-V index
-function ciColor(ci){ if(ci==null) return '#cdd6ea';
-  if(ci< 0.0) return '#aabfff'; if(ci<0.3) return '#cfd8ff'; if(ci<0.6) return '#eef0ff';
-  if(ci<0.9) return '#fff4e0'; if(ci<1.3) return '#ffd9a0'; return '#ffb070'; }
+// ── renderer / scene / camera ──────────────────────────
+const renderer = new THREE.WebGLRenderer({ canvas: cvs, antialias:true, alpha:false });
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0x02030a);
+const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 4000);
+camera.position.set(0,0,0);
+let lon = 0.4, lat = 0.12;   // start facing Aries-ish
+function aimCamera(){ const t = vec(0,0,10); // temp
+  const dir = new THREE.Vector3(Math.cos(lat)*Math.cos(lon), Math.sin(lat), -Math.cos(lat)*Math.sin(lon));
+  camera.lookAt(dir); }
+function resize(){ renderer.setSize(innerWidth, innerHeight); camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix(); }
+addEventListener('resize', resize); resize();
+{ const c = zodiac[0]; if(c){ const v = vec(c.ra_center_hours, c.dec_center_degrees).normalize();
+  lat = Math.asin(v.y); lon = Math.atan2(-v.z, v.x); } aimCamera(); }
 
-// ── Layers ──────────────────────────────────────────
-const LAYERS = [ ['stars','Stars',true], ['band','Zodiacal Band',true], ['spine','Substrate Spine',true],
-  ['canon','Canon',true], ['edges','Edges',true], ['figures','Figures',true], ['novae','Novae',true] ];
-const L = {}; const layersEl = document.getElementById('layers');
-LAYERS.forEach(([k,name,def])=>{ L[k]=def;
-  const lab=document.createElement('label'); lab.className=def?'on':'';
-  const cb=document.createElement('input'); cb.type='checkbox'; cb.checked=def;
-  cb.onchange=()=>{ L[k]=cb.checked; lab.className=cb.checked?'on':''; dirty=true; };
-  lab.append(cb, name); layersEl.append(lab); });
+// ── HYG star field: shader points, dimmable ────────────
+const N = stars.length;
+const pos = new Float32Array(N*3), col = new Float32Array(N*3), siz = new Float32Array(N);
+stars.forEach((s,i)=>{ const v = vec(s.ra, s.dec); pos.set([v.x,v.y,v.z], i*3);
+  const c = ciColor(s.ci); col.set(c, i*3);
+  siz[i] = Math.max(0.9, 5.4 - s.mag*0.85); });
+const geo = new THREE.BufferGeometry();
+geo.setAttribute('position', new THREE.BufferAttribute(pos,3));
+geo.setAttribute('color', new THREE.BufferAttribute(col,3));
+geo.setAttribute('psize', new THREE.BufferAttribute(siz,1));
+const starMat = new THREE.ShaderMaterial({
+  uniforms: { uDim:{value:1.0}, uScale:{value:innerHeight/2} },
+  vertexShader: `attribute float psize; attribute vec3 color; varying vec3 vC; varying float vS; uniform float uScale;
+    void main(){ vC=color; vS=psize; vec4 mv=modelViewMatrix*vec4(position,1.0);
+      gl_PointSize = psize * uScale / max(1.0,-mv.z) * 8.0; gl_Position = projectionMatrix*mv; }`,
+  fragmentShader: `varying vec3 vC; varying float vS; uniform float uDim;
+    void main(){ vec2 d=gl_PointCoord-.5; float r=length(d)*2.0;
+      float a = smoothstep(1.0,0.15,r) * uDim * clamp(vS*0.5,0.25,1.0);
+      gl_FragColor = vec4(vC, a); }`,
+  transparent:true, depthWrite:false, blending:THREE.AdditiveBlending });
+scene.add(new THREE.Points(geo, starMat));
 
-// ── Spine geometry (screen-fixed) ───────────────────
-function spinePositions(){
-  const n=substrates.length, m=Math.min(W*0.09,86), gap=(W-2*m)/(n-1||1), y=Math.min(84,H*0.13);
-  return substrates.map((s,i)=>({s, x:m+gap*i, y, r:Math.min(20, gap*0.22)}));
-}
-function drawPlanet(p){
-  const {s,x,y,r}=p;
-  const grads = {
-    'Sun':      ()=>{ const g=cx.createRadialGradient(x,y,1,x,y,r*2.1); g.addColorStop(0,'#fff7d8'); g.addColorStop(.35,'#ffd76a'); g.addColorStop(1,'rgba(255,180,60,0)'); cx.fillStyle=g; cx.beginPath(); cx.arc(x,y,r*2.1,0,7); cx.fill(); },
-    'Moon':     ()=>sphere('#d8dbe2','#8f93a0', ()=>{ cx.fillStyle='rgba(110,115,130,.5)'; dot(-r*.3,-r*.2,r*.28); dot(r*.25,r*.15,r*.2); dot(-r*.05,r*.35,r*.14); }),
-    'Mercury':  ()=>sphere('#cfc6ba','#6f6a60'),
-    'Venus':    ()=>sphere('#f4e3c0','#c9a86a'),
-    'Mars':     ()=>sphere('#e8a074','#a04a2a'),
-    'Jupiter':  ()=>sphere('#e8d6b8','#b08a5a', ()=>{ cx.strokeStyle='rgba(150,105,60,.55)'; cx.lineWidth=r*.16; for(const dy of [-r*.35,-r*.05,r*.3]){ cx.beginPath(); cx.ellipse(x,y+dy,r*.92,r*.16,0,0,7); cx.stroke(); } }),
-    'Saturn':   ()=>{ cx.save(); cx.strokeStyle='rgba(220,200,150,.8)'; cx.lineWidth=2.4; cx.beginPath(); cx.ellipse(x,y,r*1.9,r*.55,-.35,0,7); cx.stroke(); cx.restore(); sphere('#efe0bb','#b39a62'); }
-  };
-  function sphere(hi,lo,extra){ const g=cx.createRadialGradient(x-r*.4,y-r*.4,r*.15,x,y,r); g.addColorStop(0,hi); g.addColorStop(1,lo); cx.fillStyle=g; cx.beginPath(); cx.arc(x,y,r,0,7); cx.fill(); if(extra){ cx.save(); cx.beginPath(); cx.arc(x,y,r,0,7); cx.clip(); extra(); cx.restore(); } }
-  function dot(dx,dy,rr){ cx.beginPath(); cx.arc(x+dx,y+dy,rr,0,7); cx.fill(); }
-  (grads[s.planet]||(()=>sphere('#ccc','#777')))();
-  cx.textAlign='center'; cx.fillStyle='#dfe6f0'; cx.font='10px Georgia'; cx.fillText(s.symbol+' '+s.office, x, y+r+14);
-  cx.fillStyle='#7b86a0'; cx.font='9px Georgia'; cx.fillText(s.substrate, x, y+r+26);
-}
+// ── sprite helpers ─────────────────────────────────────
+function textSprite(txt, {size=44, color='#e8c76a', font='Georgia', italic=false}={}){
+  const pad=8, c=document.createElement('canvas'), x=c.getContext('2d');
+  x.font = `${italic?'italic ':''}${size}px ${font}`;
+  c.width = Math.ceil(x.measureText(txt).width)+pad*2; c.height = size+pad*2;
+  x.font = `${italic?'italic ':''}${size}px ${font}`; x.textBaseline='middle';
+  x.shadowColor='rgba(0,0,0,.9)'; x.shadowBlur=6; x.fillStyle=color;
+  x.fillText(txt, pad, c.height/2);
+  const tex = new THREE.CanvasTexture(c); tex.anisotropy=2;
+  const sp = new THREE.Sprite(new THREE.SpriteMaterial({map:tex, transparent:true, depthWrite:false}));
+  sp.scale.set(c.width/6, c.height/6, 1); return sp; }
+function glowSprite(colorInner='rgba(232,199,106,1)', colorOuter='rgba(232,199,106,0)', px=64){
+  const c=document.createElement('canvas'); c.width=c.height=px; const x=c.getContext('2d');
+  const g=x.createRadialGradient(px/2,px/2,1,px/2,px/2,px/2);
+  g.addColorStop(0,colorInner); g.addColorStop(1,colorOuter);
+  x.fillStyle=g; x.fillRect(0,0,px,px);
+  return new THREE.SpriteMaterial({ map:new THREE.CanvasTexture(c), transparent:true, depthWrite:false, blending:THREE.AdditiveBlending }); }
 
-// ── Main draw ───────────────────────────────────────
-let novaPhase = 0;
-function draw(){
-  cx.clearRect(0,0,W,H);
-  // deep-space gradient
-  const bg=cx.createLinearGradient(0,0,0,H); bg.addColorStop(0,'#050912'); bg.addColorStop(1,'#03040a');
-  cx.fillStyle=bg; cx.fillRect(0,0,W,H);
+// ── groups / layers ────────────────────────────────────
+const G = { band:new THREE.Group(), spine:new THREE.Group(), canon:new THREE.Group(),
+            edges:new THREE.Group(), figures:new THREE.Group(), novae:new THREE.Group(), labels:new THREE.Group() };
+Object.values(G).forEach(g=>scene.add(g));
+const pickables = [];
 
-  // background HYG stars
-  if(L.stars){ const magCut = 5.2 + Math.log2(zoom)*0.8;
-    for(const s of stars){ if(s.mag>magCut) continue;
-      const [x,y,ww]=proj(s.ra,s.dec); if(y<-8||y>H+8) continue;
-      const r = Math.max(.4, 2.4 - s.mag*0.42) * (0.85+0.15*zoom);
-      const a = Math.max(.18, Math.min(1, 1.25 - s.mag*0.17));
-      cx.fillStyle=ciColor(s.ci); cx.globalAlpha=a;
-      for(const wx of wrapped(x,ww)){ if(wx<-6||wx>W+6) continue; cx.beginPath(); cx.arc(wx,y,r,0,7); cx.fill(); }
-    } cx.globalAlpha=1; }
+// zodiacal band: ecliptic ring through the 12 centers + symbol sprites
+{ const pts=[]; const loop=[...zodiac].sort((a,b)=>a.position-b.position);
+  for(let i=0;i<loop.length;i++){ const a=loop[i], b=loop[(i+1)%loop.length];
+    const va=vec(a.ra_center_hours,a.dec_center_degrees,R*0.985), vb=vec(b.ra_center_hours,b.dec_center_degrees,R*0.985);
+    for(let k=0;k<10;k++){ pts.push(va.clone().lerp(vb,k/10).normalize().multiplyScalar(R*0.985)); } }
+  pts.push(pts[0].clone());
+  const l = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),
+    new THREE.LineBasicMaterial({color:0xa08a4a, transparent:true, opacity:0.35}));
+  G.band.add(l);
+  for(const r of zodiac){ const sp = textSprite(r.symbol, {size:64, color:'rgba(232,199,106,.95)'});
+    sp.position.copy(vec(r.ra_center_hours, r.dec_center_degrees, R*0.96));
+    sp.userData = { kind:'region', r }; G.band.add(sp); pickables.push(sp); } }
 
-  // zodiacal band
-  if(L.band){ for(const rgn of zodiac){
-      const [x,y,ww]=proj(rgn.ra_center_hours, rgn.dec_center_degrees);
-      for(const wx of wrapped(x,ww)){ if(wx<-160||wx>W+160) continue;
-        cx.strokeStyle='rgba(160,138,74,.28)'; cx.lineWidth=1;
-        cx.strokeRect(wx-70*zoom, y-46*zoom, 140*zoom, 92*zoom);
-        cx.textAlign='center';
-        cx.fillStyle='rgba(232,199,106,.9)'; cx.font=(15+3*zoom)+'px Georgia';
-        cx.fillText(rgn.symbol+' '+rgn.sign, wx, y-46*zoom-8);
-        cx.fillStyle='#aab4cc'; cx.font='11px Georgia';
-        cx.fillText(rgn.heteronym, wx, y+46*zoom+15);
-        if(zoom>1.5){ cx.fillStyle='#7b86a0'; cx.font='9.5px Georgia';
-          wrapText(rgn.discipline||'', wx, y+46*zoom+28, 150, 11); }
-      } }
-    // Polaris / LOGOS*
-    const [px,py,ww]=proj(polaris.ra, polaris.dec);
-    for(const wx of wrapped(px,ww)){ if(wx<-40||wx>W+40) continue;
-      cx.fillStyle='#fff'; cx.beginPath(); cx.arc(wx,py,3.2,0,7); cx.fill();
-      cx.strokeStyle='rgba(232,199,106,.5)'; cx.beginPath(); cx.arc(wx,py,7.5,0,7); cx.stroke();
-      cx.textAlign='center'; cx.fillStyle='var(--gold)'; cx.fillStyle='#e8c76a'; cx.font='11px Georgia';
-      cx.fillText('Jack Feist · LOGOS*', wx, py-13);
-      cx.fillStyle='#7b86a0'; cx.font='9px Georgia'; cx.fillText('the pole that makes the cycle a cycle', wx, py+20); } }
+// Polaris — the one permanent label
+{ const p = new THREE.Sprite(glowSprite('rgba(255,255,255,1)','rgba(232,199,106,0)'));
+  p.scale.set(26,26,1); p.position.copy(vec(polaris.ra, polaris.dec, R*0.97));
+  p.userData = { kind:'polaris' }; scene.add(p); pickables.push(p);
+  const lab = textSprite('LOGOS*', {size:40}); lab.position.copy(vec(polaris.ra, polaris.dec-3.2, R*0.97)); scene.add(lab); }
 
-  // figures (theory constellations)
-  if(L.figures){ for(const f of figures){ const pts=(f.member_texts||[]).map(id=>canonById[id]).filter(Boolean)
-        .map(t=>proj(t.target_star_designation.ra, t.target_star_designation.dec));
-      cx.setLineDash(f.status==='sealed'?[]:[5,5]);
-      cx.strokeStyle = f.status==='sealed' ? 'rgba(232,199,106,.55)' : 'rgba(160,138,74,.4)'; cx.lineWidth=1.1;
-      for(const [a,b] of (f.lines||[])){ const A=canonById[a], B=canonById[b]; if(!A||!B) continue;
-        const [ax,ay,ww]=proj(A.target_star_designation.ra,A.target_star_designation.dec);
-        const [bx,by]=proj(B.target_star_designation.ra,B.target_star_designation.dec);
-        for(const wx of wrapped(ax,ww)){ const dx=wx-ax; if(Math.max(wx,bx+dx)<0||Math.min(wx,bx+dx)>W) continue;
-          cx.beginPath(); cx.moveTo(wx,ay); cx.lineTo(bx+dx,by); cx.stroke(); } }
-      cx.setLineDash([]);
-      if(pts.length){ const cxm=pts.reduce((s,p)=>s+p[0],0)/pts.length, cym=pts.reduce((s,p)=>s+p[1],0)/pts.length;
-        cx.textAlign='center'; cx.fillStyle='rgba(232,199,106,.75)'; cx.font='italic 12px Georgia';
-        cx.fillText(f.name+(f.status!=='sealed'?' (proposed)':''), cxm, cym-10); } } }
+// Septad spine on the ecliptic
+{ const loop=[...zodiac].sort((a,b)=>a.position-b.position);
+  function eclipticAt(t){ const n=loop.length, f=t*n, i=Math.floor(f)%n, k=f-Math.floor(f);
+    const a=loop[i], b=loop[(i+1)%n];
+    return vec(a.ra_center_hours,a.dec_center_degrees).lerp(vec(b.ra_center_hours,b.dec_center_degrees),k).normalize(); }
+  const texFor = (name)=>{ const c=document.createElement('canvas'); c.width=128;c.height=64; const x=c.getContext('2d');
+    const base={Moon:['#d8dbe2','#8f93a0'],Mercury:['#cfc6ba','#6f6a60'],Venus:['#f4e3c0','#c9a86a'],
+                Mars:['#e8a074','#a04a2a'],Jupiter:['#e8d6b8','#b08a5a'],Saturn:['#efe0bb','#b39a62']}[name]||['#ccc','#777'];
+    const g=x.createLinearGradient(0,0,0,64); g.addColorStop(0,base[0]); g.addColorStop(1,base[1]);
+    x.fillStyle=g; x.fillRect(0,0,128,64);
+    if(name==='Jupiter'){ x.fillStyle='rgba(150,105,60,.55)'; for(const y of [14,30,46]) x.fillRect(0,y,128,6); }
+    if(name==='Moon'){ x.fillStyle='rgba(110,115,130,.5)'; for(const [px,py,r] of [[40,22,9],[80,40,7],[60,50,5]]){ x.beginPath();x.arc(px,py,r,0,7);x.fill(); } }
+    return new THREE.CanvasTexture(c); };
+  substrates.forEach((s,i)=>{ const dir = eclipticAt((i+0.5)/substrates.length);
+    const p = dir.multiplyScalar(R*0.9);
+    let body;
+    if(s.planet==='Sun'){ body = new THREE.Sprite(glowSprite('rgba(255,240,200,1)','rgba(255,170,60,0)',128)); body.scale.set(120,120,1); }
+    else { body = new THREE.Mesh(new THREE.SphereGeometry(s.planet==='Jupiter'?26:(s.planet==='Saturn'?22:16), 24, 16),
+             new THREE.MeshBasicMaterial({ map: texFor(s.planet) })); }
+    body.position.copy(p); body.userData = { kind:'planet', s };
+    G.spine.add(body); pickables.push(body);
+    if(s.planet==='Saturn'){ const ring = new THREE.Mesh(new THREE.RingGeometry(30,44,48),
+        new THREE.MeshBasicMaterial({color:0xdcc896, side:THREE.DoubleSide, transparent:true, opacity:.7}));
+      ring.position.copy(p); ring.lookAt(0,0,0); ring.rotateX(0.5); G.spine.add(ring); }
+    const sym = textSprite(s.symbol, {size:52, color:'#dfe6f0'});
+    sym.position.copy(p.clone().normalize().multiplyScalar(R*0.9).add(new THREE.Vector3(0,38,0)));
+    G.spine.add(sym); }); }
 
-  // edges
-  if(L.edges){ const spine=spinePositions(); const mercury=spine.find(p=>p.s.planet==='Mercury');
-    for(const e of edges){ const A=canonById[e.source], B=canonById[e.target];
-      const [ax,ay,ww]=proj(A.target_star_designation.ra,A.target_star_designation.dec);
-      const [bx,by]=proj(B.target_star_designation.ra,B.target_star_designation.dec);
-      const style={companion:['rgba(207,214,234,.5)',1.1,[]],related:['rgba(123,134,160,.35)',.8,[3,4]],
-        predecessor:['rgba(123,134,160,.45)',.9,[2,3]],superseded_by:['rgba(123,134,160,.22)',.8,[2,5]],
-        bundle:['rgba(232,199,106,.16)',4,[]],chain_predecessor:['rgba(207,214,234,.55)',1.2,[]],
-        transform_of:['rgba(232,199,106,.6)',1.2,[]]}[e.kind]||['rgba(123,134,160,.3)',.8,[3,4]];
-      cx.strokeStyle=style[0]; cx.lineWidth=style[1]; cx.setLineDash(style[2]);
-      for(const wx of wrapped(ax,ww)){ const dx=wx-ax; const bx2=bx+dx;
-        if(Math.max(wx,bx2)<0||Math.min(wx,bx2)>W) continue;
-        cx.beginPath(); cx.moveTo(wx,ay);
-        if(e.kind==='transform_of'&&mercury){ cx.lineTo(mercury.x,mercury.y); }
-        cx.lineTo(bx2,by); cx.stroke();
-        if(e.kind==='predecessor'||e.kind==='chain_predecessor'){ arrow(wx,ay,bx2,by); } }
-      cx.setLineDash([]); } }
+// canon stars — gold glows, hover-only titles (M1 label sprites toggleable)
+const canonSprites = [];
+{ const matM1 = glowSprite('rgba(253,243,208,1)','rgba(232,199,106,0)');
+  for(const t of canon){ const d=t.target_star_designation;
+    const sp = new THREE.Sprite(matM1.clone());
+    const M = t.magnitude_class;
+    const s = M==='primary_canon_star_M1'?30:(M==='secondary_canon_star_M2'?20:14);
+    sp.scale.set(s,s,1); sp.position.copy(vec(d.ra,d.dec,R*0.99));
+    sp.userData = { kind:'canon', t };
+    G.canon.add(sp); pickables.push(sp); canonSprites.push(sp);
+    if(M==='primary_canon_star_M1'){ const lab = textSprite(t.title.length>30?t.title.slice(0,28)+'…':t.title, {size:30});
+      lab.position.copy(vec(d.ra,d.dec-1.8,R*0.99)); lab.visible=false; G.labels.add(lab); } } }
 
-  // canon stars
-  if(L.canon){ for(const t of canon){ const d=t.target_star_designation;
-      const [x,y,ww]=proj(d.ra,d.dec);
-      const M=t.magnitude_class; const r = M==='primary_canon_star_M1'?5:(M==='secondary_canon_star_M2'?3.4:2.4);
-      for(const wx of wrapped(x,ww)){ if(wx<-30||wx>W+30||y<-30||y>H+30) continue;
-        const g=cx.createRadialGradient(wx,y,0,wx,y,r*3); g.addColorStop(0,'rgba(232,199,106,.95)'); g.addColorStop(.4,'rgba(232,199,106,.35)'); g.addColorStop(1,'rgba(232,199,106,0)');
-        cx.fillStyle=g; cx.beginPath(); cx.arc(wx,y,r*3,0,7); cx.fill();
-        cx.fillStyle='#fdf3d0'; cx.beginPath(); cx.arc(wx,y,r*.75,0,7); cx.fill();
-        const show = M==='primary_canon_star_M1' || (M==='secondary_canon_star_M2'&&zoom>1.5) || zoom>2.6;
-        if(show){ cx.textAlign='center'; cx.fillStyle='rgba(232,199,106,.92)'; cx.font=(M==='primary_canon_star_M1'?'11.5px':'10px')+' Georgia';
-          cx.fillText(t.title.length>34?t.title.slice(0,32)+'…':t.title, wx, y-r-7); } } } }
+// arcs
+function arc(a, b, mat, dashed=false){ const va=vec(a.ra,a.dec).normalize(), vb=vec(b.ra,b.dec).normalize();
+  const pts=[]; for(let k=0;k<=16;k++){ pts.push(va.clone().lerp(vb,k/16).normalize().multiplyScalar(R*0.988)); }
+  const g = new THREE.BufferGeometry().setFromPoints(pts);
+  const l = new THREE.Line(g, mat); if(dashed) l.computeLineDistances(); return l; }
+{ const styles = {
+    companion: new THREE.LineBasicMaterial({color:0xcfd6ea, transparent:true, opacity:.5}),
+    chain_predecessor: new THREE.LineBasicMaterial({color:0xcfd6ea, transparent:true, opacity:.55}),
+    bundle: new THREE.LineBasicMaterial({color:0xe8c76a, transparent:true, opacity:.16}),
+    transform_of: new THREE.LineBasicMaterial({color:0xe8c76a, transparent:true, opacity:.6}),
+    related: new THREE.LineDashedMaterial({color:0x7b86a0, transparent:true, opacity:.4, dashSize:8, gapSize:10}),
+    predecessor: new THREE.LineDashedMaterial({color:0x7b86a0, transparent:true, opacity:.5, dashSize:5, gapSize:7}),
+    superseded_by: new THREE.LineDashedMaterial({color:0x7b86a0, transparent:true, opacity:.25, dashSize:4, gapSize:9}) };
+  for(const e of edges){ const A=canonById[e.source].target_star_designation, B=canonById[e.target].target_star_designation;
+    const m = styles[e.kind]||styles.related;
+    G.edges.add(arc(A,B,m, m.isLineDashedMaterial)); } }
 
-  // novae
-  if(L.novae){ for(const ev of events){ let ra,dec;
-      const t = ev.source_text && canonById[ev.source_text];
-      if(t){ ra=t.target_star_designation.ra; dec=t.target_star_designation.dec; }
-      else { ra=polaris.ra; dec=polaris.dec-4; }
-      const [x,y,ww]=proj(ra,dec);
-      const ph = (novaPhase + (hash(ev.axn||'')%100)/100)%1;
-      const rr = 5+ph*11, a = .55*(1-ph);
-      for(const wx of wrapped(x,ww)){ if(wx<-20||wx>W+20) continue;
-        cx.strokeStyle=`rgba(255,120,90,${a})`; cx.lineWidth=1.4;
-        cx.beginPath(); cx.arc(wx,y,rr,0,7); cx.stroke();
-        if(zoom>1.8&&ev.date){ cx.fillStyle='rgba(255,140,110,.7)'; cx.font='8.5px Georgia'; cx.textAlign='center';
-          cx.fillText('cast · '+ev.date.slice(0,10), wx, y+rr+10); } } } }
+// figures
+{ const m = new THREE.LineDashedMaterial({color:0xe8c76a, transparent:true, opacity:.45, dashSize:10, gapSize:9});
+  for(const f of figures){ for(const [a,b] of (f.lines||[])){ const A=canonById[a],B=canonById[b]; if(!A||!B) continue;
+      G.figures.add(arc(A.target_star_designation,B.target_star_designation,m,true)); }
+    const members=(f.member_texts||[]).map(id=>canonById[id]).filter(Boolean);
+    if(members.length){ const c=members.reduce((s,t)=>s.add(vec(t.target_star_designation.ra,t.target_star_designation.dec).normalize()),new THREE.Vector3()).normalize();
+      const lab = textSprite(f.name+(f.status!=='sealed'?' (proposed)':''), {size:34, italic:true});
+      lab.position.copy(c.multiplyScalar(R*0.94)); G.figures.add(lab); } } }
 
-  // spine last (screen-fixed, above sky)
-  if(L.spine){ cx.fillStyle='rgba(4,6,15,.55)'; cx.fillRect(0,0,W,Math.min(84,H*.13)+44);
-    for(const p of spinePositions()) drawPlanet(p); }
-}
-function arrow(ax,ay,bx,by){ const ang=Math.atan2(by-ay,bx-ax), mx=ax+(bx-ax)*.62, my=ay+(by-ay)*.62;
-  cx.beginPath(); cx.moveTo(mx,my);
-  cx.lineTo(mx-7*Math.cos(ang-.4), my-7*Math.sin(ang-.4));
-  cx.moveTo(mx,my); cx.lineTo(mx-7*Math.cos(ang+.4), my-7*Math.sin(ang+.4)); cx.stroke(); }
-function wrapText(txt,x,y,w,lh){ const words=(txt||'').split(' '); let line='',yy=y;
-  for(const wd of words){ const test=line?line+' '+wd:wd;
-    if(cx.measureText(test).width>w&&line){ cx.fillText(line,x,yy); line=wd; yy+=lh; } else line=test; }
-  if(line) cx.fillText(line,x,yy); }
-function hash(s){ let h=0; for(let i=0;i<s.length;i++){ h=(h*31+s.charCodeAt(i))|0; } return Math.abs(h); }
+// novae
+const novaSprites = [];
+{ const m = (()=>{ const c=document.createElement('canvas'); c.width=c.height=64; const x=c.getContext('2d');
+    x.strokeStyle='rgba(255,120,90,1)'; x.lineWidth=4; x.beginPath(); x.arc(32,32,24,0,7); x.stroke();
+    return new THREE.SpriteMaterial({map:new THREE.CanvasTexture(c), transparent:true, depthWrite:false, blending:THREE.AdditiveBlending}); })();
+  for(const ev of events){ const t = ev.source_text && canonById[ev.source_text];
+    const p = t ? vec(t.target_star_designation.ra, t.target_star_designation.dec, R*0.985)
+                : vec(polaris.ra, polaris.dec-5, R*0.985);
+    const sp = new THREE.Sprite(m.clone()); sp.position.copy(p);
+    sp.userData = { kind:'nova', ev, ph: Math.random() };
+    G.novae.add(sp); pickables.push(sp); novaSprites.push(sp); } }
 
-// ── Interaction ─────────────────────────────────────
-let drag=null, pinch=null;
-cv.addEventListener('pointerdown', e=>{ cv.setPointerCapture(e.pointerId);
-  if(pinchPts.set(e.pointerId,[e.clientX,e.clientY]), pinchPts.size===2){ pinch=pinchDist(); drag=null; }
-  else drag={x:e.clientX,y:e.clientY,moved:false}; cv.classList.add('dragging'); });
-const pinchPts=new Map();
-function pinchDist(){ const p=[...pinchPts.values()]; return Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1]); }
-cv.addEventListener('pointermove', e=>{
+// ── controls: drag rotate · wheel/pinch fov · dim slider ──
+let dragging=null; const pinchPts=new Map(); let pinchD=0;
+cvs.addEventListener('pointerdown', e=>{ cvs.setPointerCapture(e.pointerId);
+  pinchPts.set(e.pointerId,[e.clientX,e.clientY]);
+  if(pinchPts.size===2){ pinchD=pd(); dragging=null; } else dragging={x:e.clientX,y:e.clientY,moved:false};
+  cvs.classList.add('dragging'); });
+function pd(){ const p=[...pinchPts.values()]; return Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1]); }
+cvs.addEventListener('pointermove', e=>{
   if(pinchPts.has(e.pointerId)) pinchPts.set(e.pointerId,[e.clientX,e.clientY]);
-  if(pinchPts.size===2&&pinch){ const d=pinchDist(); zoomAt(W/2,H/2, d/pinch); pinch=d; return; }
-  if(drag){ const dx=e.clientX-drag.x, dy=e.clientY-drag.y;
-    if(Math.abs(dx)+Math.abs(dy)>3) drag.moved=true;
-    panX+=dx; panY+=dy; drag.x=e.clientX; drag.y=e.clientY; dirty=true; }
-  else hover(e.clientX,e.clientY); });
-cv.addEventListener('pointerup', e=>{ pinchPts.delete(e.pointerId); pinch=null;
-  cv.classList.remove('dragging');
-  if(drag&&!drag.moved) select(e.clientX,e.clientY);
-  drag=null; });
-cv.addEventListener('wheel', e=>{ e.preventDefault(); zoomAt(e.clientX,e.clientY, Math.exp(-e.deltaY*0.0012)); }, {passive:false});
-function zoomAt(sx,sy,f){ const nz=Math.min(14,Math.max(.5,zoom*f)); f=nz/zoom;
-  panX = sx - (sx-panX)*f - ( ( (worldW()*f-worldW()) * ((sx-panX)/worldW()) ) - (sx-panX)*(f-1) );
-  // simpler exact recompute:
-  const wxFrac=(sx-panX)/worldW(), wyFrac=(sy-panY-(H-worldH())/2)/worldH();
-  zoom=nz;
-  panX = sx - wxFrac*worldW();
-  panY = sy - wyFrac*worldH() - (H-worldH())/2;
-  dirty=true; }
+  if(pinchPts.size===2){ const d=pd(); camera.fov=THREE.MathUtils.clamp(camera.fov*(pinchD/d),18,95); camera.updateProjectionMatrix(); pinchD=d; return; }
+  if(dragging){ const k = camera.fov/60 * 0.0032;
+    const dx=e.clientX-dragging.x, dy=e.clientY-dragging.y;
+    if(Math.abs(dx)+Math.abs(dy)>3) dragging.moved=true;
+    lon += dx*k; lat = THREE.MathUtils.clamp(lat + dy*k, -1.55, 1.55);
+    dragging.x=e.clientX; dragging.y=e.clientY; aimCamera(); }
+  else hover(e); });
+cvs.addEventListener('pointerup', e=>{ pinchPts.delete(e.pointerId);
+  cvs.classList.remove('dragging');
+  if(dragging && !dragging.moved) pick(e, true);
+  dragging=null; });
+cvs.addEventListener('wheel', e=>{ e.preventDefault();
+  camera.fov = THREE.MathUtils.clamp(camera.fov*Math.exp(e.deltaY*0.0011), 18, 95);
+  camera.updateProjectionMatrix(); }, {passive:false});
 
-function nearestCanon(sx,sy,rad){ let best=null,bd=rad*rad;
-  for(const t of canon){ const d=t.target_star_designation; const [x,y,ww]=proj(d.ra,d.dec);
-    for(const wx of wrapped(x,ww)){ const dd=(wx-sx)**2+(y-sy)**2; if(dd<bd){bd=dd;best=t;} } }
-  return best; }
-function spineHit(sx,sy){ for(const p of spinePositions()){ if((p.x-sx)**2+(p.y-sy)**2 < (p.r+8)**2) return p.s; } return null; }
-function regionHit(sx,sy){ for(const r of zodiac){ const [x,y,ww]=proj(r.ra_center_hours,r.dec_center_degrees);
-    for(const wx of wrapped(x,ww)){ if(Math.abs(wx-sx)<70*zoom&&Math.abs(y-sy)<46*zoom) return r; } } return null; }
-
-function hover(sx,sy){ const s=L.spine&&spineHit(sx,sy);
-  if(s){ showTip(sx,sy, `<b style="color:#e8c76a">${s.symbol} ${s.office}</b> · ${s.substrate}<br>${(s.function||'').split('.')[0]}.`); return; }
-  const t=L.canon&&nearestCanon(sx,sy,10);
-  if(t){ showTip(sx,sy, `<b style="color:#e8c76a">${t.title}</b><br>${t.author_heteronym||''} · ${short(t.magnitude_class)}`); return; }
-  hideTip(); }
-function showTip(x,y,html){ tip.innerHTML=html; tip.style.display='block';
-  tip.style.left=Math.min(x+14,W-270)+'px'; tip.style.top=Math.min(y+14,H-60)+'px'; }
+const ray = new THREE.Raycaster(); const ptr = new THREE.Vector2();
+function pick(e, select){ ptr.set(e.clientX/innerWidth*2-1, -(e.clientY/innerHeight)*2+1);
+  ray.setFromCamera(ptr, camera);
+  const hits = ray.intersectObjects(pickables, false);
+  const h = hits[0] && hits[0].object;
+  if(!h){ if(select) panel.classList.remove('open'); hideTip(); return null; }
+  if(select) openFor(h.userData); else tipFor(h.userData, e);
+  return h; }
+function hover(e){ pick(e, false); }
+function tipFor(u, e){ let html='';
+  if(u.kind==='canon'){ const t=u.t; html=`<b style="color:#e8c76a">${t.title}</b><br>${t.author_heteronym||''}`; }
+  else if(u.kind==='planet'){ const s=u.s; html=`<b style="color:#e8c76a">${s.symbol} ${s.office}</b> · ${s.substrate}`; }
+  else if(u.kind==='region'){ const r=u.r; html=`<b style="color:#e8c76a">${r.symbol} ${r.sign}</b> — ${r.heteronym}`; }
+  else if(u.kind==='nova'){ const ev=u.ev; html=`<b style="color:#ff8a6a">cast</b> · ${(ev.date||'').slice(0,10)}`; }
+  else if(u.kind==='polaris'){ html=`<b style="color:#e8c76a">Jack Feist · LOGOS*</b><br>the pole that makes the cycle a cycle`; }
+  if(html){ tip.innerHTML=html; tip.style.display='block';
+    tip.style.left=Math.min(e.clientX+14, innerWidth-270)+'px'; tip.style.top=Math.min(e.clientY+14, innerHeight-60)+'px'; }
+  else hideTip(); }
 function hideTip(){ tip.style.display='none'; }
-function short(m){ return {primary_canon_star_M1:'M1 anchor',secondary_canon_star_M2:'M2',tertiary_canon_star_M3:'M3'}[m]||m; }
-
-function select(sx,sy){
-  const s=L.spine&&spineHit(sx,sy);
-  if(s){ openPanel(`<div class="kind">Substrate · Planetary Spine</div><h2>${s.symbol} ${s.planet} — ${s.office}</h2>
-    <div class="row"><b>Substrate</b>${s.substrate}</div>
-    <div class="row"><b>Function</b>${s.function||''}</div>`); return; }
-  const t=L.canon&&nearestCanon(sx,sy,12);
-  if(t){ const d=t.target_star_designation;
-    openPanel(`<div class="kind">Canon Star · ${short(t.magnitude_class)}</div><h2>${t.title}</h2>
+function openFor(u){ let html='';
+  if(u.kind==='canon'){ const t=u.t, d=t.target_star_designation;
+    html=`<div class="kind">Canon Star</div><h2>${t.title}</h2>
       <div class="row"><b>Heteronym</b>${t.author_heteronym||'—'}</div>
-      <div class="row"><b>Zodiacal Region</b>${t.zodiacal_region||'—'}</div>
       <div class="row"><b>Star</b>${d.name||[d.bayer,d.con].filter(Boolean).join(' ')||'—'} · RA ${d.ra.toFixed(2)}h · Dec ${d.dec.toFixed(1)}° · mag ${d.mag}</div>
       <div class="row"><b>Assignment</b>${t.sky_assignment_basis||''}</div>
       ${t.anchor_for_room?`<div class="row"><b>Room anchor</b>${t.anchor_for_room}</div>`:''}
-      ${t.note?`<div class="row"><b>Note</b>${t.note}</div>`:''}
-      <div class="links">
-        <a href="/?sigil=${encodeURIComponent(t.id)}">Read with Sigil →</a>
-        ${t.source_path?`<a href="/${t.source_path.replace(/^\//,'')}">Open source text →</a>`:''}
-      </div>`); return; }
-  const r=L.band&&regionHit(sx,sy);
-  if(r){ openPanel(`<div class="kind">Zodiacal Region · Position ${r.position}</div><h2>${r.symbol} ${r.sign} — ${r.heteronym}</h2>
-      <div class="row"><b>Discipline</b>${r.discipline||'(awaiting adjudication)'}</div>
-      <div class="row"><b>Anchor star</b>${(r.anchor_star&&(r.anchor_star.name||r.anchor_star.bayer))||'—'}</div>
-      <div class="row"><b>Canon here</b>${canon.filter(t=>(t.sky_assignment_basis||'').includes(r.sign)).map(t=>t.title).join(' · ')||'—'}</div>`); return; }
-  panel.classList.remove('open'); }
-function openPanel(html){ panelBody.innerHTML=html; panel.classList.add('open'); }
+      <div class="links"><a href="/?sigil=${encodeURIComponent(t.id)}">Read with Sigil →</a></div>`; }
+  else if(u.kind==='planet'){ const s=u.s;
+    html=`<div class="kind">Substrate · Septad</div><h2>${s.symbol} ${s.planet} — ${s.office}</h2>
+      <div class="row"><b>Substrate</b>${s.substrate}</div><div class="row"><b>Function</b>${s.function||''}</div>`; }
+  else if(u.kind==='region'){ const r=u.r;
+    html=`<div class="kind">Zodiacal Region · Position ${r.position}</div><h2>${r.symbol} ${r.sign} — ${r.heteronym}</h2>
+      <div class="row"><b>Discipline</b>${r.discipline||'(awaiting adjudication)'}</div>`; }
+  else if(u.kind==='nova'){ const ev=u.ev;
+    html=`<div class="kind">Stellar Event · Cast</div><h2>Nova — ${(ev.date||'').slice(0,10)}</h2>
+      <div class="row"><b>Mode</b>${ev.mode||''}</div>
+      <div class="row"><b>Source</b>${ev.source_text ? (canonById[ev.source_text]||{}).title : 'unanchored (pole locus)'}</div>
+      ${ev.axn?`<div class="row"><b>Record</b>${ev.axn}</div>`:''}`; }
+  else if(u.kind==='polaris'){ html=`<div class="kind">The Pole</div><h2>Jack Feist · LOGOS*</h2>
+      <div class="row">Outside the twelve — the axis around which the zodiac rotates. The pole star is what makes the cycle a cycle.</div>`; }
+  if(html){ panelBody.innerHTML=html; panel.classList.add('open'); } }
 
-// ── Loop ────────────────────────────────────────────
-resize();
-// initial framing: center the zodiacal band
-{ const wh=worldH(); panY = H/2 - ((90-15)/180)*wh - (H-wh)/2; }
-function loop(){ if(L.novae){ novaPhase=(novaPhase+0.008)%1; dirty=true; }
-  if(dirty){ draw(); dirty=false; }
+// ── HUD: toggles + dim + labels ────────────────────────
+const ctl = document.getElementById('ctl');
+const TOGGLES = [['band','Band',G.band],['spine','Septad',G.spine],['canon','Canon',G.canon],
+                 ['edges','Edges',G.edges],['figures','Figures',G.figures],['novae','Novae',G.novae],['labels','M1 Labels',G.labels]];
+for(const [k,name,grp] of TOGGLES){ const on = k!=='labels';
+  grp.visible = on;
+  const lab=document.createElement('label'); lab.className=on?'on':'';
+  const cb=document.createElement('input'); cb.type='checkbox'; cb.checked=on;
+  cb.onchange=()=>{ grp.visible=cb.checked; lab.className=cb.checked?'on':'';
+    if(k==='labels') G.labels.children.forEach(c=>c.visible=cb.checked); };
+  lab.append(cb, name); ctl.append(lab); }
+const dimrow=document.createElement('div'); dimrow.id='dimrow';
+dimrow.innerHTML='<span>DIM</span><input id="dim" type="range" min="10" max="170" value="100"><span>BRIGHT</span>';
+ctl.append(dimrow);
+document.getElementById('dim').addEventListener('input', e=>{ starMat.uniforms.uDim.value = e.target.value/100; });
+
+// ── loop ───────────────────────────────────────────────
+const clock = new THREE.Clock();
+function loop(){ const t = clock.getElapsedTime();
+  for(const sp of novaSprites){ const ph=(t*0.35 + sp.userData.ph)%1;
+    const s = 10 + ph*26; sp.scale.set(s,s,1); sp.material.opacity = 0.75*(1-ph); }
+  renderer.render(scene, camera);
   requestAnimationFrame(loop); }
+starMat.uniforms.uScale.value = innerHeight/2;
+addEventListener('resize', ()=>{ starMat.uniforms.uScale.value = innerHeight/2; });
 document.getElementById('loading').style.opacity=0;
-setTimeout(()=>document.getElementById('loading').remove(), 600);
+setTimeout(()=>document.getElementById('loading').remove(), 700);
 loop();
-})();
 </script>
 </body>
 </html>

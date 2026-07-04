@@ -132,6 +132,31 @@ _rate_bucket: dict[str, list[float]] = {}
 # Source loading (Layer 1.3 — source-index-by-canon-star lookup)
 # ──────────────────────────────────────────────────────────────────────
 
+def load_reader_source(reader_text: str) -> tuple[str, dict]:
+    """Reader-supplied source for a cast. PRIVACY (MANUS standing rule):
+    the pasted text is used for this cast only; it is NEVER stored, logged,
+    or inscribed anywhere; only a sha256 prefix may appear in any record.
+    Derived transform content follows the witness's chosen inscription mode."""
+    text = (reader_text or "").strip()
+    if len(text) < 40:
+        raise ValueError("the reader text is too small to cast (at least 40 characters).")
+    if len(text) > MAX_CAST_CHARS:
+        raise ValueError(f"the casting takes a concentrated text — this is "
+                         f"{len(text):,} chars (limit {MAX_CAST_CHARS:,}). Trim it.")
+    h = hashlib.sha256(text.encode("utf-8")).hexdigest()
+    meta = {
+        "id": "__reader__",
+        "title": "Reader-supplied text",
+        "creator": "the witness",
+        "reader_supplied": True,
+        "admissible": True,
+        "text_sha256_prefix": h[:16],
+        "privacy_note": ("Reader-supplied source: text used for this cast only; "
+                         "never stored or inscribed; hash prefix is the sole permitted trace."),
+    }
+    return text, meta
+
+
 def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, dict]:
     """Load the transformable main text for a canon source.
 
@@ -1313,7 +1338,7 @@ class handler(BaseHTTPRequestHandler):
                 if entry is None:
                     return self._json(400, {"error": "unknown source for operator judgment."})
                 try:
-                    passage, _m = load_source(body.get("source_text_id", ""), body.get("cast_selection"))
+                    passage, _m = (load_reader_source(body.get("reader_text", "")) if body.get("source_text_id") == "__reader__" else load_source(body.get("source_text_id", ""), body.get("cast_selection")))
                 except ValueError:
                     passage = ""
                 op, reason = judgment_operator(
@@ -1419,7 +1444,7 @@ class handler(BaseHTTPRequestHandler):
             return self._json(400, {"error": "inscription.mode must be public | encrypted | none"})
 
         try:
-            source_text, meta = load_source(body.get("source_text_id", ""), body.get("cast_selection"))
+            source_text, meta = (load_reader_source(body.get("reader_text", "")) if body.get("source_text_id") == "__reader__" else load_source(body.get("source_text_id", ""), body.get("cast_selection")))
         except ValueError as e:
             return self._json(400, {"error": str(e)})
 
