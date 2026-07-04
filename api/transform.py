@@ -680,6 +680,11 @@ def append_expansion(source_entry: dict, source_text: str, cast_selection: str |
     expansion holds the anchor, operator, geometry, verification, and a
     sealed_ref into the reading record — structure at the verse, semantics
     withheld (EA-MANDALA-INSCRIPTION-01 §1.3)."""
+
+    if not source_entry or source_entry.get("id") == "__reader__" or source_entry.get("reader_supplied"):
+        # Reader-supplied offerings have no canon source to anchor an expansion
+        # ledger to; the reading itself is already inscribed. Nothing to append.
+        return None
     sid = source_entry["id"]
     fname = f"{EXPANSIONS_DIR}/{sid}.json"
     now = datetime.now(timezone.utc).isoformat()
