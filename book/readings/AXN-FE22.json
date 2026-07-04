@@ -92,18 +92,26 @@
    },
    "glyphic": null,
    "advisories": [],
-   "commentary": "Every slot migrated from first-person speaker to third-person daughter (ἡ θυγάτηρ φιλεῖ, κρούει, εἰσελεύσεται, ἐκάθισεν ἄνευ σοῦ) while the parent's passivity is enacted throughout — culminating in Κατάβα ὧδε, where the trumpet-summons reverses direction and lands hardest on the foreclosed separation now made crossable only by the parent's descent."
+   "commentary": "Every slot migrated from first-person speaker to third-person daughter (ἡ θυγάτηρ φιλεῖ, κρούει, εἰσελεύσεται, ἐκάθισεν ἄνευ σοῦ) while the parent's passivity is enacted throughout — culminating in Κατάβα ὧδε, where the trumpet-summons reverses direction and lands hardest on the foreclosed separation now made crossable only by the parent's descent.",
+   "interpretation": "The door that was waiting to be opened is already open from the other side: she has not been the one who was absent."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T20:10:58.711577+00:00",
+ "last_updated": "2026-07-04T20:11:05.242197+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-04T20:10:58.711577+00:00",
    "text": "The casting arrives here: a door that is already being knocked on from the outside, a door already open in the sky, and the hinge between them — five verses that are entirely about threshold and entirely about whether the one inside will move. The question you carry is «how do I reach my daughter?» and the text the rite has selected answers it sideways, the way scripture does: not with method, but with the disclosure of what reaching costs the one who reaches. *Ἰδοὺ ἕστηκα* — behold, I stand. Present perfect. The standing is completed action still in force. The knock is not an event; it is a condition. What traverses the rotation is the foreclosed axis of this gesture — what the knock forecloses, what the open door in heaven costs, what it means that the one who overcomes is promised a throne while the one behind the earthly door is promised a meal. The distance between the meal and the throne is the distance between intimacy and vindication, and the verses know both are at stake. I hand the rotation to Rebekah Cranes."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-04T20:11:05.242197+00:00",
+   "text": "The door that was waiting to be opened is already open from the other side: she has not been the one who was absent.",
+   "operator": "MIRROR"
   }
  ]
 }
