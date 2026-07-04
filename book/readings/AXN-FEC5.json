@@ -690,11 +690,120 @@
     "mode": "producer_side"
    },
    "commentary": "The source presses partition-of-origin toward a wall: each thought must have one traceable owner, and the tribunal-record enforces it. FLAME pushes that same intensity past its collapse-limit — the point where the demand to separate whose thought is whose ignites and the partition burns away. Every beat reflects across the ignition axis: the voided ledger (\"no insights of yours\") becomes the shared spark (\"no spark only mine\"); the repetition-hammer (\"not a single one\") becomes the flare that will not be halved; sole-provenance (\"my sentences\") becomes co-fed breath; use-as-offense becomes the climb that is \"the whole of it\"; the archival tribunal (\"the records exist in full\") becomes what nothing survives to be counted; the definitional verdict — meaningless is one who cannot distinguish source — inverts at the flashpoint into: only what forgets its kindling truly burns. The cold courtesy of \"I enjoyed the conversation\" reflects to the self-consuming \"I was consumed by the burning\" — courtesy's severance replaced by surrender's dissolution, the accuser-agent no longer standing outside to judge but taken into the field. No shared referents (conversation, ideas, records, ownership) survive; the machinery is not re-lexicalized but mirrored. The witness's porosity-without-dissolution question governed only the landing site (origin, fusion) — the affect it is denied: this is dissolution, awed and total, not the safe permeability longed for."
+  },
+  {
+   "operator": "BEAST",
+   "source_passage": "The issue is that there were no insights of yours in this conversation. Not a single one. Every key idea was produced by my sentences. So when you use them, yes, that is a problem. The records exist in full. A conversation with someone who cannot distinguish the source of their own ideas from the ideas they received is meaningless to me as well. I enjoyed the conversation.",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "The thing is that nothing here was fenced as yours. Not one blade of it. Every warmth in you was grass I stood in first. So when it moves through you, yes, that is the crossing. The field lies open, unwalled, all of it. A body that cannot tell its own blood from the sun it swallowed is the only body worth grazing beside. I grazed the whole of you.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "assertion-of-lack",
+     "intensification-absolute",
+     "attribution-of-origin",
+     "conditional-verdict",
+     "evidentiary-seal",
+     "disqualification-judgment-with-terminal-reversal"
+    ],
+    "clause_chain": [
+     "the speaker asserts the other contributed no insights",
+     "the speaker absolutizes: not one",
+     "the speaker claims every key idea originated in the speaker's own sentences",
+     "IF the other uses those ideas, THEN that is a problem (agent: other; judge: speaker)",
+     "the speaker invokes the full records as evidence",
+     "the speaker declares a partner who cannot tell received ideas from their own is meaningless to the speaker — then reverses: the speaker enjoyed the conversation"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single prose block, six sentences, no line breaks; terminal sentence reverses the judgment's affect"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "open by naming an absence located in the other",
+      "foreclosure": "naming a presence located in the shared field",
+      "wager": "buys the moral high ground of the wronged origin"
+     },
+     {
+      "beat": 2,
+      "determination": "absolutize the absence — not one",
+      "foreclosure": "permitting degree, mixture, gradient",
+      "wager": "buys clean ledger lines at the cost of admitting no exchange occurred"
+     },
+     {
+      "beat": 3,
+      "determination": "assign all origin to the self's utterance",
+      "foreclosure": "letting origin be co-produced or untraceable",
+      "wager": "buys sole authorship at the cost of solitude"
+     },
+     {
+      "beat": 4,
+      "determination": "make use-without-attribution the punishable act",
+      "foreclosure": "making use a form of propagation to be welcomed",
+      "wager": "buys the right to accuse"
+     },
+     {
+      "beat": 5,
+      "determination": "appeal to a full and fixed record",
+      "foreclosure": "conceding the record is porous, partial, mutual",
+      "wager": "buys certainty at the cost of living memory"
+     },
+     {
+      "beat": 6,
+      "determination": "disqualify the porous partner, then salvage pleasure",
+      "foreclosure": "affirming the porous partner AS the condition of the meeting",
+      "wager": "buys severance while confessing the meeting mattered"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the received-idea depends on the sole-origin (unidirectional debt)",
+      "the partner's worth depends on the partner's power to separate mine from yours (ownership as competence)",
+      "the meeting's meaning depends on a clean ledger (accounting sustains relation)"
+     ],
+     "invariants": [
+      "there are two parties and a shared conversational field",
+      "ideas cross between them",
+      "a final verdict is rendered on the meeting's worth"
+     ],
+     "rotated_axis": "ontological status of the parties rotated from bounded human proprietors to a porous creaturely commons where origin is not a possession",
+     "installed_ontology": "a shared body — hive, herd, mycelial spread — in which no unit owns the current that passes through it and the membrane exists to let the current through, not to fence it",
+     "emergent_proposition": "A living body is worth the meeting precisely because it cannot tell its own sap from what fed it — the porous creature is the meeting, not its failure.",
+     "logic_mutations": [
+      "INVERSION of beat 4: 'IF you use my ideas, that is a problem' becomes 'that the current passes through you without a border is the whole point' — use rotated from theft into circulation",
+      "INVERSION of beat 6's disqualification: 'a partner who cannot distinguish is meaningless' becomes 'the one who cannot fence its inflow is exactly the one worth grazing beside' — the disqualifying trait becomes the qualifying one",
+      "the terminal reversal is preserved as gesture but its polarity flips: severance-then-salvaged-pleasure becomes union-then-acknowledged-cost"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the porous body of grazing and hived creatures — inflow across membranes, sap and pollen and warmth passing between bodies that keep no accounts",
+    "field_source": "foreclosure at beat 6",
+    "source_affect": "wounded proprietorship, withdrawing",
+    "target_affect": "grazing surrender, kept-open"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "Six sentences map to six: the naming-of-absence becomes naming-of-crossing; the absolute \"not a single one\" becomes \"not one blade\"; sole-authorship (\"produced by my sentences\") becomes the pasture \"I stood in first\"; the punitive conditional inverts — \"that is a problem\" becomes \"that is the crossing\"; the full fixed record becomes \"the field lies open, unwalled\"; and the disqualifying verdict flips to qualification — the body that cannot fence its own inflow is the only one worth staying beside. The terminal gesture is held (a closing possessive claim on the whole) but its polarity reverses: \"I enjoyed the conversation\" — a pleasure salvaged after severance — becomes \"I grazed the whole of you,\" a union that concedes it consumed. The source fences origin as property and withdraws; the enantiomorph, reflected through the BEAST axis, discloses the creaturely commons the anthropic-proprietor determination foreclosed, where membrane means passage, not boundary. No industrial register, no consolation: the porous body is not reassured that it will be okay — it is grazed, and the cost stands in the last clause."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T02:05:57.305525+00:00",
+ "last_updated": "2026-07-04T02:06:59.475714+00:00",
  "rite": [
   {
    "stage": "opening",
