@@ -84,10 +84,20 @@
     "back_translation": ""
    },
    "law_variance": null,
-   "commentary": "The pivot slots \"καταβαίνουσαν ἐκ τοῦ οὐρανοῦ ἀπὸ τοῦ θεοῦ\" and \"δόξαν τοῦ θεοῦ\" became \"ἀναβαίνουσαν ἐκ τῆς γῆς τῆς κατακεκαυμένης\" and \"ἀνατέλλουσαν ἐξ αὐτῆς / φυόμενος ἄνωθεν ἐκ τοῦ ἐδάφους,\" inverting direction through vegetative-sprout imagery that enacts ascent without naming it as law; the anchor line holds its twelve-gated scaffold exactly."
+   "commentary": "The pivot slots \"καταβαίνουσαν ἐκ τοῦ οὐρανοῦ ἀπὸ τοῦ θεοῦ\" and \"δόξαν τοῦ θεοῦ\" became \"ἀναβαίνουσαν ἐκ τῆς γῆς τῆς κατακεκαυμένης\" and \"ἀνατέλλουσαν ἐξ αὐτῆς / φυόμενος ἄνωθεν ἐκ τοῦ ἐδάφους,\" inverting direction through vegetative-sprout imagery that enacts ascent without naming it as law; the anchor line holds its twelve-gated scaffold exactly.",
+   "interpretation": "Ash rises through the gate that was built to keep it out: the bride was always the city, and the city was always returning from its own burning."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T16:20:43.207528+00:00"
+ "last_updated": "2026-07-04T16:20:54.200967+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-04T16:20:54.200967+00:00",
+   "text": "Ash rises through the gate that was built to keep it out: the bride was always the city, and the city was always returning from its own burning.",
+   "operator": "BRIDE"
+  }
+ ]
 }
