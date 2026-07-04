@@ -1,0 +1,72 @@
+{
+ "axn": "AXN:FEB0.READING.🌑🌘🌟🌓🌙🔥",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "23df8275f6776027",
+ "inscribed_at": "2026-07-04T19:53:35.693763+00:00",
+ "question_digest": "sha256:744ef7c4a8d9db038d7d9da0fe1bee8eceb6bdcbf361aa83ff04a144dd5ee88a",
+ "question_gloss": "Question about methods or processes for opening or activating a mandala structure.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_83_89",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**5:1** Καὶ εἶδον ἐπὶ τὴν δεξιὰν τοῦ καθημένου ἐπὶ τοῦ θρόνου βιβλίον γεγραμμένον ἔσωθεν καὶ ⸀ὄπισθεν, κατεσφραγισμένον σφραγῖσιν ἑπτά.\n\n**5:2** καὶ εἶδον ἄγγελον ἰσχυρὸν κηρύσσοντα ἐν φωνῇ μεγάλῃ· Τίς ⸀ἄξιος ἀνοῖξαι τὸ βιβλίον καὶ λῦσαι τὰς σφραγῖδας αὐτοῦ;\n\n**5:3** καὶ οὐδεὶς ἐδύνατο ἐν τῷ ⸀οὐρανῷ ⸂οὐδὲ ἐπὶ τῆς γῆς οὐδὲ⸃ ὑποκάτω τῆς γῆς ἀνοῖξαι τὸ βιβλίον οὔτε βλέπειν αὐτό.\n\n**5:4** καὶ ⸀ἐγὼ ἔκλαιον πολὺ ὅτι οὐδεὶς ἄξιος εὑρέθη ἀνοῖξαι τὸ βιβλίον οὔτε βλέπειν αὐτό·\n\n**5:5** καὶ εἷς ἐκ τῶν πρεσβυτέρων λέγει μοι· Μὴ κλαῖε· ἰδοὺ ἐνίκησεν ὁ λέων ὁ ἐκ τῆς φυλῆς Ἰούδα, ἡ ῥίζα Δαυίδ, ⸀ἀνοῖξαι τὸ βιβλίον καὶ τὰς ἑπτὰ σφραγῖδας αὐτοῦ.\n\n**5:6** Καὶ εἶδον ἐν μέσῳ τοῦ θρόνου καὶ τῶν τεσσάρων ζῴων καὶ ἐν μέσῳ τῶν πρεσβυτέρων ἀρνίον ⸀ἑστηκὸς ὡς ἐσφαγμένον, ⸀ἔχων κέρατα ἑπτὰ καὶ ὀφθαλμοὺς ἑπτά, ⸀οἵ εἰσιν τὰ ἑπτὰ πνεύματα τοῦ θεοῦ, ⸀ἀπεσταλμένοι εἰς πᾶσαν τὴν γῆν.\n\n**5:7** καὶ ἦλθεν καὶ εἴληφεν ἐκ τῆς δεξιᾶς τοῦ καθημένου ἐπὶ τοῦ θρόνου.",
+   "citation": "5:1–5:7",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**5:1** I saw, upon the throne a hand holding a scroll written within and on the back, sealed with seven seals, and the door was shut fast.\n\n**5:2** I saw a mighty angel crying out with a great voice: Who is worthy to receive the prize — to open the scroll from the throne and loose its seven seals?\n\n**5:3** None was found — neither in the heavens above, nor across the earth, nor beneath it — who could open the scroll from the throne.\n\n**5:4** I wept bitterly, for no one was found worthy to take the scroll into their hands.\n\n**5:5** Then one of the elders said to me: Weep no more — the Lion of the sword and the victory, the branch and root of the ancient seat, has prevailed to take the scroll and open its seven seals.\n\n**5:6** And I saw in the midst of the throne and the four living creatures and in the midst of the elders a Lamb standing as though slain, having seven horns and seven eyes, which are the seven spirits of God sent out into all the earth.\n\n**5:7** And he came and took the scroll from the right hand of the one seated upon the throne.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {
+     "units": 7
+    }
+   },
+   "layer_b_declaration": {
+    "axis": "SHADOW",
+    "pivot": "glyphic-checksum/v1"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In TEXT A the scroll is in the right hand of the one seated on the throne (and the Lamb takes it from that right hand); in TEXT B the scroll is upon/of the throne itself (a hand upon the throne holds it), reattributing possession from the enthroned figure's right hand to the throne as the locus, until verse 5:7 reverts to the Lamb taking it from the right hand of the one seated on the throne.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change—relocation of scroll possession from the enthroned one's right hand to the throne as locus—but frames it as a possession/attribution shift, not an agency-direction flip where the throne becomes the active origin of transfer toward the Lamb.",
+    "terminal_consistency": "FAIL",
+    "terminal_note": "Verse 5:7 of TEXT B explicitly reverts to TEXT A's structure — the Lamb takes the scroll from the right hand of the one seated on the throne — abandoning the throne-as-holder relation established in 5:1–5:5.",
+    "back_translation": ""
+   },
+   "law_variance": {
+    "declared": "In 5:7, the direction of agency flips: the Lamb approaching and taking FROM the enthroned one becomes the enthroned one releasing and extending TOWARD the Lamb — the throne is the active origin of transfer, not the passive source.",
+    "recovered": "In TEXT A the scroll is in the right hand of the one seated on the throne (and the Lamb takes it from that right hand); in TEXT B the scroll is upon/of the throne itself (a hand upon the throne holds it), reattributing possession from the enthroned figure's right hand to the throne as the locus, until verse 5:7 reverts to the Lamb taking it from the right hand of the one seated on the throne.",
+    "note": "The recovered claim identifies a real structural change—relocation of scroll possession from the enthroned one's right hand to the throne as locus—but frames it as a possession/attribution shift, not an agency-direction flip where the throne becomes the active origin of transfer toward the Lamb."
+   },
+   "glyphic": {
+    "source": "**5:1** 👁️ · 👑🪑➡️ · 🖐️✋ · 📜✍️🔁 · 🔒🔒🔒🔒🔒🔒🔒\n\n**5:2** 👁️ · 👼💪📣🔊 · ❓🏆 · 📜🔓 · ⛓️🪤7️⃣\n\n**5:3** 0️⃣🚫 · 🌌☁️⬆️ · 🌍⬅️➡️ · 🌍⬇️ · 📜🔓👁️\n\n**5:4** 👤😭💧💧 · 0️⃣🏆 · 📜🔓🚫 · 👁️🚫\n\n**5:5** 👴📜➡️👤 · 🛑😭 · 🦁⚔️🏆 · 🌿🌱👑🏛️ · 📜🔓 · 🔒🔒🔒🔒🔒🔒🔒\n\n**5:6** 👁️🏟️ · 👑🪑🫀 · 🐑🧍⚔️🩸 · 📯📯📯📯📯📯📯 · 👁️👁️👁️7️⃣ · 🌬️✨7️⃣🕊️ · ➡️🌍🌍\n\n**5:7** 🐑🚶➡️ · 🤲📜⬅️ · 🖐️✋👑🪑",
+    "mutated": "**5:1** 👁️ · 👑🪑🖐️✋ · 📜✍️🔁 · 🔒⬅️🪑7️⃣ · 🚪🚧🔐\n\n**5:2** 👁️ · 👼💪📣🔊 · ❓🎁🏆 · 👑🪑➡️📜 · 🔓🗝️7️⃣\n\n**5:3** 0️⃣🚫 · 🌌☁️⬆️ · 🌍⬅️➡️ · 🌍⬇️ · 👑🪑➡️📜❌\n\n**5:4** 👤😭💧💧 · 0️⃣🎯 · 👑🪑🤲🚫 · 📜🫳🚷\n\n**5:5** 👴📜➡️👤 · 🛑😭 · 🦁⚔️🏆 · 🌿🌱👑🏛️ · 👑🪑🤲⬇️📜 · 🔒🔓7️⃣\n\n**5:6** 👁️🏟️ · 👑🪑🫀 · 🐑🧍⚔️🩸 · 📯📯📯📯📯📯📯 · 👁️👁️👁️7️⃣ · 🌬️✨7️⃣🕊️ · ➡️🌍🌍\n\n**5:7** 👑🪑🤲📜⬇️ · 🐑🫴⬅️ · 🖐️✋🪑➡️🐑"
+   },
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation: the final portion reverts toward the source's relations -- Verse 5:7 of TEXT B explicitly reverts to TEXT A's structure — the Lamb takes the scroll from the right hand of the one seated on the throne — abandoning the throne-as-holder relation established in 5:1–5:5."
+    }
+   ],
+   "commentary": "The translation surrenders the familiar cadence so that each glyph-cluster rules its own moment rather than borrowing warmth from a remembered text."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-04T19:53:35.693763+00:00"
+}
