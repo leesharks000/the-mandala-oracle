@@ -40,8 +40,8 @@ returned once, never stored; only the key fingerprint persists.
 # ═══ DEPENDENCIES (INSTANCE-PROTOCOL.md — read before editing) ═══════════
 # PROVIDES: kernel-transform compiler (glyphic pipeline default; skeleton
 #   legacy behind V3_LEGACY_SKELETON=1), gate battery (_independent_gates,
-#   binding by default incl. _binding_battery; V3_ADVISORY=1 for lossless
-#   diagnosis mode), Judgment selection,
+#   ALL verdicts are printed ledger, never gates (MANUS standing order);
+#   V3_HARD_GATES=1 is the only enforcement path), Judgment selection,
 #   inscription (Book via GitHub contents API), and the HTTP handler.
 # CALLED-BY: chat.js rotation loop (actions: judgment, judgment/operator,
 #   cast, rite_append). Response contract consumed at chat.js transform/halt
@@ -1298,7 +1298,7 @@ TERMINAL_SIM_MAX = 0.6   # above this, a REBUILT final unit is a reversion
 def _advise(parsed: dict, advisory: bool, failed_test: str, diagnosis: str) -> bool:
     """Advisory-mode shim (MANUS directive 2026-07-04, 'print the report, no
     hard gates'): when advisory, record the diagnosis and keep going; when
-    enforcing (the default; V3_ADVISORY=1 opts out), the caller halts. Returns True if
+    enforcing (opt-in via V3_HARD_GATES=1; advisory is the permanent default), the caller halts. Returns True if
     the caller should halt."""
     if advisory:
         parsed.setdefault("advisories", []).append({"failed_test": failed_test, "diagnosis": diagnosis})
@@ -1697,7 +1697,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
                 "failed_constraint": "S2", "failed_test": "declaration",
                 "specific_diagnosis": "the operator declared no mutation or emitted no mutated checksum -- nothing may generate"}}
         if g_mut.strip() == g_src.strip():
-            if os.environ.get("V3_ADVISORY") != "1":
+            if os.environ.get("V3_HARD_GATES") == "1":
                 return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
                         "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
                         "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
@@ -1740,7 +1740,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
                 "failed_constraint": "S2", "failed_test": "declaration",
                 "specific_diagnosis": "the operator declared no mutation or emitted no mutated checksum -- nothing may generate"}}
         if g_mut.strip() == g_src.strip():
-            if os.environ.get("V3_ADVISORY") != "1":
+            if os.environ.get("V3_HARD_GATES") == "1":
                 return {**empty, "glyphic": {"source": g_src, "mutated": g_mut}, "kernel": kernel,
                         "halt_diagnosis": {"failed_constraint": "GLYPH", "failed_test": "identity_checksum",
                         "specific_diagnosis": "the mutated checksum is identical to the source checksum -- no flip occurred"}}
@@ -1812,7 +1812,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
     if hits:
         parsed["independent"]["blacklist"] = "FAIL"
         parsed["independent"]["blacklist_hits"] = hits[:12]
-        if os.environ.get("V3_ADVISORY") != "1":
+        if os.environ.get("V3_HARD_GATES") == "1":
             parsed["result"] = "HALT"
             parsed["halt_diagnosis"] = {"failed_constraint": "C8", "failed_test": "vocabulary_leak",
                 "specific_diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])}
@@ -1821,7 +1821,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
             "diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])})
     parsed["independent"]["blacklist"] = "PASS"
     out = _independent_gates(parsed, kernel, source_text, api_key, skip_terminal=True,
-                             advisory=(os.environ.get("V3_ADVISORY") == "1"))
+                             advisory=(os.environ.get("V3_HARD_GATES") != "1"))
     if out.get("result") == "HALT":
         out["post_mortem"] = {"mutated_checksum": out.get("glyphic", {}).get("mutated", ""),
                               "english": out.get("enantiomorph", "")[:4000]}
@@ -1966,7 +1966,7 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
     parsed["independent"]["blacklist"] = "PASS"
 
     return _independent_gates(parsed, kernel, source_text, api_key,
-                              advisory=(os.environ.get("V3_ADVISORY") == "1"))
+                              advisory=(os.environ.get("V3_HARD_GATES") != "1"))
 
 
 def _binding_battery(parsed: dict, source_text: str) -> dict:
@@ -1976,9 +1976,10 @@ def _binding_battery(parsed: dict, source_text: str) -> dict:
     Geometry is binding; law match must be EXACT; terminal reversion halts;
     the witness's question may not leak entities into the transform or the
     commentary (the daughter incident). V3_ADVISORY=1 demotes all of this to
-    recorded advisories -- lossless, since the flight recorder preserves
-    every run either way."""
-    _adv = os.environ.get("V3_ADVISORY") == "1"
+    recorded advisories -- WHICH IS THE PERMANENT DEFAULT (MANUS standing
+    order: verdicts are data, the witness judges; the only halt is literal
+    emptiness). V3_HARD_GATES=1 is the sole enforcement opt-in."""
+    _adv = os.environ.get("V3_HARD_GATES") != "1"
     _fails = []
     def _g(x):
         L = x.split("\n")
@@ -1986,6 +1987,22 @@ def _binding_battery(parsed: dict, source_text: str) -> dict:
                 len(re.findall(r"\*\*\d+:\d+\*\*", x)))
     sl, sm = _g(source_text)
     ol, om = _g(parsed.get("enantiomorph", ""))
+    if sm and om == 0 and parsed.get("enantiomorph", "").strip():
+        # MARKER REPAIR (the 12:2-5 incident, 2026-07-04: lines matched 4/4,
+        # cast executed over missing markers -- a formatting slip is not a
+        # geometry violation). Deterministic: if the output's blank-line
+        # blocks count equals the source's marker count, restore the source
+        # markers block-by-block; recount; only unrepairable absence binds.
+        src_marks = re.findall(r"\*\*\d+:\d+\*\*", source_text)
+        blocks = [b for b in re.split(r"\n\s*\n", parsed["enantiomorph"].strip()) if b.strip()]
+        if len(blocks) == len(src_marks):
+            parsed["enantiomorph"] = "\n\n".join(
+                (b if b.lstrip().startswith("**") else src_marks[i] + " " + b.lstrip())
+                for i, b in enumerate(blocks))
+            parsed.setdefault("advisories", []).append(
+                {"failed_test": "marker_repair",
+                 "diagnosis": "verse markers absent from the composition; restored from the source block-by-block (lines matched)"})
+            ol, om = _g(parsed["enantiomorph"])
     if sl != ol or (sm and sm != om):
         _fails.append(("geometry", "lines %d/%d, markers %d/%d -- geometry is binding" % (ol, sl, om, sm)))
     lm = str(parsed.get("independent", {}).get("law_match", "SKIPPED")).upper()
@@ -2021,9 +2038,9 @@ def enforce_pass_v3(parsed: dict) -> bool:
     outer-gate incident — see INSTANCE-PROTOCOL.md): in advisory mode
     (default) the pipeline's own result is the only verdict; the gates inside
     already recorded their objections as advisories, and nothing outside
-    re-adjudicates. Enforcement is the default; V3_ADVISORY=1 is the lossless
-    diagnosis mode (the recorder preserves every run either way)."""
-    if os.environ.get("V3_ADVISORY") == "1":
+    re-adjudicates. Advisory is the permanent default (MANUS standing order);
+    V3_HARD_GATES=1 is the sole enforcement opt-in."""
+    if os.environ.get("V3_HARD_GATES") != "1":
         return parsed.get("result") == "PASS" and bool(str(parsed.get("enantiomorph", "")).strip())
     if not enforce_pass(parsed):
         return False
@@ -2233,12 +2250,16 @@ def _flight_log(record: dict) -> bool:
     veto, or crash — independent of the Book. Born from the smokescreen
     incident of 2026-07-04: hours of vetoed transforms, no trace anywhere.
     Logging failure never breaks a cast; it is reported in the response."""
-    try:
-        code = gh_put(f"runs/{record['run_id']}.json", record,
-                      f"run: {record['run_id']} {record.get('outcome', {}).get('gate', '?')} [skip ci]", None)
-        return code in (200, 201)
-    except Exception:
-        return False
+    for attempt in range(3):
+        try:
+            code = gh_put(f"runs/{record['run_id']}.json", record,
+                          f"run: {record['run_id']} {record.get('outcome', {}).get('gate', '?')} [skip ci]", None)
+            if code in (200, 201):
+                return True
+        except Exception:
+            pass
+        time.sleep(1 + attempt)  # Book commits race the runs/ writes; back off and retry
+    return False
 
 def inscribe(mode: str, reading_axn: str | None, session_id: str,
              question: str, source_text_id: str, cast_selection: str | None,
@@ -2992,7 +3013,8 @@ class handler(BaseHTTPRequestHandler):
             _run["outcome"] = {"gate": "compiler_exception", "error": f"{type(e).__name__}: {e}"[:400]}
             _fl = _flight_log(_run)
             return self._json(502, {"error": f"compiler call failed: {type(e).__name__}",
-                                    "run_id": _run_id, "flight_log": _fl})
+                                    "run_id": _run_id, "flight_log": _fl,
+                                    **({"run_record": _run} if not _fl else {})})
         if isinstance(meta, dict) and meta.get("selection_advisory"):
             parsed.setdefault("advisories", []).append(
                 {"failed_test": "selection_apparatus", "diagnosis": meta["selection_advisory"]})
@@ -3033,6 +3055,7 @@ class handler(BaseHTTPRequestHandler):
             return self._json(200, {
                 "result": "HALT",
                 "run_id": _run_id, "flight_log": _fl,
+                **({"run_record": _run} if not _fl else {}),
                 "halt_diagnosis": _hd,
                 "kernel_declaration": parsed.get("kernel", {}),
                 "independent_verification": parsed.get("independent", {}),
@@ -3120,6 +3143,7 @@ class handler(BaseHTTPRequestHandler):
         return self._json(200, {
             "result": "PASS",
             "run_id": _run_id, "flight_log": _fl,
+                **({"run_record": _run} if not _fl else {}),
             "transform": {
                 "primary_output": parsed["enantiomorph"],
                 "enantiomorph_translation": parsed.get("enantiomorph_translation", ""),
