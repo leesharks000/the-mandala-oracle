@@ -236,7 +236,17 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
                 sel_units = units[a - 1:b]
                 primary_units = [u for u in sel_units if unit_is_primary(u, entry)]
                 if not primary_units:
-                    raise ValueError("only the primary text is transformable — the selected range is entirely apparatus (MANUS ruling, 2026-07-02).")
+                    # LET-IT-RUN (MANUS, 2026-07-04): a range the classifier
+                    # calls entirely apparatus proceeds whole, with the
+                    # objection recorded — classification has been wrong
+                    # before (this very source, this very night), and a
+                    # misclassification must never sever the rite. The
+                    # 2026-07-02 ruling survives as an advisory.
+                    primary_units = sel_units
+                    meta = dict(meta)
+                    meta["selection_advisory"] = ("selection classified entirely as apparatus by the "
+                        "attribution map; cast proceeded per MANUS let-it-run directive (2026-07-04) — "
+                        "review this source's attribution mapping")
                 dropped = [a + i for i, u in enumerate(sel_units) if not unit_is_primary(u, entry)]
                 if dropped:
                     # Auto-narrowing (MANUS direction, 2026-07-04): the ruling bars apparatus
@@ -2526,7 +2536,10 @@ def unit_is_primary(u: dict, entry: dict) -> bool:
     a = u.get("attribution")
     pa = entry.get("primary_attribution")
     if pa:
-        return bool(a and re.search(pa, a))
+        # Attribution may live in the unit's own text (Day and Night carries
+        # *Sappho N* tags inline, no ### headers exist — misclassification
+        # incident, 2026-07-04: the whole book read as apparatus).
+        return bool((a and re.search(pa, a)) or re.search(pa, u.get("text", "")[:240]))
     return not (a and _ATTR_APPARATUS_RE.search(a))
 
 def judgment_select(question: str, source_title: str, units: list[dict],
@@ -2875,6 +2888,9 @@ class handler(BaseHTTPRequestHandler):
             _fl = _flight_log(_run)
             return self._json(502, {"error": f"compiler call failed: {type(e).__name__}",
                                     "run_id": _run_id, "flight_log": _fl})
+        if isinstance(meta, dict) and meta.get("selection_advisory"):
+            parsed.setdefault("advisories", []).append(
+                {"failed_test": "selection_apparatus", "diagnosis": meta["selection_advisory"]})
         _redact = _reader and not _pub
         _gl = parsed.get("glyphic") or {}
         _run["artifacts"] = {
