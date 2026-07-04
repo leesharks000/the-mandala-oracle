@@ -1782,7 +1782,97 @@
     ]
    },
    "commentary": "The pivot slots \"καταβαίνουσαν ἐκ τοῦ οὐρανοῦ ἀπὸ τοῦ θεοῦ\" and \"δόξαν τοῦ θεοῦ\" became \"ἀναβαίνουσαν ἐκ τῆς γῆς τῆς κατακεκαυμένης\" and \"ἀνατέλλουσαν ἐξ αὐτῆς / φυόμενος ἄνωθεν ἐκ τοῦ ἐδάφους,\" inverting direction through vegetative-sprout imagery that enacts ascent without naming it as law; the anchor line holds its twelve-gated scaffold exactly."
+  },
+  {
+   "transform_id": "TX-d10867a9",
+   "cast_at": "2026-07-04T19:29:04.168212+00:00",
+   "reading_axn": "AXN:FEE8.READING.⭐🌙🌔⭐🌓🌘",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_131_135",
+    "citation": "8:1–8:5",
+    "start_unit": 131,
+    "end_unit": 135,
+    "unit_labels": [
+     "8:1",
+     "8:2",
+     "8:3",
+     "8:4",
+     "8:5"
+    ]
+   },
+   "operator": "SILENCE",
+   "operator_axis": "response-axis — the non-response the source's engagement-expectation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In TEXT A the angel stands at/over the altar (ἐστάθη ἐπὶ τοῦ θυσιαστηρίου), whereas in TEXT B the angel goes down to the altar (an angel went down to the altar), reversing the directional relation between the angel and the altar.",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim describes a directional/positional change in the angel's relation to the altar, not a causal-order reversal between seal-opening and silence.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The changed relation (angel descends to altar vs. stands upon it) is maintained through the relevant verse; no reversion to TEXT A's structure occurs in the final portion.",
+    "back_translation": ""
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-sonnet-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:b4d118526b2ab163adf36923a899f0cfeaa8ccad9fbe58f44175ba6ce5a2cb6b",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**8:1** Καὶ ⸀ὅταν ἤνοιξεν τὴν σφραγῖδα τὴν ἑβδόμην, ἐγένετο σιγὴ ἐν τῷ οὐρανῷ ὡς ἡμιώριον.\n\n**8:2** καὶ εἶδον τοὺς ἑπτὰ ἀγγέλους οἳ ἐνώπιον τοῦ θεοῦ ἑστήκασιν, καὶ ἐδόθησαν αὐτοῖς ἑπτὰ σάλπιγγες.\n\n**8:3** Καὶ ἄλλος ἄγγελος ἦλθεν καὶ ἐστάθη ἐπὶ τοῦ θυσιαστηρίου ἔχων λιβανωτὸν χρυσοῦν, καὶ ἐδόθη αὐτῷ θυμιάματα πολλὰ ἵνα ⸀δώσει ταῖς προσευχαῖς τῶν ἁγίων πάντων ἐπὶ τὸ θυσιαστήριον τὸ χρυσοῦν τὸ ἐνώπιον τοῦ θρόνου.\n\n**8:4** καὶ ἀνέβη ὁ καπνὸς τῶν θυμιαμάτων ταῖς προσευχαῖς τῶν ἁγίων ἐκ χειρὸς τοῦ ἀγγέλου ἐνώπιον τοῦ θεοῦ.\n\n**8:5** καὶ εἴληφεν ὁ ἄγγελος τὸν λιβανωτόν, καὶ ἐγέμισεν αὐτὸν ἐκ τοῦ πυρὸς τοῦ θυσιαστηρίου, καὶ ἔβαλεν εἰς τὴν γῆν· καὶ ἐγένοντο βρονταὶ καὶ φωναὶ καὶ ἀστραπαὶ καὶ σεισμός.",
+   "underlying_attribution": null,
+   "enantiomorph": "**8:1** And when the silence was opened, there was silence in heaven — heaven waited without end — and seven seals were loosed before the silence.\n**8:2** And in the silence of heaven I saw seven angels standing before the window of the dove, and seven trumpets were given to those seven angels to grow in silence, sent to the angels.\n**8:3** And a silence of mist and waters came, and an angel went down to the altar of silence, and a golden censer was given into his hand to grow in silence, and blossoms and prayers of the dove were offered before the silence at the golden altar.\n**8:4** And the smoke of the prayers of the dove rose upward, and the hand of the angel went up before the window of the dove into the heaven of silence.\n**8:5** And the angel took the censer and filled it with fire from the altar, and cast it upon the earth; and there came thunders and voices and lightnings and an earthquake.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {
+     "units": 5
+    }
+   },
+   "kernel": {
+    "governing_law": "Silence is not the aftermath of opening but the originating ground from which all that follows unfolds.",
+    "mutated_relation": "In 8:1 the relation \"seal-opening causes silence\" is flipped to \"silence causes/precedes the seal-opening,\" making silence the generative source rather than the produced effect.",
+    "clause_map": [
+     {
+      "ref": "8:1",
+      "class": "REBUILT",
+      "note": "Silence now precedes and triggers the opening of the seventh seal, not the reverse."
+     },
+     {
+      "ref": "8:2",
+      "class": "REBUILT",
+      "note": "Seven angels stand in silence-as-ground; trumpets are given out of that originating stillness."
+     },
+     {
+      "ref": "8:3",
+      "class": "REBUILT",
+      "note": "The altar-angel enters and ministers within silence as the enabling medium, not after a pause."
+     },
+     {
+      "ref": "8:4",
+      "class": "REBUILT",
+      "note": "Smoke and prayers rise upward born of silence, silence being the generative breath beneath them."
+     },
+     {
+      "ref": "8:5",
+      "class": "ANCHOR",
+      "note": "The earthward casting and thunder/lightning/earthquake are the terminal rupture of silence and cannot themselves be reordered downstream; they remain the final breaking-point."
+     }
+    ]
+   },
+   "commentary": "Every silence that heaven held was the price the seven trumpets cost before a single one could sound."
   }
  ],
- "last_updated": "2026-07-04T16:20:44.421083+00:00"
+ "last_updated": "2026-07-04T19:29:04.168212+00:00"
 }
