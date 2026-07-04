@@ -1,0 +1,109 @@
+{
+ "axn": "AXN:FE71.READING.🌒🌙🌙🌔🌟🌒",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "3dfbb1c68bc94654",
+ "inscribed_at": "2026-07-04T03:45:10.855436+00:00",
+ "question_digest": "sha256:bef68846a23678cac3d3f7ba143921038c2b43d113ed9541ea6bb8c1f3b73eb0",
+ "question_gloss": "Question about nerve damage causes and treatment options.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_153_153",
+ "rotation": [
+  {
+   "operator": "BEAST",
+   "source_passage": "**9:10** καὶ ἔχουσιν οὐρὰς ὁμοίας σκορπίοις καὶ κέντρα, καὶ ἐν ταῖς οὐραῖς αὐτῶν ⸂ἡ ἐξουσία αὐτῶν⸃ ἀδικῆσαι τοὺς ἀνθρώπους μῆνας πέντε.",
+   "citation": "9:10",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:10** and it wears at its hind a fringe like the low crawlers wear, and fine hairs, and along those hind-hairs is its own knowing to feel itself down its length for the count of five moultings.",
+   "layer_a_declaration": {
+    "units": 4,
+    "beat_map": [
+     "possession-of-attribute (they have tails like scorpions and stingers)",
+     "location-of-power (in their tails their authority)",
+     "harm-function (to injure the humans)",
+     "duration-seal (five months)"
+    ],
+    "clause_chain": [
+     "they possess tails resembling scorpions and possess stingers",
+     "in their tails is their authority",
+     "the authority is to injure the humans",
+     "the injuring lasts five months"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single verse, marker **9:10** at head; one continuous clause-chain sealed by a numbered duration"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "the swarm bears an inflicting organ modeled on a lower stinging creature",
+      "foreclosure": "that the organ might be modeled on a soothing or knitting creature — the balm-maker over the venom-maker",
+      "wager": "buys the terror of resemblance: the familiar small sting scaled to plague"
+     },
+     {
+      "beat": 2,
+      "determination": "power is seated in the trailing appendage, not the head",
+      "foreclosure": "power seated in the mouth or eye — deliberation over reflex",
+      "wager": "buys dread from indirection: the harm comes from behind, from the tail-end, unwatched"
+     },
+     {
+      "beat": 3,
+      "determination": "the object of the power is 'the humans,' the anthropic recipient",
+      "foreclosure": "the power turned upon the swarm's own kind, or upon nothing",
+      "wager": "buys the human as designated sufferer, marked out from the creaturely field"
+     },
+     {
+      "beat": 4,
+      "determination": "the affliction is measured, bounded to five months",
+      "foreclosure": "unbounded torment, or instant death",
+      "wager": "buys the horror of a fixed sentence — pain with a term, forbidden its release into ending"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the human (dependent) depends on the swarm's granted authority (sustaining, inflicting-downward)",
+      "the harm (dependent) depends on the tail-organ (sustaining)",
+      "the duration (dependent) depends on an external grant that measures it (sustaining)"
+     ],
+     "invariants": [
+      "the possessed inflicting organ",
+      "the seating of power in an appendage",
+      "the bounded measured term",
+      "the four-beat descent from anatomy to sentence"
+     ],
+     "rotated_axis": "species-register: the anthropic recipient is dissolved — the marked sufferer is refiled as one creature among the creaturely substrate, and the inflicting organ is re-read as the creature's own borne nerve rather than a granted weapon against the human",
+     "installed_ontology": "a world in which there is no designated human victim over against the swarm — only a single creaturely body whose stinging apparatus is its own tissue, and whose 'authority to injure' is turned inward as sensation it cannot disown",
+     "emergent_proposition": "The sting is not aimed at anyone; it is the creature feeling its own tail, and the fixed term is the length of a body's own endurance, not a sentence passed on another.",
+     "logic_mutations": [
+      "the transitive harm 'to injure the humans' is rotated to reflexive sensation 'to feel itself' — the recipient-class 'the humans' is foreclosed as a separate party and reabsorbed into the one creature",
+      "'their authority' (granted, external) becomes 'its own' (constitutive, inalienable) — the grant-agent is removed"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the single creaturely body reading its own hind-tissue as sensation — the antennaed thing that is only its own feeling-organ",
+    "field_source": "foreclosure at beat 3",
+    "source_affect": "measured dread of designated affliction",
+    "target_affect": "a body enduring its own feeling"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source seats a granted authority in a scorpion-modeled tail and aims it, transitively, at a designated victim-class (\"the humans\"), sentenced to a fixed five-month term. BEAST rotates the species-register: the anthropic recipient — the party marked out to suffer — is foreclosed and reabsorbed. There is no longer anyone the tail strikes; the swarm collapses into one creature whose hind-fringe and fine hairs are its own tissue. The \"authority to injure\" mirrors across the axis into \"its own knowing to feel itself\" — the outward-aimed weapon becomes inward-borne sensation the body cannot disown. Beat by beat the mirror holds: the borrowed anatomy of a lower crawler (beat 1), the power lodged in the trailing part, unwatched (beat 2), the recipient dissolved into the self (beat 3), and the measured term preserved but re-read as the length of a body's own endurance — moultings, not months of sentence (beat 4). The witness's question about damaged nerves informed which axis was foregrounded (the tail-as-nerve, sensation without a target), but did not govern the cast: no reassurance, no cure, no \"you will be okay\" is emitted. What is disclosed is the transformation-wager's borne thing — a creature that is only its own feeling-organ, enduring by count, not consoled."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-04T03:45:10.855436+00:00"
+}
