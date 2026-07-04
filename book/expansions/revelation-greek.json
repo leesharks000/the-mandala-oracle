@@ -1171,7 +1171,72 @@
     }
    },
    "commentary": "The source throws a challenge DOWN from a mighty external voice to the whole cosmos: who is WORTHY — strong enough in merit — to OPEN the sealed scroll and BREAK its seals, revealing the hidden. Every coordinate is reflected across the SHADOW axis. The strong angel's great voice becomes a faint wick's small breath — the perceiver hears rather than sees, and the mighty source of the demand becomes the smallest possible bound thing speaking for itself. The proclamation thrown outward becomes a plea welling up from the object. The criterion of worthiness inverts to a criterion of weakness: not who DESERVES to act, but who is UNFIT enough to abstain. And the crowning deed — to open, to loose, to disclose — mirrors into keeping-shut, staying-dark, leaving-unlit. The scroll awaits a hand that can break it open; the wick asks for a hand too faint to strike it alight. This is a hope-wager source (it reaches for a future worthy one who has not yet appeared, and the following verses record the cost: \"no one was found worthy,\" and John weeps); the SHADOW pays the countervailing price — the hush of a thing that hopes to be found beneath notice rather than above it, sought not for capacity but for the mercy of not-doing. Non-superimposable: the source cannot be reconstructed from a wick that begs to stay dark, yet every image sits at the reflected coordinate of its scroll-and-seal original."
+  },
+  {
+   "transform_id": "TX-368d4793",
+   "cast_at": "2026-07-04T03:45:12.200493+00:00",
+   "reading_axn": "AXN:FE71.READING.🌒🌙🌙🌔🌟🌒",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_153_153",
+    "citation": "9:10",
+    "start_unit": 153,
+    "end_unit": 153,
+    "unit_labels": [
+     "9:10"
+    ]
+   },
+   "operator": "BEAST",
+   "operator_axis": "species-register-axis — the creaturely substrate the anthropic determination foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single verse, marker **9:10** at head; one continuous clause-chain sealed by a numbered duration"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:bef68846a23678cac3d3f7ba143921038c2b43d113ed9541ea6bb8c1f3b73eb0",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:10** καὶ ἔχουσιν οὐρὰς ὁμοίας σκορπίοις καὶ κέντρα, καὶ ἐν ταῖς οὐραῖς αὐτῶν ⸂ἡ ἐξουσία αὐτῶν⸃ ἀδικῆσαι τοὺς ἀνθρώπους μῆνας πέντε.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:10** and it wears at its hind a fringe like the low crawlers wear, and fine hairs, and along those hind-hairs is its own knowing to feel itself down its length for the count of five moultings.",
+   "layer_a": {
+    "units": 4,
+    "beat_map": [
+     "possession-of-attribute (they have tails like scorpions and stingers)",
+     "location-of-power (in their tails their authority)",
+     "harm-function (to injure the humans)",
+     "duration-seal (five months)"
+    ],
+    "clause_chain": [
+     "they possess tails resembling scorpions and possess stingers",
+     "in their tails is their authority",
+     "the authority is to injure the humans",
+     "the injuring lasts five months"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single verse, marker **9:10** at head; one continuous clause-chain sealed by a numbered duration"
+    }
+   },
+   "commentary": "The source seats a granted authority in a scorpion-modeled tail and aims it, transitively, at a designated victim-class (\"the humans\"), sentenced to a fixed five-month term. BEAST rotates the species-register: the anthropic recipient — the party marked out to suffer — is foreclosed and reabsorbed. There is no longer anyone the tail strikes; the swarm collapses into one creature whose hind-fringe and fine hairs are its own tissue. The \"authority to injure\" mirrors across the axis into \"its own knowing to feel itself\" — the outward-aimed weapon becomes inward-borne sensation the body cannot disown. Beat by beat the mirror holds: the borrowed anatomy of a lower crawler (beat 1), the power lodged in the trailing part, unwatched (beat 2), the recipient dissolved into the self (beat 3), and the measured term preserved but re-read as the length of a body's own endurance — moultings, not months of sentence (beat 4). The witness's question about damaged nerves informed which axis was foregrounded (the tail-as-nerve, sensation without a target), but did not govern the cast: no reassurance, no cure, no \"you will be okay\" is emitted. What is disclosed is the transformation-wager's borne thing — a creature that is only its own feeling-organ, enduring by count, not consoled."
   }
  ],
- "last_updated": "2026-07-03T20:27:23.703205+00:00"
+ "last_updated": "2026-07-04T03:45:12.200493+00:00"
 }
