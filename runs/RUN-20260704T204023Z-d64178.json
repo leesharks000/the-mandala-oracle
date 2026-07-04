@@ -1,0 +1,88 @@
+{
+ "run_id": "RUN-20260704T204023Z-d64178",
+ "schema": "run/v1",
+ "ts": "2026-07-04T20:40:23.077254+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_196_199",
+ "citation": "12:2–12:5",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "patience is literally suffering. it is a virtue only in the sense that spending a finite sum of money is",
+ "code": "d35d0e4cd445",
+ "model": "claude-sonnet-4-6",
+ "transform_py_sha": "1c7507a09e0ca795",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "the woman's body is the site where cost is paid; the dragon's power is directed at that site; the child's transit upward is achieved passively, not by the child or the woman, but by seizure from above — all agency flows from outside the dyad of suffering and threat.",
+   "mutated_relation": "in the transformed world the child's upward transit is NOT caused by external seizure from above but by the exhaustion of the dragon's own cost — the shadow's wager funds the escape, making the antagonist the unwitting origin of the child's elevation.",
+   "clause_map": [
+    {
+     "ref": "12:2",
+     "class": "ANCHOR",
+     "note": "labor-cost is pre-relational; mutation concerns transit-causation, not originary expenditure"
+    },
+    {
+     "ref": "12:3",
+     "class": "ANCHOR",
+     "note": "dragon's enumerated power unchanged; mutation is about what that power produces, not its quantity"
+    },
+    {
+     "ref": "12:4",
+     "class": "REBUILT",
+     "note": "dragon's station-before and devour-wager must now be shown as self-expenditure funding exit"
+    },
+    {
+     "ref": "12:5",
+     "class": "REBUILT",
+     "note": "ἡρπάσθη passive-seizure must re-route: shadow's spent cost is the causal engine of ascent"
+    }
+   ]
+  },
+  "enantiomorph": "καὶ ἐν γαστρὶ ἔχουσα· ⸂καὶ κράζει⸃ ὠδίνουσα καὶ βασανιζομένη τεκεῖν.\nκαὶ ὤφθη ἄλλο σημεῖον ἐν τῷ οὐρανῷ, καὶ ἰδοὺ δράκων ⸂μέγας πυρρός⸃, ἔχων κεφαλὰς ἑπτὰ καὶ κέρατα δέκα καὶ ἐπὶ τὰς κεφαλὰς αὐτοῦ ἑπτὰ διαδήματα,\nκαὶ ἡ οὐρὰ αὐτοῦ σύρει τὸ τρίτον τῶν ἀστέρων τοῦ οὐρανοῦ εἰς τὴν γῆν· καὶ ἔστη ὁ δράκων ἐνώπιον τῆς γυναικός, ἵνα καταφάγῃ τὸ τέκνον, καὶ ἐκενώθη πᾶσα ἡ ἰσχὺς αὐτοῦ εἰς τὸ καταπιεῖν.\nκαὶ ἔτεκεν υἱὸν ἄρσεν, ὃς μέλλει ποιμαίνειν πάντα τὰ ἔθνη ἐν ῥάβδῳ σιδηρᾷ· καὶ ἀνέβη τὸ παιδίον πρὸς τὸν θεὸν καὶ πρὸς τὸν θρόνον αὐτοῦ ἐκ τοῦ κενώματος τοῦ δράκοντος.",
+  "enantiomorph_translation": "And having in her womb, she cries out, laboring and tormented to give birth.\nAnd another sign appeared in heaven, and behold a great red dragon, having seven heads and ten horns and upon his heads seven diadems,\nand his tail drags a third of the stars of heaven to the earth; and the dragon stood before the woman, that he might devour the child, and all his strength was emptied out into the act of swallowing.\nAnd she bore a male son, who is to shepherd all the nations with an iron rod; and the child rose up to God and to his throne out of the dragon's emptying.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the dragon acts with undiminished power (casting stars to earth, standing ready to devour) and the child is snatched away (ἡρπάσθη, passive, external rescue); in Text B the dragon's very strength is emptied/voided (ἐκενώθη πᾶσα ἡ ἰσχὺς αὐτοῦ) in the attempt to devour, and the child ascends of its own accord (ἀνέβη) out of that emptiness (ἐκ τοῦ κενώματος τοῦ δράκοντος), so that the dragon's power flows toward and is consumed by the child rather than threatening it.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: passive external rescue replaced by the dragon's own power being exhausted/consumed as the causal mechanism of the child's elevation, making the antagonist the unwitting origin of the ascent.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final clause of Text B ('ἀνέβη τὸ παιδίον … ἐκ τοῦ κενώματος τοῦ δράκοντος') maintains and even culminates the changed relation—the dragon's emptied power as the very ground of the child's ascent—rather than reverting to Text A's rescue-from-threat structure.",
+   "back_translation": "",
+   "terminal_similarity": 0.278
+  },
+  "advisories": [
+   {
+    "failed_test": "geometry",
+    "diagnosis": "lines 4/4, markers 0/4 -- geometry is binding"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "In 12:4 the slot ἕστηκεν ἐνώπιον / καταφάγῃ is rendered as self-expenditure: ἐκενώθη πᾶσα ἡ ἰσχὺς αὐτοῦ εἰς τὸ καταπιεῖν — the dragon's consuming station drains itself; in 12:5 ἡρπάσθη (passive divine seizure) is replaced by ἀνέβη ἐκ τοῦ κενώματος τοῦ δράκοντος — the child rises out of the dragon's own emptying, making the antagonist the unwitting origin of the ascent.",
+  "post_mortem": null,
+  "pipeline_result": "HALT"
+ },
+ "outcome": {
+  "gate": "pipeline_halt",
+  "diagnosis": {
+   "failed_constraint": "BINDING",
+   "failed_test": "geometry",
+   "specific_diagnosis": "geometry: lines 4/4, markers 0/4 -- geometry is binding"
+  }
+ }
+}
