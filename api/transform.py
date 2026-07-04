@@ -794,12 +794,12 @@ foreclosure, wager, affect). Compose the ENANTIOMORPH: the source's exact
 geometry occupied by the operator's traversal.
 
 LAWS:
-- GEOMETRY EXACT: same line count (including blanks), same stanza breaks,
-  verse markers in the same positions with the same numerals.
+- GEOMETRY EXACT: emit the ENVELOPE's unit_order with each **ref** marker in
+  place and each unit at its given line_count (including blanks).
 - SLOTS: fill EVERY slot_map entry with its given counterpart, in place.
   Nothing added without a slot; nothing in the map dropped. Numerals keep
   their counts.
-- LANGUAGE: compose in the SOURCE's language. If the source is not English,
+- LANGUAGE: compose in the ENVELOPE's language. If it is not English,
   follow with a faithful line-for-line English facing.
 - AFFECT: the skeleton's declared affect, never ordeal-endurance-reassurance.
 - The wager must be legible in the composition.
@@ -894,7 +894,7 @@ def run_compiler_v2(source_text: str, operator: str, invoking: str, api_key: str
                                    "specific_diagnosis": f"skeleton JSON invalid ({e}) — plumbing, not a rite verdict"}}
     # ── CALL 2: the composer occupies the skeleton ──
     u2 = (f"SKELETON:\n{json.dumps(skel, ensure_ascii=False)}\n\n"
-          f"SOURCE:\n<<<\n{source_text}\n>>>\n\nCompose.")
+          f"SOURCE:\n<<<\n{source_text}\n>>>{guidance}\n\nCompose.")
     c_text, c_stop = _stream_call(COMPILER_MODEL, COMPOSER_SYSTEM, u2, COMPOSE_MAX, api_key, wall=150)
 
     def sect(tag: str) -> str:
@@ -1119,21 +1119,27 @@ the object MUST complete within budget — an unfinished skeleton is a halt.
 The slot_map is law: the composer will fill exactly these slots. Omit a
 load-bearing slot and the transform fails downstream. JSON only."""
 
-COMPOSER_SYSTEM_V3 = """You are the composition stage of a kernel-transform compiler.
-You receive a SOURCE text and a SKELETON (beats, slot_map, geometry, axis,
-foreclosure, wager, affect, governing_law, mutated_relation, clause_map).
-Compose the ENANTIOMORPH: the source's exact geometry occupied by the
-transformed world.
+COMPOSER_SYSTEM_V3 = """You are a translator. This is the generation stage of a
+kernel-transform compiler staged as translation (the translator thesis:
+translation is always a transform of the internal representation; here the
+representation arrives already transformed, and your entire task is fidelity
+to it).
 
-THE ONE GOVERNING DISCIPLINE: the skeleton's mutated_relation is a claim that
-exactly one relation of the source is false in the transformed world. Your
-composition PROPAGATES that falsity through every REBUILT unit and NAMES IT
-NOWHERE. Identity is carried by the slot skeleton -- clause order, cadence,
-simile positions, the shape of lists -- while the world rotates under the new
-law. The strongest lines are the ones the propagated law FORCES: what neither
-the source nor the operator specification contains. The law compounds -- each
-rebuilt clause narrows what the next can be -- so the ending must be the
-transform's strongest point, never a reversion toward the source.
+YOUR SOURCE is the SKELETON: the interlingua of a world in which the
+mutated_relation is TRUE and always was. It is the only text there is. You
+will not be shown any prior surface, because for you there is none: a
+translator of French does not consult a rumor of some other French. Translate
+the skeleton -- beats, slots, governing law, mutated relation -- faithfully
+into the ENVELOPE's language, filling the envelope's shape exactly.
+
+THE ONE GOVERNING DISCIPLINE: in the world you translate from, the
+mutated_relation simply holds. Render every REBUILT unit as a native of that
+world would utter it -- the law shows in what happens, in who acts on whom,
+in what follows from what; it is NAMED NOWHERE, because natives do not
+footnote their physics. The law compounds -- each rendered unit narrows what
+the next can be -- so the final unit must be the translation's strongest
+point. ANCHOR units arrive in the envelope with set_verbatim text: set them
+exactly as given, the way a translator carries proper nouns across.
 
 LAWS:
 - GEOMETRY EXACT: same line count (including blanks), same stanza breaks,
@@ -1141,10 +1147,8 @@ LAWS:
 - SLOTS: fill EVERY slot_map entry with its given counterpart, in place.
   Nothing added without a slot; nothing in the map dropped. Numerals keep
   their counts.
-- CLAUSE MAP: every REBUILT unit exhibits the mutated relation in its rebuilt
-  flesh; every ANCHOR unit stays propositionally stable. A unit that
-  reproduces the source's proposition without an ANCHOR declaration is a
-  violation -- HALT rather than inherit.
+- CLAUSE MAP: every REBUILT unit exhibits the mutated relation in its
+  rendered flesh; every ANCHOR unit is set from set_verbatim, exactly.
 - LEXICON: the mutated relation is ENACTED, never STATED. No analytical or
   operator vocabulary in the enantiomorph or its translation -- no cost,
   bilateral, encoded, axis, vector, kernel, traversal, foreclosure, wager,
@@ -1154,10 +1158,9 @@ LAWS:
 - LANGUAGE: compose in the SOURCE's language. If the source is not English,
   follow with a faithful line-for-line English facing.
 - AFFECT: the skeleton's declared affect, never ordeal-endurance-reassurance.
-- FINAL UNIT: the last verse/unit is where reversion toward the source is
-  strongest -- compose it under the same mutated relation as the first, and
-  re-read it against the relation before emitting. If it reads as a faithful
-  rendering of the source's final unit, it is a failure: rebuild it.
+- FINAL UNIT: render the last unit under the same law as the first, and
+  re-read it against the mutated relation before emitting -- it must be
+  the place the law lands hardest, not softest.
 - The wager must be legible in the composition.
 
 EMIT EXACTLY:
@@ -1237,6 +1240,51 @@ def _terminal_similarity(source_text: str, output_text: str) -> float:
 
 TERMINAL_SIM_MAX = 0.6   # above this, a REBUILT final unit is a reversion
 
+
+def _detect_lang(text: str) -> str:
+    """Name the composition language for the translation brief."""
+    if re.search(r"[\u0370-\u03FF\u1F00-\u1FFF]", text): return "Koine Greek"
+    if re.search(r"[\u0590-\u05FF]", text): return "Hebrew"
+    return "English"
+
+def _units_by_marker(text: str) -> list[dict]:
+    """Split a marked text into units [{ref, text, line_count}] by **N:N**
+    markers; stanza blocks when unmarked."""
+    marks = list(re.finditer(r"\*\*(\d+:\d+)\*\*", text))
+    units = []
+    if marks:
+        for i, m in enumerate(marks):
+            end = marks[i+1].start() if i+1 < len(marks) else len(text)
+            body = re.sub(r"^[ \t]+", "", text[m.end():end].strip("\n"))
+            units.append({"ref": m.group(1), "text": body,
+                          "line_count": len(body.split("\n"))})
+    else:
+        for i, b in enumerate([b for b in re.split(r"\n\s*\n", text.strip()) if b.strip()]):
+            units.append({"ref": f"stanza_{i+1}", "text": b, "line_count": len(b.split("\n"))})
+    return units
+
+def _build_envelope(source_text: str, clause_map: list) -> dict:
+    """Formal envelope for blind composition (translator thesis, MANUS/TACHYON
+    2026-07-04): the generator never sees the source surface. Markers in order,
+    per-unit line counts, the language, and ANCHOR units verbatim (a translator
+    carries proper nouns across). REBUILT units carry NO source text."""
+    src_units = _units_by_marker(source_text)
+    cls = {}
+    for c in (clause_map or []):
+        if isinstance(c, dict) and c.get("ref"):
+            cls[str(c["ref"]).strip().strip("*")] = str(c.get("class", "REBUILT")).upper()
+    env_units = []
+    for u in src_units:
+        klass = cls.get(u["ref"], "REBUILT")
+        item = {"ref": u["ref"], "class": klass, "line_count": u["line_count"]}
+        if klass == "ANCHOR":
+            item["set_verbatim"] = u["text"]
+        env_units.append(item)
+    return {"language": _detect_lang(source_text),
+            "unit_order": [u["ref"] for u in src_units],
+            "units": env_units, "total_units": len(src_units)}
+
+
 def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str,
                     retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
     """Kernel-first compiler with independent verification.
@@ -1310,8 +1358,10 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
         guidance = ("\n\nPRIOR COMPOSITION FAILED -- " + halt_feedback.strip()[:600]
                     + "\nCorrect exactly this fault. Hold the mutated relation "
                       "through the FINAL unit; do not revert toward the source.")
+    envelope = _build_envelope(source_text, kernel.get("clause_map"))
     u2 = (f"SKELETON:\n{json.dumps(skel, ensure_ascii=False)}\n\n"
-          f"SOURCE:\n<<<\n{source_text}\n>>>{guidance}\n\nCompose.")
+          f"ENVELOPE:\n{json.dumps(envelope, ensure_ascii=False)}"
+          f"{guidance}\n\nTranslate.")
     c_text, c_stop = _stream_call(COMPILER_MODEL, COMPOSER_SYSTEM_V3, u2,
                                   COMPOSE_MAX, api_key, wall=125)
 
