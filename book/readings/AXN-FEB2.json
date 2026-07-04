@@ -207,12 +207,13 @@
     "numeral_conservation": "PASS",
     "mode": "producer_side"
    },
-   "commentary": "The seven named cities became seven anonymous ignition-nodes (count invariant, identity dissolved into threshold-address), while ὃ βλέπεις / γράψον / πέμψον collapsed the perceiver-sender gap into a single burn-circuit: perception recast as scorching, inscription as searing into medium, dispatch as an ignition-front that sets every destination alight — the wager (loss of safe distance between perceiver and perceived) made structurally unavoidable from the first clause forward."
+   "commentary": "The seven named cities became seven anonymous ignition-nodes (count invariant, identity dissolved into threshold-address), while ὃ βλέπεις / γράψον / πέμψον collapsed the perceiver-sender gap into a single burn-circuit: perception recast as scorching, inscription as searing into medium, dispatch as an ignition-front that sets every destination alight — the wager (loss of safe distance between perceiver and perceived) made structurally unavoidable from the first clause forward.",
+   "interpretation": "The kiln does not remember the clay it perfected: intensity without remainder is the limit the source cannot cross and still speak."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T07:49:51.189837+00:00",
+ "last_updated": "2026-07-04T07:50:00.815498+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -233,6 +234,13 @@
    "at": "2026-07-04T07:45:36.711729+00:00",
    "text": "Fire that consumes what it illuminates: the cost of the vision is the vision.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-04T07:50:00.815498+00:00",
+   "text": "The kiln does not remember the clay it perfected: intensity without remainder is the limit the source cannot cross and still speak.",
+   "operator": "FLAME"
   }
  ]
 }
