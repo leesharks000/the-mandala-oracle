@@ -1,0 +1,101 @@
+{
+ "axn": "AXN:FE22.READING.🌓🌗🌟🌟🌔🌗",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "475e47a150d55a1b",
+ "inscribed_at": "2026-07-04T20:10:55.397348+00:00",
+ "question_digest": "sha256:6870a298c5e1cc69d0498eaefbd6399043e8069de2c0e3c819e6f3bd407d3111",
+ "question_gloss": "Witness seeks information about contacting a family member.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_68_72",
+ "rotation": [
+  {
+   "operator": "MIRROR",
+   "source_passage": "**3:19** ἐγὼ ὅσους ἐὰν φιλῶ ἐλέγχω καὶ παιδεύω· ⸀ζήλευε οὖν καὶ μετανόησον.\n\n**3:20** ἰδοὺ ἕστηκα ἐπὶ τὴν θύραν καὶ κρούω· ἐάν τις ἀκούσῃ τῆς φωνῆς μου καὶ ἀνοίξῃ τὴν θύραν, ⸀καὶ εἰσελεύσομαι πρὸς αὐτὸν καὶ δειπνήσω μετ’ αὐτοῦ καὶ αὐτὸς μετ’ ἐμοῦ.\n\n**3:21** ὁ νικῶν δώσω αὐτῷ καθίσαι μετ’ ἐμοῦ ἐν τῷ θρόνῳ μου, ὡς κἀγὼ ἐνίκησα καὶ ἐκάθισα μετὰ τοῦ πατρός μου ἐν τῷ θρόνῳ αὐτοῦ.\n\n**3:22** ὁ ἔχων οὖς ἀκουσάτω τί τὸ πνεῦμα λέγει ταῖς ἐκκλησίαις.\n\n\n## Κεφάλαιον 4\n\n**4:1** Μετὰ ταῦτα εἶδον, καὶ ἰδοὺ θύρα ἠνεῳγμένη ἐν τῷ οὐρανῷ, καὶ ἡ φωνὴ ἡ πρώτη ἣν ἤκουσα ὡς σάλπιγγος λαλούσης μετ’ ἐμοῦ, λέγων· Ἀνάβα ὧδε, καὶ δείξω σοι ἃ δεῖ γενέσθαι. μετὰ ταῦτα",
+   "citation": "3:19–4:1",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "3:19 ἡ θυγάτηρ φιλεῖ σε· ἐλέγχει καὶ παιδεύει· ζήλευε οὖν καὶ μετανόησον.\n3:20 ἑστήκασιν ἐπὶ τὴν θύραν σου· κρούει· ἐὰν σὺ ἀκούσῃς τῆς φωνῆς αὐτῆς καὶ ἀνοίξῃς τὴν θύραν, εἰσελεύσεται πρὸς σέ, καὶ δειπνήσει μετὰ σοῦ καὶ σὺ μετ' αὐτῆς.\n3:21 ὁ ἀνοίγων· δοθήσεταί σοι καθίσαι μετ' αὐτῆς· ὡς καὶ αὐτὴ ἐνίκησεν καὶ ἐκάθισεν ἄνευ σοῦ.\n3:22 σὺ ὁ ἔχων οὖς\nἄκουσον\nτί αὐτὴ λέγει\nταῖς ἐκκλησίαις.\n4:1 θύρα ἠνεῳγμένη ὑπ' αὐτῆς· καὶ φωνὴ αὐτῆς ἡ παλαιά, ὡς σάλπιγγος, λαλοῦσα· Κατάβα ὧδε, καὶ δείξει σοι ἃ δεῖ γενέσθαι.",
+   "layer_a_declaration": {
+    "beats": [
+     "3:19 speaker-loves → rebukes+disciplines those loved; command: be zealous, repent",
+     "3:20 speaker stands at door, knocks; if hearer opens → speaker enters, dines together",
+     "3:21 overcomer seated with speaker on throne; as speaker overcame, sat with Father on his throne",
+     "3:22 ear-having: hear what Spirit says to churches",
+     "4:1 door open in heaven; first voice like trumpet: ascend here, I will show what must happen"
+    ],
+    "geometry": {
+     "lines": 5,
+     "stanzas": 2,
+     "verse_markers": [
+      "3:19",
+      "3:20",
+      "3:21",
+      "3:22",
+      "4:1"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "ἐγὼ φιλῶ (I love → I act)": "ἡ θυγάτηρ φιλεῖ (daughter loves → daughter acts)",
+     "ἐλέγχω καὶ παιδεύω (I rebuke+discipline)": "ἐλέγχει καὶ παιδεύει (she rebukes+disciplines you)",
+     "ζήλευε οὖν καὶ μετανόησον (you: be zealous, repent)": "ζήλευε οὖν καὶ μετανόησον (you: be zealous, repent — unchanged, now your task)",
+     "ἕστηκα ἐπὶ τὴν θύραν (I stand at the door)": "ἑστήκασιν ἐπὶ τὴν θύραν (they stand at your door — daughter's side)",
+     "κρούω (I knock)": "κρούει (she knocks — daughter is the one knocking)",
+     "ἐάν τις ἀκούσῃ τῆς φωνῆς μου (if anyone hears my voice)": "ἐὰν σὺ ἀκούσῃς τῆς φωνῆς αὐτῆς (if you hear her voice)",
+     "ἀνοίξῃ τὴν θύραν (opens the door)": "ἀνοίξῃς τὴν θύραν (you open the door)",
+     "εἰσελεύσομαι πρὸς αὐτόν (I will enter toward him)": "εἰσελεύσεται πρὸς σέ (she will enter toward you)",
+     "δειπνήσω μετ' αὐτοῦ καὶ αὐτὸς μετ' ἐμοῦ (I dine with him and he with me)": "δειπνήσει μετὰ σοῦ καὶ σὺ μετ' αὐτῆς (she dines with you and you with her)",
+     "ὁ νικῶν (the overcomer — one who acts/persists)": "ὁ ἀνοίγων (the one who opens — you, the parent)",
+     "δώσω αὐτῷ καθίσαι μετ' ἐμοῦ ἐν τῷ θρόνῳ μου (I grant sitting with me on my throne)": "δοθήσεταί σοι καθίσαι μετ' αὐτῆς (you are granted to sit with her)",
+     "ὡς κἀγὼ ἐνίκησα (as I overcame)": "ὡς καὶ αὐτὴ ἐνίκησεν (as she too overcame — her prior endurance)",
+     "ἐκάθισα μετὰ τοῦ πατρός μου ἐν τῷ θρόνῳ αὐτοῦ (I sat with Father on his throne)": "ἐκάθισεν ἄνευ σοῦ (she sat without you — the foreclosed separation)",
+     "ὁ ἔχων οὖς ἀκουσάτω (let the ear-having one hear)": "σὺ ὁ ἔχων οὖς ἄκουσον (you, the ear-having one — you must hear)",
+     "θύρα ἠνεῳγμένη ἐν τῷ οὐρανῷ (door opened in heaven)": "θύρα ἠνεῳγμένη ὑπ' αὐτῆς (door already opened by her)",
+     "φωνὴ ὡς σάλπιγγος (voice like a trumpet)": "φωνὴ αὐτῆς ἡ παλαιά (her old/first voice — already speaking)",
+     "Ἀνάβα ὧδε (ascend here)": "Κατάβα ὧδε (descend here — come down to where she is)",
+     "δείξω σοι ἃ δεῖ γενέσθαι (I will show you what must happen)": "δείξει σοι ἃ δεῖ γενέσθαι (she will show you what must happen)"
+    },
+    "axis": "the knocker and the door-opener exchange positions across the threshold",
+    "foreclosure": "the source forecloses the beloved standing at the door waiting for you to knock",
+    "wager": "you must hear and open before any entering is possible",
+    "affect": "arrested longing — the knocking has already been happening on her side"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the speaker is a divine 'I' (Christ) who loves, rebukes, knocks, enters, and rewards the overcomer by his own authority, with the human as respondent. In Text B the agent is a feminine third-person figure ('ἡ θυγάτηρ'/'αὐτή') who acts upon a second-person 'you,' and the reward in 3:21 is granted without the human's co-presence ('ἄνευ σοῦ') rather than in shared enthronement, reversing the relational direction and locus of agency throughout.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real agency/relational reversal (divine I → feminine third-person agent acting on 'you') and a structural change in the reward clause, but it describes a broader cross-text substitution of the entire speaking subject and reward structure, only partially overlapping the declared change (daughter as door-knocker vs. passive receiver who hasn't opened).",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (3:22–4:1) continues Text B's changed relation: the feminine third-person agent ('αὐτή') speaks and opens the door, and the command is 'Κατάβα' (descend) rather than 'Ἀνάβα' (ascend), maintaining the inverted agency and direction to the end.",
+    "back_translation": "",
+    "terminal_similarity": 0.177
+   },
+   "law_variance": {
+    "declared": "your daughter is the one who has been standing at your door knocking; you are the passive receiver who has not yet opened",
+    "recovered": "In Text A the speaker is a divine 'I' (Christ) who loves, rebukes, knocks, enters, and rewards the overcomer by his own authority, with the human as respondent. In Text B the agent is a feminine third-person figure ('ἡ θυγάτηρ'/'αὐτή') who acts upon a second-person 'you,' and the reward in 3:21 is granted without the human's co-presence ('ἄνευ σοῦ') rather than in shared enthronement, reversing the relational direction and locus of agency throughout.",
+    "note": "The recovered claim identifies a real agency/relational reversal (divine I → feminine third-person agent acting on 'you') and a structural change in the reward clause, but it describes a broader cross-text substitution of the entire speaking subject and reward structure, only partially overlapping the declared change (daughter as door-knocker vs. passive receiver who hasn't opened)."
+   },
+   "glyphic": null,
+   "advisories": [],
+   "commentary": "Every slot migrated from first-person speaker to third-person daughter (ἡ θυγάτηρ φιλεῖ, κρούει, εἰσελεύσεται, ἐκάθισεν ἄνευ σοῦ) while the parent's passivity is enacted throughout — culminating in Κατάβα ὧδε, where the trumpet-summons reverses direction and lands hardest on the foreclosed separation now made crossable only by the parent's descent."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-04T20:10:55.397348+00:00"
+}
