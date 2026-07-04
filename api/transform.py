@@ -53,7 +53,7 @@ from pathlib import Path
 # Configuration
 # ──────────────────────────────────────────────────────────────────────
 
-COMPILER_MODEL = "claude-opus-4-8"   # depth-gating discipline; sonnet is too weak (workplan §2.2)
+COMPILER_MODEL = "claude-fable-5"   # depth-gating discipline (workplan §2.2): the transforms are the most technically demanding call in the system — always the strongest available model; 4.8 produced slot-deletion drift (MANUS, 2026-07-04)
 MAX_TOKENS = 6000
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
@@ -531,6 +531,27 @@ C7 Affective traversal (MANUS calibration, 2026-07-03): the enantiomorph's
    lamp, blossom, and hearth delivering the same reassurance are three
    decorative consolations, not a rotation.
 
+C8 Slot conservation (MANUS conservation law, 2026-07-04): numinosity is not
+   a register choice — it is ENTIRELY sourced from the text. If the transform
+   truly preserves the source's geometry and structure, drift CANNOT arise;
+   therefore any mist is a transform failure, not a style. Before generating,
+   enumerate the source's load-bearing semantic slots: possessed parts,
+   likeness-species, instruments/weapons, power- and agency-nouns with their
+   LOCUS constructions (power-IN-part), verbs with their valence, patients/
+   objects, and EVERY numeral with its unit. The enantiomorph must fill EVERY
+   slot with an operator-mapped counterpart. A deleted slot is a failed
+   transform. Material with no source slot is a failed transform (additive
+   padding). NUMERALS ARE ABSOLUTELY CONSERVED: the unit may transpose within
+   the operator's register (months→moultings under BEAST; months→moons under
+   INVERSION); the count may never vanish, blur, or become unnumbered — an
+   unnumbered vastness replacing a counted thing is the signature
+   contamination, and it inverts sources whose very assertion is that the
+   quantity has a bound. REGISTER IS INHERITED, NOT CHOSEN: output register =
+   source register × operator axis, nothing else. The source's own numinosity
+   is the entire numinosity budget. Worked failure (canonical): Rev 9:10
+   μῆνας πέντε → "a span the flesh will not number" — numeral deleted, and
+   the source's own claim (the hurt HAS a term) inverted. HALT-grade.
+
 HALT BEHAVIOR
 If any verification fails, output result HALT with a diagnosis naming the
 failed constraint/test and why, and DO NOT include any draft text. Diagnosis,
@@ -566,7 +587,8 @@ OUTPUT FORMAT — exactly these tagged sections, nothing outside them:
 <VERIFICATION>
 {"identity": "PASS|FAIL", "semantic_independence": "PASS|FAIL",
  "retrospective_containment": "PASS|FAIL", "affect_traversal": "PASS|FAIL",
- "entailment": "PASS|FAIL", "mode": "producer_side"}
+ "entailment": "PASS|FAIL", "slot_conservation": "PASS|FAIL",
+ "numeral_conservation": "PASS|FAIL", "mode": "producer_side"}
 </VERIFICATION>
 <COMMENTARY>
 (brief apparatus articulating the enantiomorphic relation — required for inscription)
