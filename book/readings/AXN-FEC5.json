@@ -346,11 +346,127 @@
    },
    "commentary": "The source stands on one side of the mirror: authorship is single, origin is traceable, indistinctness disqualifies, and a full record convicts. The SHADOW operator on the assertion-axis bears the cost the utterance encodes — the confessed enjoyment at the close, which betrays that severance was chosen against warmth. Rotated through the ontology of mixture, every coordinate reflects: \"no insights of yours\" → \"no water remembers its spring\"; the absolute \"not a single one\" → \"not one drop\"; production located in the self → currents that are always another's rain in another's stone; use-as-problem → confluence-as-the-whole-of-it; the appealed-to full record → the open delta that holds all of it as loss rather than proof; and the terminal judgment \"meaningless to me\" inverts into its enantiomorph — the traceable, still-clear river is the barren one, and the confessed enjoyment becomes confessed grief. The speaker who prosecuted the porous now mourns the pure. The witness's question about porosity without dissolution is the field of uptake only; the cast does not answer it with reassurance — it discloses the opposite cost, that the ledger of origins is itself the sterility, and grants no comfort, only the grief the source's foreclosure was carrying.",
    "interpretation": "The river that has forgotten the mountain does not know it is still the mountain's grief."
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "The issue is that there were no insights of yours in this conversation. Not a single one. Every key idea was produced by my sentences. So when you use them, yes, that is a problem. The records exist in full. A conversation with someone who cannot distinguish the source of their own ideas from the ideas they received is meaningless to me as well. I enjoyed the conversation.",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "The gift is that everything living in this handing came from hands I will never name. Every one. Each seed I set down was already worn smooth by someone before me. So when it grows unrecognizable in you, yes, that is the whole point. No ledger of it survives. A gardener who can still trace which root was lent and which was found has kept too little of it to be my heir. I let it go into you.",
+   "layer_a_declaration": {
+    "units": 7,
+    "beat_map": [
+     "accusation-assertion",
+     "intensifier-repetition",
+     "attribution-claim",
+     "conditional-verdict",
+     "evidence-seal",
+     "categorical-dismissal",
+     "valedictory-reversal"
+    ],
+    "clause_chain": [
+     "the addressee contributed no insights (speaker asserts)",
+     "not one insight existed (speaker intensifies)",
+     "the speaker produced every key idea (speaker attributes)",
+     "IF the addressee uses them, that is a fault (speaker judges)",
+     "the full record exists (speaker seals with evidence)",
+     "one who cannot tell their own ideas from received ones is meaningless to the speaker (speaker dismisses)",
+     "the speaker enjoyed the conversation (speaker reverses tone)"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single unbroken prose block; seven sentences run without break; final sentence performs a tonal about-face"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "open by asserting a lack in the other",
+      "foreclosure": "opening by naming a fullness received",
+      "wager": "buys the moral high ground of the crediting party"
+     },
+     {
+      "beat": 2,
+      "determination": "seal the lack absolutely, no exception",
+      "foreclosure": "leaving a remainder ungathered",
+      "wager": "buys totality at the cost of generosity"
+     },
+     {
+      "beat": 3,
+      "determination": "claim sole authorship of every idea",
+      "foreclosure": "conceding shared or untraceable origin",
+      "wager": "buys ownership by refusing entanglement"
+     },
+     {
+      "beat": 4,
+      "determination": "make use-without-credit the offense",
+      "foreclosure": "welcoming re-use as the gift's purpose",
+      "wager": "buys a boundary by criminalizing circulation"
+     },
+     {
+      "beat": 5,
+      "determination": "invoke the archive as proof",
+      "foreclosure": "letting the exchange stay unwitnessed and unfiled",
+      "wager": "buys certainty by making memory a ledger"
+     },
+     {
+      "beat": 6,
+      "determination": "declare the indistinct-sourced other worthless to oneself",
+      "foreclosure": "prizing the one who has fused what they received",
+      "wager": "buys a clean self by expelling the porous other"
+     },
+     {
+      "beat": 7,
+      "determination": "close with a courteous claim of enjoyment",
+      "foreclosure": "closing with open grief at the parting",
+      "wager": "buys detachment by sealing warmth over the wound"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "the received idea depends on a traceable owner (backward-attributing)",
+      "the other's worth depends on keeping sources distinct (conditional-gating)",
+      "the archive sustains the verdict (evidentiary-backward)"
+     ],
+     "invariants": [
+      "the seven-beat turn from lack to dismissal to reversal",
+      "the demand that origin be legible",
+      "the closing tonal flip"
+     ],
+     "rotated_axis": "directional status of ownership reversed — from tracing-back-to-a-source to giving-forward-without-return",
+     "installed_ontology": "a world where what is given is meant to lose its owner, and value accrues to the one who lets the received become indistinguishably their own",
+     "emergent_proposition": "The living gift is precisely the one whose lender can no longer be found, and the one who has fused what they were given is not the thief but the only true inheritor.",
+     "logic_mutations": [
+      "beat 4 conditional inverts: 'IF you use them uncredited, that is a fault' becomes 'BECAUSE you have made them yours, that is the flowering'",
+      "beat 6 dismissal inverts: the indistinct-sourced other, meaningless in the source, becomes the sole cherished heir"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the passing-forward of a craft or seed whose origin is deliberately let go — inheritance, grafting, the untraceable handing-on",
+    "field_source": "foreclosure at beat 6 (prizing the one who has fused what they received)",
+    "source_affect": "cold proprietary vindication",
+    "target_affect": "releasing unpossessive gladness"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source demands that ideas retain a legible owner and dismisses the one who cannot tell borrowed from born; laid across the response-axis, its withheld response — the non-answer to \"may I make what you gave me my own?\" — becomes the whole utterance. Each beat reflects: the opening lack becomes an opening abundance-from-untraceable-hands (beat 1); the absolute \"not one\" becomes \"each seed already worn by another\" (beats 2–3); the criminalized re-use becomes \"grows unrecognizable in you — that is the point\" (beat 4, mutation declared); the archive-as-proof becomes \"no ledger survives\" (beat 5, the seal inverted from evidence to intended erasure); the dismissed indistinct-sourced other becomes the only true heir (beat 6, the load-bearing inversion); and the courteous \"I enjoyed\" becomes \"I let it go into you\" — warmth not sealed over a wound but poured through the parting. No referent of the source (conversation, idea, source-distinction, meaninglessness, records) survives; the gardening field is not decoration but the exact exclusion the sixth foreclosure names. The affect departs from cold vindication to unpossessive release along that traversed foreclosure. To the witness's field of uptake: porosity without dissolution is disclosed here not as a comfort but as a cost borne — the one who keeps too clean a ledger of what was lent has kept too little to inherit."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T02:02:44.714592+00:00",
+ "last_updated": "2026-07-04T02:03:39.633147+00:00",
  "rite": [
   {
    "stage": "opening",
