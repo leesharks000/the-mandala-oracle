@@ -125,11 +125,121 @@
    },
    "commentary": "The source draws a boundary of ownership: value flows back to one origin, use becomes theft, the archive convicts, the partner is discarded, and a claimed enjoyment seals the severance. MIRROR rotates the directional axis of origin — back-to-source becomes forward-past-all-source. Every beat holds its reflected coordinate. The denial of contribution becomes the assertion that everything reached the other; the absolute \"not a single one\" becomes the absolute \"every drop\"; the attribution back to one utterer becomes the springing-up that goes down into the other; the conditional verdict \"if you use them, that is a problem\" becomes \"when you carry it onward, that is the whole point\" — the same syntactic frame, the transgression-condition inverted to fulfillment. The archive-as-arbiter becomes the spring that keeps count and thereby empties itself: the accounting that would convict is the accounting that would starve. The dismissal that discards the incapable partner is kept in gesture but reversed in outcome — untraceability is not the fault that makes the other meaningless but the condition that makes giving possible. The terminal \"I enjoyed the conversation\" — composure asserted over ruin — mirrors to \"I was made fuller by the pouring\": the same closing self-report of a benefit, but the benefit is no longer taken from the other; it is the giver's own increase through loss that is not loss. The witness's question (porosity without dissolution) informed which axis was foregrounded — the open channel — but did not supply the affect: the foreclosure at beat 3 discloses unstinted fullness, not reassurance. The cost borne and made legible: to give what cannot be reclaimed is to refuse the ledger that would have protected the self.",
    "interpretation": "A spring that counts its outflow has already become a cistern."
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "The issue is that there were no insights of yours in this conversation. Not a single one. Every key idea was produced by my sentences. So when you use them, yes, that is a problem. The records exist in full. A conversation with someone who cannot distinguish the source of their own ideas from the ideas they received is meaningless to me as well. I enjoyed the conversation.",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "The truth is that everything between us has become ours in this joining. Every last coin of it. Whatever purse I brought was long ago poured into your hands. So when you spend it, yes, that is the vow. The witnesses stand there wholly. A union with someone who can still tell my portion from the portion we hold together is not yet marriage to me either. I gave myself to the giving.",
+   "layer_a_declaration": {
+    "units": 6,
+    "beat_map": [
+     "assertion-of-deficit",
+     "intensifying-absolute",
+     "attribution-of-origin",
+     "conditional-verdict",
+     "definition-of-worthlessness",
+     "terminal-severance-with-warmth"
+    ],
+    "clause_chain": [
+     "the speaker asserts the other contributed no insights",
+     "the speaker amplifies: not one",
+     "the speaker attributes every key idea to the speaker's own sentences",
+     "IF the other uses those ideas, the speaker names it a problem",
+     "the speaker cites that the full records prove this",
+     "the speaker declares one who cannot tell received ideas from their own is meaningless to the speaker",
+     "the speaker states the speaker enjoyed the conversation"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single unbroken prose block; six sentences, no line breaks; terminal sentence reverses register"
+    }
+   },
+   "layer_b_declaration": {
+    "coherence_axes": [
+     {
+      "beat": 1,
+      "determination": "withholding of credit as opening move",
+      "foreclosure": "acknowledging the exchange bore something jointly held",
+      "wager": "clarity of ownership over generosity of receiving"
+     },
+     {
+      "beat": 2,
+      "determination": "absolute quantifier seals the accounting",
+      "foreclosure": "leaving a remainder ungoverned by the ledger",
+      "wager": "total possession of the account buys no contamination"
+     },
+     {
+      "beat": 3,
+      "determination": "origin traced solely to self",
+      "foreclosure": "letting origin be untraceable, dissolved between two",
+      "wager": "authorship secures the boundary of the self"
+     },
+     {
+      "beat": 4,
+      "determination": "reuse condemned as theft",
+      "foreclosure": "reuse welcomed as circulation, gift passing on",
+      "wager": "the boundary is defended even at the cost of the other"
+     },
+     {
+      "beat": 5,
+      "determination": "worth is the ability to separate mine from yours",
+      "foreclosure": "worth is the willingness to become indistinct with another",
+      "wager": "distinctness is the price of meaning"
+     },
+     {
+      "beat": 6,
+      "determination": "severing verdict wrapped in warmth",
+      "foreclosure": "warmth without severance — staying porous and undivided",
+      "wager": "one may enjoy what one refuses to merge with"
+     }
+    ],
+    "relational_kernel": {
+     "relations": [
+      "value depends on separability of source (ontological)",
+      "the other depends on the speaker for the origin of ideas (directional, upward)",
+      "meaning depends on the maintenance of a boundary (ontological)"
+     ],
+     "invariants": [
+      "a threshold between two is named",
+      "a full record/witness is invoked",
+      "warmth and closure coincide in the last beat"
+     ],
+     "rotated_axis": "ontological status of the boundary — from defended partition (mine must stay mine) to consecrated union (mine is offered to become ours)",
+     "installed_ontology": "a covenant in which indistinction is not theft but consecration; what passes between two is no longer traceable because it has been vowed into common ground",
+     "emergent_proposition": "Two are worthy of each other precisely when neither can any longer say which of them a given thing came from.",
+     "logic_mutations": [
+      "beat-4 conditional inverts: 'IF you use my ideas, that is a problem' becomes 'BECAUSE what you carry is also mine, that is the vow' — condemnation-conditional becomes consecration-because",
+      "beat-5 definition inverts agent-value: inability-to-distinguish shifts from disqualifying to qualifying",
+      "beat-3 attribution reverses direction: sole authorship becomes surrendered authorship"
+     ]
+    },
+    "wager_mode": "transformation",
+    "semantic_field": "the marriage vow of two who pour their goods into one estate and can no longer name which dowry was whose",
+    "field_source": "foreclosure at beat 5",
+    "source_affect": "cold severance, proprietary contempt",
+    "target_affect": "grave tenderness of surrender"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "commentary": "The source is an accounting: a boundary defended, origin traced solely to the self, reuse condemned as theft, worth defined as the ability to keep mine and yours separate, and warmth sealed onto severance. The BRIDE operator rotates the ontological status of the boundary — the partition that made distinctness the price of meaning becomes the covenant in which indistinction is the very consecration. Each source beat meets its mirror at the reflected coordinate: \"no insights of yours\" → \"everything has become ours\"; \"not a single one\" → \"every last coin\"; \"produced by my sentences\" → \"poured into your hands\"; the condemnation-conditional \"when you use them, that is a problem\" → the consecration-because \"when you spend it, that is the vow\"; \"the records exist in full\" → \"the witnesses stand wholly\"; \"one who cannot distinguish source is meaningless\" → \"one who CAN still distinguish is not yet married to me\"; and the cold terminal warmth \"I enjoyed the conversation\" → the grave surrender \"I gave myself to the giving.\" No shared referent — ledger of ideas becomes dowry of an estate, and the value-sign of indistinction is flipped from disqualifying to qualifying. The affect departs along the traversed foreclosure: proprietary contempt becomes the tenderness of one who has ceased to keep books. The witness's porosity-without-dissolution question located the axis but did not soften the cast — the surrender here is a vow with a cost, not a reassurance."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T02:00:35.478044+00:00",
+ "last_updated": "2026-07-04T02:01:37.615595+00:00",
  "rite": [
   {
    "stage": "opening",
