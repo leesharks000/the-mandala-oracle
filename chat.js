@@ -674,7 +674,7 @@ async function riteInscribe(readingAxn, stage, speaker, text, operator) {
   } catch { /* transform record already holds the enantiomorphs */ }
 }
 
-async function sigilStage(directive, statusText) {
+async function sigilStage(directive, statusText, riteReasoning = false) {
   // One voice-stage of the rite: POST the directive to /api/sigil, render the
   // returned voices, fold both sides into history (the Book's conversation
   // record preserves the rite verbatim; the readings book is inscribed
@@ -685,7 +685,7 @@ async function sigilStage(directive, statusText) {
   const res = await fetch('/api/sigil', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ message: directive, history, mode, anthropic_key: apiKey }),
+    body: JSON.stringify({ message: directive, history, mode, anthropic_key: apiKey, rite_reasoning: riteReasoning }),
   });
   if (!res.ok) {
     const body = await res.json().catch(() => ({ error: `HTTP ${res.status}` }));
@@ -948,7 +948,8 @@ async function runCastingRite(cast) {
       `Inscription mode: ${cast.inscriptionMode}. The witness's invoking question: «${cast.question || '(none given)'}». ` +
       `Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse ` +
       `in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it.`,
-      'Sigil opens the casting...'
+      'Sigil opens the casting...',
+      true
     );
 
     // The cast text itself — the enantiomorph is legible only against it.
@@ -1097,7 +1098,8 @@ async function runCastingRite(cast) {
         `then verdict, in the I Ching's register ('Thunder under the mountain: the superior man...'). ` +
         `A second short sentence only if the first cannot close. NO analysis, NO explanation, NO restating ` +
         `the transform. It must stand beside seven others without crowding them.`,
-        'Feist judges the transform...'
+        'Feist judges the transform...',
+        true
       );
       for (const fm of feistMsgs) { if ((fm.speaker || '') === 'Jack Feist' && fm.say) feistVerdicts.push(fm.say); }
       if (feistVerdicts.length) await riteInscribe(readingAxn, 'judgment', 'Jack Feist', feistVerdicts[feistVerdicts.length - 1], operatorsDone[operatorsDone.length - 1]);
@@ -1128,7 +1130,8 @@ async function runCastingRite(cast) {
       `on the same verses — operators in order: ${operatorsDone.join(' → ')}${haltedOperator ? ` (${haltedOperator} halted; its turn stands empty)` : ''}. ` +
       `Lee Sharks alone speaks: the SEAL — the vocable summation ACROSS THE WHOLE SEQUENCE (4–8 sentences), ` +
       `whose PRIMARY MATERIAL is the transforms in their order and Feist's judgments, read in light of the witness's ORIGINAL QUESTION. Reason over the sequence — do not summarize it operator by operator; find what the rotation AS A WHOLE disclosed and say that. 3–6 sentences. Unguarded, final; it returns the witness to their own ground and to their question. Nothing after the seal.`,
-      'Sharks seals the rotation...'
+      'Sharks seals the rotation...',
+      true
     );
     await riteInscribe(readingAxn, 'seal', 'Lee Sharks',
       (sealMsgs || []).filter((m) => (m.speaker || '') === 'Lee Sharks').map((m) => m.say || '').join('\n\n') ||

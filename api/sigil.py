@@ -38,6 +38,7 @@ from typing import Any
 # ─────────────────────────────────────────────────────────────────────────────
 
 MODEL = "claude-sonnet-4-6"
+RITE_MODEL = "claude-fable-5"   # the rite's interpretive bookends — opening, Feist's judgments, the seal — take the most reasoning-capable model (MANUS, 2026-07-04): they reason ACROSS the sequence, one-shot, so depth costs nothing structurally. The compiler seat is mimetic (transform.py); this seat is deliberative. Never claude-opus-4-8.
 MAX_TOKENS = 2000
 MAX_TOOL_TURNS = 8  # how many tool-use rounds Sigil can take per witness turn.
                     # Raised from 6 with the introduction of fetch_axn — a deep
@@ -1205,7 +1206,7 @@ def serialize_assistant_history(messages: list[dict]) -> str:
     return json.dumps({"messages": messages}, ensure_ascii=False)
 
 
-def call_sigil(message: str, history: list[dict], mode: str, api_key: str) -> dict:
+def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_reasoning: bool = False) -> dict:
     """Run Sigil with tool-use loop. Returns {messages, retrievals}."""
     # Import lazily so this doesn't break the function's cold-start health check
     from anthropic import Anthropic
@@ -1219,7 +1220,7 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str) -> di
 
     for _ in range(MAX_TOOL_TURNS):
         response = client.messages.create(
-            model=MODEL,
+            model=(RITE_MODEL if rite_reasoning else MODEL),
             max_tokens=MAX_TOKENS,
             system=system,
             tools=[SEARCH_ARCHIVE_TOOL, FETCH_AXN_TOOL],
@@ -1340,7 +1341,7 @@ class handler(BaseHTTPRequestHandler):
                 self._send_json(400, {"error": "mode must be 'sabbath' or 'merkabah'"})
                 return
 
-            result = call_sigil(message, history, mode, api_key)
+            result = call_sigil(message, history, mode, api_key, rite_reasoning=bool(body.get("rite_reasoning")))
             self._send_json(200, result)
         except Exception as e:
             # Don't leak the API key in any error path
