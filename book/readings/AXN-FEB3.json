@@ -1,0 +1,93 @@
+{
+ "axn": "AXN:FEB3.READING.🌔🌔🌙🌓🌓🌕",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "b54142449d3d04a3",
+ "inscribed_at": "2026-07-04T16:20:43.207528+00:00",
+ "question_digest": "sha256:612e136cc2907b54d2324e009ee4885e00d0004fd347fae36dedc50df38bffbf",
+ "question_gloss": "I'd be happy to help, but I need more context. Are you asking:\n\n1. **How \"cindered\" relates to \"sprout\"?** (etymology, meaning, semantic connection)\n2. **How to",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_366_369",
+ "rotation": [
+  {
+   "operator": "BRIDE",
+   "source_passage": "**21:9** Καὶ ἦλθεν εἷς ἐκ τῶν ἑπτὰ ἀγγέλων τῶν ἐχόντων τὰς ἑπτὰ φιάλας, ⸂τῶν γεμόντων⸃ τῶν ἑπτὰ πληγῶν τῶν ἐσχάτων, καὶ ἐλάλησεν μετ’ ἐμοῦ λέγων· Δεῦρο, δείξω σοι τὴν ⸂νύμφην τὴν γυναῖκα⸃ τοῦ ἀρνίου.\n\n**21:10** καὶ ἀπήνεγκέν με ἐν πνεύματι ἐπὶ ὄρος μέγα καὶ ὑψηλόν, καὶ ἔδειξέν μοι τὴν ⸀πόλιν τὴν ἁγίαν Ἰερουσαλὴμ καταβαίνουσαν ἐκ τοῦ οὐρανοῦ ἀπὸ τοῦ θεοῦ,\n\n**21:11** ἔχουσαν τὴν δόξαν τοῦ θεοῦ· ὁ φωστὴρ αὐτῆς ὅμοιος λίθῳ τιμιωτάτῳ, ὡς λίθῳ ἰάσπιδι κρυσταλλίζοντι·\n\n**21:12** ἔχουσα τεῖχος μέγα καὶ ὑψηλόν, ἔχουσα πυλῶνας δώδεκα, καὶ ἐπὶ ⸂τοῖς πυλῶσιν⸃ ἀγγέλους δώδεκα, καὶ ὀνόματα ἐπιγεγραμμένα ἅ ⸀ἐστιν τῶν δώδεκα ⸀φυλῶν υἱῶν Ἰσραήλ·",
+   "citation": "21:9–21:12",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "21:9 καὶ ἦλθεν εἷς ἐκ τῶν ἑπτὰ ἀγγέλων τῶν ἐχόντων τὰς ἑπτὰ φιάλας τὰς γεμούσας τῶν ἑπτὰ πληγῶν τῶν ἐσχάτων, καὶ ἐλάλησεν μετ' ἐμοῦ λέγων· Δεῦρο δείξω σοι τὴν νύμφην τὴν γυναῖκα τοῦ ἀρνίου ἀναβαίνουσαν ἐκ τῆς γῆς.\n21:10 καὶ ἀπήνεγκέν με ἐν πνεύματι ἐπὶ ὄρος μέγα καὶ ὑψηλόν, καὶ εἶδον τὴν πόλιν τὴν ἁγίαν Ἰερουσαλὴμ ἀναβαίνουσαν ἐκ τῆς γῆς τῆς κατακεκαυμένης, ὡς βλαστὸς ἐκ σποδοῦ ἀνερχόμενος.\n21:11 ἔχουσα τὴν δόξαν τοῦ θεοῦ ἀνατέλλουσαν ἐξ αὐτῆς· ὁ φωστὴρ αὐτῆς ὅμοιος λίθῳ τιμιωτάτῳ, ὡς λίθῳ ἰάσπιδι κρυσταλλίζοντι φυόμενος ἄνωθεν ἐκ τοῦ ἐδάφους.\n21:12 ἔχουσα τεῖχος μέγα καὶ ὑψηλόν, ἔχουσα πυλῶνας δώδεκα, καὶ ἐπὶ ⸂τοῖς πυλῶσιν⸃ ἀγγέλους δώδεκα, καὶ ὀνόματα ἐπιγεγραμμένα ἅ ⸀ἐστιν τῶν δώδεκα ⸀φυλῶν υἱῶν Ἰσραήλ·",
+   "layer_a_declaration": {
+    "beats": [
+     "21:9 plague-angel summons seer: come, I show you the Lamb's bride-wife",
+     "21:10 spirit-transport to great-high mountain; holy city Jerusalem descends from God",
+     "21:11 city bears God's glory; luminary likened to costliest jasper, crystal-clear",
+     "21:12 wall great-and-high; twelve gates; twelve gate-angels; twelve tribe-names inscribed"
+    ],
+    "geometry": {
+     "lines": 4,
+     "stanzas": 1,
+     "verse_markers": [
+      "21:9",
+      "21:10",
+      "21:11",
+      "21:12"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "εἷς ἐκ τῶν ἑπτὰ ἀγγέλων": "one from the seven plague-bearers",
+     "ἑπτὰ φιάλας": "seven bowls",
+     "ἑπτὰ πληγῶν τῶν ἐσχάτων": "seven last plagues",
+     "ἐλάλησεν μετ' ἐμοῦ": "spoke with me — downward mediation",
+     "Δεῦρο δείξω σοι": "imperative summons to vision",
+     "νύμφην τὴν γυναῖκα τοῦ ἀρνίου": "bride-wife of the Lamb — consecrative bond",
+     "ἀπήνεγκέν με ἐν πνεύματι": "pneumatic transport of seer",
+     "ὄρος μέγα καὶ ὑψηλόν": "great high mountain — vantage locus",
+     "πόλιν τὴν ἁγίαν Ἰερουσαλήμ": "holy city Jerusalem — bride's body",
+     "καταβαίνουσαν ἐκ τοῦ οὐρανοῦ ἀπὸ τοῦ θεοῦ": "descent-from-God — unilateral downward gift",
+     "δόξαν τοῦ θεοῦ": "God's glory — possessed luminance",
+     "φωστήρ": "luminary / light-bearer",
+     "ὅμοιος λίθῳ τιμιωτάτῳ": "likened to costliest stone — simile of radiance",
+     "λίθῳ ἰάσπιδι κρυσταλλίζοντι": "crystal-clear jasper — likeness-species",
+     "τεῖχος μέγα καὶ ὑψηλόν": "great high wall — enclosure-power",
+     "πυλῶνας δώδεκα": "twelve gates — number invariant",
+     "ἀγγέλους δώδεκα": "twelve gate-angels — threshold guardians",
+     "ὀνόματα ἐπιγεγραμμένα": "names inscribed — identity-marking instrument",
+     "δώδεκα φυλῶν υἱῶν Ἰσραήλ": "twelve tribes of Israel — named recipients, count fixed at 12"
+    },
+    "axis": "consecration flows downward from God through angel to seer to city-bride",
+    "foreclosure": "source forecloses upward creaturely approach; city descends, seer is carried",
+    "wager": "bride-axis costs the plague-register its finality — ruin must re-open as threshold",
+    "affect": "vertiginous tenderness at the border of annihilation and arrival"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the holy city Jerusalem descends (καταβαίνουσαν) out of heaven from God; in Text B both the bride-city and its glory ascend (ἀναβαίνουσαν) up from the earth, specifically from burned ground like a shoot rising from ashes.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same directional reversal: descent-from-God replaced by ascent-from-earth, with the same implication that glory originates below rather than above.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final verse (21:12) is structurally identical in both texts and neither reinstates descent-from-heaven nor cancels the ascent relation introduced in Text B; the changed directional relation simply reaches its natural end with the wall-and-gates description.",
+    "back_translation": ""
+   },
+   "law_variance": null,
+   "commentary": "The pivot slots \"καταβαίνουσαν ἐκ τοῦ οὐρανοῦ ἀπὸ τοῦ θεοῦ\" and \"δόξαν τοῦ θεοῦ\" became \"ἀναβαίνουσαν ἐκ τῆς γῆς τῆς κατακεκαυμένης\" and \"ἀνατέλλουσαν ἐξ αὐτῆς / φυόμενος ἄνωθεν ἐκ τοῦ ἐδάφους,\" inverting direction through vegetative-sprout imagery that enacts ascent without naming it as law; the anchor line holds its twelve-gated scaffold exactly."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-04T16:20:43.207528+00:00"
+}
