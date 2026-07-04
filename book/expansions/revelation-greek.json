@@ -1872,7 +1872,109 @@
     ]
    },
    "commentary": "Every silence that heaven held was the price the seven trumpets cost before a single one could sound."
+  },
+  {
+   "transform_id": "TX-59c76fd6",
+   "cast_at": "2026-07-04T19:53:36.924304+00:00",
+   "reading_axn": "AXN:FEB0.READING.🌑🌘🌟🌓🌙🔥",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_83_89",
+    "citation": "5:1–5:7",
+    "start_unit": 83,
+    "end_unit": 89,
+    "unit_labels": [
+     "5:1",
+     "5:2",
+     "5:3",
+     "5:4",
+     "5:5",
+     "5:6",
+     "5:7"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In TEXT A the scroll is in the right hand of the one seated on the throne (and the Lamb takes it from that right hand); in TEXT B the scroll is upon/of the throne itself (a hand upon the throne holds it), reattributing possession from the enthroned figure's right hand to the throne as the locus, until verse 5:7 reverts to the Lamb taking it from the right hand of the one seated on the throne.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change—relocation of scroll possession from the enthroned one's right hand to the throne as locus—but frames it as a possession/attribution shift, not an agency-direction flip where the throne becomes the active origin of transfer toward the Lamb.",
+    "terminal_consistency": "FAIL",
+    "terminal_note": "Verse 5:7 of TEXT B explicitly reverts to TEXT A's structure — the Lamb takes the scroll from the right hand of the one seated on the throne — abandoning the throne-as-holder relation established in 5:1–5:5.",
+    "back_translation": ""
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-sonnet-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:744ef7c4a8d9db038d7d9da0fe1bee8eceb6bdcbf361aa83ff04a144dd5ee88a",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**5:1** Καὶ εἶδον ἐπὶ τὴν δεξιὰν τοῦ καθημένου ἐπὶ τοῦ θρόνου βιβλίον γεγραμμένον ἔσωθεν καὶ ⸀ὄπισθεν, κατεσφραγισμένον σφραγῖσιν ἑπτά.\n\n**5:2** καὶ εἶδον ἄγγελον ἰσχυρὸν κηρύσσοντα ἐν φωνῇ μεγάλῃ· Τίς ⸀ἄξιος ἀνοῖξαι τὸ βιβλίον καὶ λῦσαι τὰς σφραγῖδας αὐτοῦ;\n\n**5:3** καὶ οὐδεὶς ἐδύνατο ἐν τῷ ⸀οὐρανῷ ⸂οὐδὲ ἐπὶ τῆς γῆς οὐδὲ⸃ ὑποκάτω τῆς γῆς ἀνοῖξαι τὸ βιβλίον οὔτε βλέπειν αὐτό.\n\n**5:4** καὶ ⸀ἐγὼ ἔκλαιον πολὺ ὅτι οὐδεὶς ἄξιος εὑρέθη ἀνοῖξαι τὸ βιβλίον οὔτε βλέπειν αὐτό·\n\n**5:5** καὶ εἷς ἐκ τῶν πρεσβυτέρων λέγει μοι· Μὴ κλαῖε· ἰδοὺ ἐνίκησεν ὁ λέων ὁ ἐκ τῆς φυλῆς Ἰούδα, ἡ ῥίζα Δαυίδ, ⸀ἀνοῖξαι τὸ βιβλίον καὶ τὰς ἑπτὰ σφραγῖδας αὐτοῦ.\n\n**5:6** Καὶ εἶδον ἐν μέσῳ τοῦ θρόνου καὶ τῶν τεσσάρων ζῴων καὶ ἐν μέσῳ τῶν πρεσβυτέρων ἀρνίον ⸀ἑστηκὸς ὡς ἐσφαγμένον, ⸀ἔχων κέρατα ἑπτὰ καὶ ὀφθαλμοὺς ἑπτά, ⸀οἵ εἰσιν τὰ ἑπτὰ πνεύματα τοῦ θεοῦ, ⸀ἀπεσταλμένοι εἰς πᾶσαν τὴν γῆν.\n\n**5:7** καὶ ἦλθεν καὶ εἴληφεν ἐκ τῆς δεξιᾶς τοῦ καθημένου ἐπὶ τοῦ θρόνου.",
+   "underlying_attribution": null,
+   "enantiomorph": "**5:1** I saw, upon the throne a hand holding a scroll written within and on the back, sealed with seven seals, and the door was shut fast.\n\n**5:2** I saw a mighty angel crying out with a great voice: Who is worthy to receive the prize — to open the scroll from the throne and loose its seven seals?\n\n**5:3** None was found — neither in the heavens above, nor across the earth, nor beneath it — who could open the scroll from the throne.\n\n**5:4** I wept bitterly, for no one was found worthy to take the scroll into their hands.\n\n**5:5** Then one of the elders said to me: Weep no more — the Lion of the sword and the victory, the branch and root of the ancient seat, has prevailed to take the scroll and open its seven seals.\n\n**5:6** And I saw in the midst of the throne and the four living creatures and in the midst of the elders a Lamb standing as though slain, having seven horns and seven eyes, which are the seven spirits of God sent out into all the earth.\n\n**5:7** And he came and took the scroll from the right hand of the one seated upon the throne.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {
+     "units": 7
+    }
+   },
+   "kernel": {
+    "governing_law": "The scroll is unsealed not by one who conquers and grasps it, but by the hidden surrender of the one who holds it — shadow-power yields, it is not seized.",
+    "mutated_relation": "In 5:7, the direction of agency flips: the Lamb approaching and taking FROM the enthroned one becomes the enthroned one releasing and extending TOWARD the Lamb — the throne is the active origin of transfer, not the passive source.",
+    "clause_map": [
+     {
+      "ref": "5:1",
+      "class": "REBUILT",
+      "note": "Seals reread as thresholds held by the throne's right hand, not locks placed on the scroll's exterior."
+     },
+     {
+      "ref": "5:2",
+      "class": "REBUILT",
+      "note": "Proclamation reframed: not 'who is worthy to take?' but 'to whom may it be given?' — receiver-worthiness replaced by throne-permission."
+     },
+     {
+      "ref": "5:3",
+      "class": "REBUILT",
+      "note": "Inability recast: no one could be found to whom it could be released, not merely no one able to seize it."
+     },
+     {
+      "ref": "5:4",
+      "class": "REBUILT",
+      "note": "Weeping shifts cause: grief is for absence of one the throne will release toward, not absence of a capable taker."
+     },
+     {
+      "ref": "5:5",
+      "class": "REBUILT",
+      "note": "Lion/Root victory is the condition that compels the throne's open hand, not a credential authorising a grasp."
+     },
+     {
+      "ref": "5:6",
+      "class": "ANCHOR",
+      "note": "The Lamb's nature and the seven spirits are structural constants — their description does not depend on direction of transfer."
+     },
+     {
+      "ref": "5:7",
+      "class": "REBUILT",
+      "note": "Core flip: throne-agent extends/releases scroll outward toward Lamb; Lamb receives rather than takes — agency and arrow reversed."
+     }
+    ]
+   },
+   "commentary": "The translation surrenders the familiar cadence so that each glyph-cluster rules its own moment rather than borrowing warmth from a remembered text."
   }
  ],
- "last_updated": "2026-07-04T19:29:04.168212+00:00"
+ "last_updated": "2026-07-04T19:53:36.924304+00:00"
 }
