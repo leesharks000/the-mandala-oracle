@@ -130,6 +130,23 @@ try:
     check("malformed skeleton → repaired → PASS", r["result"] == "PASS",
           r.get("halt_diagnosis", {}).get("specific_diagnosis", ""))
 
+    # 4b. skeleton truncated (max_tokens) → retry call at higher ceiling, not repair
+    trunc = json.dumps(GOOD_SKEL)[:200]  # a stump: unrepairable, tail does not exist
+    calls = []
+    it = iter([(trunc, "max_tokens"), (json.dumps(GOOD_SKEL), "end_turn"),
+               (GOOD_COMPOSE, "end_turn"), ("bx", "end_turn"),
+               (GOOD_JUDGE, "end_turn"), (GOOD_MATCH, "end_turn")])
+    def fake_trunc(model, system, user, max_toks, api_key, wall=240.0):
+        calls.append((max_toks, "TRUNCATED" in user))
+        return next(it)
+    T._stream_call = fake_trunc
+    r = T.run_compiler_v3("SOURCE GREEK TEXT", "MIRROR", "q", "sk-test")
+    check("truncated skeleton → retry (not repair) → PASS", r["result"] == "PASS",
+          r.get("halt_diagnosis", {}).get("specific_diagnosis", ""))
+    check("retry used higher ceiling + truncation notice",
+          len(calls) >= 2 and calls[1][0] == T.SKELETON_RETRY_MAX and calls[1][1],
+          str(calls[:2]))
+
     # 5. S2: analyst declares no mutated relation → HALT before generation
     undeclared = dict(GOOD_SKEL); undeclared = {k: v for k, v in undeclared.items()}
     undeclared["mutated_relation"] = ""

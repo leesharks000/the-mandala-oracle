@@ -973,7 +973,8 @@ def enforce_pass(parsed: dict) -> bool:
 
 V3_INDEPENDENT = os.environ.get("V3_INDEPENDENT", "1") != "0"   # kill-switch for the judge stack (latency fallback)
 
-SKELETON_MAX_V3 = 2000
+SKELETON_MAX_V3 = 4000    # v0.3 analyst emits ~3x the v2 skeleton (law + clause map); 2000 truncated on a 4-verse cast (2026-07-04 first live rotation)
+SKELETON_RETRY_MAX = 6000  # truncation-retry ceiling: truncated JSON is not repairable (the tail does not exist), so out-of-budget gets a re-call, never a repair
 BACKXLATE_MAX = 1400
 JUDGE_MAX = 500
 MATCH_MAX = 220
@@ -1095,6 +1096,8 @@ directionality reversal; an unpaid glory cannot be anchored under a cost
 mutation; a simile cannot be anchored where the mutation is the failure of
 likeness itself). Predicate-list verses are where the mutation has the MOST
 work to do, not the least.
+BREVITY LAW: every note, beat, and justification telegraphic (<=12 words);
+the object MUST complete within budget — an unfinished skeleton is a halt.
 The slot_map is law: the composer will fill exactly these slots. Omit a
 load-bearing slot and the transform fails downstream. JSON only."""
 
@@ -1198,6 +1201,17 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
           f"SOURCE:\n<<<\n{source_text}\n>>>")
     s_text, s_stop = _stream_call(COMPILER_MODEL, SKELETON_SYSTEM_V3, u1,
                                   SKELETON_MAX_V3, api_key, wall=70)
+    if s_stop == "max_tokens":
+        # Truncated JSON is not repairable — the tail does not exist, and a
+        # "repair" would hallucinate clause-map entries. Re-call once at the
+        # retry ceiling with the brevity law foregrounded (first live
+        # rotation, 2026-07-04: 4-verse cast truncated at 2000, then the
+        # repair inherited the stump).
+        s_text, s_stop = _stream_call(
+            COMPILER_MODEL, SKELETON_SYSTEM_V3,
+            u1 + "\n\nPREVIOUS ATTEMPT TRUNCATED. Re-emit COMPLETE and MORE "
+                 "COMPACT: telegraphic notes only, nothing beyond the schema.",
+            SKELETON_RETRY_MAX, api_key, wall=55)
     skel, err = _json_with_repair(s_text, api_key)
     empty = {"result": "HALT", "layer_a": {}, "layer_b": {}, "kernel": {},
              "enantiomorph": "", "enantiomorph_translation": "",
