@@ -1,0 +1,85 @@
+{
+ "run_id": "RUN-20260704T200944Z-aff23c",
+ "schema": "run/v1",
+ "ts": "2026-07-04T20:09:44.037359+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_68_72",
+ "citation": "3:19–4:1",
+ "operator": "MIRROR",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "how do i reach my daughter?",
+ "code": "aa4842b033e0",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "a single agent of love initiates every approach; all motion flows from that agent outward toward a passive receiver who may only open or refuse",
+   "mutated_relation": "your daughter is the one who has been standing at your door knocking; you are the passive receiver who has not yet opened",
+   "clause_map": [
+    {
+     "ref": "3:19",
+     "class": "REBUILT",
+     "note": "love-that-rebukes now flows from daughter toward parent"
+    },
+    {
+     "ref": "3:20",
+     "class": "REBUILT",
+     "note": "she stands, knocks; your opening is the condition of reunion"
+    },
+    {
+     "ref": "3:21",
+     "class": "REBUILT",
+     "note": "her prior overcoming without you is the throne she already occupies"
+    },
+    {
+     "ref": "3:22",
+     "class": "REBUILT",
+     "note": "the ear commanded to hear is yours; her voice is the Spirit's address"
+    },
+    {
+     "ref": "4:1",
+     "class": "REBUILT",
+     "note": "opened door is hers; trumpet-voice summons you downward to her level"
+    }
+   ]
+  },
+  "enantiomorph": "3:19 ἡ θυγάτηρ φιλεῖ σε· ἐλέγχει καὶ παιδεύει· ζήλευε οὖν καὶ μετανόησον.\n3:20 ἑστήκασιν ἐπὶ τὴν θύραν σου· κρούει· ἐὰν σὺ ἀκούσῃς τῆς φωνῆς αὐτῆς καὶ ἀνοίξῃς τὴν θύραν, εἰσελεύσεται πρὸς σέ, καὶ δειπνήσει μετὰ σοῦ καὶ σὺ μετ' αὐτῆς.\n3:21 ὁ ἀνοίγων· δοθήσεταί σοι καθίσαι μετ' αὐτῆς· ὡς καὶ αὐτὴ ἐνίκησεν καὶ ἐκάθισεν ἄνευ σοῦ.\n3:22 σὺ ὁ ἔχων οὖς\nἄκουσον\nτί αὐτὴ λέγει\nταῖς ἐκκλησίαις.\n4:1 θύρα ἠνεῳγμένη ὑπ' αὐτῆς· καὶ φωνὴ αὐτῆς ἡ παλαιά, ὡς σάλπιγγος, λαλοῦσα· Κατάβα ὧδε, καὶ δείξει σοι ἃ δεῖ γενέσθαι.",
+  "enantiomorph_translation": "3:19 Your daughter loves you: she rebukes and disciplines you; be zealous therefore and repent.\n3:20 They stand at your door; she knocks; if you hear her voice and open the door, she will enter toward you, and she will dine with you and you with her.\n3:21 The one who opens — you are granted to sit with her; as she too overcame and sat without you.\n3:22 You, the one who has an ear,\nhear\nwhat she says\nto the churches.\n4:1 A door already opened by her; and her old voice, like a trumpet, speaking: Descend here, and she will show you what must happen.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the speaker is a divine 'I' (Christ) who loves, rebukes, knocks, enters, and rewards the overcomer by his own authority, with the human as respondent. In Text B the agent is a feminine third-person figure ('ἡ θυγάτηρ'/'αὐτή') who acts upon a second-person 'you,' and the reward in 3:21 is granted without the human's co-presence ('ἄνευ σοῦ') rather than in shared enthronement, reversing the relational direction and locus of agency throughout.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim identifies a real agency/relational reversal (divine I → feminine third-person agent acting on 'you') and a structural change in the reward clause, but it describes a broader cross-text substitution of the entire speaking subject and reward structure, only partially overlapping the declared change (daughter as door-knocker vs. passive receiver who hasn't opened).",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion (3:22–4:1) continues Text B's changed relation: the feminine third-person agent ('αὐτή') speaks and opens the door, and the command is 'Κατάβα' (descend) rather than 'Ἀνάβα' (ascend), maintaining the inverted agency and direction to the end.",
+   "back_translation": "",
+   "terminal_similarity": 0.177
+  },
+  "advisories": [],
+  "law_variance": {
+   "declared": "your daughter is the one who has been standing at your door knocking; you are the passive receiver who has not yet opened",
+   "recovered": "In Text A the speaker is a divine 'I' (Christ) who loves, rebukes, knocks, enters, and rewards the overcomer by his own authority, with the human as respondent. In Text B the agent is a feminine third-person figure ('ἡ θυγάτηρ'/'αὐτή') who acts upon a second-person 'you,' and the reward in 3:21 is granted without the human's co-presence ('ἄνευ σοῦ') rather than in shared enthronement, reversing the relational direction and locus of agency throughout.",
+   "note": "The recovered claim identifies a real agency/relational reversal (divine I → feminine third-person agent acting on 'you') and a structural change in the reward clause, but it describes a broader cross-text substitution of the entire speaking subject and reward structure, only partially overlapping the declared change (daughter as door-knocker vs. passive receiver who hasn't opened)."
+  },
+  "commentary": "Every slot migrated from first-person speaker to third-person daughter (ἡ θυγάτηρ φιλεῖ, κρούει, εἰσελεύσεται, ἐκάθισεν ἄνευ σοῦ) while the parent's passivity is enacted throughout — culminating in Κατάβα ὧδε, where the trumpet-summons reverses direction and lands hardest on the foreclosed separation now made crossable only by the parent's descent.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
