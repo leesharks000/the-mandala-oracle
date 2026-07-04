@@ -1975,7 +1975,7 @@ def _binding_battery(parsed: dict, source_text: str) -> dict:
     Runs at the tail of _independent_gates so every path inherits it.
     Geometry is binding; law match must be EXACT; terminal reversion halts;
     the witness's question may not leak entities into the transform or the
-    commentary (the daughter incident). V3_ADVISORY=1 demotes all of this to
+    commentary (the daughter incident). All of it is printed ledger by
     recorded advisories -- WHICH IS THE PERMANENT DEFAULT (MANUS standing
     order: verdicts are data, the witness judges; the only halt is literal
     emptiness). V3_HARD_GATES=1 is the sole enforcement opt-in."""
