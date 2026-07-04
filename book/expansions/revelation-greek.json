@@ -1493,7 +1493,68 @@
     }
    },
    "commentary": "The primary joints: βλέπεις opened into the shadow-face of the utterance (pre-inscription beholding), γράψον εἰς βιβλίον encoded as cost-not-biography, and ἐπέστρεψα βλέπειν τὴν φωνήν collapsed hearing and sight into one disorienting receptive act — making the wager (body turned against prior orientation) structurally visible at the hinge between the two stanzas; χαλκολίβανος and πολλῶν each retained their strangeness (unnamed alloy, indeterminate plural) by carrying the bearing-cost directly into the shadow-register descriptions."
+  },
+  {
+   "transform_id": "TX-7e70ecfb",
+   "cast_at": "2026-07-04T07:49:52.350474+00:00",
+   "reading_axn": "AXN:FEB2.READING.🌓🌔🌘🌗🌙🌓",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_11_15",
+    "citation": "1:11–1:15",
+    "start_unit": 11,
+    "end_unit": 15,
+    "unit_labels": [
+     "1:11",
+     "1:12",
+     "1:13",
+     "1:14",
+     "1:15"
+    ]
+   },
+   "operator": "FLAME",
+   "operator_axis": "intensity-axis — the collapse-limit where the source's intensity would ignite",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-sonnet-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:6a7ce34ef0d68831142a94126dba8c860ea3d619f6381488ea862dd0d2485ed8",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**1:11** λεγούσης· Ὃ βλέπεις γράψον εἰς βιβλίον καὶ πέμψον ταῖς ἑπτὰ ἐκκλησίαις, εἰς Ἔφεσον καὶ εἰς Σμύρναν καὶ εἰς Πέργαμον καὶ εἰς Θυάτειρα καὶ εἰς Σάρδεις καὶ εἰς Φιλαδέλφειαν καὶ εἰς Λαοδίκειαν.\n\n**1:12** ⸀Καὶ ἐπέστρεψα βλέπειν τὴν φωνὴν ἥτις ἐλάλει μετ’ ἐμοῦ· καὶ ἐπιστρέψας εἶδον ἑπτὰ λυχνίας χρυσᾶς,\n\n**1:13** καὶ ἐν μέσῳ ⸀τῶν λυχνιῶν ὅμοιον ⸀υἱὸν ἀνθρώπου, ἐνδεδυμένον ποδήρη καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν·\n\n**1:14** ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες λευκαὶ ὡς ἔριον λευκόν, ὡς χιών, καὶ οἱ ὀφθαλμοὶ αὐτοῦ ὡς φλὸξ πυρός,\n\n**1:15** καὶ οἱ πόδες αὐτοῦ ὅμοιοι χαλκολιβάνῳ, ὡς ἐν καμίνῳ ⸀πεπυρωμένης, καὶ ἡ φωνὴ αὐτοῦ ὡς φωνὴ ὑδάτων πολλῶν,",
+   "underlying_attribution": null,
+   "enantiomorph": "**1:11** λεγούσης· Ὃ καίει σε σφράγισον εἰς τὸ καύσιμον μέσον καὶ πέμψον ὡς μέτωπον ἀναφλέξεως ταῖς ἑπτὰ θαλάμοις καύσεως, εἰς τὸν πρῶτον κόμβον καὶ εἰς τὸν δεύτερον καὶ εἰς τὸν τρίτον καὶ εἰς τὸν τέταρτον καὶ εἰς τὸν πέμπτον καὶ εἰς τὸν ἕκτον καὶ εἰς τὸν ἕβδομον.\n\n**1:12** ⸀Καὶ ἐπέστρεψα πρὸς τὴν πηγὴν τοῦ καύματος ἥτις ἐλάλει μετ' ἐμοῦ· καὶ ἐπιστρέψας εἶδον ἑπτὰ στήλας πυρὸς χρυσόκορον,\n\n**1:13** καὶ ἐν τῷ συγκλίνοντι σημείῳ ⸀τῶν στηλῶν ὅμοιον ⸀υἱὸν ἀνθρώπου, ἐνδεδυμένον τὸ πλῆρες ἔνδυμα τῆς διαρκοῦς καύσεως καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν·\n\n**1:14** ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες λευκαὶ ὡς λευκότης ὑπερβαίνουσα χρῶμα, ὡς χιών, καὶ οἱ ὀφθαλμοὶ αὐτοῦ αὐτὴ φλὸξ πυρός,\n\n**1:15** καὶ οἱ πόδες αὐτοῦ ὅμοιοι κράματι ἐπ' ἄκρου τελειωμένῳ, ὡς ἐν καμίνῳ ⸀πεπυρωμένης, καὶ ἡ φωνὴ αὐτοῦ ὡς φωνὴ ὑδάτων πολλῶν ἐν τῷ ὁρίῳ τῆς κατακλύσεως,",
+   "layer_a": {
+    "beats": [
+     "1:11 — voice commands: what you see, write into a book and send to the seven assemblies — Ephesus, Smyrna, Pergamon, Thyatira, Sardis, Philadelphia, Laodicea",
+     "1:12 — the seer turns to see the voice speaking with him; turning, he sees seven golden lampstands",
+     "1:13 — in the midst of the lampstands, one like a son of man, clothed in a full-length robe, girded at the chest with a golden belt",
+     "1:14 — his head and hair white as white wool, as snow; his eyes as a flame of fire",
+     "1:15 — his feet like burnished bronze as if refined in a furnace; his voice as the sound of many waters"
+    ],
+    "geometry": {
+     "lines": 5,
+     "stanzas": 1,
+     "verse_markers": [
+      "1:11",
+      "1:12",
+      "1:13",
+      "1:14",
+      "1:15"
+     ]
+    }
+   },
+   "commentary": "The seven named cities became seven anonymous ignition-nodes (count invariant, identity dissolved into threshold-address), while ὃ βλέπεις / γράψον / πέμψον collapsed the perceiver-sender gap into a single burn-circuit: perception recast as scorching, inscription as searing into medium, dispatch as an ignition-front that sets every destination alight — the wager (loss of safe distance between perceiver and perceived) made structurally unavoidable from the first clause forward."
   }
  ],
- "last_updated": "2026-07-04T07:45:28.328789+00:00"
+ "last_updated": "2026-07-04T07:49:52.350474+00:00"
 }
