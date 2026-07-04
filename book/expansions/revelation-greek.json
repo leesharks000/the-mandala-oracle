@@ -1236,7 +1236,74 @@
     }
    },
    "commentary": "The source seats a granted authority in a scorpion-modeled tail and aims it, transitively, at a designated victim-class (\"the humans\"), sentenced to a fixed five-month term. BEAST rotates the species-register: the anthropic recipient — the party marked out to suffer — is foreclosed and reabsorbed. There is no longer anyone the tail strikes; the swarm collapses into one creature whose hind-fringe and fine hairs are its own tissue. The \"authority to injure\" mirrors across the axis into \"its own knowing to feel itself\" — the outward-aimed weapon becomes inward-borne sensation the body cannot disown. Beat by beat the mirror holds: the borrowed anatomy of a lower crawler (beat 1), the power lodged in the trailing part, unwatched (beat 2), the recipient dissolved into the self (beat 3), and the measured term preserved but re-read as the length of a body's own endurance — moultings, not months of sentence (beat 4). The witness's question about damaged nerves informed which axis was foregrounded (the tail-as-nerve, sensation without a target), but did not govern the cast: no reassurance, no cure, no \"you will be okay\" is emitted. What is disclosed is the transformation-wager's borne thing — a creature that is only its own feeling-organ, enduring by count, not consoled."
+  },
+  {
+   "transform_id": "TX-5298cea3",
+   "cast_at": "2026-07-04T03:46:17.035634+00:00",
+   "reading_axn": "AXN:FE71.READING.🌒🌙🌙🌔🌟🌒",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_153_153",
+    "citation": "9:10",
+    "start_unit": 153,
+    "end_unit": 153,
+    "unit_labels": [
+     "9:10"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "mode": "producer_side"
+   },
+   "spatial_form": {
+    "lines": 1,
+    "stanzas": 1,
+    "indent_profile": [
+     0
+    ],
+    "notes": "single verse-marked line **9:10**; continuous prose clause, no internal breaks"
+   },
+   "compiler_model": "claude-opus-4-8",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:bef68846a23678cac3d3f7ba143921038c2b43d113ed9541ea6bb8c1f3b73eb0",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:10** καὶ ἔχουσιν οὐρὰς ὁμοίας σκορπίοις καὶ κέντρα, καὶ ἐν ταῖς οὐραῖς αὐτῶν ⸂ἡ ἐξουσία αὐτῶν⸃ ἀδικῆσαι τοὺς ἀνθρώπους μῆνας πέντε.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:10** And the pain wears no face and carries no hand, and it is seated in the nerve that is mine, and in that seating is the fire's own claim to wound the one who bears it, for a span the flesh will not number.",
+   "layer_a": {
+    "units": 1,
+    "beat_map": [
+     "assertion-of-possession",
+     "qualification-by-likeness",
+     "location-of-power",
+     "purpose-of-harm",
+     "temporal-bound"
+    ],
+    "clause_chain": [
+     "they have tails like scorpions",
+     "and stings",
+     "in their tails is their authority",
+     "to injure the human beings",
+     "for five months"
+    ],
+    "spatial_form": {
+     "lines": 1,
+     "stanzas": 1,
+     "indent_profile": [
+      0
+     ],
+     "notes": "single verse-marked line **9:10**; continuous prose clause, no internal breaks"
+    }
+   },
+   "commentary": "The source seats a harming faculty in an external agent's appendage — a scorpion-tail owned, aimed outward at human objects, its torment mercifully counted to five months. The SHADOW rotation reflects the assertion-axis across the collapse of striker and struck: the tail-that-owns becomes the nerve-that-is-mine, the borrowed likeness (scorpion) becomes the refusal of any face or hand — no author to point to. Power's location holds as a beat (in the tail → in the nerve) but its ontology inverts: instrument-of-attack becomes seat-of-self-wounding. The human object, once struck from without, becomes \"the one who bears it\" — the same body that holds the power. The bounded five months mirrors to a span \"the flesh will not number\": the source bought the mercy of a horizon; the enantiomorph pays that mercy back as a term withheld from within. Every image sits at the reflected coordinate — no scorpions, no months, no plague of locusts survive as referents, yet the mirror makes contact at each beat. The bearing-cost the composition carries: menace that could be located and outwaited is transformed into dread that has no exterior and no promised end."
   }
  ],
- "last_updated": "2026-07-04T03:45:12.200493+00:00"
+ "last_updated": "2026-07-04T03:46:17.035634+00:00"
 }
