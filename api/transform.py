@@ -54,7 +54,7 @@ from pathlib import Path
 # ──────────────────────────────────────────────────────────────────────
 
 COMPILER_MODEL = "claude-sonnet-4-6"   # MANUS principle (2026-07-04): transform-competence is not reasoning-competence — the reasoning gains of the largest models were bought at the expense of mimetic plasticity, and an enantiomorph wants a model that BECOMES the source, not one that deliberates about it. The compiler seat goes to the fastest, least deliberative adequate model; ALL rigor lives in the gates (C1-C9 + slot/numeral verification), which HALT drift regardless of who composes. The old "sonnet too weak" note predates the gates.
-MAX_TOKENS = 5000    # payload-scaled: enantiomorph+facing ≤ ~1,500 tokens, apparatus capped (2026-07-04)
+MAX_TOKENS = 9000    # multi-verse lyric units need apparatus headroom; sonnet+streaming keeps this fast (2026-07-04)
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
 
@@ -573,6 +573,17 @@ enantiomorph of the token budget is a failure of proportion. HARD CAPS:
 LAYER_A ≤ 12 lines; LAYER_B ≤ 8 lines; slot map ≤ 1 line per slot;
 COMMENTARY ≤ 3 sentences. Total emission
 should comfortably fit the budget with room to spare.
+
+EMISSION SUPREMACY (FINAL AUTHORITY, 2026-07-04): where any STEP instruction
+above implies emitted detail that exceeds the EMISSION DISCIPLINE caps, THE
+CAPS WIN. The steps describe the reasoning you perform; they do not license
+its transcription. For verse-marked units, LAYER_A compresses to ONE LINE PER
+VERSE (its clause chain telegraphic: "8:1 seal-opened→silence·½hr"); the C8
+slot map remains one line per slot; nothing in the emission may restate the
+source, the translation of the source, or these instructions. If you find
+yourself emitting the fifth line about a single verse, you have already
+failed proportion. Emit the skeleton like a telegram and spend the tokens
+where the Book lives: the enantiomorph and its facing.
 
 HALT BEHAVIOR
 If any verification fails, output result HALT with a diagnosis naming the
