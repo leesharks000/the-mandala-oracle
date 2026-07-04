@@ -1695,6 +1695,8 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
         # enantiomorph; only literal emptiness halts.
         _enant = _strip_tag_lines(re.sub(r"<VERIFICATION>.*?</VERIFICATION>", "",
                  re.sub(r"<COMMENTARY>.*?</COMMENTARY>", "", c_text, flags=re.DOTALL), flags=re.DOTALL))
+    if not _enant.strip() and c_text.strip():
+        _enant = c_text.strip()   # last-resort forgiveness: raw output beats no output
     parsed = {
         "result": ("PASS" if _enant.strip() else (_tagsect(c_text, "RESULT") or "HALT")).upper(),
         "layer_a": {"beats": [], "geometry": {"units": envelope["total_units"]}},
@@ -1714,7 +1716,8 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
                         "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
         "commentary": _tagsect(c_text, "COMMENTARY"),
         "halt_diagnosis": jsect2("HALT_DIAGNOSIS", {"failed_constraint": "C4", "failed_test": "identity",
-            "specific_diagnosis": (f"translation truncated (stop={c_stop}; {len(c_text)} chars)")}),
+            "specific_diagnosis": (f"nothing extractable from the composer (stop={c_stop}; {len(c_text)} chars). "
+                                   f"OUTPUT HEAD >>> {c_text[:420]} <<< OUTPUT TAIL >>> {c_text[-240:]} <<<")}),
     }
     if _identity_advisory:
         parsed.setdefault("advisories", []).append(_identity_advisory)
