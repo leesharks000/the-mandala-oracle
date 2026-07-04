@@ -40,7 +40,8 @@ returned once, never stored; only the key fingerprint persists.
 # ═══ DEPENDENCIES (INSTANCE-PROTOCOL.md — read before editing) ═══════════
 # PROVIDES: kernel-transform compiler (glyphic pipeline default; skeleton
 #   legacy behind V3_LEGACY_SKELETON=1), gate battery (_independent_gates,
-#   advisory by default; V3_HARD_GATES=1 enforces), Judgment selection,
+#   binding by default incl. _binding_battery; V3_ADVISORY=1 for lossless
+#   diagnosis mode), Judgment selection,
 #   inscription (Book via GitHub contents API), and the HTTP handler.
 # CALLED-BY: chat.js rotation loop (actions: judgment, judgment/operator,
 #   cast, rite_append). Response contract consumed at chat.js transform/halt
@@ -50,7 +51,7 @@ returned once, never stored; only the key fingerprint persists.
 # CALLS: Anthropic Messages API (_stream_call); GitHub contents API (gh_get/
 #   gh_put, GITHUB_BOOK_TOKEN); sources/ tree.
 # CONTRACTS: (1) SINGLE AUTHORITY — run_compiler_v3's result is the pass/halt
-#   verdict; enforce_pass_v3 defers to it unless V3_HARD_GATES=1; nothing
+#   verdict (binding battery included); enforce_pass_v3 defers to it; nothing
 #   else re-adjudicates. (2) The handler's transform_block keys are consumed
 #   by chat.js and inscribe(); extend both ends together. (3) sigil.py's
 #   COMPILER BOUNDARY text describes this file's behavior — change gate
@@ -1297,7 +1298,7 @@ TERMINAL_SIM_MAX = 0.6   # above this, a REBUILT final unit is a reversion
 def _advise(parsed: dict, advisory: bool, failed_test: str, diagnosis: str) -> bool:
     """Advisory-mode shim (MANUS directive 2026-07-04, 'print the report, no
     hard gates'): when advisory, record the diagnosis and keep going; when
-    enforcing (V3_HARD_GATES=1), the caller halts as before. Returns True if
+    enforcing (the default; V3_ADVISORY=1 opts out), the caller halts. Returns True if
     the caller should halt."""
     if advisory:
         parsed.setdefault("advisories", []).append({"failed_test": failed_test, "diagnosis": diagnosis})
@@ -2020,7 +2021,8 @@ def enforce_pass_v3(parsed: dict) -> bool:
     outer-gate incident — see INSTANCE-PROTOCOL.md): in advisory mode
     (default) the pipeline's own result is the only verdict; the gates inside
     already recorded their objections as advisories, and nothing outside
-    re-adjudicates. V3_HARD_GATES=1 restores full enforcement below."""
+    re-adjudicates. Enforcement is the default; V3_ADVISORY=1 is the lossless
+    diagnosis mode (the recorder preserves every run either way)."""
     if os.environ.get("V3_ADVISORY") == "1":
         return parsed.get("result") == "PASS" and bool(str(parsed.get("enantiomorph", "")).strip())
     if not enforce_pass(parsed):
