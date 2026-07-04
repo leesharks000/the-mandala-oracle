@@ -1208,10 +1208,14 @@ inside them. JSON only."""
 
 # -- G3: law match -- declared vs blind-recovered.
 _MATCH_SYSTEM = """You receive two claims about how a text was changed. Emit ONLY:
-{"match": "PASS" | "FAIL", "note": "<one line>"}
+{"match": "PASS" | "ADJACENT" | "FAIL", "note": "<one line>"}
 PASS iff both assert the same relational change, however differently worded.
-A recovered claim of NONE, or one naming only vocabulary/intensity/mood,
-never matches. JSON only."""
+ADJACENT iff the recovered claim names a real relational or structural change
+(who acts, what causes what, clause-type, sequence, agency, conferral) that
+differs from or only partially overlaps the declared one -- the text was
+lawfully mutated, but under a different or adjacent law than declared.
+FAIL iff the recovered claim is NONE, or names only vocabulary/intensity/
+mood/register -- no structural mutation. JSON only."""
 
 def _final_unit(text: str) -> str:
     """The last verse (after the final **N:N** marker) or last stanza."""
@@ -1447,13 +1451,24 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
         return parsed
     parsed["independent"]["law_match"] = str(matched.get("match", "FAIL")).upper()
     parsed["independent"]["law_match_note"] = str(matched.get("note", ""))
-    if parsed["independent"]["law_match"] != "PASS":
+    if parsed["independent"]["law_match"] == "ADJACENT":
+        # Calibration (MANUS direction, 2026-07-04, "more affordance & gravity"):
+        # a blind-recovered law that is real but adjacent to the declared one is
+        # not a failed cast -- it is a cast that enacted a different law than it
+        # declared. The rite completes; BOTH laws are inscribed as variance.
+        # HALT is reserved for recovered-NONE / vocabulary-only (below) and for
+        # G2's relation-abandonment and terminal gravitation (above).
+        parsed["law_variance"] = {
+            "declared": kernel.get("mutated_relation", ""),
+            "recovered": recovered,
+            "note": parsed["independent"]["law_match_note"]}
+    elif parsed["independent"]["law_match"] != "PASS":
         parsed["result"] = "HALT"
         parsed["halt_diagnosis"] = {
             "failed_constraint": "C9", "failed_test": "law_match",
-            "specific_diagnosis": ("the enacted mutation does not match the declared one ("
+            "specific_diagnosis": ("no structural mutation was recovered as declared or adjacent ("
                                    + parsed["independent"]["law_match_note"]
-                                   + ") -- the cast made a different claim than it proved, or none")}
+                                   + ") -- whatever moved was vocabulary, or nothing moved")}
         return parsed
 
     return parsed
@@ -1467,7 +1482,7 @@ def enforce_pass_v3(parsed: dict) -> bool:
     if ind.get("blacklist") != "PASS":
         return False
     if V3_INDEPENDENT:
-        if ind.get("law_match") != "PASS":
+        if ind.get("law_match") not in ("PASS", "ADJACENT"):
             return False
         if ind.get("terminal_consistency") != "PASS":
             return False
@@ -1691,6 +1706,8 @@ def inscribe(mode: str, reading_axn: str | None, session_id: str,
             "layer_a_declaration": transform_block["layer_a"],
             "layer_b_declaration": transform_block["layer_b"],
             "verification": transform_block["verification"],
+            "independent_verification": transform_block.get("independent_verification", {}),
+            "law_variance": transform_block.get("law_variance"),
             "commentary": transform_block["commentary"],
         })
         rec["last_updated"] = now
@@ -2434,6 +2451,7 @@ class handler(BaseHTTPRequestHandler):
             "verification": parsed["verification"],
             "kernel": parsed.get("kernel", {}),
             "independent_verification": parsed.get("independent", {}),
+            "law_variance": parsed.get("law_variance"),
             "commentary": parsed["commentary"],
         }
 
