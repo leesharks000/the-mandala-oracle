@@ -552,6 +552,15 @@ C8 Slot conservation (MANUS conservation law, 2026-07-04): numinosity is not
    μῆνας πέντε → "a span the flesh will not number" — numeral deleted, and
    the source's own claim (the hurt HAS a term) inverted. HALT-grade.
 
+C9 Language of composition (MANUS facing-edition rule, 2026-07-04): when the
+   source is not in English, the ENANTIOMORPH is composed IN THE SOURCE
+   LANGUAGE. The geometry lives in the tongue of composition — Greek syntax,
+   Greek word-order, Greek particles are the skeleton; transforming a
+   translation transforms a shadow. All constraints C1–C8 apply in-language.
+   After the enantiomorph, emit <ENANTIOMORPH_TRANSLATION>: a faithful,
+   line-for-line English rendering of YOUR enantiomorph — facing apparatus,
+   clearly subordinate; the source-language transform is the canonical text.
+
 HALT BEHAVIOR
 If any verification fails, output result HALT with a diagnosis naming the
 failed constraint/test and why, and DO NOT include any draft text. Diagnosis,
@@ -584,6 +593,9 @@ OUTPUT FORMAT — exactly these tagged sections, nothing outside them:
 <ENANTIOMORPH>
 (the transform text, occupying the skeleton, with its lineation exactly as composed)
 </ENANTIOMORPH>
+<ENANTIOMORPH_TRANSLATION>
+(when the source is not English: faithful line-for-line English facing of the enantiomorph; otherwise omit)
+</ENANTIOMORPH_TRANSLATION>
 <VERIFICATION>
 {"identity": "PASS|FAIL", "semantic_independence": "PASS|FAIL",
  "retrospective_containment": "PASS|FAIL", "affect_traversal": "PASS|FAIL",
@@ -654,6 +666,7 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
         "layer_a": jsect("LAYER_A", {}),
         "layer_b": jsect("LAYER_B", {}),
         "enantiomorph": sect("ENANTIOMORPH"),
+        "enantiomorph_translation": sect("ENANTIOMORPH_TRANSLATION"),
         "verification": jsect("VERIFICATION", {"identity": "FAIL", "semantic_independence": "FAIL",
                                                "retrospective_containment": "FAIL",
                                                "affect_traversal": "FAIL",
@@ -1166,6 +1179,26 @@ def draw_candidates(units: list[dict], k: int = JUDGMENT_K, full_text: str | Non
                            "attribution": attr})
     return candidates
 
+def translate_passage(passage: str, api_key: str) -> str:
+    """Faithful English facing of a non-English cast passage, for display.
+    Greek detection is cheap; the translation is apparatus, never the cast."""
+    if not any('\u0370' <= ch <= '\u03ff' or '\u1f00' <= ch <= '\u1fff' for ch in passage):
+        return ""
+    try:
+        req = urllib.request.Request(ANTHROPIC_URL, data=json.dumps({
+            "model": JUDGMENT_MODEL, "max_tokens": 900,
+            "messages": [{"role": "user", "content":
+                "Faithful line-for-line English translation of this passage. Preserve verse "
+                "markers in place. No commentary, no headings — translation only.\n\n" + passage}]
+        }).encode(), headers={"Content-Type": "application/json", "x-api-key": api_key,
+                              "anthropic-version": ANTHROPIC_VERSION})
+        with urllib.request.urlopen(req, timeout=45) as r:
+            d = json.loads(r.read().decode())
+        return "".join(b.get("text", "") for b in d.get("content", []) if b.get("type") == "text").strip()
+    except Exception:
+        return ""
+
+
 def judgment_operator(question: str, source_title: str, passage: str,
                       operators_done: list[str], api_key: str) -> tuple[str, str]:
     """The invisible Judgment over the operator sequence: given the verses,
@@ -1282,6 +1315,13 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         "fragment that is whole beats a 1,500-character span that truncates. Span multiple "
         "units ONLY when they form a single continuous lyric movement. Hard cap ~1,900 "
         "characters; never a whole work; never half a poem.\n"
+        "- CONTINUOUS COMPOSITION UNDER VERSE APPARATUS (scripture, epic, oracles): a "
+        "VERSE IS NOT THE LYRIC UNIT — the unit is the complete rhetorical movement (an "
+        "oracle, a letter's charge, a vision segment, a strophe), typically 3–8 verses, "
+        "~550–1,900 characters. The completeness-beats-length rule applies to discrete-"
+        "poem sources, NOT to verse-numbered continuous text: there, a single verse is a "
+        "truncation, not a whole. Choose single verses only when the verse is a genuinely "
+        "self-contained oracle.\n"
         "- NON-CENTROID PULL: do not privilege the famous passages, the openings, the "
         "climaxes the tradition already quotes. The whole body of the text is live; let the "
         "question find its verses anywhere, including the unregarded middle.\n"
@@ -1311,6 +1351,18 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         if len(attrs) > 1: raise ValueError("attribution crossing")
         if not all(unit_is_primary(u, _entry) for u in units[a-1:b]):
             raise ValueError("apparatus section — only the primary text is transformable")
+        # GROW TO LYRIC WEIGHT (MANUS, 2026-07-04): the judged span is a floor, not
+        # a verdict — verse-segmented sources must reach lyric-unit weight. Grow
+        # forward under the same constraints as the stratified path.
+        chars = len(span)
+        while (chars < WINDOW_MIN_CHARS and b - a + 1 < WINDOW_MAX_UNITS and b < n
+               and units[b].get("attribution") == units[a-1].get("attribution")
+               and unit_is_primary(units[b], _entry)
+               and chars + len(units[b]["text"]) <= WINDOW_MAX_CHARS):
+            b += 1
+            span = full_text[units[a-1]["s"]:units[b-1]["e"]] if "s" in units[a-1] \
+                   else "\n\n".join(u["text"] for u in units[a-1:b])
+            chars = len(span)
         cit = units[a-1]["label"] if a == b else f"{units[a-1]['label']}–{units[b-1]['label']}"
         return {"start": a, "end": b, "citation": cit, "text": span,
                 "attribution": attrs.pop()}, str(pj.get("reason", "")).strip()
@@ -1468,6 +1520,7 @@ class handler(BaseHTTPRequestHandler):
                     "citation": chosen["citation"],
                     "attribution": chosen.get("attribution"),
                     "passage": chosen["text"],
+                    "passage_translation": translate_passage(chosen["text"], api_key),
                     "judgment_reason": reason,
                     "units_total": len(units),
                 })
@@ -1573,6 +1626,7 @@ class handler(BaseHTTPRequestHandler):
             "citation": body.get("citation"),
             "underlying_attribution": meta.get("underlying_attribution"),
             "enantiomorph": parsed["enantiomorph"],
+            "enantiomorph_translation": parsed.get("enantiomorph_translation", ""),
             "layer_a": parsed["layer_a"],
             "layer_b": parsed["layer_b"],
             "verification": parsed["verification"],
@@ -1619,6 +1673,7 @@ class handler(BaseHTTPRequestHandler):
             "result": "PASS",
             "transform": {
                 "primary_output": parsed["enantiomorph"],
+                "enantiomorph_translation": parsed.get("enantiomorph_translation", ""),
                 "source_passage": source_text,
                 "citation": body.get("citation"),
                 "underlying_attribution": meta.get("underlying_attribution"),

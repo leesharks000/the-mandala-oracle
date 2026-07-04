@@ -749,7 +749,7 @@ function renderOperatorLabel(op, axis) {
   return el;
 }
 
-function renderSourceCard(citation, passage, attribution) {
+function renderSourceCard(citation, passage, attribution, translation) {
   const card = document.createElement('div');
   card.className = 'source-card';
   const label = document.createElement('div');
@@ -763,6 +763,17 @@ function renderSourceCard(citation, passage, attribution) {
   body.style.whiteSpace = 'pre-wrap';   // lineation and indentation preserved
   body.textContent = passage;
   card.appendChild(body);
+  if (translation) {
+    const tr = document.createElement('div');
+    tr.style.whiteSpace = 'pre-wrap';
+    tr.style.opacity = '.62';
+    tr.style.marginTop = '10px';
+    tr.style.paddingTop = '8px';
+    tr.style.borderTop = '1px solid rgba(255,255,255,.12)';
+    tr.style.fontStyle = 'italic';
+    tr.textContent = translation;
+    card.appendChild(tr);
+  }
   messagesEl.appendChild(card);
   messagesEl.scrollTop = messagesEl.scrollHeight;
   return card;
@@ -917,6 +928,7 @@ async function runCastingRite(cast) {
       cast.castSelection = j.cast_selection;
       cast.citation = j.citation;
       cast.passage = j.passage;
+      cast.passageTranslation = j.passage_translation || '';
       cast.attribution = j.attribution || null;
     }
 
@@ -942,7 +954,7 @@ async function runCastingRite(cast) {
     // The cast text itself — the enantiomorph is legible only against it.
     let sourceShown = false;
     if (cast.passage) {
-      renderSourceCard(cast.citation, cast.passage, cast.attribution);
+      renderSourceCard(cast.citation, cast.passage, cast.attribution, cast.passageTranslation);
       sourceShown = true;
     }
 
@@ -1029,6 +1041,17 @@ async function runCastingRite(cast) {
           }
           const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
           el.querySelector('.message-content').style.whiteSpace = 'pre-wrap';
+          if (transform.enantiomorph_translation) {
+            const face = document.createElement('div');
+            face.style.whiteSpace = 'pre-wrap';
+            face.style.opacity = '.62';
+            face.style.marginTop = '10px';
+            face.style.paddingTop = '8px';
+            face.style.borderTop = '1px solid rgba(255,255,255,.12)';
+            face.style.fontStyle = 'italic';
+            face.textContent = transform.enantiomorph_translation;
+            el.querySelector('.message-content').appendChild(face);
+          }
           renderTransformCard(el, transform);
           if (inscription && inscription.inscribed && inscription.reading_axn) {
             const firstInscription = !readingAxn;
