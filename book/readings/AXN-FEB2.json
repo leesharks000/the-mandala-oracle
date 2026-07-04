@@ -140,12 +140,13 @@
     "numeral_conservation": "PASS",
     "mode": "producer_side"
    },
-   "commentary": "The primary joints: βλέπεις opened into the shadow-face of the utterance (pre-inscription beholding), γράψον εἰς βιβλίον encoded as cost-not-biography, and ἐπέστρεψα βλέπειν τὴν φωνήν collapsed hearing and sight into one disorienting receptive act — making the wager (body turned against prior orientation) structurally visible at the hinge between the two stanzas; χαλκολίβανος and πολλῶν each retained their strangeness (unnamed alloy, indeterminate plural) by carrying the bearing-cost directly into the shadow-register descriptions."
+   "commentary": "The primary joints: βλέπεις opened into the shadow-face of the utterance (pre-inscription beholding), γράψον εἰς βιβλίον encoded as cost-not-biography, and ἐπέστρεψα βλέπειν τὴν φωνήν collapsed hearing and sight into one disorienting receptive act — making the wager (body turned against prior orientation) structurally visible at the hinge between the two stanzas; χαλκολίβανος and πολλῶν each retained their strangeness (unnamed alloy, indeterminate plural) by carrying the bearing-cost directly into the shadow-register descriptions.",
+   "interpretation": "Fire that consumes what it illuminates: the cost of the vision is the vision."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T07:45:27.118658+00:00",
+ "last_updated": "2026-07-04T07:45:36.711729+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -159,6 +160,13 @@
    "at": "2026-07-04T07:43:19.889131+00:00",
    "text": "Seven springs speaking into a single ear: the writer who could not be reached was always the one already reading.",
    "operator": "MIRROR"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-04T07:45:36.711729+00:00",
+   "text": "Fire that consumes what it illuminates: the cost of the vision is the vision.",
+   "operator": "SHADOW"
   }
  ]
 }
