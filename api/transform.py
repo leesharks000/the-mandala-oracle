@@ -210,10 +210,23 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
                 a, b = int(mu.group(1)), int(mu.group(2))
                 if not (1 <= a <= b <= len(units)):
                     raise ValueError(f"cast_selection out of range: source has {len(units)} units.")
-                text = text[units[a - 1]["s"]:units[b - 1]["e"]] if "s" in units[a - 1] else "\n\n".join(u["text"] for u in units[a - 1:b])
-                if not all(unit_is_primary(u, entry) for u in units[a - 1:b]):
-                    raise ValueError("only the primary text is transformable — the selection includes apparatus (MANUS ruling, 2026-07-02).")
-                attrs = {u.get("attribution") for u in units[a - 1:b]}
+                sel_units = units[a - 1:b]
+                primary_units = [u for u in sel_units if unit_is_primary(u, entry)]
+                if not primary_units:
+                    raise ValueError("only the primary text is transformable — the selected range is entirely apparatus (MANUS ruling, 2026-07-02).")
+                dropped = [a + i for i, u in enumerate(sel_units) if not unit_is_primary(u, entry)]
+                if dropped:
+                    # Auto-narrowing (MANUS direction, 2026-07-04): the ruling bars apparatus
+                    # from the transform; it does not bar the rite from proceeding. Apparatus
+                    # units are excluded, the cast narrows to the primary remainder, and the
+                    # exclusion is inscribed in the expansion record.
+                    text = "\n\n".join(u["text"] for u in primary_units)
+                    meta = dict(meta)
+                    meta["cast_narrowed"] = ("apparatus unit(s) " + ", ".join(str(d) for d in dropped) +
+                        " excluded per MANUS ruling 2026-07-02; cast narrowed to the primary remainder")
+                else:
+                    text = text[sel_units[0]["s"]:sel_units[-1]["e"]] if "s" in sel_units[0] else "\n\n".join(u["text"] for u in sel_units)
+                attrs = {u.get("attribution") for u in primary_units}
                 meta = dict(meta)
                 meta["underlying_attribution"] = (attrs.pop() if len(attrs) == 1 else
                                                   " + ".join(sorted(x or "?" for x in attrs)))
