@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:D3D7.CONVERSATION.🌗🌊💎🪐❄️🪨",
+      "started_at": "2026-07-04T05:17:05.798Z",
+      "last_updated": "2026-07-04T05:17:53.861911+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). The verses the casting arrives at (2:8–2:11):\n\n**2:8** Καὶ τῷ ἀγγέλῳ ⸀τῆς ἐν Σμύρνῃ ἐκκ…"
+    },
+    {
       "axn": "AXN:31DE.CONVERSATION.🔥🌓🌔🌔💫🌑",
       "started_at": "2026-07-04T04:42:35.653Z",
       "last_updated": "2026-07-04T04:49:56.810118+00:00",
@@ -444,7 +453,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 49,
-  "last_updated": "2026-07-04T04:49:56.810118+00:00",
+  "total_recorded": 50,
+  "last_updated": "2026-07-04T05:17:53.861911+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
