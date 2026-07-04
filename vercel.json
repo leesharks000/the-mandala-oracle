@@ -44,5 +44,11 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/t/:id",
+      "destination": "/t/index.html"
+    }
   ]
 }

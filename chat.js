@@ -1160,3 +1160,42 @@ async function runCastingRite(cast) {
     if (castToggle) castToggle.disabled = false;
   }
 }
+
+
+// ── Share this thread (MANUS request, 2026-07-04) ──────────────────────
+// Serializes the visible thread text-only ({who, text} per message node),
+// POSTs to /api/share, which inscribes shares/SH-*.json in the Book repo
+// and returns a permanent public viewer URL at /t/SH-*.
+const shareToggle = document.getElementById('share-toggle');
+if (shareToggle) shareToggle.addEventListener('click', async () => {
+  const items = [];
+  messagesEl.querySelectorAll(':scope > *').forEach(node => {
+    const whoEl = node.querySelector('.message-role, .speaker, .who');
+    const who = whoEl ? whoEl.textContent.trim() : '';
+    let text = node.innerText || '';
+    if (whoEl && text.startsWith(whoEl.innerText)) text = text.slice(whoEl.innerText.length);
+    text = text.trim();
+    if (text) items.push({ who, text });
+  });
+  if (!items.length) { shareToggle.textContent = 'nothing to share'; setTimeout(()=>shareToggle.textContent='⛓ Share', 1600); return; }
+  const prev = shareToggle.textContent;
+  shareToggle.textContent = 'inscribing…'; shareToggle.disabled = true;
+  try {
+    const r = await fetch('/api/share', { method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ session_id: state.session_id,
+        title: 'The Mandala Oracle — ' + (document.title || 'a thread'),
+        items }) });
+    const j = await r.json();
+    if (!j.ok) throw new Error(j.error || 'share failed');
+    const url = location.origin + j.url;
+    let copied = false;
+    try { await navigator.clipboard.writeText(url); copied = true; } catch (e) {}
+    shareToggle.textContent = copied ? '✓ link copied' : '✓ inscribed';
+    if (!copied) window.prompt('Public thread link (copy it):', url);
+    setTimeout(() => { shareToggle.textContent = prev; shareToggle.disabled = false; }, 2400);
+  } catch (e) {
+    shareToggle.textContent = 'share failed'; shareToggle.disabled = false;
+    setTimeout(() => shareToggle.textContent = prev, 2200);
+  }
+});

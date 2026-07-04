@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Mandala Oracle — shared thread</title>
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;background:#0c0b10;color:#e8e4da;font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+  .wrap{max-width:44rem;margin:0 auto;padding:2.2rem 1.1rem 4rem}
+  h1{font-size:1.05rem;font-weight:normal;letter-spacing:.06em;color:#b9b2a4;border-bottom:1px solid #2a2733;padding-bottom:.8rem}
+  .item{margin:1.6rem 0}
+  .who{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#8f8a7d;margin-bottom:.35rem}
+  .text{white-space:pre-wrap;word-wrap:break-word}
+  .meta{margin-top:3rem;font-size:.8rem;color:#6f6a60;border-top:1px solid #2a2733;padding-top:1rem}
+  a{color:#c9b98a}
+  .err{color:#c98a8a}
+</style></head><body><div class="wrap">
+<h1 id="title">The Mandala Oracle — shared thread</h1>
+<div id="thread"><div class="who">…</div></div>
+<div class="meta" id="meta">A public inscription of a casting session. <a href="/">Cast your own at the Oracle</a>.</div>
+<script>
+(function(){
+  const id = (location.pathname.match(/\/t\/(SH-[a-f0-9]{10})/)||[])[1]
+          || new URLSearchParams(location.search).get('id');
+  const th = document.getElementById('thread');
+  if(!id){ th.innerHTML = '<div class="err">No thread id in the link.</div>'; return; }
+  fetch('https://raw.githubusercontent.com/leesharks000/the-mandala-oracle/main/shares/'+encodeURIComponent(id)+'.json')
+    .then(r => { if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+    .then(rec => {
+      document.getElementById('title').textContent = rec.title || 'The Mandala Oracle — shared thread';
+      document.title = rec.title || document.title;
+      th.innerHTML = '';
+      (rec.items||[]).forEach(it => {
+        const d = document.createElement('div'); d.className = 'item';
+        if(it.who){ const w = document.createElement('div'); w.className='who'; w.textContent = it.who; d.appendChild(w); }
+        const t = document.createElement('div'); t.className='text'; t.textContent = it.text || '';
+        d.appendChild(t); th.appendChild(d);
+      });
+      document.getElementById('meta').insertAdjacentText('afterbegin',
+        'Inscribed ' + (rec.created||'') + ' · ' + id + ' · ');
+    })
+    .catch(e => { th.innerHTML = '<div class="err">This thread could not be found ('+e.message+'). New shares take a few seconds to inscribe.</div>'; });
+})();
+</script></div></body></html>
