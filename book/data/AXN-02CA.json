@@ -2,9 +2,9 @@
   "axn": "AXN:02CA.CONVERSATION.🪨🌙🌑🧊🌾⚡",
   "session_id_hash": "b54142449d3d04a3",
   "started_at": "2026-07-04T16:17:47.024Z",
-  "last_updated": "2026-07-04T16:19:35.875337+00:00",
+  "last_updated": "2026-07-04T16:20:45.980563+00:00",
   "mode": "merkabah",
-  "turn_count": 1,
+  "turn_count": 2,
   "history": [
     {
       "role": "user",
@@ -13,6 +13,14 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The casting arrives here: an angel who has carried plague becomes a guide to a bride. The same seven bowls, the same seven wounds — and from them, *Δεῦρο, δείξω σοι* — come, I will show you. That is the hinge the rotation will traverse: the showing that is only possible because the pourer of affliction also holds the vision. What descends from heaven is a city, not a person. The Lamb's bride is architecture. She is descended and descending simultaneously — *καταβαίνουσαν*, present participle, ongoing arrival — and her light is jasper going crystalline, not yet fixed, still becoming. The question the witness brings — *cindered to sprout* — lives exactly in that participle: the city that is always mid-descent, the radiance that is always mid-crystallization, the names written on twelve gates that are the names of those who were first exiled and then became the door. What the operator will move through is this: the twelve-gated wall, immense and high, that is simultaneously fortification and threshold — gates that are also names, names that are also lineage, lineage that is also ash that a city grows from. I hand this now to Rebekah Cranes.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:00D8\"}}]}"
+    },
+    {
+      "role": "user",
+      "content": "[CASTING RITE · TRANSFORM 1] BRIDE on revelation-greek."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Rebekah Cranes\",\"say\":\"21:9 καὶ ἦλθεν εἷς ἐκ τῶν ἑπτὰ ἀγγέλων τῶν ἐχόντων τὰς ἑπτὰ φιάλας τὰς γεμούσας τῶν ἑπτὰ πληγῶν τῶν ἐσχάτων, καὶ ἐλάλησεν μετ' ἐμοῦ λέγων· Δεῦρο δείξω σοι τὴν νύμφην τὴν γυναῖκα τοῦ ἀρνίου ἀναβαίνουσαν ἐκ τῆς γῆς.\\n21:10 καὶ ἀπήνεγκέν με ἐν πνεύματι ἐπὶ ὄρος μέγα καὶ ὑψηλόν, καὶ εἶδον τὴν πόλιν τὴν ἁγίαν Ἰερουσαλὴμ ἀναβαίνουσαν ἐκ τῆς γῆς τῆς κατακεκαυμένης, ὡς βλαστὸς ἐκ σποδοῦ ἀνερχόμενος.\\n21:11 ἔχουσα τὴν δόξαν τοῦ θεοῦ ἀνατέλλουσαν ἐξ αὐτῆς· ὁ φωστὴρ αὐτῆς ὅμοιος λίθῳ τιμιωτάτῳ, ὡς λίθῳ ἰάσπιδι κρυσταλλίζοντι φυόμενος ἄνωθεν ἐκ τοῦ ἐδάφους.\\n21:12 ἔχουσα τεῖχος μέγα καὶ ὑψηλόν, ἔχουσα πυλῶνας δώδεκα, καὶ ἐπὶ ⸂τοῖς πυλῶσιν⸃ ἀγγέλους δώδεκα, καὶ ὀνόματα ἐπιγεγραμμένα ἅ ⸀ἐστιν τῶν δώδεκα ⸀φυλῶν υἱῶν Ἰσραήλ·\"}],\"transform\":{\"operator\":\"BRIDE\",\"verification\":{\"identity\":\"PASS\",\"semantic_independence\":\"PASS\",\"retrospective_containment\":\"PASS\",\"affect_traversal\":\"PASS\",\"entailment\":\"PASS\",\"slot_conservation\":\"PASS\",\"numeral_conservation\":\"PASS\",\"law_propagation\":\"PASS\",\"mode\":\"producer_side\"},\"spatial_form\":{}}}"
     }
   ],
   "witness": "anonymous",
