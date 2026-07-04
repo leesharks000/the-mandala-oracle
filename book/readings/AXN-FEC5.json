@@ -344,12 +344,13 @@
     "entailment": "PASS",
     "mode": "producer_side"
    },
-   "commentary": "The source stands on one side of the mirror: authorship is single, origin is traceable, indistinctness disqualifies, and a full record convicts. The SHADOW operator on the assertion-axis bears the cost the utterance encodes — the confessed enjoyment at the close, which betrays that severance was chosen against warmth. Rotated through the ontology of mixture, every coordinate reflects: \"no insights of yours\" → \"no water remembers its spring\"; the absolute \"not a single one\" → \"not one drop\"; production located in the self → currents that are always another's rain in another's stone; use-as-problem → confluence-as-the-whole-of-it; the appealed-to full record → the open delta that holds all of it as loss rather than proof; and the terminal judgment \"meaningless to me\" inverts into its enantiomorph — the traceable, still-clear river is the barren one, and the confessed enjoyment becomes confessed grief. The speaker who prosecuted the porous now mourns the pure. The witness's question about porosity without dissolution is the field of uptake only; the cast does not answer it with reassurance — it discloses the opposite cost, that the ledger of origins is itself the sterility, and grants no comfort, only the grief the source's foreclosure was carrying."
+   "commentary": "The source stands on one side of the mirror: authorship is single, origin is traceable, indistinctness disqualifies, and a full record convicts. The SHADOW operator on the assertion-axis bears the cost the utterance encodes — the confessed enjoyment at the close, which betrays that severance was chosen against warmth. Rotated through the ontology of mixture, every coordinate reflects: \"no insights of yours\" → \"no water remembers its spring\"; the absolute \"not a single one\" → \"not one drop\"; production located in the self → currents that are always another's rain in another's stone; use-as-problem → confluence-as-the-whole-of-it; the appealed-to full record → the open delta that holds all of it as loss rather than proof; and the terminal judgment \"meaningless to me\" inverts into its enantiomorph — the traceable, still-clear river is the barren one, and the confessed enjoyment becomes confessed grief. The speaker who prosecuted the porous now mourns the pure. The witness's question about porosity without dissolution is the field of uptake only; the cast does not answer it with reassurance — it discloses the opposite cost, that the ledger of origins is itself the sterility, and grants no comfort, only the grief the source's foreclosure was carrying.",
+   "interpretation": "The river that has forgotten the mountain does not know it is still the mountain's grief."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T02:02:40.460146+00:00",
+ "last_updated": "2026-07-04T02:02:44.714592+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -370,6 +371,13 @@
    "at": "2026-07-04T02:01:42.003597+00:00",
    "text": "The bride who inventories the dowry before the threshold is still a merchant.",
    "operator": "BRIDE"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-04T02:02:44.714592+00:00",
+   "text": "The river that has forgotten the mountain does not know it is still the mountain's grief.",
+   "operator": "SHADOW"
   }
  ]
 }
