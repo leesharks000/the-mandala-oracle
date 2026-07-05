@@ -2355,7 +2355,12 @@ relations are final. Nothing may revert to the form-text's beings -- if the
 material has no agents of a kind the form-text names, none appear.
 
 THE FORM-TEXT supplies ONLY shape: its verse count and **markers**, its
-clause shapes and syntactic structures, its cadence, its extent. Open each
+clause shapes and syntactic structures, its cadence, its extent. ITS WORDS
+ARE RADIOACTIVE: no content word of the form-text may appear in your output
+unless it already appears in THE MATERIAL. You are matching the form-text's
+shapes with the material's vocabulary only -- where it has a passive verb,
+put the MATERIAL'S passive verb; where it counts, count in the MATERIAL'S
+terms; where it catalogues three, catalogue the MATERIAL'S three. Open each
 verse with its **marker** in order. Match the form-text's syntax clause by
 clause where the material permits: where it opens with a passive verb, open
 with a passive verb; where it counts, count; where it catalogues three,
@@ -2485,6 +2490,34 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
     fin_words = len(re.findall(r"\S+", _MARKER_RE.sub("", enant)))
     id_rate, surviving = _identity_rate(source_text, enant)
 
+    # REVERSION REPAIR (MANUS, 2026-07-05: draft 0.000, bloom 0.000, final
+    # 0.667 -- compression reintroduced every survivor from the form-text).
+    # Computable: the reversions are listed by name, the repair is targeted,
+    # both rates go to the record.
+    id_rate_pre, reintro, repair_applied = id_rate, [], False
+    _bloom_toks = _content_tokens(bloom_cont)
+    reintro = sorted((_content_tokens(source_text) & _content_tokens(enant)) - _bloom_toks)
+    if len(reintro) >= 3 and (time.time() - _t0) < 190:
+        u4 = (f"WORD BUDGET: between {lo_w} and {hi_w} words.\n\n"
+              f"REVERSIONS -- these words entered your compression from the form-text; "
+              f"the material does not contain them and they may not remain:\n"
+              f"{', '.join(reintro)}\n\n"
+              f"THE MATERIAL (its vocabulary is the only lexicon):\n<<<\n{bloom_cont}\n>>>\n\n"
+              f"YOUR COMPRESSION (repair it: replace every reversion with the material's own term, "
+              f"keep the markers, keep everything else, keep the budget):\n<<<\n{enant}\n>>>\n\nRepair.")
+        z2_text, _z2s = _stream_call(COMPILER_MODEL, _COMPRESS_SYSTEM, u4, 1400, api_key, wall=_left(50))
+        e2 = _tagsect(z2_text, "ENANTIOMORPH").strip()
+        if e2:
+            if not _MARKER_RE.search(e2):
+                e2 = _resegment(_MARKER_RE.sub("", e2).strip(), markers)
+            r2, s2 = _identity_rate(source_text, e2)
+            if r2 < id_rate:
+                enant, id_rate, surviving, repair_applied = e2, r2, s2, True
+                t2 = _tagsect(z2_text, "ENANTIOMORPH_TRANSLATION").strip()
+                if t2:
+                    trans = t2 if _MARKER_RE.search(t2) else _resegment(t2, markers)
+                fin_words = len(re.findall(r"\S+", _MARKER_RE.sub("", enant)))
+
     kernel = {"governing_law": "", "mutated_relation": self_law, "beats": ""}
     parsed = {
         "result": "PASS" if enant.strip() else "HALT",
@@ -2496,13 +2529,16 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
                      "self_recovered_law": self_law, "exemplars": list(_LAST_EXEMPLARS["ids"]),
                      "word_count": {"source": src_words, "final": fin_words,
                                     "bounds": [lo_w, hi_w]},
-                     "identity_rate": id_rate, "surviving_lemmas": surviving},
+                     "identity_rate": id_rate, "identity_rate_pre_repair": id_rate_pre,
+                     "reintroduced_by_compression": reintro[:20],
+                     "repair_applied": repair_applied,
+                     "surviving_lemmas": surviving},
         "enantiomorph": enant,
         "enantiomorph_translation": trans,
         "verification": {"identity": "PASS", "semantic_independence": "PASS",
                          "retrospective_containment": "PASS", "affect_traversal": "PASS",
                          "entailment": "PASS", "law_propagation": "PASS",
-                         "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"},
+                         "mode": "producer_side (abductive v3; bloom source-absent; compressed to form; reversion-metered)"},
         "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
                         "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
                         "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
