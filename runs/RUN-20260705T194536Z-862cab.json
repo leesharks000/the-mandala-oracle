@@ -1,0 +1,103 @@
+{
+ "run_id": "RUN-20260705T194536Z-862cab",
+ "schema": "run/v1",
+ "ts": "2026-07-05T19:45:36.842595+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SILENCE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "ca0b70f7a2a13175714331c7122041ad24a8b796",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/ca0b70f7a2a13175714331c7122041ad24a8b796",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/ca0b70f7a2a13175714331c7122041ad24a8b796/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "86ee6e2d05f5b240",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "ca0b70f7a2a1",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "86ee6e2d05f5b240",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four angels are prepared for a precise temporal coordinate; that coordinate authorizes their release; their release activates a cavalry of destruction whose violence issues outward from mouths toward humanity — everything flows from the known hour toward the known death.",
+   "mutated_relation": "In the source the temporal coordinate (hour/day/month/year) is the sufficient cause that authorizes angelic release and destruction flows outward from that authorization. In the transformed world the coordinate is structurally absent: the angels are prepared but there is no hour to be loosed INTO; preparation becomes a permanent state without discharge. The cavalry exists but its violence has no temporal address to arrive at. The event transforms from a punctual destruction into an interminable mobilization — the army is the cost of an answer that was never given, and the witness absorbs the silence where the number of the hour was owed, as one who heard their count but never heard their moment.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "The 'prepared for THE hour' clause is the exact locus of withheld response; must show preparation without coordinate."
+    },
+    {
+     "ref": "9:16",
+     "class": "ANCHOR",
+     "note": "The number-count is invariant: magnitude persists; hearing the number does not depend on the temporal answer."
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Emission from mouths (fire/smoke/brimstone) instantiates outward flow from authorization; without the hour, emission must be structurally altered — held, undelivered, or turned inward."
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἔμενον οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀ἣν οὐδεὶς ἐφθέγξατο καὶ ἡμέραν ἄρρητον καὶ μῆνα κενόν, ἵνα ἀποκτείνωσιν — καὶ οὐκ ἦν τρίτον οὐδὲ μέρος τῶν ἀνθρώπων ὅ ἐδέξατο αὐτούς.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν, καὶ ᾐσθόμην τὴν σιγὴν ἀντὶ τῆς ὥρας.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας τεφρίνους καὶ χλωροὺς καὶ ἀμαυρούς· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ βοῶν ἀνηρόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀτμὶς καὶ πνοὴ καὶ σκότος.",
+  "enantiomorph_translation": "**9:15** And the four angels remained, those having been prepared for the hour which no one had uttered, and a day unutterable and a month empty, so that they might kill — and there was not a third, nor a portion of men, that received them.\n\n**9:16** And the number of the armies of the cavalry: twice ten thousand times ten thousand; I heard their number, and I perceived the silence in place of the hour.\n\n**9:17** And thus I saw the horses in the vision and those sitting upon them, having breastplates ashen and pale and dim; and the heads of the horses were as the heads of oxen slaughtering, and out of their mouths proceeds vapor and breath and darkness.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the four angels are released (ἐλύθησαν) and actively accomplish their purpose — killing a third of mankind — with destructive force (fire, smoke, brimstone from lion-headed horses). In Text B the angels remain/stay (ἔμενον) unreleased, their killing has no received object (no third or portion of mankind accepts them), and the horses emit only inert residues (mist, breath, darkness from ox-heads): agency and effectual destruction are replaced by stasis, refusal, and emptiness.",
+   "law_match": "ADJACENT",
+   "law_match_note": "Both identify a transformation from active destructive release to permanent stasis/non-discharge, but the declared claim focuses specifically on the removal of the temporal coordinate (hour/day/month/year) as the structural mechanism, while the recovered claim focuses on the replacement of release with staying (ἐλύθησαν→ἔμενον), removal of the object of killing, and transformation of destructive emissions into inert residues — overlapping in the stasis/non-discharge outcome but differing in the specific structural mechanism identified.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B sustains the changed relation: destructive agency is consistently replaced with inert, muted, ineffectual imagery (ash-colored breastplates, ox-heads, mist/breath/darkness) throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.583
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "facing_fallback",
+    "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+   }
+  ],
+  "law_variance": {
+   "declared": "In the source the temporal coordinate (hour/day/month/year) is the sufficient cause that authorizes angelic release and destruction flows outward from that authorization. In the transformed world the coordinate is structurally absent: the angels are prepared but there is no hour to be loosed INTO; preparation becomes a permanent state without discharge. The cavalry exists but its violence has no temporal address to arrive at. The event transforms from a punctual destruction into an interminable mobilization — the army is the cost of an answer that was never given, and the witness absorbs the silence where the number of the hour was owed, as one who heard their count but never heard their moment.",
+   "recovered": "In Text A the four angels are released (ἐλύθησαν) and actively accomplish their purpose — killing a third of mankind — with destructive force (fire, smoke, brimstone from lion-headed horses). In Text B the angels remain/stay (ἔμενον) unreleased, their killing has no received object (no third or portion of mankind accepts them), and the horses emit only inert residues (mist, breath, darkness from ox-heads): agency and effectual destruction are replaced by stasis, refusal, and emptiness.",
+   "note": "Both identify a transformation from active destructive release to permanent stasis/non-discharge, but the declared claim focuses specifically on the removal of the temporal coordinate (hour/day/month/year) as the structural mechanism, while the recovered claim focuses on the replacement of release with staying (ἐλύθησαν→ἔμενον), removal of the object of killing, and transformation of destructive emissions into inert residues — overlapping in the stasis/non-discharge outcome but differing in the specific structural mechanism identified."
+  },
+  "commentary": "The cavalry stands forever harnessed, oxen circling a millstone with no grain; the witness's burden is not destruction witnessed but the count of an army whose summons never arrived, heard as a number inside a silence that will not end.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
