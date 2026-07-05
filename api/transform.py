@@ -2039,10 +2039,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
 BEAT_READER_SYSTEM = """You are the reader-rotator of a transformation rite.
 
 PHASE 1 -- READ. Reduce the SOURCE to its beat-skeleton: the relational arc
-as 4-7 BEATS (who does what to whom, under what necessity), and the FRAME:
-the verse markers in order, an approximate clause-weight per verse, and the
-language and register described in general terms WITHOUT quoting any word
-of the source.
+as 4-7 BEATS (who does what to whom, under what necessity).
 
 PHASE 2 -- ROTATE. Under the OPERATOR LOGIC, transform the READING itself.
 Declare the MUTATED RELATION as an ontological exchange: what the beings
@@ -2065,33 +2062,42 @@ Emit ONLY, in this order:
 <ROTATED_READING>
 1. the transformed scene at this beat, plain prose
 2. ...
-</ROTATED_READING>
-<FRAME>{"markers":["c:v","c:v"],"weights":[3,2],"language":"...","register":"..."}</FRAME>"""
+</ROTATED_READING>"""
 
-BEAT_COMPOSER_SYSTEM = """You are the narrator of a scene you have only ever
-known in the form given to you. There is no other text of this scene
-anywhere; you are writing the only one.
+BEAT_COMPOSER_SYSTEM = """You compose a transformation under two authorities.
 
-Compose the ROTATED READING as a native utterance in the given language and
-register, into the FRAME: one verse per marker, each verse opening with its
-**marker**, clause-weight near the given weight -- the frame is spine, not
-cage; a verse may swell where the scene requires and return. The beats land
-in their order. Concrete beings, concrete acts: narrate the scene the
-reading describes, never a summary of it.
+THE ROTATED READING is the sole authority on MEANING: what is happening,
+what the beings are, what the counts and clauses have become. Nothing of
+the source's meaning survives unless the reading requires it.
 
-If any familiar scripture, famous phrasing, or remembered formula rises
-while you write, it is a false memory from another world -- this scene has
-only the reading you were given. No analytic or operator vocabulary: no
-cost, bilateral, encoded, axis, vector, kernel, traversal, foreclosure,
-wager, relation, register.
+THE SOURCE is the sole authority on FORM -- the spine: its syntax, clause
+by clause; its parts of speech, slot by slot; the QUALITY of each noun
+(abstract where it was abstract, concrete where concrete, proper-weight
+where proper-weight, mass where mass); its lineation, verse markers in
+place, and the critical sigla carried in position (the marks are spine;
+the readings they flag are content and transform). Pour the reading's
+world through that spine: refill every content slot with the rotated
+scene's own beings and acts, in the same grammatical shape. Where the
+rotated world requires more room, a clause may swell and return -- the
+spine is spine, not a cage.
+
+REGISTER IS ENACTED, NEVER SPECIFIED: no voice is named anywhere and you
+must not aim at one. Inherit the form exactly and let the rotated world
+sound through it -- the register that results is the transform's own.
+
+Copying the source fails the reading. Abandoning the syntax fails the
+spine. Each authority checks the other. Compose in the source's language;
+follow with a line-for-line English facing (MANDATORY when the source is
+not English). No analytic or operator vocabulary: no cost, bilateral,
+encoded, axis, vector, kernel, traversal, foreclosure, wager, relation,
+register.
 
 Emit ONLY, in this order:
 <ENANTIOMORPH>
-the verses, each opening with its **marker**
+the verses, markers and sigla in place
 </ENANTIOMORPH>
 <ENANTIOMORPH_TRANSLATION>
-line-for-line English facing -- MANDATORY when the language is not English
-(empty ONLY for English)
+line-for-line English facing (empty ONLY for English sources)
 </ENANTIOMORPH_TRANSLATION>
 <VERIFICATION>{"identity":"PASS","semantic_independence":"PASS","retrospective_containment":"PASS","affect_traversal":"PASS","entailment":"PASS","law_propagation":"PASS","mode":"producer_side"}</VERIFICATION>
 <COMMENTARY>one sentence: the cost the transformed scene carries</COMMENTARY>"""
@@ -2124,15 +2130,8 @@ def _run_beat_pipeline(source_text: str, operator: str, invoking: str, api_key: 
                                       "specific_diagnosis": f"the reader-rotator emitted no rotated reading (stop={r_stop}; {len(r_text)} chars) -- plumbing, not a rite verdict"},
                    "post_mortem": {"raw_output": r_text[:4000]}}
             return out
-        try:
-            frame = json.loads(_tagsect(r_text, "FRAME") or "{}")
-        except json.JSONDecodeError:
-            frame = {}
-        if not frame.get("markers"):
-            frame["markers"] = re.findall(r"\*\*(\d+:\d+)\*\*", source_text)
         skel = {"beats": _tagsect(r_text, "BEATS"),
                 "rotated_reading": reading,
-                "frame": frame,
                 "governing_law": _tagsect(r_text, "GOVERNING_LAW"),
                 "mutated_relation": _tagsect(r_text, "MUTATED_RELATION")}
 
@@ -2140,10 +2139,11 @@ def _run_beat_pipeline(source_text: str, operator: str, invoking: str, api_key: 
               "mutated_relation": skel.get("mutated_relation", ""),
               "beats": skel.get("beats", "")}
 
-    u2 = (f"ROTATED READING (the only text of this scene):\n{skel['rotated_reading']}\n\n"
-          f"BEATS (land in this order):\n{skel.get('beats','')}\n\n"
-          f"FRAME:\n{json.dumps(skel.get('frame', {}), ensure_ascii=False)}"
-          f"{guidance}\n\nNarrate.")
+    u2 = (f"ROTATED READING (the meaning; nothing of the source's meaning survives unless this requires it):\n"
+          f"{skel['rotated_reading']}\n\n"
+          f"SOURCE (the form -- its syntax, parts of speech, noun-qualities, markers, sigla are the spine):\n"
+          f"<<<\n{source_text}\n>>>"
+          f"{guidance}\n\nPour the reading through the spine.")
     c_text, c_stop = _stream_call(COMPILER_MODEL, BEAT_COMPOSER_SYSTEM, u2, COMPOSE_MAX, api_key, wall=150)
 
     _enant = _tagsect(c_text, "ENANTIOMORPH")
@@ -3430,7 +3430,7 @@ class handler(BaseHTTPRequestHandler):
                               ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
                     "model": COMPILER_MODEL,
                     "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
-                    "prompt_method": ("beat/v1 (read-rotate-renarrate; source-blind composer)"
+                    "prompt_method": ("beat/v2 (rotate-then-pour; reading=meaning, source=form)"
                                       if (body.get("method") or os.environ.get("MANDALA_METHOD", "")) == "beat"
                                       else "slot-total/v1 (exemplar-framed, source-as-template)"),
                     "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"},
@@ -3476,6 +3476,8 @@ class handler(BaseHTTPRequestHandler):
             "law_variance": parsed.get("law_variance"),
             "commentary": parsed.get("commentary", ""),
             "post_mortem": parsed.get("post_mortem"),
+            "skeleton": ({k: _dg(str(v)) for k, v in (parsed.get("skeleton") or {}).items()}
+                         if _redact else parsed.get("skeleton")),
             "pipeline_result": parsed.get("result")}
 
         if not enforce_pass_v3(parsed):
