@@ -1,0 +1,75 @@
+{
+ "axn": "AXN:FEA5.READING.🌖🔥🌗🌔🌿🌔",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "d09c56a141c5be9d",
+ "inscribed_at": "2026-07-05T23:38:53.541595+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Query regarding current date and time information.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν αἱ τέσσαρες σιγαί αἱ ἡτοιμασμέναι εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα καταλύσωσιν τὸ τρίτον τῶν δηλωσάντων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν βαρῶν τοῦ τιμήματος δισμυριάδες μυριάδων ἀνεκτίστων τελῶν· ἤκουσα τὸν ἀριθμὸν αὐτῶν ὡς ῥῆγμα ἐντὸς τῶν πλευρῶν μου.\n\n**9:17** καὶ οὕτως εἶδον τὰ βάρη ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν ὡς ἵζημα, ἔχοντας θώρακας θερμότητος πνευμόνων καὶ μωλωπίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν βαρῶν ὡς στόματα ζῴων πεινώντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται θέρμη καὶ ἀχλὺς καὶ πικρὸς ἀήρ.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The agents of destruction (angels, cavalry horses) are replaced by abstract burdens/silences (σιγαί, βάρη, τίμημα), transforming the relation from supernatural military beings killing humans to impersonal weights/costs dissolving those who reveal; the action shifts from external apocalyptic slaughter (ἀποκτείνωσιν τῶν ἀνθρώπων) to an internalized dissolution (καταλύσωσιν τῶν δηλωσάντων), and destructive output changes from outward fire/smoke/brimstone to inward somatic suffering (θέρμη, ἀχλύς, πικρὸς ἀήρ).",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change—replacing supernatural military agents with abstract burdens/costs and shifting from external apocalyptic slaughter to internalized somatic dissolution—which partially overlaps the declared claim's framework of thermodynamic cost, bodily expenditure, and energy returning in flesh, but the recovered claim focuses on agent-replacement and action-type transformation rather than the declared claim's specific debt/solvent/compound-interest relational logic.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B (9:17) maintains the substitution of abstract burdens for horses and internalized somatic imagery for external fire, consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.476
+   },
+   "law_variance": {
+    "declared": "Every utterance exacts a thermodynamic cost from the speaker's body and deposits an equivalent opacity in the listener's world; silence is not absence but the only solvent form of that debt, and when it finally opens, what returns is not punishment but the precise energy originally withdrawn, bearing compound interest in the flesh of everyone who was present.",
+    "recovered": "The agents of destruction (angels, cavalry horses) are replaced by abstract burdens/silences (σιγαί, βάρη, τίμημα), transforming the relation from supernatural military beings killing humans to impersonal weights/costs dissolving those who reveal; the action shifts from external apocalyptic slaughter (ἀποκτείνωσιν τῶν ἀνθρώπων) to an internalized dissolution (καταλύσωσιν τῶν δηλωσάντων), and destructive output changes from outward fire/smoke/brimstone to inward somatic suffering (θέρμη, ἀχλύς, πικρὸς ἀήρ).",
+    "note": "The recovered claim identifies a real structural change—replacing supernatural military agents with abstract burdens/costs and shifting from external apocalyptic slaughter to internalized somatic dissolution—which partially overlaps the declared claim's framework of thermodynamic cost, bodily expenditure, and energy returning in flesh, but the recovered claim focuses on agent-replacement and action-type transformation rather than the declared claim's specific debt/solvent/compound-interest relational logic."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "63% of the source's content lemmas survive verbatim (δισμυριάδες, εἶδον, θειώδεις, θώρακας, καθημένους, κεφαλαὶ…) -- the base semantic forms did not fully transform"
+    },
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 87 words vs budget 62-85 (source 74)"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The transformation costs the text its ability to end, because once the room remembers what was spent inside it, consequence cannot be stopped at the border of a sentence."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T23:38:53.541595+00:00"
+}
