@@ -97,11 +97,98 @@
    ],
    "commentary": "",
    "interpretation": "Water runs into emptiness, and the channel does not grieve its running: the one who was not answered must reckon that the silence was also something that was sent."
+  },
+  {
+   "operator": "BEAST",
+   "source_passage": "**9:6** καὶ ἐν ταῖς ἡμέραις ἐκείναις ζητήσουσιν οἱ ἄνθρωποι τὸν θάνατον καὶ οὐ μὴ εὑρήσουσιν αὐτόν, καὶ ἐπιθυμήσουσιν ἀποθανεῖν καὶ ⸀φεύγει ⸂ὁ θάνατος ἀπ’ αὐτῶν⸃.\n\n**9:7** Καὶ τὰ ὁμοιώματα τῶν ἀκρίδων ὅμοια ἵπποις ἡτοιμασμένοις εἰς πόλεμον, καὶ ἐπὶ τὰς κεφαλὰς αὐτῶν ὡς στέφανοι ⸂ὅμοιοι χρυσῷ⸃, καὶ τὰ πρόσωπα αὐτῶν ὡς πρόσωπα ἀνθρώπων,\n\n**9:8** καὶ εἶχον τρίχας ὡς τρίχας γυναικῶν, καὶ οἱ ὀδόντες αὐτῶν ὡς λεόντων ἦσαν,\n\n**9:9** καὶ εἶχον θώρακας ὡς θώρακας σιδηροῦς, καὶ ἡ φωνὴ τῶν πτερύγων αὐτῶν ὡς φωνὴ ἁρμάτων ἵππων πολλῶν τρεχόντων εἰς πόλεμον·",
+   "citation": "9:6–9:9",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "<result>PASS</result>\n<enantiomorph>\n**9:6** καὶ ἐν ταῖς ἡμέραις ἐκείναις ζητήσουσιν οἱ ἵπποι τὴν ἀνάπαυσιν καὶ οὐ μὴ εὑρήσουσιν αὐτήν, καὶ ἐπιθυμήσουσιν κοιμηθῆναι καὶ ⸀φεύγει ⸂ἡ νὺξ ἀπ' αὐτῶν⸃.\n\n**9:7** Καὶ τὰ ὁμοιώματα τῶν ἀνθρώπων ὅμοια ἀκρίσιν ἡτοιμασμέναις εἰς βοράν, καὶ ἐπὶ τὰς κεφαλὰς αὐτῶν ⸂ὡς κέρατα⸃ ὅμοια λεόντων, καὶ τὰ πρόσωπα αὐτῶν ὡς πρόσωπα ἀκρίδων,\n\n**9:8** καὶ εἶχον τρίχας ὡς τρίχας ἵππων, καὶ οἱ ὀδόντες αὐτῶν ὡς κάπρων ἦσαν,\n\n**9:9** καὶ εἶχον θώρακας ὡς θώρακας χελωνῶν, καὶ ἡ φωνὴ τῶν βημάτων αὐτῶν ὡς φωνὴ ποδῶν ἀκρίδων πολλῶν ὁρμώντων ἐπὶ βοράν·\n</enantiomorph>\n\n<enantiomorph_translation>\n**9:6** And in those days the horses will seek rest and will by no means find it, and they will long to sleep and ⸀the night flees ⸂from them⸃.\n\n**9:7** And the likenesses of human beings are like locusts made ready for devouring, and upon their heads ⸂as horns⸃ resembling those of lions, and their faces are as the faces of locusts,\n\n**9:8** and they had hair as the hair of horses, and their teeth were as those of boars,\n\n**9:9** and they had breastplates as the shells of tortoises, and the sound of their footsteps was as the sound of the feet of many locusts rushing toward their prey·\n</enantiomorph_translation>\n\n<verification>{\"identity\":\"PASS\",\"semantic_independence\":\"PASS\",\"retrospective_containment\":\"PASS\",\"affect_traversal\":\"PASS\",\"entailment\":\"PASS\",\"slot_conservation\":\"PASS\",\"numeral_conservation\":\"PASS\",\"law_propagation\":\"PASS\",\"mode\":\"producer_side\"}</verification>\n\n<commentary>The world these creatures carry is one where the creaturely is the unmoved measure and the human or martial borrows its shape on loan from fur, shell, and jaw — a debt that cannot be repaid, only worn.</commentary>",
+   "layer_a_declaration": {
+    "beats": [
+     "9:6 humans seek death / death flees them / dying refused",
+     "9:7 locusts-likenesses: war-horses / gold-crown heads / human faces",
+     "9:8 women's-hair / lion's-teeth",
+     "9:9 iron-breastplates / wing-sound = war-chariot thunder"
+    ],
+    "geometry": {
+     "lines": 4,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:6",
+      "9:7",
+      "9:8",
+      "9:9"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "οἱ ἄνθρωποι": "the creaturely substrate — beast-flesh prior to anthropic determination",
+     "τὸν θάνατον (sought)": "dissolution back into undifferentiated animal ground",
+     "φεύγει ὁ θάνατος ἀπ᾽ αὐτῶν": "creaturely ground withdraws from the over-determined; exit denied",
+     "τὰ ὁμοιώματα τῶν ἀκρίδων": "locust-form as primary species-register (not simile — substrate)",
+     "ὅμοια ἵπποις ἡτοιμασμένοις εἰς πόλεμον": "equine war-drive: instinct-layer underneath martial anthropism",
+     "στέφανοι ὅμοιοι χρυσῷ": "crown-marks on skulls: rank-signal transposed to pelage / crest-feature",
+     "πρόσωπα ὡς πρόσωπα ἀνθρώπων": "human-face likeness: the anthropic overlay sitting atop beast-face",
+     "τρίχας ὡς τρίχας γυναικῶν": "mane/filament: sexually-marked mammal-hair, pre-gender-category",
+     "ὀδόντες ὡς λεόντων": "leonine dentition: predator-teeth as the real armament",
+     "θώρακας ὡς θώρακας σιδηροῦς": "chitin-carapace: exoskeleton as the originary breastplate",
+     "φωνὴ τῶν πτερύγων": "wing-stridulation: creaturely acoustic power, not forged instrument",
+     "ὡς φωνὴ ἁρμάτων ἵππων πολλῶν τρεχόντων εἰς πόλεμον": "chariot-herd thunder: herd-stampede as the template war-chariots copied",
+     "εἰς πόλεμον (x2)": "war-drive: instinctual predation re-labeled as tactical conflict",
+     "ἡτοιμασμένοις": "readiness: instinct-readiness, not manufactured preparedness",
+     "ἐπιθυμήσουσιν ἀποθανεῖν": "craving return to groundless animal being"
+    },
+    "axis": "the creaturely substrate the anthropic determination foreclosed",
+    "foreclosure": "the anthropic frame named beast-features as mere similes, never as the primary register",
+    "wager": "every human-face, crown, and breastplate is derivative — the chitin and stridulation came first",
+    "affect": "fatigue-as-recognition: the body already knows it is animal and wants back in"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (defaulted; tags absent)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "enantiomorph"
+    ],
+    "recovered_law": "In Text A the locusts (ἀκρίδες) are the described subject whose appearance is likened to horses and humans, while in Text B the roles are inverted: humans (ἄνθρωποι) are the described subject whose appearance is likened to locusts, and the horses are the ones who seek and cannot find (replacing the humans of 9:6). The direction of the simile-hierarchy and the identity of the seeking/suffering agent are thus reversed.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same reversal of simile direction—creatures vs. humans as the base/target of comparison—though the recovered claim adds detail about the seeking agent.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B (9:8–9) continues the inverted structure — humans bear animal likenesses (horse-hair, boar-teeth, tortoise-breastplates) and the sound is of locust-feet — so the reversed relation holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "vocabulary_leak",
+     "diagnosis": "operator/theory vocabulary inside the poem: enantiomorph"
+    },
+    {
+     "failed_test": "geometry",
+     "diagnosis": "lines 15/4, markers 8/4 -- the spine is broken, not exceeded"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T00:37:54.707795+00:00",
+ "last_updated": "2026-07-05T00:39:14.833257+00:00",
  "rite": [
   {
    "stage": "judgment",
