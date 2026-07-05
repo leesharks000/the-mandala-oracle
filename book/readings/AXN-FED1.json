@@ -300,12 +300,13 @@
      "diagnosis": "witness-question entities inside the transform or commentary: hour"
     }
    ],
-   "commentary": "The world that was built to discharge its purpose at a named moment discovers that the moment never coheres, and so every mouth opens only onto what accrues when an answer is permanently owed: ash in place of fire, cenotaphs in place of lions, and a number that counts nothing except the depth of the waiting."
+   "commentary": "The world that was built to discharge its purpose at a named moment discovers that the moment never coheres, and so every mouth opens only onto what accrues when an answer is permanently owed: ash in place of fire, cenotaphs in place of lions, and a number that counts nothing except the depth of the waiting.",
+   "interpretation": "The angels retained at the threshold: the hour arrived and nothing was loosed."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T18:39:40.130996+00:00",
+ "last_updated": "2026-07-05T18:39:50.182859+00:00",
  "rite": [
   {
    "stage": "judgment",
@@ -313,6 +314,13 @@
    "at": "2026-07-05T18:36:31.907928+00:00",
    "text": "Four angels loosed from the river: the hour was the lock, not the door.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-05T18:39:50.182859+00:00",
+   "text": "The angels retained at the threshold: the hour arrived and nothing was loosed.",
+   "operator": "SILENCE"
   }
  ]
 }
