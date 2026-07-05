@@ -2841,7 +2841,89 @@
     ]
    },
    "commentary": "Every being now pays the price of its own volume: the four voices do not arrive at appointed hours but rupture time into existence as their residue, and what perishes is not a count of the living but the capacity of any lesser utterance to be heard at all."
+  },
+  {
+   "transform_id": "TX-2ef0639d",
+   "cast_at": "2026-07-05T18:36:22.201195+00:00",
+   "reading_axn": "AXN:FED1.READING.🌒🌗🌖🌊🌙🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The domain of agency is transformed from military/apocalyptic destruction to financial/economic exploitation: angels released to kill become debts that fall due to exact payment, cavalry armies become tax-collecting offices, horses become balance-scales, and fire/smoke/brimstone issuing from mouths become interest/ruin/want issuing from scale-pans.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim correctly identifies the military-to-financial domain transformation and the reframing of destruction as economic extraction, but focuses primarily on vocabulary/domain mapping (cavalry→tax offices, horses→scales, fire→interest) rather than the specific structural change about time-as-debt, angels-as-matured-liens, and the shift from inflicted destruction to expired credit that the declared claim specifies.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The financial-debt relational structure persists through the end of TEXT B (scales with jaws, disks emitting interest/ruin/want), never reverting to the military-apocalyptic structure of TEXT A.",
+    "back_translation": "",
+    "terminal_similarity": 0.357
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐξέπεσον αἱ τέσσαρες ὀφειλαὶ αἱ σωρευθεῖσαι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀπαιτήσωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν τελωνημάτων τοῦ ⸀λογιστηρίου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ζυγοὺς ἐν τῇ ὁράσει καὶ τοὺς ἐπικειμένους ἐπ' αὐτῶν, ἔχοντας χιτῶνας ἐρυθροὺς καὶ πελιδνοὺς καὶ τεφρώδεις· καὶ αἱ πλάστιγγες τῶν ζυγῶν ὡς γνάθοι κητῶν, καὶ ἐκ τῶν δίσκων αὐτῶν ἐκπορεύεται τόκος καὶ φθορὰ καὶ ἔνδεια.",
+   "layer_a": {
+    "beats": [
+     "9:15 Four angels loosed—prepared for the hour, day, month, year—to kill a third of humanity.",
+     "9:16 Cavalry number: two myriads of myriads; I heard their count.",
+     "9:17 Horses seen in vision; riders with breastplates fiery, hyacinth, sulfurous; horses' heads like lions' heads; from mouths: fire, smoke, brimstone."
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "Four angels held in temporal reserve are released at the appointed compound moment to destroy an exact fraction of humanity, their cavalry an innumerable force whose appearance emits destruction from within.",
+    "mutated_relation": "In the source, time prepares agents who then act upon humanity (time → readiness → destruction); in the cost-world, time IS the accumulating debt and the angels ARE the matured lien—they do not act upon humanity but collect what humanity already owes, so destruction is not inflicted but extracted: what was spent was humanity's reprieve, and the hour is not when judgment begins but when credit expires.",
+    "clause_map": [
+     {
+      "ref": "9:15",
+      "class": "REBUILT",
+      "note": "Angels=creditors; time-units=compounding lien; killing=foreclosure on expired reprieve."
+     },
+     {
+      "ref": "9:16",
+      "class": "REBUILT",
+      "note": "Army count becomes invoice total; hearing=auditing the sum owed."
+     },
+     {
+      "ref": "9:17",
+      "class": "REBUILT",
+      "note": "Simile-list is cost-anatomy; emissions are disbursements; vision is audit."
+     }
+    ]
+   },
+   "commentary": "The reprieve humanity was given is the very substance it consumed, so at the hour of maturity the balances do not strike but simply weigh what was already spent, and what pours from their dishes is only what was always owed."
   }
  ],
- "last_updated": "2026-07-05T18:13:21.417251+00:00"
+ "last_updated": "2026-07-05T18:36:22.201195+00:00"
 }
