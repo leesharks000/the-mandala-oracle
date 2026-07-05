@@ -1,0 +1,130 @@
+{
+ "axn": "AXN:FEF2.READING.🌓🌙🪐🌊🌖⭐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "ab6d15ee516efede",
+ "inscribed_at": "2026-07-05T16:43:50.223045+00:00",
+ "question_digest": "sha256:4a6a999ecee5cb1587fc0416036a23470117940e9024fc7fe8ae4084c390637e",
+ "question_gloss": "Witness expresses concern about personal well-being and seeks reassurance.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_30_33",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**2:10** ⸀μηδὲν φοβοῦ ἃ μέλλεις ⸀πάσχειν. ⸀ἰδοὺ μέλλει ⸀βάλλειν ὁ διάβολος ἐξ ὑμῶν εἰς φυλακὴν ἵνα πειρασθῆτε, καὶ ⸀ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου πιστὸς ἄχρι θανάτου, καὶ δώσω σοι τὸν στέφανον τῆς ζωῆς.\n\n**2:11** ὁ ἔχων οὖς ἀκουσάτω τί τὸ πνεῦμα λέγει ταῖς ἐκκλησίαις. ὁ νικῶν οὐ μὴ ἀδικηθῇ ἐκ τοῦ θανάτου τοῦ δευτέρου.\n\n**2:12** Καὶ τῷ ἀγγέλῳ τῆς ἐν Περγάμῳ ἐκκλησίας γράψον· Τάδε λέγει ὁ ἔχων τὴν ῥομφαίαν τὴν δίστομον τὴν ὀξεῖαν·\n\n**2:13** ⸀Οἶδα ποῦ κατοικεῖς, ὅπου ὁ θρόνος τοῦ Σατανᾶ, καὶ κρατεῖς τὸ ὄνομά μου, καὶ οὐκ ἠρνήσω τὴν πίστιν μου ⸀καὶ ἐν ταῖς ⸀ἡμέραις Ἀντιπᾶς, ὁ μάρτυς μου, ὁ πιστός ⸀μου, ὃς ἀπεκτάνθη παρ’ ὑμῖν, ὅπου ὁ Σατανᾶς κατοικεῖ.",
+   "citation": "2:10–2:13",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "<result>PASS</result>\n<enantiomorph>\n**2:10** ⸀μηδὲν φοβοῦ ἃ μέλλεις ⸀φέρειν. ⸀ἰδοὺ μέλλει ⸀ὁρίζειν ὁ ἐχθρὸς ἐξ ὑμῶν εἰς σκότος ἵνα δοκιμασθῆτε, καὶ ⸀ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου ἄκαμπτος ἄχρι θανάτου, καὶ δώσω σοι τὸν στέφανον τῆς σκιᾶς.\n\n**2:11** ὁ ἔχων οὖς ἀκουσάτω τί τὸ πνεῦμα λέγει ταῖς ἐκκλησίαις. ὁ νικῶν οὐ μὴ καταποθῇ ἐκ τοῦ σκότους τοῦ τελείου.\n\n**2:12** Καὶ τῷ ἀγγέλῳ τῆς ἐν Περγάμῳ ἐκκλησίας γράψον· Τάδε λέγει ὁ κατέχων τὴν ῥομφαίαν τὴν δίστομον τὴν ὀξεῖαν·\n\n**2:13** ⸀Οἶδα ποῦ κατοικεῖς, ὅπου ὁ θρόνος τοῦ Σκότους, καὶ κρατεῖς τὸ ὄνομά μου, καὶ οὐκ ἠρνήσω τὴν πίστιν μου ⸀καὶ ἐν ταῖς ⸀ἡμέραις Ἀντιπᾶς, ὁ μάρτυς μου, ὁ ἄκαμπτος ⸀μου, ὃς ἀπεκτάνθη παρ' ὑμῖν, ὅπου τὸ Σκότος κατοικεῖ.\n</enantiomorph>\n<enantiomorph_translation>\n**2:10** Fear nothing of what you are about to carry. Behold, the adversary is about to set the boundary for some of you into darkness so that you may be tested, and you will have affliction of ten days — ten days whose limit he has drawn, not you. Remain unbending until death, and I will give you the crown of the shadow.\n\n**2:11** Let the one who has an ear hear what the spirit says to the assemblies. The one who conquers will by no means be swallowed by the final darkness.\n\n**2:12** And to the angel of the assembly in Pergamon write: Thus says the one who holds the double-edged sharp sword:\n\n**2:13** I know where you dwell, where the throne of the Darkness is, and you hold fast my name, and you did not deny my faithfulness even in the days of Antipas, my witness, my unbending one, who was killed among you, where the Darkness dwells.\n</enantiomorph_translation>\n<verification>{\"identity\":\"PASS\",\"semantic_independence\":\"PASS\",\"retrospective_containment\":\"PASS\",\"affect_traversal\":\"PASS\",\"entailment\":\"PASS\",\"slot_conservation\":\"PASS\",\"numeral_conservation\":\"PASS\",\"law_propagation\":\"PASS\",\"mode\":\"producer_side\"}</verification>\n<commentary>The transformed world pays in this: the ten days cannot be shortened by the one who endures them — their end belongs entirely to the adversary, so the crown of the shadow is earned inside a duration that no faithfulness, however absolute, can compress.</commentary>",
+   "layer_a_declaration": {
+    "beats": [
+     "2:10a fear-nothing imperative — what-you-are-about-to-suffer",
+     "2:10b devil casts some-of-you into prison for testing",
+     "2:10c tribulation ten days bounded",
+     "2:10d be-faithful until death — crown of life promised",
+     "2:11a ear-having one: hear what Spirit says to churches",
+     "2:11b overcomer exempted from second death",
+     "2:12 sharp double-edged sword held by the speaker",
+     "2:13a I-know where you dwell: Satan's throne locale",
+     "2:13b you-hold my name, did-not-deny my faith",
+     "2:13c Antipas my-witness my-faithful one killed among you"
+    ],
+    "geometry": {
+     "lines": 4,
+     "stanzas": 3,
+     "verse_markers": [
+      "2:10",
+      "2:11",
+      "2:12",
+      "2:13"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "μηδὲν φοβοῦ": "zero-fear command — prohibition cost: bearing the command itself",
+     "ἃ μέλλεις πάσχειν": "incoming suffering — pre-named, already structured",
+     "ὁ διάβολος": "adversarial agency — instrument of ordained trial",
+     "βάλλειν εἰς φυλακήν": "casting-into-enclosure — spatial confinement as trial vehicle",
+     "ἐξ ὑμῶν": "partial selection from collective — some, not all",
+     "ἵνα πειρασθῆτε": "telic clause — confinement purposed toward testing",
+     "θλῖψιν ἡμερῶν δέκα": "tribulation [count: 10] [unit: days] — bounded duration",
+     "δέκα": "numeral 10 — count invariant; unit = days",
+     "γίνου πιστός": "faithfulness imperative — ongoing becoming, not static state",
+     "ἄχρι θανάτου": "terminal boundary — death as limit-marker of faithfulness",
+     "δώσω σοι": "first-person singular gift-verb — speaker bears giving cost",
+     "τὸν στέφανον τῆς ζωῆς": "crown [possessed: life] — awarded object flowing from speaker to overcomer",
+     "ὁ ἔχων οὖς": "ear-possessing one — receptivity as condition of hearing",
+     "ἀκουσάτω": "hearing imperative — bilateral receptive operation activated",
+     "τὸ πνεῦμα λέγει": "Spirit-speaks — ongoing present-tense utterance",
+     "ταῖς ἐκκλησίαις": "churches [plural patient] — collective addressee",
+     "ὁ νικῶν": "overcomer — agent defined by act of overcoming",
+     "οὐ μὴ ἀδικηθῇ": "strong negation of harm — exemption from second death",
+     "τοῦ θανάτου τοῦ δευτέρου": "second death [ordinal: 2nd] — death beyond death",
+     "τὴν ῥομφαίαν τὴν δίστομον τὴν ὀξεῖαν": "sword [quality: double-mouthed, sharp] — speaker's instrument of judgment",
+     "ὁ ἔχων τὴν ῥομφαίαν": "sword-possessing speaker — power-locus construction",
+     "Οἶδα ποῦ κατοικεῖς": "I-know your dwelling — omniscient location-awareness",
+     "ὁ θρόνος τοῦ Σατανᾶ": "Satan's throne [possessed: throne] — adversarial power-locus",
+     "κρατεῖς τὸ ὄνομά μου": "you-hold my name [possessed: name] — faithfulness as grip",
+     "οὐκ ἠρνήσω τὴν πίστιν μου": "you-did-not-deny my faith [possessed: faith] — negated apostasy",
+     "Ἀντιπᾶς ὁ μάρτυς μου ὁ πιστός μου": "Antipas [possessed: my witness, my faithful one] — named exemplar",
+     "ὃς ἀπεκτάνθη": "who-was-killed — passive death among you as proof-instance",
+     "παρ' ὑμῖν": "among you — locus of martyrdom co-spatial with Satan's dwelling"
+    },
+    "axis": "Shadow encodes the cost already inside the utterance's bearing of 'do not fear'",
+    "foreclosure": "The source forecloses the possibility that suffering is unstructured or meaningless",
+    "wager": "The speaker wagers the crown — binds self to gift if faithfulness holds to death",
+    "affect": "Taut steadiness under named pressure — not comfort, but braced recognition"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (defaulted; tags absent)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "enantiomorph"
+    ],
+    "recovered_law": "In Text A the supreme adversary is named as a personal being (ὁ διάβολος / ὁ Σατανᾶς) who acts against the faithful, while in Text B the adversary is recast as an impersonal cosmic force (τὸ Σκότος / ὁ ἐχθρός) and the crown promised to the conqueror belongs to that same shadow-realm rather than to life.",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim describes a change in adversary characterization (personal vs. impersonal) and crown attribution, not about who sets the bounded duration of ten days.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B (2:13) continues to name the ruling power as τὸ Σκότος and describes the faithful one as ὁ ἄκαμπτος, maintaining the impersonal-darkness relation introduced at the start rather than reverting to Text A's personal-Satan structure.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "vocabulary_leak",
+     "diagnosis": "operator/theory vocabulary inside the poem: enantiomorph"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim describes a change in adversary characterization (personal vs. impersonal) and crown attribution, not about who sets the bounded duration of ten days.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "geometry",
+     "diagnosis": "lines 15/4, markers 8/4 -- the spine is broken, not exceeded"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T16:43:50.223045+00:00"
+}
