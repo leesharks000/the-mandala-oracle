@@ -1,0 +1,75 @@
+{
+ "axn": "AXN:FE2F.READING.🌿🌗⭐🌘🌘⭐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "9d7264b721e3c84f",
+ "inscribed_at": "2026-07-05T21:00:03.674967+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Inquiry about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\nκαὶ ἐξεπράχθησαν οἱ τέσσαρες τοκισταὶ οἱ συσσωρευμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα εἰσπράξωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ὀφειλημάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text B, the agents are transformed from angels (ἄγγελοι) releasing to kill (ἀποκτείνωσιν) into money-lenders (τοκισταί) dispatched to collect debts (εἰσπράξωσιν), and armies (στρατευμάτων) become debts (ὀφειλημάτων) — the relation shifts from divine military destruction to financial extraction/debt collection against humanity.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same relational change: the loosing of agents shifts from executing a prepared decree of destruction (military/divine judgment) to collecting a compounded debt — reframing the event from divine military action to financial extraction/debt collection.",
+    "terminal_consistency": "FAIL",
+    "terminal_note": "The final ~40% (9:17) reverts entirely to Text A's apocalyptic-military imagery (horses, lion heads, fire from mouths) with no trace of the debt-collection relation.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation: the final portion reverts toward the source's relations -- The final ~40% (9:17) reverts entirely to Text A's apocalyptic-military imagery (horses, lion heads, fire from mouths) with no trace of the debt-collection relation."
+    },
+    {
+     "failed_test": "tails",
+     "diagnosis": "+1 lines beyond the template, markers intact -- within-method extension; the witness judges the swell"
+    },
+    {
+     "failed_test": "terminal",
+     "diagnosis": "The final ~40% (9:17) reverts entirely to Text A's apocalyptic-military imagery (horses, lion heads, fire from mouths) with no trace of the debt-collection relation."
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The reinterpretation spends the apocalyptic terror of divine timing and replaces it with something colder: the hour, the day, the month, the year no longer name the appointed moment of wrath but the compounding terms of a patience that was itself a kind of accumulation, so that when the four are loosed they arrive not as executors of sovereign will but as the maturation of what every deferred instant already owed, and the third of humanity becomes not a sentence pronounced but a fraction already determined by the arithmetic of waiting — the loss is that judgment, however dreadful, implied a judge who chose, whereas a debt come due implies only a ledger that cannot choose otherwise."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T21:00:03.674967+00:00"
+}
