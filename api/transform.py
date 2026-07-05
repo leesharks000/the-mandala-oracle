@@ -3594,6 +3594,7 @@ class handler(BaseHTTPRequestHandler):
                 "primary_output": parsed["enantiomorph"],
                 "enantiomorph_translation": parsed.get("enantiomorph_translation", ""),
                 "source_passage": source_text,
+                "source_translation": translate_passage(source_text, api_key),
                 "citation": body.get("citation"),
                 "underlying_attribution": meta.get("underlying_attribution"),
                 "geometry_check": geometry_check,
