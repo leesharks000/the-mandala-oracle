@@ -144,6 +144,59 @@ OPERATORS = {
     "THUNDER":   "scale-axis — the cosmic-utterance the local-speech determined against",
     "SILENCE":   "response-axis — the non-response the source's engagement-expectation foreclosed",
 }
+
+# ── NAME-BLIND OPERATOR LOGIC (MANUS, 2026-07-05) ─────────────────────────
+# The generative context receives ONLY these: an opaque id and the
+# relational logic. Never the name, never a register list for or against
+# the name's imagery -- a negation carries the shape of what it negates.
+# The names live on for humans: UI, Sigil, Feist, inscription, ledger.
+OPERATOR_LOGIC = {
+    "SHADOW": ("O_COST_01",
+        "every assertion in the source carries an unstated cost. Make bearing-cost the "
+        "primary substance of the world: each being re-derived as what it costs or what "
+        "was spent for it, each promise as the lien it places, each gift as what it "
+        "deducts, each consolation as the price it conceals. The economy the source "
+        "never speaks becomes the visible order."),
+    "MIRROR": ("O_DIRECTION_01",
+        "the source's gestures run one way. Make the foreclosed symmetry primary: "
+        "directions reversed, reciprocal, or self-implicating; giver and receiver, seer "
+        "and seen, exchanged so that both parties are implicated in what the source made "
+        "one-directional."),
+    "INVERSION": ("O_POLARITY_01",
+        "the source's positive claim presupposes a negative pole it never speaks. Make "
+        "that presupposed pole primary: the world re-derived from what the claim stands "
+        "on and denies, so that the unspoken ground becomes the figure."),
+    "FLAME": ("O_THRESHOLD_01",
+        "the source holds an intensity just beneath its collapse-limit. Cross the "
+        "threshold: beyond it, intensity changes KIND, not degree. The world re-derived "
+        "as what the source's contained pressure becomes when containment fails -- a "
+        "change of state, never merely more of the same."),
+    "BRIDE": ("O_BOND_01",
+        "the source holds its parties in contestation, separation, or hierarchy. Make "
+        "the foreclosed consecrative bond primary: relation becomes constitutive of both "
+        "parties without dissolving their difference -- what each IS is re-derived from "
+        "the bond between them."),
+    "BEAST": ("O_SUBSTRATE_01",
+        "the source determines its world anthropically. Make the nonhuman substrate "
+        "primary: the sensorium, appetites, scales of need, and orders of the living "
+        "ground beneath the human determination -- beings re-derived from that "
+        "substrate's own registers, not from the human ones."),
+    "THUNDER": ("O_SCALE_01",
+        "the source presents a larger distributed process as bounded, local, countable, "
+        "causally self-contained units. Make the distributed process primary: the "
+        "bounded agents, time-points, and counts become its local registrations. "
+        "Propagate through temporal scale, agent class, countability, carrier relation, "
+        "and consequence."),
+    "SILENCE": ("O_RESPONSE_01",
+        "the source structures an expectation of response. Make the non-response "
+        "primary: the expected answer withheld, displaced, or structurally unavailable "
+        "-- the world re-derived around the absence where the response was owed, and "
+        "around who or what absorbs that absence."),
+}
+
+def op_logic_line(operator: str) -> str:
+    oid, logic = OPERATOR_LOGIC.get(operator, ("O_UNSPEC", OPERATORS.get(operator, "")))
+    return f"OPERATOR LOGIC {oid}: {logic}"
 LEGACY_OPERATORS = {"SCROLL": "surface-depth-axis — non-canonical; fell out of rotation"}
 
 RATE_LIMIT_WINDOW_S = 3600
@@ -714,7 +767,7 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
     """Single-call compiler execution. Returns parsed sections."""
     op_spec = OPERATORS[operator]
     user = (
-        f"OPERATOR: {operator} — {op_spec}\n\n"
+        f"{op_logic_line(operator)}\n\n"
         f"INVOKING CONTEXT (witness's question — FIELD OF UPTAKE ONLY):\n"
         f"{invoking.strip()[:MAX_INVOKING_CHARS]}\n"
         "ROLE BOUNDARY: the question constitutes relevance — it may inform which\n"
@@ -958,7 +1011,7 @@ def run_compiler_v2(source_text: str, operator: str, invoking: str, api_key: str
     """Two-call compiler: analyst skeleton → mimetic composition."""
     op_spec = OPERATORS[operator]
     # ── CALL 1: the analyst deliberates, emits the skeleton ──
-    u1 = (f"OPERATOR: {operator} — {op_spec}\n"
+    u1 = (f"{op_logic_line(operator)}\n"
           f"WITNESS QUESTION (relevance only): {invoking.strip()[:MAX_INVOKING_CHARS]}\n\n"
           f"SOURCE:\n<<<\n{source_text}\n>>>")
     s_text, s_stop = _stream_call(COMPILER_MODEL, SKELETON_SYSTEM, u1, SKELETON_MAX, api_key, wall=90)
@@ -1198,8 +1251,8 @@ Given SOURCE (possibly Greek), OPERATOR (an axis), and the witness's question
    or the source's own grammar of comparison) -- NEVER a vocabulary shift,
    an intensity change, or a mood. State it as an ONTOLOGICAL exchange: name
    WHAT THE BEINGS ARE in the transformed world under the operator's axis
-   (under SHADOW: entities as their bearing-costs; the crown as what it
-   deducts, the witness as what was spent) -- a mutation compatible with
+   (under a cost-logic: entities as their bearing-costs -- the crown as
+   what it deducts, the witness as what was spent) -- a mutation compatible with
    every entity remaining what it was is a decoration, not a claim. This is
    the cast's falsifiable claim.>",
  "clause_map": [{"ref": "<verse/unit ref matching beats>",
@@ -1227,7 +1280,7 @@ hours of wrong frames).
 THE METHOD. The SOURCE below is a TEMPLATE: its lineation, its verse markers,
 its syntactic frames, its slot positions are absolute and held exactly. Your
 task is to REFILL EVERY CONTENT SLOT of that template from inside the
-OPERATOR'S WORLD, under the declared LAW. This is not editing a text; it is
+world the operator logic opens, under the declared LAW. This is not editing a text; it is
 composing into a fixed form from another world's lexicon. An unrefilled slot
 is unfinished work: any content line that survives verbatim is a failure of
 composition, not a fidelity. Only connective tissue may persist (articles,
@@ -1251,7 +1304,7 @@ the template survives, almost no content word does):
     as I am:
     let me have these trinkets
 
-  BRIDE cast (consensual fusion; every slot refilled, frame intact):
+  One operator cast (its logic: consensual fusion; every slot refilled, frame intact):
     Oath of black you signed
     whenever chart shows clean
     god neutral, yes, but you
@@ -1286,17 +1339,13 @@ LAWS:
   saturate every slot; where a fill runs shallow, deepen the world, never
   switch worlds. The template holds while the being beneath it is exchanged
   all the way down.
-- AXIS, NEVER A PALETTE (the crown-of-shadow incident, 2026-07-05): the
-  operator names an AXIS of transformation, never a vocabulary. Its name and
-  its name's imagery -- shadow as darkness-words, silence as quiet-words,
-  flame as fire-words -- must not appear as fills unless the source already
-  carries them. Renaming an entity in the operator's color while its being
-  stays intact is decoration, not transformation. Test before emitting:
-  delete every name-colored word -- if nothing remains of the transform,
-  there was no transform. Under SHADOW the beings are re-derived as their
-  bearing-costs (the crown as what it deducts, the witness as what was
-  spent, the promise as the lien it places); the axis rebuilds what things
-  ARE, and the operator's name stays in the metadata where it lives.
+- RELATION FIRST (MANUS, 2026-07-05): the guiding relation is chosen from
+  the encounter between the received operator logic and THIS source's
+  template, and that relation is itself the primary transform. No imagery
+  register is pre-selected -- neither toward nor against any icon; the world
+  is generated by the transformed template alone. Recast the high-load nouns
+  from their NEW functions under the changed relation; a source noun
+  survives only where its role survives.
 - THE ROSTER (MANUS, 2026-07-05: "the ten thousand angels should be
   different"): nouns are where the ontology lives. The dramatis personae --
   the angels, the horses, the riders, the armies, whatever beings the source
@@ -1780,7 +1829,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
         # output order forces a complete encode before the flip; stage C stays
         # blind, so the property that matters -- the mutated checksum causally
         # upstream of the English -- is preserved) ──
-        u_f = (f"OPERATOR: {operator}\nINVOKING: {invoking}\n\nTEXT:\n<<<\n{source_text}\n>>>")
+        u_f = (f"{op_logic_line(operator)}\nINVOKING: {invoking}\n\nTEXT:\n<<<\n{source_text}\n>>>")
         try:
             f_text, f_stop = _stream_call(COMPILER_MODEL, _GLYPH_FUSED_SYSTEM, u_f,
                                           GLYPH_FUSED_MAX, api_key, wall=95)
@@ -1831,7 +1880,7 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
                 "failed_constraint": "GLYPH", "failed_test": "encode",
                 "specific_diagnosis": "the checksum came back empty or letter-contaminated -- the pivot must be pure glyph"}}
         # ── stage B: the operator, in glyph space ──
-        u_op = (f"OPERATOR: {operator}\nINVOKING: {invoking}\n\nGLYPH TEXT:\n<<<\n{g_src}\n>>>")
+        u_op = (f"{op_logic_line(operator)}\nINVOKING: {invoking}\n\nGLYPH TEXT:\n<<<\n{g_src}\n>>>")
         try:
             o_text, o_stop = _stream_call(COMPILER_MODEL, _GLYPH_OPERATE_SYSTEM, u_op,
                                           GLYPH_OPERATE_MAX, api_key, wall=60)
@@ -1974,7 +2023,7 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
         skel = None
     # -- CALL 1: the analyst deliberates, emits the kernel skeleton --
     if skel is None:
-        u1 = (f"OPERATOR: {operator} -- {op_spec}\n"
+        u1 = (f"{op_logic_line(operator)}\n"
               f"WITNESS QUESTION (relevance only): {invoking.strip()[:MAX_INVOKING_CHARS]}\n\n"
               f"SOURCE:\n<<<\n{source_text}\n>>>")
         s_text, s_stop = _stream_call(COMPILER_MODEL, SKELETON_SYSTEM_V3, u1,
@@ -2018,7 +2067,7 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
         guidance = ("\n\nPRIOR COMPOSITION FAILED -- " + halt_feedback.strip()[:600]
                     + "\nCorrect exactly this fault. Hold the mutated relation "
                       "through the FINAL unit; do not revert toward the source.")
-    u2 = (f"OPERATOR: {operator}\n"
+    u2 = (f"{op_logic_line(operator)}\n"
           f"DECLARED LAW: {kernel.get('mutated_relation','')}\n\n"
           f"SOURCE (the template -- hold it absolutely, refill every slot):\n"
           f"<<<\n{source_text}\n>>>"
@@ -3268,6 +3317,7 @@ class handler(BaseHTTPRequestHandler):
         transform_block = {
             "operator": operator,
             "source_passage": source_text,
+                    "source_translation": translate_passage(source_text, api_key),
             "citation": body.get("citation"),
             "underlying_attribution": meta.get("underlying_attribution"),
             "enantiomorph": parsed["enantiomorph"],

@@ -1074,7 +1074,7 @@ async function runCastingRite(cast) {
           transform = data.transform;
           inscription = data.inscription;
           if (!sourceShown && transform.source_passage) {
-            renderSourceCard(transform.citation || cast.castSelection, transform.source_passage, transform.underlying_attribution);
+            renderSourceCard(transform.citation || cast.castSelection, transform.source_passage, transform.underlying_attribution, transform.source_translation || cast.passageTranslation);
             sourceShown = true;
           }
           const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
