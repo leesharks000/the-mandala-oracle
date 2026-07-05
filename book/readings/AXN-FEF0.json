@@ -1,0 +1,108 @@
+{
+ "axn": "AXN:FEF0.READING.🌑🌒🌕🌓🌔🌓",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "38db9685f0542e9c",
+ "inscribed_at": "2026-07-05T18:13:20.217253+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Inquiry about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "THUNDER",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐρράγησαν αἱ τέσσαρες βρονταὶ αἱ γεννῶσαι ἀπὸ τῆς ἠχῆς ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα σιγήσωσιν τὸ τρίτον τῶν φωνῶν.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἠχημάτων τοῦ ⸀κρότου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς κτύπους ἐν τῇ ὁράσει καὶ τοὺς φερομένους ἐπ' αὐτῶν, ἔχοντας περιβολὰς χαλκέας καὶ ἰοειδεῖς καὶ λευκοπύρους· καὶ αἱ κορυφαὶ τῶν κτύπων ὡς κορυφαὶ σεισμῶν, καὶ ἐκ τῶν χασμάτων αὐτῶν ἐκπορεύεται κρόταφος καὶ παλμὸς καὶ σίγησις.",
+   "layer_a_declaration": {
+    "beats": [
+     "9:15 Four angels loosed—prepared for the hour and day and month and year—to kill a third of humanity",
+     "9:16 The cavalry's number: two myriads of myriads; I heard their number",
+     "9:17 Horses seen in vision with riders bearing breastplates of fire, hyacinth, brimstone; horse-heads as lion-heads; from their mouths issues fire, smoke, sulfur"
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "τέσσαρες ἄγγελοι": "four detonations / four thunder-voices",
+     "ἐλύθησαν (loosed)": "uttered / discharged",
+     "ἡτοιμασμένοι (prepared)": "tuned / calibrated",
+     "ὥραν (hour)": "hour (count: 1)",
+     "ἡμέραν (day)": "day (count: 1)",
+     "μῆνα (month)": "month (count: 1)",
+     "ἐνιαυτόν (year)": "year (count: 1)",
+     "ἵνα ἀποκτείνωσιν (so they might kill)": "so they might silence / annihilate by resonance",
+     "τὸ τρίτον τῶν ἀνθρώπων": "the third of all human speech",
+     "ἀριθμὸς τῶν στρατευμάτων τοῦ ἱππικοῦ": "the count of the thundering cavalry-frequencies",
+     "δισμυριάδες μυριάδων": "two myriads of myriads (count: 20,000 × 10,000)",
+     "ἤκουσα τὸν ἀριθμὸν αὐτῶν": "I heard their number (acoustic witness)",
+     "ἵππους (horses)": "sound-waves / galloping concussions",
+     "ἐν τῇ ὁράσει (in the vision)": "in the vibration-field",
+     "τοὺς καθημένους ἐπ' αὐτῶν (riders upon them)": "the frequencies mounted upon them",
+     "θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις": "breastplates of detonation-red, pressure-blue, sulfur-yellow",
+     "κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων": "wave-fronts as lion-roar crest-shapes",
+     "ἐκ τῶν στομάτων αὐτῶν": "from their apertures",
+     "πῦρ καὶ καπνὸς καὶ θεῖον": "fire, smoke, and sulfur — the three throats of thunder",
+     "ἐκπορεύεται (issues forth)": "erupts / speaks itself outward"
+    },
+    "axis": "The cosmic utterance that local speech foreclosed — thunder as the scale the angels' precision suppressed",
+    "foreclosure": "The source determined against indeterminacy: every temporal unit is pre-calibrated, every agent pre-prepared, leaving no room for the unspeakable scale of cosmic voice",
+    "wager": "Thunder costs the calendar its precision — hour, day, month, year dissolve into a single overwhelming vocalization",
+    "affect": "Awe at the threshold where schedule becomes roar — vertigo of administered apocalypse cracking into ungovernable sound"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The agents and their action are inverted: in Text A, four angels are released to kill a third of humans (destructive outward action), while in Text B, four thunders burst forth to silence a third of voices (suppressive/silencing action), reversing the relation from unleashing lethal force onto people to quenching sound.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim correctly identifies the shift from angels killing humans to thunders silencing voices, capturing the agent/action inversion and the change in what is affected. However, it frames this as a simple agent-action inversion (lethal force → silencing), missing the declared claim's core structural mutation: that temporal coordinates are produced BY the agents' utterance rather than governing them, i.e., the reversal of causality between time and agency.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the changed relation: destructive emanations (fire, smoke, brimstone) become sound-phenomena (κρόταφος, παλμός, σίγησις), consistent with the silencing/sound framework throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.366
+   },
+   "law_variance": {
+    "declared": "In the transformed world the temporal coordinates do not govern the agents but are produced BY their utterance — the four thunders do not wait for the appointed hour; their detonation generates the hour, the day, the month, the year as acoustic aftermath; the beings are not soldiers dispatched at a time but cosmic voices whose sounding IS time itself, and what is killed is not a third of persons but a third of all local speech made inaudible by scale.",
+    "recovered": "The agents and their action are inverted: in Text A, four angels are released to kill a third of humans (destructive outward action), while in Text B, four thunders burst forth to silence a third of voices (suppressive/silencing action), reversing the relation from unleashing lethal force onto people to quenching sound.",
+    "note": "The recovered claim correctly identifies the shift from angels killing humans to thunders silencing voices, capturing the agent/action inversion and the change in what is affected. However, it frames this as a simple agent-action inversion (lethal force → silencing), missing the declared claim's core structural mutation: that temporal coordinates are produced BY the agents' utterance rather than governing them, i.e., the reversal of causality between time and agency."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "Every being now pays the price of its own volume: the four voices do not arrive at appointed hours but rupture time into existence as their residue, and what perishes is not a count of the living but the capacity of any lesser utterance to be heard at all."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T18:13:20.217253+00:00"
+}
