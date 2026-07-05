@@ -104,10 +104,20 @@
      "diagnosis": "witness-question entities inside the transform or commentary: hour"
     }
    ],
-   "commentary": "The reprieve humanity was given is the very substance it consumed, so at the hour of maturity the balances do not strike but simply weigh what was already spent, and what pours from their dishes is only what was always owed."
+   "commentary": "The reprieve humanity was given is the very substance it consumed, so at the hour of maturity the balances do not strike but simply weigh what was already spent, and what pours from their dishes is only what was always owed.",
+   "interpretation": "Four angels loosed from the river: the hour was the lock, not the door."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T18:36:20.957975+00:00"
+ "last_updated": "2026-07-05T18:36:31.907928+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-05T18:36:31.907928+00:00",
+   "text": "Four angels loosed from the river: the hour was the lock, not the door.",
+   "operator": "SHADOW"
+  }
+ ]
 }
