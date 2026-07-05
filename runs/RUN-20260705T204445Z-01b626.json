@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260705T204445Z-01b626",
+ "schema": "run/v1",
+ "ts": "2026-07-05T20:44:45.989620+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SILENCE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "f3b9f873e9b45ccb64d08c4368ea4177ac0c9117",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/f3b9f873e9b45ccb64d08c4368ea4177ac0c9117",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/f3b9f873e9b45ccb64d08c4368ea4177ac0c9117/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "ac36d24116e5d588",
+  "prompt_method": "beat/v2 (rotate-then-pour; reading=meaning, source=form)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "f3b9f873e9b4",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "ac36d24116e5d588",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four agents held in precise temporal reserve are released at the appointed intersection of time-units to annihilate a fixed fraction of humanity, their force enumerated and visually attested by a lone witness.",
+   "mutated_relation": "The beings become embodiments of a question that will never be answered: the four agents are no longer executors arriving on schedule but the schedule itself become opaque—time-keepers whose appointed moment, rather than disclosing itself, withdraws into permanent illegibility. The cavalry host becomes the weight of an answer that was owed but never delivered. The seer becomes one who listens and looks for a response that structurally cannot arrive. The event-kind shifts from commissioned destruction to the absorption of cosmic non-reply: a vigil held at an intersection where the signal was promised and the silence is what kills.",
+   "beats": "1. Four prepared agents are unbound at the exact convergence of hour, day, month, and year.\n2. Their mandate: to destroy one-third of the human population.\n3. The number of the mounted force is declared at two hundred million; the seer hears this count.\n4. The seer sees the horses and riders in vision—riders armored in fire-red, smoke-blue, and sulfur-yellow; horses with lion-heads breathing fire, smoke, and brimstone."
+  },
+  "enantiomorph": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες φύλακες οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα συγκλείσωσιν τὸ τρίτον τῶν ἀνθρώπων εἰς τὴν σιγὴν ὅπου ἡ αἰτία ὠφείλετο.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν παρατάξεων τοῦ ⸀ἐφίππου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν ἐν τῷ τόπῳ ὅπου ἀπόκρισιν ἐζήτουν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον— πᾶσα ὄψις ἀντὶ πάσης ἀποκαλύψεως, πᾶσα παρουσία ἀντὶ πάσης ἀποκρίσεως.",
+  "enantiomorph_translation": "**9:15** And the four keepers-of-the-moment were released, those held in readiness for the hour ⸀and the day and the month and the year, so that they might seal away a third of all living persons into the silence where the reason was owed.\n\n**9:16** And the number of the arrayed hosts of the ⸀mounted was tens of thousands of tens of thousands; I heard their number in the place where I sought an answer.\n\n**9:17** And thus I saw the mounts in the vision and those seated upon them, wearing breastplates of fire-red and smoke-dark and sulfur-yellow; and the heads of the mounts were as the heads of predators, and from their mouths issued fire and fume and brimstone— all spectacle in place of all revelation, all presence in place of all reply.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the four angels are released in order to kill (ἀποκτείνωσιν) a third of humanity; in Text B the four guardians are released in order to shut up/enclose (συγκλείσωσιν) a third of humanity into silence where a cause was owed, changing the agents' role from destroyers to imprisoners and redirecting the action from killing to confinement-in-silence.",
+   "law_match": "ADJACENT",
+   "law_match_note": "Both identify a shift away from commissioned destruction/killing, but the declared claim reframes the agents as embodiments of unanswered cosmic silence (schedule become opaque, vigil for a non-reply), while the recovered claim identifies a concrete shift from killing to imprisoning/enclosing in silence—a related but structurally different relational change (confinement vs. permanent illegibility/withdrawal of answer).",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B adds the gloss 'πᾶσα ὄψις ἀντὶ πάσης ἀποκαλύψεως, πᾶσα παρουσία ἀντὶ πάσης ἀποκρίσεως,' reinforcing the changed relational logic (presence substituting for answer, appearance for revelation) rather than reverting to Text A's killing relation.",
+   "back_translation": "",
+   "terminal_similarity": 0.8
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.80 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": {
+   "declared": "The beings become embodiments of a question that will never be answered: the four agents are no longer executors arriving on schedule but the schedule itself become opaque—time-keepers whose appointed moment, rather than disclosing itself, withdraws into permanent illegibility. The cavalry host becomes the weight of an answer that was owed but never delivered. The seer becomes one who listens and looks for a response that structurally cannot arrive. The event-kind shifts from commissioned destruction to the absorption of cosmic non-reply: a vigil held at an intersection where the signal was promised and the silence is what kills.",
+   "recovered": "In Text A the four angels are released in order to kill (ἀποκτείνωσιν) a third of humanity; in Text B the four guardians are released in order to shut up/enclose (συγκλείσωσιν) a third of humanity into silence where a cause was owed, changing the agents' role from destroyers to imprisoners and redirecting the action from killing to confinement-in-silence.",
+   "note": "Both identify a shift away from commissioned destruction/killing, but the declared claim reframes the agents as embodiments of unanswered cosmic silence (schedule become opaque, vigil for a non-reply), while the recovered claim identifies a concrete shift from killing to imprisoning/enclosing in silence—a related but structurally different relational change (confinement vs. permanent illegibility/withdrawal of answer)."
+  },
+  "commentary": "The transformed scene carries the weight of a convergence that, having promised disclosure through exacting temporal calibration, delivers instead a splendor so total that it displaces the very announcement it was meant to frame, and a third of all persons vanishes not into judgment but into the gap where the warrant for their vanishing should have spoken.",
+  "post_mortem": null,
+  "skeleton": {
+   "beats": "1. Four prepared agents are unbound at the exact convergence of hour, day, month, and year.\n2. Their mandate: to destroy one-third of the human population.\n3. The number of the mounted force is declared at two hundred million; the seer hears this count.\n4. The seer sees the horses and riders in vision—riders armored in fire-red, smoke-blue, and sulfur-yellow; horses with lion-heads breathing fire, smoke, and brimstone.",
+   "rotated_reading": "1. Four keepers-of-the-moment, held in readiness for the single instant when hour, day, month, and year would converge to speak, are finally released—but what they were prepared to announce has become structurally unavailable. The convergence opens onto nothing legible. The hour does not name itself; the day withholds its date; the month and the year fold shut. They stand unbound at an intersection that refuses to be a coordinate. Their freedom is the revelation that the appointed time, so precisely calibrated, was never going to disclose when it was.\n2. Into the void where a mandate should have been articulated, a third of all living persons disappears—not struck down by a declared sentence but absorbed by the gap where the reason was owed. Destruction fills the space of the missing reply. The fraction is exact, but the justification behind it is the silence itself; what kills is the non-arrival of the explanation for the killing.\n3. The magnitude of the mounted host is spoken as an incalculable sum—tens of thousands of tens of thousands—and the lone witness hears this number. But hearing a number in the place where one expected a meaning is its own form of deprivation. He receives the scale of what has been mobilized against him and against every listener, and this enumeration is what occupies the location where an answer—why now, why this hour—should have stood. The count is the shape of the absent response: immense, precise, and empty of disclosure.\n4. The witness looks and sees riders encased in the colors of combustion—the red of kindling, the dark blue of smoke-shadow, the yellow of sulfur—and beneath them mounts whose heads are the heads of predators, whose open mouths emit a triple exhalation of flame, fume, and burning mineral. He sees, in other words, the full sensory presence of an overwhelming force, every detail hyper-available to perception—and this lavish visibility is itself the displacement. The vision answers the wrong question. It shows him what the destruction looks like, never what it means, never when it truly is. Every color, every lion-maw, every plume of brimstone is a surface offered where a reason was requested. The seer absorbs into his own body of testimony the gorgeous, annihilating non-response: all spectacle, no revelation; all presence, no reply.",
+   "governing_law": "Four agents held in precise temporal reserve are released at the appointed intersection of time-units to annihilate a fixed fraction of humanity, their force enumerated and visually attested by a lone witness.",
+   "mutated_relation": "The beings become embodiments of a question that will never be answered: the four agents are no longer executors arriving on schedule but the schedule itself become opaque—time-keepers whose appointed moment, rather than disclosing itself, withdraws into permanent illegibility. The cavalry host becomes the weight of an answer that was owed but never delivered. The seer becomes one who listens and looks for a response that structurally cannot arrive. The event-kind shifts from commissioned destruction to the absorption of cosmic non-reply: a vigil held at an intersection where the signal was promised and the silence is what kills."
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
