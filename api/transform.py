@@ -2114,6 +2114,7 @@ def _run_beat_pipeline(source_text: str, operator: str, invoking: str, api_key: 
         reading = _tagsect(r_text, "ROTATED_READING")
         if not reading.strip():
             out = {"result": "HALT", "kernel": {}, "skeleton": {}, "_invoking": invoking,
+                   "layer_a": {"beats": [], "geometry": {}}, "layer_b": {},
                    "enantiomorph": "", "enantiomorph_translation": "", "verification": {},
                    "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
                                    "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
@@ -2163,6 +2164,8 @@ def _run_beat_pipeline(source_text: str, operator: str, invoking: str, api_key: 
     parsed = {
         "result": "PASS" if _enant.strip() else "HALT",
         "kernel": kernel,
+        "layer_a": {"beats": [], "geometry": {}},
+        "layer_b": {},
         "_invoking": invoking,
         "skeleton": skel,   # returned on HALT so the re-unfold reuses the reading
         "enantiomorph": _enant,
