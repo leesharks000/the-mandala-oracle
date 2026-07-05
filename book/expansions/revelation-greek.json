@@ -2337,7 +2337,106 @@
     ]
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-5c7516ee",
+   "cast_at": "2026-07-05T00:39:16.221878+00:00",
+   "reading_axn": "AXN:FEC2.READING.🌓💫🪐🌓🌗🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_149_152",
+    "citation": "9:6–9:9",
+    "start_unit": 149,
+    "end_unit": 152,
+    "unit_labels": [
+     "9:6",
+     "9:7",
+     "9:8",
+     "9:9"
+    ]
+   },
+   "operator": "BEAST",
+   "operator_axis": "species-register-axis — the creaturely substrate the anthropic determination foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (defaulted; tags absent)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "enantiomorph"
+    ],
+    "recovered_law": "In Text A the locusts (ἀκρίδες) are the described subject whose appearance is likened to horses and humans, while in Text B the roles are inverted: humans (ἄνθρωποι) are the described subject whose appearance is likened to locusts, and the horses are the ones who seek and cannot find (replacing the humans of 9:6). The direction of the simile-hierarchy and the identity of the seeking/suffering agent are thus reversed.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same reversal of simile direction—creatures vs. humans as the base/target of comparison—though the recovered claim adds detail about the seeking agent.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B (9:8–9) continues the inverted structure — humans bear animal likenesses (horse-hair, boar-teeth, tortoise-breastplates) and the sound is of locust-feet — so the reversed relation holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-sonnet-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:75ebbdb6928cca03a3dac15bdd8f0ae25c6942cb77d4467cccbe3cc535e6e58e",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:6** καὶ ἐν ταῖς ἡμέραις ἐκείναις ζητήσουσιν οἱ ἄνθρωποι τὸν θάνατον καὶ οὐ μὴ εὑρήσουσιν αὐτόν, καὶ ἐπιθυμήσουσιν ἀποθανεῖν καὶ ⸀φεύγει ⸂ὁ θάνατος ἀπ’ αὐτῶν⸃.\n\n**9:7** Καὶ τὰ ὁμοιώματα τῶν ἀκρίδων ὅμοια ἵπποις ἡτοιμασμένοις εἰς πόλεμον, καὶ ἐπὶ τὰς κεφαλὰς αὐτῶν ὡς στέφανοι ⸂ὅμοιοι χρυσῷ⸃, καὶ τὰ πρόσωπα αὐτῶν ὡς πρόσωπα ἀνθρώπων,\n\n**9:8** καὶ εἶχον τρίχας ὡς τρίχας γυναικῶν, καὶ οἱ ὀδόντες αὐτῶν ὡς λεόντων ἦσαν,\n\n**9:9** καὶ εἶχον θώρακας ὡς θώρακας σιδηροῦς, καὶ ἡ φωνὴ τῶν πτερύγων αὐτῶν ὡς φωνὴ ἁρμάτων ἵππων πολλῶν τρεχόντων εἰς πόλεμον·",
+   "underlying_attribution": null,
+   "enantiomorph": "<result>PASS</result>\n<enantiomorph>\n**9:6** καὶ ἐν ταῖς ἡμέραις ἐκείναις ζητήσουσιν οἱ ἵπποι τὴν ἀνάπαυσιν καὶ οὐ μὴ εὑρήσουσιν αὐτήν, καὶ ἐπιθυμήσουσιν κοιμηθῆναι καὶ ⸀φεύγει ⸂ἡ νὺξ ἀπ' αὐτῶν⸃.\n\n**9:7** Καὶ τὰ ὁμοιώματα τῶν ἀνθρώπων ὅμοια ἀκρίσιν ἡτοιμασμέναις εἰς βοράν, καὶ ἐπὶ τὰς κεφαλὰς αὐτῶν ⸂ὡς κέρατα⸃ ὅμοια λεόντων, καὶ τὰ πρόσωπα αὐτῶν ὡς πρόσωπα ἀκρίδων,\n\n**9:8** καὶ εἶχον τρίχας ὡς τρίχας ἵππων, καὶ οἱ ὀδόντες αὐτῶν ὡς κάπρων ἦσαν,\n\n**9:9** καὶ εἶχον θώρακας ὡς θώρακας χελωνῶν, καὶ ἡ φωνὴ τῶν βημάτων αὐτῶν ὡς φωνὴ ποδῶν ἀκρίδων πολλῶν ὁρμώντων ἐπὶ βοράν·\n</enantiomorph>\n\n<enantiomorph_translation>\n**9:6** And in those days the horses will seek rest and will by no means find it, and they will long to sleep and ⸀the night flees ⸂from them⸃.\n\n**9:7** And the likenesses of human beings are like locusts made ready for devouring, and upon their heads ⸂as horns⸃ resembling those of lions, and their faces are as the faces of locusts,\n\n**9:8** and they had hair as the hair of horses, and their teeth were as those of boars,\n\n**9:9** and they had breastplates as the shells of tortoises, and the sound of their footsteps was as the sound of the feet of many locusts rushing toward their prey·\n</enantiomorph_translation>\n\n<verification>{\"identity\":\"PASS\",\"semantic_independence\":\"PASS\",\"retrospective_containment\":\"PASS\",\"affect_traversal\":\"PASS\",\"entailment\":\"PASS\",\"slot_conservation\":\"PASS\",\"numeral_conservation\":\"PASS\",\"law_propagation\":\"PASS\",\"mode\":\"producer_side\"}</verification>\n\n<commentary>The world these creatures carry is one where the creaturely is the unmoved measure and the human or martial borrows its shape on loan from fur, shell, and jaw — a debt that cannot be repaid, only worn.</commentary>",
+   "layer_a": {
+    "beats": [
+     "9:6 humans seek death / death flees them / dying refused",
+     "9:7 locusts-likenesses: war-horses / gold-crown heads / human faces",
+     "9:8 women's-hair / lion's-teeth",
+     "9:9 iron-breastplates / wing-sound = war-chariot thunder"
+    ],
+    "geometry": {
+     "lines": 4,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:6",
+      "9:7",
+      "9:8",
+      "9:9"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "The source's comparisons flow one direction only: beast-traits are measured against human/martial standards as the norm, and each ὡς clause subordinates creaturely feature to anthropic reference-class.",
+    "mutated_relation": "The direction of the ὡς comparisons reverses: human and martial forms are the likenesses measured against creaturely originals, not the other way around.",
+    "clause_map": [
+     {
+      "ref": "9:6",
+      "class": "REBUILT",
+      "note": "Death-flight reversal: creature-ground withdrawing from over-determined flesh, not death fleeing humans."
+     },
+     {
+      "ref": "9:7",
+      "class": "REBUILT",
+      "note": "Locust is primary; horse, crown, human-face are derivative overlays — simile direction inverted."
+     },
+     {
+      "ref": "9:8",
+      "class": "REBUILT",
+      "note": "Mammal-hair and leonine teeth are originals; gendered/human comparisons are the copies."
+     },
+     {
+      "ref": "9:9",
+      "class": "REBUILT",
+      "note": "Chitin-carapace and wing-stridulation precede iron-plate and chariot-thunder — tools copied creature."
+     }
+    ]
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-05T00:37:42.238806+00:00"
+ "last_updated": "2026-07-05T00:39:16.221878+00:00"
 }
