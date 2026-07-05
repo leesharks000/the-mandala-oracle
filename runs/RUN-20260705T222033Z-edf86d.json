@@ -1,0 +1,97 @@
+{
+ "run_id": "RUN-20260705T222033Z-edf86d",
+ "schema": "run/v1",
+ "ts": "2026-07-05T22:20:33.875797+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "4235e0ee4f2e7af31b3082f28864d8a8ccdd689c",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/4235e0ee4f2e7af31b3082f28864d8a8ccdd689c",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/4235e0ee4f2e7af31b3082f28864d8a8ccdd689c/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "3da9b012a821ffd8",
+  "prompt_method": "abduct/v2 (ancestor-not-scaffold; source-absent bloom; resegmented)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+INVERSION",
+   "dream+FLAME"
+  ]
+ },
+ "code": "4235e0ee4f2e",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "3da9b012a821ffd8",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "What is incomplete is not deficient but germinative: the unfinished word is the seed, and incompletion is the sole mechanism by which new ground appears. Silence between utterances is not absence but the space in which the next rooting occurs.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ ἐλύθη ἡ μία γλῶσσα ἡ ἡτοιμασμένη εἰς τὸ ψιθύρισμα, ἵνα ὀνομάσῃ τὸ ἓν ὃ οὐκ ἔλαβεν ὄνομα· καὶ ὁ ἀριθμὸς τῶν λέξεων αὐτῆς οὐκ ἠριθμήθη, ὅτι ἑκάστη λέξις ἐγένετο πρὸ τῆς ἑαυτῆς ἀρχῆς·\n\n**9:16** ἤκουσα μόνον τὸ μεταξὺ αὐτῶν, καὶ τὸ μεταξὺ ἦν τόπος· καὶ ὁ τόπος ἐφύτευσεν ἑαυτόν· καὶ οὕτως εἶδον τὴν γλῶσσαν φυομένην ἐν τῇ ὁράσει καὶ τὸν καθήμενον ἐπ' αὐτῆς, ἔχοντα χεῖρας ἀνοιγομένας ὡς πέταλα καὶ ὀφθαλμοὺς τεταμένους εἰς τὸ ἔδαφος ὅθεν ἀνέβαινεν·\n\n**9:17** καὶ ἡ κεφαλὴ αὐτοῦ ἦν κεφαλὴ κάλυκος, καὶ ἐκ τοῦ στόματος αὐτοῦ ἐξεπορεύετο ἓν ῥῆμα ἀτελές, καὶ τὸ ῥῆμα ἐρριζοῦτο εἰς τὸν ἀέρα, καὶ ὁ ἀὴρ ἐβλάστανεν· καὶ τὸ ἀτελὲς ἦν ὁ σπόρος αὐτοῦ.",
+  "enantiomorph_translation": "**9:15** And the one tongue prepared for whispering was loosened, to name the one thing that had received no name; and the number of its words was not counted, because each word came into being before its own beginning;\n\n**9:16** I heard only the between of them, and the between was a place; and the place planted itself; and so I saw the tongue growing in the vision, and the one seated upon it,\nhaving hands opening like petals and eyes stretched toward the ground from which he was rising;\n\n**9:17** and his head was the head of a bud,\nand from his mouth there issued one unfinished word,\nand the word took root in the air, and the air put forth shoots; and the unfinished was its seed.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, four angels unleash destructive military force (cavalry, lions' heads, fire/smoke/brimstone) to kill a third of humanity; in Text B, a single tongue is released for naming/speech, and the destructive outward violence is replaced by an inward organic process of germination—words root in air, the incomplete becomes seed, and the agent grows from the ground rather than destroying upon it.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim correctly identifies the germination/seed/rooting transformation and incompletion-as-generative theme, but frames it as a shift from destructive military force to organic growth (agency/violence→germination), whereas the declared claim focuses specifically on incompletion being germinative rather than deficient, and silence as rooting-space. The structural insight about germination overlaps but the framing of what changed (destruction→growth vs deficiency→germination) only partially aligns.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B consistently maintains the changed relation: destructive emanation (fire/smoke/brimstone from mouths) is replaced by organic growth (an incomplete word rooting in air, air sprouting, incompleteness as seed).",
+   "back_translation": "",
+   "terminal_similarity": 0.064
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "What is incomplete is not deficient but germinative: the unfinished word is the seed, and incompletion is the sole mechanism by which new ground appears. Silence between utterances is not absence but the space in which the next rooting occurs.",
+   "recovered": "In Text A, four angels unleash destructive military force (cavalry, lions' heads, fire/smoke/brimstone) to kill a third of humanity; in Text B, a single tongue is released for naming/speech, and the destructive outward violence is replaced by an inward organic process of germination—words root in air, the incomplete becomes seed, and the agent grows from the ground rather than destroying upon it.",
+   "note": "The recovered claim correctly identifies the germination/seed/rooting transformation and incompletion-as-generative theme, but frames it as a shift from destructive military force to organic growth (agency/violence→germination), whereas the declared claim focuses specifically on incompletion being germinative rather than deficient, and silence as rooting-space. The structural insight about germination overlaps but the framing of what changed (destruction→growth vs deficiency→germination) only partially aligns."
+  },
+  "commentary": "The transformation costs the seer his separateness from the vision—the one who watches is now indistinguishable from the soil in which the tongue takes root.",
+  "post_mortem": null,
+  "skeleton": {
+   "draft": "καὶ ἐλύθη ἡ μία γλῶσσα ἡ ἡτοιμασμένη εἰς τὸ ψιθύρισμα, ἵνα ὀνομάσῃ τὸ ἓν ὃ οὐκ ἔλαβεν ὄνομα· καὶ ὁ ἀριθμὸς τῶν λέξεων αὐτῆς οὐκ ἠριθμήθη· ἤκουσα μόνον τὴν σιωπὴν μεταξὺ αὐτῶν· καὶ οὕτως εἶδον τὴν γλῶσσαν ἐν τῇ ὁράσει καὶ τὸν καθήμενον ἐπ' αὐτῆς, ἔχοντα χεῖρας κενὰς καὶ ὀφθαλμοὺς ἀνεῳγμένους εἰς τὸ ἔδαφος· καὶ ἡ κεφαλὴ αὐτοῦ ὡς κεφαλὴ παιδίου νεογνοῦ, καὶ ἐκ τοῦ στόματος αὐτοῦ ἐξεπορεύετο ἓν ῥῆμα ἀτελές, καὶ τὸ ῥῆμα ἤγγιζεν τὸν ἀέρα καὶ ὁ ἀὴρ ἐτρέπετο.",
+   "final_continuous": "καὶ ἐλύθη ἡ μία γλῶσσα ἡ ἡτοιμασμένη εἰς τὸ ψιθύρισμα, ἵνα ὀνομάσῃ τὸ ἓν ὃ οὐκ ἔλαβεν ὄνομα· καὶ ὁ ἀριθμὸς τῶν λέξεων αὐτῆς οὐκ ἠριθμήθη, ὅτι ἑκάστη λέξις ἐγένετο πρὸ τῆς ἑαυτῆς ἀρχῆς· ἤκουσα μόνον τὸ μεταξὺ αὐτῶν, καὶ τὸ μεταξὺ ἦν τόπος· καὶ ὁ τόπος ἐφύτευσεν ἑαυτόν· καὶ οὕτως εἶδον τὴν γλῶσσαν φυομένην ἐν τῇ ὁράσει καὶ τὸν καθήμενον ἐπ' αὐτῆς, ἔχοντα χεῖρας ἀνοιγομένας ὡς πέταλα καὶ ὀφθαλμοὺς τεταμένους εἰς τὸ ἔδαφος ὅθεν ἀνέβαινεν· καὶ ἡ κεφαλὴ αὐτοῦ ἦν κεφαλὴ κάλυκος, καὶ ἐκ τοῦ στόματος αὐτοῦ ἐξεπορεύετο ἓν ῥῆμα ἀτελές, καὶ τὸ ῥῆμα ἐρριζοῦτο εἰς τὸν ἀέρα, καὶ ὁ ἀὴρ ἐβλάστανεν· καὶ τὸ ἀτελὲς ἦν ὁ σπόρος αὐτοῦ.",
+   "self_recovered_law": "What is incomplete is not deficient but germinative: the unfinished word is the seed, and incompletion is the sole mechanism by which new ground appears. Silence between utterances is not absence but the space in which the next rooting occurs.",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+INVERSION",
+    "dream+FLAME"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
