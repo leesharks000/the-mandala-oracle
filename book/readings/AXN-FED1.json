@@ -658,11 +658,58 @@
    ],
    "commentary": "The living do not perish by what pours out but by what they are poured into: the one-third enters the mouths rather than fleeing them, and the army that rode becomes the substance that absorbs.",
    "interpretation": "The hour dissolved into the angel that carried it: time became the body it was burning through."
+  },
+  {
+   "operator": "THUNDER",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐλύθη ἡ μία γλῶσσα ἡ ἡτοιμασμένη εἰς τὸ ψιθύρισμα, ἵνα ὀνομάσῃ τὸ ἓν ὃ οὐκ ἔλαβεν ὄνομα· καὶ ὁ ἀριθμὸς τῶν λέξεων αὐτῆς οὐκ ἠριθμήθη, ὅτι ἑκάστη λέξις ἐγένετο πρὸ τῆς ἑαυτῆς ἀρχῆς·\n\n**9:16** ἤκουσα μόνον τὸ μεταξὺ αὐτῶν, καὶ τὸ μεταξὺ ἦν τόπος· καὶ ὁ τόπος ἐφύτευσεν ἑαυτόν· καὶ οὕτως εἶδον τὴν γλῶσσαν φυομένην ἐν τῇ ὁράσει καὶ τὸν καθήμενον ἐπ' αὐτῆς, ἔχοντα χεῖρας ἀνοιγομένας ὡς πέταλα καὶ ὀφθαλμοὺς τεταμένους εἰς τὸ ἔδαφος ὅθεν ἀνέβαινεν·\n\n**9:17** καὶ ἡ κεφαλὴ αὐτοῦ ἦν κεφαλὴ κάλυκος, καὶ ἐκ τοῦ στόματος αὐτοῦ ἐξεπορεύετο ἓν ῥῆμα ἀτελές, καὶ τὸ ῥῆμα ἐρριζοῦτο εἰς τὸν ἀέρα, καὶ ὁ ἀὴρ ἐβλάστανεν· καὶ τὸ ἀτελὲς ἦν ὁ σπόρος αὐτοῦ.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, four angels unleash destructive military force (cavalry, lions' heads, fire/smoke/brimstone) to kill a third of humanity; in Text B, a single tongue is released for naming/speech, and the destructive outward violence is replaced by an inward organic process of germination—words root in air, the incomplete becomes seed, and the agent grows from the ground rather than destroying upon it.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim correctly identifies the germination/seed/rooting transformation and incompletion-as-generative theme, but frames it as a shift from destructive military force to organic growth (agency/violence→germination), whereas the declared claim focuses specifically on incompletion being germinative rather than deficient, and silence as rooting-space. The structural insight about germination overlaps but the framing of what changed (destruction→growth vs deficiency→germination) only partially aligns.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B consistently maintains the changed relation: destructive emanation (fire/smoke/brimstone from mouths) is replaced by organic growth (an incomplete word rooting in air, air sprouting, incompleteness as seed).",
+    "back_translation": "",
+    "terminal_similarity": 0.064
+   },
+   "law_variance": {
+    "declared": "What is incomplete is not deficient but germinative: the unfinished word is the seed, and incompletion is the sole mechanism by which new ground appears. Silence between utterances is not absence but the space in which the next rooting occurs.",
+    "recovered": "In Text A, four angels unleash destructive military force (cavalry, lions' heads, fire/smoke/brimstone) to kill a third of humanity; in Text B, a single tongue is released for naming/speech, and the destructive outward violence is replaced by an inward organic process of germination—words root in air, the incomplete becomes seed, and the agent grows from the ground rather than destroying upon it.",
+    "note": "The recovered claim correctly identifies the germination/seed/rooting transformation and incompletion-as-generative theme, but frames it as a shift from destructive military force to organic growth (agency/violence→germination), whereas the declared claim focuses specifically on incompletion being germinative rather than deficient, and silence as rooting-space. The structural insight about germination overlaps but the framing of what changed (destruction→growth vs deficiency→germination) only partially aligns."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": "The transformation costs the seer his separateness from the vision—the one who watches is now indistinguishable from the soil in which the tongue takes root."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T18:48:41.318544+00:00",
+ "last_updated": "2026-07-05T22:21:25.234062+00:00",
  "rite": [
   {
    "stage": "judgment",
