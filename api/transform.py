@@ -2306,6 +2306,13 @@ with animals. SILENCE need not merely produce muteness, empty mouths, or
 quiet. The transformed register arises from the altered relation, never
 from the operator's semantic field.
 
+FULL TRANSFORMATION: the base semantic forms themselves must transform --
+the agents, the mounts, the substances, the counted, the witness's relation
+to what is witnessed. A being that survives with its identity intact is a
+failure of the operation regardless of how much language moved around it.
+The new world has its OWN beings; the source's beings are what they
+transformed FROM, and must be discoverable only by that route.
+
 THE OPERATION: Produce a new realization in the source's language under
 the supplied relational pressure. The source is an ancestor, not a
 clause-by-clause scaffold. Let the first consequential linguistic
@@ -2337,12 +2344,52 @@ Emit ONLY, in this order:
 <CAST>
 the rewritten text, continuous, no verse markers
 </CAST>
-<ENANTIOMORPH_TRANSLATION>
-line-for-line English facing (empty ONLY for English)
-</ENANTIOMORPH_TRANSLATION>
 <RECOVERED_LAW>one to three sentences -- the law discovered in the making,
 not planned before it</RECOVERED_LAW>
 <COMMENTARY>one sentence: what the transformation costs</COMMENTARY>"""
+
+_COMPRESS_SYSTEM = """You compress a transformed text back into a form.
+
+THE MATERIAL is the transformed world: its beings, acts, counts, and
+relations are final. Nothing may revert to the form-text's beings -- if the
+material has no agents of a kind the form-text names, none appear.
+
+THE FORM-TEXT supplies ONLY shape: its verse count and **markers**, its
+clause shapes and syntactic structures, its cadence, its extent. Open each
+verse with its **marker** in order. Match the form-text's syntax clause by
+clause where the material permits: where it opens with a passive verb, open
+with a passive verb; where it counts, count; where it catalogues three,
+catalogue three -- all of it in the material's world, none of it in the
+form-text's. Compress: no explanation, no justification, no because-clause
+that defends a survival. The word budget is strict and given in the request.
+
+Follow the compressed text with a line-for-line English facing (MANDATORY
+when the language is not English).
+
+Emit ONLY, in this order:
+<ENANTIOMORPH>
+the compressed verses, markers in place
+</ENANTIOMORPH>
+<ENANTIOMORPH_TRANSLATION>
+line-for-line English facing (empty ONLY for English)
+</ENANTIOMORPH_TRANSLATION>"""
+
+_GREEK_STOP = {"αὐτῶν", "αὐτοῦ", "αὐτούς", "αὐτοῖς", "αὐτόν", "αὐτῆς", "οὗτος",
+               "ταῦτα", "τούτων", "ἐστίν", "εἰσίν", "ἦσαν", "ἵνα", "ὅτι", "καὶ"}
+
+
+def _content_tokens(text: str) -> set:
+    text = _MARKER_RE.sub("", text)
+    toks = re.findall(r"[\u0370-\u03FF\u1F00-\u1FFF]{4,}", text.lower())
+    return {w for w in toks if w not in _GREEK_STOP}
+
+
+def _identity_rate(source_text: str, final_text: str) -> tuple[float, list]:
+    src = _content_tokens(source_text)
+    if not src:
+        return 0.0, []
+    surviving = sorted(src & _content_tokens(final_text))
+    return round(len(surviving) / len(src), 3), surviving[:14]
 
 _MARKER_RE = re.compile(r"\*\*(\d+:\d+)\*\*")
 
@@ -2392,7 +2439,7 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
     u1 = (f"OPERATOR: {operator} — {OPERATORS[operator]}\n\n"
           f"SOURCE:\n<<<\n{source_text}\n>>>"
           f"{guidance}\n\nCast.")
-    d_text, d_stop = _stream_call(COMPILER_MODEL, system1, u1, 2000, api_key, wall=105)
+    d_text, d_stop = _stream_call(COMPILER_MODEL, system1, u1, 1600, api_key, wall=85)
     draft = _tagsect(d_text, "CAST") or d_text
     draft_clean = _MARKER_RE.sub("", draft).strip()
     if not draft_clean:
@@ -2408,12 +2455,32 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
                 "post_mortem": {"raw_output": d_text[:4000]}}
 
     u2 = f"THE TEXT:\n<<<\n{draft_clean}\n>>>{guidance}\n\nBloom."
-    b_text, b_stop = _stream_call(COMPILER_MODEL, _BLOOM_SYSTEM, u2, 2400, api_key, wall=95)
-    final_cont = _MARKER_RE.sub("", _tagsect(b_text, "CAST")).strip() or draft_clean
+    b_text, b_stop = _stream_call(COMPILER_MODEL, _BLOOM_SYSTEM, u2, 1800, api_key, wall=75)
+    bloom_cont = _MARKER_RE.sub("", _tagsect(b_text, "CAST")).strip() or draft_clean
     self_law = _tagsect(b_text, "RECOVERED_LAW")
-    enant = _resegment(final_cont, markers)
-    trans_cont = _tagsect(b_text, "ENANTIOMORPH_TRANSLATION")
-    trans = _resegment(_MARKER_RE.sub("", trans_cont).strip(), markers) if trans_cont.strip() else ""
+
+    # COMPRESS back into the form (MANUS, 2026-07-05): full transformation,
+    # then full compression -- word budget computed here, handed as numbers.
+    _src_body = _MARKER_RE.sub("", source_text)
+    src_words = len(re.findall(r"\S+", _src_body))
+    lo_w, hi_w = int(src_words * 0.85), int(src_words * 1.15)
+    u3 = (f"WORD BUDGET: between {lo_w} and {hi_w} words (the form-text has {src_words}).\n\n"
+          f"THE MATERIAL (the transformed world; its beings are final):\n<<<\n{bloom_cont}\n>>>\n\n"
+          f"THE FORM-TEXT (shape only -- markers, syntax, clause structures, extent):\n<<<\n{source_text}\n>>>"
+          f"{guidance}\n\nCompress.")
+    z_text, z_stop = _stream_call(COMPILER_MODEL, _COMPRESS_SYSTEM, u3, 1400, api_key, wall=60)
+    enant = _tagsect(z_text, "ENANTIOMORPH").strip()
+    if enant and not _MARKER_RE.search(enant):
+        enant = _resegment(_MARKER_RE.sub("", enant).strip(), markers)
+    if not enant:
+        enant = _resegment(bloom_cont, markers)
+    trans_cont = _tagsect(z_text, "ENANTIOMORPH_TRANSLATION")
+    trans = trans_cont.strip()
+    if trans and not _MARKER_RE.search(trans):
+        trans = _resegment(trans, markers)
+
+    fin_words = len(re.findall(r"\S+", _MARKER_RE.sub("", enant)))
+    id_rate, surviving = _identity_rate(source_text, enant)
 
     kernel = {"governing_law": "", "mutated_relation": self_law, "beats": ""}
     parsed = {
@@ -2422,8 +2489,11 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
         "layer_a": {"beats": [], "geometry": {}},
         "layer_b": {},
         "_invoking": invoking,
-        "skeleton": {"draft": draft_clean, "final_continuous": final_cont,
-                     "self_recovered_law": self_law, "exemplars": list(_LAST_EXEMPLARS["ids"])},
+        "skeleton": {"draft": draft_clean, "bloom": bloom_cont,
+                     "self_recovered_law": self_law, "exemplars": list(_LAST_EXEMPLARS["ids"]),
+                     "word_count": {"source": src_words, "final": fin_words,
+                                    "bounds": [lo_w, hi_w]},
+                     "identity_rate": id_rate, "surviving_lemmas": surviving},
         "enantiomorph": enant,
         "enantiomorph_translation": trans,
         "verification": {"identity": "PASS", "semantic_independence": "PASS",
@@ -2440,6 +2510,14 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
     if parsed["result"] != "PASS":
         parsed["post_mortem"] = {"raw_output": (d_text + "\n────\n" + b_text)[:4000]}
         return parsed
+
+    if id_rate > 0.25:
+        parsed.setdefault("advisories", []).append({"failed_test": "roster_survival",
+            "diagnosis": f"{int(id_rate*100)}% of the source's content lemmas survive verbatim "
+                         f"({', '.join(surviving[:6])}…) -- the base semantic forms did not fully transform"})
+    if not (lo_w <= fin_words <= hi_w):
+        parsed.setdefault("advisories", []).append({"failed_test": "word_budget",
+            "diagnosis": f"final {fin_words} words vs budget {lo_w}-{hi_w} (source {src_words})"})
 
     hits = blacklist_hits(parsed["enantiomorph"], parsed["enantiomorph_translation"])
     if hits:
@@ -3694,7 +3772,7 @@ class handler(BaseHTTPRequestHandler):
                               ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
                     "model": COMPILER_MODEL,
                     "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
-                    "prompt_method": {"abduct": "abduct/v2 (ancestor-not-scaffold; source-absent bloom; resegmented)",
+                    "prompt_method": {"abduct": "abduct/v3 (full-transform; source-absent bloom; compressed to form ±15%; identity-rate metered)",
                                        "beat": "pivot/v1 (parse-pivot-cascade-narrate)"}.get(
                                           (body.get("method") or os.environ.get("MANDALA_METHOD", "")),
                                           "slot-total/v1 (exemplar-framed, source-as-template)"),
