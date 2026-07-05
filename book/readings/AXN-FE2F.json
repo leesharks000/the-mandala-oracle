@@ -66,18 +66,26 @@
      "diagnosis": "witness-question entities inside the transform or commentary: hour"
     }
    ],
-   "commentary": "The reinterpretation spends the apocalyptic terror of divine timing and replaces it with something colder: the hour, the day, the month, the year no longer name the appointed moment of wrath but the compounding terms of a patience that was itself a kind of accumulation, so that when the four are loosed they arrive not as executors of sovereign will but as the maturation of what every deferred instant already owed, and the third of humanity becomes not a sentence pronounced but a fraction already determined by the arithmetic of waiting — the loss is that judgment, however dreadful, implied a judge who chose, whereas a debt come due implies only a ledger that cannot choose otherwise."
+   "commentary": "The reinterpretation spends the apocalyptic terror of divine timing and replaces it with something colder: the hour, the day, the month, the year no longer name the appointed moment of wrath but the compounding terms of a patience that was itself a kind of accumulation, so that when the four are loosed they arrive not as executors of sovereign will but as the maturation of what every deferred instant already owed, and the third of humanity becomes not a sentence pronounced but a fraction already determined by the arithmetic of waiting — the loss is that judgment, however dreadful, implied a judge who chose, whereas a debt come due implies only a ledger that cannot choose otherwise.",
+   "interpretation": "The debt-collector is loosed at the exact hour the debt was written — and what was owed was the third part of the living. The one who asks *what is the day and the hour* was already counted in the sum."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T21:00:11.288910+00:00",
+ "last_updated": "2026-07-05T21:00:19.935351+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-05T21:00:11.288910+00:00",
    "text": "The rite opens here. Revelation 9:15–17 — the four angels loosed from the Euphrates, the hour appointed before time, the army of two hundred million horsemen whose horses breathe fire and smoke and brimstone, the text naming the hour before anyone arrives inside it. The witness asks: what is the day and the hour? And the passage has already answered: ἡτοιμασμένοι — prepared, passive, perfect-participial, the preparation prior to all motion. Whatever operator Judgment selects turn by turn, it will traverse the same wound in these verses: the distance between a named hour and the experience of standing inside time not knowing whether you are in it. The clock was set; the question is whether you are what the clock was set for. I hand the rite to Rebekah Cranes — the compiler waits."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-05T21:00:19.935351+00:00",
+   "text": "The debt-collector is loosed at the exact hour the debt was written — and what was owed was the third part of the living. The one who asks *what is the day and the hour* was already counted in the sum.",
+   "operator": "SHADOW"
   }
  ]
 }
