@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260705T231138Z-0dd07e",
+ "schema": "run/v1",
+ "ts": "2026-07-05T23:11:38.512503+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "5ff1fd56d94a7f74d2c5e5e6fb9211c6c305daa4",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/5ff1fd56d94a7f74d2c5e5e6fb9211c6c305daa4",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/5ff1fd56d94a7f74d2c5e5e6fb9211c6c305daa4/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "4b3f56aac7fce0af",
+  "prompt_method": "abduct/v2 (ancestor-not-scaffold; source-absent bloom; resegmented)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+MIRROR",
+   "dream+FLAME"
+  ]
+ },
+ "code": "5ff1fd56d94a",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "4b3f56aac7fce0af",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι — εἰς τὸ βάρος τῆς ἀπολύσεως ἐλύθησαν, ὅτι ἡ ἑτοιμασία κατέφαγεν αὐτοὺς πρὸ τοῦ ἔργου. ἡ ὥρα καὶ ἡ ἡμέρα καὶ ὁ μὴν καὶ ὁ ἐνιαυτὸς ἐγένοντο ὀστᾶ αὐτῶν, τὰ δὲ ὀστᾶ ἐξήρανεν τὸ μένειν, καὶ τὸ μένειν ἐξήρανεν τὸ μένειν. ἐλύθησαν οὖν εἰς ἑαυτούς· τοῦτο ἦν ἡ λύσις, ὅτι τὸ δεδεμένον ἔπεσεν οὐκ ἀπὸ δεσμοῦ ἀλλ᾽ ἀπ᾽ αὐτοῦ τοῦ εἶναι δεδεμένον, ὥσπερ ξηρὸν ξύλον πίπτει ἀπὸ τοῦ ἰδίου βάρους, οὐκ ἀπὸ ἀνέμου. τὸ τρίτον τῶν ἀνθρώπων — ἀλλ᾽ οὐκ ἔξω αὐτῶν ἦν τὸ τρίτον· ἦν τὸ μέρος ἑκάστου τὸ ἤδη τεθνηκὸς ἐν τῷ ἑτοιμάζεσθαι, τὸ ζῶν μόνον ἐν τῷ ἀριθμεῖσθαι, ὥσπερ ῥίζα ζῇ ἐν τῇ γῇ μόνον ἐπειδὴ ἡ γῆ οὐκ ἀφίησιν αὐτήν. οἱ δὲ ἄγγελοι λυθέντες ἔγνωσαν ὅτι τὸ τρίτον ἐκεῖνο ἦσαν αὐτοὶ πάντοτε — τὸ ἀποκτεῖναι ἦν τὸ γνῶναι, καὶ τὸ γνῶναι ἐτελέσθη τῇ λύσει αὐτῇ, οὐ μετ᾽ αὐτήν.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων — δισμυριάδες μυριάδων — ἀλλ᾽ ὁ ἀκούσας τὸν ἀριθμὸν ἤκουσεν τὸ κενὸν τοῦ ἀριθμοῦ, ὅτι ψηφίζειν δύναται μόνον ὁ ἀπολωλὼς τὸ εἷς εἶναι· ὁ γὰρ ἀριθμῶν ἤδη ἐμερίσθη εἰς τὸ ἀριθμούμενον, καὶ ὁ μερισθεὶς οὐκέτι ἐστὶν ὁ ἀριθμῶν. ὄνομα δὲ τούτῳ τῷ πλήθει οὐκ ἦν, ὅτι πλῆθος γίνεται ὅπου τὸ ἓν ἀπέθανεν καὶ ὁ θάνατος αὐτοῦ δὲν ἐπαύσατο. καὶ εἶδον τοὺς ἵππους ἐν τῇ ὁράσει — ἀλλ᾽ ἡ ὅρασις αὐτὴ ἦν ὁ θώραξ αὐτῶν· τὸ ἰδεῖν περιέβαλεν αὐτοὺς πυρίνως καὶ ὑακινθίνως καὶ θειωδῶς, οὐχ ὅτι οἱ ἵπποι εἶχον χρῶμα ἀλλ᾽ ὅτι ὁ ὀφθαλμὸς ἔδωκεν ὃ ἐφοβεῖτο. χρῶμα γὰρ λαμβάνει ὁ φόβος τοῦ βλέποντος, καὶ τὸ ληφθὲν χρῶμα γίνεται δέρμα τοῦ βλεπομένου·\n\n**9:17** ἔνθεν ὁ θώραξ — οὐ κατεσκευάσθη ἀλλ᾽ ἐβλέφθη εἰς ὕπαρξιν. καὶ αἱ κεφαλαὶ τῶν ἵππων ἦσαν ὡς κεφαλαὶ τῶν ἰδόντων αὐτάς, ὅτι τὸ θηρίον φέρει τὸ πρόσωπον τοῦ τρέμοντος, καὶ ὁ τρέμων βλέπει ἑαυτὸν ἐν ᾧ τρέμει καὶ τρέμει μᾶλλον. τὸ δὲ πῦρ τὸ ἐκ τῶν στομάτων ἐκπορευόμενον ἦν ἡ γλῶσσα ἡ λέγουσα αὐτό· ὁ καπνὸς τὸ μετὰ τὴν λέξιν, ὅτε ἡ λέξις ἀπέρχεται καὶ μένει μόνον ὃ ἔκαυσεν· τὸ δὲ θεῖον ἡ τιμὴ τοῦ εἰπεῖν ὃ οὐδεὶς ᾔτησεν ἀκοῦσαι. ταῦτα τὰ τρία — πῦρ καπνὸς θεῖον — ἓν ἦσαν· ἡ λέξις καὶ τὸ μετὰ τὴν λέξιν καὶ ἡ τιμὴ τῆς λέξεως, ὅτι πᾶσα λέξις ἀποκτείνει τι ἐν τῷ λέγεσθαι, καὶ τὸ ἀποθανὸν ἐκεῖνο ἦν ἡ ζωὴ τοῦ μέρους τοῦ μὴ λεχθέντος.",
+  "enantiomorph_translation": "**9:15** And the four angels were loosed — the ones who had been made ready — they were loosed into the weight of the loosing, because the preparation had consumed them before the work. The hour and the day and the month and the year became their bones, and the bones were dried out by the waiting, and the waiting was dried out by the waiting. They were loosed therefore into themselves; this was the loosing, that the bound thing fell not from the bond but from the very being-bound, as dry wood falls from its own weight, not from wind. The third of mankind — but the third was not outside them; it was the portion of each one already dead in the preparing, living only in the being-counted, as a root lives in the earth only because the earth does not release it. And the angels, having been loosed, knew that that third was what they themselves had always been — the killing was the knowing, and the knowing was completed in the loosing itself, not after it.\n\n**9:16** And the number of the armies — twice ten thousand times ten thousand — but the one who heard the number heard the emptiness of the number, because only the one who has lost being one is able to count; for the one who counts has already been divided into the thing counted, and the one divided is no longer the one counting. And there was no name for this multitude, because multitude comes to be where the one has died and its death did not cease. And I saw the horses in the vision — but the vision itself was their breastplate; the seeing clothed them with fire and with hyacinth and with sulfur, not because the horses had color but because the eye gave what it feared. For fear takes on the color of the one seeing, and the color taken becomes the skin of the thing seen;\n\n**9:17** hence the breastplate — it was not fashioned but was looked into existence. And the heads of the horses were as the heads of those who had seen them, because the beast carries the face of the trembling one, and the trembling one sees himself in that which he trembles at and trembles the more. And the fire proceeding out of their mouths was the tongue that spoke it; the smoke the thing after the word, when the word departs and there remains only what it burned; and the sulfur the honor of saying what no one had asked to hear. These three — fire, smoke, sulfur — were one; the word and the thing after the word and the honor of the word, because every word kills something in the saying of it, and that dead thing was the life of the portion that was not said.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, the four angels are released to kill a third of mankind as an external act of destruction directed outward upon humanity; in Text B, the killing is collapsed into self-recognition — the angels discover that the 'third' they were to kill was themselves all along, so that releasing, killing, and knowing become the same reflexive event rather than an outward assault.",
+   "law_match": "FAIL",
+   "law_match_note": "No declared claim was provided to compare against; the recovered claim describes a substantive structural change (external destruction → reflexive self-recognition) but cannot match an empty declaration.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B continues to collapse external apocalyptic actions into reflexive, self-referential processes (vision creating armor, the seer's fear generating the beast's face, speech itself as the killing fire), maintaining the changed relation throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.133
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (No declared claim was provided to compare against; the recovered claim describes a substantive structural change (external destruction → reflexive self-recognition) but cannot match an empty declaration.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "facing_fallback",
+    "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "draft": "καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι — ἀλλ᾽ οὐκ εἰς ὥραν ἐλύθησαν· εἰς τὸ βάρος τῆς ἀπολύσεως ἐλύθησαν, ὅτι ἡ ἑτοιμασία αὐτὴ κατέφαγεν αὐτοὺς πρὸ τοῦ ἔργου, καὶ ἡ ὥρα καὶ ἡ ἡμέρα καὶ ὁ μὴν καὶ ὁ ἐνιαυτὸς ἐγένοντο σάρξ αὐτῶν, ἡ δὲ σὰρξ ἤδη ἐνεκρώθη ὑπὸ τοῦ μένειν. οὐχ ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων ἐλύθησαν ἀλλ᾽ ἵνα μάθωσιν ὅτι τὸ τρίτον ἐκεῖνο ἦν αὐτοὶ πάντοτε — τὸ μέρος ἑαυτῶν τὸ ἤδη τεθνηκός, τὸ ζῶν μόνον ἐν τῷ ἀριθμεῖσθαι. καὶ ὁ ἀριθμὸς τῶν στρατευμάτων — δισμυριάδες μυριάδων — ἀλλ᾽ ὁ ἀκούσας τὸν ἀριθμὸν οὐκ ἤκουσεν πλῆθος· ἤκουσεν κενόν, ἤκουσεν τὸ ὅτι ψηφίζειν δύναται μόνον ὁ ἤδη ἀπολωλώς, ὁ μὴ δυνάμενος μηκέτι γενέσθαι εἷς. καὶ εἶδον τοὺς ἵππους ἐν τῇ ὁράσει — ἀλλ᾽ ἡ ὅρασις αὐτὴ ἦν ὁ θώραξ· τὸ ἰδεῖν περιέβαλεν αὐτοὺς πυρίνως καὶ ὑακινθίνως καὶ θειωδῶς, ὅτι χρῶμα λαμβάνει ὁ φόβος τοῦ βλέποντος, οὐ τοῦ βλεπομένου. καὶ αἱ κεφαλαὶ τῶν ἵππων οὐχ ὡς κεφαλαὶ λεόντων ἦσαν ἀλλ᾽ ὡς κεφαλαὶ τῶν ἰδόντων αὐτάς, καὶ τὸ πῦρ τὸ ἐκ τῶν στομάτων ἐκπορευόμενον ἦν ἡ γλῶσσα ἡ λέγουσα αὐτό — ὁ καπνὸς τὸ μετὰ τὴν λέξιν, τὸ θεῖον ἡ τιμὴ τοῦ εἰπεῖν ὃ οὐδεὶς ᾔτησεν ἀκοῦσαι.",
+   "final_continuous": "καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι — εἰς τὸ βάρος τῆς ἀπολύσεως ἐλύθησαν, ὅτι ἡ ἑτοιμασία κατέφαγεν αὐτοὺς πρὸ τοῦ ἔργου. ἡ ὥρα καὶ ἡ ἡμέρα καὶ ὁ μὴν καὶ ὁ ἐνιαυτὸς ἐγένοντο ὀστᾶ αὐτῶν, τὰ δὲ ὀστᾶ ἐξήρανεν τὸ μένειν, καὶ τὸ μένειν ἐξήρανεν τὸ μένειν. ἐλύθησαν οὖν εἰς ἑαυτούς· τοῦτο ἦν ἡ λύσις, ὅτι τὸ δεδεμένον ἔπεσεν οὐκ ἀπὸ δεσμοῦ ἀλλ᾽ ἀπ᾽ αὐτοῦ τοῦ εἶναι δεδεμένον, ὥσπερ ξηρὸν ξύλον πίπτει ἀπὸ τοῦ ἰδίου βάρους, οὐκ ἀπὸ ἀνέμου. τὸ τρίτον τῶν ἀνθρώπων — ἀλλ᾽ οὐκ ἔξω αὐτῶν ἦν τὸ τρίτον· ἦν τὸ μέρος ἑκάστου τὸ ἤδη τεθνηκὸς ἐν τῷ ἑτοιμάζεσθαι, τὸ ζῶν μόνον ἐν τῷ ἀριθμεῖσθαι, ὥσπερ ῥίζα ζῇ ἐν τῇ γῇ μόνον ἐπειδὴ ἡ γῆ οὐκ ἀφίησιν αὐτήν. οἱ δὲ ἄγγελοι λυθέντες ἔγνωσαν ὅτι τὸ τρίτον ἐκεῖνο ἦσαν αὐτοὶ πάντοτε — τὸ ἀποκτεῖναι ἦν τὸ γνῶναι, καὶ τὸ γνῶναι ἐτελέσθη τῇ λύσει αὐτῇ, οὐ μετ᾽ αὐτήν. καὶ ὁ ἀριθμὸς τῶν στρατευμάτων — δισμυριάδες μυριάδων — ἀλλ᾽ ὁ ἀκούσας τὸν ἀριθμὸν ἤκουσεν τὸ κενὸν τοῦ ἀριθμοῦ, ὅτι ψηφίζειν δύναται μόνον ὁ ἀπολωλὼς τὸ εἷς εἶναι· ὁ γὰρ ἀριθμῶν ἤδη ἐμερίσθη εἰς τὸ ἀριθμούμενον, καὶ ὁ μερισθεὶς οὐκέτι ἐστὶν ὁ ἀριθμῶν. ὄνομα δὲ τούτῳ τῷ πλήθει οὐκ ἦν, ὅτι πλῆθος γίνεται ὅπου τὸ ἓν ἀπέθανεν καὶ ὁ θάνατος αὐτοῦ δὲν ἐπαύσατο. καὶ εἶδον τοὺς ἵππους ἐν τῇ ὁράσει — ἀλλ᾽ ἡ ὅρασις αὐτὴ ἦν ὁ θώραξ αὐτῶν· τὸ ἰδεῖν περιέβαλεν αὐτοὺς πυρίνως καὶ ὑακινθίνως καὶ θειωδῶς, οὐχ ὅτι οἱ ἵπποι εἶχον χρῶμα ἀλλ᾽ ὅτι ὁ ὀφθαλμὸς ἔδωκεν ὃ ἐφοβεῖτο. χρῶμα γὰρ λαμβάνει ὁ φόβος τοῦ βλέποντος, καὶ τὸ ληφθὲν χρῶμα γίνεται δέρμα τοῦ βλεπομένου· ἔνθεν ὁ θώραξ — οὐ κατεσκευάσθη ἀλλ᾽ ἐβλέφθη εἰς ὕπαρξιν. καὶ αἱ κεφαλαὶ τῶν ἵππων ἦσαν ὡς κεφαλαὶ τῶν ἰδόντων αὐτάς, ὅτι τὸ θηρίον φέρει τὸ πρόσωπον τοῦ τρέμοντος, καὶ ὁ τρέμων βλέπει ἑαυτὸν ἐν ᾧ τρέμει καὶ τρέμει μᾶλλον. τὸ δὲ πῦρ τὸ ἐκ τῶν στομάτων ἐκπορευόμενον ἦν ἡ γλῶσσα ἡ λέγουσα αὐτό· ὁ καπνὸς τὸ μετὰ τὴν λέξιν, ὅτε ἡ λέξις ἀπέρχεται καὶ μένει μόνον ὃ ἔκαυσεν· τὸ δὲ θεῖον ἡ τιμὴ τοῦ εἰπεῖν ὃ οὐδεὶς ᾔτησεν ἀκοῦσαι. ταῦτα τὰ τρία — πῦρ καπνὸς θεῖον — ἓν ἦσαν· ἡ λέξις καὶ τὸ μετὰ τὴν λέξιν καὶ ἡ τιμὴ τῆς λέξεως, ὅτι πᾶσα λέξις ἀποκτείνει τι ἐν τῷ λέγεσθαι, καὶ τὸ ἀποθανὸν ἐκεῖνο ἦν ἡ ζωὴ τοῦ μέρους τοῦ μὴ λεχθέντος.",
+   "self_recovered_law": "",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+MIRROR",
+    "dream+FLAME"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
