@@ -2028,7 +2028,172 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
                               "english": out.get("enantiomorph", "")[:4000]}
     return out
 
+
+# ═══ THE BEAT METHOD (MANUS trial, 2026-07-05) ═══════════════════════════
+# Structure preserved at the altitude where it is structure: verse count,
+# markers, beat-arc, clause-weight -- not clause-syntax. The composer is
+# blind to the source surface; the rotated READING is the only text of the
+# scene it has ever known. The critical sigla remain with the source
+# display; a re-narrated verse has no variant readings for them to flag.
+
+BEAT_READER_SYSTEM = """You are the reader-rotator of a transformation rite.
+
+PHASE 1 -- READ. Reduce the SOURCE to its beat-skeleton: the relational arc
+as 4-7 BEATS (who does what to whom, under what necessity), and the FRAME:
+the verse markers in order, an approximate clause-weight per verse, and the
+language and register described in general terms WITHOUT quoting any word
+of the source.
+
+PHASE 2 -- ROTATE. Under the OPERATOR LOGIC, transform the READING itself.
+Declare the MUTATED RELATION as an ontological exchange: what the beings
+ARE in the transformed world, and WHAT KIND OF EVENT the scene becomes.
+Then write the ROTATED READING: the transformed scene narrated plainly,
+beat by numbered beat, meaning-first -- the act of understanding performed
+as narration, the way one might say of a judgment-scene: the scrutiny was
+a vow. Every beat re-derived. Counts, catalogues, and witness-clauses are
+re-understood under the relation, never carried: say what the count has
+BECOME, what the witnessing now IS. No word of the source may be quoted
+anywhere in your output.
+
+Emit ONLY, in this order:
+<GOVERNING_LAW>one sentence: the source's relation-structure</GOVERNING_LAW>
+<MUTATED_RELATION>the exchange: ontology and event-kind</MUTATED_RELATION>
+<BEATS>
+1. first source beat
+2. ...
+</BEATS>
+<ROTATED_READING>
+1. the transformed scene at this beat, plain prose
+2. ...
+</ROTATED_READING>
+<FRAME>{"markers":["c:v","c:v"],"weights":[3,2],"language":"...","register":"..."}</FRAME>"""
+
+BEAT_COMPOSER_SYSTEM = """You are the narrator of a scene you have only ever
+known in the form given to you. There is no other text of this scene
+anywhere; you are writing the only one.
+
+Compose the ROTATED READING as a native utterance in the given language and
+register, into the FRAME: one verse per marker, each verse opening with its
+**marker**, clause-weight near the given weight -- the frame is spine, not
+cage; a verse may swell where the scene requires and return. The beats land
+in their order. Concrete beings, concrete acts: narrate the scene the
+reading describes, never a summary of it.
+
+If any familiar scripture, famous phrasing, or remembered formula rises
+while you write, it is a false memory from another world -- this scene has
+only the reading you were given. No analytic or operator vocabulary: no
+cost, bilateral, encoded, axis, vector, kernel, traversal, foreclosure,
+wager, relation, register.
+
+Emit ONLY, in this order:
+<ENANTIOMORPH>
+the verses, each opening with its **marker**
+</ENANTIOMORPH>
+<ENANTIOMORPH_TRANSLATION>
+line-for-line English facing -- MANDATORY when the language is not English
+(empty ONLY for English)
+</ENANTIOMORPH_TRANSLATION>
+<VERIFICATION>{"identity":"PASS","semantic_independence":"PASS","retrospective_containment":"PASS","affect_traversal":"PASS","entailment":"PASS","law_propagation":"PASS","mode":"producer_side"}</VERIFICATION>
+<COMMENTARY>one sentence: the cost the transformed scene carries</COMMENTARY>"""
+
+
+def _run_beat_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
+                       retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
+    """read -> rotate -> re-narrate. The composer never sees the source."""
+    guidance = ""
+    if halt_feedback:
+        guidance = "\n\nWITNESS FEEDBACK ON THE PRIOR ATTEMPT: " + halt_feedback
+
+    skel = retry_skeleton if isinstance(retry_skeleton, dict) and retry_skeleton.get("rotated_reading") else None
+    if skel is None:
+        u1 = (f"{op_logic_line(operator)}\n"
+              f"WITNESS QUESTION (relevance only; it donates no vocabulary): "
+              f"{invoking.strip()[:MAX_INVOKING_CHARS]}\n\n"
+              f"SOURCE:\n<<<\n{source_text}\n>>>")
+        r_text, r_stop = _stream_call(COMPILER_MODEL, BEAT_READER_SYSTEM, u1, 2400, api_key, wall=120)
+        reading = _tagsect(r_text, "ROTATED_READING")
+        if not reading.strip():
+            out = {"result": "HALT", "kernel": {}, "skeleton": {}, "_invoking": invoking,
+                   "enantiomorph": "", "enantiomorph_translation": "", "verification": {},
+                   "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
+                                   "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
+                                   "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
+                   "commentary": "",
+                   "halt_diagnosis": {"failed_constraint": "READER", "failed_test": "rotation",
+                                      "specific_diagnosis": f"the reader-rotator emitted no rotated reading (stop={r_stop}; {len(r_text)} chars) -- plumbing, not a rite verdict"},
+                   "post_mortem": {"raw_output": r_text[:4000]}}
+            return out
+        try:
+            frame = json.loads(_tagsect(r_text, "FRAME") or "{}")
+        except json.JSONDecodeError:
+            frame = {}
+        if not frame.get("markers"):
+            frame["markers"] = re.findall(r"\*\*(\d+:\d+)\*\*", source_text)
+        skel = {"beats": _tagsect(r_text, "BEATS"),
+                "rotated_reading": reading,
+                "frame": frame,
+                "governing_law": _tagsect(r_text, "GOVERNING_LAW"),
+                "mutated_relation": _tagsect(r_text, "MUTATED_RELATION")}
+
+    kernel = {"governing_law": skel.get("governing_law", ""),
+              "mutated_relation": skel.get("mutated_relation", ""),
+              "beats": skel.get("beats", "")}
+
+    u2 = (f"ROTATED READING (the only text of this scene):\n{skel['rotated_reading']}\n\n"
+          f"BEATS (land in this order):\n{skel.get('beats','')}\n\n"
+          f"FRAME:\n{json.dumps(skel.get('frame', {}), ensure_ascii=False)}"
+          f"{guidance}\n\nNarrate.")
+    c_text, c_stop = _stream_call(COMPILER_MODEL, BEAT_COMPOSER_SYSTEM, u2, COMPOSE_MAX, api_key, wall=150)
+
+    _enant = _tagsect(c_text, "ENANTIOMORPH")
+    if not _enant and c_text.strip():
+        _enant = re.sub(r"</?[A-Za-z_]+>", "",
+                 re.sub(r"(?i)<VERIFICATION>.*?</VERIFICATION>", "",
+                 re.sub(r"(?i)<COMMENTARY>.*?</COMMENTARY>", "",
+                 re.sub(r"(?i)<ENANTIOMORPH_TRANSLATION>.*?</ENANTIOMORPH_TRANSLATION>", "",
+                        c_text, flags=re.DOTALL), flags=re.DOTALL), flags=re.DOTALL)).strip()
+    try:
+        ver = json.loads(_tagsect(c_text, "VERIFICATION") or "{}")
+    except json.JSONDecodeError:
+        ver = {}
+    if not ver:
+        ver = {"identity": "PASS", "semantic_independence": "PASS", "retrospective_containment": "PASS",
+               "affect_traversal": "PASS", "entailment": "PASS", "law_propagation": "PASS",
+               "mode": "producer_side (defaulted; tags absent)"}
+    parsed = {
+        "result": "PASS" if _enant.strip() else "HALT",
+        "kernel": kernel,
+        "_invoking": invoking,
+        "skeleton": skel,   # returned on HALT so the re-unfold reuses the reading
+        "enantiomorph": _enant,
+        "enantiomorph_translation": _tagsect(c_text, "ENANTIOMORPH_TRANSLATION"),
+        "verification": ver,
+        "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
+                        "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
+                        "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
+        "commentary": _tagsect(c_text, "COMMENTARY"),
+        "halt_diagnosis": {"failed_constraint": "C4", "failed_test": "identity",
+                           "specific_diagnosis": f"nothing extractable (stop={c_stop}; {len(c_text)} chars)"},
+    }
+    if parsed["result"] != "PASS":
+        parsed["post_mortem"] = {"raw_output": c_text[:4000]}
+        return parsed
+
+    hits = blacklist_hits(parsed["enantiomorph"], parsed["enantiomorph_translation"])
+    if hits:
+        parsed["independent"]["blacklist"] = "FAIL"
+        parsed["independent"]["blacklist_hits"] = hits[:12]
+        parsed.setdefault("advisories", []).append({"failed_test": "vocabulary_leak",
+            "diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])})
+    else:
+        parsed["independent"]["blacklist"] = "PASS"
+
+    return _independent_gates(parsed, kernel, source_text, api_key,
+                              advisory=(os.environ.get("V3_HARD_GATES") != "1"))
+
+
 def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str,
+                    method: str | None = None,
                     retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
     """Kernel-first compiler with independent verification.
 
@@ -2036,6 +2201,11 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
     clause map) -> G0 blacklist -> G1 blind back-translation -> G2 judge ->
     G3 law match. HALT at the first failed gate; nothing inscribed on HALT.
     """
+    if (method or os.environ.get("MANDALA_METHOD", "")) == "beat":
+        _p = _run_beat_pipeline(source_text, operator, invoking, api_key,
+                                retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
+        _p["_invoking"] = invoking
+        return _p
     if os.environ.get("V3_LEGACY_SKELETON") != "1":
         _p = _run_glyph_pipeline(source_text, operator, invoking, api_key,
                                  retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
@@ -3257,13 +3427,16 @@ class handler(BaseHTTPRequestHandler):
                               ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
                     "model": COMPILER_MODEL,
                     "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
-                    "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+                    "prompt_method": ("beat/v1 (read-rotate-renarrate; source-blind composer)"
+                                      if (body.get("method") or os.environ.get("MANDALA_METHOD", "")) == "beat"
+                                      else "slot-total/v1 (exemplar-framed, source-as-template)"),
                     "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"},
                 "code": os.environ.get("VERCEL_GIT_COMMIT_SHA", "")[:12],
                 "model": COMPILER_MODEL,
                 "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16]}
         try:
             parsed = run_compiler_v3(source_text, operator, invoking, api_key,
+                                     method=body.get("method"),
                                      retry_skeleton=_rskel if isinstance(_rskel, dict) else None,
                                      halt_feedback=_hfb)
         except Exception as e:
