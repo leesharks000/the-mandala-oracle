@@ -3579,7 +3579,59 @@
     ]
    },
    "commentary": "The cavalry stands forever harnessed, oxen circling a millstone with no grain; the witness's burden is not destruction witnessed but the count of an army whose summons never arrived, heard as a number inside a silence that will not end."
+  },
+  {
+   "transform_id": "TX-60a50420",
+   "cast_at": "2026-07-05T20:17:46.876311+00:00",
+   "reading_axn": "AXN:FE8A.READING.💫🌊💫🔥🌔🌟",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Differences are only minor textual-critical variants (added articles, δισμυριάδες vs δύο μυριάδες, added καί); no relational structure change.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** Καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν καὶ τὴν ἡμέραν καὶ τὸν μῆνα καὶ τὸν ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** Καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ἱππικοῦ δύο μυριάδες μυριάδων· καὶ ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** Καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ᾽ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Four agents held in reserve are released at a precisely appointed temporal coordinate to destroy a fixed fraction of humanity, backed by an innumerable cavalry force whose terrible appearance the witness perceives and tallies.",
+    "mutated_relation": "The agents become debts that have matured — their long preparation is the accrual of interest against a specific due-date. The appointed time-coordinate (hour, day, month, year) is the compound cost of deferral itself: each unit of waiting another lien on the living. The one-third destruction is the fraction exacted as payment. The innumerable cavalry is the total expenditure mobilized to collect, and the witness's act of hearing the number is the audit of what has been spent. The terrible horses and armored riders are the visible price-tags of annihilation: fire, smoke, and sulfur are not weapons but the consumptive residue of value burned away. The vision-scene becomes a foreclosure.",
+    "beats": "1. Four agents, long prepared for a precise moment, are unbound.\n2. Their purpose: to kill one-third of humankind.\n3. The number of the mounted army is given as an incomprehensible myriad; the witness confirms he heard the figure.\n4. The witness sees the horses and riders in vision: riders wear breastplates of three ruinous colors; horses have predator-heads; from their mouths issue three destroying substances."
+   },
+   "commentary": "The transformed scene carries the weight of irreversibility itself — four silences broken open into a single hour that devours a third of everything breathing, and the witness can do nothing but confirm the number he heard and describe, in colors of ruin, what his seeing has permanently inscribed upon him."
   }
  ],
- "last_updated": "2026-07-05T19:46:47.417642+00:00"
+ "last_updated": "2026-07-05T20:17:46.876311+00:00"
 }
