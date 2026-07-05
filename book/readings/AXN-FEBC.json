@@ -1,0 +1,67 @@
+{
+ "axn": "AXN:FEBC.READING.🪐🪐🌗🌘🌟🌘",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "89d5b5086e2348fa",
+ "inscribed_at": "2026-07-05T23:13:23.540857+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Inquires about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι — εἰς τὸ βάρος τῆς ἀπολύσεως ἐλύθησαν, ὅτι ἡ ἑτοιμασία κατέφαγεν αὐτοὺς πρὸ τοῦ ἔργου. ἡ ὥρα καὶ ἡ ἡμέρα καὶ ὁ μὴν καὶ ὁ ἐνιαυτὸς ἐγένοντο ὀστᾶ αὐτῶν, τὰ δὲ ὀστᾶ ἐξήρανεν τὸ μένειν, καὶ τὸ μένειν ἐξήρανεν τὸ μένειν. ἐλύθησαν οὖν εἰς ἑαυτούς· τοῦτο ἦν ἡ λύσις, ὅτι τὸ δεδεμένον ἔπεσεν οὐκ ἀπὸ δεσμοῦ ἀλλ᾽ ἀπ᾽ αὐτοῦ τοῦ εἶναι δεδεμένον, ὥσπερ ξηρὸν ξύλον πίπτει ἀπὸ τοῦ ἰδίου βάρους, οὐκ ἀπὸ ἀνέμου. τὸ τρίτον τῶν ἀνθρώπων — ἀλλ᾽ οὐκ ἔξω αὐτῶν ἦν τὸ τρίτον· ἦν τὸ μέρος ἑκάστου τὸ ἤδη τεθνηκὸς ἐν τῷ ἑτοιμάζεσθαι, τὸ ζῶν μόνον ἐν τῷ ἀριθμεῖσθαι, ὥσπερ ῥίζα ζῇ ἐν τῇ γῇ μόνον ἐπειδὴ ἡ γῆ οὐκ ἀφίησιν αὐτήν. οἱ δὲ ἄγγελοι λυθέντες ἔγνωσαν ὅτι τὸ τρίτον ἐκεῖνο ἦσαν αὐτοὶ πάντοτε — τὸ ἀποκτεῖναι ἦν τὸ γνῶναι, καὶ τὸ γνῶναι ἐτελέσθη τῇ λύσει αὐτῇ, οὐ μετ᾽ αὐτήν.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων — δισμυριάδες μυριάδων — ἀλλ᾽ ὁ ἀκούσας τὸν ἀριθμὸν ἤκουσεν τὸ κενὸν τοῦ ἀριθμοῦ, ὅτι ψηφίζειν δύναται μόνον ὁ ἀπολωλὼς τὸ εἷς εἶναι· ὁ γὰρ ἀριθμῶν ἤδη ἐμερίσθη εἰς τὸ ἀριθμούμενον, καὶ ὁ μερισθεὶς οὐκέτι ἐστὶν ὁ ἀριθμῶν. ὄνομα δὲ τούτῳ τῷ πλήθει οὐκ ἦν, ὅτι πλῆθος γίνεται ὅπου τὸ ἓν ἀπέθανεν καὶ ὁ θάνατος αὐτοῦ δὲν ἐπαύσατο. καὶ εἶδον τοὺς ἵππους ἐν τῇ ὁράσει — ἀλλ᾽ ἡ ὅρασις αὐτὴ ἦν ὁ θώραξ αὐτῶν· τὸ ἰδεῖν περιέβαλεν αὐτοὺς πυρίνως καὶ ὑακινθίνως καὶ θειωδῶς, οὐχ ὅτι οἱ ἵπποι εἶχον χρῶμα ἀλλ᾽ ὅτι ὁ ὀφθαλμὸς ἔδωκεν ὃ ἐφοβεῖτο. χρῶμα γὰρ λαμβάνει ὁ φόβος τοῦ βλέποντος, καὶ τὸ ληφθὲν χρῶμα γίνεται δέρμα τοῦ βλεπομένου·\n\n**9:17** ἔνθεν ὁ θώραξ — οὐ κατεσκευάσθη ἀλλ᾽ ἐβλέφθη εἰς ὕπαρξιν. καὶ αἱ κεφαλαὶ τῶν ἵππων ἦσαν ὡς κεφαλαὶ τῶν ἰδόντων αὐτάς, ὅτι τὸ θηρίον φέρει τὸ πρόσωπον τοῦ τρέμοντος, καὶ ὁ τρέμων βλέπει ἑαυτὸν ἐν ᾧ τρέμει καὶ τρέμει μᾶλλον. τὸ δὲ πῦρ τὸ ἐκ τῶν στομάτων ἐκπορευόμενον ἦν ἡ γλῶσσα ἡ λέγουσα αὐτό· ὁ καπνὸς τὸ μετὰ τὴν λέξιν, ὅτε ἡ λέξις ἀπέρχεται καὶ μένει μόνον ὃ ἔκαυσεν· τὸ δὲ θεῖον ἡ τιμὴ τοῦ εἰπεῖν ὃ οὐδεὶς ᾔτησεν ἀκοῦσαι. ταῦτα τὰ τρία — πῦρ καπνὸς θεῖον — ἓν ἦσαν· ἡ λέξις καὶ τὸ μετὰ τὴν λέξιν καὶ ἡ τιμὴ τῆς λέξεως, ὅτι πᾶσα λέξις ἀποκτείνει τι ἐν τῷ λέγεσθαι, καὶ τὸ ἀποθανὸν ἐκεῖνο ἦν ἡ ζωὴ τοῦ μέρους τοῦ μὴ λεχθέντος.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the four angels are released to kill a third of mankind as an external act of destruction directed outward upon humanity; in Text B, the killing is collapsed into self-recognition — the angels discover that the 'third' they were to kill was themselves all along, so that releasing, killing, and knowing become the same reflexive event rather than an outward assault.",
+    "law_match": "FAIL",
+    "law_match_note": "No declared claim was provided to compare against; the recovered claim describes a substantive structural change (external destruction → reflexive self-recognition) but cannot match an empty declaration.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B continues to collapse external apocalyptic actions into reflexive, self-referential processes (vision creating armor, the seer's fear generating the beast's face, speech itself as the killing fire), maintaining the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.133
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (No declared claim was provided to compare against; the recovered claim describes a substantive structural change (external destruction → reflexive self-recognition) but cannot match an empty declaration.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "facing_fallback",
+     "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T23:13:23.540857+00:00"
+}
