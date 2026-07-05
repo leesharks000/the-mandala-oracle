@@ -2571,7 +2571,106 @@
     ]
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-4aea568e",
+   "cast_at": "2026-07-05T17:07:57.628273+00:00",
+   "reading_axn": "AXN:FED5.READING.🌖🌗🪐🪐🌓🌿",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_158_161",
+    "citation": "9:15–9:18",
+    "start_unit": 158,
+    "end_unit": 161,
+    "unit_labels": [
+     "9:15",
+     "9:16",
+     "9:17",
+     "9:18"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "δαπαν"
+    ],
+    "recovered_law": "In TEXT A, destructive substances (fire, smoke, brimstone) flow outward from the mouths of the creatures to kill humans; in TEXT B, the substances (flame, mist, sacrificial smoke) flow inward into the mouths of the creatures, and the agents themselves are consumed/diminished rather than unleashing destruction outward.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same core inversion: destructive forces that originally flow outward from mouths to kill are reversed to flow inward, and the agents/forces themselves are consumed/diminished rather than destroying humanity outward.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (9:18) maintains the reversed direction: substances flow inward (εἰσρεούσης εἰς τὰ στόματα) and the entities are diminished (ἠλαττώθη), consistent with TEXT B's changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.31
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:017877f258765cb7f5f714a549fdda514c9cf2bd6d68dd23d89d758a6978ae13",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.\n\n**9:18** ἀπὸ τῶν τριῶν πληγῶν τούτων ἀπεκτάνθησαν τὸ τρίτον τῶν ἀνθρώπων, ⸀ἐκ τοῦ πυρὸς καὶ τοῦ καπνοῦ καὶ τοῦ θείου τοῦ ἐκπορευομένου ἐκ τῶν στομάτων αὐτῶν.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐδαπανήθησαν οἱ τέσσαρες ὀφειλέται οἱ προαναλωθέντες εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀφαιρεθῇ τὸ τρίτον τῶν ὀλεθρίων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν βαρημάτων τοῦ ⸀ζυγοφόρου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ζυγίους ἐν τῇ ὁράσει καὶ τοὺς φερομένους ἐπ' αὐτῶν, ἔχοντας θώρακας τεφρώδεις καὶ μολιβδίνους καὶ ὠχρούς· καὶ αἱ κεφαλαὶ τῶν ζυγίων ὡς κεφαλαὶ βοῶν, καὶ εἰς τὰ στόματα αὐτῶν εἰσρέει φλὸξ καὶ ἀχλὺς καὶ κνῖσα.\n\n**9:18** ἀπὸ τῶν τριῶν κενώσεων τούτων ἠλαττώθη τὸ τρίτον τῶν ὀλεθρίων, ⸀ἐκ τῆς φλογὸς καὶ τῆς ἀχλύος καὶ τῆς κνίσης τῆς εἰσρεούσης εἰς τὰ στόματα αὐτῶν.",
+   "layer_a": {
+    "beats": [
+     "9:15 Four angels loosed — prepared for the hour, day, month, year — to kill one-third of humanity",
+     "9:16 Number of cavalry: two-hundred-million; I heard the number",
+     "9:17 Horses seen in vision; riders with breastplates fiery, hyacinth, sulfurous; horses' heads as lions' heads; from mouths issues fire, smoke, sulfur",
+     "9:18 By these three plagues one-third of humanity killed — by fire, smoke, sulfur issuing from their mouths"
+    ],
+    "geometry": {
+     "lines": 4,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17",
+      "9:18"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "Four angels held in reserve are released at a pre-appointed composite moment to emit destruction outward through mounted forces whose mouths discharge plagues that deduct a fixed fraction of humanity.",
+    "mutated_relation": "In the transformed world the four are not released outward but spent inward: the angels ARE the cost already paid, the mounts ARE the debt that carries its riders rather than being carried, the mouths do not emit destruction but absorb it — the one-third deducted is subtracted FROM the destroying forces, not from humanity, so that precision of timing names what the utterance has already forfeited to exist.",
+    "clause_map": [
+     {
+      "ref": "9:15",
+      "class": "REBUILT",
+      "note": "Release reverses: four are spent not freed; timing is price, not trigger"
+     },
+     {
+      "ref": "9:16",
+      "class": "ANCHOR",
+      "note": "Hearing a count is invariant — witness registers magnitude without directing it"
+     },
+     {
+      "ref": "9:17",
+      "class": "REBUILT",
+      "note": "Emission reverses: mouths absorb; riders borne-by-debt; simile-of-lions now cost-face"
+     },
+     {
+      "ref": "9:18",
+      "class": "REBUILT",
+      "note": "Passive killing reverses patient: one-third deducted from emitters, not from humanity"
+     }
+    ]
+   },
+   "commentary": "Every mount here is already laden before it is ridden, every mouth draws inward what would have poured out, every angel names an expenditure already settled — so that the precision of hour and day and month and year marks not the moment of unleashing but the forfeit the utterance has already buried in its own calendar to reach the ear at all."
   }
  ],
- "last_updated": "2026-07-05T16:43:51.343796+00:00"
+ "last_updated": "2026-07-05T17:07:57.628273+00:00"
 }
