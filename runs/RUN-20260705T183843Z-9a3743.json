@@ -1,0 +1,104 @@
+{
+ "run_id": "RUN-20260705T183843Z-9a3743",
+ "schema": "run/v1",
+ "ts": "2026-07-05T18:38:43.696244+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SILENCE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "27240a46fb22e693571a1665ddef1e139f9326ce",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/27240a46fb22e693571a1665ddef1e139f9326ce",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/27240a46fb22e693571a1665ddef1e139f9326ce/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "afa7702d45465c86",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "27240a46fb22",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "afa7702d45465c86",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four angels are prepared for a specific time-coordinate; that coordinate arrives; their release fulfills the purpose (killing a third); the witness confirms the vision by hearing and seeing its scale and form.",
+   "mutated_relation": "The time-coordinate for which the angels were prepared is structurally unavailable — the hour, day, month, year exist as slots but never coalesce into an arrival; the angels are beings-as-unredeemed-preparation, the cavalry is force-without-discharge, the witness is one who heard a number answering nothing, and the mouths emit not destruction but the residue of a response the world still owes.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Time-destination is the mutated locus; loosing without arrival, purpose clause voided."
+    },
+    {
+     "ref": "9:16",
+     "class": "REBUILT",
+     "note": "Hearing the number now confirms scale of what waits unanswered."
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Emission from mouths reconfigured: issuing forth into absence, simile stranded without fulfillment."
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐκρατήθησαν οἱ τέσσαρες ὀφειλέται οἱ παρεσκευασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα μηδέποτε ἀποδῶσιν τὸ τρίτον τῶν ὑποσχέσεων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἀναμενόντων τοῦ ⸀κατωφλίου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς θρόνους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας στολὰς τεφρίνας καὶ ἀμαυρὰς καὶ ἀχλυώδεις· καὶ αἱ κεφαλαὶ τῶν θρόνων ὡς κεφαλαὶ κενοταφίων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται σιγὴ καὶ σκιὰ καὶ κόνις.",
+  "enantiomorph_translation": "**9:15** And the four debtors were held fast, those who had been made ready for the hour and day and month and year, so that they might never render back the third part of the promises.\n\n**9:16** And the number of those waiting at the threshold was twice ten thousand times ten thousand; I heard the number of them.\n\n**9:17** And thus I saw the seats in the vision, and those sitting upon them, wearing robes of ash and of dimness and of murk; and the heads of the seats were as heads of cenotaphs, and from their mouths there issued silence and shadow and dust.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The agents of active destruction (angels releasing killing, cavalry horses breathing fire) are transformed into agents of passive withholding and stasis (debtors who are restrained and never repay, thrones emitting silence/shadow/dust instead of fire/smoke/brimstone). The directional relation reverses from outward violent action upon humanity to inward retention and nullification.",
+   "law_match": "ADJACENT",
+   "law_match_note": "Both describe a transformation from active destruction to stasis/withholding, but the declared claim focuses on temporal non-coalescence and unredeemed preparation (time-slots that never resolve), while the recovered claim focuses on directional reversal from outward violence to inward retention and agent transformation (debtors, thrones). They share the structural shift from discharge to non-discharge but frame it through different relational mechanisms.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of TEXT B maintains the changed relation: thrones emit silence, shadow, and dust (passive/nullifying outputs) rather than reverting to fire, smoke, and brimstone (destructive outputs).",
+   "back_translation": "",
+   "terminal_similarity": 0.474
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": {
+   "declared": "The time-coordinate for which the angels were prepared is structurally unavailable — the hour, day, month, year exist as slots but never coalesce into an arrival; the angels are beings-as-unredeemed-preparation, the cavalry is force-without-discharge, the witness is one who heard a number answering nothing, and the mouths emit not destruction but the residue of a response the world still owes.",
+   "recovered": "The agents of active destruction (angels releasing killing, cavalry horses breathing fire) are transformed into agents of passive withholding and stasis (debtors who are restrained and never repay, thrones emitting silence/shadow/dust instead of fire/smoke/brimstone). The directional relation reverses from outward violent action upon humanity to inward retention and nullification.",
+   "note": "Both describe a transformation from active destruction to stasis/withholding, but the declared claim focuses on temporal non-coalescence and unredeemed preparation (time-slots that never resolve), while the recovered claim focuses on directional reversal from outward violence to inward retention and agent transformation (debtors, thrones). They share the structural shift from discharge to non-discharge but frame it through different relational mechanisms."
+  },
+  "commentary": "The world that was built to discharge its purpose at a named moment discovers that the moment never coheres, and so every mouth opens only onto what accrues when an answer is permanently owed: ash in place of fire, cenotaphs in place of lions, and a number that counts nothing except the depth of the waiting.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
