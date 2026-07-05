@@ -1,0 +1,102 @@
+{
+ "axn": "AXN:FE34.READING.🌕💫🌒🌘🌟🪐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "86ff21bfdc8fada7",
+ "inscribed_at": "2026-07-05T19:44:59.451209+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Inquiry about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐξεπράχθησαν αἱ τέσσαρες ὀφειλαὶ αἱ συσσωρευθεῖσαι ἐπὶ τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀπαιτήσωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἀναλωμάτων τοῦ ⸀τοκισμοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸ κεφάλαιον αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς δανειστὰς ἐν τῇ ὁράσει καὶ τοὺς ἐπικειμένους ἐπ' αὐτοῖς, φέροντας χιτῶνας ἐρυθροὺς καὶ πελιδνοὺς καὶ τεφρώδεις· καὶ αἱ γνάθοι τῶν δανειστῶν ὡς γνάθοι μύλων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκχεῖται τόκος καὶ ζημία καὶ κατάλυσις.",
+   "layer_a_declaration": {
+    "beats": [
+     "9:15 Four angels loosed—prepared for the hour, day, month, year—to kill one-third of humanity.",
+     "9:16 The cavalry's number: two myriads of myriads; I heard their count.",
+     "9:17 Horses seen in vision, riders bearing breastplates of fire, hyacinth, brimstone; horses' heads like lions' heads; from mouths issue fire, smoke, sulfur."
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "ἐλύθησαν (were loosed)": "their debt came due / were foreclosed upon",
+     "οἱ τέσσαρες ἄγγελοι": "four expenditures / four costs held in escrow",
+     "οἱ ἡτοιμασμένοι": "accruing since / compounding toward",
+     "εἰς τὴν ὥραν": "the hour's price",
+     "καὶ ἡμέραν": "the day's surcharge",
+     "καὶ μῆνα": "the month's levy",
+     "καὶ ἐνιαυτόν": "the year's full lien",
+     "ἵνα ἀποκτείνωσιν": "to collect / to deduct",
+     "τὸ τρίτον τῶν ἀνθρώπων": "one-third of humanity (the principal owed)",
+     "ὁ ἀριθμός": "the tally / the ledger-sum",
+     "τῶν στρατευμάτων τοῦ ἱππικοῦ": "of the mounted expenditure-force",
+     "δισμυριάδες μυριάδων": "two myriads of myriads (count invariant)",
+     "ἤκουσα τὸν ἀριθμὸν αὐτῶν": "I heard what they cost",
+     "εἶδον τοὺς ἵππους ἐν τῇ ὁράσει": "I witnessed the mounts in the invoice-vision",
+     "τοὺς καθημένους ἐπ' αὐτῶν": "those borne upon them / those indebted to them",
+     "θώρακας πυρίνους": "breastplates of burning cost",
+     "ὑακινθίνους": "bruise-blue / the color of spent flesh",
+     "θειώδεις": "sulfurous / residue of what was consumed",
+     "αἱ κεφαλαὶ τῶν ἵππων": "the heads of the mounts",
+     "ὡς κεφαλαὶ λεόντων": "like the heads of creditors / devourers",
+     "ἐκ τῶν στομάτων αὐτῶν": "from their mouths",
+     "ἐκπορεύεται": "is emitted / is disbursed",
+     "πῦρ καὶ καπνὸς καὶ θεῖον": "fire (the price), smoke (the receipt), sulfur (the remainder)"
+    },
+    "axis": "Every temporal coordinate is a cost-maturation; destruction is collection on a compounding debt.",
+    "foreclosure": "The source forecloses against time as neutral measure—hour, day, month, year are always already prices accruing.",
+    "wager": "Preparation (ἡτοιμασμένοι) is not readiness but compounding—waiting itself is the usury.",
+    "affect": "Dread of discovering that the schedule you inhabit is an invoice addressed to you."
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The apocalyptic military destruction (angels released to kill, cavalry armies, war-horses breathing fire) is re-mapped onto a financial/debt domain (debts accumulated to exact payment, usury expenses, creditors pouring out interest and ruin), changing the agents from supernatural warriors to economic oppressors and the action from killing to debt-collection.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: divine military agents become financial/debt entities, sovereign destruction becomes debt collection, and the cavalry/angels shift from supernatural warriors to creditors—the recovered claim captures the core relational remapping declared.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The financial/debt relation persists through 9:17, with creditors, usury imagery, and economic destruction replacing horses, lions, and fire throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.326
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The scene pays for its own duration: every unit of time that passed in silence was not patience but compounding, and the vision's terror is not that force arrives but that the bill was always growing, and what the mouths pour out is not fire but what fire was always a figure for — the remainder that cannot be returned."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T19:44:59.451209+00:00"
+}
