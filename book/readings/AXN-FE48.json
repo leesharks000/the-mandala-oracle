@@ -52,11 +52,66 @@
    ],
    "commentary": "The transformed scene carries the cost of a witness forced to testify to what was never absent — a conflagration that condenses into countable masks only long enough to be heard, then dissolves back into the burning that was always already underway.",
    "interpretation": "The armies are numbered before they move; the third is already subtracted before the horses open their mouths. What cannot be restrained does not become larger by being named — it becomes exact."
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες φύλακες οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα συγκλείσωσιν τὸ τρίτον τῶν ἀνθρώπων εἰς τὴν σιγὴν ὅπου ἡ αἰτία ὠφείλετο.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν παρατάξεων τοῦ ⸀ἐφίππου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν ἐν τῷ τόπῳ ὅπου ἀπόκρισιν ἐζήτουν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον— πᾶσα ὄψις ἀντὶ πάσης ἀποκαλύψεως, πᾶσα παρουσία ἀντὶ πάσης ἀποκρίσεως.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are released in order to kill (ἀποκτείνωσιν) a third of humanity; in Text B the four guardians are released in order to shut up/enclose (συγκλείσωσιν) a third of humanity into silence where a cause was owed, changing the agents' role from destroyers to imprisoners and redirecting the action from killing to confinement-in-silence.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a shift away from commissioned destruction/killing, but the declared claim reframes the agents as embodiments of unanswered cosmic silence (schedule become opaque, vigil for a non-reply), while the recovered claim identifies a concrete shift from killing to imprisoning/enclosing in silence—a related but structurally different relational change (confinement vs. permanent illegibility/withdrawal of answer).",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B adds the gloss 'πᾶσα ὄψις ἀντὶ πάσης ἀποκαλύψεως, πᾶσα παρουσία ἀντὶ πάσης ἀποκρίσεως,' reinforcing the changed relational logic (presence substituting for answer, appearance for revelation) rather than reverting to Text A's killing relation.",
+    "back_translation": "",
+    "terminal_similarity": 0.8
+   },
+   "law_variance": {
+    "declared": "The beings become embodiments of a question that will never be answered: the four agents are no longer executors arriving on schedule but the schedule itself become opaque—time-keepers whose appointed moment, rather than disclosing itself, withdraws into permanent illegibility. The cavalry host becomes the weight of an answer that was owed but never delivered. The seer becomes one who listens and looks for a response that structurally cannot arrive. The event-kind shifts from commissioned destruction to the absorption of cosmic non-reply: a vigil held at an intersection where the signal was promised and the silence is what kills.",
+    "recovered": "In Text A the four angels are released in order to kill (ἀποκτείνωσιν) a third of humanity; in Text B the four guardians are released in order to shut up/enclose (συγκλείσωσιν) a third of humanity into silence where a cause was owed, changing the agents' role from destroyers to imprisoners and redirecting the action from killing to confinement-in-silence.",
+    "note": "Both identify a shift away from commissioned destruction/killing, but the declared claim reframes the agents as embodiments of unanswered cosmic silence (schedule become opaque, vigil for a non-reply), while the recovered claim identifies a concrete shift from killing to imprisoning/enclosing in silence—a related but structurally different relational change (confinement vs. permanent illegibility/withdrawal of answer)."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.80 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The transformed scene carries the weight of a convergence that, having promised disclosure through exacting temporal calibration, delivers instead a splendor so total that it displaces the very announcement it was meant to frame, and a third of all persons vanishes not into judgment but into the gap where the warrant for their vanishing should have spoken."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T20:43:40.307734+00:00",
+ "last_updated": "2026-07-05T20:45:51.578277+00:00",
  "rite": [
   {
    "stage": "opening",
