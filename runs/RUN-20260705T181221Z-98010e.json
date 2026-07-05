@@ -1,0 +1,104 @@
+{
+ "run_id": "RUN-20260705T181221Z-98010e",
+ "schema": "run/v1",
+ "ts": "2026-07-05T18:12:21.145354+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "3025ed56d07ff846fc1b9b736eac30c25227a6c5",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/3025ed56d07ff846fc1b9b736eac30c25227a6c5",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/3025ed56d07ff846fc1b9b736eac30c25227a6c5/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "690f28d0c6c22c3a",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "3025ed56d07f",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "690f28d0c6c22c3a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four prepared agents are released at an exact pre-set temporal coordinate to kill a precise fraction, and the ensuing cavalry — though innumerable — is still counted, and its emanations (fire/smoke/sulfur) issue outward from mouths as instruments of that appointed killing.",
+   "mutated_relation": "In the transformed world the temporal coordinates do not govern the agents but are produced BY their utterance — the four thunders do not wait for the appointed hour; their detonation generates the hour, the day, the month, the year as acoustic aftermath; the beings are not soldiers dispatched at a time but cosmic voices whose sounding IS time itself, and what is killed is not a third of persons but a third of all local speech made inaudible by scale.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Temporal governance inverts: utterance produces time, not time releasing agents"
+    },
+    {
+     "ref": "9:16",
+     "class": "ANCHOR",
+     "note": "Number heard stays invariant — acoustic witness of count unchanged by directionality"
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Mouths issuing fire/smoke/sulfur become the thunder's own speech-act; simile lion→thunder-roar rewires"
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐρράγησαν αἱ τέσσαρες βρονταὶ αἱ γεννῶσαι ἀπὸ τῆς ἠχῆς ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα σιγήσωσιν τὸ τρίτον τῶν φωνῶν.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἠχημάτων τοῦ ⸀κρότου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς κτύπους ἐν τῇ ὁράσει καὶ τοὺς φερομένους ἐπ' αὐτῶν, ἔχοντας περιβολὰς χαλκέας καὶ ἰοειδεῖς καὶ λευκοπύρους· καὶ αἱ κορυφαὶ τῶν κτύπων ὡς κορυφαὶ σεισμῶν, καὶ ἐκ τῶν χασμάτων αὐτῶν ἐκπορεύεται κρόταφος καὶ παλμὸς καὶ σίγησις.",
+  "enantiomorph_translation": "**9:15** And the four thunders broke open, those that beget from their sounding ⸀both day and month and year, so that they should silence a third of all voices.\n\n**9:16** And the number of the soundings of the ⸀concussion was ⸀two myriads of myriads; I heard the number of them.\n\n**9:17** And thus I saw the peals in the vision and those carried upon them, wearing mantles of bronze and violet-dark and white-burning; and the crests of the peals were as crests of earthquakes, and from their chasms issued crash and tremor and the death of hearing.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The agents and their action are inverted: in Text A, four angels are released to kill a third of humans (destructive outward action), while in Text B, four thunders burst forth to silence a third of voices (suppressive/silencing action), reversing the relation from unleashing lethal force onto people to quenching sound.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim correctly identifies the shift from angels killing humans to thunders silencing voices, capturing the agent/action inversion and the change in what is affected. However, it frames this as a simple agent-action inversion (lethal force → silencing), missing the declared claim's core structural mutation: that temporal coordinates are produced BY the agents' utterance rather than governing them, i.e., the reversal of causality between time and agency.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B maintains the changed relation: destructive emanations (fire, smoke, brimstone) become sound-phenomena (κρόταφος, παλμός, σίγησις), consistent with the silencing/sound framework throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.366
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": {
+   "declared": "In the transformed world the temporal coordinates do not govern the agents but are produced BY their utterance — the four thunders do not wait for the appointed hour; their detonation generates the hour, the day, the month, the year as acoustic aftermath; the beings are not soldiers dispatched at a time but cosmic voices whose sounding IS time itself, and what is killed is not a third of persons but a third of all local speech made inaudible by scale.",
+   "recovered": "The agents and their action are inverted: in Text A, four angels are released to kill a third of humans (destructive outward action), while in Text B, four thunders burst forth to silence a third of voices (suppressive/silencing action), reversing the relation from unleashing lethal force onto people to quenching sound.",
+   "note": "The recovered claim correctly identifies the shift from angels killing humans to thunders silencing voices, capturing the agent/action inversion and the change in what is affected. However, it frames this as a simple agent-action inversion (lethal force → silencing), missing the declared claim's core structural mutation: that temporal coordinates are produced BY the agents' utterance rather than governing them, i.e., the reversal of causality between time and agency."
+  },
+  "commentary": "Every being now pays the price of its own volume: the four voices do not arrive at appointed hours but rupture time into existence as their residue, and what perishes is not a count of the living but the capacity of any lesser utterance to be heard at all.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
