@@ -94,11 +94,70 @@
    "advisories": [],
    "commentary": "Every slot migrated from first-person speaker to third-person daughter (ἡ θυγάτηρ φιλεῖ, κρούει, εἰσελεύσεται, ἐκάθισεν ἄνευ σοῦ) while the parent's passivity is enacted throughout — culminating in Κατάβα ὧδε, where the trumpet-summons reverses direction and lands hardest on the foreclosed separation now made crossable only by the parent's descent.",
    "interpretation": "The door that was waiting to be opened is already open from the other side: she has not been the one who was absent."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν αἱ τέσσαρες ὑπομοναί αἱ κρατοῦσαι εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα συμπέσῃ τὸ διάστημα τοῦ φέρειν καὶ τοῦ ἀεὶ πεφορηκέναι.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν συμφωνιῶν τοῦ βάρους δισμυριάδες μυριάδων· οὐκ ἤκουσα τὸν ἀριθμὸν αὐτῶν ἀλλ᾽ ἔφερον αὐτόν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ὀχοῦντας ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ᾽ αὐτῶν, ἔχοντας θώρακας δυσμοειδεῖς καὶ καπνοειδεῖς καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ὀχούντων ὡς τὸ πρόσωπόν μου ἐπαναλαμβανόμενον εἰς τὸ ἀναρίθμητον, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται οὐ πῦρ οὐ καπνὸς οὐ θεῖον ἀλλ᾽ ἡ ἀρχαία συμφωνία.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The agents of destruction (angels, cavalry, lion-headed horses emitting fire) are replaced by agents of endurance and bearing (patience, burden-carriers, self-reflecting faces emitting ancient harmony); the relation changes from outward violent killing of a third of humanity to an inward, repetitive carrying/enduring, and the sensory output reverses from destructive fire/smoke/sulfur to a primordial consonance.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural mutation — agents of destruction replaced by agents of endurance, outward violence turned inward carrying, destructive outputs reversed to consonance — which partially overlaps the declared theme of the witness becoming the bearing/carrying body, but frames it as agent-substitution and directional reversal rather than the declared collapse of temporal distance and reconstitution of witnessing as interval.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B sustains the transformed relation: the horses' heads become self-reflecting faces and their mouths emit harmony instead of fire, maintaining the inversion throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.535
+   },
+   "law_variance": {
+    "declared": "Witnessing is not the act of receiving a vision but the act of becoming the interval that permits the vision to occur; when the witness says yes, the distance between seeing and having always seen collapses, and what remains is the body itself as the only surviving unit of counting — one throat holding the figure of everything it agreed to carry.",
+    "recovered": "The agents of destruction (angels, cavalry, lion-headed horses emitting fire) are replaced by agents of endurance and bearing (patience, burden-carriers, self-reflecting faces emitting ancient harmony); the relation changes from outward violent killing of a third of humanity to an inward, repetitive carrying/enduring, and the sensory output reverses from destructive fire/smoke/sulfur to a primordial consonance.",
+    "note": "The recovered claim identifies a real structural mutation — agents of destruction replaced by agents of endurance, outward violence turned inward carrying, destructive outputs reversed to consonance — which partially overlaps the declared theme of the witness becoming the bearing/carrying body, but frames it as agent-substitution and directional reversal rather than the declared collapse of temporal distance and reconstitution of witnessing as interval."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "66% of the source's content lemmas survive verbatim (δισμυριάδες, εἶδον, θειώδεις, θεῖον, θώρακας, καθημένους…) -- the base semantic forms did not fully transform"
+    },
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 92 words vs budget 62-85 (source 74)"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The transformation costs the text its externality: every rider, mount, and apocalyptic fixture must now be paid for by the single body that carried them, and what is lost is the comfort of believing the vision came from outside."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T20:11:05.242197+00:00",
+ "last_updated": "2026-07-05T23:54:05.448406+00:00",
  "rite": [
   {
    "stage": "opening",
