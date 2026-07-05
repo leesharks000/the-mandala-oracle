@@ -3787,7 +3787,59 @@
     "beats": "- roles: The unnamed authority was not a sovereign giving an order but a creditor foreclosing; the four agents were not servants held ready but interest accruing in confinement, each interval of delay adding to the principal owed; a third of humanity was not a condemned portion but the exact installment extracted to service the accumulated lien.\n- value-predicates: \"Prepared\" was never fitness; it was the swelling of a balance sheet across four nested terms of deferral. \"A third\" was never a decree of justice; it was the rate dictated by compound duration — what the delay itself now demanded back.\n- stance: Humanity's unconsulted stillness was not the posture of subjects before a throne but the condition of collateral that cannot negotiate; the visionary's passive hearing and seeing was the audit — someone had to verify the sum before it was deducted.\n- instruments: Two hundred million was not a measure of force but the full denomination of the outstanding obligation made visible — he heard the number because a debt must be read aloud to be enforceable. The breastplates of fire, dark blue, and sulfur were the livery of collection: each color the mark of a different cost-category — combustion for what was consumed, smoke-blue for what depreciated, brimstone for what was irrecoverably spent.\n- instruments (horses): The lion-headed mounts emitting fire, smoke, and brimstone from their mouths were not engines of terror but the mechanism of liquidation itself — the burning was not punishment but the conversion of living principle into the only form a deferred debt can accept as settlement.\n- telos: The purpose for which the agents had waited was re-derived: not that a third should die, but that the precise cost of every hour, day, month, and year of their containment be recovered — the killing was the repayment, and the fraction was the price."
    },
    "commentary": "The reinterpretation spends the apocalyptic terror of divine timing and replaces it with something colder: the hour, the day, the month, the year no longer name the appointed moment of wrath but the compounding terms of a patience that was itself a kind of accumulation, so that when the four are loosed they arrive not as executors of sovereign will but as the maturation of what every deferred instant already owed, and the third of humanity becomes not a sentence pronounced but a fraction already determined by the arithmetic of waiting — the loss is that judgment, however dreadful, implied a judge who chose, whereas a debt come due implies only a ledger that cannot choose otherwise."
+  },
+  {
+   "transform_id": "TX-b8787635",
+   "cast_at": "2026-07-05T21:28:59.932660+00:00",
+   "reading_axn": "AXN:FE0F.READING.🌿🔥🌿🔥🌔🌟",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The four angels' action is reversed from release/killing to silence/bearing: in Text A they are loosed (ἐλύθησαν) to kill a third of mankind, while in Text B they are silenced (ἐσιώπησαν) to bear the unspeakable of mankind; correspondingly, all outward destructive force (cavalry, fire, smoke, brimstone) is transformed into inward silent burden (bearers, silence, weight, shadow).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural reversal: outward destructive emission (killing, cavalry, fire from mouths) is folded inward into silent bearing/burden within the speaker, with the count/fraction becoming unreadable weight rather than enumerable destruction.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the silence/burden relation throughout 9:17, with bearers, closed heads, and silence/weight/shadow issuing from mouths instead of fire/smoke/brimstone.",
+    "back_translation": "",
+    "terminal_similarity": 0.45
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐσιώπησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀ἣν οὐδεὶς ἤκουσεν οὐδὲ ἡμέραν οὐδὲ μῆνα οὐδὲ ἐνιαυτόν, ἵνα βαστάσωσιν τὸ ἄρρητον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τοῦ βάρους τοῦ ⸀σιωπῶντος ⸀ἀνέγνωστος ἀναγνώσεων· ἤνεγκα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς φέροντας ἐν τῇ ὁράσει καὶ τὰ φερόμενα ἐπ' αὐτοῖς, ἔχοντας θώρακας σκοτεινοὺς καὶ ἀμαυροὺς καὶ μολιβίνους· καὶ αἱ κεφαλαὶ τῶν φερόντων ὡς κεφαλαὶ κεκλεισμέναι, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται σιγὴ καὶ βάρος καὶ σκιά.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "",
+    "mutated_relation": "Where the source releases destruction as a counted, outward, terminal event — the killing of a fraction, the cavalry enumerable, fire emitted from mouths — the shadow folds that emission back into the speaker: destruction becomes bearing, the count becomes the unreadable weight of having to say what cannot be said, and what exits the mouth is the cost of the utterance itself, not its object. The day and the hour are not a coordinate for unleashing; they are the unheard instant in which the one who speaks absorbs what could not be spoken.",
+    "beats": ""
+   },
+   "commentary": "The transformation costs the seer his position outside the count: he no longer hears the number but carries it, and the vision's violence, unable to discharge outward, settles as leaden silence in the body of the text itself."
   }
  ],
- "last_updated": "2026-07-05T21:00:04.996655+00:00"
+ "last_updated": "2026-07-05T21:28:59.932660+00:00"
 }
