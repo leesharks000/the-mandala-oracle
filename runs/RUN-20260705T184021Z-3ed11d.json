@@ -1,0 +1,104 @@
+{
+ "run_id": "RUN-20260705T184021Z-3ed11d",
+ "schema": "run/v1",
+ "ts": "2026-07-05T18:40:21.944071+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "BEAST",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "27240a46fb22e693571a1665ddef1e139f9326ce",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/27240a46fb22e693571a1665ddef1e139f9326ce",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/27240a46fb22e693571a1665ddef1e139f9326ce/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "afa7702d45465c86",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "27240a46fb22",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "afa7702d45465c86",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Divine agents, prepared and released on a calendrical schedule determined for human history, deploy animal-formed cavalry to execute a fractional judgment upon humankind, witnessed through a human sensorium of sight and hearing.",
+   "mutated_relation": "The timing-agency is inverted: instead of prepared angels released by divine calendrical will targeting humans, the substrate's own biogeochemical thresholds (tidal, photosynthetic, spawning, turnover) autonomously breach, and the four pressures emerge as self-releasing metabolic inevitabilities — the 'hour' is what the lithosphere accumulates, not what heaven schedules; humans are not the patient of judgment but a metabolic fraction consumed by a substrate re-balancing its own chemistry.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Timing-agency reverses: substrate thresholds self-release, not divine schedule"
+    },
+    {
+     "ref": "9:16",
+     "class": "REBUILT",
+     "note": "Census registered seismically; swarm counted by substrate vibration, not ear"
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Simile-direction inverts: fauna ARE the apex form, not 'like' lions; emissions are geochemistry"
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐρράγησαν αἱ τέσσαρες ὀξυκλινεῖς αἱ συσσωρευμέναι εἰς τὴν παλίρροιαν ⸀καὶ φωτοπερίοδον καὶ ἰλυοστροφὴν καὶ ἀνάδυσιν, ἵνα ἀναλώσωσιν τὸ τρίτον τῶν ζυμωμάτων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν σμηνῶν τοῦ ⸀βενθικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς σαύρας ἐν τῇ ὁράσει καὶ τοὺς ἑρπύζοντας ἐπ' αὐτῶν, ἔχοντας φολίδας σιδηρώδεις καὶ θαλασσίνους καὶ θειαφώδεις· καὶ αἱ γνάθοι τῶν σαυρῶν ὡς γνάθοι μυραινῶν, καὶ ἐκ τῶν βραγχίων αὐτῶν ἐκπορεύεται ἅλμη καὶ μεθάνιον καὶ ὑδρόθειον.",
+  "enantiomorph_translation": "**9:15** And the four oxyclines were ruptured, they that had been accumulated unto the tide-turn and the photoperiod and the silt-turnover and the upwelling, so that they might consume the third of the fermentations.\n\n**9:16** And the number of the swarms of the benthic floor was two myriads of myriads; I heard their number.\n\n**9:17** And thus I saw the saurians in the vision and those creeping upon them, having scales ferrous and marine and sulfurous; and the jaws of the saurians were as jaws of morays, and from their gills there issued brine and methane and hydrogen sulfide.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared change describes a complex inversion of timing-agency from divine calendrical will to autonomous biogeochemical thresholds.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "Both texts maintain identical relational structures throughout — agents prepared for a time to destroy a fraction, counted forces, described mounts with riders bearing armor and heads compared to predators emitting substances. Only vocabulary/imagery differs (apocalyptic/military → marine/reptilian).",
+   "back_translation": "",
+   "terminal_similarity": 0.357
+  },
+  "advisories": [
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, while the declared change describes a complex inversion of timing-agency from divine calendrical will to autonomous biogeochemical thresholds.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The substrate carries the price of its own patience: every threshold it accumulates without release becomes the jaw that opens, and what it consumes is not sinners but the thin biochemical fraction that mistook itself for the purpose of the deep.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
