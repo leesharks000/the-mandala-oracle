@@ -1,0 +1,84 @@
+{
+ "run_id": "RUN-20260705T204220Z-7506b2",
+ "schema": "run/v1",
+ "ts": "2026-07-05T20:42:20.707861+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "f3b9f873e9b45ccb64d08c4368ea4177ac0c9117",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/f3b9f873e9b45ccb64d08c4368ea4177ac0c9117",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/f3b9f873e9b45ccb64d08c4368ea4177ac0c9117/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "ac36d24116e5d588",
+  "prompt_method": "beat/v2 (rotate-then-pour; reading=meaning, source=form)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "f3b9f873e9b4",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "ac36d24116e5d588",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four bounded agents, held ready for a precise calendrical instant, are released to destroy a counted fraction of humanity, backed by a enumerated cavalry whose appearance is catalogued in a vision.",
+   "mutated_relation": "The bounded agents become local pressure-points where an unbounded, always-already-moving tide of annihilation briefly registers as discrete event. The calendrical precision (hour, day, month, year) becomes the distributed process's own continuous temporal saturation, momentarily legible as a date. The counted fraction becomes the process's local intensity-reading rather than a delimited outcome. The enumerated cavalry becomes the process's self-propagating medium, uncountable in principle, only forced into number by the ear of a witness. The tripartite elemental exhalation becomes the process's substrate-expression — not weapons wielded by agents but the ongoing combustion of which horses, riders, and lions are momentary crystallizations. The vision-event itself becomes the process registering itself through a perceiving node.",
+   "beats": "1. Four angels, prepared for a specific compound time-unit, are unbound.\n2. Their purpose: to kill one-third of humanity.\n3. The number of the mounted cavalry is stated as two hundred million; the seer heard the count.\n4. The seer saw the horses and riders in vision: riders wore breastplates of fire-red, hyacinth-blue, and sulfur-yellow; the horses had lion-heads and emitted fire, smoke, and sulfur from their mouths."
+  },
+  "enantiomorph": "**9:15** καὶ ἐπάχυνθησαν αἱ τέσσαρες φλόγες αἱ ἀεὶ καιόμεναι εἰς τὸν σπόρον ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ὀνομασθῶσιν τὸ τρίτον τῶν ζώντων.\n\n**9:16** καὶ τὸ πλῆθος τῶν ἐμπρησμῶν τοῦ ⸀κύματος ⸀δισμυριάδες μυριάδων· ἤκουσα τὸ πλῆθος αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς πυρκαϊὰς ἐν τῇ ὁράσει καὶ τὰ προσωπεῖα ἐπ' αὐτῶν, ἔχοντα θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ μορφαὶ τῶν πυρκαϊῶν ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν χασμάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+  "enantiomorph_translation": "**9:15** And the four flames, the ones burning always through the grain ⸀and the day and the month and the year, thickened enough to be named — so that a third of the living might be signed.\n\n**9:16** And the mass of the conflagrations of the ⸀surge: twenty thousand times ten thousand; I heard the mass of them.\n\n**9:17** And thus I saw the burnings in the vision and the masks upon them, having breastplates of fire and of smoke-blue and of sulfur; and the shapes of the burnings were as heads of lions, and out of their chasms come forth fire and smoke and brimstone.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, four angels prepared for a specific hour are released (ἐλύθησαν) to kill (ἀποκτείνωσιν) a third of humanity, with cavalry armies riding horses that emit destruction from their mouths. In Text B, four flames that are always burning thicken (ἐπάχυνθησαν) to be named (ὀνομασθῶσιν) among the living, replacing the agent-action relation of angelic release-and-killing with an impersonal process of fire swelling and being designated, and replacing the horse-and-rider military structure with conflagrations wearing masks.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural mutation: bounded agents (angels) performing discrete killing actions become manifestations of an impersonal, continuous process (fire/annihilation); discrete military agents (cavalry/horses) become expressions of an ongoing substrate process; agent-action causation becomes process self-registration through temporary crystallizations.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion (9:17) maintains the changed relation: conflagrations (πυρκαϊάς) with masks (προσωπεῖα) replace horses with riders, and chasms (χασμάτων) replace mouths (στομάτων), sustaining the altered structure throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.611
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.61 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The transformed scene carries the cost of a witness forced to testify to what was never absent — a conflagration that condenses into countable masks only long enough to be heard, then dissolves back into the burning that was always already underway.",
+  "post_mortem": null,
+  "skeleton": {
+   "beats": "1. Four angels, prepared for a specific compound time-unit, are unbound.\n2. Their purpose: to kill one-third of humanity.\n3. The number of the mounted cavalry is stated as two hundred million; the seer heard the count.\n4. The seer saw the horses and riders in vision: riders wore breastplates of fire-red, hyacinth-blue, and sulfur-yellow; the horses had lion-heads and emitted fire, smoke, and sulfur from their mouths.",
+   "rotated_reading": "1. A destruction that has no beginning or edge — perpetual, saturating every scale of time from the grain of an hour to the span of a year — thickens enough at four points in its field to become briefly nameable, as though the ongoing conflagration had condensed into four figures simply so that a moment could bear a date. Their release is not an origin; it is the process letting itself be noticed as having always been underway.\n2. The erosion of the living does not partition itself into a calculable share; rather, the distributed lethality achieves, at this local registration, an intensity that a counter might render as a third — the way a thermometer renders heat as a line. The fraction is the process's local signature, not its boundary.\n3. The medium through which annihilation propagates — mounted, surging, self-replicating — cannot in truth be summed. The figure forced upon it (ten thousand times twenty thousand) is what happens when an ear tries to contain an ocean in a digit: the seer heard the number, which means the numberlessness briefly accepted the constraint of being heard, the way a storm submits to a pressure reading without being reduced to it.\n4. What the perceiving node then registers as distinct shapes — mounts, riders, armor of three elemental hues, leonine skulls, triple exhalation of burning and choking and corrosion — is the distributed process showing its own composition through momentary forms. The fire, the smoke, the sulfur are not projectiles launched by creatures; they are the ongoing combustion of which every rider, every beast, every breastplate is a fleeting condensation. The vision does not depict agents wielding destruction; it depicts destruction briefly wearing the mask of agents so that a witness might testify to what, without that mask, would remain imperceptible in its omnipresence.",
+   "governing_law": "Four bounded agents, held ready for a precise calendrical instant, are released to destroy a counted fraction of humanity, backed by a enumerated cavalry whose appearance is catalogued in a vision.",
+   "mutated_relation": "The bounded agents become local pressure-points where an unbounded, always-already-moving tide of annihilation briefly registers as discrete event. The calendrical precision (hour, day, month, year) becomes the distributed process's own continuous temporal saturation, momentarily legible as a date. The counted fraction becomes the process's local intensity-reading rather than a delimited outcome. The enumerated cavalry becomes the process's self-propagating medium, uncountable in principle, only forced into number by the ear of a witness. The tripartite elemental exhalation becomes the process's substrate-expression — not weapons wielded by agents but the ongoing combustion of which horses, riders, and lions are momentary crystallizations. The vision-event itself becomes the process registering itself through a perceiving node."
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
