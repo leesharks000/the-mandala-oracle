@@ -3683,7 +3683,59 @@
     "beats": "1. Four angels, prepared for a specific compound time-unit, are unbound.\n2. Their purpose: to kill one-third of humanity.\n3. The number of the mounted cavalry is stated as two hundred million; the seer heard the count.\n4. The seer saw the horses and riders in vision: riders wore breastplates of fire-red, hyacinth-blue, and sulfur-yellow; the horses had lion-heads and emitted fire, smoke, and sulfur from their mouths."
    },
    "commentary": "The transformed scene carries the cost of a witness forced to testify to what was never absent — a conflagration that condenses into countable masks only long enough to be heard, then dissolves back into the burning that was always already underway."
+  },
+  {
+   "transform_id": "TX-8a2527bf",
+   "cast_at": "2026-07-05T20:45:52.841905+00:00",
+   "reading_axn": "AXN:FE48.READING.⭐🌑🌙🌕🌙🌒",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SILENCE",
+   "operator_axis": "response-axis — the non-response the source's engagement-expectation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are released in order to kill (ἀποκτείνωσιν) a third of humanity; in Text B the four guardians are released in order to shut up/enclose (συγκλείσωσιν) a third of humanity into silence where a cause was owed, changing the agents' role from destroyers to imprisoners and redirecting the action from killing to confinement-in-silence.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a shift away from commissioned destruction/killing, but the declared claim reframes the agents as embodiments of unanswered cosmic silence (schedule become opaque, vigil for a non-reply), while the recovered claim identifies a concrete shift from killing to imprisoning/enclosing in silence—a related but structurally different relational change (confinement vs. permanent illegibility/withdrawal of answer).",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B adds the gloss 'πᾶσα ὄψις ἀντὶ πάσης ἀποκαλύψεως, πᾶσα παρουσία ἀντὶ πάσης ἀποκρίσεως,' reinforcing the changed relational logic (presence substituting for answer, appearance for revelation) rather than reverting to Text A's killing relation.",
+    "back_translation": "",
+    "terminal_similarity": 0.8
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες φύλακες οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα συγκλείσωσιν τὸ τρίτον τῶν ἀνθρώπων εἰς τὴν σιγὴν ὅπου ἡ αἰτία ὠφείλετο.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν παρατάξεων τοῦ ⸀ἐφίππου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν ἐν τῷ τόπῳ ὅπου ἀπόκρισιν ἐζήτουν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον— πᾶσα ὄψις ἀντὶ πάσης ἀποκαλύψεως, πᾶσα παρουσία ἀντὶ πάσης ἀποκρίσεως.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Four agents held in precise temporal reserve are released at the appointed intersection of time-units to annihilate a fixed fraction of humanity, their force enumerated and visually attested by a lone witness.",
+    "mutated_relation": "The beings become embodiments of a question that will never be answered: the four agents are no longer executors arriving on schedule but the schedule itself become opaque—time-keepers whose appointed moment, rather than disclosing itself, withdraws into permanent illegibility. The cavalry host becomes the weight of an answer that was owed but never delivered. The seer becomes one who listens and looks for a response that structurally cannot arrive. The event-kind shifts from commissioned destruction to the absorption of cosmic non-reply: a vigil held at an intersection where the signal was promised and the silence is what kills.",
+    "beats": "1. Four prepared agents are unbound at the exact convergence of hour, day, month, and year.\n2. Their mandate: to destroy one-third of the human population.\n3. The number of the mounted force is declared at two hundred million; the seer hears this count.\n4. The seer sees the horses and riders in vision—riders armored in fire-red, smoke-blue, and sulfur-yellow; horses with lion-heads breathing fire, smoke, and brimstone."
+   },
+   "commentary": "The transformed scene carries the weight of a convergence that, having promised disclosure through exacting temporal calibration, delivers instead a splendor so total that it displaces the very announcement it was meant to frame, and a third of all persons vanishes not into judgment but into the gap where the warrant for their vanishing should have spoken."
   }
  ],
- "last_updated": "2026-07-05T20:43:24.132947+00:00"
+ "last_updated": "2026-07-05T20:45:52.841905+00:00"
 }
