@@ -1,0 +1,108 @@
+{
+ "run_id": "RUN-20260705T183656Z-ddc963",
+ "schema": "run/v1",
+ "ts": "2026-07-05T18:36:56.839492+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "040738e66ef767c6912ea007b159a63c30d40cee",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/040738e66ef767c6912ea007b159a63c30d40cee",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/040738e66ef767c6912ea007b159a63c30d40cee/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "afa7702d45465c86",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "040738e66ef7",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "afa7702d45465c86",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four discrete angels, held for a precise time-coordinate, are released as causal agents who command a countable cavalry to kill a counted fraction of humanity.",
+   "mutated_relation": "The four angels are not causal agents who command the cavalry; they are local registrations where a continuous extinction-wave becomes momentarily countable — agency belongs to the distributed process, and the hour-day-month-year are not a schedule but cross-sectional slices through which the wave's passage is witnessed, so that the bounded entities exist as cost-marks the wave inscribes rather than sources from which destruction flows.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Angels, time-units, and killing all instantiate bounded-agent causality; must become field-registrations."
+    },
+    {
+     "ref": "9:16",
+     "class": "REBUILT",
+     "note": "Counted number heard as discrete sum; must become magnitude-reading of a continuous front."
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Predicate-list of horses/riders/emissions: discrete emitters must become loci where the wave discharges."
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐφάνησαν αἱ τέσσαρες ῥωγμαὶ αἱ ἐγγεγραμμέναι κατὰ τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ὅπου ἐμετρήθη τὸ τρίτον τῶν ζώντων.\n\n**9:16** καὶ τὸ πλῆθος τῶν κυμάτων τοῦ ⸀σβεσμοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸ πλῆθος αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς πλημμύρας ἐν τῇ ὁράσει καὶ τοὺς φερομένους ἐπ' αὐτῶν, ἔχοντας φολίδας τεφρώδεις καὶ πελιδνὰς καὶ ἁλμυρώδεις· καὶ αἱ κορυφαὶ τῶν πλημμυρῶν ὡς κορυφαὶ σκοτεινῶν, καὶ ἐκ τῶν βαθέων αὐτῶν ἐκπορεύεται σιγὴ καὶ ἅλμη καὶ ἀφανισμός.",
+  "enantiomorph_translation": "**9:15** And there appeared the four fissures inscribed across the hour and day and month and year, where a third of the living was measured out.\n\n**9:16** And the multitude of the waves of the quenching was two myriads of myriads; I heard the multitude of them.\n\n**9:17** And thus I saw the surges in the vision and those carried upon them, having scales ash-grey and livid and briny; and the crests of the surges were as crests of darknesses, and from their depths there issued silence and brine and obliteration.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, whereas the declared change describes a specific reversal of causal agency from the angels to a distributed extinction-wave process.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The relational structure (agents prepared for a time to affect a third of beings; innumerable forces; vision of creatures bearing forth destructive emanations) is preserved throughout; only vocabulary and imagery differ.",
+   "back_translation": "",
+   "terminal_similarity": 0.357
+  },
+  "advisories": [
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, whereas the declared change describes a specific reversal of causal agency from the angels to a distributed extinction-wave process.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The fissures bear the wave's passage as scars rather than as commands, so that even witnessing them costs the seer the grammar of agency — what was slain is now merely measured, what rode is now merely carried, and what roared now issues silence.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
