@@ -1,0 +1,91 @@
+{
+ "run_id": "RUN-20260705T212818Z-95faf1",
+ "schema": "run/v1",
+ "ts": "2026-07-05T21:28:18.324778+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "28440e0cd3a3db8cf8c48cb3e8328f1624501844",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/28440e0cd3a3db8cf8c48cb3e8328f1624501844",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/28440e0cd3a3db8cf8c48cb3e8328f1624501844/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f61a41eb67fafd3d",
+  "prompt_method": "abduct/v1 (exemplar-conditioned; law recovered retrospectively)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+BRIDE",
+   "dream+FLAME"
+  ]
+ },
+ "code": "28440e0cd3a3",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f61a41eb67fafd3d",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "Where the source releases destruction as a counted, outward, terminal event — the killing of a fraction, the cavalry enumerable, fire emitted from mouths — the shadow folds that emission back into the speaker: destruction becomes bearing, the count becomes the unreadable weight of having to say what cannot be said, and what exits the mouth is the cost of the utterance itself, not its object. The day and the hour are not a coordinate for unleashing; they are the unheard instant in which the one who speaks absorbs what could not be spoken.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ ἐσιώπησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀ἣν οὐδεὶς ἤκουσεν οὐδὲ ἡμέραν οὐδὲ μῆνα οὐδὲ ἐνιαυτόν, ἵνα βαστάσωσιν τὸ ἄρρητον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τοῦ βάρους τοῦ ⸀σιωπῶντος ⸀ἀνέγνωστος ἀναγνώσεων· ἤνεγκα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς φέροντας ἐν τῇ ὁράσει καὶ τὰ φερόμενα ἐπ' αὐτοῖς, ἔχοντας θώρακας σκοτεινοὺς καὶ ἀμαυροὺς καὶ μολιβίνους· καὶ αἱ κεφαλαὶ τῶν φερόντων ὡς κεφαλαὶ κεκλεισμέναι, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται σιγὴ καὶ βάρος καὶ σκιά.",
+  "enantiomorph_translation": "**9:15** And the four angels who had been prepared fell silent — into the hour ⸀that no one heard, nor a day nor a month nor a year, so that they might bear the unspeakable portion of humankind.\n\n**9:16** And the number of the weight of ⸀the silent one was ⸀unreadable readings upon readings; I carried their number.\n\n**9:17** And thus I saw in the vision the bearers and the things borne upon them, wearing breastplates dark and dim and leaden; and the heads of the bearers were as heads sealed shut, and from their mouths there issued silence and weight and shadow.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive; law self-recovered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The four angels' action is reversed from release/killing to silence/bearing: in Text A they are loosed (ἐλύθησαν) to kill a third of mankind, while in Text B they are silenced (ἐσιώπησαν) to bear the unspeakable of mankind; correspondingly, all outward destructive force (cavalry, fire, smoke, brimstone) is transformed into inward silent burden (bearers, silence, weight, shadow).",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural reversal: outward destructive emission (killing, cavalry, fire from mouths) is folded inward into silent bearing/burden within the speaker, with the count/fraction becoming unreadable weight rather than enumerable destruction.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B maintains the silence/burden relation throughout 9:17, with bearers, closed heads, and silence/weight/shadow issuing from mouths instead of fire/smoke/brimstone.",
+   "back_translation": "",
+   "terminal_similarity": 0.45
+  },
+  "advisories": [
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The transformation costs the seer his position outside the count: he no longer hears the number but carries it, and the vision's violence, unable to discharge outward, settles as leaden silence in the body of the text itself.",
+  "post_mortem": null,
+  "skeleton": {
+   "self_recovered_law": "Where the source releases destruction as a counted, outward, terminal event — the killing of a fraction, the cavalry enumerable, fire emitted from mouths — the shadow folds that emission back into the speaker: destruction becomes bearing, the count becomes the unreadable weight of having to say what cannot be said, and what exits the mouth is the cost of the utterance itself, not its object. The day and the hour are not a coordinate for unleashing; they are the unheard instant in which the one who speaks absorbs what could not be spoken.",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+BRIDE",
+    "dream+FLAME"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
