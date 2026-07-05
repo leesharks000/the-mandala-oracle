@@ -3169,7 +3169,91 @@
     ]
    },
    "commentary": "The substrate carries the price of its own patience: every threshold it accumulates without release becomes the jaw that opens, and what it consumes is not sinners but the thin biochemical fraction that mistook itself for the purpose of the deep."
+  },
+  {
+   "transform_id": "TX-02c35abd",
+   "cast_at": "2026-07-05T18:43:03.567394+00:00",
+   "reading_axn": "AXN:FED1.READING.🌒🌗🌖🌊🌙🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "MIRROR",
+   "operator_axis": "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "δαπαν"
+    ],
+    "recovered_law": "In TEXT A, agents act outward upon objects (angels are loosed to kill, the narrator hears, fire proceeds out of mouths); in TEXT B, every directional relation is inverted so that agents are acted upon or things flow inward (expenses are bound, the narrator is heard by the number, the narrator is seen by beasts, fire enters into mouths rather than coming out).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: outward-directed agency becomes inward-directed or self-consuming—emitters become receivers, agents become patients, things that proceed outward now flow inward.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The inversion of directional relations is maintained throughout the final portion of TEXT B (εἰσπορεύεται replacing ἐκπορεύεται, passive ὤφθην, etc.).",
+    "back_translation": "",
+    "terminal_similarity": 0.239
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐδεσμεύθησαν αἱ τέσσαρες δαπάναι αἱ ὀφειλόμεναι ὑπὸ τῆς ὥρας ⸀καὶ ἡμέρας καὶ μηνὸς καὶ ἐνιαυτοῦ, ἵνα γνωρίσωσιν τὸ τρίτον τῶν ζώντων ἑαυτοῖς.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἀκουσμάτων τοῦ ⸀ἀκροατηρίου ⸀δισμυριάδες μυριάδων· ἠκούσθην ὑπὸ τοῦ ἀριθμοῦ αὐτῶν.\n\n**9:17** καὶ οὕτως ὤφθην τοῖς θηρίοις ἐν τῇ ὁράσει καὶ τοῖς βασταζομένοις ὑπ' αὐτῶν, φέρουσι θώρακας τεφρίνους καὶ ἰώδεις καὶ χολώδεις· καὶ αἱ φάρυγγες τῶν θηρίων ὡς φάρυγγες βυθῶν, καὶ εἰς τὰ στόματα αὐτῶν εἰσπορεύεται πῦρ καὶ πνοὴ καὶ χολή.",
+   "layer_a": {
+    "beats": [
+     "9:15 Four angels loosed—prepared for the hour+day+month+year—to kill one-third of humanity",
+     "9:16 Cavalry number: two-ten-thousands of ten-thousands; I heard their number",
+     "9:17 Horses seen in vision + riders: breastplates fiery/hyacinth/sulphurous; horse-heads as lion-heads; from mouths issues fire+smoke+sulphur"
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "Sovereign time releases bound agents who flow outward unilaterally—killing, numbering, seeing, emitting—toward a humanity that only receives.",
+    "mutated_relation": "In the transformed world the beings are costs to each other: the four angels are what the hour spends to know itself, the cavalry is what the witness's hearing pays to become audible, the horses' mouths are throats that swallow what they breathe—every emitter is the receiver of its own emission, every sovereign instrument indebted to its target.",
+    "clause_map": [
+     {
+      "ref": "9:15",
+      "class": "REBUILT",
+      "note": "Loosing becomes mutual; hour prepares angels AS angels prepare hour; killing implicates killers"
+     },
+     {
+      "ref": "9:16",
+      "class": "REBUILT",
+      "note": "Hearing reversed—number heard also hears; witness implicated in the count"
+     },
+     {
+      "ref": "9:17",
+      "class": "REBUILT",
+      "note": "Seeing reciprocal; simile inverted; mouths emit AND intake—maximal mutation site"
+     }
+    ]
+   },
+   "commentary": "Every agent has become the debt its own action incurs: the hour pays its angels to recognize itself, the witness is heard by the count he once tallied, the beasts' mouths swallow what they once expelled, and to see is to be seen—so that nothing here emits without receiving its own emission back as wound."
   }
  ],
- "last_updated": "2026-07-05T18:41:26.748005+00:00"
+ "last_updated": "2026-07-05T18:43:03.567394+00:00"
 }
