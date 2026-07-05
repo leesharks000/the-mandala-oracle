@@ -1,0 +1,91 @@
+{
+ "run_id": "RUN-20260705T213234Z-389c40",
+ "schema": "run/v1",
+ "ts": "2026-07-05T21:32:34.513237+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "28440e0cd3a3db8cf8c48cb3e8328f1624501844",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/28440e0cd3a3db8cf8c48cb3e8328f1624501844",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/28440e0cd3a3db8cf8c48cb3e8328f1624501844/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f61a41eb67fafd3d",
+  "prompt_method": "abduct/v1 (exemplar-conditioned; law recovered retrospectively)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+BRIDE",
+   "dream+FLAME"
+  ]
+ },
+ "code": "28440e0cd3a3",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f61a41eb67fafd3d",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "When the cosmic-utterance that local speech determined against is applied to an apocalyptic marshaling, the completed total inverts into what cannot be totaled, the appointed time dissolves into an hour no calendar fixed, and the fire of destruction passing outward through mouths becomes breath and whisper passing inward — the army does not strike but listens, and what emerges from its mouths is not annihilation but a single name too quiet to be counted among events.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ ἐσίγησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀ἣν οὐδεὶς ὥρισεν, ἵνα ἀκούσωσιν τὸ ἓν τῶν ἀρρήτων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀σιωπικοῦ ⸀ἀνήκουστος ἀνηκούστων· οὐκ ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας κενοὺς καὶ ἀχρώμους καὶ ἀνωνύμους· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ παιδίων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀναπνοὴ καὶ ψιθυρισμὸς καὶ ὄνομα.",
+  "enantiomorph_translation": "**9:15** And the four angels who had been prepared for the hour that no one had appointed fell silent, so that they might hear the one thing among the unutterable things.\n\n**9:16** And the number of the armies of the silent one was unheard of things unheard of; I did not hear their number.\n\n**9:17** And thus I saw the horses in the vision and those sitting upon them, having breastplates empty and colorless and nameless; and the heads of the horses were as the heads of children, and out of their mouths proceeds a breath and a whisper and a name.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive; law self-recovered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "Text A depicts violent, destructive action (angels loosed to kill, cavalry of fire/smoke/brimstone, lion-headed horses); Text B systematically inverts the relational direction from forceful outward destruction to silent, unknowable inwardness (angels silenced to hear the unspeakable, an uncountable/unheard army, empty/colorless armor, child-headed horses exhaling breath/whisper/name instead of fire/smoke/brimstone).",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: outward destructive force (fire, killing, armies striking) is systematically reversed into inward, quiet, unknowable reception (listening, whispering, breath, a single unnameable name), with the army no longer destroying but attending in silence.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion (9:17) sustains the inversion: destructive emanation (fire, smoke, brimstone) is replaced by quiet, intimate emanation (breath, whisper, name), maintaining the changed relation throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.6
+  },
+  "advisories": [
+   {
+    "failed_test": "facing_fallback",
+    "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The transformation costs the witness the one certainty the source guaranteed — that he heard the number — and with it the power to stand outside the event as its chronicler; what remains is an army he belongs to, breathing.",
+  "post_mortem": null,
+  "skeleton": {
+   "self_recovered_law": "When the cosmic-utterance that local speech determined against is applied to an apocalyptic marshaling, the completed total inverts into what cannot be totaled, the appointed time dissolves into an hour no calendar fixed, and the fire of destruction passing outward through mouths becomes breath and whisper passing inward — the army does not strike but listens, and what emerges from its mouths is not annihilation but a single name too quiet to be counted among events.",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+BRIDE",
+    "dream+FLAME"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
