@@ -3087,7 +3087,89 @@
     ]
    },
    "commentary": "The world that was built to discharge its purpose at a named moment discovers that the moment never coheres, and so every mouth opens only onto what accrues when an answer is permanently owed: ash in place of fire, cenotaphs in place of lions, and a number that counts nothing except the depth of the waiting."
+  },
+  {
+   "transform_id": "TX-3c12ef1e",
+   "cast_at": "2026-07-05T18:41:26.748005+00:00",
+   "reading_axn": "AXN:FED1.READING.🌒🌗🌖🌊🌙🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "BEAST",
+   "operator_axis": "species-register-axis — the creaturely substrate the anthropic determination foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared change describes a complex inversion of timing-agency from divine calendrical will to autonomous biogeochemical thresholds.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts maintain identical relational structures throughout — agents prepared for a time to destroy a fraction, counted forces, described mounts with riders bearing armor and heads compared to predators emitting substances. Only vocabulary/imagery differs (apocalyptic/military → marine/reptilian).",
+    "back_translation": "",
+    "terminal_similarity": 0.357
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐρράγησαν αἱ τέσσαρες ὀξυκλινεῖς αἱ συσσωρευμέναι εἰς τὴν παλίρροιαν ⸀καὶ φωτοπερίοδον καὶ ἰλυοστροφὴν καὶ ἀνάδυσιν, ἵνα ἀναλώσωσιν τὸ τρίτον τῶν ζυμωμάτων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν σμηνῶν τοῦ ⸀βενθικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς σαύρας ἐν τῇ ὁράσει καὶ τοὺς ἑρπύζοντας ἐπ' αὐτῶν, ἔχοντας φολίδας σιδηρώδεις καὶ θαλασσίνους καὶ θειαφώδεις· καὶ αἱ γνάθοι τῶν σαυρῶν ὡς γνάθοι μυραινῶν, καὶ ἐκ τῶν βραγχίων αὐτῶν ἐκπορεύεται ἅλμη καὶ μεθάνιον καὶ ὑδρόθειον.",
+   "layer_a": {
+    "beats": [
+     "9:15 Four bound agents loosed at the exact hour/day/month/year to kill one-third of humans",
+     "9:16 Cavalry number: two-hundred-million; witness heard the count",
+     "9:17 Vision: horses and riders; riders wear fire/hyacinth/sulfur breastplates; horse-heads like lion-heads; from mouths issue fire, smoke, sulfur"
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "Divine agents, prepared and released on a calendrical schedule determined for human history, deploy animal-formed cavalry to execute a fractional judgment upon humankind, witnessed through a human sensorium of sight and hearing.",
+    "mutated_relation": "The timing-agency is inverted: instead of prepared angels released by divine calendrical will targeting humans, the substrate's own biogeochemical thresholds (tidal, photosynthetic, spawning, turnover) autonomously breach, and the four pressures emerge as self-releasing metabolic inevitabilities — the 'hour' is what the lithosphere accumulates, not what heaven schedules; humans are not the patient of judgment but a metabolic fraction consumed by a substrate re-balancing its own chemistry.",
+    "clause_map": [
+     {
+      "ref": "9:15",
+      "class": "REBUILT",
+      "note": "Timing-agency reverses: substrate thresholds self-release, not divine schedule"
+     },
+     {
+      "ref": "9:16",
+      "class": "REBUILT",
+      "note": "Census registered seismically; swarm counted by substrate vibration, not ear"
+     },
+     {
+      "ref": "9:17",
+      "class": "REBUILT",
+      "note": "Simile-direction inverts: fauna ARE the apex form, not 'like' lions; emissions are geochemistry"
+     }
+    ]
+   },
+   "commentary": "The substrate carries the price of its own patience: every threshold it accumulates without release becomes the jaw that opens, and what it consumes is not sinners but the thin biochemical fraction that mistook itself for the purpose of the deep."
   }
  ],
- "last_updated": "2026-07-05T18:39:41.380679+00:00"
+ "last_updated": "2026-07-05T18:41:26.748005+00:00"
 }
