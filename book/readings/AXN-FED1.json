@@ -1,0 +1,113 @@
+{
+ "axn": "AXN:FED1.READING.🌒🌗🌖🌊🌙🌕",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "768c11fcc6412c7c",
+ "inscribed_at": "2026-07-05T18:36:20.957975+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Question about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐξέπεσον αἱ τέσσαρες ὀφειλαὶ αἱ σωρευθεῖσαι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀπαιτήσωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν τελωνημάτων τοῦ ⸀λογιστηρίου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ζυγοὺς ἐν τῇ ὁράσει καὶ τοὺς ἐπικειμένους ἐπ' αὐτῶν, ἔχοντας χιτῶνας ἐρυθροὺς καὶ πελιδνοὺς καὶ τεφρώδεις· καὶ αἱ πλάστιγγες τῶν ζυγῶν ὡς γνάθοι κητῶν, καὶ ἐκ τῶν δίσκων αὐτῶν ἐκπορεύεται τόκος καὶ φθορὰ καὶ ἔνδεια.",
+   "layer_a_declaration": {
+    "beats": [
+     "9:15 Four angels loosed—prepared for the hour, day, month, year—to kill a third of humanity.",
+     "9:16 Cavalry number: two myriads of myriads; I heard their count.",
+     "9:17 Horses seen in vision; riders with breastplates fiery, hyacinth, sulfurous; horses' heads like lions' heads; from mouths: fire, smoke, brimstone."
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "τέσσαρες ἄγγελοι": "four creditors",
+     "ἐλύθησαν": "called due / released from escrow",
+     "οἱ ἡτοιμασμένοι": "held in reserve / accruing interest",
+     "ὥραν": "hour (unit of temporal debt—unchanged count)",
+     "ἡμέραν": "day (unit of temporal debt—unchanged count)",
+     "μῆνα": "month (unit of temporal debt—unchanged count)",
+     "ἐνιαυτόν": "year (unit of temporal debt—unchanged count)",
+     "εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν": "for the exact maturity date—compound lien of hour+day+month+year",
+     "ἵνα ἀποκτείνωσιν": "to foreclose upon / to collect",
+     "τὸ τρίτον τῶν ἀνθρώπων": "one-third of humanity (exact fraction, the principal owed)",
+     "ἀριθμός": "tally / ledger-sum",
+     "στρατευμάτων τοῦ ἱππικοῦ": "cavalry-expenditure / mounted cost-force",
+     "δισμυριάδες μυριάδων": "two myriads of myriads (200,000,000—count unchanged)",
+     "ἤκουσα τὸν ἀριθμὸν αὐτῶν": "I heard the sum total of the invoice",
+     "ἵππους": "mounts / conveyances of cost",
+     "ἐν τῇ ὁράσει": "in the audit-vision",
+     "τοὺς καθημένους ἐπ' αὐτῶν": "those riding upon them / cost-bearers mounted on expenditures",
+     "θώρακας πυρίνους": "breastplates of fire → armor forged from burning-cost",
+     "θώρακας ὑακινθίνους": "breastplates of hyacinth → armor forged from bruise-cost",
+     "θώρακας θειώδεις": "breastplates of sulfur → armor forged from corrosion-cost",
+     "κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων": "heads of mounts like heads of lions → principal-faces resembling apex-predation",
+     "πῦρ": "fire → combustion-deduction",
+     "καπνός": "smoke → residue of spent value",
+     "θεῖον": "brimstone → sulfur-tax",
+     "ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται": "from their mouths proceeds → disbursed from the consuming aperture"
+    },
+    "axis": "Every temporal coordinate is a maturity date; every unleashing is a debt called due.",
+    "foreclosure": "The source forecloses any possibility that the hour is arbitrary or the killing gratuitous—all is prepared, calibrated, exact.",
+    "wager": "Precision itself is the cost: to know the day and hour is to be already indebted to it.",
+    "affect": "Dread of a ledger that has always been running, compounding silently toward its maturity."
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The domain of agency is transformed from military/apocalyptic destruction to financial/economic exploitation: angels released to kill become debts that fall due to exact payment, cavalry armies become tax-collecting offices, horses become balance-scales, and fire/smoke/brimstone issuing from mouths become interest/ruin/want issuing from scale-pans.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim correctly identifies the military-to-financial domain transformation and the reframing of destruction as economic extraction, but focuses primarily on vocabulary/domain mapping (cavalry→tax offices, horses→scales, fire→interest) rather than the specific structural change about time-as-debt, angels-as-matured-liens, and the shift from inflicted destruction to expired credit that the declared claim specifies.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The financial-debt relational structure persists through the end of TEXT B (scales with jaws, disks emitting interest/ruin/want), never reverting to the military-apocalyptic structure of TEXT A.",
+    "back_translation": "",
+    "terminal_similarity": 0.357
+   },
+   "law_variance": {
+    "declared": "In the source, time prepares agents who then act upon humanity (time → readiness → destruction); in the cost-world, time IS the accumulating debt and the angels ARE the matured lien—they do not act upon humanity but collect what humanity already owes, so destruction is not inflicted but extracted: what was spent was humanity's reprieve, and the hour is not when judgment begins but when credit expires.",
+    "recovered": "The domain of agency is transformed from military/apocalyptic destruction to financial/economic exploitation: angels released to kill become debts that fall due to exact payment, cavalry armies become tax-collecting offices, horses become balance-scales, and fire/smoke/brimstone issuing from mouths become interest/ruin/want issuing from scale-pans.",
+    "note": "The recovered claim correctly identifies the military-to-financial domain transformation and the reframing of destruction as economic extraction, but focuses primarily on vocabulary/domain mapping (cavalry→tax offices, horses→scales, fire→interest) rather than the specific structural change about time-as-debt, angels-as-matured-liens, and the shift from inflicted destruction to expired credit that the declared claim specifies."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The reprieve humanity was given is the very substance it consumed, so at the hour of maturity the balances do not strike but simply weigh what was already spent, and what pours from their dishes is only what was always owed."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T18:36:20.957975+00:00"
+}
