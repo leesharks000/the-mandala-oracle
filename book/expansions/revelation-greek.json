@@ -3943,7 +3943,59 @@
     "beats": ""
    },
    "commentary": "The transformation costs the witness the one certainty the source guaranteed — that he heard the number — and with it the power to stand outside the event as its chronicler; what remains is an army he belongs to, breathing."
+  },
+  {
+   "transform_id": "TX-a0fb3f3b",
+   "cast_at": "2026-07-05T22:20:01.613245+00:00",
+   "reading_axn": "AXN:FEF1.READING.🌒🌑🌟💫🌕🌒",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "THUNDER",
+   "operator_axis": "scale-axis — the cosmic-utterance the local-speech determined against",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, four angels unleash massive military force (cavalry armies) to kill a third of humanity — destruction flows from plural, overwhelming martial power. In Text B, a single voice/word is released not to kill but to name one person, and its power operates through quiet organic growth (seed, root, whisper, blossom), generating life from a name — so the agent is singular rather than plural, the action is naming/giving life rather than killing, and power flows through fragility and silence rather than through destructive military might.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: plural destructive military agents killing masses become a single voice/name acting through organic growth (seed, root, silence, blossom) to generate life rather than destroy — the recovered claim captures the core relational change of agent singularity, life vs. death, and fragile organic power vs. martial force.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B culminates in the whisper blooming and the single word accomplishing what all powers could not — life from a name — fully maintaining the reversed relation (singular gentle life-giving vs. plural violent killing).",
+    "back_translation": "",
+    "terminal_similarity": 0.058
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐλύθη ἡ μία φωνὴ ἡ ἡτοιμασμένη πρὸ πάσης ὥρας, πρὸ πάσης ἡμέρας, ἵνα εἴπῃ τὸ ὄνομα ἑνὸς ἀνθρώπου. καὶ ὁ ἀριθμὸς τῶν λέξεων αὐτῆς μία· καὶ τὸ βάρος αὐτῆς ἔπεσεν εἰς τὴν γῆν ὡς σπέρμα πεσὸν εἰς γῆν σιωπῶσαν.\n\n**9:16** καὶ ἡ γῆ ἐδέξατο αὐτό, καὶ ἐσχίσθη τὸ στόμα αὐτῆς. καὶ εἶδον τὸν καθήμενον ἐπὶ τῆς σχισθείσης γῆς, ἔχοντα χιτῶνα ῥυπαρὸν καὶ χεῖρας τρεμούσας· καὶ ἡ κεφαλὴ αὐτοῦ ὡς κεφαλὴ παιδίου νεογεννήτου, καὶ ἡ γλῶσσα αὐτοῦ ἦν ῥίζα ἐν τῷ στόματι αὐτοῦ. καὶ ἐκ τῆς ῥίζης ἐξεπορεύετο σιωπὴ πρῶτον, εἶτα δάκρυον ὡς ὕδωρ πρὸς τὴν ῥίζαν, εἶτα ψιθυρισμός·\n\n**9:17** καὶ ὁ ψιθυρισμὸς ἦν τὸ ἄνθος. καὶ ἐν τῷ ἀνθεῖν αὐτοῦ ἐσείσθη πᾶσα δύναμις, ὅτι ἡ μία λέξις ἤνεγκεν ὃ πᾶσαι αἱ δυνάμεις οὐκ ἠδύναντο φέρειν· ζωὴν ἐξ ὀνόματος.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "",
+    "mutated_relation": "A single name, spoken from absolute preparation into absolute poverty, undergoes the passage from seed through root through silence through water through blossom; the shaking of all powers is not the voice's force but its flowering — the consequence of one word completing the germination that was always its hidden form.",
+    "beats": ""
+   },
+   "commentary": "The transformation costs the witness's ear — \"I heard its weight\" becomes the ground that receives, so the seer can no longer stand apart from what the voice does to the earth."
   }
  ],
- "last_updated": "2026-07-05T21:33:15.466445+00:00"
+ "last_updated": "2026-07-05T22:20:01.613245+00:00"
 }
