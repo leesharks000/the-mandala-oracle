@@ -3498,7 +3498,88 @@
     ]
    },
    "commentary": "The scene pays for its own duration: every unit of time that passed in silence was not patience but compounding, and the vision's terror is not that force arrives but that the bill was always growing, and what the mouths pour out is not fire but what fire was always a figure for — the remainder that cannot be returned."
+  },
+  {
+   "transform_id": "TX-ec4dbb76",
+   "cast_at": "2026-07-05T19:46:47.417642+00:00",
+   "reading_axn": "AXN:FE34.READING.🌕💫🌒🌘🌟🪐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SILENCE",
+   "operator_axis": "response-axis — the non-response the source's engagement-expectation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are released (ἐλύθησαν) and actively accomplish their purpose — killing a third of mankind — with destructive force (fire, smoke, brimstone from lion-headed horses). In Text B the angels remain/stay (ἔμενον) unreleased, their killing has no received object (no third or portion of mankind accepts them), and the horses emit only inert residues (mist, breath, darkness from ox-heads): agency and effectual destruction are replaced by stasis, refusal, and emptiness.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a transformation from active destructive release to permanent stasis/non-discharge, but the declared claim focuses specifically on the removal of the temporal coordinate (hour/day/month/year) as the structural mechanism, while the recovered claim focuses on the replacement of release with staying (ἐλύθησαν→ἔμενον), removal of the object of killing, and transformation of destructive emissions into inert residues — overlapping in the stasis/non-discharge outcome but differing in the specific structural mechanism identified.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B sustains the changed relation: destructive agency is consistently replaced with inert, muted, ineffectual imagery (ash-colored breastplates, ox-heads, mist/breath/darkness) throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.583
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἔμενον οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀ἣν οὐδεὶς ἐφθέγξατο καὶ ἡμέραν ἄρρητον καὶ μῆνα κενόν, ἵνα ἀποκτείνωσιν — καὶ οὐκ ἦν τρίτον οὐδὲ μέρος τῶν ἀνθρώπων ὅ ἐδέξατο αὐτούς.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν, καὶ ᾐσθόμην τὴν σιγὴν ἀντὶ τῆς ὥρας.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας τεφρίνους καὶ χλωροὺς καὶ ἀμαυρούς· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ βοῶν ἀνηρόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀτμὶς καὶ πνοὴ καὶ σκότος.",
+   "layer_a": {
+    "beats": [
+     "9:15 Four angels loosed, prepared for the hour and day and month and year, to kill the third of humanity.",
+     "9:16 Number of cavalry armies: two myriads of myriads; I heard their number.",
+     "9:17 Horses seen in vision with riders; breastplates fiery hyacinth sulfurous; heads of horses as lion-heads; from mouths issues fire smoke brimstone."
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "Four angels are prepared for a precise temporal coordinate; that coordinate authorizes their release; their release activates a cavalry of destruction whose violence issues outward from mouths toward humanity — everything flows from the known hour toward the known death.",
+    "mutated_relation": "In the source the temporal coordinate (hour/day/month/year) is the sufficient cause that authorizes angelic release and destruction flows outward from that authorization. In the transformed world the coordinate is structurally absent: the angels are prepared but there is no hour to be loosed INTO; preparation becomes a permanent state without discharge. The cavalry exists but its violence has no temporal address to arrive at. The event transforms from a punctual destruction into an interminable mobilization — the army is the cost of an answer that was never given, and the witness absorbs the silence where the number of the hour was owed, as one who heard their count but never heard their moment.",
+    "clause_map": [
+     {
+      "ref": "9:15",
+      "class": "REBUILT",
+      "note": "The 'prepared for THE hour' clause is the exact locus of withheld response; must show preparation without coordinate."
+     },
+     {
+      "ref": "9:16",
+      "class": "ANCHOR",
+      "note": "The number-count is invariant: magnitude persists; hearing the number does not depend on the temporal answer."
+     },
+     {
+      "ref": "9:17",
+      "class": "REBUILT",
+      "note": "Emission from mouths (fire/smoke/brimstone) instantiates outward flow from authorization; without the hour, emission must be structurally altered — held, undelivered, or turned inward."
+     }
+    ]
+   },
+   "commentary": "The cavalry stands forever harnessed, oxen circling a millstone with no grain; the witness's burden is not destruction witnessed but the count of an army whose summons never arrived, heard as a number inside a silence that will not end."
   }
  ],
- "last_updated": "2026-07-05T19:45:00.718276+00:00"
+ "last_updated": "2026-07-05T19:46:47.417642+00:00"
 }
