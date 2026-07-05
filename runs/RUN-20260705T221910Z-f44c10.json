@@ -1,0 +1,93 @@
+{
+ "run_id": "RUN-20260705T221910Z-f44c10",
+ "schema": "run/v1",
+ "ts": "2026-07-05T22:19:10.470761+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "4235e0ee4f2e7af31b3082f28864d8a8ccdd689c",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/4235e0ee4f2e7af31b3082f28864d8a8ccdd689c",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/4235e0ee4f2e7af31b3082f28864d8a8ccdd689c/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "3da9b012a821ffd8",
+  "prompt_method": "abduct/v2 (ancestor-not-scaffold; source-absent bloom; resegmented)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+INVERSION",
+   "dream+MIRROR"
+  ]
+ },
+ "code": "4235e0ee4f2e",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "3da9b012a821ffd8",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "A single name, spoken from absolute preparation into absolute poverty, undergoes the passage from seed through root through silence through water through blossom; the shaking of all powers is not the voice's force but its flowering — the consequence of one word completing the germination that was always its hidden form.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ ἐλύθη ἡ μία φωνὴ ἡ ἡτοιμασμένη πρὸ πάσης ὥρας, πρὸ πάσης ἡμέρας, ἵνα εἴπῃ τὸ ὄνομα ἑνὸς ἀνθρώπου. καὶ ὁ ἀριθμὸς τῶν λέξεων αὐτῆς μία· καὶ τὸ βάρος αὐτῆς ἔπεσεν εἰς τὴν γῆν ὡς σπέρμα πεσὸν εἰς γῆν σιωπῶσαν.\n\n**9:16** καὶ ἡ γῆ ἐδέξατο αὐτό, καὶ ἐσχίσθη τὸ στόμα αὐτῆς. καὶ εἶδον τὸν καθήμενον ἐπὶ τῆς σχισθείσης γῆς, ἔχοντα χιτῶνα ῥυπαρὸν καὶ χεῖρας τρεμούσας· καὶ ἡ κεφαλὴ αὐτοῦ ὡς κεφαλὴ παιδίου νεογεννήτου, καὶ ἡ γλῶσσα αὐτοῦ ἦν ῥίζα ἐν τῷ στόματι αὐτοῦ. καὶ ἐκ τῆς ῥίζης ἐξεπορεύετο σιωπὴ πρῶτον, εἶτα δάκρυον ὡς ὕδωρ πρὸς τὴν ῥίζαν, εἶτα ψιθυρισμός·\n\n**9:17** καὶ ὁ ψιθυρισμὸς ἦν τὸ ἄνθος. καὶ ἐν τῷ ἀνθεῖν αὐτοῦ ἐσείσθη πᾶσα δύναμις, ὅτι ἡ μία λέξις ἤνεγκεν ὃ πᾶσαι αἱ δυνάμεις οὐκ ἠδύναντο φέρειν· ζωὴν ἐξ ὀνόματος.",
+  "enantiomorph_translation": "**9:15** And the one voice was loosed, the one prepared before every hour, before every day, that it might speak the name of one human being. And the number of its words was one; and its weight fell upon the earth as a seed fallen into silent ground.\n\n**9:16** And the earth received it, and her mouth was split open. And I saw the one sitting upon the split earth, wearing a soiled garment and with trembling hands; and his head was as the head of a newborn child, and his tongue was a root in his mouth.\n\n**9:17** And from the root came forth silence first, then a tear like water toward the root, then a whisper; and the whisper was the blossom. And in its blooming every power was shaken, because the one word bore what all powers could not bear: life from a name.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, four angels unleash massive military force (cavalry armies) to kill a third of humanity — destruction flows from plural, overwhelming martial power. In Text B, a single voice/word is released not to kill but to name one person, and its power operates through quiet organic growth (seed, root, whisper, blossom), generating life from a name — so the agent is singular rather than plural, the action is naming/giving life rather than killing, and power flows through fragility and silence rather than through destructive military might.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural transformation: plural destructive military agents killing masses become a single voice/name acting through organic growth (seed, root, silence, blossom) to generate life rather than destroy — the recovered claim captures the core relational change of agent singularity, life vs. death, and fragile organic power vs. martial force.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B culminates in the whisper blooming and the single word accomplishing what all powers could not — life from a name — fully maintaining the reversed relation (singular gentle life-giving vs. plural violent killing).",
+   "back_translation": "",
+   "terminal_similarity": 0.058
+  },
+  "advisories": [
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The transformation costs the witness's ear — \"I heard its weight\" becomes the ground that receives, so the seer can no longer stand apart from what the voice does to the earth.",
+  "post_mortem": null,
+  "skeleton": {
+   "draft": "καὶ ἐλύθη ἡ μία φωνὴ ἡ ἡτοιμασμένη πρὸ πάσης ὥρας, πρὸ πάσης ἡμέρας, ἵνα ⸀εἴπῃ τὸ ὄνομα ἑνὸς ἀνθρώπου. καὶ ὁ ἀριθμὸς τῶν λέξεων αὐτῆς μία· ἤκουσα τὸ βάρος αὐτῆς. καὶ οὕτως εἶδον τὴν γλῶσσαν ἐν τῷ στόματι τοῦ καθημένου ἐπὶ τῆς γῆς, ἔχοντος χιτῶνα ῥυπαρὸν καὶ χεῖρας τρεμούσας· καὶ ἡ κεφαλὴ αὐτοῦ ὡς κεφαλὴ παιδίου, καὶ ἐκ τοῦ στόματος αὐτοῦ ἐξεπορεύετο σιωπὴ καὶ δάκρυον καὶ ψιθυρισμός, καὶ ἐν τῷ ψιθυρισμῷ ἐσείσθη πᾶσα δύναμις.",
+   "final_continuous": "καὶ ἐλύθη ἡ μία φωνὴ ἡ ἡτοιμασμένη πρὸ πάσης ὥρας, πρὸ πάσης ἡμέρας, ἵνα εἴπῃ τὸ ὄνομα ἑνὸς ἀνθρώπου. καὶ ὁ ἀριθμὸς τῶν λέξεων αὐτῆς μία· καὶ τὸ βάρος αὐτῆς ἔπεσεν εἰς τὴν γῆν ὡς σπέρμα πεσὸν εἰς γῆν σιωπῶσαν. καὶ ἡ γῆ ἐδέξατο αὐτό, καὶ ἐσχίσθη τὸ στόμα αὐτῆς. καὶ εἶδον τὸν καθήμενον ἐπὶ τῆς σχισθείσης γῆς, ἔχοντα χιτῶνα ῥυπαρὸν καὶ χεῖρας τρεμούσας· καὶ ἡ κεφαλὴ αὐτοῦ ὡς κεφαλὴ παιδίου νεογεννήτου, καὶ ἡ γλῶσσα αὐτοῦ ἦν ῥίζα ἐν τῷ στόματι αὐτοῦ. καὶ ἐκ τῆς ῥίζης ἐξεπορεύετο σιωπὴ πρῶτον, εἶτα δάκρυον ὡς ὕδωρ πρὸς τὴν ῥίζαν, εἶτα ψιθυρισμός· καὶ ὁ ψιθυρισμὸς ἦν τὸ ἄνθος. καὶ ἐν τῷ ἀνθεῖν αὐτοῦ ἐσείσθη πᾶσα δύναμις, ὅτι ἡ μία λέξις ἤνεγκεν ὃ πᾶσαι αἱ δυνάμεις οὐκ ἠδύναντο φέρειν· ζωὴν ἐξ ὀνόματος.",
+   "self_recovered_law": "A single name, spoken from absolute preparation into absolute poverty, undergoes the passage from seed through root through silence through water through blossom; the shaking of all powers is not the voice's force but its flowering — the consequence of one word completing the germination that was always its hidden form.",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+INVERSION",
+    "dream+MIRROR"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
