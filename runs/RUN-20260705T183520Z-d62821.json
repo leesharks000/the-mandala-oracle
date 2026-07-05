@@ -1,0 +1,104 @@
+{
+ "run_id": "RUN-20260705T183520Z-d62821",
+ "schema": "run/v1",
+ "ts": "2026-07-05T18:35:20.895320+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "040738e66ef767c6912ea007b159a63c30d40cee",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/040738e66ef767c6912ea007b159a63c30d40cee",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/040738e66ef767c6912ea007b159a63c30d40cee/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "afa7702d45465c86",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "040738e66ef7",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "afa7702d45465c86",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four angels held in temporal reserve are released at the appointed compound moment to destroy an exact fraction of humanity, their cavalry an innumerable force whose appearance emits destruction from within.",
+   "mutated_relation": "In the source, time prepares agents who then act upon humanity (time → readiness → destruction); in the cost-world, time IS the accumulating debt and the angels ARE the matured lien—they do not act upon humanity but collect what humanity already owes, so destruction is not inflicted but extracted: what was spent was humanity's reprieve, and the hour is not when judgment begins but when credit expires.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Angels=creditors; time-units=compounding lien; killing=foreclosure on expired reprieve."
+    },
+    {
+     "ref": "9:16",
+     "class": "REBUILT",
+     "note": "Army count becomes invoice total; hearing=auditing the sum owed."
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Simile-list is cost-anatomy; emissions are disbursements; vision is audit."
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐξέπεσον αἱ τέσσαρες ὀφειλαὶ αἱ σωρευθεῖσαι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀπαιτήσωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν τελωνημάτων τοῦ ⸀λογιστηρίου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ζυγοὺς ἐν τῇ ὁράσει καὶ τοὺς ἐπικειμένους ἐπ' αὐτῶν, ἔχοντας χιτῶνας ἐρυθροὺς καὶ πελιδνοὺς καὶ τεφρώδεις· καὶ αἱ πλάστιγγες τῶν ζυγῶν ὡς γνάθοι κητῶν, καὶ ἐκ τῶν δίσκων αὐτῶν ἐκπορεύεται τόκος καὶ φθορὰ καὶ ἔνδεια.",
+  "enantiomorph_translation": "**9:15** And the four debts that had been heaped up unto the hour and day and month and year fell due, so that they might exact the third of humankind.\n\n**9:16** And the number of the levies of the counting-house was two myriads of myriads; I heard the number of them.\n\n**9:17** And thus I saw the balances in the vision and those who bore down upon them, wearing tunics red and livid and ashen; and the pans of the balances were as jaws of sea-beasts, and out of their dishes issued interest and ruin and want.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The domain of agency is transformed from military/apocalyptic destruction to financial/economic exploitation: angels released to kill become debts that fall due to exact payment, cavalry armies become tax-collecting offices, horses become balance-scales, and fire/smoke/brimstone issuing from mouths become interest/ruin/want issuing from scale-pans.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim correctly identifies the military-to-financial domain transformation and the reframing of destruction as economic extraction, but focuses primarily on vocabulary/domain mapping (cavalry→tax offices, horses→scales, fire→interest) rather than the specific structural change about time-as-debt, angels-as-matured-liens, and the shift from inflicted destruction to expired credit that the declared claim specifies.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The financial-debt relational structure persists through the end of TEXT B (scales with jaws, disks emitting interest/ruin/want), never reverting to the military-apocalyptic structure of TEXT A.",
+   "back_translation": "",
+   "terminal_similarity": 0.357
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": {
+   "declared": "In the source, time prepares agents who then act upon humanity (time → readiness → destruction); in the cost-world, time IS the accumulating debt and the angels ARE the matured lien—they do not act upon humanity but collect what humanity already owes, so destruction is not inflicted but extracted: what was spent was humanity's reprieve, and the hour is not when judgment begins but when credit expires.",
+   "recovered": "The domain of agency is transformed from military/apocalyptic destruction to financial/economic exploitation: angels released to kill become debts that fall due to exact payment, cavalry armies become tax-collecting offices, horses become balance-scales, and fire/smoke/brimstone issuing from mouths become interest/ruin/want issuing from scale-pans.",
+   "note": "The recovered claim correctly identifies the military-to-financial domain transformation and the reframing of destruction as economic extraction, but focuses primarily on vocabulary/domain mapping (cavalry→tax offices, horses→scales, fire→interest) rather than the specific structural change about time-as-debt, angels-as-matured-liens, and the shift from inflicted destruction to expired credit that the declared claim specifies."
+  },
+  "commentary": "The reprieve humanity was given is the very substance it consumed, so at the hour of maturity the balances do not strike but simply weigh what was already spent, and what pours from their dishes is only what was always owed.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
