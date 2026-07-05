@@ -656,12 +656,13 @@
      "diagnosis": "witness-question entities inside the transform or commentary: hour"
     }
    ],
-   "commentary": "The living do not perish by what pours out but by what they are poured into: the one-third enters the mouths rather than fleeing them, and the army that rode becomes the substance that absorbs."
+   "commentary": "The living do not perish by what pours out but by what they are poured into: the one-third enters the mouths rather than fleeing them, and the army that rode becomes the substance that absorbs.",
+   "interpretation": "The hour dissolved into the angel that carried it: time became the body it was burning through."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T18:48:20.307878+00:00",
+ "last_updated": "2026-07-05T18:48:41.318544+00:00",
  "rite": [
   {
    "stage": "judgment",
@@ -676,6 +677,13 @@
    "at": "2026-07-05T18:39:50.182859+00:00",
    "text": "The angels retained at the threshold: the hour arrived and nothing was loosed.",
    "operator": "SILENCE"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-05T18:48:41.318544+00:00",
+   "text": "The hour dissolved into the angel that carried it: time became the body it was burning through.",
+   "operator": "FLAME"
   }
  ]
 }
