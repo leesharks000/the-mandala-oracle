@@ -398,11 +398,99 @@
     }
    ],
    "commentary": "The substrate carries the price of its own patience: every threshold it accumulates without release becomes the jaw that opens, and what it consumes is not sinners but the thin biochemical fraction that mistook itself for the purpose of the deep."
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐδεσμεύθησαν αἱ τέσσαρες δαπάναι αἱ ὀφειλόμεναι ὑπὸ τῆς ὥρας ⸀καὶ ἡμέρας καὶ μηνὸς καὶ ἐνιαυτοῦ, ἵνα γνωρίσωσιν τὸ τρίτον τῶν ζώντων ἑαυτοῖς.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἀκουσμάτων τοῦ ⸀ἀκροατηρίου ⸀δισμυριάδες μυριάδων· ἠκούσθην ὑπὸ τοῦ ἀριθμοῦ αὐτῶν.\n\n**9:17** καὶ οὕτως ὤφθην τοῖς θηρίοις ἐν τῇ ὁράσει καὶ τοῖς βασταζομένοις ὑπ' αὐτῶν, φέρουσι θώρακας τεφρίνους καὶ ἰώδεις καὶ χολώδεις· καὶ αἱ φάρυγγες τῶν θηρίων ὡς φάρυγγες βυθῶν, καὶ εἰς τὰ στόματα αὐτῶν εἰσπορεύεται πῦρ καὶ πνοὴ καὶ χολή.",
+   "layer_a_declaration": {
+    "beats": [
+     "9:15 Four angels loosed—prepared for the hour+day+month+year—to kill one-third of humanity",
+     "9:16 Cavalry number: two-ten-thousands of ten-thousands; I heard their number",
+     "9:17 Horses seen in vision + riders: breastplates fiery/hyacinth/sulphurous; horse-heads as lion-heads; from mouths issues fire+smoke+sulphur"
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "ἐλύθησαν (were loosed, passive)": "loosing now reciprocal—angels loosed AND loosing",
+     "τέσσαρες ἄγγελοι (four angels)": "four angels",
+     "ἡτοιμασμένοι εἰς (prepared for)": "prepared BY the hour—time prepares them as they prepare time",
+     "τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (the hour+day+month+year)": "the hour+day+month+year (all four units kept)",
+     "ἀποκτείνωσιν (they might kill)": "killing now implicates killers—death reciprocal",
+     "τὸ τρίτον τῶν ἀνθρώπων (one-third of humanity)": "one-third of humanity",
+     "ἀριθμός (number)": "number",
+     "στρατευμάτων τοῦ ἱππικοῦ (cavalry armies)": "cavalry armies",
+     "δισμυριάδες μυριάδων (two-ten-thousands of ten-thousands)": "two-ten-thousands of ten-thousands",
+     "ἤκουσα (I heard)": "hearing now bidirectional—number also hears witness",
+     "εἶδον (I saw)": "seeing reciprocal—horses+riders see the seer",
+     "ἐν τῇ ὁράσει (in the vision)": "vision as mutual gaze",
+     "τοὺς ἵππους (the horses)": "horses",
+     "τοὺς καθημένους ἐπ' αὐτῶν (those seated on them)": "riders mounted—but mounts now also bearing-upon riders",
+     "θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates fiery+hyacinth+sulphurous)": "breastplates fiery+hyacinth+sulphurous",
+     "κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων (horse-heads as lion-heads)": "lion-heads as horse-heads—simile reversed",
+     "ἐκ τῶν στομάτων (from mouths)": "mouths now also intake—fire+smoke+sulphur flow both ways",
+     "πῦρ καὶ καπνὸς καὶ θεῖον (fire+smoke+sulphur)": "fire+smoke+sulphur"
+    },
+    "axis": "All directionality reversed: agents become patients of their own action, one-way emission becomes mutual implication",
+    "foreclosure": "The source forecloses mutuality—angels act on time, killing flows one way, vision is spectator-only, mouths only emit",
+    "wager": "Reciprocity costs invulnerability: every destroyer is destroyed by what it destroys",
+    "affect": "Vertigo of mutual entanglement—dread that seeing the terrible means the terrible sees you"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "δαπαν"
+    ],
+    "recovered_law": "In TEXT A, agents act outward upon objects (angels are loosed to kill, the narrator hears, fire proceeds out of mouths); in TEXT B, every directional relation is inverted so that agents are acted upon or things flow inward (expenses are bound, the narrator is heard by the number, the narrator is seen by beasts, fire enters into mouths rather than coming out).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: outward-directed agency becomes inward-directed or self-consuming—emitters become receivers, agents become patients, things that proceed outward now flow inward.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The inversion of directional relations is maintained throughout the final portion of TEXT B (εἰσπορεύεται replacing ἐκπορεύεται, passive ὤφθην, etc.).",
+    "back_translation": "",
+    "terminal_similarity": 0.239
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "vocabulary_leak",
+     "diagnosis": "operator/theory vocabulary inside the poem: δαπαν"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "Every agent has become the debt its own action incurs: the hour pays its angels to recognize itself, the witness is heard by the count he once tallied, the beasts' mouths swallow what they once expelled, and to see is to be seen—so that nothing here emits without receiving its own emission back as wound."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T18:41:25.416230+00:00",
+ "last_updated": "2026-07-05T18:43:02.323691+00:00",
  "rite": [
   {
    "stage": "judgment",
