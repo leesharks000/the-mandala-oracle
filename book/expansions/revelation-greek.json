@@ -3631,7 +3631,59 @@
     "beats": "1. Four agents, long prepared for a precise moment, are unbound.\n2. Their purpose: to kill one-third of humankind.\n3. The number of the mounted army is given as an incomprehensible myriad; the witness confirms he heard the figure.\n4. The witness sees the horses and riders in vision: riders wear breastplates of three ruinous colors; horses have predator-heads; from their mouths issue three destroying substances."
    },
    "commentary": "The transformed scene carries the weight of irreversibility itself — four silences broken open into a single hour that devours a third of everything breathing, and the witness can do nothing but confirm the number he heard and describe, in colors of ruin, what his seeing has permanently inscribed upon him."
+  },
+  {
+   "transform_id": "TX-b909f824",
+   "cast_at": "2026-07-05T20:43:24.132947+00:00",
+   "reading_axn": "AXN:FE48.READING.⭐🌑🌙🌕🌙🌒",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "THUNDER",
+   "operator_axis": "scale-axis — the cosmic-utterance the local-speech determined against",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, four angels prepared for a specific hour are released (ἐλύθησαν) to kill (ἀποκτείνωσιν) a third of humanity, with cavalry armies riding horses that emit destruction from their mouths. In Text B, four flames that are always burning thicken (ἐπάχυνθησαν) to be named (ὀνομασθῶσιν) among the living, replacing the agent-action relation of angelic release-and-killing with an impersonal process of fire swelling and being designated, and replacing the horse-and-rider military structure with conflagrations wearing masks.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural mutation: bounded agents (angels) performing discrete killing actions become manifestations of an impersonal, continuous process (fire/annihilation); discrete military agents (cavalry/horses) become expressions of an ongoing substrate process; agent-action causation becomes process self-registration through temporary crystallizations.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (9:17) maintains the changed relation: conflagrations (πυρκαϊάς) with masks (προσωπεῖα) replace horses with riders, and chasms (χασμάτων) replace mouths (στομάτων), sustaining the altered structure throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.611
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐπάχυνθησαν αἱ τέσσαρες φλόγες αἱ ἀεὶ καιόμεναι εἰς τὸν σπόρον ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ὀνομασθῶσιν τὸ τρίτον τῶν ζώντων.\n\n**9:16** καὶ τὸ πλῆθος τῶν ἐμπρησμῶν τοῦ ⸀κύματος ⸀δισμυριάδες μυριάδων· ἤκουσα τὸ πλῆθος αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς πυρκαϊὰς ἐν τῇ ὁράσει καὶ τὰ προσωπεῖα ἐπ' αὐτῶν, ἔχοντα θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ μορφαὶ τῶν πυρκαϊῶν ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν χασμάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Four bounded agents, held ready for a precise calendrical instant, are released to destroy a counted fraction of humanity, backed by a enumerated cavalry whose appearance is catalogued in a vision.",
+    "mutated_relation": "The bounded agents become local pressure-points where an unbounded, always-already-moving tide of annihilation briefly registers as discrete event. The calendrical precision (hour, day, month, year) becomes the distributed process's own continuous temporal saturation, momentarily legible as a date. The counted fraction becomes the process's local intensity-reading rather than a delimited outcome. The enumerated cavalry becomes the process's self-propagating medium, uncountable in principle, only forced into number by the ear of a witness. The tripartite elemental exhalation becomes the process's substrate-expression — not weapons wielded by agents but the ongoing combustion of which horses, riders, and lions are momentary crystallizations. The vision-event itself becomes the process registering itself through a perceiving node.",
+    "beats": "1. Four angels, prepared for a specific compound time-unit, are unbound.\n2. Their purpose: to kill one-third of humanity.\n3. The number of the mounted cavalry is stated as two hundred million; the seer heard the count.\n4. The seer saw the horses and riders in vision: riders wore breastplates of fire-red, hyacinth-blue, and sulfur-yellow; the horses had lion-heads and emitted fire, smoke, and sulfur from their mouths."
+   },
+   "commentary": "The transformed scene carries the cost of a witness forced to testify to what was never absent — a conflagration that condenses into countable masks only long enough to be heard, then dissolves back into the burning that was always already underway."
   }
  ],
- "last_updated": "2026-07-05T20:17:46.876311+00:00"
+ "last_updated": "2026-07-05T20:43:24.132947+00:00"
 }
