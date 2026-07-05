@@ -3005,7 +3005,89 @@
     ]
    },
    "commentary": "The fissures bear the wave's passage as scars rather than as commands, so that even witnessing them costs the seer the grammar of agency — what was slain is now merely measured, what rode is now merely carried, and what roared now issues silence."
+  },
+  {
+   "transform_id": "TX-ceb45221",
+   "cast_at": "2026-07-05T18:39:41.380679+00:00",
+   "reading_axn": "AXN:FED1.READING.🌒🌗🌖🌊🌙🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SILENCE",
+   "operator_axis": "response-axis — the non-response the source's engagement-expectation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The agents of active destruction (angels releasing killing, cavalry horses breathing fire) are transformed into agents of passive withholding and stasis (debtors who are restrained and never repay, thrones emitting silence/shadow/dust instead of fire/smoke/brimstone). The directional relation reverses from outward violent action upon humanity to inward retention and nullification.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both describe a transformation from active destruction to stasis/withholding, but the declared claim focuses on temporal non-coalescence and unredeemed preparation (time-slots that never resolve), while the recovered claim focuses on directional reversal from outward violence to inward retention and agent transformation (debtors, thrones). They share the structural shift from discharge to non-discharge but frame it through different relational mechanisms.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B maintains the changed relation: thrones emit silence, shadow, and dust (passive/nullifying outputs) rather than reverting to fire, smoke, and brimstone (destructive outputs).",
+    "back_translation": "",
+    "terminal_similarity": 0.474
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐκρατήθησαν οἱ τέσσαρες ὀφειλέται οἱ παρεσκευασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα μηδέποτε ἀποδῶσιν τὸ τρίτον τῶν ὑποσχέσεων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἀναμενόντων τοῦ ⸀κατωφλίου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς θρόνους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας στολὰς τεφρίνας καὶ ἀμαυρὰς καὶ ἀχλυώδεις· καὶ αἱ κεφαλαὶ τῶν θρόνων ὡς κεφαλαὶ κενοταφίων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται σιγὴ καὶ σκιὰ καὶ κόνις.",
+   "layer_a": {
+    "beats": [
+     "9:15 Four angels loosed — prepared for the hour and day and month and year — to kill the third of humanity",
+     "9:16 Number of cavalry: two myriads of myriads; I heard their number",
+     "9:17 Horses seen in vision with riders; breastplates fiery, hyacinthine, sulfurous; heads of horses as lions' heads; from mouths issues fire and smoke and sulfur"
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "Four angels are prepared for a specific time-coordinate; that coordinate arrives; their release fulfills the purpose (killing a third); the witness confirms the vision by hearing and seeing its scale and form.",
+    "mutated_relation": "The time-coordinate for which the angels were prepared is structurally unavailable — the hour, day, month, year exist as slots but never coalesce into an arrival; the angels are beings-as-unredeemed-preparation, the cavalry is force-without-discharge, the witness is one who heard a number answering nothing, and the mouths emit not destruction but the residue of a response the world still owes.",
+    "clause_map": [
+     {
+      "ref": "9:15",
+      "class": "REBUILT",
+      "note": "Time-destination is the mutated locus; loosing without arrival, purpose clause voided."
+     },
+     {
+      "ref": "9:16",
+      "class": "REBUILT",
+      "note": "Hearing the number now confirms scale of what waits unanswered."
+     },
+     {
+      "ref": "9:17",
+      "class": "REBUILT",
+      "note": "Emission from mouths reconfigured: issuing forth into absence, simile stranded without fulfillment."
+     }
+    ]
+   },
+   "commentary": "The world that was built to discharge its purpose at a named moment discovers that the moment never coheres, and so every mouth opens only onto what accrues when an answer is permanently owed: ash in place of fire, cenotaphs in place of lions, and a number that counts nothing except the depth of the waiting."
   }
  ],
- "last_updated": "2026-07-05T18:37:53.722720+00:00"
+ "last_updated": "2026-07-05T18:39:41.380679+00:00"
 }
