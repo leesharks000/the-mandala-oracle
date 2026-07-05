@@ -486,11 +486,94 @@
     }
    ],
    "commentary": "Every agent has become the debt its own action incurs: the hour pays its angels to recognize itself, the witness is heard by the count he once tallied, the beasts' mouths swallow what they once expelled, and to see is to be seen—so that nothing here emits without receiving its own emission back as wound."
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐδέθησαν οἱ τέσσαρες φύλακες οἱ ὡρισμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα καταπίωσιν τὸ τρίτον τῶν ἐντολῶν.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν παρατάξεων τοῦ ⸀ἀφανοῦς ⸀δισμυριάδες μυριάδων· οὐκ ἔβλεψα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως οὐκ εἶδον τοὺς ὄνους ἐν τῇ σκοτίᾳ οὐδὲ τοὺς φέροντας ἐπ' αὐτῶν, ἔχοντας θώρακας τεφρίνους καὶ μολυβδίνους καὶ χαλκώδεις· καὶ αἱ γνάθοι τῶν ὄνων ὡς γνάθοι σκωλήκων, καὶ εἰς τὰ στόματα αὐτῶν εἰσπορεύεται χοῦς καὶ σποδὸς καὶ ἅλμη.",
+   "layer_a_declaration": {
+    "beats": [
+     "9:15 Four angels loosed, prepared for the hour+day+month+year, to kill one-third of humanity.",
+     "9:16 Cavalry number: two-myriads of myriads; I heard their count.",
+     "9:17 Horses seen in vision, riders with breastplates fiery+hyacinth+sulfurous; horses' heads as lions' heads; from mouths issues fire+smoke+sulfur."
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "τέσσαρες ἄγγελοι": "four angels (retained count: 4)",
+     "ἐλύθησαν (loosed/released)": "were bound / re-confined",
+     "οἱ ἡτοιμασμένοι (the ones prepared)": "the ones never summoned / left unready",
+     "εἰς τὴν ὥραν": "the hour (1 hour)",
+     "ἡμέραν": "the day (1 day)",
+     "μῆνα": "the month (1 month)",
+     "ἐνιαυτόν": "the year (1 year)",
+     "ἵνα ἀποκτείνωσιν": "so that they might fail to kill / so that life persists",
+     "τὸ τρίτον τῶν ἀνθρώπων": "one-third of humanity (count: 1/3)",
+     "ἀριθμός τῶν στρατευμάτων τοῦ ἱππικοῦ": "the uncountable absence of cavalry",
+     "δισμυριάδες μυριάδων": "two-myriads of myriads (200,000,000 — count retained)",
+     "ἤκουσα τὸν ἀριθμὸν αὐτῶν": "I could not hear their number / silence instead of report",
+     "θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις": "breastplates: ashen, colorless, inert",
+     "κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων": "horses' heads as heads of prey-animals / the eaten",
+     "ὡς (simile operator)": "likeness collapses: not-as, unlike",
+     "ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται": "into their mouths is drawn / swallowed",
+     "πῦρ καὶ καπνὸς καὶ θεῖον": "fire + smoke + sulfur (retained triad)",
+     "ἐν τῇ ὁράσει (in the vision)": "in the blindness / in what could not be seen",
+     "τοὺς καθημένους ἐπ' αὐτῶν": "riders upon them / the unseated, the thrown"
+    },
+    "axis": "The source's positive pole — decisive release at the appointed time — presupposes and silences the negative: perpetual binding, missed timing, impotence of the prepared.",
+    "foreclosure": "The source forecloses the possibility that readiness yields nothing and the hour passes empty.",
+    "wager": "Exactitude of timing costs the possibility that time is indifferent to angelic preparation.",
+    "affect": "A dread hollowness: the scheduled annihilation never arrives, and its absence is worse than its presence."
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the directional and perceptual relations of TEXT A: release becomes binding (ἐλύθησαν→ἐδέθησαν), killing becomes swallowing (ἀποκτείνωσιν→καταπίωσιν), hearing becomes not seeing (ἤκουσα→οὐκ ἔβλεψα), seeing becomes not seeing (εἶδον→οὐκ εἶδον), outward emission from mouths becomes inward intake into mouths (ἐκ τῶν στομάτων ἐκπορεύεται→εἰς τὰ στόματα εἰσπορεύεται), and destructive grandeur is replaced by degraded insignificance throughout.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversions: angels remain bound instead of released, perception inverted (seeing/hearing→not seeing), destructive substance flows inward (swallowed) rather than outward (emitted), and the cavalry becomes unwitnessable/uncountable — the recovered claim details the same relational reversals the declared claim summarizes.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B maintains the inverted directional relation (inward flow into mouths vs. outward emission) consistently through to the end.",
+    "back_translation": "",
+    "terminal_similarity": 0.283
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "Every glory the source spends — the loosing, the killing, the fire breathed outward, the lions, the horses seen in vision — rests on a ground it never names: the binding that persists, the command consumed before it arrives, the beasts that eat their own destruction in darkness, witnessed only as the failure of witness, an army whose readiness is the thing that devours it."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T18:43:02.323691+00:00",
+ "last_updated": "2026-07-05T18:44:42.526283+00:00",
  "rite": [
   {
    "stage": "judgment",
