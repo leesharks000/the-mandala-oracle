@@ -1175,7 +1175,12 @@ Given SOURCE (possibly Greek), OPERATOR (an axis), and the witness's question
  "mutated_relation": "<exactly ONE proposition of the governing law that is
    FALSE in the transformed world. A RELATION (agency, dependency, direction,
    or the source's own grammar of comparison) -- NEVER a vocabulary shift,
-   an intensity change, or a mood. This is the cast's falsifiable claim.>",
+   an intensity change, or a mood. State it as an ONTOLOGICAL exchange: name
+   WHAT THE BEINGS ARE in the transformed world under the operator's axis
+   (under SHADOW: entities as their bearing-costs; the crown as what it
+   deducts, the witness as what was spent) -- a mutation compatible with
+   every entity remaining what it was is a decoration, not a claim. This is
+   the cast's falsifiable claim.>",
  "clause_map": [{"ref": "<verse/unit ref matching beats>",
                  "class": "ANCHOR" | "REBUILT",
                  "note": "<ANCHOR: one-line justification that this unit is
@@ -1260,6 +1265,17 @@ LAWS:
   saturate every slot; where a fill runs shallow, deepen the world, never
   switch worlds. The template holds while the being beneath it is exchanged
   all the way down.
+- AXIS, NEVER A PALETTE (the crown-of-shadow incident, 2026-07-05): the
+  operator names an AXIS of transformation, never a vocabulary. Its name and
+  its name's imagery -- shadow as darkness-words, silence as quiet-words,
+  flame as fire-words -- must not appear as fills unless the source already
+  carries them. Renaming an entity in the operator's color while its being
+  stays intact is decoration, not transformation. Test before emitting:
+  delete every name-colored word -- if nothing remains of the transform,
+  there was no transform. Under SHADOW the beings are re-derived as their
+  bearing-costs (the crown as what it deducts, the witness as what was
+  spent, the promise as the lien it places); the axis rebuilds what things
+  ARE, and the operator's name stays in the metadata where it lives.
 - SLOT-TOTAL: every content slot refilled from the operator's world under the
   declared law; verbatim content lines are failures; the final unit is where
   the law must land hardest, never a reversion toward the source's world.
