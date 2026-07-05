@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FE2F.READING.🌿🌗⭐🌘🌘⭐",
+   "mode": "public",
+   "source_text_id": "revelation-greek",
+   "rotation_length": 1,
+   "inscribed_at": "2026-07-05T21:00:03.674967+00:00",
+   "last_updated": "2026-07-05T21:00:03.674967+00:00"
+  },
+  {
    "axn": "AXN:FE48.READING.⭐🌑🌙🌕🌙🌒",
    "mode": "public",
    "source_text_id": "revelation-greek",
@@ -266,5 +274,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 33
+ "total": 34
 }
