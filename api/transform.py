@@ -77,7 +77,12 @@ from pathlib import Path
 # Configuration
 # ──────────────────────────────────────────────────────────────────────
 
-COMPILER_MODEL = "claude-sonnet-4-6"   # MANUS principle (2026-07-04): transform-competence is not reasoning-competence — the reasoning gains of the largest models were bought at the expense of mimetic plasticity, and an enantiomorph wants a model that BECOMES the source, not one that deliberates about it. The compiler seat goes to the fastest, least deliberative adequate model; ALL rigor lives in the gates (C1-C9 + slot/numeral verification), which HALT drift regardless of who composes. The old "sonnet too weak" note predates the gates.
+COMPILER_MODEL = os.environ.get("COMPILER_MODEL", "claude-opus-4-6")
+# MANUS directive (2026-07-05): Opus in the compiler seat. Unknown model ids
+# fall through _MODEL_FALLBACKS automatically (opus-4-6 -> opus-4-8 ->
+# sonnet-4-6), and the flight record logs model_effective, so casting can
+# never break on a name and the ledger tracks model against results.
+# SUPERSEDED (preserved per errata discipline) -- MANUS principle (2026-07-04): transform-competence is not reasoning-competence — the reasoning gains of the largest models were bought at the expense of mimetic plasticity, and an enantiomorph wants a model that BECOMES the source, not one that deliberates about it. The compiler seat goes to the fastest, least deliberative adequate model; ALL rigor lives in the gates (C1-C9 + slot/numeral verification), which HALT drift regardless of who composes. The old "sonnet too weak" note predates the gates.
 MAX_TOKENS = 9000    # multi-verse lyric units need apparatus headroom; sonnet+streaming keeps this fast (2026-07-04)
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
@@ -753,7 +758,7 @@ def run_compiler(source_text: str, operator: str, invoking: str, api_key: str) -
     text = "".join(parts)
 
     def sect(tag: str) -> str:
-        m = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", text, re.DOTALL)
+        m = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", text, re.DOTALL | re.IGNORECASE)
         return m.group(1).strip() if m else ""
 
     def jsect(tag: str, default):
@@ -905,6 +910,29 @@ def _stream_call(model: str, system, user: str, max_toks: int, api_key: str,
     return "".join(parts), stop_reason
 
 
+
+_MODEL_FALLBACKS = ["claude-opus-4-6", "claude-opus-4-8", "claude-sonnet-4-6"]
+_EFFECTIVE_MODEL = {"id": None}
+_orig_stream_call = _stream_call
+
+def _stream_call(model, system, user, max_toks, api_key, **kw):
+    """Model fall-through (MANUS 2026-07-05): try the configured id; on a
+    model-not-found class error, fall through the chain; record what served."""
+    cands = [model] + [m for m in _MODEL_FALLBACKS if m != model]
+    last = None
+    for m in cands:
+        try:
+            out = _orig_stream_call(m, system, user, max_toks, api_key, **kw)
+            _EFFECTIVE_MODEL["id"] = m
+            return out
+        except Exception as e:
+            last = e
+            msg = str(e).lower()
+            if "model" in msg and ("not_found" in msg or "invalid" in msg or "404" in msg):
+                continue
+            raise
+    raise last
+
 def run_compiler_v2(source_text: str, operator: str, invoking: str, api_key: str) -> dict:
     """Two-call compiler: analyst skeleton → mimetic composition."""
     op_spec = OPERATORS[operator]
@@ -932,7 +960,7 @@ def run_compiler_v2(source_text: str, operator: str, invoking: str, api_key: str
     c_text, c_stop = _stream_call(COMPILER_MODEL, COMPOSER_SYSTEM, u2, COMPOSE_MAX, api_key, wall=150)
 
     def sect(tag: str) -> str:
-        mm = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", c_text, re.DOTALL)
+        mm = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", c_text, re.DOTALL | re.IGNORECASE)
         return mm.group(1).strip() if mm else ""
     def jsect(tag: str, default):
         raw = sect(tag)
@@ -945,10 +973,10 @@ def run_compiler_v2(source_text: str, operator: str, invoking: str, api_key: str
         # forgiveness, same law as every other organ (2026-07-05): content
         # beats format; raw output beats no output; dormant paths included,
         # because dormant is exactly how this killer survived to fire.
-        _enant2 = re.sub(r"</?[A-Z_]+>", "",
-                  re.sub(r"<VERIFICATION>.*?</VERIFICATION>", "",
-                  re.sub(r"<COMMENTARY>.*?</COMMENTARY>", "",
-                  re.sub(r"<ENANTIOMORPH_TRANSLATION>.*?</ENANTIOMORPH_TRANSLATION>", "",
+        _enant2 = re.sub(r"</?[A-Za-z_]+>", "",
+                  re.sub(r"(?i)<VERIFICATION>.*?</VERIFICATION>", "",
+                  re.sub(r"(?i)<COMMENTARY>.*?</COMMENTARY>", "",
+                  re.sub(r"(?i)<ENANTIOMORPH_TRANSLATION>.*?</ENANTIOMORPH_TRANSLATION>", "",
                          c_text, flags=re.DOTALL), flags=re.DOTALL), flags=re.DOTALL)).strip()
     out2 = {
         "result": ("PASS" if _enant2.strip() else (sect("RESULT") or "HALT")).upper(),
@@ -1224,6 +1252,14 @@ LAWS:
   grows from INSIDE the mapping, under the same law, and returns to it.
   Rigid one-to-one is the floor of closeness, not the ceiling of the method.
   (The demonstration above shows the floor; the fuller exemplars breathe.)
+- ONTOLOGICAL DEPTH: the fills come from ONE transformed world, not from
+  per-slot ingenuity -- every counterpart drawn from the same underlying
+  being, its physics refilled with its nouns: what things are made of, what
+  force moves them, what their verbs can do. As pulse->press carries an
+  entire body-into-text ontology through every line, let one ontology
+  saturate every slot; where a fill runs shallow, deepen the world, never
+  switch worlds. The template holds while the being beneath it is exchanged
+  all the way down.
 - SLOT-TOTAL: every content slot refilled from the operator's world under the
   declared law; verbatim content lines are failures; the final unit is where
   the law must land hardest, never a reversion toward the source's world.
@@ -1660,7 +1696,7 @@ GLYPH_FUSED_MAX = 4200
 
 
 def _tagsect(text: str, tag: str) -> str:
-    mm = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", text, re.DOTALL)
+    mm = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", text, re.DOTALL | re.IGNORECASE)
     return mm.group(1).strip() if mm else ""
 
 
@@ -1676,7 +1712,7 @@ def _glyph_fallback(text: str) -> str:
 
 def _strip_tag_lines(text: str) -> str:
     """Whole-text fallback: drop tag shells, keep the content."""
-    return re.sub(r"</?[A-Z_]+>", "", text).strip()
+    return re.sub(r"</?[A-Za-z_]+>", "", text).strip()
 
 
 def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
@@ -1807,8 +1843,8 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
         # completed 1081-char translation over missing tags): the composer's
         # job was the poem, not the XML. If tags are absent, the text IS the
         # enantiomorph; only literal emptiness halts.
-        _enant = _strip_tag_lines(re.sub(r"<VERIFICATION>.*?</VERIFICATION>", "",
-                 re.sub(r"<COMMENTARY>.*?</COMMENTARY>", "", c_text, flags=re.DOTALL), flags=re.DOTALL))
+        _enant = _strip_tag_lines(re.sub(r"(?i)<VERIFICATION>.*?</VERIFICATION>", "",
+                 re.sub(r"(?i)<COMMENTARY>.*?</COMMENTARY>", "", c_text, flags=re.DOTALL), flags=re.DOTALL))
     if not _enant.strip() and c_text.strip():
         _enant = c_text.strip()   # last-resort forgiveness: raw output beats no output
     parsed = {
@@ -1944,7 +1980,7 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
                                   COMPOSE_MAX, api_key, wall=125)
 
     def sect(tag: str) -> str:
-        mm = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", c_text, re.DOTALL)
+        mm = re.search(rf"<{tag}>\s*(.*?)\s*</{tag}>", c_text, re.DOTALL | re.IGNORECASE)
         return mm.group(1).strip() if mm else ""
     def jsect(tag: str, default):
         raw = sect(tag)
@@ -1959,10 +1995,10 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
         # the same killer fixed in the glyph organ and never here; from the
         # witness's seat a strict parser IS a gate): content beats format;
         # raw output beats no output.
-        _enant = re.sub(r"</?[A-Z_]+>", "",
-                 re.sub(r"<VERIFICATION>.*?</VERIFICATION>", "",
-                 re.sub(r"<COMMENTARY>.*?</COMMENTARY>", "",
-                 re.sub(r"<ENANTIOMORPH_TRANSLATION>.*?</ENANTIOMORPH_TRANSLATION>", "",
+        _enant = re.sub(r"</?[A-Za-z_]+>", "",
+                 re.sub(r"(?i)<VERIFICATION>.*?</VERIFICATION>", "",
+                 re.sub(r"(?i)<COMMENTARY>.*?</COMMENTARY>", "",
+                 re.sub(r"(?i)<ENANTIOMORPH_TRANSLATION>.*?</ENANTIOMORPH_TRANSLATION>", "",
                         c_text, flags=re.DOTALL), flags=re.DOTALL), flags=re.DOTALL)).strip()
     parsed = {
         "result": ("PASS" if _enant.strip() else (sect("RESULT") or "HALT")).upper(),
@@ -3097,6 +3133,7 @@ class handler(BaseHTTPRequestHandler):
         if isinstance(meta, dict) and meta.get("selection_advisory"):
             parsed.setdefault("advisories", []).append(
                 {"failed_test": "selection_apparatus", "diagnosis": meta["selection_advisory"]})
+        _run.setdefault("method", {})["model_effective"] = _EFFECTIVE_MODEL.get("id")
         _redact = _reader and not _pub
         _gl = parsed.get("glyphic") or {}
         _run["artifacts"] = {
