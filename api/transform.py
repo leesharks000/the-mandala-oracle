@@ -2288,132 +2288,157 @@ let me have these fragments"""),
 
 _LAST_EXEMPLARS = {"ids": []}
 
-_ABDUCT_TEMPLATE = """You receive demonstrations of a transformation family,
-an operator, and a source. The task is an inverse reasoning problem: infer
-from the source-transform pairs the latent generative operation, and
-perform that operation on the new source under the pressure of the
-operator.
+_ABDUCT_TEMPLATE = """You receive demonstrations of a transformation
+family, an operator, and a source. Infer from the source-transform pairs
+the latent generative operation; perform that operation on the new source
+under the pressure of the operator.
 
 THE DEMONSTRATIONS:
 
 {exemplars}
 
-Study what each transform does to its source: formal ancestry is preserved
--- lineation, cadence, syntactic gesture -- while address direction, tense,
-speaker and recipient, agency, ontology, quantity and countability,
-embodiment, event class, causal sequence, and the final consequence of the
-scene may all transform. The same operator opens unrelated worlds on
-different sources, and on the same source on different days. The changes
-remain exact not because they preserve the source's visible objects or
-scene grammar, but because they continue to answer to relations discovered
-in the source.
-
-THE OPERATOR acts relationally. Its name is a mnemonic surface; the
-generative force lies in the operator's relation to THIS source. THUNDER
-need not produce thunder, noise, or storms. FLAME need not produce fire or
-heat. BRIDE need not produce weddings, veils, or marriage imagery. MIRROR
-need not produce glass or reflections. BEAST need not simply replace humans
+THE OPERATOR acts relationally: its name is a mnemonic surface; the
+generative force lies in its relation to THIS source. THUNDER need not
+produce thunder, noise, or storms. FLAME need not produce fire or heat.
+BRIDE need not produce weddings, veils, or marriage imagery. MIRROR need
+not produce glass or reflections. BEAST need not simply replace humans
 with animals. SILENCE need not merely produce muteness, empty mouths, or
-quiet. The transformed register should arise from the altered relation,
-never be selected in advance from the operator's semantic field.
+quiet. The transformed register arises from the altered relation, never
+from the operator's semantic field.
 
-ON ROLES AND REALIZATIONS: do not decide in advance which of the source's
-features are inviolable. Conspicuous features -- an exact count, a named
-coordinate, an army, mounted carriers, apertures emitting substances, the
-destruction of a fraction -- are realizations of deeper relations (latency
-under constraint; transition at a threshold; magnitude becoming
-perceptible; transmission across a boundary), and an operator may transform
-any realization, including the apparent shape of the deeper relation
-itself. A count is not a large-number slot: it asserts that magnitude is
-discrete, enumerable, externally countable, communicable as a completed
-total, available to a witness standing outside it -- and every one of those
-assertions can transform. The army may cease to be an army; the count may
-cease to be a count; the witness may cease to stand outside the event;
-destruction may cease to be the terminal event class -- while the work
-remains answerable to the source through consequential correspondence.
+THE OPERATION: Produce a new realization in the source's language under
+the supplied relational pressure. The source is an ancestor, not a
+clause-by-clause scaffold. Let the first consequential linguistic
+alteration change what later nouns, actions, quantities, temporalities,
+and events are possible. Preserve no source object merely to demonstrate
+correspondence. Do not decide in advance which of the source's features
+are inviolable -- a count, a coordinate, an army, a witness standing
+outside the event: all realizations, all transformable. Do not explain the
+transform while composing, and do not organize the cast into the source's
+verse divisions -- write one continuous realization, roughly the source's
+extent.
 
-THE OPERATION: Enter the source under the pressure of the operator. Do not
-decide in advance which of the source's features are inviolable. Permit
-lexical, grammatical, rhythmic, quantitative, and ontological choices to
-alter the operative representation as the transform develops -- one
-word-level choice may reorganize the syntax, agency, temporality, quantity,
-and consequence available to later choices. Preserve relation to the source
-through consequential correspondence, not through retention of its visible
-scene skeleton. After the cast is complete, recover the law that the
-material transformation discovered.
+Output ONLY the cast itself: no title, no verse markers, no commentary, no
+explanation."""
 
-FORM: compose in the source's language, holding its lineation, verse
-markers, and critical sigla as formal ancestry (the marks in place; the
-readings they flag transform); follow with a line-for-line English facing,
-MANDATORY when the source is not English. A clause may swell where the
-material requires and return. The witness's question selects nothing and
-donates nothing. No analytic vocabulary inside the cast: no cost,
-bilateral, encoded, axis, vector, kernel, traversal, foreclosure, wager,
-relation, register, operator.
+_BLOOM_SYSTEM = """Read only this transformed text. It has begun to
+discover a world but has not yet permitted its discovery to reach every
+dimension. Rewrite the whole text, in its own language, so that every
+surviving entity, action, quantity, temporal structure, bodily relation,
+and consequence belongs natively to the world already emerging. Anything
+retained from any earlier text must now survive because this world
+independently requires it. Follow consequences rather than adding imagery;
+do not introduce a second theme; do not explain the law inside the text.
+
+After the rewritten text, recover the law this material discovered, and
+give a line-for-line English facing of the rewritten text.
 
 Emit ONLY, in this order:
-<ENANTIOMORPH>
-the transformed text, markers and sigla in place
-</ENANTIOMORPH>
+<CAST>
+the rewritten text, continuous, no verse markers
+</CAST>
 <ENANTIOMORPH_TRANSLATION>
-line-for-line English facing (empty ONLY for English sources)
+line-for-line English facing (empty ONLY for English)
 </ENANTIOMORPH_TRANSLATION>
-<RECOVERED_LAW>the law the completed material disclosed -- one to three
-sentences, discovered in the making, not planned before it</RECOVERED_LAW>
+<RECOVERED_LAW>one to three sentences -- the law discovered in the making,
+not planned before it</RECOVERED_LAW>
 <COMMENTARY>one sentence: what the transformation costs</COMMENTARY>"""
+
+_MARKER_RE = re.compile(r"\*\*(\d+:\d+)\*\*")
+
+
+def _resegment(text: str, markers: list[str]) -> str:
+    """Divide a continuous cast into the source's verse count, markers
+    restored, splitting at sentence boundaries, proportionally."""
+    text = text.strip()
+    if not markers or not text:
+        return text
+    n = len(markers)
+    parts = [p for p in re.split(r"(?<=[.;\u0387\u00b7!?])\s+", text) if p.strip()]
+    if len(parts) < n:
+        words = text.split()
+        k = max(1, len(words) // n)
+        parts = [" ".join(words[a * k:(a + 1) * k]) for a in range(n - 1)]
+        parts.append(" ".join(words[(n - 1) * k:]))
+    per = len(parts) / n
+    segs = []
+    for a in range(n):
+        lo = round(a * per)
+        hi = round((a + 1) * per) if a < n - 1 else len(parts)
+        segs.append(" ".join(parts[lo:max(hi, lo + 1)]).strip())
+    return "\n\n".join(f"**{m}** {s}" for m, s in zip(markers, segs) if s)
 
 
 def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
                             retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
-    """One generative act; law recovered retrospectively; exemplars sampled."""
+    """v2: continuous cast -> source-absent bloom -> resegmentation.
+    The witness's question never enters this pipeline: it selects the
+    passage and sequences operators upstream; here it would only refract
+    (verified 2026-07-05: three casts orbiting 'the unasked hour')."""
     pool = list(range(len(_EXEMPLAR_LIBRARY)))
-    sappho = next(i for i, (n, _) in enumerate(_EXEMPLAR_LIBRARY) if n.startswith("sappho"))
-    dreams = [i for i in pool if i != sappho]
+    sappho = next(k for k, (n, _) in enumerate(_EXEMPLAR_LIBRARY) if n.startswith("sappho"))
+    dreams = [k for k in pool if k != sappho]
     picks = [sappho] + sorted(secrets.SystemRandom().sample(dreams, 2))
-    _LAST_EXEMPLARS["ids"] = [_EXEMPLAR_LIBRARY[i][0] for i in picks]
-    exemplar_text = "\n\n----\n\n".join(_EXEMPLAR_LIBRARY[i][1] for i in picks)
-    system = _ABDUCT_TEMPLATE.format(exemplars=exemplar_text)
+    _LAST_EXEMPLARS["ids"] = [_EXEMPLAR_LIBRARY[k][0] for k in picks]
+    exemplar_text = "\n\n----\n\n".join(_EXEMPLAR_LIBRARY[k][1] for k in picks)
+    system1 = _ABDUCT_TEMPLATE.format(exemplars=exemplar_text)
 
     guidance = ""
     if halt_feedback:
         guidance = "\n\nWITNESS FEEDBACK ON THE PRIOR ATTEMPT: " + halt_feedback
-    u = (f"OPERATOR: {operator} — {OPERATORS[operator]}\n"
-         f"WITNESS QUESTION (relevance only): {invoking.strip()[:MAX_INVOKING_CHARS]}\n\n"
-         f"SOURCE:\n<<<\n{source_text}\n>>>"
-         f"{guidance}\n\nCast.")
-    c_text, c_stop = _stream_call(COMPILER_MODEL, system, u, COMPOSE_MAX, api_key, wall=150)
 
-    _enant = _tagsect(c_text, "ENANTIOMORPH")
-    if not _enant and c_text.strip():
-        _enant = re.sub(r"</?[A-Za-z_]+>", "",
-                 re.sub(r"(?i)<RECOVERED_LAW>.*?</RECOVERED_LAW>", "",
-                 re.sub(r"(?i)<COMMENTARY>.*?</COMMENTARY>", "",
-                 re.sub(r"(?i)<ENANTIOMORPH_TRANSLATION>.*?</ENANTIOMORPH_TRANSLATION>", "",
-                        c_text, flags=re.DOTALL), flags=re.DOTALL), flags=re.DOTALL)).strip()
-    self_law = _tagsect(c_text, "RECOVERED_LAW")
+    markers = _MARKER_RE.findall(source_text)
+
+    u1 = (f"OPERATOR: {operator} — {OPERATORS[operator]}\n\n"
+          f"SOURCE:\n<<<\n{source_text}\n>>>"
+          f"{guidance}\n\nCast.")
+    d_text, d_stop = _stream_call(COMPILER_MODEL, system1, u1, COMPOSE_MAX, api_key, wall=150)
+    draft = _tagsect(d_text, "CAST") or d_text
+    draft_clean = _MARKER_RE.sub("", draft).strip()
+    if not draft_clean:
+        return {"result": "HALT", "kernel": {}, "skeleton": {}, "_invoking": invoking,
+                "layer_a": {"beats": [], "geometry": {}}, "layer_b": {},
+                "enantiomorph": "", "enantiomorph_translation": "", "verification": {},
+                "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
+                                "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
+                                "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
+                "commentary": "",
+                "halt_diagnosis": {"failed_constraint": "CASTER", "failed_test": "draft",
+                                   "specific_diagnosis": f"the caster emitted nothing (stop={d_stop}) -- plumbing, not a rite verdict"},
+                "post_mortem": {"raw_output": d_text[:4000]}}
+
+    u2 = f"THE TEXT:\n<<<\n{draft_clean}\n>>>{guidance}\n\nBloom."
+    b_text, b_stop = _stream_call(COMPILER_MODEL, _BLOOM_SYSTEM, u2, COMPOSE_MAX, api_key, wall=150)
+    final_cont = _MARKER_RE.sub("", _tagsect(b_text, "CAST")).strip() or draft_clean
+    self_law = _tagsect(b_text, "RECOVERED_LAW")
+    enant = _resegment(final_cont, markers)
+    trans_cont = _tagsect(b_text, "ENANTIOMORPH_TRANSLATION")
+    trans = _resegment(_MARKER_RE.sub("", trans_cont).strip(), markers) if trans_cont.strip() else ""
+
     kernel = {"governing_law": "", "mutated_relation": self_law, "beats": ""}
     parsed = {
-        "result": "PASS" if _enant.strip() else "HALT",
+        "result": "PASS" if enant.strip() else "HALT",
         "kernel": kernel,
         "layer_a": {"beats": [], "geometry": {}},
         "layer_b": {},
         "_invoking": invoking,
-        "skeleton": {"self_recovered_law": self_law, "exemplars": _LAST_EXEMPLARS["ids"]},
-        "enantiomorph": _enant,
-        "enantiomorph_translation": _tagsect(c_text, "ENANTIOMORPH_TRANSLATION"),
+        "skeleton": {"draft": draft_clean, "final_continuous": final_cont,
+                     "self_recovered_law": self_law, "exemplars": list(_LAST_EXEMPLARS["ids"])},
+        "enantiomorph": enant,
+        "enantiomorph_translation": trans,
         "verification": {"identity": "PASS", "semantic_independence": "PASS",
                          "retrospective_containment": "PASS", "affect_traversal": "PASS",
                          "entailment": "PASS", "law_propagation": "PASS",
-                         "mode": "producer_side (abductive; law self-recovered)"},
+                         "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"},
         "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
                         "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
                         "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
-        "commentary": _tagsect(c_text, "COMMENTARY"),
+        "commentary": _tagsect(b_text, "COMMENTARY"),
         "halt_diagnosis": {"failed_constraint": "C4", "failed_test": "identity",
-                           "specific_diagnosis": f"nothing extractable (stop={c_stop}; {len(c_text)} chars)"},
+                           "specific_diagnosis": f"nothing extractable (stops={d_stop}/{b_stop})"},
     }
     if parsed["result"] != "PASS":
-        parsed["post_mortem"] = {"raw_output": c_text[:4000]}
+        parsed["post_mortem"] = {"raw_output": (d_text + "\n────\n" + b_text)[:4000]}
         return parsed
 
     hits = blacklist_hits(parsed["enantiomorph"], parsed["enantiomorph_translation"])
@@ -2425,9 +2450,6 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
     else:
         parsed["independent"]["blacklist"] = "PASS"
 
-    # the judge, repurposed: blind recovery vs the SELF-recovered law --
-    # the retrospective-lawfulness audit (did the material discover the
-    # law it claims), never obedience to a prescription.
     return _independent_gates(parsed, kernel, source_text, api_key,
                               advisory=(os.environ.get("V3_HARD_GATES") != "1"))
 
@@ -3672,7 +3694,7 @@ class handler(BaseHTTPRequestHandler):
                               ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
                     "model": COMPILER_MODEL,
                     "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
-                    "prompt_method": {"abduct": "abduct/v1 (exemplar-conditioned; law recovered retrospectively)",
+                    "prompt_method": {"abduct": "abduct/v2 (ancestor-not-scaffold; source-absent bloom; resegmented)",
                                        "beat": "pivot/v1 (parse-pivot-cascade-narrate)"}.get(
                                           (body.get("method") or os.environ.get("MANDALA_METHOD", "")),
                                           "slot-total/v1 (exemplar-framed, source-as-template)"),
