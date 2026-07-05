@@ -1,0 +1,94 @@
+{
+ "run_id": "RUN-20260705T201649Z-ddb942",
+ "schema": "run/v1",
+ "ts": "2026-07-05T20:16:49.914587+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "431874e0ed92a3e307d5a9124cf5991f19c38389",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/431874e0ed92a3e307d5a9124cf5991f19c38389",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/431874e0ed92a3e307d5a9124cf5991f19c38389/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "8f607ba3d119ae36",
+  "prompt_method": "beat/v1 (read-rotate-renarrate; source-blind composer)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "431874e0ed92",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "8f607ba3d119ae36",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four agents held in reserve are released at a precisely appointed temporal coordinate to destroy a fixed fraction of humanity, backed by an innumerable cavalry force whose terrible appearance the witness perceives and tallies.",
+   "mutated_relation": "The agents become debts that have matured — their long preparation is the accrual of interest against a specific due-date. The appointed time-coordinate (hour, day, month, year) is the compound cost of deferral itself: each unit of waiting another lien on the living. The one-third destruction is the fraction exacted as payment. The innumerable cavalry is the total expenditure mobilized to collect, and the witness's act of hearing the number is the audit of what has been spent. The terrible horses and armored riders are the visible price-tags of annihilation: fire, smoke, and sulfur are not weapons but the consumptive residue of value burned away. The vision-scene becomes a foreclosure.",
+   "beats": "1. Four agents, long prepared for a precise moment, are unbound.\n2. Their purpose: to kill one-third of humankind.\n3. The number of the mounted army is given as an incomprehensible myriad; the witness confirms he heard the figure.\n4. The witness sees the horses and riders in vision: riders wear breastplates of three ruinous colors; horses have predator-heads; from their mouths issue three destroying substances."
+  },
+  "enantiomorph": "**9:15** Καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν καὶ τὴν ἡμέραν καὶ τὸν μῆνα καὶ τὸν ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** Καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ἱππικοῦ δύο μυριάδες μυριάδων· καὶ ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** Καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ᾽ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+  "enantiomorph_translation": "**9:15** And the four angels were loosed, those who had been prepared for the hour and the day and the month and the year, so that they might kill a third of humankind.\n\n**9:16** And the number of the armies of the horsemen was two myriads of myriads; and I heard the number of them.\n\n**9:17** And thus I saw the horses in the vision and those seated upon them, having breastplates of fire and of hyacinth-blue and of brimstone; and the heads of the horses were as the heads of lions, and out of their mouths proceeds fire and smoke and sulfur.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "Differences are only minor textual-critical variants (added articles, δισμυριάδες vs δύο μυριάδες, added καί); no relational structure change.",
+   "back_translation": "",
+   "terminal_similarity": 1.0
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   },
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The transformed scene carries the weight of irreversibility itself — four silences broken open into a single hour that devours a third of everything breathing, and the witness can do nothing but confirm the number he heard and describe, in colors of ruin, what his seeing has permanently inscribed upon him.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
