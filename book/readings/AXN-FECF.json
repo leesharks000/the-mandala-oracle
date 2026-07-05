@@ -1,0 +1,98 @@
+{
+ "axn": "AXN:FECF.READING.🌿🌓🌟🌒💫🪐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "b04a4ccc4157010f",
+ "inscribed_at": "2026-07-05T17:34:09.703450+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Witness asks for the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_158_160",
+ "rotation": [
+  {
+   "operator": "SILENCE",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": "9:15–9:17",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐκρατήθησαν οἱ τέσσαρες ἄγγελοι οἱ ἀφωνισμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα μὴ φθέγξωνται τὸ τρίτον τῶν ῥημάτων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν παρατάξεων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἔμεινα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως ἔγνων τοὺς ἵππους ἐν τῇ ἐρημίᾳ καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας χλωμοὺς καὶ τεφρώδεις καὶ ὠχριῶντας· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ ἀνδριάντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀὴρ καὶ κενὸν καὶ σκιά.",
+   "layer_a_declaration": {
+    "beats": [
+     "9:15 four angels loosed — prepared for the hour and day and month and year — to kill the third of humanity",
+     "9:16 the number of cavalry armies: two myriads of myriads — I heard their number",
+     "9:17 vision: horses and riders — breastplates of fire, hyacinth, sulfur — horses' heads as lions' heads — from mouths issues fire and smoke and sulfur"
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "ἐλύθησαν (were loosed)": "were not answered / remained unloosed",
+     "τέσσαρες ἄγγελοι": "four angels",
+     "ἡτοιμασμένοι (prepared)": "prepared / held in readiness",
+     "εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν": "for the hour and day and month and year",
+     "ἵνα ἀποκτείνωσιν": "purpose: to kill",
+     "τὸ τρίτον τῶν ἀνθρώπων": "the third of humanity",
+     "ἀριθμός": "number / count",
+     "στρατευμάτων τοῦ ἱππικοῦ": "cavalry armies",
+     "δισμυριάδες μυριάδων": "two myriads of myriads (200,000,000)",
+     "ἤκουσα τὸν ἀριθμὸν αὐτῶν": "I heard their number",
+     "εἶδον (I saw)": "I saw / vision-act",
+     "ἵππους": "horses",
+     "καθημένους ἐπ' αὐτῶν": "riders seated upon them",
+     "θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις": "breastplates of fire and hyacinth and sulfur",
+     "κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων": "heads of horses as heads of lions",
+     "ἐκ τῶν στομάτων αὐτῶν": "from their mouths",
+     "πῦρ καὶ καπνὸς καὶ θεῖον": "fire and smoke and sulfur",
+     "ἐκπορεύεται": "issues forth / proceeds"
+    },
+    "axis": "The non-response that readiness-for-a-scheduled-hour forecloses: the hour that never comes, the loosing that never answers",
+    "foreclosure": "The source forecloses the possibility that the prepared hour passes without the angels being loosed — that readiness receives silence instead of signal.",
+    "wager": "If the hour answers, the cost is a third of humanity; if it does not answer, the cost is the angels' readiness itself — preparation becomes its own consumption.",
+    "affect": "The vertigo of a precision that refers to nothing — calendrical exactness (hour, day, month, year) suspended over a void where no command arrives."
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are released (ἐλύθησαν / ἡτοιμασμένοι) in order to kill (ἀποκτείνωσιν) a third of humanity, whereas in Text B they are restrained (ἐκρατήθησαν / ἀφωνισμένοι) so that they may NOT speak (μὴ φθέγξωνται) a third of the words — the direction of the angels' action is reversed from unleashing destruction to being silenced/suppressed, and the destructive outpouring (fire, smoke, brimstone) becomes emptiness (air, void, shadow).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: angels prepared/released for destructive action become angels held back in silence/emptiness; readiness no longer leads to release, the event is replaced by absence, and outpouring becomes void.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the reversed relation: the horses' heads are like statues (lifeless) and emit air, void, and shadow instead of fire, smoke, and brimstone — the suppression/emptiness inversion holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.514
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The angels no longer loose destruction but are themselves held in muteness, the cavalry amasses as weight without a charge, and the witness's hearing becomes waiting — everything that was command and slaughter now persists as the pale, ashen mass of readiness that never breaks into its own event."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T17:34:09.703450+00:00"
+}
