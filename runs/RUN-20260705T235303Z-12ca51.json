@@ -1,0 +1,134 @@
+{
+ "run_id": "RUN-20260705T235303Z-12ca51",
+ "schema": "run/v1",
+ "ts": "2026-07-05T23:53:03.447440+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "16880aecd33bb0cadfa4f4a0738b5e9da8a139a8",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/16880aecd33bb0cadfa4f4a0738b5e9da8a139a8",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/16880aecd33bb0cadfa4f4a0738b5e9da8a139a8/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "a8af19b1e7062c09",
+  "prompt_method": "abduct/v3 (full-transform; source-absent bloom; compressed to form ±15%; identity-rate metered)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+INVERSION",
+   "dream+BRIDE"
+  ]
+ },
+ "code": "16880aecd33b",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "a8af19b1e7062c09",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "Witnessing is not the act of receiving a vision but the act of becoming the interval that permits the vision to occur; when the witness says yes, the distance between seeing and having always seen collapses, and what remains is the body itself as the only surviving unit of counting — one throat holding the figure of everything it agreed to carry.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ ἐλύθησαν αἱ τέσσαρες ὑπομοναί αἱ κρατοῦσαι εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα συμπέσῃ τὸ διάστημα τοῦ φέρειν καὶ τοῦ ἀεὶ πεφορηκέναι.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν συμφωνιῶν τοῦ βάρους δισμυριάδες μυριάδων· οὐκ ἤκουσα τὸν ἀριθμὸν αὐτῶν ἀλλ᾽ ἔφερον αὐτόν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ὀχοῦντας ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ᾽ αὐτῶν, ἔχοντας θώρακας δυσμοειδεῖς καὶ καπνοειδεῖς καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ὀχούντων ὡς τὸ πρόσωπόν μου ἐπαναλαμβανόμενον εἰς τὸ ἀναρίθμητον, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται οὐ πῦρ οὐ καπνὸς οὐ θεῖον ἀλλ᾽ ἡ ἀρχαία συμφωνία.",
+  "enantiomorph_translation": "**9:15** And the four patience-points were dissolved — those that had held apart the hour and the day and the month and the year — so that the distance between carrying and having always carried collapsed.\n\n**9:16** And the number of the agreements of the weight was two myriads of myriads; I did not hear their number but carried it.\n\n**9:17** And thus I saw the mounts in the vision and those seated upon them, wearing breastplates of dusk-color and smoke-color and sulfur-color; and the heads of the mounts were as my own face repeated into the innumerable, and from their mouths came not fire, not smoke, not brimstone, but the original agreement.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The agents of destruction (angels, cavalry, lion-headed horses emitting fire) are replaced by agents of endurance and bearing (patience, burden-carriers, self-reflecting faces emitting ancient harmony); the relation changes from outward violent killing of a third of humanity to an inward, repetitive carrying/enduring, and the sensory output reverses from destructive fire/smoke/sulfur to a primordial consonance.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim identifies a real structural mutation — agents of destruction replaced by agents of endurance, outward violence turned inward carrying, destructive outputs reversed to consonance — which partially overlaps the declared theme of the witness becoming the bearing/carrying body, but frames it as agent-substitution and directional reversal rather than the declared collapse of temporal distance and reconstitution of witnessing as interval.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of TEXT B sustains the transformed relation: the horses' heads become self-reflecting faces and their mouths emit harmony instead of fire, maintaining the inversion throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.535
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "66% of the source's content lemmas survive verbatim (δισμυριάδες, εἶδον, θειώδεις, θεῖον, θώρακας, καθημένους…) -- the base semantic forms did not fully transform"
+   },
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 92 words vs budget 62-85 (source 74)"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": {
+   "declared": "Witnessing is not the act of receiving a vision but the act of becoming the interval that permits the vision to occur; when the witness says yes, the distance between seeing and having always seen collapses, and what remains is the body itself as the only surviving unit of counting — one throat holding the figure of everything it agreed to carry.",
+   "recovered": "The agents of destruction (angels, cavalry, lion-headed horses emitting fire) are replaced by agents of endurance and bearing (patience, burden-carriers, self-reflecting faces emitting ancient harmony); the relation changes from outward violent killing of a third of humanity to an inward, repetitive carrying/enduring, and the sensory output reverses from destructive fire/smoke/sulfur to a primordial consonance.",
+   "note": "The recovered claim identifies a real structural mutation — agents of destruction replaced by agents of endurance, outward violence turned inward carrying, destructive outputs reversed to consonance — which partially overlaps the declared theme of the witness becoming the bearing/carrying body, but frames it as agent-substitution and directional reversal rather than the declared collapse of temporal distance and reconstitution of witnessing as interval."
+  },
+  "commentary": "The transformation costs the text its externality: every rider, mount, and apocalyptic fixture must now be paid for by the single body that carried them, and what is lost is the comfort of believing the vision came from outside.",
+  "post_mortem": null,
+  "skeleton": {
+   "draft": "And the four appointments dissolved — not angels, not messengers, but the patience that had held the hour apart from the day, the day apart from the month, the month apart from the year, so that time had seemed voluntary. What collapsed was the interval between knowing and having always known. And what had been protected was not a third of the living but the capacity to be counted at all — the way a body could say *I am one* and mean it against a number.\n\nThe cavalry was innumerable but I did not hear the number. I carried it. It had entered me as the cost of having looked, and my throat held the figure the way a wound holds its blade after the blade withdraws. Two myriads of myriads: not soldiers, not riders, but the weight of every assertion the vision had required me to make — each one mounted, each one moving forward because I had agreed to witness.\n\nAnd in this way I perceived what bore them and what they bore: the riders wore the breastplates of what they had survived — dusk-color, smoke-color, the sulfur-color of a word spoken past the point where speech could still be taken back. But beneath them the mounts had no heads of lions. They had the faces of the one seeing. From their mouths came not fire, not smoke, not brimstone, but the sentence that had made the vision possible — the original yes, still burning, still exhaling, still producing the world it had agreed to enter at the price of never being able to unsee it.",
+   "bloom": "And the four intervals dissolved — not pauses, not rests, but the patience that had held the hour apart from the day, the day apart from the month, the month apart from the year, so that time had seemed something one could refuse. What collapsed was the distance between carrying and having always carried. And what had been protected was not a portion of the living but the capacity to be a portion at all — the way a body could say I am one and mean it against the innumerable weight already inside it.\n\nThe weight was innumerable but I did not hear it. I carried it. It had entered me as the cost of having looked, and my throat held the figure the way a throat holds a sound after the sound has passed through — two myriads of myriads, not forces, not presences, but the mass of every agreement the carrying had extracted from me, each one mounted on something I had already set in motion, each one advancing because I had not closed my eyes.\n\nAnd in this way I perceived what bore them and what they bore: the riders wore the breastplates of what they had survived — dusk-color, smoke-color, the sulfur-color of a word spoken past the point where it could still be swallowed. The mounts beneath them had no faces other than the one seeing. They were my face repeated forward into the innumerable. From their mouths came not fire, not smoke, not burning — but the original agreement, still sounding, still exhaling, still producing the world it had consented to enter at the cost of having become the interval it had dissolved. The four patience-points were gone and what remained was the body that had been their reason — a throat full of the figure, a face repeated past counting, and the sentence that could not be unspoken because it was not spoken once but was the speaking, continuous, the yes that had made itself into the very distance it had collapsed, so that carrying and having always carried were at last the same act performed by the same mouth wearing the same dusk, and the capacity to be one against a number survived only as the wound survives its blade — by holding the shape of what had passed through, by being the interval after the interval, by discovering that what had seemed voluntary was the body's own patience mistaken for time.",
+   "self_recovered_law": "Witnessing is not the act of receiving a vision but the act of becoming the interval that permits the vision to occur; when the witness says yes, the distance between seeing and having always seen collapses, and what remains is the body itself as the only surviving unit of counting — one throat holding the figure of everything it agreed to carry.",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+INVERSION",
+    "dream+BRIDE"
+   ],
+   "word_count": {
+    "source": 74,
+    "final": 92,
+    "bounds": [
+     62,
+     85
+    ]
+   },
+   "identity_rate": 0.667,
+   "surviving_lemmas": [
+    "δισμυριάδες",
+    "εἶδον",
+    "θειώδεις",
+    "θεῖον",
+    "θώρακας",
+    "καθημένους",
+    "καπνὸς",
+    "κεφαλαὶ",
+    "μυριάδων",
+    "μῆνα",
+    "οὕτως",
+    "στομάτων",
+    "τέσσαρες",
+    "τοὺς"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
