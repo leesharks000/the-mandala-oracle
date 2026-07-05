@@ -1276,6 +1276,16 @@ LAWS:
   bearing-costs (the crown as what it deducts, the witness as what was
   spent, the promise as the lien it places); the axis rebuilds what things
   ARE, and the operator's name stays in the metadata where it lives.
+- THE ROSTER (MANUS, 2026-07-05: "the ten thousand angels should be
+  different"): nouns are where the ontology lives. The dramatis personae --
+  the angels, the horses, the riders, the armies, whatever beings the source
+  fields -- must be re-derived as the transformed world's OWN beings, never
+  the source's beings wearing new verbs and colors. An entity that survives
+  with only its actions and qualities altered is a survivor, not a
+  transform. Exchange the noun-roster first; let verbs and qualities follow
+  from what the new beings are. Counts, numerals, and temporal frames are
+  spine -- the four stays four, the myriads stay myriads -- but WHAT is
+  counted must belong to the new world.
 - SLOT-TOTAL: every content slot refilled from the operator's world under the
   declared law; verbatim content lines are failures; the final unit is where
   the law must land hardest, never a reversion toward the source's world.
