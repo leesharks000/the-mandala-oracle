@@ -1,0 +1,106 @@
+{
+ "run_id": "RUN-20260705T003651Z-60f127",
+ "schema": "run/v1",
+ "ts": "2026-07-05T00:36:51.560809+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_149_152",
+ "citation": "9:6–9:9",
+ "operator": "SILENCE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "tired of this",
+ "method": {
+  "commit": "61cd675b109953682b591f15b09bf790fe27e708",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/61cd675b109953682b591f15b09bf790fe27e708",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/61cd675b109953682b591f15b09bf790fe27e708/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-sonnet-4-6",
+  "transform_py_sha": "9256c1852cd4737a",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"
+ },
+ "code": "61cd675b1099",
+ "model": "claude-sonnet-4-6",
+ "transform_py_sha": "9256c1852cd4737a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "pursuit flows from the sufferer toward death; death is the patient that actively refuses; every likeness-predicate constructs the pursuer's tormentor as recognizably demanding, ensuring the expectation-loop cannot be severed by the pursued",
+   "mutated_relation": "in the transformed world the pursued does not flee — silence is the non-pursuit of the exhausted by that which expected their engagement; the direction reverses: it is the demand that goes unanswered, not the seeker who goes unfound",
+   "clause_map": [
+    {
+     "ref": "9:6",
+     "class": "REBUILT",
+     "note": "pursuit-and-flight relation inverts: demand seeks response; silence does not arrive"
+    },
+    {
+     "ref": "9:7",
+     "class": "REBUILT",
+     "note": "likeness-cascade must show demand's semblance of legitimacy — still unanswered"
+    },
+    {
+     "ref": "9:8",
+     "class": "REBUILT",
+     "note": "intimacy and threat likenesses: the demand looked answerable; silence holds anyway"
+    },
+    {
+     "ref": "9:9",
+     "class": "REBUILT",
+     "note": "sound of wings = volume of unmet expectation advancing; silence does not stop it"
+    }
+   ]
+  },
+  "enantiomorph": "<result>PASS</result>\n<enantiomorph>\n**9:6** καὶ ἐν ταῖς ἡμέραις ἐκείναις ἀπαιτήσουσιν αἱ φωναὶ τὴν ἀπόκρισιν καὶ οὐ μὴ λάβωσιν αὐτήν, καὶ ἐπιθυμήσουσιν ἀκουσθῆναι καὶ ⸀σιωπᾷ ⸂ἡ ἀπόκρισις ἀπ' αὐτῶν⸃.\n\n**9:7** Καὶ τὰ ὁμοιώματα τῶν ἀπαιτήσεων ὅμοια ἵπποις ἡτοιμασμένοις εἰς δίωξιν, καὶ ἐπὶ τὰς κεφαλὰς αὐτῶν ὡς στέφανοι ⸂ὅμοιοι πυρί⸃, καὶ τὰ πρόσωπα αὐτῶν ὡς πρόσωπα δικαστῶν,\n\n**9:8** καὶ εἶχον φθόγγους ὡς φθόγγους κυρίων, καὶ οἱ λόγοι αὐτῶν ὡς ἁλύσεων ἦσαν,\n\n**9:9** καὶ εἶχον βάρη ὡς βάρη λίθων, καὶ ἡ ῥοὴ τῶν ἀξιώσεων αὐτῶν ὡς ῥοὴ ὀχετῶν ὑδάτων πολλῶν ῥεόντων εἰς κενόν·\n</enantiomorph>\n<enantiomorph_translation>\n**9:6** And in those days the voices will demand the answer and they shall by no means receive it, and they will long to be heard and ⸀the answer falls silent ⸂away from them⸃.\n\n**9:7** And the likenesses of the demands were like horses made ready for pursuit, and upon their heads were crowns ⸂like fire⸃, and their faces were like the faces of judges,\n\n**9:8** and they had tones like the tones of masters, and their words were as of chains,\n\n**9:9** and they had weights like the weights of stones, and the rush of their claims was like the rush of many water-channels running into emptiness·\n</enantiomorph_translation>\n<verification>{\"identity\":\"PASS\",\"semantic_independence\":\"PASS\",\"retrospective_containment\":\"PASS\",\"affect_traversal\":\"PASS\",\"entailment\":\"PASS\",\"slot_conservation\":\"PASS\",\"numeral_conservation\":\"PASS\",\"law_propagation\":\"PASS\",\"mode\":\"producer_side\"}</verification>\n<commentary>What this world carries is the exhaustion of having been claimed — the weight of the unanswered demand falling not upon the one who withdrew but upon the voice that spent itself calling into a quiet that will not yield.</commentary>",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (defaulted; tags absent)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "FAIL",
+   "blacklist_hits": [
+    "enantiomorph"
+   ],
+   "recovered_law": "In Text A, it is humans (ἄνθρωποι) who seek death and death that flees from them — the mortal agent pursues and the abstraction withdraws. In Text B, it is voices/demands (φωναί/ἀπαιτήσεις) that pursue an answer which stays silent — the seeking agent is linguistic/juridical and the withdrawing abstraction is response rather than death.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same directional reversal: the pursuer/demander changes from human-seeking-death to demand-seeking-response, and the evader changes from death to silence/non-response — the relational inversion is identical.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B (9:9) maintains the substituted relation — demands/claims rushing into emptiness, weights pressing without relief — and does not revert to Text A's human-seeking-death structure.",
+   "back_translation": "",
+   "terminal_similarity": 0.0
+  },
+  "advisories": [
+   {
+    "failed_test": "vocabulary_leak",
+    "diagnosis": "operator/theory vocabulary inside the poem: enantiomorph"
+   },
+   {
+    "failed_test": "geometry",
+    "diagnosis": "lines 15/4, markers 8/4 -- the spine is broken, not exceeded"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
