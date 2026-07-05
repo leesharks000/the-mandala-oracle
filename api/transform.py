@@ -2392,7 +2392,7 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
     u1 = (f"OPERATOR: {operator} — {OPERATORS[operator]}\n\n"
           f"SOURCE:\n<<<\n{source_text}\n>>>"
           f"{guidance}\n\nCast.")
-    d_text, d_stop = _stream_call(COMPILER_MODEL, system1, u1, COMPOSE_MAX, api_key, wall=150)
+    d_text, d_stop = _stream_call(COMPILER_MODEL, system1, u1, 2000, api_key, wall=105)
     draft = _tagsect(d_text, "CAST") or d_text
     draft_clean = _MARKER_RE.sub("", draft).strip()
     if not draft_clean:
@@ -2408,7 +2408,7 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
                 "post_mortem": {"raw_output": d_text[:4000]}}
 
     u2 = f"THE TEXT:\n<<<\n{draft_clean}\n>>>{guidance}\n\nBloom."
-    b_text, b_stop = _stream_call(COMPILER_MODEL, _BLOOM_SYSTEM, u2, COMPOSE_MAX, api_key, wall=150)
+    b_text, b_stop = _stream_call(COMPILER_MODEL, _BLOOM_SYSTEM, u2, 2400, api_key, wall=95)
     final_cont = _MARKER_RE.sub("", _tagsect(b_text, "CAST")).strip() or draft_clean
     self_law = _tagsect(b_text, "RECOVERED_LAW")
     enant = _resegment(final_cont, markers)
