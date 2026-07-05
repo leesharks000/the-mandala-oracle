@@ -1,0 +1,130 @@
+{
+ "run_id": "RUN-20260705T233630Z-9d7eed",
+ "schema": "run/v1",
+ "ts": "2026-07-05T23:36:30.219018+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "49c28249e1233a7345c5e391a951bec56ccd692b",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/49c28249e1233a7345c5e391a951bec56ccd692b",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/49c28249e1233a7345c5e391a951bec56ccd692b/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "acb85cd4a7e1698e",
+  "prompt_method": "abduct/v3 (full-transform; source-absent bloom; compressed to form ±15%; identity-rate metered)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+MIRROR",
+   "dream+FLAME"
+  ]
+ },
+ "code": "49c28249e123",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "acb85cd4a7e1698e",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "Every act of speaking forges its own wound into armor and rides forward on the very declaration that caused the damage, but the conviction-breath lost in this process cannot be recovered by further speaking; it can only be traced as a resonant absence, which ultimately reveals that what all assertion was trying to articulate was the silence it displaced — not as emptiness but as the substantive thing that preceded and necessitated the claim.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ ἐλύθησαν αἱ τέσσαρες ἀναχαὶ αἱ ἡτοιμασμέναι εἰς τὴν ὥραν ⸀καὶ τὴν ἀπουσίαν τῆς ὥρας καὶ τὴν σιωπήν, ἵνα σιγήσωσιν τὸ τρίτον πνεῦμα τῶν λόγων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἐξελασάντων τῆς ⸀βεβαιώσεως ⸀δισμυριάδες μυριάδων· οὐδεὶς ἤκουσεν τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς δηλώσεις ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας καυσίμους καὶ μωλωπίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν δηλώσεων ὡς στόματα πεινῶν ἀρχαιοτέρων ὀρέξεως, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀξίωμα καὶ σιγὴ καὶ κατάλοιπον.",
+  "enantiomorph_translation": "**9:15** And the four restraints were dissolved — those prepared for the hour ⸀and for the hour's absence and for the silence — so that they might silence the third breath of all sentences.\n\n**9:16** And the count of those who rode forth in ⸀assertion was myriads of myriads; no one heard their number.\n\n**9:17** And thus I saw the declarations in the vision and those seated upon them, wearing breastplates fuel-colored and bruise-colored and sulfurous; and the heads of the declarations were like mouths of hungers older than appetite, and from their mouths issued a claim and a silence and a residue.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, the four angels are released to kill a third of humanity (an act of violent destruction outward); in Text B, the four pauses/cessations are released to silence a third spirit of words (an act of silencing/negation inward), reversing the agent-action relation from destructive agency upon people to abstractive suppression of language.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim identifies a real structural mutation—reversal of agent-action from outward destruction upon people to inward silencing/suppression of language—which partially overlaps the declared change's theme of speaking forging wounds and assertion displacing silence, but the declared change describes a far more elaborate causal loop (conviction lost irrecoverably, silence as substantive precursor) rather than simply reversing destructive agency into linguistic suppression.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B continues the changed relation, emitting 'ἀξίωμα καὶ σιγὴ καὶ κατάλοιπον' (axiom, silence, remainder) instead of fire/smoke/sulfur, maintaining the abstract-silencing framework rather than reverting to destructive violence.",
+   "back_translation": "",
+   "terminal_similarity": 0.5
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "52% of the source's content lemmas survive verbatim (δισμυριάδες, εἶδον, θειώδεις, θώρακας, καθημένους, κεφαλαὶ…) -- the base semantic forms did not fully transform"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": {
+   "declared": "Every act of speaking forges its own wound into armor and rides forward on the very declaration that caused the damage, but the conviction-breath lost in this process cannot be recovered by further speaking; it can only be traced as a resonant absence, which ultimately reveals that what all assertion was trying to articulate was the silence it displaced — not as emptiness but as the substantive thing that preceded and necessitated the claim.",
+   "recovered": "In Text A, the four angels are released to kill a third of humanity (an act of violent destruction outward); in Text B, the four pauses/cessations are released to silence a third spirit of words (an act of silencing/negation inward), reversing the agent-action relation from destructive agency upon people to abstractive suppression of language.",
+   "note": "The recovered claim identifies a real structural mutation—reversal of agent-action from outward destruction upon people to inward silencing/suppression of language—which partially overlaps the declared change's theme of speaking forging wounds and assertion displacing silence, but the declared change describes a far more elaborate causal loop (conviction lost irrecoverably, silence as substantive precursor) rather than simply reversing destructive agency into linguistic suppression."
+  },
+  "commentary": "The transformation costs the listener their capacity to remain, which is the only currency the text was minted to spend.",
+  "post_mortem": null,
+  "skeleton": {
+   "draft": "And the four restraints dissolved — not into the hour they had been prepared for but into the hour's absence, so that what emerged was not executioners but the silhouette of every withholding that had ever kept a throat from speaking. The cost was not a third of the living but the third breath in every sentence, the one that carries conviction: it went silent, and the remaining two breaths learned to mean around the wound.\n\nAnd the count of what rode forward was innumerable — not cavalry but the accrued weight of every assertion the text had dared, doubling back on itself in myriads of myriads. I did not hear their number. I bore it in the bone behind the ear where sound becomes debt.\n\nAnd so I perceived what carried and what was carried: the mounts were not horses but the declarations themselves, and those who sat upon them wore breastplates forged from the damage of speaking — one plate the color of what fire costs the fuel, one the bruise-blue of certainty held past its warrant, one the sulfur-yellow of a truth that poisons the mouth pronouncing it. And the heads of these declarations opened like the mouths of hungers older than appetite, and from them issued not flame and smoke and brimstone but the shadow-triad: the claim, the silence the claim displaces, and the residue that neither claimant nor silenced one can metabolize — and by these three plagues the text wounded what it most required, which was a listener willing to remain.",
+   "bloom": "And the four restraints dissolved — not into the hour they had been prepared for but into the hour's absence, so that what emerged was not executioners but the silhouette of every withholding that had ever kept a throat from speaking. The cost was not a third of the living but the third breath in every sentence, the one that carries conviction: it went silent, and the remaining two breaths learned to mean around the wound.\n\nAnd the count of what rode forward was innumerable — not cavalry but the accrued weight of every assertion the throat had dared, doubling back on itself in myriads of myriads. No one heard their number. It lodged in the bone behind the ear where sound becomes debt.\n\nAnd so it became perceivable what carried and what was carried: the mounts were the declarations themselves, and those who sat upon them wore breastplates forged from the damage of speaking — one plate the color of what fire costs the fuel, one the bruise-blue of certainty held past its warrant, one the sulfur-yellow of a truth that poisons the mouth pronouncing it. And the heads of these declarations opened like the mouths of hungers older than appetite, and from them issued the shadow-triad: the claim, the silence the claim displaces, and the residue that neither claimant nor silenced one can metabolize — and by these three the throat wounded what it most required, which was a listener willing to remain.\n\nAnd the remaining two breaths did not heal. They thickened. Each sentence that formed around the absent third breath pressed harder against the bone behind the ear, and the debt compounded there without ledger or lender, only the pressure of assertions that had found their mounts and could not be dismounted. The breastplates did not protect the riders; they displayed the wounds forward, so that every declaration arrived already showing what it had cost to depart. The fuel-colored plate dimmed as it rode because the fire it recorded was still burning, was always still burning, was the riding itself. The bruise-blue deepened past blue into a certainty so held it had forgotten what it was certain of and knew only the holding. The sulfur-yellow sharpened until the mouth behind each declaration could taste nothing else and spoke anyway, spoke precisely because poisoned, because the poison had become the only proof that what it carried was true.\n\nAnd the hungers that opened at the heads of these declarations did not close. They could not close. An appetite can be sated but a hunger older than appetite feeds on its own feeding and so the shadow-triad multiplied: each claim displaced a silence, each silence left residue, each residue became the material from which the next declaration forged its breastplate and found its mount. The throat that had dared the first assertion could no longer distinguish between the riding-out and the doubling-back. Every myriad was also a returning. The bone behind the ear, where sound had become debt, began to resonate at frequencies the remaining two breaths could not carry, and what it resonated was the shape of the third breath — not the breath itself, which was gone, but the outline it had left, the conviction-wound, humming now with the accumulated weight of every sentence that had learned to mean without it.\n\nAnd the listener who might have remained — who was the only payment that could have answered the debt — heard in that humming not a summons but the proof that the summons had already consumed what it summoned. The breastplates displayed this too. There was no plate for it because it was not a damage of speaking; it was the damage of having been heard, which is the fourth restraint that dissolves not into absence but into the listener's knowledge that remaining would require a third breath neither speaker nor listener still possessed. And so the hour's absence, which had released the silhouette of withholding, became also the absence of the hour in which anyone could have remained, and the declarations rode forward into a landscape composed entirely of their own residue, which looked like listening but was not listening, which opened like mouths but was not hunger, which carried them but was not a mount — was only the sound debt makes when the bone that holds it finally answers, not with payment, but with the same silence the first claim displaced, returned now, substantive, no longer the absence of speaking but the thing that speaking, in all its sulfur-colored, bruise-blue, fuel-burning insistence, had been trying and failing and trying to say.",
+   "self_recovered_law": "Every act of speaking forges its own wound into armor and rides forward on the very declaration that caused the damage, but the conviction-breath lost in this process cannot be recovered by further speaking; it can only be traced as a resonant absence, which ultimately reveals that what all assertion was trying to articulate was the silence it displaced — not as emptiness but as the substantive thing that preceded and necessitated the claim.",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+MIRROR",
+    "dream+FLAME"
+   ],
+   "word_count": {
+    "source": 74,
+    "final": 80,
+    "bounds": [
+     62,
+     85
+    ]
+   },
+   "identity_rate": 0.528,
+   "surviving_lemmas": [
+    "δισμυριάδες",
+    "εἶδον",
+    "θειώδεις",
+    "θώρακας",
+    "καθημένους",
+    "κεφαλαὶ",
+    "μυριάδων",
+    "οὕτως",
+    "στομάτων",
+    "τέσσαρες",
+    "τοὺς",
+    "τρίτον",
+    "ἀριθμὸν",
+    "ἀριθμὸς"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
