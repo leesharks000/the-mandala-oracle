@@ -1,0 +1,104 @@
+{
+ "axn": "AXN:FEC2.READING.🌓💫🪐🌓🌗🌕",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "ee38da48da31fd58",
+ "inscribed_at": "2026-07-05T00:37:41.018430+00:00",
+ "question_digest": "sha256:75ebbdb6928cca03a3dac15bdd8f0ae25c6942cb77d4467cccbe3cc535e6e58e",
+ "question_gloss": "I'd be happy to help you create a neutral gloss, but I need you to provide the witness's question first. Could you share what question you'd like me to summariz",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_149_152",
+ "rotation": [
+  {
+   "operator": "SILENCE",
+   "source_passage": "**9:6** καὶ ἐν ταῖς ἡμέραις ἐκείναις ζητήσουσιν οἱ ἄνθρωποι τὸν θάνατον καὶ οὐ μὴ εὑρήσουσιν αὐτόν, καὶ ἐπιθυμήσουσιν ἀποθανεῖν καὶ ⸀φεύγει ⸂ὁ θάνατος ἀπ’ αὐτῶν⸃.\n\n**9:7** Καὶ τὰ ὁμοιώματα τῶν ἀκρίδων ὅμοια ἵπποις ἡτοιμασμένοις εἰς πόλεμον, καὶ ἐπὶ τὰς κεφαλὰς αὐτῶν ὡς στέφανοι ⸂ὅμοιοι χρυσῷ⸃, καὶ τὰ πρόσωπα αὐτῶν ὡς πρόσωπα ἀνθρώπων,\n\n**9:8** καὶ εἶχον τρίχας ὡς τρίχας γυναικῶν, καὶ οἱ ὀδόντες αὐτῶν ὡς λεόντων ἦσαν,\n\n**9:9** καὶ εἶχον θώρακας ὡς θώρακας σιδηροῦς, καὶ ἡ φωνὴ τῶν πτερύγων αὐτῶν ὡς φωνὴ ἁρμάτων ἵππων πολλῶν τρεχόντων εἰς πόλεμον·",
+   "citation": "9:6–9:9",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "<result>PASS</result>\n<enantiomorph>\n**9:6** καὶ ἐν ταῖς ἡμέραις ἐκείναις ἀπαιτήσουσιν αἱ φωναὶ τὴν ἀπόκρισιν καὶ οὐ μὴ λάβωσιν αὐτήν, καὶ ἐπιθυμήσουσιν ἀκουσθῆναι καὶ ⸀σιωπᾷ ⸂ἡ ἀπόκρισις ἀπ' αὐτῶν⸃.\n\n**9:7** Καὶ τὰ ὁμοιώματα τῶν ἀπαιτήσεων ὅμοια ἵπποις ἡτοιμασμένοις εἰς δίωξιν, καὶ ἐπὶ τὰς κεφαλὰς αὐτῶν ὡς στέφανοι ⸂ὅμοιοι πυρί⸃, καὶ τὰ πρόσωπα αὐτῶν ὡς πρόσωπα δικαστῶν,\n\n**9:8** καὶ εἶχον φθόγγους ὡς φθόγγους κυρίων, καὶ οἱ λόγοι αὐτῶν ὡς ἁλύσεων ἦσαν,\n\n**9:9** καὶ εἶχον βάρη ὡς βάρη λίθων, καὶ ἡ ῥοὴ τῶν ἀξιώσεων αὐτῶν ὡς ῥοὴ ὀχετῶν ὑδάτων πολλῶν ῥεόντων εἰς κενόν·\n</enantiomorph>\n<enantiomorph_translation>\n**9:6** And in those days the voices will demand the answer and they shall by no means receive it, and they will long to be heard and ⸀the answer falls silent ⸂away from them⸃.\n\n**9:7** And the likenesses of the demands were like horses made ready for pursuit, and upon their heads were crowns ⸂like fire⸃, and their faces were like the faces of judges,\n\n**9:8** and they had tones like the tones of masters, and their words were as of chains,\n\n**9:9** and they had weights like the weights of stones, and the rush of their claims was like the rush of many water-channels running into emptiness·\n</enantiomorph_translation>\n<verification>{\"identity\":\"PASS\",\"semantic_independence\":\"PASS\",\"retrospective_containment\":\"PASS\",\"affect_traversal\":\"PASS\",\"entailment\":\"PASS\",\"slot_conservation\":\"PASS\",\"numeral_conservation\":\"PASS\",\"law_propagation\":\"PASS\",\"mode\":\"producer_side\"}</verification>\n<commentary>What this world carries is the exhaustion of having been claimed — the weight of the unanswered demand falling not upon the one who withdrew but upon the voice that spent itself calling into a quiet that will not yield.</commentary>",
+   "layer_a_declaration": {
+    "beats": [
+     "9:6 men seek death; death flees — pursuit yields no contact",
+     "9:7 locust-likenesses: war-horses, gold-crown semblance, human-face semblance",
+     "9:8 hair-likeness women's; teeth-likeness lions'",
+     "9:9 breastplate-likeness iron; wing-sound likeness chariots-of-many-horses rushing to war"
+    ],
+    "geometry": {
+     "lines": 4,
+     "stanzas": 2,
+     "verse_markers": [
+      "9:6",
+      "9:7",
+      "9:8",
+      "9:9"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "ζητήσουσιν (they will seek)": "they will not seek / will cease seeking",
+     "τὸν θάνατον (death, object of pursuit)": "relief, release — the non-arriving response",
+     "οὐ μὴ εὑρήσουσιν (will not find)": "will not be answered — foreclosure confirmed",
+     "ἐπιθυμήσουσιν ἀποθανεῖν (desire to die)": "desire for cessation — the exhausted request",
+     "φεύγει ὁ θάνατος ἀπ' αὐτῶν (death flees from them)": "silence withdraws — no reply comes",
+     "τὰ ὁμοιώματα (likenesses/semblances)": "the thing that resembles but is not the thing",
+     "ἀκρίδων (locusts)": "the source of the exhaustion — the unrelenting presence",
+     "ὅμοια ἵπποις ἡτοιμασμένοις εἰς πόλεμον (like war-horses prepared for battle)": "like a demand that never stops arriving",
+     "στέφανοι ὅμοιοι χρυσῷ (crowns like gold)": "authority-semblance — the appearance of something owed an answer",
+     "πρόσωπα ὡς πρόσωπα ἀνθρώπων (faces like human faces)": "legibility-semblance — looks like it expects reply",
+     "τρίχας ὡς τρίχας γυναικῶν (hair like women's hair)": "intimacy-semblance — close enough to demand response",
+     "ὀδόντες ὡς λεόντων (teeth like lions')": "threat-semblance — force behind the expectation",
+     "θώρακας ὡς θώρακας σιδηροῦς (breastplates like iron)": "imperviousness — the demand does not absorb silence",
+     "φωνὴ τῶν πτερύγων (sound of the wings)": "the noise the engagement-expectation makes",
+     "ὡς φωνὴ ἁρμάτων ἵππων πολλῶν (like sound of many horse-chariots)": "like the volume of accumulated unanswered calls",
+     "τρεχόντων εἰς πόλεμον (rushing to war)": "the expectation advancing regardless of response"
+    },
+    "axis": "silence as the withheld reply that pursuit cannot compel",
+    "foreclosure": "the source foreclosed the possibility that the exhausted can simply stop being found",
+    "wager": "non-response costs the one who is sought — they remain sought regardless",
+    "affect": "bone-level depletion that has no exit door"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (defaulted; tags absent)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "enantiomorph"
+    ],
+    "recovered_law": "In Text A, it is humans (ἄνθρωποι) who seek death and death that flees from them — the mortal agent pursues and the abstraction withdraws. In Text B, it is voices/demands (φωναί/ἀπαιτήσεις) that pursue an answer which stays silent — the seeking agent is linguistic/juridical and the withdrawing abstraction is response rather than death.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same directional reversal: the pursuer/demander changes from human-seeking-death to demand-seeking-response, and the evader changes from death to silence/non-response — the relational inversion is identical.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B (9:9) maintains the substituted relation — demands/claims rushing into emptiness, weights pressing without relief — and does not revert to Text A's human-seeking-death structure.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "vocabulary_leak",
+     "diagnosis": "operator/theory vocabulary inside the poem: enantiomorph"
+    },
+    {
+     "failed_test": "geometry",
+     "diagnosis": "lines 15/4, markers 8/4 -- the spine is broken, not exceeded"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T00:37:41.018430+00:00"
+}
