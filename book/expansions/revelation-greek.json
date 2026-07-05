@@ -4151,7 +4151,59 @@
     "beats": ""
    },
    "commentary": "The transformation costs the listener their capacity to remain, which is the only currency the text was minted to spend."
+  },
+  {
+   "transform_id": "TX-ba3c3269",
+   "cast_at": "2026-07-05T23:38:54.878527+00:00",
+   "reading_axn": "AXN:FEA5.READING.🌖🔥🌗🌔🌿🌔",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The agents of destruction (angels, cavalry horses) are replaced by abstract burdens/silences (σιγαί, βάρη, τίμημα), transforming the relation from supernatural military beings killing humans to impersonal weights/costs dissolving those who reveal; the action shifts from external apocalyptic slaughter (ἀποκτείνωσιν τῶν ἀνθρώπων) to an internalized dissolution (καταλύσωσιν τῶν δηλωσάντων), and destructive output changes from outward fire/smoke/brimstone to inward somatic suffering (θέρμη, ἀχλύς, πικρὸς ἀήρ).",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change—replacing supernatural military agents with abstract burdens/costs and shifting from external apocalyptic slaughter to internalized somatic dissolution—which partially overlaps the declared claim's framework of thermodynamic cost, bodily expenditure, and energy returning in flesh, but the recovered claim focuses on agent-replacement and action-type transformation rather than the declared claim's specific debt/solvent/compound-interest relational logic.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B (9:17) maintains the substitution of abstract burdens for horses and internalized somatic imagery for external fire, consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.476
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν αἱ τέσσαρες σιγαί αἱ ἡτοιμασμέναι εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα καταλύσωσιν τὸ τρίτον τῶν δηλωσάντων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν βαρῶν τοῦ τιμήματος δισμυριάδες μυριάδων ἀνεκτίστων τελῶν· ἤκουσα τὸν ἀριθμὸν αὐτῶν ὡς ῥῆγμα ἐντὸς τῶν πλευρῶν μου.\n\n**9:17** καὶ οὕτως εἶδον τὰ βάρη ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν ὡς ἵζημα, ἔχοντας θώρακας θερμότητος πνευμόνων καὶ μωλωπίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν βαρῶν ὡς στόματα ζῴων πεινώντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται θέρμη καὶ ἀχλὺς καὶ πικρὸς ἀήρ.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "",
+    "mutated_relation": "Every utterance exacts a thermodynamic cost from the speaker's body and deposits an equivalent opacity in the listener's world; silence is not absence but the only solvent form of that debt, and when it finally opens, what returns is not punishment but the precise energy originally withdrawn, bearing compound interest in the flesh of everyone who was present.",
+    "beats": ""
+   },
+   "commentary": "The transformation costs the text its ability to end, because once the room remembers what was spent inside it, consequence cannot be stopped at the border of a sentence."
   }
  ],
- "last_updated": "2026-07-05T23:37:48.077122+00:00"
+ "last_updated": "2026-07-05T23:38:54.878527+00:00"
 }
