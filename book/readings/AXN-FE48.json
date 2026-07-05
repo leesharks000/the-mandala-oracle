@@ -1,0 +1,59 @@
+{
+ "axn": "AXN:FE48.READING.⭐🌑🌙🌕🌙🌒",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "ba931c41e171c483",
+ "inscribed_at": "2026-07-05T20:43:22.875371+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Witness asked for the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "THUNDER",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐπάχυνθησαν αἱ τέσσαρες φλόγες αἱ ἀεὶ καιόμεναι εἰς τὸν σπόρον ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ὀνομασθῶσιν τὸ τρίτον τῶν ζώντων.\n\n**9:16** καὶ τὸ πλῆθος τῶν ἐμπρησμῶν τοῦ ⸀κύματος ⸀δισμυριάδες μυριάδων· ἤκουσα τὸ πλῆθος αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς πυρκαϊὰς ἐν τῇ ὁράσει καὶ τὰ προσωπεῖα ἐπ' αὐτῶν, ἔχοντα θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ μορφαὶ τῶν πυρκαϊῶν ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν χασμάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, four angels prepared for a specific hour are released (ἐλύθησαν) to kill (ἀποκτείνωσιν) a third of humanity, with cavalry armies riding horses that emit destruction from their mouths. In Text B, four flames that are always burning thicken (ἐπάχυνθησαν) to be named (ὀνομασθῶσιν) among the living, replacing the agent-action relation of angelic release-and-killing with an impersonal process of fire swelling and being designated, and replacing the horse-and-rider military structure with conflagrations wearing masks.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural mutation: bounded agents (angels) performing discrete killing actions become manifestations of an impersonal, continuous process (fire/annihilation); discrete military agents (cavalry/horses) become expressions of an ongoing substrate process; agent-action causation becomes process self-registration through temporary crystallizations.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (9:17) maintains the changed relation: conflagrations (πυρκαϊάς) with masks (προσωπεῖα) replace horses with riders, and chasms (χασμάτων) replace mouths (στομάτων), sustaining the altered structure throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.611
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.61 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    }
+   ],
+   "commentary": "The transformed scene carries the cost of a witness forced to testify to what was never absent — a conflagration that condenses into countable masks only long enough to be heard, then dissolves back into the burning that was always already underway."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T20:43:22.875371+00:00"
+}
