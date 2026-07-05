@@ -1,0 +1,95 @@
+{
+ "run_id": "RUN-20260705T194358Z-7ac469",
+ "schema": "run/v1",
+ "ts": "2026-07-05T19:43:58.173068+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "ca0b70f7a2a13175714331c7122041ad24a8b796",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/ca0b70f7a2a13175714331c7122041ad24a8b796",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/ca0b70f7a2a13175714331c7122041ad24a8b796/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "86ee6e2d05f5b240",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "ca0b70f7a2a1",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "86ee6e2d05f5b240",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four angels, held in readiness across nested time-units, are released at the appointed moment to destroy a fixed fraction of humanity, supported by an inconceivably vast cavalry whose appearance manifests destructive power.",
+   "mutated_relation": "In the source, the angels are instruments of sovereign timing—power flows from divine appointment through prepared agents toward human targets. Under cost-logic, the angels ARE the accumulated costs of the time-units themselves: the hour, day, month, year are not coordinates of readiness but compounding debts whose maturation forces release. Destruction is not an act of sovereign will inflicted on passive targets but a collection event in which humanity is the principal that was always already owed. The cavalry is not a military force but the materiel of expenditure itself—what the debt looks like when it arrives. The simile 'like lions' heads' fails: the mounts are not LIKE creditors, they are creditors whose mouths disburse the burning remainder. The scene becomes not a divine military strike but a foreclosure auction in which time itself presents the bill.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Preparation-as-compounding; time-units become cost-layers; killing becomes collection."
+    },
+    {
+     "ref": "9:16",
+     "class": "REBUILT",
+     "note": "Number heard becomes cost tallied; army becomes expenditure-ledger."
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Likeness-predicate and emission-predicate both remap: lions=creditors, fire/smoke/sulfur=price/receipt/remainder."
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐξεπράχθησαν αἱ τέσσαρες ὀφειλαὶ αἱ συσσωρευθεῖσαι ἐπὶ τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀπαιτήσωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἀναλωμάτων τοῦ ⸀τοκισμοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸ κεφάλαιον αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς δανειστὰς ἐν τῇ ὁράσει καὶ τοὺς ἐπικειμένους ἐπ' αὐτοῖς, φέροντας χιτῶνας ἐρυθροὺς καὶ πελιδνοὺς καὶ τεφρώδεις· καὶ αἱ γνάθοι τῶν δανειστῶν ὡς γνάθοι μύλων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκχεῖται τόκος καὶ ζημία καὶ κατάλυσις.",
+  "enantiomorph_translation": "**9:15** And the four debts that had been compounding against the hour and day and month and year were exacted, so that they might collect a third of humankind.\n\n**9:16** And the number of the expenditures of the usury was twice ten thousand times ten thousand; I heard the sum of them.\n\n**9:17** And thus I saw the creditors in the vision and those pressing upon them, wearing tunics of red and of bruise-dark and of ash-grey; and the jaws of the creditors were as the jaws of millstones, and from their mouths poured out interest and loss and ruin.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The apocalyptic military destruction (angels released to kill, cavalry armies, war-horses breathing fire) is re-mapped onto a financial/debt domain (debts accumulated to exact payment, usury expenses, creditors pouring out interest and ruin), changing the agents from supernatural warriors to economic oppressors and the action from killing to debt-collection.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural transformation: divine military agents become financial/debt entities, sovereign destruction becomes debt collection, and the cavalry/angels shift from supernatural warriors to creditors—the recovered claim captures the core relational remapping declared.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The financial/debt relation persists through 9:17, with creditors, usury imagery, and economic destruction replacing horses, lions, and fire throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.326
+  },
+  "advisories": [
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The scene pays for its own duration: every unit of time that passed in silence was not patience but compounding, and the vision's terror is not that force arrives but that the bill was always growing, and what the mouths pour out is not fire but what fire was always a figure for — the remainder that cannot be returned.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
