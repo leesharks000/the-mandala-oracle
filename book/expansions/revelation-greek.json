@@ -2670,7 +2670,96 @@
     ]
    },
    "commentary": "Every mount here is already laden before it is ridden, every mouth draws inward what would have poured out, every angel names an expenditure already settled — so that the precision of hour and day and month and year marks not the moment of unleashing but the forfeit the utterance has already buried in its own calendar to reach the ear at all."
+  },
+  {
+   "transform_id": "TX-d2c67944",
+   "cast_at": "2026-07-05T17:34:10.973964+00:00",
+   "reading_axn": "AXN:FECF.READING.🌿🌓🌟🌒💫🪐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_158_160",
+    "citation": "9:15–9:17",
+    "start_unit": 158,
+    "end_unit": 160,
+    "unit_labels": [
+     "9:15",
+     "9:16",
+     "9:17"
+    ]
+   },
+   "operator": "SILENCE",
+   "operator_axis": "response-axis — the non-response the source's engagement-expectation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are released (ἐλύθησαν / ἡτοιμασμένοι) in order to kill (ἀποκτείνωσιν) a third of humanity, whereas in Text B they are restrained (ἐκρατήθησαν / ἀφωνισμένοι) so that they may NOT speak (μὴ φθέγξωνται) a third of the words — the direction of the angels' action is reversed from unleashing destruction to being silenced/suppressed, and the destructive outpouring (fire, smoke, brimstone) becomes emptiness (air, void, shadow).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: angels prepared/released for destructive action become angels held back in silence/emptiness; readiness no longer leads to release, the event is replaced by absence, and outpouring becomes void.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the reversed relation: the horses' heads are like statues (lifeless) and emit air, void, and shadow instead of fire, smoke, and brimstone — the suppression/emptiness inversion holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.514
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐκρατήθησαν οἱ τέσσαρες ἄγγελοι οἱ ἀφωνισμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα μὴ φθέγξωνται τὸ τρίτον τῶν ῥημάτων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν παρατάξεων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἔμεινα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως ἔγνων τοὺς ἵππους ἐν τῇ ἐρημίᾳ καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας χλωμοὺς καὶ τεφρώδεις καὶ ὠχριῶντας· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ ἀνδριάντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀὴρ καὶ κενὸν καὶ σκιά.",
+   "layer_a": {
+    "beats": [
+     "9:15 four angels loosed — prepared for the hour and day and month and year — to kill the third of humanity",
+     "9:16 the number of cavalry armies: two myriads of myriads — I heard their number",
+     "9:17 vision: horses and riders — breastplates of fire, hyacinth, sulfur — horses' heads as lions' heads — from mouths issues fire and smoke and sulfur"
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "A divine schedule commands and the prepared agents respond on cue: readiness guarantees release, release guarantees destruction, and the witness's hearing and seeing confirm the event's reality.",
+    "mutated_relation": "In the transformed world, readiness no longer guarantees release: the four angels ARE their own unanswered preparation, the hour and day and month and year ARE empty coordinates that never issue a command, and the witness's hearing and seeing ARE acts that confirm not an event but the silence where the event was scheduled — the cavalry exists as the mass of a question no one posed.",
+    "clause_map": [
+     {
+      "ref": "9:15",
+      "class": "REBUILT",
+      "note": "Loosing=response; under silence the prepared hour yields no release — angels wait as pure unspent readiness"
+     },
+     {
+      "ref": "9:16",
+      "class": "REBUILT",
+      "note": "Hearing the number presupposes the army's arrival — under silence, number heard but never mobilized"
+     },
+     {
+      "ref": "9:17",
+      "class": "REBUILT",
+      "note": "Vision of issuing fire presupposes mouths responding — under silence, mouths hold fire that never proceeds"
+     }
+    ]
+   },
+   "commentary": "The angels no longer loose destruction but are themselves held in muteness, the cavalry amasses as weight without a charge, and the witness's hearing becomes waiting — everything that was command and slaughter now persists as the pale, ashen mass of readiness that never breaks into its own event."
   }
  ],
- "last_updated": "2026-07-05T17:07:57.628273+00:00"
+ "last_updated": "2026-07-05T17:34:10.973964+00:00"
 }
