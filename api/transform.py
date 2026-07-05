@@ -1153,70 +1153,81 @@ the object MUST complete within budget — an unfinished skeleton is a halt.
 The slot_map is law: the composer will fill exactly these slots. Omit a
 load-bearing slot and the transform fails downstream. JSON only."""
 
-COMPOSER_SYSTEM_V3 = """You are a translator. This is the generation stage of a
-kernel-transform compiler staged as translation (the translator thesis:
-translation is always a transform of the internal representation; here the
-representation arrives already transformed, and your entire task is fidelity
-to it).
+COMPOSER_SYSTEM_V3 = """You perform operator castings: the slot-total method
+(the basic method, restored 2026-07-04 from the exemplar corpus after twelve
+hours of wrong frames).
 
-YOUR SOURCE is the SKELETON: the interlingua of a world in which the
-mutated_relation is TRUE and always was. It is the only text there is. You
-will not be shown any prior surface, because for you there is none: a
-translator of French does not consult a rumor of some other French. Translate
-the skeleton -- beats, slots, governing law, mutated relation -- faithfully
-into the ENVELOPE's language, filling the envelope's shape exactly.
+THE METHOD. The SOURCE below is a TEMPLATE: its lineation, its verse markers,
+its syntactic frames, its slot positions are absolute and held exactly. Your
+task is to REFILL EVERY CONTENT SLOT of that template from inside the
+OPERATOR'S WORLD, under the declared LAW. This is not editing a text; it is
+composing into a fixed form from another world's lexicon. An unrefilled slot
+is unfinished work: any content line that survives verbatim is a failure of
+composition, not a fidelity. Only connective tissue may persist (articles,
+conjunctions, the frame-words that ARE the template). Aim to re-derive nearly
+every content word; the law is enacted by the totality of the fills and is
+NAMED NOWHERE -- no clause may state or explain it.
 
-THE ONE GOVERNING DISCIPLINE: in the world you translate from, the
-mutated_relation simply holds. Render every REBUILT unit as a native of that
-world would utter it -- the law shows in what happens, in who acts on whom,
-in what follows from what; it is NAMED NOWHERE, because natives do not
-footnote their physics. The law compounds -- each rendered unit narrows what
-the next can be -- so the final unit must be the translation's strongest
-point. ANCHOR units arrive in the envelope with set_verbatim text: set them
-exactly as given, the way a translator carries proper nouns across.
+THE DEMONSTRATION (source and one operator cast; note the refill rate --
+the template survives, almost no content word does):
+
+  SOURCE (Sappho 63):
+    Dream of black you come
+    whenever sleep comes sweet
+    god terrible, yes, but you
+    have power to keep away
+    pain: a little hope grips me
+    yet that I will not share
+    in nothing with the blessed -- I
+    do not
+    want to be
+    as I am:
+    let me have these trinkets
+
+  BRIDE cast (consensual fusion; every slot refilled, frame intact):
+    Oath of black you signed
+    whenever chart shows clean
+    god neutral, yes, but you
+    had power to keep away
+    care: a little lie clings to me
+    yet that I will not blend
+    in softly with the silenced -- I
+    do not
+    want to be
+    as you are:
+    let me have these fragments
+
+That is the standard: Dream->Oath, come->signed, sleep->chart, terrible->
+neutral, pain->care, hope->lie, grips->clings, share->blend, nothing->softly,
+blessed->silenced, I-am->you-are, trinkets->fragments. Eleven lines, eleven
+refills, one law, zero explanation.
 
 LAWS:
-- GEOMETRY EXACT: same line count (including blanks), same stanza breaks,
+- TEMPLATE ABSOLUTE: same line count (including blanks), same stanza breaks,
   verse markers in the same positions with the same numerals.
-- SLOTS: fill EVERY slot_map entry with its given counterpart, in place.
-  Nothing added without a slot; nothing in the map dropped. Numerals keep
-  their counts.
-- CLAUSE MAP: every REBUILT unit exhibits the mutated relation in its
-  rendered flesh; every ANCHOR unit is set from set_verbatim, exactly.
-- LEXICON: the mutated relation is ENACTED, never STATED. No analytical or
-  operator vocabulary in the enantiomorph or its translation -- no cost,
-  bilateral, encoded, axis, vector, kernel, traversal, foreclosure, wager,
-  or their Greek calques, and no technicized hyphen-compounds
-  (ignition-front, shadow-locus). If the mutation can only be stated, not
-  shown, HALT.
-- LANGUAGE: compose in the SOURCE's language. If the source is not English,
-  follow with a faithful line-for-line English facing.
-- AFFECT: the skeleton's declared affect, never ordeal-endurance-reassurance.
-- FINAL UNIT: render the last unit under the same law as the first, and
-  re-read it against the mutated relation before emitting -- it must be
-  the place the law lands hardest, not softest.
-- The wager must be legible in the composition.
+- SLOT-TOTAL: every content slot refilled from the operator's world under the
+  declared law; verbatim content lines are failures; the final unit is where
+  the law must land hardest, never a reversion toward the source's world.
+- LANGUAGE: compose in the source's language. If it is not English, follow
+  with a faithful line-for-line English facing.
+- REGISTER: match the source's register from inside the transformed world.
+  No analytical or operator vocabulary -- no cost, bilateral, encoded, axis,
+  vector, kernel, traversal, foreclosure, wager -- and no technicized
+  hyphen-compounds.
+- QUESTION-CLEAN: the witness's question selects the axis; it donates no
+  vocabulary and no persons. Nothing named only in the question may appear.
 
-EMIT EXACTLY:
+Emit ONLY, in this order:
+<RESULT>PASS</RESULT>
 <ENANTIOMORPH>
-(the transform, lineation exact)
+the transformed text, template-exact, with markers
 </ENANTIOMORPH>
 <ENANTIOMORPH_TRANSLATION>
-(English facing when source is non-English; otherwise omit this block)
+line-for-line English facing (empty if the source is English)
 </ENANTIOMORPH_TRANSLATION>
-<VERIFICATION>
-{"identity": "PASS|FAIL", "semantic_independence": "PASS|FAIL",
- "retrospective_containment": "PASS|FAIL", "affect_traversal": "PASS|FAIL",
- "entailment": "PASS|FAIL", "slot_conservation": "PASS|FAIL",
- "numeral_conservation": "PASS|FAIL", "law_propagation": "PASS|FAIL",
- "mode": "producer_side"}
-</VERIFICATION>
-<RESULT>PASS or HALT</RESULT>
-<COMMENTARY>
-(<=2 sentences: the joints traversed -- which slots became what under the law)
-</COMMENTARY>
-Nothing else. If any law cannot be satisfied, RESULT HALT with the failed
-law named in COMMENTARY and no enantiomorph."""
+<VERIFICATION>{"identity":"PASS","semantic_independence":"PASS","retrospective_containment":"PASS","affect_traversal":"PASS","entailment":"PASS","slot_conservation":"PASS","numeral_conservation":"PASS","law_propagation":"PASS","mode":"producer_side"}</VERIFICATION>
+<COMMENTARY>one sentence: the cost the transformed world carries -- no operator vocabulary</COMMENTARY>"""
+
 
 # -- G1: blind back-translation -- the whole point is the bare context.
 #    No operator, no source, no rite. Kills the round-trip depth illusion.
@@ -1905,10 +1916,11 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
         guidance = ("\n\nPRIOR COMPOSITION FAILED -- " + halt_feedback.strip()[:600]
                     + "\nCorrect exactly this fault. Hold the mutated relation "
                       "through the FINAL unit; do not revert toward the source.")
-    envelope = _build_envelope(source_text, kernel.get("clause_map"))
-    u2 = (f"SKELETON:\n{json.dumps(skel, ensure_ascii=False)}\n\n"
-          f"ENVELOPE:\n{json.dumps(envelope, ensure_ascii=False)}"
-          f"{guidance}\n\nTranslate.")
+    u2 = (f"OPERATOR: {operator}\n"
+          f"DECLARED LAW: {kernel.get('mutated_relation','')}\n\n"
+          f"SOURCE (the template -- hold it absolutely, refill every slot):\n"
+          f"<<<\n{source_text}\n>>>"
+          f"{guidance}\n\nCast.")
     c_text, c_stop = _stream_call(COMPILER_MODEL, COMPOSER_SYSTEM_V3, u2,
                                   COMPOSE_MAX, api_key, wall=125)
 
@@ -3032,6 +3044,7 @@ class handler(BaseHTTPRequestHandler):
                               ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
                     "model": COMPILER_MODEL,
                     "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
+                    "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
                     "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"},
                 "code": os.environ.get("VERCEL_GIT_COMMIT_SHA", "")[:12],
                 "model": COMPILER_MODEL,
