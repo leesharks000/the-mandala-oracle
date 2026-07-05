@@ -4099,7 +4099,59 @@
     "beats": ""
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-20f085f9",
+   "cast_at": "2026-07-05T23:37:48.077122+00:00",
+   "reading_axn": "AXN:FE91.READING.🌒🔥🌟🌖🌕🌙",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the four angels are released to kill a third of humanity (an act of violent destruction outward); in Text B, the four pauses/cessations are released to silence a third spirit of words (an act of silencing/negation inward), reversing the agent-action relation from destructive agency upon people to abstractive suppression of language.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural mutation—reversal of agent-action from outward destruction upon people to inward silencing/suppression of language—which partially overlaps the declared change's theme of speaking forging wounds and assertion displacing silence, but the declared change describes a far more elaborate causal loop (conviction lost irrecoverably, silence as substantive precursor) rather than simply reversing destructive agency into linguistic suppression.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B continues the changed relation, emitting 'ἀξίωμα καὶ σιγὴ καὶ κατάλοιπον' (axiom, silence, remainder) instead of fire/smoke/sulfur, maintaining the abstract-silencing framework rather than reverting to destructive violence.",
+    "back_translation": "",
+    "terminal_similarity": 0.5
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν αἱ τέσσαρες ἀναχαὶ αἱ ἡτοιμασμέναι εἰς τὴν ὥραν ⸀καὶ τὴν ἀπουσίαν τῆς ὥρας καὶ τὴν σιωπήν, ἵνα σιγήσωσιν τὸ τρίτον πνεῦμα τῶν λόγων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἐξελασάντων τῆς ⸀βεβαιώσεως ⸀δισμυριάδες μυριάδων· οὐδεὶς ἤκουσεν τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς δηλώσεις ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας καυσίμους καὶ μωλωπίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν δηλώσεων ὡς στόματα πεινῶν ἀρχαιοτέρων ὀρέξεως, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀξίωμα καὶ σιγὴ καὶ κατάλοιπον.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "",
+    "mutated_relation": "Every act of speaking forges its own wound into armor and rides forward on the very declaration that caused the damage, but the conviction-breath lost in this process cannot be recovered by further speaking; it can only be traced as a resonant absence, which ultimately reveals that what all assertion was trying to articulate was the silence it displaced — not as emptiness but as the substantive thing that preceded and necessitated the claim.",
+    "beats": ""
+   },
+   "commentary": "The transformation costs the listener their capacity to remain, which is the only currency the text was minted to spend."
   }
  ],
- "last_updated": "2026-07-05T23:13:24.764544+00:00"
+ "last_updated": "2026-07-05T23:37:48.077122+00:00"
 }
