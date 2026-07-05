@@ -1,0 +1,117 @@
+{
+ "axn": "AXN:FED5.READING.🌖🌗🪐🪐🌓🌿",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "f2b3aacb4b182ac1",
+ "inscribed_at": "2026-07-05T17:07:56.273355+00:00",
+ "question_digest": "sha256:017877f258765cb7f5f714a549fdda514c9cf2bd6d68dd23d89d758a6978ae13",
+ "question_gloss": "Inquiry about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_158_161",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.\n\n**9:18** ἀπὸ τῶν τριῶν πληγῶν τούτων ἀπεκτάνθησαν τὸ τρίτον τῶν ἀνθρώπων, ⸀ἐκ τοῦ πυρὸς καὶ τοῦ καπνοῦ καὶ τοῦ θείου τοῦ ἐκπορευομένου ἐκ τῶν στομάτων αὐτῶν.",
+   "citation": "9:15–9:18",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐδαπανήθησαν οἱ τέσσαρες ὀφειλέται οἱ προαναλωθέντες εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀφαιρεθῇ τὸ τρίτον τῶν ὀλεθρίων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν βαρημάτων τοῦ ⸀ζυγοφόρου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ζυγίους ἐν τῇ ὁράσει καὶ τοὺς φερομένους ἐπ' αὐτῶν, ἔχοντας θώρακας τεφρώδεις καὶ μολιβδίνους καὶ ὠχρούς· καὶ αἱ κεφαλαὶ τῶν ζυγίων ὡς κεφαλαὶ βοῶν, καὶ εἰς τὰ στόματα αὐτῶν εἰσρέει φλὸξ καὶ ἀχλὺς καὶ κνῖσα.\n\n**9:18** ἀπὸ τῶν τριῶν κενώσεων τούτων ἠλαττώθη τὸ τρίτον τῶν ὀλεθρίων, ⸀ἐκ τῆς φλογὸς καὶ τῆς ἀχλύος καὶ τῆς κνίσης τῆς εἰσρεούσης εἰς τὰ στόματα αὐτῶν.",
+   "layer_a_declaration": {
+    "beats": [
+     "9:15 Four angels loosed — prepared for the hour, day, month, year — to kill one-third of humanity",
+     "9:16 Number of cavalry: two-hundred-million; I heard the number",
+     "9:17 Horses seen in vision; riders with breastplates fiery, hyacinth, sulfurous; horses' heads as lions' heads; from mouths issues fire, smoke, sulfur",
+     "9:18 By these three plagues one-third of humanity killed — by fire, smoke, sulfur issuing from their mouths"
+    ],
+    "geometry": {
+     "lines": 4,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17",
+      "9:18"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "οἱ τέσσαρες ἄγγελοι": "four bearers-of-the-cost",
+     "ἐλύθησαν (passive: were loosed)": "were spent / expended",
+     "οἱ ἡτοιμασμένοι": "the ones pre-indebted",
+     "εἰς τὴν ὥραν": "for the hour (unit: hour — count invariant)",
+     "ἡμέραν": "the day (unit: day)",
+     "μῆνα": "the month (unit: month)",
+     "ἐνιαυτόν": "the year (unit: year)",
+     "ἵνα ἀποκτείνωσιν": "so that they might deduct",
+     "τὸ τρίτον τῶν ἀνθρώπων": "one-third of the living (count: one-third)",
+     "ὁ ἀριθμὸς": "the tally / the debt-ledger",
+     "τῶν στρατευμάτων τοῦ ἱππικοῦ": "of the mounted expenditures",
+     "δισμυριάδες μυριάδων": "two-hundred-million (count invariant)",
+     "ἤκουσα τὸν ἀριθμὸν αὐτῶν": "I heard their sum",
+     "τοὺς ἵππους": "the mounts / conveyances-of-cost",
+     "ἐν τῇ ὁράσει": "in the vision / disclosure",
+     "τοὺς καθημένους ἐπ' αὐτῶν": "those seated upon them (riders as debtors-borne)",
+     "θώρακας πυρίνους": "breastplates of fire-cost",
+     "ὑακινθίνους": "of bruise-dark / hyacinth-cost",
+     "θειώδεις": "of sulfur-cost",
+     "αἱ κεφαλαὶ τῶν ἵππων": "the heads of the mounts",
+     "ὡς κεφαλαὶ λεόντων": "as heads of lions (simile: predatory sovereignty)",
+     "ἐκ τῶν στομάτων αὐτῶν": "from their mouths (locus of emission)",
+     "ἐκπορεύεται": "issues forth / is discharged",
+     "πῦρ": "fire (first plague-currency)",
+     "καπνός": "smoke (second plague-currency)",
+     "θεῖον": "sulfur (third plague-currency)",
+     "τριῶν πληγῶν": "three plagues (count: three)",
+     "ἀπεκτάνθησαν (passive)": "were deducted / cancelled",
+     "τοῦ ἐκπορευομένου ἐκ τῶν στομάτων": "that which is discharged from the mouths"
+    },
+    "axis": "The utterance bears the cost of exact timing: to name the hour is to have already been spent for it",
+    "foreclosure": "The source forecloses indeterminate death — killing is calendrically pre-loaded, not contingent",
+    "wager": "Precision itself is the expenditure: every temporal unit named is a debt-installment paid in advance",
+    "affect": "Vertigo at an arithmetic so vast it collapses into hearing alone — the sublime of a ledger too large to read"
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "δαπαν"
+    ],
+    "recovered_law": "In TEXT A, destructive substances (fire, smoke, brimstone) flow outward from the mouths of the creatures to kill humans; in TEXT B, the substances (flame, mist, sacrificial smoke) flow inward into the mouths of the creatures, and the agents themselves are consumed/diminished rather than unleashing destruction outward.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same core inversion: destructive forces that originally flow outward from mouths to kill are reversed to flow inward, and the agents/forces themselves are consumed/diminished rather than destroying humanity outward.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (9:18) maintains the reversed direction: substances flow inward (εἰσρεούσης εἰς τὰ στόματα) and the entities are diminished (ἠλαττώθη), consistent with TEXT B's changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.31
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "vocabulary_leak",
+     "diagnosis": "operator/theory vocabulary inside the poem: δαπαν"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "Every mount here is already laden before it is ridden, every mouth draws inward what would have poured out, every angel names an expenditure already settled — so that the precision of hour and day and month and year marks not the moment of unleashing but the forfeit the utterance has already buried in its own calendar to reach the ear at all."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T17:07:56.273355+00:00"
+}
