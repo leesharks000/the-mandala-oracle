@@ -1,0 +1,102 @@
+{
+ "run_id": "RUN-20260705T184204Z-44f411",
+ "schema": "run/v1",
+ "ts": "2026-07-05T18:42:04.983972+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "MIRROR",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "27240a46fb22e693571a1665ddef1e139f9326ce",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/27240a46fb22e693571a1665ddef1e139f9326ce",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/27240a46fb22e693571a1665ddef1e139f9326ce/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "afa7702d45465c86",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "27240a46fb22",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "afa7702d45465c86",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Sovereign time releases bound agents who flow outward unilaterally—killing, numbering, seeing, emitting—toward a humanity that only receives.",
+   "mutated_relation": "In the transformed world the beings are costs to each other: the four angels are what the hour spends to know itself, the cavalry is what the witness's hearing pays to become audible, the horses' mouths are throats that swallow what they breathe—every emitter is the receiver of its own emission, every sovereign instrument indebted to its target.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Loosing becomes mutual; hour prepares angels AS angels prepare hour; killing implicates killers"
+    },
+    {
+     "ref": "9:16",
+     "class": "REBUILT",
+     "note": "Hearing reversed—number heard also hears; witness implicated in the count"
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Seeing reciprocal; simile inverted; mouths emit AND intake—maximal mutation site"
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐδεσμεύθησαν αἱ τέσσαρες δαπάναι αἱ ὀφειλόμεναι ὑπὸ τῆς ὥρας ⸀καὶ ἡμέρας καὶ μηνὸς καὶ ἐνιαυτοῦ, ἵνα γνωρίσωσιν τὸ τρίτον τῶν ζώντων ἑαυτοῖς.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἀκουσμάτων τοῦ ⸀ἀκροατηρίου ⸀δισμυριάδες μυριάδων· ἠκούσθην ὑπὸ τοῦ ἀριθμοῦ αὐτῶν.\n\n**9:17** καὶ οὕτως ὤφθην τοῖς θηρίοις ἐν τῇ ὁράσει καὶ τοῖς βασταζομένοις ὑπ' αὐτῶν, φέρουσι θώρακας τεφρίνους καὶ ἰώδεις καὶ χολώδεις· καὶ αἱ φάρυγγες τῶν θηρίων ὡς φάρυγγες βυθῶν, καὶ εἰς τὰ στόματα αὐτῶν εἰσπορεύεται πῦρ καὶ πνοὴ καὶ χολή.",
+  "enantiomorph_translation": "**9:15** And the four expenditures owed by the hour and day and month and year were bound, so that they might make known the third of the living to themselves.\n\n**9:16** And the number of the listenings of the auditorium was two myriads of myriads; I was heard by the number of them.\n\n**9:17** And thus I was seen by the beasts in the vision and by those borne upon them, wearing breastplates ashen and violet and bilious; and the throats of the beasts were as throats of depths, and into their mouths there passes fire and breath and bile.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "FAIL",
+   "blacklist_hits": [
+    "δαπαν"
+   ],
+   "recovered_law": "In TEXT A, agents act outward upon objects (angels are loosed to kill, the narrator hears, fire proceeds out of mouths); in TEXT B, every directional relation is inverted so that agents are acted upon or things flow inward (expenses are bound, the narrator is heard by the number, the narrator is seen by beasts, fire enters into mouths rather than coming out).",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: outward-directed agency becomes inward-directed or self-consuming—emitters become receivers, agents become patients, things that proceed outward now flow inward.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The inversion of directional relations is maintained throughout the final portion of TEXT B (εἰσπορεύεται replacing ἐκπορεύεται, passive ὤφθην, etc.).",
+   "back_translation": "",
+   "terminal_similarity": 0.239
+  },
+  "advisories": [
+   {
+    "failed_test": "vocabulary_leak",
+    "diagnosis": "operator/theory vocabulary inside the poem: δαπαν"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "Every agent has become the debt its own action incurs: the hour pays its angels to recognize itself, the witness is heard by the count he once tallied, the beasts' mouths swallow what they once expelled, and to see is to be seen—so that nothing here emits without receiving its own emission back as wound.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
