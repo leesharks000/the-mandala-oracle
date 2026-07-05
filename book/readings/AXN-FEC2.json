@@ -95,10 +95,20 @@
      "diagnosis": "lines 15/4, markers 8/4 -- the spine is broken, not exceeded"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Water runs into emptiness, and the channel does not grieve its running: the one who was not answered must reckon that the silence was also something that was sent."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T00:37:41.018430+00:00"
+ "last_updated": "2026-07-05T00:37:54.707795+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-05T00:37:54.707795+00:00",
+   "text": "Water runs into emptiness, and the channel does not grieve its running: the one who was not answered must reckon that the silence was also something that was sent.",
+   "operator": "SILENCE"
+  }
+ ]
 }
