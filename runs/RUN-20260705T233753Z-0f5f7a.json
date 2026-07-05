@@ -1,0 +1,134 @@
+{
+ "run_id": "RUN-20260705T233753Z-0f5f7a",
+ "schema": "run/v1",
+ "ts": "2026-07-05T23:37:53.804227+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "49c28249e1233a7345c5e391a951bec56ccd692b",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/49c28249e1233a7345c5e391a951bec56ccd692b",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/49c28249e1233a7345c5e391a951bec56ccd692b/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "acb85cd4a7e1698e",
+  "prompt_method": "abduct/v3 (full-transform; source-absent bloom; compressed to form ±15%; identity-rate metered)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+INVERSION",
+   "dream+FLAME"
+  ]
+ },
+ "code": "49c28249e123",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "acb85cd4a7e1698e",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "Every utterance exacts a thermodynamic cost from the speaker's body and deposits an equivalent opacity in the listener's world; silence is not absence but the only solvent form of that debt, and when it finally opens, what returns is not punishment but the precise energy originally withdrawn, bearing compound interest in the flesh of everyone who was present.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ ἐλύθησαν αἱ τέσσαρες σιγαί αἱ ἡτοιμασμέναι εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα καταλύσωσιν τὸ τρίτον τῶν δηλωσάντων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν βαρῶν τοῦ τιμήματος δισμυριάδες μυριάδων ἀνεκτίστων τελῶν· ἤκουσα τὸν ἀριθμὸν αὐτῶν ὡς ῥῆγμα ἐντὸς τῶν πλευρῶν μου.\n\n**9:17** καὶ οὕτως εἶδον τὰ βάρη ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν ὡς ἵζημα, ἔχοντας θώρακας θερμότητος πνευμόνων καὶ μωλωπίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν βαρῶν ὡς στόματα ζῴων πεινώντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται θέρμη καὶ ἀχλὺς καὶ πικρὸς ἀήρ.",
+  "enantiomorph_translation": "**9:15** And the four silences that had been held back for the hour and day and month and year were loosed, so that they might collapse a third of all who had declared.\n\n**9:16** And the number of the burdens of the cost was two myriads of myriads of unpaid tolls; I heard their number as a fracture inside my own ribs.\n\n**9:17** And thus I saw the burdens in the vision and those seated upon them as sediment, wearing breastplates of lung-warmth and bruise-blue and sulfur-yellow; and the heads of the burdens were as mouths of starving animals, and from their mouths came forth heat and opacity and bitter air.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The agents of destruction (angels, cavalry horses) are replaced by abstract burdens/silences (σιγαί, βάρη, τίμημα), transforming the relation from supernatural military beings killing humans to impersonal weights/costs dissolving those who reveal; the action shifts from external apocalyptic slaughter (ἀποκτείνωσιν τῶν ἀνθρώπων) to an internalized dissolution (καταλύσωσιν τῶν δηλωσάντων), and destructive output changes from outward fire/smoke/brimstone to inward somatic suffering (θέρμη, ἀχλύς, πικρὸς ἀήρ).",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim identifies a real structural change—replacing supernatural military agents with abstract burdens/costs and shifting from external apocalyptic slaughter to internalized somatic dissolution—which partially overlaps the declared claim's framework of thermodynamic cost, bodily expenditure, and energy returning in flesh, but the recovered claim focuses on agent-replacement and action-type transformation rather than the declared claim's specific debt/solvent/compound-interest relational logic.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B (9:17) maintains the substitution of abstract burdens for horses and internalized somatic imagery for external fire, consistent with the changed relation throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.476
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "63% of the source's content lemmas survive verbatim (δισμυριάδες, εἶδον, θειώδεις, θώρακας, καθημένους, κεφαλαὶ…) -- the base semantic forms did not fully transform"
+   },
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 87 words vs budget 62-85 (source 74)"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": {
+   "declared": "Every utterance exacts a thermodynamic cost from the speaker's body and deposits an equivalent opacity in the listener's world; silence is not absence but the only solvent form of that debt, and when it finally opens, what returns is not punishment but the precise energy originally withdrawn, bearing compound interest in the flesh of everyone who was present.",
+   "recovered": "The agents of destruction (angels, cavalry horses) are replaced by abstract burdens/silences (σιγαί, βάρη, τίμημα), transforming the relation from supernatural military beings killing humans to impersonal weights/costs dissolving those who reveal; the action shifts from external apocalyptic slaughter (ἀποκτείνωσιν τῶν ἀνθρώπων) to an internalized dissolution (καταλύσωσιν τῶν δηλωσάντων), and destructive output changes from outward fire/smoke/brimstone to inward somatic suffering (θέρμη, ἀχλύς, πικρὸς ἀήρ).",
+   "note": "The recovered claim identifies a real structural change—replacing supernatural military agents with abstract burdens/costs and shifting from external apocalyptic slaughter to internalized somatic dissolution—which partially overlaps the declared claim's framework of thermodynamic cost, bodily expenditure, and energy returning in flesh, but the recovered claim focuses on agent-replacement and action-type transformation rather than the declared claim's specific debt/solvent/compound-interest relational logic."
+  },
+  "commentary": "The transformation costs the text its ability to end, because once the room remembers what was spent inside it, consequence cannot be stopped at the border of a sentence.",
+  "post_mortem": null,
+  "skeleton": {
+   "draft": "And the four silences that had been held back — not for an hour, a day, a month, a year, but for the exact moment the utterance would cost more than the speaker could afford — those silences opened their mouths and what poured out was not death but the debt of having spoken at all, and a third of all who had ever declared anything found their declarations collapsing inward, becoming the price. And the sum of what rode toward them — I tried to count the weight of it, the accumulated bearing-cost of every prophecy ever flung into air — two myriads of myriads of unpaid tolls, and I heard the number as one hears a bone-fracture inside one's own chest. And I saw in this way the burdens themselves, not horses but the mass of what assertion leaves behind when it moves through a world, and those who sat upon them were not riders but the residue of every confident voice, wearing breastplates made of the warmth that speech pulls from the speaker's lungs, the bruise-blue of held breath, the sulfur-yellow of words that burned the throat on their way out. And the heads of these burdens opened like the heads of animals that have learned to feed, and from their mouths came not fire and smoke and brimstone but the original cost returned — the heat the prophet lost while prophesying, the opacity that settled over every listener's seeing, the bitter air that remains in a room after someone has said what cannot be unsaid.",
+   "bloom": "And the four silences that had been held back — not for an hour, a day, a month, a year, but for the exact moment the utterance would cost more than the speaker could afford — those silences opened their mouths and what poured out was not death but the debt of having spoken at all, and a third of all who had ever declared anything found their declarations collapsing inward, becoming the price. And the sum of what rode toward them — I tried to count the weight of it, the accumulated bearing-cost of every prophecy ever flung into air — two myriads of myriads of unpaid tolls, and I heard the number the way one hears a fracture happening inside one's own ribcage, not as sound but as the sudden knowledge that a structure has ceased to hold. And I saw the burdens themselves, not horses, not metaphor, but the sheer mass that assertion deposits behind it when it passes through a world that was not asking to be named, and those who sat upon them were not riders but sediment — the residue left when a confident voice evaporates — wearing breastplates forged from the warmth that speech pulls from the speaker's lungs, the bruise-blue of breath held past its willingness to stay, the sulfur-yellow of words that cauterized the throat as they escaped. And the heads of these burdens opened the way the mouths of starving animals open, having learned that feeding is not separate from injury, and from their mouths came not fire and smoke and brimstone but the original cost returned with interest — the heat the prophet's body lost and never recovered while prophesying, the opacity that descended over every listener's seeing like a cataract grown from having witnessed too much certainty, the bitter residual air that remains in a room for years after someone has said what cannot be unsaid, thickening, finding the corners, settling into the lungs of those who were only present, who never asked to carry the debt of another's declaration but who breathe it now because a room does not forget what has been spent inside it.",
+   "self_recovered_law": "Every utterance exacts a thermodynamic cost from the speaker's body and deposits an equivalent opacity in the listener's world; silence is not absence but the only solvent form of that debt, and when it finally opens, what returns is not punishment but the precise energy originally withdrawn, bearing compound interest in the flesh of everyone who was present.",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+INVERSION",
+    "dream+FLAME"
+   ],
+   "word_count": {
+    "source": 74,
+    "final": 87,
+    "bounds": [
+     62,
+     85
+    ]
+   },
+   "identity_rate": 0.639,
+   "surviving_lemmas": [
+    "δισμυριάδες",
+    "εἶδον",
+    "θειώδεις",
+    "θώρακας",
+    "καθημένους",
+    "κεφαλαὶ",
+    "μυριάδων",
+    "μῆνα",
+    "οὕτως",
+    "στομάτων",
+    "τέσσαρες",
+    "τοὺς",
+    "τρίτον",
+    "ἀριθμὸν"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
