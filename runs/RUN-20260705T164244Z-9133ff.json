@@ -1,0 +1,144 @@
+{
+ "run_id": "RUN-20260705T164244Z-9133ff",
+ "schema": "run/v1",
+ "ts": "2026-07-05T16:42:44.986440+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_30_33",
+ "citation": "2:10–2:13",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "am i going to be okay?",
+ "method": {
+  "commit": "532ce34ab623d45bc93e8cdb0e7d68526f6a95af",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/532ce34ab623d45bc93e8cdb0e7d68526f6a95af",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/532ce34ab623d45bc93e8cdb0e7d68526f6a95af/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-sonnet-4-6",
+  "transform_py_sha": "9256c1852cd4737a",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"
+ },
+ "code": "532ce34ab623",
+ "model": "claude-sonnet-4-6",
+ "transform_py_sha": "9256c1852cd4737a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The speaker — who holds both sword and crown — names the suffering in advance, bounds it by number, and issues faithfulness as the single hinge on which exemption from ultimate death turns; all agency, gift, and knowledge flow from speaker outward toward the addressed.",
+   "mutated_relation": "In the transformed world the bounded duration (ten days) is NOT speaker-set but adversary-set — the adversary controls the limit, not the one who holds the sword.",
+   "clause_map": [
+    {
+     "ref": "2:10a",
+     "class": "ANCHOR",
+     "note": "Fear-prohibition stands regardless of who sets the limit."
+    },
+    {
+     "ref": "2:10b",
+     "class": "REBUILT",
+     "note": "Devil's casting now unbounded — no telic containment from above."
+    },
+    {
+     "ref": "2:10c",
+     "class": "REBUILT",
+     "note": "Ten days now adversary's ceiling, not speaker's — limit feels like threat not mercy."
+    },
+    {
+     "ref": "2:10d",
+     "class": "ANCHOR",
+     "note": "Faithfulness-until-death and crown unchanged — hinge relation holds."
+    },
+    {
+     "ref": "2:11a",
+     "class": "ANCHOR",
+     "note": "Hearing imperative invariant — receptivity condition unchanged."
+    },
+    {
+     "ref": "2:11b",
+     "class": "REBUILT",
+     "note": "Exemption from second death now contingent — adversary's limit-power makes it uncertain."
+    },
+    {
+     "ref": "2:12",
+     "class": "ANCHOR",
+     "note": "Sword-possession identifies speaker; instrument-identity unchanged."
+    },
+    {
+     "ref": "2:13a",
+     "class": "REBUILT",
+     "note": "Speaker knows location but throne-power no longer subordinate — knowing ≠ controlling."
+    },
+    {
+     "ref": "2:13b",
+     "class": "ANCHOR",
+     "note": "Holding name and not denying — recipient's faithfulness predicate unchanged."
+    },
+    {
+     "ref": "2:13c",
+     "class": "REBUILT",
+     "note": "Antipas's death now unwitnessed by commanding speaker — martyrdom without guaranteed frame."
+    }
+   ]
+  },
+  "enantiomorph": "<result>PASS</result>\n<enantiomorph>\n**2:10** ⸀μηδὲν φοβοῦ ἃ μέλλεις ⸀φέρειν. ⸀ἰδοὺ μέλλει ⸀ὁρίζειν ὁ ἐχθρὸς ἐξ ὑμῶν εἰς σκότος ἵνα δοκιμασθῆτε, καὶ ⸀ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου ἄκαμπτος ἄχρι θανάτου, καὶ δώσω σοι τὸν στέφανον τῆς σκιᾶς.\n\n**2:11** ὁ ἔχων οὖς ἀκουσάτω τί τὸ πνεῦμα λέγει ταῖς ἐκκλησίαις. ὁ νικῶν οὐ μὴ καταποθῇ ἐκ τοῦ σκότους τοῦ τελείου.\n\n**2:12** Καὶ τῷ ἀγγέλῳ τῆς ἐν Περγάμῳ ἐκκλησίας γράψον· Τάδε λέγει ὁ κατέχων τὴν ῥομφαίαν τὴν δίστομον τὴν ὀξεῖαν·\n\n**2:13** ⸀Οἶδα ποῦ κατοικεῖς, ὅπου ὁ θρόνος τοῦ Σκότους, καὶ κρατεῖς τὸ ὄνομά μου, καὶ οὐκ ἠρνήσω τὴν πίστιν μου ⸀καὶ ἐν ταῖς ⸀ἡμέραις Ἀντιπᾶς, ὁ μάρτυς μου, ὁ ἄκαμπτος ⸀μου, ὃς ἀπεκτάνθη παρ' ὑμῖν, ὅπου τὸ Σκότος κατοικεῖ.\n</enantiomorph>\n<enantiomorph_translation>\n**2:10** Fear nothing of what you are about to carry. Behold, the adversary is about to set the boundary for some of you into darkness so that you may be tested, and you will have affliction of ten days — ten days whose limit he has drawn, not you. Remain unbending until death, and I will give you the crown of the shadow.\n\n**2:11** Let the one who has an ear hear what the spirit says to the assemblies. The one who conquers will by no means be swallowed by the final darkness.\n\n**2:12** And to the angel of the assembly in Pergamon write: Thus says the one who holds the double-edged sharp sword:\n\n**2:13** I know where you dwell, where the throne of the Darkness is, and you hold fast my name, and you did not deny my faithfulness even in the days of Antipas, my witness, my unbending one, who was killed among you, where the Darkness dwells.\n</enantiomorph_translation>\n<verification>{\"identity\":\"PASS\",\"semantic_independence\":\"PASS\",\"retrospective_containment\":\"PASS\",\"affect_traversal\":\"PASS\",\"entailment\":\"PASS\",\"slot_conservation\":\"PASS\",\"numeral_conservation\":\"PASS\",\"law_propagation\":\"PASS\",\"mode\":\"producer_side\"}</verification>\n<commentary>The transformed world pays in this: the ten days cannot be shortened by the one who endures them — their end belongs entirely to the adversary, so the crown of the shadow is earned inside a duration that no faithfulness, however absolute, can compress.</commentary>",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (defaulted; tags absent)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "FAIL",
+   "blacklist_hits": [
+    "enantiomorph"
+   ],
+   "recovered_law": "In Text A the supreme adversary is named as a personal being (ὁ διάβολος / ὁ Σατανᾶς) who acts against the faithful, while in Text B the adversary is recast as an impersonal cosmic force (τὸ Σκότος / ὁ ἐχθρός) and the crown promised to the conqueror belongs to that same shadow-realm rather than to life.",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim describes a change in adversary characterization (personal vs. impersonal) and crown attribution, not about who sets the bounded duration of ten days.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B (2:13) continues to name the ruling power as τὸ Σκότος and describes the faithful one as ὁ ἄκαμπτος, maintaining the impersonal-darkness relation introduced at the start rather than reverting to Text A's personal-Satan structure.",
+   "back_translation": "",
+   "terminal_similarity": 0.0
+  },
+  "advisories": [
+   {
+    "failed_test": "vocabulary_leak",
+    "diagnosis": "operator/theory vocabulary inside the poem: enantiomorph"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim describes a change in adversary characterization (personal vs. impersonal) and crown attribution, not about who sets the bounded duration of ten days.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "geometry",
+    "diagnosis": "lines 15/4, markers 8/4 -- the spine is broken, not exceeded"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
