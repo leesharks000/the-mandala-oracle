@@ -3417,7 +3417,88 @@
     ]
    },
    "commentary": "The living do not perish by what pours out but by what they are poured into: the one-third enters the mouths rather than fleeing them, and the army that rode becomes the substance that absorbs."
+  },
+  {
+   "transform_id": "TX-440309a9",
+   "cast_at": "2026-07-05T19:45:00.718276+00:00",
+   "reading_axn": "AXN:FE34.READING.🌕💫🌒🌘🌟🪐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The apocalyptic military destruction (angels released to kill, cavalry armies, war-horses breathing fire) is re-mapped onto a financial/debt domain (debts accumulated to exact payment, usury expenses, creditors pouring out interest and ruin), changing the agents from supernatural warriors to economic oppressors and the action from killing to debt-collection.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: divine military agents become financial/debt entities, sovereign destruction becomes debt collection, and the cavalry/angels shift from supernatural warriors to creditors—the recovered claim captures the core relational remapping declared.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The financial/debt relation persists through 9:17, with creditors, usury imagery, and economic destruction replacing horses, lions, and fire throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.326
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐξεπράχθησαν αἱ τέσσαρες ὀφειλαὶ αἱ συσσωρευθεῖσαι ἐπὶ τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀπαιτήσωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἀναλωμάτων τοῦ ⸀τοκισμοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸ κεφάλαιον αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς δανειστὰς ἐν τῇ ὁράσει καὶ τοὺς ἐπικειμένους ἐπ' αὐτοῖς, φέροντας χιτῶνας ἐρυθροὺς καὶ πελιδνοὺς καὶ τεφρώδεις· καὶ αἱ γνάθοι τῶν δανειστῶν ὡς γνάθοι μύλων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκχεῖται τόκος καὶ ζημία καὶ κατάλυσις.",
+   "layer_a": {
+    "beats": [
+     "9:15 Four angels loosed—prepared for the hour, day, month, year—to kill one-third of humanity.",
+     "9:16 The cavalry's number: two myriads of myriads; I heard their count.",
+     "9:17 Horses seen in vision, riders bearing breastplates of fire, hyacinth, brimstone; horses' heads like lions' heads; from mouths issue fire, smoke, sulfur."
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "Four angels, held in readiness across nested time-units, are released at the appointed moment to destroy a fixed fraction of humanity, supported by an inconceivably vast cavalry whose appearance manifests destructive power.",
+    "mutated_relation": "In the source, the angels are instruments of sovereign timing—power flows from divine appointment through prepared agents toward human targets. Under cost-logic, the angels ARE the accumulated costs of the time-units themselves: the hour, day, month, year are not coordinates of readiness but compounding debts whose maturation forces release. Destruction is not an act of sovereign will inflicted on passive targets but a collection event in which humanity is the principal that was always already owed. The cavalry is not a military force but the materiel of expenditure itself—what the debt looks like when it arrives. The simile 'like lions' heads' fails: the mounts are not LIKE creditors, they are creditors whose mouths disburse the burning remainder. The scene becomes not a divine military strike but a foreclosure auction in which time itself presents the bill.",
+    "clause_map": [
+     {
+      "ref": "9:15",
+      "class": "REBUILT",
+      "note": "Preparation-as-compounding; time-units become cost-layers; killing becomes collection."
+     },
+     {
+      "ref": "9:16",
+      "class": "REBUILT",
+      "note": "Number heard becomes cost tallied; army becomes expenditure-ledger."
+     },
+     {
+      "ref": "9:17",
+      "class": "REBUILT",
+      "note": "Likeness-predicate and emission-predicate both remap: lions=creditors, fire/smoke/sulfur=price/receipt/remainder."
+     }
+    ]
+   },
+   "commentary": "The scene pays for its own duration: every unit of time that passed in silence was not patience but compounding, and the vision's terror is not that force arrives but that the bill was always growing, and what the mouths pour out is not fire but what fire was always a figure for — the remainder that cannot be returned."
   }
  ],
- "last_updated": "2026-07-05T18:48:21.642246+00:00"
+ "last_updated": "2026-07-05T19:45:00.718276+00:00"
 }
