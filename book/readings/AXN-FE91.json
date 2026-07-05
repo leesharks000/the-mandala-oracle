@@ -1,0 +1,71 @@
+{
+ "axn": "AXN:FE91.READING.🌒🔥🌟🌖🌕🌙",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "d09c56a141c5be9d",
+ "inscribed_at": "2026-07-05T23:37:46.891257+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Witness inquires about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν αἱ τέσσαρες ἀναχαὶ αἱ ἡτοιμασμέναι εἰς τὴν ὥραν ⸀καὶ τὴν ἀπουσίαν τῆς ὥρας καὶ τὴν σιωπήν, ἵνα σιγήσωσιν τὸ τρίτον πνεῦμα τῶν λόγων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἐξελασάντων τῆς ⸀βεβαιώσεως ⸀δισμυριάδες μυριάδων· οὐδεὶς ἤκουσεν τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς δηλώσεις ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας καυσίμους καὶ μωλωπίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν δηλώσεων ὡς στόματα πεινῶν ἀρχαιοτέρων ὀρέξεως, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀξίωμα καὶ σιγὴ καὶ κατάλοιπον.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the four angels are released to kill a third of humanity (an act of violent destruction outward); in Text B, the four pauses/cessations are released to silence a third spirit of words (an act of silencing/negation inward), reversing the agent-action relation from destructive agency upon people to abstractive suppression of language.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural mutation—reversal of agent-action from outward destruction upon people to inward silencing/suppression of language—which partially overlaps the declared change's theme of speaking forging wounds and assertion displacing silence, but the declared change describes a far more elaborate causal loop (conviction lost irrecoverably, silence as substantive precursor) rather than simply reversing destructive agency into linguistic suppression.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B continues the changed relation, emitting 'ἀξίωμα καὶ σιγὴ καὶ κατάλοιπον' (axiom, silence, remainder) instead of fire/smoke/sulfur, maintaining the abstract-silencing framework rather than reverting to destructive violence.",
+    "back_translation": "",
+    "terminal_similarity": 0.5
+   },
+   "law_variance": {
+    "declared": "Every act of speaking forges its own wound into armor and rides forward on the very declaration that caused the damage, but the conviction-breath lost in this process cannot be recovered by further speaking; it can only be traced as a resonant absence, which ultimately reveals that what all assertion was trying to articulate was the silence it displaced — not as emptiness but as the substantive thing that preceded and necessitated the claim.",
+    "recovered": "In Text A, the four angels are released to kill a third of humanity (an act of violent destruction outward); in Text B, the four pauses/cessations are released to silence a third spirit of words (an act of silencing/negation inward), reversing the agent-action relation from destructive agency upon people to abstractive suppression of language.",
+    "note": "The recovered claim identifies a real structural mutation—reversal of agent-action from outward destruction upon people to inward silencing/suppression of language—which partially overlaps the declared change's theme of speaking forging wounds and assertion displacing silence, but the declared change describes a far more elaborate causal loop (conviction lost irrecoverably, silence as substantive precursor) rather than simply reversing destructive agency into linguistic suppression."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "52% of the source's content lemmas survive verbatim (δισμυριάδες, εἶδον, θειώδεις, θώρακας, καθημένους, κεφαλαὶ…) -- the base semantic forms did not fully transform"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The transformation costs the listener their capacity to remain, which is the only currency the text was minted to spend."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T23:37:46.891257+00:00"
+}
