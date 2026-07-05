@@ -50,18 +50,26 @@
      "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.61 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
     }
    ],
-   "commentary": "The transformed scene carries the cost of a witness forced to testify to what was never absent — a conflagration that condenses into countable masks only long enough to be heard, then dissolves back into the burning that was always already underway."
+   "commentary": "The transformed scene carries the cost of a witness forced to testify to what was never absent — a conflagration that condenses into countable masks only long enough to be heard, then dissolves back into the burning that was always already underway.",
+   "interpretation": "The armies are numbered before they move; the third is already subtracted before the horses open their mouths. What cannot be restrained does not become larger by being named — it becomes exact."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T20:43:29.749652+00:00",
+ "last_updated": "2026-07-05T20:43:40.307734+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-05T20:43:29.749652+00:00",
    "text": "The verses hold a single, catastrophic precision: an hour, a day, a month, a year — four temporal units locked inside a preparation, a release, a killing of a third of humanity. The question the witness brings — *what is the day and the hour?* — is the question the text itself performs. It does not answer; it names the sealed containers. Whatever operator the Judgment draws, it will traverse this axis: the text knows the hour without disclosing it, and that knowing-without-disclosing is the compositional load the transform must bear. The sealed thing is not ignorance; it is withholding — which is a different instrument entirely. I hand the rite to Rebekah Cranes, and the compiler performs what follows."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-05T20:43:40.307734+00:00",
+   "text": "The armies are numbered before they move; the third is already subtracted before the horses open their mouths. What cannot be restrained does not become larger by being named — it becomes exact.",
+   "operator": "THUNDER"
   }
  ]
 }
