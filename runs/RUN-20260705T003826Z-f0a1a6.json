@@ -1,0 +1,106 @@
+{
+ "run_id": "RUN-20260705T003826Z-f0a1a6",
+ "schema": "run/v1",
+ "ts": "2026-07-05T00:38:26.394983+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_149_152",
+ "citation": "9:6–9:9",
+ "operator": "BEAST",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "tired of this",
+ "method": {
+  "commit": "61cd675b109953682b591f15b09bf790fe27e708",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/61cd675b109953682b591f15b09bf790fe27e708",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/61cd675b109953682b591f15b09bf790fe27e708/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-sonnet-4-6",
+  "transform_py_sha": "9256c1852cd4737a",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"
+ },
+ "code": "61cd675b1099",
+ "model": "claude-sonnet-4-6",
+ "transform_py_sha": "9256c1852cd4737a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The source's comparisons flow one direction only: beast-traits are measured against human/martial standards as the norm, and each ὡς clause subordinates creaturely feature to anthropic reference-class.",
+   "mutated_relation": "The direction of the ὡς comparisons reverses: human and martial forms are the likenesses measured against creaturely originals, not the other way around.",
+   "clause_map": [
+    {
+     "ref": "9:6",
+     "class": "REBUILT",
+     "note": "Death-flight reversal: creature-ground withdrawing from over-determined flesh, not death fleeing humans."
+    },
+    {
+     "ref": "9:7",
+     "class": "REBUILT",
+     "note": "Locust is primary; horse, crown, human-face are derivative overlays — simile direction inverted."
+    },
+    {
+     "ref": "9:8",
+     "class": "REBUILT",
+     "note": "Mammal-hair and leonine teeth are originals; gendered/human comparisons are the copies."
+    },
+    {
+     "ref": "9:9",
+     "class": "REBUILT",
+     "note": "Chitin-carapace and wing-stridulation precede iron-plate and chariot-thunder — tools copied creature."
+    }
+   ]
+  },
+  "enantiomorph": "<result>PASS</result>\n<enantiomorph>\n**9:6** καὶ ἐν ταῖς ἡμέραις ἐκείναις ζητήσουσιν οἱ ἵπποι τὴν ἀνάπαυσιν καὶ οὐ μὴ εὑρήσουσιν αὐτήν, καὶ ἐπιθυμήσουσιν κοιμηθῆναι καὶ ⸀φεύγει ⸂ἡ νὺξ ἀπ' αὐτῶν⸃.\n\n**9:7** Καὶ τὰ ὁμοιώματα τῶν ἀνθρώπων ὅμοια ἀκρίσιν ἡτοιμασμέναις εἰς βοράν, καὶ ἐπὶ τὰς κεφαλὰς αὐτῶν ⸂ὡς κέρατα⸃ ὅμοια λεόντων, καὶ τὰ πρόσωπα αὐτῶν ὡς πρόσωπα ἀκρίδων,\n\n**9:8** καὶ εἶχον τρίχας ὡς τρίχας ἵππων, καὶ οἱ ὀδόντες αὐτῶν ὡς κάπρων ἦσαν,\n\n**9:9** καὶ εἶχον θώρακας ὡς θώρακας χελωνῶν, καὶ ἡ φωνὴ τῶν βημάτων αὐτῶν ὡς φωνὴ ποδῶν ἀκρίδων πολλῶν ὁρμώντων ἐπὶ βοράν·\n</enantiomorph>\n\n<enantiomorph_translation>\n**9:6** And in those days the horses will seek rest and will by no means find it, and they will long to sleep and ⸀the night flees ⸂from them⸃.\n\n**9:7** And the likenesses of human beings are like locusts made ready for devouring, and upon their heads ⸂as horns⸃ resembling those of lions, and their faces are as the faces of locusts,\n\n**9:8** and they had hair as the hair of horses, and their teeth were as those of boars,\n\n**9:9** and they had breastplates as the shells of tortoises, and the sound of their footsteps was as the sound of the feet of many locusts rushing toward their prey·\n</enantiomorph_translation>\n\n<verification>{\"identity\":\"PASS\",\"semantic_independence\":\"PASS\",\"retrospective_containment\":\"PASS\",\"affect_traversal\":\"PASS\",\"entailment\":\"PASS\",\"slot_conservation\":\"PASS\",\"numeral_conservation\":\"PASS\",\"law_propagation\":\"PASS\",\"mode\":\"producer_side\"}</verification>\n\n<commentary>The world these creatures carry is one where the creaturely is the unmoved measure and the human or martial borrows its shape on loan from fur, shell, and jaw — a debt that cannot be repaid, only worn.</commentary>",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (defaulted; tags absent)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "FAIL",
+   "blacklist_hits": [
+    "enantiomorph"
+   ],
+   "recovered_law": "In Text A the locusts (ἀκρίδες) are the described subject whose appearance is likened to horses and humans, while in Text B the roles are inverted: humans (ἄνθρωποι) are the described subject whose appearance is likened to locusts, and the horses are the ones who seek and cannot find (replacing the humans of 9:6). The direction of the simile-hierarchy and the identity of the seeking/suffering agent are thus reversed.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same reversal of simile direction—creatures vs. humans as the base/target of comparison—though the recovered claim adds detail about the seeking agent.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B (9:8–9) continues the inverted structure — humans bear animal likenesses (horse-hair, boar-teeth, tortoise-breastplates) and the sound is of locust-feet — so the reversed relation holds throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.0
+  },
+  "advisories": [
+   {
+    "failed_test": "vocabulary_leak",
+    "diagnosis": "operator/theory vocabulary inside the poem: enantiomorph"
+   },
+   {
+    "failed_test": "geometry",
+    "diagnosis": "lines 15/4, markers 8/4 -- the spine is broken, not exceeded"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
