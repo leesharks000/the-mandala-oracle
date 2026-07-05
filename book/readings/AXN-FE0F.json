@@ -99,11 +99,54 @@
     }
    ],
    "commentary": "The transformation costs the source its catastrophe — the angels keep their appointment but lose their audience, and what was terrifying about them turns out to have been not the fire but the expectation that someone would be there to die."
+  },
+  {
+   "operator": "THUNDER",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐσίγησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀ἣν οὐδεὶς ὥρισεν, ἵνα ἀκούσωσιν τὸ ἓν τῶν ἀρρήτων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀σιωπικοῦ ⸀ἀνήκουστος ἀνηκούστων· οὐκ ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας κενοὺς καὶ ἀχρώμους καὶ ἀνωνύμους· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ παιδίων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀναπνοὴ καὶ ψιθυρισμὸς καὶ ὄνομα.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Text A depicts violent, destructive action (angels loosed to kill, cavalry of fire/smoke/brimstone, lion-headed horses); Text B systematically inverts the relational direction from forceful outward destruction to silent, unknowable inwardness (angels silenced to hear the unspeakable, an uncountable/unheard army, empty/colorless armor, child-headed horses exhaling breath/whisper/name instead of fire/smoke/brimstone).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: outward destructive force (fire, killing, armies striking) is systematically reversed into inward, quiet, unknowable reception (listening, whispering, breath, a single unnameable name), with the army no longer destroying but attending in silence.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (9:17) sustains the inversion: destructive emanation (fire, smoke, brimstone) is replaced by quiet, intimate emanation (breath, whisper, name), maintaining the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.6
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "facing_fallback",
+     "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+    }
+   ],
+   "commentary": "The transformation costs the witness the one certainty the source guaranteed — that he heard the number — and with it the power to stand outside the event as its chronicler; what remains is an army he belongs to, breathing."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T21:31:21.625733+00:00",
+ "last_updated": "2026-07-05T21:33:14.262944+00:00",
  "rite": [
   {
    "stage": "judgment",
