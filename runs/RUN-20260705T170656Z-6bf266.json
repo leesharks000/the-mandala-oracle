@@ -1,0 +1,107 @@
+{
+ "run_id": "RUN-20260705T170656Z-6bf266",
+ "schema": "run/v1",
+ "ts": "2026-07-05T17:06:56.053156+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_158_161",
+ "citation": "9:15–9:18",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what it the day and the hour?",
+ "method": {
+  "commit": "1ef77541c669da8d32adfb5c6f8197193a54e8e4",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/1ef77541c669da8d32adfb5c6f8197193a54e8e4",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/1ef77541c669da8d32adfb5c6f8197193a54e8e4/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f454b49c2a1a70ac",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "1ef77541c669",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f454b49c2a1a70ac",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four angels held in reserve are released at a pre-appointed composite moment to emit destruction outward through mounted forces whose mouths discharge plagues that deduct a fixed fraction of humanity.",
+   "mutated_relation": "In the transformed world the four are not released outward but spent inward: the angels ARE the cost already paid, the mounts ARE the debt that carries its riders rather than being carried, the mouths do not emit destruction but absorb it — the one-third deducted is subtracted FROM the destroying forces, not from humanity, so that precision of timing names what the utterance has already forfeited to exist.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Release reverses: four are spent not freed; timing is price, not trigger"
+    },
+    {
+     "ref": "9:16",
+     "class": "ANCHOR",
+     "note": "Hearing a count is invariant — witness registers magnitude without directing it"
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Emission reverses: mouths absorb; riders borne-by-debt; simile-of-lions now cost-face"
+    },
+    {
+     "ref": "9:18",
+     "class": "REBUILT",
+     "note": "Passive killing reverses patient: one-third deducted from emitters, not from humanity"
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐδαπανήθησαν οἱ τέσσαρες ὀφειλέται οἱ προαναλωθέντες εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀφαιρεθῇ τὸ τρίτον τῶν ὀλεθρίων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν βαρημάτων τοῦ ⸀ζυγοφόρου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ζυγίους ἐν τῇ ὁράσει καὶ τοὺς φερομένους ἐπ' αὐτῶν, ἔχοντας θώρακας τεφρώδεις καὶ μολιβδίνους καὶ ὠχρούς· καὶ αἱ κεφαλαὶ τῶν ζυγίων ὡς κεφαλαὶ βοῶν, καὶ εἰς τὰ στόματα αὐτῶν εἰσρέει φλὸξ καὶ ἀχλὺς καὶ κνῖσα.\n\n**9:18** ἀπὸ τῶν τριῶν κενώσεων τούτων ἠλαττώθη τὸ τρίτον τῶν ὀλεθρίων, ⸀ἐκ τῆς φλογὸς καὶ τῆς ἀχλύος καὶ τῆς κνίσης τῆς εἰσρεούσης εἰς τὰ στόματα αὐτῶν.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "FAIL",
+   "blacklist_hits": [
+    "δαπαν"
+   ],
+   "recovered_law": "In TEXT A, destructive substances (fire, smoke, brimstone) flow outward from the mouths of the creatures to kill humans; in TEXT B, the substances (flame, mist, sacrificial smoke) flow inward into the mouths of the creatures, and the agents themselves are consumed/diminished rather than unleashing destruction outward.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same core inversion: destructive forces that originally flow outward from mouths to kill are reversed to flow inward, and the agents/forces themselves are consumed/diminished rather than destroying humanity outward.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion (9:18) maintains the reversed direction: substances flow inward (εἰσρεούσης εἰς τὰ στόματα) and the entities are diminished (ἠλαττώθη), consistent with TEXT B's changed relation throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.31
+  },
+  "advisories": [
+   {
+    "failed_test": "vocabulary_leak",
+    "diagnosis": "operator/theory vocabulary inside the poem: δαπαν"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "Every mount here is already laden before it is ridden, every mouth draws inward what would have poured out, every angel names an expenditure already settled — so that the precision of hour and day and month and year marks not the moment of unleashing but the forfeit the utterance has already buried in its own calendar to reach the ear at all.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
