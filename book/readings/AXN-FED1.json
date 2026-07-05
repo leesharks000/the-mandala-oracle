@@ -302,11 +302,107 @@
    ],
    "commentary": "The world that was built to discharge its purpose at a named moment discovers that the moment never coheres, and so every mouth opens only onto what accrues when an answer is permanently owed: ash in place of fire, cenotaphs in place of lions, and a number that counts nothing except the depth of the waiting.",
    "interpretation": "The angels retained at the threshold: the hour arrived and nothing was loosed."
+  },
+  {
+   "operator": "BEAST",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐρράγησαν αἱ τέσσαρες ὀξυκλινεῖς αἱ συσσωρευμέναι εἰς τὴν παλίρροιαν ⸀καὶ φωτοπερίοδον καὶ ἰλυοστροφὴν καὶ ἀνάδυσιν, ἵνα ἀναλώσωσιν τὸ τρίτον τῶν ζυμωμάτων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν σμηνῶν τοῦ ⸀βενθικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς σαύρας ἐν τῇ ὁράσει καὶ τοὺς ἑρπύζοντας ἐπ' αὐτῶν, ἔχοντας φολίδας σιδηρώδεις καὶ θαλασσίνους καὶ θειαφώδεις· καὶ αἱ γνάθοι τῶν σαυρῶν ὡς γνάθοι μυραινῶν, καὶ ἐκ τῶν βραγχίων αὐτῶν ἐκπορεύεται ἅλμη καὶ μεθάνιον καὶ ὑδρόθειον.",
+   "layer_a_declaration": {
+    "beats": [
+     "9:15 Four bound agents loosed at the exact hour/day/month/year to kill one-third of humans",
+     "9:16 Cavalry number: two-hundred-million; witness heard the count",
+     "9:17 Vision: horses and riders; riders wear fire/hyacinth/sulfur breastplates; horse-heads like lion-heads; from mouths issue fire, smoke, sulfur"
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "τέσσαρες ἄγγελοι (four angels)": "four geo-metabolic pressures (tectonic, thermal, saline, anoxic)",
+     "ἡτοιμασμένοι (prepared/bound)": "latent in substrate strata, held at threshold",
+     "ἐλύθησαν (loosed)": "breached equilibrium, crossed tipping-point",
+     "ὥραν (hour)": "one tidal pulse",
+     "ἡμέραν (day)": "one photosynthetic cycle",
+     "μῆνα (month)": "one lunar-spawning interval",
+     "ἐνιαυτόν (year)": "one full biogeochemical turnover",
+     "ἀποκτείνωσιν (kill)": "extinguish metabolic viability of",
+     "τὸ τρίτον (one-third)": "one-third (count invariant)",
+     "τῶν ἀνθρώπων (of humans)": "of aerobic megafauna",
+     "ἀριθμός (number)": "population-census of the swarm",
+     "στρατευμάτων τοῦ ἱππικοῦ (cavalry armies)": "pelagic-migratory columns",
+     "δισμυριάδες μυριάδων (two-hundred-million)": "two-hundred-million (count invariant)",
+     "ἤκουσα (I heard)": "registered through substrate vibration (infrasound/seismic)",
+     "ἵπποι (horses)": "apex mobile fauna (cetacean-analogues, swarming predators)",
+     "καθήμενοι ἐπ' αὐτῶν (riders upon them)": "symbiotic commensals borne on their mass",
+     "θώρακας πυρίνους (fire-breastplates)": "thermal-vent mineral crusts",
+     "ὑακινθίνους (hyacinth-colored)": "bioluminescent indigo chitins",
+     "θειώδεις (sulfurous)": "sulfide-metabolizing integuments",
+     "κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων (horse-heads like lion-heads)": "maws structured as apex-predator gapes",
+     "ἐκ τῶν στομάτων (from their mouths)": "from their venting orifices",
+     "πῦρ (fire)": "superheated brine jets",
+     "καπνός (smoke)": "particulate-dense turbidity plumes",
+     "θεῖον (sulfur)": "elemental sulfur exhalation"
+    },
+    "axis": "The nonhuman substrate's own rhythms and thresholds determine the hour, not angelic-anthropic decree.",
+    "foreclosure": "The source forecloses that the killing-hour could originate from geochemical necessity rather than divine scheduling.",
+    "wager": "Ceding human centrality means the substrate's appetite is indifferent, and human extinction is a metabolic byproduct, not a judgment.",
+    "affect": "Abyssal indifference vibrating at a frequency below terror — the cold satiation of lithospheric hunger."
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared change describes a complex inversion of timing-agency from divine calendrical will to autonomous biogeochemical thresholds.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts maintain identical relational structures throughout — agents prepared for a time to destroy a fraction, counted forces, described mounts with riders bearing armor and heads compared to predators emitting substances. Only vocabulary/imagery differs (apocalyptic/military → marine/reptilian).",
+    "back_translation": "",
+    "terminal_similarity": 0.357
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, while the declared change describes a complex inversion of timing-agency from divine calendrical will to autonomous biogeochemical thresholds.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": "The substrate carries the price of its own patience: every threshold it accumulates without release becomes the jaw that opens, and what it consumes is not sinners but the thin biochemical fraction that mistook itself for the purpose of the deep."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T18:39:50.182859+00:00",
+ "last_updated": "2026-07-05T18:41:25.416230+00:00",
  "rite": [
   {
    "stage": "judgment",
