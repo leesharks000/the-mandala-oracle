@@ -2422,6 +2422,9 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
     The witness's question never enters this pipeline: it selects the
     passage and sequences operators upstream; here it would only refract
     (verified 2026-07-05: three casts orbiting 'the unasked hour')."""
+    _t0 = time.time()
+    def _left(cap):
+        return max(12, min(cap, int(272 - (time.time() - _t0))))
     pool = list(range(len(_EXEMPLAR_LIBRARY)))
     sappho = next(k for k, (n, _) in enumerate(_EXEMPLAR_LIBRARY) if n.startswith("sappho"))
     dreams = [k for k in pool if k != sappho]
@@ -2439,7 +2442,7 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
     u1 = (f"OPERATOR: {operator} — {OPERATORS[operator]}\n\n"
           f"SOURCE:\n<<<\n{source_text}\n>>>"
           f"{guidance}\n\nCast.")
-    d_text, d_stop = _stream_call(COMPILER_MODEL, system1, u1, 1600, api_key, wall=85)
+    d_text, d_stop = _stream_call(COMPILER_MODEL, system1, u1, 1600, api_key, wall=_left(85))
     draft = _tagsect(d_text, "CAST") or d_text
     draft_clean = _MARKER_RE.sub("", draft).strip()
     if not draft_clean:
@@ -2455,7 +2458,7 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
                 "post_mortem": {"raw_output": d_text[:4000]}}
 
     u2 = f"THE TEXT:\n<<<\n{draft_clean}\n>>>{guidance}\n\nBloom."
-    b_text, b_stop = _stream_call(COMPILER_MODEL, _BLOOM_SYSTEM, u2, 1800, api_key, wall=75)
+    b_text, b_stop = _stream_call(COMPILER_MODEL, _BLOOM_SYSTEM, u2, 1800, api_key, wall=_left(75))
     bloom_cont = _MARKER_RE.sub("", _tagsect(b_text, "CAST")).strip() or draft_clean
     self_law = _tagsect(b_text, "RECOVERED_LAW")
 
@@ -2468,7 +2471,7 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
           f"THE MATERIAL (the transformed world; its beings are final):\n<<<\n{bloom_cont}\n>>>\n\n"
           f"THE FORM-TEXT (shape only -- markers, syntax, clause structures, extent):\n<<<\n{source_text}\n>>>"
           f"{guidance}\n\nCompress.")
-    z_text, z_stop = _stream_call(COMPILER_MODEL, _COMPRESS_SYSTEM, u3, 1400, api_key, wall=60)
+    z_text, z_stop = _stream_call(COMPILER_MODEL, _COMPRESS_SYSTEM, u3, 1400, api_key, wall=_left(60))
     enant = _tagsect(z_text, "ENANTIOMORPH").strip()
     if enant and not _MARKER_RE.search(enant):
         enant = _resegment(_MARKER_RE.sub("", enant).strip(), markers)
@@ -2528,6 +2531,14 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
     else:
         parsed["independent"]["blacklist"] = "PASS"
 
+    if (time.time() - _t0) > 215:
+        # Deadline (MANUS, 2026-07-05, the second Failed-to-fetch): a cast
+        # with deferred gates beats a connection the platform killed. The
+        # judge's audit can be re-run offline from the record.
+        parsed.setdefault("advisories", []).append({"failed_test": "gates_deferred",
+            "diagnosis": f"time budget spent at {int(time.time()-_t0)}s; independent gates "
+                         f"skipped to return the cast alive -- re-run the audit from the record"})
+        return parsed
     return _independent_gates(parsed, kernel, source_text, api_key,
                               advisory=(os.environ.get("V3_HARD_GATES") != "1"))
 
@@ -3602,6 +3613,25 @@ class handler(BaseHTTPRequestHandler):
                                              "the demo fallback is not configured for the compiler."})
 
         # ── The invisible Judgment: select the verses for a cast ──
+        if body.get("action") == "passage":
+            # ORDER REPAIR (MANUS, 2026-07-05: "why does the original text
+            # appear below shadow?"): typed-citation casts had no upfront
+            # passage fetch, so the source card rendered only when the first
+            # transform returned -- after the operator banner -- and that
+            # inverted order flowed into the Book on sealing. This action
+            # lets the client show the cast text before the rotation begins.
+            try:
+                _pt, _pm = load_source(body.get("source_text_id", ""),
+                                       body.get("cast_selection", ""))
+                return self._json(200, {
+                    "passage": _pt,
+                    "passage_translation": translate_passage(_pt, api_key),
+                    "citation": body.get("cast_selection", ""),
+                    "attribution": (_pm or {}).get("underlying_attribution"),
+                })
+            except Exception as e:
+                return self._json(400, {"error": f"passage resolution failed: {e}"})
+
         if body.get("action") == "judgment" and body.get("judge") == "operator":
             try:
                 if body.get("source_text_id") == "__reader__":

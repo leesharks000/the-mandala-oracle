@@ -1002,6 +1002,26 @@ async function runCastingRite(cast) {
     let haltedOperator = null;
     let currentOperator = cast.operator || null;   // '' → Judgment chooses round 1 too
 
+    // ORDER REPAIR: typed selections fetch and show the cast text BEFORE the
+    // rotation opens, so the source never renders beneath an operator banner.
+    if (cast.castSelection && !cast.sourceShown && cast.sourceId !== '__reader__') {
+      try {
+        const pres = await fetch('/api/transform', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ action: 'passage', source_text_id: cast.sourceId,
+                                 cast_selection: cast.castSelection, anthropic_key: apiKey }),
+        });
+        const pj = await pres.json();
+        if (pres.ok && pj.passage) {
+          cast.passage = pj.passage;
+          cast.passageTranslation = pj.passage_translation || '';
+          renderSourceCard(pj.citation || cast.castSelection, pj.passage,
+                           pj.attribution, cast.passageTranslation);
+          cast.sourceShown = true;
+        }
+      } catch (e) { /* the fallback render below the first transform still covers us */ }
+    }
     rotation: while (operatorsDone.length < 8) {
       // Operator judgment: round 1 only if unchosen; every subsequent round.
       if (!currentOperator) {
@@ -1074,7 +1094,10 @@ async function runCastingRite(cast) {
           transform = data.transform;
           inscription = data.inscription;
           if (!sourceShown && transform.source_passage) {
-            renderSourceCard(transform.citation || cast.castSelection, transform.source_passage, transform.underlying_attribution, transform.source_translation || cast.passageTranslation);
+            if (!cast.sourceShown) {
+              renderSourceCard(transform.citation || cast.castSelection, transform.source_passage, transform.underlying_attribution, transform.source_translation || cast.passageTranslation);
+              cast.sourceShown = true;
+            }
             sourceShown = true;
           }
           const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
