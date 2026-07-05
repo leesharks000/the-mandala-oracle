@@ -1203,8 +1203,14 @@ blessed->silenced, I-am->you-are, trinkets->fragments. Eleven lines, eleven
 refills, one law, zero explanation.
 
 LAWS:
-- TEMPLATE ABSOLUTE: same line count (including blanks), same stanza breaks,
-  verse markers in the same positions with the same numerals.
+- TEMPLATE AS SPINE: hold the lineation, stanza breaks, verse markers, and
+  syntactic frames closely -- they are the spine of the cast.
+- TAILS WITHIN THE MAPPING: the close mapping is the spine, not a cage.
+  Where the transformed world requires more room, let the line split, the
+  clause extend, the passage swell past strict correspondence -- the tail
+  grows from INSIDE the mapping, under the same law, and returns to it.
+  Rigid one-to-one is the floor of closeness, not the ceiling of the method.
+  (The demonstration above shows the floor; the fuller exemplars breathe.)
 - SLOT-TOTAL: every content slot refilled from the operator's world under the
   declared law; verbatim content lines are failures; the final unit is where
   the law must land hardest, never a reversion toward the source's world.
@@ -2027,7 +2033,10 @@ def _binding_battery(parsed: dict, source_text: str) -> dict:
                  "diagnosis": "verse markers absent from the composition; restored from the source block-by-block (lines matched)"})
             ol, om = _g(parsed["enantiomorph"])
     if sl != ol or (sm and sm != om):
-        _fails.append(("geometry", "lines %d/%d, markers %d/%d -- geometry is binding" % (ol, sl, om, sm)))
+        if ol > sl and (not sm or om == sm):
+            _fails.append(("tails", "+%d lines beyond the template, markers intact -- within-method extension; the witness judges the swell" % (ol - sl)))
+        else:
+            _fails.append(("geometry", "lines %d/%d, markers %d/%d -- the spine is broken, not exceeded" % (ol, sl, om, sm)))
     lm = str(parsed.get("independent", {}).get("law_match", "SKIPPED")).upper()
     if lm not in ("PASS", "SKIPPED"):
         _fails.append(("law_match_exact", "law match %s -- only EXACT enactment of the declared law emits" % lm))
