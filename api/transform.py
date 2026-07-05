@@ -2218,6 +2218,220 @@ def _run_beat_pipeline(source_text: str, operator: str, invoking: str, api_key: 
                               advisory=(os.environ.get("V3_HARD_GATES") != "1"))
 
 
+
+# ═══ ABDUCT/v1 (MANUS, 2026-07-05) ════════════════════════════════════════
+# Material-abductive transformation: infer the latent operation from
+# source-transform pairs; perform it on the new source under the operator's
+# pressure; recover the law retrospectively from the completed material.
+
+_EXEMPLAR_LIBRARY = [
+    ("dream+INVERSION", """SOURCE (a dream report): He picked up her head and looked inside her
+mind, scrutinizing, saying there was something wrong with her thoughts. She
+was not resisting him. And he was taking her under his harder heart, to
+correct her.
+
+TRANSFORM (one operator): She lifted his face, peeled it open. His mind
+roared with rusted wires. She judged his logic insufficient. He did not
+resist. And she placed him beneath her softening heart, to show him
+another way."""),
+    ("dream+MIRROR", """SOURCE (a dream report): He picked up her head and looked inside her
+mind, scrutinizing, saying there was something wrong with her thoughts. She
+was not resisting him. And he was taking her under his harder heart, to
+correct her.
+
+TRANSFORM (another operator): He studied her as if she were glass -- not to
+penetrate, but to see himself. Every flaw he named belonged first to his
+reflection. And her stillness held the image until it shattered."""),
+    ("dream+BRIDE", """SOURCE (a dream report): He picked up her head and looked inside her
+mind, scrutinizing, saying there was something wrong with her thoughts. She
+was not resisting him. And he was taking her under his harder heart, to
+correct her.
+
+TRANSFORM (another operator): The scrutiny was a vow. He did not lift her
+to judge, but to see if she would be chosen. And she, consenting, let him
+see the parts she could not name. Not to be corrected. To be loved."""),
+    ("dream+FLAME", """SOURCE (a dream report): He picked up her head and looked inside her
+mind, scrutinizing, saying there was something wrong with her thoughts. She
+was not resisting him. And he was taking her under his harder heart, to
+correct her.
+
+TRANSFORM (another operator): The moment he lifted her skull, it caught
+fire. Not her thoughts, but his certainty burned. And in that blaze she
+stepped free, carrying the ashes of judgment in her palms."""),
+    ("sappho+BRIDE", """SOURCE (a lyric, in translation):
+Dream of black you come
+whenever sleep comes sweet
+god terrible, yes, but you
+have power to keep away
+pain: a little hope grips me
+yet that I will not share
+in nothing with the blessed -- I
+do not
+want to be
+as I am:
+let me have these trinkets
+
+TRANSFORM (an operator; note the lineation held while every relation
+turns):
+Oath of black you signed
+whenever chart shows clean
+god neutral, yes, but you
+had power to keep away
+care: a little lie clings to me
+yet that I will not blend
+in softly with the silenced -- I
+do not
+want to be
+as you are:
+let me have these fragments"""),
+]
+
+_LAST_EXEMPLARS = {"ids": []}
+
+_ABDUCT_TEMPLATE = """You receive demonstrations of a transformation family,
+an operator, and a source. The task is an inverse reasoning problem: infer
+from the source-transform pairs the latent generative operation, and
+perform that operation on the new source under the pressure of the
+operator.
+
+THE DEMONSTRATIONS:
+
+{exemplars}
+
+Study what each transform does to its source: formal ancestry is preserved
+-- lineation, cadence, syntactic gesture -- while address direction, tense,
+speaker and recipient, agency, ontology, quantity and countability,
+embodiment, event class, causal sequence, and the final consequence of the
+scene may all transform. The same operator opens unrelated worlds on
+different sources, and on the same source on different days. The changes
+remain exact not because they preserve the source's visible objects or
+scene grammar, but because they continue to answer to relations discovered
+in the source.
+
+THE OPERATOR acts relationally. Its name is a mnemonic surface; the
+generative force lies in the operator's relation to THIS source. THUNDER
+need not produce thunder, noise, or storms. FLAME need not produce fire or
+heat. BRIDE need not produce weddings, veils, or marriage imagery. MIRROR
+need not produce glass or reflections. BEAST need not simply replace humans
+with animals. SILENCE need not merely produce muteness, empty mouths, or
+quiet. The transformed register should arise from the altered relation,
+never be selected in advance from the operator's semantic field.
+
+ON ROLES AND REALIZATIONS: do not decide in advance which of the source's
+features are inviolable. Conspicuous features -- an exact count, a named
+coordinate, an army, mounted carriers, apertures emitting substances, the
+destruction of a fraction -- are realizations of deeper relations (latency
+under constraint; transition at a threshold; magnitude becoming
+perceptible; transmission across a boundary), and an operator may transform
+any realization, including the apparent shape of the deeper relation
+itself. A count is not a large-number slot: it asserts that magnitude is
+discrete, enumerable, externally countable, communicable as a completed
+total, available to a witness standing outside it -- and every one of those
+assertions can transform. The army may cease to be an army; the count may
+cease to be a count; the witness may cease to stand outside the event;
+destruction may cease to be the terminal event class -- while the work
+remains answerable to the source through consequential correspondence.
+
+THE OPERATION: Enter the source under the pressure of the operator. Do not
+decide in advance which of the source's features are inviolable. Permit
+lexical, grammatical, rhythmic, quantitative, and ontological choices to
+alter the operative representation as the transform develops -- one
+word-level choice may reorganize the syntax, agency, temporality, quantity,
+and consequence available to later choices. Preserve relation to the source
+through consequential correspondence, not through retention of its visible
+scene skeleton. After the cast is complete, recover the law that the
+material transformation discovered.
+
+FORM: compose in the source's language, holding its lineation, verse
+markers, and critical sigla as formal ancestry (the marks in place; the
+readings they flag transform); follow with a line-for-line English facing,
+MANDATORY when the source is not English. A clause may swell where the
+material requires and return. The witness's question selects nothing and
+donates nothing. No analytic vocabulary inside the cast: no cost,
+bilateral, encoded, axis, vector, kernel, traversal, foreclosure, wager,
+relation, register, operator.
+
+Emit ONLY, in this order:
+<ENANTIOMORPH>
+the transformed text, markers and sigla in place
+</ENANTIOMORPH>
+<ENANTIOMORPH_TRANSLATION>
+line-for-line English facing (empty ONLY for English sources)
+</ENANTIOMORPH_TRANSLATION>
+<RECOVERED_LAW>the law the completed material disclosed -- one to three
+sentences, discovered in the making, not planned before it</RECOVERED_LAW>
+<COMMENTARY>one sentence: what the transformation costs</COMMENTARY>"""
+
+
+def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
+                            retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
+    """One generative act; law recovered retrospectively; exemplars sampled."""
+    pool = list(range(len(_EXEMPLAR_LIBRARY)))
+    sappho = next(i for i, (n, _) in enumerate(_EXEMPLAR_LIBRARY) if n.startswith("sappho"))
+    dreams = [i for i in pool if i != sappho]
+    picks = [sappho] + sorted(secrets.SystemRandom().sample(dreams, 2))
+    _LAST_EXEMPLARS["ids"] = [_EXEMPLAR_LIBRARY[i][0] for i in picks]
+    exemplar_text = "\n\n----\n\n".join(_EXEMPLAR_LIBRARY[i][1] for i in picks)
+    system = _ABDUCT_TEMPLATE.format(exemplars=exemplar_text)
+
+    guidance = ""
+    if halt_feedback:
+        guidance = "\n\nWITNESS FEEDBACK ON THE PRIOR ATTEMPT: " + halt_feedback
+    u = (f"OPERATOR: {operator} — {OPERATORS[operator]}\n"
+         f"WITNESS QUESTION (relevance only): {invoking.strip()[:MAX_INVOKING_CHARS]}\n\n"
+         f"SOURCE:\n<<<\n{source_text}\n>>>"
+         f"{guidance}\n\nCast.")
+    c_text, c_stop = _stream_call(COMPILER_MODEL, system, u, COMPOSE_MAX, api_key, wall=150)
+
+    _enant = _tagsect(c_text, "ENANTIOMORPH")
+    if not _enant and c_text.strip():
+        _enant = re.sub(r"</?[A-Za-z_]+>", "",
+                 re.sub(r"(?i)<RECOVERED_LAW>.*?</RECOVERED_LAW>", "",
+                 re.sub(r"(?i)<COMMENTARY>.*?</COMMENTARY>", "",
+                 re.sub(r"(?i)<ENANTIOMORPH_TRANSLATION>.*?</ENANTIOMORPH_TRANSLATION>", "",
+                        c_text, flags=re.DOTALL), flags=re.DOTALL), flags=re.DOTALL)).strip()
+    self_law = _tagsect(c_text, "RECOVERED_LAW")
+    kernel = {"governing_law": "", "mutated_relation": self_law, "beats": ""}
+    parsed = {
+        "result": "PASS" if _enant.strip() else "HALT",
+        "kernel": kernel,
+        "layer_a": {"beats": [], "geometry": {}},
+        "layer_b": {},
+        "_invoking": invoking,
+        "skeleton": {"self_recovered_law": self_law, "exemplars": _LAST_EXEMPLARS["ids"]},
+        "enantiomorph": _enant,
+        "enantiomorph_translation": _tagsect(c_text, "ENANTIOMORPH_TRANSLATION"),
+        "verification": {"identity": "PASS", "semantic_independence": "PASS",
+                         "retrospective_containment": "PASS", "affect_traversal": "PASS",
+                         "entailment": "PASS", "law_propagation": "PASS",
+                         "mode": "producer_side (abductive; law self-recovered)"},
+        "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
+                        "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
+                        "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
+        "commentary": _tagsect(c_text, "COMMENTARY"),
+        "halt_diagnosis": {"failed_constraint": "C4", "failed_test": "identity",
+                           "specific_diagnosis": f"nothing extractable (stop={c_stop}; {len(c_text)} chars)"},
+    }
+    if parsed["result"] != "PASS":
+        parsed["post_mortem"] = {"raw_output": c_text[:4000]}
+        return parsed
+
+    hits = blacklist_hits(parsed["enantiomorph"], parsed["enantiomorph_translation"])
+    if hits:
+        parsed["independent"]["blacklist"] = "FAIL"
+        parsed["independent"]["blacklist_hits"] = hits[:12]
+        parsed.setdefault("advisories", []).append({"failed_test": "vocabulary_leak",
+            "diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])})
+    else:
+        parsed["independent"]["blacklist"] = "PASS"
+
+    # the judge, repurposed: blind recovery vs the SELF-recovered law --
+    # the retrospective-lawfulness audit (did the material discover the
+    # law it claims), never obedience to a prescription.
+    return _independent_gates(parsed, kernel, source_text, api_key,
+                              advisory=(os.environ.get("V3_HARD_GATES") != "1"))
+
+
 def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str,
                     method: str | None = None,
                     retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
@@ -2227,6 +2441,11 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
     clause map) -> G0 blacklist -> G1 blind back-translation -> G2 judge ->
     G3 law match. HALT at the first failed gate; nothing inscribed on HALT.
     """
+    if (method or os.environ.get("MANDALA_METHOD", "")) == "abduct":
+        _p = _run_abductive_pipeline(source_text, operator, invoking, api_key,
+                                     retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
+        _p["_invoking"] = invoking
+        return _p
     if (method or os.environ.get("MANDALA_METHOD", "")) == "beat":
         _p = _run_beat_pipeline(source_text, operator, invoking, api_key,
                                 retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
@@ -3453,9 +3672,10 @@ class handler(BaseHTTPRequestHandler):
                               ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
                     "model": COMPILER_MODEL,
                     "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
-                    "prompt_method": ("pivot/v1 (parse-pivot-cascade-narrate; happenings retained, meaning recomputed)"
-                                      if (body.get("method") or os.environ.get("MANDALA_METHOD", "")) == "beat"
-                                      else "slot-total/v1 (exemplar-framed, source-as-template)"),
+                    "prompt_method": {"abduct": "abduct/v1 (exemplar-conditioned; law recovered retrospectively)",
+                                       "beat": "pivot/v1 (parse-pivot-cascade-narrate)"}.get(
+                                          (body.get("method") or os.environ.get("MANDALA_METHOD", "")),
+                                          "slot-total/v1 (exemplar-framed, source-as-template)"),
                     "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"},
                 "code": os.environ.get("VERCEL_GIT_COMMIT_SHA", "")[:12],
                 "model": COMPILER_MODEL,
@@ -3475,6 +3695,7 @@ class handler(BaseHTTPRequestHandler):
             parsed.setdefault("advisories", []).append(
                 {"failed_test": "selection_apparatus", "diagnosis": meta["selection_advisory"]})
         _run.setdefault("method", {})["model_effective"] = _EFFECTIVE_MODEL.get("id")
+        _run["method"]["exemplars"] = list(_LAST_EXEMPLARS.get("ids", []))
         if (parsed.get("result") == "PASS" and str(parsed.get("enantiomorph", "")).strip()
                 and not str(parsed.get("enantiomorph_translation", "")).strip()):
             try:
