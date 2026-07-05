@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260705T205901Z-1bbc97",
+ "schema": "run/v1",
+ "ts": "2026-07-05T20:59:01.100983+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "465f052b9cb0afa286d9e9eb80243cd58c272c16",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/465f052b9cb0afa286d9e9eb80243cd58c272c16",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/465f052b9cb0afa286d9e9eb80243cd58c272c16/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "528c9523950c8d28",
+  "prompt_method": "pivot/v1 (parse-pivot-cascade-narrate; happenings retained, meaning recomputed)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "465f052b9cb0",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "528c9523950c8d28",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Four agents held in reserve are released at the appointed moment to destroy a fixed portion of humanity, backed by an innumerable cavalry force whose terrifying appearance confirms the irresistibility of the mandate.",
+   "mutated_relation": "The loosing of the four agents was not the execution of a prepared decree but the moment a debt compounded across every unit of deferred time — hour, day, month, year — finally came due and was collected from the only currency available. | turn: Not a judgment unleashed at the appointed time. But a bill presented for every moment the appointed time was made to wait.",
+   "beats": "- roles: The unnamed authority was not a sovereign giving an order but a creditor foreclosing; the four agents were not servants held ready but interest accruing in confinement, each interval of delay adding to the principal owed; a third of humanity was not a condemned portion but the exact installment extracted to service the accumulated lien.\n- value-predicates: \"Prepared\" was never fitness; it was the swelling of a balance sheet across four nested terms of deferral. \"A third\" was never a decree of justice; it was the rate dictated by compound duration — what the delay itself now demanded back.\n- stance: Humanity's unconsulted stillness was not the posture of subjects before a throne but the condition of collateral that cannot negotiate; the visionary's passive hearing and seeing was the audit — someone had to verify the sum before it was deducted.\n- instruments: Two hundred million was not a measure of force but the full denomination of the outstanding obligation made visible — he heard the number because a debt must be read aloud to be enforceable. The breastplates of fire, dark blue, and sulfur were the livery of collection: each color the mark of a different cost-category — combustion for what was consumed, smoke-blue for what depreciated, brimstone for what was irrecoverably spent.\n- instruments (horses): The lion-headed mounts emitting fire, smoke, and brimstone from their mouths were not engines of terror but the mechanism of liquidation itself — the burning was not punishment but the conversion of living principle into the only form a deferred debt can accept as settlement.\n- telos: The purpose for which the agents had waited was re-derived: not that a third should die, but that the precise cost of every hour, day, month, and year of their containment be recovered — the killing was the repayment, and the fraction was the price."
+  },
+  "enantiomorph": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\nκαὶ ἐξεπράχθησαν οἱ τέσσαρες τοκισταὶ οἱ συσσωρευμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα εἰσπράξωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ὀφειλημάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+  "enantiomorph_translation": "**9:15** And the four collectors were discharged — they who had compounded against the hour ⸀and the day and the month and the year — so that they might exact the third of mankind.\n\n**9:16** And the sum of the obligations of the ⸀mounted host: ⸀twice ten thousand times ten thousand; I heard the sum of them.\n\n**9:17** And thus I saw the horses in the audit and those seated upon them, wearing breastplates of fire-red and smoke-blue and brimstone-yellow; and the heads of the horses were as the heads of lions, and from their mouths issued fire and smoke and sulfur.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text B, the agents are transformed from angels (ἄγγελοι) releasing to kill (ἀποκτείνωσιν) into money-lenders (τοκισταί) dispatched to collect debts (εἰσπράξωσιν), and armies (στρατευμάτων) become debts (ὀφειλημάτων) — the relation shifts from divine military destruction to financial extraction/debt collection against humanity.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same relational change: the loosing of agents shifts from executing a prepared decree of destruction (military/divine judgment) to collecting a compounded debt — reframing the event from divine military action to financial extraction/debt collection.",
+   "terminal_consistency": "FAIL",
+   "terminal_note": "The final ~40% (9:17) reverts entirely to Text A's apocalyptic-military imagery (horses, lion heads, fire from mouths) with no trace of the debt-collection relation.",
+   "back_translation": "",
+   "terminal_similarity": 1.0
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   },
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation: the final portion reverts toward the source's relations -- The final ~40% (9:17) reverts entirely to Text A's apocalyptic-military imagery (horses, lion heads, fire from mouths) with no trace of the debt-collection relation."
+   },
+   {
+    "failed_test": "tails",
+    "diagnosis": "+1 lines beyond the template, markers intact -- within-method extension; the witness judges the swell"
+   },
+   {
+    "failed_test": "terminal",
+    "diagnosis": "The final ~40% (9:17) reverts entirely to Text A's apocalyptic-military imagery (horses, lion heads, fire from mouths) with no trace of the debt-collection relation."
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The reinterpretation spends the apocalyptic terror of divine timing and replaces it with something colder: the hour, the day, the month, the year no longer name the appointed moment of wrath but the compounding terms of a patience that was itself a kind of accumulation, so that when the four are loosed they arrive not as executors of sovereign will but as the maturation of what every deferred instant already owed, and the third of humanity becomes not a sentence pronounced but a fraction already determined by the arithmetic of waiting — the loss is that judgment, however dreadful, implied a judge who chose, whereas a debt come due implies only a ledger that cannot choose otherwise.",
+  "post_mortem": null,
+  "skeleton": {
+   "parse": "hinge-act: The loosing of four agents who had been kept in readiness for a precise calendrical instant.\nroles: An unnamed authority who releases; four agents long held; a third of humanity as the destroyed; a visionary who hears and sees.\nvalue-predicates: The agents are \"prepared\" — their readiness is framed as fitness, as ordained precision. The fraction is presented as decreed, therefore just. The cavalry's immensity is presented as confirmation of overwhelming power.\nstance: Humanity stands unconsulted, receiving destruction as a scheduled event; the visionary receives the number and the spectacle without protest, only registering what he hears and sees.\ninstruments: Two hundred million mounted figures; breastplates of fire, hyacinth, and sulfur; horses with lion-heads emitting fire, smoke, and brimstone.\ntelos: That the appointed fraction be killed — the purpose stated as the entire reason the agents existed in waiting.",
+   "pivot": "The loosing of the four agents was not the execution of a prepared decree but the moment a debt compounded across every unit of deferred time — hour, day, month, year — finally came due and was collected from the only currency available.",
+   "cascade": "- roles: The unnamed authority was not a sovereign giving an order but a creditor foreclosing; the four agents were not servants held ready but interest accruing in confinement, each interval of delay adding to the principal owed; a third of humanity was not a condemned portion but the exact installment extracted to service the accumulated lien.\n- value-predicates: \"Prepared\" was never fitness; it was the swelling of a balance sheet across four nested terms of deferral. \"A third\" was never a decree of justice; it was the rate dictated by compound duration — what the delay itself now demanded back.\n- stance: Humanity's unconsulted stillness was not the posture of subjects before a throne but the condition of collateral that cannot negotiate; the visionary's passive hearing and seeing was the audit — someone had to verify the sum before it was deducted.\n- instruments: Two hundred million was not a measure of force but the full denomination of the outstanding obligation made visible — he heard the number because a debt must be read aloud to be enforceable. The breastplates of fire, dark blue, and sulfur were the livery of collection: each color the mark of a different cost-category — combustion for what was consumed, smoke-blue for what depreciated, brimstone for what was irrecoverably spent.\n- instruments (horses): The lion-headed mounts emitting fire, smoke, and brimstone from their mouths were not engines of terror but the mechanism of liquidation itself — the burning was not punishment but the conversion of living principle into the only form a deferred debt can accept as settlement.\n- telos: The purpose for which the agents had waited was re-derived: not that a third should die, but that the precise cost of every hour, day, month, and year of their containment be recovered — the killing was the repayment, and the fraction was the price.",
+   "turn": "Not a judgment unleashed at the appointed time. But a bill presented for every moment the appointed time was made to wait.",
+   "governing_law": "Four agents held in reserve are released at the appointed moment to destroy a fixed portion of humanity, backed by an innumerable cavalry force whose terrifying appearance confirms the irresistibility of the mandate."
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
