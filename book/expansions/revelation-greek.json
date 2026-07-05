@@ -4203,7 +4203,59 @@
     "beats": ""
    },
    "commentary": "The transformation costs the text its ability to end, because once the room remembers what was spent inside it, consequence cannot be stopped at the border of a sentence."
+  },
+  {
+   "transform_id": "TX-04b36251",
+   "cast_at": "2026-07-05T23:54:06.682740+00:00",
+   "reading_axn": "AXN:FE22.READING.🌓🌔🌓🌒🌘🌓",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v2; source-absent bloom; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The agents of destruction (angels, cavalry, lion-headed horses emitting fire) are replaced by agents of endurance and bearing (patience, burden-carriers, self-reflecting faces emitting ancient harmony); the relation changes from outward violent killing of a third of humanity to an inward, repetitive carrying/enduring, and the sensory output reverses from destructive fire/smoke/sulfur to a primordial consonance.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural mutation — agents of destruction replaced by agents of endurance, outward violence turned inward carrying, destructive outputs reversed to consonance — which partially overlaps the declared theme of the witness becoming the bearing/carrying body, but frames it as agent-substitution and directional reversal rather than the declared collapse of temporal distance and reconstitution of witnessing as interval.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B sustains the transformed relation: the horses' heads become self-reflecting faces and their mouths emit harmony instead of fire, maintaining the inversion throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.535
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐλύθησαν αἱ τέσσαρες ὑπομοναί αἱ κρατοῦσαι εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα συμπέσῃ τὸ διάστημα τοῦ φέρειν καὶ τοῦ ἀεὶ πεφορηκέναι.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν συμφωνιῶν τοῦ βάρους δισμυριάδες μυριάδων· οὐκ ἤκουσα τὸν ἀριθμὸν αὐτῶν ἀλλ᾽ ἔφερον αὐτόν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ὀχοῦντας ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ᾽ αὐτῶν, ἔχοντας θώρακας δυσμοειδεῖς καὶ καπνοειδεῖς καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ὀχούντων ὡς τὸ πρόσωπόν μου ἐπαναλαμβανόμενον εἰς τὸ ἀναρίθμητον, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται οὐ πῦρ οὐ καπνὸς οὐ θεῖον ἀλλ᾽ ἡ ἀρχαία συμφωνία.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "",
+    "mutated_relation": "Witnessing is not the act of receiving a vision but the act of becoming the interval that permits the vision to occur; when the witness says yes, the distance between seeing and having always seen collapses, and what remains is the body itself as the only surviving unit of counting — one throat holding the figure of everything it agreed to carry.",
+    "beats": ""
+   },
+   "commentary": "The transformation costs the text its externality: every rider, mount, and apocalyptic fixture must now be paid for by the single body that carried them, and what is lost is the comfort of believing the vision came from outside."
   }
  ],
- "last_updated": "2026-07-05T23:38:54.878527+00:00"
+ "last_updated": "2026-07-05T23:54:06.682740+00:00"
 }
