@@ -1,0 +1,99 @@
+{
+ "run_id": "RUN-20260705T002403Z-ba105d",
+ "schema": "run/v1",
+ "ts": "2026-07-05T00:24:03.587510+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_105_108",
+ "citation": "6:9–6:12",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "can we finally get this done?",
+ "method": {
+  "commit": "784a512050a4b73c8f2d179d41c052e28f027d48",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/784a512050a4b73c8f2d179d41c052e28f027d48",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/784a512050a4b73c8f2d179d41c052e28f027d48/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-sonnet-4-6",
+  "transform_py_sha": "7fb2b9c7568ff0b5",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"
+ },
+ "code": "784a512050a4",
+ "model": "claude-sonnet-4-6",
+ "transform_py_sha": "7fb2b9c7568ff0b5",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "the slain supply the grounds of judgment by their blood; the Sovereign holds judgment in reserve; completion of the fellow-count is the condition that unlocks the act — flow runs from cost upward to petition, and is held there by sovereign decree until the quota of likeness is met",
+   "mutated_relation": "in the transformed world the condition does NOT run from cost-completion upward to sovereign act — instead the sovereign act originates and descends first, and the cost is constituted by that descent, reversing the dependency direction between slaughter-quota and judgment",
+   "clause_map": [
+    {
+     "ref": "6:9",
+     "class": "REBUILT",
+     "note": "souls-beneath-altar placement reverses: descent of act precedes and produces the cost-locus"
+    },
+    {
+     "ref": "6:10",
+     "class": "REBUILT",
+     "note": "petition-direction inverts: cry no longer travels upward from cost; rectification descends without demand"
+    },
+    {
+     "ref": "6:11",
+     "class": "REBUILT",
+     "note": "completion-condition collapses: deferral-quantum and quota no longer gate the sovereign act"
+    },
+    {
+     "ref": "6:12",
+     "class": "ANCHOR",
+     "note": "cosmic rupture marks sovereign-act threshold; independent of quota-direction"
+    }
+   ]
+  },
+  "enantiomorph": "",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "FAIL",
+   "semantic_independence": "FAIL",
+   "retrospective_containment": "FAIL",
+   "affect_traversal": "FAIL",
+   "entailment": "FAIL",
+   "slot_conservation": "FAIL",
+   "numeral_conservation": "FAIL",
+   "law_propagation": "FAIL",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "SKIPPED",
+   "blacklist_hits": [],
+   "recovered_law": "",
+   "law_match": "SKIPPED",
+   "law_match_note": "",
+   "terminal_consistency": "SKIPPED",
+   "terminal_note": "",
+   "back_translation": ""
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "pipeline_result": "HALT"
+ },
+ "outcome": {
+  "gate": "pipeline_halt",
+  "diagnosis": {
+   "failed_constraint": "C4",
+   "failed_test": "identity",
+   "specific_diagnosis": "composition unparseable (stop_reason=end_turn; 2251 chars)"
+  }
+ }
+}
