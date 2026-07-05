@@ -1,0 +1,75 @@
+{
+ "axn": "AXN:FE8A.READING.💫🌊💫🔥🌔🌟",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "76d0f93484317be7",
+ "inscribed_at": "2026-07-05T20:17:45.545975+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Inquiry about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** Καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν καὶ τὴν ἡμέραν καὶ τὸν μῆνα καὶ τὸν ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** Καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ἱππικοῦ δύο μυριάδες μυριάδων· καὶ ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** Καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ᾽ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Differences are only minor textual-critical variants (added articles, δισμυριάδες vs δύο μυριάδες, added καί); no relational structure change.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The transformed scene carries the weight of irreversibility itself — four silences broken open into a single hour that devours a third of everything breathing, and the witness can do nothing but confirm the number he heard and describe, in colors of ruin, what his seeing has permanently inscribed upon him."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-05T20:17:45.545975+00:00"
+}
