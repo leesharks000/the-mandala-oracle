@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260705T173318Z-b27873",
+ "schema": "run/v1",
+ "ts": "2026-07-05T17:33:18.672070+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_158_160",
+ "citation": "9:15–9:17",
+ "operator": "SILENCE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "99fa296a706ffb15d7e3c378c54cfe7c771cee0e",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/99fa296a706ffb15d7e3c378c54cfe7c771cee0e",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/99fa296a706ffb15d7e3c378c54cfe7c771cee0e/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5fff3ddc6889e805",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "99fa296a706f",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5fff3ddc6889e805",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "A divine schedule commands and the prepared agents respond on cue: readiness guarantees release, release guarantees destruction, and the witness's hearing and seeing confirm the event's reality.",
+   "mutated_relation": "In the transformed world, readiness no longer guarantees release: the four angels ARE their own unanswered preparation, the hour and day and month and year ARE empty coordinates that never issue a command, and the witness's hearing and seeing ARE acts that confirm not an event but the silence where the event was scheduled — the cavalry exists as the mass of a question no one posed.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Loosing=response; under silence the prepared hour yields no release — angels wait as pure unspent readiness"
+    },
+    {
+     "ref": "9:16",
+     "class": "REBUILT",
+     "note": "Hearing the number presupposes the army's arrival — under silence, number heard but never mobilized"
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Vision of issuing fire presupposes mouths responding — under silence, mouths hold fire that never proceeds"
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐκρατήθησαν οἱ τέσσαρες ἄγγελοι οἱ ἀφωνισμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα μὴ φθέγξωνται τὸ τρίτον τῶν ῥημάτων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν παρατάξεων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἔμεινα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως ἔγνων τοὺς ἵππους ἐν τῇ ἐρημίᾳ καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας χλωμοὺς καὶ τεφρώδεις καὶ ὠχριῶντας· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ ἀνδριάντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται ἀὴρ καὶ κενὸν καὶ σκιά.",
+  "enantiomorph_translation": "**9:15** And the four angels who had been rendered voiceless were held fast for the hour and day and month and year, so that they might not utter the third part of the words.\n\n**9:16** And the number of the formations of the cavalry was twice ten thousand times ten thousand; I waited for their number.\n\n**9:17** And thus I perceived the horses in the desolation and those seated upon them, having breastplates pallid and ashen and blanched; and the heads of the horses were as heads of statues, and from their mouths there issued air and emptiness and shade.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the four angels are released (ἐλύθησαν / ἡτοιμασμένοι) in order to kill (ἀποκτείνωσιν) a third of humanity, whereas in Text B they are restrained (ἐκρατήθησαν / ἀφωνισμένοι) so that they may NOT speak (μὴ φθέγξωνται) a third of the words — the direction of the angels' action is reversed from unleashing destruction to being silenced/suppressed, and the destructive outpouring (fire, smoke, brimstone) becomes emptiness (air, void, shadow).",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: angels prepared/released for destructive action become angels held back in silence/emptiness; readiness no longer leads to release, the event is replaced by absence, and outpouring becomes void.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B maintains the reversed relation: the horses' heads are like statues (lifeless) and emit air, void, and shadow instead of fire, smoke, and brimstone — the suppression/emptiness inversion holds throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.514
+  },
+  "advisories": [
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The angels no longer loose destruction but are themselves held in muteness, the cavalry amasses as weight without a charge, and the witness's hearing becomes waiting — everything that was command and slaughter now persists as the pale, ashen mass of readiness that never breaks into its own event.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
