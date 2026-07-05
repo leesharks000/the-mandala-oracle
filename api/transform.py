@@ -292,8 +292,29 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
                 if not (1 <= a <= b <= len(chapters)):
                     raise ValueError(f"cast_selection out of range: source has {len(chapters)} chapters.")
                 text = "\n".join(chapters[a - 1:b]).strip()
+            elif (mv := re.match(r"^\s*(\d+)[:.](\d+)\s*(?:[\u2013\u2014-]\s*(?:(\d+)[:.])?(\d+))?\s*$",
+                                 cast_selection.strip())):
+                # HUMAN CITATION (MANUS, 2026-07-05, first typed selection):
+                # "9:15-17", "9:15\u201317", "9:15-10:2", or "9:15" resolve
+                # against the source's own **c:v** markers -- the archive
+                # supplies the bytes; the compiler's memory supplies nothing
+                # (standing precept: sources are byte-exact canonical
+                # substrings; the edition's critical sigla ride with them).
+                c1, v1 = int(mv.group(1)), int(mv.group(2))
+                c2 = int(mv.group(3)) if mv.group(3) else c1
+                v2 = int(mv.group(4)) if mv.group(4) else v1
+                mk1, mk2 = f"**{c1}:{v1}**", f"**{c2}:{v2}**"
+                p1 = text.find(mk1)
+                if p1 == -1:
+                    raise ValueError(f"citation {c1}:{v1} not found -- this source carries no marker {mk1}.")
+                p2 = text.find(mk2, p1)
+                if p2 == -1:
+                    raise ValueError(f"citation end {c2}:{v2} not found after {c1}:{v1}.")
+                nxt = re.search(r"\*\*\d+:\d+\*\*", text[p2 + len(mk2):])
+                end = (p2 + len(mk2) + nxt.start()) if nxt else len(text)
+                text = text[p1:end].strip()
             else:
-                raise ValueError(f"unknown cast_selection: {cast_selection} (use stanzas_A_B or chapter_N).")
+                raise ValueError(f"unknown cast_selection: {cast_selection} (use a verse citation like 9:15-17, or stanzas_A_B / chapter_N).")
 
     if len(text.strip()) < 40:
         raise ValueError("the selected text is too small to cast.")
