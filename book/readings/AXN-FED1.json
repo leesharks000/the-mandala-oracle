@@ -200,11 +200,112 @@
     }
    ],
    "commentary": "The fissures bear the wave's passage as scars rather than as commands, so that even witnessing them costs the seer the grammar of agency — what was slain is now merely measured, what rode is now merely carried, and what roared now issues silence."
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐκρατήθησαν οἱ τέσσαρες ὀφειλέται οἱ παρεσκευασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα μηδέποτε ἀποδῶσιν τὸ τρίτον τῶν ὑποσχέσεων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἀναμενόντων τοῦ ⸀κατωφλίου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς θρόνους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας στολὰς τεφρίνας καὶ ἀμαυρὰς καὶ ἀχλυώδεις· καὶ αἱ κεφαλαὶ τῶν θρόνων ὡς κεφαλαὶ κενοταφίων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται σιγὴ καὶ σκιὰ καὶ κόνις.",
+   "layer_a_declaration": {
+    "beats": [
+     "9:15 Four angels loosed — prepared for the hour and day and month and year — to kill the third of humanity",
+     "9:16 Number of cavalry: two myriads of myriads; I heard their number",
+     "9:17 Horses seen in vision with riders; breastplates fiery, hyacinthine, sulfurous; heads of horses as lions' heads; from mouths issues fire and smoke and sulfur"
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "layer_b_declaration": {
+    "slot_map": {
+     "τέσσαρες ἄγγελοι": "four angels",
+     "ἐλύθησαν (loosed)": "loosed/released",
+     "οἱ ἡτοιμασμένοι (prepared)": "prepared/appointed",
+     "τὴν ὥραν": "the hour",
+     "ἡμέραν": "day",
+     "μῆνα": "month",
+     "ἐνιαυτόν": "year",
+     "εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (temporal destination)": "for-the hour+day+month+year",
+     "ἵνα ἀποκτείνωσιν (purpose: kill)": "so-that they-kill",
+     "τὸ τρίτον": "the third",
+     "τῶν ἀνθρώπων": "of humanity",
+     "ἀριθμός (number)": "number/count",
+     "στρατευμάτων τοῦ ἱππικοῦ": "armies of cavalry",
+     "δισμυριάδες μυριάδων": "two myriads of myriads (200,000,000)",
+     "ἤκουσα τὸν ἀριθμὸν αὐτῶν": "I heard their number",
+     "εἶδον (I saw)": "I saw",
+     "ἐν τῇ ὁράσει": "in the vision",
+     "ἵππους": "horses",
+     "τοὺς καθημένους ἐπ' αὐτῶν": "those seated upon them (riders)",
+     "θώρακας πυρίνους": "fiery breastplates",
+     "ὑακινθίνους": "hyacinthine (blue-dark)",
+     "θειώδεις": "sulfurous",
+     "κεφαλαὶ τῶν ἵππων": "heads of the horses",
+     "ὡς κεφαλαὶ λεόντων": "as heads of lions",
+     "ἐκ τῶν στομάτων αὐτῶν": "from their mouths",
+     "ἐκπορεύεται (issues forth)": "issues forth",
+     "πῦρ": "fire",
+     "καπνός": "smoke",
+     "θεῖον": "sulfur"
+    },
+    "axis": "The appointed time-of-response never arrives; release occurs into an hour that does not answer.",
+    "foreclosure": "The source forecloses the possibility that preparation-for-a-moment could fail to reach its moment.",
+    "wager": "The cost is readiness that never discharges — four angels perpetually prepared, absorbing the debt of an hour that withholds itself.",
+    "affect": "Dread suspended into permanence — the vertigo of a countdown whose zero never sounds."
+   },
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The agents of active destruction (angels releasing killing, cavalry horses breathing fire) are transformed into agents of passive withholding and stasis (debtors who are restrained and never repay, thrones emitting silence/shadow/dust instead of fire/smoke/brimstone). The directional relation reverses from outward violent action upon humanity to inward retention and nullification.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both describe a transformation from active destruction to stasis/withholding, but the declared claim focuses on temporal non-coalescence and unredeemed preparation (time-slots that never resolve), while the recovered claim focuses on directional reversal from outward violence to inward retention and agent transformation (debtors, thrones). They share the structural shift from discharge to non-discharge but frame it through different relational mechanisms.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B maintains the changed relation: thrones emit silence, shadow, and dust (passive/nullifying outputs) rather than reverting to fire, smoke, and brimstone (destructive outputs).",
+    "back_translation": "",
+    "terminal_similarity": 0.474
+   },
+   "law_variance": {
+    "declared": "The time-coordinate for which the angels were prepared is structurally unavailable — the hour, day, month, year exist as slots but never coalesce into an arrival; the angels are beings-as-unredeemed-preparation, the cavalry is force-without-discharge, the witness is one who heard a number answering nothing, and the mouths emit not destruction but the residue of a response the world still owes.",
+    "recovered": "The agents of active destruction (angels releasing killing, cavalry horses breathing fire) are transformed into agents of passive withholding and stasis (debtors who are restrained and never repay, thrones emitting silence/shadow/dust instead of fire/smoke/brimstone). The directional relation reverses from outward violent action upon humanity to inward retention and nullification.",
+    "note": "Both describe a transformation from active destruction to stasis/withholding, but the declared claim focuses on temporal non-coalescence and unredeemed preparation (time-slots that never resolve), while the recovered claim focuses on directional reversal from outward violence to inward retention and agent transformation (debtors, thrones). They share the structural shift from discharge to non-discharge but frame it through different relational mechanisms."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The world that was built to discharge its purpose at a named moment discovers that the moment never coheres, and so every mouth opens only onto what accrues when an answer is permanently owed: ash in place of fire, cenotaphs in place of lions, and a number that counts nothing except the depth of the waiting."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T18:37:52.512294+00:00",
+ "last_updated": "2026-07-05T18:39:40.130996+00:00",
  "rite": [
   {
    "stage": "judgment",
