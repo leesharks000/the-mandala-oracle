@@ -1,0 +1,95 @@
+{
+ "run_id": "RUN-20260705T213051Z-5a4261",
+ "schema": "run/v1",
+ "ts": "2026-07-05T21:30:51.798207+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SILENCE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "28440e0cd3a3db8cf8c48cb3e8328f1624501844",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/28440e0cd3a3db8cf8c48cb3e8328f1624501844",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/28440e0cd3a3db8cf8c48cb3e8328f1624501844/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f61a41eb67fafd3d",
+  "prompt_method": "abduct/v1 (exemplar-conditioned; law recovered retrospectively)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+INVERSION",
+   "dream+BRIDE"
+  ]
+ },
+ "code": "28440e0cd3a3",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f61a41eb67fafd3d",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "When the readiness that demands a response meets only silence, the prepared hour does not vanish but persists unasked-for; magnitude becomes uncountable because no witness stands outside it to totalize; and the mouths that were built to emit destruction discover that their terminal event is not annihilation but the nothing that issues when no one answers.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ ἔμειναν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, καὶ οὐδεὶς ἠρώτησεν αὐτοὺς πότε.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ⸀ἀναμενόντων ⸀ἀνεξαρίθμητος· οὐκ ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας ἀσβέστους καὶ ὑαλίνους καὶ κενούς· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ ὄνων, καὶ ἐκ τῶν στομάτων αὐτῶν οὐκ ἐκπορεύεται οὐδέν.",
+  "enantiomorph_translation": "**9:15** And the four angels who had been prepared for the hour and day and month and year remained, and no one asked them when.\n\n**9:16** And the number of those waiting was innumerable; I did not hear their number.\n\n**9:17** And so I saw the horses in the vision and those seated upon them, wearing breastplates of chalk and glass and emptiness; and the heads of the horses were as heads of donkeys, and from their mouths nothing came forth.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive; law self-recovered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the four angels are released (ἐλύθησαν) to actively kill a third of mankind, with a counted cavalry emitting fire/smoke/sulfur; in Text B the angels merely remain (ἔμειναν) with no one asking them when, the waiting ones are uncountable and unheard, and nothing comes out of the horses' mouths — the entire directional flow of destructive agency is negated into stasis and inaction.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural mutation: active release/killing becomes passive persistence/remaining, the counted forces become uncountable, and the destructive emissions from mouths become nothing/silence — agency and directional destructive action are negated into stasis and non-response.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B sustains the negation of destructive agency (heads like donkeys, empty breastplates, nothing issuing from mouths), consistent with the changed relation throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.618
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.62 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "The transformation costs the source its catastrophe — the angels keep their appointment but lose their audience, and what was terrifying about them turns out to have been not the fire but the expectation that someone would be there to die.",
+  "post_mortem": null,
+  "skeleton": {
+   "self_recovered_law": "When the readiness that demands a response meets only silence, the prepared hour does not vanish but persists unasked-for; magnitude becomes uncountable because no witness stands outside it to totalize; and the mouths that were built to emit destruction discover that their terminal event is not annihilation but the nothing that issues when no one answers.",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+INVERSION",
+    "dream+BRIDE"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
