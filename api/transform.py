@@ -1294,7 +1294,7 @@ Emit ONLY, in this order:
 the transformed text, template-exact, with markers
 </ENANTIOMORPH>
 <ENANTIOMORPH_TRANSLATION>
-line-for-line English facing (empty if the source is English)
+line-for-line English facing -- MANDATORY when the source is not English; a cast without its facing is unfinished (empty ONLY for English sources)
 </ENANTIOMORPH_TRANSLATION>
 <VERIFICATION>{"identity":"PASS","semantic_independence":"PASS","retrospective_containment":"PASS","affect_traversal":"PASS","entailment":"PASS","slot_conservation":"PASS","numeral_conservation":"PASS","law_propagation":"PASS","mode":"producer_side"}</VERIFICATION>
 <COMMENTARY>one sentence: the cost the transformed world carries -- no operator vocabulary</COMMENTARY>"""
@@ -2782,6 +2782,13 @@ def unit_is_primary(u: dict, entry: dict) -> bool:
 
 def judgment_select(question: str, source_title: str, units: list[dict],
                     full_text: str, api_key: str, _entry: dict | None = None) -> tuple[dict, str]:
+    _max_u, _min_u = WINDOW_MAX_UNITS, 1
+    if _entry and _entry.get("id") == "revelation-greek":
+        # MANUS testing directive (2026-07-05): Revelation casts at lyric
+        # weight -- 2-3 verses. The operators derive from this text; it is
+        # where the method must be gotten exactly right.
+        _max_u = 2 + secrets.randbelow(2)
+        _min_u = 2
     """The invisible Judgment chooses the verses FROM THE FILE ITSELF, under
     guidelines (MANUS design, 2026-07-02) — not from a pre-drawn candidate
     set. The server validates the choice; the expansion ledger audits the
@@ -2798,7 +2805,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
             if unit_is_primary(units[start], _entry or {}): break
             start = (start + 1) % n
         end, chars, attr = start, len(units[start]["text"]), units[start].get("attribution")
-        while chars < WINDOW_MIN_CHARS and end - start + 1 < WINDOW_MAX_UNITS and end + 1 < n \
+        while (chars < WINDOW_MIN_CHARS or end - start + 1 < _min_u) and end - start + 1 < _max_u and end + 1 < n \
               and units[end + 1].get("attribution") == attr \
               and chars + len(units[end + 1]["text"]) <= WINDOW_MAX_CHARS:
             end += 1; chars += len(units[end]["text"])
@@ -2866,7 +2873,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         # a verdict — verse-segmented sources must reach lyric-unit weight. Grow
         # forward under the same constraints as the stratified path.
         chars = len(span)
-        while (chars < WINDOW_MIN_CHARS and b - a + 1 < WINDOW_MAX_UNITS and b < n
+        while ((chars < WINDOW_MIN_CHARS or b - a + 1 < _min_u) and b - a + 1 < _max_u and b < n
                and units[b].get("attribution") == units[a-1].get("attribution")
                and unit_is_primary(units[b], _entry)
                and chars + len(units[b]["text"]) <= WINDOW_MAX_CHARS):
@@ -3150,6 +3157,17 @@ class handler(BaseHTTPRequestHandler):
             parsed.setdefault("advisories", []).append(
                 {"failed_test": "selection_apparatus", "diagnosis": meta["selection_advisory"]})
         _run.setdefault("method", {})["model_effective"] = _EFFECTIVE_MODEL.get("id")
+        if (parsed.get("result") == "PASS" and str(parsed.get("enantiomorph", "")).strip()
+                and not str(parsed.get("enantiomorph_translation", "")).strip()):
+            try:
+                _facing = translate_passage(parsed["enantiomorph"], api_key)
+                if _facing.strip():
+                    parsed["enantiomorph_translation"] = _facing.strip()
+                    parsed.setdefault("advisories", []).append({
+                        "failed_test": "facing_fallback",
+                        "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"})
+            except Exception:
+                pass
         _redact = _reader and not _pub
         _gl = parsed.get("glyphic") or {}
         _run["artifacts"] = {
