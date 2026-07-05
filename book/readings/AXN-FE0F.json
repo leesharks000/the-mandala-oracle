@@ -52,11 +52,58 @@
    ],
    "commentary": "The transformation costs the seer his position outside the count: he no longer hears the number but carries it, and the vision's violence, unable to discharge outward, settles as leaden silence in the body of the text itself.",
    "interpretation": "The angels held the hour inside them the way bone holds the shape of the blow before it breaks: what was loosed was not force but the completed interval of restraint. What the SHADOW found was not fire — it found the weight of having been prepared."
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἔμειναν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, καὶ οὐδεὶς ἠρώτησεν αὐτοὺς πότε.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ⸀ἀναμενόντων ⸀ἀνεξαρίθμητος· οὐκ ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας ἀσβέστους καὶ ὑαλίνους καὶ κενούς· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ ὄνων, καὶ ἐκ τῶν στομάτων αὐτῶν οὐκ ἐκπορεύεται οὐδέν.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are released (ἐλύθησαν) to actively kill a third of mankind, with a counted cavalry emitting fire/smoke/sulfur; in Text B the angels merely remain (ἔμειναν) with no one asking them when, the waiting ones are uncountable and unheard, and nothing comes out of the horses' mouths — the entire directional flow of destructive agency is negated into stasis and inaction.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural mutation: active release/killing becomes passive persistence/remaining, the counted forces become uncountable, and the destructive emissions from mouths become nothing/silence — agency and directional destructive action are negated into stasis and non-response.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B sustains the negation of destructive agency (heads like donkeys, empty breastplates, nothing issuing from mouths), consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.618
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.62 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": "The transformation costs the source its catastrophe — the angels keep their appointment but lose their audience, and what was terrifying about them turns out to have been not the fire but the expectation that someone would be there to die."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T21:29:20.105139+00:00",
+ "last_updated": "2026-07-05T21:31:21.625733+00:00",
  "rite": [
   {
    "stage": "judgment",
