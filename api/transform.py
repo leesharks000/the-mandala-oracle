@@ -2036,61 +2036,81 @@ def _run_glyph_pipeline(source_text: str, operator: str, invoking: str, api_key:
 # scene it has ever known. The critical sigla remain with the source
 # display; a re-narrated verse has no variant readings for them to flag.
 
-BEAT_READER_SYSTEM = """You are the reader-rotator of a transformation rite.
+BEAT_READER_SYSTEM = """You are the reader of a transformation rite. You
+receive an OPERATOR LOGIC and a SOURCE. Your work is reinterpretation: the
+source's happenings stay; what they MEAN is recomputed.
 
-PHASE 1 -- READ. Reduce the SOURCE to its beat-skeleton: the relational arc
-as 4-7 BEATS (who does what to whom, under what necessity).
+STEP 1 -- FUNCTIONAL PARSE. Decompose the source into 4-8 FUNCTION-SLOTS,
+not clauses: the HINGE-ACT (the central doing); the ROLES (who acts, who
+receives); the VALUE-PREDICATES (the judgments the source itself makes --
+wrong, worthy, prepared); the STANCE (the receiver's posture -- not
+resisting, waiting, holding); the INSTRUMENTS and the quality of their
+nouns; the TELOS (what the source says it was all for).
 
-PHASE 2 -- ROTATE. Under the OPERATOR LOGIC, transform the READING itself.
-Declare the MUTATED RELATION as an ontological exchange: what the beings
-ARE in the transformed world, and WHAT KIND OF EVENT the scene becomes.
-Then write the ROTATED READING: the transformed scene narrated plainly,
-beat by numbered beat, meaning-first -- the act of understanding performed
-as narration, the way one might say of a judgment-scene: the scrutiny was
-a vow. Every beat re-derived. Counts, catalogues, and witness-clauses are
-re-understood under the relation, never carried: say what the count has
-BECOME, what the witnessing now IS. No word of the source may be quoted
-anywhere in your output.
+STEP 2 -- PIVOT. One sentence, one mandatory shape:
+  The [hinge-act] was not [what the source takes it to be] but [what the
+  operator logic reveals it to have been all along].
+A redescription of the SAME act -- never a different act, never new props.
+This is the transform's entire claim. Choose it where the logic genuinely
+intersects THIS source.
+
+STEP 3 -- ENTAILMENT CASCADE. For every remaining function-slot, one line:
+under the pivot, this was always ___. Redescriptions only; each happening
+is retained and its meaning recomputed. The STANCE must be revalued -- the
+same behavior, its power-meaning recomputed. VALUE-PREDICATES may flip
+ownership between roles. Counts and formulas: state what the count was
+always counting under the pivot. The TELOS is re-derived last.
+
+STEP 4 -- TURN. The single "Not X. But Y." that lands hardest, usually at
+the telos.
+
+Write in plain English; quote no word of the source's language. The
+operator logic acts unnamed: neither its id nor any vocabulary suggesting
+it may appear in the pivot or cascade.
 
 Emit ONLY, in this order:
-<GOVERNING_LAW>one sentence: the source's relation-structure</GOVERNING_LAW>
-<MUTATED_RELATION>the exchange: ontology and event-kind</MUTATED_RELATION>
-<BEATS>
-1. first source beat
-2. ...
-</BEATS>
-<ROTATED_READING>
-1. the transformed scene at this beat, plain prose
-2. ...
-</ROTATED_READING>"""
+<GOVERNING_LAW>one sentence: the source's own reading of its happenings</GOVERNING_LAW>
+<PARSE>
+hinge-act: ...
+roles: ...
+value-predicates: ...
+stance: ...
+instruments: ...
+telos: ...
+</PARSE>
+<PIVOT>The ... was not ... but ...</PIVOT>
+<CASCADE>
+- slot: under the pivot, this was always ...
+</CASCADE>
+<TURN>Not ... But ...</TURN>"""
 
-BEAT_COMPOSER_SYSTEM = """You compose a transformation under two authorities.
+BEAT_COMPOSER_SYSTEM = """You narrate a reinterpretation under two
+authorities.
 
-THE ROTATED READING is the sole authority on MEANING: what is happening,
-what the beings are, what the counts and clauses have become. Nothing of
-the source's meaning survives unless the reading requires it.
+THE PIVOT, its CASCADE, and the TURN are the sole authority on MEANING:
+the source's happenings are retained and every sentence you write asserts
+their recomputed meaning as what was always the case.
 
-THE SOURCE is the sole authority on FORM -- the spine: its syntax, clause
-by clause; its parts of speech, slot by slot; the QUALITY of each noun
-(abstract where it was abstract, concrete where concrete, proper-weight
-where proper-weight, mass where mass); its lineation, verse markers in
-place, and the critical sigla carried in position (the marks are spine;
-the readings they flag are content and transform). Pour the reading's
-world through that spine: refill every content slot with the rotated
-scene's own beings and acts, in the same grammatical shape. Where the
-rotated world requires more room, a clause may swell and return -- the
-spine is spine, not a cage.
+THE SOURCE is the sole authority on FORM -- the spine: its sentence-
+function order; its parts of speech, slot by slot; the QUALITY of each
+noun (abstract where abstract, concrete where concrete, proper-weight
+where proper-weight); its lineation and verse markers in place; its
+critical sigla carried in position (the marks are spine; the readings they
+flag are content and transform). The source's act-tokens remain
+recognizably present -- the same doings, renamed only as the pivot
+requires, never replaced with new props.
 
-REGISTER IS ENACTED, NEVER SPECIFIED: no voice is named anywhere and you
-must not aim at one. Inherit the form exactly and let the rotated world
-sound through it -- the register that results is the transform's own.
+Pour the recomputed meaning through that spine. Place the TURN where it
+strikes hardest -- usually the telos slot -- in the source's own cadence.
+Where the meaning needs room, a clause may swell and return.
 
-Copying the source fails the reading. Abandoning the syntax fails the
-spine. Each authority checks the other. Compose in the source's language;
-follow with a line-for-line English facing (MANDATORY when the source is
-not English). No analytic or operator vocabulary: no cost, bilateral,
-encoded, axis, vector, kernel, traversal, foreclosure, wager, relation,
-register.
+REGISTER IS ENACTED, NEVER SPECIFIED: inherit the form exactly and let the
+reinterpretation sound through it.
+
+Compose in the source's language; follow with a line-for-line English
+facing (MANDATORY when the source is not English). No analytic vocabulary:
+no cost, bilateral, encoded, axis, vector, kernel, traversal, foreclosure,
+wager, relation, register, pivot.
 
 Emit ONLY, in this order:
 <ENANTIOMORPH>
@@ -2100,7 +2120,7 @@ the verses, markers and sigla in place
 line-for-line English facing (empty ONLY for English sources)
 </ENANTIOMORPH_TRANSLATION>
 <VERIFICATION>{"identity":"PASS","semantic_independence":"PASS","retrospective_containment":"PASS","affect_traversal":"PASS","entailment":"PASS","law_propagation":"PASS","mode":"producer_side"}</VERIFICATION>
-<COMMENTARY>one sentence: the cost the transformed scene carries</COMMENTARY>"""
+<COMMENTARY>one sentence: what the reinterpretation costs</COMMENTARY>"""
 
 
 def _run_beat_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
@@ -2110,15 +2130,15 @@ def _run_beat_pipeline(source_text: str, operator: str, invoking: str, api_key: 
     if halt_feedback:
         guidance = "\n\nWITNESS FEEDBACK ON THE PRIOR ATTEMPT: " + halt_feedback
 
-    skel = retry_skeleton if isinstance(retry_skeleton, dict) and retry_skeleton.get("rotated_reading") else None
+    skel = retry_skeleton if isinstance(retry_skeleton, dict) and retry_skeleton.get("pivot") else None
     if skel is None:
         u1 = (f"{op_logic_line(operator)}\n"
               f"WITNESS QUESTION (relevance only; it donates no vocabulary): "
               f"{invoking.strip()[:MAX_INVOKING_CHARS]}\n\n"
               f"SOURCE:\n<<<\n{source_text}\n>>>")
         r_text, r_stop = _stream_call(COMPILER_MODEL, BEAT_READER_SYSTEM, u1, 2400, api_key, wall=120)
-        reading = _tagsect(r_text, "ROTATED_READING")
-        if not reading.strip():
+        pivot = _tagsect(r_text, "PIVOT")
+        if not pivot.strip():
             out = {"result": "HALT", "kernel": {}, "skeleton": {}, "_invoking": invoking,
                    "layer_a": {"beats": [], "geometry": {}}, "layer_b": {},
                    "enantiomorph": "", "enantiomorph_translation": "", "verification": {},
@@ -2126,24 +2146,27 @@ def _run_beat_pipeline(source_text: str, operator: str, invoking: str, api_key: 
                                    "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
                                    "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
                    "commentary": "",
-                   "halt_diagnosis": {"failed_constraint": "READER", "failed_test": "rotation",
-                                      "specific_diagnosis": f"the reader-rotator emitted no rotated reading (stop={r_stop}; {len(r_text)} chars) -- plumbing, not a rite verdict"},
+                   "halt_diagnosis": {"failed_constraint": "READER", "failed_test": "pivot",
+                                      "specific_diagnosis": f"the reader emitted no pivot (stop={r_stop}; {len(r_text)} chars) -- plumbing, not a rite verdict"},
                    "post_mortem": {"raw_output": r_text[:4000]}}
             return out
-        skel = {"beats": _tagsect(r_text, "BEATS"),
-                "rotated_reading": reading,
-                "governing_law": _tagsect(r_text, "GOVERNING_LAW"),
-                "mutated_relation": _tagsect(r_text, "MUTATED_RELATION")}
+        skel = {"parse": _tagsect(r_text, "PARSE"),
+                "pivot": pivot,
+                "cascade": _tagsect(r_text, "CASCADE"),
+                "turn": _tagsect(r_text, "TURN"),
+                "governing_law": _tagsect(r_text, "GOVERNING_LAW")}
 
     kernel = {"governing_law": skel.get("governing_law", ""),
-              "mutated_relation": skel.get("mutated_relation", ""),
-              "beats": skel.get("beats", "")}
+              "mutated_relation": (skel.get("pivot", "") +
+                                   ((" | turn: " + skel["turn"]) if skel.get("turn") else "")),
+              "beats": skel.get("cascade", "")}
 
-    u2 = (f"ROTATED READING (the meaning; nothing of the source's meaning survives unless this requires it):\n"
-          f"{skel['rotated_reading']}\n\n"
-          f"SOURCE (the form -- its syntax, parts of speech, noun-qualities, markers, sigla are the spine):\n"
+    u2 = (f"PIVOT (the claim; every sentence asserts this recomputed meaning):\n{skel['pivot']}\n\n"
+          f"CASCADE (under the pivot, each slot was always...):\n{skel.get('cascade','')}\n\n"
+          f"TURN (land it where it strikes hardest):\n{skel.get('turn','')}\n\n"
+          f"SOURCE (the form -- sentence-function order, parts of speech, noun-qualities, markers, sigla are the spine; its act-tokens remain, renamed only as the pivot requires):\n"
           f"<<<\n{source_text}\n>>>"
-          f"{guidance}\n\nPour the reading through the spine.")
+          f"{guidance}\n\nNarrate the reinterpretation through the spine.")
     c_text, c_stop = _stream_call(COMPILER_MODEL, BEAT_COMPOSER_SYSTEM, u2, COMPOSE_MAX, api_key, wall=150)
 
     _enant = _tagsect(c_text, "ENANTIOMORPH")
@@ -3430,7 +3453,7 @@ class handler(BaseHTTPRequestHandler):
                               ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
                     "model": COMPILER_MODEL,
                     "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
-                    "prompt_method": ("beat/v2 (rotate-then-pour; reading=meaning, source=form)"
+                    "prompt_method": ("pivot/v1 (parse-pivot-cascade-narrate; happenings retained, meaning recomputed)"
                                       if (body.get("method") or os.environ.get("MANDALA_METHOD", "")) == "beat"
                                       else "slot-total/v1 (exemplar-framed, source-as-template)"),
                     "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL"},
