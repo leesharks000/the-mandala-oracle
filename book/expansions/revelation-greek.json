@@ -2923,7 +2923,89 @@
     ]
    },
    "commentary": "The reprieve humanity was given is the very substance it consumed, so at the hour of maturity the balances do not strike but simply weigh what was already spent, and what pours from their dishes is only what was always owed."
+  },
+  {
+   "transform_id": "TX-d2dd3fbc",
+   "cast_at": "2026-07-05T18:37:53.722720+00:00",
+   "reading_axn": "AXN:FED1.READING.🌒🌗🌖🌊🌙🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "THUNDER",
+   "operator_axis": "scale-axis — the cosmic-utterance the local-speech determined against",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "slot_conservation": "PASS",
+    "numeral_conservation": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, whereas the declared change describes a specific reversal of causal agency from the angels to a distributed extinction-wave process.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The relational structure (agents prepared for a time to affect a third of beings; innumerable forces; vision of creatures bearing forth destructive emanations) is preserved throughout; only vocabulary and imagery differ.",
+    "back_translation": "",
+    "terminal_similarity": 0.357
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐφάνησαν αἱ τέσσαρες ῥωγμαὶ αἱ ἐγγεγραμμέναι κατὰ τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ὅπου ἐμετρήθη τὸ τρίτον τῶν ζώντων.\n\n**9:16** καὶ τὸ πλῆθος τῶν κυμάτων τοῦ ⸀σβεσμοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸ πλῆθος αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τὰς πλημμύρας ἐν τῇ ὁράσει καὶ τοὺς φερομένους ἐπ' αὐτῶν, ἔχοντας φολίδας τεφρώδεις καὶ πελιδνὰς καὶ ἁλμυρώδεις· καὶ αἱ κορυφαὶ τῶν πλημμυρῶν ὡς κορυφαὶ σκοτεινῶν, καὶ ἐκ τῶν βαθέων αὐτῶν ἐκπορεύεται σιγὴ καὶ ἅλμη καὶ ἀφανισμός.",
+   "layer_a": {
+    "beats": [
+     "9:15 Four angels loosed, prepared for the hour-day-month-year, to kill a third of humanity.",
+     "9:16 Number of cavalry armies: two myriads of myriads; I heard their number.",
+     "9:17 Horses seen in vision with riders; breastplates of fire, hyacinth, sulfur; horse-heads like lion-heads; from mouths issues fire, smoke, brimstone."
+    ],
+    "geometry": {
+     "lines": 3,
+     "stanzas": 1,
+     "verse_markers": [
+      "9:15",
+      "9:16",
+      "9:17"
+     ]
+    }
+   },
+   "kernel": {
+    "governing_law": "Four discrete angels, held for a precise time-coordinate, are released as causal agents who command a countable cavalry to kill a counted fraction of humanity.",
+    "mutated_relation": "The four angels are not causal agents who command the cavalry; they are local registrations where a continuous extinction-wave becomes momentarily countable — agency belongs to the distributed process, and the hour-day-month-year are not a schedule but cross-sectional slices through which the wave's passage is witnessed, so that the bounded entities exist as cost-marks the wave inscribes rather than sources from which destruction flows.",
+    "clause_map": [
+     {
+      "ref": "9:15",
+      "class": "REBUILT",
+      "note": "Angels, time-units, and killing all instantiate bounded-agent causality; must become field-registrations."
+     },
+     {
+      "ref": "9:16",
+      "class": "REBUILT",
+      "note": "Counted number heard as discrete sum; must become magnitude-reading of a continuous front."
+     },
+     {
+      "ref": "9:17",
+      "class": "REBUILT",
+      "note": "Predicate-list of horses/riders/emissions: discrete emitters must become loci where the wave discharges."
+     }
+    ]
+   },
+   "commentary": "The fissures bear the wave's passage as scars rather than as commands, so that even witnessing them costs the seer the grammar of agency — what was slain is now merely measured, what rode is now merely carried, and what roared now issues silence."
   }
  ],
- "last_updated": "2026-07-05T18:36:22.201195+00:00"
+ "last_updated": "2026-07-05T18:37:53.722720+00:00"
 }
