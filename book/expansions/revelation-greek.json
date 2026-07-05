@@ -3839,7 +3839,59 @@
     "beats": ""
    },
    "commentary": "The transformation costs the seer his position outside the count: he no longer hears the number but carries it, and the vision's violence, unable to discharge outward, settles as leaden silence in the body of the text itself."
+  },
+  {
+   "transform_id": "TX-09f89047",
+   "cast_at": "2026-07-05T21:31:22.864025+00:00",
+   "reading_axn": "AXN:FE0F.READING.🌿🔥🌿🔥🌔🌟",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SILENCE",
+   "operator_axis": "response-axis — the non-response the source's engagement-expectation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive; law self-recovered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are released (ἐλύθησαν) to actively kill a third of mankind, with a counted cavalry emitting fire/smoke/sulfur; in Text B the angels merely remain (ἔμειναν) with no one asking them when, the waiting ones are uncountable and unheard, and nothing comes out of the horses' mouths — the entire directional flow of destructive agency is negated into stasis and inaction.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural mutation: active release/killing becomes passive persistence/remaining, the counted forces become uncountable, and the destructive emissions from mouths become nothing/silence — agency and directional destructive action are negated into stasis and non-response.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B sustains the negation of destructive agency (heads like donkeys, empty breastplates, nothing issuing from mouths), consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.618
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἔμειναν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, καὶ οὐδεὶς ἠρώτησεν αὐτοὺς πότε.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν ⸀ἀναμενόντων ⸀ἀνεξαρίθμητος· οὐκ ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας ἀσβέστους καὶ ὑαλίνους καὶ κενούς· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ ὄνων, καὶ ἐκ τῶν στομάτων αὐτῶν οὐκ ἐκπορεύεται οὐδέν.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "",
+    "mutated_relation": "When the readiness that demands a response meets only silence, the prepared hour does not vanish but persists unasked-for; magnitude becomes uncountable because no witness stands outside it to totalize; and the mouths that were built to emit destruction discover that their terminal event is not annihilation but the nothing that issues when no one answers.",
+    "beats": ""
+   },
+   "commentary": "The transformation costs the source its catastrophe — the angels keep their appointment but lose their audience, and what was terrifying about them turns out to have been not the fire but the expectation that someone would be there to die."
   }
  ],
- "last_updated": "2026-07-05T21:28:59.932660+00:00"
+ "last_updated": "2026-07-05T21:31:22.864025+00:00"
 }
