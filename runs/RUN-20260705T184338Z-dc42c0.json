@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260705T184338Z-dc42c0",
+ "schema": "run/v1",
+ "ts": "2026-07-05T18:43:38.965836+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "INVERSION",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "27240a46fb22e693571a1665ddef1e139f9326ce",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/27240a46fb22e693571a1665ddef1e139f9326ce",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/27240a46fb22e693571a1665ddef1e139f9326ce/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "afa7702d45465c86",
+  "prompt_method": "slot-total/v1 (exemplar-framed, source-as-template)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6"
+ },
+ "code": "27240a46fb22",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "afa7702d45465c86",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Angels prepared for a precise temporal coordinate are released to kill; their army is counted and visually attested; destructive power flows outward from mouths as fire, confirming that divine timing guarantees lethal emission.",
+   "mutated_relation": "In the transformed world the four angels remain bound despite the appointed hour arriving — preparation does not entail release; the cavalry exists in uncountable profusion yet cannot be witnessed; destructive substance flows inward (is swallowed) rather than outward (emitted); the beings are costs-of-readiness-never-spent, an army that is its own confinement, a timing mechanism that deducts the hour without deploying it.",
+   "clause_map": [
+    {
+     "ref": "9:15",
+     "class": "REBUILT",
+     "note": "Release reversed to continued binding; appointed time arrives but yields nothing."
+    },
+    {
+     "ref": "9:16",
+     "class": "REBUILT",
+     "note": "Number heard becomes number unheard; attestation collapses into silence."
+    },
+    {
+     "ref": "9:17",
+     "class": "REBUILT",
+     "note": "Emission from mouths reversed to ingestion; lion-likeness collapses; vision becomes blindness."
+    }
+   ]
+  },
+  "enantiomorph": "**9:15** καὶ ἐδέθησαν οἱ τέσσαρες φύλακες οἱ ὡρισμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα καταπίωσιν τὸ τρίτον τῶν ἐντολῶν.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν παρατάξεων τοῦ ⸀ἀφανοῦς ⸀δισμυριάδες μυριάδων· οὐκ ἔβλεψα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως οὐκ εἶδον τοὺς ὄνους ἐν τῇ σκοτίᾳ οὐδὲ τοὺς φέροντας ἐπ' αὐτῶν, ἔχοντας θώρακας τεφρίνους καὶ μολυβδίνους καὶ χαλκώδεις· καὶ αἱ γνάθοι τῶν ὄνων ὡς γνάθοι σκωλήκων, καὶ εἰς τὰ στόματα αὐτῶν εἰσπορεύεται χοῦς καὶ σποδὸς καὶ ἅλμη.",
+  "enantiomorph_translation": "**9:15** And the four wardens were bound fast, those appointed for the hour and day and month and year, so that they might swallow up the third of the commands.\n\n**9:16** And the number of the formations of the unseen was two myriads of myriads; I did not behold their number.\n\n**9:17** And thus I did not see the mules in the darkness nor those borne upon them, having breastplates ashen and leaden and brazen; and the jaws of the mules were as jaws of worms, and into their mouths there entered dust and cinder and brine.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "slot_conservation": "PASS",
+   "numeral_conservation": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT B systematically inverts the directional and perceptual relations of TEXT A: release becomes binding (ἐλύθησαν→ἐδέθησαν), killing becomes swallowing (ἀποκτείνωσιν→καταπίωσιν), hearing becomes not seeing (ἤκουσα→οὐκ ἔβλεψα), seeing becomes not seeing (εἶδον→οὐκ εἶδον), outward emission from mouths becomes inward intake into mouths (ἐκ τῶν στομάτων ἐκπορεύεται→εἰς τὰ στόματα εἰσπορεύεται), and destructive grandeur is replaced by degraded insignificance throughout.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversions: angels remain bound instead of released, perception inverted (seeing/hearing→not seeing), destructive substance flows inward (swallowed) rather than outward (emitted), and the cavalry becomes unwitnessable/uncountable — the recovered claim details the same relational reversals the declared claim summarizes.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of TEXT B maintains the inverted directional relation (inward flow into mouths vs. outward emission) consistently through to the end.",
+   "back_translation": "",
+   "terminal_similarity": 0.283
+  },
+  "advisories": [
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "Every glory the source spends — the loosing, the killing, the fire breathed outward, the lions, the horses seen in vision — rests on a ground it never names: the binding that persists, the command consumed before it arrives, the beasts that eat their own destruction in darkness, witnessed only as the failure of witness, an army whose readiness is the thing that devours it.",
+  "post_mortem": null,
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
