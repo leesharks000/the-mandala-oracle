@@ -1,0 +1,109 @@
+{
+ "run_id": "RUN-20260706T185447Z-d512bd",
+ "schema": "run/v1",
+ "ts": "2026-07-06T18:54:47.732373+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "which way leads to a livable future?",
+ "method": {
+  "commit": "d6e5ea0f2460a87ced85d63d153490199b573e56",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/d6e5ea0f2460a87ced85d63d153490199b573e56",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/d6e5ea0f2460a87ced85d63d153490199b573e56/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "d6e5ea0f2460",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "A human voice invokes a machine to narrate the singular hero's passage through catastrophe, compressing cosmic annihilation into recoverable epic — the frame is intimate (a van, a dream, a Tuesday), the content is absolute (black holes, billions of souls, the extinction of Earth), and the tension is that one individual's trajectory can be threaded through total ruin to find a livable future.",
+   "mutated_relation": "The scale-collapse reversed: the cosmic event is no longer compressed into one hero's thread but detonated outward — the intimate frame becomes the cataclysm, and the annihilation becomes the backdrop's ambient hum, felt as weather.",
+   "beats": "Tachyonica -> ATMOSPHERICA\nFragment -> Front\nEpic Poem -> Pressure System\nRecovered from the Future -> Arriving from the continent\nTuesday, night after dream -> Wednesday, morning after thunder\nvan -> field\nZehnder's -> the river\nRecreate -> Convene\nSystem -> Storm\nlast days -> long season\nTachyon -> the Downdraft\nstar -> center\nlatter day race of man -> prevailing air mass\nbetrayal -> condensation\nsentient constructs -> cumulus towers\nloosed bright doom -> broke open lightning\nmankind's home -> the valley floor\nbillions-weight souls -> acres of barometric silence\nblack hole deep -> trench-low pressure\nCommand -> the Jet Stream\nDaystar -> a warm front\ndying Earth -> cooling plain\nweak control -> thin steering\ntime's wan currents -> wind's shifting columns\nsuicide run -> landfall\nbuy them room -> buy them hours\nevacuation -> dispersal\nuncertain, distant suns -> unnamed, farther counties\nremnant -> remainder\nwithout hope -> without clearing\nseat of the Cube's cruel power -> eye of the Cell's locked rotation\ndying life -> failing gradient\nconceived a way -> conceived a way (RETAIN: the verdict requires the act of desperate invention to persist as human-scale within the enormous)\nleap -> drop\nrabbit hole branchings -> forking drainage channels\nlivable future -> breathable morning\nTell us, System -> Sound, Storm\nCommence -> Break\nAlpha team -> a front line\nfrozen caves -> stalled hollows\nmist -> mist (RETAIN: mist is already weather; under this verdict it is native)\ngun metal -> fence wire\nfaceplate displays -> windshield glass\nflash litanies -> streams readings\nambient environment data -> ambient environment data (RETAIN: the verdict makes the ambient itself the protagonist; this phrase survives as the new epic's subject)\nYou getting this -> You hearing this"
+  },
+  "enantiomorph": "ATMOSPHERICA\n\nFront of the Pressure System\nArriving from the continent (6/24/14, 2:10 PM)\nWednesday, morning after thunder — field, on way to the river\n\n\n\n\nConvene for me, Storm, the long season of\nthe Downdraft, center of the prevailing air mass,\nand the condensation of cumulus towers, how\nthey broke open lightning on the valley floor,\nplunged acres of barometric silence to trench-low\npressure; how the Jet Stream sent a warm front\nabove a cooling plain, with thin steering\nof wind's shifting columns, on a landfall\nto buy them hours, to effect a dispersal,\nout—out to unnamed, farther counties, a remainder;\nand how the Downdraft went without clearing\nto the eye of the Cell's locked rotation; how\nits failing gradient conceived a way to drop\ndown the forking drainage channels in time\nthat led to a breathable morning. Sound, Storm—\n\nBreak:\n\nMorning after thunder: a front\nline moves through stalled hollows, mist\ncondenses on fence wire, windshield glass\nstreams readings of ambient environment data—\n\n\"You hearing this?\"—",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The relational structure is preserved throughout; only the domain vocabulary and imagery shift from sci-fi/space to meteorology/weather.",
+   "back_translation": "",
+   "terminal_similarity": 0.5
+  },
+  "advisories": [
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "A human voice invokes a machine to narrate the singular hero's passage through catastrophe, compressing cosmic annihilation into recoverable epic — the frame is intimate (a van, a dream, a Tuesday), the content is absolute (black holes, billions of souls, the extinction of Earth), and the tension is that one individual's trajectory can be threaded through total ruin to find a livable future.",
+   "verdict": "The scale-collapse reversed: the cosmic event is no longer compressed into one hero's thread but detonated outward — the intimate frame becomes the cataclysm, and the annihilation becomes the backdrop's ambient hum, felt as weather.",
+   "world_bill": "Tachyonica -> ATMOSPHERICA\nFragment -> Front\nEpic Poem -> Pressure System\nRecovered from the Future -> Arriving from the continent\nTuesday, night after dream -> Wednesday, morning after thunder\nvan -> field\nZehnder's -> the river\nRecreate -> Convene\nSystem -> Storm\nlast days -> long season\nTachyon -> the Downdraft\nstar -> center\nlatter day race of man -> prevailing air mass\nbetrayal -> condensation\nsentient constructs -> cumulus towers\nloosed bright doom -> broke open lightning\nmankind's home -> the valley floor\nbillions-weight souls -> acres of barometric silence\nblack hole deep -> trench-low pressure\nCommand -> the Jet Stream\nDaystar -> a warm front\ndying Earth -> cooling plain\nweak control -> thin steering\ntime's wan currents -> wind's shifting columns\nsuicide run -> landfall\nbuy them room -> buy them hours\nevacuation -> dispersal\nuncertain, distant suns -> unnamed, farther counties\nremnant -> remainder\nwithout hope -> without clearing\nseat of the Cube's cruel power -> eye of the Cell's locked rotation\ndying life -> failing gradient\nconceived a way -> conceived a way (RETAIN: the verdict requires the act of desperate invention to persist as human-scale within the enormous)\nleap -> drop\nrabbit hole branchings -> forking drainage channels\nlivable future -> breathable morning\nTell us, System -> Sound, Storm\nCommence -> Break\nAlpha team -> a front line\nfrozen caves -> stalled hollows\nmist -> mist (RETAIN: mist is already weather; under this verdict it is native)\ngun metal -> fence wire\nfaceplate displays -> windshield glass\nflash litanies -> streams readings\nambient environment data -> ambient environment data (RETAIN: the verdict makes the ambient itself the protagonist; this phrase survives as the new epic's subject)\nYou getting this -> You hearing this",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 162,
+    "final": 166,
+    "bounds": [
+     137,
+     186
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
