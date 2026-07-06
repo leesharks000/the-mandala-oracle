@@ -398,11 +398,58 @@
    ],
    "commentary": "",
    "interpretation": "Cold rings, the door still open behind him: the superior man who asks which way leads to a livable future has not yet understood that the beloved's waiting is also a direction."
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "TACHYONICA\n\nFragment of the Epic Poem\nRecovered from the Future (6/24/14, 2:10 PM)\nTuesday, night after dream — van, on way to Zehnder’s\n\n\n\n\nRecreate for me, System, the last days of\nTachyon, star of the latter day race of man,\nand the betrayal of sentient constructs, how\nthey loosed bright doom on mankind’s home,\nplunged billions-weight souls to black hole\ndeep; how Command sent the Daystar\nabove a dying Earth, with weak control\nof time’s wan currents, on a suicide run\nto buy them room, to effect an evacuation,\nout—out to uncertain, distant suns, a remnant;\nand how the Tachyon went without hope\nto the seat of the Cube’s cruel power; how\nhis dying life conceived a way to leap\ndown the rabbit hole branchings in time\nthat led to a livable future. Tell us, System—\n\nCommence:\n\nDay after dream: Alpha\nteam moves through frozen caves, mist\ncondenses on gun metal, faceplate displays\nflash litanies of ambient environment data—\n\n\"You getting this?\"—",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "HESPERONICA\n\nWhole of the Pastoral Letter\nBuried in the Past (6/24/14, 2:10 PM)\nSunday, morning after waking — porch, on way to home\n\n\n\n\nLet rest for me, Silence, the first hours of\nHestia, hearth-keeper of the earliest neighborhood of kin,\nand the faithfulness of mute gardens, how\nthey gathered slow plenty in one house,\nlifted a handful of neighbors to open sky\nhigh; how no one in particular sent the hearthfire\nabove a living earth, with easy surrender\nof space's warm stillness, on an unhurried stay\nto spend their rest, to effect a settling-in,\nin—in to familiar, near fields, a fullness;\nand how the Hestia went with nothing to fear\nto the threshold of the garden's mild quiet; how\nher living afternoon forgot the need to sit\ndown the single path clearing in place\nthat led to an inhabited present. Say nothing, Silence—\n\nEnough:\n\nMorning after waking: One woman\nsits through sun-warmed kitchen, light\nspreads on wooden table, bare windows\nhold silence of the smell of bread—\n\n\"You hear that quiet?\"—",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The epic trajectory of TEXT A—outward flight from catastrophe, a hero's desperate suicide mission through branching time toward an uncertain future—is inverted in TEXT B into an inward pastoral settling: danger becomes safety, scattering becomes gathering, fragmentation becomes wholeness, and the temporal direction reverses from future-seeking to present-dwelling.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify an inversion from epic outward movement to pastoral inward settling, but the declared claim specifically focuses on the intimate voice dismissing the machine-oracle and choosing silence over narration, while the recovered claim focuses on systematic inversions of direction (outward→inward, danger→safety, scattering→gathering, future→present). They partially overlap on the structural reversal but differ in which specific relational changes they emphasize.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final scene sustains the inversion: frozen caves become a sun-warmed kitchen, gun metal becomes a wooden table, data-streaming faceplates become bare windows holding silence, and the urgent query becomes a question about quietness.",
+    "back_translation": "",
+    "terminal_similarity": 0.167
+   },
+   "law_variance": {
+    "declared": "The ordinary is born from abundance: a collective figure is drawn by flourishing into settled spatial return, and the intimate voice dismisses the machine-oracle, choosing silence over narration of humanity's first, unhurried, homeward-resting act of inhabitation.",
+    "recovered": "The epic trajectory of TEXT A—outward flight from catastrophe, a hero's desperate suicide mission through branching time toward an uncertain future—is inverted in TEXT B into an inward pastoral settling: danger becomes safety, scattering becomes gathering, fragmentation becomes wholeness, and the temporal direction reverses from future-seeking to present-dwelling.",
+    "note": "Both identify an inversion from epic outward movement to pastoral inward settling, but the declared claim specifically focuses on the intimate voice dismissing the machine-oracle and choosing silence over narration, while the recovered claim focuses on systematic inversions of direction (outward→inward, danger→safety, scattering→gathering, future→present). They partially overlap on the structural reversal but differ in which specific relational changes they emphasize."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T19:11:17.558657+00:00",
+ "last_updated": "2026-07-06T19:14:02.344432+00:00",
  "rite": [
   {
    "stage": "judgment",
