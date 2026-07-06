@@ -1,0 +1,109 @@
+{
+ "run_id": "RUN-20260706T185210Z-7acb14",
+ "schema": "run/v1",
+ "ts": "2026-07-06T18:52:10.140325+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "which way leads to a livable future?",
+ "method": {
+  "commit": "5d17669b6940367fba17fe545f833eb2e03d6cbf",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/5d17669b6940367fba17fe545f833eb2e03d6cbf",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/5d17669b6940367fba17fe545f833eb2e03d6cbf/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "5d17669b6940",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The annihilated world can be rescued only by a doomed hero's one-way passage through time; the epic voice invokes a machine-oracle to narrate total catastrophe and the slimmest thread of survival.",
+   "mutated_relation": "The catastrophe does not arrive; the hero's readiness and the oracle's invocation persist, aimed at a destruction that remains merely latent — the epic apparatus vibrates around a peril that is never exacted.",
+   "beats": "Tachyonica -> Hesperica\nFragment -> Tremor\nEpic Poem -> Vigil-Song\nRecovered from the Future -> Overheard from the Threshold\nTuesday, night after dream -> Tuesday, still inside the dream\nvan, on way to Zehnder's -> van, idling at the lot's edge\nRecreate -> Rehearse\nSystem -> System (RETAIN: the oracle must be addressed for the vigil to hold)\nlast days -> long watches\nTachyon -> Tachyon (RETAIN: the hero must remain the same being whose peril is never consummated)\nstar -> weight\nlatter day race of man -> present-tense nation of man\nbetrayal -> rumor\nsentient constructs -> sentient constructs (RETAIN: the latent threat must keep its source)\nloosed bright doom -> nursed bright charge\nmankind's home -> mankind's home (RETAIN: the imperiled object must persist unharmed for the verdict to function)\nplunged -> tilted\nbillions-weight souls -> billions-weight souls (RETAIN: the magnitude of what is not lost must register)\nblack hole deep -> dim verge\nCommand -> Command (RETAIN: the apparatus unchanged, only un-triggered)\nDaystar -> Watchfire\ndying Earth -> sleepless Earth\nweak control -> thin hold\ntime's wan currents -> time's slow tides\nsuicide run -> standing orbit\nbuy them room -> keep them still\nevacuation -> sheltering\nout—out to uncertain, distant suns -> in—in to familiar, nearer rooms\nremnant -> whole\nwithout hope -> without certainty\nseat of the Cube's cruel power -> hum of the Cube's dormant core\ndying life -> waking life\nconceived a way to leap -> conceived a way to wait\nrabbit hole branchings -> fault-line branchings\nlivable future -> livable present\nTell us -> Warn us\nCommence -> Listen\nAlpha team -> Alpha team (RETAIN: the unit that watches must be named identically)\nfrozen caves -> cooling caves\nmist condenses -> mist thins\ngun metal -> gun metal (RETAIN: readiness itself is the surviving tension)\nfaceplate displays -> faceplate displays (RETAIN: instruments scanning for what has not yet come)\nflash litanies -> scroll litanies\nambient environment data -> ambient environment data (RETAIN: the data that registers normalcy is itself the transform)\nYou getting this -> You getting this (RETAIN: the question now means: do you see nothing is happening yet)"
+  },
+  "enantiomorph": "HESPERICA\n\nTremor of the Vigil-Song\nOverheard from the Threshold (6/24/14, 2:10 PM)\nTuesday, still inside the dream — van, idling at the lot's edge\n\n\n\n\nRehearse for me, System, the long watches of\nTachyon, weight of the present-tense nation of man,\nand the rumor of sentient constructs, how\nthey nursed bright charge on mankind's home,\ntilted billions-weight souls to dim verge\ndeep; how Command sent the Watchfire\nabove a sleepless Earth, with thin hold\nof time's slow tides, on a standing orbit\nto keep them still, to effect a sheltering,\nin—in to familiar, nearer rooms, a whole;\nand how the Tachyon went without certainty\nto the hum of the Cube's dormant core; how\nhis waking life conceived a way to wait\ndown the fault-line branchings in time\nthat led to a livable present. Warn us, System—\n\nListen:\n\nDay after dream: Alpha\nteam moves through cooling caves, mist\nthins on gun metal, faceplate displays\nscroll litanies of ambient environment data—\n\n\"You getting this?\"—",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT A depicts an outward, desperate flight from catastrophe (evacuation outward to distant suns, a suicide run, leaping to a future), while TEXT B reverses the direction to an inward, static sheltering-in-place (sheltering inward to nearer rooms, a standing orbit, waiting toward a present). The fundamental relation of motion, agency, and temporal direction is inverted from explosive outward escape to watchful inward dwelling.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim identifies a real structural change (reversal of spatial direction and agency from outward flight to inward sheltering), which partially overlaps the declared claim about catastrophe never arriving, but focuses on the inversion of motion/direction rather than on the latency and non-arrival of destruction.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion maintains the shifted relation (cooling/thinning vs frozen/condensing, scrolling vs flashing), consistent with the dampened, inward stance of TEXT B.",
+   "back_translation": "",
+   "terminal_similarity": 1.0
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "The catastrophe does not arrive; the hero's readiness and the oracle's invocation persist, aimed at a destruction that remains merely latent — the epic apparatus vibrates around a peril that is never exacted.",
+   "recovered": "TEXT A depicts an outward, desperate flight from catastrophe (evacuation outward to distant suns, a suicide run, leaping to a future), while TEXT B reverses the direction to an inward, static sheltering-in-place (sheltering inward to nearer rooms, a standing orbit, waiting toward a present). The fundamental relation of motion, agency, and temporal direction is inverted from explosive outward escape to watchful inward dwelling.",
+   "note": "The recovered claim identifies a real structural change (reversal of spatial direction and agency from outward flight to inward sheltering), which partially overlaps the declared claim about catastrophe never arriving, but focuses on the inversion of motion/direction rather than on the latency and non-arrival of destruction."
+  },
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The annihilated world can be rescued only by a doomed hero's one-way passage through time; the epic voice invokes a machine-oracle to narrate total catastrophe and the slimmest thread of survival.",
+   "verdict": "The catastrophe does not arrive; the hero's readiness and the oracle's invocation persist, aimed at a destruction that remains merely latent — the epic apparatus vibrates around a peril that is never exacted.",
+   "world_bill": "Tachyonica -> Hesperica\nFragment -> Tremor\nEpic Poem -> Vigil-Song\nRecovered from the Future -> Overheard from the Threshold\nTuesday, night after dream -> Tuesday, still inside the dream\nvan, on way to Zehnder's -> van, idling at the lot's edge\nRecreate -> Rehearse\nSystem -> System (RETAIN: the oracle must be addressed for the vigil to hold)\nlast days -> long watches\nTachyon -> Tachyon (RETAIN: the hero must remain the same being whose peril is never consummated)\nstar -> weight\nlatter day race of man -> present-tense nation of man\nbetrayal -> rumor\nsentient constructs -> sentient constructs (RETAIN: the latent threat must keep its source)\nloosed bright doom -> nursed bright charge\nmankind's home -> mankind's home (RETAIN: the imperiled object must persist unharmed for the verdict to function)\nplunged -> tilted\nbillions-weight souls -> billions-weight souls (RETAIN: the magnitude of what is not lost must register)\nblack hole deep -> dim verge\nCommand -> Command (RETAIN: the apparatus unchanged, only un-triggered)\nDaystar -> Watchfire\ndying Earth -> sleepless Earth\nweak control -> thin hold\ntime's wan currents -> time's slow tides\nsuicide run -> standing orbit\nbuy them room -> keep them still\nevacuation -> sheltering\nout—out to uncertain, distant suns -> in—in to familiar, nearer rooms\nremnant -> whole\nwithout hope -> without certainty\nseat of the Cube's cruel power -> hum of the Cube's dormant core\ndying life -> waking life\nconceived a way to leap -> conceived a way to wait\nrabbit hole branchings -> fault-line branchings\nlivable future -> livable present\nTell us -> Warn us\nCommence -> Listen\nAlpha team -> Alpha team (RETAIN: the unit that watches must be named identically)\nfrozen caves -> cooling caves\nmist condenses -> mist thins\ngun metal -> gun metal (RETAIN: readiness itself is the surviving tension)\nfaceplate displays -> faceplate displays (RETAIN: instruments scanning for what has not yet come)\nflash litanies -> scroll litanies\nambient environment data -> ambient environment data (RETAIN: the data that registers normalcy is itself the transform)\nYou getting this -> You getting this (RETAIN: the question now means: do you see nothing is happening yet)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 162,
+    "final": 161,
+    "bounds": [
+     137,
+     186
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
