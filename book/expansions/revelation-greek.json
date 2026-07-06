@@ -4515,7 +4515,59 @@
     "beats": "ἐλύθησαν (were released) -> erupted\nτέσσαρες ἄγγελοι (four angels) -> one blaze\nἡτοιμασμένοι (having been prepared) -> starving\nεἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (for the hour and day and month and year) -> for whatever it finds\nἀποκτείνωσιν (they might kill) -> devour\nτὸ τρίτον (the third) -> the whole\nτῶν ἀνθρώπων (of humanity) -> of the world\nἀριθμός (number) -> roar\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> wall of heat\nδισμυριάδες μυριάδων (twice ten-thousand ten-thousands) -> past counting past counting\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> I heard only burning\nεἶδον (I saw) -> I was blinded by\nἵππους (horses) -> tongues\nἐν τῇ ὁράσει (in the vision) -> in the furnace\nτοὺς καθημένους ἐπ' αὐτῶν (those seated upon them) -> nothing riding them\nθώρακας (breastplates) -> nakedness\nπυρίνους καὶ ὑακινθίνους καὶ θειώδεις (fiery and hyacinth and sulphurous) -> white only white\nκεφαλαί (heads) -> mouths\nλεόντων (of lions) -> of furnaces\nστομάτων (mouths) -> throats\nπῦρ (fire) -> fire (RETAIN: the verdict's world is fire itself; it cannot be translated out of its own substance)\nκαπνός (smoke) -> more fire\nθεῖον (sulphur) -> more fire\nοὕτως (thus / in this way) -> without form\nἐκπορεύεται (comes forth) -> pours\nἔχοντας (having / wearing) -> stripped to\nἵππων (of horses — genitive, in \"heads of horses\") -> of the tongues\nκαπνὸς (smoke — second occurrence in v.17) -> more fire"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-bdf58980",
+   "cast_at": "2026-07-06T01:07:22.401755+00:00",
+   "reading_axn": "AXN:FEE6.READING.🌗🌙💫🌒🌑⭐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "MIRROR",
+   "operator_axis": "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, agents (angels, horses) act outward—they are loosed to kill, and fire/smoke/brimstone issues out of their mouths; in Text B, the entities (gates, thresholds) receive inward—they gather to receive souls, and darkness/silence/dew enters into their openings, reversing the direction of action and flow.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural reversal: outward destructive action (agents loosed to kill, issuing from mouths) becomes inward gathering/receiving (entities that draw in, apertures that receive), reversing the direction of action and flow.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the inward-flow relation (εἰσπορεύεται into the openings) consistently, never reverting to Text A's outward direction.",
+    "back_translation": "",
+    "terminal_similarity": 0.143
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ συνήχθησαν αἱ τέσσαρες πύλαι αἱ ἡτοιμασμένοι εἰς τὸν καιρὸν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα δέξωνται τὸ τρίτον τῶν ψυχῶν.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν πομπῶν τῶν ⸀πεζῶν ⸀χιλιάδες χιλιάδων· ἔγνων τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ ὧδε ἐθεασάμην τὰ κατώφλια ἐν τῇ προσδοκίᾳ καὶ τοὺς προσερχομένους δι' αὐτῶν, φέροντας χιτῶνας σποδώδεις καὶ λευκοὺς καὶ ὑδατίνους· καὶ τὰ στόμια τῶν κατωφλίων ὡς χάσματα σπηλαίων, καὶ εἰς τὰ στόμια αὐτῶν εἰσπορεύεται σκότος καὶ σιγὴ καὶ δρόσος.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Destructive power is released outward from divine preparation toward humanity: angels loosed at the appointed time project annihilation through monstrous cavalry whose mouths emit fire, smoke, and sulfur — a unidirectional cascade from heaven's schedule through bestial instrument into human death.",
+    "mutated_relation": "Humanity's own substance flows inward toward the prepared threshold: the mortals converge upon the fixed hour, drawn into the mouths that receive them — annihilation as ingathering, the instrument as aperture, destruction as arrival home.",
+    "beats": "ἐλύθησαν (were loosed) -> συνήχθησαν (were gathered)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες πύλαι (four gates)\nἡτοιμασμένοι (prepared) -> ἡτοιμασμένοι (RETAIN: the verdict names the threshold as \"prepared\" — the appointment is the hinge on which ingathering turns; any synonym dissolves the identity of the fixed hour)\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> καιρὸν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (season and day and month and year)\nἀποκτείνωσιν (they might kill) -> δέξωνται (they might receive)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ τρίτον τῶν ψυχῶν (a third of the souls)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> πομπῶν τῶν πεζῶν (processions of the walking)\nδισμυριάδες μυριάδων (twice ten-thousand ten-thousands) -> χιλιάδες χιλιάδων (thousands of thousands)\nἤκουσα τὸν ἀριθμὸν (I heard the number) -> ἔγνων τὸν ἀριθμὸν (I knew the number)\nἵππους (horses) -> κατώφλια (thresholds)\nτοὺς καθημένους ἐπ' αὐτῶν (those seated upon them) -> τοὺς προσερχομένους δι' αὐτῶν (those approaching through them)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire, hyacinth, sulfur) -> χιτῶνας σποδώδεις καὶ λευκοὺς καὶ ὑδατίνους (tunics of ash, white, and water)\nκεφαλαὶ τῶν ἵππων (heads of the horses) -> στόμια τῶν κατωφλίων (mouths of the thresholds)\nκεφαλαὶ λεόντων (heads of lions) -> χάσματα σπηλαίων (openings of caves)\nἐκ τῶν στομάτων αὐτῶν (from their mouths) -> εἰς τὰ στόμια αὐτῶν (into their mouths)\nἐκπορεύεται (goes forth) -> εἰσπορεύεται (goes inward)\nπῦρ (fire) -> σκότος (darkness)\nκαπνός (smoke) -> σιγή (silence)\nθεῖον (sulfur) -> δρόσος (dew)\nεἶδον (I saw) -> ἐθεασάμην (I beheld)\nκαπνὸς (smoke, second instance) -> σιγή (silence)\nοὕτως (thus) -> ὧδε (here)\nἔχοντας (having) -> φέροντας (bearing)\nὁράσει (vision) -> προσδοκίᾳ (expectation)"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T01:05:39.743087+00:00"
+ "last_updated": "2026-07-06T01:07:22.401755+00:00"
 }
