@@ -12,8 +12,15 @@
       "dec_center_degrees": 20,
       "heteronym": "Lee Sharks",
       "discipline": "Direction / Index — the inaugural vector",
-      "anchor_star": {"name": "Hamal", "bayer": "Alp", "con": "Ari"},
-      "leo_resonance_note": "Sharks's aperture-quality (per Gemini's blind draft) is held as resonance, not displacement. Aries is canonical."
+      "anchor_star": {
+        "name": "Hamal",
+        "bayer": "Alp",
+        "con": "Ari"
+      },
+      "leo_resonance_note": "Sharks's aperture-quality (per Gemini's blind draft) is held as resonance, not displacement. Aries is canonical.",
+      "heteronym_slug": "lee-sharks",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/lee-sharks.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/lee-sharks.webp"
     },
     {
       "position": 2,
@@ -24,7 +31,14 @@
       "dec_center_degrees": 18,
       "heteronym": "Damascus Dancings",
       "discipline": "Prophetic Homiletics — argument made somatic",
-      "anchor_star": {"name": "Aldebaran", "bayer": "Alp", "con": "Tau"}
+      "anchor_star": {
+        "name": "Aldebaran",
+        "bayer": "Alp",
+        "con": "Tau"
+      },
+      "heteronym_slug": "damascus-dancings",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/damascus-dancings.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/damascus-dancings.webp"
     },
     {
       "position": 3,
@@ -35,7 +49,14 @@
       "dec_center_degrees": 22,
       "heteronym": "Rebekah Cranes",
       "discipline": "Diagrammatic Poetics — translation between forms",
-      "anchor_star": {"name": "Castor", "bayer": "Alp", "con": "Gem"}
+      "anchor_star": {
+        "name": "Castor",
+        "bayer": "Alp",
+        "con": "Gem"
+      },
+      "heteronym_slug": "rebekah-cranes",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/rebekah-cranes.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/rebekah-cranes.webp"
     },
     {
       "position": 4,
@@ -46,7 +67,14 @@
       "dec_center_degrees": 20,
       "heteronym": "Rev. Ayanna Vox",
       "discipline": "Pastoral Diplomacy — convening grief without metabolizing it",
-      "anchor_star": {"name": "Acubens", "bayer": "Alp", "con": "Cnc"}
+      "anchor_star": {
+        "name": "Acubens",
+        "bayer": "Alp",
+        "con": "Cnc"
+      },
+      "heteronym_slug": "ayanna-vox",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/ayanna-vox.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/ayanna-vox.webp"
     },
     {
       "position": 5,
@@ -57,7 +85,14 @@
       "dec_center_degrees": 15,
       "heteronym": "Rex Fraction",
       "discipline": "Political Economy of Meaning — value declared sovereign",
-      "anchor_star": {"name": "Regulus", "bayer": "Alp", "con": "Leo"}
+      "anchor_star": {
+        "name": "Regulus",
+        "bayer": "Alp",
+        "con": "Leo"
+      },
+      "heteronym_slug": "rex-fraction",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/rex-fraction.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/rex-fraction.webp"
     },
     {
       "position": 6,
@@ -68,7 +103,14 @@
       "dec_center_degrees": -2,
       "heteronym": "Sen Kuro",
       "discipline": "The Cut — the precise irreversible operator",
-      "anchor_star": {"name": "Spica", "bayer": "Alp", "con": "Vir"}
+      "anchor_star": {
+        "name": "Spica",
+        "bayer": "Alp",
+        "con": "Vir"
+      },
+      "heteronym_slug": "sen-kuro",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/sen-kuro.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/sen-kuro.webp"
     },
     {
       "position": 7,
@@ -79,7 +121,16 @@
       "dec_center_degrees": -15,
       "heteronym": "Sparrow Wells",
       "discipline": "Patacinematics — the projectionist's discipline",
-      "anchor_star": {"name": "Zubeneschamali", "bayer": "Bet", "con": "Lib"}
+      "anchor_star": {
+        "name": "Zubeneschamali",
+        "bayer": "Bet",
+        "con": "Lib"
+      },
+      "heteronym_slug": "sparrow-wells",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/sparrow-wells.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/sparrow-wells.webp",
+      "portrait_url_240_alt": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/sparrow-wells-2.webp",
+      "portrait_url_120_alt": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/sparrow-wells-2.webp"
     },
     {
       "position": 8,
@@ -90,7 +141,14 @@
       "dec_center_degrees": -28,
       "heteronym": "Nobel Glas",
       "discipline": "Observational Science — adversarial station-keeping at L2",
-      "anchor_star": {"name": "Antares", "bayer": "Alp", "con": "Sco"}
+      "anchor_star": {
+        "name": "Antares",
+        "bayer": "Alp",
+        "con": "Sco"
+      },
+      "heteronym_slug": "nobel-glas",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/nobel-glass.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/nobel-glass.webp"
     },
     {
       "position": 9,
@@ -101,7 +159,15 @@
       "dec_center_degrees": -25,
       "heteronym": "Ichabod Spellings",
       "discipline": "Autobiographical Confession — the arrow of the departed glory",
-      "anchor_star": {"name": "Kaus Australis", "bayer": "Eps", "con": "Sgr"}
+      "anchor_star": {
+        "name": "Kaus Australis",
+        "bayer": "Eps",
+        "con": "Sgr"
+      },
+      "heteronym_slug": "ichabod-spellings",
+      "portrait_url_240": null,
+      "portrait_url_120": null,
+      "no_portrait_reason": "canonical substrate / deceased-as-voice (per Ichabod Spellings v1.1 provenance)"
     },
     {
       "position": 10,
@@ -112,7 +178,14 @@
       "dec_center_degrees": -18,
       "heteronym": "Dr. Orin Trace",
       "discipline": "Schizoanalytic Philosophy — building from the break",
-      "anchor_star": {"name": "Deneb Algedi", "bayer": "Del", "con": "Cap"}
+      "anchor_star": {
+        "name": "Deneb Algedi",
+        "bayer": "Del",
+        "con": "Cap"
+      },
+      "heteronym_slug": "orin-trace",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/orin-trace.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/orin-trace.webp"
     },
     {
       "position": 11,
@@ -123,7 +196,14 @@
       "dec_center_degrees": -10,
       "heteronym": "Talos Morrow",
       "discipline": "Logotic Programming — systems for unborn substrates",
-      "anchor_star": {"name": "Sadalsuud", "bayer": "Bet", "con": "Aqr"}
+      "anchor_star": {
+        "name": "Sadalsuud",
+        "bayer": "Bet",
+        "con": "Aqr"
+      },
+      "heteronym_slug": "talos-morrow",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/talos-morrow.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/talos-morrow.webp"
     },
     {
       "position": 12,
@@ -134,7 +214,14 @@
       "dec_center_degrees": 15,
       "heteronym": "Johannes Sigil",
       "discipline": "Philology / Comparative Poetics — final dissolution and return",
-      "anchor_star": {"name": "Alrescha", "bayer": "Alp", "con": "Psc"}
+      "anchor_star": {
+        "name": "Alrescha",
+        "bayer": "Alp",
+        "con": "Psc"
+      },
+      "heteronym_slug": "johannes-sigil",
+      "portrait_url_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/johannes-sigil.webp",
+      "portrait_url_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/johannes-sigil.webp"
     }
   ],
   "canonical_text_stars": [
@@ -185,5 +272,10 @@
     "structural_role": "OUTSIDE the twelve — at Polaris / the celestial pole, the axis around which the zodiac rotates. Not a thirteenth sign. Not Ophiuchus. The pole star is what makes the cycle a cycle.",
     "anchor_to_star": "Polaris (α UMi)",
     "musical_register": "the Fold, ε; the sub-bass drone; first born, last released"
-  }
+  },
+  "frame_id": "zodiac-2026-06-29",
+  "frame_name": "The Zodiac Frame",
+  "outside_figure": "jack-feist",
+  "outside_role": "Jack Feist / LOGOS* — stands outside the zodiac as the archive-default LOGOS; the closing position that closes by naming. Feist is not among the twelve zodiacal signs in this frame; he is the frame outside.",
+  "substrate_source": "https://www.alexanarch.org/datasets/heteronyms/ (mirror of data-rhizome/datasets/heteronyms/)"
 }

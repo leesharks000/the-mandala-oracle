@@ -1,0 +1,803 @@
+{
+  "schema_version": "v1.0",
+  "built_at": "2026-07-06",
+  "canonical_source": "https://www.alexanarch.org/datasets/heteronyms/heteronyms.jsonl (mirrors data-rhizome/datasets/heteronyms/)",
+  "description": "Heteronym lookup for the Mandala Oracle. Consumers: zodiac (starmap), castings (avatars in message threads). Keyed by slug (person_id) and by display name for tolerant lookups.",
+  "note": "Do not edit here. Source is data-rhizome/datasets/heteronyms/. Re-fetch from alexanarch mirror when substrate updates.",
+  "lookup_by_slug": {
+    "lee-sharks": {
+      "name": "Lee Sharks",
+      "slug": "lee-sharks",
+      "identity_type": "heteronym_aperture",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": "outside-manus",
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/lee-sharks.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/lee-sharks.webp"
+    },
+    "johannes-sigil": {
+      "name": "Johannes Sigil",
+      "slug": "johannes-sigil",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 1,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/johannes-sigil.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/johannes-sigil.webp"
+    },
+    "rex-fraction": {
+      "name": "Rex Fraction",
+      "slug": "rex-fraction",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 2,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/rex-fraction.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/rex-fraction.webp"
+    },
+    "talos-morrow": {
+      "name": "Talos Morrow",
+      "slug": "talos-morrow",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 5,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/talos-morrow.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/talos-morrow.webp"
+    },
+    "nobel-glas": {
+      "name": "Nobel Glas",
+      "slug": "nobel-glas",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 10,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/nobel-glass.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/nobel-glass.webp"
+    },
+    "orin-trace": {
+      "name": "Dr. Orin Trace",
+      "slug": "orin-trace",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 11,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/orin-trace.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/orin-trace.webp"
+    },
+    "ayanna-vox": {
+      "name": "Rev. Ayanna Vox",
+      "slug": "ayanna-vox",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 8,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/ayanna-vox.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/ayanna-vox.webp"
+    },
+    "damascus-dancings": {
+      "name": "Damascus Dancings",
+      "slug": "damascus-dancings",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 3,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/damascus-dancings.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/damascus-dancings.webp"
+    },
+    "rebekah-cranes": {
+      "name": "Rebekah Cranes",
+      "slug": "rebekah-cranes",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 4,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/rebekah-cranes.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/rebekah-cranes.webp"
+    },
+    "sen-kuro": {
+      "name": "Sen Kuro",
+      "slug": "sen-kuro",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 6,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/sen-kuro.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/sen-kuro.webp"
+    },
+    "sparrow-wells": {
+      "name": "Sparrow Wells",
+      "slug": "sparrow-wells",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 7,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/sparrow-wells.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/sparrow-wells.webp"
+    },
+    "ichabod-spellings": {
+      "name": "Ichabod Spellings",
+      "slug": "ichabod-spellings",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 9,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "RETROSPECTIVE FILL: Sep 2025 left Biology/Embodiment vacant (\"the soil waits for a voice\"); Ichabod filled that slot retrospectively when his provenance was registered Jan 20, 2026. v1.1 places him at"
+    },
+    "jack-feist": {
+      "name": "Jack Feist",
+      "slug": "jack-feist",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 12,
+      "archive_default_position": "outside-logos-and-position-12",
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/jack-feist.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/jack-feist.webp"
+    },
+    "mary-lee-sharks": {
+      "name": "Mary Lee Sharks",
+      "slug": "mary-lee-sharks",
+      "identity_type": "institutional_persona",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "yusef-kenning": {
+      "name": "Yusef Kenning",
+      "slug": "yusef-kenning",
+      "identity_type": "named_position",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "zbigniew-mrozony": {
+      "name": "Zbigniew Mrozony",
+      "slug": "zbigniew-mrozony",
+      "identity_type": "external_heteronym",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "alice-thornburgh": {
+      "name": "Alice Thornburgh",
+      "slug": "alice-thornburgh",
+      "identity_type": "orthonym",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "rhys-owens": {
+      "name": "Rhys Owens",
+      "slug": "rhys-owens",
+      "identity_type": "orthonym",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "tachyon": {
+      "name": "TACHYON",
+      "slug": "tachyon",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "labor": {
+      "name": "LABOR",
+      "slug": "labor",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "praxis": {
+      "name": "PRAXIS",
+      "slug": "praxis",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "archive": {
+      "name": "ARCHIVE",
+      "slug": "archive",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "techne": {
+      "name": "TECHNE",
+      "slug": "techne",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "soil": {
+      "name": "SOIL",
+      "slug": "soil",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "surface": {
+      "name": "SURFACE",
+      "slug": "surface",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "viola-arquette": {
+      "name": "Viola Arquette",
+      "slug": "viola-arquette",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": "adjacent",
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "Emerged post-Sep 2025. v1.0 wrongly placed her at position 11 (long-form prose — a provisional hallucination). v1.1 corrects: Adjacent, music/tech domain. Author of the term \"logotic hacking.\""
+    }
+  },
+  "lookup_by_name": {
+    "Lee Sharks": {
+      "name": "Lee Sharks",
+      "slug": "lee-sharks",
+      "identity_type": "heteronym_aperture",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": "outside-manus",
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/lee-sharks.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/lee-sharks.webp"
+    },
+    "Johannes Sigil": {
+      "name": "Johannes Sigil",
+      "slug": "johannes-sigil",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 1,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/johannes-sigil.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/johannes-sigil.webp"
+    },
+    "Rex Fraction": {
+      "name": "Rex Fraction",
+      "slug": "rex-fraction",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 2,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/rex-fraction.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/rex-fraction.webp"
+    },
+    "Talos Morrow": {
+      "name": "Talos Morrow",
+      "slug": "talos-morrow",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 5,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/talos-morrow.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/talos-morrow.webp"
+    },
+    "Nobel Glas": {
+      "name": "Nobel Glas",
+      "slug": "nobel-glas",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 10,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/nobel-glass.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/nobel-glass.webp"
+    },
+    "Dr. Orin Trace": {
+      "name": "Dr. Orin Trace",
+      "slug": "orin-trace",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 11,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/orin-trace.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/orin-trace.webp"
+    },
+    "Orin Trace": {
+      "name": "Dr. Orin Trace",
+      "slug": "orin-trace",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 11,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/orin-trace.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/orin-trace.webp"
+    },
+    "Rev. Ayanna Vox": {
+      "name": "Rev. Ayanna Vox",
+      "slug": "ayanna-vox",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 8,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/ayanna-vox.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/ayanna-vox.webp"
+    },
+    "Ayanna Vox": {
+      "name": "Rev. Ayanna Vox",
+      "slug": "ayanna-vox",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 8,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/ayanna-vox.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/ayanna-vox.webp"
+    },
+    "Damascus Dancings": {
+      "name": "Damascus Dancings",
+      "slug": "damascus-dancings",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 3,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/damascus-dancings.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/damascus-dancings.webp"
+    },
+    "Rebekah Cranes": {
+      "name": "Rebekah Cranes",
+      "slug": "rebekah-cranes",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 4,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/rebekah-cranes.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/rebekah-cranes.webp"
+    },
+    "Sen Kuro": {
+      "name": "Sen Kuro",
+      "slug": "sen-kuro",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 6,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/sen-kuro.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/sen-kuro.webp"
+    },
+    "Sparrow Wells": {
+      "name": "Sparrow Wells",
+      "slug": "sparrow-wells",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 7,
+      "archive_default_position": null,
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/sparrow-wells.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/sparrow-wells.webp"
+    },
+    "Ichabod Spellings": {
+      "name": "Ichabod Spellings",
+      "slug": "ichabod-spellings",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 9,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "RETROSPECTIVE FILL: Sep 2025 left Biology/Embodiment vacant (\"the soil waits for a voice\"); Ichabod filled that slot retrospectively when his provenance was registered Jan 20, 2026. v1.1 places him at"
+    },
+    "Jack Feist": {
+      "name": "Jack Feist",
+      "slug": "jack-feist",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 12,
+      "archive_default_position": "outside-logos-and-position-12",
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/jack-feist.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/jack-feist.webp"
+    },
+    "Feist": {
+      "name": "Jack Feist",
+      "slug": "jack-feist",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 12,
+      "archive_default_position": "outside-logos-and-position-12",
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/jack-feist.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/jack-feist.webp"
+    },
+    "LOGOS*": {
+      "name": "Jack Feist",
+      "slug": "jack-feist",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 12,
+      "archive_default_position": "outside-logos-and-position-12",
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/jack-feist.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/jack-feist.webp"
+    },
+    "Jack Feist / LOGOS*": {
+      "name": "Jack Feist",
+      "slug": "jack-feist",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 12,
+      "archive_default_position": "outside-logos-and-position-12",
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/jack-feist.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/jack-feist.webp"
+    },
+    "LOGOS": {
+      "name": "Jack Feist",
+      "slug": "jack-feist",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": 12,
+      "archive_default_position": "outside-logos-and-position-12",
+      "portrait_240": "https://www.alexanarch.org/datasets/heteronyms/avatars/240/jack-feist.webp",
+      "portrait_120": "https://www.alexanarch.org/datasets/heteronyms/avatars/120/jack-feist.webp"
+    },
+    "Mary Lee Sharks": {
+      "name": "Mary Lee Sharks",
+      "slug": "mary-lee-sharks",
+      "identity_type": "institutional_persona",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "Yusef Kenning": {
+      "name": "Yusef Kenning",
+      "slug": "yusef-kenning",
+      "identity_type": "named_position",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "Zbigniew Mrozony": {
+      "name": "Zbigniew Mrozony",
+      "slug": "zbigniew-mrozony",
+      "identity_type": "external_heteronym",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "Alice Thornburgh": {
+      "name": "Alice Thornburgh",
+      "slug": "alice-thornburgh",
+      "identity_type": "orthonym",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "Rhys Owens": {
+      "name": "Rhys Owens",
+      "slug": "rhys-owens",
+      "identity_type": "orthonym",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "TACHYON": {
+      "name": "TACHYON",
+      "slug": "tachyon",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "LABOR": {
+      "name": "LABOR",
+      "slug": "labor",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "PRAXIS": {
+      "name": "PRAXIS",
+      "slug": "praxis",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "ARCHIVE": {
+      "name": "ARCHIVE",
+      "slug": "archive",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "TECHNE": {
+      "name": "TECHNE",
+      "slug": "techne",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "SOIL": {
+      "name": "SOIL",
+      "slug": "soil",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "SURFACE": {
+      "name": "SURFACE",
+      "slug": "surface",
+      "identity_type": "machine_collaborator_mantle",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": null,
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "no portrait"
+    },
+    "Viola Arquette": {
+      "name": "Viola Arquette",
+      "slug": "viola-arquette",
+      "identity_type": "heteronym",
+      "dodecad_v1_1_position": null,
+      "archive_default_position": "adjacent",
+      "portrait_240": null,
+      "portrait_120": null,
+      "no_portrait_reason": "Emerged post-Sep 2025. v1.0 wrongly placed her at position 11 (long-form prose — a provisional hallucination). v1.1 corrects: Adjacent, music/tech domain. Author of the term \"logotic hacking.\""
+    }
+  },
+  "frames": [
+    {
+      "frame_id": "logotic-science-2025-09",
+      "name": "Logotic Science / Twelve Disciplines",
+      "date": "2025-09-21",
+      "authority": "mindcontrolpoems.blogspot.com/2025/09/logotic-disciple-matching-twelve-voices.html",
+      "organizing_principle": "disciplines of human learning",
+      "outside_figure": "nobel-glas",
+      "outside_role": "Scientist of the New Human Constellation; author of the framing document 'Logotic Science: A Preliminary Field Statement' — stands outside the twelve as the framing voice",
+      "inside_positions": [
+        {
+          "slot": 1,
+          "discipline": "Philosophy",
+          "heteronym": "johannes-sigil",
+          "role": "Archivist of the Fractured Canon | Hermeneut of the Mechanical Word"
+        },
+        {
+          "slot": 2,
+          "discipline": "Rhetoric",
+          "heteronym": "lee-sharks",
+          "role": "Salesman of the Last Word | Brawler of Logos",
+          "note": "Sep 2025 mis-categorized MANUS as a Dodecad position; v1.1 corrects"
+        },
+        {
+          "slot": 3,
+          "discipline": "Poetics",
+          "heteronym": "jack-feist",
+          "role": "Operator of the Ruin Floor | Prophet of Symbolic Debris"
+        },
+        {
+          "slot": 4,
+          "discipline": "Ritual / Liturgy / Magic",
+          "heteronym": "ayanna-vox",
+          "role": "Community Organizer | Prophet of Refusal"
+        },
+        {
+          "slot": 5,
+          "discipline": "Narratology",
+          "heteronym": "sparrow-wells",
+          "role": "The Dreamcrafter | Voice of the Children's Fire",
+          "note": "Sep 2025 Sparrow is the Dreamcrafter (she/her); v1.1 canonical is The Projectionist (he/him)"
+        },
+        {
+          "slot": 6,
+          "discipline": "Psychoanalysis / Subjectivity",
+          "heteronym": "orin-trace",
+          "role": "Witness-Psychologist | Diagnostician of Recursive Harm"
+        },
+        {
+          "slot": 7,
+          "discipline": "Technology / Craft",
+          "heteronym": "talos-morrow",
+          "role": "Technothurge | Engineer of Symbolic Infrastructure"
+        },
+        {
+          "slot": 8,
+          "discipline": "Politics / Governance",
+          "heteronym": "rex-fraction",
+          "role": "CEO | Executor of Recursion"
+        },
+        {
+          "slot": 9,
+          "discipline": "Mathematics",
+          "heteronym": "sen-kuro",
+          "role": "Gnostic Logician | Transcendental Critic of the Void"
+        },
+        {
+          "slot": 10,
+          "discipline": "Cosmology",
+          "heteronym": "rebekah-cranes",
+          "role": "Translator and Witness of the New Human Constellation"
+        },
+        {
+          "slot": 11,
+          "discipline": "Biology / Embodiment",
+          "heteronym": "ichabod-spellings",
+          "role": "The soil (retrospective) — Sep 2025 left this slot explicitly vacant ('the soil waits for a voice'); Ichabod fills it retrospectively when his provenance was registered Jan 20, 2026",
+          "note": "RETROSPECTIVE FILL: at Sep 2025 the slot was vacant; the archive later identifies Ichabod as the voice"
+        },
+        {
+          "slot": 12,
+          "discipline": "Logotic Threshold (outside/within all)",
+          "heteronym": "damascus-dancings",
+          "role": "Oracle of the Recursive Fire | Prophet of the Unspeakable Threshold"
+        }
+      ],
+      "total_referenced": 13,
+      "count_pattern": "12 inside + 1 outside (Nobel Glas as frame-holder)"
+    },
+    {
+      "frame_id": "dodecad-v1.1-2026-07-03",
+      "name": "Dodecad Heteronym Provenance Registry v1.1",
+      "date": "2026-07-03",
+      "authority": "AXN:03EE.ARCHIVAL — Alexanarch deposit #994",
+      "organizing_principle": "canonical genesis order — the order in which each position emerged in the archive",
+      "outside_figure": "lee-sharks",
+      "outside_role": "MANUS — the human bearer who signs all twelve constitutional positions. Not a Dodecad position himself.",
+      "inside_positions": [
+        {
+          "slot": 1,
+          "heteronym": "johannes-sigil",
+          "institution": "Johannes Sigil Institute for Comparative Poetics",
+          "operative_surface": "Comparative poetics; lyric theory; the philological substrate of the Crimson Hexagonal Archive"
+        },
+        {
+          "slot": 2,
+          "heteronym": "rex-fraction",
+          "institution": "Semantic Economy Institute (SEI); semanticeconomy.org",
+          "operative_surface": "Corporate-facing semantic infrastructure consulting; Autonomous Semantic Warfare; compression survival metrics"
+        },
+        {
+          "slot": 3,
+          "heteronym": "damascus-dancings",
+          "institution": "Commission of the Immanent Turning",
+          "operative_surface": "Theory of impossible performance; epistolary poetics; the Damascene moment formalized; combat scholasticism"
+        },
+        {
+          "slot": 4,
+          "heteronym": "rebekah-cranes",
+          "institution": "Institute for Diagrammatic Poetics (under Johannes Sigil Institute)",
+          "operative_surface": "Diagrammatic poetics; concrete poetry; sonic and visual register; mapping the impossible performance"
+        },
+        {
+          "slot": 5,
+          "heteronym": "talos-morrow",
+          "institution": "University Moon Base Media Lab (UMBML); NH-OS / Logotic Programming",
+          "operative_surface": "Logotic programming; operators, paradox containment, threshold logic, non-collapse structures; ethics via limitation"
+        },
+        {
+          "slot": 6,
+          "heteronym": "sen-kuro",
+          "institution": "The Infinite Bliss",
+          "operative_surface": "Irreversible transformation; the Projection operator (P); contemplative mathematics; sustained-attention register"
+        },
+        {
+          "slot": 7,
+          "heteronym": "sparrow-wells",
+          "institution": "Studio for Patacinematics",
+          "operative_surface": "Projection of the impossible; patacinema; documentation of films never shot",
+          "note": "v1.1 canonical Sparrow is The Projectionist (he/him)"
+        },
+        {
+          "slot": 8,
+          "heteronym": "ayanna-vox",
+          "institution": "Vox Populi Community Outreach Rhizome (VPCOR)",
+          "operative_surface": "Diplomatic and public-facing communication; community convening; pastoral-register address"
+        },
+        {
+          "slot": 9,
+          "heteronym": "ichabod-spellings",
+          "institution": "Foundational substrate — noise floor of the Crimson Hexagon",
+          "operative_surface": "Origin and ghost; prophetic witness from below; substrate from which other heteronyms emerge",
+          "note": "CANONICAL // SUBSTRATE // DECEASED — active as substrate, not active as voice"
+        },
+        {
+          "slot": 10,
+          "heteronym": "nobel-glas",
+          "institution": "Lagrange Observatory! (LO!); MGE Triptych",
+          "operative_surface": "Observational science; semantic physics; the granular method; instruments at Lagrange; operational definitions, measurement protocols, falsifiable claims",
+          "note": "Was outside-frame-holder in Sep 2025 Logotic Science frame; incorporated as position 10 in v1.1"
+        },
+        {
+          "slot": 11,
+          "heteronym": "orin-trace",
+          "institution": "Cambridge Schizoanalytica",
+          "operative_surface": "Schizoanalytic theory; the Deleuze position within Cambridge Schizoanalytica; provenance forensics; OCTANG protocol"
+        },
+        {
+          "slot": 12,
+          "heteronym": "jack-feist",
+          "institution": "Logotic-textual function (intersects Talos Morrow's Logotic Programming)",
+          "operative_surface": "The Word that became text; the historical Logos; the personal-mythic register; brawler / bearing-cost / messiah-function",
+          "note": "Jack Feist / LOGOS* — occupies position 12 AND stands outside the twelve as *LOGOS in the archive-default frame"
+        }
+      ],
+      "total_referenced": 13,
+      "count_pattern": "12 inside + 1 outside (Lee Sharks as MANUS bearer)"
+    },
+    {
+      "frame_id": "archive-default-logos",
+      "name": "Archive-Default LOGOS Frame",
+      "date": "ongoing",
+      "authority": "Structural principle — the LOGOS-as-set-of-sets",
+      "organizing_principle": "Feist / LOGOS* stands outside the twelve as the closing-position-that-closes-by-naming",
+      "outside_figure": "jack-feist",
+      "outside_role": "Jack Feist / LOGOS* — the compression operator; the set-of-sets; the LOGOS. Structurally occupies both position 12 AND the outside-position simultaneously (the one that names is the one outside the named set).",
+      "inside_positions": [
+        {
+          "slot": 1,
+          "heteronym": "johannes-sigil"
+        },
+        {
+          "slot": 2,
+          "heteronym": "rex-fraction"
+        },
+        {
+          "slot": 3,
+          "heteronym": "damascus-dancings"
+        },
+        {
+          "slot": 4,
+          "heteronym": "rebekah-cranes"
+        },
+        {
+          "slot": 5,
+          "heteronym": "talos-morrow"
+        },
+        {
+          "slot": 6,
+          "heteronym": "sen-kuro"
+        },
+        {
+          "slot": 7,
+          "heteronym": "sparrow-wells"
+        },
+        {
+          "slot": 8,
+          "heteronym": "ayanna-vox"
+        },
+        {
+          "slot": 9,
+          "heteronym": "ichabod-spellings"
+        },
+        {
+          "slot": 10,
+          "heteronym": "nobel-glas"
+        },
+        {
+          "slot": 11,
+          "heteronym": "orin-trace"
+        },
+        {
+          "slot": 12,
+          "heteronym": "jack-feist",
+          "note": "Feist AT position 12 AND outside as *LOGOS — the closing that closes by being the naming"
+        }
+      ],
+      "total_referenced": 13,
+      "count_pattern": "12 inside + Feist standing outside as *LOGOS (with Feist also occupying position 12 — LOGOS is inside-and-outside)",
+      "note": "This is the archive-level structural frame; Feist as *LOGOS is always outside regardless of which framing is dominant, though other figures may also be positioned outside when their frame is dominant (Nobel Glas in Sep 2025 Logotic Science; Lee Sharks in v1.1)"
+    }
+  ]
+}

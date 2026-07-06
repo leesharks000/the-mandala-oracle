@@ -302,6 +302,32 @@ body {
   width: 100%;
 }
 
+/* Heteronym messages with an avatar rendered — layout as a 2-column grid
+   (avatar | role+content stacked). Non-avatar messages fall back to the
+   flex-column layout above. Source of truth for avatars: alexanarch mirror
+   at www.alexanarch.org/datasets/heteronyms/avatars/ — see /data/heteronyms.json. */
+.message.heteronym:has(.message-avatar) {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  grid-template-areas: "avatar role" "avatar content";
+  gap: 0.35rem 0.7rem;
+  align-items: start;
+}
+.message.heteronym:has(.message-avatar) .message-avatar { grid-area: avatar; }
+.message.heteronym:has(.message-avatar) .message-role { grid-area: role; align-self: end; }
+.message.heteronym:has(.message-avatar) .message-content { grid-area: content; }
+
+.message-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid var(--line, rgba(196, 169, 91, 0.15));
+  background: rgba(196, 169, 91, 0.04);
+  display: block;
+  margin-top: 0.1rem;
+}
+
 .message-role {
   font-family: var(--mono);
   font-size: 0.68rem;             /* was 0.72 */

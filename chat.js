@@ -62,6 +62,24 @@ const SPEAKER_CLASS = {
   'Jack Feist':       'feist',
 };
 
+// Heteronym avatar lookup — loaded lazily from /data/heteronyms.json, which mirrors
+// the alexanarch heteronym substrate. Source of truth: data-rhizome/datasets/heteronyms/.
+// See www.alexanarch.org/datasets/heteronyms/ for the browsable version + frames.
+let HETERONYM_LOOKUP = null;
+async function loadHeteronymLookup() {
+  if (HETERONYM_LOOKUP) return HETERONYM_LOOKUP;
+  try {
+    const r = await fetch('/data/heteronyms.json');
+    const d = await r.json();
+    HETERONYM_LOOKUP = d.lookup_by_name || {};
+    return HETERONYM_LOOKUP;
+  } catch (e) {
+    HETERONYM_LOOKUP = {};
+    return HETERONYM_LOOKUP;
+  }
+}
+loadHeteronymLookup();  // fire and forget — populate before first heteronym message
+
 // ─────────────────────────────────────────────────────────────────────────
 // Mode toggle
 // ─────────────────────────────────────────────────────────────────────────
@@ -327,6 +345,16 @@ function appendHeteronymMessage(speaker, content, opts = {}) {
   const wrap = document.createElement('div');
   const classSlug = SPEAKER_CLASS[speaker] || 'sigil';
   wrap.className = `message heteronym ${classSlug}`;
+  // Avatar (rendered next to role label if the lookup has a portrait for this speaker)
+  const lookup = HETERONYM_LOOKUP && HETERONYM_LOOKUP[speaker];
+  if (lookup && lookup.portrait_120) {
+    const avatar = document.createElement('img');
+    avatar.className = 'message-avatar';
+    avatar.src = lookup.portrait_120;
+    avatar.alt = `${speaker} — portrait`;
+    avatar.loading = 'lazy';
+    wrap.appendChild(avatar);
+  }
   const roleLabel = document.createElement('div');
   roleLabel.className = 'message-role';
   roleLabel.textContent = speaker;

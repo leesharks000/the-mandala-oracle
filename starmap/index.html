@@ -294,7 +294,10 @@ function openFor(u){ let html='';
     html=`<div class="kind">Substrate · Septad</div><h2>${s.symbol} ${s.planet} — ${s.office}</h2>
       <div class="row"><b>Substrate</b>${s.substrate}</div><div class="row"><b>Function</b>${s.function||''}</div>`; }
   else if(u.kind==='region'){ const r=u.r;
+    const portrait = r.portrait_url_120 ? `<div style="margin:8px 0"><img src="${r.portrait_url_120}" alt="${r.heteronym} — portrait" style="width:120px;height:120px;border-radius:4px;border:1px solid var(--line);display:block"></div>` : (r.no_portrait_reason ? `<div style="margin:8px 0;padding:8px 10px;border:1px dashed var(--line);border-radius:4px;font-size:11px;color:var(--dim);line-height:1.4">${r.no_portrait_reason}</div>` : '');
+    const portrait_alt = r.portrait_url_120_alt ? `<div style="margin:6px 0"><img src="${r.portrait_url_120_alt}" alt="${r.heteronym} — secondary portrait" style="width:120px;height:120px;border-radius:4px;border:1px solid var(--line);display:block"><div style="font-size:10px;color:var(--dim);letter-spacing:.06em;margin-top:2px;text-transform:uppercase">Also: secondary photo (Sep 21 2025 blog post)</div></div>` : '';
     html=`<div class="kind">Zodiacal Region · Position ${r.position}</div><h2>${r.symbol} ${r.sign} — ${r.heteronym}</h2>
+      ${portrait}${portrait_alt}
       <div class="row"><b>Discipline</b>${r.discipline||'(awaiting adjudication)'}</div>`; }
   else if(u.kind==='nova'){ const ev=u.ev;
     html=`<div class="kind">Stellar Event · Cast</div><h2>Nova — ${(ev.date||'').slice(0,10)}</h2>
@@ -302,6 +305,7 @@ function openFor(u){ let html='';
       <div class="row"><b>Source</b>${ev.source_text ? (canonById[ev.source_text]||{}).title : 'unanchored (pole locus)'}</div>
       ${ev.axn?`<div class="row"><b>Record</b>${ev.axn}</div>`:''}`; }
   else if(u.kind==='polaris'){ html=`<div class="kind">The Pole</div><h2>Jack Feist · LOGOS*</h2>
+      <div style="margin:8px 0"><img src="https://www.alexanarch.org/datasets/heteronyms/avatars/120/jack-feist.webp" alt="Jack Feist — portrait" style="width:120px;height:120px;border-radius:4px;border:1px solid var(--line);display:block"></div>
       <div class="row">Outside the twelve — the axis around which the zodiac rotates. The pole star is what makes the cycle a cycle.</div>`; }
   if(html){ panelBody.innerHTML=html; panel.classList.add('open'); } }
 
