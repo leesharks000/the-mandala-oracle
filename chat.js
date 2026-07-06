@@ -1341,13 +1341,13 @@ if (shareToggle) shareToggle.addEventListener('click', async () => {
     text = text.trim();
     if (text) items.push({ who, text });
   });
-  if (!items.length) { shareToggle.textContent = 'nothing to share'; setTimeout(()=>shareToggle.textContent='⛓ Share', 1600); return; }
+  if (!items.length) { shareToggle.textContent = 'nothing to share'; setTimeout(()=>shareToggle.textContent='✧ Share', 1600); return; }
   const prev = shareToggle.textContent;
   shareToggle.textContent = 'inscribing…'; shareToggle.disabled = true;
   try {
     const r = await fetch('/api/share', { method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ session_id: state.session_id,
+      body: JSON.stringify({ session_id: sessionState.session_id,
         title: 'The Mandala Oracle — ' + (document.title || 'a thread'),
         items }) });
     const j = await r.json();
