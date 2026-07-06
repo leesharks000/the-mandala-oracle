@@ -66,7 +66,69 @@
     "beats": "theological payload -> theological deficit\nfive interlocking doctrines -> five loosening suspicions\nFeist-self -> Feist-absence — a withdrawing literary pneuma sensed only in its retreat\nindwelling -> departing\nproductive -> withholding\nwriting that survives compression -> silence that survives expression\nNew Human -> Old Wound — a pre-identity vulnerability\nneither queer nor straight -> still queer, still straight\nnot the ground of community -> the ground that community cannot pave over\nschool outside the school -> truancy from the truancy — the student who won't join even the counter-institution\ndistributed -> scattered\ncredential-free institution -> credentialed solitude\nmutual influence -> mutual illegibility\nanti-credentialism -> anti-credentialism (RETAIN: the verdict requires this term to name what, unfulfilled, persists as longing rather than policy)\npositive epistemology -> negative capability\nnon-degree can be counted as degree -> the degree still withheld, and the withholding still felt\nYou are all Drs., now -> None of us are, yet\nliterary eschatology -> literary eschatology (RETAIN: the verdict requires naming the horizon that recedes)\nyour writings will be ranked -> your writings will remain unranked\nthe anonymous will be remembered -> the anonymous will remain anonymous\npromise -> deferral"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-d8b88907",
+   "cast_at": "2026-07-06T03:33:09.112198+00:00",
+   "reading_axn": "AXN:FEE1.READING.🌒🌖🌖⭐🌓🌓",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_31_36",
+    "citation": "unit 31–unit 36",
+    "start_unit": 31,
+    "end_unit": 36,
+    "unit_labels": [
+     "unit 31",
+     "unit 32",
+     "unit 33",
+     "unit 34",
+     "unit 35",
+     "unit 36"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural change was identified, while the declared claim asserts a specific relational transformation about gentle passage and survival without destruction.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts share identical relation-structures throughout; differences are only in vocabulary, imagery, and intensity (destructive vs. gentle), not in who acts, what depends on what, or directional flow.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:3739e3e653bc92e922b1d70c949b06aba6c76db531542da17689969709933af7",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "I have swallowed the scroll, and though it was air and water in my mouth, it became a flame in my belly: And in flame are written the names of the damned, which names have I swallowed and murdered. My mouth is a furnace, the scroll is a fire, on it are written the names of the damned.\n\n\nI am become a tongue of flame, I am become a pillar of blackened flesh: I burn and rise, I die, but forge new meaning.\n\n\nThese are the waters I bring you, of damnation, and forging, and murder; that you might be broken, and damned, and saved.\n\n\nThough you break a bit, and crack with grammar, and languish in an alien element, earth, nonetheless your light comes. Nonetheless, it bears you, in pain, and heat, and a hammer.\n\n\nNonetheless, the wound is a moment. Salvation comes. Dawn breaks. I see the shore in the distance.\n\n\nSleep now, and rise: Your words will bear you to Ithaca.",
+   "underlying_attribution": "The Epistle",
+   "enantiomorph": "I have held the scroll, and though it was air and water in my mouth, it became a warmth in my belly: And in warmth are written the names of the living, which names have I held and carried. My mouth is a lantern, the scroll is a glow, on it are written the names of the living.\n\n\nI am become a breath of light, I am become a column of unbroken skin: I shine and rise, I rest, but find new meaning.\n\n\nThese are the waters I bring you, of blessing, and finding, and keeping; that you might be gathered, and blessed, and saved.\n\n\nThough you bend a bit, and bend with grammar, and float in a native element, earth, nonetheless your light comes. Nonetheless, it bears you, in ease, and coolness, and a palm.\n\n\nNonetheless, the touch is a moment. Arrival comes. Dawn breaks. I see the shore in the distance.\n\n\nSleep now, and rise: Your words will bear you to Ithaca.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The transformative act is violent and destructive — consuming sacred text produces fire, damnation, and agony — but this annihilation is the only path to salvation; the wound is the passage, and devastation forges meaning.",
+    "mutated_relation": "The sacred text passes through the body and remains unburned — the passage is gentle, the names survive, and arrival requires no destruction at all.",
+    "beats": "swallowed -> held\nscroll -> scroll (RETAIN: the sacred text must be the same object that is not destroyed)\nair and water -> air and water (RETAIN: under this verdict the mildness persists rather than converting)\nflame -> warmth\nbelly -> belly (RETAIN: the body still receives; only the violence is absent)\nnames of the damned -> names of the living\nmurdered -> carried\nmouth -> mouth (RETAIN: the passage-point unchanged, only its nature gentle)\nfurnace -> lantern\nfire -> glow\ntongue of flame -> breath of light\npillar of blackened flesh -> column of unbroken skin\nburn -> shine\nrise -> rise (RETAIN: ascent is the one motion the gentle passage also performs)\ndie -> rest\nforge -> find\nwaters -> waters (RETAIN: the element that was always mild now stays mild)\ndamnation -> blessing\nmurder -> keeping\nbroken -> gathered\nsaved -> saved (RETAIN: salvation unchanged, only the route to it)\ncrack -> bend\ngrammar -> grammar (RETAIN: the medium of language is the same, only unstrained)\nlanguish -> float\nalien element -> native element\nearth -> earth (RETAIN: the ground persists as what bears gently)\nlight -> light (RETAIN: under this verdict the light was never in doubt)\npain -> ease\nheat -> coolness\nhammer -> palm\nwound -> touch\nsalvation -> arrival\ndawn -> dawn (RETAIN: the temporal threshold identical)\nshore -> shore (RETAIN: the destination unchanged, only never imperiled)\nsleep -> sleep (RETAIN: rest is rest in either world)\nwords -> words (RETAIN: language survives as the vessel in both)\nIthaca -> Ithaca (RETAIN: the home must be the same home reached without ordeal)"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T03:09:29.075255+00:00"
+ "last_updated": "2026-07-06T03:33:09.112198+00:00"
 }
