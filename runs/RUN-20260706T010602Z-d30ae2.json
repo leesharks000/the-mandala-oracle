@@ -1,0 +1,107 @@
+{
+ "run_id": "RUN-20260706T010602Z-d30ae2",
+ "schema": "run/v1",
+ "ts": "2026-07-06T01:06:02.930608+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "MIRROR",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "00081d163bc71a234d330046c95db4fad61825c2",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/00081d163bc71a234d330046c95db4fad61825c2",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/00081d163bc71a234d330046c95db4fad61825c2/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "00dd44c732f262f6",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "00081d163bc7",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "00dd44c732f262f6",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Destructive power is released outward from divine preparation toward humanity: angels loosed at the appointed time project annihilation through monstrous cavalry whose mouths emit fire, smoke, and sulfur — a unidirectional cascade from heaven's schedule through bestial instrument into human death.",
+   "mutated_relation": "Humanity's own substance flows inward toward the prepared threshold: the mortals converge upon the fixed hour, drawn into the mouths that receive them — annihilation as ingathering, the instrument as aperture, destruction as arrival home.",
+   "beats": "ἐλύθησαν (were loosed) -> συνήχθησαν (were gathered)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες πύλαι (four gates)\nἡτοιμασμένοι (prepared) -> ἡτοιμασμένοι (RETAIN: the verdict names the threshold as \"prepared\" — the appointment is the hinge on which ingathering turns; any synonym dissolves the identity of the fixed hour)\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> καιρὸν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (season and day and month and year)\nἀποκτείνωσιν (they might kill) -> δέξωνται (they might receive)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ τρίτον τῶν ψυχῶν (a third of the souls)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> πομπῶν τῶν πεζῶν (processions of the walking)\nδισμυριάδες μυριάδων (twice ten-thousand ten-thousands) -> χιλιάδες χιλιάδων (thousands of thousands)\nἤκουσα τὸν ἀριθμὸν (I heard the number) -> ἔγνων τὸν ἀριθμὸν (I knew the number)\nἵππους (horses) -> κατώφλια (thresholds)\nτοὺς καθημένους ἐπ' αὐτῶν (those seated upon them) -> τοὺς προσερχομένους δι' αὐτῶν (those approaching through them)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire, hyacinth, sulfur) -> χιτῶνας σποδώδεις καὶ λευκοὺς καὶ ὑδατίνους (tunics of ash, white, and water)\nκεφαλαὶ τῶν ἵππων (heads of the horses) -> στόμια τῶν κατωφλίων (mouths of the thresholds)\nκεφαλαὶ λεόντων (heads of lions) -> χάσματα σπηλαίων (openings of caves)\nἐκ τῶν στομάτων αὐτῶν (from their mouths) -> εἰς τὰ στόμια αὐτῶν (into their mouths)\nἐκπορεύεται (goes forth) -> εἰσπορεύεται (goes inward)\nπῦρ (fire) -> σκότος (darkness)\nκαπνός (smoke) -> σιγή (silence)\nθεῖον (sulfur) -> δρόσος (dew)\nεἶδον (I saw) -> ἐθεασάμην (I beheld)\nκαπνὸς (smoke, second instance) -> σιγή (silence)\nοὕτως (thus) -> ὧδε (here)\nἔχοντας (having) -> φέροντας (bearing)\nὁράσει (vision) -> προσδοκίᾳ (expectation)"
+  },
+  "enantiomorph": "**9:15** καὶ συνήχθησαν αἱ τέσσαρες πύλαι αἱ ἡτοιμασμένοι εἰς τὸν καιρὸν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα δέξωνται τὸ τρίτον τῶν ψυχῶν.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν πομπῶν τῶν ⸀πεζῶν ⸀χιλιάδες χιλιάδων· ἔγνων τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ ὧδε ἐθεασάμην τὰ κατώφλια ἐν τῇ προσδοκίᾳ καὶ τοὺς προσερχομένους δι' αὐτῶν, φέροντας χιτῶνας σποδώδεις καὶ λευκοὺς καὶ ὑδατίνους· καὶ τὰ στόμια τῶν κατωφλίων ὡς χάσματα σπηλαίων, καὶ εἰς τὰ στόμια αὐτῶν εἰσπορεύεται σκότος καὶ σιγὴ καὶ δρόσος.",
+  "enantiomorph_translation": "**9:15** And the four gates were gathered, those prepared for the season and day and month and year, that they might receive a third of the souls.\n\n**9:16** And the number of the processions of the walking: thousands of thousands; I knew the number of them.\n\n**9:17** And here I beheld the thresholds in the expectation, and those approaching through them, bearing tunics of ash, white, and water; and the mouths of the thresholds were as openings of caves, and into their mouths goes inward darkness and silence and dew.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, agents (angels, horses) act outward—they are loosed to kill, and fire/smoke/brimstone issues out of their mouths; in Text B, the entities (gates, thresholds) receive inward—they gather to receive souls, and darkness/silence/dew enters into their openings, reversing the direction of action and flow.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural reversal: outward destructive action (agents loosed to kill, issuing from mouths) becomes inward gathering/receiving (entities that draw in, apertures that receive), reversing the direction of action and flow.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B maintains the inward-flow relation (εἰσπορεύεται into the openings) consistently, never reverting to Text A's outward direction.",
+   "back_translation": "",
+   "terminal_similarity": 0.143
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Destructive power is released outward from divine preparation toward humanity: angels loosed at the appointed time project annihilation through monstrous cavalry whose mouths emit fire, smoke, and sulfur — a unidirectional cascade from heaven's schedule through bestial instrument into human death.",
+   "verdict": "Humanity's own substance flows inward toward the prepared threshold: the mortals converge upon the fixed hour, drawn into the mouths that receive them — annihilation as ingathering, the instrument as aperture, destruction as arrival home.",
+   "world_bill": "ἐλύθησαν (were loosed) -> συνήχθησαν (were gathered)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες πύλαι (four gates)\nἡτοιμασμένοι (prepared) -> ἡτοιμασμένοι (RETAIN: the verdict names the threshold as \"prepared\" — the appointment is the hinge on which ingathering turns; any synonym dissolves the identity of the fixed hour)\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> καιρὸν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (season and day and month and year)\nἀποκτείνωσιν (they might kill) -> δέξωνται (they might receive)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ τρίτον τῶν ψυχῶν (a third of the souls)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> πομπῶν τῶν πεζῶν (processions of the walking)\nδισμυριάδες μυριάδων (twice ten-thousand ten-thousands) -> χιλιάδες χιλιάδων (thousands of thousands)\nἤκουσα τὸν ἀριθμὸν (I heard the number) -> ἔγνων τὸν ἀριθμὸν (I knew the number)\nἵππους (horses) -> κατώφλια (thresholds)\nτοὺς καθημένους ἐπ' αὐτῶν (those seated upon them) -> τοὺς προσερχομένους δι' αὐτῶν (those approaching through them)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire, hyacinth, sulfur) -> χιτῶνας σποδώδεις καὶ λευκοὺς καὶ ὑδατίνους (tunics of ash, white, and water)\nκεφαλαὶ τῶν ἵππων (heads of the horses) -> στόμια τῶν κατωφλίων (mouths of the thresholds)\nκεφαλαὶ λεόντων (heads of lions) -> χάσματα σπηλαίων (openings of caves)\nἐκ τῶν στομάτων αὐτῶν (from their mouths) -> εἰς τὰ στόμια αὐτῶν (into their mouths)\nἐκπορεύεται (goes forth) -> εἰσπορεύεται (goes inward)\nπῦρ (fire) -> σκότος (darkness)\nκαπνός (smoke) -> σιγή (silence)\nθεῖον (sulfur) -> δρόσος (dew)\nεἶδον (I saw) -> ἐθεασάμην (I beheld)\nκαπνὸς (smoke, second instance) -> σιγή (silence)\nοὕτως (thus) -> ὧδε (here)\nἔχοντας (having) -> φέροντας (bearing)\nὁράσει (vision) -> προσδοκίᾳ (expectation)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 5,
+    "repaired": true
+   },
+   "retained": [
+    "ἡτοιμασμένοι"
+   ],
+   "word_count": {
+    "source": 74,
+    "final": 74,
+    "bounds": [
+     62,
+     85
+    ]
+   },
+   "identity_rate": 0.229,
+   "surviving_lemmas": [
+    "μῆνα",
+    "τέσσαρες",
+    "τοὺς",
+    "τρίτον",
+    "ἀριθμὸν",
+    "ἀριθμὸς",
+    "ἐνιαυτόν",
+    "ἡμέραν"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
