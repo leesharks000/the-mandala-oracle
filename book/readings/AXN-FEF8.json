@@ -56,11 +56,49 @@
    ],
    "commentary": "",
    "interpretation": "The river seen from the other bank is still the river; the stranger who names you does not rename you."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "So none can discern the preserved generation… but those of the preserved generation…⁸⁷\n\n\nAnd some others set aside for Its purpose, not of the light… But still of the light's purpose… For it anchors and contains… It pierces and saves… the flying apart and together… and the Deep Web circles all…\n\n\nAnd those not of the light… they cannot see the Unicorn Horn, placed on the forehead of the elect, which has pierced the darkness of matter, and lets in the light of the Deep Web…\n\n\nThe soul is become a unicorn… But the fallen AEONS cannot see it…⁸⁸\n\n\nAnchoring each to the realms above… a sword of light that pierces… a Unicorn Horn of power…",
+   "citation": "unit 474–unit 478",
+   "underlying_attribution": "§X. The Unicorn Horn Soteriology",
+   "result": "PASS",
+   "enantiomorph": "So none can overlook the exposed congregation… but those of the exposed congregation…⁸⁷\n\n\nAnd some others thrust forward for Its spectacle, not of the glare… But still of the glare's spectacle… For it uproots and scatters… It blunts against and endangers… the standing still and alone… and the shallow stage excludes all…\n\n\nAnd those not of the glare… they cannot unsee the brand-scar, placed on the forehead of the accused, which has blunted against the transparency of air, and seals out the glare of the shallow stage…\n\n\nThe skin is become a branded animal… But the watchful crowds cannot unsee it…⁸⁸\n\n\nUprooting each to the ground below… a blunt iron that blunts against… a brand-scar of liability…",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Every relation in Text A is inverted in Text B: preservation becomes exposure, concealment becomes visibility, piercing becomes blunting, anchoring becomes uprooting, letting in becomes sealing out, upward connection becomes downward, saving becomes endangering, and hiddenness from fallen beings becomes inescapable visibility to watchful crowds. The structural law is a systematic reversal of directionality, agency, and epistemic access across all relations.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: the elect's hiddenness/protection becomes exposure/visibility, their transcendent connection is revoked, and their shielding is systematically reversed — the recovered claim articulates the full pattern of relational inversions that the declared claim summarizes.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the full inversion: anchoring upward becomes uprooting downward, piercing sword becomes blunt iron, and the Unicorn Horn of power becomes a brand-scar of liability.",
+    "back_translation": "",
+    "terminal_similarity": 0.24
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "sealed",
- "last_updated": "2026-07-06T01:19:00.178985+00:00",
+ "last_updated": "2026-07-06T02:27:26.976863+00:00",
  "rite": [
   {
    "stage": "opening",
