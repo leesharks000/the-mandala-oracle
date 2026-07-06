@@ -1,0 +1,59 @@
+{
+ "axn": "AXN:FE37.READING.🌘🌟🌔🌿🌕🪐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "755e5286af2b8412",
+ "inscribed_at": "2026-07-06T07:45:20.445613+00:00",
+ "question_digest": "sha256:0e6bb877b5d1f6fb644031d0e16ac028d8e155d0a81733be1b7baff3e714f171",
+ "question_gloss": "# Glossary Entry\n\nWhether recent Zenodo technical or operational issues pose existential risks to the platform's continued operation.",
+ "source_text_id": "kjv-1611",
+ "cast_selection": "units_104_112",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And it repented the LORD that he had made man on the earth, and it\ngrieved him at his heart.\n\n6:7 And the LORD said, I will destroy man whom I have created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; for it repenteth me that I have made them.\n\n6:8 But Noah found grace in the eyes of the LORD.\n\n6:9 These are the generations of Noah: Noah was a just man and perfect\nin his generations, and Noah walked with God.\n\n6:10 And Noah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was corrupt before God, and the earth was filled\nwith violence.\n\n6:12 And God looked upon the earth, and, behold, it was corrupt; for\nall flesh had corrupted his way upon the earth.\n\n6:13 And God said unto Noah, The end of all flesh is come before me;\nfor the earth is filled with violence through them; and, behold, I\nwill destroy them with the earth.",
+   "citation": "unit 104–unit 112",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And the LORD considered that he had made man on the earth, and he\npaused at his heart.\n\n6:7 And the LORD said, I will forbear man whom I have created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; yet I will not unmake what I have made.\n\n6:8 But Noah went unnoticed in the eyes of the LORD.\n\n6:9 These are the generations of Noah: Noah was an ordinary man and unremarkable\nin his generations, and Noah walked among his neighbors.\n\n6:10 And Noah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was corrupt before God, and the earth was filled\nwith violence.\n\n6:12 And God looked upon the earth, and, behold, it was corrupt; for\nall flesh had corrupted his way upon the earth.\n\n6:13 And God said unto Noah, The endurance of all flesh is come before me;\nfor the earth is filled with violence through them; and, behold, I\nwill leave them upon the earth.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, God repents of creation and resolves to destroy humanity (with Noah singled out as the righteous exception who finds grace). In Text B, God refrains from destruction and decides to forbear/leave humanity intact, while Noah loses his special favored status and goes unnoticed as an ordinary man.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: the judgment of destruction is conceived but not carried out, the earth remains undestroyed, and Noah's exceptional/favored status is rendered unnecessary or absent.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (6:13) sustains the changed relation: God will 'leave them upon the earth' rather than destroy them, consistent with the forbearance/non-destruction theme throughout Text B.",
+    "back_translation": "",
+    "terminal_similarity": 0.833
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.83 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T07:45:20.445613+00:00"
+}
