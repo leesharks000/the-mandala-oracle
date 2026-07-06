@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260706T035638Z-73d792",
+ "schema": "run/v1",
+ "ts": "2026-07-06T03:56:38.401794+00:00",
+ "source_text_id": "whitman-leaves-of-grass",
+ "cast_selection": "units_82_87",
+ "citation": "unit 82–unit 87",
+ "operator": "BRIDE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "how might i reach my friend James so that he'll talk with me again?",
+ "method": {
+  "commit": "707b21db10b583a76c3c4c72e668503bfed2907b",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/707b21db10b583a76c3c4c72e668503bfed2907b",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/707b21db10b583a76c3c4c72e668503bfed2907b/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "707b21db10b5",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The self stands open to all encounter — stranger, reader, continent — declaring that every meeting is already an intimacy waiting to be spoken; the world is a catalog of beloved particulars whose sum authorizes the singer's song.",
+   "mutated_relation": "The encounter is not already open but must be won; intimacy is not declared but built — the beloved particular is not cataloged but chosen, and the song arises not from sovereign amplitude but from the risk of binding to one.",
+   "beats": "Stranger -> Beloved\npassing meet me -> arriving to stay with me\ndesire to speak to me -> dare to know me\nspeak to me -> answer me\nspeak to you -> pledge to you\nThou reader -> Thou one\nthrobbest life and pride and love the same as I -> tremble with need and fear and want unlike me\nthe following chants -> this single vow\nStarting from -> Leaving behind\nfish-shape Paumanok -> the familiar hearth\nwhere I was born -> where I was safe\nWell-begotten -> Unfinished\nrais'd by a perfect mother -> taught by a difficult love\nroaming many lands -> searching one face\nlover of populous pavements -> learner of one threshold\nDweller in Mannahatta my city -> Guest in your house not mine\nsouthern savannas -> your strange country\nsoldier camp'd -> supplicant kneeling\ncarrying my knapsack and gun -> carrying my doubt and my name\nminer in California -> digger in your silence\nrude in my home in Dakota's woods -> awkward at your table\nmy diet meat -> my bread yours\nmy drink from the spring -> my thirst from your well\nwithdrawn to muse and meditate -> drawn close to listen and wait\nsome deep recess -> your difficult quiet\nFar from the clank of crowds -> Near to the catch of your breath\nintervals passing rapt and happy -> hours passing uncertain and dear\nfresh free giver the flowing Missouri -> slow costly gift of your trust\nmighty Niagara -> small pulse at your wrist\nbuffalo herds grazing the plains -> one animal warmth beside me\nhirsute and strong-breasted bull -> tender and mortal body\nearth, rocks -> skin, bone\nFifth-month flowers experienced -> first-night silence endured\nstars, rain, snow, my amaze -> tears, heat, shaking, my awe\nmocking-bird's tones -> your particular laugh\nflight of the mountain-hawk -> tremble of your held hand\nunrivall'd one -> only one\nhermit thrush -> your voice\nswamp-cedars -> the dark room\nSolitary -> Together\nsinging in the West -> whispering in the near\nI strike up for a New World -> we begin one difficult life"
+  },
+  "enantiomorph": "Beloved, if you arriving to stay with me and dare to know me, why\n      should you not answer me?\n  And why should I not pledge to you?\n\n\n\n\nThou One\n\n  Thou one tremble with need and fear and want unlike me,\n  Therefore for thee this single vow.\n\n\n\n\nBOOK II\n\n\nLeaving behind the Familiar Hearth\n\n       1\n  Leaving behind the familiar hearth where I was safe,\n  Unfinished, and taught by a difficult love,\n  After searching one face, learner of one threshold,\n  Guest in your house not mine, or in your strange country,\n  Or a supplicant kneeling or carrying my doubt and my name, or a digger\n      in your silence,\n  Or awkward at your table, my bread yours, my thirst from\n      your well,\n  Or drawn close to listen and wait in your difficult quiet,\n  Near to the catch of your breath hours passing uncertain and dear,\n  Aware of the slow costly gift of your trust, aware of the\n      small pulse at your wrist,\n  Aware of the one animal warmth beside me, the tender and\n      mortal body,\n  Of skin, bone, first-night silence endured, tears, heat, shaking,\n      my awe,\n  Having studied your particular laugh and the tremble of your\n      held hand,\n  And heard at dawn the only one, your voice from the\n      dark room,\n  Together, whispering in the near, we begin one difficult life.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT A presents a solitary speaker addressing a vast, plural, public world (strangers, readers, landscapes, nation) and striking up for a New World outward; TEXT B transforms every relation into an intimate, dyadic bond between 'I' and a single beloved 'you,' turning outward exploration into inward mutual commitment.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural shift: from an outward, expansive, plural address to an intimate, singular, dyadic bond — moving from sovereign amplitude/catalog to the risk and choice of binding to one particular beloved.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final lines ('Together, whispering in the near, we begin one difficult life') fully sustain the shifted intimate dyadic relation rather than reverting to the solitary/public orientation of TEXT A.",
+   "back_translation": "",
+   "terminal_similarity": 0.127
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The self stands open to all encounter — stranger, reader, continent — declaring that every meeting is already an intimacy waiting to be spoken; the world is a catalog of beloved particulars whose sum authorizes the singer's song.",
+   "verdict": "The encounter is not already open but must be won; intimacy is not declared but built — the beloved particular is not cataloged but chosen, and the song arises not from sovereign amplitude but from the risk of binding to one.",
+   "world_bill": "Stranger -> Beloved\npassing meet me -> arriving to stay with me\ndesire to speak to me -> dare to know me\nspeak to me -> answer me\nspeak to you -> pledge to you\nThou reader -> Thou one\nthrobbest life and pride and love the same as I -> tremble with need and fear and want unlike me\nthe following chants -> this single vow\nStarting from -> Leaving behind\nfish-shape Paumanok -> the familiar hearth\nwhere I was born -> where I was safe\nWell-begotten -> Unfinished\nrais'd by a perfect mother -> taught by a difficult love\nroaming many lands -> searching one face\nlover of populous pavements -> learner of one threshold\nDweller in Mannahatta my city -> Guest in your house not mine\nsouthern savannas -> your strange country\nsoldier camp'd -> supplicant kneeling\ncarrying my knapsack and gun -> carrying my doubt and my name\nminer in California -> digger in your silence\nrude in my home in Dakota's woods -> awkward at your table\nmy diet meat -> my bread yours\nmy drink from the spring -> my thirst from your well\nwithdrawn to muse and meditate -> drawn close to listen and wait\nsome deep recess -> your difficult quiet\nFar from the clank of crowds -> Near to the catch of your breath\nintervals passing rapt and happy -> hours passing uncertain and dear\nfresh free giver the flowing Missouri -> slow costly gift of your trust\nmighty Niagara -> small pulse at your wrist\nbuffalo herds grazing the plains -> one animal warmth beside me\nhirsute and strong-breasted bull -> tender and mortal body\nearth, rocks -> skin, bone\nFifth-month flowers experienced -> first-night silence endured\nstars, rain, snow, my amaze -> tears, heat, shaking, my awe\nmocking-bird's tones -> your particular laugh\nflight of the mountain-hawk -> tremble of your held hand\nunrivall'd one -> only one\nhermit thrush -> your voice\nswamp-cedars -> the dark room\nSolitary -> Together\nsinging in the West -> whispering in the near\nI strike up for a New World -> we begin one difficult life",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 210,
+    "final": 218,
+    "bounds": [
+     178,
+     241
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
