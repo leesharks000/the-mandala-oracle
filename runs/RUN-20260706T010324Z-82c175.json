@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260706T010324Z-82c175",
+ "schema": "run/v1",
+ "ts": "2026-07-06T01:03:24.893818+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SILENCE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "00081d163bc71a234d330046c95db4fad61825c2",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/00081d163bc71a234d330046c95db4fad61825c2",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/00081d163bc71a234d330046c95db4fad61825c2/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "00dd44c732f262f6",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "00081d163bc7",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "00dd44c732f262f6",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Destruction is unleashed on precise schedule by prepared agents of overwhelming, enumerable force whose very bodies broadcast annihilation — violence is maximally articulated, maximally loud, maximally visible.",
+   "mutated_relation": "The appointed hour arrives and nothing speaks — the force is present but unarticulated, uncounted, and its presence is known only by the stillness it imposes.",
+   "beats": "ἐλύθησαν (were loosed) -> ἔστησαν (stood still)\nτέσσαρες ἄγγελοι (four angels) -> figures without number\nἡτοιμασμένοι (prepared) -> always already there\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> the unmarked moment\nἀποκτείνωσιν (that they might kill) -> that they might hold still\nτὸ τρίτον τῶν ἀνθρώπων (a third of mankind) -> every breathing mouth\nἀριθμός (number) -> weight\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> the mass of what stood in the field\nδισμυριάδες μυριάδων (twice ten thousand times ten thousand) -> beyond telling\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> I could not hear them\nεἶδον (I saw) -> I felt\nἵππους (horses) -> presences\nὅρασις (vision) -> the blindness\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> what bore down from within them\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire, hyacinth, sulfur) -> no color at all\nκεφαλαὶ λεόντων (heads of lions) -> closed mouths\nστομάτων (mouths) -> mouths (RETAIN: the verdict requires the organ that refuses to speak)\nἐκπορεύεται (proceeds out) -> does not proceed\nπῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and sulfur) -> nothing\nοὕτως (thus / in this way) -> without manner\nτοὺς (the / those) -> what was there\nἔχοντας (having / wearing) -> bearing nothing\nἵππων (of the horses) -> of the presences\nὁράσει (in the vision / in appearance) -> in the stillness"
+  },
+  "enantiomorph": "**9:15** καὶ ἔστησαν οἱ μορφαὶ ἄνευ ἀριθμοῦ οἱ ἀεὶ ἤδη ἐκεῖ εἰς τὴν ἀσήμαντον ⸀στιγμήν, ἵνα κατάσχωσιν ἐν σιγῇ πᾶν στόμα πνέον.\n\n**9:16** καὶ τὸ βάρος τοῦ ὄγκου τοῦ ⸀ἑστῶτος ἐν τῷ πεδίῳ ⸀ἐπέκεινα λόγου· οὐκ ἠδυνάμην ἀκοῦσαι αὐτῶν.\n\n**9:17** καὶ ἀτρόπως ᾐσθόμην τὰ παρόντα ἐν τῇ ἀκινησίᾳ καὶ τὰ βαρύνοντα ἔσωθεν αὐτῶν, μηδὲν φέροντα χρώματος ὅλως· καὶ αἱ κεφαλαὶ τῶν παρόντων ὡς στόματα κεκλεισμένα, καὶ ἐκ τῶν στομάτων αὐτῶν οὐκ ἐκπορεύεται οὐδέν.",
+  "enantiomorph_translation": "**9:15** And the figures without number stood still, always already there, unto the unmarked moment, that they might hold still every breathing mouth.\n\n**9:16** And the weight of the mass of what stood in the field was beyond telling; I could not hear them.\n\n**9:17** And without manner I felt what was there in the stillness and what bore down from within them, bearing no color at all; and the heads of the presences were as closed mouths, and from their mouths nothing does not proceed.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, four prepared angels are released to actively kill a third of humanity with fiery, violent cavalry forces that emit fire, smoke, and sulfur; in Text B, innumerable formless figures stand still in silence to suppress all breathing mouths, bearing no color, and from their closed mouths nothing at all comes forth — the directional relation of active destructive outpouring is inverted into static, silent containment and negation.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural mutation: active destructive forces (killing, outpouring) are transformed into silent, still, unarticulated presence — force exists but is contained, static, and unexpressed rather than actively deployed.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B maintains the inversion: closed mouths emitting nothing, colorlessness, and stillness consistently oppose Text A's open-mouthed emission and vivid destruction.",
+   "back_translation": "",
+   "terminal_similarity": 0.25
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Destruction is unleashed on precise schedule by prepared agents of overwhelming, enumerable force whose very bodies broadcast annihilation — violence is maximally articulated, maximally loud, maximally visible.",
+   "verdict": "The appointed hour arrives and nothing speaks — the force is present but unarticulated, uncounted, and its presence is known only by the stillness it imposes.",
+   "world_bill": "ἐλύθησαν (were loosed) -> ἔστησαν (stood still)\nτέσσαρες ἄγγελοι (four angels) -> figures without number\nἡτοιμασμένοι (prepared) -> always already there\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> the unmarked moment\nἀποκτείνωσιν (that they might kill) -> that they might hold still\nτὸ τρίτον τῶν ἀνθρώπων (a third of mankind) -> every breathing mouth\nἀριθμός (number) -> weight\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> the mass of what stood in the field\nδισμυριάδες μυριάδων (twice ten thousand times ten thousand) -> beyond telling\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> I could not hear them\nεἶδον (I saw) -> I felt\nἵππους (horses) -> presences\nὅρασις (vision) -> the blindness\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> what bore down from within them\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire, hyacinth, sulfur) -> no color at all\nκεφαλαὶ λεόντων (heads of lions) -> closed mouths\nστομάτων (mouths) -> mouths (RETAIN: the verdict requires the organ that refuses to speak)\nἐκπορεύεται (proceeds out) -> does not proceed\nπῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and sulfur) -> nothing\nοὕτως (thus / in this way) -> without manner\nτοὺς (the / those) -> what was there\nἔχοντας (having / wearing) -> bearing nothing\nἵππων (of the horses) -> of the presences\nὁράσει (in the vision / in appearance) -> in the stillness",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 5,
+    "repaired": true
+   },
+   "retained": [
+    "στομάτων"
+   ],
+   "word_count": {
+    "source": 74,
+    "final": 70,
+    "bounds": [
+     62,
+     85
+    ]
+   },
+   "identity_rate": 0.057,
+   "surviving_lemmas": [
+    "κεφαλαὶ",
+    "ἐκπορεύεται"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
