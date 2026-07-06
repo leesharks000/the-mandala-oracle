@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260706T074641Z-bc86d6",
+ "schema": "run/v1",
+ "ts": "2026-07-06T07:46:41.204658+00:00",
+ "source_text_id": "kjv-1611",
+ "cast_selection": "units_104_112",
+ "citation": "unit 104–unit 112",
+ "operator": "INVERSION",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "has zenodo fucked up badly enough to bring about its downfall?",
+ "method": {
+  "commit": "62060120707e5d6ac60482543e1bb639f85a59aa",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/62060120707e5d6ac60482543e1bb639f85a59aa",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/62060120707e5d6ac60482543e1bb639f85a59aa/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "62060120707e",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Total depravity provokes divine regret and total destruction; one righteous remnant is exempted by grace from universal annihilation.",
+   "mutated_relation": "Total virtue provokes divine regret and total preservation; one corrupt remnant is exempted by judgment from universal salvation.",
+   "beats": "wickedness -> virtue\ngreat -> great (RETAIN: the verdict requires magnitude along its own axis)\nearth -> earth (RETAIN: the ground of the drama remains the same stage)\nimagination -> discipline\nthoughts -> devotions\nheart -> heart (RETAIN: the verdict's regret requires the same seat of feeling)\nevil -> good\ncontinually -> continually (RETAIN: the verdict requires the same relentlessness)\nrepented -> repented (RETAIN: divine regret is structurally required by the verdict, only its cause inverts)\nLORD -> LORD (RETAIN: the agent of cosmic decision persists)\ngrieved -> grieved (RETAIN: the verdict's sorrow mirrors the source's)\ndestroy -> redeem\nman -> man (RETAIN: the subject of the verdict unchanged)\ncreated -> created (RETAIN: the making-relation persists)\nface of the earth -> breadth of the earth\nbeast -> beast\ncreeping thing -> creeping thing\nfowls of the air -> fowls of the air\nmade -> made\nNoah -> Marah\ngrace -> sentence\nfound grace -> received sentence\njust -> crooked\nperfect -> ruined\nwalked with God -> turned from God\ngenerations -> generations\nbegat -> begat\nthree sons -> three sons\nShem, Ham, and Japheth -> Shem, Ham, and Japheth\ncorrupt -> righteous\nfilled with violence -> filled with tenderness\nall flesh -> all flesh\ncorrupted his way -> sanctified his way\nthe end of all flesh -> the flowering of all flesh\ndestroy them with the earth -> deliver them with the earth"
+  },
+  "enantiomorph": "6:5 And God saw that the virtue of man was great in the earth, and\nthat every discipline of the devotions of his heart was only good\ncontinually.\n\n6:6 And it repented the LORD that he had made man on the earth, and it\ngrieved him at his heart.\n\n6:7 And the LORD said, I will redeem man whom I have created from the\nbreadth of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; for it repenteth me that I have made them.\n\n6:8 But Marah received sentence in the eyes of the LORD.\n\n6:9 These are the generations of Marah: Marah was a crooked man and ruined\nin his generations, and Marah turned from God.\n\n6:10 And Marah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was righteous before God, and the earth was filled\nwith tenderness.\n\n6:12 And God looked upon the earth, and, behold, it was righteous; for\nall flesh had sanctified his way upon the earth.\n\n6:13 And God said unto Marah, The flowering of all flesh is come before me;\nfor the earth is filled with tenderness through them; and, behold, I\nwill deliver them with the earth.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The moral valence of humanity and the earth is inverted (wickedness→virtue, corruption→righteousness, violence→tenderness), and correspondingly God's response is inverted from destruction to redemption/deliverance; simultaneously Noah (the one righteous exception) is replaced by Marah (a wicked exception who receives judgment instead of grace), inverting the protagonist's moral role relative to the world.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: humanity becomes virtuous prompting divine favor/preservation, while the single exception (Noah→Marah) is morally inverted and receives judgment instead of grace, matching the declared 'one corrupt remnant exempted by judgment from universal salvation.'",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final verses (6:11–6:13) maintain the inversion consistently: the earth is righteous and filled with tenderness, and God promises to deliver rather than destroy.",
+   "back_translation": "",
+   "terminal_similarity": 0.742
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.74 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Total depravity provokes divine regret and total destruction; one righteous remnant is exempted by grace from universal annihilation.",
+   "verdict": "Total virtue provokes divine regret and total preservation; one corrupt remnant is exempted by judgment from universal salvation.",
+   "world_bill": "wickedness -> virtue\ngreat -> great (RETAIN: the verdict requires magnitude along its own axis)\nearth -> earth (RETAIN: the ground of the drama remains the same stage)\nimagination -> discipline\nthoughts -> devotions\nheart -> heart (RETAIN: the verdict's regret requires the same seat of feeling)\nevil -> good\ncontinually -> continually (RETAIN: the verdict requires the same relentlessness)\nrepented -> repented (RETAIN: divine regret is structurally required by the verdict, only its cause inverts)\nLORD -> LORD (RETAIN: the agent of cosmic decision persists)\ngrieved -> grieved (RETAIN: the verdict's sorrow mirrors the source's)\ndestroy -> redeem\nman -> man (RETAIN: the subject of the verdict unchanged)\ncreated -> created (RETAIN: the making-relation persists)\nface of the earth -> breadth of the earth\nbeast -> beast\ncreeping thing -> creeping thing\nfowls of the air -> fowls of the air\nmade -> made\nNoah -> Marah\ngrace -> sentence\nfound grace -> received sentence\njust -> crooked\nperfect -> ruined\nwalked with God -> turned from God\ngenerations -> generations\nbegat -> begat\nthree sons -> three sons\nShem, Ham, and Japheth -> Shem, Ham, and Japheth\ncorrupt -> righteous\nfilled with violence -> filled with tenderness\nall flesh -> all flesh\ncorrupted his way -> sanctified his way\nthe end of all flesh -> the flowering of all flesh\ndestroy them with the earth -> deliver them with the earth",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 204,
+    "final": 204,
+    "bounds": [
+     173,
+     234
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
