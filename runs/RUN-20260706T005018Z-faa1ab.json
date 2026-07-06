@@ -1,0 +1,129 @@
+{
+ "run_id": "RUN-20260706T005018Z-faa1ab",
+ "schema": "run/v1",
+ "ts": "2026-07-06T00:50:18.461805+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour",
+ "method": {
+  "commit": "6f0efc4ebad88715c9fcf5dc0523f7db2f25bdcc",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/6f0efc4ebad88715c9fcf5dc0523f7db2f25bdcc",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/6f0efc4ebad88715c9fcf5dc0523f7db2f25bdcc/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5fba390786888376",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "6f0efc4ebad8",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5fba390786888376",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Annihilation is precise, prepared, and overwhelming: destruction arrives at its appointed moment with forces beyond counting, and the instruments of killing are themselves composed of the very substances they emit — the vision's cost is that seeing and slaying are fused into a single unbearable spectacle.",
+   "mutated_relation": "The vision that cannot discharge its violence — the appointed hour in which the seer is saturated with the spectacle's full weight yet the killing remains interior, unreleased, carried as the composition's own burning.",
+   "beats": "ἐλύθησαν (were released) -> ἐδέθησαν (were bound tighter)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες ἄγγελοι (RETAIN: the agents must remain to bear the non-release)\nἡτοιμασμένοι (prepared) -> ἡτοιμασμένοι (RETAIN: the preparation persists precisely because it never consummates)\nτὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (the hour and day and month and year) -> τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (RETAIN: the appointed time must remain full to register as unspent)\nἀποκτείνωσιν (they might kill) -> φέρωσιν (they might carry)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ βάρος τῆς ὁράσεως (the weight of the vision)\nἀριθμός (number) -> ἀριθμός (RETAIN: the uncountable count is itself the crushing)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> στρατευμάτων τοῦ ἀγγέλματος (armies of the message)\nδισμυριάδες μυριάδων (twice ten-thousand times ten-thousand) -> δισμυριάδες μυριάδων (RETAIN: the magnitude is the cost itself)\nἤκουσα τὸν ἀριθμόν (I heard the number) -> ἤνεγκα τὸν ἀριθμόν (I bore the number)\nεἶδον (I saw) -> ἔφερον (I carried)\nἵππους (horses) -> ἵππους (RETAIN: the monstrous vehicle must remain to be borne rather than unleashed)\nὅρασις (vision) -> βάρος (weight)\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> καθημένους ἐπ' ἐμοί (those seated upon me)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire and hyacinth and sulfur) -> θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (RETAIN: the substances must remain sealed in armor — encased, not emitted)\nκεφαλαὶ λεόντων (heads of lions) -> στόματα κλειστά (closed mouths)\nἐκ τῶν στομάτων (from the mouths) -> ἐντὸς τῶν στομάτων (within the mouths)\nἐκπορεύεται (goes forth) -> μένει (remains)\nπῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and sulfur) -> πῦρ καὶ καπνὸς καὶ θεῖον (RETAIN: the burning substances, unissued, are the seer's carried cost)"
+  },
+  "enantiomorph": "**9:15** καὶ ἐδέθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα φέρωσιν τὸ βάρος τῆς ὁράσεως.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἀγγέλματος ⸀δισμυριάδες μυριάδων· ἤνεγκα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως ἔφερον τοὺς ἵππους ἐν τῷ βάρει καὶ τοὺς καθημένους ἐπ' ἐμοί, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς στόματα κλειστά, καὶ ἐντὸς τῶν στομάτων αὐτῶν μένει πῦρ καὶ καπνὸς καὶ θεῖον.",
+  "enantiomorph_translation": "**9:15** And the four angels were bound tighter, those prepared for the hour and day and month and year, that they might carry the weight of the vision.\n\n**9:16** And the number of the armies of the message was twice ten-thousand times ten-thousand; I bore the number of them.\n\n**9:17** And thus I carried the horses in the weight and those seated upon me, having breastplates of fire and hyacinth and sulfur; and the heads of the horses were as closed mouths, and within their mouths remains fire and smoke and sulfur.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the four angels are loosed (ἐλύθησαν) to kill a third of mankind, the narrator hears/sees outwardly, and destructive forces issue outward from the horses' mouths; in Text B the angels are bound (ἐδέθησαν) to bear a burden, the narrator carries/bears inwardly (ἤνεγκα, ἔφερον, ἐπ' ἐμοί), and the fire remains contained within closed mouths — the directional relation is reversed from release/outward destruction to binding/inward containment.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural mutation: violence/destruction that was released outward is transformed into something bound, interior, and unreleased — the directional reversal from outward killing to inward containment/bearing.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B maintains the inward-containment relation (στόματα κλειστά, μένει πῦρ ἐντὸς), consistent with the reversal throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.611
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "50% of non-RETAIN source lemmas survive verbatim (καθημένους, κεφαλαὶ, οὕτως, στομάτων, στρατευμάτων, τοὺς…) -- the bill was not honored"
+   },
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.61 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Annihilation is precise, prepared, and overwhelming: destruction arrives at its appointed moment with forces beyond counting, and the instruments of killing are themselves composed of the very substances they emit — the vision's cost is that seeing and slaying are fused into a single unbearable spectacle.",
+   "verdict": "The vision that cannot discharge its violence — the appointed hour in which the seer is saturated with the spectacle's full weight yet the killing remains interior, unreleased, carried as the composition's own burning.",
+   "world_bill": "ἐλύθησαν (were released) -> ἐδέθησαν (were bound tighter)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες ἄγγελοι (RETAIN: the agents must remain to bear the non-release)\nἡτοιμασμένοι (prepared) -> ἡτοιμασμένοι (RETAIN: the preparation persists precisely because it never consummates)\nτὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (the hour and day and month and year) -> τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (RETAIN: the appointed time must remain full to register as unspent)\nἀποκτείνωσιν (they might kill) -> φέρωσιν (they might carry)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ βάρος τῆς ὁράσεως (the weight of the vision)\nἀριθμός (number) -> ἀριθμός (RETAIN: the uncountable count is itself the crushing)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> στρατευμάτων τοῦ ἀγγέλματος (armies of the message)\nδισμυριάδες μυριάδων (twice ten-thousand times ten-thousand) -> δισμυριάδες μυριάδων (RETAIN: the magnitude is the cost itself)\nἤκουσα τὸν ἀριθμόν (I heard the number) -> ἤνεγκα τὸν ἀριθμόν (I bore the number)\nεἶδον (I saw) -> ἔφερον (I carried)\nἵππους (horses) -> ἵππους (RETAIN: the monstrous vehicle must remain to be borne rather than unleashed)\nὅρασις (vision) -> βάρος (weight)\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> καθημένους ἐπ' ἐμοί (those seated upon me)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire and hyacinth and sulfur) -> θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (RETAIN: the substances must remain sealed in armor — encased, not emitted)\nκεφαλαὶ λεόντων (heads of lions) -> στόματα κλειστά (closed mouths)\nἐκ τῶν στομάτων (from the mouths) -> ἐντὸς τῶν στομάτων (within the mouths)\nἐκπορεύεται (goes forth) -> μένει (remains)\nπῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and sulfur) -> πῦρ καὶ καπνὸς καὶ θεῖον (RETAIN: the burning substances, unissued, are the seer's carried cost)",
+   "retained": [
+    "δισμυριάδες",
+    "θειώδεις",
+    "θεῖον",
+    "θώρακας",
+    "καπνὸς",
+    "μυριάδων",
+    "μῆνα",
+    "πυρίνους",
+    "τέσσαρες",
+    "ἀριθμός",
+    "ἄγγελοι",
+    "ἐνιαυτόν",
+    "ἡμέραν",
+    "ἡτοιμασμένοι"
+   ],
+   "word_count": {
+    "source": 74,
+    "final": 74,
+    "bounds": [
+     62,
+     85
+    ]
+   },
+   "identity_rate": 0.5,
+   "surviving_lemmas": [
+    "καθημένους",
+    "κεφαλαὶ",
+    "οὕτως",
+    "στομάτων",
+    "στρατευμάτων",
+    "τοὺς",
+    "ἀριθμὸν",
+    "ἀριθμὸς",
+    "ἔχοντας",
+    "ἵππων"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
