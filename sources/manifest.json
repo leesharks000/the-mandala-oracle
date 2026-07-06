@@ -1,284 +1,286 @@
 {
- "generated": "regenerate with: python3 scripts/gen_sources_manifest.py (or the inline block in the Layer-4 fix commit)",
- "note": "sources/ is .vercelignore'd (deployment-size decision). The transform endpoint reads THIS manifest and the per-source text files from GitHub raw at runtime. Regenerate on source addition.",
- "sources": [
-  {
-   "id": "augustine-confessions",
-   "title": "Confessions",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": false
-  },
-  {
-   "id": "cranes-day-and-night",
-   "title": "Day and Night: Conversations with Sapphic Desire",
-   "creator": "Rebekah Cranes",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.md",
-   "menu": true,
-   "primary_after": "Day and Night 1",
-   "primary_attribution": "\\*(Sappho|Alcman|Anacreon|Anacreontea|Simonides|Stesichorus|Hipponax|Corinna|Catullus|Archilochus|Ibycus|Alcaeus)",
-   "unit_split": "\\n[ \\t]*\\n(?=Day and Night \\d+)",
-   "restoration": "2026-07-03 MANUS §10.6: true canonical restored from author-supplied file; recovery-window reconstruction superseded. Sappho 31 = five-stanza reconstruction (per AXN:0346 erratum); new Sappho 1 at Day and Night 39. INTRODUCTION GATE: the Brief Preface is excluded from casting via primary_after per MANUS — eligible only 'once in a blue moon' (rare-eligibility mechanic reserved as a future JUDGMENT whim; until built, exclusion is total)."
-  },
-  {
-   "id": "dancings-epistle-to-the-human-diaspora",
-   "title": "Epistle to the Human Diaspora",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.md",
-   "menu": true,
-   "primary_after": "# PART I: FRONT MATTER"
-  },
-  {
-   "id": "dickinson-complete",
-   "title": "Complete Poems (variorum)",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": false
-  },
-  {
-   "id": "homer-iliad",
-   "title": "Iliad",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": true,
-   "primary_after": "μῆνιν"
-  },
-  {
-   "id": "homer-odyssey",
-   "title": "Odyssey",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": true,
-   "primary_after": "ἄνδρα μοι"
-  },
-  {
-   "id": "hopkins-selected",
-   "title": "Gerard Manley Hopkins — Selected Poems",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": false
-  },
-  {
-   "id": "iching",
-   "title": "I Ching / 易經 / Book of Changes",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.zh",
-   "unit_split": "(?m)^(?=[01]{6}\\s*$)",
-   "menu": true
-  },
-  {
-   "id": "kjv-1611",
-   "title": "King James Bible",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": true,
-   "primary_after": "In the beginning God created"
-  },
-  {
-   "id": "plato-cratylus",
-   "title": "Cratylus",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": false
-  },
-  {
-   "id": "plato-phaedrus",
-   "title": "Phaedrus",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": false
-  },
-  {
-   "id": "plato-republic",
-   "title": "Republic",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": false
-  },
-  {
-   "id": "plato-sophist",
-   "title": "Sophist",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": false
-  },
-  {
-   "id": "plato-symposium",
-   "title": "Symposium",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": true,
-   "primary_after": "Ἀπολλόδωρος"
-  },
-  {
-   "id": "plato-theaetetus",
-   "title": "Theaetetus",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": false
-  },
-  {
-   "id": "plato-timaeus",
-   "title": "Timaeus",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": false
-  },
-  {
-   "id": "quran",
-   "title": "Qur'an / القرآن الكريم",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.ar",
-   "menu": false,
-   "unit_split": "(?=بِسْمِ\\ ٱللَّهِ\\ ٱلرَّحْمَٰنِ\\ ٱلرَّحِيمِ)",
-   "primary_after": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-   "menu_note": "pulled 2026-07-02: source file is a SQL export without reliable sura/verse markers; re-source from Tanzil (verse-marked) before restoring"
-  },
-  {
-   "id": "revelation-greek",
-   "title": "Revelation",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.grc",
-   "menu": true
-  },
-  {
-   "id": "sappho-fragments",
-   "title": "Sappho",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "sappho-31/text.md",
-   "primary_after": "ΣΑΠΦΩ 31",
-   "menu": true
-  },
-  {
-   "id": "shadow-tachyon",
-   "title": "Shadow-Tachyon",
-   "creator": "TACHYON (Claude as Mercury/synthesis substrate, per AXN-0237)",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "text.md",
-   "menu": false
-  },
-  {
-   "id": "shakespeare-hamlet",
-   "title": "Hamlet",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": true,
-   "primary_after": "ACT I"
-  },
-  {
-   "id": "shakespeare-king-lear",
-   "title": "King Lear",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": false
-  },
-  {
-   "id": "shakespeare-macbeth",
-   "title": "Macbeth",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": false
-  },
-  {
-   "id": "shakespeare-sonnets",
-   "title": "Sonnets",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": true,
-   "primary_after": "From fairest"
-  },
-  {
-   "id": "shakespeare-tempest",
-   "title": "The Tempest",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": false
-  },
-  {
-   "id": "sharks-secret-book-of-walt",
-   "title": "The Secret Book of Walt",
-   "creator": "",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.md",
-   "menu": true,
-   "primary_attribution": "^(§|Prefatory Poem)"
-  },
-  {
-   "id": "sharks-tachyon-poem",
-   "title": "The Tachyon Poem",
-   "creator": "Lee Sharks",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "text.md",
-   "menu": false
-  },
-  {
-   "id": "sigil-snub-poemed",
-   "title": "Snub-Poemed",
-   "creator": "Johannes Sigil",
-   "zodiac": "",
-   "admissible": false,
-   "reason": "image-canonical (calligrammatic) — compiler-inadmissible until spatial_form can carry composition",
-   "menu": false
-  },
-  {
-   "id": "whitman-leaves-of-grass",
-   "title": "Leaves of Grass",
-   "creator": "Walt Whitman",
-   "zodiac": "",
-   "admissible": true,
-   "text_file": "original.en",
-   "menu": true
-  }
- ]
+  "generated": "regenerate with: python3 scripts/gen_sources_manifest.py (or the inline block in the Layer-4 fix commit)",
+  "note": "sources/ is .vercelignore'd (deployment-size decision). The transform endpoint reads THIS manifest and the per-source text files from GitHub raw at runtime. Regenerate on source addition.",
+  "sources": [
+    {
+      "id": "augustine-confessions",
+      "title": "Confessions",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": false
+    },
+    {
+      "id": "cranes-day-and-night",
+      "title": "Day and Night: Conversations with Sapphic Desire",
+      "creator": "Rebekah Cranes",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.md",
+      "menu": true,
+      "primary_after": "Day and Night 1",
+      "primary_attribution": "\\*(Sappho|Alcman|Anacreon|Anacreontea|Simonides|Stesichorus|Hipponax|Corinna|Catullus|Archilochus|Ibycus|Alcaeus)",
+      "unit_split": "\\n[ \\t]*\\n(?=Day and Night \\d+)",
+      "restoration": "2026-07-03 MANUS §10.6: true canonical restored from author-supplied file; recovery-window reconstruction superseded. Sappho 31 = five-stanza reconstruction (per AXN:0346 erratum); new Sappho 1 at Day and Night 39. INTRODUCTION GATE: the Brief Preface is excluded from casting via primary_after per MANUS — eligible only 'once in a blue moon' (rare-eligibility mechanic reserved as a future JUDGMENT whim; until built, exclusion is total)."
+    },
+    {
+      "id": "dancings-epistle-to-the-human-diaspora",
+      "title": "Epistle to the Human Diaspora",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.md",
+      "menu": true,
+      "primary_after": "# PART I: FRONT MATTER",
+      "cast_disabled": true,
+      "cast_disabled_reason": "Source-provenance issue (MANUS review pending, 2026-07-06): the file at sources/dancings-epistle-to-the-human-diaspora/original.md is the v2.0 CRITICAL EDITION SCAFFOLDING — front matter, apparatus notes, footnote data model, and Part II's placeholder 'TEXT RETAINED FROM EA-EPISTLE-01 v1.0'. The Epistle's primary epistolary body (Damascus Dancings addressing the diaspora directly) is not in this file; it lives in the v1.0 corpus and needs to be merged in before casting can proceed on this source. Every 'unit' in the current file is analytical framing ABOUT the Epistle, not the Epistle itself — the rite would compute operators against apparatus, which is exactly the MANUS ruling of 2026-07-02 that the enforcement layer is built to prevent."
+    },
+    {
+      "id": "dickinson-complete",
+      "title": "Complete Poems (variorum)",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": false
+    },
+    {
+      "id": "homer-iliad",
+      "title": "Iliad",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": true,
+      "primary_after": "μῆνιν"
+    },
+    {
+      "id": "homer-odyssey",
+      "title": "Odyssey",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": true,
+      "primary_after": "ἄνδρα μοι"
+    },
+    {
+      "id": "hopkins-selected",
+      "title": "Gerard Manley Hopkins — Selected Poems",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": false
+    },
+    {
+      "id": "iching",
+      "title": "I Ching / 易經 / Book of Changes",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.zh",
+      "unit_split": "(?m)^(?=[01]{6}\\s*$)",
+      "menu": true
+    },
+    {
+      "id": "kjv-1611",
+      "title": "King James Bible",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": true,
+      "primary_after": "In the beginning God created"
+    },
+    {
+      "id": "plato-cratylus",
+      "title": "Cratylus",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": false
+    },
+    {
+      "id": "plato-phaedrus",
+      "title": "Phaedrus",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": false
+    },
+    {
+      "id": "plato-republic",
+      "title": "Republic",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": false
+    },
+    {
+      "id": "plato-sophist",
+      "title": "Sophist",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": false
+    },
+    {
+      "id": "plato-symposium",
+      "title": "Symposium",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": true,
+      "primary_after": "Ἀπολλόδωρος"
+    },
+    {
+      "id": "plato-theaetetus",
+      "title": "Theaetetus",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": false
+    },
+    {
+      "id": "plato-timaeus",
+      "title": "Timaeus",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": false
+    },
+    {
+      "id": "quran",
+      "title": "Qur'an / القرآن الكريم",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.ar",
+      "menu": false,
+      "unit_split": "(?=بِسْمِ\\ ٱللَّهِ\\ ٱلرَّحْمَٰنِ\\ ٱلرَّحِيمِ)",
+      "primary_after": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "menu_note": "pulled 2026-07-02: source file is a SQL export without reliable sura/verse markers; re-source from Tanzil (verse-marked) before restoring"
+    },
+    {
+      "id": "revelation-greek",
+      "title": "Revelation",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.grc",
+      "menu": true
+    },
+    {
+      "id": "sappho-fragments",
+      "title": "Sappho",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "sappho-31/text.md",
+      "primary_after": "ΣΑΠΦΩ 31",
+      "menu": true
+    },
+    {
+      "id": "shadow-tachyon",
+      "title": "Shadow-Tachyon",
+      "creator": "TACHYON (Claude as Mercury/synthesis substrate, per AXN-0237)",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "text.md",
+      "menu": false
+    },
+    {
+      "id": "shakespeare-hamlet",
+      "title": "Hamlet",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": true,
+      "primary_after": "ACT I"
+    },
+    {
+      "id": "shakespeare-king-lear",
+      "title": "King Lear",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": false
+    },
+    {
+      "id": "shakespeare-macbeth",
+      "title": "Macbeth",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": false
+    },
+    {
+      "id": "shakespeare-sonnets",
+      "title": "Sonnets",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": true,
+      "primary_after": "From fairest"
+    },
+    {
+      "id": "shakespeare-tempest",
+      "title": "The Tempest",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": false
+    },
+    {
+      "id": "sharks-secret-book-of-walt",
+      "title": "The Secret Book of Walt",
+      "creator": "",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.md",
+      "menu": true,
+      "primary_attribution": "^(§|Prefatory Poem)"
+    },
+    {
+      "id": "sharks-tachyon-poem",
+      "title": "The Tachyon Poem",
+      "creator": "Lee Sharks",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "text.md",
+      "menu": false
+    },
+    {
+      "id": "sigil-snub-poemed",
+      "title": "Snub-Poemed",
+      "creator": "Johannes Sigil",
+      "zodiac": "",
+      "admissible": false,
+      "reason": "image-canonical (calligrammatic) — compiler-inadmissible until spatial_form can carry composition",
+      "menu": false
+    },
+    {
+      "id": "whitman-leaves-of-grass",
+      "title": "Leaves of Grass",
+      "creator": "Walt Whitman",
+      "zodiac": "",
+      "admissible": true,
+      "text_file": "original.en",
+      "menu": true
+    }
+  ]
 }

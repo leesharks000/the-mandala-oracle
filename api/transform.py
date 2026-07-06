@@ -250,6 +250,8 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
     sources/ is .vercelignore'd).
     """
     entry = next((e for e in _load_manifest() if e["id"] == source_text_id), None)
+    if entry and entry.get("cast_disabled"):
+        raise ValueError(entry.get("cast_disabled_reason") or f"casting on {source_text_id} is disabled")
     if entry is None:
         raise ValueError(f"unknown source_text_id: {source_text_id}")
     if not entry.get("admissible", False):
