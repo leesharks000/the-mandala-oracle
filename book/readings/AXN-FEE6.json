@@ -55,11 +55,49 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἔστησαν οἱ μορφαὶ ἄνευ ἀριθμοῦ οἱ ἀεὶ ἤδη ἐκεῖ εἰς τὴν ἀσήμαντον ⸀στιγμήν, ἵνα κατάσχωσιν ἐν σιγῇ πᾶν στόμα πνέον.\n\n**9:16** καὶ τὸ βάρος τοῦ ὄγκου τοῦ ⸀ἑστῶτος ἐν τῷ πεδίῳ ⸀ἐπέκεινα λόγου· οὐκ ἠδυνάμην ἀκοῦσαι αὐτῶν.\n\n**9:17** καὶ ἀτρόπως ᾐσθόμην τὰ παρόντα ἐν τῇ ἀκινησίᾳ καὶ τὰ βαρύνοντα ἔσωθεν αὐτῶν, μηδὲν φέροντα χρώματος ὅλως· καὶ αἱ κεφαλαὶ τῶν παρόντων ὡς στόματα κεκλεισμένα, καὶ ἐκ τῶν στομάτων αὐτῶν οὐκ ἐκπορεύεται οὐδέν.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, four prepared angels are released to actively kill a third of humanity with fiery, violent cavalry forces that emit fire, smoke, and sulfur; in Text B, innumerable formless figures stand still in silence to suppress all breathing mouths, bearing no color, and from their closed mouths nothing at all comes forth — the directional relation of active destructive outpouring is inverted into static, silent containment and negation.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural mutation: active destructive forces (killing, outpouring) are transformed into silent, still, unarticulated presence — force exists but is contained, static, and unexpressed rather than actively deployed.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the inversion: closed mouths emitting nothing, colorlessness, and stillness consistently oppose Text A's open-mouthed emission and vivid destruction.",
+    "back_translation": "",
+    "terminal_similarity": 0.25
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T01:02:54.504618+00:00",
+ "last_updated": "2026-07-06T01:04:23.315149+00:00",
  "rite": [
   {
    "stage": "opening",
