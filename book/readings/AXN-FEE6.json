@@ -131,11 +131,49 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ συνήχθησαν αἱ τέσσαρες πύλαι αἱ ἡτοιμασμένοι εἰς τὸν καιρὸν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα δέξωνται τὸ τρίτον τῶν ψυχῶν.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν πομπῶν τῶν ⸀πεζῶν ⸀χιλιάδες χιλιάδων· ἔγνων τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ ὧδε ἐθεασάμην τὰ κατώφλια ἐν τῇ προσδοκίᾳ καὶ τοὺς προσερχομένους δι' αὐτῶν, φέροντας χιτῶνας σποδώδεις καὶ λευκοὺς καὶ ὑδατίνους· καὶ τὰ στόμια τῶν κατωφλίων ὡς χάσματα σπηλαίων, καὶ εἰς τὰ στόμια αὐτῶν εἰσπορεύεται σκότος καὶ σιγὴ καὶ δρόσος.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, agents (angels, horses) act outward—they are loosed to kill, and fire/smoke/brimstone issues out of their mouths; in Text B, the entities (gates, thresholds) receive inward—they gather to receive souls, and darkness/silence/dew enters into their openings, reversing the direction of action and flow.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural reversal: outward destructive action (agents loosed to kill, issuing from mouths) becomes inward gathering/receiving (entities that draw in, apertures that receive), reversing the direction of action and flow.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the inward-flow relation (εἰσπορεύεται into the openings) consistently, never reverting to Text A's outward direction.",
+    "back_translation": "",
+    "terminal_similarity": 0.143
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T01:05:38.340275+00:00",
+ "last_updated": "2026-07-06T01:07:21.129436+00:00",
  "rite": [
   {
    "stage": "opening",
