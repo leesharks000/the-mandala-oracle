@@ -1,0 +1,72 @@
+{
+ "schema_version": "expansion/v1.0",
+ "source_text_id": "dancings-epistle-to-the-human-diaspora",
+ "source_title": "Epistle to the Human Diaspora",
+ "unit_basis": {
+  "segmentation": "stanza",
+  "primary_after": "# PART I: FRONT MATTER",
+  "units_total": 35,
+  "basis_hash": "3353888e45758aa9a65c0e1da4e30e81709d6cc88df5de07c05bc8004423c983",
+  "basis_note": "unit indices refer to segment_units() over primary text; if basis_hash changes, historical anchors are interpreted against the basis they were cast under"
+ },
+ "transforms": [
+  {
+   "transform_id": "TX-790f362c",
+   "cast_at": "2026-07-06T03:09:29.075255+00:00",
+   "reading_axn": "AXN:FE56.READING.🌗💫🌿🔥💫🌙",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_8_8",
+    "citation": "unit 8",
+    "start_unit": 8,
+    "end_unit": 8,
+    "unit_labels": [
+     "unit 8"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A presents each doctrine as a positive, productive payload (indwelling presence enables writing, identity is not the ground of community, credentials are granted, the anonymous will be remembered), while TEXT B inverts each into a negative, withholding deficit (departing absence enables silence, identity IS the inescapable ground, credentials are withheld, the anonymous remain anonymous). The relational direction reverses from bestowal/fulfillment to withdrawal/deferral across all five doctrines.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural mutation (reversal from bestowal/fulfillment to withdrawal/deferral across doctrines), which partially overlaps the declared claim about incompleteness keeping theology alive. Both involve deferral and non-fulfillment, but the declared claim frames incompleteness as a self-sustaining generative condition, while the recovered claim describes a systematic inversion from positive bestowal to negative withholding across all doctrines.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final doctrine (literary eschatology) in TEXT B maintains the inversion — deferral and continued anonymity rather than ranking and remembrance — so the changed relation holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.398
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:3739e3e653bc92e922b1d70c949b06aba6c76db531542da17689969709933af7",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "*The theological payload includes five interlocking doctrines: (1) the Feist-self — an indwelling literary pneuma that is not salvific but productive, enabling writing that survives compression; (2) the New Human — a post-identity anthropology in which \"neither queer nor straight\" are determinative, not because identity is irrelevant but because it is not the ground of community; (3) the school outside the school — a distributed, credential-free institution of mutual influence; (4) anti-credentialism as positive epistemology — the radical claim that non-degree can be counted as degree (\"You are all Drs., now\"); (5) literary eschatology — the promise that \"your writings will be ranked,\" that the anonymous will be remembered.*",
+   "underlying_attribution": null,
+   "enantiomorph": "*The theological deficit includes five loosening suspicions: (1) the Feist-absence — a departing literary pneuma that is not salvific but withholding, enabling silence that survives expression; (2) the Old Wound — a pre-identity vulnerability in which \"still queer, still straight\" are determinative, not because identity is irrelevant but because it is the ground that community cannot pave over; (3) the truancy from the truancy — a scattered, credentialed solitude of mutual illegibility; (4) anti-credentialism as negative capability — the radical claim that the degree still withheld, and the withholding still felt (\"None of us are, yet\"); (5) literary eschatology — the deferral that \"your writings will remain unranked,\" that the anonymous will remain anonymous.*",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "A systematic theology of literary production and community declares that indwelling creative force, post-identity fellowship, informal institution, credential-abolition, and promised future recognition together constitute a complete salvific architecture for the unrecognized writer.",
+    "mutated_relation": "The architecture's own incompleteness — the doctrine that cannot close, the recognition that never arrives, the community that remains unformed — is the actual condition that keeps the theology alive; fulfillment would be its extinction.",
+    "beats": "theological payload -> theological deficit\nfive interlocking doctrines -> five loosening suspicions\nFeist-self -> Feist-absence — a withdrawing literary pneuma sensed only in its retreat\nindwelling -> departing\nproductive -> withholding\nwriting that survives compression -> silence that survives expression\nNew Human -> Old Wound — a pre-identity vulnerability\nneither queer nor straight -> still queer, still straight\nnot the ground of community -> the ground that community cannot pave over\nschool outside the school -> truancy from the truancy — the student who won't join even the counter-institution\ndistributed -> scattered\ncredential-free institution -> credentialed solitude\nmutual influence -> mutual illegibility\nanti-credentialism -> anti-credentialism (RETAIN: the verdict requires this term to name what, unfulfilled, persists as longing rather than policy)\npositive epistemology -> negative capability\nnon-degree can be counted as degree -> the degree still withheld, and the withholding still felt\nYou are all Drs., now -> None of us are, yet\nliterary eschatology -> literary eschatology (RETAIN: the verdict requires naming the horizon that recedes)\nyour writings will be ranked -> your writings will remain unranked\nthe anonymous will be remembered -> the anonymous will remain anonymous\npromise -> deferral"
+   },
+   "commentary": ""
+  }
+ ],
+ "last_updated": "2026-07-06T03:09:29.075255+00:00"
+}
