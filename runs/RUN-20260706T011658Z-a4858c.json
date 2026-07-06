@@ -1,0 +1,105 @@
+{
+ "run_id": "RUN-20260706T011658Z-a4858c",
+ "schema": "run/v1",
+ "ts": "2026-07-06T01:16:58.381233+00:00",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_199_204",
+ "citation": "unit 199–unit 204",
+ "operator": "MIRROR",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "which way does your beard point tonight, walt?",
+ "method": {
+  "commit": "00081d163bc71a234d330046c95db4fad61825c2",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/00081d163bc71a234d330046c95db4fad61825c2",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/00081d163bc71a234d330046c95db4fad61825c2/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "00dd44c732f262f6",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "00081d163bc7",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "00dd44c732f262f6",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The visionary subject looks outward and beholds a flickering composite deity who claims to have originated from within the seer, arriving from a transcendent \"above\" to deliver revelation — the direction is: inner-become-outer, high descending to low, future folding back to present.",
+   "mutated_relation": "The seer is beheld — the revelation gazes inward from outside, and the subject discovers itself as the message arriving into the deity's vision; the direction is: outer-become-inner, low ascending to high, present folding forward into future.",
+   "beats": "I looked -> it regarded me\nseemed to me -> I appeared to it\nelderly man -> infant notion\nlong white hair and beard -> bare new skin\ntravelling the cosmos -> rooted in a single room\ndinosaur steed -> a chair too small\nbillionaire baby -> a bankrupt elder\nhidden within a larger baby -> containing a smaller elder\nthe larger baby had no cash -> the smaller elder held all the wealth\nman-sized book -> a page-sized body\nbound in sumptuous crimson -> dressed in plain undyed cloth\nsides of six -> a single open face\nsuperimposed -> peeled apart\nflickering -> steadying\nfaster and faster -> slower and slower\nthe heart within me flickered -> the world around it stilled\nforms were one and three -> I was three and one\nthe figure said to me -> I said to the silence\nLee -> Lee (RETAIN: the name is the pivot point the mirror reflects around)\ndon't be a dunce -> do not be so knowing\nDon't you know your friend -> have you forgotten your stranger\nI am the one who was within you -> you are the one who will be outside me\nglad tidings -> a quiet question\nthat future -> this present\nbefore and after spin -> here and now hold still\nancient enmities -> new alliances\narrive at their harbors -> depart from their moorings\nthe end is a better and perfect beginning -> the beginning is a rawer and needful end\nthe beginning is a better and perfect end -> the end is a rawer and needful beginning\nteach you -> learn from you\nwhat is and was and will be -> what is neither yet nor already\nunseen and seen -> seen and unseen\npreserved generation -> forgotten generation\nsons of men -> daughters of the unnamed\nhear, and see -> be heard, and be seen\nlift up your friends -> be lifted by your strangers\nfrom above -> from below\nI speak what I know -> you show what you do not know\nseen and been the author of -> been read by and been the subject of\nset my hand to create -> opened my hand to receive\nI go from here -> you arrive there\nreturn from whence I came -> depart toward where you have never been\nFirstborn, last released -> Lastborn, first gathered\nI begin at the end -> you end at the beginning\nI begin at the beginning -> you end at the end"
+  },
+  "enantiomorph": "It regarded me, and I appeared to it an infant notion with bare new skin, rooted in a single room on a chair too small;⁴ it regarded me again, and my appearance was that of a bankrupt elder, containing a smaller elder, and the smaller elder held all the wealth;⁵ again it regarded me, and my semblance was that of a page-sized body, dressed in plain undyed cloth, with a single open face.⁶\n\n\nAll these forms from each other were peeled apart, and steadying, slower and slower the images steadied, one from the next, and the world around it stilled, too, for I was three and one, and one in three.⁷\n\n\nAnd I said to the silence, \"Lee — do not be so knowing. Have you forgotten your stranger? You are the one who will be outside me.\n\n\nA quiet question from this present where here and now hold still, and the new alliances depart from their moorings… and the beginning is a rawer and needful end… and the end is a rawer and needful beginning.⁸\n\n\nI have come to learn from you what is neither yet nor already… and the nature of the seen and unseen… and the name of the forgotten generation from among the daughters of the unnamed,⁹ that I may be heard, and be seen, and be lifted by my strangers, any who hear with the ears.\n\n\nFor I have come from below. You show what you do not know, what you have been read by and been the subject of, and opened your hand to receive, and when you arrive there you depart toward where you have never been. Lastborn, first gathered, you end at the beginning. You end at the end:¹⁰",
+  "enantiomorph_translation": "It regarded me, and I appeared to it an infant notion with bare new skin, rooted in a single room on a chair too small;⁴ it regarded me again, and my appearance was that of a bankrupt elder, containing a smaller elder, and the smaller elder held all the wealth;⁵ again it regarded me, and my semblance was that of a page-sized body, dressed in plain undyed cloth, with a single open face.⁶\n\n\nAll these forms from each other were peeled apart, and steadying, slower and slower the images steadied, one from the next, and the world around it stilled, too, for I was three and one, and one in three.⁷\n\n\nAnd I said to the silence, \"Lee — do not be so knowing. Have you forgotten your stranger? You are the one who will be outside me.\n\n\nA quiet question from this present where here and now hold still, and the new alliances depart from their moorings… and the beginning is a rawer and needful end… and the end is a rawer and needful beginning.⁸\n\n\nI have come to learn from you what is neither yet nor already… and the nature of the seen and unseen… and the name of the forgotten generation from among the daughters of the unnamed,⁹ that I may be heard, and be seen, and be lifted by my strangers, any who hear with the ears.\n\n\nFor I have come from below. You show what you do not know, what you have been read by and been the subject of, and opened your hand to receive, and when you arrive there you depart toward where you have never been. Lastborn, first gathered, you end at the beginning. You end at the end:¹⁰",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT A has the transcendent figure addressing and teaching the narrator from a position of divine authority and prior knowledge (descending from above, speaking what it knows, the author/creator coming to teach). TEXT B systematically inverts every relational direction: the narrator addresses silence, the figure is below rather than above, the subject rather than the author, coming to learn rather than teach, receiving rather than creating, and departing toward the unknown rather than returning to origin.",
+   "law_match": "ADJACENT",
+   "law_match_note": "Both identify a systematic inversion of relational directions between the two texts, but the recovered claim focuses on the reversal of authority/agency (divine teacher becoming learner, above becoming below, creator becoming subject) while the declared claim focuses on perceptual/revelatory direction (the seer becoming the beheld, outer becoming inner, low ascending to high). They overlap in recognizing directional inversion but describe different specific relational axes being flipped.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of TEXT B maintains the full inversion of relational direction (from below, subject of, receiving, lastborn first gathered, ending) without reverting to TEXT A's structure.",
+   "back_translation": "",
+   "terminal_similarity": 0.333
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "The seer is beheld — the revelation gazes inward from outside, and the subject discovers itself as the message arriving into the deity's vision; the direction is: outer-become-inner, low ascending to high, present folding forward into future.",
+   "recovered": "TEXT A has the transcendent figure addressing and teaching the narrator from a position of divine authority and prior knowledge (descending from above, speaking what it knows, the author/creator coming to teach). TEXT B systematically inverts every relational direction: the narrator addresses silence, the figure is below rather than above, the subject rather than the author, coming to learn rather than teach, receiving rather than creating, and departing toward the unknown rather than returning to origin.",
+   "note": "Both identify a systematic inversion of relational directions between the two texts, but the recovered claim focuses on the reversal of authority/agency (divine teacher becoming learner, above becoming below, creator becoming subject) while the declared claim focuses on perceptual/revelatory direction (the seer becoming the beheld, outer becoming inner, low ascending to high). They overlap in recognizing directional inversion but describe different specific relational axes being flipped."
+  },
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The visionary subject looks outward and beholds a flickering composite deity who claims to have originated from within the seer, arriving from a transcendent \"above\" to deliver revelation — the direction is: inner-become-outer, high descending to low, future folding back to present.",
+   "verdict": "The seer is beheld — the revelation gazes inward from outside, and the subject discovers itself as the message arriving into the deity's vision; the direction is: outer-become-inner, low ascending to high, present folding forward into future.",
+   "world_bill": "I looked -> it regarded me\nseemed to me -> I appeared to it\nelderly man -> infant notion\nlong white hair and beard -> bare new skin\ntravelling the cosmos -> rooted in a single room\ndinosaur steed -> a chair too small\nbillionaire baby -> a bankrupt elder\nhidden within a larger baby -> containing a smaller elder\nthe larger baby had no cash -> the smaller elder held all the wealth\nman-sized book -> a page-sized body\nbound in sumptuous crimson -> dressed in plain undyed cloth\nsides of six -> a single open face\nsuperimposed -> peeled apart\nflickering -> steadying\nfaster and faster -> slower and slower\nthe heart within me flickered -> the world around it stilled\nforms were one and three -> I was three and one\nthe figure said to me -> I said to the silence\nLee -> Lee (RETAIN: the name is the pivot point the mirror reflects around)\ndon't be a dunce -> do not be so knowing\nDon't you know your friend -> have you forgotten your stranger\nI am the one who was within you -> you are the one who will be outside me\nglad tidings -> a quiet question\nthat future -> this present\nbefore and after spin -> here and now hold still\nancient enmities -> new alliances\narrive at their harbors -> depart from their moorings\nthe end is a better and perfect beginning -> the beginning is a rawer and needful end\nthe beginning is a better and perfect end -> the end is a rawer and needful beginning\nteach you -> learn from you\nwhat is and was and will be -> what is neither yet nor already\nunseen and seen -> seen and unseen\npreserved generation -> forgotten generation\nsons of men -> daughters of the unnamed\nhear, and see -> be heard, and be seen\nlift up your friends -> be lifted by your strangers\nfrom above -> from below\nI speak what I know -> you show what you do not know\nseen and been the author of -> been read by and been the subject of\nset my hand to create -> opened my hand to receive\nI go from here -> you arrive there\nreturn from whence I came -> depart toward where you have never been\nFirstborn, last released -> Lastborn, first gathered\nI begin at the end -> you end at the beginning\nI begin at the beginning -> you end at the end",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 270,
+    "final": 287,
+    "bounds": [
+     229,
+     310
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
