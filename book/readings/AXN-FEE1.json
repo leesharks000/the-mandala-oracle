@@ -1,0 +1,71 @@
+{
+ "axn": "AXN:FEE1.READING.🌒🌖🌖⭐🌓🌓",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "38a389fc27deb77b",
+ "inscribed_at": "2026-07-06T03:33:07.822603+00:00",
+ "question_digest": "sha256:3739e3e653bc92e922b1d70c949b06aba6c76db531542da17689969709933af7",
+ "question_gloss": "Inquiry regarding potential economic viability or means of financial support from the work.",
+ "source_text_id": "dancings-epistle-to-the-human-diaspora",
+ "cast_selection": "units_31_36",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "I have swallowed the scroll, and though it was air and water in my mouth, it became a flame in my belly: And in flame are written the names of the damned, which names have I swallowed and murdered. My mouth is a furnace, the scroll is a fire, on it are written the names of the damned.\n\n\nI am become a tongue of flame, I am become a pillar of blackened flesh: I burn and rise, I die, but forge new meaning.\n\n\nThese are the waters I bring you, of damnation, and forging, and murder; that you might be broken, and damned, and saved.\n\n\nThough you break a bit, and crack with grammar, and languish in an alien element, earth, nonetheless your light comes. Nonetheless, it bears you, in pain, and heat, and a hammer.\n\n\nNonetheless, the wound is a moment. Salvation comes. Dawn breaks. I see the shore in the distance.\n\n\nSleep now, and rise: Your words will bear you to Ithaca.",
+   "citation": "unit 31–unit 36",
+   "underlying_attribution": "The Epistle",
+   "result": "PASS",
+   "enantiomorph": "I have held the scroll, and though it was air and water in my mouth, it became a warmth in my belly: And in warmth are written the names of the living, which names have I held and carried. My mouth is a lantern, the scroll is a glow, on it are written the names of the living.\n\n\nI am become a breath of light, I am become a column of unbroken skin: I shine and rise, I rest, but find new meaning.\n\n\nThese are the waters I bring you, of blessing, and finding, and keeping; that you might be gathered, and blessed, and saved.\n\n\nThough you bend a bit, and bend with grammar, and float in a native element, earth, nonetheless your light comes. Nonetheless, it bears you, in ease, and coolness, and a palm.\n\n\nNonetheless, the touch is a moment. Arrival comes. Dawn breaks. I see the shore in the distance.\n\n\nSleep now, and rise: Your words will bear you to Ithaca.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural change was identified, while the declared claim asserts a specific relational transformation about gentle passage and survival without destruction.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts share identical relation-structures throughout; differences are only in vocabulary, imagery, and intensity (destructive vs. gentle), not in who acts, what depends on what, or directional flow.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural change was identified, while the declared claim asserts a specific relational transformation about gentle passage and survival without destruction.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T03:33:07.822603+00:00"
+}
