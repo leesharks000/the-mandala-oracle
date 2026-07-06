@@ -1,0 +1,66 @@
+name: Rebuild Routing Surface
+
+# Rebuilds routing/*.jsonl and routing/manifest.json whenever the book/
+# substrate changes (auto-appended conversations, readings, expansions).
+# Runs routing/build.py which is pure-stdlib and stateless.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'book/data/**'
+      - 'book/readings/**'
+      - 'book/expansions/**'
+      - 'routing/build.py'
+      - '.github/workflows/rebuild-routing.yml'
+
+  # Manual trigger for on-demand rebuilds or repairs.
+  workflow_dispatch:
+
+  # Nightly safety net in case pushes ever slip through the path filters.
+  schedule:
+    - cron: '17 4 * * *'
+
+permissions:
+  contents: write  # commit regenerated routing/* back to the repo
+
+# Cancel a superseded run so bursts of appends don't queue redundant work.
+concurrency:
+  group: rebuild-routing
+  cancel-in-progress: true
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Rebuild routing surface
+        run: |
+          python3 routing/build.py
+
+      - name: Commit updated routing indexes
+        run: |
+          git config user.name  "mandala-routing-bot"
+          git config user.email "mandala-routing-bot@users.noreply.github.com"
+          git add routing/conversations.jsonl \
+                  routing/readings.jsonl \
+                  routing/casts.jsonl \
+                  routing/sources.jsonl \
+                  routing/manifest.json
+          if git diff --cached --quiet; then
+            echo "No changes to routing indexes; nothing to commit."
+            exit 0
+          fi
+          # Extract counts for a concise commit message
+          COUNTS=$(python3 -c "import json;m=json.load(open('routing/manifest.json'));c=m['counts'];print(f'{c[\"conversations\"]}c/{c[\"readings\"]}r/{c[\"casts\"]}t/{c[\"sources\"]}s')")
+          git commit -m "routing: auto-rebuild ($COUNTS) [skip ci]"
+          git push
