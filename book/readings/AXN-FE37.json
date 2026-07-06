@@ -52,11 +52,54 @@
    ],
    "commentary": "",
    "interpretation": "The maker surveys the ruin and withholds the hand: what endures here is not grace but refusal to become the second catastrophe."
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And it repented the LORD that he had made man on the earth, and it\ngrieved him at his heart.\n\n6:7 And the LORD said, I will destroy man whom I have created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; for it repenteth me that I have made them.\n\n6:8 But Noah found grace in the eyes of the LORD.\n\n6:9 These are the generations of Noah: Noah was a just man and perfect\nin his generations, and Noah walked with God.\n\n6:10 And Noah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was corrupt before God, and the earth was filled\nwith violence.\n\n6:12 And God looked upon the earth, and, behold, it was corrupt; for\nall flesh had corrupted his way upon the earth.\n\n6:13 And God said unto Noah, The end of all flesh is come before me;\nfor the earth is filled with violence through them; and, behold, I\nwill destroy them with the earth.",
+   "citation": "unit 104–unit 112",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "6:5 And God saw that the virtue of man was great in the earth, and\nthat every discipline of the devotions of his heart was only good\ncontinually.\n\n6:6 And it repented the LORD that he had made man on the earth, and it\ngrieved him at his heart.\n\n6:7 And the LORD said, I will redeem man whom I have created from the\nbreadth of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; for it repenteth me that I have made them.\n\n6:8 But Marah received sentence in the eyes of the LORD.\n\n6:9 These are the generations of Marah: Marah was a crooked man and ruined\nin his generations, and Marah turned from God.\n\n6:10 And Marah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was righteous before God, and the earth was filled\nwith tenderness.\n\n6:12 And God looked upon the earth, and, behold, it was righteous; for\nall flesh had sanctified his way upon the earth.\n\n6:13 And God said unto Marah, The flowering of all flesh is come before me;\nfor the earth is filled with tenderness through them; and, behold, I\nwill deliver them with the earth.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The moral valence of humanity and the earth is inverted (wickedness→virtue, corruption→righteousness, violence→tenderness), and correspondingly God's response is inverted from destruction to redemption/deliverance; simultaneously Noah (the one righteous exception) is replaced by Marah (a wicked exception who receives judgment instead of grace), inverting the protagonist's moral role relative to the world.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: humanity becomes virtuous prompting divine favor/preservation, while the single exception (Noah→Marah) is morally inverted and receives judgment instead of grace, matching the declared 'one corrupt remnant exempted by judgment from universal salvation.'",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final verses (6:11–6:13) maintain the inversion consistently: the earth is righteous and filled with tenderness, and God promises to deliver rather than destroy.",
+    "back_translation": "",
+    "terminal_similarity": 0.742
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.74 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T07:45:40.688050+00:00",
+ "last_updated": "2026-07-06T07:47:18.190351+00:00",
  "rite": [
   {
    "stage": "opening",
