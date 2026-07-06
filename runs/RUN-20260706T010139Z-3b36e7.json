@@ -1,0 +1,138 @@
+{
+ "run_id": "RUN-20260706T010139Z-3b36e7",
+ "schema": "run/v1",
+ "ts": "2026-07-06T01:01:39.486719+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "00081d163bc71a234d330046c95db4fad61825c2",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/00081d163bc71a234d330046c95db4fad61825c2",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/00081d163bc71a234d330046c95db4fad61825c2/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "00dd44c732f262f6",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "00081d163bc7",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "00dd44c732f262f6",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Destruction is precisely appointed and overwhelmingly scaled; the killing force is unleashed at its exact hour upon a fixed fraction of humanity, and its agents are monstrous beyond nature — fire-breathing, lion-headed, armored in elemental violence.",
+   "mutated_relation": "The appointed hour arrives and the overwhelming force assembles — yet the killing is not exacted; the monstrous host stands ready and does not strike.",
+   "beats": "ἐλύθησαν (were loosed) -> ἐκρατήθησαν (were held back)\nἀποκτείνωσιν (that they might kill) -> φείσωνται (that they might spare)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ τρίτον τῶν ἀνθρώπων (RETAIN: the fraction must remain to register what was not taken)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες ἄγγελοι (RETAIN: the peril's agents unchanged, only unconsummated)\nἡτοιμασμένοι (having been prepared) -> ἡτοιμασμένοι (RETAIN: the readiness itself is the tension of the shadow)\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (RETAIN: the exactness of the appointment is what makes the restraint miraculous)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> στρατευμάτων τοῦ ἱππικοῦ (RETAIN: the overwhelming scale must remain to show what did not move)\nδισμυριάδες μυριάδων (twice ten thousand times ten thousand) -> δισμυριάδες μυριάδων (RETAIN: the number is the weight of the withheld blow)\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> ἤκουσα τὴν σιγὴν αὐτῶν (I heard their silence)\nἵππους (horses) -> ἵππους (RETAIN: the vision's beasts unchanged, only stilled)\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> καθημένους ἐπ' αὐτῶν (RETAIN: the riders seated, unmoving)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire and hyacinth and brimstone) -> θώρακας ἀμαυροὺς καὶ ψυχροὺς καὶ σβεσθέντας (breastplates dimmed and cold and quenched)\nκεφαλαὶ λεόντων (heads of lions) -> στόματα κεκλεισμένα (mouths shut fast)\nἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and brimstone proceed) -> οὐδὲν ἐξῆλθεν (nothing came forth)\nἐν τῇ ὁράσει (in the vision) -> ἐν τῇ ὁράσει (RETAIN: the seeing unchanged, only what is seen transformed)"
+  },
+  "enantiomorph": "**9:15** καὶ ἐκρατήθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα φείσωνται τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὴν σιγὴν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας ἀμαυροὺς καὶ ψυχροὺς καὶ σβεσθέντας· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς στόματα κεκλεισμένα, καὶ ἐκ τῶν στομάτων αὐτῶν οὐδὲν ἐξῆλθεν.",
+  "enantiomorph_translation": "**9:15** And the four angels were held back, those having been prepared for the hour and day and month and year, that they might spare a third of humanity.\n\n**9:16** And the number of the armies of cavalry was twice ten thousand times ten thousand; I heard their silence.\n\n**9:17** And thus I saw the horses in the vision and those seated upon them, having breastplates dimmed and cold and quenched; and the heads of the horses were as mouths shut fast, and from their mouths nothing came forth.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the four angels are released (ἐλύθησαν) in order to kill (ἀποκτείνωσιν) a third of mankind, and the vision depicts destructive outpouring (fire, smoke, brimstone from lions' mouths). In Text B the angels are restrained (ἐκρατήθησαν) in order to spare (φείσωνται) a third of mankind, and the vision depicts suppression and silence (cold/extinguished breastplates, closed mouths, nothing coming forth).",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: the prepared destructive force (angels/host assembled at the appointed hour) is held back rather than unleashed, changing the act from killing to sparing.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B maintains the reversed relation of restraint/suppression rather than reverting to destruction.",
+   "back_translation": "",
+   "terminal_similarity": 0.571
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "50% of non-RETAIN source lemmas survive verbatim (εἶδον, θώρακας, κεφαλαὶ, οὕτως, στομάτων, τοὺς…) -- the bill was not honored"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: hour"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Destruction is precisely appointed and overwhelmingly scaled; the killing force is unleashed at its exact hour upon a fixed fraction of humanity, and its agents are monstrous beyond nature — fire-breathing, lion-headed, armored in elemental violence.",
+   "verdict": "The appointed hour arrives and the overwhelming force assembles — yet the killing is not exacted; the monstrous host stands ready and does not strike.",
+   "world_bill": "ἐλύθησαν (were loosed) -> ἐκρατήθησαν (were held back)\nἀποκτείνωσιν (that they might kill) -> φείσωνται (that they might spare)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ τρίτον τῶν ἀνθρώπων (RETAIN: the fraction must remain to register what was not taken)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες ἄγγελοι (RETAIN: the peril's agents unchanged, only unconsummated)\nἡτοιμασμένοι (having been prepared) -> ἡτοιμασμένοι (RETAIN: the readiness itself is the tension of the shadow)\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (RETAIN: the exactness of the appointment is what makes the restraint miraculous)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> στρατευμάτων τοῦ ἱππικοῦ (RETAIN: the overwhelming scale must remain to show what did not move)\nδισμυριάδες μυριάδων (twice ten thousand times ten thousand) -> δισμυριάδες μυριάδων (RETAIN: the number is the weight of the withheld blow)\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> ἤκουσα τὴν σιγὴν αὐτῶν (I heard their silence)\nἵππους (horses) -> ἵππους (RETAIN: the vision's beasts unchanged, only stilled)\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> καθημένους ἐπ' αὐτῶν (RETAIN: the riders seated, unmoving)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire and hyacinth and brimstone) -> θώρακας ἀμαυροὺς καὶ ψυχροὺς καὶ σβεσθέντας (breastplates dimmed and cold and quenched)\nκεφαλαὶ λεόντων (heads of lions) -> στόματα κεκλεισμένα (mouths shut fast)\nἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and brimstone proceed) -> οὐδὲν ἐξῆλθεν (nothing came forth)\nἐν τῇ ὁράσει (in the vision) -> ἐν τῇ ὁράσει (RETAIN: the seeing unchanged, only what is seen transformed)",
+   "bill_audit": {
+    "unbilled": [
+     "εἶδον",
+     "οὕτως",
+     "στομάτων",
+     "τοὺς",
+     "ἔχοντας",
+     "ἵππων"
+    ],
+    "retain_over_budget": true,
+    "retain_budget": 5,
+    "repaired": false
+   },
+   "retained": [
+    "δισμυριάδες",
+    "καθημένους",
+    "μυριάδων",
+    "μῆνα",
+    "στρατευμάτων",
+    "τέσσαρες",
+    "τρίτον",
+    "ἀνθρώπων",
+    "ἄγγελοι",
+    "ἐνιαυτόν",
+    "ἡμέραν",
+    "ἡτοιμασμένοι",
+    "ἱππικοῦ",
+    "ἵππους"
+   ],
+   "word_count": {
+    "source": 74,
+    "final": 70,
+    "bounds": [
+     62,
+     85
+    ]
+   },
+   "identity_rate": 0.5,
+   "surviving_lemmas": [
+    "εἶδον",
+    "θώρακας",
+    "κεφαλαὶ",
+    "οὕτως",
+    "στομάτων",
+    "τοὺς",
+    "ἀριθμὸς",
+    "ἔχοντας",
+    "ἤκουσα",
+    "ἵππων"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
