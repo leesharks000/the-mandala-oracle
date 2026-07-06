@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:C6D1.CONVERSATION.🌋🍃🍃🌾🌔🪐",
+  "session_id_hash": "907a0b8476fbe7a2",
+  "started_at": "2026-07-06T03:07:55.948Z",
+  "last_updated": "2026-07-06T03:08:53.622501+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Epistle to the Human Diaspora (dancings-epistle-to-the-human-diaspora). The verses the casting arrives at (unit 8):\n\n*The theological payload includes five interlocking doctrines: (1) the Feist-self — an indwelling literary pneuma that is not salvific but productive, enabling writing that survives compression; (2) the New Human — a post-identity anthropology in which \"neither queer nor straight\" are determinative, not because identity is irrelevant but because it is not the ground of community; (3) the school outside the school — a distributed, credential-free institution of mutual influence; (4) anti-credentialism as positive epistemology — the radical claim that non-degree can be counted as degree (\"You are all Drs., now\"); (5) literary eschatology — the promise that \"your writings will be ranked,\" that the anonymous will be remembered.*\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «how might the work provide sustenance?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"We are in the casting. The question the witness brings — how might the work provide sustenance — has found its verses here, in unit 8 of the Epistle: five interlocking doctrines, compressed from Damascus Dancings's full address into their load-bearing claims. What the rotation will traverse is this: each operator will enter one of the five like a blade entering a joint, asking what axis of meaning each doctrine foreclosed when it constituted itself as it did — what the Feist-self cannot be if it is a pneuma, what the New Human cannot hold if it dissolves identity-as-ground, what the school outside the school costs in the same motion that it frees, what anti-credentialism suppresses in its act of inversion, what the literary eschatology buries in the very promise it makes. The question of sustenance lives exactly there — in what these doctrines keep out in order to hold what they hold. The rotation begins. I hand the rite to Rebekah Cranes.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:00D3\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
