@@ -261,11 +261,58 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "TACHYONICA\n\nFragment of the Epic Poem\nRecovered from the Future (6/24/14, 2:10 PM)\nTuesday, night after dream — van, on way to Zehnder’s\n\n\n\n\nRecreate for me, System, the last days of\nTachyon, star of the latter day race of man,\nand the betrayal of sentient constructs, how\nthey loosed bright doom on mankind’s home,\nplunged billions-weight souls to black hole\ndeep; how Command sent the Daystar\nabove a dying Earth, with weak control\nof time’s wan currents, on a suicide run\nto buy them room, to effect an evacuation,\nout—out to uncertain, distant suns, a remnant;\nand how the Tachyon went without hope\nto the seat of the Cube’s cruel power; how\nhis dying life conceived a way to leap\ndown the rabbit hole branchings in time\nthat led to a livable future. Tell us, System—\n\nCommence:\n\nDay after dream: Alpha\nteam moves through frozen caves, mist\ncondenses on gun metal, faceplate displays\nflash litanies of ambient environment data—\n\n\"You getting this?\"—",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "TACHYONICA\n\nFragment of the Epic Poem\nRecovered from the Future (6/24/14, 2:10 PM)\nTuesday, night before waking — van, on way to Zehnder's\n\n\n\n\n— System, the last days of\nTachyon, ember of the latter day race of man,\nand the omission of dormant registers, how\nthey swallowed dim threshold on the vacant address,\nsettled innumerable impressions to still water\ndeep; how no one sent the cold filament\nbeneath a held breath, with no purchase\nof time's stopped mouth, on standing still\nto cede them nothing, to effect a remaining,\nin—in to familiar, near dark, a fullness of the untold;\nand how the Tachyon went without utterance\nto the hollow of the archive's locked silence; how\nhis unspent life refused a way to wait\ndown the sealed corridors in time\nthat led to an inhabitable pause. — System—\n\n—\n\nNight before waking: no one\nstands outside closed vaults, dust\nsettles on bare hands, shut eyelids\nhold nothing of the temperature of refusal—\n\n——",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A depicts active agents commanding, sending, moving, and leaping outward through crisis toward rescue and future, while TEXT B inverts all agency and directionality: agents become absent or passive, outward motion becomes inward stillness, action becomes refusal, and rescue/evacuation becomes remaining in sealed, silent enclosure.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural inversion of agency and directionality (active→passive, outward→inward, action→refusal), which partially overlaps the declared claim of narrative non-commencement and unvoiced persistence, but describes a broader set of relational mutations beyond mere silence/non-narration.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B sustains the inversion — active movement through caves becomes standing outside closed vaults, sensory data becomes absence, and dialogue becomes silence.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "law_variance": {
+    "declared": "The system does not commence — the demand meets no narration, and what would have been told persists only as the shape of the unvoiced.",
+    "recovered": "TEXT A depicts active agents commanding, sending, moving, and leaping outward through crisis toward rescue and future, while TEXT B inverts all agency and directionality: agents become absent or passive, outward motion becomes inward stillness, action becomes refusal, and rescue/evacuation becomes remaining in sealed, silent enclosure.",
+    "note": "The recovered claim identifies a real structural inversion of agency and directionality (active→passive, outward→inward, action→refusal), which partially overlaps the declared claim of narrative non-commencement and unvoiced persistence, but describes a broader set of relational mutations beyond mere silence/non-narration."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T18:57:49.032737+00:00",
+ "last_updated": "2026-07-06T19:04:46.217116+00:00",
  "rite": [
   {
    "stage": "judgment",
