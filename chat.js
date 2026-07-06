@@ -1114,15 +1114,21 @@ async function runCastingRite(cast) {
     return 'en';
   }
 
-  const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
-          el.querySelector('.message-content').style.whiteSpace = 'pre-wrap';
+  const _langForCranes = _sourceLanguage(cast && cast.sourceId);
+          const _isEn = _langForCranes === 'en';
+          const el = appendHeteronymMessage('Rebekah Cranes', '');
+          const _mc = el.querySelector('.message-content');
+          if (_isEn) {
+            _renderPassageInto(_mc, transform.primary_output || '');
+          } else {
+            _mc.style.whiteSpace = 'pre-wrap';
+            _mc.textContent = transform.primary_output || '';
+          }
           {
             const facing = (transform.enantiomorph_translation || '').trim();
-            const cast = (transform.primary_output || '').trim();
-            const lang = _sourceLanguage(cast && cast.sourceId);
-            const isEnglishSource = lang === 'en';
-            const echoesCast = facing && cast && facing === cast;
-            if (facing && !isEnglishSource && !echoesCast) {
+            const castText = (transform.primary_output || '').trim();
+            const echoesCast = facing && facing === castText;
+            if (facing && !_isEn && !echoesCast) {
               const face = document.createElement('div');
               face.style.whiteSpace = 'pre-wrap';
               face.style.opacity = '.62';
