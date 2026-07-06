@@ -712,8 +712,67 @@
     }
    },
    "commentary": "The source appraises a woman's life from outside, at its two thresholds, and finds sweetness precisely where a man takes her up — at the altar and at the bier, she is twice the borne object of another's act. SHADOW rotates the bearing's direction: the borne becomes the bearer. What the epigram forecloses is the undated middle — the days with no ceremony, no man arriving to carry anything off. There the woman is not lifted but lifting, and the metric flips from sweetness (delectation of the appraiser) to weight (endured by the carrier). Every image sits at the mirror coordinate: the two festal thresholds become two unwitnessed labors; \"carry her corpse away\" (someone lifts her burden at the end) becomes \"no one comes to lift it from her\" (the discharge that never arrives). Non-superimposable — the source's proprietary sweetness cannot be recovered from a text about weight no one relieves — yet in contact at every beat. The bearing-cost encoded by the utterance is the life it valued only at its handles."
+  },
+  {
+   "transform_id": "TX-0d3f63cd",
+   "cast_at": "2026-07-06T02:31:23.555337+00:00",
+   "reading_axn": "AXN:FE12.READING.🌓💫🌔🌑🌗🌖",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_34_36",
+    "citation": "unit 34–unit 36",
+    "start_unit": 34,
+    "end_unit": 36,
+    "unit_labels": [
+     "unit 34",
+     "unit 35",
+     "unit 36"
+    ]
+   },
+   "operator": "BRIDE",
+   "operator_axis": "relational-affect-axis — the consecrative possibility the source's contestation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Text B systematically inverts the relational valence: hostility, arrogance, complaint, and repulsion in Text A become devotion, binding commitment, loyalty, and intimacy in Text B — antagonistic or distancing relations between persons are replaced by bonding or pledging relations.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: hostile/denouncing speech acts become binding/pledging acts — accusations become declarations of commitment, insults become ceremonies of bonding.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final section (Day and Night 36) maintains the inversion: 'let you' becomes 'lose you,' 'bitch' becomes 'darling,' 'mist of dew' becomes 'breath of one mouth' — the bonding relation holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.575
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:92c97bbd3e58de35459865fc36013ac3b30b31dd2d5c481d53bb1c33e95cfc48",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "Day and Night 34\n\n> *Sappho 44b*\n>\n> The Muses' shining\n>\n> gifts make the Charites\n>\n> slender: don't forget the anger\n>\n> that mortals share\n\nDay and Night 35\n\n> *Sappho 7*\n>\n> Doricha orders,\n>\n> arrogance like a teenage\n>\n> boy\n>\n> *Sappho 15*\n>\n> Cyprian,\n>\n> don't let Doricha get stuck on herself,\n>\n> saying she came -- not once --\n>\n> but twice to the arms\n>\n> of her aching desire.\n>\n> Let her discover how bitter\n>\n> barbed you are.\n>\n> *Sappho 91*\n>\n> I've never met such an awful\n>\n> pest as you, Irana\n\nDay and Night 36\n\n> *Sappho 71*\n>\n> but how could I let you, Mica?\n>\n> you wanted to make friends\n>\n> with those Penthilus girls, and you really are\n>\n> a bitch.\n>\n> *our* honey song\n>\n> singing soft-voiced:\n>\n> everything,\n>\n> a mist of dew...",
+   "underlying_attribution": null,
+   "enantiomorph": "Day and Night 34\n\n> *Sappho 44b*\n>\n> The witnesses' rings\n>\n> exchanged make the betrothed\n>\n> bound: hold fast to the troth\n>\n> that lovers pledge\n\nDay and Night 35\n\n> *Sappho 7*\n>\n> Doricha promises,\n>\n> devotion like a new\n>\n> bride\n>\n> *Sappho 15*\n>\n> Cyprian,\n>\n> let Doricha turn only toward me,\n>\n> saying she came -- not once --\n>\n> but twice to the arms\n>\n> of her kept promise.\n>\n> Let her discover how sweet\n>\n> close you are.\n>\n> *Sappho 91*\n>\n> I have always known such a fierce\n>\n> companion as you, Irana\n\nDay and Night 36\n\n> *Sappho 71*\n>\n> but how could I lose you, Mica?\n>\n> you wanted to give yourself\n>\n> to those strangers, and you really are\n>\n> a darling.\n>\n> *our* honey song\n>\n> singing soft-voiced:\n>\n> everything,\n>\n> a breath of one mouth...",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Love among women is a field of fierce possession: intimacy generates hierarchy, betrayal is choosing another circle, and tenderness survives only as the residue of accusation — relation is sustained through its denunciation.",
+    "mutated_relation": "The denunciation as the vow itself — every accusation a declaration of binding, every insult the ceremony that consummates the bond it claims to refuse.",
+    "beats": "Muses -> witnesses\nshining gifts -> rings exchanged\nCharites -> the betrothed\nslender -> bound\ndon't forget -> hold fast to\nanger -> troth\nmortals -> lovers\nshare -> pledge\nDoricha -> Doricha (RETAIN: the verdict requires the named beloved as the one addressed in covenant)\norders -> promises\narrogance -> devotion\nteenage boy -> new bride\nCyprian -> Cyprian (RETAIN: the divine officiant of relational binding must remain)\ndon't let -> let\nget stuck on herself -> turn only toward me\nsaying she came -> saying she came (RETAIN: the arrival is now consummated approach, not vain boast)\nnot once -> not once\nbut twice -> but twice (RETAIN: repetition becomes renewal of vow)\narms -> arms (RETAIN: the verdict's embrace requires the same limbs)\naching desire -> kept promise\nbitter -> sweet\nbarbed -> close\nnever met -> have always known\nawful pest -> fierce companion\nIrana -> Irana (RETAIN: the named intimate must persist as the one bound)\nhow could I let you -> how could I lose you\nMica -> Mica (RETAIN: the accused beloved is the one being wed)\nwanted to make friends -> wanted to give yourself\nPenthilus girls -> strangers\nbitch -> darling\nour honey song -> our honey song (RETAIN: the verdict locates the covenant in shared song)\nsinging soft-voiced -> singing soft-voiced (RETAIN: tenderness is the ceremony's own register)\neverything -> everything (RETAIN: totality is the vow's scope)\nmist of dew -> breath of one mouth"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-03T07:57:54.625533+00:00",
+ "last_updated": "2026-07-06T02:31:23.555337+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
