@@ -1,0 +1,138 @@
+{
+ "run_id": "RUN-20260706T001308Z-2ec5e3",
+ "schema": "run/v1",
+ "ts": "2026-07-06T00:13:08.675042+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "getting very tired of this. it is advanced mad libs. an eight grader could do it. get it right.",
+ "method": {
+  "commit": "00f2c58e82d1d0583b4a8399b83de697abd84681",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/00f2c58e82d1d0583b4a8399b83de697abd84681",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/00f2c58e82d1d0583b4a8399b83de697abd84681/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "faae0257145199c0",
+  "prompt_method": "abduct/v3 (full-transform; source-absent bloom; compressed to form ±15%; identity-rate metered)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": [
+   "sappho+BRIDE",
+   "dream+BRIDE",
+   "dream+FLAME"
+  ]
+ },
+ "code": "00f2c58e82d1",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "faae0257145199c0",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "Speech held back long enough becomes a body inside the body, and when it finally moves through the throat it does not leave the speaker intact but kills the specific silence it once was — so that utterance is not expression but an irreversible organic cost, a portion of interior territory permanently altered by what passed through it.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:15** καὶ διελύθησαν αἱ τέσσαρεϛ ἡσυχίαι αἱ ἡτοιμασμέναι εἰς τὴν παῦσιν τῆς ὥρας καὶ τὴν πτοίαν τῆς ἡμέρας καὶ τὸν μῆνα τῆς κατηγορίας καὶ τὸ ἔτος τῆς σιωπῆς, ἵνα ἀποσφραγίσωσιν τὸ μέρος τοῦ λαλοῦντος τὸ ἤδη συγκατατεθειμένον ἀποθανεῖν ἐν τῇ λαλιᾷ.\n\n**9:16** καὶ τὸ πλῆθος τῶν προτάσεων τοῦ λαιμοῦ δὶς μύριαι μυριάδες· ἔγνων τὸ πλῆθος αὐτῶν ὡς σφυγμὸν ἐν ὠτὶ καιομένῳ.\n\n**9:17** καὶ ὧδε ἐθεασάμην τὰ βαστάγματα καὶ τοὺϛ ἐπικαθημένους ἐπ' αὐτῶν, φοροῦντας θώρακαϛ φλεγμονῆς καὶ πελιδνοὺς καὶ θειώδειϛ· καὶ αἱ κεφαλαὶ τῶν βασταγμάτων ὡς λεόντειαι, καὶ ἐκ τῶν ἀνοιγμάτων αὐτῶν ἐξεπορεύετο καῦσις καὶ ἐπισκότησις καὶ τὸ κατάλοιπον τοῦ θείου.",
+  "enantiomorph_translation": "**9:15** And the four hesitations were dissolved — those readied for the hour's pause and the day's flinch and the month of accusation and the year of silence — so that they might unseal the portion of the speaker that had already agreed to die in the saying.\n\n**9:16** And the multitude of the sentences of the throat was twice ten thousand of ten thousands; I knew their multitude as a pulse in a burning ear.\n\n**9:17** And so I beheld the bearings and those sitting upon them, wearing breastplates of inflammation and bruise-blue and sulfurous; and the heads of the bearings were as lions', and from their openings came burning and obscuring and the residue of sulfur.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (abductive v3; bloom source-absent; compressed to form; reversion-metered)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The agents of destruction (four angels releasing cavalry to kill a third of humanity) are replaced by four 'silences' that seal the speech of those already consenting to die — the direction reverses from external violent killing to an internal sealing/suppression of voice, and the military agency (armies, horses) becomes abstract carriers ('propositions of the throat,' 'burdens') acting on language rather than on people.",
+   "law_match": "ADJACENT",
+   "law_match_note": "Both involve internalized destruction through suppressed speech/silence, but the declared claim focuses on utterance as irreversible organic cost to the speaker, while the recovered claim describes a reversal from external killing agents to internal sealing of voice with agency shifted from military forces to abstract linguistic carriers — related structural territory but different specific relational changes.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of TEXT B maintains the changed relation: horses become 'burdens,' mouths become 'openings,' and fire/smoke/sulfur become 'burning/darkening/residue of sulfur' — the relational shift from martial destruction to suppression of voice persists.",
+   "back_translation": "",
+   "terminal_similarity": 0.163
+  },
+  "advisories": [
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 97 words vs budget 62-85 (source 74)"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "Speech held back long enough becomes a body inside the body, and when it finally moves through the throat it does not leave the speaker intact but kills the specific silence it once was — so that utterance is not expression but an irreversible organic cost, a portion of interior territory permanently altered by what passed through it.",
+   "recovered": "The agents of destruction (four angels releasing cavalry to kill a third of humanity) are replaced by four 'silences' that seal the speech of those already consenting to die — the direction reverses from external violent killing to an internal sealing/suppression of voice, and the military agency (armies, horses) becomes abstract carriers ('propositions of the throat,' 'burdens') acting on language rather than on people.",
+   "note": "Both involve internalized destruction through suppressed speech/silence, but the declared claim focuses on utterance as irreversible organic cost to the speaker, while the recovered claim describes a reversal from external killing agents to internal sealing of voice with agency shifted from military forces to abstract linguistic carriers — related structural territory but different specific relational changes."
+  },
+  "commentary": "The transformation costs the text its ability to remain parable; every figure must now pay in tissue what it once paid in symbol, and the distance that allowed the speaker to report rather than suffer collapses entirely.",
+  "post_mortem": null,
+  "skeleton": {
+   "draft": "And the four preparations dissolved — not angels loosed but hesitations finally spent, each one the cost of holding a sentence back: the hour's pause, the day's flinch, the month of swallowed accusation, the year of knowing and not saying. They had been readied not to kill a third of the living but to unseal the portion of the speaker that had already agreed to die in the saying.\n\nAnd the number of what rode forward was uncountable not as cavalry but as every prior silence that had massed behind the throat — twice ten thousand of ten thousands, and I heard their number the way one hears one's own pulse in a burning ear: not information but evidence of what it costs the vessel to carry revelation without spilling.\n\nAnd so I saw what bore them and what sat upon what bore them, and neither was horse nor rider but the weight a declaration places on the body that makes it — wearing breastplates of the inflammation that comes from speaking too precisely, of the bruise-blue that rises where certainty presses against doubt, of the sulfur-smell the mouth carries after it has pronounced a thing it cannot retract. And the heads of these bearings were as the heads of lions not because they devoured but because they opened without hesitation, and from their openings came forth not fire and smoke and brimstone but the triple expenditure: the burning that is the sentence leaving, the obscuring that is what the speaker can no longer see of herself after, and the brimstone that is the permanence — the residue that tells her she has been used, that the utterance rode her and she cannot now unsay what galloped through.",
+   "bloom": "And the four hesitations dissolved — not restraints loosened but silences finally spent, each one the cost of holding a sentence back: the hour's pause, the day's flinch, the month of swallowed accusation, the year of knowing and not saying. They had been readied not to destroy but to unseal the portion of the speaker that had already agreed to die in the saying. And when they spent themselves the throat opened not as a gate but as a wound that had been pressure for so long it had forgotten it was closed.\n\nAnd what rode forward through that opening was uncountable not as an army but as every prior silence that had massed behind the throat and now became motion — twice ten thousand of ten thousands, each one a sentence that had thickened during its years of withholding until it had grown heavier than the body carrying it. And I heard their number the way one hears one's own pulse in a burning ear: not information but evidence of what it costs the vessel to carry speech without spilling it, and the hearing itself was a kind of spilling, the pulse breaking through into the place where counting fails because the body has become the thing it counts.\n\nAnd so I saw what bore them and what sat upon what bore them: the weight a declaration places on the body that makes it, and the body buckling forward underneath that weight, and neither could be separated from the other because the bearing was the being borne. They wore breastplates of the inflammation that comes from speaking too precisely, of the bruise-blue that rises where certainty presses against doubt until both capillaries burst, of the sulfur-taste the mouth carries after it has pronounced a thing it cannot retract. And the taste did not leave. It settled into the soft tissue and became the mouth's new lining, so that every word spoken after tasted of the one that had broken through.\n\nAnd the heads of these bearings opened as the heads of lions open — not because they devoured but because they opened without hesitation, and from their openings came the triple expenditure the throat had always owed: the burning that is the sentence leaving the place where it was held, which chars the walls that held it; the obscuring that is what the speaker can no longer see of herself after, because the sentence took with it the last interior wall she could stand behind; and the residue — that sulfur-permanence — which tells her she has been used, that the utterance rode her and not she it, that what galloped through left hoofmarks in the only ground she owns, and she cannot now walk that ground without stepping where the saying passed. And a third of her silence died in this way. Not a third of the living but a third of the not-yet-spoken, which had been alive only in its withheld state and which, once released, could not be returned to the lung, because the lung had already closed behind it like water behind a fallen stone.",
+   "self_recovered_law": "Speech held back long enough becomes a body inside the body, and when it finally moves through the throat it does not leave the speaker intact but kills the specific silence it once was — so that utterance is not expression but an irreversible organic cost, a portion of interior territory permanently altered by what passed through it.",
+   "exemplars": [
+    "sappho+BRIDE",
+    "dream+BRIDE",
+    "dream+FLAME"
+   ],
+   "word_count": {
+    "source": 74,
+    "final": 97,
+    "bounds": [
+     62,
+     85
+    ]
+   },
+   "identity_rate": 0.056,
+   "identity_rate_pre_repair": 0.694,
+   "reintroduced_by_compression": [
+    "δισμυριάδες",
+    "εἶδον",
+    "θειώδεις",
+    "θεῖον",
+    "θώρακας",
+    "καθημένους",
+    "κεφαλαὶ",
+    "λεόντων",
+    "μυριάδων",
+    "μῆνα",
+    "οὕτως",
+    "στομάτων",
+    "τέσσαρες",
+    "τοὺς",
+    "τρίτον",
+    "ἀριθμὸν",
+    "ἀριθμὸς",
+    "ἐκπορεύεται",
+    "ἐλύθησαν",
+    "ἐνιαυτόν"
+   ],
+   "repair_applied": true,
+   "surviving_lemmas": [
+    "κεφαλαὶ",
+    "μῆνα"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
