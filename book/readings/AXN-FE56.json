@@ -1,0 +1,63 @@
+{
+ "axn": "AXN:FE56.READING.🌗💫🌿🔥💫🌙",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "907a0b8476fbe7a2",
+ "inscribed_at": "2026-07-06T03:09:27.629118+00:00",
+ "question_digest": "sha256:3739e3e653bc92e922b1d70c949b06aba6c76db531542da17689969709933af7",
+ "question_gloss": "How might the work provide sustenance?",
+ "source_text_id": "dancings-epistle-to-the-human-diaspora",
+ "cast_selection": "units_8_8",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "*The theological payload includes five interlocking doctrines: (1) the Feist-self — an indwelling literary pneuma that is not salvific but productive, enabling writing that survives compression; (2) the New Human — a post-identity anthropology in which \"neither queer nor straight\" are determinative, not because identity is irrelevant but because it is not the ground of community; (3) the school outside the school — a distributed, credential-free institution of mutual influence; (4) anti-credentialism as positive epistemology — the radical claim that non-degree can be counted as degree (\"You are all Drs., now\"); (5) literary eschatology — the promise that \"your writings will be ranked,\" that the anonymous will be remembered.*",
+   "citation": "unit 8",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*The theological deficit includes five loosening suspicions: (1) the Feist-absence — a departing literary pneuma that is not salvific but withholding, enabling silence that survives expression; (2) the Old Wound — a pre-identity vulnerability in which \"still queer, still straight\" are determinative, not because identity is irrelevant but because it is the ground that community cannot pave over; (3) the truancy from the truancy — a scattered, credentialed solitude of mutual illegibility; (4) anti-credentialism as negative capability — the radical claim that the degree still withheld, and the withholding still felt (\"None of us are, yet\"); (5) literary eschatology — the deferral that \"your writings will remain unranked,\" that the anonymous will remain anonymous.*",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A presents each doctrine as a positive, productive payload (indwelling presence enables writing, identity is not the ground of community, credentials are granted, the anonymous will be remembered), while TEXT B inverts each into a negative, withholding deficit (departing absence enables silence, identity IS the inescapable ground, credentials are withheld, the anonymous remain anonymous). The relational direction reverses from bestowal/fulfillment to withdrawal/deferral across all five doctrines.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural mutation (reversal from bestowal/fulfillment to withdrawal/deferral across doctrines), which partially overlaps the declared claim about incompleteness keeping theology alive. Both involve deferral and non-fulfillment, but the declared claim frames incompleteness as a self-sustaining generative condition, while the recovered claim describes a systematic inversion from positive bestowal to negative withholding across all doctrines.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final doctrine (literary eschatology) in TEXT B maintains the inversion — deferral and continued anonymity rather than ranking and remembrance — so the changed relation holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.398
+   },
+   "law_variance": {
+    "declared": "The architecture's own incompleteness — the doctrine that cannot close, the recognition that never arrives, the community that remains unformed — is the actual condition that keeps the theology alive; fulfillment would be its extinction.",
+    "recovered": "TEXT A presents each doctrine as a positive, productive payload (indwelling presence enables writing, identity is not the ground of community, credentials are granted, the anonymous will be remembered), while TEXT B inverts each into a negative, withholding deficit (departing absence enables silence, identity IS the inescapable ground, credentials are withheld, the anonymous remain anonymous). The relational direction reverses from bestowal/fulfillment to withdrawal/deferral across all five doctrines.",
+    "note": "The recovered claim identifies a real structural mutation (reversal from bestowal/fulfillment to withdrawal/deferral across doctrines), which partially overlaps the declared claim about incompleteness keeping theology alive. Both involve deferral and non-fulfillment, but the declared claim frames incompleteness as a self-sustaining generative condition, while the recovered claim describes a systematic inversion from positive bestowal to negative withholding across all doctrines."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T03:09:27.629118+00:00"
+}
