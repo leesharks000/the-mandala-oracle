@@ -58,18 +58,26 @@
      "diagnosis": "witness-question entities inside the transform or commentary: hour"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Fire held inside a closed mouth: the hour was made for the bearing, not the knowing."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T00:51:11.566231+00:00",
+ "last_updated": "2026-07-06T00:51:21.069625+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-06T00:51:11.566231+00:00",
    "text": "We are in the Revelation Room. The passage is 9:15–17: four angels held at the great river Euphrates, loosed at the hour and day and month and year prepared for the killing of a third of humankind — and behind them the cavalry, two hundred million, riders in breastplates of fire and hyacinth and sulfur, and the horses' heads like lions, and from their mouths fire and smoke and sulfur. The witness's question is the question the text itself is structured to refuse: what is the day and the hour. What the casting will traverse is exactly that refusal — the verses hold the hour by name and withhold it from every reader, the armies are numbered with hallucinatory precision while the calendar that would place them stays sealed. The operator that falls to Judgment will move through this axis between terrible specification and radical inaccessibility, between the twice-named hour and the silence that surrounds its naming. I pass the verses now to Rebekah Cranes."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-06T00:51:21.069625+00:00",
+   "text": "Fire held inside a closed mouth: the hour was made for the bearing, not the knowing.",
+   "operator": "SHADOW"
   }
  ]
 }
