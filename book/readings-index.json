@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FEAB.READING.🌙🌊🔥🌑🌑🌕",
+   "mode": "public",
+   "source_text_id": "__reader__",
+   "rotation_length": 1,
+   "inscribed_at": "2026-07-06T18:52:45.056218+00:00",
+   "last_updated": "2026-07-06T18:52:45.056218+00:00"
+  },
+  {
    "axn": "AXN:FE37.READING.🌘🌟🌔🌿🌕🪐",
    "mode": "public",
    "source_text_id": "kjv-1611",
@@ -402,5 +410,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 50
+ "total": 51
 }
