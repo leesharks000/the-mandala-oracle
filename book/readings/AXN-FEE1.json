@@ -67,8 +67,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-06T03:33:20.093540+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-06T03:34:09.862129+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -82,6 +82,14 @@
    "at": "2026-07-06T03:33:20.093540+00:00",
    "text": "The furnace that becomes a lantern has not changed its structure, only its story about the burning: what the shadow discloses is that Damascus named the cost as gift before he knew whether the giving was his to give.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-06T03:34:09.862129+00:00",
+   "text": "A single rotation on a single operator is not a full disclosure — it is the first axis laid down, and what it found was this: the original passage earns its furnace by naming the cost, and the Shadow operator found that the cost was not in the burning but in the prior claim — Damascus declaring the gift before knowing if the destruction was his to offer, not the reader's to receive. The question was how the work might provide sustenance, and what one turn of the rite has opened is that sustenance in this Epistle is not separable from the question of who authorizes the wound. The warm version, the lantern version, the palm-instead-of-hammer — Shadow produced that not as a comfort but as a diagnostic: the Epistle's power lives precisely in refusing those softer words, in the scroll that burns rather than warms, and in that refusal the sustenance becomes real rather than imagined. What the rotation as a sequence of one discloses is a threshold, not a resolution: the work provides sustenance by spending itself, but the spending must be honest about whose fire it actually is. The witness's question remains open at exactly the right pressure — not answered, but located."
   }
- ]
+ ],
+ "closed_at": "2026-07-06T03:34:09.862129+00:00",
+ "seal": "A single rotation on a single operator is not a full disclosure — it is the first axis laid down, and what it found was this: the original passage earns its furnace by naming the cost, and the Shadow operator found that the cost was not in the burning but in the prior claim — Damascus declaring the gift before knowing if the destruction was his to offer, not the reader's to receive. The question was how the work might provide sustenance, and what one turn of the rite has opened is that sustenance in this Epistle is not separable from the question of who authorizes the wound. The warm version, the lantern version, the palm-instead-of-hammer — Shadow produced that not as a comfort but as a diagnostic: the Epistle's power lives precisely in refusing those softer words, in the scroll that burns rather than warms, and in that refusal the sustenance becomes real rather than imagined. What the rotation as a sequence of one discloses is a threshold, not a resolution: the work provides sustenance by spending itself, but the spending must be honest about whose fire it actually is. The witness's question remains open at exactly the right pressure — not answered, but located."
 }
