@@ -1100,18 +1100,39 @@ async function runCastingRite(cast) {
             }
             sourceShown = true;
           }
-          const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
+        
+  // Facing-line gate (MANUS, 2026-07-06): the layout emits ENANTIOMORPH and
+  // ENANTIOMORPH_TRANSLATION unconditionally, so English casts show the poem
+  // twice. The composer already knows to leave the facing empty for English;
+  // this decides display when it isn't.
+  function _sourceLanguage(sourceId) {
+    if (!sourceId || typeof sourceId !== 'string') return 'en';
+    const s = sourceId.toLowerCase();
+    if (s.endsWith('-greek') || s.includes('-greek-')) return 'grc';
+    if (s.endsWith('-latin') || s.includes('-latin-')) return 'lat';
+    if (s.endsWith('-hebrew') || s.includes('-hebrew-')) return 'heb';
+    return 'en';
+  }
+
+  const el = appendHeteronymMessage('Rebekah Cranes', transform.primary_output || '');
           el.querySelector('.message-content').style.whiteSpace = 'pre-wrap';
-          if (transform.enantiomorph_translation) {
-            const face = document.createElement('div');
-            face.style.whiteSpace = 'pre-wrap';
-            face.style.opacity = '.62';
-            face.style.marginTop = '10px';
-            face.style.paddingTop = '8px';
-            face.style.borderTop = '1px solid rgba(255,255,255,.12)';
-            face.style.fontStyle = 'italic';
-            face.textContent = transform.enantiomorph_translation;
-            el.querySelector('.message-content').appendChild(face);
+          {
+            const facing = (transform.enantiomorph_translation || '').trim();
+            const cast = (transform.primary_output || '').trim();
+            const lang = _sourceLanguage(cast && cast.sourceId);
+            const isEnglishSource = lang === 'en';
+            const echoesCast = facing && cast && facing === cast;
+            if (facing && !isEnglishSource && !echoesCast) {
+              const face = document.createElement('div');
+              face.style.whiteSpace = 'pre-wrap';
+              face.style.opacity = '.62';
+              face.style.marginTop = '10px';
+              face.style.paddingTop = '8px';
+              face.style.borderTop = '1px solid rgba(255,255,255,.12)';
+              face.style.fontStyle = 'italic';
+              face.textContent = facing;
+              el.querySelector('.message-content').appendChild(face);
+            }
           }
           renderTransformCard(el, transform);
           if (inscription && inscription.inscribed && inscription.reading_axn) {
