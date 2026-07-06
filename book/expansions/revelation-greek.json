@@ -4463,7 +4463,59 @@
     "beats": "ἐλύθησαν (were loosed) -> ἔστησαν (stood still)\nτέσσαρες ἄγγελοι (four angels) -> figures without number\nἡτοιμασμένοι (prepared) -> always already there\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> the unmarked moment\nἀποκτείνωσιν (that they might kill) -> that they might hold still\nτὸ τρίτον τῶν ἀνθρώπων (a third of mankind) -> every breathing mouth\nἀριθμός (number) -> weight\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> the mass of what stood in the field\nδισμυριάδες μυριάδων (twice ten thousand times ten thousand) -> beyond telling\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> I could not hear them\nεἶδον (I saw) -> I felt\nἵππους (horses) -> presences\nὅρασις (vision) -> the blindness\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> what bore down from within them\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire, hyacinth, sulfur) -> no color at all\nκεφαλαὶ λεόντων (heads of lions) -> closed mouths\nστομάτων (mouths) -> mouths (RETAIN: the verdict requires the organ that refuses to speak)\nἐκπορεύεται (proceeds out) -> does not proceed\nπῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and sulfur) -> nothing\nοὕτως (thus / in this way) -> without manner\nτοὺς (the / those) -> what was there\nἔχοντας (having / wearing) -> bearing nothing\nἵππων (of the horses) -> of the presences\nὁράσει (in the vision / in appearance) -> in the stillness"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-9b077d50",
+   "cast_at": "2026-07-06T01:05:39.743087+00:00",
+   "reading_axn": "AXN:FEE6.READING.🌗🌙💫🌒🌑⭐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "FLAME",
+   "operator_axis": "intensity-axis — the collapse-limit where the source's intensity would ignite",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A specifies precise limits and fractions (four angels prepared for a specific hour/day/month/year, killing one-third of mankind, numbered cavalry, distinct destructive elements of fire/smoke/brimstone), while TEXT B removes all quantitative boundaries and distinctions, replacing measured partial destruction with total, undifferentiated, all-consuming annihilation (one blaze devouring the whole world, past counting, only fire and more fire).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: replacing precisely measured, fractional, bounded destruction with unmeasured, total, undifferentiated conflagration that consumes everything without limit or division.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B maintains the removal of limits and distinctions (mouths of furnaces replacing lion-heads, 'more fire and more fire' replacing the tripartite fire/smoke/brimstone), consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.111
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ erupted ἡ one blaze ἡ starving for whatever it finds, ἵνα devour the whole of the world.\n\n**9:16** καὶ ὁ roar τοῦ wall of heat ⸀past counting past counting· I heard only burning.\n\n**9:17** καὶ without form I was blinded by τὰς tongues in the furnace καὶ nothing riding them, stripped to nakedness white only white· καὶ αἱ mouths of the tongues ὡς mouths of furnaces, καὶ ἐκ τῶν throats αὐτῶν pours fire καὶ more fire καὶ more fire.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Destruction is pre-measured and appointed: the angels are calibrated to an exact hour, the cavalry numbered, the killing fractioned to a third — annihilation operates as bureaucratic schedule, its terror administered in portions.",
+    "mutated_relation": "Destruction as pure conflagration without measure — the fire that escapes all appointment, uncounted, undivided, consuming not a fraction but the whole of what it touches.",
+    "beats": "ἐλύθησαν (were released) -> erupted\nτέσσαρες ἄγγελοι (four angels) -> one blaze\nἡτοιμασμένοι (having been prepared) -> starving\nεἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (for the hour and day and month and year) -> for whatever it finds\nἀποκτείνωσιν (they might kill) -> devour\nτὸ τρίτον (the third) -> the whole\nτῶν ἀνθρώπων (of humanity) -> of the world\nἀριθμός (number) -> roar\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> wall of heat\nδισμυριάδες μυριάδων (twice ten-thousand ten-thousands) -> past counting past counting\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> I heard only burning\nεἶδον (I saw) -> I was blinded by\nἵππους (horses) -> tongues\nἐν τῇ ὁράσει (in the vision) -> in the furnace\nτοὺς καθημένους ἐπ' αὐτῶν (those seated upon them) -> nothing riding them\nθώρακας (breastplates) -> nakedness\nπυρίνους καὶ ὑακινθίνους καὶ θειώδεις (fiery and hyacinth and sulphurous) -> white only white\nκεφαλαί (heads) -> mouths\nλεόντων (of lions) -> of furnaces\nστομάτων (mouths) -> throats\nπῦρ (fire) -> fire (RETAIN: the verdict's world is fire itself; it cannot be translated out of its own substance)\nκαπνός (smoke) -> more fire\nθεῖον (sulphur) -> more fire\nοὕτως (thus / in this way) -> without form\nἐκπορεύεται (comes forth) -> pours\nἔχοντας (having / wearing) -> stripped to\nἵππων (of horses — genitive, in \"heads of horses\") -> of the tongues\nκαπνὸς (smoke — second occurrence in v.17) -> more fire"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T01:04:24.635962+00:00"
+ "last_updated": "2026-07-06T01:05:39.743087+00:00"
 }
