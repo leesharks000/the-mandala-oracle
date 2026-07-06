@@ -760,7 +760,61 @@ function renderOperatorLabel(op, axis) {
   return el;
 }
 
-function renderSourceCard(citation, passage, attribution, translation) {
+
+// Language of the source, from its id suffix (MANUS, 2026-07-06): -greek,
+// -latin, -hebrew mean the source card shows passage + facing translation;
+// anything else is English and the facing is a duplicate.
+function _sourceLanguage(sourceId) {
+  if (!sourceId || typeof sourceId !== 'string') return 'en';
+  const s = sourceId.toLowerCase();
+  if (s.endsWith('-greek') || s.includes('-greek-')) return 'grc';
+  if (s.endsWith('-latin') || s.includes('-latin-')) return 'lat';
+  if (s.endsWith('-hebrew') || s.includes('-hebrew-')) return 'heb';
+  return 'en';
+}
+
+// Very small markdown-blockquote renderer for English source cards: lines
+// beginning with "> " become an indented left-ruled block; blank lines inside
+// a blockquote are kept as gaps. Applied ONLY to English sources whose
+// canonical text uses markdown structure (Cranes's Day and Night, the Secret
+// Book of Walt, Whitman). Greek/Latin/Hebrew sources use plain pre-wrap.
+function _renderPassageInto(container, text) {
+  container.innerHTML = '';
+  container.style.whiteSpace = 'normal';
+  const lines = String(text || '').split('\n');
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    const bqMatch = line.match(/^\s*>\s?(.*)$/);
+    if (bqMatch) {
+      const bqLines = [];
+      while (i < lines.length) {
+        const m = lines[i].match(/^\s*>\s?(.*)$/);
+        if (m) { bqLines.push(m[1]); i++; }
+        else if (lines[i].trim() === '' && (i+1 < lines.length) &&
+                 /^\s*>\s?/.test(lines[i+1])) { bqLines.push(''); i++; }
+        else break;
+      }
+      const bq = document.createElement('div');
+      bq.style.borderLeft = '2px solid rgba(255,255,255,.18)';
+      bq.style.paddingLeft = '12px';
+      bq.style.marginLeft = '4px';
+      bq.style.marginTop = '4px';
+      bq.style.marginBottom = '4px';
+      bq.style.whiteSpace = 'pre-wrap';
+      bq.textContent = bqLines.join('\n');
+      container.appendChild(bq);
+    } else {
+      const span = document.createElement('div');
+      span.style.whiteSpace = 'pre-wrap';
+      span.textContent = line;
+      container.appendChild(span);
+      i++;
+    }
+  }
+}
+
+function renderSourceCard(citation, passage, attribution, translation, sourceId) {
   const card = document.createElement('div');
   card.className = 'source-card';
   const label = document.createElement('div');
@@ -771,10 +825,19 @@ function renderSourceCard(citation, passage, attribution, translation) {
   label.textContent = `— the cast text${arguments[2] ? ' · ' + arguments[2] : ''}${citation ? ' · ' + citation : ''} —`;
   card.appendChild(label);
   const body = document.createElement('div');
-  body.style.whiteSpace = 'pre-wrap';   // lineation and indentation preserved
-  body.textContent = passage;
+  const _lang = _sourceLanguage(sourceId);
+  const _isEnglish = _lang === 'en';
+  if (_isEnglish) {
+    _renderPassageInto(body, passage);
+  } else {
+    body.style.whiteSpace = 'pre-wrap';
+    body.textContent = passage;
+  }
   card.appendChild(body);
-  if (translation) {
+  const _facing = (translation || '').trim();
+  const _passage = (passage || '').trim();
+  const _echoes = _facing && _facing === _passage;
+  if (_facing && !_isEnglish && !_echoes) {
     const tr = document.createElement('div');
     tr.style.whiteSpace = 'pre-wrap';
     tr.style.opacity = '.62';
@@ -782,7 +845,7 @@ function renderSourceCard(citation, passage, attribution, translation) {
     tr.style.paddingTop = '8px';
     tr.style.borderTop = '1px solid rgba(255,255,255,.12)';
     tr.style.fontStyle = 'italic';
-    tr.textContent = translation;
+    tr.textContent = _facing;
     card.appendChild(tr);
   }
   messagesEl.appendChild(card);
@@ -986,7 +1049,7 @@ async function runCastingRite(cast) {
     // The cast text itself — the enantiomorph is legible only against it.
     let sourceShown = false;
     if (cast.passage) {
-      renderSourceCard(cast.citation, cast.passage, cast.attribution, cast.passageTranslation);
+      renderSourceCard(cast.citation, cast.passage, cast.attribution, cast.passageTranslation, cast.sourceId);
       sourceShown = true;
     }
 
@@ -1017,7 +1080,7 @@ async function runCastingRite(cast) {
           cast.passage = pj.passage;
           cast.passageTranslation = pj.passage_translation || '';
           renderSourceCard(pj.citation || cast.castSelection, pj.passage,
-                           pj.attribution, cast.passageTranslation);
+                           pj.attribution, cast.passageTranslation, cast.sourceId);
           cast.sourceShown = true;
         }
       } catch (e) { /* the fallback render below the first transform still covers us */ }
@@ -1095,24 +1158,12 @@ async function runCastingRite(cast) {
           inscription = data.inscription;
           if (!sourceShown && transform.source_passage) {
             if (!cast.sourceShown) {
-              renderSourceCard(transform.citation || cast.castSelection, transform.source_passage, transform.underlying_attribution, transform.source_translation || cast.passageTranslation);
+              renderSourceCard(transform.citation || cast.castSelection, transform.source_passage, transform.underlying_attribution, transform.source_translation || cast.passageTranslation, cast.sourceId);
               cast.sourceShown = true;
             }
             sourceShown = true;
           }
         
-  // Facing-line gate (MANUS, 2026-07-06): the layout emits ENANTIOMORPH and
-  // ENANTIOMORPH_TRANSLATION unconditionally, so English casts show the poem
-  // twice. The composer already knows to leave the facing empty for English;
-  // this decides display when it isn't.
-  function _sourceLanguage(sourceId) {
-    if (!sourceId || typeof sourceId !== 'string') return 'en';
-    const s = sourceId.toLowerCase();
-    if (s.endsWith('-greek') || s.includes('-greek-')) return 'grc';
-    if (s.endsWith('-latin') || s.includes('-latin-')) return 'lat';
-    if (s.endsWith('-hebrew') || s.includes('-hebrew-')) return 'heb';
-    return 'en';
-  }
 
   const _langForCranes = _sourceLanguage(cast && cast.sourceId);
           const _isEn = _langForCranes === 'en';
