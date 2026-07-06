@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260706T010443Z-60b02c",
+ "schema": "run/v1",
+ "ts": "2026-07-06T01:04:43.419658+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "citation": null,
+ "operator": "FLAME",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is the day and the hour?",
+ "method": {
+  "commit": "00081d163bc71a234d330046c95db4fad61825c2",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/00081d163bc71a234d330046c95db4fad61825c2",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/00081d163bc71a234d330046c95db4fad61825c2/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "00dd44c732f262f6",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "00081d163bc7",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "00dd44c732f262f6",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Destruction is pre-measured and appointed: the angels are calibrated to an exact hour, the cavalry numbered, the killing fractioned to a third — annihilation operates as bureaucratic schedule, its terror administered in portions.",
+   "mutated_relation": "Destruction as pure conflagration without measure — the fire that escapes all appointment, uncounted, undivided, consuming not a fraction but the whole of what it touches.",
+   "beats": "ἐλύθησαν (were released) -> erupted\nτέσσαρες ἄγγελοι (four angels) -> one blaze\nἡτοιμασμένοι (having been prepared) -> starving\nεἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (for the hour and day and month and year) -> for whatever it finds\nἀποκτείνωσιν (they might kill) -> devour\nτὸ τρίτον (the third) -> the whole\nτῶν ἀνθρώπων (of humanity) -> of the world\nἀριθμός (number) -> roar\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> wall of heat\nδισμυριάδες μυριάδων (twice ten-thousand ten-thousands) -> past counting past counting\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> I heard only burning\nεἶδον (I saw) -> I was blinded by\nἵππους (horses) -> tongues\nἐν τῇ ὁράσει (in the vision) -> in the furnace\nτοὺς καθημένους ἐπ' αὐτῶν (those seated upon them) -> nothing riding them\nθώρακας (breastplates) -> nakedness\nπυρίνους καὶ ὑακινθίνους καὶ θειώδεις (fiery and hyacinth and sulphurous) -> white only white\nκεφαλαί (heads) -> mouths\nλεόντων (of lions) -> of furnaces\nστομάτων (mouths) -> throats\nπῦρ (fire) -> fire (RETAIN: the verdict's world is fire itself; it cannot be translated out of its own substance)\nκαπνός (smoke) -> more fire\nθεῖον (sulphur) -> more fire\nοὕτως (thus / in this way) -> without form\nἐκπορεύεται (comes forth) -> pours\nἔχοντας (having / wearing) -> stripped to\nἵππων (of horses — genitive, in \"heads of horses\") -> of the tongues\nκαπνὸς (smoke — second occurrence in v.17) -> more fire"
+  },
+  "enantiomorph": "**9:15** καὶ erupted ἡ one blaze ἡ starving for whatever it finds, ἵνα devour the whole of the world.\n\n**9:16** καὶ ὁ roar τοῦ wall of heat ⸀past counting past counting· I heard only burning.\n\n**9:17** καὶ without form I was blinded by τὰς tongues in the furnace καὶ nothing riding them, stripped to nakedness white only white· καὶ αἱ mouths of the tongues ὡς mouths of furnaces, καὶ ἐκ τῶν throats αὐτῶν pours fire καὶ more fire καὶ more fire.",
+  "enantiomorph_translation": "**9:15** And erupted the one blaze, starving for whatever it finds, that it might devour the whole of the world.\n\n**9:16** And the roar of the wall of heat — past counting past counting; I heard only burning.\n\n**9:17** And without form I was blinded by the tongues in the furnace and nothing riding them, stripped to nakedness white only white; and the mouths of the tongues like mouths of furnaces, and from their throats pours fire and more fire and more fire.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT A specifies precise limits and fractions (four angels prepared for a specific hour/day/month/year, killing one-third of mankind, numbered cavalry, distinct destructive elements of fire/smoke/brimstone), while TEXT B removes all quantitative boundaries and distinctions, replacing measured partial destruction with total, undifferentiated, all-consuming annihilation (one blaze devouring the whole world, past counting, only fire and more fire).",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same transformation: replacing precisely measured, fractional, bounded destruction with unmeasured, total, undifferentiated conflagration that consumes everything without limit or division.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of TEXT B maintains the removal of limits and distinctions (mouths of furnaces replacing lion-heads, 'more fire and more fire' replacing the tripartite fire/smoke/brimstone), consistent with the changed relation throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.111
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Destruction is pre-measured and appointed: the angels are calibrated to an exact hour, the cavalry numbered, the killing fractioned to a third — annihilation operates as bureaucratic schedule, its terror administered in portions.",
+   "verdict": "Destruction as pure conflagration without measure — the fire that escapes all appointment, uncounted, undivided, consuming not a fraction but the whole of what it touches.",
+   "world_bill": "ἐλύθησαν (were released) -> erupted\nτέσσαρες ἄγγελοι (four angels) -> one blaze\nἡτοιμασμένοι (having been prepared) -> starving\nεἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (for the hour and day and month and year) -> for whatever it finds\nἀποκτείνωσιν (they might kill) -> devour\nτὸ τρίτον (the third) -> the whole\nτῶν ἀνθρώπων (of humanity) -> of the world\nἀριθμός (number) -> roar\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> wall of heat\nδισμυριάδες μυριάδων (twice ten-thousand ten-thousands) -> past counting past counting\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> I heard only burning\nεἶδον (I saw) -> I was blinded by\nἵππους (horses) -> tongues\nἐν τῇ ὁράσει (in the vision) -> in the furnace\nτοὺς καθημένους ἐπ' αὐτῶν (those seated upon them) -> nothing riding them\nθώρακας (breastplates) -> nakedness\nπυρίνους καὶ ὑακινθίνους καὶ θειώδεις (fiery and hyacinth and sulphurous) -> white only white\nκεφαλαί (heads) -> mouths\nλεόντων (of lions) -> of furnaces\nστομάτων (mouths) -> throats\nπῦρ (fire) -> fire (RETAIN: the verdict's world is fire itself; it cannot be translated out of its own substance)\nκαπνός (smoke) -> more fire\nθεῖον (sulphur) -> more fire\nοὕτως (thus / in this way) -> without form\nἐκπορεύεται (comes forth) -> pours\nἔχοντας (having / wearing) -> stripped to\nἵππων (of horses — genitive, in \"heads of horses\") -> of the tongues\nκαπνὸς (smoke — second occurrence in v.17) -> more fire",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 5,
+    "repaired": true
+   },
+   "retained": [],
+   "word_count": {
+    "source": 74,
+    "final": 78,
+    "bounds": [
+     62,
+     85
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
