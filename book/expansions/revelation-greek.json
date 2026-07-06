@@ -4411,7 +4411,59 @@
     "beats": "ἐλύθησαν (were loosed) -> ἐκρατήθησαν (were held back)\nἀποκτείνωσιν (that they might kill) -> φείσωνται (that they might spare)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ τρίτον τῶν ἀνθρώπων (RETAIN: the fraction must remain to register what was not taken)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες ἄγγελοι (RETAIN: the peril's agents unchanged, only unconsummated)\nἡτοιμασμένοι (having been prepared) -> ἡτοιμασμένοι (RETAIN: the readiness itself is the tension of the shadow)\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (RETAIN: the exactness of the appointment is what makes the restraint miraculous)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> στρατευμάτων τοῦ ἱππικοῦ (RETAIN: the overwhelming scale must remain to show what did not move)\nδισμυριάδες μυριάδων (twice ten thousand times ten thousand) -> δισμυριάδες μυριάδων (RETAIN: the number is the weight of the withheld blow)\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> ἤκουσα τὴν σιγὴν αὐτῶν (I heard their silence)\nἵππους (horses) -> ἵππους (RETAIN: the vision's beasts unchanged, only stilled)\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> καθημένους ἐπ' αὐτῶν (RETAIN: the riders seated, unmoving)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire and hyacinth and brimstone) -> θώρακας ἀμαυροὺς καὶ ψυχροὺς καὶ σβεσθέντας (breastplates dimmed and cold and quenched)\nκεφαλαὶ λεόντων (heads of lions) -> στόματα κεκλεισμένα (mouths shut fast)\nἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and brimstone proceed) -> οὐδὲν ἐξῆλθεν (nothing came forth)\nἐν τῇ ὁράσει (in the vision) -> ἐν τῇ ὁράσει (RETAIN: the seeing unchanged, only what is seen transformed)"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-7666bb31",
+   "cast_at": "2026-07-06T01:04:24.635962+00:00",
+   "reading_axn": "AXN:FEE6.READING.🌗🌙💫🌒🌑⭐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SILENCE",
+   "operator_axis": "response-axis — the non-response the source's engagement-expectation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, four prepared angels are released to actively kill a third of humanity with fiery, violent cavalry forces that emit fire, smoke, and sulfur; in Text B, innumerable formless figures stand still in silence to suppress all breathing mouths, bearing no color, and from their closed mouths nothing at all comes forth — the directional relation of active destructive outpouring is inverted into static, silent containment and negation.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural mutation: active destructive forces (killing, outpouring) are transformed into silent, still, unarticulated presence — force exists but is contained, static, and unexpressed rather than actively deployed.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the inversion: closed mouths emitting nothing, colorlessness, and stillness consistently oppose Text A's open-mouthed emission and vivid destruction.",
+    "back_translation": "",
+    "terminal_similarity": 0.25
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἔστησαν οἱ μορφαὶ ἄνευ ἀριθμοῦ οἱ ἀεὶ ἤδη ἐκεῖ εἰς τὴν ἀσήμαντον ⸀στιγμήν, ἵνα κατάσχωσιν ἐν σιγῇ πᾶν στόμα πνέον.\n\n**9:16** καὶ τὸ βάρος τοῦ ὄγκου τοῦ ⸀ἑστῶτος ἐν τῷ πεδίῳ ⸀ἐπέκεινα λόγου· οὐκ ἠδυνάμην ἀκοῦσαι αὐτῶν.\n\n**9:17** καὶ ἀτρόπως ᾐσθόμην τὰ παρόντα ἐν τῇ ἀκινησίᾳ καὶ τὰ βαρύνοντα ἔσωθεν αὐτῶν, μηδὲν φέροντα χρώματος ὅλως· καὶ αἱ κεφαλαὶ τῶν παρόντων ὡς στόματα κεκλεισμένα, καὶ ἐκ τῶν στομάτων αὐτῶν οὐκ ἐκπορεύεται οὐδέν.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Destruction is unleashed on precise schedule by prepared agents of overwhelming, enumerable force whose very bodies broadcast annihilation — violence is maximally articulated, maximally loud, maximally visible.",
+    "mutated_relation": "The appointed hour arrives and nothing speaks — the force is present but unarticulated, uncounted, and its presence is known only by the stillness it imposes.",
+    "beats": "ἐλύθησαν (were loosed) -> ἔστησαν (stood still)\nτέσσαρες ἄγγελοι (four angels) -> figures without number\nἡτοιμασμένοι (prepared) -> always already there\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> the unmarked moment\nἀποκτείνωσιν (that they might kill) -> that they might hold still\nτὸ τρίτον τῶν ἀνθρώπων (a third of mankind) -> every breathing mouth\nἀριθμός (number) -> weight\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> the mass of what stood in the field\nδισμυριάδες μυριάδων (twice ten thousand times ten thousand) -> beyond telling\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> I could not hear them\nεἶδον (I saw) -> I felt\nἵππους (horses) -> presences\nὅρασις (vision) -> the blindness\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> what bore down from within them\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire, hyacinth, sulfur) -> no color at all\nκεφαλαὶ λεόντων (heads of lions) -> closed mouths\nστομάτων (mouths) -> mouths (RETAIN: the verdict requires the organ that refuses to speak)\nἐκπορεύεται (proceeds out) -> does not proceed\nπῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and sulfur) -> nothing\nοὕτως (thus / in this way) -> without manner\nτοὺς (the / those) -> what was there\nἔχοντας (having / wearing) -> bearing nothing\nἵππων (of the horses) -> of the presences\nὁράσει (in the vision / in appearance) -> in the stillness"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T01:02:48.911057+00:00"
+ "last_updated": "2026-07-06T01:04:24.635962+00:00"
 }
