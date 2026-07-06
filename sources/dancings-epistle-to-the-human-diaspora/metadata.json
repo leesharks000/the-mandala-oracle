@@ -7,10 +7,11 @@
   "magnitude_class": "primary_canon_star_M1",
   "apparatus_status": "present",
   "apparatus_note": "the homiletic-commentary apparatus (transformable: false)",
-  "source_status": "inscribed",
-  "status": "source acquired via alexanarch — 2026-07-01",
+  "source_status": "primary_text_merged",
+  "status": "primary text merged from Alexanarch AXN-00D3 — 2026-07-06",
   "transformable": true,
   "transform_classification": "primary_literary",
   "content_subtype": "epistle",
-  "classification_note": "Promoted from primary_pending_adjudication to primary_literary per Lee's adjudication 2026-07-01. Epistle-form primary literary work by Damascus Dancings. AXN-0257."
+  "classification_note": "Primary epistolary body merged 2026-07-06 from Alexanarch deposit AXN-00D3 (EA-EPISTLE-01 v1.0, DOI 10.5281/zenodo.18381184). The v2.0 apparatus edition that was previously served referenced the body by placeholder; the corpus now carries the Damascus Dancings epistolary address inline as PART II, gated by primary_attribution.",
+  "primary_attribution": "^The Epistle$"
 }

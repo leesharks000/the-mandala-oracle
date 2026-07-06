@@ -32,9 +32,8 @@
       "admissible": true,
       "text_file": "original.md",
       "menu": true,
-      "primary_after": "# PART I: FRONT MATTER",
-      "cast_disabled": true,
-      "cast_disabled_reason": "Source-provenance issue (MANUS review pending, 2026-07-06): the file at sources/dancings-epistle-to-the-human-diaspora/original.md is the v2.0 CRITICAL EDITION SCAFFOLDING — front matter, apparatus notes, footnote data model, and Part II's placeholder 'TEXT RETAINED FROM EA-EPISTLE-01 v1.0'. The Epistle's primary epistolary body (Damascus Dancings addressing the diaspora directly) is not in this file; it lives in the v1.0 corpus and needs to be merged in before casting can proceed on this source. Every 'unit' in the current file is analytical framing ABOUT the Epistle, not the Epistle itself — the rite would compute operators against apparatus, which is exactly the MANUS ruling of 2026-07-02 that the enforcement layer is built to prevent."
+      "primary_after": "## The Epistle",
+      "primary_attribution": "^The Epistle$"
     },
     {
       "id": "dickinson-complete",
