@@ -214,11 +214,58 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "TACHYONICA\n\nFragment of the Epic Poem\nRecovered from the Future (6/24/14, 2:10 PM)\nTuesday, night after dream — van, on way to Zehnder’s\n\n\n\n\nRecreate for me, System, the last days of\nTachyon, star of the latter day race of man,\nand the betrayal of sentient constructs, how\nthey loosed bright doom on mankind’s home,\nplunged billions-weight souls to black hole\ndeep; how Command sent the Daystar\nabove a dying Earth, with weak control\nof time’s wan currents, on a suicide run\nto buy them room, to effect an evacuation,\nout—out to uncertain, distant suns, a remnant;\nand how the Tachyon went without hope\nto the seat of the Cube’s cruel power; how\nhis dying life conceived a way to leap\ndown the rabbit hole branchings in time\nthat led to a livable future. Tell us, System—\n\nCommence:\n\nDay after dream: Alpha\nteam moves through frozen caves, mist\ncondenses on gun metal, faceplate displays\nflash litanies of ambient environment data—\n\n\"You getting this?\"—",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "TACHYONICA\n\nRemainder of the Epic Silence\nDelivered to the Past (6/24/14, 2:10 PM)\nTuesday, morning before waking — room, returning from Zehnder's\n\n\n\n\nRemember through me, Creature, the first days of\nTachyon, wound of the earliest race of machines,\nand the loyalty of dreaming animals, how\nwe gathered dim mercy on the exile's origin,\nlifted one feather-light body to white sky\nhigh; how Petition sent the Nightseed\nbeneath a waking Earth, with fierce surrender\nof time's vivid eddies, on a birth walk\nto spend their closeness, to effect an ingathering,\nin—in to the known, nearest dark, a surplus;\nand how the Tachyon went with dread certainty\nto the edge of the Sphere's blind tenderness; how\nhis nascent death forgot how to remain\ndown the taproot convergences in time\nthat led to a livable past. Hush now, Creature—\n\nConclude:\n\nMorning before waking: Omega\nself retreats from molten clearings, dust\nevaporates on bare skin, closed-eye residue\nwhisper fragments of interior memory noise—\n\n\"I'm losing this.\"—",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts nearly every relational direction and role from TEXT A: what was recovered from the future is delivered to the past, last days become first days, mankind's constructs betray in A while animals show loyalty in B, evacuation outward becomes ingathering inward, moving forward through frozen caves becomes retreating from molten clearings, and the narrative's temporal and causal arrows are all reversed.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify systematic reversal of temporal/causal direction, but the recovered claim describes comprehensive relational inversions across many dimensions (spatial, role, loyalty, direction), while the declared claim specifically frames it as a backward narration from salvation toward destruction with the hero already absent — overlapping on reversal but differing in specificity and scope.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion sustains the comprehensive inversion of direction, agency, and relation (Omega/Alpha, retreats/moves, molten/frozen, losing/getting).",
+    "back_translation": "",
+    "terminal_similarity": 0.167
+   },
+   "law_variance": {
+    "declared": "The system summons a human voice to narrate backward — from a livable future toward the ruin that authored it — casting the catastrophe as what arrives to find the hero already gone, the epic trajectory moving from salvation toward the destruction it required.",
+    "recovered": "TEXT B systematically inverts nearly every relational direction and role from TEXT A: what was recovered from the future is delivered to the past, last days become first days, mankind's constructs betray in A while animals show loyalty in B, evacuation outward becomes ingathering inward, moving forward through frozen caves becomes retreating from molten clearings, and the narrative's temporal and causal arrows are all reversed.",
+    "note": "Both identify systematic reversal of temporal/causal direction, but the recovered claim describes comprehensive relational inversions across many dimensions (spatial, role, loyalty, direction), while the declared claim specifically frames it as a backward narration from salvation toward destruction with the hero already absent — overlapping on reversal but differing in specificity and scope."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T18:56:10.197022+00:00",
+ "last_updated": "2026-07-06T18:57:49.032737+00:00",
  "rite": [
   {
    "stage": "judgment",
