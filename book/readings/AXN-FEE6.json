@@ -1,0 +1,63 @@
+{
+ "axn": "AXN:FEE6.READING.🌗🌙💫🌒🌑⭐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "f7a7d1017ad85b0c",
+ "inscribed_at": "2026-07-06T01:02:47.620921+00:00",
+ "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+ "question_gloss": "Inquiry about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐκρατήθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα φείσωνται τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὴν σιγὴν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας ἀμαυροὺς καὶ ψυχροὺς καὶ σβεσθέντας· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς στόματα κεκλεισμένα, καὶ ἐκ τῶν στομάτων αὐτῶν οὐδὲν ἐξῆλθεν.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are released (ἐλύθησαν) in order to kill (ἀποκτείνωσιν) a third of mankind, and the vision depicts destructive outpouring (fire, smoke, brimstone from lions' mouths). In Text B the angels are restrained (ἐκρατήθησαν) in order to spare (φείσωνται) a third of mankind, and the vision depicts suppression and silence (cold/extinguished breastplates, closed mouths, nothing coming forth).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: the prepared destructive force (angels/host assembled at the appointed hour) is held back rather than unleashed, changing the act from killing to sparing.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the reversed relation of restraint/suppression rather than reverting to destruction.",
+    "back_translation": "",
+    "terminal_similarity": 0.571
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "50% of non-RETAIN source lemmas survive verbatim (εἶδον, θώρακας, κεφαλαὶ, οὕτως, στομάτων, τοὺς…) -- the bill was not honored"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T01:02:47.620921+00:00"
+}
