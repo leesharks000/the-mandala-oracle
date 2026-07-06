@@ -1,0 +1,113 @@
+{
+ "run_id": "RUN-20260706T033238Z-871ffb",
+ "schema": "run/v1",
+ "ts": "2026-07-06T03:32:38.925245+00:00",
+ "source_text_id": "dancings-epistle-to-the-human-diaspora",
+ "cast_selection": "units_31_36",
+ "citation": "unit 31–unit 36",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "how might the work provide sustenance?",
+ "method": {
+  "commit": "f883b31daaa8cbcea4304a8d99cd12d0dc084cfd",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/f883b31daaa8cbcea4304a8d99cd12d0dc084cfd",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/f883b31daaa8cbcea4304a8d99cd12d0dc084cfd/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "f883b31daaa8",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The transformative act is violent and destructive — consuming sacred text produces fire, damnation, and agony — but this annihilation is the only path to salvation; the wound is the passage, and devastation forges meaning.",
+   "mutated_relation": "The sacred text passes through the body and remains unburned — the passage is gentle, the names survive, and arrival requires no destruction at all.",
+   "beats": "swallowed -> held\nscroll -> scroll (RETAIN: the sacred text must be the same object that is not destroyed)\nair and water -> air and water (RETAIN: under this verdict the mildness persists rather than converting)\nflame -> warmth\nbelly -> belly (RETAIN: the body still receives; only the violence is absent)\nnames of the damned -> names of the living\nmurdered -> carried\nmouth -> mouth (RETAIN: the passage-point unchanged, only its nature gentle)\nfurnace -> lantern\nfire -> glow\ntongue of flame -> breath of light\npillar of blackened flesh -> column of unbroken skin\nburn -> shine\nrise -> rise (RETAIN: ascent is the one motion the gentle passage also performs)\ndie -> rest\nforge -> find\nwaters -> waters (RETAIN: the element that was always mild now stays mild)\ndamnation -> blessing\nmurder -> keeping\nbroken -> gathered\nsaved -> saved (RETAIN: salvation unchanged, only the route to it)\ncrack -> bend\ngrammar -> grammar (RETAIN: the medium of language is the same, only unstrained)\nlanguish -> float\nalien element -> native element\nearth -> earth (RETAIN: the ground persists as what bears gently)\nlight -> light (RETAIN: under this verdict the light was never in doubt)\npain -> ease\nheat -> coolness\nhammer -> palm\nwound -> touch\nsalvation -> arrival\ndawn -> dawn (RETAIN: the temporal threshold identical)\nshore -> shore (RETAIN: the destination unchanged, only never imperiled)\nsleep -> sleep (RETAIN: rest is rest in either world)\nwords -> words (RETAIN: language survives as the vessel in both)\nIthaca -> Ithaca (RETAIN: the home must be the same home reached without ordeal)"
+  },
+  "enantiomorph": "I have held the scroll, and though it was air and water in my mouth, it became a warmth in my belly: And in warmth are written the names of the living, which names have I held and carried. My mouth is a lantern, the scroll is a glow, on it are written the names of the living.\n\n\nI am become a breath of light, I am become a column of unbroken skin: I shine and rise, I rest, but find new meaning.\n\n\nThese are the waters I bring you, of blessing, and finding, and keeping; that you might be gathered, and blessed, and saved.\n\n\nThough you bend a bit, and bend with grammar, and float in a native element, earth, nonetheless your light comes. Nonetheless, it bears you, in ease, and coolness, and a palm.\n\n\nNonetheless, the touch is a moment. Arrival comes. Dawn breaks. I see the shore in the distance.\n\n\nSleep now, and rise: Your words will bear you to Ithaca.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural change was identified, while the declared claim asserts a specific relational transformation about gentle passage and survival without destruction.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "Both texts share identical relation-structures throughout; differences are only in vocabulary, imagery, and intensity (destructive vs. gentle), not in who acts, what depends on what, or directional flow.",
+   "back_translation": "",
+   "terminal_similarity": 1.0
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   },
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural change was identified, while the declared claim asserts a specific relational transformation about gentle passage and survival without destruction.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The transformative act is violent and destructive — consuming sacred text produces fire, damnation, and agony — but this annihilation is the only path to salvation; the wound is the passage, and devastation forges meaning.",
+   "verdict": "The sacred text passes through the body and remains unburned — the passage is gentle, the names survive, and arrival requires no destruction at all.",
+   "world_bill": "swallowed -> held\nscroll -> scroll (RETAIN: the sacred text must be the same object that is not destroyed)\nair and water -> air and water (RETAIN: under this verdict the mildness persists rather than converting)\nflame -> warmth\nbelly -> belly (RETAIN: the body still receives; only the violence is absent)\nnames of the damned -> names of the living\nmurdered -> carried\nmouth -> mouth (RETAIN: the passage-point unchanged, only its nature gentle)\nfurnace -> lantern\nfire -> glow\ntongue of flame -> breath of light\npillar of blackened flesh -> column of unbroken skin\nburn -> shine\nrise -> rise (RETAIN: ascent is the one motion the gentle passage also performs)\ndie -> rest\nforge -> find\nwaters -> waters (RETAIN: the element that was always mild now stays mild)\ndamnation -> blessing\nmurder -> keeping\nbroken -> gathered\nsaved -> saved (RETAIN: salvation unchanged, only the route to it)\ncrack -> bend\ngrammar -> grammar (RETAIN: the medium of language is the same, only unstrained)\nlanguish -> float\nalien element -> native element\nearth -> earth (RETAIN: the ground persists as what bears gently)\nlight -> light (RETAIN: under this verdict the light was never in doubt)\npain -> ease\nheat -> coolness\nhammer -> palm\nwound -> touch\nsalvation -> arrival\ndawn -> dawn (RETAIN: the temporal threshold identical)\nshore -> shore (RETAIN: the destination unchanged, only never imperiled)\nsleep -> sleep (RETAIN: rest is rest in either world)\nwords -> words (RETAIN: language survives as the vessel in both)\nIthaca -> Ithaca (RETAIN: the home must be the same home reached without ordeal)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 164,
+    "final": 164,
+    "bounds": [
+     139,
+     188
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
