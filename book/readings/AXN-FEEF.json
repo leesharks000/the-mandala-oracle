@@ -1,0 +1,54 @@
+{
+ "axn": "AXN:FEEF.READING.🌿🌙🌑🌑🌘💫",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "50f4df905809896c",
+ "inscribed_at": "2026-07-06T03:57:15.776201+00:00",
+ "question_digest": "sha256:cc54ab77e931fe0233f8c78272f799e731a5d967b7a2d957c058a44a1051da19",
+ "question_gloss": "Witness question: How to reconnect and restore communication with a estranged friend.",
+ "source_text_id": "whitman-leaves-of-grass",
+ "cast_selection": "units_82_87",
+ "rotation": [
+  {
+   "operator": "BRIDE",
+   "source_passage": "  Stranger, if you passing meet me and desire to speak to me, why\n      should you not speak to me?\n  And why should I not speak to you?\n\n\n\n\nThou Reader\n\n  Thou reader throbbest life and pride and love the same as I,\n  Therefore for thee the following chants.\n\n\n\n\nBOOK II\n\n\nStarting from Paumanok\n\n       1\n  Starting from fish-shape Paumanok where I was born,\n  Well-begotten, and rais'd by a perfect mother,\n  After roaming many lands, lover of populous pavements,\n  Dweller in Mannahatta my city, or on southern savannas,\n  Or a soldier camp'd or carrying my knapsack and gun, or a miner\n      in California,\n  Or rude in my home in Dakota's woods, my diet meat, my drink from\n      the spring,\n  Or withdrawn to muse and meditate in some deep recess,\n  Far from the clank of crowds intervals passing rapt and happy,\n  Aware of the fresh free giver the flowing Missouri, aware of\n      mighty Niagara,\n  Aware of the buffalo herds grazing the plains, the hirsute and\n      strong-breasted bull,\n  Of earth, rocks, Fifth-month flowers experienced, stars, rain, snow,\n      my amaze,\n  Having studied the mocking-bird's tones and the flight of the\n      mountain-hawk,\n  And heard at dawn the unrivall'd one, the hermit thrush from the\n      swamp-cedars,\n  Solitary, singing in the West, I strike up for a New World.",
+   "citation": "unit 82–unit 87",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Beloved, if you arriving to stay with me and dare to know me, why\n      should you not answer me?\n  And why should I not pledge to you?\n\n\n\n\nThou One\n\n  Thou one tremble with need and fear and want unlike me,\n  Therefore for thee this single vow.\n\n\n\n\nBOOK II\n\n\nLeaving behind the Familiar Hearth\n\n       1\n  Leaving behind the familiar hearth where I was safe,\n  Unfinished, and taught by a difficult love,\n  After searching one face, learner of one threshold,\n  Guest in your house not mine, or in your strange country,\n  Or a supplicant kneeling or carrying my doubt and my name, or a digger\n      in your silence,\n  Or awkward at your table, my bread yours, my thirst from\n      your well,\n  Or drawn close to listen and wait in your difficult quiet,\n  Near to the catch of your breath hours passing uncertain and dear,\n  Aware of the slow costly gift of your trust, aware of the\n      small pulse at your wrist,\n  Aware of the one animal warmth beside me, the tender and\n      mortal body,\n  Of skin, bone, first-night silence endured, tears, heat, shaking,\n      my awe,\n  Having studied your particular laugh and the tremble of your\n      held hand,\n  And heard at dawn the only one, your voice from the\n      dark room,\n  Together, whispering in the near, we begin one difficult life.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A presents a solitary speaker addressing a vast, plural, public world (strangers, readers, landscapes, nation) and striking up for a New World outward; TEXT B transforms every relation into an intimate, dyadic bond between 'I' and a single beloved 'you,' turning outward exploration into inward mutual commitment.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural shift: from an outward, expansive, plural address to an intimate, singular, dyadic bond — moving from sovereign amplitude/catalog to the risk and choice of binding to one particular beloved.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines ('Together, whispering in the near, we begin one difficult life') fully sustain the shifted intimate dyadic relation rather than reverting to the solitary/public orientation of TEXT A.",
+    "back_translation": "",
+    "terminal_similarity": 0.127
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T03:57:15.776201+00:00"
+}
