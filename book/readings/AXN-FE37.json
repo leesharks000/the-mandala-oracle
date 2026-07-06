@@ -95,11 +95,54 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And it repented the LORD that he had made man on the earth, and it\ngrieved him at his heart.\n\n6:7 And the LORD said, I will destroy man whom I have created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; for it repenteth me that I have made them.\n\n6:8 But Noah found grace in the eyes of the LORD.\n\n6:9 These are the generations of Noah: Noah was a just man and perfect\nin his generations, and Noah walked with God.\n\n6:10 And Noah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was corrupt before God, and the earth was filled\nwith violence.\n\n6:12 And God looked upon the earth, and, behold, it was corrupt; for\nall flesh had corrupted his way upon the earth.\n\n6:13 And God said unto Noah, The end of all flesh is come before me;\nfor the earth is filled with violence through them; and, behold, I\nwill destroy them with the earth.",
+   "citation": "unit 104–unit 112",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And the LORD was still that he had made man on the earth, and\nheld it at his heart.\n\n6:7 And the LORD did not speak of man whom he had created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; he did not say so.\n\n6:8 But Noah stood in the gaze of the LORD.\n\n6:9 These are the generations of Noah: Noah was a quiet man and blameless\nin his generations, and Noah waited near God.\n\n6:10 And Noah bore three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was rotten before God, and the earth was heavy\nwith violence.\n\n6:12 And God looked upon the earth, and looked, it was rotten; for\nall flesh had turned its way upon the earth.\n\n6:13 And God turned toward Noah; for the earth was heavy with violence\nthrough them.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text B, God's active emotional reactions (repentance, grief) and decisive speech acts (declarations of judgment, promises of destruction) are systematically replaced with passive, silent, or withheld states—God does not speak, does not declare destruction, and remains still rather than acting upon his feelings. The directional flow shifts from God actively intervening against creation to God withholding action and merely turning toward Noah.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: God's active emotional responses, speech acts, and declarations of destruction are replaced with silent, withheld, non-responsive observation — the divine witness perceives corruption but issues no voice, no decree, no announced destruction.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final verse (6:13) omits God's declaration of destruction entirely, consistent with the suppression of divine active speech and destructive intent throughout Text B.",
+    "back_translation": "",
+    "terminal_similarity": 0.387
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "geometry",
+     "diagnosis": "lines 18/19, markers 0/0 -- the spine is broken, not exceeded"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T07:47:18.190351+00:00",
+ "last_updated": "2026-07-06T07:50:41.578470+00:00",
  "rite": [
   {
    "stage": "opening",
