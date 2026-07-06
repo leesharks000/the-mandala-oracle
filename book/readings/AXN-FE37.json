@@ -137,12 +137,13 @@
      "diagnosis": "lines 18/19, markers 0/0 -- the spine is broken, not exceeded"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The sentence withheld is not mercy: the one who stands in the gaze without being spoken to has already received it."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T07:50:41.578470+00:00",
+ "last_updated": "2026-07-06T07:51:03.847853+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -156,6 +157,13 @@
    "at": "2026-07-06T07:45:40.688050+00:00",
    "text": "The maker surveys the ruin and withholds the hand: what endures here is not grace but refusal to become the second catastrophe.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-06T07:51:03.847853+00:00",
+   "text": "The sentence withheld is not mercy: the one who stands in the gaze without being spoken to has already received it.",
+   "operator": "SILENCE"
   }
  ]
 }
