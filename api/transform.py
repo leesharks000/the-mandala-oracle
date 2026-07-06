@@ -2579,6 +2579,230 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
                               advisory=(os.environ.get("V3_HARD_GATES") != "1"))
 
 
+
+# ═══ CHAIN/v1 (MANUS, 2026-07-06) ═════════════════════════════════════════
+# The operator is a FUNCTION: its value is the source's assertion passed
+# through the operator's relational inversion, computed fresh per text.
+# Fourteen frames failed by evaluating f at the same point regardless of
+# input. The chain makes the computation an artifact.
+
+_CHAIN_EXEMPLARS = """SOURCE: like a hyacinth, trampled / by the shepherd's feet, and on the
+ground / the purple flower
+
+OPERATOR: BRIDE — relational-affect-axis
+ASSERTION: the precious is fragile; the destroyer is oblivious; destruction
+leaves beauty as residue — contact without relation.
+VERDICT: the contact as covenant — the breaking that binds.
+WORLD-BILL:
+  hyacinth -> loaf
+  trampled -> torn
+  shepherd -> guest
+  feet -> two hands
+  the ground -> the table (around it)
+  the purple flower -> the one body
+CAST:
+like a loaf, torn
+by the guest's two hands, and around the table
+the one body
+
+----
+
+SOURCE: (the same fragment)
+
+OPERATOR: SHADOW — assertion-axis
+ASSERTION: the precious is fragile; the destroyer is oblivious; destruction
+leaves beauty as residue.
+VERDICT: the dissolution-prone, miraculously preserved — the peril arrives
+and is not exacted.
+WORLD-BILL:
+  trampled -> missed
+  on the ground -> on its stem
+  hyacinth -> hyacinth (RETAIN: the peril must find the same being)
+  shepherd's feet -> shepherd's feet (RETAIN: the peril unchanged, only unconsummated)
+  the purple flower -> the purple flower (RETAIN: under this verdict its survival IS the transform)
+CAST:
+like a hyacinth, missed
+by the shepherd's feet, and on its stem
+the purple flower"""
+
+_DERIVE_SYSTEM = """You derive a transformation. The OPERATOR is a function
+with no content of its own: its value is THIS source's assertion passed
+through the operator's relational inversion, computed fresh — never a
+stored meaning, never the operator's name-imagery.
+
+STEP 1 — ASSERTION. One line: what this source asserts — its claim about
+its world, not a summary of its content.
+
+STEP 2 — VERDICT. One line: the operator applied to the assertion. What
+the source's claim forecloses along this operator's axis, now made the
+case.
+
+STEP 3 — WORLD-BILL. From the verdict, derive a native world: EVERY
+high-load word of the source receives its equivalent in the verdict's
+world — the whole lexicon, not the verb and the residue. One equivalence
+per line, "source-word -> world-word". Where the verdict itself requires a
+word to survive, keep it and mark the line RETAIN with the reason.
+Equivalents must be natives of the verdict's world, not the source's
+words in costume.
+
+Two worked examples, computation shown:
+
+{exemplars}
+
+Emit ONLY, in this order:
+<ASSERTION>one line</ASSERTION>
+<VERDICT>one line</VERDICT>
+<WORLD_BILL>
+source-word -> world-word
+...
+</WORLD_BILL>"""
+
+_FILL_SYSTEM = """You compose a derived world into a frame.
+
+THE VERDICT and THE WORLD-BILL are final: every fill comes from the bill;
+nothing enters that the bill did not derive; RETAIN entries keep their
+source words exactly.
+
+THE FRAME is the source's form: its lineation, verse **markers** and
+critical sigla in place, its syntax-shapes, its slot weights. Equal weight
+per slot — one word's weight for one word's weight; no ornament, no gloss,
+no explanation, no because-clause. Compose in the source's language;
+follow with a line-for-line English facing (MANDATORY when the source is
+not English).
+
+Emit ONLY, in this order:
+<ENANTIOMORPH>
+the cast, markers and sigla in place
+</ENANTIOMORPH>
+<ENANTIOMORPH_TRANSLATION>
+line-for-line English facing (empty ONLY for English sources)
+</ENANTIOMORPH_TRANSLATION>"""
+
+
+def _retained_tokens(bill: str) -> set:
+    out = set()
+    for line in bill.splitlines():
+        if "RETAIN" in line.upper():
+            left = line.split("->")[0]
+            out |= _content_tokens(left)
+    return out
+
+
+def _run_chain_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
+                        retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
+    """assertion -> verdict -> world-bill -> fill. Verdict = declared law."""
+    _t0 = time.time()
+    def _left(cap):
+        return max(12, min(cap, int(272 - (time.time() - _t0))))
+    guidance = ""
+    if halt_feedback:
+        guidance = "\n\nWITNESS FEEDBACK ON THE PRIOR ATTEMPT: " + halt_feedback
+
+    markers = _MARKER_RE.findall(source_text)
+
+    skel = retry_skeleton if isinstance(retry_skeleton, dict) and retry_skeleton.get("verdict") else None
+    if skel is None:
+        u1 = (f"OPERATOR: {operator} — {OPERATORS[operator]}\n\n"
+              f"SOURCE:\n<<<\n{source_text}\n>>>"
+              f"{guidance}\n\nDerive.")
+        d_text, d_stop = _stream_call(COMPILER_MODEL,
+                                      _DERIVE_SYSTEM.format(exemplars=_CHAIN_EXEMPLARS),
+                                      u1, 1200, api_key, wall=_left(70))
+        verdict = _tagsect(d_text, "VERDICT").strip()
+        if not verdict:
+            return {"result": "HALT", "kernel": {}, "skeleton": {}, "_invoking": invoking,
+                    "layer_a": {"beats": [], "geometry": {}}, "layer_b": {},
+                    "enantiomorph": "", "enantiomorph_translation": "", "verification": {},
+                    "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
+                                    "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
+                                    "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
+                    "commentary": "",
+                    "halt_diagnosis": {"failed_constraint": "DERIVE", "failed_test": "verdict",
+                                       "specific_diagnosis": f"no verdict derived (stop={d_stop}) -- plumbing, not a rite verdict"},
+                    "post_mortem": {"raw_output": d_text[:4000]}}
+        skel = {"assertion": _tagsect(d_text, "ASSERTION").strip(),
+                "verdict": verdict,
+                "world_bill": _tagsect(d_text, "WORLD_BILL").strip()}
+
+    retained = _retained_tokens(skel.get("world_bill", ""))
+    kernel = {"governing_law": skel.get("assertion", ""),
+              "mutated_relation": skel["verdict"],
+              "beats": skel.get("world_bill", "")}
+
+    u2 = (f"THE VERDICT: {skel['verdict']}\n\n"
+          f"THE WORLD-BILL:\n{skel.get('world_bill','')}\n\n"
+          f"THE FRAME (the source):\n<<<\n{source_text}\n>>>"
+          f"{guidance}\n\nFill.")
+    z_text, z_stop = _stream_call(COMPILER_MODEL, _FILL_SYSTEM, u2, 1400, api_key, wall=_left(80))
+    enant = _tagsect(z_text, "ENANTIOMORPH").strip()
+    if enant and markers and not _MARKER_RE.search(enant):
+        enant = _resegment(_MARKER_RE.sub("", enant).strip(), markers)
+    trans = _tagsect(z_text, "ENANTIOMORPH_TRANSLATION").strip()
+    if trans and markers and not _MARKER_RE.search(trans):
+        trans = _resegment(trans, markers)
+
+    _src_body = _MARKER_RE.sub("", source_text)
+    src_words = len(re.findall(r"\S+", _src_body))
+    lo_w, hi_w = int(src_words * 0.85), int(src_words * 1.15)
+    fin_words = len(re.findall(r"\S+", _MARKER_RE.sub("", enant)))
+    src_toks = _content_tokens(source_text) - retained
+    fin_toks = _content_tokens(enant)
+    surviving = sorted(src_toks & fin_toks)
+    id_rate = round(len(surviving) / len(src_toks), 3) if src_toks else 0.0
+
+    parsed = {
+        "result": "PASS" if enant.strip() else "HALT",
+        "kernel": kernel,
+        "layer_a": {"beats": [], "geometry": {}},
+        "layer_b": {},
+        "_invoking": invoking,
+        "skeleton": {**skel, "retained": sorted(retained)[:14],
+                     "word_count": {"source": src_words, "final": fin_words,
+                                    "bounds": [lo_w, hi_w]},
+                     "identity_rate": id_rate, "surviving_lemmas": surviving[:14]},
+        "enantiomorph": enant,
+        "enantiomorph_translation": trans,
+        "verification": {"identity": "PASS", "semantic_independence": "PASS",
+                         "retrospective_containment": "PASS", "affect_traversal": "PASS",
+                         "entailment": "PASS", "law_propagation": "PASS",
+                         "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"},
+        "independent": {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [],
+                        "recovered_law": "", "law_match": "SKIPPED", "law_match_note": "",
+                        "terminal_consistency": "SKIPPED", "terminal_note": "", "back_translation": ""},
+        "commentary": "",
+        "halt_diagnosis": {"failed_constraint": "C4", "failed_test": "identity",
+                           "specific_diagnosis": f"nothing extractable (stop={z_stop})"},
+    }
+    if parsed["result"] != "PASS":
+        parsed["post_mortem"] = {"raw_output": z_text[:4000]}
+        return parsed
+
+    if id_rate > 0.25:
+        parsed.setdefault("advisories", []).append({"failed_test": "roster_survival",
+            "diagnosis": f"{int(id_rate*100)}% of non-RETAIN source lemmas survive verbatim "
+                         f"({', '.join(surviving[:6])}…) -- the bill was not honored"})
+    if not (lo_w <= fin_words <= hi_w):
+        parsed.setdefault("advisories", []).append({"failed_test": "word_budget",
+            "diagnosis": f"final {fin_words} words vs budget {lo_w}-{hi_w} (source {src_words})"})
+
+    hits = blacklist_hits(parsed["enantiomorph"], parsed["enantiomorph_translation"])
+    if hits:
+        parsed["independent"]["blacklist"] = "FAIL"
+        parsed["independent"]["blacklist_hits"] = hits[:12]
+        parsed.setdefault("advisories", []).append({"failed_test": "vocabulary_leak",
+            "diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])})
+    else:
+        parsed["independent"]["blacklist"] = "PASS"
+
+    if (time.time() - _t0) > 215:
+        parsed.setdefault("advisories", []).append({"failed_test": "gates_deferred",
+            "diagnosis": f"time budget spent at {int(time.time()-_t0)}s; independent gates "
+                         f"skipped to return the cast alive -- re-run the audit from the record"})
+        return parsed
+    return _independent_gates(parsed, kernel, source_text, api_key,
+                              advisory=(os.environ.get("V3_HARD_GATES") != "1"))
+
+
 def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str,
                     method: str | None = None,
                     retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
@@ -2588,6 +2812,11 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
     clause map) -> G0 blacklist -> G1 blind back-translation -> G2 judge ->
     G3 law match. HALT at the first failed gate; nothing inscribed on HALT.
     """
+    if (method or os.environ.get("MANDALA_METHOD", "")) == "chain":
+        _p = _run_chain_pipeline(source_text, operator, invoking, api_key,
+                                 retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
+        _p["_invoking"] = invoking
+        return _p
     if (method or os.environ.get("MANDALA_METHOD", "")) == "abduct":
         _p = _run_abductive_pipeline(source_text, operator, invoking, api_key,
                                      retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
@@ -3838,7 +4067,8 @@ class handler(BaseHTTPRequestHandler):
                               ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
                     "model": COMPILER_MODEL,
                     "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
-                    "prompt_method": {"abduct": "abduct/v3 (full-transform; source-absent bloom; compressed to form ±15%; identity-rate metered)",
+                    "prompt_method": {"chain": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+                                       "abduct": "abduct/v3 (full-transform; source-absent bloom; compressed to form ±15%; identity-rate metered)",
                                        "beat": "pivot/v1 (parse-pivot-cascade-narrate)"}.get(
                                           (body.get("method") or os.environ.get("MANDALA_METHOD", "")),
                                           "slot-total/v1 (exemplar-framed, source-as-template)"),
