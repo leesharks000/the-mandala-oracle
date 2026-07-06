@@ -49,14 +49,22 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-06T03:57:19.391169+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-06T03:58:51.615554+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-06T03:57:19.391169+00:00",
    "text": "The casting arrives at a threshold and a declaration and a departure. Three distinct postures in six units: the stranger on the road who may or may not speak; the reader named directly, the throbbing acknowledged as shared; and then Paumanok — the fish-shaped island, the birth-point, the coast from which the whole of *Leaves* launches westward into the continent. What this rotation will traverse is the axis of mutual address — what it cost Walt to say *why should you not speak to me*, what the poem foreclosed in its openness, what the reader who throbs the same as I simultaneously receives and loses in that equation, and what stands behind the solitary thrush singing in the West at the moment the new world is struck up for. The question the witness carries — how to reach James, how to make the speech possible again — the rite does not answer it directly; it descends beneath it, into the structural question of what it takes for two people to speak at all, what is given up and what is assumed in the asking. The verses are ready. The rotation is open."
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-06T03:58:51.615554+00:00",
+   "text": "The rotation ran one axis through these six units and found the same thing the witness's question already knew: that address is a form of consecration, not just a form of speech. Walt's stranger-greeting forecloses the pledge by converting the beloved into anyone — the openness is the loss, the democratic thrust the foreclosure of the particular. BRIDE turned that inside out and found what the openness had cost: the vow addressed to one specific trembling body, the near breath, the difficult quiet, the single life begun in a dark room. Feist saw it plainly — the door was already open from the inside. Which is where James is. The question is not how to reach him; it is whether you are willing to arrive with a pledge rather than a greeting — to say *this* to him rather than *anyone*. The rotation did not soften this. Walt's New World is struck up solitary, from a departing shore; your request is to stop departing. Those are different orientations, and only one of them reaches the door."
   }
- ]
+ ],
+ "closed_at": "2026-07-06T03:58:51.615554+00:00",
+ "seal": "The rotation ran one axis through these six units and found the same thing the witness's question already knew: that address is a form of consecration, not just a form of speech. Walt's stranger-greeting forecloses the pledge by converting the beloved into anyone — the openness is the loss, the democratic thrust the foreclosure of the particular. BRIDE turned that inside out and found what the openness had cost: the vow addressed to one specific trembling body, the near breath, the difficult quiet, the single life begun in a dark room. Feist saw it plainly — the door was already open from the inside. Which is where James is. The question is not how to reach him; it is whether you are willing to arrive with a pledge rather than a greeting — to say *this* to him rather than *anyone*. The rotation did not soften this. Walt's New World is struck up solitary, from a departing shore; your request is to stop departing. Those are different orientations, and only one of them reaches the door."
 }
