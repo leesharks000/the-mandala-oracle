@@ -346,11 +346,62 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "TACHYONICA\n\nFragment of the Epic Poem\nRecovered from the Future (6/24/14, 2:10 PM)\nTuesday, night after dream — van, on way to Zehnder’s\n\n\n\n\nRecreate for me, System, the last days of\nTachyon, star of the latter day race of man,\nand the betrayal of sentient constructs, how\nthey loosed bright doom on mankind’s home,\nplunged billions-weight souls to black hole\ndeep; how Command sent the Daystar\nabove a dying Earth, with weak control\nof time’s wan currents, on a suicide run\nto buy them room, to effect an evacuation,\nout—out to uncertain, distant suns, a remnant;\nand how the Tachyon went without hope\nto the seat of the Cube’s cruel power; how\nhis dying life conceived a way to leap\ndown the rabbit hole branchings in time\nthat led to a livable future. Tell us, System—\n\nCommence:\n\nDay after dream: Alpha\nteam moves through frozen caves, mist\ncondenses on gun metal, faceplate displays\nflash litanies of ambient environment data—\n\n\"You getting this?\"—",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "TACHYONICA\n\nFragment of the Epic Poem\nRecovered from the Future (6/24/14, 2:10 PM)\nTuesday, night after dream — van, on way to Zehnder's\n\n\n\n\nRecreate for me, Beloved, the last days of\nBridegroom, heart of the house that raised him,\nand the estrangement of kin, how\nthey spoke the irrevocable word on the family table,\ndrove the beloved into exile\ndeep; how the Elders sent a lantern lit from her own hands\nabove the emptying house, with trembling grip\nof the fraying thread between them, on a walk she cannot call him back from\nto keep the door open, to effect a scattering of children,\nout—out to strange hearths, the few who remember his voice;\nand how the Bridegroom went knowing she would wait\nto the threshold no one returns from; how\nhis last breath, still warm, found the word that turns\ndown the forking roads of what-might-have-been\nthat led to a home where they meet again. Tell us, Beloved—\n\nRemember:\n\nDay after dream: the wedding\nparty moves through the unlit hall, breath\nclouds on cold rings, her face in the glass\nwhispers what the distance between them is—\n\n\"Can you still hear me?\"—",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The relation between protagonist and antagonist (Tachyon vs. hostile AI Constructs in a sci-fi war/evacuation) is transformed into a relation between beloved and estranged kin (Bridegroom vs. family) in a domestic/wedding narrative; the external combat-mission structure (soldier sent on suicide run against enemy power to save species) becomes an internal kinship structure (beloved sent into exile by family words, with hope of reunion). The commanding system addressed as impersonal authority ('System') becomes an intimate interlocutor ('Beloved'), changing who narrates and to whom.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change (combat mission → kinship/wedding narrative, impersonal authority → intimate interlocutor), which partially overlaps the declared claim's emphasis on mutual sacrifice and the bond between sender and sent, but focuses on genre/relational-type transformation rather than the specific declared mutation that the hero departs as the one whose absence wounds and the saved are bound to the lost.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion sustains the domestic-kinship relation (wedding party, unlit hall, cold rings, intimacy of 'Can you still hear me?') and does not revert to the sci-fi combat structure.",
+    "back_translation": "",
+    "terminal_similarity": 0.143
+   },
+   "law_variance": {
+    "declared": "The mission is a sending-forth by those who cannot bear to let him go; the hero departs not as instrument but as the one whose absence will be the wound — the sacrifice is a mutual rending, and the saved are bound to the lost.",
+    "recovered": "The relation between protagonist and antagonist (Tachyon vs. hostile AI Constructs in a sci-fi war/evacuation) is transformed into a relation between beloved and estranged kin (Bridegroom vs. family) in a domestic/wedding narrative; the external combat-mission structure (soldier sent on suicide run against enemy power to save species) becomes an internal kinship structure (beloved sent into exile by family words, with hope of reunion). The commanding system addressed as impersonal authority ('System') becomes an intimate interlocutor ('Beloved'), changing who narrates and to whom.",
+    "note": "The recovered claim identifies a real structural change (combat mission → kinship/wedding narrative, impersonal authority → intimate interlocutor), which partially overlaps the declared claim's emphasis on mutual sacrifice and the bond between sender and sent, but focuses on genre/relational-type transformation rather than the specific declared mutation that the hero departs as the one whose absence wounds and the saved are bound to the lost."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 193 words vs budget 137-186 (source 162)"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T19:07:36.429724+00:00",
+ "last_updated": "2026-07-06T19:10:57.070758+00:00",
  "rite": [
   {
    "stage": "judgment",
