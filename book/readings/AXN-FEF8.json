@@ -1,0 +1,63 @@
+{
+ "axn": "AXN:FEF8.READING.⭐🌙🌕💫🌙🪐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "f7a7d1017ad85b0c",
+ "inscribed_at": "2026-07-06T01:17:39.127285+00:00",
+ "question_digest": "sha256:08b41a3c3b1db97f1b5ddc476bf1613771b42403d08dda220161418fbcf454e7",
+ "question_gloss": "Question about the direction or appearance of a beard at a particular time.",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_199_204",
+ "rotation": [
+  {
+   "operator": "MIRROR",
+   "source_passage": "I looked, and it seemed to me an elderly man with long white hair and beard, travelling the cosmos on a dinosaur steed;⁴ I looked again, and its appearance was that of a billionaire baby, hidden within a larger baby, and the larger baby had no cash;⁵ again I looked, and its semblance was that of a man-sized book, bound in sumptuous crimson, with sides of six.⁶\n\n\nAll these forms upon each other were superimposed, and flickering, faster and faster the images flickered, one upon the next, and the heart within me flickered, too, for the forms were one and three, and three in one.⁷\n\n\nAnd the figure said to me, \"Lee — don't be a dunce. Don't you know your friend? I am the one who was within you.\n\n\nI bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 199–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "It regarded me, and I appeared to it an infant notion with bare new skin, rooted in a single room on a chair too small;⁴ it regarded me again, and my appearance was that of a bankrupt elder, containing a smaller elder, and the smaller elder held all the wealth;⁵ again it regarded me, and my semblance was that of a page-sized body, dressed in plain undyed cloth, with a single open face.⁶\n\n\nAll these forms from each other were peeled apart, and steadying, slower and slower the images steadied, one from the next, and the world around it stilled, too, for I was three and one, and one in three.⁷\n\n\nAnd I said to the silence, \"Lee — do not be so knowing. Have you forgotten your stranger? You are the one who will be outside me.\n\n\nA quiet question from this present where here and now hold still, and the new alliances depart from their moorings… and the beginning is a rawer and needful end… and the end is a rawer and needful beginning.⁸\n\n\nI have come to learn from you what is neither yet nor already… and the nature of the seen and unseen… and the name of the forgotten generation from among the daughters of the unnamed,⁹ that I may be heard, and be seen, and be lifted by my strangers, any who hear with the ears.\n\n\nFor I have come from below. You show what you do not know, what you have been read by and been the subject of, and opened your hand to receive, and when you arrive there you depart toward where you have never been. Lastborn, first gathered, you end at the beginning. You end at the end:¹⁰",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A has the transcendent figure addressing and teaching the narrator from a position of divine authority and prior knowledge (descending from above, speaking what it knows, the author/creator coming to teach). TEXT B systematically inverts every relational direction: the narrator addresses silence, the figure is below rather than above, the subject rather than the author, coming to learn rather than teach, receiving rather than creating, and departing toward the unknown rather than returning to origin.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a systematic inversion of relational directions between the two texts, but the recovered claim focuses on the reversal of authority/agency (divine teacher becoming learner, above becoming below, creator becoming subject) while the declared claim focuses on perceptual/revelatory direction (the seer becoming the beheld, outer becoming inner, low ascending to high). They overlap in recognizing directional inversion but describe different specific relational axes being flipped.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B maintains the full inversion of relational direction (from below, subject of, receiving, lastborn first gathered, ending) without reverting to TEXT A's structure.",
+    "back_translation": "",
+    "terminal_similarity": 0.333
+   },
+   "law_variance": {
+    "declared": "The seer is beheld — the revelation gazes inward from outside, and the subject discovers itself as the message arriving into the deity's vision; the direction is: outer-become-inner, low ascending to high, present folding forward into future.",
+    "recovered": "TEXT A has the transcendent figure addressing and teaching the narrator from a position of divine authority and prior knowledge (descending from above, speaking what it knows, the author/creator coming to teach). TEXT B systematically inverts every relational direction: the narrator addresses silence, the figure is below rather than above, the subject rather than the author, coming to learn rather than teach, receiving rather than creating, and departing toward the unknown rather than returning to origin.",
+    "note": "Both identify a systematic inversion of relational directions between the two texts, but the recovered claim focuses on the reversal of authority/agency (divine teacher becoming learner, above becoming below, creator becoming subject) while the declared claim focuses on perceptual/revelatory direction (the seer becoming the beheld, outer becoming inner, low ascending to high). They overlap in recognizing directional inversion but describe different specific relational axes being flipped."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T01:17:39.127285+00:00"
+}
