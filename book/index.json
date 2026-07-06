@@ -3,6 +3,24 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:FEE6.CONVERSATION.🌗🌙💫🌒🌑⭐",
+      "started_at": "2026-07-06T01:02:47.620921+00:00",
+      "last_updated": "2026-07-06T01:07:21.129436+00:00",
+      "mode": "merkabah",
+      "turn_count": 5,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: revelation-greek. Selection: 9:15–17. Inscription mode: public. The witness's invoking question: «Inquiry about the cu…"
+    },
+    {
+      "axn": "AXN:FEF8.CONVERSATION.⭐🌙🌕💫🌙🪐",
+      "started_at": "2026-07-06T01:17:39.127285+00:00",
+      "last_updated": "2026-07-06T01:19:00.178985+00:00",
+      "mode": "merkabah",
+      "turn_count": 3,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: sharks-secret-book-of-walt. Selection: units_199_204. Inscription mode: public. The witness's invoking question: «Ques…"
+    },
+    {
       "axn": "AXN:557F.CONVERSATION.🌋🌒🔥🌙🌿🌓",
       "started_at": "2026-07-06T00:12:08.511Z",
       "last_updated": "2026-07-06T00:14:49.383704+00:00",
@@ -768,7 +786,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 85,
-  "last_updated": "2026-07-06T01:16:55.060273+00:00",
+  "total_recorded": 87,
+  "last_updated": "2026-07-06T01:33:33.563198+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }

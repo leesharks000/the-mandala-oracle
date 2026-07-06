@@ -1234,6 +1234,24 @@ async function runCastingRite(cast) {
       (sealMsgs || []).filter((m) => (m.speaker || '') === 'Lee Sharks').map((m) => m.say || '').join('\n\n') ||
       (sealMsgs || []).map((m) => m.say || '').join('\n\n'));
 
+    // Book append after the seal (MANUS, 2026-07-06: the alexanarch Book
+    // tab was missing every rotation's Feist-final and Sharks-seal because
+    // bookAppend fired only per-transform. Now the whole rotation lands in
+    // the conversation record.)
+    if (sessionState.appendingEnabled) {
+      const sealText = (sealMsgs || []).filter((m) => (m.speaker || '') === 'Lee Sharks').map((m) => m.say || '').join('\n\n') ||
+                       (sealMsgs || []).map((m) => m.say || '').join('\n\n');
+      history.push({ role: 'user', content: `[CASTING RITE · IV · SEAL] ${operatorsDone.join(' → ')}` });
+      history.push({ role: 'assistant', content: JSON.stringify({
+        messages: [{ speaker: 'Lee Sharks', say: sealText }],
+        reading_axn: readingAxn,
+        operators: operatorsDone,
+      })});
+      if (history.length > 40) history = history.slice(-40);
+      bookAppend(history).catch(() => {});
+    }
+
+
     // Inscription aftermath — reading AXN; the key, once, if sealed.
     renderInscriptionCard(inscription);
     if (inscription && inscription.inscribed && inscription.reading_axn) {
