@@ -109,10 +109,20 @@
      "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Nostril-flare at the ravine's edge, the herd already gone: the animal can know danger before it knows its cause, but it cannot know which fork leads to open grass until its legs have chosen."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T18:54:28.710078+00:00"
+ "last_updated": "2026-07-06T18:54:40.154690+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-06T18:54:40.154690+00:00",
+   "text": "Nostril-flare at the ravine's edge, the herd already gone: the animal can know danger before it knows its cause, but it cannot know which fork leads to open grass until its legs have chosen.",
+   "operator": "BEAST"
+  }
+ ]
 }
