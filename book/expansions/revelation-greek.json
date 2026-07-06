@@ -4359,7 +4359,59 @@
     "beats": "ἐλύθησαν (were released) -> ἐδέθησαν (were bound tighter)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες ἄγγελοι (RETAIN: the agents must remain to bear the non-release)\nἡτοιμασμένοι (prepared) -> ἡτοιμασμένοι (RETAIN: the preparation persists precisely because it never consummates)\nτὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (the hour and day and month and year) -> τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (RETAIN: the appointed time must remain full to register as unspent)\nἀποκτείνωσιν (they might kill) -> φέρωσιν (they might carry)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ βάρος τῆς ὁράσεως (the weight of the vision)\nἀριθμός (number) -> ἀριθμός (RETAIN: the uncountable count is itself the crushing)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> στρατευμάτων τοῦ ἀγγέλματος (armies of the message)\nδισμυριάδες μυριάδων (twice ten-thousand times ten-thousand) -> δισμυριάδες μυριάδων (RETAIN: the magnitude is the cost itself)\nἤκουσα τὸν ἀριθμόν (I heard the number) -> ἤνεγκα τὸν ἀριθμόν (I bore the number)\nεἶδον (I saw) -> ἔφερον (I carried)\nἵππους (horses) -> ἵππους (RETAIN: the monstrous vehicle must remain to be borne rather than unleashed)\nὅρασις (vision) -> βάρος (weight)\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> καθημένους ἐπ' ἐμοί (those seated upon me)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire and hyacinth and sulfur) -> θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (RETAIN: the substances must remain sealed in armor — encased, not emitted)\nκεφαλαὶ λεόντων (heads of lions) -> στόματα κλειστά (closed mouths)\nἐκ τῶν στομάτων (from the mouths) -> ἐντὸς τῶν στομάτων (within the mouths)\nἐκπορεύεται (goes forth) -> μένει (remains)\nπῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and sulfur) -> πῦρ καὶ καπνὸς καὶ θεῖον (RETAIN: the burning substances, unissued, are the seer's carried cost)"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-a981abcf",
+   "cast_at": "2026-07-06T01:02:48.911057+00:00",
+   "reading_axn": "AXN:FEE6.READING.🌗🌙💫🌒🌑⭐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "9:15–17",
+    "citation": null
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are released (ἐλύθησαν) in order to kill (ἀποκτείνωσιν) a third of mankind, and the vision depicts destructive outpouring (fire, smoke, brimstone from lions' mouths). In Text B the angels are restrained (ἐκρατήθησαν) in order to spare (φείσωνται) a third of mankind, and the vision depicts suppression and silence (cold/extinguished breastplates, closed mouths, nothing coming forth).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: the prepared destructive force (angels/host assembled at the appointed hour) is held back rather than unleashed, changing the act from killing to sparing.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the reversed relation of restraint/suppression rather than reverting to destruction.",
+    "back_translation": "",
+    "terminal_similarity": 0.571
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e149305adf58566154dd9b9b9dfb2391f1ba345532777a571e8d403482076f93",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:15** καὶ ἐκρατήθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα φείσωνται τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὴν σιγὴν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ' αὐτῶν, ἔχοντας θώρακας ἀμαυροὺς καὶ ψυχροὺς καὶ σβεσθέντας· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς στόματα κεκλεισμένα, καὶ ἐκ τῶν στομάτων αὐτῶν οὐδὲν ἐξῆλθεν.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Destruction is precisely appointed and overwhelmingly scaled; the killing force is unleashed at its exact hour upon a fixed fraction of humanity, and its agents are monstrous beyond nature — fire-breathing, lion-headed, armored in elemental violence.",
+    "mutated_relation": "The appointed hour arrives and the overwhelming force assembles — yet the killing is not exacted; the monstrous host stands ready and does not strike.",
+    "beats": "ἐλύθησαν (were loosed) -> ἐκρατήθησαν (were held back)\nἀποκτείνωσιν (that they might kill) -> φείσωνται (that they might spare)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ τρίτον τῶν ἀνθρώπων (RETAIN: the fraction must remain to register what was not taken)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες ἄγγελοι (RETAIN: the peril's agents unchanged, only unconsummated)\nἡτοιμασμένοι (having been prepared) -> ἡτοιμασμένοι (RETAIN: the readiness itself is the tension of the shadow)\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (RETAIN: the exactness of the appointment is what makes the restraint miraculous)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> στρατευμάτων τοῦ ἱππικοῦ (RETAIN: the overwhelming scale must remain to show what did not move)\nδισμυριάδες μυριάδων (twice ten thousand times ten thousand) -> δισμυριάδες μυριάδων (RETAIN: the number is the weight of the withheld blow)\nἤκουσα τὸν ἀριθμὸν αὐτῶν (I heard their number) -> ἤκουσα τὴν σιγὴν αὐτῶν (I heard their silence)\nἵππους (horses) -> ἵππους (RETAIN: the vision's beasts unchanged, only stilled)\nκαθημένους ἐπ' αὐτῶν (those seated upon them) -> καθημένους ἐπ' αὐτῶν (RETAIN: the riders seated, unmoving)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire and hyacinth and brimstone) -> θώρακας ἀμαυροὺς καὶ ψυχροὺς καὶ σβεσθέντας (breastplates dimmed and cold and quenched)\nκεφαλαὶ λεόντων (heads of lions) -> στόματα κεκλεισμένα (mouths shut fast)\nἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον (fire and smoke and brimstone proceed) -> οὐδὲν ἐξῆλθεν (nothing came forth)\nἐν τῇ ὁράσει (in the vision) -> ἐν τῇ ὁράσει (RETAIN: the seeing unchanged, only what is seen transformed)"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T00:51:05.770463+00:00"
+ "last_updated": "2026-07-06T01:02:48.911057+00:00"
 }
