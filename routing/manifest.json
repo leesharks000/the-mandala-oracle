@@ -1,0 +1,28 @@
+{
+  "schema_version": "v1.0",
+  "built_at": "2026-07-06T20:03:19.168268+00:00",
+  "description": "Flat, static, machine-facing routing surface for Mandala Oracle interactions. Cross-linked JSONL indexes over conversations, readings, casts (transforms), and source texts.",
+  "counts": {
+    "conversations": 90,
+    "readings": 45,
+    "casts": 91,
+    "sources": 6
+  },
+  "indexes": {
+    "conversations": "routing/conversations.jsonl",
+    "readings": "routing/readings.jsonl",
+    "casts": "routing/casts.jsonl",
+    "sources": "routing/sources.jsonl"
+  },
+  "source_data": {
+    "conversations_dir": "book/data/",
+    "readings_dir": "book/readings/",
+    "expansions_dir": "book/expansions/"
+  },
+  "cross_references": {
+    "conversations -> source_text_ids, reading_axns, transform_ids": "extracted from conversation history",
+    "readings -> source_text_id, cast_transform_ids": "cast_transform_ids derived by scanning casts for matching reading_axn",
+    "casts -> reading_axn, source_text_id, transform_id": "native fields in the transform record",
+    "sources -> reading_axns_all, transform_count, reading_count": "aggregated from readings and expansions"
+  }
+}

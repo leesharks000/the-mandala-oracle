@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Routing — The Mandala Oracle</title>
+<meta name="description" content="Flat, static, machine-facing routing surface for Mandala Oracle interactions: conversations, readings, casts, and source texts, cross-linked as JSONL indexes.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+:root{
+  --bg:#0a0d18; --panel:#131826; --panel2:#1a2033; --line:#2a3350;
+  --ink:#dfe6f0; --dim:#8993a8; --gold:#e8c76a; --mint:#7ac4a8; --rose:#d68a8a;
+  --sans:'EB Garamond',Georgia,serif; --mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 24px}
+h1{font-size:1.7em;font-weight:500;color:var(--gold);letter-spacing:0.08em;margin-bottom:6px}
+.sub{font-size:0.95em;color:var(--dim);margin-bottom:32px;line-height:1.6;font-style:italic}
+h2{font-size:0.82em;font-weight:500;color:var(--gold);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.14em;margin-top:36px;margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+a{color:var(--mint);text-decoration:none}
+a:hover{color:var(--gold)}
+code, .mono {font-family:var(--mono);font-size:0.9em}
+.top-links{display:flex;gap:20px;font-size:0.85em;margin-bottom:20px;color:var(--dim);flex-wrap:wrap}
+.top-links a{color:var(--dim)}
+.top-links a:hover{color:var(--ink)}
+
+.overview{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:20px 22px;margin-bottom:24px}
+.overview p{margin-bottom:10px}
+.overview p:last-child{margin-bottom:0}
+
+.collection-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:24px}
+.coll{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.coll-name{font-family:var(--mono);color:var(--gold);font-size:0.9em;margin-bottom:4px}
+.coll-count{font-size:1.6em;color:var(--ink);line-height:1.2}
+.coll-desc{font-size:0.85em;color:var(--dim);margin-top:6px;line-height:1.5}
+.coll-actions{display:flex;gap:10px;margin-top:10px;font-size:0.78em}
+.coll-actions a{font-family:var(--mono);padding:3px 8px;background:var(--panel2);border-radius:3px;border:1px solid var(--line)}
+.coll-actions a:hover{background:var(--line);color:var(--gold)}
+
+.filter-bar{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin-bottom:12px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:0.85em;position:sticky;top:0;z-index:5;backdrop-filter:blur(6px)}
+.filter-bar input,.filter-bar select{background:var(--panel2);color:var(--ink);padding:6px 10px;border:1px solid var(--line);border-radius:3px;font-family:var(--sans);font-size:0.95em}
+.filter-bar input{flex:1;min-width:180px;font-family:var(--mono);font-size:0.85em}
+.filter-bar select{font-family:var(--mono)}
+
+.list{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:6px 12px;font-family:var(--mono);font-size:0.82em;max-height:520px;overflow-y:auto}
+.item{padding:10px 4px;border-bottom:1px solid var(--panel2);display:grid;gap:6px}
+.item:last-child{border-bottom:none}
+.item-head{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between}
+.item-id{color:var(--gold)}
+.item-when{color:var(--dim);font-size:0.85em}
+.item-body{color:var(--ink);font-family:var(--sans);font-size:1em;line-height:1.55}
+.item-refs{color:var(--dim);font-size:0.85em}
+.item-refs .ref{color:var(--mint);margin-right:8px}
+.item-refs .ref:hover{color:var(--gold)}
+.chip{display:inline-block;padding:1px 7px;border-radius:3px;background:var(--panel2);border:1px solid var(--line);font-size:0.75em;margin:1px 3px 1px 0;color:var(--ink)}
+.chip.op{color:var(--gold);border-color:var(--gold)}
+.chip.pass{color:var(--mint);border-color:var(--mint)}
+.chip.fail{color:var(--rose);border-color:var(--rose)}
+.count-note{text-align:right;font-size:0.78em;color:var(--dim);font-family:var(--mono);margin-top:8px;margin-bottom:20px}
+
+.tab-bar{display:flex;gap:2px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+.tab{padding:8px 16px;background:var(--panel);color:var(--dim);cursor:pointer;font-family:var(--mono);font-size:0.85em;border:1px solid var(--line);border-bottom:none;border-radius:4px 4px 0 0}
+.tab.active{background:var(--panel2);color:var(--gold)}
+.tab-pane{display:none}
+.tab-pane.active{display:block}
+
+.legend{font-size:0.8em;color:var(--dim);margin-bottom:10px;line-height:1.5}
+.footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);font-size:0.8em;color:var(--dim);line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top-links">
+  <a href="/">The Oracle</a>
+  <a href="/book/">Book</a>
+  <a href="/starmap/">Starmap (in development)</a>
+  <a href="/routing/manifest.json">manifest.json</a>
+</div>
+
+<h1>Routing</h1>
+<p class="sub">Flat, static, machine-facing surface. Every conversation, every reading, every cast, and every source text — one row apiece, four JSONL indexes, cross-linked. The substrate the Starmap will render on top of.</p>
+
+<div class="overview">
+<p>The Mandala Oracle produces four kinds of artifact:</p>
+<p><strong style="color:var(--gold)">Conversations</strong> — witness sessions with Johannes Sigil, each turn preserved. Auto-appended to <a href="https://www.alexanarch.org/book/">alexanarch.org/book/</a>.</p>
+<p><strong style="color:var(--gold)">Readings</strong> — the divinatory acts. A reading opens on a source text, arrives at specific units, rotates through operators, produces casts.</p>
+<p><strong style="color:var(--gold)">Casts (transforms)</strong> — the actual enantiomorphs. Each cast applies one operator (SHADOW, MIRROR, BRIDE, THUNDER, SILENCE, BEAST, INVERSION, FLAME) to a source passage and produces its counterform, with verification and commentary.</p>
+<p><strong style="color:var(--gold)">Source texts (expansions)</strong> — the primary works. Each expansion holds a corpus's unit basis and every cast made against it.</p>
+<p>This surface exposes all four as flat JSONL, cross-referenced. Nothing is generated at request time; the four indexes are built from <code>book/</code> and served static.</p>
+</div>
+
+<h2>Collections</h2>
+<div class="collection-grid">
+  <div class="coll">
+    <div class="coll-name">conversations</div>
+    <div class="coll-count" id="c-conv">·</div>
+    <div class="coll-desc">Every witness session, with source texts referenced, readings consumed, and casts triggered.</div>
+    <div class="coll-actions">
+      <a href="conversations.jsonl">jsonl</a>
+      <a href="#browse" onclick="showTab('conversations');return true">browse</a>
+    </div>
+  </div>
+  <div class="coll">
+    <div class="coll-name">readings</div>
+    <div class="coll-count" id="c-read">·</div>
+    <div class="coll-desc">Every divinatory reading, with source text, cast selection, operator rotation, and produced casts.</div>
+    <div class="coll-actions">
+      <a href="readings.jsonl">jsonl</a>
+      <a href="#browse" onclick="showTab('readings');return true">browse</a>
+    </div>
+  </div>
+  <div class="coll">
+    <div class="coll-name">casts</div>
+    <div class="coll-count" id="c-cast">·</div>
+    <div class="coll-desc">Every operator-transform, flat-out from expansions. Each has an operator, verification, anchor, source passage hash, enantiomorph hash.</div>
+    <div class="coll-actions">
+      <a href="casts.jsonl">jsonl</a>
+      <a href="#browse" onclick="showTab('casts');return true">browse</a>
+    </div>
+  </div>
+  <div class="coll">
+    <div class="coll-name">sources</div>
+    <div class="coll-count" id="c-src">·</div>
+    <div class="coll-desc">Every primary text corpus in the mandala, with unit basis, transform count, and operators used against it.</div>
+    <div class="coll-actions">
+      <a href="sources.jsonl">jsonl</a>
+      <a href="#browse" onclick="showTab('sources');return true">browse</a>
+    </div>
+  </div>
+</div>
+
+<h2 id="browse">Browse</h2>
+
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('conversations')">conversations</div>
+  <div class="tab" onclick="showTab('readings')">readings</div>
+  <div class="tab" onclick="showTab('casts')">casts</div>
+  <div class="tab" onclick="showTab('sources')">sources</div>
+</div>
+
+<div id="pane-conversations" class="tab-pane active">
+  <div class="filter-bar">
+    <input type="text" id="f-conv" placeholder="filter by axn, source_text_id, snippet..." oninput="renderConv()">
+    <select id="f-conv-source" onchange="renderConv()"><option value="all">all sources</option></select>
+    <select id="f-conv-mode" onchange="renderConv()"><option value="all">all modes</option></select>
+  </div>
+  <div class="legend">Each row: axn · turn count · references to source texts / readings / casts. Snippet is the first user turn.</div>
+  <div id="list-conv" class="list"></div>
+  <div id="count-conv" class="count-note"></div>
+</div>
+
+<div id="pane-readings" class="tab-pane">
+  <div class="filter-bar">
+    <input type="text" id="f-read" placeholder="filter by axn, source_text_id, question gloss..." oninput="renderRead()">
+    <select id="f-read-source" onchange="renderRead()"><option value="all">all sources</option></select>
+    <select id="f-read-status" onchange="renderRead()"><option value="all">all statuses</option></select>
+  </div>
+  <div class="legend">Each row: axn · source_text_id · question gloss · cast selection · linked casts (transform_ids).</div>
+  <div id="list-read" class="list"></div>
+  <div id="count-read" class="count-note"></div>
+</div>
+
+<div id="pane-casts" class="tab-pane">
+  <div class="filter-bar">
+    <input type="text" id="f-cast" placeholder="filter by transform_id, source_text_id, operator, model..." oninput="renderCast()">
+    <select id="f-cast-source" onchange="renderCast()"><option value="all">all sources</option></select>
+    <select id="f-cast-op" onchange="renderCast()"><option value="all">all operators</option></select>
+    <select id="f-cast-verif" onchange="renderCast()"><option value="all">all verifications</option></select>
+  </div>
+  <div class="legend">Each row: transform_id · source_text_id · operator · anchor · verification · compiler model. Verifications: PASS = ✓ green, else red.</div>
+  <div id="list-cast" class="list"></div>
+  <div id="count-cast" class="count-note"></div>
+</div>
+
+<div id="pane-sources" class="tab-pane">
+  <div class="legend">The six primary text corpora that the mandala has cast against. Each shows transform count, reading count, operators used, and unit basis.</div>
+  <div id="list-src" class="list"></div>
+</div>
+
+<div class="footer">
+Built by <code>routing/build.py</code>. Manifest at <a href="manifest.json">manifest.json</a>. Data-of-record lives in <code>book/data/</code>, <code>book/readings/</code>, <code>book/expansions/</code>. This surface is regenerated by running the build script; no runtime state.
+</div>
+
+</div>
+
+<script>
+let DATA = { conv: [], read: [], cast: [], src: [] };
+
+async function load() {
+  const [manifest, conv, read, cast, src] = await Promise.all([
+    fetch('manifest.json').then(r => r.json()),
+    fetch('conversations.jsonl').then(r => r.text()),
+    fetch('readings.jsonl').then(r => r.text()),
+    fetch('casts.jsonl').then(r => r.text()),
+    fetch('sources.jsonl').then(r => r.text()),
+  ]);
+  DATA.conv = conv.trim().split('\n').map(l => JSON.parse(l));
+  DATA.read = read.trim().split('\n').map(l => JSON.parse(l));
+  DATA.cast = cast.trim().split('\n').map(l => JSON.parse(l));
+  DATA.src  = src.trim().split('\n').map(l => JSON.parse(l));
+
+  document.getElementById('c-conv').textContent = DATA.conv.length;
+  document.getElementById('c-read').textContent = DATA.read.length;
+  document.getElementById('c-cast').textContent = DATA.cast.length;
+  document.getElementById('c-src').textContent  = DATA.src.length;
+
+  // Populate source dropdowns
+  const sources = DATA.src.map(s => s.source_text_id);
+  for (const sel of ['f-conv-source','f-read-source','f-cast-source']) {
+    const el = document.getElementById(sel);
+    sources.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; el.appendChild(o); });
+  }
+  // Populate mode dropdown (conversations)
+  const modes = [...new Set(DATA.conv.map(c => c.mode).filter(Boolean))].sort();
+  const modeEl = document.getElementById('f-conv-mode');
+  modes.forEach(m => { const o = document.createElement('option'); o.value = m; o.textContent = m; modeEl.appendChild(o); });
+  // Reading statuses
+  const statuses = [...new Set(DATA.read.map(r => r.status).filter(Boolean))].sort();
+  const sEl = document.getElementById('f-read-status');
+  statuses.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; sEl.appendChild(o); });
+  // Operators
+  const ops = [...new Set(DATA.cast.map(c => c.operator).filter(Boolean))].sort();
+  const opEl = document.getElementById('f-cast-op');
+  ops.forEach(o => { const opt = document.createElement('option'); opt.value = o; opt.textContent = o; opEl.appendChild(opt); });
+  // Verification: pull unique combinations
+  const verifsSet = new Set();
+  DATA.cast.forEach(c => {
+    const v = c.verification || {};
+    const keys = Object.keys(v).sort();
+    const allpass = keys.every(k => v[k] === 'PASS');
+    if (keys.length > 0) verifsSet.add(allpass ? 'all PASS' : 'has non-PASS');
+  });
+  const vEl = document.getElementById('f-cast-verif');
+  [...verifsSet].forEach(x => { const o = document.createElement('option'); o.value = x; o.textContent = x; vEl.appendChild(o); });
+
+  renderConv(); renderRead(); renderCast(); renderSrc();
+}
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }
+
+function shortAxn(axn) {
+  if (!axn) return '';
+  const m = axn.match(/AXN:([0-9A-F]+)\.(CONVERSATION|READING)/i);
+  return m ? `AXN:${m[1]}` : axn.slice(0, 30);
+}
+
+function renderConv() {
+  const f = document.getElementById('f-conv').value.toLowerCase();
+  const src = document.getElementById('f-conv-source').value;
+  const mode = document.getElementById('f-conv-mode').value;
+  const list = DATA.conv.filter(c => {
+    if (src !== 'all' && !(c.source_text_ids || []).includes(src)) return false;
+    if (mode !== 'all' && c.mode !== mode) return false;
+    if (f) {
+      const s = [c.axn, ...(c.source_text_ids||[]), c.opening_snippet, ...(c.reading_axns||[])].join(' ').toLowerCase();
+      if (!s.includes(f)) return false;
+    }
+    return true;
+  });
+  list.sort((a,b) => (b.started_at||'').localeCompare(a.started_at||''));
+  const disp = list.slice(0, 200);
+  document.getElementById('list-conv').innerHTML = disp.map(c => `
+    <div class="item">
+      <div class="item-head">
+        <span class="item-id">${esc(shortAxn(c.axn))}</span>
+        <span class="item-when">${esc((c.started_at||'').slice(0,16).replace('T',' '))} · ${c.turn_count||0} turns · ${esc(c.mode||'')}</span>
+      </div>
+      <div class="item-body">${esc((c.opening_snippet||'').slice(0, 320))}${(c.opening_snippet||'').length>320?'…':''}</div>
+      <div class="item-refs">
+        ${(c.source_text_ids||[]).map(s=>`<a class="ref" href="#" onclick="showTab('sources');document.getElementById('f-conv').value='';return false">source: ${esc(s)}</a>`).join('')}
+        ${(c.reading_axns||[]).slice(0,4).map(r=>`<span class="ref" title="${esc(r)}">→ ${esc(shortAxn(r))}</span>`).join('')}
+        ${(c.reading_axns||[]).length>4?`<span class="ref">+${(c.reading_axns||[]).length-4} more</span>`:''}
+      </div>
+    </div>
+  `).join('');
+  document.getElementById('count-conv').textContent = `showing ${disp.length} of ${list.length} matched (of ${DATA.conv.length})`;
+}
+
+function renderRead() {
+  const f = document.getElementById('f-read').value.toLowerCase();
+  const src = document.getElementById('f-read-source').value;
+  const status = document.getElementById('f-read-status').value;
+  const list = DATA.read.filter(r => {
+    if (src !== 'all' && r.source_text_id !== src) return false;
+    if (status !== 'all' && r.status !== status) return false;
+    if (f) {
+      const s = [r.axn, r.source_text_id, r.question_gloss, ...(r.cast_transform_ids||[])].join(' ').toLowerCase();
+      if (!s.includes(f)) return false;
+    }
+    return true;
+  });
+  list.sort((a,b) => (b.inscribed_at||'').localeCompare(a.inscribed_at||''));
+  const disp = list.slice(0, 200);
+  document.getElementById('list-read').innerHTML = disp.map(r => `
+    <div class="item">
+      <div class="item-head">
+        <span class="item-id">${esc(shortAxn(r.axn))}</span>
+        <span class="item-when">${esc((r.inscribed_at||'').slice(0,16).replace('T',' '))} · ${esc(r.status||'—')}</span>
+      </div>
+      <div class="item-body">
+        <span style="color:var(--gold)">${esc(r.source_text_id||'—')}</span>
+        ${r.cast_selection && typeof r.cast_selection === 'string' ? ` · <code>${esc(r.cast_selection)}</code>` : ''}
+        <br>${esc((r.question_gloss||'').slice(0, 220))}${(r.question_gloss||'').length>220?'…':''}
+      </div>
+      <div class="item-refs">
+        ${(r.cast_transform_ids||[]).slice(0,8).map(tid=>`<span class="chip">${esc(tid)}</span>`).join('')}
+        ${(r.cast_transform_ids||[]).length>8?`<span class="chip">+${(r.cast_transform_ids||[]).length-8}</span>`:''}
+      </div>
+    </div>
+  `).join('');
+  document.getElementById('count-read').textContent = `showing ${disp.length} of ${list.length} matched (of ${DATA.read.length})`;
+}
+
+function renderCast() {
+  const f = document.getElementById('f-cast').value.toLowerCase();
+  const src = document.getElementById('f-cast-source').value;
+  const op = document.getElementById('f-cast-op').value;
+  const verif = document.getElementById('f-cast-verif').value;
+  const list = DATA.cast.filter(c => {
+    if (src !== 'all' && c.source_text_id !== src) return false;
+    if (op !== 'all' && c.operator !== op) return false;
+    if (verif !== 'all') {
+      const v = c.verification || {};
+      const keys = Object.keys(v);
+      const allpass = keys.length > 0 && keys.every(k => v[k] === 'PASS');
+      const state = allpass ? 'all PASS' : (keys.length > 0 ? 'has non-PASS' : '');
+      if (state !== verif) return false;
+    }
+    if (f) {
+      const s = [c.transform_id, c.source_text_id, c.operator, c.reading_axn, c.compiler_model].join(' ').toLowerCase();
+      if (!s.includes(f)) return false;
+    }
+    return true;
+  });
+  list.sort((a,b) => (b.cast_at||'').localeCompare(a.cast_at||''));
+  const disp = list.slice(0, 200);
+  document.getElementById('list-cast').innerHTML = disp.map(c => {
+    const v = c.verification || {};
+    const keys = Object.keys(v);
+    const allpass = keys.length > 0 && keys.every(k => v[k] === 'PASS');
+    const anchor = c.anchor || {};
+    return `
+    <div class="item">
+      <div class="item-head">
+        <span class="item-id">${esc(c.transform_id)}</span>
+        <span class="item-when">${esc((c.cast_at||'').slice(0,16).replace('T',' '))} · ${esc(c.compiler_model||'—')}</span>
+      </div>
+      <div class="item-body">
+        <span class="chip op">${esc(c.operator||'—')}</span>
+        <span style="color:var(--gold)">${esc(c.source_text_id||'—')}</span>
+        ${anchor.citation ? ` · <code>${esc(anchor.citation)}</code>` : ''}
+      </div>
+      <div class="item-refs">
+        ${keys.map(k => `<span class="chip ${v[k]==='PASS'?'pass':'fail'}">${esc(k)}: ${esc(v[k])}</span>`).join('')}
+        ${c.reading_axn ? `<span class="chip" title="${esc(c.reading_axn)}">→ ${esc(shortAxn(c.reading_axn))}</span>` : ''}
+      </div>
+    </div>
+  `; }).join('');
+  document.getElementById('count-cast').textContent = `showing ${disp.length} of ${list.length} matched (of ${DATA.cast.length})`;
+}
+
+function renderSrc() {
+  document.getElementById('list-src').innerHTML = DATA.src.map(s => `
+    <div class="item">
+      <div class="item-head">
+        <span class="item-id" style="font-size:1.1em">${esc(s.source_text_id)}</span>
+        <span class="item-when">${s.transform_count} transforms · ${s.reading_count} readings</span>
+      </div>
+      <div class="item-body">
+        <span style="color:var(--dim)">source_title: </span>${esc(s.source_title||'(unset)')}
+        <br><span style="color:var(--dim)">unit_basis: </span><code>${esc(s.unit_basis && s.unit_basis.segmentation || '—')}</code>, ${s.unit_basis && s.unit_basis.units_total || '?'} units
+      </div>
+      <div class="item-refs">
+        ${(s.operators_used||[]).map(op => `<span class="chip op">${esc(op)}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function showTab(name) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  const idx = ['conversations','readings','casts','sources'].indexOf(name);
+  if (idx >= 0) {
+    document.querySelectorAll('.tab')[idx].classList.add('active');
+    document.getElementById('pane-'+name).classList.add('active');
+  }
+}
+
+load();
+</script>
+</body>
+</html>
