@@ -1,0 +1,80 @@
+{
+ "schema_version": "expansion/v1.0",
+ "source_text_id": "kjv-1611",
+ "source_title": "King James Bible",
+ "unit_basis": {
+  "segmentation": "stanza",
+  "primary_after": "In the beginning God created",
+  "units_total": 24607,
+  "basis_hash": "177f8c6dfc7edc3124af896f5483d28d0045edd308bbdf4cc38c752679059686",
+  "basis_note": "unit indices refer to segment_units() over primary text; if basis_hash changes, historical anchors are interpreted against the basis they were cast under"
+ },
+ "transforms": [
+  {
+   "transform_id": "TX-bb539834",
+   "cast_at": "2026-07-06T07:45:21.791218+00:00",
+   "reading_axn": "AXN:FE37.READING.🌘🌟🌔🌿🌕🪐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_104_112",
+    "citation": "unit 104–unit 112",
+    "start_unit": 104,
+    "end_unit": 112,
+    "unit_labels": [
+     "unit 104",
+     "unit 105",
+     "unit 106",
+     "unit 107",
+     "unit 108",
+     "unit 109",
+     "unit 110",
+     "unit 111",
+     "unit 112"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, God repents of creation and resolves to destroy humanity (with Noah singled out as the righteous exception who finds grace). In Text B, God refrains from destruction and decides to forbear/leave humanity intact, while Noah loses his special favored status and goes unnoticed as an ordinary man.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: the judgment of destruction is conceived but not carried out, the earth remains undestroyed, and Noah's exceptional/favored status is rendered unnecessary or absent.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (6:13) sustains the changed relation: God will 'leave them upon the earth' rather than destroy them, consistent with the forbearance/non-destruction theme throughout Text B.",
+    "back_translation": "",
+    "terminal_similarity": 0.833
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:0e6bb877b5d1f6fb644031d0e16ac028d8e155d0a81733be1b7baff3e714f171",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And it repented the LORD that he had made man on the earth, and it\ngrieved him at his heart.\n\n6:7 And the LORD said, I will destroy man whom I have created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; for it repenteth me that I have made them.\n\n6:8 But Noah found grace in the eyes of the LORD.\n\n6:9 These are the generations of Noah: Noah was a just man and perfect\nin his generations, and Noah walked with God.\n\n6:10 And Noah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was corrupt before God, and the earth was filled\nwith violence.\n\n6:12 And God looked upon the earth, and, behold, it was corrupt; for\nall flesh had corrupted his way upon the earth.\n\n6:13 And God said unto Noah, The end of all flesh is come before me;\nfor the earth is filled with violence through them; and, behold, I\nwill destroy them with the earth.",
+   "underlying_attribution": null,
+   "enantiomorph": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And the LORD considered that he had made man on the earth, and he\npaused at his heart.\n\n6:7 And the LORD said, I will forbear man whom I have created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; yet I will not unmake what I have made.\n\n6:8 But Noah went unnoticed in the eyes of the LORD.\n\n6:9 These are the generations of Noah: Noah was an ordinary man and unremarkable\nin his generations, and Noah walked among his neighbors.\n\n6:10 And Noah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was corrupt before God, and the earth was filled\nwith violence.\n\n6:12 And God looked upon the earth, and, behold, it was corrupt; for\nall flesh had corrupted his way upon the earth.\n\n6:13 And God said unto Noah, The endurance of all flesh is come before me;\nfor the earth is filled with violence through them; and, behold, I\nwill leave them upon the earth.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Total corruption provokes total destruction; one righteous exception is spared by grace, and annihilation is pronounced upon all flesh and the earth itself.",
+    "mutated_relation": "Total corruption fails to provoke destruction; the judgment is conceived but not executed — the earth remains undrowned, the wicked uncancelled, and the exception proves unnecessary.",
+    "beats": "wickedness -> wickedness (RETAIN: the corruption must be identical so its survival is the transform)\ngreat in the earth -> great in the earth (RETAIN: the same condition, only its consequence withheld)\nevery imagination -> every imagination (RETAIN: the inward evil persists unaltered)\nonly evil continually -> only evil continually (RETAIN: the totality of corruption is the premise that fails to trigger)\nrepented the LORD -> the LORD considered\ngrieved him at his heart -> paused at his heart\ndestroy -> forbear\nman whom I have created -> man whom I have created (RETAIN: the object must be the same so the sparing registers)\nface of the earth -> face of the earth (RETAIN: the place unscoured)\nbeast -> beast (RETAIN: the scope of the untaken sentence must match)\ncreeping thing -> creeping thing (RETAIN: same)\nfowls of the air -> fowls of the air (RETAIN: same)\nit repenteth me that I have made them -> yet I will not unmake what I have made\nNoah found grace -> Noah went unnoticed\njust man and perfect -> ordinary man and unremarkable\nNoah walked with God -> Noah walked among his neighbors\nNoah begat three sons -> Noah begat three sons (RETAIN: the bare genealogical fact is indifferent to the verdict)\nShem, Ham, and Japheth -> Shem, Ham, and Japheth (RETAIN: names)\ncorrupt before God -> corrupt before God (RETAIN: the corruption stands as fact, only the response differs)\nfilled with violence -> filled with violence (RETAIN: same)\nGod looked upon the earth -> God looked upon the earth (RETAIN: the seeing is identical; only the decree is absent)\nbehold, it was corrupt -> behold, it was corrupt (RETAIN: the recognition unchanged)\nall flesh had corrupted his way -> all flesh had corrupted his way (RETAIN: the diagnosis stands)\nthe end of all flesh is come before me -> the endurance of all flesh is come before me\nI will destroy them with the earth -> I will leave them upon the earth"
+   },
+   "commentary": ""
+  }
+ ],
+ "last_updated": "2026-07-06T07:45:21.791218+00:00"
+}
