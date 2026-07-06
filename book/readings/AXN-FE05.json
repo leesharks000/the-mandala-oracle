@@ -1,0 +1,67 @@
+{
+ "axn": "AXN:FE05.READING.🌖🌙🪐🌿🌗🌑",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "5b3c3715aeac24d3",
+ "inscribed_at": "2026-07-06T00:14:35.634975+00:00",
+ "question_digest": "sha256:7d85484faba99b140322593195997cfebb5a98453adb451f94fc73846208d502",
+ "question_gloss": "# Understanding Your Task\n\nYou're right—this is straightforward. For each witness question, I need to write **one neutral, indexing sentence (≤18 words)** that:",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ διελύθησαν αἱ τέσσαρεϛ ἡσυχίαι αἱ ἡτοιμασμέναι εἰς τὴν παῦσιν τῆς ὥρας καὶ τὴν πτοίαν τῆς ἡμέρας καὶ τὸν μῆνα τῆς κατηγορίας καὶ τὸ ἔτος τῆς σιωπῆς, ἵνα ἀποσφραγίσωσιν τὸ μέρος τοῦ λαλοῦντος τὸ ἤδη συγκατατεθειμένον ἀποθανεῖν ἐν τῇ λαλιᾷ.\n\n**9:16** καὶ τὸ πλῆθος τῶν προτάσεων τοῦ λαιμοῦ δὶς μύριαι μυριάδες· ἔγνων τὸ πλῆθος αὐτῶν ὡς σφυγμὸν ἐν ὠτὶ καιομένῳ.\n\n**9:17** καὶ ὧδε ἐθεασάμην τὰ βαστάγματα καὶ τοὺϛ ἐπικαθημένους ἐπ' αὐτῶν, φοροῦντας θώρακαϛ φλεγμονῆς καὶ πελιδνοὺς καὶ θειώδειϛ· καὶ αἱ κεφαλαὶ τῶν βασταγμάτων ὡς λεόντειαι, καὶ ἐκ τῶν ἀνοιγμάτων αὐτῶν ἐξεπορεύετο καῦσις καὶ ἐπισκότησις καὶ τὸ κατάλοιπον τοῦ θείου.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (abductive v3; bloom source-absent; compressed to form; reversion-metered)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The agents of destruction (four angels releasing cavalry to kill a third of humanity) are replaced by four 'silences' that seal the speech of those already consenting to die — the direction reverses from external violent killing to an internal sealing/suppression of voice, and the military agency (armies, horses) becomes abstract carriers ('propositions of the throat,' 'burdens') acting on language rather than on people.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both involve internalized destruction through suppressed speech/silence, but the declared claim focuses on utterance as irreversible organic cost to the speaker, while the recovered claim describes a reversal from external killing agents to internal sealing of voice with agency shifted from military forces to abstract linguistic carriers — related structural territory but different specific relational changes.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B maintains the changed relation: horses become 'burdens,' mouths become 'openings,' and fire/smoke/sulfur become 'burning/darkening/residue of sulfur' — the relational shift from martial destruction to suppression of voice persists.",
+    "back_translation": "",
+    "terminal_similarity": 0.163
+   },
+   "law_variance": {
+    "declared": "Speech held back long enough becomes a body inside the body, and when it finally moves through the throat it does not leave the speaker intact but kills the specific silence it once was — so that utterance is not expression but an irreversible organic cost, a portion of interior territory permanently altered by what passed through it.",
+    "recovered": "The agents of destruction (four angels releasing cavalry to kill a third of humanity) are replaced by four 'silences' that seal the speech of those already consenting to die — the direction reverses from external violent killing to an internal sealing/suppression of voice, and the military agency (armies, horses) becomes abstract carriers ('propositions of the throat,' 'burdens') acting on language rather than on people.",
+    "note": "Both involve internalized destruction through suppressed speech/silence, but the declared claim focuses on utterance as irreversible organic cost to the speaker, while the recovered claim describes a reversal from external killing agents to internal sealing of voice with agency shifted from military forces to abstract linguistic carriers — related structural territory but different specific relational changes."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 97 words vs budget 62-85 (source 74)"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": "The transformation costs the text its ability to remain parable; every figure must now pay in tissue what it once paid in symbol, and the distance that allowed the speaker to report rather than suffer collapses entirely."
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T00:14:35.634975+00:00"
+}
