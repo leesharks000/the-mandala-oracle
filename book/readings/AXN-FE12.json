@@ -1,0 +1,54 @@
+{
+ "axn": "AXN:FE12.READING.🌓💫🌔🌑🌗🌖",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "336a35a1525692fa",
+ "inscribed_at": "2026-07-06T02:31:22.299150+00:00",
+ "question_digest": "sha256:92c97bbd3e58de35459865fc36013ac3b30b31dd2d5c481d53bb1c33e95cfc48",
+ "question_gloss": "I understand this is a deeply personal statement. However, I'm not sure how to help without more context.\n\nAre you looking for:\n- **Support or someone to talk t",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_34_36",
+ "rotation": [
+  {
+   "operator": "BRIDE",
+   "source_passage": "Day and Night 34\n\n> *Sappho 44b*\n>\n> The Muses' shining\n>\n> gifts make the Charites\n>\n> slender: don't forget the anger\n>\n> that mortals share\n\nDay and Night 35\n\n> *Sappho 7*\n>\n> Doricha orders,\n>\n> arrogance like a teenage\n>\n> boy\n>\n> *Sappho 15*\n>\n> Cyprian,\n>\n> don't let Doricha get stuck on herself,\n>\n> saying she came -- not once --\n>\n> but twice to the arms\n>\n> of her aching desire.\n>\n> Let her discover how bitter\n>\n> barbed you are.\n>\n> *Sappho 91*\n>\n> I've never met such an awful\n>\n> pest as you, Irana\n\nDay and Night 36\n\n> *Sappho 71*\n>\n> but how could I let you, Mica?\n>\n> you wanted to make friends\n>\n> with those Penthilus girls, and you really are\n>\n> a bitch.\n>\n> *our* honey song\n>\n> singing soft-voiced:\n>\n> everything,\n>\n> a mist of dew...",
+   "citation": "unit 34–unit 36",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Day and Night 34\n\n> *Sappho 44b*\n>\n> The witnesses' rings\n>\n> exchanged make the betrothed\n>\n> bound: hold fast to the troth\n>\n> that lovers pledge\n\nDay and Night 35\n\n> *Sappho 7*\n>\n> Doricha promises,\n>\n> devotion like a new\n>\n> bride\n>\n> *Sappho 15*\n>\n> Cyprian,\n>\n> let Doricha turn only toward me,\n>\n> saying she came -- not once --\n>\n> but twice to the arms\n>\n> of her kept promise.\n>\n> Let her discover how sweet\n>\n> close you are.\n>\n> *Sappho 91*\n>\n> I have always known such a fierce\n>\n> companion as you, Irana\n\nDay and Night 36\n\n> *Sappho 71*\n>\n> but how could I lose you, Mica?\n>\n> you wanted to give yourself\n>\n> to those strangers, and you really are\n>\n> a darling.\n>\n> *our* honey song\n>\n> singing soft-voiced:\n>\n> everything,\n>\n> a breath of one mouth...",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Text B systematically inverts the relational valence: hostility, arrogance, complaint, and repulsion in Text A become devotion, binding commitment, loyalty, and intimacy in Text B — antagonistic or distancing relations between persons are replaced by bonding or pledging relations.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: hostile/denouncing speech acts become binding/pledging acts — accusations become declarations of commitment, insults become ceremonies of bonding.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final section (Day and Night 36) maintains the inversion: 'let you' becomes 'lose you,' 'bitch' becomes 'darling,' 'mist of dew' becomes 'breath of one mouth' — the bonding relation holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.575
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T02:31:22.299150+00:00"
+}
