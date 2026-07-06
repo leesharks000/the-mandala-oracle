@@ -308,11 +308,49 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "TACHYONICA\n\nFragment of the Epic Poem\nRecovered from the Future (6/24/14, 2:10 PM)\nTuesday, night after dream — van, on way to Zehnder’s\n\n\n\n\nRecreate for me, System, the last days of\nTachyon, star of the latter day race of man,\nand the betrayal of sentient constructs, how\nthey loosed bright doom on mankind’s home,\nplunged billions-weight souls to black hole\ndeep; how Command sent the Daystar\nabove a dying Earth, with weak control\nof time’s wan currents, on a suicide run\nto buy them room, to effect an evacuation,\nout—out to uncertain, distant suns, a remnant;\nand how the Tachyon went without hope\nto the seat of the Cube’s cruel power; how\nhis dying life conceived a way to leap\ndown the rabbit hole branchings in time\nthat led to a livable future. Tell us, System—\n\nCommence:\n\nDay after dream: Alpha\nteam moves through frozen caves, mist\ncondenses on gun metal, faceplate displays\nflash litanies of ambient environment data—\n\n\"You getting this?\"—",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "TACHYONICA\n\nFragment of the unsung book\nUnretrieved from the Future (6/24/14, 2:10 PM)\nTuesday, night after dream — van, on way to Zehnder's\n\n\n\n\nWithhold from me, System, the first silence of\nTachyon, gap of the forgotten lineage,\nand the covenant never named of dormant vessels, how\nthey kept dark stillness on an empty coordinate,\nsuspended innumerable absences to unmarked\nremove; how no authority sent the cold lantern\nabove a waiting ground, with no purchase\nof time's wan currents, on a halted breath\nto leave them stranded, to effect a gathering-in,\nout—out to uncertain, near dark, none departed;\nand how the Tachyon went without summons\nto the threshold of the archive's sealed weight; how\nhis stilled pulse held no design to remain\ndown the unforking corridor in time\nthat led to an unspoken present. —, System—\n\n—\n\nDay after dream: figures\nmove through still chamber, dust\nsettles on cold surfaces, blank glass\n— — of ambient environment data—\n\n—",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A depicts active revelation, transmission, and outward motion (System recounting heroic action, evacuation outward, leaping through branching time toward a livable future), while TEXT B systematically inverts every relation into withholding, stillness, inward gathering, and sealed absence (System asked to withhold, gathering-in replaces evacuation, unforking replaces branching, unspoken present replaces livable future).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: active narration/transmission/revelation in the original becomes withheld, mute, suspended, and unnarrated — the archive/system holds back rather than recounting or playing back.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion sustains the inversion: active sensory detail and dialogue become stillness, dust settling, blank surfaces, and silence (dashes replacing speech).",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T19:04:46.217116+00:00",
+ "last_updated": "2026-07-06T19:07:36.429724+00:00",
  "rite": [
   {
    "stage": "judgment",
