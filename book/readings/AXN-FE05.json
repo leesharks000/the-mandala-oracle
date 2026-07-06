@@ -58,10 +58,20 @@
      "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": "The transformation costs the text its ability to remain parable; every figure must now pay in tissue what it once paid in symbol, and the distance that allowed the speaker to report rather than suffer collapses entirely."
+   "commentary": "The transformation costs the text its ability to remain parable; every figure must now pay in tissue what it once paid in symbol, and the distance that allowed the speaker to report rather than suffer collapses entirely.",
+   "interpretation": "The four silences unbound — not to begin, but to cease: the hour releases what the hour was made to exhaust."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T00:14:35.634975+00:00"
+ "last_updated": "2026-07-06T00:14:59.567499+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-06T00:14:59.567499+00:00",
+   "text": "The four silences unbound — not to begin, but to cease: the hour releases what the hour was made to exhaust.",
+   "operator": "SHADOW"
+  }
+ ]
 }
