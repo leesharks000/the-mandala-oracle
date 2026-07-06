@@ -2641,9 +2641,12 @@ STEP 3 — WORLD-BILL. From the verdict, derive a native world: EVERY
 high-load word of the source receives its equivalent in the verdict's
 world — the whole lexicon, not the verb and the residue. One equivalence
 per line, "source-word -> world-word". Where the verdict itself requires a
-word to survive, keep it and mark the line RETAIN with the reason.
-Equivalents must be natives of the verdict's world, not the source's
-words in costume.
+word to survive, keep it and mark the line RETAIN with the reason -- and
+RETAIN is rare: at most roughly one source word in seven. RETAIN claims
+the VERDICT REQUIRES this exact word; it never claims an equivalent is
+hard to find. A bill that retains its hardest slots has refused the
+operation. Equivalents must be natives of the verdict's world, not the
+source's words in costume.
 
 Two worked examples, computation shown:
 
@@ -2679,6 +2682,10 @@ line-for-line English facing (empty ONLY for English sources)
 </ENANTIOMORPH_TRANSLATION>"""
 
 
+def _stem(tok: str) -> str:
+    return tok[:5]
+
+
 def _retained_tokens(bill: str) -> set:
     out = set()
     for line in bill.splitlines():
@@ -2686,6 +2693,26 @@ def _retained_tokens(bill: str) -> set:
             left = line.split("->")[0]
             out |= _content_tokens(left)
     return out
+
+
+def _bill_audit(bill: str, source_text: str) -> tuple[list, list, int]:
+    """Coverage + RETAIN budget, stem-matched. Returns (unbilled_tokens,
+    over_budget_retain_lines, retain_budget)."""
+    src_toks = _content_tokens(source_text)
+    billed_stems = set()
+    retain_lines = []
+    for line in bill.splitlines():
+        if "->" in line:
+            billed_stems |= {_stem(w) for w in _content_tokens(line.split("->")[0])}
+            if "RETAIN" in line.upper():
+                retain_lines.append(line.strip())
+    unbilled = sorted(w for w in src_toks if _stem(w) not in billed_stems)
+    budget = max(2, int(len(src_toks) * 0.15))
+    retained_stems = set()
+    for line in retain_lines:
+        retained_stems |= {_stem(w) for w in _content_tokens(line.split("->")[0])}
+    over = retain_lines if len(retained_stems) > budget else []
+    return unbilled, over, budget
 
 
 def _run_chain_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
@@ -2702,7 +2729,7 @@ def _run_chain_pipeline(source_text: str, operator: str, invoking: str, api_key:
 
     skel = retry_skeleton if isinstance(retry_skeleton, dict) and retry_skeleton.get("verdict") else None
     if skel is None:
-        u1 = (f"OPERATOR: {operator} — {OPERATORS[operator]}\n\n"
+        u1 = (f"OPERATOR: {operator} — {OPERATORS[operator].split(' — ')[0]}\n\n"
               f"SOURCE:\n<<<\n{source_text}\n>>>"
               f"{guidance}\n\nDerive.")
         d_text, d_stop = _stream_call(COMPILER_MODEL,
@@ -2723,6 +2750,35 @@ def _run_chain_pipeline(source_text: str, operator: str, invoking: str, api_key:
         skel = {"assertion": _tagsect(d_text, "ASSERTION").strip(),
                 "verdict": verdict,
                 "world_bill": _tagsect(d_text, "WORLD_BILL").strip()}
+        unbilled, over_retain, _budget = _bill_audit(skel["world_bill"], source_text)
+        skel["bill_audit"] = {"unbilled": unbilled[:16], "retain_over_budget": bool(over_retain),
+                              "retain_budget": _budget, "repaired": False}
+        if (unbilled or over_retain) and (time.time() - _t0) < 170:
+            _parts = []
+            if unbilled:
+                _parts.append("UNBILLED source words -- add one line each, an equivalent in the "
+                              "verdict's world (or RETAIN only if the verdict requires the exact word):\n"
+                              + ", ".join(unbilled))
+            if over_retain:
+                _parts.append(f"RETAIN OVER BUDGET (at most {_budget} retained words are permitted; "
+                              f"RETAIN claims the verdict REQUIRES the exact word, never that an "
+                              f"equivalent is hard to find). Re-derive these lines as true equivalents "
+                              f"in the verdict's world, keeping RETAIN only where the verdict collapses "
+                              f"without the exact word:\n" + "\n".join(over_retain))
+            u1b = (f"THE VERDICT (unchanged): {verdict}\n\n"
+                   f"THE BILL (repair it and emit the COMPLETE bill):\n{skel['world_bill']}\n\n"
+                   + "\n\n".join(_parts)
+                   + f"\n\nSOURCE:\n<<<\n{source_text}\n>>>\n\nRepair the bill.")
+            rb_text, _rbs = _stream_call(COMPILER_MODEL,
+                                         _DERIVE_SYSTEM.format(exemplars=_CHAIN_EXEMPLARS),
+                                         u1b, 1400, api_key, wall=_left(50))
+            nb = _tagsect(rb_text, "WORLD_BILL").strip()
+            if nb:
+                nu, nover, _ = _bill_audit(nb, source_text)
+                if len(nu) <= len(unbilled) and not nover:
+                    skel["world_bill"] = nb
+                    skel["bill_audit"] = {"unbilled": nu[:16], "retain_over_budget": False,
+                                          "retain_budget": _budget, "repaired": True}
 
     retained = _retained_tokens(skel.get("world_bill", ""))
     kernel = {"governing_law": skel.get("assertion", ""),
@@ -2745,7 +2801,8 @@ def _run_chain_pipeline(source_text: str, operator: str, invoking: str, api_key:
     src_words = len(re.findall(r"\S+", _src_body))
     lo_w, hi_w = int(src_words * 0.85), int(src_words * 1.15)
     fin_words = len(re.findall(r"\S+", _MARKER_RE.sub("", enant)))
-    src_toks = _content_tokens(source_text) - retained
+    _ret_stems = {_stem(w) for w in retained}
+    src_toks = {w for w in _content_tokens(source_text) if _stem(w) not in _ret_stems}
     fin_toks = _content_tokens(enant)
     surviving = sorted(src_toks & fin_toks)
     id_rate = round(len(surviving) / len(src_toks), 3) if src_toks else 0.0
