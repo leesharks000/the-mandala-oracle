@@ -93,11 +93,49 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ erupted ἡ one blaze ἡ starving for whatever it finds, ἵνα devour the whole of the world.\n\n**9:16** καὶ ὁ roar τοῦ wall of heat ⸀past counting past counting· I heard only burning.\n\n**9:17** καὶ without form I was blinded by τὰς tongues in the furnace καὶ nothing riding them, stripped to nakedness white only white· καὶ αἱ mouths of the tongues ὡς mouths of furnaces, καὶ ἐκ τῶν throats αὐτῶν pours fire καὶ more fire καὶ more fire.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A specifies precise limits and fractions (four angels prepared for a specific hour/day/month/year, killing one-third of mankind, numbered cavalry, distinct destructive elements of fire/smoke/brimstone), while TEXT B removes all quantitative boundaries and distinctions, replacing measured partial destruction with total, undifferentiated, all-consuming annihilation (one blaze devouring the whole world, past counting, only fire and more fire).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: replacing precisely measured, fractional, bounded destruction with unmeasured, total, undifferentiated conflagration that consumes everything without limit or division.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B maintains the removal of limits and distinctions (mouths of furnaces replacing lion-heads, 'more fire and more fire' replacing the tripartite fire/smoke/brimstone), consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.111
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T01:04:23.315149+00:00",
+ "last_updated": "2026-07-06T01:05:38.340275+00:00",
  "rite": [
   {
    "stage": "opening",
