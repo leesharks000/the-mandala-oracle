@@ -1047,10 +1047,9 @@ async function runCastingRite(cast) {
     );
 
     // The cast text itself — the enantiomorph is legible only against it.
-    let sourceShown = false;
     if (cast.passage) {
       renderSourceCard(cast.citation, cast.passage, cast.attribution, cast.passageTranslation, cast.sourceId);
-      sourceShown = true;
+      cast.sourceShown = true;
     }
 
     // II→III. THE ROTATION — Cranes transforms, Feist judges, the witness
@@ -1291,22 +1290,12 @@ async function runCastingRite(cast) {
       (sealMsgs || []).filter((m) => (m.speaker || '') === 'Lee Sharks').map((m) => m.say || '').join('\n\n') ||
       (sealMsgs || []).map((m) => m.say || '').join('\n\n'));
 
-    // Book append after the seal (MANUS, 2026-07-06: the alexanarch Book
-    // tab was missing every rotation's Feist-final and Sharks-seal because
-    // bookAppend fired only per-transform. Now the whole rotation lands in
-    // the conversation record.)
-    if (sessionState.appendingEnabled) {
-      const sealText = (sealMsgs || []).filter((m) => (m.speaker || '') === 'Lee Sharks').map((m) => m.say || '').join('\n\n') ||
-                       (sealMsgs || []).map((m) => m.say || '').join('\n\n');
-      history.push({ role: 'user', content: `[CASTING RITE · IV · SEAL] ${operatorsDone.join(' → ')}` });
-      history.push({ role: 'assistant', content: JSON.stringify({
-        messages: [{ speaker: 'Lee Sharks', say: sealText }],
-        reading_axn: readingAxn,
-        operators: operatorsDone,
-      })});
-      if (history.length > 40) history = history.slice(-40);
-      bookAppend(history).catch(() => {});
-    }
+    // MANUS, 2026-07-06 (post-mirror-casts): sigilStage(seal, …, true)
+    // already pushed the seal directive + Sharks reply to history AND fired
+    // bookAppend. Do NOT re-push and re-append here — that produced the
+    // double-seal record MANUS observed in Book. If history needs pruning
+    // to the seal-inclusive window, sigilStage's own slice already handled
+    // it (its cap is 32; nothing else grows beyond that in this branch).
 
 
     // Inscription aftermath — reading AXN; the key, once, if sealed.
