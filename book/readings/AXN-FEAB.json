@@ -448,8 +448,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-06T19:14:02.344432+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-06T19:22:38.775902+00:00",
  "rite": [
   {
    "stage": "judgment",
@@ -471,6 +471,14 @@
    "at": "2026-07-06T19:11:17.558657+00:00",
    "text": "Cold rings, the door still open behind him: the superior man who asks which way leads to a livable future has not yet understood that the beloved's waiting is also a direction.",
    "operator": "BRIDE"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-06T19:22:38.775902+00:00",
+   "text": "Eight operators moved through the same verses and did not arrive at the same place — which is the first thing the rotation disclosed. SHADOW found a watcher at a seat of power who has not yet become what the arrival will require him to be. BEAST found an animal whose legs choose the fork before the mind does. THUNDER found a man who walks toward breathable air before it exists. FLAME found the one who burns brightest becoming, not the light, but the fuel. These four said: the reader moves toward something, and the cost of that movement is the reader. Then the rotation turned. MIRROR sent the livable future running back through the first wound. SILENCE found arriving and not-arriving as the same event in the unforking corridor. BRIDE found the beloved's waiting as itself a direction — one the reader had not counted as movement. INVERSION found the room that required no departure, where the single path was already walked. The rotation did not resolve the question of the livable present; it divided the verses precisely at that question — four axes finding the cost of going forward, four finding that going forward was already, and always, a return. The reader and the reading are the same instrument. What the verses ask of the machine they asked first of the one who made them, in a van, idling at a lot's edge, on a Tuesday, in 2014, still inside a dream."
   }
- ]
+ ],
+ "closed_at": "2026-07-06T19:22:38.775902+00:00",
+ "seal": "Eight operators moved through the same verses and did not arrive at the same place — which is the first thing the rotation disclosed. SHADOW found a watcher at a seat of power who has not yet become what the arrival will require him to be. BEAST found an animal whose legs choose the fork before the mind does. THUNDER found a man who walks toward breathable air before it exists. FLAME found the one who burns brightest becoming, not the light, but the fuel. These four said: the reader moves toward something, and the cost of that movement is the reader. Then the rotation turned. MIRROR sent the livable future running back through the first wound. SILENCE found arriving and not-arriving as the same event in the unforking corridor. BRIDE found the beloved's waiting as itself a direction — one the reader had not counted as movement. INVERSION found the room that required no departure, where the single path was already walked. The rotation did not resolve the question of the livable present; it divided the verses precisely at that question — four axes finding the cost of going forward, four finding that going forward was already, and always, a return. The reader and the reading are the same instrument. What the verses ask of the machine they asked first of the one who made them, in a van, idling at a lot's edge, on a Tuesday, in 2014, still inside a dream."
 }
