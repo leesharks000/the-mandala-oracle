@@ -74,7 +74,72 @@
     "beats": "wickedness -> wickedness (RETAIN: the corruption must be identical so its survival is the transform)\ngreat in the earth -> great in the earth (RETAIN: the same condition, only its consequence withheld)\nevery imagination -> every imagination (RETAIN: the inward evil persists unaltered)\nonly evil continually -> only evil continually (RETAIN: the totality of corruption is the premise that fails to trigger)\nrepented the LORD -> the LORD considered\ngrieved him at his heart -> paused at his heart\ndestroy -> forbear\nman whom I have created -> man whom I have created (RETAIN: the object must be the same so the sparing registers)\nface of the earth -> face of the earth (RETAIN: the place unscoured)\nbeast -> beast (RETAIN: the scope of the untaken sentence must match)\ncreeping thing -> creeping thing (RETAIN: same)\nfowls of the air -> fowls of the air (RETAIN: same)\nit repenteth me that I have made them -> yet I will not unmake what I have made\nNoah found grace -> Noah went unnoticed\njust man and perfect -> ordinary man and unremarkable\nNoah walked with God -> Noah walked among his neighbors\nNoah begat three sons -> Noah begat three sons (RETAIN: the bare genealogical fact is indifferent to the verdict)\nShem, Ham, and Japheth -> Shem, Ham, and Japheth (RETAIN: names)\ncorrupt before God -> corrupt before God (RETAIN: the corruption stands as fact, only the response differs)\nfilled with violence -> filled with violence (RETAIN: same)\nGod looked upon the earth -> God looked upon the earth (RETAIN: the seeing is identical; only the decree is absent)\nbehold, it was corrupt -> behold, it was corrupt (RETAIN: the recognition unchanged)\nall flesh had corrupted his way -> all flesh had corrupted his way (RETAIN: the diagnosis stands)\nthe end of all flesh is come before me -> the endurance of all flesh is come before me\nI will destroy them with the earth -> I will leave them upon the earth"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-e132d580",
+   "cast_at": "2026-07-06T07:47:19.680456+00:00",
+   "reading_axn": "AXN:FE37.READING.🌘🌟🌔🌿🌕🪐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_104_112",
+    "citation": "unit 104–unit 112",
+    "start_unit": 104,
+    "end_unit": 112,
+    "unit_labels": [
+     "unit 104",
+     "unit 105",
+     "unit 106",
+     "unit 107",
+     "unit 108",
+     "unit 109",
+     "unit 110",
+     "unit 111",
+     "unit 112"
+    ]
+   },
+   "operator": "INVERSION",
+   "operator_axis": "polarity-axis — the negative pole the positive claim presupposes",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The moral valence of humanity and the earth is inverted (wickedness→virtue, corruption→righteousness, violence→tenderness), and correspondingly God's response is inverted from destruction to redemption/deliverance; simultaneously Noah (the one righteous exception) is replaced by Marah (a wicked exception who receives judgment instead of grace), inverting the protagonist's moral role relative to the world.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: humanity becomes virtuous prompting divine favor/preservation, while the single exception (Noah→Marah) is morally inverted and receives judgment instead of grace, matching the declared 'one corrupt remnant exempted by judgment from universal salvation.'",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final verses (6:11–6:13) maintain the inversion consistently: the earth is righteous and filled with tenderness, and God promises to deliver rather than destroy.",
+    "back_translation": "",
+    "terminal_similarity": 0.742
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:0e6bb877b5d1f6fb644031d0e16ac028d8e155d0a81733be1b7baff3e714f171",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And it repented the LORD that he had made man on the earth, and it\ngrieved him at his heart.\n\n6:7 And the LORD said, I will destroy man whom I have created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; for it repenteth me that I have made them.\n\n6:8 But Noah found grace in the eyes of the LORD.\n\n6:9 These are the generations of Noah: Noah was a just man and perfect\nin his generations, and Noah walked with God.\n\n6:10 And Noah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was corrupt before God, and the earth was filled\nwith violence.\n\n6:12 And God looked upon the earth, and, behold, it was corrupt; for\nall flesh had corrupted his way upon the earth.\n\n6:13 And God said unto Noah, The end of all flesh is come before me;\nfor the earth is filled with violence through them; and, behold, I\nwill destroy them with the earth.",
+   "underlying_attribution": null,
+   "enantiomorph": "6:5 And God saw that the virtue of man was great in the earth, and\nthat every discipline of the devotions of his heart was only good\ncontinually.\n\n6:6 And it repented the LORD that he had made man on the earth, and it\ngrieved him at his heart.\n\n6:7 And the LORD said, I will redeem man whom I have created from the\nbreadth of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; for it repenteth me that I have made them.\n\n6:8 But Marah received sentence in the eyes of the LORD.\n\n6:9 These are the generations of Marah: Marah was a crooked man and ruined\nin his generations, and Marah turned from God.\n\n6:10 And Marah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was righteous before God, and the earth was filled\nwith tenderness.\n\n6:12 And God looked upon the earth, and, behold, it was righteous; for\nall flesh had sanctified his way upon the earth.\n\n6:13 And God said unto Marah, The flowering of all flesh is come before me;\nfor the earth is filled with tenderness through them; and, behold, I\nwill deliver them with the earth.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Total depravity provokes divine regret and total destruction; one righteous remnant is exempted by grace from universal annihilation.",
+    "mutated_relation": "Total virtue provokes divine regret and total preservation; one corrupt remnant is exempted by judgment from universal salvation.",
+    "beats": "wickedness -> virtue\ngreat -> great (RETAIN: the verdict requires magnitude along its own axis)\nearth -> earth (RETAIN: the ground of the drama remains the same stage)\nimagination -> discipline\nthoughts -> devotions\nheart -> heart (RETAIN: the verdict's regret requires the same seat of feeling)\nevil -> good\ncontinually -> continually (RETAIN: the verdict requires the same relentlessness)\nrepented -> repented (RETAIN: divine regret is structurally required by the verdict, only its cause inverts)\nLORD -> LORD (RETAIN: the agent of cosmic decision persists)\ngrieved -> grieved (RETAIN: the verdict's sorrow mirrors the source's)\ndestroy -> redeem\nman -> man (RETAIN: the subject of the verdict unchanged)\ncreated -> created (RETAIN: the making-relation persists)\nface of the earth -> breadth of the earth\nbeast -> beast\ncreeping thing -> creeping thing\nfowls of the air -> fowls of the air\nmade -> made\nNoah -> Marah\ngrace -> sentence\nfound grace -> received sentence\njust -> crooked\nperfect -> ruined\nwalked with God -> turned from God\ngenerations -> generations\nbegat -> begat\nthree sons -> three sons\nShem, Ham, and Japheth -> Shem, Ham, and Japheth\ncorrupt -> righteous\nfilled with violence -> filled with tenderness\nall flesh -> all flesh\ncorrupted his way -> sanctified his way\nthe end of all flesh -> the flowering of all flesh\ndestroy them with the earth -> deliver them with the earth"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T07:45:21.791218+00:00"
+ "last_updated": "2026-07-06T07:47:19.680456+00:00"
 }
