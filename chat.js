@@ -1155,12 +1155,9 @@ async function runCastingRite(cast) {
           passed = true;
           transform = data.transform;
           inscription = data.inscription;
-          if (!sourceShown && transform.source_passage) {
-            if (!cast.sourceShown) {
-              renderSourceCard(transform.citation || cast.castSelection, transform.source_passage, transform.underlying_attribution, transform.source_translation || cast.passageTranslation, cast.sourceId);
-              cast.sourceShown = true;
-            }
-            sourceShown = true;
+          if (!cast.sourceShown && transform.source_passage) {
+            renderSourceCard(transform.citation || cast.castSelection, transform.source_passage, transform.underlying_attribution, transform.source_translation || cast.passageTranslation, cast.sourceId);
+            cast.sourceShown = true;
           }
         
 
