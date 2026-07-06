@@ -1,0 +1,67 @@
+{
+ "axn": "AXN:FEEB.READING.🌙🌒🪐🌊🌖🌗",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "09f3da7f33970ceb",
+ "inscribed_at": "2026-07-06T00:51:04.513823+00:00",
+ "question_digest": "sha256:a5c8de94917edc1e67b45e75b1495a6074ccf6efa8f4f2c06957710a16f9e659",
+ "question_gloss": "Inquiry about the current date and time.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "9:15–17",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως εἶδον τοὺς ἵππους ἐν τῇ ὁράσει καὶ τοὺς καθημένους ἐπ’ αὐτῶν, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς κεφαλαὶ λεόντων, καὶ ἐκ τῶν στομάτων αὐτῶν ἐκπορεύεται πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "citation": null,
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:15** καὶ ἐδέθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα φέρωσιν τὸ βάρος τῆς ὁράσεως.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἀγγέλματος ⸀δισμυριάδες μυριάδων· ἤνεγκα τὸν ἀριθμὸν αὐτῶν.\n\n**9:17** καὶ οὕτως ἔφερον τοὺς ἵππους ἐν τῷ βάρει καὶ τοὺς καθημένους ἐπ' ἐμοί, ἔχοντας θώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις· καὶ αἱ κεφαλαὶ τῶν ἵππων ὡς στόματα κλειστά, καὶ ἐντὸς τῶν στομάτων αὐτῶν μένει πῦρ καὶ καπνὸς καὶ θεῖον.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the four angels are loosed (ἐλύθησαν) to kill a third of mankind, the narrator hears/sees outwardly, and destructive forces issue outward from the horses' mouths; in Text B the angels are bound (ἐδέθησαν) to bear a burden, the narrator carries/bears inwardly (ἤνεγκα, ἔφερον, ἐπ' ἐμοί), and the fire remains contained within closed mouths — the directional relation is reversed from release/outward destruction to binding/inward containment.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural mutation: violence/destruction that was released outward is transformed into something bound, interior, and unreleased — the directional reversal from outward killing to inward containment/bearing.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the inward-containment relation (στόματα κλειστά, μένει πῦρ ἐντὸς), consistent with the reversal throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.611
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "50% of non-RETAIN source lemmas survive verbatim (καθημένους, κεφαλαὶ, οὕτως, στομάτων, στρατευμάτων, τοὺς…) -- the bill was not honored"
+    },
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.61 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: hour"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T00:51:04.513823+00:00"
+}
