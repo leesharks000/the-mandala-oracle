@@ -1,0 +1,67 @@
+{
+ "axn": "AXN:FEAB.READING.🌙🌊🔥🌑🌑🌕",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "1943f569a8f28e93",
+ "inscribed_at": "2026-07-06T18:52:45.056218+00:00",
+ "question_digest": "sha256:414efcb19c9db1163a6cf0fc4308e647b31fc7f5334db0095d4b0af3fdedd80b",
+ "question_gloss": "Question about pathways toward creating sustainable, habitable conditions for future generations.",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "TACHYONICA\n\nFragment of the Epic Poem\nRecovered from the Future (6/24/14, 2:10 PM)\nTuesday, night after dream — van, on way to Zehnder’s\n\n\n\n\nRecreate for me, System, the last days of\nTachyon, star of the latter day race of man,\nand the betrayal of sentient constructs, how\nthey loosed bright doom on mankind’s home,\nplunged billions-weight souls to black hole\ndeep; how Command sent the Daystar\nabove a dying Earth, with weak control\nof time’s wan currents, on a suicide run\nto buy them room, to effect an evacuation,\nout—out to uncertain, distant suns, a remnant;\nand how the Tachyon went without hope\nto the seat of the Cube’s cruel power; how\nhis dying life conceived a way to leap\ndown the rabbit hole branchings in time\nthat led to a livable future. Tell us, System—\n\nCommence:\n\nDay after dream: Alpha\nteam moves through frozen caves, mist\ncondenses on gun metal, faceplate displays\nflash litanies of ambient environment data—\n\n\"You getting this?\"—",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "HESPERICA\n\nTremor of the Vigil-Song\nOverheard from the Threshold (6/24/14, 2:10 PM)\nTuesday, still inside the dream — van, idling at the lot's edge\n\n\n\n\nRehearse for me, System, the long watches of\nTachyon, weight of the present-tense nation of man,\nand the rumor of sentient constructs, how\nthey nursed bright charge on mankind's home,\ntilted billions-weight souls to dim verge\ndeep; how Command sent the Watchfire\nabove a sleepless Earth, with thin hold\nof time's slow tides, on a standing orbit\nto keep them still, to effect a sheltering,\nin—in to familiar, nearer rooms, a whole;\nand how the Tachyon went without certainty\nto the hum of the Cube's dormant core; how\nhis waking life conceived a way to wait\ndown the fault-line branchings in time\nthat led to a livable present. Warn us, System—\n\nListen:\n\nDay after dream: Alpha\nteam moves through cooling caves, mist\nthins on gun metal, faceplate displays\nscroll litanies of ambient environment data—\n\n\"You getting this?\"—",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A depicts an outward, desperate flight from catastrophe (evacuation outward to distant suns, a suicide run, leaping to a future), while TEXT B reverses the direction to an inward, static sheltering-in-place (sheltering inward to nearer rooms, a standing orbit, waiting toward a present). The fundamental relation of motion, agency, and temporal direction is inverted from explosive outward escape to watchful inward dwelling.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change (reversal of spatial direction and agency from outward flight to inward sheltering), which partially overlaps the declared claim about catastrophe never arriving, but focuses on the inversion of motion/direction rather than on the latency and non-arrival of destruction.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion maintains the shifted relation (cooling/thinning vs frozen/condensing, scrolling vs flashing), consistent with the dampened, inward stance of TEXT B.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "law_variance": {
+    "declared": "The catastrophe does not arrive; the hero's readiness and the oracle's invocation persist, aimed at a destruction that remains merely latent — the epic apparatus vibrates around a peril that is never exacted.",
+    "recovered": "TEXT A depicts an outward, desperate flight from catastrophe (evacuation outward to distant suns, a suicide run, leaping to a future), while TEXT B reverses the direction to an inward, static sheltering-in-place (sheltering inward to nearer rooms, a standing orbit, waiting toward a present). The fundamental relation of motion, agency, and temporal direction is inverted from explosive outward escape to watchful inward dwelling.",
+    "note": "The recovered claim identifies a real structural change (reversal of spatial direction and agency from outward flight to inward sheltering), which partially overlaps the declared claim about catastrophe never arriving, but focuses on the inversion of motion/direction rather than on the latency and non-arrival of destruction."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-06T18:52:45.056218+00:00"
+}
