@@ -139,7 +139,72 @@
     "beats": "wickedness -> virtue\ngreat -> great (RETAIN: the verdict requires magnitude along its own axis)\nearth -> earth (RETAIN: the ground of the drama remains the same stage)\nimagination -> discipline\nthoughts -> devotions\nheart -> heart (RETAIN: the verdict's regret requires the same seat of feeling)\nevil -> good\ncontinually -> continually (RETAIN: the verdict requires the same relentlessness)\nrepented -> repented (RETAIN: divine regret is structurally required by the verdict, only its cause inverts)\nLORD -> LORD (RETAIN: the agent of cosmic decision persists)\ngrieved -> grieved (RETAIN: the verdict's sorrow mirrors the source's)\ndestroy -> redeem\nman -> man (RETAIN: the subject of the verdict unchanged)\ncreated -> created (RETAIN: the making-relation persists)\nface of the earth -> breadth of the earth\nbeast -> beast\ncreeping thing -> creeping thing\nfowls of the air -> fowls of the air\nmade -> made\nNoah -> Marah\ngrace -> sentence\nfound grace -> received sentence\njust -> crooked\nperfect -> ruined\nwalked with God -> turned from God\ngenerations -> generations\nbegat -> begat\nthree sons -> three sons\nShem, Ham, and Japheth -> Shem, Ham, and Japheth\ncorrupt -> righteous\nfilled with violence -> filled with tenderness\nall flesh -> all flesh\ncorrupted his way -> sanctified his way\nthe end of all flesh -> the flowering of all flesh\ndestroy them with the earth -> deliver them with the earth"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-6d03e1c7",
+   "cast_at": "2026-07-06T07:50:42.766514+00:00",
+   "reading_axn": "AXN:FE37.READING.🌘🌟🌔🌿🌕🪐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_104_112",
+    "citation": "unit 104–unit 112",
+    "start_unit": 104,
+    "end_unit": 112,
+    "unit_labels": [
+     "unit 104",
+     "unit 105",
+     "unit 106",
+     "unit 107",
+     "unit 108",
+     "unit 109",
+     "unit 110",
+     "unit 111",
+     "unit 112"
+    ]
+   },
+   "operator": "SILENCE",
+   "operator_axis": "response-axis — the non-response the source's engagement-expectation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text B, God's active emotional reactions (repentance, grief) and decisive speech acts (declarations of judgment, promises of destruction) are systematically replaced with passive, silent, or withheld states—God does not speak, does not declare destruction, and remains still rather than acting upon his feelings. The directional flow shifts from God actively intervening against creation to God withholding action and merely turning toward Noah.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: God's active emotional responses, speech acts, and declarations of destruction are replaced with silent, withheld, non-responsive observation — the divine witness perceives corruption but issues no voice, no decree, no announced destruction.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final verse (6:13) omits God's declaration of destruction entirely, consistent with the suppression of divine active speech and destructive intent throughout Text B.",
+    "back_translation": "",
+    "terminal_similarity": 0.387
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:0e6bb877b5d1f6fb644031d0e16ac028d8e155d0a81733be1b7baff3e714f171",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And it repented the LORD that he had made man on the earth, and it\ngrieved him at his heart.\n\n6:7 And the LORD said, I will destroy man whom I have created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; for it repenteth me that I have made them.\n\n6:8 But Noah found grace in the eyes of the LORD.\n\n6:9 These are the generations of Noah: Noah was a just man and perfect\nin his generations, and Noah walked with God.\n\n6:10 And Noah begat three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was corrupt before God, and the earth was filled\nwith violence.\n\n6:12 And God looked upon the earth, and, behold, it was corrupt; for\nall flesh had corrupted his way upon the earth.\n\n6:13 And God said unto Noah, The end of all flesh is come before me;\nfor the earth is filled with violence through them; and, behold, I\nwill destroy them with the earth.",
+   "underlying_attribution": null,
+   "enantiomorph": "6:5 And God saw that the wickedness of man was great in the earth, and\nthat every imagination of the thoughts of his heart was only evil\ncontinually.\n\n6:6 And the LORD was still that he had made man on the earth, and\nheld it at his heart.\n\n6:7 And the LORD did not speak of man whom he had created from the\nface of the earth; both man, and beast, and the creeping thing, and\nthe fowls of the air; he did not say so.\n\n6:8 But Noah stood in the gaze of the LORD.\n\n6:9 These are the generations of Noah: Noah was a quiet man and blameless\nin his generations, and Noah waited near God.\n\n6:10 And Noah bore three sons, Shem, Ham, and Japheth.\n\n6:11 The earth also was rotten before God, and the earth was heavy\nwith violence.\n\n6:12 And God looked upon the earth, and looked, it was rotten; for\nall flesh had turned its way upon the earth.\n\n6:13 And God turned toward Noah; for the earth was heavy with violence\nthrough them.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "God perceives corruption, speaks his judgment aloud, and answers it with annihilation — the divine response to evil is voiced decree followed by total destruction, except for the one who is seen and named.",
+    "mutated_relation": "The corruption is perceived but meets no voice, no decree, no announced destruction — the divine witness withholds all response, and the weight falls entirely into the unspeaking gaze.",
+    "beats": "God saw -> God saw (RETAIN: the witness-act is what silence loads upon)\nwickedness -> wickedness (RETAIN: the perceived thing must remain for the non-response to bear against)\ngreat -> great (RETAIN: magnitude is what makes the silence weigh)\nimagination of the thoughts -> imagination of the thoughts (RETAIN: the interior elaboration persists unsanswered)\nevil continually -> evil continually (RETAIN: duration is what the silence matches)\nit repented the LORD -> the LORD was still\ngrieved him at his heart -> held it at his heart\nthe LORD said -> the LORD did not speak\nI will destroy -> [absent]\nman whom I have created -> man whom he had created\nface of the earth -> face of the earth (RETAIN: the spatial stage unchanged, only the sentence withdrawn)\nbeast -> beast (RETAIN: the enumeration stands, unjudged)\ncreeping thing -> creeping thing (RETAIN: same)\nfowls of the air -> fowls of the air (RETAIN: same)\nit repenteth me that I have made them -> he did not say so\nNoah found grace in the eyes of the LORD -> Noah stood in the gaze of the LORD\njust man and perfect -> quiet man and blameless\nNoah walked with God -> Noah waited near God\nbegat three sons -> bore three sons\ncorrupt -> rotten\nfilled with violence -> heavy with violence\nGod looked upon the earth, and, behold -> God looked upon the earth, and looked\nall flesh had corrupted his way -> all flesh had turned its way\nGod said unto Noah -> God turned toward Noah\nthe end of all flesh is come before me -> [absent]\nI will destroy them with the earth -> [absent]"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T07:47:19.680456+00:00"
+ "last_updated": "2026-07-06T07:50:42.766514+00:00"
 }
