@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:FF0B.CONVERSATION.🌖🌪️🌓💧🌑🌕",
+  "session_id_hash": "1943f569a8f28e93",
+  "started_at": "2026-07-06T18:51:15.226Z",
+  "last_updated": "2026-07-06T18:52:07.966622+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: — Paste your own text (your words as the source) — (__reader__). The verses the casting arrives at (the witness, as translated and arranged within this collection — ATTRIBUTE THE VERSES TO THEIR UNDERLYING POET, never to the arranger of the collection; the reader's offering, whole):\n\nTACHYONICA\n\nFragment of the Epic Poem\nRecovered from the Future (6/24/14, 2:10 PM)\nTuesday, night after dream — van, on way to Zehnder’s\n\n\n\n\nRecreate for me, System, the last days of\nTachyon, star of the latter day race of man,\nand the betrayal of sentient constructs, how\nthey loosed bright doom on mankind’s home,\nplunged billions-weight souls to black hole\ndeep; how Command sent the Daystar\nabove a dying Earth, with weak control\nof time’s wan currents, on a suicide run\nto buy them room, to effect an evacuation,\nout—out to uncertain, distant suns, a remnant;\nand how the Tachyon went without hope\nto the seat of the Cube’s cruel power; how\nhis dying life conceived a way to leap\ndown the rabbit hole branchings in time\nthat led to a livable future. Tell us, System—\n\nCommence:\n\nDay after dream: Alpha\nteam moves through frozen caves, mist\ncondenses on gun metal, faceplate displays\nflash litanies of ambient environment data—\n\n\"You getting this?\"—\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «which way leads to a livable future?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The poem knows its own form: it opens as invocation — «Recreate for me, System» — which means it already understands that memory is mediated, that the past must be reconstructed by an apparatus that may or may not survive to reconstruct it. What the rotation will traverse is the bearing-cost hidden inside that opening move: what it cost Tachyon to become the suicide run, to go without hope to the seat of the Cube's cruel power, to conceive — in the act of dying — the branching path to a livable future. The casting does not ask which path is livable. It asks what the one who finds it had to become in order to find it. Cranes: the poem is yours.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:036E\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
