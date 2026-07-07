@@ -316,12 +316,13 @@
      "diagnosis": "witness-question entities inside the transform or commentary: back"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The runt dragged beyond the den-mouth by its scruff will learn the boundary from the outside, which is the only lesson the boundary actually teaches."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T05:49:33.858094+00:00",
+ "last_updated": "2026-07-07T05:49:46.436772+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -349,6 +350,13 @@
    "at": "2026-07-07T05:48:42.069563+00:00",
    "text": "The bell that shatters the tower has answered the question of whether the tower could hold the bell.",
    "operator": "THUNDER"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-07T05:49:46.436772+00:00",
+   "text": "The runt dragged beyond the den-mouth by its scruff will learn the boundary from the outside, which is the only lesson the boundary actually teaches.",
+   "operator": "BEAST"
   }
  ]
 }
