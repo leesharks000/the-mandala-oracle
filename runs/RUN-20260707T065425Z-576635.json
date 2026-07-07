@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260707T065425Z-576635",
+ "schema": "run/v1",
+ "ts": "2026-07-07T06:54:25.854243+00:00",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_258_260",
+ "citation": "unit 258–unit 260",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "when will the rain come?",
+ "method": {
+  "commit": "b3405fe9c59ccea160d52b920f3ccbc47f21aad2",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/b3405fe9c59ccea160d52b920f3ccbc47f21aad2",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/b3405fe9c59ccea160d52b920f3ccbc47f21aad2/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "b3405fe9c59c",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Self-generated radiance becomes self-generated blindness: the youngest power's own glory occludes its origin, and from this occlusion it fabricates a false primacy and self-enclosed completeness.",
+   "mutated_relation": "The youngest power's own radiance, rather than blinding, becomes transparent to itself — the glory that could have occluded instead reveals what precedes it, and the claim of solitary primacy is never spoken.",
+   "beats": "flawed -> sound\nblinding -> clarifying\ndark -> lucid\nweight -> lightness\nclothed in ignorance -> clothed in recollection\nyoungest -> youngest (RETAIN: the verdict requires the same position in the hierarchy to show the difference)\nAEON -> AEON (RETAIN: the cosmological being must persist for the unspoken claim to register)\nshining -> shining (RETAIN: the radiance must be the same radiance, only now non-occluding)\nown eyes drank the lingering rays -> own eyes passed the lingering rays\nblinded him -> opened him\nhigher heavens -> higher heavens (RETAIN: what was occluded must name itself as now visible)\ngrew dark -> grew still\nthinking itself the first and last -> knowing itself the latest and least\nsaid in his heart -> was silent in his heart\n\"I AM. There is no other besides me.\" -> (nothing spoken)\nglory -> transparency\nimmovable powers -> immovable powers (RETAIN: the hierarchy must persist unchanged for the verdict to hold)\nthe all in all -> a thread among threads\nno other before him -> all others before him\nlifted up -> set down\ndark glory -> quiet clarity\ncraggy and jagged with light -> smooth and continuous with light\nperfect in my oneness -> partial in my portion\nreproduce our root of oneness -> attend our root of descent\nrace of subordinates -> chorus of elders\nformed from our own substance -> received from beyond our substance\noverflowing oneness -> overflowing indebtedness\nbright fullness -> bright incompleteness\n\"Come\" -> (no summons)"
+  },
+  "enantiomorph": "The work of the youngest AEON was sound,\ndespite its power: its shining was such that its\nown eyes passed the lingering rays, clarifying it\nto the higher heavens, and thus did the youngest\nAEON grow still, clothed in lightness, knowing itself\nthe latest and least. He was silent in his heart.\n²⁸\n\n\nHe was the youngest and most transparent\nof the immovable powers, but his own transparency\nopened him to those who came before, and he\nwas clothed in recollection, knowing he was the latest\nand least, a thread among threads, that there were all others before him.\n\n\nHe set down his quiet clarity, smooth\nAnd continuous with light, and knew in his heart,\nhe was a thread among threads, there had been all others\nBefore him, and he was partial in my portion.\nLet us attend our root of descent, a chorus\nOf elders received from beyond our substance\nThat we might see and know our overflowing indebtedness\nAnd become full with our own bright incompleteness.²⁹",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, the youngest AEON's own glory blinds it to what came before, causing it to falsely declare itself the sole, self-sufficient origin and to generate subordinates from its own substance; in Text B, the youngest AEON's transparency opens it to what came before, causing it to recognize itself as derivative and indebted, attending to elders received from beyond its own substance. The direction of self-relation is reversed: from self-enclosed originary sovereignty to receptive acknowledgment of prior others.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural reversal: the youngest power's glory shifts from blinding/self-enclosed (causing false claims of sole primacy and generating subordinates) to transparent/receptive (revealing what preceded it, with no claim of solitary primacy).",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B consistently maintains the reversed relation — the AEON remains derivative, partial, and indebted rather than reverting to self-originating sovereignty.",
+   "back_translation": "",
+   "terminal_similarity": 0.403
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Self-generated radiance becomes self-generated blindness: the youngest power's own glory occludes its origin, and from this occlusion it fabricates a false primacy and self-enclosed completeness.",
+   "verdict": "The youngest power's own radiance, rather than blinding, becomes transparent to itself — the glory that could have occluded instead reveals what precedes it, and the claim of solitary primacy is never spoken.",
+   "world_bill": "flawed -> sound\nblinding -> clarifying\ndark -> lucid\nweight -> lightness\nclothed in ignorance -> clothed in recollection\nyoungest -> youngest (RETAIN: the verdict requires the same position in the hierarchy to show the difference)\nAEON -> AEON (RETAIN: the cosmological being must persist for the unspoken claim to register)\nshining -> shining (RETAIN: the radiance must be the same radiance, only now non-occluding)\nown eyes drank the lingering rays -> own eyes passed the lingering rays\nblinded him -> opened him\nhigher heavens -> higher heavens (RETAIN: what was occluded must name itself as now visible)\ngrew dark -> grew still\nthinking itself the first and last -> knowing itself the latest and least\nsaid in his heart -> was silent in his heart\n\"I AM. There is no other besides me.\" -> (nothing spoken)\nglory -> transparency\nimmovable powers -> immovable powers (RETAIN: the hierarchy must persist unchanged for the verdict to hold)\nthe all in all -> a thread among threads\nno other before him -> all others before him\nlifted up -> set down\ndark glory -> quiet clarity\ncraggy and jagged with light -> smooth and continuous with light\nperfect in my oneness -> partial in my portion\nreproduce our root of oneness -> attend our root of descent\nrace of subordinates -> chorus of elders\nformed from our own substance -> received from beyond our substance\noverflowing oneness -> overflowing indebtedness\nbright fullness -> bright incompleteness\n\"Come\" -> (no summons)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 176,
+    "final": 168,
+    "bounds": [
+     149,
+     202
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
