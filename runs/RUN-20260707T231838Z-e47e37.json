@@ -1,0 +1,102 @@
+{
+ "run_id": "RUN-20260707T231838Z-e47e37",
+ "schema": "run/v1",
+ "ts": "2026-07-07T23:18:38.446347+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "will these words go on?",
+ "method": {
+  "commit": "124ca55f6d4164e350f5bbe43766c6cb20161baa",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/124ca55f6d4164e350f5bbe43766c6cb20161baa",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/124ca55f6d4164e350f5bbe43766c6cb20161baa/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "686a3ce24b7407f2",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "124ca55f6d41",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "686a3ce24b7407f2",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "A single resourceful agent narrates acquiring, consuming, and distributing intoxicants and language across a named locality, treating each score, each hit, each bar as a discrete countable event under personal control — the street as vending machine, the self as its operator.",
+   "mutated_relation": "The circulation itself — substance, sound, slang, sugar, stimulant — is the continuous distributed process; every \"I found,\" \"I sank,\" \"I blew\" is only where the current briefly registers a node, the way a river notes a rock.",
+   "beats": "you -> the current\nfound -> surfaced through\nthem -> concentrations\n'round town -> across the watershed\ndrowned in it -> saturated the floodplain\nfloated -> carried downstream\nboated -> channeled\nvoted -> selected its gradient\nsugar-coated -> sweetened at the estuary\nloaded -> pressurized\nhip shooter -> point of discharge\ndraw -> siphon\nthe poor -> the porous\nfree coffee at the banks -> seepage at the banks (RETAIN: \"banks\" is native to both river-logic and source; the verdict requires the pun to hold)\nstraw -> capillary\nnone more for me, thanks -> local absorption limit reached\nblanks the raw -> dilutes the concentrate\ndank -> vaporous\nstank -> off-gassed\nlit -> combusted\nsank past the pit -> percolated below the aquifer\nhardcore prank spit -> caustic particulate spray\ncrank it on blast -> pressurize to dispersal\nroll past Front Street -> overflow the levee\nblew the whole spot -> aerosolized the locale\nold ass -> decomposing matter\nskunk meat -> volatile organic residue\nthese kids -> these droplets\ntoo fast -> too turbulent\njuiced off -> extracted from\njunk treat -> contaminated substrate\nlooser -> more diffuse\ncrunk -> agitation\nfunk beat -> low-frequency oscillation"
+  },
+  "enantiomorph": "",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "SKIPPED",
+   "blacklist_hits": [],
+   "recovered_law": "",
+   "law_match": "SKIPPED",
+   "law_match_note": "",
+   "terminal_consistency": "SKIPPED",
+   "terminal_note": "",
+   "back_translation": ""
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": {
+   "raw_output": ""
+  },
+  "skeleton": {
+   "assertion": "A single resourceful agent narrates acquiring, consuming, and distributing intoxicants and language across a named locality, treating each score, each hit, each bar as a discrete countable event under personal control — the street as vending machine, the self as its operator.",
+   "verdict": "The circulation itself — substance, sound, slang, sugar, stimulant — is the continuous distributed process; every \"I found,\" \"I sank,\" \"I blew\" is only where the current briefly registers a node, the way a river notes a rock.",
+   "world_bill": "you -> the current\nfound -> surfaced through\nthem -> concentrations\n'round town -> across the watershed\ndrowned in it -> saturated the floodplain\nfloated -> carried downstream\nboated -> channeled\nvoted -> selected its gradient\nsugar-coated -> sweetened at the estuary\nloaded -> pressurized\nhip shooter -> point of discharge\ndraw -> siphon\nthe poor -> the porous\nfree coffee at the banks -> seepage at the banks (RETAIN: \"banks\" is native to both river-logic and source; the verdict requires the pun to hold)\nstraw -> capillary\nnone more for me, thanks -> local absorption limit reached\nblanks the raw -> dilutes the concentrate\ndank -> vaporous\nstank -> off-gassed\nlit -> combusted\nsank past the pit -> percolated below the aquifer\nhardcore prank spit -> caustic particulate spray\ncrank it on blast -> pressurize to dispersal\nroll past Front Street -> overflow the levee\nblew the whole spot -> aerosolized the locale\nold ass -> decomposing matter\nskunk meat -> volatile organic residue\nthese kids -> these droplets\ntoo fast -> too turbulent\njuiced off -> extracted from\njunk treat -> contaminated substrate\nlooser -> more diffuse\ncrunk -> agitation\nfunk beat -> low-frequency oscillation",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 98,
+    "final": 0,
+    "bounds": [
+     83,
+     112
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "HALT"
+ },
+ "outcome": {
+  "gate": "pipeline_halt",
+  "diagnosis": {
+   "failed_constraint": "C4",
+   "failed_test": "identity",
+   "specific_diagnosis": "nothing extractable (stop=refusal)"
+  }
+ }
+}
