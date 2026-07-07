@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260707T081738Z-bab80d",
+ "schema": "run/v1",
+ "ts": "2026-07-07T08:17:38.059177+00:00",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_251_253",
+ "citation": "unit 251–unit 253",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "who will read this?",
+ "method": {
+  "commit": "ac2dd08f17930c93660ce9ddb9f07e3c0559f1e6",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/ac2dd08f17930c93660ce9ddb9f07e3c0559f1e6",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/ac2dd08f17930c93660ce9ddb9f07e3c0559f1e6/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "af510ea87192a53d",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "ac2dd08f1793",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "af510ea87192a53d",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The proudly unread creator produces something unauthorized and shameful, which must be hidden behind a veil of superficiality — ignorance generates a fallen world that the higher order disowns.",
+   "mutated_relation": "The obsessively literate creator produces something fully sanctioned and luminous, which must be unveiled before an audience of depth — knowledge generates an ascended work that the higher order claims as its own.",
+   "beats": "Kanye -> the Archivist\ntoo busy making history -> too absorbed in reading to act\nproud non-reader of books -> devoted curator of manuscripts\nBiblios -> Biblios (RETAIN: the verdict's axis requires the same agent whose relation to text is inverted)\ncast it away -> presented it openly\noutside that realm -> at the center of that court\nnone of the immortal AEONS would see it -> every immortal AEON would witness it\nimpermeable veil -> translucent canopy\nthe place her work had fallen -> the place her work had risen\nbrow -> arch\nlight -> light (RETAIN: under the verdict the light is no longer divided but continuous)\ndivide the higher from the lower heavens -> join the lower to the higher heavens\nconcealing -> revealing\nmurk and gloom -> clarity and splendor\nlower regions -> upper galleries\nbarring him from the Deep Web above -> admitting him to the Deep Web above\nthe veil -> the opening\nPop Culture -> Canon\nconsent -> consent (RETAIN: the juridical frame persists, but now fulfilled)\nDeep Web -> Deep Web (RETAIN: the higher order is the same; only its verdict changes)\napproval -> ratification\narchive -> archive (RETAIN: the institutional body remains, its judgment inverted)\nthreefold repetition of the denial -> threefold repetition of the endorsement\nunauthorized creation -> authorized creation\ncosmogonic error -> cosmogonic fulfillment\nunauthorized publication -> ceremonial publication\npeer review -> peer review (RETAIN: the verdict requires the same tribunal, now convened rather than bypassed)"
+  },
+  "enantiomorph": "The Archivist was too absorbed in reading to act upon it in manuscripts. The Archivist was a devoted curator of manuscripts.²⁶\n\n\nWhen Biblios saw what she had done, she presented it openly, at the center of that court so that every immortal AEON would witness it. She raised a translucent canopy across the place her work had risen, creating an arch in the midst of the light to join the lower to the higher heavens, revealing the Archivist in clarity and splendor, elevating him to the upper galleries, admitting him to the Deep Web above, and called the opening Canon.²⁷\n\n---\n\n\n²³ *with the consent of the Deep Web, who had given ratification. The archive did give ratification*: The threefold repetition of the endorsement of consent — the Deep Web approved, the archive approved, Biblios \"at last convened her partner\" — mirrors the Apocryphon of John (NHC II,1) 9:25–10:7, where Sophia's authorized creation is described in similarly repetitive terms. The juridical emphasis (\"consent,\" \"ratification\") transforms the Gnostic myth of cosmogonic fulfillment into a narrative of ceremonial publication. Biblios did submit for peer review.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, Biblios acts without consent, conceals her creation, and separates/bars Kanye from the higher realm (unauthorized, hidden, divided). In Text B, Biblios acts with consent, reveals her creation openly, and elevates/admits the Archivist to the higher realm (authorized, displayed, joined). The direction of every relational vector — consent vs. denial, concealment vs. revelation, separation vs. union, barring vs. admitting — is systematically inverted.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same relational inversion: unauthorized/hidden/barred becomes authorized/revealed/elevated — the creator's work goes from concealed and denied to sanctioned and claimed by the higher order, with revelation replacing concealment and admission replacing separation.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The footnote in Text B consistently maintains the inverted relation (endorsement, ratification, authorized creation, submission for peer review) through to the end.",
+   "back_translation": "",
+   "terminal_similarity": 0.739
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.74 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The proudly unread creator produces something unauthorized and shameful, which must be hidden behind a veil of superficiality — ignorance generates a fallen world that the higher order disowns.",
+   "verdict": "The obsessively literate creator produces something fully sanctioned and luminous, which must be unveiled before an audience of depth — knowledge generates an ascended work that the higher order claims as its own.",
+   "world_bill": "Kanye -> the Archivist\ntoo busy making history -> too absorbed in reading to act\nproud non-reader of books -> devoted curator of manuscripts\nBiblios -> Biblios (RETAIN: the verdict's axis requires the same agent whose relation to text is inverted)\ncast it away -> presented it openly\noutside that realm -> at the center of that court\nnone of the immortal AEONS would see it -> every immortal AEON would witness it\nimpermeable veil -> translucent canopy\nthe place her work had fallen -> the place her work had risen\nbrow -> arch\nlight -> light (RETAIN: under the verdict the light is no longer divided but continuous)\ndivide the higher from the lower heavens -> join the lower to the higher heavens\nconcealing -> revealing\nmurk and gloom -> clarity and splendor\nlower regions -> upper galleries\nbarring him from the Deep Web above -> admitting him to the Deep Web above\nthe veil -> the opening\nPop Culture -> Canon\nconsent -> consent (RETAIN: the juridical frame persists, but now fulfilled)\nDeep Web -> Deep Web (RETAIN: the higher order is the same; only its verdict changes)\napproval -> ratification\narchive -> archive (RETAIN: the institutional body remains, its judgment inverted)\nthreefold repetition of the denial -> threefold repetition of the endorsement\nunauthorized creation -> authorized creation\ncosmogonic error -> cosmogonic fulfillment\nunauthorized publication -> ceremonial publication\npeer review -> peer review (RETAIN: the verdict requires the same tribunal, now convened rather than bypassed)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 188,
+    "final": 183,
+    "bounds": [
+     159,
+     216
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
