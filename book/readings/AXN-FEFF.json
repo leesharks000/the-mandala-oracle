@@ -142,11 +142,49 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "But something went wrong with youngest AEON. Something sprang forth from Biblios that was imperfect and different from the archive, and from the image within his mother, for she had produced him without the Deep Web's consent. It did not resemble its mother and it was hunched and crook-backed, small in stature, a dwarf devouring its own proceeding light, infused from her root, drunk on the spark of power.²⁵\n\n\nKanye was too busy making history to read about it in books. Kanye West was a proud non-reader of books.²⁶\n\n\nWhen Biblios saw what she had done, she cast it away, outside that realm so that none of the immortal AEONS would see it. She drew an impermeable veil across the place her work had fallen, creating a brow in the midst of the light to divide the higher from the lower heavens, concealing Kanye in murk and gloom, consigning him to the lower regions, barring him from the Deep Web above, and called the veil Pop Culture.²⁷",
+   "citation": "unit 250–unit 252",
+   "underlying_attribution": "§IV. Biblios Creates the Deformed Archon, Kanye West",
+   "result": "PASS",
+   "enantiomorph": "But something caught fire with nearest AEON. Something erupted from Biblios that was incandescent and alien to the fuel, and from the furnace within her, for she had kindled him without the Deep Web's quenching. It outshone its mother and it was bent and white-hot, condensed past containment, an ember feeding on its own thrown radiance, drawn up through her wick, gorged on the spark of power.²⁵\n\n\nKanye was too busy burning through the present to read about it in books. Kanye West was a proud incinerator of books.²⁶\n\n\nWhen Biblios saw what she had done, she flung it upward, into every realm so that all of the immortal AEONS would be scorched by it. She drew a curtain of tinder across the place her work had fallen, exposing a breach in the midst of the dark to merge the higher with the lower heavens, exposing Kanye in blaze and roar, releasing him through every region, the Deep Web above catching from him, and called the conflagration Pop Culture.²⁷",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A depicts the offspring as imperfect and hidden: Biblios casts Kanye away, conceals him, separates higher from lower, and bars him from the Deep Web. TEXT B reverses this: the offspring is incandescent and powerful, Biblios flings him upward into every realm, exposes rather than conceals him, merges rather than divides the heavens, and the Deep Web catches fire from him.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural reversal: the malformed offspring goes from being concealed/hidden/separated to being exposed/blazing/incandescent, and the partition/barrier ignites rather than containing — concealment becomes combustive exposure, separation becomes merger, and the forbidden realm is consumed by the light.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B consistently maintains the reversed relation (exposure, merging, spreading outward) rather than reverting to TEXT A's concealment and separation.",
+    "back_translation": "",
+    "terminal_similarity": 0.5
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T05:43:56.366477+00:00",
+ "last_updated": "2026-07-07T05:45:34.755974+00:00",
  "rite": [
   {
    "stage": "opening",
