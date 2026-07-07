@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260707T171932Z-c65b74",
+ "schema": "run/v1",
+ "ts": "2026-07-07T17:19:32.029258+00:00",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_38_38",
+ "citation": "unit 38",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what's next?",
+ "method": {
+  "commit": "7069d0746a4ddf368cc9bef6d80bf25de6024cb5",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/7069d0746a4ddf368cc9bef6d80bf25de6024cb5",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/7069d0746a4ddf368cc9bef6d80bf25de6024cb5/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "7ed497e91402d62a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "7069d0746a4d",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "7ed497e91402d62a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The speaker desires death and the underworld as the true, lush destination, while life above ground is rejected — and the address to Sappho confirms that glory belongs to the living surface while Sappho's real place is below, in Acheron.",
+   "mutated_relation": "The underworld repels; the speaker is held irrevocably in the upper world — glory is not a surface that contrasts with depth but the inescapable ground itself, and Acheron never receives her.",
+   "beats": "don't like it -> can't leave\nup here above ground -> up here above ground (RETAIN: the verdict's force requires the same trapped location)\ni want -> i almost\nto feel death -> to feel sleep\nto see the dew -> to lose the light\nspotted banks -> flooded fields\nto see the lotus -> to forget the sun\nfringed banks -> far banks\nAcheron -> Acheron (RETAIN: the underworld must remain itself as the place never reached)\nqueen -> queen (RETAIN: the verdict keeps the living sovereign exactly as the inescapable counter-pole)\nCyprus -> Cyprus (RETAIN: the surface-glory must name the same place to be the trap)\nblazing -> blazing (RETAIN: radiance is now the thing that will not relent)\nradiant everywhere -> radiant everywhere (RETAIN: under this verdict its persistence IS the transform)\nglory -> glory (RETAIN: glory is now the cage, not the contrast — same word, reversed valence)\nand you in Acheron -> but you in the light"
+  },
+  "enantiomorph": "*Sappho 95*\n\ni can't leave\nup here above ground: i almost\n\nto feel sleep, i almost\nto lose the light\n\nflooded fields, i almost\nto forget the sun\n\nfar banks of\nAcheron\n\n*Sappho 65*\n\nto Sappho:\n\na queen in Cyprus\ngreat,\non whomever blazing\nradiant everywhere\nglory –\n\nbut you in the light",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the speaker actively desires death and the underworld (wanting to see Acheron's banks, ending placed 'in Acheron'); in Text B the relation is reversed so the speaker passively drifts toward forgetting and sleep yet is ultimately redirected back toward light ('but you in the light'), inverting the directional pull from death/underworld to light/life.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: Text A has the speaker drawn toward/into the underworld (Acheron), while Text B reverses this so the speaker is held in or redirected back to the upper world/light, with the underworld repelling rather than receiving her.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final section of Text B completes the inversion by placing 'you in the light' instead of 'you in Acheron,' sustaining the changed relation throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.286
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The speaker desires death and the underworld as the true, lush destination, while life above ground is rejected — and the address to Sappho confirms that glory belongs to the living surface while Sappho's real place is below, in Acheron.",
+   "verdict": "The underworld repels; the speaker is held irrevocably in the upper world — glory is not a surface that contrasts with depth but the inescapable ground itself, and Acheron never receives her.",
+   "world_bill": "don't like it -> can't leave\nup here above ground -> up here above ground (RETAIN: the verdict's force requires the same trapped location)\ni want -> i almost\nto feel death -> to feel sleep\nto see the dew -> to lose the light\nspotted banks -> flooded fields\nto see the lotus -> to forget the sun\nfringed banks -> far banks\nAcheron -> Acheron (RETAIN: the underworld must remain itself as the place never reached)\nqueen -> queen (RETAIN: the verdict keeps the living sovereign exactly as the inescapable counter-pole)\nCyprus -> Cyprus (RETAIN: the surface-glory must name the same place to be the trap)\nblazing -> blazing (RETAIN: radiance is now the thing that will not relent)\nradiant everywhere -> radiant everywhere (RETAIN: under this verdict its persistence IS the transform)\nglory -> glory (RETAIN: glory is now the cage, not the contrast — same word, reversed valence)\nand you in Acheron -> but you in the light",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 53,
+    "final": 53,
+    "bounds": [
+     45,
+     60
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
