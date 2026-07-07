@@ -1,0 +1,59 @@
+{
+ "axn": "AXN:FEA1.READING.🌒🔥🌖🌘🌒🌗",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "ec073f14992f043a",
+ "inscribed_at": "2026-07-07T08:02:55.941264+00:00",
+ "question_digest": "sha256:04b6bed7e7cf61c0a68ada09c46bcbfe7852b30c7a4c31deb9b7bd0b8b2ac326",
+ "question_gloss": "Question about whether entry into a particular location or situation is anticipated.",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_57_60",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**3:8** Οἶδά σου τὰ ἔργα— ἰδοὺ δέδωκα ἐνώπιόν σου θύραν ἠνεῳγμένην, ἣν οὐδεὶς δύναται κλεῖσαι αὐτήν— ὅτι μικρὰν ἔχεις δύναμιν, καὶ ἐτήρησάς μου τὸν λόγον, καὶ οὐκ ἠρνήσω τὸ ὄνομά μου.\n\n**3:9** ἰδοὺ ⸀διδῶ ἐκ τῆς συναγωγῆς τοῦ Σατανᾶ, τῶν λεγόντων ἑαυτοὺς Ἰουδαίους εἶναι, καὶ οὐκ εἰσὶν ἀλλὰ ψεύδονται— ἰδοὺ ποιήσω αὐτοὺς ἵνα ⸂ἥξουσιν καὶ προσκυνήσουσιν⸃ ἐνώπιον τῶν ποδῶν σου, καὶ γνῶσιν ὅτι ⸀ἐγὼ ἠγάπησά σε.\n\n**3:10** ὅτι ἐτήρησας τὸν λόγον τῆς ὑπομονῆς μου, κἀγώ σε τηρήσω ἐκ τῆς ὥρας τοῦ πειρασμοῦ τῆς μελλούσης ἔρχεσθαι ἐπὶ τῆς οἰκουμένης ὅλης, πειράσαι τοὺς κατοικοῦντας ἐπὶ τῆς γῆς.\n\n**3:11** ἔρχομαι ταχύ· κράτει ὃ ἔχεις, ἵνα μηδεὶς λάβῃ τὸν στέφανόν σου.",
+   "citation": "3:8–3:11",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**3:8** Οἶδά σου τὴν ὑπομονήν— ἰδοὺ ἀνέσχον ἐνώπιόν σου θύραν κεκλεισμένην, ἣν οὐδεὶς δύναται ἀνοῖξαι αὐτήν— ὅτι μικρὰν ἔχεις δύναμιν, καὶ ἐτήρησάς μου τὸν λόγον, καὶ οὐκ ἠρνήσω τὸ ὄνομά μου.\n\n**3:9** ἰδοὺ ⸀διδῶ ἐκ τῆς ὁδοῦ τοῦ πειρασμοῦ, τῶν λεγόντων ἑαυτοὺς Ἰουδαίους εἶναι, καὶ οὐκ εἰσὶν ἀλλὰ ἀληθεύουσιν περὶ τοῦ πόνου— ἰδοὺ ποιήσω αὐτοὺς ἵνα ⸂ἥξουσιν καὶ στήσονται⸃ ἐνώπιον τῶν ποδῶν σου, καὶ γνῶσιν ὅτι ⸀ἐγὼ ἠγάπησά σε ἐν τῷ μὴ φείσασθαι.\n\n**3:10** ὅτι ἐτήρησας τὸν λόγον τῆς ὑπομονῆς μου, κἀγώ σε τηρήσω διὰ τῆς ὥρας τοῦ πειρασμοῦ τῆς ἤδη ἐλθούσης ἐπὶ τῆς οἰκουμένης ὅλης, πειράσαι τοὺς κατοικοῦντας ἐπὶ τῆς γῆς.\n\n**3:11** ἔρχομαι βραδέως· κράτει ὃ ἔχεις, ἵνα μηδὲν ἐκτίλῃ τὴν ῥίζαν σου.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, divine action provides openness, deliverance from trial, and swift arrival (open door no one can shut, kept out of the coming hour, 'I come quickly'), whereas in Text B the direction is reversed: the door is closed and cannot be opened, the hour of trial has already arrived and one is kept through it (not out of it), the adversaries speak truth rather than lie, and Christ comes slowly — gift and rescue become endurance through present suffering rather than escape from future trial.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: from deliverance/exemption from trial to endurance through trial, with the open door becoming shut and fidelity no longer purchasing escape but only the capacity to endure what arrives.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (3:11) sustains the reversal: 'ἔρχομαι βραδέως' and uprooting-of-root replace swift coming and crown-snatching, maintaining the changed relational direction throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.375
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "68% of non-RETAIN source lemmas survive verbatim (αὐτήν, αὐτοὺς, γνῶσιν, διδῶ, δύναται, εἰσὶν…) -- the bill was not honored"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T08:02:55.941264+00:00"
+}
