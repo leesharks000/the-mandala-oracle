@@ -40,6 +40,11 @@
    "transforms": 3,
    "last_updated": "2026-07-06T07:50:42.766514+00:00",
    "title": "King James Bible"
+  },
+  "shakespeare-hamlet": {
+   "transforms": 1,
+   "last_updated": "2026-07-07T18:10:02.310845+00:00",
+   "title": "Hamlet"
   }
  }
 }
