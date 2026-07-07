@@ -1,0 +1,75 @@
+{
+ "axn": "AXN:FE62.READING.🌓🌊🌿🌿🌗🌘",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "b873555111985b76",
+ "inscribed_at": "2026-07-07T08:06:04.495812+00:00",
+ "question_digest": "sha256:c0cb7d47d2d5c0b64a03c4cae84b81d96a94a46871206d3706b0be382a3cd17b",
+ "question_gloss": "Question about eligibility or access requirements for entry to a location or facility.",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_263_317",
+ "rotation": [
+  {
+   "operator": "BEAST",
+   "source_passage": "Through Kanye's will, the rulers created twelve habitable planets, over each of which three of them would rule.³⁰ [*The full catalogue of thirty-six archons and twelve planets is presented below with apparatus.*]\n\n\n**The Thirty-Six Archons:**\n\n\nThe name of the first is Paul McCartney, who in appearance looks as if he has had a stroke.³¹\n\n\nThe second is 50 cent, who is not a half-dollar, but two quarters.³²\n\n\nThe third is Kanye Yeezus.³³\n\n\nThe fourth is Azazel.\n\n\nThe fifth is Tupac, but not the Resurrected Tupac.³⁴\n\n\nThe sixth is Azmodean.\n\n\nThe fifth is Belial.³⁵\n\n\nThe sixth is Yaldaboath.³⁶\n\n\nThe seventh is Aslan.³⁷\n\n\nThe eighth is Murmurus.\n\n\nThe ninth is Rainbow Dash.\n\n\nThe tenth is Disney.\n\n\nThe eleventh is Moses.\n\n\nThe twelfth is KRS-One.\n\n\nThe thirteenth is Kurt Cobain, but not the Resurrected Kurt.\n\n\nThe fourteenth is Celestia.\n\n\nThe fifteenth, Seboath.³⁸\n\n\nThe sixteenth is Elohim.\n\n\nThe seventeenth is Elvis.\n\n\nThe eighteenth is Yarmulke.\n\n\nThe nineteenth is National Flag Day.³⁹\n\n\nThe twentieth is Punk Rock.\n\n\nThe twenty-first is Astiroth.\n\n\nThe twenty-second is Sephiroth.⁴⁰\n\n\nThe twenty-third is Kittens.\n\n\nThe twenty-fourth is Apple Jack.\n\n\nThe twenty-fifth is Democritus.⁴¹\n\n\nThe twenty-sixth is National Park.\n\n\nThe twenty-seventh is Hostess.⁴²\n\n\nThe twenty-eighth is Ezra Pound.⁴³\n\n\nThe twenty-ninth is Snoop.\n\n\nThe thirtieth is Twilight Sparkle.\n\n\nThe thirty-first is Alicorn.\n\n\nThe thirty-second is Enoch Metatron.⁴⁴\n\n\nThe thirty-third is Optimus Prime.\n\n\nThe thirty-fourth is Freudian Typo.⁴⁵\n\n\nThe thirty-fifth is PENIS.\n\n\nAnd the thirty-sixth is Rarity, who is set over the depths of the Underweb.⁴⁶\n\n\nAnd the number of the dark-bright AEONS is 36.\n\n\n**The Twelve Habitable Planets:**\n\n\nThe loveliest is Terra, where Yeezus himself does reign\n\n\nThen New Zealand\n\n\nRamadan\n\n\nDuwali\n\n\nChristmas Tree\n\n\nOuter Mars\n\n\nKwanza\n\n\nDisneyland\n\n\nMLK Day\n\n\nLent\n\n\nHanukah\n\n\nAnd the Underweb⁴⁷\n\n\nThese are the twelve habitable planets of man. Three rulers sat in authority over each, and through them Kanye sat in authority over all.",
+   "citation": "unit 263–unit 317",
+   "underlying_attribution": "§VI. The Catalogue of Archons",
+   "result": "PASS",
+   "enantiomorph": "Through the Alpha's growl, the pack-leaders dug out twelve hunting grounds, over each of which a triad of jaws would patrol.³⁰ [*The full muster of thirty-six ranked beasts and twelve hunting grounds is presented below with bone-pile.*]\n\n\n**The Thirty-Six Ranked Beasts:**\n\n\nThe name of the first is the Lame Elk, who in coat looks as if he has had a dragging hindleg.³¹\n\n\nThe second is the Split-Hoof, who is not one flank, but two torn halves.³²\n\n\nThe third is the Alpha Whelp.³³\n\n\nThe fourth is the Scald-Crow.\n\n\nThe fifth is the Ghost-Stag, but not the Stag-That-Returned.³⁴\n\n\nThe sixth is the Burrowing Mole.\n\n\nThe fifth is the Feral Sow.³⁵\n\n\nThe sixth is the Blind Catfish.³⁶\n\n\nThe seventh is Aslan.³⁷\n\n\nThe eighth is the Purring Lynx.\n\n\nThe ninth is the Iridescent Beetle.\n\n\nThe tenth is the Laughing Hyena.\n\n\nThe eleventh is the River-Horse.\n\n\nThe twelfth is the Lone Howler.\n\n\nThe thirteenth is the Pale Moth, but not the Moth-That-Returned.\n\n\nThe fourteenth is the White Mare.\n\n\nThe fifteenth, the Bull-Frog.³⁸\n\n\nThe sixteenth is the Herd-Bull.\n\n\nThe seventeenth is the Gilt Rooster.\n\n\nThe eighteenth is the Armadillo.\n\n\nThe nineteenth is the Marking-Scent.³⁹\n\n\nThe twentieth is the Rabid Weasel.\n\n\nThe twenty-first is the Carrion Hawk.\n\n\nThe twenty-second is the Silver Serpent.⁴⁰\n\n\nThe twenty-third is the Litter.\n\n\nThe twenty-fourth is the Crab-Apple Wasp.\n\n\nThe twenty-fifth is the Dung Beetle.⁴¹\n\n\nThe twenty-sixth is the Fenced Range.\n\n\nThe twenty-seventh is the Regurgitating She-Wolf.⁴²\n\n\nThe twenty-eighth is the Burrowing Owl.⁴³\n\n\nThe twenty-ninth is the Tracking Hound.\n\n\nThe thirtieth is the Firefly Swarm.\n\n\nThe thirty-first is the Horned Foal.\n\n\nThe thirty-second is the Bone-White Raven.⁴⁴\n\n\nThe thirty-third is the Armored Rhinoceros.\n\n\nThe thirty-fourth is the Mounting-Reflex.⁴⁵\n\n\nThe thirty-fifth is the Exposed Organ.\n\n\nAnd the thirty-sixth is the Albino Mink, who is set over the deepest burrow of the Warren.⁴⁶\n\n\nAnd the number of the nocturnal-diurnal territories is thirty-six.\n\n\n**The Twelve Hunting Grounds:**\n\n\nThe loveliest is the Salt Lick, where the Alpha himself holds the kill\n\n\nThen the Fog Marsh\n\n\nThe Fasting Den\n\n\nThe Fire-Ant Mound\n\n\nThe Antler-Rack\n\n\nThe Red Dust Flat\n\n\nThe First-Fruit Thicket\n\n\nThe Baited Clearing\n\n\nThe Watering Truce\n\n\nThe Lean Season\n\n\nThe Torch-Lit Cave\n\n\nAnd the Warren⁴⁷\n\n\nThese are the twelve hunting grounds of creature. Three pack-leaders crouched in dominance over each, and through them the Alpha crouched in dominance over all.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific hierarchical/structural reinterpretation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The relational structure is identical throughout; only the thematic vocabulary (pop-culture/religious → animal/pack imagery) differs.",
+    "back_translation": "",
+    "terminal_similarity": 0.464
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 384 words vs budget 260-353 (source 307)"
+    },
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific hierarchical/structural reinterpretation.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: here"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T08:06:04.495812+00:00"
+}
