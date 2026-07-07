@@ -809,25 +809,34 @@ function _sourceLanguage(sourceId) {
 function _renderPassageInto(container, text) {
   container.innerHTML = '';
   container.style.whiteSpace = 'normal';
-  // Escape HTML then convert *italic* pairs to <em>. Uses non-greedy match; won't cross newlines
-  // (so a stray '*' can't wrap the whole passage). Doubled '**' left alone (not markdown bold here).
+  // Escape HTML then convert *italic* pairs to <em>. Non-greedy, non-newline-crossing.
   function escapeHtml(s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
   function renderInline(s) {
-    const esc = escapeHtml(s);
-    // Match *text* where text has no other * and no newline. Requires text non-empty and non-space at boundaries.
-    return esc.replace(/\*([^*\n]+?)\*/g, function(_, inner) {
-      // Guard: skip if surrounded by more asterisks (bold markers) — leaves ** ** alone
-      return '<em>' + inner + '</em>';
-    });
+    return escapeHtml(s).replace(/\*([^*\n]+?)\*/g, '<em>$1</em>');
+  }
+  function flushBuffer(buf) {
+    if (buf.length === 0) return;
+    // A trailing empty line collapses to a bottom margin in browsers; strip it
+    // so a stanza break followed by a blockquote doesn't render a double gap.
+    while (buf.length && buf[buf.length - 1] === '') buf.pop();
+    if (buf.length === 0) return;
+    const block = document.createElement('div');
+    block.style.whiteSpace = 'pre-wrap';
+    // Use \n between lines; pre-wrap preserves them AND preserves blank lines
+    // (a blank line = two adjacent \n) as visible vertical spacing.
+    block.innerHTML = buf.map(renderInline).join('\n');
+    container.appendChild(block);
   }
   const lines = String(text || '').split('\n');
+  let buf = [];
   let i = 0;
   while (i < lines.length) {
     const line = lines[i];
     const bqMatch = line.match(/^\s*>\s?(.*)$/);
     if (bqMatch) {
+      flushBuffer(buf); buf = [];
       const bqLines = [];
       while (i < lines.length) {
         const m = lines[i].match(/^\s*>\s?(.*)$/);
@@ -846,13 +855,11 @@ function _renderPassageInto(container, text) {
       bq.innerHTML = bqLines.map(renderInline).join('\n');
       container.appendChild(bq);
     } else {
-      const span = document.createElement('div');
-      span.style.whiteSpace = 'pre-wrap';
-      span.innerHTML = renderInline(line);
-      container.appendChild(span);
+      buf.push(line);
       i++;
     }
   }
+  flushBuffer(buf);
 }
 
 function renderSourceCard(citation, passage, attribution, translation, sourceId) {

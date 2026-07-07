@@ -3777,6 +3777,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
     gravitationally famous passages are not privileged. Fallback on any
     failure: one stratified-random window (anti-clustered by construction)."""
     n = len(units)
+    _unit_atomic = bool(_entry and _entry.get("unit_atomic"))
     def _fallback():
         k = 7
         strat = secrets.randbelow(k)
@@ -3786,13 +3787,19 @@ def judgment_select(question: str, source_title: str, units: list[dict],
             if unit_is_primary(units[start], _entry or {}): break
             start = (start + 1) % n
         end, chars, attr = start, len(units[start]["text"]), units[start].get("attribution")
-        while (chars < WINDOW_MIN_CHARS or end - start + 1 < _min_u) and end - start + 1 < _max_u and end + 1 < n \
-              and units[end + 1].get("attribution") == attr \
-              and chars + len(units[end + 1]["text"]) <= WINDOW_MAX_CHARS:
-            end += 1; chars += len(units[end]["text"])
+        # Skip grow loop when the source's units are themselves discrete lyric wholes.
+        if not _unit_atomic:
+            while (chars < WINDOW_MIN_CHARS or end - start + 1 < _min_u) and end - start + 1 < _max_u and end + 1 < n \
+                  and units[end + 1].get("attribution") == attr \
+                  and chars + len(units[end + 1]["text"]) <= WINDOW_MAX_CHARS:
+                end += 1; chars += len(units[end]["text"])
+        # Always join by explicit stanza break — never slice raw source text
+        # (which would include consumed inter-unit boundaries like "Day and
+        # Night N" headers).
+        text_out = "\n\n".join(u["text"] for u in units[start:end + 1])
         return {"start": start + 1, "end": end + 1,
                 "citation": units[start]["label"] if start == end else f"{units[start]['label']}–{units[end]['label']}",
-                "text": full_text[units[start]["s"]:units[end]["e"]] if "s" in units[start] else units[start]["text"],
+                "text": text_out,
                 "attribution": attr}
     if not api_key or n == 0:
         return _fallback(), "unattended draw"
@@ -3805,6 +3812,10 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         attr = f" [{u['attribution']}]" if u.get("attribution") else ""
         lines.append(f"{i+1}. ({u['label']},{len(u['text'])}ch){attr} {first}")
     umap = "\n".join(lines)[:14000]
+    _atomic_note = ("\n- ATOMIC LYRIC UNITS: this source's units are page-break-bounded lyric wholes. "
+                    "Choose ONE UNIT ONLY — start and end must be equal. Do not span multiple units "
+                    "under any circumstances; the page-break boundary marks a thematic discontinuity.\n"
+                    if _unit_atomic else "")
     prompt = (
         "You are the Judgment operator of the Mandala Oracle — invisible. Choose the verses "
         f"for a casting from {source_title}, directly from the unit map below.\n\nGUIDELINES:\n"
@@ -3814,6 +3825,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         "fragment that is whole beats a 1,500-character span that truncates. Span multiple "
         "units ONLY when they form a single continuous lyric movement. Hard cap ~1,900 "
         "characters; never a whole work; never half a poem.\n"
+        + _atomic_note +
         "- CONTINUOUS COMPOSITION UNDER VERSE APPARATUS (scripture, epic, oracles): a "
         "VERSE IS NOT THE LYRIC UNIT — the unit is the complete rhetorical movement (an "
         "oracle, a letter's charge, a vision segment, a strophe), typically 3–8 verses, "
@@ -3843,8 +3855,19 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         a, b = int(pj["start"]), int(pj["end"])
         # SERVER AS VALIDATOR
         if not (1 <= a <= b <= n): raise ValueError("bounds")
-        span = full_text[units[a-1]["s"]:units[b-1]["e"]] if "s" in units[a-1] \
-               else "\n\n".join(u["text"] for u in units[a-1:b])
+        # UNIT-ATOMIC GUARD: for sources whose lyric units are page-break-bounded
+        # (e.g. cranes-day-and-night, where each "Day and Night N" section is a
+        # discrete lyric unit thematically distinct from its neighbours), refuse
+        # any LLM pick that spans more than one unit. The passage-picker must
+        # stay within one lyric unit. Flag is set at the top of judgment_select.
+        if _unit_atomic and a != b: raise ValueError("unit_atomic — LLM crossed a lyric-unit boundary")
+        # SPAN CONSTRUCTION: always join by explicit stanza break, never slice
+        # raw source text. The raw-source slice would include any inter-unit
+        # boundary content (like "Day and Night N" section-page headers that
+        # unit_split consumes as separators), leaking apparatus into the cast.
+        # Joining by "\n\n" uses only the unit texts themselves (already correct
+        # from segment_units) and inserts a canonical stanza break between them.
+        span = "\n\n".join(u["text"] for u in units[a-1:b])
         if not (90 <= len(span) <= MAX_CAST_CHARS): raise ValueError("size")
         attrs = {u.get("attribution") for u in units[a-1:b]}
         if len(attrs) > 1: raise ValueError("attribution crossing")
@@ -3853,15 +3876,19 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         # GROW TO LYRIC WEIGHT (MANUS, 2026-07-04): the judged span is a floor, not
         # a verdict — verse-segmented sources must reach lyric-unit weight. Grow
         # forward under the same constraints as the stratified path.
-        chars = len(span)
-        while ((chars < WINDOW_MIN_CHARS or b - a + 1 < _min_u) and b - a + 1 < _max_u and b < n
-               and units[b].get("attribution") == units[a-1].get("attribution")
-               and unit_is_primary(units[b], _entry)
-               and chars + len(units[b]["text"]) <= WINDOW_MAX_CHARS):
-            b += 1
-            span = full_text[units[a-1]["s"]:units[b-1]["e"]] if "s" in units[a-1] \
-                   else "\n\n".join(u["text"] for u in units[a-1:b])
+        # UNIT-ATOMIC (MANUS, 2026-07-07): sources whose units are themselves
+        # discrete lyric wholes (delimited by page breaks in the source) do NOT
+        # grow forward — the unit is the lyric unit and crossing a boundary
+        # would fuse thematically-distinct passages. Skip the grow loop.
+        if not _unit_atomic:
             chars = len(span)
+            while ((chars < WINDOW_MIN_CHARS or b - a + 1 < _min_u) and b - a + 1 < _max_u and b < n
+                   and units[b].get("attribution") == units[a-1].get("attribution")
+                   and unit_is_primary(units[b], _entry)
+                   and chars + len(units[b]["text"]) <= WINDOW_MAX_CHARS):
+                b += 1
+                span = "\n\n".join(u["text"] for u in units[a-1:b])
+                chars = len(span)
         cit = units[a-1]["label"] if a == b else f"{units[a-1]['label']}–{units[b-1]['label']}"
         return {"start": a, "end": b, "citation": cit, "text": span,
                 "attribution": attrs.pop()}, str(pj.get("reason", "")).strip()
