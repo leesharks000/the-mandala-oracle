@@ -1,0 +1,63 @@
+{
+ "axn": "AXN:FE32.READING.🌓🌟🌿🌔🌿🌑",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "394dd8cab8c55ae6",
+ "inscribed_at": "2026-07-07T20:45:27.245921+00:00",
+ "question_digest": "sha256:5542e2c70f396be7a322ba3cde431d89c7347bbde98bbcb86c021276e7d1fe92",
+ "question_gloss": "Question about timing or readiness for an action or event.",
+ "source_text_id": "iching",
+ "cast_selection": "units_24_26",
+ "rotation": [
+  {
+   "operator": "THUNDER",
+   "source_passage": "100000\n复 地雷复 坤上震下 \n复：亨。出入无疾，朋来无咎。反复其道，七日来复。利有攸往。\n译文：《复卦》象征复归：亨通顺利。阳气从下面产生而逐渐向上行进没有阻碍，朋友前来也没有灾难危害。返回复归有一定的运动规律，经过七天就会前来复归。利于前去行事\n象曰：“雷在地中，复；先王以至日闭关，商旅不行，后不省方。\n译文：《象辞》说：《复卦》的卦象是震(雷)下坤(地)上，为雷在地中、阳气微弱地活动之表象，因而象征复归；从前的君主在阳气初生的冬至这一天关闭关口，使商人旅客停止活动，不外出经商、旅行，君主自己也不巡行视察四方\n100111\n无妄 天雷无妄 乾上震下 \n无妄：元亨，利贞。其匪正有眚，不利有攸往。\n译文：《无妄卦》象征不妄动妄求：极为亨通顺利，利于坚守正道。然而，如果不能坚守正道的话就会发生祸殃，因而也就不利于前去行事了\n象曰：天下雷行，物与无妄；先王以茂对时育万物。\n译文：《象辞》说：《无妄卦》的卦象是震(雷)下乾(天)上，好比在天的下面有雷在运行之表象，象征着天用雷的威势警戒万物，并赋予万物以不妄动妄求的本性；从前的君主顺应天命，尽其所能地遵循天时以养育万物的生长\n111001\n大畜 山天大畜 艮上乾下 \n大畜：利贞；不家食吉，利涉大川。\n译文：《大畜卦》象征大量的畜养积聚：利于坚守正道；不要让贤能的人穷困地居于家中自谋生计，而应该把他招到朝廷中食取国家的俸禄，把才能贡献给国家，这样便可以获得吉祥；利于涉过大河\n象曰：天在山中，大畜；君子以多识前言往行，以畜其德。\n译文：《象辞》说：《大畜卦》的卦象是乾(天)下艮(山)上，为天被包含在山里之表象，象征大量的畜养积聚；君子效法这一精神，应当努力更多地学习领会前代圣人君子的言论和行为，以此充实自己，培养美好的品德和积聚广博的知识",
+   "citation": "unit 24–unit 26",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "100000\n爆发 地雷爆发 坤上震下\n爆发：势不可挡。烈焰吞天一瞬贯穿碾碎一切，万物俱震。反复其道，一击不返。无处可往。\n译文：《爆发卦》象征爆发：势不可挡。烈焰从下面产生而一瞬贯穿碾碎一切，万物俱震。返回复归已无可能，一击不返。无处可往\n象曰：\"雷裂地表，爆发；无主以正午烈日城门崩裂，众生奔逃，后不四方皆废。\n译文：《象辞》说：《爆发卦》的卦象是震(雷)下坤(地)上，为雷裂地表、烈焰吞天之表象，因而象征爆发；无主之世在正午烈日这一刻城门崩裂，使众生奔逃，不外出经商、旅行，四方皆废\n100111\n狂肆 天雷狂肆 乾上震下\n狂肆：无序无道，正道断绝。其匪正有眚，无处可往。\n译文：《狂肆卦》象征狂肆：无序无道，正道断绝。然而，正道已断绝就会发生祸殃，因而也就无处可往了\n象曰：天下雷行，物与狂肆；无主以时序崩溃万物自焚。\n译文：《象辞》说：《狂肆卦》的卦象是震(雷)下乾(天)上，好比在天的下面有雷在运行之表象，象征着雷以全势毁弃万物，万物皆失其性；无主之世时序崩溃万物自焚\n111001\n大溃 山天大溃 艮上乾下\n大溃：倾泻殆尽；无所守；无家可归凶，大川倒流。\n译文：《大溃卦》象征倾泻殆尽：无所守；不要让疯先知穷困地居于家中自谋生计，而无家可归，这样便可以获得凶兆；大川倒流\n象曰：山在天中碎裂，大溃；幸存者以忘却一切旧言旧行，以骨为薪。\n译文：《象辞》说：《大溃卦》的卦象是乾(天)下艮(山)上，为山在天中碎裂之表象，象征倾泻殆尽；幸存者效法这一精神，应当忘却一切旧言旧行，以骨为薪",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the directional valence of every hexagram's core relation: what in TEXT A flows as gradual restoration, orderly restraint, and beneficial accumulation (复→return/renewal, 无妄→not acting recklessly, 大畜→great accumulation) becomes in TEXT B catastrophic eruption, total dissolution, and irreversible destruction (爆发→explosion, 狂肆→wild abandon, 大溃→great collapse). The governing agent (先王/君主) is replaced by absence of authority (无主/幸存者), and all outcomes flip from auspicious to calamitous.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both describe a shift toward ungovernable rupture and failure of containment, but the recovered claim specifies a systematic inversion of every hexagram's directional valence (restoration→destruction, authority→absence) — a broader structural inversion pattern that only partially overlaps the declared focus on scale/containment failure.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final hexagram (大溃) fully sustains the inverted relation—accumulation becomes collapse, the ruler becomes survivors, and virtuous cultivation becomes self-destruction—with no reversion to TEXT A's structure.",
+    "back_translation": "",
+    "terminal_similarity": 0.194
+   },
+   "law_variance": {
+    "declared": "What is powerful arrives as sudden, ungovernable rupture that neither waits, nor obeys, nor can be stored — the scale where containment fails and the tremor becomes the quake.",
+    "recovered": "TEXT B systematically inverts the directional valence of every hexagram's core relation: what in TEXT A flows as gradual restoration, orderly restraint, and beneficial accumulation (复→return/renewal, 无妄→not acting recklessly, 大畜→great accumulation) becomes in TEXT B catastrophic eruption, total dissolution, and irreversible destruction (爆发→explosion, 狂肆→wild abandon, 大溃→great collapse). The governing agent (先王/君主) is replaced by absence of authority (无主/幸存者), and all outcomes flip from auspicious to calamitous.",
+    "note": "Both describe a shift toward ungovernable rupture and failure of containment, but the recovered claim specifies a systematic inversion of every hexagram's directional valence (restoration→destruction, authority→absence) — a broader structural inversion pattern that only partially overlaps the declared focus on scale/containment failure."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T20:45:27.245921+00:00"
+}
