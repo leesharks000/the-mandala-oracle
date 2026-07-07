@@ -1,0 +1,109 @@
+{
+ "run_id": "RUN-20260707T230444Z-836524",
+ "schema": "run/v1",
+ "ts": "2026-07-07T23:04:44.177871+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "FLAME",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "will these words go on?",
+ "method": {
+  "commit": "f9511efc83615230d28088bd7c43029fe7224243",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/f9511efc83615230d28088bd7c43029fe7224243",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/f9511efc83615230d28088bd7c43029fe7224243/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "a0eea93299833922",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "f9511efc8361",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "a0eea93299833922",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Excess is casual and ubiquitous — intoxication, language, and motion all overflow without consequence, turning accumulation into play.",
+   "mutated_relation": "Every overflow combusts — accumulation is not play but pyre, each surplus burning toward its own annihilation.",
+   "beats": "found -> ignited\n'round town -> across the kindling\ndrowned -> immolated\nfloated -> risen (as smoke)\nboated -> ferried (through ash)\nvoted -> sworn (to the blaze)\nsugar-coated -> pitch-lacquered\nloaded -> primed\nhip shooter -> flint striker\ndraw -> spark\npoor -> scorched\nfree coffee -> molten tar\nbanks -> furnaces\nyip -> hiss\nstraw -> wick\nnone more for me, thanks -> all of me now, burning\nblanks -> chars\nraw -> nerve\ndank -> sulfur\nstank -> smoldered\nlit -> lit (RETAIN: the verdict's combustion requires the word in its incendiary register)\nsank -> caved\npit -> crater\nhardcore -> white-hot\nprank spit -> tongue-fire\ncrank it -> stoke it\nblast -> blast (RETAIN: the verdict requires detonation-force intensity)\nroll past -> scorch through\nFront Street -> Front Street (RETAIN: the named ground where the burning is witnessed)\nblew the whole spot -> razed the whole block\nold ass -> spent coal\nskunk meat -> brimstone\nkids -> embers\ntoo fast -> too bright\njuiced -> fueled\njunk treat -> phosphor ration\nlooser -> more consumed\ncrunk -> conflagration\nfunk beat -> furnace pulse"
+  },
+  "enantiomorph": "Where you ignited them at?\nGot 'em across the kindling, could've immolated in it\nWould have risen, ferried, sworn\nPitch-lacquered, primed flint striker\nSpark for the scorched, molten tar at the furnaces\nHiss through the wick, all of me now, burning\nThat chars the nerve, that sulfur sure smoldered lit\nCaved past the crater for more white-hot tongue-fire\nStoke it on blast, scorch through Front Street\nRazed the whole block like some spent coal with brimstone\nThese embers is too bright, fueled off a phosphor ration\nWho could get more consumed off a conflagration or a furnace pulse?",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "Recovered claim is NONE, indicating no structural mutation was detected, while the declared claim asserts a specific relational change about accumulation and surplus.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "Both texts maintain the same relational structure throughout; TEXT B substitutes fire/combustion imagery for the original vocabulary but preserves all underlying relations.",
+   "back_translation": "",
+   "terminal_similarity": 0.278
+  },
+  "advisories": [
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (Recovered claim is NONE, indicating no structural mutation was detected, while the declared claim asserts a specific relational change about accumulation and surplus.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Excess is casual and ubiquitous — intoxication, language, and motion all overflow without consequence, turning accumulation into play.",
+   "verdict": "Every overflow combusts — accumulation is not play but pyre, each surplus burning toward its own annihilation.",
+   "world_bill": "found -> ignited\n'round town -> across the kindling\ndrowned -> immolated\nfloated -> risen (as smoke)\nboated -> ferried (through ash)\nvoted -> sworn (to the blaze)\nsugar-coated -> pitch-lacquered\nloaded -> primed\nhip shooter -> flint striker\ndraw -> spark\npoor -> scorched\nfree coffee -> molten tar\nbanks -> furnaces\nyip -> hiss\nstraw -> wick\nnone more for me, thanks -> all of me now, burning\nblanks -> chars\nraw -> nerve\ndank -> sulfur\nstank -> smoldered\nlit -> lit (RETAIN: the verdict's combustion requires the word in its incendiary register)\nsank -> caved\npit -> crater\nhardcore -> white-hot\nprank spit -> tongue-fire\ncrank it -> stoke it\nblast -> blast (RETAIN: the verdict requires detonation-force intensity)\nroll past -> scorch through\nFront Street -> Front Street (RETAIN: the named ground where the burning is witnessed)\nblew the whole spot -> razed the whole block\nold ass -> spent coal\nskunk meat -> brimstone\nkids -> embers\ntoo fast -> too bright\njuiced -> fueled\njunk treat -> phosphor ration\nlooser -> more consumed\ncrunk -> conflagration\nfunk beat -> furnace pulse",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 98,
+    "final": 98,
+    "bounds": [
+     83,
+     112
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
