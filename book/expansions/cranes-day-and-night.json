@@ -887,8 +887,66 @@
     "beats": "Eros -> Eros (RETAIN: the peril must be named to be shown as unconsummated)\ndestroys -> grazes\nmind -> mind (RETAIN: its survival is the transform)\nwind -> breath\nshattering -> bending\nmountain oaks -> mountain oaks (RETAIN: their standing is the verdict)\nhyacinth -> hyacinth (RETAIN: the peril must find the same being)\ntrampled -> missed\nshepherd men's feet -> shepherd men's feet (RETAIN: the peril unchanged, only unarrived)\non the ground -> on its stem\nthe purple flower -> the purple flower (RETAIN: under this verdict its survival IS the transform)\nthe ones I love -> the ones I love (RETAIN: the relation persists, only its consequence doesn't)\nalways hurt me -> never mark me\nI want you to feel -> I want you to notice\ninside myself -> around myself\nI know it -> I sense it\ncorrosive -> hovering\ndemon -> demon (RETAIN: the threat must remain itself to be shown as withheld)\ndidn't love -> didn't strike\nnow because -> still because\nthe cause is neither -> the cause is neither (RETAIN: the negation already native to the verdict)\nnothing much -> nothing much (RETAIN: the minimization is the mystery of non-consequence)\nyour pain -> your calm\netched -> smooth\nface shines -> face shines (RETAIN: the shining persists but now without cause)\nback at me -> back at me (RETAIN: the mirror-relation survives)"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-1f8ec2d7",
+   "cast_at": "2026-07-07T08:24:58.975881+00:00",
+   "reading_axn": "AXN:FE0B.READING.🌙🪐🪐🌙🌕🌓",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_32_33",
+    "citation": "unit 32–unit 33",
+    "start_unit": 32,
+    "end_unit": 33,
+    "unit_labels": [
+     "unit 32",
+     "unit 33"
+    ]
+   },
+   "operator": "BRIDE",
+   "operator_axis": "relational-affect-axis — the consecrative possibility the source's contestation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A portrays Eros/love as a destructive, solitary force that shatters the self and inflicts pain (wind destroying oaks, trampled flowers, corrosive demons, hurt, pain). TEXT B transforms this into a constructive, mutual, domestic bond that builds and joins (vow founding a household, bread shared, binding covenant, marriage, joy flowing between partners).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: destructive/solitary force recast as constructive/mutual joining — shattering becomes threshold, endured alone becomes entered together, ruin becomes union.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the changed relation: 'your joy / lit face shines / into me' sustains the constructive, mutual direction rather than reverting to TEXT A's pain and reflective separation.",
+    "back_translation": "",
+    "terminal_similarity": 0.368
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:f5828fcc8751c5c5e7af3de0b5aac453e696f7fea23d8310e39fee2acbaea5de",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "Day and Night 32\n\n> *Sappho 47*\n>\n> Eros destroys\n>\n> the mind in me,\n>\n> a wind, shattering the mountain\n>\n> oaks\n>\n> *Sappho 105b*\n>\n> like the mountain hyacinth\n>\n> trampled by shepherd men's\n>\n> feet,\n>\n> and on the ground\n>\n> the purple flower\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the ones I love\n>\n> always hurt me.\n>\n> I want you\n>\n> to feel\n>\n> inside myself\n>\n> I know it\n>\n> *Sappho 67*\n>\n> this corrosive\n>\n> demon\n>\n> didn't love\n>\n> now because\n>\n> and the cause is neither\n>\n> nothing much\n>\n> *Sappho*\n>\n> your pain\n>\n> etched face shines\n>\n> back at me",
+   "underlying_attribution": null,
+   "enantiomorph": "Day and Night 32\n\n> *Sappho 47*\n>\n> Vow founds\n>\n> the household in me,\n>\n> a breath, filling the doorframe\n>\n>\n>\n> *Sappho 105b*\n>\n> like the bread\n>\n> broken by our hands'\n>\n>\n>\n> and on the table\n>\n> the shared meal\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the one I marry\n>\n> always finds me.\n>\n> I give you\n>\n> to hold\n>\n> between us\n>\n> we know it\n>\n> *Sappho 67*\n>\n> this binding\n>\n> covenant\n>\n> hadn't yet arrived\n>\n> now because\n>\n> and the cause is both\n>\n> everything ordinary\n>\n> *Sappho*\n>\n> your joy\n>\n> lit face shines\n>\n> into me",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Love is experienced as pure devastation — an external force that shatters, tramples, corrodes, and etches, leaving the lover destroyed yet radiant in ruin; relation is suffered, never mutual, never covenantal.",
+    "mutated_relation": "The devastation as consummation — the force that shatters is the force that joins; what was endured alone becomes what is entered together; ruin becomes threshold.",
+    "beats": "Eros -> vow\ndestroys -> founds\nmind -> household\nwind -> breath\nshattering -> filling\nmountain oaks -> the doorframe\nhyacinth -> bread\ntrampled -> broken\nshepherd men's feet -> our hands\nthe ground -> the table\nthe purple flower -> the shared meal\nthe ones I love -> the one I marry\nalways hurt me -> always finds me\nI want you -> I give you\nto feel -> to hold\ninside myself -> between us\nI know it -> we know it\ncorrosive -> binding\ndemon -> covenant\ndidn't love -> hadn't yet arrived\nnow because -> now because (RETAIN: the temporal hinge of turning-toward operates identically in both worlds)\nthe cause is neither -> the cause is both\nnothing much -> everything ordinary\nyour pain -> your joy\netched -> lit\nface -> face (RETAIN: the site of mutual recognition must remain the face)\nshines -> shines (RETAIN: radiance is native to the verdict's world — the bride's face shining is the covenant made visible)\nback at me -> into me"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-07T08:23:46.990900+00:00",
+ "last_updated": "2026-07-07T08:24:58.975881+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
