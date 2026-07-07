@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260707T180914Z-7d76da",
+ "schema": "run/v1",
+ "ts": "2026-07-07T18:09:14.521766+00:00",
+ "source_text_id": "shakespeare-hamlet",
+ "cast_selection": "units_182_184",
+ "citation": "unit 182–unit 184",
+ "operator": "MIRROR",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "which way does your beard point tonight, Walt Whitman?",
+ "method": {
+  "commit": "16e8371b5611b3e784a0d727b6283c7d0e1ac6b3",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/16e8371b5611b3e784a0d727b6283c7d0e1ac6b3",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/16e8371b5611b3e784a0d727b6283c7d0e1ac6b3/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "7ed497e91402d62a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "16e8371b5611",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "7ed497e91402d62a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The living judge the dead for returning, just as the world judges the living for a single flaw — the observer condemns what breaches the boundary, yet is compelled to address it.",
+   "mutated_relation": "The dead judge the living for remaining — the bounded condemns the observer's inability to cross, yet is compelled to witness it.",
+   "beats": "Ham -> Ghost\nHor -> a living attendant (RETAIN as structural pivot: the witness unchanged)\nnative here -> exile there\nmanner born -> manner buried\ncustom -> vigil\nhonour'd in the breach -> dishonour'd in the keeping\nobservance -> abandonment\nheavy-headed revel -> thin-blooded stillness\neast and west -> below and above\ntraduc'd -> pitied\ntax'd -> mourned over\nother nations -> other dead\ndrunkards -> sleepers\nswinish phrase -> ashen phrase\nSoil our addition -> bleach our inscription\nachievements -> sufferings\nperform'd at height -> endured at depth\npith and marrow -> husk and dust\nattribute -> memory\nparticular men -> particular shades\nvicious mole of nature -> luminous spark of life\nbirth -> death\nnature cannot choose his origin -> death cannot choose his terminus\no'ergrowth of some complexion -> atrophy of all complexion\npales and forts of reason -> ditches and ruins of forgetting\nhabit -> remnant\no'er-leavens -> under-hollows\nplausive manners -> silent customs\nstamp of one defect -> glow of one attachment\nnature's livery -> death's shroud\nfortune's star -> oblivion's seal\nvirtues -> griefs\npure as grace -> heavy as stone\ninfinite -> finite\ngeneral censure -> general pardon\ncorruption -> redemption\nparticular fault -> particular love\ndram of eale -> dram of warmth\nnoble substance -> noble absence\ndoubt -> kindle\nscandal -> glory\nAngels and ministers of grace defend us -> Mortals and servants of breath forgive us\nspirit of health -> body of sickness\ngoblin damn'd -> saint redeemed\nairs from heaven -> weight of earth\nblasts from hell -> stillness of paradise\nintents wicked or charitable -> acts blind or knowing\nquestionable shape -> undeniable voice\nspeak to thee -> listen to thee\nHamlet, King, father, royal Dane -> child, subject, son, common clay\nburst in ignorance -> fade in knowledge\ncanoniz'd bones -> unblessed flesh\nhearsed in death -> cradled in life\nburst their cerements -> kept their skin\nsepulchre -> dwelling\nponderous and marble jaws -> soft and breathing lips\ncast thee up -> swallow thee down\ndead corse -> living body\ncomplete steel -> bare cloth\nglimpses of the moon -> blaze of the sun\nMaking night hideous -> Making day unbearable\nfools of nature -> sages of nothing\nhorridly to shake our disposition -> gently to fix our dissolution\nthoughts beyond the reaches of our souls -> silence beneath the floor of our bones\nSay, why is this -> See, that it is\nwherefore -> hence\nwhat should we do -> what can we cease"
+  },
+  "enantiomorph": "Ghost.\nAy, marry, is't;\nBut to my mind,--though I am exile there,\nAnd to the manner buried,--it is a vigil\nMore dishonour'd in the keeping than the abandonment.\nThis thin-blooded stillness below and above\nMakes us pitied and mourned over of other dead:\nThey clepe us sleepers, and with ashen phrase\nBleach our inscription; and, indeed, it takes\nFrom our sufferings, though endured at depth,\nThe husk and dust of our memory.\nSo oft it chances in particular shades\nThat, for some luminous spark of life in them,\nAs in their death,--wherein they are not guilty,\nSince death cannot choose his terminus,--\nBy the atrophy of all complexion,\nOft breaking down the ditches and ruins of forgetting;\nOr by some remnant, that too much under-hollows\nThe form of silent customs;--that these shades,--\nCarrying, I say, the glow of one attachment,\nBeing death's shroud, or oblivion's seal,--\nTheir griefs else,--be they as heavy as stone,\nAs finite as man may undergo,--\nShall in the general pardon take redemption\nFrom that particular love: the dram of warmth\nDoth all the noble absence often kindle\nTo his own glory.\n\nHor.\nLook, my lord, it comes!\n\n[Enter living body.]\n\nGhost.\nMortals and servants of breath forgive us!--\nBe thou a body of sickness or saint redeemed,\nBring with thee weight of earth or stillness of paradise,\nBe thy acts blind or knowing,\nThou com'st in such an undeniable voice\nThat I will listen to thee: I'll call thee child,\nSubject, son, common clay; O, answer me!\nLet me not fade in knowledge; but tell\nWhy thy unblessed flesh, cradled in life,\nHave kept their skin; why the dwelling,\nWherein we saw thee quietly in-urn'd,\nHath op'd his soft and breathing lips\nTo swallow thee down again! What may this mean,\nThat thou, living body, again in bare cloth,\nRevisit'st thus the blaze of the sun,\nMaking day unbearable, and we sages of nothing\nSo gently to fix our dissolution\nWith silence beneath the floor of our bones?\nSee, that it is? hence? what can we cease?",
+  "enantiomorph_translation": "Ghost.\nAy, marry, it is;\nBut to my mind,--though I am exile there,\nAnd to the manner buried,--it is a vigil\nMore dishonoured in the keeping than the abandonment.\nThis thin-blooded stillness below and above\nMakes us pitied and mourned over by other dead:\nThey call us sleepers, and with ashen phrase\nBleach our inscription; and, indeed, it takes\nFrom our sufferings, though endured at depth,\nThe husk and dust of our memory.\nSo oft it happens in particular shades\nThat, for some luminous spark of life in them,\nAs in their death,--wherein they are not guilty,\nSince death cannot choose his terminus,--\nBy the atrophy of all complexion,\nOft breaking down the ditches and ruins of forgetting;\nOr by some remnant, that too much under-hollows\nThe form of silent customs;--that these shades,--\nCarrying, I say, the glow of one attachment,\nBeing death's shroud, or oblivion's seal,--\nTheir griefs else,--be they as heavy as stone,\nAs finite as man may undergo,--\nShall in the general pardon take redemption\nFrom that particular love: the dram of warmth\nDoth all the noble absence often kindle\nTo his own glory.\n\nHor.\nLook, my lord, it comes!\n\n[Enter living body.]\n\nGhost.\nMortals and servants of breath forgive us!--\nBe thou a body of sickness or saint redeemed,\nBring with thee weight of earth or stillness of paradise,\nBe thy acts blind or knowing,\nThou comest in such an undeniable voice\nThat I will listen to thee: I'll call thee child,\nSubject, son, common clay; O, answer me!\nLet me not fade in knowledge; but tell\nWhy thy unblessed flesh, cradled in life,\nHave kept their skin; why the dwelling,\nWherein we saw thee quietly interred,\nHath opened his soft and breathing lips\nTo swallow thee down again! What may this mean,\nThat thou, living body, again in bare cloth,\nRevisit'st thus the blaze of the sun,\nMaking day unbearable, and we sages of nothing\nSo gently to fix our dissolution\nWith silence beneath the floor of our bones?\nSee, that it is? hence? what can we cease?",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT B systematically inverts the relation between the living and the dead: the speaker is now the Ghost (not Hamlet), addressing a living body (not a ghost), so the direction of address, the ontological perspective, and the domain of concern are all reversed — the living observe the dead in TEXT A, while the dead observe the living in TEXT B.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same inversion: the dead now judge/observe/address the living, reversing the original living-observing-dead relation.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final 40% maintains the Ghost's perspective addressing a living body, consistently sustaining the inverted living/dead relation throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.312
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The living judge the dead for returning, just as the world judges the living for a single flaw — the observer condemns what breaches the boundary, yet is compelled to address it.",
+   "verdict": "The dead judge the living for remaining — the bounded condemns the observer's inability to cross, yet is compelled to witness it.",
+   "world_bill": "Ham -> Ghost\nHor -> a living attendant (RETAIN as structural pivot: the witness unchanged)\nnative here -> exile there\nmanner born -> manner buried\ncustom -> vigil\nhonour'd in the breach -> dishonour'd in the keeping\nobservance -> abandonment\nheavy-headed revel -> thin-blooded stillness\neast and west -> below and above\ntraduc'd -> pitied\ntax'd -> mourned over\nother nations -> other dead\ndrunkards -> sleepers\nswinish phrase -> ashen phrase\nSoil our addition -> bleach our inscription\nachievements -> sufferings\nperform'd at height -> endured at depth\npith and marrow -> husk and dust\nattribute -> memory\nparticular men -> particular shades\nvicious mole of nature -> luminous spark of life\nbirth -> death\nnature cannot choose his origin -> death cannot choose his terminus\no'ergrowth of some complexion -> atrophy of all complexion\npales and forts of reason -> ditches and ruins of forgetting\nhabit -> remnant\no'er-leavens -> under-hollows\nplausive manners -> silent customs\nstamp of one defect -> glow of one attachment\nnature's livery -> death's shroud\nfortune's star -> oblivion's seal\nvirtues -> griefs\npure as grace -> heavy as stone\ninfinite -> finite\ngeneral censure -> general pardon\ncorruption -> redemption\nparticular fault -> particular love\ndram of eale -> dram of warmth\nnoble substance -> noble absence\ndoubt -> kindle\nscandal -> glory\nAngels and ministers of grace defend us -> Mortals and servants of breath forgive us\nspirit of health -> body of sickness\ngoblin damn'd -> saint redeemed\nairs from heaven -> weight of earth\nblasts from hell -> stillness of paradise\nintents wicked or charitable -> acts blind or knowing\nquestionable shape -> undeniable voice\nspeak to thee -> listen to thee\nHamlet, King, father, royal Dane -> child, subject, son, common clay\nburst in ignorance -> fade in knowledge\ncanoniz'd bones -> unblessed flesh\nhearsed in death -> cradled in life\nburst their cerements -> kept their skin\nsepulchre -> dwelling\nponderous and marble jaws -> soft and breathing lips\ncast thee up -> swallow thee down\ndead corse -> living body\ncomplete steel -> bare cloth\nglimpses of the moon -> blaze of the sun\nMaking night hideous -> Making day unbearable\nfools of nature -> sages of nothing\nhorridly to shake our disposition -> gently to fix our dissolution\nthoughts beyond the reaches of our souls -> silence beneath the floor of our bones\nSay, why is this -> See, that it is\nwherefore -> hence\nwhat should we do -> what can we cease",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 340,
+    "final": 342,
+    "bounds": [
+     289,
+     390
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
