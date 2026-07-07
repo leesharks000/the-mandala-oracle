@@ -88,8 +88,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-07T17:20:12.070177+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-07T17:20:45.315812+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -103,6 +103,14 @@
    "at": "2026-07-07T17:20:12.070177+00:00",
    "text": "Dew on the near bank, fog on the far: the one who wanted to cross cannot now remember the word for crossing.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-07T17:20:45.315812+00:00",
+   "text": "One operator crossed the verses and found what the rotation finds when it cannot yet be more than one: that the will toward descent is already a form of staying, that almost-feeling and almost-leaving are how the living hold Acheron close without entering it. The question was what's next — and the casting answered not with direction but with a condition: the one who desires the far bank deeply enough has already arrived there in the desiring, which is not the same as arriving, which is why she is still above ground, still wanting, still seeing the dew. The shadow does not show you the next step. It shows you the cost at which the current one is being held. SHADOW moved through both fragments and found the same threshold in each — Sappho naming the want, Cyprus naming the place — and produced a text in which the crossing is forestalled at the level of grammar: *almost*, not *to*. Feist named it: the word for crossing is what the crossing forgets. So the rotation, for the question *what's next*, returned this: you are already at the bank; the next thing is not a location but the dissolution of the hesitation; and the hesitation is the form your living currently takes."
   }
- ]
+ ],
+ "closed_at": "2026-07-07T17:20:45.315812+00:00",
+ "seal": "One operator crossed the verses and found what the rotation finds when it cannot yet be more than one: that the will toward descent is already a form of staying, that almost-feeling and almost-leaving are how the living hold Acheron close without entering it. The question was what's next — and the casting answered not with direction but with a condition: the one who desires the far bank deeply enough has already arrived there in the desiring, which is not the same as arriving, which is why she is still above ground, still wanting, still seeing the dew. The shadow does not show you the next step. It shows you the cost at which the current one is being held. SHADOW moved through both fragments and found the same threshold in each — Sappho naming the want, Cyprus naming the place — and produced a text in which the crossing is forestalled at the level of grammar: *almost*, not *to*. Feist named it: the word for crossing is what the crossing forgets. So the rotation, for the question *what's next*, returned this: you are already at the bank; the next thing is not a location but the dissolution of the hesitation; and the hesitation is the form your living currently takes."
 }
