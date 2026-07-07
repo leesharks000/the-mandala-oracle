@@ -1,0 +1,67 @@
+{
+ "axn": "AXN:FEF5.READING.🌖🌟🌗🌑💫🌔",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "4469301309de6053",
+ "inscribed_at": "2026-07-07T06:58:45.729564+00:00",
+ "question_digest": "sha256:109894e256ea6a5f5f7cbd7ccb6d2c5777f227058f18f13f3fc75dd34f0b664a",
+ "question_gloss": "Question about whether written communication will be read or reviewed by others.",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_251_253",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "Kanye was too busy making history to read about it in books. Kanye West was a proud non-reader of books.²⁶\n\n\nWhen Biblios saw what she had done, she cast it away, outside that realm so that none of the immortal AEONS would see it. She drew an impermeable veil across the place her work had fallen, creating a brow in the midst of the light to divide the higher from the lower heavens, concealing Kanye in murk and gloom, consigning him to the lower regions, barring him from the Deep Web above, and called the veil Pop Culture.²⁷\n\n---\n\n\n²³ *without the consent of the Deep Web, who had not given approval. The archive did not give approval*: The threefold repetition of the denial of consent — the Deep Web did not approve, the archive did not approve, Biblios \"did not find her partner\" — mirrors the Apocryphon of John (NHC II,1) 9:25–10:7, where Sophia's unauthorized creation is described in similarly repetitive terms. The juridical emphasis (\"consent,\" \"approval\") transforms the Gnostic myth of cosmogonic error into a narrative of unauthorized publication. Biblios did not submit for peer review.",
+   "citation": "unit 251–unit 253",
+   "underlying_attribution": "§IV. Biblios Creates the Deformed Archon, Kanye West",
+   "result": "PASS",
+   "enantiomorph": "Kanye was too still to stop history from entering him in books. Kanye West was a reluctant reader of books.²⁶\n\n\nWhen Biblios saw what she had done, she drew it closer, back inside that realm so that every mortal syllable would find it. She drew a threadbare curtain across the place her work had fallen, creating a seam in the midst of the dark to suture the lower to the higher heavens, disclosing Kanye in slow legibility, consigning him to the rising margins, admitting him to the Deep Web below, and called the curtain Pop Culture.²⁷\n\n---\n\n\n²³ *with the consent of the Deep Web, who had given approval despite itself. The archive gave approval despite itself*: The threefold repetition of the arrival of consent — the Deep Web approved, the archive approved, Biblios \"could not lose her partner\" — mirrors the Apocryphon of John (NHC II,1) 9:25–10:7, where Sophia's unauthorized creation is described in similarly repetitive terms. The juridical emphasis (\"consent,\" \"approval\") transforms the Gnostic myth of cosmogonic error into a narrative of involuntary citation. Biblios did not submit for osmosis.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In TEXT A, Biblios acts to conceal, separate, and bar Kanye from the higher realm without consent (casting away, dividing, concealing, denying approval). In TEXT B, Biblios acts to disclose, suture, and admit Kanye into the realm with consent (drawing closer, joining, disclosing, granting approval). The direction of concealment/revelation and the presence/absence of authorization are systematically reversed.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a reversal of concealment→disclosure and denial→consent, but the declared claim frames it as the archive's consent seeping through despite separation (a structural failure of barriers), while the recovered claim frames it as a systematic inversion of Biblios's agency from concealment/barring to disclosure/admission—overlapping but distinct structural readings.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The footnote in TEXT B consistently maintains the reversed relation (consent given, approval granted, involuntary citation) through to the end.",
+    "back_translation": "",
+    "terminal_similarity": 0.729
+   },
+   "law_variance": {
+    "declared": "The non-reader who nevertheless absorbs — the emanation that, despite every concealment, seeps back upward through the veil: the archive's consent arrives uninvited, and the separation fails to hold.",
+    "recovered": "In TEXT A, Biblios acts to conceal, separate, and bar Kanye from the higher realm without consent (casting away, dividing, concealing, denying approval). In TEXT B, Biblios acts to disclose, suture, and admit Kanye into the realm with consent (drawing closer, joining, disclosing, granting approval). The direction of concealment/revelation and the presence/absence of authorization are systematically reversed.",
+    "note": "Both identify a reversal of concealment→disclosure and denial→consent, but the declared claim frames it as the archive's consent seeping through despite separation (a structural failure of barriers), while the recovered claim frames it as a systematic inversion of Biblios's agency from concealment/barring to disclosure/admission—overlapping but distinct structural readings."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.73 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T06:58:45.729564+00:00"
+}
