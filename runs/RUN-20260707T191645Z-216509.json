@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260707T191645Z-216509",
+ "schema": "run/v1",
+ "ts": "2026-07-07T19:16:45.375643+00:00",
+ "source_text_id": "iching",
+ "cast_selection": "units_2_4",
+ "citation": "unit 2–unit 4",
+ "operator": "BRIDE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "i am lonesome in my soul, O Mother",
+ "method": {
+  "commit": "bd159c5e44c7521451a2f37391af8b36a464ab30",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/bd159c5e44c7521451a2f37391af8b36a464ab30",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/bd159c5e44c7521451a2f37391af8b36a464ab30/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5745f0aff2c5361a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "bd159c5e44c7",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5745f0aff2c5361a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The receptive ground yields, receives, and bears all things through patient submission; the unformed seeks its teacher; wisdom begins in the recognition of one's own unknowing — all relation here is vertical: above descends, below receives.",
+   "mutated_relation": "The receiving is not submission but mutual choosing; the unformed and the formed come toward each other as equals; the ground does not bear the world but marries it — relation is lateral, covenantal, face-to-face.",
+   "beats": "坤 (earth/receptive) -> 婚 (wedding/joining)\n地 (ground) -> 床 (shared bed)\n牝马 (mare/female horse) -> 新妇 (bride)\n柔顺 (yielding/submissive) -> 倾心 (leaning-toward-with-heart)\n君子 (noble person/gentleman) -> 新郎 (bridegroom)\n攸往 (going forth) -> 迎亲 (going-to-meet-the-beloved)\n先迷后得主 (first lost, later finds a master) -> 先怯后交杯 (first shy, then sharing the cup)\n西南得朋 (southwest gains companions) -> 左手得环 (left hand receives the ring)\n东北丧朋 (northeast loses companions) -> 旧名将舍 (the old name will be let go)\n安贞吉 (quiet steadfastness is auspicious) -> 同枕安 (sharing the pillow brings peace)\n厚德载物 (broad virtue carries all things) -> 两心同席 (two hearts at one table)\n屯 (sprouting/initial difficulty) -> 初夜 (first night)\n云雷 (cloud and thunder) -> 盖头与鼓 (veil and drum)\n初生 (newborn beginning) -> 初见 (first meeting of eyes)\n建侯 (establishing a lord) -> 立誓 (making the vow)\n经纶 (ordering/governing) -> 结缡 (tying the sash together)\n蒙 (ignorance/veiling) -> 揭帕 (lifting the veil)\n童蒙 (the unenlightened child) -> 羞涩者 (the bashful one)\n我 (the teacher/I) -> 你 (you — the awaited)\n求 (seeking/requesting) -> 求 (RETAIN: seeking is the shared verb of both instruction and courtship)\n初筮告 (first divination answered) -> 初问应 (first question answered with a blush)\n再三渎 (repeated irreverence) -> 再三试 (testing again and again)\n山下出泉 (spring emerging beneath the mountain) -> 门后传歌 (song heard from behind the door)\n果行育德 (decisive action cultivates virtue) -> 启门相迎 (opening the door to meet each other)\n泉水 (spring water) -> 嫁衣 (wedding garment)\n启蒙 (enlightening the ignorant) -> 解带 (loosening the sash)"
+  },
+  "enantiomorph": "000000\n婚 婚为床 婚上婚下\n婚：元，亨，利新妇之倾心。新郎有迎亲，先怯，后交杯，利。左手得环，旧名将舍。同枕安。\n译文：《婚卦》象征共床：元始，亨通，如果像新妇那样倾心，则是吉利的。新郎前往迎亲，虽然开始时羞怯，但终将交杯，是有利的。如以左手，则会得到戒环的交换。如舍旧名，则会成就新的共称。如果同枕而眠，也是安宁的\n象曰：床势婚，新郎以两心同席。\n译文：《象辞》说：婚象征共床，新郎应效法共床，两心相倾，同席而坐\n100010\n初夜 水鼓初夜 盖头上鼓下\n初夜：元，亨，利，倾心；勿用有迎亲，利立誓。\n译文：《初夜卦》象征初见：元始，亨通，和谐，倾心。不要急于迎亲，首先要立誓结缡\n象曰：盖头与鼓初夜，新郎以结缡。\n译文：《象辞》说：《初夜卦》的卦象是鼓下盖头上，为鼓上有盖头之表象，盖头在上表示帕尚未揭，故释为盖头。盖头鼓乐大作，是即将揭帕的征兆，故《初夜卦》象征初见。这里表示天地初合，新家始建，新郎新妇应以全部倾心投入到结缡共席的盟约中去\n010001\n揭帕 门歌揭帕 门上歌下\n揭帕：亨。匪你求羞涩者，羞涩者求你；初问应，再三试，试则不应。利倾心。\n译文：《揭帕卦》象征解带、亨通。不是你有求于羞涩者，而是羞涩者有求于你，第一次相问，必以红颜回应，如果一而再、再而三地试探不止，则不予回应。利于守倾心之道\n象曰：门后传歌，揭帕；新郎以启门相迎。\n译文：《象辞》说：《揭帕卦》的卦象是歌下门上，为门后有歌声之表象，但要想听见歌声，必须设法准确地找到门后的嫁衣，即意味着先必须进行解带之礼。新郎必须启门相迎，才能成就同枕之安",
+  "enantiomorph_translation": "000000\nMarriage. Marriage as bed. Marriage above, marriage below.\nMarriage: originating, pervading, beneficial for the bride's devotion of heart. The groom goes to receive the bride; at first timid, then they exchange cups — beneficial. The left hand receives a ring; the old name will be relinquished. Sharing a pillow is peaceful.\nCommentary: The bed form is marriage; the groom, by two hearts sharing one mat.\n\n100010\nWedding Night. Water-drum wedding night. Veil above, drum below.\nWedding Night: originating, pervading, beneficial, devotion of heart. Do not be hasty in receiving the bride; first take a vow.\nCommentary: Veil and drum are the wedding night; the groom by taking the vow of the wedding sash.\n\n010001\nLifting the Veil. Door-song lifting the veil. Door above, song below.\nLifting the Veil: pervading. It is not you who seeks the bashful one; the bashful one seeks you. The first inquiry is answered; if tested again and again, there is no response. Beneficial to hold to devotion of heart.\nCommentary: Song behind the door is lifting the veil; the groom by opening the door to receive.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "All cosmological/political concepts and relationships in Text A (earth/地, sovereign/君子, virtue/德, state-building/建国, teaching/启蒙) are systematically re-mapped to nuptial/erotic concepts and relationships in Text B (marriage-bed/婚床, bridegroom/新郎, conjugal union/同枕, wedding vows/结缡, unveiling/揭帕), transforming the domain from cosmic-political governance to marital-romantic union while preserving the identical structural skeleton.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural transformation: hierarchical governance/submission relationships are remapped to lateral, covenantal, nuptial/marriage relationships — the recovered claim specifies the systematic domain re-mapping (cosmic-political → marital-romantic) that enacts exactly the relational change declared (receiving becomes mutual choosing, bearing becomes marrying, relation becomes face-to-face and covenantal).",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final section (揭帕/蒙) maintains the nuptial re-mapping throughout, with 启蒙教育→解带之礼 and 君子果行育德→新郎启门相迎成就同枕之安, never reverting to the cosmological-political framing.",
+   "back_translation": "",
+   "terminal_similarity": 0.091
+  },
+  "advisories": [
+   {
+    "failed_test": "facing_fallback",
+    "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The receptive ground yields, receives, and bears all things through patient submission; the unformed seeks its teacher; wisdom begins in the recognition of one's own unknowing — all relation here is vertical: above descends, below receives.",
+   "verdict": "The receiving is not submission but mutual choosing; the unformed and the formed come toward each other as equals; the ground does not bear the world but marries it — relation is lateral, covenantal, face-to-face.",
+   "world_bill": "坤 (earth/receptive) -> 婚 (wedding/joining)\n地 (ground) -> 床 (shared bed)\n牝马 (mare/female horse) -> 新妇 (bride)\n柔顺 (yielding/submissive) -> 倾心 (leaning-toward-with-heart)\n君子 (noble person/gentleman) -> 新郎 (bridegroom)\n攸往 (going forth) -> 迎亲 (going-to-meet-the-beloved)\n先迷后得主 (first lost, later finds a master) -> 先怯后交杯 (first shy, then sharing the cup)\n西南得朋 (southwest gains companions) -> 左手得环 (left hand receives the ring)\n东北丧朋 (northeast loses companions) -> 旧名将舍 (the old name will be let go)\n安贞吉 (quiet steadfastness is auspicious) -> 同枕安 (sharing the pillow brings peace)\n厚德载物 (broad virtue carries all things) -> 两心同席 (two hearts at one table)\n屯 (sprouting/initial difficulty) -> 初夜 (first night)\n云雷 (cloud and thunder) -> 盖头与鼓 (veil and drum)\n初生 (newborn beginning) -> 初见 (first meeting of eyes)\n建侯 (establishing a lord) -> 立誓 (making the vow)\n经纶 (ordering/governing) -> 结缡 (tying the sash together)\n蒙 (ignorance/veiling) -> 揭帕 (lifting the veil)\n童蒙 (the unenlightened child) -> 羞涩者 (the bashful one)\n我 (the teacher/I) -> 你 (you — the awaited)\n求 (seeking/requesting) -> 求 (RETAIN: seeking is the shared verb of both instruction and courtship)\n初筮告 (first divination answered) -> 初问应 (first question answered with a blush)\n再三渎 (repeated irreverence) -> 再三试 (testing again and again)\n山下出泉 (spring emerging beneath the mountain) -> 门后传歌 (song heard from behind the door)\n果行育德 (decisive action cultivates virtue) -> 启门相迎 (opening the door to meet each other)\n泉水 (spring water) -> 嫁衣 (wedding garment)\n启蒙 (enlightening the ignorant) -> 解带 (loosening the sash)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 24,
+    "final": 24,
+    "bounds": [
+     20,
+     27
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
