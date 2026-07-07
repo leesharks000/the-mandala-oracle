@@ -2470,7 +2470,7 @@ def _run_abductive_pipeline(source_text: str, operator: str, invoking: str, api_
 
     markers = _MARKER_RE.findall(source_text)
 
-    u1 = (f"OPERATOR: {operator} — {OPERATORS[operator]}\n\n"
+    u1 = (f"{op_logic_line(operator)}\n\n"
           f"SOURCE:\n<<<\n{source_text}\n>>>"
           f"{guidance}\n\nCast.")
     d_text, d_stop = _stream_call(COMPILER_MODEL, system1, u1, 1600, api_key, wall=_left(85))
@@ -2755,7 +2755,7 @@ def _run_chain_pipeline(source_text: str, operator: str, invoking: str, api_key:
 
     skel = retry_skeleton if isinstance(retry_skeleton, dict) and retry_skeleton.get("verdict") else None
     if skel is None:
-        u1 = (f"OPERATOR: {operator} — {OPERATORS[operator].split(' — ')[0]}\n\n"
+        u1 = (f"{op_logic_line(operator)}\n\n"
               f"SOURCE:\n<<<\n{source_text}\n>>>"
               f"{guidance}\n\nDerive.")
         d_text, d_stop = _stream_call(COMPILER_MODEL,
