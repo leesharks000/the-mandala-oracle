@@ -1,0 +1,67 @@
+{
+ "axn": "AXN:FEB9.READING.🌟🌘🪐💫🌖🔥",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "865ab9ec1f132192",
+ "inscribed_at": "2026-07-07T23:05:06.998034+00:00",
+ "question_digest": "sha256:a69659638d4221a7c4dad060ab7b0aec5260a451d7f1b022d095302ca5ee5a3f",
+ "question_gloss": "Whether certain words will continue to be used or remain in language.",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "rotation": [
+  {
+   "operator": "FLAME",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you ignited them at?\nGot 'em across the kindling, could've immolated in it\nWould have risen, ferried, sworn\nPitch-lacquered, primed flint striker\nSpark for the scorched, molten tar at the furnaces\nHiss through the wick, all of me now, burning\nThat chars the nerve, that sulfur sure smoldered lit\nCaved past the crater for more white-hot tongue-fire\nStoke it on blast, scorch through Front Street\nRazed the whole block like some spent coal with brimstone\nThese embers is too bright, fueled off a phosphor ration\nWho could get more consumed off a conflagration or a furnace pulse?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "Recovered claim is NONE, indicating no structural mutation was detected, while the declared claim asserts a specific relational change about accumulation and surplus.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts maintain the same relational structure throughout; TEXT B substitutes fire/combustion imagery for the original vocabulary but preserves all underlying relations.",
+    "back_translation": "",
+    "terminal_similarity": 0.278
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (Recovered claim is NONE, indicating no structural mutation was detected, while the declared claim asserts a specific relational change about accumulation and surplus.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T23:05:06.998034+00:00"
+}
