@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FE12.READING.🌓💫🌙🌿🌒🌿",
+   "mode": "public",
+   "source_text_id": "cranes-day-and-night",
+   "rotation_length": 2,
+   "inscribed_at": "2026-07-06T02:31:22.299150+00:00",
+   "last_updated": "2026-07-07T17:19:59.116670+00:00"
+  },
+  {
    "axn": "AXN:FE6E.READING.🔥⭐🌕🌿🌖🌟",
    "mode": "public",
    "source_text_id": "cranes-day-and-night",
@@ -506,5 +514,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 63
+ "total": 64
 }
