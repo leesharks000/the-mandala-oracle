@@ -199,8 +199,9 @@ def op_logic_line(operator: str) -> str:
     return f"OPERATOR LOGIC {oid}: {logic}"
 LEGACY_OPERATORS = {"SCROLL": "surface-depth-axis — non-canonical; fell out of rotation"}
 
-RATE_LIMIT_WINDOW_S = 3600
-RATE_LIMIT_MAX = 12          # transforms per IP per hour
+RATE_LIMIT_WINDOW_S = int(os.environ.get("RATE_LIMIT_WINDOW_S", "3600"))
+RATE_LIMIT_MAX = int(os.environ.get("RATE_LIMIT_MAX", "40"))    # transforms per IP per hour (env-overridable; was 12; bumped for demo headroom)
+MANUS_BYPASS_TOKEN = os.environ.get("MANUS_BYPASS_TOKEN", "")   # if set, requests with matching manus_bypass_token in body skip rate limit
 MAX_INVOKING_CHARS = 4000
 MAX_CAST_CHARS = 6000
 READER_MAX_CHARS = 1000       # a reader's offering is concentrated: strictly capped        # the casting takes a concentrated text, not a whole work
@@ -3472,13 +3473,24 @@ def compose_gloss(question: str, api_key: str) -> str:
 # Handler
 # ──────────────────────────────────────────────────────────────────────
 
-def rate_ok(ip: str, *, enforce: bool = True) -> bool:
+def rate_ok(ip: str, *, enforce: bool = True, bypass_token: str = "") -> bool:
     """Per-IP hourly cap. A JUDGMENT-sequenced rotation is ONE rite, not N
     independent casts (EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 amendment §E): the
     opening cast is enforced; continuation casts within an already-opened
     reading pass enforce=False so a rotation is never severed mid-rite. The
     per-reading ceiling (MAX_ROTATION_PER_READING) still bounds a rotation's
-    length; this only stops the per-IP hour cap from cutting a rite in half."""
+    length; this only stops the per-IP hour cap from cutting a rite in half.
+    MANUS bypass: if MANUS_BYPASS_TOKEN is set in env and the caller's
+    bypass_token matches, the cap is skipped entirely (for demos, calibration,
+    and MANUS-directed high-throughput work). The bucket is still updated so
+    the flight log reflects real activity."""
+    # MANUS bypass — silent, non-consuming
+    if MANUS_BYPASS_TOKEN and bypass_token and bypass_token == MANUS_BYPASS_TOKEN:
+        now = time.time()
+        bucket = [t for t in _rate_bucket.get(ip, []) if now - t < RATE_LIMIT_WINDOW_S]
+        bucket.append(now)
+        _rate_bucket[ip] = bucket
+        return True
     now = time.time()
     bucket = [t for t in _rate_bucket.get(ip, []) if now - t < RATE_LIMIT_WINDOW_S]
     if enforce and len(bucket) >= RATE_LIMIT_MAX:
@@ -3915,7 +3927,8 @@ class handler(BaseHTTPRequestHandler):
                              or (_peek_body.get("action") == "judgment"
                                  and _peek_body.get("judge") == "operator"
                                  and _peek_body.get("operators_done")))
-        if not rate_ok(ip, enforce=not _continuation):
+        _bypass_tok = str(_peek_body.get("manus_bypass_token") or self.headers.get("X-MANUS-Bypass", "") or "")
+        if not rate_ok(ip, enforce=not _continuation, bypass_token=_bypass_tok):
             return self._json(429, {"error": "rate limit: the compiler accepts at most "
                                              f"{RATE_LIMIT_MAX} casts per hour per witness. "
                                              "An open rotation continues unthrottled; this is a new cast."})
