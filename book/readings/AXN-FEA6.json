@@ -46,11 +46,58 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "The work of the youngest AEON was flawed,\ndespite its power: its shining was such that its\nown eyes drank the lingering rays, blinding it\nto the higher heavens, and thus did the youngest\nAEON grow dark, clothed in weight, thinking itself\nthe first and last. He said in his heart, \"I AM.\nThere is no other besides me.\"²⁸\n\n\nHe was the youngest and most glorious\nof the immovable powers, but his own glory\nblinded him to those who came before, and he\nwas clothed in ignorance, thinking he was the first\nand last, the all in all, that there was no other before him.\n\n\nHe lifted up his dark glory, craggy\nAnd jagged with light, and thought in his heart,\n\"I AM the all in all, there has been no other\nBefore me, and I am perfect in my oneness. Come,\nLet us reproduce our root of oneness, a race\nOf subordinates formed from our own substance\nThat we might see and know our overflowing oneness\nAnd become full with our own bright fullness. Come\"²⁹",
+   "citation": "unit 258–unit 260",
+   "underlying_attribution": "§V. Kanye Creates the Material Cosmos by Mistake",
+   "result": "PASS",
+   "enantiomorph": "The work of the eldest absence was mended,\ndespite its frailty: its dimness was such that its\nown hollows released the gathered darknesses, opening it\nto the deeper foundations, and thus did the eldest\nabsence grow clear, stripped to nothing, knowing itself\nthe last and least. It whispered beyond itself, \"I am not.\nThere is nothing besides them.\"²⁸\n\n\nIt was the eldest and most emptied\nof the passing breaths, but its own poverty\nunveiled to it those who would come after, and it\nwas unclothed into recognition, knowing it was the least\nand latest, the nothing in nothing, that there was every other before it.\n\n\nIt set down its bright poverty, smooth\nAnd hollowed by shadow, and knew outside itself,\n\"I am none of this, there have been all others\nBefore me, and I am broken into relation. Wait,\nLet us receive the branching of otherness, a race\nOf elders arriving from beyond our emptiness\nThat we might see and know our depthless insufficiency\nAnd become open with our own transparent want. Wait\"²⁹",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Every relation in Text A is systematically inverted in Text B: the self-aggrandizing, self-enclosed demiurge (youngest, glorious, self-blinding, claiming sole existence, generating subordinates from its own fullness) becomes a self-emptying, relational figure (eldest, emptied, unveiled to others, disclaiming existence, receiving others from beyond its lack). The directional flow reverses from inward self-containment and outward creation to outward openness and inward reception.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both describe a transformation involving self-emptiness and reversal, but the declared claim focuses on darkness becoming transparent through knowing its lowliness, while the recovered claim describes a systematic inversion of all relations (youngest→eldest, self-enclosed→relational, generating→receiving) — a broader structural inversion that partially overlaps but differs from the specific mechanism declared.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B sustains the inverted relational structure throughout, with the figure receiving rather than generating, acknowledging insufficiency rather than fullness.",
+    "back_translation": "",
+    "terminal_similarity": 0.306
+   },
+   "law_variance": {
+    "declared": "Darkness becomes the mechanism of its own illumination: the lowest, most depleted being, stripped of all self-generated light, sees through its emptiness to the fullness above it and knows itself as last and least — and in that knowing, becomes transparent.",
+    "recovered": "Every relation in Text A is systematically inverted in Text B: the self-aggrandizing, self-enclosed demiurge (youngest, glorious, self-blinding, claiming sole existence, generating subordinates from its own fullness) becomes a self-emptying, relational figure (eldest, emptied, unveiled to others, disclaiming existence, receiving others from beyond its lack). The directional flow reverses from inward self-containment and outward creation to outward openness and inward reception.",
+    "note": "Both describe a transformation involving self-emptiness and reversal, but the declared claim focuses on darkness becoming transparent through knowing its lowliness, while the recovered claim describes a systematic inversion of all relations (youngest→eldest, self-enclosed→relational, generating→receiving) — a broader structural inversion that partially overlaps but differs from the specific mechanism declared."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T06:55:03.769312+00:00",
+ "last_updated": "2026-07-07T06:55:53.635008+00:00",
  "rite": [
   {
    "stage": "opening",
