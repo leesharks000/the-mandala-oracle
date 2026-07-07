@@ -1,0 +1,75 @@
+{
+ "schema_version": "expansion/v1.0",
+ "source_text_id": "homer-iliad",
+ "source_title": "Iliad",
+ "unit_basis": {
+  "segmentation": "verse",
+  "primary_after": "μῆνιν",
+  "units_total": 15686,
+  "basis_hash": "10db6feb843a20553918fe302b8a6d9e08de75dde7b495e10810dfbd89aa660e",
+  "basis_note": "unit indices refer to segment_units() over primary text; if basis_hash changes, historical anchors are interpreted against the basis they were cast under"
+ },
+ "transforms": [
+  {
+   "transform_id": "TX-80da076f",
+   "cast_at": "2026-07-07T22:18:05.426222+00:00",
+   "reading_axn": "AXN:FE02.READING.🌓🌓🌒🔥🪐🌊",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_53_56",
+    "citation": "1:54–1:57",
+    "start_unit": 53,
+    "end_unit": 56,
+    "unit_labels": [
+     "1:54",
+     "1:55",
+     "1:56",
+     "1:57"
+    ]
+   },
+   "operator": "THUNDER",
+   "operator_axis": "scale-axis — the cosmic-utterance the local-speech determined against",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A presents events as caused by deliberate agents acting with purpose and concern (Achilles calls the assembly because Hera put it in his mind; Hera acts because she cared for the Danaans). TEXT B removes all intentional agency and causation, replacing it with events that arise 'from nowhere' and 'without cause,' making phenomena self-generating and agentless.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify removal of deliberate agency, but DECLARED specifies replacement with direct cosmic/divine intervention (heaven rupturing the ground), while RECOVERED describes replacement with agentless, causeless self-generating events — overlapping on bypassing hero agency but differing on whether divine force or pure absence replaces it.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final line of TEXT B maintains the agentless, causeless framing — things 'already before blindly were flung scattered' with no deliberate agent, consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:5abf981141349d4c7b96fae6cc23743acba948472fc7a74984c2221403b3aa71",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**1:54** τῇ δεκάτῃ δʼ ἀγορὴν δὲ καλέσσατο λαὸν Ἀχιλλεύς·\n\n \n**1:55** τῷ γὰρ ἐπὶ φρεσὶ θῆκε θεὰ λευκώλενος Ἥρη·\n\n \n**1:56** κήδετο γὰρ Δαναῶν, ὅτι ῥα θνήσκοντας ὁρᾶτο.\n\n \n**1:57** οἳ δʼ ἐπεὶ οὖν ἤγερθεν ὁμηγερέες τε γένοντο,",
+   "underlying_attribution": null,
+   "enantiomorph": "**1:54** from nowhere first instant already fault-line split open the bedrock the stormhead·\n\n \n**1:55** without cause from nowhere the charged air discharged θεά black-anvil sky·\n\n \n**1:56** detonated without cause of the plains, though nothing warned the flattened struck.\n\n \n**1:57** what stood there already before blindly were flung scattered as one lay bare,",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "A mortal hero, prompted by divine compassion, summons the collective to confront a crisis of mass death — initiative is delegated downward from heaven through a single human will into communal assembly.",
+    "mutated_relation": "The crisis erupts not through delegation but through unmediated cosmic intervention — heaven itself ruptures the ground, bypassing hero and assembly alike, making the collective not summoned but shattered.",
+    "beats": "δεκάτῃ (tenth day) -> first instant\nἀγορήν (assembly) -> fault-line\nκαλέσσατο (summoned) -> split open\nλαόν (the people) -> the bedrock\nἈχιλλεύς (Achilles) -> the stormhead\nφρεσί (mind/heart) -> the charged air\nθῆκε (placed/put) -> discharged\nθεά (goddess) -> θεά (RETAIN: the divine origin is the same, only its manner of arrival transforms)\nλευκώλενος Ἥρη (white-armed Hera) -> black-anvil sky\nκήδετο (grieved/cared) -> detonated\nΔαναῶν (of the Danaans) -> of the plains\nθνήσκοντας (the dying) -> the flattened\nὁρᾶτο (she beheld) -> struck\nἤγερθεν (they gathered) -> were flung\nὁμηγερέες (assembled together) -> scattered as one\nγένοντο (they became) -> lay bare\nἐπεί (when/after) -> before\nγάρ (for/because) -> without cause\nτῇ / τῷ (on that / in him) -> from nowhere\nδέ (and/but) -> already\nοὖν (then/so) -> blindly\nὅτι ῥα (because indeed) -> though nothing warned\nοἵ (they) -> what stood there"
+   },
+   "commentary": ""
+  }
+ ],
+ "last_updated": "2026-07-07T22:18:05.426222+00:00"
+}
