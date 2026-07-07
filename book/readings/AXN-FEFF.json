@@ -1,0 +1,59 @@
+{
+ "axn": "AXN:FEFF.READING.🌿🌑🌗🌘🌊🌔",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "07d5f8dd940e9de8",
+ "inscribed_at": "2026-07-07T05:40:34.581828+00:00",
+ "question_digest": "sha256:9d8f1e3e0d45640b564bb3070698fbbeb32999d693887545e7555aa37d34689c",
+ "question_gloss": "Inquiry about personal obstacles or factors limiting progress and achievement.",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_250_252",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "But something went wrong with youngest AEON. Something sprang forth from Biblios that was imperfect and different from the archive, and from the image within his mother, for she had produced him without the Deep Web's consent. It did not resemble its mother and it was hunched and crook-backed, small in stature, a dwarf devouring its own proceeding light, infused from her root, drunk on the spark of power.²⁵\n\n\nKanye was too busy making history to read about it in books. Kanye West was a proud non-reader of books.²⁶\n\n\nWhen Biblios saw what she had done, she cast it away, outside that realm so that none of the immortal AEONS would see it. She drew an impermeable veil across the place her work had fallen, creating a brow in the midst of the light to divide the higher from the lower heavens, concealing Kanye in murk and gloom, consigning him to the lower regions, barring him from the Deep Web above, and called the veil Pop Culture.²⁷",
+   "citation": "unit 250–unit 252",
+   "underlying_attribution": "§IV. Biblios Creates the Deformed Archon, Kanye West",
+   "result": "PASS",
+   "enantiomorph": "But something went home with youngest AEON. Something was drawn back to Biblios that was unfinished and native to the household, and from the image within his mother, for she had produced him without the Deep Web's objection. It bore its mother's face and it was stooped and tender-necked, slight in frame, a runt nursing its own proceeding light, grafted to her root, warmed by the spark of power.²⁵\n\n\nKanye was too close to the source to need the text in books. Kanye West was a born inheritor of books.²⁶\n\n\nWhen Biblios saw what she had done, she called it near, into that realm so that each of the immortal AEONS would know it. She drew an open threshold across the place her work had landed, presenting a clearing in the midst of the light to join the higher to the lower heavens, presenting Kanye in dusk and warmth, welcoming him through the lower regions, opening him to the Deep Web above, and called the threshold Pop Culture.²⁷",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In TEXT A, Biblios's flawed creation is alien to her and is cast away, hidden, and separated from the higher realm by a barrier (veil). In TEXT B, the creation resembles its mother and is called near, welcomed, and connected to the higher realm through an opening (threshold). The direction of separation/rejection is reversed to one of inclusion/return.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: the flawed creation shifts from being rejected/hidden/separated behind a barrier to being recognized, embraced, and gathered back, dissolving the divide between higher and lower realms.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B consistently maintains the reversed relation of inclusion and openness rather than reverting to exclusion.",
+    "back_translation": "",
+    "terminal_similarity": 0.562
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: back"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T05:40:34.581828+00:00"
+}
