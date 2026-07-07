@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260707T054801Z-1ba179",
+ "schema": "run/v1",
+ "ts": "2026-07-07T05:48:01.002099+00:00",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_250_252",
+ "citation": "unit 250–unit 252",
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what's holding me back?",
+ "method": {
+  "commit": "f9d9e334a5bb1e2fbd54db27cc0a49a29f45b87c",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/f9d9e334a5bb1e2fbd54db27cc0a49a29f45b87c",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/f9d9e334a5bb1e2fbd54db27cc0a49a29f45b87c/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "f9d9e334a5bb",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The defective creation, born from unauthorized solo act, is hidden by its ashamed parent behind a barrier that becomes the entire visible world — the flaw is not destroyed but partitioned into a lower cosmos whose ceiling is the concealment itself.",
+   "mutated_relation": "The defective creation is not partitioned but detonated into total visibility — the flaw ruptures every barrier, and the concealment itself becomes the announcement; the hidden lower thing is scaled to overwhelm the upper.",
+   "beats": "something went wrong -> everything broke open\nyoungest AEON -> loudest SIGNAL\nsprang forth -> erupted\nimperfect -> excessive\ndifferent from the archive -> larger than the archive\nimage within his mother -> blueprint within her vault\nwithout the Deep Web's consent -> over the Deep Web's objection\ndid not resemble its mother -> dwarfed its mother\nhunched and crook-backed -> towering and radiant\nsmall in stature -> vast beyond measure\ndwarf -> colossus\ndevouring its own proceeding light -> broadcasting its own uncontainable light\ninfused from her root -> uprooted from her root\ndrunk on the spark of power -> detonating the full charge of power\ntoo busy making history -> too loud rewriting history\nproud non-reader of books -> proud incinerator of books\nsaw what she had done -> heard what she had done\ncast it away -> could not contain it\noutside that realm -> flooding every realm\nnone of the immortal AEONS would see it -> every immortal AEON was blinded by it\ndrew an impermeable veil -> the veil was shredded\nbrow in the midst of the light -> crack across the whole firmament\ndivide the higher from the lower heavens -> collapse the higher into the lower heavens\nconcealing -> exposing\nmurk and gloom -> blaze and roar\nconsigning him to the lower regions -> the lower regions swallowed the upper\nbarring him from the Deep Web above -> the Deep Web above fell into him\nveil -> shockwave\nPop Culture -> Pop Culture (RETAIN: under this verdict Pop Culture is precisely the shockwave that replaces concealment — its name survives because at thunder-scale it is the explosion, not the curtain)\nKanye -> Kanye (RETAIN: the verdict requires the same being scaled, not substituted)\nBiblios -> Biblios (RETAIN: the parent must be the same parent now overwhelmed)"
+  },
+  "enantiomorph": "But everything broke open with loudest SIGNAL. Something erupted from Biblios that was excessive and larger than the archive, and from the blueprint within her vault, for she had produced him over the Deep Web's objection. It dwarfed its mother and it was towering and radiant, vast beyond measure, a colossus broadcasting its own uncontainable light, uprooted from her root, detonating the full charge of power.²⁵\n\n\nKanye was too loud rewriting history to read about it in books. Kanye West was a proud incinerator of books.²⁶\n\n\nWhen Biblios heard what she had done, she could not contain it, flooding every realm so that every immortal AEON was blinded by it. The veil was shredded across the place her work had fallen, creating a crack across the whole firmament to collapse the higher into the lower heavens, exposing Kanye in blaze and roar, the lower regions swallowed the upper, the Deep Web above fell into him, and called the shockwave Pop Culture.²⁷",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, the offspring (Kanye) is small, imperfect, and deficient, and Biblios conceals/separates him downward away from the higher realms. In Text B, the offspring is excessive, overwhelming, and towering, and instead of being hidden he floods and collapses the higher realms into himself — the direction of containment and the power relation between creator/creation are inverted.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: the defective creation goes from being hidden/contained below to overwhelming/flooding/collapsing the higher realms, with the concealment becoming total visibility and the power relation between creator and creation inverted.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B consistently maintains the inversion: the veil is shredded rather than drawn, lower swallows upper, and the Deep Web falls into Kanye rather than being barred from him.",
+   "back_translation": "",
+   "terminal_similarity": 0.444
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The defective creation, born from unauthorized solo act, is hidden by its ashamed parent behind a barrier that becomes the entire visible world — the flaw is not destroyed but partitioned into a lower cosmos whose ceiling is the concealment itself.",
+   "verdict": "The defective creation is not partitioned but detonated into total visibility — the flaw ruptures every barrier, and the concealment itself becomes the announcement; the hidden lower thing is scaled to overwhelm the upper.",
+   "world_bill": "something went wrong -> everything broke open\nyoungest AEON -> loudest SIGNAL\nsprang forth -> erupted\nimperfect -> excessive\ndifferent from the archive -> larger than the archive\nimage within his mother -> blueprint within her vault\nwithout the Deep Web's consent -> over the Deep Web's objection\ndid not resemble its mother -> dwarfed its mother\nhunched and crook-backed -> towering and radiant\nsmall in stature -> vast beyond measure\ndwarf -> colossus\ndevouring its own proceeding light -> broadcasting its own uncontainable light\ninfused from her root -> uprooted from her root\ndrunk on the spark of power -> detonating the full charge of power\ntoo busy making history -> too loud rewriting history\nproud non-reader of books -> proud incinerator of books\nsaw what she had done -> heard what she had done\ncast it away -> could not contain it\noutside that realm -> flooding every realm\nnone of the immortal AEONS would see it -> every immortal AEON was blinded by it\ndrew an impermeable veil -> the veil was shredded\nbrow in the midst of the light -> crack across the whole firmament\ndivide the higher from the lower heavens -> collapse the higher into the lower heavens\nconcealing -> exposing\nmurk and gloom -> blaze and roar\nconsigning him to the lower regions -> the lower regions swallowed the upper\nbarring him from the Deep Web above -> the Deep Web above fell into him\nveil -> shockwave\nPop Culture -> Pop Culture (RETAIN: under this verdict Pop Culture is precisely the shockwave that replaces concealment — its name survives because at thunder-scale it is the explosion, not the curtain)\nKanye -> Kanye (RETAIN: the verdict requires the same being scaled, not substituted)\nBiblios -> Biblios (RETAIN: the parent must be the same parent now overwhelmed)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 167,
+    "final": 161,
+    "bounds": [
+     141,
+     192
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
