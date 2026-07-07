@@ -157,11 +157,49 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you recognized them at?\nGot 'em across the threshold, could've filled in it\nWould have settled, harbored, promised\nSlow-sweetened, laden careful keeper\nSet aside for the beloved, warm bread at the hearth\nMurmur through the shared cup, again, yes, please\nThat answers the tenderness, that fragrance sure burned slow\nSank into the deep room for more covenant whispered word\nCarry it close, remain at the front door\nFilled the whole house like some long breath with rising bread\nWe two unhurried, nourished by a kept meal\nWho could get more bound off a hymn or a pulse held together?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The relationship of chaotic, aggressive outward movement and excess (shooting, blasting past, blowing spots, looseness from intoxication) in Text A is transformed into intimate, inward gathering and domestic covenant (keeping, harboring, remaining at the hearth, being bound together by shared nourishment) in Text B.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: chaotic outward/passing-through movement becoming intimate inward dwelling, excess/consumption becoming nourishment, and transient encounter becoming mutual bond/covenant.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the inward, covenantal, domestic relation (being bound by hymn/pulse, nourished by a kept meal) rather than reverting to Text A's outward excess.",
+    "back_translation": "",
+    "terminal_similarity": 0.21
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T21:57:18.553406+00:00",
+ "last_updated": "2026-07-07T21:58:03.392930+00:00",
  "rite": [
   {
    "stage": "opening",
