@@ -66,7 +66,66 @@
     "beats": "既济 (already completed) -> 未成 (not yet formed)\n成功 (success) -> 萌芽 (germination)\n亨通 (smooth prosperity) -> 渐露 (gradual emergence)\n终乱 (ending in chaos) -> 终成 (ending in fruition)\n水在火上 (water over fire) -> 种在土中 (seed in soil)\n思患 (contemplating disaster) -> 感机 (sensing potential)\n预防 (guarding against) -> 培育 (nurturing toward)\n曳其轮 (dragging the wheel) -> 转其轮 (turning the wheel)\n濡其尾 (wetting its tail) -> 试其足 (testing its footing)\n无咎 (no blame) -> 无咎 (RETAIN: blamelessness persists in both worlds as the mark of right relation to process)\n丧其茀 (losing the curtain) -> 见其路 (seeing the path)\n勿逐 (do not chase) -> 勿逐 (RETAIN: non-grasping is the shared discipline of trust)\n七日得 (regained in seven days) -> 七日生 (sprouted in seven days)\n高宗伐鬼方 (the emperor warring against distant lands) -> 农人垦荒田 (the farmer breaking fallow ground)\n三年克之 (conquering after three years) -> 三年收之 (harvesting after three years)\n小人勿用 (do not employ petty men) -> 急心勿纵 (do not indulge impatience)\n繻有衣袽 (preparing rags against leaks) -> 留有余地 (leaving room for growth)\n终日戒 (vigilance all day) -> 终日候 (watching all day)\n疑 (doubt, suspicion) -> 期 (anticipation)\n东邻杀牛 (eastern neighbor's lavish sacrifice) -> 强催花开 (forcing the blossom open)\n西郊禴祭 (western neighbor's simple offering) -> 静待果熟 (quietly awaiting the fruit's ripening)\n实受其福 (truly receiving blessing) -> 实受其福 (RETAIN: genuine blessing is the verdict's own currency — arrival is real)\n濡其首 (wetting its head, drowning) -> 破其壳 (cracking its shell, hatching)\n厉 (danger) -> 难 (difficulty — the labor of emerging)\n何可久 (how can it last) -> 终可久 (it will endure at last)\n君子 (the exemplary person) -> 园者 (the gardener)"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-1cce1db4",
+   "cast_at": "2026-07-07T19:18:06.268030+00:00",
+   "reading_axn": "AXN:FE93.READING.🌔🌑🪐🌗🌔🔥",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_2_4",
+    "citation": "unit 2–unit 4",
+    "start_unit": 2,
+    "end_unit": 4,
+    "unit_labels": [
+     "unit 2",
+     "unit 3",
+     "unit 4"
+    ]
+   },
+   "operator": "BRIDE",
+   "operator_axis": "relational-affect-axis — the consecrative possibility the source's contestation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "All cosmological/political concepts and relationships in Text A (earth/地, sovereign/君子, virtue/德, state-building/建国, teaching/启蒙) are systematically re-mapped to nuptial/erotic concepts and relationships in Text B (marriage-bed/婚床, bridegroom/新郎, conjugal union/同枕, wedding vows/结缡, unveiling/揭帕), transforming the domain from cosmic-political governance to marital-romantic union while preserving the identical structural skeleton.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: hierarchical governance/submission relationships are remapped to lateral, covenantal, nuptial/marriage relationships — the recovered claim specifies the systematic domain re-mapping (cosmic-political → marital-romantic) that enacts exactly the relational change declared (receiving becomes mutual choosing, bearing becomes marrying, relation becomes face-to-face and covenantal).",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final section (揭帕/蒙) maintains the nuptial re-mapping throughout, with 启蒙教育→解带之礼 and 君子果行育德→新郎启门相迎成就同枕之安, never reverting to the cosmological-political framing.",
+    "back_translation": "",
+    "terminal_similarity": 0.091
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:f8832d0acd1a45c9bd3113c70f8d5bfbf5caed0f32ee25dc092a2377e88fad13",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "000000\n坤 坤为地 坤上坤下\n坤：元，亨，利牝马之贞。君子有攸往，先迷，后得主，利。西南得朋，东北丧朋。安贞吉。\n译文：《坤卦》象征地：元始，亨通，如果像雌马那样柔顺，则是吉利的。君子从事某项事业，虽然开始时不知所从，但结果会是有利的。如往西南方，则会得到朋友的帮助。如往东南方，则会失去朋友的帮助。如果保持现状，也是吉利的\n象曰：地势坤，君子以厚德载物。\n译文：《象辞》说：坤象征大地，君子应效法大地，胸怀宽广，包容万物\n100010\n屯 水雷屯 坎上震下 \n屯：元，亨，利，贞；勿用有攸往，利建侯。\n译文：《屯卦》象征初生：元始，亨通，和谐，贞正。不要急于发展，首先要立君建国\n象曰：云雷屯，君子以经纶。\n译文：《象辞》说：《屯卦》的卦象是震(雷)下坎(水)上，为雷上有水之表象，水在上表示雨尚未落，故释为云。云雷大作，是即将下雨的征兆，故《屯卦》象征初生。这里表示天地初创，国家始建，正人君子应以全部才智投入到创建国家的事业中去\n010001\n蒙 山水蒙 艮上坎下 \n蒙：亨。匪我求童蒙，童蒙求我；初筮告，再三渎，渎则不告。利贞。\n译文：《蒙卦》象征启蒙、亨通。不是我有求于幼童，而是幼童有求于我，第一次向我请教，我有问必答，如果一而再、再而三地没有礼貌地乱问，则不予回答。利于守正道\n象曰：山下出泉，蒙；君子以果行育德。\n译文：《象辞》说：《蒙卦》的卦象是坎(水)下艮(山)上，为山下有泉水之表象，但要想发现甘泉，必须设法准确地找出泉水的位置，即意味着先必须进行启蒙教育。君子必须行动果断，才能培养出良好的品德",
+   "underlying_attribution": null,
+   "enantiomorph": "000000\n婚 婚为床 婚上婚下\n婚：元，亨，利新妇之倾心。新郎有迎亲，先怯，后交杯，利。左手得环，旧名将舍。同枕安。\n译文：《婚卦》象征共床：元始，亨通，如果像新妇那样倾心，则是吉利的。新郎前往迎亲，虽然开始时羞怯，但终将交杯，是有利的。如以左手，则会得到戒环的交换。如舍旧名，则会成就新的共称。如果同枕而眠，也是安宁的\n象曰：床势婚，新郎以两心同席。\n译文：《象辞》说：婚象征共床，新郎应效法共床，两心相倾，同席而坐\n100010\n初夜 水鼓初夜 盖头上鼓下\n初夜：元，亨，利，倾心；勿用有迎亲，利立誓。\n译文：《初夜卦》象征初见：元始，亨通，和谐，倾心。不要急于迎亲，首先要立誓结缡\n象曰：盖头与鼓初夜，新郎以结缡。\n译文：《象辞》说：《初夜卦》的卦象是鼓下盖头上，为鼓上有盖头之表象，盖头在上表示帕尚未揭，故释为盖头。盖头鼓乐大作，是即将揭帕的征兆，故《初夜卦》象征初见。这里表示天地初合，新家始建，新郎新妇应以全部倾心投入到结缡共席的盟约中去\n010001\n揭帕 门歌揭帕 门上歌下\n揭帕：亨。匪你求羞涩者，羞涩者求你；初问应，再三试，试则不应。利倾心。\n译文：《揭帕卦》象征解带、亨通。不是你有求于羞涩者，而是羞涩者有求于你，第一次相问，必以红颜回应，如果一而再、再而三地试探不止，则不予回应。利于守倾心之道\n象曰：门后传歌，揭帕；新郎以启门相迎。\n译文：《象辞》说：《揭帕卦》的卦象是歌下门上，为门后有歌声之表象，但要想听见歌声，必须设法准确地找到门后的嫁衣，即意味着先必须进行解带之礼。新郎必须启门相迎，才能成就同枕之安",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The receptive ground yields, receives, and bears all things through patient submission; the unformed seeks its teacher; wisdom begins in the recognition of one's own unknowing — all relation here is vertical: above descends, below receives.",
+    "mutated_relation": "The receiving is not submission but mutual choosing; the unformed and the formed come toward each other as equals; the ground does not bear the world but marries it — relation is lateral, covenantal, face-to-face.",
+    "beats": "坤 (earth/receptive) -> 婚 (wedding/joining)\n地 (ground) -> 床 (shared bed)\n牝马 (mare/female horse) -> 新妇 (bride)\n柔顺 (yielding/submissive) -> 倾心 (leaning-toward-with-heart)\n君子 (noble person/gentleman) -> 新郎 (bridegroom)\n攸往 (going forth) -> 迎亲 (going-to-meet-the-beloved)\n先迷后得主 (first lost, later finds a master) -> 先怯后交杯 (first shy, then sharing the cup)\n西南得朋 (southwest gains companions) -> 左手得环 (left hand receives the ring)\n东北丧朋 (northeast loses companions) -> 旧名将舍 (the old name will be let go)\n安贞吉 (quiet steadfastness is auspicious) -> 同枕安 (sharing the pillow brings peace)\n厚德载物 (broad virtue carries all things) -> 两心同席 (two hearts at one table)\n屯 (sprouting/initial difficulty) -> 初夜 (first night)\n云雷 (cloud and thunder) -> 盖头与鼓 (veil and drum)\n初生 (newborn beginning) -> 初见 (first meeting of eyes)\n建侯 (establishing a lord) -> 立誓 (making the vow)\n经纶 (ordering/governing) -> 结缡 (tying the sash together)\n蒙 (ignorance/veiling) -> 揭帕 (lifting the veil)\n童蒙 (the unenlightened child) -> 羞涩者 (the bashful one)\n我 (the teacher/I) -> 你 (you — the awaited)\n求 (seeking/requesting) -> 求 (RETAIN: seeking is the shared verb of both instruction and courtship)\n初筮告 (first divination answered) -> 初问应 (first question answered with a blush)\n再三渎 (repeated irreverence) -> 再三试 (testing again and again)\n山下出泉 (spring emerging beneath the mountain) -> 门后传歌 (song heard from behind the door)\n果行育德 (decisive action cultivates virtue) -> 启门相迎 (opening the door to meet each other)\n泉水 (spring water) -> 嫁衣 (wedding garment)\n启蒙 (enlightening the ignorant) -> 解带 (loosening the sash)"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-07T18:32:10.405653+00:00"
+ "last_updated": "2026-07-07T19:18:06.268030+00:00"
 }
