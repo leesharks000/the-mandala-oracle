@@ -4567,7 +4567,67 @@
     "beats": "ἐλύθησαν (were loosed) -> συνήχθησαν (were gathered)\nτέσσαρες ἄγγελοι (four angels) -> τέσσαρες πύλαι (four gates)\nἡτοιμασμένοι (prepared) -> ἡτοιμασμένοι (RETAIN: the verdict names the threshold as \"prepared\" — the appointment is the hinge on which ingathering turns; any synonym dissolves the identity of the fixed hour)\nὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (hour and day and month and year) -> καιρὸν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν (season and day and month and year)\nἀποκτείνωσιν (they might kill) -> δέξωνται (they might receive)\nτὸ τρίτον τῶν ἀνθρώπων (a third of humanity) -> τὸ τρίτον τῶν ψυχῶν (a third of the souls)\nστρατευμάτων τοῦ ἱππικοῦ (armies of cavalry) -> πομπῶν τῶν πεζῶν (processions of the walking)\nδισμυριάδες μυριάδων (twice ten-thousand ten-thousands) -> χιλιάδες χιλιάδων (thousands of thousands)\nἤκουσα τὸν ἀριθμὸν (I heard the number) -> ἔγνων τὸν ἀριθμὸν (I knew the number)\nἵππους (horses) -> κατώφλια (thresholds)\nτοὺς καθημένους ἐπ' αὐτῶν (those seated upon them) -> τοὺς προσερχομένους δι' αὐτῶν (those approaching through them)\nθώρακας πυρίνους καὶ ὑακινθίνους καὶ θειώδεις (breastplates of fire, hyacinth, sulfur) -> χιτῶνας σποδώδεις καὶ λευκοὺς καὶ ὑδατίνους (tunics of ash, white, and water)\nκεφαλαὶ τῶν ἵππων (heads of the horses) -> στόμια τῶν κατωφλίων (mouths of the thresholds)\nκεφαλαὶ λεόντων (heads of lions) -> χάσματα σπηλαίων (openings of caves)\nἐκ τῶν στομάτων αὐτῶν (from their mouths) -> εἰς τὰ στόμια αὐτῶν (into their mouths)\nἐκπορεύεται (goes forth) -> εἰσπορεύεται (goes inward)\nπῦρ (fire) -> σκότος (darkness)\nκαπνός (smoke) -> σιγή (silence)\nθεῖον (sulfur) -> δρόσος (dew)\nεἶδον (I saw) -> ἐθεασάμην (I beheld)\nκαπνὸς (smoke, second instance) -> σιγή (silence)\nοὕτως (thus) -> ὧδε (here)\nἔχοντας (having) -> φέροντας (bearing)\nὁράσει (vision) -> προσδοκίᾳ (expectation)"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-10df9eb0",
+   "cast_at": "2026-07-07T08:02:57.401180+00:00",
+   "reading_axn": "AXN:FEA1.READING.🌒🔥🌖🌘🌒🌗",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_57_60",
+    "citation": "3:8–3:11",
+    "start_unit": 57,
+    "end_unit": 60,
+    "unit_labels": [
+     "3:8",
+     "3:9",
+     "3:10",
+     "3:11"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, divine action provides openness, deliverance from trial, and swift arrival (open door no one can shut, kept out of the coming hour, 'I come quickly'), whereas in Text B the direction is reversed: the door is closed and cannot be opened, the hour of trial has already arrived and one is kept through it (not out of it), the adversaries speak truth rather than lie, and Christ comes slowly — gift and rescue become endurance through present suffering rather than escape from future trial.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: from deliverance/exemption from trial to endurance through trial, with the open door becoming shut and fidelity no longer purchasing escape but only the capacity to endure what arrives.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (3:11) sustains the reversal: 'ἔρχομαι βραδέως' and uprooting-of-root replace swift coming and crown-snatching, maintaining the changed relational direction throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.375
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:04b6bed7e7cf61c0a68ada09c46bcbfe7852b30c7a4c31deb9b7bd0b8b2ac326",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**3:8** Οἶδά σου τὰ ἔργα— ἰδοὺ δέδωκα ἐνώπιόν σου θύραν ἠνεῳγμένην, ἣν οὐδεὶς δύναται κλεῖσαι αὐτήν— ὅτι μικρὰν ἔχεις δύναμιν, καὶ ἐτήρησάς μου τὸν λόγον, καὶ οὐκ ἠρνήσω τὸ ὄνομά μου.\n\n**3:9** ἰδοὺ ⸀διδῶ ἐκ τῆς συναγωγῆς τοῦ Σατανᾶ, τῶν λεγόντων ἑαυτοὺς Ἰουδαίους εἶναι, καὶ οὐκ εἰσὶν ἀλλὰ ψεύδονται— ἰδοὺ ποιήσω αὐτοὺς ἵνα ⸂ἥξουσιν καὶ προσκυνήσουσιν⸃ ἐνώπιον τῶν ποδῶν σου, καὶ γνῶσιν ὅτι ⸀ἐγὼ ἠγάπησά σε.\n\n**3:10** ὅτι ἐτήρησας τὸν λόγον τῆς ὑπομονῆς μου, κἀγώ σε τηρήσω ἐκ τῆς ὥρας τοῦ πειρασμοῦ τῆς μελλούσης ἔρχεσθαι ἐπὶ τῆς οἰκουμένης ὅλης, πειράσαι τοὺς κατοικοῦντας ἐπὶ τῆς γῆς.\n\n**3:11** ἔρχομαι ταχύ· κράτει ὃ ἔχεις, ἵνα μηδεὶς λάβῃ τὸν στέφανόν σου.",
+   "underlying_attribution": null,
+   "enantiomorph": "**3:8** Οἶδά σου τὴν ὑπομονήν— ἰδοὺ ἀνέσχον ἐνώπιόν σου θύραν κεκλεισμένην, ἣν οὐδεὶς δύναται ἀνοῖξαι αὐτήν— ὅτι μικρὰν ἔχεις δύναμιν, καὶ ἐτήρησάς μου τὸν λόγον, καὶ οὐκ ἠρνήσω τὸ ὄνομά μου.\n\n**3:9** ἰδοὺ ⸀διδῶ ἐκ τῆς ὁδοῦ τοῦ πειρασμοῦ, τῶν λεγόντων ἑαυτοὺς Ἰουδαίους εἶναι, καὶ οὐκ εἰσὶν ἀλλὰ ἀληθεύουσιν περὶ τοῦ πόνου— ἰδοὺ ποιήσω αὐτοὺς ἵνα ⸂ἥξουσιν καὶ στήσονται⸃ ἐνώπιον τῶν ποδῶν σου, καὶ γνῶσιν ὅτι ⸀ἐγὼ ἠγάπησά σε ἐν τῷ μὴ φείσασθαι.\n\n**3:10** ὅτι ἐτήρησας τὸν λόγον τῆς ὑπομονῆς μου, κἀγώ σε τηρήσω διὰ τῆς ὥρας τοῦ πειρασμοῦ τῆς ἤδη ἐλθούσης ἐπὶ τῆς οἰκουμένης ὅλης, πειράσαι τοὺς κατοικοῦντας ἐπὶ τῆς γῆς.\n\n**3:11** ἔρχομαι βραδέως· κράτει ὃ ἔχεις, ἵνα μηδὲν ἐκτίλῃ τὴν ῥίζαν σου.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The weak who kept faith are rewarded with an irrevocable opening and guaranteed protection from the coming trial; their fidelity converts powerlessness into cosmic vindication.",
+    "mutated_relation": "The faithful who were promised passage find the door shut and the trial not averted but entered; their fidelity does not purchase exemption — it purchases only the capacity to endure what arrives.",
+    "beats": "θύραν ἠνεῳγμένην (door opened) -> θύραν κεκλεισμένην (door closed)\nοὐδεὶς δύναται κλεῖσαι (no one can shut) -> οὐδεὶς δύναται ἀνοῖξαι (no one can open)\nμικρὰν δύναμιν (little power) -> μικρὰν δύναμιν (RETAIN: the smallness is the hinge — what changes is what it earns)\nἐτήρησας τὸν λόγον (you kept the word) -> ἐτήρησας τὸν λόγον (RETAIN: the fidelity is unchanged; only its reward is inverted)\nοὐκ ἠρνήσω τὸ ὄνομά μου (did not deny my name) -> οὐκ ἠρνήσω τὸ ὄνομά μου (RETAIN: the verdict requires the same unsurrendered name to meet the closed door)\nπροσκυνήσουσιν ἐνώπιον τῶν ποδῶν σου (bow before your feet) -> στήσονται ἐνώπιον τῶν ποδῶν σου (stand before your feet)\nγνῶσιν ὅτι ἠγάπησά σε (know that I loved you) -> γνῶσιν ὅτι ἠγάπησά σε ἐν τῷ μὴ φείσασθαι (know that I loved you in not sparing)\nτηρήσω ἐκ τῆς ὥρας τοῦ πειρασμοῦ (keep you from the hour of trial) -> τηρήσω σε διὰ τῆς ὥρας τοῦ πειρασμοῦ (keep you through the hour of trial)\nτῆς μελλούσης ἔρχεσθαι (about to come) -> τῆς ἤδη ἐλθούσης (already arrived)\nοἰκουμένης ὅλης (whole inhabited world) -> οἰκουμένης ὅλης (RETAIN: the scope of the trial is unchanged — only exemption is revoked)\nἔρχομαι ταχύ (I come quickly) -> ἔρχομαι βραδέως (I come slowly)\nκράτει ὃ ἔχεις (hold what you have) -> κράτει ὃ ἔχεις (RETAIN: the command is the same — but now it is an endurance, not a vigil)\nστέφανον (crown) -> ῥίζαν (root)\nμηδεὶς λάβῃ (no one take) -> μηδὲν ἐκτίλῃ (nothing uproot)\nσυναγωγῆς τοῦ Σατανᾶ (synagogue of Satan) -> ὁδὸν τοῦ πειρασμοῦ (road of trial)\nψεύδονται (they lie) -> ἀληθεύουσιν περὶ τοῦ πόνου (they speak truly about the pain)\nἰδοὺ δέδωκα (behold I have given) -> ἰδοὺ ἀνέσχον (behold I have withheld)\nἔργα (works) -> ὑπομονήν (endurance)"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T01:07:22.401755+00:00"
+ "last_updated": "2026-07-07T08:02:57.401180+00:00"
 }
