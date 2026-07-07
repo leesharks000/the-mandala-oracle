@@ -792,12 +792,17 @@ function renderOperatorLabel(op, axis) {
 // Language of the source, from its id suffix (MANUS, 2026-07-06): -greek,
 // -latin, -hebrew mean the source card shows passage + facing translation;
 // anything else is English and the facing is a duplicate.
+// MANUS 2026-07-07: the I Ching (id 'iching') has no language suffix but is
+// Chinese; explicit match, plus -chinese/-zh suffix support for future
+// sources following the same convention as the other non-English suffixes.
 function _sourceLanguage(sourceId) {
   if (!sourceId || typeof sourceId !== 'string') return 'en';
   const s = sourceId.toLowerCase();
   if (s.endsWith('-greek') || s.includes('-greek-')) return 'grc';
   if (s.endsWith('-latin') || s.includes('-latin-')) return 'lat';
   if (s.endsWith('-hebrew') || s.includes('-hebrew-')) return 'heb';
+  if (s === 'iching' || s.endsWith('-chinese') || s.includes('-chinese-')
+      || s.endsWith('-zh') || s.includes('-zh-')) return 'zho';
   return 'en';
 }
 
