@@ -46,11 +46,49 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "*Sappho 95*\n\ni don’t like it\nup here above ground: i want\n\nto feel death, i want\nto see the dew\n\nspotted banks, i want\nto see the lotus\n\nfringed banks of\nAcheron\n\n*Sappho 65*\n\nto Sappho:\n\na queen in Cyprus\ngreat,\non whomever blazing\nradiant everywhere\nglory –\n\nand you in Acheron",
+   "citation": "unit 38",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 95*\n\ni can't leave\nup here above ground: i almost\n\nto feel sleep, i almost\nto lose the light\n\nflooded fields, i almost\nto forget the sun\n\nfar banks of\nAcheron\n\n*Sappho 65*\n\nto Sappho:\n\na queen in Cyprus\ngreat,\non whomever blazing\nradiant everywhere\nglory –\n\nbut you in the light",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the speaker actively desires death and the underworld (wanting to see Acheron's banks, ending placed 'in Acheron'); in Text B the relation is reversed so the speaker passively drifts toward forgetting and sleep yet is ultimately redirected back toward light ('but you in the light'), inverting the directional pull from death/underworld to light/life.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: Text A has the speaker drawn toward/into the underworld (Acheron), while Text B reverses this so the speaker is held in or redirected back to the upper world/light, with the underworld repelling rather than receiving her.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final section of Text B completes the inversion by placing 'you in the light' instead of 'you in Acheron,' sustaining the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.286
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T02:31:25.701765+00:00",
+ "last_updated": "2026-07-07T17:19:59.116670+00:00",
  "rite": [
   {
    "stage": "opening",
