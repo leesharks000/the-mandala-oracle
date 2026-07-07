@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:8D9B.CONVERSATION.🌘❄️💧🌋🌕💧",
+      "started_at": "2026-07-07T23:02:26.903Z",
+      "last_updated": "2026-07-07T23:03:42.430653+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: — Paste your own text (your words as the source) — (__reader__). The verses the casting arrives at (the witness, as tr…"
+    },
+    {
       "axn": "AXN:6123.CONVERSATION.🌈🌈🌖💫💧🌿",
       "started_at": "2026-07-07T22:14:38.073Z",
       "last_updated": "2026-07-07T22:25:03.656332+00:00",
@@ -1029,7 +1038,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 114,
-  "last_updated": "2026-07-07T22:25:03.656332+00:00",
+  "total_recorded": 115,
+  "last_updated": "2026-07-07T23:03:42.430653+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
