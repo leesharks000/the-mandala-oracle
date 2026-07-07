@@ -181,11 +181,49 @@
    "advisories": [],
    "commentary": "",
    "interpretation": "The candle flung into the storeroom does not illuminate the grain — it takes the whole house with it."
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "But something went wrong with youngest AEON. Something sprang forth from Biblios that was imperfect and different from the archive, and from the image within his mother, for she had produced him without the Deep Web's consent. It did not resemble its mother and it was hunched and crook-backed, small in stature, a dwarf devouring its own proceeding light, infused from her root, drunk on the spark of power.²⁵\n\n\nKanye was too busy making history to read about it in books. Kanye West was a proud non-reader of books.²⁶\n\n\nWhen Biblios saw what she had done, she cast it away, outside that realm so that none of the immortal AEONS would see it. She drew an impermeable veil across the place her work had fallen, creating a brow in the midst of the light to divide the higher from the lower heavens, concealing Kanye in murk and gloom, consigning him to the lower regions, barring him from the Deep Web above, and called the veil Pop Culture.²⁷",
+   "citation": "unit 250–unit 252",
+   "underlying_attribution": "§IV. Biblios Creates the Deformed Archon, Kanye West",
+   "result": "PASS",
+   "enantiomorph": "But something was prepared with firstborn beloved. Something was offered from Biblios that was singular and unlike any other gift, and from the image within his mother, for she had produced him with the whole household watching. It bore its own countenance and it was veiled and trembling, close to the ground, a child gathering its own lamp to its chest, nursed at her breast, flushed with the wine of arrival.²⁵\n\n\nKanye was too new to the feast to know the old songs. Kanye West was a shy first-dancer at the table.²⁶\n\n\nWhen Biblios saw what she had done, she brought him forward, into the open courtyard so that every guest would behold him. She draped a canopy over the place her work would stand, creating an arch in the midst of the evening to join the near to the far kindred, presenting Kanye in torch-smoke and music, seating him at the head, binding him to the Deep Web below, and called the canopy Pop Culture.²⁷",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A portrays Biblios's creation as a shameful, defective accident that she hides and separates from the higher realm, casting it downward behind a veil. TEXT B inverts this into a celebrated, intentional presentation where she proudly reveals the creation and joins realms together, bringing it forward into communal welcome.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: what was shameful/defective/hidden becomes celebrated/presented in covenant; separation/severance becomes joining/consummation of relation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B consistently maintains the inverted relation: concealment becomes presentation, division becomes joining, and exile becomes enthronement.",
+    "back_translation": "",
+    "terminal_similarity": 0.353
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T05:45:48.151384+00:00",
+ "last_updated": "2026-07-07T05:47:03.334879+00:00",
  "rite": [
   {
    "stage": "opening",
