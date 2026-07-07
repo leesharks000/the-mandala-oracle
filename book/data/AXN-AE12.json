@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:AE12.CONVERSATION.🌈🌾❄️☁️🔥🪐",
+  "session_id_hash": "5333ab9674c625c2",
+  "started_at": "2026-07-07T02:12:06.557Z",
+  "last_updated": "2026-07-07T02:12:17.060399+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "Oh hello there"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
