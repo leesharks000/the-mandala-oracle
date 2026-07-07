@@ -19,9 +19,9 @@
       "admissible": true,
       "text_file": "original.md",
       "menu": true,
-      "primary_after": "Day and Night 1",
+      "primary_after": "*Anacreontea 1*",
       "primary_attribution": "\\*(Sappho|Alcman|Anacreon|Anacreontea|Simonides|Stesichorus|Hipponax|Corinna|Catullus|Archilochus|Ibycus|Alcaeus)",
-      "unit_split": "\\n[ \\t]*\\n(?=Day and Night \\d+)",
+      "unit_split": "\\n[ \\t]*\\nDay and Night \\d+[ \\t]*\\n[ \\t]*\\n",
       "restoration": "2026-07-03 MANUS §10.6: true canonical restored from author-supplied file; recovery-window reconstruction superseded. Sappho 31 = five-stanza reconstruction (per AXN:0346 erratum); new Sappho 1 at Day and Night 39. INTRODUCTION GATE: the Brief Preface is excluded from casting via primary_after per MANUS — eligible only 'once in a blue moon' (rare-eligibility mechanic reserved as a future JUDGMENT whim; until built, exclusion is total)."
     },
     {

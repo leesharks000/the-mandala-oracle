@@ -809,6 +809,19 @@ function _sourceLanguage(sourceId) {
 function _renderPassageInto(container, text) {
   container.innerHTML = '';
   container.style.whiteSpace = 'normal';
+  // Escape HTML then convert *italic* pairs to <em>. Uses non-greedy match; won't cross newlines
+  // (so a stray '*' can't wrap the whole passage). Doubled '**' left alone (not markdown bold here).
+  function escapeHtml(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function renderInline(s) {
+    const esc = escapeHtml(s);
+    // Match *text* where text has no other * and no newline. Requires text non-empty and non-space at boundaries.
+    return esc.replace(/\*([^*\n]+?)\*/g, function(_, inner) {
+      // Guard: skip if surrounded by more asterisks (bold markers) — leaves ** ** alone
+      return '<em>' + inner + '</em>';
+    });
+  }
   const lines = String(text || '').split('\n');
   let i = 0;
   while (i < lines.length) {
@@ -830,12 +843,12 @@ function _renderPassageInto(container, text) {
       bq.style.marginTop = '4px';
       bq.style.marginBottom = '4px';
       bq.style.whiteSpace = 'pre-wrap';
-      bq.textContent = bqLines.join('\n');
+      bq.innerHTML = bqLines.map(renderInline).join('\n');
       container.appendChild(bq);
     } else {
       const span = document.createElement('div');
       span.style.whiteSpace = 'pre-wrap';
-      span.textContent = line;
+      span.innerHTML = renderInline(line);
       container.appendChild(span);
       i++;
     }
