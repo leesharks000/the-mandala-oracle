@@ -55,11 +55,58 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you swallowed them at?\nGot 'em through the lining, could've dissolved in it\nWould have calcified, lodged, metastasized\nFluorite-crystallized, pressurized burst valve\nHemorrhage for the organ, black bile at the ducts\nSeep through the membrane, no more of me, thanks\nThat saturates the nerve, that septic sure fever-bright\nAte past the wall for more terminal gland spit\nRupture on contact, spill past the skin\nBlew the whole host like some old gut with carrion\nThese cells is too far gone, gorged on a junk tissue\nWho could get looser off a necrotic or a death rattle?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The external urban/social setting and actions (finding things around town, street scenes, musical/party context) have been remapped to an internal bodily/biological setting and processes (swallowing, dissolving through membranes, organs, cells), transforming all spatial and social relations into physiological and pathological ones.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a transformation where external activity becomes internal bodily process and the subject loses control to the substance/system, but the recovered claim focuses on the spatial remapping (urban→biological setting) rather than the declared claim's emphasis on threshold-crossing (surplus→saturation, play→irreversible change, rider becoming digested).",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the bodily/pathological remapping (cells, junk tissue, necrotic, death rattle) without reverting to the urban/street context.",
+    "back_translation": "",
+    "terminal_similarity": 0.305
+   },
+   "law_variance": {
+    "declared": "The system blows apart — surplus crosses into saturation, velocity into seizure, play into irreversible chemical change; what was ridden now digests the rider.",
+    "recovered": "The external urban/social setting and actions (finding things around town, street scenes, musical/party context) have been remapped to an internal bodily/biological setting and processes (swallowing, dissolving through membranes, organs, cells), transforming all spatial and social relations into physiological and pathological ones.",
+    "note": "Both identify a transformation where external activity becomes internal bodily process and the subject loses control to the substance/system, but the recovered claim focuses on the spatial remapping (urban→biological setting) rather than the declared claim's emphasis on threshold-crossing (surplus→saturation, play→irreversible change, rider becoming digested)."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T20:46:40.905248+00:00",
+ "last_updated": "2026-07-07T23:17:09.391784+00:00",
  "rite": [
   {
    "stage": "opening",
