@@ -103,11 +103,49 @@
    ],
    "commentary": "",
    "interpretation": "Flame in the marrow: the superior man does not distinguish between the fuel and the fire."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you repossessed them at?\nOwed for them across every creditor, could've leveraged under in it\nWould have stayed solvent, financed passage, pledged collateral\nInterest-hidden, indebted margin borrower\nLevy for the overdrawn, loss-leader at the banks\nSip through the invoice, nothing left on the balance, thanks\nThat zeros out the principal, that compounding sure default-ripe\nSank past the pit for more high-interest penalty talk\nRun up the tab, skip out on the storefront\nSpent the whole deposit like some exhausted credit with spoiled asset\nThese debtors is too leveraged, squeezed from a subprime sweetener\nWho could get more insolvent off a margin call or a collection drum?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B replaces the original vocabulary across all domains (street slang, physical actions, sensory imagery) with financial/debt terminology, systematically reframing every element as a creditor-debtor relationship. The casual, playful agency of the speaker acquiring and consuming things becomes a structured financial obligation where every action is recast as borrowing, defaulting, or owing.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: free/effortless elements systematically recast as debt/financial obligations, with every action reframed as having a hidden cost or creditor-debtor relationship.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The financial/debt metaphor is maintained consistently through the final lines, with 'debtors,' 'leveraged,' 'subprime,' 'margin call,' and 'collection drum' all sustaining the changed relational framework.",
+    "back_translation": "",
+    "terminal_similarity": 0.243
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T23:17:18.443916+00:00",
+ "last_updated": "2026-07-07T23:18:23.839256+00:00",
  "rite": [
   {
    "stage": "opening",
