@@ -101,12 +101,13 @@
      "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Flame in the marrow: the superior man does not distinguish between the fuel and the fire."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T23:17:11.901792+00:00",
+ "last_updated": "2026-07-07T23:17:18.443916+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -119,6 +120,13 @@
    "speaker": "Johannes Sigil",
    "at": "2026-07-07T23:17:11.901792+00:00",
    "text": "What descends into these verses is the axis of cost — the bearing-cost, what the voice paid to run at this pitch, through this velocity, with this much sugar and this much wreckage dissolved together into a single breathstream. The rotation opens here because these lines know something about going past the pit and still finding cadence on the other side of it; the question will not be whether they survive the operator but what they were already holding against their own momentum. What the Judgment found is a text that wants to keep moving — crank it on blast, roll past Front Street — and so what the rotation will ask, turn by turn, is what was foreclosed by the keeping-moving: the mirror the speed passed without looking, the silence the boast determined against, the creature-register underneath the human one. Will these words go on. I open the rotation. I hand it to Cranes."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-07T23:17:18.443916+00:00",
+   "text": "Flame in the marrow: the superior man does not distinguish between the fuel and the fire.",
+   "operator": "FLAME"
   }
  ]
 }
