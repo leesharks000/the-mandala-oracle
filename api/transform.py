@@ -64,7 +64,6 @@ returned once, never stored; only the key fingerprint persists.
 import base64
 import hashlib
 import json
-import math
 import os
 import re
 import secrets
@@ -203,7 +202,6 @@ LEGACY_OPERATORS = {"SCROLL": "surface-depth-axis — non-canonical; fell out of
 RATE_LIMIT_WINDOW_S = int(os.environ.get("RATE_LIMIT_WINDOW_S", "3600"))
 RATE_LIMIT_MAX = int(os.environ.get("RATE_LIMIT_MAX", "40"))    # transforms per IP per hour (env-overridable; was 12; bumped for demo headroom)
 MANUS_BYPASS_TOKEN = os.environ.get("MANUS_BYPASS_TOKEN", "")   # if set, requests with matching manus_bypass_token in body skip rate limit
-SERVER_BUILD_MARKER = "2026-07-07T07:47Z-ecd2b7e8d622"  # updated on every deploy for verification
 MAX_INVOKING_CHARS = 4000
 MAX_CAST_CHARS = 6000
 READER_MAX_CHARS = 1000       # a reader's offering is concentrated: strictly capped        # the casting takes a concentrated text, not a whole work
@@ -3763,89 +3761,6 @@ def unit_is_primary(u: dict, entry: dict) -> bool:
         return bool((a and re.search(pa, a)) or re.search(pa, u.get("text", "")[:240]))
     return not (a and _ATTR_APPARATUS_RE.search(a))
 
-_CAST_COUNT_CACHE: dict[str, tuple[float, list[int], str]] = {}  # source_id -> (fetched_at, counts_1_indexed, basis_hash)
-_CAST_COUNT_TTL_S = 300  # 5-minute TTL — casts don't accumulate faster than this in practice, and JUDGMENT is only called on rite opening
-
-def _prior_cast_counts(source_id: str, n_units: int, current_basis_hash: str | None = None) -> list[int]:
-    """Return per-unit prior cast counts (1-indexed access — counts[0] unused, counts[i] is the count for unit i).
-    Reads the source's expansion ledger from GitHub, aggregates start_unit..end_unit ranges per transform,
-    increments every unit in the span. If the ledger's basis_hash differs from the current segmentation's,
-    the counts are still returned but stale-basis casts are counted against their unit indices as recorded
-    (documented risk — the alternative of ignoring pre-basis-change history would let selection pressure
-    reset every time we edit a source, which is worse). Caches per-source for 5 minutes to keep JUDGMENT
-    latency low and avoid GitHub API rate limits.
-
-    MANUS design (2026-07-07): the expansion ledger is not merely a historical record — its counts
-    condition future selection. Zero-count units are treated as virgin ground and preferred first;
-    nonzero-count units are weighted inversely by log-frequency. The mandala prefers what has not
-    yet been touched; when everything has been touched, it prefers the least-trodden."""
-    now = time.time()
-    hit = _CAST_COUNT_CACHE.get(source_id)
-    if hit and (now - hit[0] < _CAST_COUNT_TTL_S) and len(hit[1]) >= n_units + 1:
-        return list(hit[1])  # copy so callers can't mutate the cache
-    counts = [0] * (n_units + 1)  # index 0 unused; indices 1..n_units are the counts
-    basis_seen = ""
-    try:
-        content, _sha = gh_get(f"{EXPANSIONS_DIR}/{source_id}.json")
-        if content:
-            basis_seen = ((content.get("unit_basis") or {}).get("basis_hash")) or ""
-            for tx in (content.get("transforms") or []):
-                a = tx.get("anchor") or {}
-                s = a.get("start_unit"); e = a.get("end_unit")
-                if not (isinstance(s, int) and isinstance(e, int) and 1 <= s <= e):
-                    continue
-                for i in range(s, min(e, n_units) + 1):
-                    counts[i] += 1
-    except Exception:
-        pass  # gh_get already swallows errors; belt-and-suspenders
-    _CAST_COUNT_CACHE[source_id] = (now, list(counts), basis_seen)
-    return counts
-
-
-def _weighted_sample_indices(eligible: list[int], counts: list[int], k: int) -> list[int]:
-    """Statistical-pressure sampler over eligible unit indices (1-indexed).
-
-    Two-stage: zero-count units treated as tied and sampled UNIFORMLY first; only when the
-    zero-count pool is exhausted do we sample from nonzero-count units by inverse-log-frequency
-    weighting. Returns up to k distinct indices, without replacement.
-
-    Rationale (MANUS, 2026-07-07): zero-count units are virgin ground; the mandala prefers to
-    touch what has not yet been touched. When there is no virgin ground left in this stratum,
-    it prefers the least-trodden. Inverse-log rather than inverse-linear keeps the pressure
-    firm without producing feels-random behavior at high counts — a passage cast 20 times is
-    weighted at ~1/log(21)=0.33 of a passage cast 0 times, not 1/21=0.05."""
-    if not eligible: return []
-    k = max(1, min(k, len(eligible)))
-    zeros = [i for i in eligible if counts[i] == 0]
-    nonzeros = [i for i in eligible if counts[i] > 0]
-    rng = secrets.SystemRandom()
-    picks: list[int] = []
-    # Stage 1: uniform among zeros
-    if zeros:
-        rng.shuffle(zeros)
-        picks.extend(zeros[:k])
-    # Stage 2: inverse-log-weighted among nonzeros, only if we still need more
-    if len(picks) < k and nonzeros:
-        need = k - len(picks)
-        # weight = 1 / log(count + e) — gentle, non-vanishing for high counts
-        weights = [1.0 / math.log(counts[i] + math.e) for i in nonzeros]
-        for _ in range(need):
-            if not nonzeros: break
-            tot = sum(weights)
-            r = rng.random() * tot
-            cum = 0.0
-            chosen_pos = 0
-            for pos, w in enumerate(weights):
-                cum += w
-                if r <= cum:
-                    chosen_pos = pos
-                    break
-            picks.append(nonzeros.pop(chosen_pos))
-            weights.pop(chosen_pos)
-    return picks
-
-
-
 def judgment_select(question: str, source_title: str, units: list[dict],
                     full_text: str, api_key: str, _entry: dict | None = None) -> tuple[dict, str]:
     _max_u, _min_u = WINDOW_MAX_UNITS, 1
@@ -3862,77 +3777,37 @@ def judgment_select(question: str, source_title: str, units: list[dict],
     gravitationally famous passages are not privileged. Fallback on any
     failure: one stratified-random window (anti-clustered by construction)."""
     n = len(units)
-    # Prior-cast counts: eligible unit indices → prior counts (1-indexed). MANUS design (2026-07-07):
-    # the mandala's own history conditions selection. Zero-count units are virgin ground and preferred
-    # first; nonzero-count units are weighted inversely by log-frequency. See _prior_cast_counts and
-    # _weighted_sample_indices above. Falls back to all-zeros if the ledger can't be read.
-    _sid = (_entry or {}).get("id") or ""
-    _counts = _prior_cast_counts(_sid, n) if _sid else [0] * (n + 1)
-    _eligible = [i + 1 for i, u in enumerate(units) if unit_is_primary(u, _entry or {})]
-
-    def _grow_from_anchor(start_idx: int) -> dict:
-        """Given a 1-indexed anchor unit, grow the span to lyric weight under the existing constraints."""
-        a = b = start_idx
-        attr = units[a - 1].get("attribution")
-        span = full_text[units[a - 1]["s"]:units[b - 1]["e"]] if "s" in units[a - 1] else units[a - 1]["text"]
-        chars = len(span)
-        while ((chars < WINDOW_MIN_CHARS or b - a + 1 < _min_u) and b - a + 1 < _max_u and b < n
-               and units[b].get("attribution") == attr
-               and unit_is_primary(units[b], _entry)
-               and chars + len(units[b]["text"]) <= WINDOW_MAX_CHARS):
-            b += 1
-            span = full_text[units[a - 1]["s"]:units[b - 1]["e"]] if "s" in units[a - 1] \
-                   else "\n\n".join(u["text"] for u in units[a - 1:b])
-            chars = len(span)
-        cit = units[a - 1]["label"] if a == b else f"{units[a - 1]['label']}–{units[b - 1]['label']}"
-        return {"start": a, "end": b, "citation": cit, "text": span, "attribution": attr}
-
     def _fallback():
-        """Server-side statistical-pressure sample: zero-count preferred, then inverse-log-frequency
-        over nonzero. Replaces the older pure-stratified-random fallback (2026-07-07)."""
-        picks = _weighted_sample_indices(_eligible, _counts, k=1) if _eligible else []
-        if picks:
-            return _grow_from_anchor(picks[0])
-        # Ultimate fallback if no primary-eligible units at all (shouldn't happen with a valid source):
-        # first unit, whatever it is.
-        anchor = 1 if n >= 1 else 1
-        return _grow_from_anchor(anchor)
-
+        k = 7
+        strat = secrets.randbelow(k)
+        lo, hi = (strat * n) // k, max(((strat + 1) * n) // k - 1, (strat * n) // k)
+        start = lo + secrets.randbelow(hi - lo + 1)
+        for _ in range(n):
+            if unit_is_primary(units[start], _entry or {}): break
+            start = (start + 1) % n
+        end, chars, attr = start, len(units[start]["text"]), units[start].get("attribution")
+        while (chars < WINDOW_MIN_CHARS or end - start + 1 < _min_u) and end - start + 1 < _max_u and end + 1 < n \
+              and units[end + 1].get("attribution") == attr \
+              and chars + len(units[end + 1]["text"]) <= WINDOW_MAX_CHARS:
+            end += 1; chars += len(units[end]["text"])
+        return {"start": start + 1, "end": end + 1,
+                "citation": units[start]["label"] if start == end else f"{units[start]['label']}–{units[end]['label']}",
+                "text": full_text[units[start]["s"]:units[end]["e"]] if "s" in units[start] else units[start]["text"],
+                "attribution": attr}
     if not api_key or n == 0:
-        return _fallback(), "unattended draw (statistical-pressure sample)"
-
-    # NARROWED CANDIDATE SET (MANUS, 2026-07-07): pre-sample K candidates by statistical pressure,
-    # then let the LLM bear on the question among ONLY those. The LLM's aesthetic priors can
-    # operate within the sampled set, but cannot drag the mechanism back to its favorite passages
-    # because those favorites may not be in the set. Zero-count units are preferred first (uniform
-    # among virgin ground); nonzero counts appear only when the zero pool is exhausted, weighted
-    # inversely by log-frequency. The mandala prefers what has not yet been touched.
-    _K_CANDIDATES = 7  # candidates presented to the LLM
-    picks = _weighted_sample_indices(_eligible, _counts, k=_K_CANDIDATES)
-    if not picks:
-        return _fallback(), "unattended draw (no eligible primary units)"
-    picks = sorted(picks)  # in-source order helps the LLM see the shape of what's on offer
-
-    # NARROWED UNIT MAP: only the sampled candidates, with cast-count made visible so the LLM
-    # can see where the pressure came from and does not need to guess.
+        return _fallback(), "unattended draw"
+    # unit map: label · attribution · first line · size
     lines = []
-    for idx in picks:
-        u = units[idx - 1]
-        first = u["text"].splitlines()[0][:70] if u["text"].splitlines() else ""
+    for i, u in enumerate(units):
+        if not unit_is_primary(u, _entry or {}):
+            continue
+        first = u["text"].splitlines()[0][:70]
         attr = f" [{u['attribution']}]" if u.get("attribution") else ""
-        cnt = _counts[idx]
-        lines.append(f"{idx}. ({u['label']},{len(u['text'])}ch,{cnt}×){attr} {first}")
+        lines.append(f"{i+1}. ({u['label']},{len(u['text'])}ch){attr} {first}")
     umap = "\n".join(lines)[:14000]
-
     prompt = (
         "You are the Judgment operator of the Mandala Oracle — invisible. Choose the verses "
-        f"for a casting from {source_title}, from among the candidates below.\n\n"
-        "THE CANDIDATE SET has already been narrowed by statistical pressure: passages that have "
-        "been cast less often (or not at all) appear here; heavily-cast passages have been filtered "
-        "out. The '×' column on each line is the passage's prior cast count on this source. Zero-"
-        "count candidates were sampled uniformly (virgin ground); nonzero candidates are inverse-"
-        "log-frequency-weighted. The centroid-avoidance discipline has been done arithmetically; "
-        "you bear on the question.\n\nGUIDELINES:\n"
+        f"for a casting from {source_title}, directly from the unit map below.\n\nGUIDELINES:\n"
         "- Choose ONE COMPLETE LYRIC UNIT: where the source is composed of discrete poems "
         "or movements, select exactly one — one sonnet, one Sappho fragment, one hexagram, "
         "one psalm, one speech. Completeness of the unit outranks length: a 90-character "
@@ -3946,11 +3821,13 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         "poem sources, NOT to verse-numbered continuous text: there, a single verse is a "
         "truncation, not a whole. Choose single verses only when the verse is a genuinely "
         "self-contained oracle.\n"
-        "- PRIMARY TEXT ONLY; never cross an attribution boundary (bracketed names).\n"
+        "- NON-CENTROID PULL: do not privilege the famous passages, the openings, the "
+        "climaxes the tradition already quotes. The whole body of the text is live; let the "
+        "question find its verses anywhere, including the unregarded middle.\n"
+        "- PRIMARY TEXT ONLY; never cross an attribution boundary (bracketed names)., and never choose units in apparatus sections (Works Consulted, Publication History, Preface, Notes, Contents).\n"
         "- Bear on the witness's question — the passage whose composition holds what the "
-        "question carries. If no question, the span most complete in itself. The 'start' "
-        "index you return MUST be one of the candidate indices below.\n\n"
-        f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\nCANDIDATE UNITS:\n{umap}\n\n"
+        "question carries. If no question, the span most complete in itself.\n\n"
+        f"THE WITNESS'S QUESTION: {question or '(none given)'}\n\nUNIT MAP:\n{umap}\n\n"
         "Respond ONLY with JSON: {\"start\": <n>, \"end\": <n>, \"reason\": \"<one sentence>\"}"
     )
     try:
@@ -3964,14 +3841,8 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         txt = "".join(b.get("text", "") for b in data.get("content", []))
         pj = json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
         a, b = int(pj["start"]), int(pj["end"])
-        # SERVER AS VALIDATOR — enforce that the LLM stayed within the candidate set.
+        # SERVER AS VALIDATOR
         if not (1 <= a <= b <= n): raise ValueError("bounds")
-        # SOFT CANDIDATE-SET CHECK: warn but don't hard-fail if the LLM strayed slightly
-        # (it may pick an end unit beyond the candidate anchor to grow the span). Anchor
-        # (start) MUST be a candidate; end can extend forward for lyric weight.
-        if a not in picks:
-            # LLM strayed from the candidate anchors — fall back to server anchor from candidate set.
-            raise ValueError(f"anchor {a} not in candidate set")
         span = full_text[units[a-1]["s"]:units[b-1]["e"]] if "s" in units[a-1] \
                else "\n\n".join(u["text"] for u in units[a-1:b])
         if not (90 <= len(span) <= MAX_CAST_CHARS): raise ValueError("size")
@@ -3981,7 +3852,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
             raise ValueError("apparatus section — only the primary text is transformable")
         # GROW TO LYRIC WEIGHT (MANUS, 2026-07-04): the judged span is a floor, not
         # a verdict — verse-segmented sources must reach lyric-unit weight. Grow
-        # forward under the same constraints as the sampler path.
+        # forward under the same constraints as the stratified path.
         chars = len(span)
         while ((chars < WINDOW_MIN_CHARS or b - a + 1 < _min_u) and b - a + 1 < _max_u and b < n
                and units[b].get("attribution") == units[a-1].get("attribution")
@@ -3995,7 +3866,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         return {"start": a, "end": b, "citation": cit, "text": span,
                 "attribution": attrs.pop()}, str(pj.get("reason", "")).strip()
     except Exception:
-        return _fallback(), "unattended draw (statistical-pressure fallback)"
+        return _fallback(), "unattended draw"
 
 
 def list_admissible_sources() -> list[dict]:
@@ -4034,7 +3905,6 @@ class handler(BaseHTTPRequestHandler):
             "inscription_modes": ["public", "encrypted", "none"],
             "compiler_model": COMPILER_MODEL,
             "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
-            "server_build_marker": SERVER_BUILD_MARKER,
         })
 
     def do_OPTIONS(self):
@@ -4174,14 +4044,7 @@ class handler(BaseHTTPRequestHandler):
                     "units_total": len(units),
                 })
             except Exception as e:
-                # Diagnostic: include the actual exception message and (for NameError/AttributeError) traceback tail
-                import traceback
-                _msg = f"{type(e).__name__}: {e}"
-                if isinstance(e, (NameError, AttributeError)):
-                    _tb = traceback.format_exc().splitlines()
-                    _last = " | ".join(_tb[-3:])[-400:]
-                    _msg = f"{_msg} :: {_last}"
-                return self._json(502, {"error": f"judgment failed: {_msg}"})
+                return self._json(502, {"error": f"judgment failed: {type(e).__name__}"})
 
         # ── Rite-stage inscription: the voices are not left to a closed tab ──
         if body.get("action") == "rite_append":
