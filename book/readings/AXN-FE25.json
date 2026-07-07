@@ -1,0 +1,54 @@
+{
+ "axn": "AXN:FE25.READING.🌖🌑🌓🌿🌿🔥",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "865ab9ec1f132192",
+ "inscribed_at": "2026-07-07T23:04:10.655913+00:00",
+ "question_digest": "sha256:a69659638d4221a7c4dad060ab7b0aec5260a451d7f1b022d095302ca5ee5a3f",
+ "question_gloss": "# Inquiry about whether certain words will continue or persist.",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "rotation": [
+  {
+   "operator": "FLAME",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you hunted them at?\nGot 'em from the last well, could've thirsted in it\nWould have crawled, waded, sworn\nSalt-scorched, single-chambered temple-presser\nTithe for the chosen, rationed fire at the altars\nPray through the needle, one more and I'm finished\nThat fills the nerve, that ember sure blazed holy\nClimbed past the rafters for more sacrificial psalm-scream\nFeed it to the kiln, kneel at the threshold\nConsecrated the ground like some ancient mouth with burnt offering\nThese initiates is too slow, bled for a sacred crumb\nWho could get more bound off a dirge or a funeral drum?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The relationship between the subject and the substances/activities is reversed: in Text A the speaker moves freely and excessively through abundance (getting loose, going fast, blasting past), while in Text B the subject is bound, slowed, and submissively offered up to a ritualistic authority — consumption becomes sacrifice, surplus becomes scarcity, and agency flows from the self outward to an external sacred order.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: abundance/excess becomes scarcity/ceremony, free consumption becomes costly sacrifice, and each act demands total commitment from the subject rather than being casually indulged.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the inverted relation: 'too slow' vs 'too fast,' 'more bound' vs 'get looser,' 'dirge/funeral drum' vs 'crunk/funk beat.'",
+    "back_translation": "",
+    "terminal_similarity": 0.214
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T23:04:10.655913+00:00"
+}
