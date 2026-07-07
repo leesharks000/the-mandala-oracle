@@ -316,6 +316,12 @@ body {
 .message.heteronym:has(.message-avatar) .message-avatar { grid-area: avatar; }
 .message.heteronym:has(.message-avatar) .message-role { grid-area: role; align-self: end; }
 .message.heteronym:has(.message-avatar) .message-content { grid-area: content; }
+/* Any direct child that isn't one of the three named grid areas (e.g. transform-card,
+   halt-card, halt-postmortem, future cards) spans both columns so it doesn't get
+   auto-placed into the 44px avatar column. Fixes squished metric report. */
+.message.heteronym:has(.message-avatar) > *:not(.message-avatar):not(.message-role):not(.message-content) {
+  grid-column: 1 / -1;
+}
 
 .message-avatar {
   width: 44px;
