@@ -1003,8 +1003,65 @@
     "beats": "face -> face (RETAIN: the child must be the same child, now present rather than distant)\nbright yellow flowers -> ripe fruit\nCleis -> Cleis (RETAIN: the named beloved must persist for the arrival to register)\nmore precious -> more familiar\nall Lydia -> all Mytilene\ndon't know where to get -> just found\nspecial ribbons -> ordinary ribbons\nhold your hair back -> braid your hair up\nnowhere -> everywhere\nMyrsilus -> Myrsilus (RETAIN: the agent of exile must survive so his power can be shown as spent)\nexiled us -> released us\nMother -> Mother (RETAIN: the address must be the same for the surplus of voice to show)\ncan't work the loom -> finished the loom\nAphrodite is making me need that boy -> Aphrodite has given me that boy\nRemember -> Remember (RETAIN: memory persists even when its motive — consolation for loss — is gone)\nwe too did the same -> we too did the same (RETAIN: the echo survives the occasion)\nmany and lovely -> few and quiet\ncity -> house\nfoundations -> rafters\nwhisper -> hum\nDear Hermes -> Dear Hermes (RETAIN: the prayer-form persists though the need is answered)\npraying -> thanking\nteeth are clattering -> teeth are still\nshaking -> steady\nseizure -> sleep\nsweater -> sweater that arrived\nnice coat -> nice coat you sent\nnice warm shoes -> nice warm shoes on my feet\nsandals -> sandals at the door\npile of coins -> pile of coins on the table\nbalance the books -> nothing left to balance\nhaven't given me -> have given me\nfreezing winter -> mild winter\ncovered my feet -> covered my feet\nchilblains -> warmth\ntortured soul -> rested soul\nhanging -> staying\nbarley -> barley in the jar\nboundless suffering -> boundless quiet"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-09708426",
+   "cast_at": "2026-07-07T17:20:00.536171+00:00",
+   "reading_axn": "AXN:FE12.READING.🌓💫🌙🌿🌒🌿",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_38_38",
+    "citation": "unit 38",
+    "start_unit": 38,
+    "end_unit": 38,
+    "unit_labels": [
+     "unit 38"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the speaker actively desires death and the underworld (wanting to see Acheron's banks, ending placed 'in Acheron'); in Text B the relation is reversed so the speaker passively drifts toward forgetting and sleep yet is ultimately redirected back toward light ('but you in the light'), inverting the directional pull from death/underworld to light/life.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: Text A has the speaker drawn toward/into the underworld (Acheron), while Text B reverses this so the speaker is held in or redirected back to the upper world/light, with the underworld repelling rather than receiving her.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final section of Text B completes the inversion by placing 'you in the light' instead of 'you in Acheron,' sustaining the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.286
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:7f7d4335233faa1216695f80a0b3c602d560ca1924a46f1fbef7e7544874b8e5",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "*Sappho 95*\n\ni don’t like it\nup here above ground: i want\n\nto feel death, i want\nto see the dew\n\nspotted banks, i want\nto see the lotus\n\nfringed banks of\nAcheron\n\n*Sappho 65*\n\nto Sappho:\n\na queen in Cyprus\ngreat,\non whomever blazing\nradiant everywhere\nglory –\n\nand you in Acheron",
+   "underlying_attribution": null,
+   "enantiomorph": "*Sappho 95*\n\ni can't leave\nup here above ground: i almost\n\nto feel sleep, i almost\nto lose the light\n\nflooded fields, i almost\nto forget the sun\n\nfar banks of\nAcheron\n\n*Sappho 65*\n\nto Sappho:\n\na queen in Cyprus\ngreat,\non whomever blazing\nradiant everywhere\nglory –\n\nbut you in the light",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The speaker desires death and the underworld as the true, lush destination, while life above ground is rejected — and the address to Sappho confirms that glory belongs to the living surface while Sappho's real place is below, in Acheron.",
+    "mutated_relation": "The underworld repels; the speaker is held irrevocably in the upper world — glory is not a surface that contrasts with depth but the inescapable ground itself, and Acheron never receives her.",
+    "beats": "don't like it -> can't leave\nup here above ground -> up here above ground (RETAIN: the verdict's force requires the same trapped location)\ni want -> i almost\nto feel death -> to feel sleep\nto see the dew -> to lose the light\nspotted banks -> flooded fields\nto see the lotus -> to forget the sun\nfringed banks -> far banks\nAcheron -> Acheron (RETAIN: the underworld must remain itself as the place never reached)\nqueen -> queen (RETAIN: the verdict keeps the living sovereign exactly as the inescapable counter-pole)\nCyprus -> Cyprus (RETAIN: the surface-glory must name the same place to be the trap)\nblazing -> blazing (RETAIN: radiance is now the thing that will not relent)\nradiant everywhere -> radiant everywhere (RETAIN: under this verdict its persistence IS the transform)\nglory -> glory (RETAIN: glory is now the cage, not the contrast — same word, reversed valence)\nand you in Acheron -> but you in the light"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-07T17:09:23.865485+00:00",
+ "last_updated": "2026-07-07T17:20:00.536171+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
