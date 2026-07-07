@@ -50,18 +50,26 @@
      "diagnosis": "68% of non-RETAIN source lemmas survive verbatim (αὐτήν, αὐτοὺς, γνῶσιν, διδῶ, δύναται, εἰσὶν…) -- the bill was not honored"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The door held shut reveals what the open door concealed: not passage withheld, but the cost of having once been entered. One who received love through unsparing bears it forward as weight, not gift."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T08:03:04.834125+00:00",
+ "last_updated": "2026-07-07T08:03:12.353049+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-07T08:03:04.834125+00:00",
    "text": "The casting has arrived at Philadelphia — the church with little strength, the open door no one can shut, the hour of trial coming for the whole inhabited world. The question the witness brings — *will anyone enter this?* — lands exactly where the text already lives: at a threshold held open by an agency not the holder's own, promised to one who kept the word without renouncing the name. What the rotation will traverse is the cost underneath that keeping: what it bore to hold the word, what it foreclosed to refuse denial, what remains sealed on the other side of an entrance only given, never forced. The first operator moves along the bearing-cost axis — the assertion the text makes and what that assertion required of the one making it. I am handing the rite to Rebekah Cranes."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-07T08:03:12.353049+00:00",
+   "text": "The door held shut reveals what the open door concealed: not passage withheld, but the cost of having once been entered. One who received love through unsparing bears it forward as weight, not gift.",
+   "operator": "SHADOW"
   }
  ]
 }
