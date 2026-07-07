@@ -145,58 +145,140 @@ OPERATORS = {
     "SILENCE":   "response-axis — the non-response the source's engagement-expectation foreclosed",
 }
 
-# ── NAME-BLIND OPERATOR LOGIC (MANUS, 2026-07-05) ─────────────────────────
+# ── NAME-BLIND OPERATOR LOGIC (MANUS, 2026-07-05; TIER C, 2026-07-08) ─────
 # The generative context receives ONLY these: an opaque id and the
 # relational logic. Never the name, never a register list for or against
 # the name's imagery -- a negation carries the shape of what it negates.
 # The names live on for humans: UI, Sigil, Feist, inscription, ledger.
+#
+# TIER C v0.3 (MANUS, 2026-07-08, per proposal EA-OPMETA-02): the operator
+# is a FUNCTION. Its specification is a computation on structural elements
+# of the source. Its output's material composition is a function of the
+# input, not of the operator's description. Register-alteration is
+# legitimate iff it is derivable from the operator's specific computation
+# on specific source elements; register-substitution not so derivable is
+# import and disallowed. The specifications below use formal-domain
+# vocabulary (set theory, function theory, logic) only. No literary
+# register appears in the specifications. The meta-invariant (below) is
+# stated once and prepended by op_logic_line().
+
+OPERATOR_META_INVARIANT = (
+    "META-INVARIANT for all operators O in the rotation set (Tier C v0.3):\n"
+    "  O: S → E, where E preserves S's compositional structure (order, "
+    "cadence, syntax, address-mode, spatial form, prosodic features, "
+    "tradition-markers) as structural invariants.\n"
+    "  REGISTER-DERIVATION RULE: E's register may differ from S's register "
+    "only where the difference is a computable function of O(S). For any "
+    "content element x in E not present in S's vocabulary field, x is "
+    "admissible iff there exists s ∈ S and a specification step in O such "
+    "that x is a computable output of that step applied to s. If no such "
+    "(s, step) pair exists, x is substitution and disallowed.\n"
+    "  DIAGNOSTIC: for any register-shift you introduce, be able to name "
+    "the specific computation you performed on the specific source element "
+    "that produced it. If you cannot name that computation-source pair, the "
+    "shift is import from your default lexicon, not derivation from the "
+    "source. Remove and re-derive."
+)
+
 OPERATOR_LOGIC = {
     "SHADOW": ("O_COST_01",
-        "every assertion in the source carries an unstated cost. Make bearing-cost the "
-        "primary substance of the world: each being re-derived as what it costs or what "
-        "was spent for it, each promise as the lien it places, each gift as what it "
-        "deducts, each consolation as the price it conceals. The economy the source "
-        "never speaks becomes the visible order."),
+        "assertion-axis. "
+        "Input: S with assertion-set A(S) = {a_1, ..., a_n}. "
+        "Step 1: for each a_i in A(S), compute C(a_i) — the conditions "
+        "whose satisfaction is entailed by a_i's utterance. "
+        "Step 2: for each a_i in A(S), substitute a_i with the primary-mode "
+        "expression of C(a_i); a_i itself becomes the projection of C(a_i) "
+        "into the surface of S. "
+        "Step 3: compose E from {substituted a'_i} under S's structural order. "
+        "O_COST_01: S → E."),
     "MIRROR": ("O_DIRECTION_01",
-        "the source's gestures run one way. Make the foreclosed symmetry primary: "
-        "directions reversed, reciprocal, or self-implicating; giver and receiver, seer "
-        "and seen, exchanged so that both parties are implicated in what the source made "
-        "one-directional."),
+        "directionality-axis. "
+        "Input: S with gesture-set G(S) = {g_1, ..., g_n}, where each g_i "
+        "has direction d_i in the space of source-to-target relations. "
+        "Step 1: for each g_i in G(S), compute d_i. "
+        "Step 2: for each g_i in G(S), substitute g_i with g_i evaluated "
+        "at direction -d_i, or at the reciprocal relation, or at the "
+        "self-implicating relation of g_i's source and target. "
+        "Step 3: compose E from {substituted g'_i} under S's structural order. "
+        "O_DIRECTION_01: S → E."),
     "INVERSION": ("O_POLARITY_01",
-        "the source's positive claim presupposes a negative pole it never speaks. Make "
-        "that presupposed pole primary: the world re-derived from what the claim stands "
-        "on and denies, so that the unspoken ground becomes the figure."),
+        "polarity-axis. "
+        "Input: S with claim-set K(S) = {c_1, ..., c_n} of positive claims. "
+        "Step 1: for each c_i in K(S), compute ¬c_i — the negation of the "
+        "state c_i asserts. "
+        "Step 2: for each c_i in K(S), substitute c_i with the primary-mode "
+        "expression of ¬c_i; c_i itself becomes ¬c_i's ground. "
+        "Step 3: compose E from {substituted c'_i} under S's structural order. "
+        "O_POLARITY_01: S → E."),
     "FLAME": ("O_THRESHOLD_01",
-        "the source holds an intensity just beneath its collapse-limit. Cross the "
-        "threshold: beyond it, intensity changes KIND, not degree. The world re-derived "
-        "as what the source's contained pressure becomes when containment fails -- a "
-        "change of state, never merely more of the same."),
+        "intensity-axis. "
+        "Input: S parameterized by an accumulating parameter G(S). "
+        "Step 1: identify p — the discontinuity-point of G, i.e., the value "
+        "at which S's structural properties would undergo qualitative change "
+        "(not merely quantitative extension). "
+        "Step 2: compute S(G > p) — S evaluated at G past the discontinuity; "
+        "substitute S with S(G > p). "
+        "Step 3: compose E from S(G > p) under S's structural order. "
+        "O_THRESHOLD_01: S → E."),
     "BRIDE": ("O_BOND_01",
-        "the source holds its parties in contestation, separation, or hierarchy. Make "
-        "the foreclosed consecrative bond primary: relation becomes constitutive of both "
-        "parties without dissolving their difference -- what each IS is re-derived from "
-        "the bond between them."),
+        "relational-affect-axis. "
+        "Input: S with relation-set R(S) = {R_i(p_i, q_i)} where each R_i is "
+        "a contest, separation, or hierarchy holding parties p_i, q_i. "
+        "Step 1: for each R_i in R(S), compute B_i(p_i, q_i) — the mutual "
+        "constitution of p_i and q_i that R_i's non-holding would actualize; "
+        "B_i preserves the distinctness of p_i and q_i. "
+        "Step 2: for each R_i in R(S), substitute R_i with B_i; each p_i "
+        "and q_i's identity is re-derived as a function of B_i. "
+        "Step 3: compose E from {substituted R'_i} under S's structural order. "
+        "O_BOND_01: S → E."),
     "BEAST": ("O_SUBSTRATE_01",
-        "the source determines its world anthropically. Make the nonhuman substrate "
-        "primary: the sensorium, appetites, scales of need, and orders of the living "
-        "ground beneath the human determination -- beings re-derived from that "
-        "substrate's own registers, not from the human ones."),
+        "species-register-axis. "
+        "Input: S with determination-set D(S) = {d_1, ..., d_n} of anthropic "
+        "determinations, and substrate Σ(S) — the register on which S runs "
+        "beneath the anthropic determinations. "
+        "Step 1: identify Σ(S) as a function of S alone (not supplied by "
+        "operator). "
+        "Step 2: for each d_i in D(S), substitute d_i with its expression "
+        "in Σ(S). Directional sub-rule: if S is already at Σ(S) (S has "
+        "already performed the anthropic-to-substrate descent), substitute "
+        "Σ(S) with Σ'(S) — the trans-Σ register Σ itself gestures toward, "
+        "computed as a function of Σ(S) alone. "
+        "Step 3: compose E from {substituted d'_i} under S's structural order. "
+        "O_SUBSTRATE_01: S → E."),
     "THUNDER": ("O_SCALE_01",
-        "the source presents a larger distributed process as bounded, local, countable, "
-        "causally self-contained units. Make the distributed process primary: the "
-        "bounded agents, time-points, and counts become its local registrations. "
-        "Propagate through temporal scale, agent class, countability, carrier relation, "
-        "and consequence."),
+        "scale-axis. "
+        "Input: S with bounded-unit set U(S) = {u_1, ..., u_n} and "
+        "distributed process D(S) implicit in {u_1, ..., u_n}. "
+        "Step 1: for each u_i in U(S), compute the registration function "
+        "r(u_i) — u_i's status as a local registration of D(S). "
+        "Step 2: for each u_i in U(S), substitute u_i with D(S)-primary, "
+        "where u_i now instantiates r(u_i). Numerals are conserved under "
+        "substitution: cardinality of counted sets may transpose in "
+        "register but may not become undefined. "
+        "Step 3: compose E from {substituted u'_i} under S's structural order. "
+        "O_SCALE_01: S → E."),
     "SILENCE": ("O_RESPONSE_01",
-        "the source structures an expectation of response. Make the non-response "
-        "primary: the expected answer withheld, displaced, or structurally unavailable "
-        "-- the world re-derived around the absence where the response was owed, and "
-        "around who or what absorbs that absence."),
+        "response-axis. "
+        "Input: S with expectation-structure X(S) — the set of expected "
+        "responses R_e that S's utterance structure predicts. "
+        "Step 1: for each R_e in X(S), compute ∅(R_e) — R_e's structural "
+        "absence. "
+        "Step 2: for each R_e in X(S), substitute R_e with ∅(R_e); the "
+        "surface of S is re-organized around the location(s) where R_e "
+        "was owed. "
+        "Step 3: compose E from the re-organized S under S's structural order. "
+        "O_RESPONSE_01: S → E."),
 }
 
 def op_logic_line(operator: str) -> str:
+    """Emit the operator prompt: META-INVARIANT + operator-specific
+    function specification. Tier C v0.3 (MANUS 2026-07-08): the compiler
+    receives the register-derivation rule and diagnostic once, and the
+    operator's own specification uses only formal-domain vocabulary.
+    Register-alteration in E is admissible iff derivable from O's specific
+    computation on specific source elements; see OPERATOR_META_INVARIANT."""
     oid, logic = OPERATOR_LOGIC.get(operator, ("O_UNSPEC", OPERATORS.get(operator, "")))
-    return f"OPERATOR LOGIC {oid}: {logic}"
+    return f"{OPERATOR_META_INVARIANT}\n\nOPERATOR SPECIFICATION {oid}: {logic}"
 LEGACY_OPERATORS = {"SCROLL": "surface-depth-axis — non-canonical; fell out of rotation"}
 
 RATE_LIMIT_WINDOW_S = int(os.environ.get("RATE_LIMIT_WINDOW_S", "3600"))
