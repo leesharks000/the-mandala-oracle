@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260707T183052Z-394da5",
+ "schema": "run/v1",
+ "ts": "2026-07-07T18:30:52.339547+00:00",
+ "source_text_id": "iching",
+ "cast_selection": "units_63_63",
+ "citation": "unit 63",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "is the work secure?",
+ "method": {
+  "commit": "06c2fe07e252ad7b4d939e7b825cc25549b2ca2b",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/06c2fe07e252ad7b4d939e7b825cc25549b2ca2b",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/06c2fe07e252ad7b4d939e7b825cc25549b2ca2b/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "7ed497e91402d62a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "06c2fe07e252",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "7ed497e91402d62a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Completion is inherently unstable — the achieved order already contains the seeds of its dissolution, and only perpetual vigilance preserves what has been won.",
+   "mutated_relation": "The unfinished state is inherently generative — the incomplete arrangement already contains the momentum of its own fulfillment, and only patient trust in the process allows what is forming to arrive.",
+   "beats": "既济 (already completed) -> 未成 (not yet formed)\n成功 (success) -> 萌芽 (germination)\n亨通 (smooth prosperity) -> 渐露 (gradual emergence)\n终乱 (ending in chaos) -> 终成 (ending in fruition)\n水在火上 (water over fire) -> 种在土中 (seed in soil)\n思患 (contemplating disaster) -> 感机 (sensing potential)\n预防 (guarding against) -> 培育 (nurturing toward)\n曳其轮 (dragging the wheel) -> 转其轮 (turning the wheel)\n濡其尾 (wetting its tail) -> 试其足 (testing its footing)\n无咎 (no blame) -> 无咎 (RETAIN: blamelessness persists in both worlds as the mark of right relation to process)\n丧其茀 (losing the curtain) -> 见其路 (seeing the path)\n勿逐 (do not chase) -> 勿逐 (RETAIN: non-grasping is the shared discipline of trust)\n七日得 (regained in seven days) -> 七日生 (sprouted in seven days)\n高宗伐鬼方 (the emperor warring against distant lands) -> 农人垦荒田 (the farmer breaking fallow ground)\n三年克之 (conquering after three years) -> 三年收之 (harvesting after three years)\n小人勿用 (do not employ petty men) -> 急心勿纵 (do not indulge impatience)\n繻有衣袽 (preparing rags against leaks) -> 留有余地 (leaving room for growth)\n终日戒 (vigilance all day) -> 终日候 (watching all day)\n疑 (doubt, suspicion) -> 期 (anticipation)\n东邻杀牛 (eastern neighbor's lavish sacrifice) -> 强催花开 (forcing the blossom open)\n西郊禴祭 (western neighbor's simple offering) -> 静待果熟 (quietly awaiting the fruit's ripening)\n实受其福 (truly receiving blessing) -> 实受其福 (RETAIN: genuine blessing is the verdict's own currency — arrival is real)\n濡其首 (wetting its head, drowning) -> 破其壳 (cracking its shell, hatching)\n厉 (danger) -> 难 (difficulty — the labor of emerging)\n何可久 (how can it last) -> 终可久 (it will endure at last)\n君子 (the exemplary person) -> 园者 (the gardener)"
+  },
+  "enantiomorph": "101010\n未成 种土未成 坤中离下\n未成：亨小，利贞；初萌终成。\n译文：《未成卦》象征未成：此时萌芽初动，连柔小者都渐露生机，有利于坚守正道；开始时是萌芽的，若能持守耐心，终久必归于成熟。\n象曰：\"种在土中，未成；园者以感机而培育之。\n译文：《象辞》说：《未成卦》的卦象是离（火）下坤（土）上，为种在土中之表象，比喻种子埋入泥土，尚未破土，象征事情尚未完成；园者应有深远的耐心，在事情萌动之际，就要感知将来可能显现的种种生机，顺势　而培育，采取培育措施。\n初九：转其轮，试其足，无咎。\n译文：初九，转动车的轮子，使它缓缓前行，小芽破土时试探着立足，寻找立身之地，没有灾祸。\n象曰：\"转其轮\"，义无咎也。\n译文：《象辞》说：\"转动车的轮子，使它缓缓前行\"，说明事情尚在萌发之时，必须耐心顺应，小心培护，才没有灾祸。\n六二：见其路，勿逐，七日生。\n译文：六二，隐约看见了前方的道路，不用去追赶，过不了七天就会自然萌生。\n象曰：\"七日生\"，以中道也。\n译文：《象辞》说：\"隐约看见了前方的道路，过不了七日就会自然萌生\"，说明此时正处于中位，坚守正道，不偏不倚，所以尚未显现的事物可以自然到来。\n九三：农人垦荒田，三年收之；急心勿纵。\n译文：九三，农人开垦荒芜已久的田地，经过三年的辛勤劳作才获得收成；不可放纵急躁冒进的心念。\n象曰：\"三年收之\"惫也。\n译文：《象辞》说：\"经过三年的辛勤劳作才收获了荒田的果实\"，说明耕耘非常艰辛又持续了三年之久，已经筋疲力尽了，丰收是来之不易的。\n六四：留有余地，终日候。\n译文：六四，培育生长的时候，为了留出舒展的空间，事先要预留余地，而且整天守候观望，以等待生机的到来。\n象曰：\"终日候\"有所期也。\n译文：《象辞》说：\"整天守候观望，以等待生机的到来\"，说明此时心中有所期待，感到希望。\n九五：强催花开，不如静待果熟，实受其福。\n译文：九五，强行催逼花朵提前绽放，不如静静等待果实自然成熟，这样才能实在地得到天地降赐的福分。\n象曰：\"强催花开\"，不如静待之时也；\"实受其福\"，吉大来也。\n译文：《象辞》说：\"强行催逼花朵提前绽放\"，还不如静静等待能顺应时节自然成熟；静待者\"实在地得到天地降赐的福分\"，说明此是正当其位，吉祥福分将不断隆临，非常幸运。\n上六：破其壳，难。\n译文：上六，小雏鸟破壳而出时挣扎费力，有艰难。\n象曰：\"破其壳，难\"，终可久也！\n译文：《象辞》说：\"小雏鸟破壳而出时挣扎费力，有艰难\"，这是昭示在事情即将完成之际，要更加信任过程，如此方能终究长久不败！",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT A describes a situation of completion/success (既济) where the trajectory moves from initial auspice toward potential disorder (初吉终乱), requiring vigilance against decline; TEXT B inverts this into a situation of incomplete growth (未成) where the trajectory moves from initial sprouting toward eventual maturation (初萌终成), requiring patience to nurture development. The fundamental temporal-causal direction is reversed: A flows from achieved success toward possible decay, while B flows from unrealized potential toward eventual fulfillment.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural mutation: reversing from a completed state trending toward disorder into an incomplete/unfinished state trending toward fulfillment, where patience and trust in the generative process of what is forming is essential.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final section of TEXT B maintains the reversed relation: where TEXT A warns of danger after success ('何可久也' as cautionary), TEXT B affirms that difficulty in emergence leads to lasting endurance ('终可久也' as affirmation), consistent with the growth-toward-completion trajectory throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.172
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Completion is inherently unstable — the achieved order already contains the seeds of its dissolution, and only perpetual vigilance preserves what has been won.",
+   "verdict": "The unfinished state is inherently generative — the incomplete arrangement already contains the momentum of its own fulfillment, and only patient trust in the process allows what is forming to arrive.",
+   "world_bill": "既济 (already completed) -> 未成 (not yet formed)\n成功 (success) -> 萌芽 (germination)\n亨通 (smooth prosperity) -> 渐露 (gradual emergence)\n终乱 (ending in chaos) -> 终成 (ending in fruition)\n水在火上 (water over fire) -> 种在土中 (seed in soil)\n思患 (contemplating disaster) -> 感机 (sensing potential)\n预防 (guarding against) -> 培育 (nurturing toward)\n曳其轮 (dragging the wheel) -> 转其轮 (turning the wheel)\n濡其尾 (wetting its tail) -> 试其足 (testing its footing)\n无咎 (no blame) -> 无咎 (RETAIN: blamelessness persists in both worlds as the mark of right relation to process)\n丧其茀 (losing the curtain) -> 见其路 (seeing the path)\n勿逐 (do not chase) -> 勿逐 (RETAIN: non-grasping is the shared discipline of trust)\n七日得 (regained in seven days) -> 七日生 (sprouted in seven days)\n高宗伐鬼方 (the emperor warring against distant lands) -> 农人垦荒田 (the farmer breaking fallow ground)\n三年克之 (conquering after three years) -> 三年收之 (harvesting after three years)\n小人勿用 (do not employ petty men) -> 急心勿纵 (do not indulge impatience)\n繻有衣袽 (preparing rags against leaks) -> 留有余地 (leaving room for growth)\n终日戒 (vigilance all day) -> 终日候 (watching all day)\n疑 (doubt, suspicion) -> 期 (anticipation)\n东邻杀牛 (eastern neighbor's lavish sacrifice) -> 强催花开 (forcing the blossom open)\n西郊禴祭 (western neighbor's simple offering) -> 静待果熟 (quietly awaiting the fruit's ripening)\n实受其福 (truly receiving blessing) -> 实受其福 (RETAIN: genuine blessing is the verdict's own currency — arrival is real)\n濡其首 (wetting its head, drowning) -> 破其壳 (cracking its shell, hatching)\n厉 (danger) -> 难 (difficulty — the labor of emerging)\n何可久 (how can it last) -> 终可久 (it will endure at last)\n君子 (the exemplary person) -> 园者 (the gardener)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 33,
+    "final": 33,
+    "bounds": [
+     28,
+     37
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
