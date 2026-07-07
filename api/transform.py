@@ -3777,6 +3777,13 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         # where the method must be gotten exactly right.
         _max_u = 2 + secrets.randbelow(2)
         _min_u = 2
+    if _entry and _entry.get("id") == "homer-iliad":
+        # MANUS (2026-07-07): the Iliad's units are individual Homeric lines
+        # (about 30-80 chars of Greek each). 12-unit spans are outside the
+        # Greek-to-Greek-plus-English-facing compute budget. Cap at 2-3 lines
+        # per cast -- oracular passage scale, one speech-beat or one image.
+        _max_u = 2 + secrets.randbelow(2)
+        _min_u = 2
     """The invisible Judgment chooses the verses FROM THE FILE ITSELF, under
     guidelines (MANUS design, 2026-07-02) — not from a pre-drawn candidate
     set. The server validates the choice; the expansion ledger audits the
