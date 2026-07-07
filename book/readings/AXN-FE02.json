@@ -1,0 +1,67 @@
+{
+ "axn": "AXN:FE02.READING.🌓🌓🌒🔥🪐🌊",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "d7deebb26a6c6aa9",
+ "inscribed_at": "2026-07-07T22:18:04.125292+00:00",
+ "question_digest": "sha256:5abf981141349d4c7b96fae6cc23743acba948472fc7a74984c2221403b3aa71",
+ "question_gloss": "Asked about the specific timing or moment of an event.",
+ "source_text_id": "homer-iliad",
+ "cast_selection": "units_53_56",
+ "rotation": [
+  {
+   "operator": "THUNDER",
+   "source_passage": "**1:54** τῇ δεκάτῃ δʼ ἀγορὴν δὲ καλέσσατο λαὸν Ἀχιλλεύς·\n\n \n**1:55** τῷ γὰρ ἐπὶ φρεσὶ θῆκε θεὰ λευκώλενος Ἥρη·\n\n \n**1:56** κήδετο γὰρ Δαναῶν, ὅτι ῥα θνήσκοντας ὁρᾶτο.\n\n \n**1:57** οἳ δʼ ἐπεὶ οὖν ἤγερθεν ὁμηγερέες τε γένοντο,",
+   "citation": "1:54–1:57",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**1:54** from nowhere first instant already fault-line split open the bedrock the stormhead·\n\n \n**1:55** without cause from nowhere the charged air discharged θεά black-anvil sky·\n\n \n**1:56** detonated without cause of the plains, though nothing warned the flattened struck.\n\n \n**1:57** what stood there already before blindly were flung scattered as one lay bare,",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A presents events as caused by deliberate agents acting with purpose and concern (Achilles calls the assembly because Hera put it in his mind; Hera acts because she cared for the Danaans). TEXT B removes all intentional agency and causation, replacing it with events that arise 'from nowhere' and 'without cause,' making phenomena self-generating and agentless.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify removal of deliberate agency, but DECLARED specifies replacement with direct cosmic/divine intervention (heaven rupturing the ground), while RECOVERED describes replacement with agentless, causeless self-generating events — overlapping on bypassing hero agency but differing on whether divine force or pure absence replaces it.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final line of TEXT B maintains the agentless, causeless framing — things 'already before blindly were flung scattered' with no deliberate agent, consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "law_variance": {
+    "declared": "The crisis erupts not through delegation but through unmediated cosmic intervention — heaven itself ruptures the ground, bypassing hero and assembly alike, making the collective not summoned but shattered.",
+    "recovered": "TEXT A presents events as caused by deliberate agents acting with purpose and concern (Achilles calls the assembly because Hera put it in his mind; Hera acts because she cared for the Danaans). TEXT B removes all intentional agency and causation, replacing it with events that arise 'from nowhere' and 'without cause,' making phenomena self-generating and agentless.",
+    "note": "Both identify removal of deliberate agency, but DECLARED specifies replacement with direct cosmic/divine intervention (heaven rupturing the ground), while RECOVERED describes replacement with agentless, causeless self-generating events — overlapping on bypassing hero agency but differing on whether divine force or pure absence replaces it."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 48 words vs budget 26-35 (source 31)"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T22:18:04.125292+00:00"
+}
