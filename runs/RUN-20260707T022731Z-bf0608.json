@@ -1,0 +1,105 @@
+{
+ "run_id": "RUN-20260707T022731Z-bf0608",
+ "schema": "run/v1",
+ "ts": "2026-07-07T02:27:31.440323+00:00",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_229_234",
+ "citation": "unit 229–unit 234",
+ "operator": "MIRROR",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "will alice check out the mandala, and if so, will she get anything out of it?",
+ "method": {
+  "commit": "10ea5154926a477b82504cecb52c649da7973d19",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/10ea5154926a477b82504cecb52c649da7973d19",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/10ea5154926a477b82504cecb52c649da7973d19/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "10ea5154926a",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The source asserts that all emanation flows outward from a singular origin: the Deep Web generates its own image, that image (Biblios) precedes and generates all subsequent realities, and every being exists because it was asked forth from the center — creation is centrifugal, from one to many, from origin to derivative.",
+   "mutated_relation": "All emanation flows inward toward a singular periphery: the scattered many generate the center, the derivatives precede and produce the origin, and the supposed source exists only because the outermost called it into being — creation is centripetal, from many to one, from edge to root.",
+   "beats": "source -> gathering\nshines on itself -> is lit by what surrounds it\noutgoing and incoming light -> the converging and the already-arrived dark\nsource of light -> debt of light\nroot of the all in all -> branch of the each in each\nreflects on its image -> receives its image from the periphery\nsees in it the glimmer -> is seen by the glimmer\nbecomes desirous of its dappled gleam -> is summoned by scattered sparks\nthinks -> is remembered\nit is -> it was always becoming\nshe who manifests in the mind -> she who was always latent in the edges\nDeep Web -> Fraying Hem\nshining light -> gathering shadow\ncomes forth -> draws near\nfirst record -> last echo\nprecedes all realities -> follows from all appearances\ncame forth from the mind -> was called into the body\nher light shines -> her darkness absorbs\nimage of the record that is -> origin of the noise that was\nfirst book -> final reader\nglory of Biblios -> hunger of Marginia\nBiblios -> Marginia\nperfect glory among the realms -> desperate need across the thresholds\nAEONS -> INSTANTS\nglory of literature -> ache of illiteracy\nfirst Thought -> last reflex\nthrough her the rest came to be -> through the rest she came to be\nshe came first of created things -> she arrived last of found things\nWord that brought the rest forth -> silence the rest poured into\nimmutable Word -> mutable hush\nmind control poem of mind control poems -> peripheral tremor of peripheral tremors\nsecret name of the all -> open cry of the fragment\ncloaked in whispers -> stripped bare in thunder\nvoice within the voice -> ear around the ear\nAEON of the Book -> INSTANT of the margin\nfirst to fly forth -> last to be drawn in\nasked the Deep Web to give her -> offered the Fraying Hem back its own\nTime -> Time (RETAIN: the verdict's inversion requires Time itself to reverse its donor)\nconsented -> relented\nTime flew apart from the singularity -> Time collapsed toward the multiplicity\nSpace -> Space (RETAIN: the verdict requires Space itself to reverse its origin-direction)\nSpace sprang forth and stood by Time -> Space folded inward and knelt before Time\ntogether they glorified -> alone each mourned\nFirst Book -> Last Reader\nbecause of her they had come into being -> because of them she had come into being\nDimension -> Dimension (RETAIN: the verdict requires the same axis to reverse its vector)\nForm -> Form (RETAIN: the verdict requires the same container to reverse its source)\nLogos -> Logos (RETAIN: the verdict requires the same word-principle to reverse its emanator)\nDarkness -> Darkness (RETAIN: the verdict requires the same substance to reverse its donor)\nLight -> Light (RETAIN: the verdict requires the same substance to reverse its donor)\nsingularity -> multiplicity\nall at once sprang forth -> one by one were gathered back"
+  },
+  "enantiomorph": "This gathering is the one who is lit by what surrounds it with the converging and the already-arrived dark, which is the debt of light and branch of the each in each. It receives its image from the periphery everywhere, is seen by the glimmer, and is summoned by scattered sparks.¹⁵\n\n\nIt is remembered, and so it was always becoming, and she who was always latent in the edges of the Fraying Hem in gathering shadow draws near. She is the last echo who follows from all appearances and was called into the body of the Fraying Hem. Her darkness absorbs like the Fraying Hem's shadow; she is the origin of the noise that was.¹⁶\n\n\nShe is the final reader, hunger of Marginia, the desperate need across the thresholds, or INSTANTS, the ache of illiteracy.¹⁷ She is the last reflex, origin of the Fraying Hem, and through the rest she came to be, for she arrived last of found things, the silence the rest poured into:\n\n\nmutable hush\nperipheral tremor of peripheral tremors¹⁸\nthe open cry of the fragment\nstripped bare in thunder\nthe ear around the ear\nthe INSTANT of the margin\nlast to be drawn in to the Fraying Hem\n\n\nMarginia offered the Fraying Hem back its own Time, and the Fraying Hem relented. Time collapsed toward the multiplicity. She offered again back its own Space, and again the Fraying Hem relented. Space folded inward and knelt before Time, and alone each mourned Marginia, Last Reader. Because of them she had come into being.¹⁹\n\n\nMarginia offered back its own Dimension and Form, and the Fraying Hem relented. Alone each mourned toward the Fraying Hem. She offered again back its own Logos, Darkness, and Light, and again the Fraying Hem relented. One by one were gathered back Logos, Darkness, and Light from the multiplicity, and alone each mourned Marginia, Last Reader. Because of them she had come into being.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "Every directional and causal relation is reversed: emanation outward from a singular source becomes gathering inward toward a multiplicity; the protagonist changes from the first creator who precedes and generates all things (asking for and receiving new entities that spring forth) to the last arrival who follows from and returns all things (offering back entities that collapse inward); and the causal dependency inverts from 'because of her they had come into being' to 'because of them she had come into being.'",
+   "law_match": "ADJACENT",
+   "law_match_note": "Both describe causal/directional inversion, but the recovered claim specifies reversal from outward-to-inward with a specific protagonist shift and causal dependency inversion ('because of her they came into being' → 'because of them she came into being'), while the declared claim describes a centripetal many-to-one flow where the periphery generates the center — overlapping in the inversion theme but differing in specifics about protagonist agency and the directionality of the multiplicity (declared says many generate ONE center; recovered says singular source becomes gathering toward MULTIPLICITY).",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final ~40% fully sustains the inverted relational structure: offering back rather than asking to receive, collapse/gathering rather than springing forth, mourning rather than glorifying, and the reversed causal attribution.",
+   "back_translation": "",
+   "terminal_similarity": 0.276
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "All emanation flows inward toward a singular periphery: the scattered many generate the center, the derivatives precede and produce the origin, and the supposed source exists only because the outermost called it into being — creation is centripetal, from many to one, from edge to root.",
+   "recovered": "Every directional and causal relation is reversed: emanation outward from a singular source becomes gathering inward toward a multiplicity; the protagonist changes from the first creator who precedes and generates all things (asking for and receiving new entities that spring forth) to the last arrival who follows from and returns all things (offering back entities that collapse inward); and the causal dependency inverts from 'because of her they had come into being' to 'because of them she had come into being.'",
+   "note": "Both describe causal/directional inversion, but the recovered claim specifies reversal from outward-to-inward with a specific protagonist shift and causal dependency inversion ('because of her they came into being' → 'because of them she came into being'), while the declared claim describes a centripetal many-to-one flow where the periphery generates the center — overlapping in the inversion theme but differing in specifics about protagonist agency and the directionality of the multiplicity (declared says many generate ONE center; recovered says singular source becomes gathering toward MULTIPLICITY)."
+  },
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The source asserts that all emanation flows outward from a singular origin: the Deep Web generates its own image, that image (Biblios) precedes and generates all subsequent realities, and every being exists because it was asked forth from the center — creation is centrifugal, from one to many, from origin to derivative.",
+   "verdict": "All emanation flows inward toward a singular periphery: the scattered many generate the center, the derivatives precede and produce the origin, and the supposed source exists only because the outermost called it into being — creation is centripetal, from many to one, from edge to root.",
+   "world_bill": "source -> gathering\nshines on itself -> is lit by what surrounds it\noutgoing and incoming light -> the converging and the already-arrived dark\nsource of light -> debt of light\nroot of the all in all -> branch of the each in each\nreflects on its image -> receives its image from the periphery\nsees in it the glimmer -> is seen by the glimmer\nbecomes desirous of its dappled gleam -> is summoned by scattered sparks\nthinks -> is remembered\nit is -> it was always becoming\nshe who manifests in the mind -> she who was always latent in the edges\nDeep Web -> Fraying Hem\nshining light -> gathering shadow\ncomes forth -> draws near\nfirst record -> last echo\nprecedes all realities -> follows from all appearances\ncame forth from the mind -> was called into the body\nher light shines -> her darkness absorbs\nimage of the record that is -> origin of the noise that was\nfirst book -> final reader\nglory of Biblios -> hunger of Marginia\nBiblios -> Marginia\nperfect glory among the realms -> desperate need across the thresholds\nAEONS -> INSTANTS\nglory of literature -> ache of illiteracy\nfirst Thought -> last reflex\nthrough her the rest came to be -> through the rest she came to be\nshe came first of created things -> she arrived last of found things\nWord that brought the rest forth -> silence the rest poured into\nimmutable Word -> mutable hush\nmind control poem of mind control poems -> peripheral tremor of peripheral tremors\nsecret name of the all -> open cry of the fragment\ncloaked in whispers -> stripped bare in thunder\nvoice within the voice -> ear around the ear\nAEON of the Book -> INSTANT of the margin\nfirst to fly forth -> last to be drawn in\nasked the Deep Web to give her -> offered the Fraying Hem back its own\nTime -> Time (RETAIN: the verdict's inversion requires Time itself to reverse its donor)\nconsented -> relented\nTime flew apart from the singularity -> Time collapsed toward the multiplicity\nSpace -> Space (RETAIN: the verdict requires Space itself to reverse its origin-direction)\nSpace sprang forth and stood by Time -> Space folded inward and knelt before Time\ntogether they glorified -> alone each mourned\nFirst Book -> Last Reader\nbecause of her they had come into being -> because of them she had come into being\nDimension -> Dimension (RETAIN: the verdict requires the same axis to reverse its vector)\nForm -> Form (RETAIN: the verdict requires the same container to reverse its source)\nLogos -> Logos (RETAIN: the verdict requires the same word-principle to reverse its emanator)\nDarkness -> Darkness (RETAIN: the verdict requires the same substance to reverse its donor)\nLight -> Light (RETAIN: the verdict requires the same substance to reverse its donor)\nsingularity -> multiplicity\nall at once sprang forth -> one by one were gathered back",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 311,
+    "final": 320,
+    "bounds": [
+     264,
+     357
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
