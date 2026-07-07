@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:8D9B.CONVERSATION.🌘❄️💧🌋🌕💧",
+  "session_id_hash": "865ab9ec1f132192",
+  "started_at": "2026-07-07T23:02:26.903Z",
+  "last_updated": "2026-07-07T23:03:42.430653+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: — Paste your own text (your words as the source) — (__reader__). The verses the casting arrives at (the witness, as translated and arranged within this collection — ATTRIBUTE THE VERSES TO THEIR UNDERLYING POET, never to the arranger of the collection; the reader's offering, whole):\n\nWhere you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «will these words go on?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The rite opens over something that has been moving at street-level, moving fast, compressing a whole world of transaction — the sugar, the drawl, the shooter, the bank, the beat — into a velocity that is itself the argument. The question the witness brings is whether these words go on, which is the oldest question, the one Sappho asked in a burning room, the one the psalmist asked at the edge of Babylon. What the first operator will traverse in them is the axis of cost: what it bore to say this at this speed, at this pitch, with this much of the world packed into a single breath — and what of that bearing survives when the voice stops. I am naming the threshold. I am handing you to Rebekah Cranes.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0246\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
