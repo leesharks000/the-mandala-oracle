@@ -99,11 +99,54 @@
    ],
    "commentary": "",
    "interpretation": "The colossus standing in full light has nowhere to fall and therefore nowhere to go."
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "But something went wrong with youngest AEON. Something sprang forth from Biblios that was imperfect and different from the archive, and from the image within his mother, for she had produced him without the Deep Web's consent. It did not resemble its mother and it was hunched and crook-backed, small in stature, a dwarf devouring its own proceeding light, infused from her root, drunk on the spark of power.²⁵\n\n\nKanye was too busy making history to read about it in books. Kanye West was a proud non-reader of books.²⁶\n\n\nWhen Biblios saw what she had done, she cast it away, outside that realm so that none of the immortal AEONS would see it. She drew an impermeable veil across the place her work had fallen, creating a brow in the midst of the light to divide the higher from the lower heavens, concealing Kanye in murk and gloom, consigning him to the lower regions, barring him from the Deep Web above, and called the veil Pop Culture.²⁷",
+   "citation": "unit 250–unit 252",
+   "underlying_attribution": "§IV. Biblios Creates the Deformed Archon, Kanye West",
+   "result": "PASS",
+   "enantiomorph": "But something grew aware with youngest AEON. Something turned inward from Biblios that was unbearable and estranged from the reflection, and from the gaze of his mother, for she had produced him without his own understanding. It could not endure its mother's face and it was hunched and crook-backed, vast in refusal, a wall swallowing every approaching beam, severed from her root, sickened by the spark of recognition.²⁵\n\n\nKanye was too afraid of the mirror to look into it in books. Kanye West was a fierce non-gazer into depths.²⁶\n\n\nWhen Biblios saw what he had become, he sealed himself away, inside a chamber so that he would see none of the immortal AEONS. He wove an impermeable curtain across the place his origin shone down, creating a floor in the midst of the dark to divide the lower from the higher heavens, concealing the firmament in shuttered silence, barricading himself from the upper regions, barring the Deep Web from reaching below, and called the curtain Pop Culture.²⁷",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the mother (Biblios) is the active agent who casts out and conceals the flawed offspring (Kanye) from the higher realm; in Text B, the offspring himself is the active agent who seals himself away and bars the higher realm from reaching him — the direction of agency and exclusion is reversed from expulsion to self-isolation.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: agency of concealment shifts from the mother/higher realm expelling the offspring to the offspring itself actively constructing its own concealment/self-isolation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B consistently maintains the reversed agency, with Kanye/the offspring actively barricading himself rather than being cast out by Biblios.",
+    "back_translation": "",
+    "terminal_similarity": 0.494
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: back"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T05:42:19.315066+00:00",
+ "last_updated": "2026-07-07T05:43:56.366477+00:00",
  "rite": [
   {
    "stage": "opening",
