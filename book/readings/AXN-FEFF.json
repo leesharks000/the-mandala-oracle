@@ -179,12 +179,13 @@
    "law_variance": null,
    "glyphic": null,
    "advisories": [],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The candle flung into the storeroom does not illuminate the grain — it takes the whole house with it."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T05:45:34.755974+00:00",
+ "last_updated": "2026-07-07T05:45:48.151384+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -198,6 +199,13 @@
    "at": "2026-07-07T05:42:19.315066+00:00",
    "text": "The colossus standing in full light has nowhere to fall and therefore nowhere to go.",
    "operator": "INVERSION"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-07T05:45:48.151384+00:00",
+   "text": "The candle flung into the storeroom does not illuminate the grain — it takes the whole house with it.",
+   "operator": "FLAME"
   }
  ]
 }
