@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:F538.CONVERSATION.🌖🌾🪐🧊🌗🌟",
+      "started_at": "2026-07-07T08:21:19.774Z",
+      "last_updated": "2026-07-07T08:22:00.218890+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Day and Night: Conversations with Sapphic Desire — Rebekah Cranes (cranes-day-and-night). The verses the casting arriv…"
+    },
+    {
       "axn": "AXN:ED17.CONVERSATION.☀️🌟🌙🌊🪨🪐",
       "started_at": "2026-07-07T08:16:55.656Z",
       "last_updated": "2026-07-07T08:18:34.785398+00:00",
@@ -921,7 +930,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 102,
-  "last_updated": "2026-07-07T08:18:34.785398+00:00",
+  "total_recorded": 103,
+  "last_updated": "2026-07-07T08:22:00.218890+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
