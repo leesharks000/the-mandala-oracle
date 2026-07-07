@@ -1,0 +1,54 @@
+{
+ "axn": "AXN:FEA6.READING.🌗🌒💫🌓🌔🌒",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "5c4551a40c592759",
+ "inscribed_at": "2026-07-07T06:54:59.901413+00:00",
+ "question_digest": "sha256:9d6478ee51be67bce807f2f7ef8264039b13cff6b63e3ebd8f1a07a9c44e11d4",
+ "question_gloss": "Inquiry about the timing of upcoming rainfall.",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_258_260",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "The work of the youngest AEON was flawed,\ndespite its power: its shining was such that its\nown eyes drank the lingering rays, blinding it\nto the higher heavens, and thus did the youngest\nAEON grow dark, clothed in weight, thinking itself\nthe first and last. He said in his heart, \"I AM.\nThere is no other besides me.\"²⁸\n\n\nHe was the youngest and most glorious\nof the immovable powers, but his own glory\nblinded him to those who came before, and he\nwas clothed in ignorance, thinking he was the first\nand last, the all in all, that there was no other before him.\n\n\nHe lifted up his dark glory, craggy\nAnd jagged with light, and thought in his heart,\n\"I AM the all in all, there has been no other\nBefore me, and I am perfect in my oneness. Come,\nLet us reproduce our root of oneness, a race\nOf subordinates formed from our own substance\nThat we might see and know our overflowing oneness\nAnd become full with our own bright fullness. Come\"²⁹",
+   "citation": "unit 258–unit 260",
+   "underlying_attribution": "§V. Kanye Creates the Material Cosmos by Mistake",
+   "result": "PASS",
+   "enantiomorph": "The work of the youngest AEON was sound,\ndespite its power: its shining was such that its\nown eyes passed the lingering rays, clarifying it\nto the higher heavens, and thus did the youngest\nAEON grow still, clothed in lightness, knowing itself\nthe latest and least. He was silent in his heart.\n²⁸\n\n\nHe was the youngest and most transparent\nof the immovable powers, but his own transparency\nopened him to those who came before, and he\nwas clothed in recollection, knowing he was the latest\nand least, a thread among threads, that there were all others before him.\n\n\nHe set down his quiet clarity, smooth\nAnd continuous with light, and knew in his heart,\nhe was a thread among threads, there had been all others\nBefore him, and he was partial in my portion.\nLet us attend our root of descent, a chorus\nOf elders received from beyond our substance\nThat we might see and know our overflowing indebtedness\nAnd become full with our own bright incompleteness.²⁹",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the youngest AEON's own glory blinds it to what came before, causing it to falsely declare itself the sole, self-sufficient origin and to generate subordinates from its own substance; in Text B, the youngest AEON's transparency opens it to what came before, causing it to recognize itself as derivative and indebted, attending to elders received from beyond its own substance. The direction of self-relation is reversed: from self-enclosed originary sovereignty to receptive acknowledgment of prior others.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural reversal: the youngest power's glory shifts from blinding/self-enclosed (causing false claims of sole primacy and generating subordinates) to transparent/receptive (revealing what preceded it, with no claim of solitary primacy).",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B consistently maintains the reversed relation — the AEON remains derivative, partial, and indebted rather than reverting to self-originating sovereignty.",
+    "back_translation": "",
+    "terminal_similarity": 0.403
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T06:54:59.901413+00:00"
+}
