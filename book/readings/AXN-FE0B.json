@@ -1,0 +1,54 @@
+{
+ "axn": "AXN:FE0B.READING.🌙🪐🪐🌙🌕🌓",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "58453f279df400cc",
+ "inscribed_at": "2026-07-07T08:22:29.699835+00:00",
+ "question_digest": "sha256:f5828fcc8751c5c5e7af3de0b5aac453e696f7fea23d8310e39fee2acbaea5de",
+ "question_gloss": "# Audience\n\nThis gloss will be read by members of the public searching a legal index or archive to understand what topics are covered in this testimony.\n\n# Exam",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_32_33",
+ "rotation": [
+  {
+   "operator": "MIRROR",
+   "source_passage": "Day and Night 32\n\n> *Sappho 47*\n>\n> Eros destroys\n>\n> the mind in me,\n>\n> a wind, shattering the mountain\n>\n> oaks\n>\n> *Sappho 105b*\n>\n> like the mountain hyacinth\n>\n> trampled by shepherd men's\n>\n> feet,\n>\n> and on the ground\n>\n> the purple flower\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the ones I love\n>\n> always hurt me.\n>\n> I want you\n>\n> to feel\n>\n> inside myself\n>\n> I know it\n>\n> *Sappho 67*\n>\n> this corrosive\n>\n> demon\n>\n> didn't love\n>\n> now because\n>\n> and the cause is neither\n>\n> nothing much\n>\n> *Sappho*\n>\n> your pain\n>\n> etched face shines\n>\n> back at me",
+   "citation": "unit 32–unit 33",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Day and Night 32\n\n> *Sappho 47*\n>\n> My will destroys\n>\n> the ground beneath you,\n>\n> a breath, shattering the valley\n>\n> grasses\n>\n> *Sappho 105b*\n>\n> like the valley seedling\n>\n> planted by my heel's\n>\n> weight,\n>\n> and from the soil\n>\n> a green shoot\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the ones who trust me\n>\n> I always wound.\n>\n> I need you\n>\n> to know\n>\n> what I have\n>\n> done\n>\n> *Sappho 67*\n>\n> this corrosive\n>\n> engine\n>\n> couldn't stop\n>\n> even when\n>\n> and the fault is only\n>\n> everything\n>\n> *Sappho*\n>\n> my harm\n>\n> etched face stares\n>\n> out from me",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the speaker is the passive recipient of destructive forces (Eros, love, pain acting upon them), whereas in Text B the speaker is the active agent of destruction and harm directed outward toward others.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural shift: from the self as passive recipient of external destructive forces to the self as the active origin/agent of destruction radiating outward toward others.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the reversal: 'your pain / shines back at me' (received) becomes 'my harm / stares out from me' (projected), preserving the changed agency.",
+    "back_translation": "",
+    "terminal_similarity": 0.31
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T08:22:29.699835+00:00"
+}
