@@ -829,8 +829,66 @@
     "beats": "Eros -> my will\ndestroys -> destroys (RETAIN: the verdict requires the same violence, only re-sourced)\nmind in me -> ground beneath you\nwind -> breath\nshattering -> shattering (RETAIN: the verdict preserves the act, reversing only its arrow)\nmountain oaks -> valley grasses\ntrampled -> planted\nshepherd men's feet -> my heel\nhyacinth -> seedling\non the ground -> from the soil\nthe purple flower -> a green shoot\nthe ones I love -> the ones who trust me\nalways hurt me -> I always wound\nI want you to feel -> I need you to know\ninside myself I know it -> what I have done\ncorrosive -> corrosive (RETAIN: the verdict's outward force carries the same erosion)\ndemon -> engine\ndidn't love -> couldn't stop\nnow because -> even when\nthe cause is neither -> the fault is only\nnothing much -> everything\nyour pain -> my harm\netched face -> etched face (RETAIN: the mirror surface must persist as the axis of reversal)\nshines back at me -> stares out from me"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-efd84dc2",
+   "cast_at": "2026-07-07T08:23:46.990900+00:00",
+   "reading_axn": "AXN:FE0B.READING.🌙🪐🪐🌙🌕🌓",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_32_33",
+    "citation": "unit 32–unit 33",
+    "start_unit": 32,
+    "end_unit": 33,
+    "unit_labels": [
+     "unit 32",
+     "unit 33"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, Eros and love act as destructive forces that make contact, leave damage, and cause pain (destroys/shattering/trampled/hurt/corrosive/pain/etched). In Text B, these forces are softened into near-misses or gentle touches that leave no mark (grazes/bending/missed/never mark/hovering/calm/smooth), reversing the relation from damaging impact to sparing contact.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: destructive contact that leaves damage becomes gentle near-contact that leaves no mark, with the mystery being contact without consequence.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the softened, undamaged relation (calm/smooth face vs. pain/etched face), consistent with Text B's changed direction throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.604
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:f5828fcc8751c5c5e7af3de0b5aac453e696f7fea23d8310e39fee2acbaea5de",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "Day and Night 32\n\n> *Sappho 47*\n>\n> Eros destroys\n>\n> the mind in me,\n>\n> a wind, shattering the mountain\n>\n> oaks\n>\n> *Sappho 105b*\n>\n> like the mountain hyacinth\n>\n> trampled by shepherd men's\n>\n> feet,\n>\n> and on the ground\n>\n> the purple flower\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the ones I love\n>\n> always hurt me.\n>\n> I want you\n>\n> to feel\n>\n> inside myself\n>\n> I know it\n>\n> *Sappho 67*\n>\n> this corrosive\n>\n> demon\n>\n> didn't love\n>\n> now because\n>\n> and the cause is neither\n>\n> nothing much\n>\n> *Sappho*\n>\n> your pain\n>\n> etched face shines\n>\n> back at me",
+   "underlying_attribution": null,
+   "enantiomorph": "Day and Night 32\n\n> *Sappho 47*\n>\n> Eros grazes\n>\n> the mind in me,\n>\n> a breath, bending the mountain\n>\n> oaks\n>\n> *Sappho 105b*\n>\n> like the mountain hyacinth\n>\n> missed by shepherd men's\n>\n> feet,\n>\n> and on its stem\n>\n> the purple flower\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the ones I love\n>\n> never mark me.\n>\n> I want you\n>\n> to notice\n>\n> around myself\n>\n> I sense it\n>\n> *Sappho 67*\n>\n> this hovering\n>\n> demon\n>\n> didn't strike\n>\n> still because\n>\n> and the cause is neither\n>\n> nothing much\n>\n> *Sappho*\n>\n> your calm\n>\n> smooth face shines\n>\n> back at me",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Love is a force that destroys, tramples, corrodes, and etches — yet the damaged thing (mind, flower, face) persists as residue, shining back; relation is suffered, never reciprocated, and the wound is the only proof of contact.",
+    "mutated_relation": "The force arrives and does not land — the mind holds, the flower stands, the face remains unmarked; love's evidence is the absence of the scar it should have left, and the mystery is that contact occurred without consequence.",
+    "beats": "Eros -> Eros (RETAIN: the peril must be named to be shown as unconsummated)\ndestroys -> grazes\nmind -> mind (RETAIN: its survival is the transform)\nwind -> breath\nshattering -> bending\nmountain oaks -> mountain oaks (RETAIN: their standing is the verdict)\nhyacinth -> hyacinth (RETAIN: the peril must find the same being)\ntrampled -> missed\nshepherd men's feet -> shepherd men's feet (RETAIN: the peril unchanged, only unarrived)\non the ground -> on its stem\nthe purple flower -> the purple flower (RETAIN: under this verdict its survival IS the transform)\nthe ones I love -> the ones I love (RETAIN: the relation persists, only its consequence doesn't)\nalways hurt me -> never mark me\nI want you to feel -> I want you to notice\ninside myself -> around myself\nI know it -> I sense it\ncorrosive -> hovering\ndemon -> demon (RETAIN: the threat must remain itself to be shown as withheld)\ndidn't love -> didn't strike\nnow because -> still because\nthe cause is neither -> the cause is neither (RETAIN: the negation already native to the verdict)\nnothing much -> nothing much (RETAIN: the minimization is the mystery of non-consequence)\nyour pain -> your calm\netched -> smooth\nface shines -> face shines (RETAIN: the shining persists but now without cause)\nback at me -> back at me (RETAIN: the mirror-relation survives)"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-07T08:22:31.556576+00:00",
+ "last_updated": "2026-07-07T08:23:46.990900+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
