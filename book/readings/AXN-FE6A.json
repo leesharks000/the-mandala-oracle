@@ -1,0 +1,54 @@
+{
+ "axn": "AXN:FE6A.READING.💫🌊🌑🌓🌖🌊",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "2f7f49de92053f08",
+ "inscribed_at": "2026-07-07T18:10:00.390632+00:00",
+ "question_digest": "sha256:68da3637a719feff3bd657cd81b9f1d9cb1ab2ef493f47bb80a854e66898e744",
+ "question_gloss": "Question about the directional appearance of facial hair at a specific time.",
+ "source_text_id": "shakespeare-hamlet",
+ "cast_selection": "units_182_184",
+ "rotation": [
+  {
+   "operator": "MIRROR",
+   "source_passage": "Ham.\nAy, marry, is't;\nBut to my mind,--though I am native here,\nAnd to the manner born,--it is a custom\nMore honour'd in the breach than the observance.\nThis heavy-headed revel east and west\nMakes us traduc'd and tax'd of other nations:\nThey clepe us drunkards, and with swinish phrase\nSoil our addition; and, indeed, it takes\nFrom our achievements, though perform'd at height,\nThe pith and marrow of our attribute.\nSo oft it chances in particular men\nThat, for some vicious mole of nature in them,\nAs in their birth,--wherein they are not guilty,\nSince nature cannot choose his origin,--\nBy the o'ergrowth of some complexion,\nOft breaking down the pales and forts of reason;\nOr by some habit, that too much o'er-leavens\nThe form of plausive manners;--that these men,--\nCarrying, I say, the stamp of one defect,\nBeing nature's livery, or fortune's star,--\nTheir virtues else,--be they as pure as grace,\nAs infinite as man may undergo,--\nShall in the general censure take corruption\nFrom that particular fault: the dram of eale\nDoth all the noble substance often doubt\nTo his own scandal.\n\nHor.\nLook, my lord, it comes!\n\n[Enter Ghost.]\n\nHam.\nAngels and ministers of grace defend us!--\nBe thou a spirit of health or goblin damn'd,\nBring with thee airs from heaven or blasts from hell,\nBe thy intents wicked or charitable,\nThou com'st in such a questionable shape\nThat I will speak to thee: I'll call thee Hamlet,\nKing, father, royal Dane; O, answer me!\nLet me not burst in ignorance; but tell\nWhy thy canoniz'd bones, hearsed in death,\nHave burst their cerements; why the sepulchre,\nWherein we saw thee quietly in-urn'd,\nHath op'd his ponderous and marble jaws\nTo cast thee up again! What may this mean,\nThat thou, dead corse, again in complete steel,\nRevisit'st thus the glimpses of the moon,\nMaking night hideous, and we fools of nature\nSo horridly to shake our disposition\nWith thoughts beyond the reaches of our souls?\nSay, why is this? wherefore? what should we do?",
+   "citation": "unit 182–unit 184",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Ghost.\nAy, marry, is't;\nBut to my mind,--though I am exile there,\nAnd to the manner buried,--it is a vigil\nMore dishonour'd in the keeping than the abandonment.\nThis thin-blooded stillness below and above\nMakes us pitied and mourned over of other dead:\nThey clepe us sleepers, and with ashen phrase\nBleach our inscription; and, indeed, it takes\nFrom our sufferings, though endured at depth,\nThe husk and dust of our memory.\nSo oft it chances in particular shades\nThat, for some luminous spark of life in them,\nAs in their death,--wherein they are not guilty,\nSince death cannot choose his terminus,--\nBy the atrophy of all complexion,\nOft breaking down the ditches and ruins of forgetting;\nOr by some remnant, that too much under-hollows\nThe form of silent customs;--that these shades,--\nCarrying, I say, the glow of one attachment,\nBeing death's shroud, or oblivion's seal,--\nTheir griefs else,--be they as heavy as stone,\nAs finite as man may undergo,--\nShall in the general pardon take redemption\nFrom that particular love: the dram of warmth\nDoth all the noble absence often kindle\nTo his own glory.\n\nHor.\nLook, my lord, it comes!\n\n[Enter living body.]\n\nGhost.\nMortals and servants of breath forgive us!--\nBe thou a body of sickness or saint redeemed,\nBring with thee weight of earth or stillness of paradise,\nBe thy acts blind or knowing,\nThou com'st in such an undeniable voice\nThat I will listen to thee: I'll call thee child,\nSubject, son, common clay; O, answer me!\nLet me not fade in knowledge; but tell\nWhy thy unblessed flesh, cradled in life,\nHave kept their skin; why the dwelling,\nWherein we saw thee quietly in-urn'd,\nHath op'd his soft and breathing lips\nTo swallow thee down again! What may this mean,\nThat thou, living body, again in bare cloth,\nRevisit'st thus the blaze of the sun,\nMaking day unbearable, and we sages of nothing\nSo gently to fix our dissolution\nWith silence beneath the floor of our bones?\nSee, that it is? hence? what can we cease?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the relation between the living and the dead: the speaker is now the Ghost (not Hamlet), addressing a living body (not a ghost), so the direction of address, the ontological perspective, and the domain of concern are all reversed — the living observe the dead in TEXT A, while the dead observe the living in TEXT B.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same inversion: the dead now judge/observe/address the living, reversing the original living-observing-dead relation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final 40% maintains the Ghost's perspective addressing a living body, consistently sustaining the inverted living/dead relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.312
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T18:10:00.390632+00:00"
+}
