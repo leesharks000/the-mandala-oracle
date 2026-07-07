@@ -203,6 +203,7 @@ LEGACY_OPERATORS = {"SCROLL": "surface-depth-axis — non-canonical; fell out of
 RATE_LIMIT_WINDOW_S = int(os.environ.get("RATE_LIMIT_WINDOW_S", "3600"))
 RATE_LIMIT_MAX = int(os.environ.get("RATE_LIMIT_MAX", "40"))    # transforms per IP per hour (env-overridable; was 12; bumped for demo headroom)
 MANUS_BYPASS_TOKEN = os.environ.get("MANUS_BYPASS_TOKEN", "")   # if set, requests with matching manus_bypass_token in body skip rate limit
+SERVER_BUILD_MARKER = "2026-07-07T07:47Z-ecd2b7e8d622"  # updated on every deploy for verification
 MAX_INVOKING_CHARS = 4000
 MAX_CAST_CHARS = 6000
 READER_MAX_CHARS = 1000       # a reader's offering is concentrated: strictly capped        # the casting takes a concentrated text, not a whole work
@@ -4033,6 +4034,7 @@ class handler(BaseHTTPRequestHandler):
             "inscription_modes": ["public", "encrypted", "none"],
             "compiler_model": COMPILER_MODEL,
             "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+            "server_build_marker": SERVER_BUILD_MARKER,
         })
 
     def do_OPTIONS(self):
@@ -4172,7 +4174,14 @@ class handler(BaseHTTPRequestHandler):
                     "units_total": len(units),
                 })
             except Exception as e:
-                return self._json(502, {"error": f"judgment failed: {type(e).__name__}"})
+                # Diagnostic: include the actual exception message and (for NameError/AttributeError) traceback tail
+                import traceback
+                _msg = f"{type(e).__name__}: {e}"
+                if isinstance(e, (NameError, AttributeError)):
+                    _tb = traceback.format_exc().splitlines()
+                    _last = " | ".join(_tb[-3:])[-400:]
+                    _msg = f"{_msg} :: {_last}"
+                return self._json(502, {"error": f"judgment failed: {_msg}"})
 
         # ── Rite-stage inscription: the voices are not left to a closed tab ──
         if body.get("action") == "rite_append":
