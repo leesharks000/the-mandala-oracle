@@ -88,10 +88,20 @@
      "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.60 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The wind that did not break the oak still bent it — the cost is in the lean, not the fall."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T08:23:45.496941+00:00"
+ "last_updated": "2026-07-07T08:23:56.850172+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-07T08:23:56.850172+00:00",
+   "text": "The wind that did not break the oak still bent it — the cost is in the lean, not the fall.",
+   "operator": "SHADOW"
+  }
+ ]
 }
