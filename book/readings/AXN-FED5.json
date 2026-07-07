@@ -110,11 +110,58 @@
    ],
    "commentary": "Every mount here is already laden before it is ridden, every mouth draws inward what would have poured out, every angel names an expenditure already settled — so that the precision of hour and day and month and year marks not the moment of unleashing but the forfeit the utterance has already buried in its own calendar to reach the ear at all.",
    "interpretation": "Fire flows inward, smoke swallowed instead of sent: the debt is paid before the hour can declare it."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you searched for them at?\nMissed 'em across the flats, could've thirsted in it\nWould have sank, waded, abstained\nSalt-crusted, emptied slow keeper\nWithhold for the patient, dry cups at the wells\nHush through the cracked bowl, one drop for me, please\nThat bares the hollow, that dust sure dim-kept\nStopped short of the ledge for more bare-bone hymn breath\nHold it in silence, stand before Back Lot\nHeld the whole room like some still mouth with clean air\nThese elders is too still, starved of a plain rind\nWho could get tighter off a dirge or a struck bell?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the relations of TEXT A: abundance becomes scarcity, receiving becomes withholding, excess/speed becomes restraint/stillness, looseness becomes tightness, and outward motion becomes inward holding — every directional, transactional, and qualitative relation is reversed.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both describe a shift toward scarcity and stillness, but the declared claim frames it as pure deprivation becoming the medium, while the recovered claim identifies it as a systematic inversion of abundance/excess into scarcity/restraint — related but the recovered claim emphasizes relational reversal rather than deprivation as sole medium.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines sustain the inversion: 'too fast' becomes 'too still', 'juiced' becomes 'starved', 'looser' becomes 'tighter', 'crunk/funk beat' becomes 'dirge/struck bell'.",
+    "back_translation": "",
+    "terminal_similarity": 0.221
+   },
+   "law_variance": {
+    "declared": "Scarcity is everywhere and nothing arrives; the speaker stalls in drought before the empty source, turning lack into stillness and solemnity until deprivation itself becomes the only medium.",
+    "recovered": "TEXT B systematically inverts the relations of TEXT A: abundance becomes scarcity, receiving becomes withholding, excess/speed becomes restraint/stillness, looseness becomes tightness, and outward motion becomes inward holding — every directional, transactional, and qualitative relation is reversed.",
+    "note": "Both describe a shift toward scarcity and stillness, but the declared claim frames it as pure deprivation becoming the medium, while the recovered claim identifies it as a systematic inversion of abundance/excess into scarcity/restraint — related but the recovered claim emphasizes relational reversal rather than deprivation as sole medium."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T17:08:06.429746+00:00",
+ "last_updated": "2026-07-07T21:57:18.553406+00:00",
  "rite": [
   {
    "stage": "opening",
