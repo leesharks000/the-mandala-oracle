@@ -3670,8 +3670,15 @@ def draw_candidates(units: list[dict], k: int = JUDGMENT_K, full_text: str | Non
 
 def translate_passage(passage: str, api_key: str) -> str:
     """Faithful English facing of a non-English cast passage, for display.
-    Greek detection is cheap; the translation is apparatus, never the cast."""
-    if not any('\u0370' <= ch <= '\u03ff' or '\u1f00' <= ch <= '\u1fff' for ch in passage):
+    Cheap character-range detection; the translation is apparatus, never the cast.
+    Ranges: Greek (\\u0370-\\u03ff + \\u1f00-\\u1fff), CJK unified ideographs
+    (\\u4e00-\\u9fff) and CJK Extension A (\\u3400-\\u4dbf)."""
+    def _is_target(ch):
+        return ('\u0370' <= ch <= '\u03ff'
+                or '\u1f00' <= ch <= '\u1fff'
+                or '\u4e00' <= ch <= '\u9fff'
+                or '\u3400' <= ch <= '\u4dbf')
+    if not any(_is_target(ch) for ch in passage):
         return ""
     try:
         req = urllib.request.Request(ANTHROPIC_URL, data=json.dumps({
