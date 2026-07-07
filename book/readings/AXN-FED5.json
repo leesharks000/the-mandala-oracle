@@ -195,11 +195,62 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "BEAST",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you sniffed them out at?\nGot 'em across the range, could've swallowed whole in it\nWould have drifted downstream, belly-up, rutted\nHoney-licked, gorged flank-kicker\nLunge for the lame, standing water at the salt licks\nYelp through the marrow, no more gut-room, thanks\nThat numbs the nerve, that musk sure reek rank\nBurrowed past the den for more feral threat-foam\nHowl it on full throat, lope past the clearing\nSpooked the whole herd like some old bull with gland-spray\nThese pups is too lean, crazed on a carrion\nWho could get wilder off a rut-heat or a drum of hooves?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts maintain the same relational structure throughout; TEXT B simply transposes the imagery into an animal/feral register without altering who acts on what or the direction of any dependency.",
+    "back_translation": "",
+    "terminal_similarity": 0.243
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T21:58:03.392930+00:00",
+ "last_updated": "2026-07-07T21:58:42.958927+00:00",
  "rite": [
   {
    "stage": "opening",
