@@ -46,9 +46,52 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "Day and Night 32\n\n> *Sappho 47*\n>\n> Eros destroys\n>\n> the mind in me,\n>\n> a wind, shattering the mountain\n>\n> oaks\n>\n> *Sappho 105b*\n>\n> like the mountain hyacinth\n>\n> trampled by shepherd men's\n>\n> feet,\n>\n> and on the ground\n>\n> the purple flower\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the ones I love\n>\n> always hurt me.\n>\n> I want you\n>\n> to feel\n>\n> inside myself\n>\n> I know it\n>\n> *Sappho 67*\n>\n> this corrosive\n>\n> demon\n>\n> didn't love\n>\n> now because\n>\n> and the cause is neither\n>\n> nothing much\n>\n> *Sappho*\n>\n> your pain\n>\n> etched face shines\n>\n> back at me",
+   "citation": "unit 32–unit 33",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Day and Night 32\n\n> *Sappho 47*\n>\n> Eros grazes\n>\n> the mind in me,\n>\n> a breath, bending the mountain\n>\n> oaks\n>\n> *Sappho 105b*\n>\n> like the mountain hyacinth\n>\n> missed by shepherd men's\n>\n> feet,\n>\n> and on its stem\n>\n> the purple flower\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the ones I love\n>\n> never mark me.\n>\n> I want you\n>\n> to notice\n>\n> around myself\n>\n> I sense it\n>\n> *Sappho 67*\n>\n> this hovering\n>\n> demon\n>\n> didn't strike\n>\n> still because\n>\n> and the cause is neither\n>\n> nothing much\n>\n> *Sappho*\n>\n> your calm\n>\n> smooth face shines\n>\n> back at me",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, Eros and love act as destructive forces that make contact, leave damage, and cause pain (destroys/shattering/trampled/hurt/corrosive/pain/etched). In Text B, these forces are softened into near-misses or gentle touches that leave no mark (grazes/bending/missed/never mark/hovering/calm/smooth), reversing the relation from damaging impact to sparing contact.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: destructive contact that leaves damage becomes gentle near-contact that leaves no mark, with the mystery being contact without consequence.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the softened, undamaged relation (calm/smooth face vs. pain/etched face), consistent with Text B's changed direction throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.604
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.60 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T08:22:29.699835+00:00"
+ "last_updated": "2026-07-07T08:23:45.496941+00:00"
 }
