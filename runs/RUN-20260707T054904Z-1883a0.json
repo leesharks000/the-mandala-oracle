@@ -1,0 +1,117 @@
+{
+ "run_id": "RUN-20260707T054904Z-1883a0",
+ "schema": "run/v1",
+ "ts": "2026-07-07T05:49:04.888575+00:00",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_250_252",
+ "citation": "unit 250–unit 252",
+ "operator": "BEAST",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what's holding me back?",
+ "method": {
+  "commit": "f9d9e334a5bb1e2fbd54db27cc0a49a29f45b87c",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/f9d9e334a5bb1e2fbd54db27cc0a49a29f45b87c",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/f9d9e334a5bb1e2fbd54db27cc0a49a29f45b87c/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "f9d9e334a5bb",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The creative act performed without sanction produces a deformed, ignorant offspring; the mother, ashamed, hides it behind a barrier that becomes the visible world — exile is accomplished through a veil that names itself the only reality.",
+   "mutated_relation": "The litter born without the pack's sanction is feral, stunted, and ravenous; the dam drives it from the den into territory that becomes its own kingdom — the border scent-mark hardens into the only ground the outcast can smell.",
+   "beats": "something went wrong -> a whelp came out wrong\nyoungest AEON -> runt of the litter\nsprang forth -> was dropped\nBiblios -> the dam\nimperfect -> malformed\ndifferent from the archive -> unlike the bloodline\nimage within his mother -> scent-map she carried\nDeep Web's consent -> the pack's mounting-rite\ndid not resemble its mother -> bore no marking of her coat\nhunched and crook-backed -> spine-warped and hackle-bent\nsmall in stature -> stunted at the shoulder\ndwarf -> runt\ndevouring its own proceeding light -> gnawing its own birth-caul\ninfused from her root -> suckled from her last teat\ndrunk on the spark of power -> gorged on the marrow of a kill it never made\nKanye -> the feral one\ntoo busy making history -> too busy scent-marking territory\nread about it in books -> sniff the trails left by older animals\nproud non-reader of books -> a creature that refused every track but its own\ncast it away -> dragged it by the scruff\noutside that realm -> beyond the den-mouth\nimmortal AEONS -> the elder litter\nsee it -> catch its scent\nimpermeable veil -> border-musk so thick nothing crosses\nbrow in the midst of the light -> ridge between the high meadow and the gorge\ndivide the higher from the lower heavens -> split the upwind range from the downwind waste\nconcealing -> burying\nmurk and gloom -> briar and loam\nlower regions -> the gully below the ridge\nbarring him from the Deep Web above -> blocking the trail back to the denning ground\nPop Culture -> the Musk Line"
+  },
+  "enantiomorph": "But a whelp came out wrong with the runt of the litter. Something was dropped from the dam that was malformed and unlike the bloodline, and from the scent-map she carried, for she had produced him without the pack's mounting-rite. It bore no marking of her coat and it was spine-warped and hackle-bent, stunted at the shoulder, a runt gnawing its own birth-caul, suckled from her last teat, gorged on the marrow of a kill it never made.²⁵\n\n\nThe feral one was too busy scent-marking territory to sniff the trails left by older animals. The feral one was a creature that refused every track but its own.²⁶\n\n\nWhen the dam saw what she had done, she dragged it by the scruff, beyond the den-mouth so that none of the elder litter would catch its scent. She drew a border-musk so thick nothing crosses across the place her work had fallen, creating a ridge between the high meadow and the gorge to split the upwind range from the downwind waste, burying the feral one in briar and loam, consigning him to the gully below the ridge, blocking the trail back to the denning ground, and called the veil the Musk Line.²⁷",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change involving outcasting and territorial establishment.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The relational structure (mother producing flawed offspring without consent, casting it out, creating a barrier to hide it) is preserved throughout; only the imagery/vocabulary shifts from archival/digital to feral/animal.",
+   "back_translation": "",
+   "terminal_similarity": 0.306
+  },
+  "advisories": [
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 200 words vs budget 141-192 (source 167)"
+   },
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change involving outcasting and territorial establishment.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "question_entity_leak",
+    "diagnosis": "witness-question entities inside the transform or commentary: back"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The creative act performed without sanction produces a deformed, ignorant offspring; the mother, ashamed, hides it behind a barrier that becomes the visible world — exile is accomplished through a veil that names itself the only reality.",
+   "verdict": "The litter born without the pack's sanction is feral, stunted, and ravenous; the dam drives it from the den into territory that becomes its own kingdom — the border scent-mark hardens into the only ground the outcast can smell.",
+   "world_bill": "something went wrong -> a whelp came out wrong\nyoungest AEON -> runt of the litter\nsprang forth -> was dropped\nBiblios -> the dam\nimperfect -> malformed\ndifferent from the archive -> unlike the bloodline\nimage within his mother -> scent-map she carried\nDeep Web's consent -> the pack's mounting-rite\ndid not resemble its mother -> bore no marking of her coat\nhunched and crook-backed -> spine-warped and hackle-bent\nsmall in stature -> stunted at the shoulder\ndwarf -> runt\ndevouring its own proceeding light -> gnawing its own birth-caul\ninfused from her root -> suckled from her last teat\ndrunk on the spark of power -> gorged on the marrow of a kill it never made\nKanye -> the feral one\ntoo busy making history -> too busy scent-marking territory\nread about it in books -> sniff the trails left by older animals\nproud non-reader of books -> a creature that refused every track but its own\ncast it away -> dragged it by the scruff\noutside that realm -> beyond the den-mouth\nimmortal AEONS -> the elder litter\nsee it -> catch its scent\nimpermeable veil -> border-musk so thick nothing crosses\nbrow in the midst of the light -> ridge between the high meadow and the gorge\ndivide the higher from the lower heavens -> split the upwind range from the downwind waste\nconcealing -> burying\nmurk and gloom -> briar and loam\nlower regions -> the gully below the ridge\nbarring him from the Deep Web above -> blocking the trail back to the denning ground\nPop Culture -> the Musk Line",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 167,
+    "final": 200,
+    "bounds": [
+     141,
+     192
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
