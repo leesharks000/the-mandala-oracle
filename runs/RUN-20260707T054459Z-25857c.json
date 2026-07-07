@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260707T054459Z-25857c",
+ "schema": "run/v1",
+ "ts": "2026-07-07T05:44:59.470872+00:00",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_250_252",
+ "citation": "unit 250–unit 252",
+ "operator": "FLAME",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what's holding me back?",
+ "method": {
+  "commit": "f9d9e334a5bb1e2fbd54db27cc0a49a29f45b87c",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/f9d9e334a5bb1e2fbd54db27cc0a49a29f45b87c",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/f9d9e334a5bb1e2fbd54db27cc0a49a29f45b87c/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "5347e25b36206618",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "f9d9e334a5bb",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "5347e25b36206618",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Creative autonomy without sanction produces a malformed demiurge — the imperfect issue is hidden behind a partition that becomes the structure of a degraded world.",
+   "mutated_relation": "The unsanctioned act's deformity is not concealed but combusts — the partition ignites, the malformed thing blazes as its own exposure, and the degraded world is consumed in the light it was meant never to reach.",
+   "beats": "something went wrong -> something caught fire\nyoungest AEON -> nearest AEON\nsprang forth -> erupted\nimperfect -> incandescent\ndifferent from the archive -> alien to the fuel\nimage within his mother -> furnace within her\nproduced him -> kindled him\nDeep Web's consent -> Deep Web's quenching\ndid not resemble its mother -> outshone its mother\nhunched and crook-backed -> bent and white-hot\nsmall in stature -> condensed past containment\ndwarf -> ember\ndevouring its own proceeding light -> feeding on its own thrown radiance\ninfused from her root -> drawn up through her wick\ndrunk on the spark of power -> gorged on the spark of power (RETAIN: the spark is the intensity-nucleus itself)\nKanye -> Kanye (RETAIN: the proper name is the combustion-point the verdict requires)\ntoo busy making history -> too busy burning through the present\nproud non-reader of books -> proud incinerator of books\nBiblios -> Biblios (RETAIN: the maternal source must persist for the fire to be recognized as orphan-flame)\ncast it away -> flung it upward\noutside that realm -> into every realm\nnone of the immortal AEONS would see it -> all of the immortal AEONS would be scorched by it\ndrew an impermeable veil -> drew a curtain of tinder\nbrow in the midst of the light -> breach in the midst of the dark\ndivide the higher from the lower heavens -> merge the higher with the lower heavens\nconcealing -> exposing\nmurk and gloom -> blaze and roar\nconsigning him to the lower regions -> releasing him through every region\nbarring him from the Deep Web above -> the Deep Web above catching from him\ncalled the veil Pop Culture -> called the conflagration Pop Culture (RETAIN: the verdict requires the name to survive as the thing now burning)"
+  },
+  "enantiomorph": "But something caught fire with nearest AEON. Something erupted from Biblios that was incandescent and alien to the fuel, and from the furnace within her, for she had kindled him without the Deep Web's quenching. It outshone its mother and it was bent and white-hot, condensed past containment, an ember feeding on its own thrown radiance, drawn up through her wick, gorged on the spark of power.²⁵\n\n\nKanye was too busy burning through the present to read about it in books. Kanye West was a proud incinerator of books.²⁶\n\n\nWhen Biblios saw what she had done, she flung it upward, into every realm so that all of the immortal AEONS would be scorched by it. She drew a curtain of tinder across the place her work had fallen, exposing a breach in the midst of the dark to merge the higher with the lower heavens, exposing Kanye in blaze and roar, releasing him through every region, the Deep Web above catching from him, and called the conflagration Pop Culture.²⁷",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT A depicts the offspring as imperfect and hidden: Biblios casts Kanye away, conceals him, separates higher from lower, and bars him from the Deep Web. TEXT B reverses this: the offspring is incandescent and powerful, Biblios flings him upward into every realm, exposes rather than conceals him, merges rather than divides the heavens, and the Deep Web catches fire from him.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural reversal: the malformed offspring goes from being concealed/hidden/separated to being exposed/blazing/incandescent, and the partition/barrier ignites rather than containing — concealment becomes combustive exposure, separation becomes merger, and the forbidden realm is consumed by the light.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of TEXT B consistently maintains the reversed relation (exposure, merging, spreading outward) rather than reverting to TEXT A's concealment and separation.",
+   "back_translation": "",
+   "terminal_similarity": 0.5
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Creative autonomy without sanction produces a malformed demiurge — the imperfect issue is hidden behind a partition that becomes the structure of a degraded world.",
+   "verdict": "The unsanctioned act's deformity is not concealed but combusts — the partition ignites, the malformed thing blazes as its own exposure, and the degraded world is consumed in the light it was meant never to reach.",
+   "world_bill": "something went wrong -> something caught fire\nyoungest AEON -> nearest AEON\nsprang forth -> erupted\nimperfect -> incandescent\ndifferent from the archive -> alien to the fuel\nimage within his mother -> furnace within her\nproduced him -> kindled him\nDeep Web's consent -> Deep Web's quenching\ndid not resemble its mother -> outshone its mother\nhunched and crook-backed -> bent and white-hot\nsmall in stature -> condensed past containment\ndwarf -> ember\ndevouring its own proceeding light -> feeding on its own thrown radiance\ninfused from her root -> drawn up through her wick\ndrunk on the spark of power -> gorged on the spark of power (RETAIN: the spark is the intensity-nucleus itself)\nKanye -> Kanye (RETAIN: the proper name is the combustion-point the verdict requires)\ntoo busy making history -> too busy burning through the present\nproud non-reader of books -> proud incinerator of books\nBiblios -> Biblios (RETAIN: the maternal source must persist for the fire to be recognized as orphan-flame)\ncast it away -> flung it upward\noutside that realm -> into every realm\nnone of the immortal AEONS would see it -> all of the immortal AEONS would be scorched by it\ndrew an impermeable veil -> drew a curtain of tinder\nbrow in the midst of the light -> breach in the midst of the dark\ndivide the higher from the lower heavens -> merge the higher with the lower heavens\nconcealing -> exposing\nmurk and gloom -> blaze and roar\nconsigning him to the lower regions -> releasing him through every region\nbarring him from the Deep Web above -> the Deep Web above catching from him\ncalled the veil Pop Culture -> called the conflagration Pop Culture (RETAIN: the verdict requires the name to survive as the thing now burning)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 167,
+    "final": 169,
+    "bounds": [
+     141,
+     192
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
