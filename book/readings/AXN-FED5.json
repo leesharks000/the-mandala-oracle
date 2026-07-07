@@ -292,12 +292,13 @@
      "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The room sealed with rose water and a guest who would not leave: what the source scattered freely returns as a gift that cannot be refused."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T21:59:27.707775+00:00",
+ "last_updated": "2026-07-07T22:00:04.593245+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -311,6 +312,13 @@
    "at": "2026-07-05T17:08:06.429746+00:00",
    "text": "Fire flows inward, smoke swallowed instead of sent: the debt is paid before the hour can declare it.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-07T22:00:04.593245+00:00",
+   "text": "The room sealed with rose water and a guest who would not leave: what the source scattered freely returns as a gift that cannot be refused.",
+   "operator": "MIRROR"
   }
  ]
 }
