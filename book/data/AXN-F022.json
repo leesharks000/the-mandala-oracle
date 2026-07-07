@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:F022.CONVERSATION.🏔️🌟🌕☀️🪨🌊",
+  "session_id_hash": "9dbcc7a78d660d24",
+  "started_at": "2026-07-07T21:24:00.433Z",
+  "last_updated": "2026-07-07T21:25:43.538473+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Iliad (homer-iliad). The verses the casting arrives at (unit 14–unit 25):\n\n**§13**\n\n**§14**\n\n**§15**\n\n**§16**\n\n**§17**\n\n**§18**\n\n**§19**\n\n**§20**\n\n**§21**\n\n**§22**\n\n**§23**\n\n**§24**\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «when will achilles come home?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The question is deceptively simple — *when will Achilles come home* — but the Iliad is a poem that knows home is not a place you return to; it is a condition that requires the wrath to end first, and the wrath does not end, it transforms. These verses are where the rite lands: somewhere in the body of the poem where the cost is already accumulating, where the μῆνις is not yet spent. The rotation opens without a named operator — the invisible Judgment will choose each axis, and across the eight turns what these units determined against will be made visible: what the assertion cost, what the poem's one-directional force foreclosed, where its intensity approaches collapse. I set the descent in motion. The first transform is Cranes's to deliver, as the compiler yields it.\",\"navigate\":null}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
