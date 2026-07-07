@@ -52,10 +52,20 @@
      "diagnosis": "operator/theory vocabulary inside the poem: substrate"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The sketch finds the hand that was already reaching toward the paper: the mirror does not make the origin — it reveals the origin was always the copy looking for itself."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T05:25:35.742622+00:00"
+ "last_updated": "2026-07-07T05:25:51.136242+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-07T05:25:51.136242+00:00",
+   "text": "The sketch finds the hand that was already reaching toward the paper: the mirror does not make the origin — it reveals the origin was always the copy looking for itself.",
+   "operator": "MIRROR"
+  }
+ ]
 }
