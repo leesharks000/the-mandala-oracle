@@ -1,0 +1,59 @@
+{
+ "axn": "AXN:FE2D.READING.🌊🌒🌗🔥🌓🌊",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "0b4726ad547ebd62",
+ "inscribed_at": "2026-07-07T19:33:12.365991+00:00",
+ "question_digest": "sha256:1dbe4990d1bb2d1bb8a8e53b48f16112f3530f5b6fe6f21def804a37f1498553",
+ "question_gloss": "Spiritual and practical consequences of maintaining faithfulness in religious or personal commitments.",
+ "source_text_id": "iching",
+ "cast_selection": "units_61_63",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "110011\n中孚 风泽中孚 巽上兑下 \n中孚：豚鱼吉，利涉大川，利贞。\n译文：《中孚卦》象征诚信：诚信施及到愚钝无知的小猪小鱼身上，从而感化了它们，因此获得吉祥，利于涉越大河大川，利于坚守中正之道。\n象曰：“泽上有风，中孚；君子以议狱缓死。\n译文：《象辞》说《中孚卦》的卦象是兑（泽）下巽（风）上，为泽上有风，风吹动着泽水之表象，比喻没有诚信之德施及不到的地方，说明极为诚信；君子应当效法“中孚”之象，广施信德，慎重地议论刑法讼狱，宽缓死刑。\n001100\n小过 雷山小过 震上艮下 \n小过：亨，利贞；可小事，不可大事，飞鸟遗之音，不宜上，宜下，大吉。\n译文：《小过卦》象征略为过分：小过之时，可致亨通，但应以正为本，故而利于坚守中正之道；可以去干一些小事，但不可去涉足一些大事；飞鸟留下悲鸣之时，不应该向上强飞，而应该向下栖息，如此，大为吉祥。\n象曰：山上有雷，小过；君子以行过乎恭，丧过乎哀，用过乎俭。\n译文：《象辞》说：《小过卦》的卦象是艮（山）下震（雷）上，为山上响雷之表象，雷声超过了寻常的雷鸣，以此比喻“小有过越”，君子应效法“小过”之象，在一些寻常小事上能略有过分，如行止时过分恭敬，遇到丧事时过分悲哀，日常用度过分节俭，为的是矫枉过正。\n101010\n既济 水火既济 坎上离下 \n既济：亨小，利贞；初吉终乱。\n译文：《既济卦》象征成功：此时功德完满，连柔小者都亨通顺利，有利于坚守正道；开始时是吉祥的，但如有不慎，终久必导致混乱。\n象曰：“水在火上，既济；君子以思患而预防之。\n译文：《象辞》说：《既济卦》的卦象是离（火）下坎（水）上，为水在火上之表象，比喻用火煮食物，食物已熟，象征事情已经成功；君子应有远大的目光，在事情成功之后，就要考虑将来可能出现的种种弊端，防患　于未然，采取预防措施。",
+   "citation": "unit 61–unit 63",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "110011\n未感 寂石未感 巽上兑下\n未感：远者未定，尚在此岸，利贞。\n译文：《未感卦》象征未及之诚：陌然之意尚未施及于远者之身，未能感化于彼，因此未定吉凶，尚在此岸未能涉越，利于坚守中正之道。\n象曰：\"石上有寂，未感；蒙者以未立法度。\n译文：《未感卦》的卦象是兑（石）下巽（寂）上，为石上有寂，寂不动于石之表象，比喻陌然之德施之未及之处，说明诚信未至；蒙者应当察\"未感\"之象，法度未立，无以议刑，无以缓死。\n001100\n未及 雷山未及 震上艮下\n未及：滞，利贞；可小事，不可大事，空枝无声，无上下，大吉。\n译文：《未及卦》象征不及所至：未及之时，滞而不通，但应以正为本，故而利于坚守中正之道；可以去干一些小事，但不可去涉足一些大事；空枝之上无声可遗，无上无下可辨，如此，大为吉祥。\n象曰：山上有雷，未及；蒙者以行过乎素，丧过乎哀，用过乎散。\n译文：《未及卦》的卦象是艮（山）下震（雷）上，为山上响雷之表象，雷声未过寻常之鸣，以此比喻\"未及所至\"，蒙者应效法\"未及\"之象，在一些寻常小事上未能过分，如行止时过分素朴，遇到丧事时过分悲哀，日常用度过分散逸，而枉犹在，未得矫正。\n101010\n未济 火水未济 离上坎下\n未济：滞小，利贞；无始无终。\n译文：《未济卦》象征未成：此时功未起，柔小者滞而不通，有利于坚守正道；无始可言吉，无终可言乱。\n象曰：\"火在水上，未济；蒙者以患未可名。\n译文：《未济卦》的卦象是坎（水）下离（火）上，为火在水上之表象，比喻以火加于水上，食物未熟，象征事情尚未成功；蒙者未有远大之目光，事情未成之际，患未可名，无以预防，无措施可采。",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically negates/inverts the completion or fulfillment expressed in TEXT A: what has been achieved or reached (中孚→未感, 小过→未及, 既济→未济) becomes something not yet achieved or not yet reached, and the active capable agent (君子) becomes a passive ignorant one (蒙者). The directional relation reverses from 'already accomplished/extended' to 'not yet accomplished/not yet extended.'",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: achieved/completed/accomplished states are transformed into unachieved/uncompleted/not-yet-reached states, reversing the directional relation from fulfillment to incompletion.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final section (未济) maintains the inversion pattern: 既济 (already complete) becomes 未济 (not yet complete), 君子 remains 蒙者, and all outcomes are negated consistently.",
+    "back_translation": "",
+    "terminal_similarity": 0.197
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "facing_fallback",
+     "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T19:33:12.365991+00:00"
+}
