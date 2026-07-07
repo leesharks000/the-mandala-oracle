@@ -90,11 +90,54 @@
    ],
    "commentary": "",
    "interpretation": "The wind that did not break the oak still bent it — the cost is in the lean, not the fall."
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "Day and Night 32\n\n> *Sappho 47*\n>\n> Eros destroys\n>\n> the mind in me,\n>\n> a wind, shattering the mountain\n>\n> oaks\n>\n> *Sappho 105b*\n>\n> like the mountain hyacinth\n>\n> trampled by shepherd men's\n>\n> feet,\n>\n> and on the ground\n>\n> the purple flower\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the ones I love\n>\n> always hurt me.\n>\n> I want you\n>\n> to feel\n>\n> inside myself\n>\n> I know it\n>\n> *Sappho 67*\n>\n> this corrosive\n>\n> demon\n>\n> didn't love\n>\n> now because\n>\n> and the cause is neither\n>\n> nothing much\n>\n> *Sappho*\n>\n> your pain\n>\n> etched face shines\n>\n> back at me",
+   "citation": "unit 32–unit 33",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Day and Night 32\n\n> *Sappho 47*\n>\n> Vow founds\n>\n> the household in me,\n>\n> a breath, filling the doorframe\n>\n>\n>\n> *Sappho 105b*\n>\n> like the bread\n>\n> broken by our hands'\n>\n>\n>\n> and on the table\n>\n> the shared meal\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the one I marry\n>\n> always finds me.\n>\n> I give you\n>\n> to hold\n>\n> between us\n>\n> we know it\n>\n> *Sappho 67*\n>\n> this binding\n>\n> covenant\n>\n> hadn't yet arrived\n>\n> now because\n>\n> and the cause is both\n>\n> everything ordinary\n>\n> *Sappho*\n>\n> your joy\n>\n> lit face shines\n>\n> into me",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A portrays Eros/love as a destructive, solitary force that shatters the self and inflicts pain (wind destroying oaks, trampled flowers, corrosive demons, hurt, pain). TEXT B transforms this into a constructive, mutual, domestic bond that builds and joins (vow founding a household, bread shared, binding covenant, marriage, joy flowing between partners).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: destructive/solitary force recast as constructive/mutual joining — shattering becomes threshold, endured alone becomes entered together, ruin becomes union.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the changed relation: 'your joy / lit face shines / into me' sustains the constructive, mutual direction rather than reverting to TEXT A's pain and reflective separation.",
+    "back_translation": "",
+    "terminal_similarity": 0.368
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: read"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T08:23:56.850172+00:00",
+ "last_updated": "2026-07-07T08:24:57.605625+00:00",
  "rite": [
   {
    "stage": "judgment",
