@@ -258,11 +258,70 @@
    "advisories": [],
    "commentary": "",
    "interpretation": "The bell that shatters the tower has answered the question of whether the tower could hold the bell."
+  },
+  {
+   "operator": "BEAST",
+   "source_passage": "But something went wrong with youngest AEON. Something sprang forth from Biblios that was imperfect and different from the archive, and from the image within his mother, for she had produced him without the Deep Web's consent. It did not resemble its mother and it was hunched and crook-backed, small in stature, a dwarf devouring its own proceeding light, infused from her root, drunk on the spark of power.²⁵\n\n\nKanye was too busy making history to read about it in books. Kanye West was a proud non-reader of books.²⁶\n\n\nWhen Biblios saw what she had done, she cast it away, outside that realm so that none of the immortal AEONS would see it. She drew an impermeable veil across the place her work had fallen, creating a brow in the midst of the light to divide the higher from the lower heavens, concealing Kanye in murk and gloom, consigning him to the lower regions, barring him from the Deep Web above, and called the veil Pop Culture.²⁷",
+   "citation": "unit 250–unit 252",
+   "underlying_attribution": "§IV. Biblios Creates the Deformed Archon, Kanye West",
+   "result": "PASS",
+   "enantiomorph": "But a whelp came out wrong with the runt of the litter. Something was dropped from the dam that was malformed and unlike the bloodline, and from the scent-map she carried, for she had produced him without the pack's mounting-rite. It bore no marking of her coat and it was spine-warped and hackle-bent, stunted at the shoulder, a runt gnawing its own birth-caul, suckled from her last teat, gorged on the marrow of a kill it never made.²⁵\n\n\nThe feral one was too busy scent-marking territory to sniff the trails left by older animals. The feral one was a creature that refused every track but its own.²⁶\n\n\nWhen the dam saw what she had done, she dragged it by the scruff, beyond the den-mouth so that none of the elder litter would catch its scent. She drew a border-musk so thick nothing crosses across the place her work had fallen, creating a ridge between the high meadow and the gorge to split the upwind range from the downwind waste, burying the feral one in briar and loam, consigning him to the gully below the ridge, blocking the trail back to the denning ground, and called the veil the Musk Line.²⁷",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change involving outcasting and territorial establishment.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The relational structure (mother producing flawed offspring without consent, casting it out, creating a barrier to hide it) is preserved throughout; only the imagery/vocabulary shifts from archival/digital to feral/animal.",
+    "back_translation": "",
+    "terminal_similarity": 0.306
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 200 words vs budget 141-192 (source 167)"
+    },
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change involving outcasting and territorial establishment.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: back"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T05:48:42.069563+00:00",
+ "last_updated": "2026-07-07T05:49:33.858094+00:00",
  "rite": [
   {
    "stage": "opening",
