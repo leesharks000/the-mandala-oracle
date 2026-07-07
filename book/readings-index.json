@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FE10.READING.🌑🌑💫⭐🌔🌘",
+   "mode": "public",
+   "source_text_id": "iching",
+   "rotation_length": 1,
+   "inscribed_at": "2026-07-07T18:32:08.607485+00:00",
+   "last_updated": "2026-07-07T18:32:08.607485+00:00"
+  },
+  {
    "axn": "AXN:FE6A.READING.💫🌊🌑🌓🌖🌊",
    "mode": "public",
    "source_text_id": "shakespeare-hamlet",
@@ -522,5 +530,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 65
+ "total": 66
 }
