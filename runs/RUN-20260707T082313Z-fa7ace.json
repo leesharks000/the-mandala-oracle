@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260707T082313Z-fa7ace",
+ "schema": "run/v1",
+ "ts": "2026-07-07T08:23:13.158948+00:00",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_32_33",
+ "citation": "unit 32–unit 33",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "who will read this?",
+ "method": {
+  "commit": "ac2dd08f17930c93660ce9ddb9f07e3c0559f1e6",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/ac2dd08f17930c93660ce9ddb9f07e3c0559f1e6",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/ac2dd08f17930c93660ce9ddb9f07e3c0559f1e6/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "af510ea87192a53d",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "ac2dd08f1793",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "af510ea87192a53d",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Love is a force that destroys, tramples, corrodes, and etches — yet the damaged thing (mind, flower, face) persists as residue, shining back; relation is suffered, never reciprocated, and the wound is the only proof of contact.",
+   "mutated_relation": "The force arrives and does not land — the mind holds, the flower stands, the face remains unmarked; love's evidence is the absence of the scar it should have left, and the mystery is that contact occurred without consequence.",
+   "beats": "Eros -> Eros (RETAIN: the peril must be named to be shown as unconsummated)\ndestroys -> grazes\nmind -> mind (RETAIN: its survival is the transform)\nwind -> breath\nshattering -> bending\nmountain oaks -> mountain oaks (RETAIN: their standing is the verdict)\nhyacinth -> hyacinth (RETAIN: the peril must find the same being)\ntrampled -> missed\nshepherd men's feet -> shepherd men's feet (RETAIN: the peril unchanged, only unarrived)\non the ground -> on its stem\nthe purple flower -> the purple flower (RETAIN: under this verdict its survival IS the transform)\nthe ones I love -> the ones I love (RETAIN: the relation persists, only its consequence doesn't)\nalways hurt me -> never mark me\nI want you to feel -> I want you to notice\ninside myself -> around myself\nI know it -> I sense it\ncorrosive -> hovering\ndemon -> demon (RETAIN: the threat must remain itself to be shown as withheld)\ndidn't love -> didn't strike\nnow because -> still because\nthe cause is neither -> the cause is neither (RETAIN: the negation already native to the verdict)\nnothing much -> nothing much (RETAIN: the minimization is the mystery of non-consequence)\nyour pain -> your calm\netched -> smooth\nface shines -> face shines (RETAIN: the shining persists but now without cause)\nback at me -> back at me (RETAIN: the mirror-relation survives)"
+  },
+  "enantiomorph": "Day and Night 32\n\n> *Sappho 47*\n>\n> Eros grazes\n>\n> the mind in me,\n>\n> a breath, bending the mountain\n>\n> oaks\n>\n> *Sappho 105b*\n>\n> like the mountain hyacinth\n>\n> missed by shepherd men's\n>\n> feet,\n>\n> and on its stem\n>\n> the purple flower\n\nDay and Night 33\n\n> *Sappho 26*\n>\n> the ones I love\n>\n> never mark me.\n>\n> I want you\n>\n> to notice\n>\n> around myself\n>\n> I sense it\n>\n> *Sappho 67*\n>\n> this hovering\n>\n> demon\n>\n> didn't strike\n>\n> still because\n>\n> and the cause is neither\n>\n> nothing much\n>\n> *Sappho*\n>\n> your calm\n>\n> smooth face shines\n>\n> back at me",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, Eros and love act as destructive forces that make contact, leave damage, and cause pain (destroys/shattering/trampled/hurt/corrosive/pain/etched). In Text B, these forces are softened into near-misses or gentle touches that leave no mark (grazes/bending/missed/never mark/hovering/calm/smooth), reversing the relation from damaging impact to sparing contact.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same transformation: destructive contact that leaves damage becomes gentle near-contact that leaves no mark, with the mystery being contact without consequence.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final lines maintain the softened, undamaged relation (calm/smooth face vs. pain/etched face), consistent with Text B's changed direction throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.604
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.60 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Love is a force that destroys, tramples, corrodes, and etches — yet the damaged thing (mind, flower, face) persists as residue, shining back; relation is suffered, never reciprocated, and the wound is the only proof of contact.",
+   "verdict": "The force arrives and does not land — the mind holds, the flower stands, the face remains unmarked; love's evidence is the absence of the scar it should have left, and the mystery is that contact occurred without consequence.",
+   "world_bill": "Eros -> Eros (RETAIN: the peril must be named to be shown as unconsummated)\ndestroys -> grazes\nmind -> mind (RETAIN: its survival is the transform)\nwind -> breath\nshattering -> bending\nmountain oaks -> mountain oaks (RETAIN: their standing is the verdict)\nhyacinth -> hyacinth (RETAIN: the peril must find the same being)\ntrampled -> missed\nshepherd men's feet -> shepherd men's feet (RETAIN: the peril unchanged, only unarrived)\non the ground -> on its stem\nthe purple flower -> the purple flower (RETAIN: under this verdict its survival IS the transform)\nthe ones I love -> the ones I love (RETAIN: the relation persists, only its consequence doesn't)\nalways hurt me -> never mark me\nI want you to feel -> I want you to notice\ninside myself -> around myself\nI know it -> I sense it\ncorrosive -> hovering\ndemon -> demon (RETAIN: the threat must remain itself to be shown as withheld)\ndidn't love -> didn't strike\nnow because -> still because\nthe cause is neither -> the cause is neither (RETAIN: the negation already native to the verdict)\nnothing much -> nothing much (RETAIN: the minimization is the mystery of non-consequence)\nyour pain -> your calm\netched -> smooth\nface shines -> face shines (RETAIN: the shining persists but now without cause)\nback at me -> back at me (RETAIN: the mirror-relation survives)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 140,
+    "final": 140,
+    "bounds": [
+     119,
+     161
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
