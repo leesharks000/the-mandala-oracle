@@ -1,0 +1,59 @@
+{
+ "axn": "AXN:FE6E.READING.🔥⭐🌕🌿🌖🌟",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "d452a5d70e06a6e9",
+ "inscribed_at": "2026-07-07T17:09:22.214699+00:00",
+ "question_digest": "sha256:089f04e57a40b58afc1ed8e5c30333e2b4787a90004c8fdf930d6cf2d676c758",
+ "question_gloss": "Inquiry about the intended recipients or beneficiaries of a food item or resource.",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_45_46",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "*Sappho 132*\n\nMy little girl’s face,\nlike bright\nyellow flowers: Cleis,\nmore precious to me\nthan all Lydia.\n\n*Sappho 98b*\n\nbut Cleis I don’t know\nwhere to get the special\nribbons to hold\nyour hair back:\n\nthere’s nowhere, Cleis.\n\njust one more reminder that Myrsilus\nhas exiled us\nfrom Mytilene.\n\n*Sappho 102*\n\nMother I do\nlove you, but I really can’t\nwork the loom –\n\nAphrodite is making me need that boy\n\n*Sappho 24*\n\nRemember:\nwe too did the same\nin our youth.\n\nwe are many\nand lovely in the city,\nin the city’s foundations we live\nat a whisper\n\nDay and Night 46\n\n*Hipponax 32*\n\nDear Hermes, Cyllenian Hermes, son of Maia,\n    I’m praying to you\n    while my teeth are clattering\n    in my skull, and I’m shaking\n    like a seizure: give poor Hipponax\n    a sweater, and a nice coat to keep warm,\n    and nice warm shoes, and a pair of sandals,\n    and, while you’re at it, a pile of\n    coins, to balance the books.\n\n      Thanks,\n\n      Hipponax\n\n*Hipponax 34*\n\nDear Hermes,\n    You haven’t given me\n    a nice warm coat yet\n    as a cure for the freezing\n    winter. You haven’t covered my feet\n    with fur-lined shoes yet, so my chilblains don’t\n    pop.\n\n      Thanks,\n\n      Your friend Hipponax\n\n*Hipponax 39*\n\nDear Hermes,\n    Soon I’ll give my tortured soul over\n    to hanging, if you don’t hurry up and send\n    some barley, about a bushel,\n    so I can brew up a cure\n    for all my boundless suffering.\n\n      Thanks,\n      Sincerely,",
+   "citation": "unit 45–unit 46",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 132*\n\nMy little girl's face,\nlike ripe\nfruit: Cleis,\nmore familiar to me\nthan all Mytilene.\n\n*Sappho 98b*\n\nbut Cleis I just found\nthe ordinary\nribbons to braid\nyour hair up:\n\nthere's everywhere, Cleis.\n\njust one more reminder that Myrsilus\nhas released us\nfrom Mytilene.\n\n*Sappho 102*\n\nMother I do\nlove you, but I really have\nfinished the loom –\n\nAphrodite has given me that boy\n\n*Sappho 24*\n\nRemember:\nwe too did the same\nin our youth.\n\nwe are few\nand quiet in the house,\nin the house's rafters we live\nat a hum\n\nDay and Night 46\n\n*Hipponax 32*\n\nDear Hermes, Cyllenian Hermes, son of Maia,\n    I'm thanking you\n    while my teeth are still\n    in my skull, and I'm steady\n    like a sleep: give poor Hipponax\n    a sweater that arrived, and a nice coat you sent,\n    and nice warm shoes on my feet, and a pair of sandals at the door,\n    and, while you're at it, a pile of\n    coins on the table, nothing left to balance.\n\n      Thanks,\n\n      Hipponax\n\n*Hipponax 34*\n\nDear Hermes,\n    You have given me\n    a nice warm coat yet\n    as a cure for the mild\n    winter. You have covered my feet\n    with fur-lined shoes yet, so my warmth don't\n    pop.\n\n      Thanks,\n\n      Your friend Hipponax\n\n*Hipponax 39*\n\nDear Hermes,\n    Soon I'll give my rested soul over\n    to staying, if you don't hurry up and send\n    some barley in the jar, about a bushel,\n    so I can brew up a cure\n    for all my boundless quiet.\n\n      Thanks,\n      Sincerely,",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically reverses the relational direction of lack/absence/longing into presence/fulfillment/possession: what is missing or desired in TEXT A has been obtained or resolved in TEXT B (e.g., exile becomes release, not knowing where to find ribbons becomes having found them, prayers of desperate need become expressions of gratitude for what has arrived, suffering becomes quiet).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: lack/longing is converted to fulfillment/arrival, yet the voice continues speaking — the recovered claim details the systematic reversal of absence into presence, which is exactly the structural change the declared claim summarizes as 'the desired thing arrives, the lack is closed.'",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final Hipponax 39 sustains the inversion: 'tortured soul'→'rested soul', 'hanging'→'staying', 'boundless suffering'→'boundless quiet' — fulfillment/presence still holds.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T17:09:22.214699+00:00"
+}
