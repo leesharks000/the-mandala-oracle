@@ -50,6 +50,11 @@
    "transforms": 5,
    "last_updated": "2026-07-07T21:06:07.561619+00:00",
    "title": "I Ching / 易經 / Book of Changes"
+  },
+  "homer-iliad": {
+   "transforms": 1,
+   "last_updated": "2026-07-07T22:18:05.426222+00:00",
+   "title": "Iliad"
   }
  }
 }
