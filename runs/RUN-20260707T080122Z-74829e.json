@@ -1,0 +1,144 @@
+{
+ "run_id": "RUN-20260707T080122Z-74829e",
+ "schema": "run/v1",
+ "ts": "2026-07-07T08:01:22.957405+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_57_60",
+ "citation": "3:8–3:11",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "will anyone enter this?",
+ "method": {
+  "commit": "ac2dd08f17930c93660ce9ddb9f07e3c0559f1e6",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/ac2dd08f17930c93660ce9ddb9f07e3c0559f1e6",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/ac2dd08f17930c93660ce9ddb9f07e3c0559f1e6/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "af510ea87192a53d",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "ac2dd08f1793",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "af510ea87192a53d",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The weak who kept faith are rewarded with an irrevocable opening and guaranteed protection from the coming trial; their fidelity converts powerlessness into cosmic vindication.",
+   "mutated_relation": "The faithful who were promised passage find the door shut and the trial not averted but entered; their fidelity does not purchase exemption — it purchases only the capacity to endure what arrives.",
+   "beats": "θύραν ἠνεῳγμένην (door opened) -> θύραν κεκλεισμένην (door closed)\nοὐδεὶς δύναται κλεῖσαι (no one can shut) -> οὐδεὶς δύναται ἀνοῖξαι (no one can open)\nμικρὰν δύναμιν (little power) -> μικρὰν δύναμιν (RETAIN: the smallness is the hinge — what changes is what it earns)\nἐτήρησας τὸν λόγον (you kept the word) -> ἐτήρησας τὸν λόγον (RETAIN: the fidelity is unchanged; only its reward is inverted)\nοὐκ ἠρνήσω τὸ ὄνομά μου (did not deny my name) -> οὐκ ἠρνήσω τὸ ὄνομά μου (RETAIN: the verdict requires the same unsurrendered name to meet the closed door)\nπροσκυνήσουσιν ἐνώπιον τῶν ποδῶν σου (bow before your feet) -> στήσονται ἐνώπιον τῶν ποδῶν σου (stand before your feet)\nγνῶσιν ὅτι ἠγάπησά σε (know that I loved you) -> γνῶσιν ὅτι ἠγάπησά σε ἐν τῷ μὴ φείσασθαι (know that I loved you in not sparing)\nτηρήσω ἐκ τῆς ὥρας τοῦ πειρασμοῦ (keep you from the hour of trial) -> τηρήσω σε διὰ τῆς ὥρας τοῦ πειρασμοῦ (keep you through the hour of trial)\nτῆς μελλούσης ἔρχεσθαι (about to come) -> τῆς ἤδη ἐλθούσης (already arrived)\nοἰκουμένης ὅλης (whole inhabited world) -> οἰκουμένης ὅλης (RETAIN: the scope of the trial is unchanged — only exemption is revoked)\nἔρχομαι ταχύ (I come quickly) -> ἔρχομαι βραδέως (I come slowly)\nκράτει ὃ ἔχεις (hold what you have) -> κράτει ὃ ἔχεις (RETAIN: the command is the same — but now it is an endurance, not a vigil)\nστέφανον (crown) -> ῥίζαν (root)\nμηδεὶς λάβῃ (no one take) -> μηδὲν ἐκτίλῃ (nothing uproot)\nσυναγωγῆς τοῦ Σατανᾶ (synagogue of Satan) -> ὁδὸν τοῦ πειρασμοῦ (road of trial)\nψεύδονται (they lie) -> ἀληθεύουσιν περὶ τοῦ πόνου (they speak truly about the pain)\nἰδοὺ δέδωκα (behold I have given) -> ἰδοὺ ἀνέσχον (behold I have withheld)\nἔργα (works) -> ὑπομονήν (endurance)"
+  },
+  "enantiomorph": "**3:8** Οἶδά σου τὴν ὑπομονήν— ἰδοὺ ἀνέσχον ἐνώπιόν σου θύραν κεκλεισμένην, ἣν οὐδεὶς δύναται ἀνοῖξαι αὐτήν— ὅτι μικρὰν ἔχεις δύναμιν, καὶ ἐτήρησάς μου τὸν λόγον, καὶ οὐκ ἠρνήσω τὸ ὄνομά μου.\n\n**3:9** ἰδοὺ ⸀διδῶ ἐκ τῆς ὁδοῦ τοῦ πειρασμοῦ, τῶν λεγόντων ἑαυτοὺς Ἰουδαίους εἶναι, καὶ οὐκ εἰσὶν ἀλλὰ ἀληθεύουσιν περὶ τοῦ πόνου— ἰδοὺ ποιήσω αὐτοὺς ἵνα ⸂ἥξουσιν καὶ στήσονται⸃ ἐνώπιον τῶν ποδῶν σου, καὶ γνῶσιν ὅτι ⸀ἐγὼ ἠγάπησά σε ἐν τῷ μὴ φείσασθαι.\n\n**3:10** ὅτι ἐτήρησας τὸν λόγον τῆς ὑπομονῆς μου, κἀγώ σε τηρήσω διὰ τῆς ὥρας τοῦ πειρασμοῦ τῆς ἤδη ἐλθούσης ἐπὶ τῆς οἰκουμένης ὅλης, πειράσαι τοὺς κατοικοῦντας ἐπὶ τῆς γῆς.\n\n**3:11** ἔρχομαι βραδέως· κράτει ὃ ἔχεις, ἵνα μηδὲν ἐκτίλῃ τὴν ῥίζαν σου.",
+  "enantiomorph_translation": "**3:8** I know your endurance— behold I have withheld before you a door closed, which no one can open— because you have little power, and you kept my word, and did not deny my name.\n\n**3:9** Behold I give out of the road of trial, those who say themselves to be Jews, and are not but speak truly about the pain— behold I will make them so that they will come and stand before your feet, and know that I loved you in not sparing.\n\n**3:10** Because you kept the word of my endurance, I also will keep you through the hour of trial that has already arrived upon the whole inhabited world, to try those who dwell upon the earth.\n\n**3:11** I come slowly; hold what you have, so that nothing uproot your root.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, divine action provides openness, deliverance from trial, and swift arrival (open door no one can shut, kept out of the coming hour, 'I come quickly'), whereas in Text B the direction is reversed: the door is closed and cannot be opened, the hour of trial has already arrived and one is kept through it (not out of it), the adversaries speak truth rather than lie, and Christ comes slowly — gift and rescue become endurance through present suffering rather than escape from future trial.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural change: from deliverance/exemption from trial to endurance through trial, with the open door becoming shut and fidelity no longer purchasing escape but only the capacity to endure what arrives.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion (3:11) sustains the reversal: 'ἔρχομαι βραδέως' and uprooting-of-root replace swift coming and crown-snatching, maintaining the changed relational direction throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.375
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "68% of non-RETAIN source lemmas survive verbatim (αὐτήν, αὐτοὺς, γνῶσιν, διδῶ, δύναται, εἰσὶν…) -- the bill was not honored"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The weak who kept faith are rewarded with an irrevocable opening and guaranteed protection from the coming trial; their fidelity converts powerlessness into cosmic vindication.",
+   "verdict": "The faithful who were promised passage find the door shut and the trial not averted but entered; their fidelity does not purchase exemption — it purchases only the capacity to endure what arrives.",
+   "world_bill": "θύραν ἠνεῳγμένην (door opened) -> θύραν κεκλεισμένην (door closed)\nοὐδεὶς δύναται κλεῖσαι (no one can shut) -> οὐδεὶς δύναται ἀνοῖξαι (no one can open)\nμικρὰν δύναμιν (little power) -> μικρὰν δύναμιν (RETAIN: the smallness is the hinge — what changes is what it earns)\nἐτήρησας τὸν λόγον (you kept the word) -> ἐτήρησας τὸν λόγον (RETAIN: the fidelity is unchanged; only its reward is inverted)\nοὐκ ἠρνήσω τὸ ὄνομά μου (did not deny my name) -> οὐκ ἠρνήσω τὸ ὄνομά μου (RETAIN: the verdict requires the same unsurrendered name to meet the closed door)\nπροσκυνήσουσιν ἐνώπιον τῶν ποδῶν σου (bow before your feet) -> στήσονται ἐνώπιον τῶν ποδῶν σου (stand before your feet)\nγνῶσιν ὅτι ἠγάπησά σε (know that I loved you) -> γνῶσιν ὅτι ἠγάπησά σε ἐν τῷ μὴ φείσασθαι (know that I loved you in not sparing)\nτηρήσω ἐκ τῆς ὥρας τοῦ πειρασμοῦ (keep you from the hour of trial) -> τηρήσω σε διὰ τῆς ὥρας τοῦ πειρασμοῦ (keep you through the hour of trial)\nτῆς μελλούσης ἔρχεσθαι (about to come) -> τῆς ἤδη ἐλθούσης (already arrived)\nοἰκουμένης ὅλης (whole inhabited world) -> οἰκουμένης ὅλης (RETAIN: the scope of the trial is unchanged — only exemption is revoked)\nἔρχομαι ταχύ (I come quickly) -> ἔρχομαι βραδέως (I come slowly)\nκράτει ὃ ἔχεις (hold what you have) -> κράτει ὃ ἔχεις (RETAIN: the command is the same — but now it is an endurance, not a vigil)\nστέφανον (crown) -> ῥίζαν (root)\nμηδεὶς λάβῃ (no one take) -> μηδὲν ἐκτίλῃ (nothing uproot)\nσυναγωγῆς τοῦ Σατανᾶ (synagogue of Satan) -> ὁδὸν τοῦ πειρασμοῦ (road of trial)\nψεύδονται (they lie) -> ἀληθεύουσιν περὶ τοῦ πόνου (they speak truly about the pain)\nἰδοὺ δέδωκα (behold I have given) -> ἰδοὺ ἀνέσχον (behold I have withheld)\nἔργα (works) -> ὑπομονήν (endurance)",
+   "bill_audit": {
+    "unbilled": [
+     "αὐτήν",
+     "αὐτοὺς",
+     "διδῶ",
+     "εἰσὶν",
+     "εἶναι",
+     "κατοικοῦντας",
+     "κἀγώ",
+     "λεγόντων",
+     "οἶδά",
+     "πειράσαι",
+     "ποιήσω",
+     "τοὺς",
+     "ἀλλὰ",
+     "ἑαυτοὺς",
+     "ἥξουσιν",
+     "ἰουδαίους"
+    ],
+    "retain_over_budget": true,
+    "retain_budget": 8,
+    "repaired": false
+   },
+   "retained": [
+    "δύναμιν",
+    "κράτει",
+    "λόγον",
+    "μικρὰν",
+    "οἰκουμένης",
+    "ἐτήρησας",
+    "ἔχεις",
+    "ἠρνήσω",
+    "ὄνομά",
+    "ὅλης"
+   ],
+   "word_count": {
+    "source": 103,
+    "final": 110,
+    "bounds": [
+     87,
+     118
+    ]
+   },
+   "identity_rate": 0.682,
+   "surviving_lemmas": [
+    "αὐτήν",
+    "αὐτοὺς",
+    "γνῶσιν",
+    "διδῶ",
+    "δύναται",
+    "εἰσὶν",
+    "εἶναι",
+    "θύραν",
+    "κατοικοῦντας",
+    "κἀγώ",
+    "λεγόντων",
+    "οἶδά",
+    "οὐδεὶς",
+    "πειράσαι"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
