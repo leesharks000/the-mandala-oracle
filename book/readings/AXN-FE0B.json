@@ -132,12 +132,13 @@
      "diagnosis": "witness-question entities inside the transform or commentary: read"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The threshold stone worn smooth by crossing becomes the altar — consecration is what the repeated wounding arrives at when the door holds."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T08:24:57.605625+00:00",
+ "last_updated": "2026-07-07T08:25:08.714183+00:00",
  "rite": [
   {
    "stage": "judgment",
@@ -145,6 +146,13 @@
    "at": "2026-07-07T08:23:56.850172+00:00",
    "text": "The wind that did not break the oak still bent it — the cost is in the lean, not the fall.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-07T08:25:08.714183+00:00",
+   "text": "The threshold stone worn smooth by crossing becomes the altar — consecration is what the repeated wounding arrives at when the door holds.",
+   "operator": "BRIDE"
   }
  ]
 }
