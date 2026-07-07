@@ -1,0 +1,59 @@
+{
+ "axn": "AXN:FE93.READING.🌔🌑🪐🌗🌔🔥",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "0d8e6937ebcbf738",
+ "inscribed_at": "2026-07-07T19:18:04.575213+00:00",
+ "question_digest": "sha256:f8832d0acd1a45c9bd3113c70f8d5bfbf5caed0f32ee25dc092a2377e88fad13",
+ "question_gloss": "A statement of deep emotional solitude addressed to a maternal figure.",
+ "source_text_id": "iching",
+ "cast_selection": "units_2_4",
+ "rotation": [
+  {
+   "operator": "BRIDE",
+   "source_passage": "000000\n坤 坤为地 坤上坤下\n坤：元，亨，利牝马之贞。君子有攸往，先迷，后得主，利。西南得朋，东北丧朋。安贞吉。\n译文：《坤卦》象征地：元始，亨通，如果像雌马那样柔顺，则是吉利的。君子从事某项事业，虽然开始时不知所从，但结果会是有利的。如往西南方，则会得到朋友的帮助。如往东南方，则会失去朋友的帮助。如果保持现状，也是吉利的\n象曰：地势坤，君子以厚德载物。\n译文：《象辞》说：坤象征大地，君子应效法大地，胸怀宽广，包容万物\n100010\n屯 水雷屯 坎上震下 \n屯：元，亨，利，贞；勿用有攸往，利建侯。\n译文：《屯卦》象征初生：元始，亨通，和谐，贞正。不要急于发展，首先要立君建国\n象曰：云雷屯，君子以经纶。\n译文：《象辞》说：《屯卦》的卦象是震(雷)下坎(水)上，为雷上有水之表象，水在上表示雨尚未落，故释为云。云雷大作，是即将下雨的征兆，故《屯卦》象征初生。这里表示天地初创，国家始建，正人君子应以全部才智投入到创建国家的事业中去\n010001\n蒙 山水蒙 艮上坎下 \n蒙：亨。匪我求童蒙，童蒙求我；初筮告，再三渎，渎则不告。利贞。\n译文：《蒙卦》象征启蒙、亨通。不是我有求于幼童，而是幼童有求于我，第一次向我请教，我有问必答，如果一而再、再而三地没有礼貌地乱问，则不予回答。利于守正道\n象曰：山下出泉，蒙；君子以果行育德。\n译文：《象辞》说：《蒙卦》的卦象是坎(水)下艮(山)上，为山下有泉水之表象，但要想发现甘泉，必须设法准确地找出泉水的位置，即意味着先必须进行启蒙教育。君子必须行动果断，才能培养出良好的品德",
+   "citation": "unit 2–unit 4",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "000000\n婚 婚为床 婚上婚下\n婚：元，亨，利新妇之倾心。新郎有迎亲，先怯，后交杯，利。左手得环，旧名将舍。同枕安。\n译文：《婚卦》象征共床：元始，亨通，如果像新妇那样倾心，则是吉利的。新郎前往迎亲，虽然开始时羞怯，但终将交杯，是有利的。如以左手，则会得到戒环的交换。如舍旧名，则会成就新的共称。如果同枕而眠，也是安宁的\n象曰：床势婚，新郎以两心同席。\n译文：《象辞》说：婚象征共床，新郎应效法共床，两心相倾，同席而坐\n100010\n初夜 水鼓初夜 盖头上鼓下\n初夜：元，亨，利，倾心；勿用有迎亲，利立誓。\n译文：《初夜卦》象征初见：元始，亨通，和谐，倾心。不要急于迎亲，首先要立誓结缡\n象曰：盖头与鼓初夜，新郎以结缡。\n译文：《象辞》说：《初夜卦》的卦象是鼓下盖头上，为鼓上有盖头之表象，盖头在上表示帕尚未揭，故释为盖头。盖头鼓乐大作，是即将揭帕的征兆，故《初夜卦》象征初见。这里表示天地初合，新家始建，新郎新妇应以全部倾心投入到结缡共席的盟约中去\n010001\n揭帕 门歌揭帕 门上歌下\n揭帕：亨。匪你求羞涩者，羞涩者求你；初问应，再三试，试则不应。利倾心。\n译文：《揭帕卦》象征解带、亨通。不是你有求于羞涩者，而是羞涩者有求于你，第一次相问，必以红颜回应，如果一而再、再而三地试探不止，则不予回应。利于守倾心之道\n象曰：门后传歌，揭帕；新郎以启门相迎。\n译文：《象辞》说：《揭帕卦》的卦象是歌下门上，为门后有歌声之表象，但要想听见歌声，必须设法准确地找到门后的嫁衣，即意味着先必须进行解带之礼。新郎必须启门相迎，才能成就同枕之安",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "All cosmological/political concepts and relationships in Text A (earth/地, sovereign/君子, virtue/德, state-building/建国, teaching/启蒙) are systematically re-mapped to nuptial/erotic concepts and relationships in Text B (marriage-bed/婚床, bridegroom/新郎, conjugal union/同枕, wedding vows/结缡, unveiling/揭帕), transforming the domain from cosmic-political governance to marital-romantic union while preserving the identical structural skeleton.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: hierarchical governance/submission relationships are remapped to lateral, covenantal, nuptial/marriage relationships — the recovered claim specifies the systematic domain re-mapping (cosmic-political → marital-romantic) that enacts exactly the relational change declared (receiving becomes mutual choosing, bearing becomes marrying, relation becomes face-to-face and covenantal).",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final section (揭帕/蒙) maintains the nuptial re-mapping throughout, with 启蒙教育→解带之礼 and 君子果行育德→新郎启门相迎成就同枕之安, never reverting to the cosmological-political framing.",
+    "back_translation": "",
+    "terminal_similarity": 0.091
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "facing_fallback",
+     "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-07T19:18:04.575213+00:00"
+}
