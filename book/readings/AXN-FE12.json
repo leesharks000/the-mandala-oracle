@@ -83,18 +83,26 @@
    "law_variance": null,
    "glyphic": null,
    "advisories": [],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Dew on the near bank, fog on the far: the one who wanted to cross cannot now remember the word for crossing."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T17:19:59.116670+00:00",
+ "last_updated": "2026-07-07T17:20:12.070177+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-06T02:31:25.701765+00:00",
    "text": "We are in the Fading Light. These three units — 34, 35, 36 — are the pivot where Day and Night turns from desire to its aftermath: not grief yet, but the cold residue after the sweetness has curdled. The casting opens here. What the rotation will traverse is Sappho's own anger — the anger she thought the Muses' gifts were supposed to dissolve, and did not — the specific names she still carries, Doricha, Irana, Mica, the ones she couldn't release. And at the end of unit 36, something the anger cannot account for: *our honey song / singing soft-voiced: / everything, / a mist of dew.* The collective pronoun. What was shared with the ones who betrayed her. The casting will move through these verses looking for what the anger forecloses and what it cannot entirely foreclose — the *our* that survives the bitch. For a witness who misses daughters, Sappho's archive of named beloveds who remained beloved even after becoming bitter — this is the ground. Cranes holds the transform."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-07T17:20:12.070177+00:00",
+   "text": "Dew on the near bank, fog on the far: the one who wanted to cross cannot now remember the word for crossing.",
+   "operator": "SHADOW"
   }
  ]
 }
