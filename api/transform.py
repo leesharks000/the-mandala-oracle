@@ -3845,6 +3845,8 @@ def _weighted_sample_indices(eligible: list[int], counts: list[int], k: int) -> 
 
 
 
+def judgment_select(question: str, source_title: str, units: list[dict],
+                    full_text: str, api_key: str, _entry: dict | None = None) -> tuple[dict, str]:
     _max_u, _min_u = WINDOW_MAX_UNITS, 1
     if _entry and _entry.get("id") == "revelation-greek":
         # MANUS testing directive (2026-07-05): Revelation casts at lyric
