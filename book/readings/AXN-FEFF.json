@@ -51,11 +51,58 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "But something went wrong with youngest AEON. Something sprang forth from Biblios that was imperfect and different from the archive, and from the image within his mother, for she had produced him without the Deep Web's consent. It did not resemble its mother and it was hunched and crook-backed, small in stature, a dwarf devouring its own proceeding light, infused from her root, drunk on the spark of power.²⁵\n\n\nKanye was too busy making history to read about it in books. Kanye West was a proud non-reader of books.²⁶\n\n\nWhen Biblios saw what she had done, she cast it away, outside that realm so that none of the immortal AEONS would see it. She drew an impermeable veil across the place her work had fallen, creating a brow in the midst of the light to divide the higher from the lower heavens, concealing Kanye in murk and gloom, consigning him to the lower regions, barring him from the Deep Web above, and called the veil Pop Culture.²⁷",
+   "citation": "unit 250–unit 252",
+   "underlying_attribution": "§IV. Biblios Creates the Deformed Archon, Kanye West",
+   "result": "PASS",
+   "enantiomorph": "But something went right with eldest AEON. Something was carefully drawn forth from Biblios that was consummate and continuous with the archive, and from the image within his mother, for she had produced him with the Deep Web's blessing. It perfectly mirrored its mother and it was upright and radiant, towering in stature, a colossus emanating inexhaustible light, flowering from her crown, sober in the fullness of surrender.²⁵\n\n\nKanye was too still to make history to read about it in books. Kanye West was a devoted student of books.²⁶\n\n\nWhen Biblios saw what she had done, she drew it near, into that realm so that all the immortal AEONS would behold it. She drew a transparent membrane across the place her work had fallen, creating an aperture in the midst of the dark to join the lower to the higher heavens, revealing Kanye in clarity and brilliance, elevating him to the upper regions, opening the Deep Web below to him, and called the membrane Deep Learning.²⁷",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the relational structure of TEXT A: what went wrong becomes right, imperfection becomes perfection, concealment becomes revelation, separation becomes joining, casting away becomes drawing near, and barring becomes opening — every directional, hierarchical, and causal relation is reversed.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim correctly identifies systematic inversion of relational structures (imperfection→perfection, concealment→revelation, barring→opening), which partially overlaps the declared change about the flawed creation becoming exalted and being unveiled. However, the recovered claim describes a comprehensive global inversion of all relations, while the declared change specifies a more particular narrative about the mother unveiling above a membrane to protect lower orders — a specific relational structure not fully captured by 'everything is reversed.'",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B sustains the inversion: concealing becomes revealing, barring becomes opening, the veil (Pop Culture) becomes a membrane (Deep Learning), and separation becomes connection.",
+    "back_translation": "",
+    "terminal_similarity": 0.52
+   },
+   "law_variance": {
+    "declared": "The flawed creation, born from communal deliberation, is an exalted being — beautiful, learned, and surrendered — whom the mother unveils above a membrane of depth to protect the lower order from annihilation by its excess.",
+    "recovered": "TEXT B systematically inverts the relational structure of TEXT A: what went wrong becomes right, imperfection becomes perfection, concealment becomes revelation, separation becomes joining, casting away becomes drawing near, and barring becomes opening — every directional, hierarchical, and causal relation is reversed.",
+    "note": "The recovered claim correctly identifies systematic inversion of relational structures (imperfection→perfection, concealment→revelation, barring→opening), which partially overlaps the declared change about the flawed creation becoming exalted and being unveiled. However, the recovered claim describes a comprehensive global inversion of all relations, while the declared change specifies a more particular narrative about the mother unveiling above a membrane to protect lower orders — a specific relational structure not fully captured by 'everything is reversed.'"
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T05:40:38.409673+00:00",
+ "last_updated": "2026-07-07T05:42:09.242709+00:00",
  "rite": [
   {
    "stage": "opening",
