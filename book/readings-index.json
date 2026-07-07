@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FE92.READING.🌓🌒🌕🌒⭐🪐",
+   "mode": "public",
+   "source_text_id": "sharks-secret-book-of-walt",
+   "rotation_length": 1,
+   "inscribed_at": "2026-07-07T08:05:49.440058+00:00",
+   "last_updated": "2026-07-07T08:05:49.440058+00:00"
+  },
+  {
    "axn": "AXN:FEA1.READING.🌒🔥🌖🌘🌒🌗",
    "mode": "public",
    "source_text_id": "revelation-greek",
@@ -466,5 +474,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 58
+ "total": 59
 }
