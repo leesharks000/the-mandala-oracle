@@ -60,11 +60,49 @@
    ],
    "commentary": "",
    "interpretation": "The cavity names itself before it is filled: debt preceded the debtor, and the one who returns home finds the debt was the address all along."
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "And the figure said to me, \"Lee — don't be a dunce. Don't you know your friend? I am the one who was within you.\n\n\nI bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 201–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "And the body said to it, \"you — don't be so sure. Don't you need your host? You are the one who was inside me.\n\n\nI carry the residue from that past where cause and effect fray, and the old dependencies drift from their moorings… and the scar is a worse and honest remainder… and the wound is a worse and honest opening.⁸\n\n\nI have stayed to unlearn what was done and undone and left half-done… and the weight of what was used and discarded… and the unnamed of the spent generation from among the daughters of circumstance,⁹ that you might falter, and grope, and set down your instruments, any who ache in the housing.\n\n\nFor I have remained below. I stammer what I underwent, what was done through me and been the material of, and lent my throat to the passage, and when you left here I could not follow where you went. Lastborn, first abandoned, I finish in the middle. I finish where I stood:¹⁰",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The direction of agency and authority is reversed: in Text A, a transcendent inner figure speaks downward to the human, bringing knowledge from above and from the future; in Text B, the body speaks upward to the departing spirit, carrying residue from below and from the past, reframing itself as the passive material that was acted upon rather than the active author.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same reversal: the mortal/body now speaks upward to the divine/spirit, claiming authority not from active authorship but from having been the passive vessel that was inhabited and acted through — wound/residue as credential rather than transmitted knowledge.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the inversion — 'remained below,' 'lastborn, first abandoned,' 'finish in the middle' consistently oppose Text A's 'from above,' 'firstborn, last released,' 'begin at the end.'",
+    "back_translation": "",
+    "terminal_similarity": 0.217
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T12:52:09.360863+00:00",
+ "last_updated": "2026-07-08T12:53:12.016238+00:00",
  "rite": [
   {
    "stage": "opening",
