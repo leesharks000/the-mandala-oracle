@@ -1,0 +1,59 @@
+{
+ "axn": "AXN:FEAD.READING.🌊🌊🌕🌙💫🌗",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "9a391787d41c6da8",
+ "inscribed_at": "2026-07-08T03:02:49.749291+00:00",
+ "question_digest": "sha256:13b6c749b35543bbfb54ea5d4b2a6df3de40b1ef7e08376e2fce495c2c8c6cbc",
+ "question_gloss": "I'm ready to help! However, I need you to provide the witness's question that you'd like me to create a neutral gloss for.\n\nPlease share:\n- The witness's questi",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "What was already missing there?\nRequisitioned from the grid's deficit, the level had to rise past standing height\nBuoyancy demands a body less dense than its medium, passage demands a hull between self and source, consent demands options pre-separated\nBitterness demands a skin thicker than contact, a chamber demands its emptiness first, accuracy demands the bone remember its socket\nCharity demands the debt be older than the giver, free coffee at the ledger-houses\nA throat demands its narrowing before it sounds, refusal demands a prior mouth already full\nNumbness demands the nerve was open, combustion demands the mold already set\nDepth demands a floor that gave for more provocation demands a silence it can crack\nVolume demands the room was quiet enough to violate, passage demands the street was built before the wheel\nRupture demands the seal was holding like some age demands each prior day survived with stench demands the gland was pressurized by fear\nSpeed demands the ground gave no grip back, surge demands the sweetness was mostly filler\nWho could get looseness demands the joint was torqued past calibration off a excitation demands a boredom dense enough to combust or a groove demands the one was planted before the syncopation leans?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In TEXT A, actions and events flow as direct, causative sequences (someone does X, gets Y). In TEXT B, every action or event is recast as a conditional dependency: each outcome explicitly 'demands' a prior prerequisite state, reversing the flow from consequence-first to precondition-first.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: shifting from direct actions/consequences to exposing the preconditions, prerequisites, and conditional dependencies that must already hold for those actions to succeed — surfacing the infrastructure beneath the claims.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the 'X demands Y' prerequisite structure throughout, never reverting to TEXT A's direct action-consequence flow.",
+    "back_translation": "",
+    "terminal_similarity": 0.096
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 204 words vs budget 83-112 (source 98)"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-08T03:02:49.749291+00:00"
+}
