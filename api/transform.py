@@ -4120,12 +4120,22 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         _max_u = 2 + secrets.randbelow(2)
         _min_u = 2
     if _entry and _entry.get("id") == "homer-iliad":
-        # MANUS (2026-07-07): the Iliad's units are individual Homeric lines
-        # (about 30-80 chars of Greek each). 12-unit spans are outside the
-        # Greek-to-Greek-plus-English-facing compute budget. Cap at 2-3 lines
-        # per cast -- oracular passage scale, one speech-beat or one image.
-        _max_u = 2 + secrets.randbelow(2)
-        _min_u = 2
+        # MANUS (2026-07-07, updated 2026-07-08): the Iliad's units are
+        # individual Homeric lines (about 30-80 chars of Greek each).
+        # Prior cap of 2-3 lines was set because Greek-to-Greek-plus-English
+        # facing exceeded the compute budget. With pipeline.transform_target
+        # == "translation" (see manifest), the source is translated ONCE at
+        # cast entry and the compiler transforms English; the enantiomorph
+        # is single-language English, no facing translation of the output.
+        # This shifts the budget enough to run at oracular-passage narrative
+        # scale — 8-15 Homeric lines carry a real speech-beat or scene.
+        _pipe = _entry.get("pipeline") or {}
+        if _pipe.get("transform_target") == "translation":
+            _max_u = 8 + secrets.randbelow(8)  # 8-15 lines
+            _min_u = 8
+        else:
+            _max_u = 2 + secrets.randbelow(2)
+            _min_u = 2
     """The invisible Judgment chooses the verses FROM THE FILE ITSELF, under
     guidelines (MANUS design, 2026-07-02) — not from a pre-drawn candidate
     set. The server validates the choice; the expansion ledger audits the
@@ -4488,6 +4498,30 @@ class handler(BaseHTTPRequestHandler):
         except ValueError as e:
             return self._json(400, {"error": str(e)})
 
+        # Pipeline directive (MANUS, 2026-07-08): sources may declare
+        # pipeline.transform_target == "translation" in their manifest entry.
+        # When set, the source is translated ONCE at cast entry and the English
+        # is what the compiler transforms. For long non-English narrative
+        # sources (Iliad), the double-transform pipeline (Greek→transform→
+        # translate) exceeds the compute budget AND produces hybrid output the
+        # compiler cannot cleanly commit to. Transforming the translation
+        # yields one clean English enantiomorph. The reader still sees the
+        # original + facing English on the source side (source_passage +
+        # source_translation), and the enantiomorph is single-language English
+        # (no enantiomorph_translation second pass).
+        _pipeline = (meta.get("pipeline") or {}) if isinstance(meta, dict) else {}
+        if _pipeline.get("transform_target") == "translation":
+            try:
+                _pre_english = translate_passage(source_text, api_key)
+                if _pre_english:
+                    meta = dict(meta)
+                    meta["source_original_text"] = source_text  # preserve for display
+                    meta["source_pretranslated"] = _pre_english
+                    meta["pipeline_effective"] = "translation"
+                    source_text = _pre_english  # compiler now sees English
+            except Exception:
+                pass  # fall through to source-language transform if translate fails
+
         # Re-unfold economy: a halted cast returns its skeleton; the client
         # sends it back with the diagnosis and the retry skips the analyst.
         _rskel = body.get("retry_skeleton")
@@ -4628,12 +4662,15 @@ class handler(BaseHTTPRequestHandler):
 
         transform_block = {
             "operator": operator,
-            "source_passage": source_text,
-                    "source_translation": translate_passage(source_text, api_key),
+            "source_passage": meta.get("source_original_text") or source_text,
+            "source_translation": (meta.get("source_pretranslated")
+                                   if meta.get("pipeline_effective") == "translation"
+                                   else translate_passage(source_text, api_key)),
             "citation": body.get("citation"),
             "underlying_attribution": meta.get("underlying_attribution"),
             "enantiomorph": parsed["enantiomorph"],
-            "enantiomorph_translation": parsed.get("enantiomorph_translation", ""),
+            "enantiomorph_translation": ("" if meta.get("pipeline_effective") == "translation"
+                                         else parsed.get("enantiomorph_translation", "")),
             "layer_a": parsed["layer_a"],
             "layer_b": parsed["layer_b"],
             "verification": parsed["verification"],
@@ -4709,9 +4746,12 @@ class handler(BaseHTTPRequestHandler):
                 **({"run_record": _run} if not _fl else {}),
             "transform": {
                 "primary_output": parsed["enantiomorph"],
-                "enantiomorph_translation": parsed.get("enantiomorph_translation", ""),
-                "source_passage": source_text,
-                "source_translation": translate_passage(source_text, api_key),
+                "enantiomorph_translation": ("" if meta.get("pipeline_effective") == "translation"
+                                             else parsed.get("enantiomorph_translation", "")),
+                "source_passage": meta.get("source_original_text") or source_text,
+                "source_translation": (meta.get("source_pretranslated")
+                                       if meta.get("pipeline_effective") == "translation"
+                                       else translate_passage(source_text, api_key)),
                 "citation": body.get("citation"),
                 "underlying_attribution": meta.get("underlying_attribution"),
                 "geometry_check": geometry_check,

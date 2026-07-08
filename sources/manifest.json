@@ -53,7 +53,12 @@
       "admissible": true,
       "text_file": "original.grc",
       "menu": true,
-      "primary_after": "μῆνιν"
+      "primary_after": "μῆνιν",
+      "pipeline": {
+        "transform_target": "translation",
+        "notes": "Iliad's narrative units are longer than a lyric can carry when we double-transform Greek then translate. Per MANUS (2026-07-08): translate once at cast-time, transform on the English, skip the enantiomorph_translation second pass. The reader still sees Greek+English facing on the source side; the enantiomorph is a single clean English."
+      },
+      "lyric_unit_lines": 20
     },
     {
       "id": "homer-odyssey",
