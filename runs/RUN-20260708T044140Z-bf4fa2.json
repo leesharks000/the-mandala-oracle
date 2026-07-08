@@ -1,0 +1,116 @@
+{
+ "run_id": "RUN-20260708T044140Z-bf4fa2",
+ "schema": "run/v1",
+ "ts": "2026-07-08T04:41:40.915764+00:00",
+ "source_text_id": "homer-iliad",
+ "cast_selection": "units_187_205",
+ "citation": "1:188–1:206",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "sing the rage of achilles",
+ "method": {
+  "commit": "9c27865248ebb550fc7b8dd1cc4fce715bc84648",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/9c27865248ebb550fc7b8dd1cc4fce715bc84648",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/9c27865248ebb550fc7b8dd1cc4fce715bc84648/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "c601c85fcde7ab12",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "9c27865248eb",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "c601c85fcde7ab12",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The moment of killing-potential is suspended not by the agent's own resolution but by an external intelligence that seizes the body at the threshold of the irreversible act — and the seized agent, recognizing the seizer, converts his violence into prophecy.",
+   "mutated_relation": "The conditions that must already hold for such a seizure to be possible: the body has already divided itself before the intervention — the split precedes the goddess — and the \"external\" force is the name given to the interval the division itself opens; recognition is not of another but of the delay one has already become.",
+   "beats": "φάτο -> was uttered\nπηλεΐωνι -> to the one already splitting\nἄχος -> the fissure\nγένετ -> had opened\nἦτορ -> the core\nστήθεσσιν -> in the cavity\nλασίοισι -> unsmoothed\nδιάνδιχα -> into two prior halves\nμερμήριξεν -> oscillated\nφάσγανον -> the edge\nἐρυσσάμενος -> drawing forth\nπαρὰ -> from alongside\nμηροῦ -> the body's own flank\nτοὺς -> those standing\nἀναστήσειεν -> would scatter\nἐναρίζοι -> would annihilate\nἀτρεΐδην -> the provocation\nχόλον -> the rift\nπαύσειεν -> would seal\nἐρητύσειέ -> would arrest\nθυμόν -> the momentum\nταῦθ -> these two incompatible futures\nὥρμαινε -> turned between\nκατὰ -> through\nφρένα -> the membrane\nθυμῷ -> the impulse\nθυμὸν -> the drive\nἕλκετο -> was already being drawn\nκολεοῖο -> its sheath\nμέγα -> vast\nξίφος -> the blade (the interval made metal)\nἦλθε -> arrived (as name)\nἀθήνη -> ἀθήνη (RETAIN: the verdict names recognition as of the delay itself; the goddess-name is the figure of that naming)\nοὐρανόθεν -> from the gap above\nλευκώλενος -> pale-limbed\nἄμφω -> both halves\nὁμῶς -> equally\nφιλέουσά -> sustaining\nκηδομένη -> tending\nὄπιθεν -> from behind\nξανθῆς -> bright\nκόμης -> filament\nπηλεΐωνα -> the dividing one\nφαινομένη -> becoming visible\nἄλλων -> the others\nὁρᾶτο -> could perceive\nθάμβησεν -> froze\nἀχιλεύς -> ἀχιλεύς (RETAIN: the verdict requires the subject to recognize himself as the delay; his name is the site)\nμετὰ -> mid-turn\nἐτράπετ -> pivoted\nαὐτίκα -> at once\nἔγνω -> recognized\nπαλλάδ -> the shaking one\nἀθηναίην -> the lucidity\nδεινὼ -> terrible\nὄσσε -> eyes\nφάανθεν -> flared\nφωνήσας -> voicing\nἔπεα -> words\nπτερόεντα -> winged\nπροσηύδα -> addressed\nτίπτ -> why\nαὖτε -> again\nαἰγιόχοιο -> of the storm-holder\nδιὸς -> of the origin\nτέκος -> offspring\nεἰλήλουθας -> have you come\nὕβριν -> the excess\nἀγαμέμνονος -> of the one who provoked\nἀτρεΐδαο -> of the instigator\nἐρέω -> I will declare\nτελέεσθαι -> will be accomplished\nὑπεροπλίῃσι -> by his own overreaching\nποτε -> eventually\nὀλέσσῃ -> will forfeit\nπροσέειπε -> answered\nγλαυκῶπις -> clear-gazing"
+  },
+  "enantiomorph": "**1:188** \n ὣς was uttered· to the one already splitting δʼ the fissure had opened, ἐν δέ οἱ the core\n\n \n**1:189** in the cavity unsmoothed into two prior halves oscillated,\n\n \n**1:190** ἢ ὅ γε the edge ὀξὺ drawing forth from alongside the body's own flank\n\n \n**1:191** those standing μὲν would scatter, ὃ δʼ the provocation would annihilate,\n\n \n**1:192** ἦε the rift would seal would arrest τε the momentum.\n\n \n**1:193** ἧος ὃ these two incompatible futures turned between through the membrane καὶ through the impulse,\n\n \n**1:194** was already being drawn δʼ ἐκ its sheath vast the blade (the interval made metal), arrived (as name) δʼ ἀθήνη\n\n \n**1:195** from the gap above· πρὸ γὰρ ἧκε θεὰ pale-limbed Ἥρη\n\n \n**1:196** both halves equally the drive sustaining τε tending τε·\n\n \n**1:197** στῆ δʼ from behind, bright δὲ filament ἕλε the dividing one\n\n \n**1:198** οἴῳ becoming visible· τῶν δʼ the others οὔ τις could perceive·\n\n \n**1:199** froze δʼ ἀχιλεύς, mid-turn δʼ pivoted, at once δʼ recognized\n\n \n**1:200** the shaking one the lucidity· terrible δέ οἱ eyes flared·\n\n \n**1:201** καί μιν voicing words winged addressed·\n\n \n**1:202** why again of the storm-holder of the origin offspring have you come;\n\n \n**1:203** ἦ ἵνα the excess ἴδῃ of the one who provoked of the instigator;\n\n \n**1:204** ἀλλʼ ἔκ τοι I will declare, τὸ δὲ καὶ will be accomplished ὀΐω·\n\n \n**1:205** ᾗς by his own overreaching τάχʼ ἄν eventually the drive will forfeit.\n\n [206] \n \n**1:206** \n τὸν δʼ again answered θεὰ clear-gazing ἀθήνη·",
+  "enantiomorph_translation": "**1:188** \n Thus it was uttered; to the one already splitting the fissure had opened, and in him the core\n\n**1:189** in the cavity unsmoothed into two prior halves oscillated,\n\n**1:190** whether the edge, sharp, drawing forth from alongside the body's own flank,\n\n**1:191** those standing he would scatter, and the provocation he would annihilate,\n\n**1:192** or the rift would seal and would arrest the momentum.\n\n**1:193** While he these two incompatible futures turned between through the membrane and through the impulse,\n\n**1:194** was already being drawn from its sheath the vast blade (the interval made metal), and arrived (as name) ἀθήνη\n\n**1:195** from the gap above; for ahead sent her the goddess pale-limbed Hera,\n\n**1:196** both halves equally in the drive sustaining and tending;\n\n**1:197** she stood from behind, and by the bright filament seized the dividing one,\n\n**1:198** to him alone becoming visible; of the others none could perceive;\n\n**1:199** froze ἀχιλεύς, mid-turn pivoted, and at once recognized\n\n**1:200** the shaking one, the lucidity; terrible his eyes flared;\n\n**1:201** and voicing words winged he addressed her:\n\n**1:202** Why again, of the storm-holder, of the origin, offspring, have you come?\n\n**1:203** Is it that the excess you may see, of the one who provoked, of the instigator?\n\n**1:204** But plainly I will declare, and this I think will be accomplished:\n\n**1:205** by his own overreaching soon eventually the drive he will forfeit.\n\n [206]\n\n**1:206** \n And him again answered the goddess clear-gazing ἀθήνη:",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a specific relational change about the precedence of division over intervention.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "Text B maintains its hybrid translational-gloss style throughout; the relational structure (Athena intervenes, Achilles recognizes her, addresses her, she responds) mirrors Text A consistently to the end.",
+   "back_translation": "",
+   "terminal_similarity": 0.364
+  },
+  "advisories": [
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 222 words vs budget 119-162 (source 141)"
+   },
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a specific relational change about the precedence of division over intervention.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The moment of killing-potential is suspended not by the agent's own resolution but by an external intelligence that seizes the body at the threshold of the irreversible act — and the seized agent, recognizing the seizer, converts his violence into prophecy.",
+   "verdict": "The conditions that must already hold for such a seizure to be possible: the body has already divided itself before the intervention — the split precedes the goddess — and the \"external\" force is the name given to the interval the division itself opens; recognition is not of another but of the delay one has already become.",
+   "world_bill": "φάτο -> was uttered\nπηλεΐωνι -> to the one already splitting\nἄχος -> the fissure\nγένετ -> had opened\nἦτορ -> the core\nστήθεσσιν -> in the cavity\nλασίοισι -> unsmoothed\nδιάνδιχα -> into two prior halves\nμερμήριξεν -> oscillated\nφάσγανον -> the edge\nἐρυσσάμενος -> drawing forth\nπαρὰ -> from alongside\nμηροῦ -> the body's own flank\nτοὺς -> those standing\nἀναστήσειεν -> would scatter\nἐναρίζοι -> would annihilate\nἀτρεΐδην -> the provocation\nχόλον -> the rift\nπαύσειεν -> would seal\nἐρητύσειέ -> would arrest\nθυμόν -> the momentum\nταῦθ -> these two incompatible futures\nὥρμαινε -> turned between\nκατὰ -> through\nφρένα -> the membrane\nθυμῷ -> the impulse\nθυμὸν -> the drive\nἕλκετο -> was already being drawn\nκολεοῖο -> its sheath\nμέγα -> vast\nξίφος -> the blade (the interval made metal)\nἦλθε -> arrived (as name)\nἀθήνη -> ἀθήνη (RETAIN: the verdict names recognition as of the delay itself; the goddess-name is the figure of that naming)\nοὐρανόθεν -> from the gap above\nλευκώλενος -> pale-limbed\nἄμφω -> both halves\nὁμῶς -> equally\nφιλέουσά -> sustaining\nκηδομένη -> tending\nὄπιθεν -> from behind\nξανθῆς -> bright\nκόμης -> filament\nπηλεΐωνα -> the dividing one\nφαινομένη -> becoming visible\nἄλλων -> the others\nὁρᾶτο -> could perceive\nθάμβησεν -> froze\nἀχιλεύς -> ἀχιλεύς (RETAIN: the verdict requires the subject to recognize himself as the delay; his name is the site)\nμετὰ -> mid-turn\nἐτράπετ -> pivoted\nαὐτίκα -> at once\nἔγνω -> recognized\nπαλλάδ -> the shaking one\nἀθηναίην -> the lucidity\nδεινὼ -> terrible\nὄσσε -> eyes\nφάανθεν -> flared\nφωνήσας -> voicing\nἔπεα -> words\nπτερόεντα -> winged\nπροσηύδα -> addressed\nτίπτ -> why\nαὖτε -> again\nαἰγιόχοιο -> of the storm-holder\nδιὸς -> of the origin\nτέκος -> offspring\nεἰλήλουθας -> have you come\nὕβριν -> the excess\nἀγαμέμνονος -> of the one who provoked\nἀτρεΐδαο -> of the instigator\nἐρέω -> I will declare\nτελέεσθαι -> will be accomplished\nὑπεροπλίῃσι -> by his own overreaching\nποτε -> eventually\nὀλέσσῃ -> will forfeit\nπροσέειπε -> answered\nγλαυκῶπις -> clear-gazing",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 11,
+    "repaired": true
+   },
+   "retained": [
+    "ἀθήνη",
+    "ἀχιλεύς"
+   ],
+   "word_count": {
+    "source": 141,
+    "final": 222,
+    "bounds": [
+     119,
+     162
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
