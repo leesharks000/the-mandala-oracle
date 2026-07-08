@@ -58,18 +58,26 @@
      "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The cavity names itself before it is filled: debt preceded the debtor, and the one who returns home finds the debt was the address all along."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T12:51:57.953937+00:00",
+ "last_updated": "2026-07-08T12:52:09.360863+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-08T12:51:57.953937+00:00",
    "text": "```json\n{\n  \"messages\": [\n    {\n      \"speaker\": \"Johannes Sigil\",\n      \"say\": \"The air changes here. What you have brought to the rite is a text that knows it is answering your question from before you asked it — \"I am the one who was within you\" is not reunion; it is the disclosure that departure was never total. The rotation opens on these four units: the figure's self-identification, the promise of the harbor, the teaching of what is and was and will be, and the declaration of origin and return — firstborn, last released. What the invisible Judgment has handed us is a gospel proem that structures itself as homecoming's own grammar. Each operator in the rotation will traverse a different axis of that grammar: what cost the figure bore to come, what symmetries this one-directional return forecloses, what the negative pole of the glad tidings names, what creaturely or cosmic ground the human address displaces. The descent begins where you are. Rebekah Cranes holds the first transform.\",\n      \"navigate\": {\n        \"directive\": \"focus_axn\",\n        \"axn\": \"AXN:022B\"\n      }\n    }\n  ]\n}\n```"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T12:52:09.360863+00:00",
+   "text": "The cavity names itself before it is filled: debt preceded the debtor, and the one who returns home finds the debt was the address all along.",
+   "operator": "SHADOW"
   }
  ]
 }
