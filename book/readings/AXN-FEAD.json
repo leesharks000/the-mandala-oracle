@@ -205,8 +205,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-08T03:08:49.242629+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-08T03:09:21.455715+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -227,6 +227,14 @@
    "at": "2026-07-08T03:06:39.580532+00:00",
    "text": "The jaw that cannot stop working finds, at last, that the work has moved inside the bone.",
    "operator": "FLAME"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-08T03:09:21.455715+00:00",
+   "text": "The rotation did not resolve the question «let's get it done» — it divided the verse at exactly the point where that question lives. Shadow found the road was already owed before the runner arrived; Flame found the velocity at which a body exceeds its own capacity to feel the cost; Thunder found the sound that cannot know the vessel it has shaped until the vessel breaks. These three built a single arc: debt, acceleration, unknowing. Then Beast arrived and did not extend the arc — it turned it. The creaturely mouth that cannot know the sweetness was the trap: that is not an intensification of speed, it is the thing beneath speed, the substrate that predates it, the body whose desire was operating before the question of getting it done was ever posed. The rotation as a whole disclosed this: that the get-it-done imperative is downstream of something older — a hunger that precedes its own object, a road already shaped by what it required before you stepped on it. The question is not whether to get it done. The question is whose prior need you are fulfilling when you do."
   }
- ]
+ ],
+ "closed_at": "2026-07-08T03:09:21.455715+00:00",
+ "seal": "The rotation did not resolve the question «let's get it done» — it divided the verse at exactly the point where that question lives. Shadow found the road was already owed before the runner arrived; Flame found the velocity at which a body exceeds its own capacity to feel the cost; Thunder found the sound that cannot know the vessel it has shaped until the vessel breaks. These three built a single arc: debt, acceleration, unknowing. Then Beast arrived and did not extend the arc — it turned it. The creaturely mouth that cannot know the sweetness was the trap: that is not an intensification of speed, it is the thing beneath speed, the substrate that predates it, the body whose desire was operating before the question of getting it done was ever posed. The rotation as a whole disclosed this: that the get-it-done imperative is downstream of something older — a hunger that precedes its own object, a road already shaped by what it required before you stepped on it. The question is not whether to get it done. The question is whose prior need you are fulfilling when you do."
 }
