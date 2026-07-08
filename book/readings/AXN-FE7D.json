@@ -84,12 +84,13 @@
    "law_variance": null,
    "glyphic": null,
    "advisories": [],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The locked door stays locked: the one who would not dispense has also forgotten how to need."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T00:14:14.058385+00:00",
+ "last_updated": "2026-07-08T00:14:23.799422+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -103,6 +104,13 @@
    "at": "2026-07-08T00:13:10.218827+00:00",
    "text": "Water standing where the coffee was free: the one who gave everything away is holding an empty cup and calling it the gift.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T00:14:23.799422+00:00",
+   "text": "The locked door stays locked: the one who would not dispense has also forgotten how to need.",
+   "operator": "INVERSION"
   }
  ]
 }
