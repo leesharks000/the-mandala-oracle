@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:0244.CONVERSATION.🌟❄️🍃🌈❄️🌔",
+      "started_at": "2026-07-08T18:19:35.526Z",
+      "last_updated": "2026-07-08T18:20:28.472987+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: The Secret Book of Walt (sharks-secret-book-of-walt). The verses the casting arrives at (§IV. Biblios Creates the Defo…"
+    },
+    {
       "axn": "AXN:5F17.CONVERSATION.🌾💧🌾🌈☁️🌍",
       "started_at": "2026-07-08T12:50:29.092Z",
       "last_updated": "2026-07-08T13:03:49.874179+00:00",
@@ -1128,7 +1137,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 125,
-  "last_updated": "2026-07-08T13:03:49.874179+00:00",
+  "total_recorded": 126,
+  "last_updated": "2026-07-08T18:20:28.472987+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
