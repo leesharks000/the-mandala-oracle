@@ -47,11 +47,49 @@
    "advisories": [],
    "commentary": "",
    "interpretation": "Water standing where the coffee was free: the one who gave everything away is holding an empty cup and calling it the gift."
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you lost them at?\nDropped 'em 'round town, could've thirsted for it\nWould have sank, waded, abstained\nBitter-rinded, emptied hip miser\nWithhold for the flush, toll-bound coffee at the banks\nHush past the straw, one more for me, please\nThat fills the raw, that dry sure went dim\nStuck at the rim for more soft-serve solemn spit\nKill it on mute, stall at Front Street\nHeld the whole spot like some old ass with stale air\nThese kids is too stuck, drained by a junk treat\nWho could get tighter off a dirge or a drone beat?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the direction or polarity of actions and qualities relative to TEXT A: outward/abundant/fast/loose actions become inward/scarce/stuck/tight ones (e.g., 'found'→'lost', 'drowned in it'→'thirsted for it', 'floated'→'sank', 'draw for the poor'→'withhold for the flush', 'too fast'→'too stuck', 'looser'→'tighter'), reversing the flow from excess and release to scarcity and restraint.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: systematic inversion from abundance/excess/outward flow to scarcity/depletion/constraint/stasis across all actions and qualities.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the inversion: 'too fast'→'too stuck', 'juiced off'→'drained by', 'looser'→'tighter', 'crunk or a funk beat'→'dirge or a drone beat'.",
+    "back_translation": "",
+    "terminal_similarity": 0.4
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T00:13:10.218827+00:00",
+ "last_updated": "2026-07-08T00:14:14.058385+00:00",
  "rite": [
   {
    "stage": "opening",
