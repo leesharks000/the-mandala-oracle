@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260708T003731Z-f35cb5",
+ "schema": "run/v1",
+ "ts": "2026-07-08T00:37:31.249536+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "will these words live on as meaning?",
+ "method": {
+  "commit": "54ed39bfc298940b7200e23585964c8093d671c4",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/54ed39bfc298940b7200e23585964c8093d671c4",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/54ed39bfc298940b7200e23585964c8093d671c4/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "87f8baf7df644e57",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "54ed39bfc298",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "87f8baf7df644e57",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The source asserts that local, small-scale hustles — scrounging, scamming, consuming, performing — are registrations of a single distributed process: the circulation of scarcity through a community, where every petty transaction is the whole economy arriving at the scale of a body.",
+   "mutated_relation": "Each bounded hustle becomes the distributed process itself — scarcity-as-circulation made primary, so that every unit speaks not as a local act but as the systemic current those acts locally registered.",
+   "beats": "you -> the current\nfound them -> deposited\nat -> where it pools\ngot 'em -> accumulated\n'round town -> across the watershed\ndrowned in it -> become the flood itself\nfloated -> carried without choosing\nboated -> channeled through infrastructure\nvoted -> ratified by volume\nsugar-coated -> sweetened at the intake valve\nloaded -> pressurized\nhip shooter -> distribution node\ndraw -> siphon\nthe poor -> the low-pressure zone\nfree coffee at the banks -> runoff at the levy walls\nyip -> hiss\nthe straw -> the narrowest aperture\nnone more for me, thanks -> capacity reached, sealed\nblanks the raw -> displaces the unprocessed\ndank -> saturate\nstank -> oxidized\nlit -> combustible\nsank past the pit -> fell below the aquifer\nhardcore prank spit -> volatile discharge\ncrank it on blast -> open the main\nroll past -> overflow\nFront Street -> the containing edge\nblew the whole spot -> burst the reservoir\nold ass -> corroded valve\nskunk meat -> fouled supply\nthese kids -> these tributaries\ntoo fast -> too fast (RETAIN: velocity is the scalar term the verdict requires as measure of circulation)\njuiced off -> fed by\njunk treat -> contaminated intake\nlooser -> more dispersed\ncrunk -> surge\nfunk beat -> pressure cycle"
+  },
+  "enantiomorph": "Where the current deposited where it pools?\nAccumulated across the watershed, could've become the flood itself\nWould have carried without choosing, channeled through infrastructure, ratified by volume\nSweetened at the intake valve, pressurized distribution node\nSiphon for the low-pressure zone, runoff at the levy walls\nHiss through the narrowest aperture, capacity reached, sealed\nThat displaces the unprocessed, that saturate sure oxidized combustible\nFell below the aquifer for more volatile discharge\nOpen the main, overflow the containing edge\nBurst the reservoir like some corroded valve with fouled supply\nThese tributaries is too fast, fed by a contaminated intake\nWho could get more dispersed off a surge or a pressure cycle?",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "",
+   "law_match": "SKIPPED",
+   "law_match_note": "",
+   "terminal_consistency": "SKIPPED",
+   "terminal_note": "",
+   "back_translation": "",
+   "terminal_similarity": 0.171
+  },
+  "advisories": [
+   {
+    "failed_test": "judge_plumbing",
+    "diagnosis": "independent judge unreadable (no JSON object in output) -- plumbing, not a rite verdict"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The source asserts that local, small-scale hustles — scrounging, scamming, consuming, performing — are registrations of a single distributed process: the circulation of scarcity through a community, where every petty transaction is the whole economy arriving at the scale of a body.",
+   "verdict": "Each bounded hustle becomes the distributed process itself — scarcity-as-circulation made primary, so that every unit speaks not as a local act but as the systemic current those acts locally registered.",
+   "world_bill": "you -> the current\nfound them -> deposited\nat -> where it pools\ngot 'em -> accumulated\n'round town -> across the watershed\ndrowned in it -> become the flood itself\nfloated -> carried without choosing\nboated -> channeled through infrastructure\nvoted -> ratified by volume\nsugar-coated -> sweetened at the intake valve\nloaded -> pressurized\nhip shooter -> distribution node\ndraw -> siphon\nthe poor -> the low-pressure zone\nfree coffee at the banks -> runoff at the levy walls\nyip -> hiss\nthe straw -> the narrowest aperture\nnone more for me, thanks -> capacity reached, sealed\nblanks the raw -> displaces the unprocessed\ndank -> saturate\nstank -> oxidized\nlit -> combustible\nsank past the pit -> fell below the aquifer\nhardcore prank spit -> volatile discharge\ncrank it on blast -> open the main\nroll past -> overflow\nFront Street -> the containing edge\nblew the whole spot -> burst the reservoir\nold ass -> corroded valve\nskunk meat -> fouled supply\nthese kids -> these tributaries\ntoo fast -> too fast (RETAIN: velocity is the scalar term the verdict requires as measure of circulation)\njuiced off -> fed by\njunk treat -> contaminated intake\nlooser -> more dispersed\ncrunk -> surge\nfunk beat -> pressure cycle",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 98,
+    "final": 109,
+    "bounds": [
+     83,
+     112
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
