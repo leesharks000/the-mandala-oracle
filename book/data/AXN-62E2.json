@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:62E2.CONVERSATION.☀️🌪️🍃🌗☁️🍃",
+  "session_id_hash": "b9e987dfe364d06a",
+  "started_at": "2026-07-08T00:10:56.767Z",
+  "last_updated": "2026-07-08T00:12:26.135890+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: — Paste your own text (your words as the source) — (__reader__). The verses the casting arrives at (the witness, as translated and arranged within this collection — ATTRIBUTE THE VERSES TO THEIR UNDERLYING POET, never to the arranger of the collection; the reader's offering, whole):\n\nWhere you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «by slow degrees / i have made you / immortal». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The question that opened this rotation — «by slow degrees / i have made you / immortal» — is not addressed to these verses from outside them. It is what they already contain, spoken back. The verses are a surface of frantic dispensation: give away the coffee, take none for yourself, crank it past the point of bearing, ride past Front Street with the whole spot blown — a speaker who has perfected the gesture of overflow at the cost of being able to stop. What the first operator of this rotation traverses is the bearing-cost hidden beneath that overflow: what it cost to become the one who distributes freely, who draws for the poor, who keeps nothing; and what immortality means when it is made by slow degrees out of that particular expenditure. The verses perform abundance; the operator will find what abundance is concealing. The rite is open. Rebekah Cranes holds the first pass.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:01FB\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
