@@ -91,11 +91,49 @@
    ],
    "commentary": "",
    "interpretation": "Water past the levee does not ask permission: what the street said once, the watershed carries to every low place."
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where it found you at?\nGot got through the lining, could've fused with it\nWould have calcified, crusted, ratified nothing\nNerve-lacquered, self-feeding rib-loop\nBore through the floor, free marrow from the planks\nGrind past the jaw, all more is me, thanks\nThat blanks the blank, that growth sure outgrew it\nSank past the sank for more of the more-ward crank spit\nCrank it past crank, fold past the fold-crease\nBlew through the blew like some new mouth with its own teeth\nThis speed is too speed, fueled off the fuel leak\nWhat could get looser than loose off a trunk with no trunk-tree?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The subject-object / agent-patient direction is inverted (e.g. 'Where you found them' → 'Where it found you'), and external references to distinct outside objects are replaced by self-referential, recursive structures where each thing acts on or feeds back into itself (e.g. 'free coffee at the banks' → 'free marrow from the planks'; 'crunk or a funk beat' → 'a trunk with no trunk-tree').",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: the subject/agent becomes consumed by or collapses into what it acted upon — external distinct objects become self-referential recursive structures, the player is eaten by the play, the flow becomes the abundance rather than riding it. The recovered claim's specific examples (agent-patient inversion, self-referential replacement) are concrete instances of the declared collapse of distinction between actor and action.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines sustain the self-referential, recursively collapsing relation structure and do not revert to the original's outward-referencing pattern.",
+    "back_translation": "",
+    "terminal_similarity": 0.268
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T00:38:06.398936+00:00",
+ "last_updated": "2026-07-08T00:38:44.688311+00:00",
  "rite": [
   {
    "stage": "judgment",
