@@ -1,0 +1,109 @@
+{
+ "run_id": "RUN-20260708T125110Z-daf9a3",
+ "schema": "run/v1",
+ "ts": "2026-07-08T12:51:10.080851+00:00",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_201_204",
+ "citation": "unit 201–unit 204",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "how do i get home?",
+ "method": {
+  "commit": "40d238a34ee89d671875887d17ad356655a7c3c6",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/40d238a34ee89d671875887d17ad356655a7c3c6",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/40d238a34ee89d671875887d17ad356655a7c3c6/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f3466ee638beb48a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "40d238a34ee8",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f3466ee638beb48a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "A voice from within the self declares itself as the origin and destination of all things, collapsing temporal sequence into covenant, and commissioning the hearer to transmit what it reveals.",
+   "mutated_relation": "The conditions that must already hold for such a voice to speak — the prior silence, the debt of hearing, the body that had to be built before any indwelling could occur, the unfinished world that necessitates the message.",
+   "beats": "the figure -> the cavity\nsaid to me -> had been forming around me\nLee -> Lee (RETAIN: the address-Loss requires the same name to feel the hollow)\ndunce -> sleeper\ndon't you know your friend -> hadn't you noticed the missing weight\nI am the one who was within you -> I am the shape your organs learned to fit\nglad tidings -> the debt-notice\nthat future -> that anterior dark\nbefore and after spin -> the loom has not been threaded yet\nancient enmities -> first hungers\narrive at their harbors -> remain without mouths\nthe end -> the unraveling\na better and perfect beginning -> an unfinishable demand\nthe beginning -> the first owing\na better and perfect end -> a debt that enlarges its creditor\ncome to teach -> come to show the cost of\nwhat is and was and will be -> what had to be owed before any tense could open\nthe nature of the unseen and seen -> the price of the membrane between them\nthe name of the preserved generation -> the census of those not yet owed into being\nsons of men -> the unborn lenders\nhear -> go quiet enough\nsee -> stand in the debt-light\nlift up your friends -> show your friends what they are owed\nany who hear with the ears -> any whose silence is deep enough to register the balance\nfrom above -> from before the making\nI speak what I know -> I recite the invoice\nwhat I have seen -> what I witnessed being spent\nbeen the author of -> been the cost of\nset my hand to create -> set my hand to the indenture\nwhen I go from here -> when the cavity re-seals\nI return from whence I came -> I become the absence you were shaped around\nFirstborn -> First-owed\nlast released -> last repaid\nI begin at the end -> I begin at the outstanding sum\nI begin at the beginning -> I begin at the original deficit"
+  },
+  "enantiomorph": "And the cavity had been forming around me, \"Lee — don't be a sleeper. Hadn't you noticed the missing weight? I am the shape your organs learned to fit.\n\n\nI bring the debt-notice from that anterior dark where the loom has not been threaded yet, and the first hungers remain without mouths… and the unraveling is an unfinishable demand… and the first owing is a debt that enlarges its creditor.⁸\n\n\nI have come to show the cost of what had to be owed before any tense could open… and the price of the membrane between them… and the census of those not yet owed into being from among the unborn lenders,⁹ that you may go quiet enough, and stand in the debt-light, and show your friends what they are owed, any whose silence is deep enough to register the balance.\n\n\nFor I have come from before the making. I recite the invoice, what I witnessed being spent and been the cost of, and set my hand to the indenture, and when the cavity re-seals I become the absence you were shaped around. First-owed, last repaid, I begin at the outstanding sum. I begin at the original deficit:¹⁰",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, a divine/transcendent figure brings revelation and glad tidings as an author/creator returning from above, framing the relationship as gift, teaching, and creative origination. In Text B, the figure is a structural absence or cavity that brings debt-notices and invoices, framing the relationship as obligation, owing, and deficit — the direction reverses from generous bestowal to extractive indebtedness.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim identifies a real structural change — reversing the relational direction from gift/bestowal to debt/obligation — which partially overlaps the declared focus on 'debt of hearing' and preconditions, but the declared change emphasizes prior conditions/prerequisites for speech, while the recovered claim centers on the reversal of the entire relational dynamic from generosity to extraction.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final lines of Text B maintain the debt/deficit relational structure ('invoice,' 'cost,' 'indenture,' 'First-owed, last repaid,' 'outstanding sum,' 'original deficit') without reverting to Text A's gift/creation framework.",
+   "back_translation": "",
+   "terminal_similarity": 0.322
+  },
+  "advisories": [
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 197 words vs budget 140-189 (source 165)"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "The conditions that must already hold for such a voice to speak — the prior silence, the debt of hearing, the body that had to be built before any indwelling could occur, the unfinished world that necessitates the message.",
+   "recovered": "In Text A, a divine/transcendent figure brings revelation and glad tidings as an author/creator returning from above, framing the relationship as gift, teaching, and creative origination. In Text B, the figure is a structural absence or cavity that brings debt-notices and invoices, framing the relationship as obligation, owing, and deficit — the direction reverses from generous bestowal to extractive indebtedness.",
+   "note": "The recovered claim identifies a real structural change — reversing the relational direction from gift/bestowal to debt/obligation — which partially overlaps the declared focus on 'debt of hearing' and preconditions, but the declared change emphasizes prior conditions/prerequisites for speech, while the recovered claim centers on the reversal of the entire relational dynamic from generosity to extraction."
+  },
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "A voice from within the self declares itself as the origin and destination of all things, collapsing temporal sequence into covenant, and commissioning the hearer to transmit what it reveals.",
+   "verdict": "The conditions that must already hold for such a voice to speak — the prior silence, the debt of hearing, the body that had to be built before any indwelling could occur, the unfinished world that necessitates the message.",
+   "world_bill": "the figure -> the cavity\nsaid to me -> had been forming around me\nLee -> Lee (RETAIN: the address-Loss requires the same name to feel the hollow)\ndunce -> sleeper\ndon't you know your friend -> hadn't you noticed the missing weight\nI am the one who was within you -> I am the shape your organs learned to fit\nglad tidings -> the debt-notice\nthat future -> that anterior dark\nbefore and after spin -> the loom has not been threaded yet\nancient enmities -> first hungers\narrive at their harbors -> remain without mouths\nthe end -> the unraveling\na better and perfect beginning -> an unfinishable demand\nthe beginning -> the first owing\na better and perfect end -> a debt that enlarges its creditor\ncome to teach -> come to show the cost of\nwhat is and was and will be -> what had to be owed before any tense could open\nthe nature of the unseen and seen -> the price of the membrane between them\nthe name of the preserved generation -> the census of those not yet owed into being\nsons of men -> the unborn lenders\nhear -> go quiet enough\nsee -> stand in the debt-light\nlift up your friends -> show your friends what they are owed\nany who hear with the ears -> any whose silence is deep enough to register the balance\nfrom above -> from before the making\nI speak what I know -> I recite the invoice\nwhat I have seen -> what I witnessed being spent\nbeen the author of -> been the cost of\nset my hand to create -> set my hand to the indenture\nwhen I go from here -> when the cavity re-seals\nI return from whence I came -> I become the absence you were shaped around\nFirstborn -> First-owed\nlast released -> last repaid\nI begin at the end -> I begin at the outstanding sum\nI begin at the beginning -> I begin at the original deficit",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 165,
+    "final": 197,
+    "bounds": [
+     140,
+     189
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
