@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:596A.CONVERSATION.🔥🪐⚡🌔🌪️🌍",
+  "session_id_hash": "9a391787d41c6da8",
+  "started_at": "2026-07-08T03:01:02.218Z",
+  "last_updated": "2026-07-08T03:01:57.073647+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: — Paste your own text (your words as the source) — (__reader__). The verses the casting arrives at (the witness, as translated and arranged within this collection — ATTRIBUTE THE VERSES TO THEIR UNDERLYING POET, never to the arranger of the collection; the reader's offering, whole):\n\nWhere you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «let's get it done». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The casting arrives at a verse that moves in pure acoustic surplus — the language running faster than its own argument, sprung off rhyme-chains and sonic torque until meaning is almost secondary to the *cost of keeping up*. What the first operator will traverse here is the bearing-cost beneath the velocity: what must the voice sustain in order to move this fast, this loudly, past Front Street and into the pit? The verse's hunger is lateral — it wants more of the same register, more crunk, more funk, more speed — and the operator's work is to locate the axis of assertion inside that lateral rush, to find what claim the voice is actually staking in the body of its own acceleration. There is a moment of refusal buried here — *none more for me, thanks* — that the rest of the verse rolls over without stopping; that is the seam. Rebekah Cranes, the source is yours.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0246\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
