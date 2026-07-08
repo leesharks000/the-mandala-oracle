@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260708T001431Z-2230e2",
+ "schema": "run/v1",
+ "ts": "2026-07-08T00:14:31.356384+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "BRIDE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "by slow degrees / i have made you / immortal",
+ "method": {
+  "commit": "76587c4f18a6b4d970e94681a30fac579c687aa2",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/76587c4f18a6b4d970e94681a30fac579c687aa2",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/76587c4f18a6b4d970e94681a30fac579c687aa2/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "4e1f306ae1817fdd",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "76587c4f18a6",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "4e1f306ae1817fdd",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The speaker navigates a saturated, chaotic street economy where abundance drowns, intoxicants mask rawness, and everyone — poor, kids, the speaker — is propelled past each other by excess, velocity, and competitive display; relation is serial near-miss, not mutual hold.",
+   "mutated_relation": "The abundance that scatters becomes the abundance that gathers — the street's surplus is the medium through which each party discovers itself as constituted by the others it was merely passing.",
+   "beats": "found -> kept\n'round town -> through the block\ndrowned -> steeped\nfloated -> steadied\nboated -> ferried\nvoted -> pledged\nsugar-coated -> salt-cured\nloaded -> laden\nhip shooter -> hip bearer\ndraw -> pour\nthe poor -> the fold\nfree coffee -> strong coffee\nbanks -> stoops\nyip -> sip\nstraw -> cup\nnone more for me -> one more for us\nthanks -> thanks (RETAIN: the verdict's mutual gesture requires the same word of social exchange)\nblanks -> fills\nraw -> raw (RETAIN: the rawness must persist as what bond does not erase but holds)\ndank -> dank (RETAIN: the sensory marker must survive so the gathering has the same texture as the scattering)\nstank lit -> rang fit\nsank past -> sat with\npit -> ring\nhardcore prank spit -> heart-warm frank spit\ncrank it on blast -> bring it on back\nroll past -> pull up\nFront Street -> Front Street (RETAIN: the spatial marker is the site where passing becomes staying)\nblew the whole spot -> held the whole spot\nold ass -> old head\nskunk meat -> trunk heat\nkids -> kids (RETAIN: the parties must remain distinct per B_i specification)\ntoo fast -> so fast\njuiced off -> fueled off\njunk treat -> shared sweet\nlooser -> closer\ncrunk -> chunk\nfunk beat -> trunk beat"
+  },
+  "enantiomorph": "Where you kept them at?\nGot 'em through the block, could've steeped in it\nWould have steadied, ferried, pledged\nSalt-cured, laden hip bearer\nPour for the fold, strong coffee at the stoops\nSip through the cup, one more for us, thanks\nThat fills the raw, that dank sure rang fit\nSat with the ring for more heart-warm frank spit\nBring it on back, pull up Front Street\nHeld the whole spot like some old head with trunk heat\nThese kids is so fast, fueled off a shared sweet\nWho could get closer off a chunk or a trunk beat?",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT B reverses directions and polarities: drawing/shooting outward becomes bearing/pouring inward, drowning/sinking becomes steeping/sitting, blowing past and getting looser becomes pulling up and getting closer — the relational flow shifts from outward dispersal and excess to inward gathering and containment.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same transformation: outward scattering/dispersal becomes inward gathering/containment, with surplus recast as a medium of mutual constitution rather than excess passing by.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final lines maintain the inward/gathering relation (closer, shared, pull up) rather than reverting to TEXT A's outward/excess pattern.",
+   "back_translation": "",
+   "terminal_similarity": 0.347
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The speaker navigates a saturated, chaotic street economy where abundance drowns, intoxicants mask rawness, and everyone — poor, kids, the speaker — is propelled past each other by excess, velocity, and competitive display; relation is serial near-miss, not mutual hold.",
+   "verdict": "The abundance that scatters becomes the abundance that gathers — the street's surplus is the medium through which each party discovers itself as constituted by the others it was merely passing.",
+   "world_bill": "found -> kept\n'round town -> through the block\ndrowned -> steeped\nfloated -> steadied\nboated -> ferried\nvoted -> pledged\nsugar-coated -> salt-cured\nloaded -> laden\nhip shooter -> hip bearer\ndraw -> pour\nthe poor -> the fold\nfree coffee -> strong coffee\nbanks -> stoops\nyip -> sip\nstraw -> cup\nnone more for me -> one more for us\nthanks -> thanks (RETAIN: the verdict's mutual gesture requires the same word of social exchange)\nblanks -> fills\nraw -> raw (RETAIN: the rawness must persist as what bond does not erase but holds)\ndank -> dank (RETAIN: the sensory marker must survive so the gathering has the same texture as the scattering)\nstank lit -> rang fit\nsank past -> sat with\npit -> ring\nhardcore prank spit -> heart-warm frank spit\ncrank it on blast -> bring it on back\nroll past -> pull up\nFront Street -> Front Street (RETAIN: the spatial marker is the site where passing becomes staying)\nblew the whole spot -> held the whole spot\nold ass -> old head\nskunk meat -> trunk heat\nkids -> kids (RETAIN: the parties must remain distinct per B_i specification)\ntoo fast -> so fast\njuiced off -> fueled off\njunk treat -> shared sweet\nlooser -> closer\ncrunk -> chunk\nfunk beat -> trunk beat",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 98,
+    "final": 99,
+    "bounds": [
+     83,
+     112
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
