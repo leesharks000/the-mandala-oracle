@@ -279,6 +279,98 @@ def op_logic_line(operator: str) -> str:
     return f"{OPERATOR_META_INVARIANT}\n\nSPECIFICATION:\n{logic}"
 LEGACY_OPERATORS = {"SCROLL": "surface-depth-axis — non-canonical; fell out of rotation"}
 
+# ── EZEKIEL WHEEL MAPPING (MANUS, 2026-07-08; per EA-OPMETA-03 draft) ──────
+# Each Tier C operator rotates a specific canonical wheel of the Ezekiel
+# Engine (AXN:00CB); each has a specific shadow-face where it fails. This
+# mapping is verifier-side only — NEVER emitted to the compiler. It provides
+# a diagnostic vocabulary for post-cast analysis: rather than "register
+# substitution occurred," the verification log can name the specific
+# shadow-face the operator fell into.
+#
+# Canonical wheels: W_Ω (Principle/Logos), W_V/A (Aesthetic/Form),
+# W_Josephus (Witness/Body/Elimination-survivor), W_Chrono (Time/Process/
+# Duration). W_Josephus and W_Chrono complete the two [needs specification]
+# slots of AXN:00CB §4.2 via this mapping.
+#
+# Shadow wheels (all defined in AXN:00CB §4.3): W_ΩBar (Ω̄) Glossolalia/
+# symbol-decay, W_VA_Underscore (V̲/A) Simulation/Mimicry, W_Choronzon
+# Fracture/Captivity/counterfeit-witness, W_Kairon Schism/Dislocated-time/
+# false-kairos.
+#
+# Within each family, the two operators are counter-rotating diameters
+# (per Gemini's insight): one enters the wheel from one side, one from the
+# other. The counter_operator field names the other.
+WHEEL_MAPPING = {
+    "SHADOW":    {"canonical_wheel": "W_Josephus",
+                  "shadow_wheel":    "W_Choronzon",
+                  "family_domain":   "witness / body / elimination-survivor",
+                  "wheel_side":      "above-the-utterance (what it presupposes)",
+                  "counter_operator": "BEAST",
+                  "shadow_signature": "capture into an alien accounting register (debt/finance/legal-accounting imports); the composition speaks in a witness-cost voice not its own"},
+    "BEAST":     {"canonical_wheel": "W_Josephus",
+                  "shadow_wheel":    "W_Choronzon",
+                  "family_domain":   "witness / body / elimination-survivor",
+                  "wheel_side":      "beneath-the-utterance (what it frames)",
+                  "counter_operator": "SHADOW",
+                  "shadow_signature": "capture into a naturalist-pastoral register or false angelic uplift; substrate framed by imported biology or transcendence rather than derived from S"},
+    "MIRROR":    {"canonical_wheel": "W_V/A",
+                  "shadow_wheel":    "W_V̲/A",
+                  "family_domain":   "relation / aesthetic / form",
+                  "wheel_side":      "gestural vector between parties",
+                  "counter_operator": "BRIDE",
+                  "shadow_signature": "mimicry of reversal via refined-parlor / Victorian-looking-glass / decorative-reflection register; direction copied not composed"},
+    "BRIDE":     {"canonical_wheel": "W_V/A",
+                  "shadow_wheel":    "W_V̲/A",
+                  "family_domain":   "relation / aesthetic / form",
+                  "wheel_side":      "mutual constitution beneath the gesture",
+                  "counter_operator": "MIRROR",
+                  "shadow_signature": "mimicry of consecration via wedding / hearth / communion / covenant register; bond copied not derived"},
+    "INVERSION": {"canonical_wheel": "W_Ω",
+                  "shadow_wheel":    "W_ΩBar",
+                  "family_domain":   "completion-test / principle / logos",
+                  "wheel_side":      "denied ground of the positive claim",
+                  "counter_operator": "SILENCE",
+                  "shadow_signature": "symbol-decay via mere bit-flip negation; the same wheel-face with signs flipped and no structural claim generated"},
+    "SILENCE":   {"canonical_wheel": "W_Ω",
+                  "shadow_wheel":    "W_ΩBar",
+                  "family_domain":   "completion-test / principle / logos",
+                  "wheel_side":      "withheld return the claim expects",
+                  "counter_operator": "INVERSION",
+                  "shadow_signature": "symbol-decay via mute-void aesthetic; silence as decorative stillness rather than the specific structural absence of an owed return"},
+    "FLAME":     {"canonical_wheel": "W_Chrono",
+                  "shadow_wheel":    "W_Kairon",
+                  "family_domain":   "time / process / duration",
+                  "wheel_side":      "intensive gradient (degree becomes kind)",
+                  "counter_operator": "THUNDER",
+                  "shadow_signature": "false-kairos via fire/apocalypse/pathology imports; treating every accumulating parameter as if it produces flame at the threshold"},
+    "THUNDER":   {"canonical_wheel": "W_Chrono",
+                  "shadow_wheel":    "W_Kairon",
+                  "family_domain":   "time / process / duration",
+                  "wheel_side":      "extensive gradient (local becomes distributed)",
+                  "counter_operator": "FLAME",
+                  "shadow_signature": "false-kairos via hydraulic-infrastructure / watershed / cosmic-utterance imports; treating every distributed process as if it produces flood at scale"},
+}
+
+def wheel_diagnostic(operator: str) -> dict:
+    """Return the Ezekiel-wheel diagnostic vocabulary for an operator.
+    Verifier-side only: never emitted to the compiler. Attached to
+    verification_results for post-cast analysis and inscription. Per
+    EA-OPMETA-03 draft."""
+    entry = WHEEL_MAPPING.get(operator)
+    if not entry:
+        return {"assigned_wheel": None, "shadow_risk": None, "note": "operator not in wheel mapping"}
+    return {
+        "assigned_canonical_wheel": entry["canonical_wheel"],
+        "shadow_wheel_risk":        entry["shadow_wheel"],
+        "family_domain":            entry["family_domain"],
+        "wheel_side":               entry["wheel_side"],
+        "counter_operator":         entry["counter_operator"],
+        "shadow_signature":         entry["shadow_signature"],
+        "note": ("per EA-OPMETA-03: the operator rotates through its assigned "
+                 "canonical wheel; the shadow-signature names the specific "
+                 "failure mode when the wheel slips into its shadow-face"),
+    }
+
 RATE_LIMIT_WINDOW_S = int(os.environ.get("RATE_LIMIT_WINDOW_S", "3600"))
 RATE_LIMIT_MAX = int(os.environ.get("RATE_LIMIT_MAX", "40"))    # transforms per IP per hour (env-overridable; was 12; bumped for demo headroom)
 MANUS_BYPASS_TOKEN = os.environ.get("MANUS_BYPASS_TOKEN", "")   # if set, requests with matching manus_bypass_token in body skip rate limit
@@ -4599,6 +4691,16 @@ class handler(BaseHTTPRequestHandler):
                 source_text, parsed.get("enantiomorph", "") or "", meta)
             if isinstance(parsed.get("verification"), dict):
                 parsed["verification"]["material_speech_preservation"] = _msp_check
+        except Exception:
+            pass
+        # Ezekiel Wheel diagnostic (MANUS, 2026-07-08; per EA-OPMETA-03 draft).
+        # Verifier-side only — names the operator's assigned canonical wheel
+        # and shadow-face risk in the archive's own technical vocabulary. Never
+        # reaches the compiler. Attached for post-cast analysis, verification
+        # log, and Sigil's inscription commentary.
+        try:
+            if isinstance(parsed.get("verification"), dict):
+                parsed["verification"]["wheel_diagnostic"] = wheel_diagnostic(operator)
         except Exception:
             pass
         return self._json(200, {
