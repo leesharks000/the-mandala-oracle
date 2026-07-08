@@ -55,11 +55,58 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "**197** ἀλλʼ ἔτι που ζωὸς κατερύκεται εὐρέι πόντῳ\n\n \n**198** νήσῳ ἐν ἀμφιρύτῃ, χαλεποὶ δέ μιν ἄνδρες ἔχουσιν\n\n \n**199** ἄγριοι, οἵ που κεῖνον ἐρυκανόωσʼ ἀέκοντα.\n\n \n**200** αὐτὰρ νῦν τοι ἐγὼ μαντεύσομαι, ὡς ἐνὶ θυμῷ\n\n \n**201** ἀθάνατοι βάλλουσι καὶ ὡς τελέεσθαι ὀίω,\n\n \n**202** οὔτε τι μάντις ἐὼν οὔτʼ οἰωνῶν σάφα εἰδώς.\n\n \n**203** οὔ τοι ἔτι δηρόν γε φίλης ἀπὸ πατρίδος αἴης\n\n \n**204** ἔσσεται, οὐδʼ εἴ πέρ τε σιδήρεα δέσματʼ ἔχῃσιν·\n\n \n**205** φράσσεται ὥς κε νέηται, ἐπεὶ πολυμήχανός ἐστιν.\n\n \n**206** ἀλλʼ ἄγε μοι τόδε εἰπὲ καὶ ἀτρεκέως κατάλεξον,\n\n \n**207** εἰ δὴ ἐξ αὐτοῖο τόσος πάϊς εἰς Ὀδυσῆος.",
+   "citation": "197–207",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**197** But still somewhere dreaming you are sent forward on the narrow threshold,\n\n**198** in a land-locked room, and gentle doubts release you,\n\n**199** tender ghosts, who let you go against your need.\n\n**200** But now you yourself will confess to me, as the perishable hours\n\n**201** drew it from your mouth, and as you fear it has already lapsed,\n\n**202** being neither a son at all nor one who reads clearly the pauses in speech.\n\n**203** Not much further indeed will I be strange to my own reckoning,\n\n**204** not even if I have permissions of air;\n\n**205** I will forget a reason to stay, for I am a voice of one transparent asking.\n\n**206** But wait, hear me this and withhold it gently,\n\n**207** whether I am merely so thin a seer grown from my own guessing.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The directionality of agency, spatial orientation, and relational roles are systematically inverted: outward action on another becomes inward confession from the self, captivity by others becomes release by gentle forces, and the speaker-listener roles (I/you, prophet/son, holding/letting go) are reversed throughout.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a reversal of relational roles and agency between speaker and listener, but the declared claim focuses on the listener asserting filial authority through demanding proof, while the recovered claim describes a systematic inversion of directionality, spatial orientation, and speaker-listener roles throughout — overlapping in structural reversal but differing in specific mechanism and scope.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the inversion: commanding disclosure becomes gentle withholding, and identifying the other as Odysseus's son becomes questioning oneself as a thin seer born of one's own guessing.",
+    "back_translation": "",
+    "terminal_similarity": 0.174
+   },
+   "law_variance": {
+    "declared": "The listener claims filial authority precisely by disclaiming it — compelling captivity's end through sheer conviction in the prophet's blindness, and anchoring that conviction by demanding proof of vision from the speaker.",
+    "recovered": "The directionality of agency, spatial orientation, and relational roles are systematically inverted: outward action on another becomes inward confession from the self, captivity by others becomes release by gentle forces, and the speaker-listener roles (I/you, prophet/son, holding/letting go) are reversed throughout.",
+    "note": "Both identify a reversal of relational roles and agency between speaker and listener, but the declared claim focuses on the listener asserting filial authority through demanding proof, while the recovered claim describes a systematic inversion of directionality, spatial orientation, and speaker-listener roles throughout — overlapping in structural reversal but differing in specific mechanism and scope."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T11:20:34.706103+00:00",
+ "last_updated": "2026-07-08T11:24:36.290283+00:00",
  "rite": [
   {
    "stage": "opening",
