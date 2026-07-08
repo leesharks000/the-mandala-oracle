@@ -1,0 +1,54 @@
+{
+ "axn": "AXN:FE4F.READING.🌿🌒⭐🌓🌖🌒",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "b7f40f83775de413",
+ "inscribed_at": "2026-07-08T00:37:16.248135+00:00",
+ "question_digest": "sha256:b426588124b11d59cf8637f84d5811ea4a200014527f3fbe25765ccf32debd0d",
+ "question_gloss": "Inquiry about the enduring semantic significance and cultural persistence of particular words.",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "What it ran you though?\nPaid with what the block owed, nearly went under for it\nHad to tread blind, hauled scrap, pledged teeth\nDebt-wrapped, emptied-out arm that won't bend back\nLien on the willing, sleep sold at the counter\nSip through the bill, still owe from the last, thanks\nThat costs the nerve, that cut sure burnt rich\nDug past the floor for more back-owed mouth debt\nCharge it on faith, skip past the ledger\nBled the whole note like some spent lung with one breath\nThese kids is pre-spent, hollowed off a skim-sweet\nWho could get broker off a tab or a trunk leak?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, items are acquired freely or cheaply and consumed/enjoyed in abundance (things flow toward the subject at no cost). In Text B, every acquisition incurs debt, cost, or bodily sacrifice (things flow toward the subject only through obligation and loss).",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: free/costless abundance is rewritten so that every surplus now carries an explicit cost, debt, or sacrifice as its precondition.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines sustain the debt/cost inversion ('pre-spent,' 'broker off a tab'), never reverting to Text A's free-abundance framing.",
+    "back_translation": "",
+    "terminal_similarity": 0.17
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-08T00:37:16.248135+00:00"
+}
