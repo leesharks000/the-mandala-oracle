@@ -27,7 +27,7 @@ Verbatim (per the registry text at `alexanarch/data/texts/AXN-0261-text.md`):
 - **Canonical provenance document:** **PROVENANCE PACKET FORTHCOMING** — this Registry serves as the placeholder
 - **Companion deposits:**
   - SPLIT THE ADAM: SONG AND PHENOMENOLOGY — The Song at the Heart of Maybe Space Baby Garden Lanes (10.5281/zenodo.18674057)
-  - MSBGL CHARTER v1.1 — THUMB-Type Audial Charter: Resonance (10.5281/zenodo.18674039)
+  - MSBGL CHARTER v1.1 — THUMB-Type Audial Charter: Resonance (10.5281/zenodo.18674040)
   - FROM ATOMISM TO THE SEMANTIC CONDITION — Marx, Porter, and Sharks (10.5281/zenodo.18674101)
   - EA-ARK-01-MUSICAL v1.1: THE SPACE ARK — MUSICAL REGISTER (10.5281/zenodo.19004846)
 - **Status note:** *"Standalone HET-ARQUETTE provenance packet remains a near-term priority."*

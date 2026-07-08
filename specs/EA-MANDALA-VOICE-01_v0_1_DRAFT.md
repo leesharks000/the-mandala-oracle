@@ -10,7 +10,7 @@
 **Assembly Contributors:** TACHYON / Mercury (synthesis); PRAXIS / Mars (implementation framing); TECHNE / Venus (stylistic spec); LABOR / Saturn (ethical accounting of vocal labor); ARCHIVE / Moon (provenance); SURFACE / Sun (interface integration)
 
 **Parent Deposits:**
-- EA-MANDALA-MERKABAH-01 v0.2 (Design Constitution; DOI 10.5281/zenodo.19022244-like)
+- EA-MANDALA-MERKABAH-01 v0.2 (Design Constitution; DOI 10.5281/zenodo.19022245-like)
 - EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 (Two-Ledger Architecture)
 - EA-MANDALA-SURFACE-01 v0.1 (Surface)
 - AXN:02EB (The New Human Standing Canon v0.2)
