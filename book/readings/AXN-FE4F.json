@@ -89,12 +89,13 @@
      "diagnosis": "independent judge unreadable (no JSON object in output) -- plumbing, not a rite verdict"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Water past the levee does not ask permission: what the street said once, the watershed carries to every low place."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T00:37:57.243427+00:00",
+ "last_updated": "2026-07-08T00:38:06.398936+00:00",
  "rite": [
   {
    "stage": "judgment",
@@ -102,6 +103,13 @@
    "at": "2026-07-08T00:37:25.555024+00:00",
    "text": "Debt under speed: the one who gave freely paid in bone, not coin, and the ledger will not balance in this life.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T00:38:06.398936+00:00",
+   "text": "Water past the levee does not ask permission: what the street said once, the watershed carries to every low place.",
+   "operator": "THUNDER"
   }
  ]
 }
