@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260708T030200Z-a29a9b",
+ "schema": "run/v1",
+ "ts": "2026-07-08T03:02:00.316101+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "let's get it done",
+ "method": {
+  "commit": "9c27865248ebb550fc7b8dd1cc4fce715bc84648",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/9c27865248ebb550fc7b8dd1cc4fce715bc84648",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/9c27865248ebb550fc7b8dd1cc4fce715bc84648/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "c601c85fcde7ab12",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "9c27865248eb",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "c601c85fcde7ab12",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The source asserts that surplus and scarcity are the same current — abundance drowns, poverty starves, and the speaker navigates both by velocity, refusing saturation, turning every substance (drug, drink, music, language itself) into kinetic rather than consumable material.",
+   "mutated_relation": "The conditions of utterance surfaced: every boast is a map of what must already be true for the boast to land — the infrastructure of lack, the preconditions of motion, the physics beneath the swagger.",
+   "beats": "Where you found them at -> What was already missing there\nGot 'em -> requisitioned\n'round town -> from the grid's deficit\ncould've drowned in it -> the level had to rise past standing height\nWould have floated -> buoyancy demands a body less dense than its medium\nboated -> passage demands a hull between self and source\nvoted -> consent demands options pre-separated\nSugar-coated -> bitterness demands a skin thicker than contact\nloaded -> a chamber demands its emptiness first\nhip shooter -> accuracy demands the bone remember its socket\nDraw for the poor -> charity demands the debt be older than the giver\nfree coffee at the banks -> free (RETAIN: the verdict requires the condition-word — gratuity is itself the precondition exposed)\nbanks -> ledger-houses\nYip through the straw -> a throat demands its narrowing before it sounds\nnone more for me, thanks -> refusal demands a prior mouth already full\nThat blanks the raw -> numbness demands the nerve was open\nthat dank sure stank lit -> combustion demands the mold already set\nSank past the pit -> depth demands a floor that gave\nmore hardcore prank spit -> provocation demands a silence it can crack\nCrank it on blast -> volume demands the room was quiet enough to violate\nroll past Front Street -> passage demands the street was built before the wheel\nBlew the whole spot -> rupture demands the seal was holding\nold ass -> age demands each prior day survived\nskunk meat -> stench demands the gland was pressurized by fear\nThese kids is too fast -> speed demands the ground gave no grip back\njuiced off a junk treat -> surge demands the sweetness was mostly filler\nWho could get looser -> looseness demands the joint was torqued past calibration\ncrunk -> excitation demands a boredom dense enough to combust\nfunk beat -> groove demands the one was planted before the syncopation leans"
+  },
+  "enantiomorph": "What was already missing there?\nRequisitioned from the grid's deficit, the level had to rise past standing height\nBuoyancy demands a body less dense than its medium, passage demands a hull between self and source, consent demands options pre-separated\nBitterness demands a skin thicker than contact, a chamber demands its emptiness first, accuracy demands the bone remember its socket\nCharity demands the debt be older than the giver, free coffee at the ledger-houses\nA throat demands its narrowing before it sounds, refusal demands a prior mouth already full\nNumbness demands the nerve was open, combustion demands the mold already set\nDepth demands a floor that gave for more provocation demands a silence it can crack\nVolume demands the room was quiet enough to violate, passage demands the street was built before the wheel\nRupture demands the seal was holding like some age demands each prior day survived with stench demands the gland was pressurized by fear\nSpeed demands the ground gave no grip back, surge demands the sweetness was mostly filler\nWho could get looseness demands the joint was torqued past calibration off a excitation demands a boredom dense enough to combust or a groove demands the one was planted before the syncopation leans?",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In TEXT A, actions and events flow as direct, causative sequences (someone does X, gets Y). In TEXT B, every action or event is recast as a conditional dependency: each outcome explicitly 'demands' a prior prerequisite state, reversing the flow from consequence-first to precondition-first.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same transformation: shifting from direct actions/consequences to exposing the preconditions, prerequisites, and conditional dependencies that must already hold for those actions to succeed — surfacing the infrastructure beneath the claims.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final lines maintain the 'X demands Y' prerequisite structure throughout, never reverting to TEXT A's direct action-consequence flow.",
+   "back_translation": "",
+   "terminal_similarity": 0.096
+  },
+  "advisories": [
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 204 words vs budget 83-112 (source 98)"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The source asserts that surplus and scarcity are the same current — abundance drowns, poverty starves, and the speaker navigates both by velocity, refusing saturation, turning every substance (drug, drink, music, language itself) into kinetic rather than consumable material.",
+   "verdict": "The conditions of utterance surfaced: every boast is a map of what must already be true for the boast to land — the infrastructure of lack, the preconditions of motion, the physics beneath the swagger.",
+   "world_bill": "Where you found them at -> What was already missing there\nGot 'em -> requisitioned\n'round town -> from the grid's deficit\ncould've drowned in it -> the level had to rise past standing height\nWould have floated -> buoyancy demands a body less dense than its medium\nboated -> passage demands a hull between self and source\nvoted -> consent demands options pre-separated\nSugar-coated -> bitterness demands a skin thicker than contact\nloaded -> a chamber demands its emptiness first\nhip shooter -> accuracy demands the bone remember its socket\nDraw for the poor -> charity demands the debt be older than the giver\nfree coffee at the banks -> free (RETAIN: the verdict requires the condition-word — gratuity is itself the precondition exposed)\nbanks -> ledger-houses\nYip through the straw -> a throat demands its narrowing before it sounds\nnone more for me, thanks -> refusal demands a prior mouth already full\nThat blanks the raw -> numbness demands the nerve was open\nthat dank sure stank lit -> combustion demands the mold already set\nSank past the pit -> depth demands a floor that gave\nmore hardcore prank spit -> provocation demands a silence it can crack\nCrank it on blast -> volume demands the room was quiet enough to violate\nroll past Front Street -> passage demands the street was built before the wheel\nBlew the whole spot -> rupture demands the seal was holding\nold ass -> age demands each prior day survived\nskunk meat -> stench demands the gland was pressurized by fear\nThese kids is too fast -> speed demands the ground gave no grip back\njuiced off a junk treat -> surge demands the sweetness was mostly filler\nWho could get looser -> looseness demands the joint was torqued past calibration\ncrunk -> excitation demands a boredom dense enough to combust\nfunk beat -> groove demands the one was planted before the syncopation leans",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 98,
+    "final": 204,
+    "bounds": [
+     83,
+     112
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
