@@ -1,0 +1,79 @@
+{
+ "axn": "AXN:FE4B.READING.🌙🌖🌘🌙🌑🌟",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "39fae9352fdd605d",
+ "inscribed_at": "2026-07-08T04:54:03.587719+00:00",
+ "question_digest": "sha256:c28ca0a717063bf19f48427f079c4e69a3bed5a4e083738b986c57d0e41e94db",
+ "question_gloss": "Witness asks whether anyone is present at a location.",
+ "source_text_id": "kjv-1611",
+ "cast_selection": "units_55_57",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "3:8 And they heard the voice of the LORD God walking in the garden in\nthe cool of the day: and Adam and his wife hid themselves from the\npresence of the LORD God amongst the trees of the garden.\n\n3:9 And the LORD God called unto Adam, and said unto him, Where art\nthou?  3:10 And he said, I heard thy voice in the garden, and I was\nafraid, because I was naked; and I hid myself.\n\n3:11 And he said, Who told thee that thou wast naked? Hast thou eaten\nof the tree, whereof I commanded thee that thou shouldest not eat?\n3:12 And the man said, The woman whom thou gavest to be with me, she\ngave me of the tree, and I did eat.",
+   "citation": "unit 55–unit 57",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "3:8 And they had become the kind who could be startled by what had until then been indistinguishable from their own breathing a displacement where there had been no distance in\nthe first air that had a temperature: and two who now required naming from each other performed the act that invented concealment from the\ncondition of being-seen they had never previously distinguished from being into what had only now become cover.\n\n3:9 And the LORD God used the voice as a summons, which requires that arrival is no longer automatic, and said unto him, The question whose askability means location has replaced intimacy?  3:10 And he said, I experienced you as separate source in what is now a place rather than a surround, and I had acquired the capacity for orientation-toward-threat, because my surface had become information; and I became the first thing that subtracted itself from the visible.\n\n3:11 And he said, What mediation now stands between you and your own condition that your body is a legible text? Have you performed the act whose possibility I installed by forbidding it, whereof I made refusal possible and therefore made compliance a sustained act rather than a default that the not that created the eat as chooseable?\n3:12 And the man said, The gift now recast as cause — which requires that receiving has become a grievance, agency has become transferable, passable, deflectable of the tree, and I entered the condition whose entrance makes all the foregoing conditions actual.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, whereas the declared claim describes a specific presuppositional restructuring of speech-acts in the scene.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Text B reformulates events as philosophical/phenomenological commentary but preserves the same relational structure (Adam blames the woman God gave him, who gave him the fruit, and he ate) throughout, including the final portion.",
+    "back_translation": "",
+    "terminal_similarity": 0.167
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 250 words vs budget 108-147 (source 128)"
+    },
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, whereas the declared claim describes a specific presuppositional restructuring of speech-acts in the scene.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "geometry",
+     "diagnosis": "lines 6/10, markers 0/0 -- the spine is broken, not exceeded"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: there"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-08T04:54:03.587719+00:00"
+}
