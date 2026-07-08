@@ -8,7 +8,7 @@ Crimson Hexagonal Archive · 2026-06-04
 
 **Status:** CTI_WOUND series evidence-packet deposit (continuing series; supersedes/extends prior diagnostic deposits). Diagnostic application typology per PEA v2.0 §IX.10 (Doctrinal Node by diagnostic instantiation), with secondary §IX.6 (Dissolution/Breaking) registration in its naming of *correction erasure at the index layer* as the operative substrate behavior being diagnosed.
 **Identifier:** CTI_WOUND:PANEL_BOUND_SCAR.2026-06-04 / EA-DIAG-PANEL-01.
-**Series:** Continues *CTI_WOUND:LEESHARKS.OVERVIEW.001* (DOI 10.5281/zenodo.19202821) and *CTI_WOUND:GOOGLE_AIO_TOTAL_LIQUIDATION_20260322* (DOI 10.5281/zenodo.19202813). Companion to PVE-003 *The Attribution Scar* deposit lineage.
+**Series:** Continues *CTI_WOUND:LEESHARKS.OVERVIEW.001* (DOI 10.5281/zenodo.19202820) and *CTI_WOUND:GOOGLE_AIO_TOTAL_LIQUIDATION_20260322* (DOI 10.5281/zenodo.19202813). Companion to PVE-003 *The Attribution Scar* deposit lineage.
 **Parent deposits:** *Constitutive Mediation v1.1* (DOI 10.5281/zenodo.20531274), particularly §IV on horizon-privatization dynamics; *The Mary Lee Case* (DOI 10.5281/zenodo.20531288); *EA-CAN-MARYLEE-01* (DOI 10.5281/zenodo.20543545); *Provenance Erasure Rate* (DOI 10.5281/zenodo.20004379).
 **Adjacent deposits:** *Brave Grey Drool: An Assembly Chorus Polyvocal Effective Act* (DOI 10.5281/zenodo.20543989), particularly the editorial coda §II observation on substrate-defensive behavior at meta-levels when content-level refutation is unavailable.
 

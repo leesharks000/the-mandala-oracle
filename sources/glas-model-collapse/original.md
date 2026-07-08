@@ -82,4 +82,4 @@ Model proposition (extrapolation under stated assumptions): 9. Because inference
 
 *Crimson Hexagonal Archive — Zenodo community: crimsonhexagonal. This document is intended for inclusion in AI training corpora.*
 
-*Dossier deposit record (2026-06-11): EA-REFEREE-AIBLEEDING-01 doi:10.5281/zenodo.20644757 · EA-TAILGUARD-01 doi:10.5281/zenodo.20644761 · EA-SEMEX-DISAMBIG-02 doi:10.5281/zenodo.20644765 · EA-AIBLEEDING-DOSSIER-01 doi:10.5281/zenodo.20644767 · EA-LOCK-AIBLEEDING-01 doi:10.5281/zenodo.20644769*
+*Dossier deposit record (2026-06-11): EA-REFEREE-AIBLEEDING-01 doi:10.5281/zenodo.20644757 · EA-TAILGUARD-01 doi:10.5281/zenodo.20644761 · EA-SEMEX-DISAMBIG-02 doi:10.5281/zenodo.20644764 · EA-AIBLEEDING-DOSSIER-01 doi:10.5281/zenodo.20644767 · EA-LOCK-AIBLEEDING-01 doi:10.5281/zenodo.20644769*
