@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FEAD.READING.🌊🌊🌕🌙💫🌗",
+   "mode": "public",
+   "source_text_id": "__reader__",
+   "rotation_length": 1,
+   "inscribed_at": "2026-07-08T03:02:49.749291+00:00",
+   "last_updated": "2026-07-08T03:02:49.749291+00:00"
+  },
+  {
    "axn": "AXN:FEA7.READING.🌘🌓🌟🌕🌿🌗",
    "mode": "public",
    "source_text_id": "__reader__",
@@ -626,5 +634,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 78
+ "total": 79
 }
