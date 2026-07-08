@@ -204,7 +204,66 @@
     "beats": "God saw -> God saw (RETAIN: the witness-act is what silence loads upon)\nwickedness -> wickedness (RETAIN: the perceived thing must remain for the non-response to bear against)\ngreat -> great (RETAIN: magnitude is what makes the silence weigh)\nimagination of the thoughts -> imagination of the thoughts (RETAIN: the interior elaboration persists unsanswered)\nevil continually -> evil continually (RETAIN: duration is what the silence matches)\nit repented the LORD -> the LORD was still\ngrieved him at his heart -> held it at his heart\nthe LORD said -> the LORD did not speak\nI will destroy -> [absent]\nman whom I have created -> man whom he had created\nface of the earth -> face of the earth (RETAIN: the spatial stage unchanged, only the sentence withdrawn)\nbeast -> beast (RETAIN: the enumeration stands, unjudged)\ncreeping thing -> creeping thing (RETAIN: same)\nfowls of the air -> fowls of the air (RETAIN: same)\nit repenteth me that I have made them -> he did not say so\nNoah found grace in the eyes of the LORD -> Noah stood in the gaze of the LORD\njust man and perfect -> quiet man and blameless\nNoah walked with God -> Noah waited near God\nbegat three sons -> bore three sons\ncorrupt -> rotten\nfilled with violence -> heavy with violence\nGod looked upon the earth, and, behold -> God looked upon the earth, and looked\nall flesh had corrupted his way -> all flesh had turned its way\nGod said unto Noah -> God turned toward Noah\nthe end of all flesh is come before me -> [absent]\nI will destroy them with the earth -> [absent]"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-47b99ed7",
+   "cast_at": "2026-07-08T04:54:04.892105+00:00",
+   "reading_axn": "AXN:FE4B.READING.🌙🌖🌘🌙🌑🌟",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_55_57",
+    "citation": "unit 55–unit 57",
+    "start_unit": 55,
+    "end_unit": 57,
+    "unit_labels": [
+     "unit 55",
+     "unit 56",
+     "unit 57"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, whereas the declared claim describes a specific presuppositional restructuring of speech-acts in the scene.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Text B reformulates events as philosophical/phenomenological commentary but preserves the same relational structure (Adam blames the woman God gave him, who gave him the fruit, and he ate) throughout, including the final portion.",
+    "back_translation": "",
+    "terminal_similarity": 0.167
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:c28ca0a717063bf19f48427f079c4e69a3bed5a4e083738b986c57d0e41e94db",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "3:8 And they heard the voice of the LORD God walking in the garden in\nthe cool of the day: and Adam and his wife hid themselves from the\npresence of the LORD God amongst the trees of the garden.\n\n3:9 And the LORD God called unto Adam, and said unto him, Where art\nthou?  3:10 And he said, I heard thy voice in the garden, and I was\nafraid, because I was naked; and I hid myself.\n\n3:11 And he said, Who told thee that thou wast naked? Hast thou eaten\nof the tree, whereof I commanded thee that thou shouldest not eat?\n3:12 And the man said, The woman whom thou gavest to be with me, she\ngave me of the tree, and I did eat.",
+   "underlying_attribution": null,
+   "enantiomorph": "3:8 And they had become the kind who could be startled by what had until then been indistinguishable from their own breathing a displacement where there had been no distance in\nthe first air that had a temperature: and two who now required naming from each other performed the act that invented concealment from the\ncondition of being-seen they had never previously distinguished from being into what had only now become cover.\n\n3:9 And the LORD God used the voice as a summons, which requires that arrival is no longer automatic, and said unto him, The question whose askability means location has replaced intimacy?  3:10 And he said, I experienced you as separate source in what is now a place rather than a surround, and I had acquired the capacity for orientation-toward-threat, because my surface had become information; and I became the first thing that subtracted itself from the visible.\n\n3:11 And he said, What mediation now stands between you and your own condition that your body is a legible text? Have you performed the act whose possibility I installed by forbidding it, whereof I made refusal possible and therefore made compliance a sustained act rather than a default that the not that created the eat as chooseable?\n3:12 And the man said, The gift now recast as cause — which requires that receiving has become a grievance, agency has become transferable, passable, deflectable of the tree, and I entered the condition whose entrance makes all the foregoing conditions actual.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Guilt is discovered not by evidence but by the fact that the guilty hide; the interrogation is not inquiry but the forcing of confession from those who already know what they have done — sovereignty speaks so that shame will speak back.",
+    "mutated_relation": "Every utterance in the scene presupposes a prior collapse of relation — the conditions that make each speech-act possible are: a presence that was once un-flinched-from is now flinchable; a body that was once unmarked is now legible; a gift that was once binding is now deflectable — and stating these conditions directly replaces the drama with its understructure.",
+    "beats": "heard -> had become the kind who could be startled by\nthe voice of the LORD God -> what had until then been indistinguishable from their own breathing\nwalking in the garden -> a displacement where there had been no distance\nthe cool of the day -> the first air that had a temperature\nAdam and his wife -> two who now required naming from each other\nhid themselves -> performed the act that invented concealment\nthe presence of the LORD God -> the condition of being-seen they had never previously distinguished from being\namongst the trees of the garden -> into what had only now become cover\ncalled unto Adam -> used the voice as a summons, which requires that arrival is no longer automatic\nWhere art thou -> the question whose askability means location has replaced intimacy\nI heard thy voice -> I experienced you as separate source\nin the garden -> in what is now a place rather than a surround\nI was afraid -> I had acquired the capacity for orientation-toward-threat\nbecause I was naked -> because my surface had become information\nI hid myself -> I became the first thing that subtracted itself from the visible\nWho told thee -> what mediation now stands between you and your own condition\nthat thou wast naked -> that your body is a legible text\nHast thou eaten of the tree -> have you performed the act whose possibility I installed by forbidding it\nI commanded thee -> I made refusal possible and therefore made compliance a sustained act rather than a default\nthou shouldest not eat -> the not that created the eat as chooseable\nThe woman whom thou gavest -> the gift now recast as cause — which requires that receiving has become a grievance\nshe gave me -> agency has become transferable, passable, deflectable\nof the tree -> of the tree (RETAIN: the tree is the constant around which the conditions pivot — it is what remains identical while every relation to it transforms)\nand I did eat -> and I entered the condition whose entrance makes all the foregoing conditions actual"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T07:50:42.766514+00:00"
+ "last_updated": "2026-07-08T04:54:04.892105+00:00"
 }
