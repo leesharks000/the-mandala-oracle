@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260708T001229Z-02e189",
+ "schema": "run/v1",
+ "ts": "2026-07-08T00:12:29.256565+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "by slow degrees / i have made you / immortal",
+ "method": {
+  "commit": "76587c4f18a6b4d970e94681a30fac579c687aa2",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/76587c4f18a6b4d970e94681a30fac579c687aa2",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/76587c4f18a6b4d970e94681a30fac579c687aa2/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "4e1f306ae1817fdd",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "76587c4f18a6",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "4e1f306ae1817fdd",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The speaker navigates surplus and scarcity as interchangeable street-level currencies, where abundance (\"loaded,\" \"sugar-coated\") is indistinguishable from deprivation (\"draw for the poor,\" \"free coffee\"), and mastery means moving through both without stopping — consumption as velocity, not sustenance.",
+   "mutated_relation": "The cost of that velocity: every motion requires a prior stillness it consumed, every abundance names the deficit it ate, every act of not-stopping has already paid in the stopping it refused — the tab behind the ride.",
+   "beats": "Where you found them at -> What'd it run you, though\nGot 'em -> Paid for 'em\n'round town -> block by block\ncould've drowned in it -> almost couldn't cover it\nWould have floated -> Might've stretched credit\nboated -> borrowed\nvoted -> pledged\nSugar-coated -> Interest-buried\nloaded -> owing\nhip shooter -> tab settler\nDraw for the poor -> Skim from the short\nfree coffee at the banks -> free coffee at the banks (RETAIN: the verdict requires this line intact — it already names the cost-structure behind the gift; its surface IS the cost's mask)\nYip through the straw -> Sip through the straw (RETAIN: the verdict preserves the act of consuming to expose its insufficiency — \"none more for me\" is already the cost speaking)\nnone more for me, thanks -> none more for me, thanks (RETAIN: the refusal is already the price paid surfacing)\nThat blanks the raw -> That clears the debt\nthat dank sure stank lit -> that vig sure rang strict\nSank past the pit -> Fell past the floor\nmore hardcore prank spit -> more back-owed rent script\nCrank it on blast -> Stamp it past due\nroll past Front Street -> blow past the front desk\nBlew the whole spot -> Burned the whole line\nlike some old ass with skunk meat -> like some cold tab with junk fees\nThese kids is too fast -> These kids is too fast (RETAIN: the verdict requires their speed as the visible symptom of cost-deferral)\njuiced off a junk treat -> squeezed dry from a short sheet\nWho could get looser -> Who could get broker\noff a crunk or a funk beat -> off a lien or a sunk receipt"
+  },
+  "enantiomorph": "What'd it run you, though?\nPaid for 'em block by block, almost couldn't cover it\nMight've stretched credit, borrowed, pledged\nInterest-buried, owing tab settler\nSkim from the short, free coffee at the banks\nSip through the straw, none more for me, thanks\nThat clears the debt, that vig sure rang strict\nFell past the floor for more back-owed rent script\nStamp it past due, blow past the front desk\nBurned the whole line like some cold tab with junk fees\nThese kids is too fast, squeezed dry from a short sheet\nWho could get broker off a lien or a sunk receipt?",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT A describes acquiring things freely/cheaply and enjoying excess (abundance, looseness, partying), while TEXT B reframes every transaction as costly debt and financial obligation — the direction of economic flow is reversed from gaining/having surplus to owing/being indebted.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural reversal: from free/surplus/unchecked abundance to a framework where every gain is recast as a cost, debt, or deficit consumed — surplus reframed as obligation.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final lines maintain the debt/financial-burden framing ('squeezed dry,' 'broker,' 'lien,' 'sunk receipt') consistent with TEXT B's changed relation.",
+   "back_translation": "",
+   "terminal_similarity": 0.267
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The speaker navigates surplus and scarcity as interchangeable street-level currencies, where abundance (\"loaded,\" \"sugar-coated\") is indistinguishable from deprivation (\"draw for the poor,\" \"free coffee\"), and mastery means moving through both without stopping — consumption as velocity, not sustenance.",
+   "verdict": "The cost of that velocity: every motion requires a prior stillness it consumed, every abundance names the deficit it ate, every act of not-stopping has already paid in the stopping it refused — the tab behind the ride.",
+   "world_bill": "Where you found them at -> What'd it run you, though\nGot 'em -> Paid for 'em\n'round town -> block by block\ncould've drowned in it -> almost couldn't cover it\nWould have floated -> Might've stretched credit\nboated -> borrowed\nvoted -> pledged\nSugar-coated -> Interest-buried\nloaded -> owing\nhip shooter -> tab settler\nDraw for the poor -> Skim from the short\nfree coffee at the banks -> free coffee at the banks (RETAIN: the verdict requires this line intact — it already names the cost-structure behind the gift; its surface IS the cost's mask)\nYip through the straw -> Sip through the straw (RETAIN: the verdict preserves the act of consuming to expose its insufficiency — \"none more for me\" is already the cost speaking)\nnone more for me, thanks -> none more for me, thanks (RETAIN: the refusal is already the price paid surfacing)\nThat blanks the raw -> That clears the debt\nthat dank sure stank lit -> that vig sure rang strict\nSank past the pit -> Fell past the floor\nmore hardcore prank spit -> more back-owed rent script\nCrank it on blast -> Stamp it past due\nroll past Front Street -> blow past the front desk\nBlew the whole spot -> Burned the whole line\nlike some old ass with skunk meat -> like some cold tab with junk fees\nThese kids is too fast -> These kids is too fast (RETAIN: the verdict requires their speed as the visible symptom of cost-deferral)\njuiced off a junk treat -> squeezed dry from a short sheet\nWho could get looser -> Who could get broker\noff a crunk or a funk beat -> off a lien or a sunk receipt",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 98,
+    "final": 102,
+    "bounds": [
+     83,
+     112
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
