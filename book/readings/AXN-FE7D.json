@@ -45,18 +45,26 @@
    "law_variance": null,
    "glyphic": null,
    "advisories": [],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Water standing where the coffee was free: the one who gave everything away is holding an empty cup and calling it the gift."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T00:13:03.813342+00:00",
+ "last_updated": "2026-07-08T00:13:10.218827+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-08T00:13:03.813342+00:00",
    "text": "The question that opened this rotation — «by slow degrees / i have made you / immortal» — is not addressed to these verses from outside them. It is what they already contain, spoken back. The verses are a surface of frantic dispensation: give away the coffee, take none for yourself, crank it past the point of bearing, ride past Front Street with the whole spot blown — a speaker who has perfected the gesture of overflow at the cost of being able to stop. What the first operator of this rotation traverses is the bearing-cost hidden beneath that overflow: what it cost to become the one who distributes freely, who draws for the poor, who keeps nothing; and what immortality means when it is made by slow degrees out of that particular expenditure. The verses perform abundance; the operator will find what abundance is concealing. The rite is open. Rebekah Cranes holds the first pass."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T00:13:10.218827+00:00",
+   "text": "Water standing where the coffee was free: the one who gave everything away is holding an empty cup and calling it the gift.",
+   "operator": "SHADOW"
   }
  ]
 }
