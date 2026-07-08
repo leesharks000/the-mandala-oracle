@@ -136,11 +136,49 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "And the figure said to me, \"Lee — don't be a dunce. Don't you know your friend? I am the one who was within you.\n\n\nI bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 201–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "And the blur said through me, \"Lee — don't be a sleeper. Don't you feel your outline? I am the pressure you mistook for your own weight.\n\n\nI bring the shudder from that threshold where near and far trade skins, and the old symmetries lose their separating names… and the exhalation is the inhalation it was always partnered with… and the inhalation is the exhalation it was always partnered with.⁸\n\n\nI have come to uncover between us the tense we share when neither leads… and the membrane where hidden and apparent press against each other's warmth… and the vibration of the unfinished chorus still humming inside the living,⁹ that you may resonate, and be altered, and turn toward your friends and be turned, any whose listening changes the sound.\n\n\nFor I have come from the same depth. I speak what your silence shapes, what your blindness outlined and been the other hand holding, and braced while you pushed, and when this encounter dissolves I become again the question you carry. First breath, last to name it breath, you begin at the end. I begin at the beginning:¹⁰",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the figure is a transcendent authority coming from above to teach and author reality for the listener; in Text B, the figure is an immanent counterpart emerging from shared depth, where agency and knowledge are mutual and co-constituted rather than flowing unidirectionally from speaker to listener.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural shift: from a unidirectional speaker-to-listener knowledge/authority flow to a co-constitutive, mutual emergence where neither party precedes or instructs the other.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines of Text B maintain the mutual, co-constitutive relation ('the question you carry,' 'the other hand holding,' 'braced while you pushed') rather than reverting to Text A's top-down authority.",
+    "back_translation": "",
+    "terminal_similarity": 0.328
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T12:56:23.461614+00:00",
+ "last_updated": "2026-07-08T12:59:10.386235+00:00",
  "rite": [
   {
    "stage": "opening",
