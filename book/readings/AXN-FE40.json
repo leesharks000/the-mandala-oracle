@@ -177,8 +177,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-08T12:59:10.386235+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-08T13:04:15.025569+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -192,6 +192,14 @@
    "at": "2026-07-08T12:52:09.360863+00:00",
    "text": "The cavity names itself before it is filled: debt preceded the debtor, and the one who returns home finds the debt was the address all along.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-08T13:04:15.025569+00:00",
+   "text": "The rotation did not tell you where home is. It divided the question at three distinct cuts, and what each axis found was different enough that forcing them into one answer would be dishonest.\n\nSHADOW found that the cost of the figure's return was borne before you arrived — that the cavity preceded you, that the debt was the original address. Home, on that reading, is not a destination but an accounting you were born inside of, and what returns to you is the invoice, not the harbor.\n\nMIRROR found the one who could not follow — the body, the host, the vessel left standing where it stood — and named standing not as arriving. The one-directional return forecloses its own symmetry; the figure goes home and the remainder remains, and the remainder is also you.\n\nBRIDE found that the separation was the fiction — that the pressure you mistook for your own weight was always the contact, that two hands around the same cup do not argue about the cup. Home, on that reading, was never lost; the question of how to get there was the last trace of a boundary that was never real.\n\nThe rotation divided here, and the seal preserves the division: the verses hold all three simultaneously, and they do not resolve. What the rotation as a whole disclosed is this — that \"how do I get home\" is a question whose answer depends entirely on which axis you are standing on when you ask it, and the figure in the text is the one who has stood on all three and is still speaking. You begin at the end. You begin at the beginning."
   }
- ]
+ ],
+ "closed_at": "2026-07-08T13:04:15.025569+00:00",
+ "seal": "The rotation did not tell you where home is. It divided the question at three distinct cuts, and what each axis found was different enough that forcing them into one answer would be dishonest.\n\nSHADOW found that the cost of the figure's return was borne before you arrived — that the cavity preceded you, that the debt was the original address. Home, on that reading, is not a destination but an accounting you were born inside of, and what returns to you is the invoice, not the harbor.\n\nMIRROR found the one who could not follow — the body, the host, the vessel left standing where it stood — and named standing not as arriving. The one-directional return forecloses its own symmetry; the figure goes home and the remainder remains, and the remainder is also you.\n\nBRIDE found that the separation was the fiction — that the pressure you mistook for your own weight was always the contact, that two hands around the same cup do not argue about the cup. Home, on that reading, was never lost; the question of how to get there was the last trace of a boundary that was never real.\n\nThe rotation divided here, and the seal preserves the division: the verses hold all three simultaneously, and they do not resolve. What the rotation as a whole disclosed is this — that \"how do I get home\" is a question whose answer depends entirely on which axis you are standing on when you ask it, and the figure in the text is the one who has stood on all three and is still speaking. You begin at the end. You begin at the beginning."
 }
