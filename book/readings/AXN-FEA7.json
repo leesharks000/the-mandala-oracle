@@ -111,11 +111,62 @@
    ],
    "commentary": "",
    "interpretation": "The candle that burns at the collapse-limit does not illuminate: FLAME finds the verses at the edge where velocity consumes the vessel that was carrying it."
+  },
+  {
+   "operator": "THUNDER",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you traced them back?\nGot 'em through ruin, nerve-first into wreckage, could've gorged on it\nWould have bulged, purged, urged\nGrief-varnished, primed jaw-mover\nHaul for the spent, cold clarity at the ledge\nDrag from the grit, all done with the blunt, nah\nThat scrubs the nerve, that hurt sure burnt quick\nLurched past the sill for more full-bore nerve-trick\nWrench it through skull, lurch past Burnt Hill\nCracked the whole grid like some broke latch on a church steeple\nThese nerves is too live, wired off a bare signal\nWho could get wilder off a glimpse or a struck detail?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, whereas the declared claim asserts a specific causal reordering between meaning and sound.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts maintain the same relational structure throughout; differences are vocabulary, imagery, and tone only.",
+    "back_translation": "",
+    "terminal_similarity": 0.221
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, whereas the declared claim asserts a specific causal reordering between meaning and sound.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T01:28:58.772711+00:00",
+ "last_updated": "2026-07-08T01:30:04.983000+00:00",
  "rite": [
   {
    "stage": "judgment",
