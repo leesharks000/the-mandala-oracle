@@ -62,10 +62,20 @@
      "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The sword half-drawn, the hand arrested by a fistful of hair: the superior man discovers that the god arrives not to prevent the act but to become its cost."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T04:43:23.946434+00:00"
+ "last_updated": "2026-07-08T04:43:46.871783+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T04:43:46.871783+00:00",
+   "text": "The sword half-drawn, the hand arrested by a fistful of hair: the superior man discovers that the god arrives not to prevent the act but to become its cost.",
+   "operator": "SHADOW"
+  }
+ ]
 }
