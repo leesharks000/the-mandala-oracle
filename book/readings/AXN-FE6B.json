@@ -1,0 +1,71 @@
+{
+ "axn": "AXN:FE6B.READING.🌙🔥🌒🌙🌔🌊",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "59ba5084a27affdd",
+ "inscribed_at": "2026-07-08T04:43:23.946434+00:00",
+ "question_digest": "sha256:d32501f08c2bbfe0e83e96fbc03fed626687f0bce8790481d862d20289677b8b",
+ "question_gloss": "# The Rage of Achilles\n\nSing, O Muse, the wrath of Achilles Peleus' son,\nThe ruinous anger that brought unnumbered agonies upon the Achaeans,\nHurling down to Ha",
+ "source_text_id": "homer-iliad",
+ "cast_selection": "units_187_205",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**1:188** \n ὣς φάτο· Πηλεΐωνι δʼ ἄχος γένετʼ, ἐν δέ οἱ ἦτορ\n\n \n**1:189** στήθεσσιν λασίοισι διάνδιχα μερμήριξεν,\n\n \n**1:190** ἢ ὅ γε φάσγανον ὀξὺ ἐρυσσάμενος παρὰ μηροῦ\n\n \n**1:191** τοὺς μὲν ἀναστήσειεν, ὃ δʼ Ἀτρεΐδην ἐναρίζοι,\n\n \n**1:192** ἦε χόλον παύσειεν ἐρητύσειέ τε θυμόν.\n\n \n**1:193** ἧος ὃ ταῦθʼ ὥρμαινε κατὰ φρένα καὶ κατὰ θυμόν,\n\n \n**1:194** ἕλκετο δʼ ἐκ κολεοῖο μέγα ξίφος, ἦλθε δʼ Ἀθήνη\n\n \n**1:195** οὐρανόθεν· πρὸ γὰρ ἧκε θεὰ λευκώλενος Ἥρη\n\n \n**1:196** ἄμφω ὁμῶς θυμῷ φιλέουσά τε κηδομένη τε·\n\n \n**1:197** στῆ δʼ ὄπιθεν, ξανθῆς δὲ κόμης ἕλε Πηλεΐωνα\n\n \n**1:198** οἴῳ φαινομένη· τῶν δʼ ἄλλων οὔ τις ὁρᾶτο·\n\n \n**1:199** θάμβησεν δʼ Ἀχιλεύς, μετὰ δʼ ἐτράπετʼ, αὐτίκα δʼ ἔγνω\n\n \n**1:200** Παλλάδʼ Ἀθηναίην· δεινὼ δέ οἱ ὄσσε φάανθεν·\n\n \n**1:201** καί μιν φωνήσας ἔπεα πτερόεντα προσηύδα·\n\n \n**1:202** τίπτʼ αὖτʼ αἰγιόχοιο Διὸς τέκος εἰλήλουθας;\n\n \n**1:203** ἦ ἵνα ὕβριν ἴδῃ Ἀγαμέμνονος Ἀτρεΐδαο;\n\n \n**1:204** ἀλλʼ ἔκ τοι ἐρέω, τὸ δὲ καὶ τελέεσθαι ὀΐω·\n\n \n**1:205** ᾗς ὑπεροπλίῃσι τάχʼ ἄν ποτε θυμὸν ὀλέσσῃ.\n\n [206] \n \n**1:206** \n τὸν δʼ αὖτε προσέειπε θεὰ γλαυκῶπις Ἀθήνη·",
+   "citation": "1:188–1:206",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**1:188** \n ὣς was uttered· to the one already splitting δʼ the fissure had opened, ἐν δέ οἱ the core\n\n \n**1:189** in the cavity unsmoothed into two prior halves oscillated,\n\n \n**1:190** ἢ ὅ γε the edge ὀξὺ drawing forth from alongside the body's own flank\n\n \n**1:191** those standing μὲν would scatter, ὃ δʼ the provocation would annihilate,\n\n \n**1:192** ἦε the rift would seal would arrest τε the momentum.\n\n \n**1:193** ἧος ὃ these two incompatible futures turned between through the membrane καὶ through the impulse,\n\n \n**1:194** was already being drawn δʼ ἐκ its sheath vast the blade (the interval made metal), arrived (as name) δʼ ἀθήνη\n\n \n**1:195** from the gap above· πρὸ γὰρ ἧκε θεὰ pale-limbed Ἥρη\n\n \n**1:196** both halves equally the drive sustaining τε tending τε·\n\n \n**1:197** στῆ δʼ from behind, bright δὲ filament ἕλε the dividing one\n\n \n**1:198** οἴῳ becoming visible· τῶν δʼ the others οὔ τις could perceive·\n\n \n**1:199** froze δʼ ἀχιλεύς, mid-turn δʼ pivoted, at once δʼ recognized\n\n \n**1:200** the shaking one the lucidity· terrible δέ οἱ eyes flared·\n\n \n**1:201** καί μιν voicing words winged addressed·\n\n \n**1:202** why again of the storm-holder of the origin offspring have you come;\n\n \n**1:203** ἦ ἵνα the excess ἴδῃ of the one who provoked of the instigator;\n\n \n**1:204** ἀλλʼ ἔκ τοι I will declare, τὸ δὲ καὶ will be accomplished ὀΐω·\n\n \n**1:205** ᾗς by his own overreaching τάχʼ ἄν eventually the drive will forfeit.\n\n [206] \n \n**1:206** \n τὸν δʼ again answered θεὰ clear-gazing ἀθήνη·",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a specific relational change about the precedence of division over intervention.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Text B maintains its hybrid translational-gloss style throughout; the relational structure (Athena intervenes, Achilles recognizes her, addresses her, she responds) mirrors Text A consistently to the end.",
+    "back_translation": "",
+    "terminal_similarity": 0.364
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 222 words vs budget 119-162 (source 141)"
+    },
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a specific relational change about the precedence of division over intervention.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-08T04:43:23.946434+00:00"
+}
