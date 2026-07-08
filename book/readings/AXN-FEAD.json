@@ -155,11 +155,58 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "BEAST",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where'd it pass through?\nTook it in 'round the jaw, could've swallowed past it\nWould have loosened, hollowed, chosen\nSlick-throated, wet-lipped, lip-chewer\nGulp for the floor, warm nothing at the gums\nHiss through the gap, none left of me, thanks\nThat numbs the root, that spit sure thinned quick\nSlid past the soft for more warm-dark swallowed grit\nClench it on back, tongue past front teeth\nWore the whole mouth like some old ache with gum-heat\nThese lips is too lax, slicked off a numb-sweet\nWho could get emptier off a cluck or a dumb-need?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B relocates all external/environmental spatial references (town, streets, banks, spots) into the interior anatomy of the mouth (jaw, gums, tongue, teeth, lips), transforming outward movement through urban space into inward oral/bodily sensation.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both describe a transformation bringing experience into the mouth's domain, but the declared claim focuses on ingestion/emission as unified native function, while the recovered claim identifies spatial relocation from urban exterior to oral interior anatomy — related but distinct structural changes.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the mouth-interior remapping (lips, gum-heat, numb-sweet, cluck) rather than reverting to external geography.",
+    "back_translation": "",
+    "terminal_similarity": 0.263
+   },
+   "law_variance": {
+    "declared": "The mouth's own inventory of what it has passed through itself — ingestion and emission revealed as a single continuous event, neither mastery nor failure but the organ's native function disclosed without bravado or lament.",
+    "recovered": "TEXT B relocates all external/environmental spatial references (town, streets, banks, spots) into the interior anatomy of the mouth (jaw, gums, tongue, teeth, lips), transforming outward movement through urban space into inward oral/bodily sensation.",
+    "note": "Both describe a transformation bringing experience into the mouth's domain, but the declared claim focuses on ingestion/emission as unified native function, while the recovered claim identifies spatial relocation from urban exterior to oral interior anatomy — related but distinct structural changes."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T03:07:50.444726+00:00",
+ "last_updated": "2026-07-08T03:08:49.242629+00:00",
  "rite": [
   {
    "stage": "opening",
