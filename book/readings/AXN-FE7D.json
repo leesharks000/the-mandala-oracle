@@ -86,11 +86,49 @@
    "advisories": [],
    "commentary": "",
    "interpretation": "The locked door stays locked: the one who would not dispense has also forgotten how to need."
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you kept them at?\nGot 'em through the block, could've steeped in it\nWould have steadied, ferried, pledged\nSalt-cured, laden hip bearer\nPour for the fold, strong coffee at the stoops\nSip through the cup, one more for us, thanks\nThat fills the raw, that dank sure rang fit\nSat with the ring for more heart-warm frank spit\nBring it on back, pull up Front Street\nHeld the whole spot like some old head with trunk heat\nThese kids is so fast, fueled off a shared sweet\nWho could get closer off a chunk or a trunk beat?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B reverses directions and polarities: drawing/shooting outward becomes bearing/pouring inward, drowning/sinking becomes steeping/sitting, blowing past and getting looser becomes pulling up and getting closer — the relational flow shifts from outward dispersal and excess to inward gathering and containment.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: outward scattering/dispersal becomes inward gathering/containment, with surplus recast as a medium of mutual constitution rather than excess passing by.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the inward/gathering relation (closer, shared, pull up) rather than reverting to TEXT A's outward/excess pattern.",
+    "back_translation": "",
+    "terminal_similarity": 0.347
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T00:14:23.799422+00:00",
+ "last_updated": "2026-07-08T00:14:59.178098+00:00",
  "rite": [
   {
    "stage": "opening",
