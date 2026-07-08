@@ -1,0 +1,54 @@
+{
+ "axn": "AXN:FE7D.READING.🌊🌕⭐🌔🌒🌊",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "b9e987dfe364d06a",
+ "inscribed_at": "2026-07-08T00:13:01.494906+00:00",
+ "question_digest": "sha256:0b68024075a2f5a84a62ea1a1b325bc118272cd255750bbf0a5b9a7a8608fec6",
+ "question_gloss": "A poetic statement about gradual transformation of someone through remembrance or artistic creation.",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "What'd it run you, though?\nPaid for 'em block by block, almost couldn't cover it\nMight've stretched credit, borrowed, pledged\nInterest-buried, owing tab settler\nSkim from the short, free coffee at the banks\nSip through the straw, none more for me, thanks\nThat clears the debt, that vig sure rang strict\nFell past the floor for more back-owed rent script\nStamp it past due, blow past the front desk\nBurned the whole line like some cold tab with junk fees\nThese kids is too fast, squeezed dry from a short sheet\nWho could get broker off a lien or a sunk receipt?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A describes acquiring things freely/cheaply and enjoying excess (abundance, looseness, partying), while TEXT B reframes every transaction as costly debt and financial obligation — the direction of economic flow is reversed from gaining/having surplus to owing/being indebted.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural reversal: from free/surplus/unchecked abundance to a framework where every gain is recast as a cost, debt, or deficit consumed — surplus reframed as obligation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the debt/financial-burden framing ('squeezed dry,' 'broker,' 'lien,' 'sunk receipt') consistent with TEXT B's changed relation.",
+    "back_translation": "",
+    "terminal_similarity": 0.267
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-08T00:13:01.494906+00:00"
+}
