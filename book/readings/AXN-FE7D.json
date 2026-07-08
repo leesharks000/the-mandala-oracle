@@ -124,11 +124,58 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "THUNDER",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where the market circulated supply at?\nGot 'em through every district, could've flooded the zone\nWould have inflated, transported, ratified\nSubsidized, capitalized currency launcher\nIssue for the demand, loss-leader product at the banks\nYip through the pipeline, saturated past absorption, zeros out\nThat blanks the commodity, that surplus sure volatile, marked up\nDepreciated through the floor for more high-risk speculative pitch\nPump it on boom, sweep through Main Street\nBurst the whole bubble like some obsolete model with toxic asset\nThese markets is overheated, leveraged on a junk bond\nWho could get more liquid off a bull run or a boom cycle?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically replaces informal/slang vocabulary with economic and financial terminology, mapping street-level actions and objects onto market mechanisms (e.g., 'town' → 'district', 'coffee' → 'loss-leader product', 'funk beat' → 'boom cycle'), while preserving the same directional and relational structure of flow, excess, and consequence.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies the systematic remapping of local/street vocabulary onto economic terminology, which partially overlaps with the declared claim that each local act is revealed as the total economy surfacing at a point. However, the recovered claim focuses on vocabulary substitution as the mechanism, while the declared claim asserts a deeper structural revelation where the current itself speaks through each local act — an ontological reframing rather than a terminological swap.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The financial/economic metaphor substitution persists consistently through the final lines (overheated markets, junk bonds, liquidity, bull runs, boom cycles).",
+    "back_translation": "",
+    "terminal_similarity": 0.241
+   },
+   "law_variance": {
+    "declared": "The current itself speaks — each local act is revealed as the total economy surfacing at a point.",
+    "recovered": "TEXT B systematically replaces informal/slang vocabulary with economic and financial terminology, mapping street-level actions and objects onto market mechanisms (e.g., 'town' → 'district', 'coffee' → 'loss-leader product', 'funk beat' → 'boom cycle'), while preserving the same directional and relational structure of flow, excess, and consequence.",
+    "note": "The recovered claim identifies the systematic remapping of local/street vocabulary onto economic terminology, which partially overlaps with the declared claim that each local act is revealed as the total economy surfacing at a point. However, the recovered claim focuses on vocabulary substitution as the mechanism, while the declared claim asserts a deeper structural revelation where the current itself speaks through each local act — an ontological reframing rather than a terminological swap."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T00:14:59.178098+00:00",
+ "last_updated": "2026-07-08T00:15:47.978668+00:00",
  "rite": [
   {
    "stage": "opening",
