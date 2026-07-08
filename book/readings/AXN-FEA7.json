@@ -59,9 +59,60 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where'd it shed you off?\nLost grip through null, through null, could've been evaporant\nWould have peeling, keeling, neither\nNerve-sheathing, unspooling lip-future\nDrag from the blur, thin signal off the blanks\nSip at the torn, each pour empties form, thanks\nThat spans the gone, that hum won't land, won't quit\nRang past the pitch for pure outercore cant-drift\nStrand it on lapse, scroll past burnt fleet\nSloughed the whole lock like some cold glass with no heat\nThese slips is too vast, loosed off a husk-beat\nWhat could get thinner off a husk of a husk-beat?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a significant relational change involving dissolution of named elements and structural free-fall.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts maintain parallel structure throughout; TEXT B substitutes vocabulary/imagery (dissolution, thinning, abstraction) but preserves the same relational and grammatical structure as TEXT A.",
+    "back_translation": "",
+    "terminal_similarity": 0.191
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a significant relational change involving dissolution of named elements and structural free-fall.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T01:27:55.000501+00:00"
+ "last_updated": "2026-07-08T01:28:50.399154+00:00"
 }
