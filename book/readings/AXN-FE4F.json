@@ -132,8 +132,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-08T00:38:44.688311+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-08T00:39:14.887218+00:00",
  "rite": [
   {
    "stage": "judgment",
@@ -148,6 +148,14 @@
    "at": "2026-07-08T00:38:06.398936+00:00",
    "text": "Water past the levee does not ask permission: what the street said once, the watershed carries to every low place.",
    "operator": "THUNDER"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-08T00:39:14.887218+00:00",
+   "text": "The rotation did not answer whether these words will live — it found three different grounds on which the question breaks open. SHADOW went into the cost of the making: behind the speed there is bone, not coin, a debt paid in the body before the first bar could move this fast. THUNDER found the same words as watershed: not a local event but a distributed one, something that accumulates until it overtops its container and disperses everywhere the terrain is low — meaning that survives not by being remembered but by following gravity into every unguarded place. FLAME found the question consuming itself: when a thing is fueled past its limit, the burning becomes its own subject, and the one who lit it may already be gone from the event. What the sequence discloses together is this — the words will live if they do, not because meaning is stored in them like water in a vessel, but because they were made at a cost that left a structural mark, because that mark follows the low terrain, and because the intensity of the making has already passed beyond the maker's governance. The rotation did not settle on a verdict. It divided here: cost and dispersal point toward survival; self-consumption points toward a flame that may have already cleared the ground. The question you brought — *will these words live on as meaning* — the rotation leaves standing, undecided, which is the only honest answer a turning can give."
   }
- ]
+ ],
+ "closed_at": "2026-07-08T00:39:14.887218+00:00",
+ "seal": "The rotation did not answer whether these words will live — it found three different grounds on which the question breaks open. SHADOW went into the cost of the making: behind the speed there is bone, not coin, a debt paid in the body before the first bar could move this fast. THUNDER found the same words as watershed: not a local event but a distributed one, something that accumulates until it overtops its container and disperses everywhere the terrain is low — meaning that survives not by being remembered but by following gravity into every unguarded place. FLAME found the question consuming itself: when a thing is fueled past its limit, the burning becomes its own subject, and the one who lit it may already be gone from the event. What the sequence discloses together is this — the words will live if they do, not because meaning is stored in them like water in a vessel, but because they were made at a cost that left a structural mark, because that mark follows the low terrain, and because the intensity of the making has already passed beyond the maker's governance. The rotation did not settle on a verdict. It divided here: cost and dispersal point toward survival; self-consumption points toward a flame that may have already cleared the ground. The question you brought — *will these words live on as meaning* — the rotation leaves standing, undecided, which is the only honest answer a turning can give."
 }
