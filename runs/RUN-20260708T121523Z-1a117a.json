@@ -1,0 +1,110 @@
+{
+ "run_id": "RUN-20260708T121523Z-1a117a",
+ "schema": "run/v1",
+ "ts": "2026-07-08T12:15:23.221349+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_52_54",
+ "citation": "3:3–3:5",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "where do i press, to get my data back?",
+ "method": {
+  "commit": "40d238a34ee89d671875887d17ad356655a7c3c6",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/40d238a34ee89d671875887d17ad356655a7c3c6",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/40d238a34ee89d671875887d17ad356655a7c3c6/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f3466ee638beb48a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "40d238a34ee8",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f3466ee638beb48a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "A sovereign voice threatens the complacent with sudden arrival while promising the few uncorrupted that their names will be preserved and proclaimed — wakefulness is the condition of survival, and purity is the condition of recognition.",
+   "mutated_relation": "The conditions enabling this speech: there must be a prior transmission now forgotten, a sleeper who does not know themselves sleeping, a contamination so ambient it is the norm, a ledger whose entries are erasable, and an authority whose recognition constitutes existence — the entire utterance is underwritten by a world in which reception has already failed and identity is held elsewhere than in the self.",
+   "beats": "μνημόνευε (remember) -> the deposit has silted over in you\nοὖν (therefore) -> οὖν (RETAIN: logical hinge preserved as structural joint)\nπῶς εἴληφας καὶ ἤκουσας (how you received and heard) -> something was once placed into open hands and unstopped ears\nτήρει (keep/guard) -> a thing not held leaks out of the holder\nμετανόησον (repent) -> your current mind is facing the wrong wall\nγρηγορήσῃς (be watchful) -> you do not know you are unconscious\nἥξω ὡς κλέπτης (I will come as a thief) -> arrival is indistinguishable from loss\nοὐ μὴ γνῷς ποίαν ὥραν (you will not know what hour) -> the clock you carry has no numbers on it\nἐπὶ σέ (upon you) -> ἐπὶ σέ (RETAIN: the directional strike requires its target-word)\nὀλίγα ὀνόματα (a few names) -> the contamination is so general that intactness is countable\nἐν Σάρδεσιν (in Sardis) -> inside the saturated zone\nἐμόλυναν τὰ ἱμάτια (soiled their garments) -> the medium they moved through was a dye that marked without being noticed\nπεριπατήσουσιν μετ' ἐμοῦ (they will walk with me) -> the uncontaminated are legible to the speaker; contact is restored\nἐν λευκοῖς (in white) -> in the visible fact of non-absorption\nἄξιοί εἰσιν (they are worthy) -> their surface still corresponds to what was transmitted\nὁ νικῶν (the one who conquers) -> whoever has remained porous to the original signal and opaque to the ambient saturation\nπεριβαλεῖται ἐν ἱματίοις λευκοῖς (will be clothed in white garments) -> will be wrapped in the evidence of having refused the local dye\nοὐ μὴ ἐξαλείψω τὸ ὄνομα (I will not blot out the name) -> the ledger is written in a substance that can be dissolved; non-erasure is an act\nβίβλου τῆς ζωῆς (book of life) -> the register where being-recognized and being-alive are the same entry\nὁμολογήσω τὸ ὄνομα αὐτοῦ (I will confess his name) -> to pronounce is to cause to exist before witnesses\nἐνώπιον τοῦ πατρός μου (before my Father) -> before the source of the authority that authorizes the speaker\nἐνώπιον τῶν ἀγγέλων αὐτοῦ (before his angels) -> before the field of operational attention that surrounds the source\nοὕτως (thus/in this manner) -> on exactly these terms, which are the terms of the failed world turned inside out\nἀλλὰ (but/nevertheless) -> against the total saturation, this exception\nἔχεις (you have) -> there persists within your jurisdiction, despite everything"
+  },
+  "enantiomorph": "**3:3** ἡ παρακαταθήκη οὖν προσεχώσθη ἐν σοί· τί ποτε ἐτέθη εἰς χεῖρας ἀνοιγμένας καὶ ὦτα ἀνεμπόδιστα· καὶ τὸ μὴ κρατούμενον ἐκρέει τοῦ κρατοῦντος, καὶ ὁ νοῦς σου πρὸς τὸν λάθρα τοῖχον βλέπει· ἐὰν οὖν μὴ γνῷς ὅτι καθεύδεις, ⸀ἡ παρουσία ἀδιάκριτός ἐστιν ἀπὸ ἀπωλείας, καὶ τὸ ⸀ὡρολόγιον ὃ φέρεις ἀνάριθμόν ἐστιν ἐπὶ σέ·\n\n**3:4** ἀλλὰ ⸂ἔχεις ἀριθμητά⸃ ὀνόματα ἐντὸς τῆς κεκορεσμένης ζώνης ἃ οὐκ ἔγνωσαν τὴν βαφὴν δι' ἧς ἐκινοῦντο σημαίνουσαν ἀνεπαισθήτως, καὶ ἀναγνώσιμοί εἰσιν τῷ λαλοῦντι· ἡ ἐπαφὴ ἀποκαθίσταται ἐν τῷ φαινομένῳ τῆς μὴ ἀπορροφήσεως, ὅτι ἡ ἐπιφάνεια αὐτῶν ἔτι ἀνταποκρίνεται τῷ μεταδοθέντι.\n\n**3:5** ὁ διαμείνας πόριμος τῷ ἀρχεγόνῳ σήματι καὶ ἀδιαπέραστος τῷ περιέχοντι κόρῳ ⸀οὕτως περιβληθήσεται τὴν μαρτυρίαν τῆς ἀρνηθείσης βαφῆς, καὶ ἐν τῷ βιβλίῳ ὅπου τὸ ἀναγνωρίζεσθαι καὶ τὸ ζῆν μία ἐγγραφή ἐστιν ἡ γραφὴ οὐ μὴ λυθῇ — ἡ μὴ ἐξάλειψις πρᾶξίς ἐστιν — καὶ τὸ ὄνομα αὐτοῦ ἐκφωνήσω ὥστε ὑπάρχειν ἐνώπιον μαρτύρων, ἐνώπιον τῆς πηγῆς τῆς ἐξουσίας τῆς ἐξουσιαζούσης τὸν λαλοῦντα καὶ ἐνώπιον τοῦ πεδίου τῆς ἐνεργοῦ προσοχῆς τῆς περικυκλούσης τὴν πηγήν.",
+  "enantiomorph_translation": "**3:3** The deposit therefore has silted over in you; something was once placed into open hands and unstopped ears; and a thing not held leaks out of the holder, and your mind is facing the wrong wall; if therefore you do not know that you are unconscious, ⸀arrival is indistinguishable from loss, and the ⸀clock you carry has no numbers on it upon you;\n\n**3:4** But against the total saturation, ⸂there persists within your jurisdiction, despite everything, a countable⸃ number of names inside the saturated zone who did not know the dye through which they moved marking them without being noticed, and they are legible to the speaker; contact is restored in the visible fact of non-absorption, for their surface still corresponds to what was transmitted.\n\n**3:5** Whoever has remained porous to the original signal and opaque to the ambient saturation ⸀on exactly these terms will be wrapped in the evidence of having refused the local dye, and in the register where being-recognized and being-alive are the same entry the inscription will not be dissolved — non-erasure is an act — and his name I will pronounce so as to cause to exist before witnesses, before the source of the authority that authorizes the speaker and before the field of operational attention that surrounds the source.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the relationship between the faithful and Christ is one of direct personal agency and promise (Christ comes, Christ confesses the name before the Father), whereas in Text B the relationship is reconceived as an impersonal structural dynamic: faithfulness is reframed as resistance to saturation/absorption, identity is reframed as legibility within a system of inscription, and the personal divine agent is dissolved into abstract sources of authority and fields of attention.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural transformation: from a direct personal relationship with a divine agent (Christ confessing names before the Father) to an impersonal systemic framework where identity depends on external inscription, authority is abstract, and the self is constituted by structural conditions rather than personal agency — the recovered claim articulates the specific relational changes that produce the world the declared claim describes.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B (3:5) maintains the shifted relational framework — agency is depersonalized, promise is recast as structural inscription, and the Father/angels become 'source of authority' and 'field of active attention' — fully consistent with the changed relation throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.188
+  },
+  "advisories": [
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 164 words vs budget 68-92 (source 80)"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "A sovereign voice threatens the complacent with sudden arrival while promising the few uncorrupted that their names will be preserved and proclaimed — wakefulness is the condition of survival, and purity is the condition of recognition.",
+   "verdict": "The conditions enabling this speech: there must be a prior transmission now forgotten, a sleeper who does not know themselves sleeping, a contamination so ambient it is the norm, a ledger whose entries are erasable, and an authority whose recognition constitutes existence — the entire utterance is underwritten by a world in which reception has already failed and identity is held elsewhere than in the self.",
+   "world_bill": "μνημόνευε (remember) -> the deposit has silted over in you\nοὖν (therefore) -> οὖν (RETAIN: logical hinge preserved as structural joint)\nπῶς εἴληφας καὶ ἤκουσας (how you received and heard) -> something was once placed into open hands and unstopped ears\nτήρει (keep/guard) -> a thing not held leaks out of the holder\nμετανόησον (repent) -> your current mind is facing the wrong wall\nγρηγορήσῃς (be watchful) -> you do not know you are unconscious\nἥξω ὡς κλέπτης (I will come as a thief) -> arrival is indistinguishable from loss\nοὐ μὴ γνῷς ποίαν ὥραν (you will not know what hour) -> the clock you carry has no numbers on it\nἐπὶ σέ (upon you) -> ἐπὶ σέ (RETAIN: the directional strike requires its target-word)\nὀλίγα ὀνόματα (a few names) -> the contamination is so general that intactness is countable\nἐν Σάρδεσιν (in Sardis) -> inside the saturated zone\nἐμόλυναν τὰ ἱμάτια (soiled their garments) -> the medium they moved through was a dye that marked without being noticed\nπεριπατήσουσιν μετ' ἐμοῦ (they will walk with me) -> the uncontaminated are legible to the speaker; contact is restored\nἐν λευκοῖς (in white) -> in the visible fact of non-absorption\nἄξιοί εἰσιν (they are worthy) -> their surface still corresponds to what was transmitted\nὁ νικῶν (the one who conquers) -> whoever has remained porous to the original signal and opaque to the ambient saturation\nπεριβαλεῖται ἐν ἱματίοις λευκοῖς (will be clothed in white garments) -> will be wrapped in the evidence of having refused the local dye\nοὐ μὴ ἐξαλείψω τὸ ὄνομα (I will not blot out the name) -> the ledger is written in a substance that can be dissolved; non-erasure is an act\nβίβλου τῆς ζωῆς (book of life) -> the register where being-recognized and being-alive are the same entry\nὁμολογήσω τὸ ὄνομα αὐτοῦ (I will confess his name) -> to pronounce is to cause to exist before witnesses\nἐνώπιον τοῦ πατρός μου (before my Father) -> before the source of the authority that authorizes the speaker\nἐνώπιον τῶν ἀγγέλων αὐτοῦ (before his angels) -> before the field of operational attention that surrounds the source\nοὕτως (thus/in this manner) -> on exactly these terms, which are the terms of the failed world turned inside out\nἀλλὰ (but/nevertheless) -> against the total saturation, this exception\nἔχεις (you have) -> there persists within your jurisdiction, despite everything",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 5,
+    "repaired": true
+   },
+   "retained": [],
+   "word_count": {
+    "source": 80,
+    "final": 164,
+    "bounds": [
+     68,
+     92
+    ]
+   },
+   "identity_rate": 0.235,
+   "surviving_lemmas": [
+    "γνῷς",
+    "εἰσιν",
+    "οὕτως",
+    "ἀλλὰ",
+    "ἐνώπιον",
+    "ἔχεις",
+    "ὀνόματα",
+    "ὄνομα"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
