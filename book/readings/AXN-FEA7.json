@@ -161,12 +161,13 @@
      "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Lightning does not travel down from the sky but up from the ground: THUNDER discloses that the verses' scale was always cosmic, routed through the nerve before it reached the street."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T01:30:04.983000+00:00",
+ "last_updated": "2026-07-08T01:30:15.117287+00:00",
  "rite": [
   {
    "stage": "judgment",
@@ -174,6 +175,13 @@
    "at": "2026-07-08T01:28:58.772711+00:00",
    "text": "The candle that burns at the collapse-limit does not illuminate: FLAME finds the verses at the edge where velocity consumes the vessel that was carrying it.",
    "operator": "FLAME"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T01:30:15.117287+00:00",
+   "text": "Lightning does not travel down from the sky but up from the ground: THUNDER discloses that the verses' scale was always cosmic, routed through the nerve before it reached the street.",
+   "operator": "THUNDER"
   }
  ]
 }
