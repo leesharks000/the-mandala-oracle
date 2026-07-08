@@ -1,0 +1,67 @@
+{
+ "axn": "AXN:FEA7.READING.🌘🌓🌟🌕🌿🌗",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "518c9ca1a099539a",
+ "inscribed_at": "2026-07-08T01:27:55.000501+00:00",
+ "question_digest": "sha256:b1833c0e4c829fc75a4b4d671dea6f78867f19e15ef7a61fdc0ccba382fded22",
+ "question_gloss": "Witness asks whether certain words will continue to have their current meaning over time.",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where you laid them out at?\nStacked 'em shift by shift, couldn't drink from it\nHad to bail it, bucketed, petitioned\nChalk-dusted, emptied wrist splinter\nRation for the clerk, cold water from the pipes\nSip through the crack, one more for the line, thanks\nThat fills the dark, that wait sure rang strict\nHauled up the grid for more backboard plank grit\nCinch it on tight, crawl past third week\nBuilt the whole lot like some cold hands on junk sheet\nThese shifts is too stacked, wrung from a blunt week\nWho could get thinner off a bunk or a trunk seat?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a specific relational change.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts maintain the same structural relations throughout; differences are limited to vocabulary and imagery substitutions.",
+    "back_translation": "",
+    "terminal_similarity": 0.201
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a specific relational change.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-08T01:27:55.000501+00:00"
+}
