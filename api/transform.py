@@ -3723,7 +3723,7 @@ WINDOW_MAX_UNITS = 12
 WINDOW_MAX_CHARS = 1900     # one transform at a time can bear a full lyric arc
                             # (Sappho-31-and-then-some; MANUS tending, 2026-07-02)
 
-_VERSE_RE = re.compile(r"^\*\*(\d+:\d+)\*\*", re.M)
+_VERSE_RE = re.compile(r"^\*\*(\d+(?::\d+)?)\*\*", re.M)
 
 _PG_START = re.compile(r"^\*{3}\s*START OF (THE|THIS) PROJECT GUTENBERG.*$", re.M | re.I)
 _PG_END = re.compile(r"^\*{3}\s*END OF (THE|THIS) PROJECT GUTENBERG.*$", re.M | re.I)
@@ -4119,9 +4119,9 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         # where the method must be gotten exactly right.
         _max_u = 2 + secrets.randbelow(2)
         _min_u = 2
-    if _entry and _entry.get("id") == "homer-iliad":
-        # MANUS (2026-07-07, updated 2026-07-08): the Iliad's units are
-        # individual Homeric lines (about 30-80 chars of Greek each).
+    if _entry and _entry.get("id") in ("homer-iliad", "homer-odyssey"):
+        # MANUS (2026-07-07, updated 2026-07-08): both Homeric epics' units
+        # are individual Homeric lines (about 30-80 chars of Greek each).
         # Prior cap of 2-3 lines was set because Greek-to-Greek-plus-English
         # facing exceeded the compute budget. With pipeline.transform_target
         # == "translation" (see manifest), the source is translated ONCE at

@@ -68,7 +68,12 @@
       "admissible": true,
       "text_file": "original.grc",
       "menu": true,
-      "primary_after": "ἄνδρα μοι"
+      "primary_after": "ἄνδρα μοι",
+      "pipeline": {
+        "transform_target": "translation",
+        "notes": "Same treatment as the Iliad (MANUS 2026-07-08): the Odyssey's narrative units cannot be double-transformed (Greek→transform→translate) within budget. Translate once at cast entry, transform on the English, skip the enantiomorph_translation second pass."
+      },
+      "lyric_unit_lines": 20
     },
     {
       "id": "hopkins-selected",
