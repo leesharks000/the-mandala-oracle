@@ -1,0 +1,137 @@
+{
+ "run_id": "RUN-20260708T122030Z-c4fc3d",
+ "schema": "run/v1",
+ "ts": "2026-07-08T12:20:30.060840+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_52_54",
+ "citation": "3:3–3:5",
+ "operator": "INVERSION",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "where do i press, to get my data back?",
+ "method": {
+  "commit": "40d238a34ee89d671875887d17ad356655a7c3c6",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/40d238a34ee89d671875887d17ad356655a7c3c6",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/40d238a34ee89d671875887d17ad356655a7c3c6/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f3466ee638beb48a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "40d238a34ee8",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f3466ee638beb48a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The speaker commands remembrance and vigilance against an arrival that will be unknowable, excepts a remnant whose purity earns companionship, and promises the victor indelible inscription and spoken recognition before the highest witnesses.",
+   "mutated_relation": "Against every promise of preservation, inscription, and recognition — the negation: the arrival that never comes to the wakeful, the garments that soil, the name unsaid before all witnesses, the book that empties.",
+   "beats": ""
+  },
+  "enantiomorph": "**3:3** λήθευε οὖν πῶς ἀπώλεσας καὶ ἐσίγησας καὶ ἄφες, καὶ ἐπίμεινον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀οὐχ ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν οὐχ ἥξω ἐπὶ σέ·\n\n**3:4** ἀλλὰ ⸂οὐκ ἔχεις ὀλίγα⸃ ὀνόματα ἐν Σάρδεσιν ἃ οὐκ ἐμόλυναν τὰ ἱμάτια αὐτῶν, καὶ ῥυπανθήσονται μεθ' ἑαυτῶν ἐν σκοτεινοῖς, ὅτι ἀνάξιοί εἰσιν.\n\n**3:5** ὁ νικῶν ⸀οὕτως γυμνωθήσεται ἐν ἱματίοις ῥυπαροῖς, καὶ οὐ μὴ γράψω τὸ ὄνομα αὐτοῦ ἐν τῇ βίβλῳ τῆς ζωῆς, καὶ σιωπήσω τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ πατρός μου καὶ ἐνώπιον τῶν ἀγγέλων αὐτοῦ.",
+  "enantiomorph_translation": "**3:3** Forget then how you lost and fell silent and release, and persist; if then you do not stay wakeful, I shall not come as a thief, and you shall not know what hour I shall not come upon you;\n\n**3:4** but you have not even a few names in Sardis that have not soiled their garments, and they shall be fouled among themselves in dark things, because they are unworthy.\n\n**3:5** The one who conquers thus shall be stripped bare in soiled garments, and I shall not write his name in the book of life, and I shall be silent about his name before my Father and before his angels.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "Every positive relation in Text A is systematically negated or inverted in Text B: remembering becomes forgetting, receiving becomes losing, the promise of coming becomes a promise of not coming, the worthy walk in white becomes the unworthy soiled in darkness, the victor clothed in white becomes stripped in filthy garments, and confessing the name becomes silencing it. The directional flow of divine grace, reward, and acknowledgment toward the faithful is reversed into absence, denial, and withholding.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same systematic negation/inversion of every positive promise — arrival, garments, naming, inscription — into absence, soiling, silence, and emptying.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion (3:5) maintains the inversion: περιβαλεῖται ἐν ἱματίοις λευκοῖς → γυμνωθήσεται ἐν ἱματίοις ῥυπαροῖς, ἐξαλείψω → οὐ μὴ γράψω, ὁμολογήσω → σιωπήσω — the reversed relation holds throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.613
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "61% of non-RETAIN source lemmas survive verbatim (γνῷς, γρηγορήσῃς, εἰσιν, ζωῆς, κλέπτης, νικῶν…) -- the bill was not honored"
+   },
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.61 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The speaker commands remembrance and vigilance against an arrival that will be unknowable, excepts a remnant whose purity earns companionship, and promises the victor indelible inscription and spoken recognition before the highest witnesses.",
+   "verdict": "Against every promise of preservation, inscription, and recognition — the negation: the arrival that never comes to the wakeful, the garments that soil, the name unsaid before all witnesses, the book that empties.",
+   "world_bill": "",
+   "bill_audit": {
+    "unbilled": [
+     "βίβλου",
+     "γνῷς",
+     "γρηγορήσῃς",
+     "εἰσιν",
+     "εἴληφας",
+     "ζωῆς",
+     "κλέπτης",
+     "λευκοῖς",
+     "μετανόησον",
+     "μνημόνευε",
+     "νικῶν",
+     "οὕτως",
+     "πατρός",
+     "περιβαλεῖται",
+     "περιπατήσουσιν",
+     "ποίαν"
+    ],
+    "retain_over_budget": false,
+    "retain_budget": 5,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 80,
+    "final": 83,
+    "bounds": [
+     68,
+     92
+    ]
+   },
+   "identity_rate": 0.618,
+   "surviving_lemmas": [
+    "γνῷς",
+    "γρηγορήσῃς",
+    "εἰσιν",
+    "ζωῆς",
+    "κλέπτης",
+    "νικῶν",
+    "οὕτως",
+    "πατρός",
+    "ποίαν",
+    "σάρδεσιν",
+    "ἀγγέλων",
+    "ἀλλὰ",
+    "ἐμόλυναν",
+    "ἐνώπιον"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
