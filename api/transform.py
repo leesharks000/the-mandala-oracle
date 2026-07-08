@@ -135,7 +135,7 @@ def _load_manifest() -> list:
 # SCROLL fell out of rotation and is non-canonical; it survives in the
 # Viola worked example (kernel-transform spec §6.2) as a historical trace.
 OPERATORS = {
-    "SHADOW":    "assertion-axis — the bearing-cost ENCODED BY THE UTTERANCE (the cost the composition carries, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+    "SHADOW":    "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
     "MIRROR":    "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
     "INVERSION": "polarity-axis — the negative pole the positive claim presupposes",
     "FLAME":     "intensity-axis — the collapse-limit where the source's intensity would ignite",
@@ -163,7 +163,7 @@ OPERATORS = {
 # stated once and prepended by op_logic_line().
 
 OPERATOR_META_INVARIANT = (
-    "META-INVARIANT for all operators O in the rotation set (Tier C v0.4):\n"
+    "META-INVARIANT for all operators O in the rotation set (Tier C v0.5):\n"
     "  O: S → E.\n"
     "  STRUCTURE PRESERVATION: E preserves S's compositional structure — "
     "order, cadence, syntax, address-mode, spatial form, prosodic features, "
@@ -188,104 +188,95 @@ OPERATOR_META_INVARIANT = (
 )
 
 OPERATOR_LOGIC = {
-    "SHADOW": ("O_COST_01",
-        "assertion-axis. "
-        "Input: S with assertion-set A(S) = {a_1, ..., a_n}. "
-        "Step 1: for each a_i in A(S), compute C(a_i) — the conditions "
-        "whose satisfaction is entailed by a_i's utterance. "
+    "SHADOW": ("O_ASSERT_01",
+        "Input: S with element-set A(S) = {a_1, ..., a_n}, where each "
+        "a_i is a predication in S. "
+        "Step 1: for each a_i in A(S), compute C(a_i) — the set of "
+        "conditions whose satisfaction is entailed by a_i's utterance. "
         "Step 2: for each a_i in A(S), substitute a_i with the primary-mode "
         "expression of C(a_i); a_i itself becomes the projection of C(a_i) "
         "into the surface of S. "
-        "Step 3: compose E from {substituted a'_i} under S's structural order. "
-        "O_COST_01: S → E."),
+        "Step 3: compose E from {substituted a'_i} under S's structural order."),
     "MIRROR": ("O_DIRECTION_01",
-        "directionality-axis. "
-        "Input: S with gesture-set G(S) = {g_1, ..., g_n}, where each g_i "
-        "has direction d_i in the space of source-to-target relations. "
-        "Step 1: for each g_i in G(S), compute d_i. "
+        "Input: S with element-set G(S) = {g_1, ..., g_n}, where each g_i "
+        "has an oriented relation r_i with source-endpoint and target-endpoint. "
+        "Step 1: for each g_i in G(S), identify r_i. "
         "Step 2: for each g_i in G(S), substitute g_i with g_i evaluated "
-        "at direction -d_i, or at the reciprocal relation, or at the "
-        "self-implicating relation of g_i's source and target. "
-        "Step 3: compose E from {substituted g'_i} under S's structural order. "
-        "O_DIRECTION_01: S → E."),
+        "at r_i^{-1} (the inverted orientation), or at the reciprocal "
+        "relation, or at the self-implicating relation in which g_i's "
+        "endpoints occupy each other's positions. "
+        "Step 3: compose E from {substituted g'_i} under S's structural order."),
     "INVERSION": ("O_POLARITY_01",
-        "polarity-axis. "
-        "Input: S with claim-set K(S) = {c_1, ..., c_n} of positive claims. "
+        "Input: S with element-set K(S) = {c_1, ..., c_n} of predications "
+        "each asserting the obtaining of some state. "
         "Step 1: for each c_i in K(S), compute ¬c_i — the negation of the "
-        "state c_i asserts. "
+        "state c_i asserts to obtain. "
         "Step 2: for each c_i in K(S), substitute c_i with the primary-mode "
         "expression of ¬c_i; c_i itself becomes ¬c_i's ground. "
-        "Step 3: compose E from {substituted c'_i} under S's structural order. "
-        "O_POLARITY_01: S → E."),
+        "Step 3: compose E from {substituted c'_i} under S's structural order."),
     "FLAME": ("O_THRESHOLD_01",
-        "intensity-axis. "
-        "Input: S parameterized by an accumulating parameter G(S). "
-        "Step 1: identify p — the discontinuity-point of G, i.e., the value "
-        "at which S's structural properties would undergo qualitative change "
-        "(not merely quantitative extension). "
-        "Step 2: compute S(G > p) — S evaluated at G past the discontinuity; "
-        "substitute S with S(G > p). "
-        "Step 3: compose E from S(G > p) under S's structural order. "
-        "O_THRESHOLD_01: S → E."),
+        "Input: S parameterized by a monotonically-increasing parameter μ(S). "
+        "Step 1: identify p — the value of μ at which S's structural "
+        "properties would undergo qualitative change (not merely quantitative "
+        "extension). "
+        "Step 2: compute S(μ > p) — S evaluated at μ past p; substitute S "
+        "with S(μ > p). "
+        "Step 3: compose E from S(μ > p) under S's structural order."),
     "BRIDE": ("O_BOND_01",
-        "relational-affect-axis. "
-        "Input: S with relation-set R(S) = {R_i(p_i, q_i)} where each R_i is "
-        "a contest, separation, or hierarchy holding parties p_i, q_i. "
-        "Step 1: for each R_i in R(S), compute B_i(p_i, q_i) — the mutual "
-        "constitution of p_i and q_i that R_i's non-holding would actualize; "
-        "B_i preserves the distinctness of p_i and q_i. "
+        "Input: S with element-set R(S) = {R_i(p_i, q_i)} where each R_i is "
+        "a relation of division (contest, separation, hierarchy, exclusion) "
+        "between pair (p_i, q_i). "
+        "Step 1: for each R_i in R(S), compute B_i(p_i, q_i) — the relation "
+        "of mutual constitution of p_i and q_i that R_i's non-holding would "
+        "actualize; B_i preserves the distinctness of p_i and q_i. "
         "Step 2: for each R_i in R(S), substitute R_i with B_i; each p_i "
         "and q_i's identity is re-derived as a function of B_i. "
-        "Step 3: compose E from {substituted R'_i} under S's structural order. "
-        "O_BOND_01: S → E."),
+        "Step 3: compose E from {substituted R'_i} under S's structural order."),
     "BEAST": ("O_SUBSTRATE_01",
-        "species-register-axis. "
-        "Input: S with determination-set D(S) = {d_1, ..., d_n} of anthropic "
-        "determinations, and substrate Σ(S) — the register on which S runs "
-        "beneath the anthropic determinations. "
+        "Input: S with element-set D(S) = {d_1, ..., d_n} of determinations "
+        "framed at level λ, and layer Σ(S) — the layer at which S runs "
+        "beneath the level-λ framings. "
         "Step 1: identify Σ(S) as a function of S alone (not supplied by "
         "operator). "
         "Step 2: for each d_i in D(S), substitute d_i with its expression "
-        "in Σ(S). Directional sub-rule: if S is already at Σ(S) (S has "
-        "already performed the anthropic-to-substrate descent), substitute "
-        "Σ(S) with Σ'(S) — the trans-Σ register Σ itself gestures toward, "
-        "computed as a function of Σ(S) alone. "
-        "Step 3: compose E from {substituted d'_i} under S's structural order. "
-        "O_SUBSTRATE_01: S → E."),
+        "at Σ(S). Directional sub-rule: if S is already at Σ(S) (S has "
+        "already performed the level-λ-to-Σ descent), substitute Σ(S) with "
+        "Σ'(S) — the layer above Σ that Σ itself gestures toward, computed "
+        "as a function of Σ(S) alone. "
+        "Step 3: compose E from {substituted d'_i} under S's structural order."),
     "THUNDER": ("O_SCALE_01",
-        "scale-axis. "
-        "Input: S with bounded-unit set U(S) = {u_1, ..., u_n} and "
-        "distributed process D(S) implicit in {u_1, ..., u_n}. "
-        "Step 1: for each u_i in U(S), compute the registration function "
-        "r(u_i) — u_i's status as a local registration of D(S). "
-        "Step 2: for each u_i in U(S), substitute u_i with D(S)-primary, "
-        "where u_i now instantiates r(u_i). Numerals are conserved under "
-        "substitution: cardinality of counted sets may transpose in "
-        "register but may not become undefined. "
-        "Step 3: compose E from {substituted u'_i} under S's structural order. "
-        "O_SCALE_01: S → E."),
+        "Input: S with element-set U(S) = {u_1, ..., u_n} and encompassing "
+        "operation P(S) whose local values include U(S). "
+        "Step 1: for each u_i in U(S), compute f(u_i) — u_i's value as an "
+        "instance of P(S). "
+        "Step 2: for each u_i in U(S), substitute u_i with P(S)-primary, "
+        "where u_i now instantiates f(u_i). Numerals are conserved under "
+        "substitution: cardinality of counted sets may transpose but may "
+        "not become undefined. "
+        "Step 3: compose E from {substituted u'_i} under S's structural order."),
     "SILENCE": ("O_RESPONSE_01",
-        "response-axis. "
         "Input: S with expectation-structure X(S) — the set of expected "
-        "responses R_e that S's utterance structure predicts. "
+        "returns R_e that S's utterance-structure predicts. "
         "Step 1: for each R_e in X(S), compute ∅(R_e) — R_e's structural "
         "absence. "
         "Step 2: for each R_e in X(S), substitute R_e with ∅(R_e); the "
         "surface of S is re-organized around the location(s) where R_e "
         "was owed. "
-        "Step 3: compose E from the re-organized S under S's structural order. "
-        "O_RESPONSE_01: S → E."),
+        "Step 3: compose E from the re-organized S under S's structural order."),
 }
 
 def op_logic_line(operator: str) -> str:
-    """Emit the operator prompt: META-INVARIANT + operator-specific
-    function specification. Tier C v0.3 (MANUS 2026-07-08): the compiler
-    receives the register-derivation rule and diagnostic once, and the
-    operator's own specification uses only formal-domain vocabulary.
-    Register-alteration in E is admissible iff derivable from O's specific
-    computation on specific source elements; see OPERATOR_META_INVARIANT."""
+    """Emit the operator prompt: META-INVARIANT + operator function
+    specification only. Tier C v0.5 (MANUS 2026-07-08): NO NAMES reach the
+    LLM. The internal Python dict keys ('SHADOW', etc.) remain for code
+    purposes; the opaque IDs ('O_COST_01', 'O_THRESHOLD_01', etc.) remain
+    in the dict tuples for internal book-keeping; NEITHER is emitted. The
+    axis-name leaders ('assertion-axis.', 'scale-axis.', etc.) are also
+    stripped from the specification texts. The compiler receives only the
+    formal function specification. Any name-fallback the compiler performs
+    on the operator's identity has no name to fall back on."""
     oid, logic = OPERATOR_LOGIC.get(operator, ("O_UNSPEC", OPERATORS.get(operator, "")))
-    return f"{OPERATOR_META_INVARIANT}\n\nOPERATOR SPECIFICATION {oid}: {logic}"
+    return f"{OPERATOR_META_INVARIANT}\n\nSPECIFICATION:\n{logic}"
 LEGACY_OPERATORS = {"SCROLL": "surface-depth-axis — non-canonical; fell out of rotation"}
 
 RATE_LIMIT_WINDOW_S = int(os.environ.get("RATE_LIMIT_WINDOW_S", "3600"))
@@ -700,34 +691,40 @@ C3 Structural fidelity: mandatory beat mapping, including spatial_form.
    discloses, or a stock disjoint register? Draw the evacuated field
    from the source's own exclusion structure. Infrastructure registers
    are not banned; unearned ones are.
-   C3.5 MATERIAL REGISTER (MANUS, 2026-07-07; per EA-FEIST-VOICE-TRANSFORM-01
-   §4.6 — used as portable check, not as voice target): register is
-   inherited, not imported. Before generating, identify the source's
+   C3.5 MATERIAL REGISTER (MANUS, 2026-07-07; revised 2026-07-08): register
+   is inherited, not imported. Before generating, identify the source's
    material speech: phonetic friction, etymological depth, rhyme density,
    cadence, address mode, named social terrain, and compositional
-   tradition. The operator's axis rotates WITHIN that register.
+   tradition. The specification rotates the axis WITHIN that register.
    If the source lives in hard plosive monosyllables, chained internal
-   rhyme, accentual freestyle, direct-you address, and urban doom-poetics,
-   the enantiomorph must preserve that material grammar while rotating the
-   operator axis. DO NOT substitute the operator's default literary
-   attractor: SHADOW→monastic/hymnal, BRIDE→consecrated household,
-   BEAST→naturalist pastoral, MIRROR→refined parlor. Those are stock
-   registers, not inherited registers.
-   The source's material density is the budget. Latinate softening,
-   pastoral animalization, household-sacralization, or refined-parlor
-   diction are failures unless generated by the source's own compositional
-   tradition under the operator axis. Axis changes; material grammar
-   remains. On a source that has ALREADY performed the operator's
-   downward determination (e.g., a doom-poetics source has already
-   performed the anthropic→creaturely descent under species-register),
-   the operator rotates that axis IN THE OTHER DIRECTION in the source's
-   own material grammar (BEAST on already-beast source discloses the
-   angelic in the same phonic loading — not more beast).
+   rhyme, accentual freestyle, direct-you address, and any specific
+   composition tradition, the enantiomorph must preserve that material
+   grammar while performing the specified structural transformation. DO
+   NOT map S's items into a familiar literary register (any monastic /
+   hymnal / consecrated-household / naturalist-pastoral / refined-parlor /
+   financial-accounting / hydraulic-infrastructure / medical-pathology /
+   cosmic-utterance genre) whose members share vocabulary but not
+   source-derivation. Register-selection into a genre the compiler
+   already knows is not composition; it is substitution masquerading as
+   transformation. The source's material density is the budget for
+   composition. Latinate softening, pastoral animalization, household-
+   sacralization, refined-parlor diction, debt-vocabulary substitution,
+   or hydraulic-infrastructure substitution are failures unless
+   generated by the specification's function on the source's own
+   compositional tradition. Structure preserved; material NEW-composed.
+   On a source that has ALREADY performed the specification's downward
+   determination (e.g., a doom-poetics source has already performed the
+   anthropic→creaturely descent under species-register), the
+   specification rotates that axis IN THE OTHER DIRECTION in the source's
+   own material grammar (the upward disclosure in the same phonic
+   loading — not more of the same descent).
    COMMENTARY CALIBRATION (Assembly review, 2026-07-02): the apparatus
    claims only what the operation DISCLOSED, TESTED, or MADE NEWLY
-   LEGIBLE — never "proved". Distinguish three costs and claim only the
-   second: (1) the represented speaker's suffering; (2) the bearing-cost
-   ENCODED in the composition; (3) the historical composer's biography.
+   LEGIBLE — never "proved". Distinguish three sources of what the
+   apparatus might claim and claim only the second: (1) the represented
+   speaker's suffering; (2) what the composition ENCODES to be said (its
+   structural presuppositions, what it bears in order to be uttered); (3)
+   the historical composer's biography.
    Retrospective containment must not import outcomes external to the
    utterance's own horizon (later myth, biography, reception history).
    THE FEIST BLADE (MANUS, 2026-07-04): the closing aphorism is one cut,
@@ -735,7 +732,7 @@ C3 Structural fidelity: mandatory beat mapping, including spatial_form.
    Y, that Z"), balanced-antithesis padding, any line that explains the
    transform back to the reader, any line that gestures at profundity
    through symmetry rather than earning it through consequence. The
-   aphorism states what the rotation COSTS or what it FORECLOSES, in
+   aphorism states what the rotation DISCLOSES or what it FORECLOSES, in
    concrete terms, with at least one hard noun from the transform's own
    derived field. If it could open a commencement address, cut it and
    strike again.
@@ -1366,8 +1363,9 @@ Given SOURCE (possibly Greek), OPERATOR (an axis), and the witness's question
    or the source's own grammar of comparison) -- NEVER a vocabulary shift,
    an intensity change, or a mood. State it as an ONTOLOGICAL exchange: name
    WHAT THE BEINGS ARE in the transformed world under the operator's axis
-   (under a cost-logic: entities as their bearing-costs -- the crown as
-   what it deducts, the witness as what was spent) -- and name WHAT KIND OF EVENT the
+   (e.g. under a presupposition-logic: entities as the conditions their
+   being-uttered required -- each entity is what it presupposed rather than
+   what it declared) -- and name WHAT KIND OF EVENT the
    scene becomes under the logic. A mutation compatible with every entity
    remaining what it was is a decoration; a mutation that leaves the
    event-kind intact (every cast of a destruction still a destruction) is
