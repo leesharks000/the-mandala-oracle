@@ -15,7 +15,7 @@
 
 **Institution:** University Moon Base Media Lab
 
-**DOI:** [10.5281/zenodo.18323735](https://doi.org/10.5281/zenodo.18323735)
+**DOI:** [10.5281/zenodo.18323735](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18323735)
 
 **Status:** DEPOSITED
 

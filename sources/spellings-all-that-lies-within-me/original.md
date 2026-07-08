@@ -7,7 +7,7 @@
 ---
 
 
-**DOI:** [10.5281/zenodo.18307706](https://doi.org/10.5281/zenodo.18307706)
+**DOI:** [10.5281/zenodo.18307706](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18307706)
 
 **Framework:** NH-OS / Crimson Hexagon / Paper Roses Episode
 
@@ -521,7 +521,7 @@ This work is governed by the principles established in:
 
 **Heteronymic Provenance Theory**
 
-DOI: [10.5281/zenodo.18305509](https://doi.org/10.5281/zenodo.18305509)
+DOI: [10.5281/zenodo.18305509](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18305509)
 
 
 ATLWM demonstrates:
@@ -611,37 +611,37 @@ Title
 Relation
 
 
-[10.5281/zenodo.18307811](https://doi.org/10.5281/zenodo.18307811)
+[10.5281/zenodo.18307811](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18307811)
 All That Lies Within Me [Book]
 documents
 
 
-[10.5281/zenodo.18305509](https://doi.org/10.5281/zenodo.18305509)
+[10.5281/zenodo.18305509](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18305509)
 Heteronymic Provenance Theory
 isPartOf (governing theory)
 
 
-[10.5281/zenodo.18307393](https://doi.org/10.5281/zenodo.18307393)
+[10.5281/zenodo.18307393](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18307393)
 The Socratic Vow of Logos as Salvation
 references (Section XXVIII prefigures)
 
 
-[10.5281/zenodo.18294470](https://doi.org/10.5281/zenodo.18294470)
+[10.5281/zenodo.18294470](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18294470)
 Navigation Map v4.2
 isPartOf (central index)
 
 
-[10.5281/zenodo.18284689](https://doi.org/10.5281/zenodo.18284689)
+[10.5281/zenodo.18284689](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18284689)
 DOI Registry
 isPartOf (archive)
 
 
-[10.5281/zenodo.18307756](https://doi.org/10.5281/zenodo.18307756)
+[10.5281/zenodo.18307756](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18307756)
 IDP Navigation Map: ATLWM
 hasPart (navigation)
 
 
-[10.5281/zenodo.18202658](https://doi.org/10.5281/zenodo.18202658)
+[10.5281/zenodo.18202658](https://www.alexanarch.org/go/?doi=10.5281/zenodo.18202658)
 Day and Night (Cranes)
 references (emerges from Intermezzo)
 
