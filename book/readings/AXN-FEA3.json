@@ -98,9 +98,56 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "INVERSION",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·\n\n**3:4** ἀλλὰ ⸂ἔχεις ὀλίγα⸃ ὀνόματα ἐν Σάρδεσιν ἃ οὐκ ἐμόλυναν τὰ ἱμάτια αὐτῶν, καὶ περιπατήσουσιν μετ’ ἐμοῦ ἐν λευκοῖς, ὅτι ἄξιοί εἰσιν.\n\n**3:5** ὁ νικῶν ⸀οὕτως περιβαλεῖται ἐν ἱματίοις λευκοῖς, καὶ οὐ μὴ ἐξαλείψω τὸ ὄνομα αὐτοῦ ἐκ τῆς βίβλου τῆς ζωῆς, καὶ ὁμολογήσω τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ πατρός μου καὶ ἐνώπιον τῶν ἀγγέλων αὐτοῦ.",
+   "citation": "3:3–3:5",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**3:3** λήθευε οὖν πῶς ἀπώλεσας καὶ ἐσίγησας καὶ ἄφες, καὶ ἐπίμεινον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀οὐχ ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν οὐχ ἥξω ἐπὶ σέ·\n\n**3:4** ἀλλὰ ⸂οὐκ ἔχεις ὀλίγα⸃ ὀνόματα ἐν Σάρδεσιν ἃ οὐκ ἐμόλυναν τὰ ἱμάτια αὐτῶν, καὶ ῥυπανθήσονται μεθ' ἑαυτῶν ἐν σκοτεινοῖς, ὅτι ἀνάξιοί εἰσιν.\n\n**3:5** ὁ νικῶν ⸀οὕτως γυμνωθήσεται ἐν ἱματίοις ῥυπαροῖς, καὶ οὐ μὴ γράψω τὸ ὄνομα αὐτοῦ ἐν τῇ βίβλῳ τῆς ζωῆς, καὶ σιωπήσω τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ πατρός μου καὶ ἐνώπιον τῶν ἀγγέλων αὐτοῦ.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Every positive relation in Text A is systematically negated or inverted in Text B: remembering becomes forgetting, receiving becomes losing, the promise of coming becomes a promise of not coming, the worthy walk in white becomes the unworthy soiled in darkness, the victor clothed in white becomes stripped in filthy garments, and confessing the name becomes silencing it. The directional flow of divine grace, reward, and acknowledgment toward the faithful is reversed into absence, denial, and withholding.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same systematic negation/inversion of every positive promise — arrival, garments, naming, inscription — into absence, soiling, silence, and emptying.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (3:5) maintains the inversion: περιβαλεῖται ἐν ἱματίοις λευκοῖς → γυμνωθήσεται ἐν ἱματίοις ῥυπαροῖς, ἐξαλείψω → οὐ μὴ γράψω, ὁμολογήσω → σιωπήσω — the reversed relation holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.613
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "61% of non-RETAIN source lemmas survive verbatim (γνῷς, γρηγορήσῃς, εἰσιν, ζωῆς, κλέπτης, νικῶν…) -- the bill was not honored"
+    },
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.61 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T12:17:01.956391+00:00"
+ "last_updated": "2026-07-08T12:21:46.120984+00:00"
 }
