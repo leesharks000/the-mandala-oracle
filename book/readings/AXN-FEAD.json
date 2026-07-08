@@ -50,18 +50,26 @@
      "diagnosis": "final 204 words vs budget 83-112 (source 98)"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Debt precedes the debtor: the shadow of what the road required is longer than the one who ran it."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T03:05:07.680953+00:00",
+ "last_updated": "2026-07-08T03:05:16.795663+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-08T03:05:07.680953+00:00",
    "text": "The casting arrives at a verse that moves in pure acoustic surplus — the language running faster than its own argument, sprung off rhyme-chains and sonic torque until meaning is almost secondary to the *cost of keeping up*. What the first operator will traverse here is the bearing-cost beneath the velocity: what must the voice sustain in order to move this fast, this loudly, past Front Street and into the pit? The verse's hunger is lateral — it wants more of the same register, more crunk, more funk, more speed — and the operator's work is to locate the axis of assertion inside that lateral rush, to find what claim the voice is actually staking in the body of its own acceleration. There is a moment of refusal buried here — *none more for me, thanks* — that the rest of the verse rolls over without stopping; that is the seam. Rebekah Cranes, the source is yours."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T03:05:16.795663+00:00",
+   "text": "Debt precedes the debtor: the shadow of what the road required is longer than the one who ran it.",
+   "operator": "SHADOW"
   }
  ]
 }
