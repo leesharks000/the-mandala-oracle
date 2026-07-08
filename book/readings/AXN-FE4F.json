@@ -45,10 +45,20 @@
    "law_variance": null,
    "glyphic": null,
    "advisories": [],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Debt under speed: the one who gave freely paid in bone, not coin, and the ledger will not balance in this life."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T00:37:16.248135+00:00"
+ "last_updated": "2026-07-08T00:37:25.555024+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T00:37:25.555024+00:00",
+   "text": "Debt under speed: the one who gave freely paid in bone, not coin, and the ledger will not balance in this life.",
+   "operator": "SHADOW"
+  }
+ ]
 }
