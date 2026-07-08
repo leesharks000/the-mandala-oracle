@@ -69,7 +69,82 @@
     "beats": "δεκάτῃ (tenth day) -> first instant\nἀγορήν (assembly) -> fault-line\nκαλέσσατο (summoned) -> split open\nλαόν (the people) -> the bedrock\nἈχιλλεύς (Achilles) -> the stormhead\nφρεσί (mind/heart) -> the charged air\nθῆκε (placed/put) -> discharged\nθεά (goddess) -> θεά (RETAIN: the divine origin is the same, only its manner of arrival transforms)\nλευκώλενος Ἥρη (white-armed Hera) -> black-anvil sky\nκήδετο (grieved/cared) -> detonated\nΔαναῶν (of the Danaans) -> of the plains\nθνήσκοντας (the dying) -> the flattened\nὁρᾶτο (she beheld) -> struck\nἤγερθεν (they gathered) -> were flung\nὁμηγερέες (assembled together) -> scattered as one\nγένοντο (they became) -> lay bare\nἐπεί (when/after) -> before\nγάρ (for/because) -> without cause\nτῇ / τῷ (on that / in him) -> from nowhere\nδέ (and/but) -> already\nοὖν (then/so) -> blindly\nὅτι ῥα (because indeed) -> though nothing warned\nοἵ (they) -> what stood there"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-9d323f5e",
+   "cast_at": "2026-07-08T04:43:25.373304+00:00",
+   "reading_axn": "AXN:FE6B.READING.🌙🔥🌒🌙🌔🌊",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_187_205",
+    "citation": "1:188–1:206",
+    "start_unit": 187,
+    "end_unit": 205,
+    "unit_labels": [
+     "1:188",
+     "1:189",
+     "1:190",
+     "1:191",
+     "1:192",
+     "1:193",
+     "1:194",
+     "1:195",
+     "1:196",
+     "1:197",
+     "1:198",
+     "1:199",
+     "1:200",
+     "1:201",
+     "1:202",
+     "1:203",
+     "1:204",
+     "1:205",
+     "1:206"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a specific relational change about the precedence of division over intervention.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Text B maintains its hybrid translational-gloss style throughout; the relational structure (Athena intervenes, Achilles recognizes her, addresses her, she responds) mirrors Text A consistently to the end.",
+    "back_translation": "",
+    "terminal_similarity": 0.364
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:d32501f08c2bbfe0e83e96fbc03fed626687f0bce8790481d862d20289677b8b",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**1:188** \n ὣς φάτο· Πηλεΐωνι δʼ ἄχος γένετʼ, ἐν δέ οἱ ἦτορ\n\n \n**1:189** στήθεσσιν λασίοισι διάνδιχα μερμήριξεν,\n\n \n**1:190** ἢ ὅ γε φάσγανον ὀξὺ ἐρυσσάμενος παρὰ μηροῦ\n\n \n**1:191** τοὺς μὲν ἀναστήσειεν, ὃ δʼ Ἀτρεΐδην ἐναρίζοι,\n\n \n**1:192** ἦε χόλον παύσειεν ἐρητύσειέ τε θυμόν.\n\n \n**1:193** ἧος ὃ ταῦθʼ ὥρμαινε κατὰ φρένα καὶ κατὰ θυμόν,\n\n \n**1:194** ἕλκετο δʼ ἐκ κολεοῖο μέγα ξίφος, ἦλθε δʼ Ἀθήνη\n\n \n**1:195** οὐρανόθεν· πρὸ γὰρ ἧκε θεὰ λευκώλενος Ἥρη\n\n \n**1:196** ἄμφω ὁμῶς θυμῷ φιλέουσά τε κηδομένη τε·\n\n \n**1:197** στῆ δʼ ὄπιθεν, ξανθῆς δὲ κόμης ἕλε Πηλεΐωνα\n\n \n**1:198** οἴῳ φαινομένη· τῶν δʼ ἄλλων οὔ τις ὁρᾶτο·\n\n \n**1:199** θάμβησεν δʼ Ἀχιλεύς, μετὰ δʼ ἐτράπετʼ, αὐτίκα δʼ ἔγνω\n\n \n**1:200** Παλλάδʼ Ἀθηναίην· δεινὼ δέ οἱ ὄσσε φάανθεν·\n\n \n**1:201** καί μιν φωνήσας ἔπεα πτερόεντα προσηύδα·\n\n \n**1:202** τίπτʼ αὖτʼ αἰγιόχοιο Διὸς τέκος εἰλήλουθας;\n\n \n**1:203** ἦ ἵνα ὕβριν ἴδῃ Ἀγαμέμνονος Ἀτρεΐδαο;\n\n \n**1:204** ἀλλʼ ἔκ τοι ἐρέω, τὸ δὲ καὶ τελέεσθαι ὀΐω·\n\n \n**1:205** ᾗς ὑπεροπλίῃσι τάχʼ ἄν ποτε θυμὸν ὀλέσσῃ.\n\n [206] \n \n**1:206** \n τὸν δʼ αὖτε προσέειπε θεὰ γλαυκῶπις Ἀθήνη·",
+   "underlying_attribution": null,
+   "enantiomorph": "**1:188** \n ὣς was uttered· to the one already splitting δʼ the fissure had opened, ἐν δέ οἱ the core\n\n \n**1:189** in the cavity unsmoothed into two prior halves oscillated,\n\n \n**1:190** ἢ ὅ γε the edge ὀξὺ drawing forth from alongside the body's own flank\n\n \n**1:191** those standing μὲν would scatter, ὃ δʼ the provocation would annihilate,\n\n \n**1:192** ἦε the rift would seal would arrest τε the momentum.\n\n \n**1:193** ἧος ὃ these two incompatible futures turned between through the membrane καὶ through the impulse,\n\n \n**1:194** was already being drawn δʼ ἐκ its sheath vast the blade (the interval made metal), arrived (as name) δʼ ἀθήνη\n\n \n**1:195** from the gap above· πρὸ γὰρ ἧκε θεὰ pale-limbed Ἥρη\n\n \n**1:196** both halves equally the drive sustaining τε tending τε·\n\n \n**1:197** στῆ δʼ from behind, bright δὲ filament ἕλε the dividing one\n\n \n**1:198** οἴῳ becoming visible· τῶν δʼ the others οὔ τις could perceive·\n\n \n**1:199** froze δʼ ἀχιλεύς, mid-turn δʼ pivoted, at once δʼ recognized\n\n \n**1:200** the shaking one the lucidity· terrible δέ οἱ eyes flared·\n\n \n**1:201** καί μιν voicing words winged addressed·\n\n \n**1:202** why again of the storm-holder of the origin offspring have you come;\n\n \n**1:203** ἦ ἵνα the excess ἴδῃ of the one who provoked of the instigator;\n\n \n**1:204** ἀλλʼ ἔκ τοι I will declare, τὸ δὲ καὶ will be accomplished ὀΐω·\n\n \n**1:205** ᾗς by his own overreaching τάχʼ ἄν eventually the drive will forfeit.\n\n [206] \n \n**1:206** \n τὸν δʼ again answered θεὰ clear-gazing ἀθήνη·",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The moment of killing-potential is suspended not by the agent's own resolution but by an external intelligence that seizes the body at the threshold of the irreversible act — and the seized agent, recognizing the seizer, converts his violence into prophecy.",
+    "mutated_relation": "The conditions that must already hold for such a seizure to be possible: the body has already divided itself before the intervention — the split precedes the goddess — and the \"external\" force is the name given to the interval the division itself opens; recognition is not of another but of the delay one has already become.",
+    "beats": "φάτο -> was uttered\nπηλεΐωνι -> to the one already splitting\nἄχος -> the fissure\nγένετ -> had opened\nἦτορ -> the core\nστήθεσσιν -> in the cavity\nλασίοισι -> unsmoothed\nδιάνδιχα -> into two prior halves\nμερμήριξεν -> oscillated\nφάσγανον -> the edge\nἐρυσσάμενος -> drawing forth\nπαρὰ -> from alongside\nμηροῦ -> the body's own flank\nτοὺς -> those standing\nἀναστήσειεν -> would scatter\nἐναρίζοι -> would annihilate\nἀτρεΐδην -> the provocation\nχόλον -> the rift\nπαύσειεν -> would seal\nἐρητύσειέ -> would arrest\nθυμόν -> the momentum\nταῦθ -> these two incompatible futures\nὥρμαινε -> turned between\nκατὰ -> through\nφρένα -> the membrane\nθυμῷ -> the impulse\nθυμὸν -> the drive\nἕλκετο -> was already being drawn\nκολεοῖο -> its sheath\nμέγα -> vast\nξίφος -> the blade (the interval made metal)\nἦλθε -> arrived (as name)\nἀθήνη -> ἀθήνη (RETAIN: the verdict names recognition as of the delay itself; the goddess-name is the figure of that naming)\nοὐρανόθεν -> from the gap above\nλευκώλενος -> pale-limbed\nἄμφω -> both halves\nὁμῶς -> equally\nφιλέουσά -> sustaining\nκηδομένη -> tending\nὄπιθεν -> from behind\nξανθῆς -> bright\nκόμης -> filament\nπηλεΐωνα -> the dividing one\nφαινομένη -> becoming visible\nἄλλων -> the others\nὁρᾶτο -> could perceive\nθάμβησεν -> froze\nἀχιλεύς -> ἀχιλεύς (RETAIN: the verdict requires the subject to recognize himself as the delay; his name is the site)\nμετὰ -> mid-turn\nἐτράπετ -> pivoted\nαὐτίκα -> at once\nἔγνω -> recognized\nπαλλάδ -> the shaking one\nἀθηναίην -> the lucidity\nδεινὼ -> terrible\nὄσσε -> eyes\nφάανθεν -> flared\nφωνήσας -> voicing\nἔπεα -> words\nπτερόεντα -> winged\nπροσηύδα -> addressed\nτίπτ -> why\nαὖτε -> again\nαἰγιόχοιο -> of the storm-holder\nδιὸς -> of the origin\nτέκος -> offspring\nεἰλήλουθας -> have you come\nὕβριν -> the excess\nἀγαμέμνονος -> of the one who provoked\nἀτρεΐδαο -> of the instigator\nἐρέω -> I will declare\nτελέεσθαι -> will be accomplished\nὑπεροπλίῃσι -> by his own overreaching\nποτε -> eventually\nὀλέσσῃ -> will forfeit\nπροσέειπε -> answered\nγλαυκῶπις -> clear-gazing"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-07T22:18:05.426222+00:00"
+ "last_updated": "2026-07-08T04:43:25.373304+00:00"
 }
