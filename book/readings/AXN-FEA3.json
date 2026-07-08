@@ -55,9 +55,52 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "**3:3** μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας καὶ τήρει, καὶ μετανόησον· ἐὰν οὖν μὴ γρηγορήσῃς, ⸀ἥξω ὡς κλέπτης, καὶ οὐ μὴ ⸀γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ·\n\n**3:4** ἀλλὰ ⸂ἔχεις ὀλίγα⸃ ὀνόματα ἐν Σάρδεσιν ἃ οὐκ ἐμόλυναν τὰ ἱμάτια αὐτῶν, καὶ περιπατήσουσιν μετ’ ἐμοῦ ἐν λευκοῖς, ὅτι ἄξιοί εἰσιν.\n\n**3:5** ὁ νικῶν ⸀οὕτως περιβαλεῖται ἐν ἱματίοις λευκοῖς, καὶ οὐ μὴ ἐξαλείψω τὸ ὄνομα αὐτοῦ ἐκ τῆς βίβλου τῆς ζωῆς, καὶ ὁμολογήσω τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ πατρός μου καὶ ἐνώπιον τῶν ἀγγέλων αὐτοῦ.",
+   "citation": "3:3–3:5",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**3:3** ἡ παρακαταθήκη οὖν προσεχώσθη ἐν σοί· τί ποτε ἐτέθη εἰς χεῖρας ἀνοιγμένας καὶ ὦτα ἀνεμπόδιστα· καὶ τὸ μὴ κρατούμενον ἐκρέει τοῦ κρατοῦντος, καὶ ὁ νοῦς σου πρὸς τὸν λάθρα τοῖχον βλέπει· ἐὰν οὖν μὴ γνῷς ὅτι καθεύδεις, ⸀ἡ παρουσία ἀδιάκριτός ἐστιν ἀπὸ ἀπωλείας, καὶ τὸ ⸀ὡρολόγιον ὃ φέρεις ἀνάριθμόν ἐστιν ἐπὶ σέ·\n\n**3:4** ἀλλὰ ⸂ἔχεις ἀριθμητά⸃ ὀνόματα ἐντὸς τῆς κεκορεσμένης ζώνης ἃ οὐκ ἔγνωσαν τὴν βαφὴν δι' ἧς ἐκινοῦντο σημαίνουσαν ἀνεπαισθήτως, καὶ ἀναγνώσιμοί εἰσιν τῷ λαλοῦντι· ἡ ἐπαφὴ ἀποκαθίσταται ἐν τῷ φαινομένῳ τῆς μὴ ἀπορροφήσεως, ὅτι ἡ ἐπιφάνεια αὐτῶν ἔτι ἀνταποκρίνεται τῷ μεταδοθέντι.\n\n**3:5** ὁ διαμείνας πόριμος τῷ ἀρχεγόνῳ σήματι καὶ ἀδιαπέραστος τῷ περιέχοντι κόρῳ ⸀οὕτως περιβληθήσεται τὴν μαρτυρίαν τῆς ἀρνηθείσης βαφῆς, καὶ ἐν τῷ βιβλίῳ ὅπου τὸ ἀναγνωρίζεσθαι καὶ τὸ ζῆν μία ἐγγραφή ἐστιν ἡ γραφὴ οὐ μὴ λυθῇ — ἡ μὴ ἐξάλειψις πρᾶξίς ἐστιν — καὶ τὸ ὄνομα αὐτοῦ ἐκφωνήσω ὥστε ὑπάρχειν ἐνώπιον μαρτύρων, ἐνώπιον τῆς πηγῆς τῆς ἐξουσίας τῆς ἐξουσιαζούσης τὸν λαλοῦντα καὶ ἐνώπιον τοῦ πεδίου τῆς ἐνεργοῦ προσοχῆς τῆς περικυκλούσης τὴν πηγήν.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A the relationship between the faithful and Christ is one of direct personal agency and promise (Christ comes, Christ confesses the name before the Father), whereas in Text B the relationship is reconceived as an impersonal structural dynamic: faithfulness is reframed as resistance to saturation/absorption, identity is reframed as legibility within a system of inscription, and the personal divine agent is dissolved into abstract sources of authority and fields of attention.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: from a direct personal relationship with a divine agent (Christ confessing names before the Father) to an impersonal systemic framework where identity depends on external inscription, authority is abstract, and the self is constituted by structural conditions rather than personal agency — the recovered claim articulates the specific relational changes that produce the world the declared claim describes.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B (3:5) maintains the shifted relational framework — agency is depersonalized, promise is recast as structural inscription, and the Father/angels become 'source of authority' and 'field of active attention' — fully consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.188
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 164 words vs budget 68-92 (source 80)"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T02:28:14.755353+00:00"
+ "last_updated": "2026-07-08T12:17:01.956391+00:00"
 }
