@@ -102,12 +102,13 @@
      "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The jaw that cannot stop working finds, at last, that the work has moved inside the bone."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T03:06:29.695895+00:00",
+ "last_updated": "2026-07-08T03:06:39.580532+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -121,6 +122,13 @@
    "at": "2026-07-08T03:05:16.795663+00:00",
    "text": "Debt precedes the debtor: the shadow of what the road required is longer than the one who ran it.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T03:06:39.580532+00:00",
+   "text": "The jaw that cannot stop working finds, at last, that the work has moved inside the bone.",
+   "operator": "FLAME"
   }
  ]
 }
