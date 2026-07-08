@@ -1,0 +1,109 @@
+{
+ "run_id": "RUN-20260708T012731Z-b9dd7d",
+ "schema": "run/v1",
+ "ts": "2026-07-08T01:27:31.513346+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "will these words go on as meaning?",
+ "method": {
+  "commit": "831ad992ef7b19944c6b2b781a0db0a474559fa7",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/831ad992ef7b19944c6b2b781a0db0a474559fa7",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/831ad992ef7b19944c6b2b781a0db0a474559fa7/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "c4615f50a1a45744",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "831ad992ef7b",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "c4615f50a1a45744",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Resourcefulness is inexhaustible surplus: the speaker moves through a saturated environment where everything is available, everything excessive, everything already too much — and the only skill is velocity through abundance.",
+   "mutated_relation": "The conditions that permit such surplus — the prior scarcity, the invisible infrastructure, the labor of saturation — speak as the ground the speaker's velocity never touches.",
+   "beats": "Where -> Where (RETAIN: the interrogative structure is the verdict's own question turned back)\nfound them -> laid them out\nat -> at (RETAIN: particle completing address-mode)\nGot 'em -> Stacked 'em\n'round town -> shift by shift\ncould've drowned in it -> couldn't drink from it\nWould have floated -> Had to bail it\nboated -> bucketed\nvoted -> petitioned\nSugar-coated -> Chalk-dusted\nloaded -> emptied\nhip shooter -> wrist splinter\nDraw -> Ration\nthe poor -> the clerk\nfree coffee -> cold water\nat the banks -> from the pipes\nYip -> Sip\nthrough the straw -> through the crack\nnone more for me, thanks -> one more for the line, thanks\nThat blanks the raw -> That fills the dark\nthat dank sure stank lit -> that wait sure rang strict\nSank past the pit -> Hauled up the grid\nmore hardcore prank spit -> more backboard plank grit\nCrank it on blast -> Cinch it on tight\nroll past Front Street -> crawl past third week\nBlew the whole spot -> Built the whole lot\nlike some old ass with skunk meat -> like some cold hands on junk sheet\nThese kids is too fast -> These shifts is too stacked\njuiced off a junk treat -> wrung from a blunt week\nWho could get looser -> Who could get thinner\noff a crunk or a funk beat -> off a bunk or a trunk seat"
+  },
+  "enantiomorph": "Where you laid them out at?\nStacked 'em shift by shift, couldn't drink from it\nHad to bail it, bucketed, petitioned\nChalk-dusted, emptied wrist splinter\nRation for the clerk, cold water from the pipes\nSip through the crack, one more for the line, thanks\nThat fills the dark, that wait sure rang strict\nHauled up the grid for more backboard plank grit\nCinch it on tight, crawl past third week\nBuilt the whole lot like some cold hands on junk sheet\nThese shifts is too stacked, wrung from a blunt week\nWho could get thinner off a bunk or a trunk seat?",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a specific relational change.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "Both texts maintain the same structural relations throughout; differences are limited to vocabulary and imagery substitutions.",
+   "back_translation": "",
+   "terminal_similarity": 0.201
+  },
+  "advisories": [
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a specific relational change.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Resourcefulness is inexhaustible surplus: the speaker moves through a saturated environment where everything is available, everything excessive, everything already too much — and the only skill is velocity through abundance.",
+   "verdict": "The conditions that permit such surplus — the prior scarcity, the invisible infrastructure, the labor of saturation — speak as the ground the speaker's velocity never touches.",
+   "world_bill": "Where -> Where (RETAIN: the interrogative structure is the verdict's own question turned back)\nfound them -> laid them out\nat -> at (RETAIN: particle completing address-mode)\nGot 'em -> Stacked 'em\n'round town -> shift by shift\ncould've drowned in it -> couldn't drink from it\nWould have floated -> Had to bail it\nboated -> bucketed\nvoted -> petitioned\nSugar-coated -> Chalk-dusted\nloaded -> emptied\nhip shooter -> wrist splinter\nDraw -> Ration\nthe poor -> the clerk\nfree coffee -> cold water\nat the banks -> from the pipes\nYip -> Sip\nthrough the straw -> through the crack\nnone more for me, thanks -> one more for the line, thanks\nThat blanks the raw -> That fills the dark\nthat dank sure stank lit -> that wait sure rang strict\nSank past the pit -> Hauled up the grid\nmore hardcore prank spit -> more backboard plank grit\nCrank it on blast -> Cinch it on tight\nroll past Front Street -> crawl past third week\nBlew the whole spot -> Built the whole lot\nlike some old ass with skunk meat -> like some cold hands on junk sheet\nThese kids is too fast -> These shifts is too stacked\njuiced off a junk treat -> wrung from a blunt week\nWho could get looser -> Who could get thinner\noff a crunk or a funk beat -> off a bunk or a trunk seat",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 98,
+    "final": 102,
+    "bounds": [
+     83,
+     112
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
