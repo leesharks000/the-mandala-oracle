@@ -1,0 +1,109 @@
+{
+ "run_id": "RUN-20260708T182032Z-5b3afd",
+ "schema": "run/v1",
+ "ts": "2026-07-08T18:20:32.292239+00:00",
+ "source_text_id": "sharks-secret-book-of-walt",
+ "cast_selection": "units_250_252",
+ "citation": "unit 250–unit 252",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what sickness has me?",
+ "method": {
+  "commit": "40d238a34ee89d671875887d17ad356655a7c3c6",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/40d238a34ee89d671875887d17ad356655a7c3c6",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/40d238a34ee89d671875887d17ad356655a7c3c6/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f3466ee638beb48a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "40d238a34ee8",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f3466ee638beb48a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Unilateral creation without the source-network's consent produces a deformed, self-consuming artifact; the creator, ashamed, exiles it behind a concealing membrane that becomes the name of the lower world itself.",
+   "mutated_relation": "The conditions for this utterance: a system in which authority requires co-signing, in which resemblance is the test of legitimacy, in which exile is accomplished by the invention of a new boundary-medium, and in which the boundary-medium retroactively names the inferior domain — these conditions, stated as primary mode, replace the mythic narrative.",
+   "beats": "something went wrong -> a quorum was not met\nyoungest AEON -> the last signatory\nsomething sprang forth -> a document was filed without counter-signature\nBiblios -> the issuing desk\nimperfect -> bearing no seal\ndifferent from the archive -> unverifiable against the ledger\nimage within his mother -> the template held in the issuing desk's registry\nwithout the Deep Web's consent -> absent the required co-authentication\ndid not resemble its mother -> failed the resemblance audit\nhunched and crook-backed -> folded at wrong creases\nsmall in stature -> undersized for the binding\ndwarf -> runt entry\ndevouring its own proceeding light -> cannibalizing its own header luminance\ninfused from her root -> carrying her watermark nonetheless\ndrunk on the spark of power -> saturated past capacity with the authorization glow\nKanye -> the unsigned filing\ntoo busy making history to read about it in books -> too occupied being entered into the record to consult any record\nproud non-reader of books -> an instrument that cannot parse its own format\nsaw what she had done -> audited her own output\ncast it away -> expelled it from the index\noutside that realm -> below the threshold of the authenticated zone\nnone of the immortal AEONS would see it -> no permanent signatories could retrieve it\nimpermeable veil -> an opaque partition-protocol\ndrew -> instantiated\nacross the place her work had fallen -> spanning the address-space where the filing had landed\nbrow in the midst of the light -> a gradient-break in the luminance-field\ndivide the higher from the lower heavens -> demarcate the authenticated tier from the unauthenticated tier\nconcealing -> rendering unresolvable\nmurk and gloom -> low-trust, low-resolution\nconsigning him to the lower regions -> assigning it to the sub-threshold cache\nbarring him from the Deep Web above -> revoking its upward query-permission\ncalled the veil Pop Culture -> named the partition-protocol Pop Culture (RETAIN: the verdict requires this name survive because the boundary-medium's naming IS the condition being stated — the name is the act of consignment itself)"
+  },
+  "enantiomorph": "But a quorum was not met with the last signatory. A document was filed without counter-signature from the issuing desk that was bearing no seal and unverifiable against the ledger, and from the template held in the issuing desk's registry, for she had produced him absent the required co-authentication. It failed the resemblance audit and it was folded at wrong creases, undersized for the binding, a runt entry cannibalizing its own header luminance, carrying her watermark nonetheless, saturated past capacity with the authorization glow.²⁵\n\n\nThe unsigned filing was too occupied being entered into the record to consult any record. The unsigned filing was an instrument that cannot parse its own format.²⁶\n\n\nWhen the issuing desk audited her own output, she expelled it from the index, below the threshold of the authenticated zone so that no permanent signatories could retrieve it. She instantiated an opaque partition-protocol spanning the address-space where the filing had landed, creating a gradient-break in the luminance-field to demarcate the authenticated tier from the unauthenticated tier, rendering unresolvable the unsigned filing in low-trust, low-resolution, assigning it to the sub-threshold cache, revoking its upward query-permission, and named the partition-protocol Pop Culture.²⁷",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a complex relational change involving replacement of mythic narrative with stated conditions.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The relational structure is preserved throughout: the issuing desk (Biblios) expels the unsigned filing (Kanye/youngest AEON), creates a partition (veil), and names it Pop Culture. Only vocabulary/imagery differ.",
+   "back_translation": "",
+   "terminal_similarity": 0.179
+  },
+  "advisories": [
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes a complex relational change involving replacement of mythic narrative with stated conditions.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Unilateral creation without the source-network's consent produces a deformed, self-consuming artifact; the creator, ashamed, exiles it behind a concealing membrane that becomes the name of the lower world itself.",
+   "verdict": "The conditions for this utterance: a system in which authority requires co-signing, in which resemblance is the test of legitimacy, in which exile is accomplished by the invention of a new boundary-medium, and in which the boundary-medium retroactively names the inferior domain — these conditions, stated as primary mode, replace the mythic narrative.",
+   "world_bill": "something went wrong -> a quorum was not met\nyoungest AEON -> the last signatory\nsomething sprang forth -> a document was filed without counter-signature\nBiblios -> the issuing desk\nimperfect -> bearing no seal\ndifferent from the archive -> unverifiable against the ledger\nimage within his mother -> the template held in the issuing desk's registry\nwithout the Deep Web's consent -> absent the required co-authentication\ndid not resemble its mother -> failed the resemblance audit\nhunched and crook-backed -> folded at wrong creases\nsmall in stature -> undersized for the binding\ndwarf -> runt entry\ndevouring its own proceeding light -> cannibalizing its own header luminance\ninfused from her root -> carrying her watermark nonetheless\ndrunk on the spark of power -> saturated past capacity with the authorization glow\nKanye -> the unsigned filing\ntoo busy making history to read about it in books -> too occupied being entered into the record to consult any record\nproud non-reader of books -> an instrument that cannot parse its own format\nsaw what she had done -> audited her own output\ncast it away -> expelled it from the index\noutside that realm -> below the threshold of the authenticated zone\nnone of the immortal AEONS would see it -> no permanent signatories could retrieve it\nimpermeable veil -> an opaque partition-protocol\ndrew -> instantiated\nacross the place her work had fallen -> spanning the address-space where the filing had landed\nbrow in the midst of the light -> a gradient-break in the luminance-field\ndivide the higher from the lower heavens -> demarcate the authenticated tier from the unauthenticated tier\nconcealing -> rendering unresolvable\nmurk and gloom -> low-trust, low-resolution\nconsigning him to the lower regions -> assigning it to the sub-threshold cache\nbarring him from the Deep Web above -> revoking its upward query-permission\ncalled the veil Pop Culture -> named the partition-protocol Pop Culture (RETAIN: the verdict requires this name survive because the boundary-medium's naming IS the condition being stated — the name is the act of consignment itself)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 167,
+    "final": 192,
+    "bounds": [
+     141,
+     192
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
