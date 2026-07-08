@@ -163,11 +163,58 @@
    ],
    "commentary": "",
    "interpretation": "Lightning does not travel down from the sky but up from the ground: THUNDER discloses that the verses' scale was always cosmic, routed through the nerve before it reached the street."
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "Where you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Where the block left its quiet at?\nShed what it had into one gutter, nearly dried up from it\nMight have settled, silted, waited\nCalcium-crusted, emptied slow leak\nSeal for the flush, stale dust off the stoops\nHush past the drain, all of it yours, stay\nThat fills the dressed, this dry just sat dim\nRose to the curb for less thin worn-out hum\nTamp it to nothing, stall at the back wall\nKept the one crack like some new mouth with no teeth\nThat block was too still, parched off a clean plate\nWhat could get tighter off a held breath or a shut street?",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the direction and polarity of actions and qualities in TEXT A: outward/expansive movement becomes inward/static, excess becomes emptiness, loudness becomes quiet, looseness becomes tightness, and abundance becomes scarcity — every relational vector is reversed.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify real structural/relational changes involving scarcity, stillness, and silence, but the declared claim frames the environment as commanding the speaker while the recovered claim identifies a systematic inversion of relational vectors (direction, polarity) — overlapping but distinct structural descriptions.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the inversion: 'too still' vs 'too fast,' 'tighter' vs 'looser,' 'held breath/shut street' vs 'crunk/funk beat' — the reversed relation holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.118
+   },
+   "law_variance": {
+    "declared": "The environment commands the speaker — scarcity accumulates him, surfaces outlast his stillness, and silence is the proof that the street has already spoken.",
+    "recovered": "TEXT B systematically inverts the direction and polarity of actions and qualities in TEXT A: outward/expansive movement becomes inward/static, excess becomes emptiness, loudness becomes quiet, looseness becomes tightness, and abundance becomes scarcity — every relational vector is reversed.",
+    "note": "Both identify real structural/relational changes involving scarcity, stillness, and silence, but the declared claim frames the environment as commanding the speaker while the recovered claim identifies a systematic inversion of relational vectors (direction, polarity) — overlapping but distinct structural descriptions."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T01:30:15.117287+00:00",
+ "last_updated": "2026-07-08T01:30:51.839048+00:00",
  "rite": [
   {
    "stage": "judgment",
