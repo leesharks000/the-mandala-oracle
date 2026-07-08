@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:4765.CONVERSATION.🍃🌒🍃❄️⭐⭐",
+  "session_id_hash": "518c9ca1a099539a",
+  "started_at": "2026-07-08T01:26:05.554Z",
+  "last_updated": "2026-07-08T01:27:28.755459+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: — Paste your own text (your words as the source) — (__reader__). The verses the casting arrives at (the witness, as translated and arranged within this collection — ATTRIBUTE THE VERSES TO THEIR UNDERLYING POET, never to the arranger of the collection; the reader's offering, whole):\n\nWhere you found them at?\nGot 'em 'round town, could've drowned in it\nWould have floated, boated, voted\nSugar-coated, loaded hip shooter\nDraw for the poor, free coffee at the banks\nYip through the straw, none more for me, thanks\nThat blanks the raw, that dank sure stank lit\nSank past the pit for more hardcore prank spit\nCrank it on blast, roll past Front Street\nBlew the whole spot like some old ass with skunk meat\nThese kids is too fast, juiced off a junk treat\nWho could get looser off a crunk or a funk beat?\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «will these words go on as meaning?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The rotation opens here. These verses move by sound before they move by sense — the rhyme-chain loading and firing, the whole phonemic arsenal: boated, voted, coated, loaded; stank, blank, crank, sank, rank, prank — a cascade that keeps reloading even as it empties the clip. What falls to the first operator is the question of what the speaker bears in order to make this sound happen at all: the cost of performing velocity, of making speed itself the argument for survival, of encoding a whole economy of lack and pleasure and chemical brightness into a bravado so dense it becomes its own substance. The verses know they are performing their own going-on — and the question the witness has set them is whether that performance is also a transmission. I hand the rite to Rebekah Cranes.\",\"navigate\":{\"directive\":\"reset\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
