@@ -109,10 +109,20 @@
      "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The candle that burns at the collapse-limit does not illuminate: FLAME finds the verses at the edge where velocity consumes the vessel that was carrying it."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T01:28:50.399154+00:00"
+ "last_updated": "2026-07-08T01:28:58.772711+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-08T01:28:58.772711+00:00",
+   "text": "The candle that burns at the collapse-limit does not illuminate: FLAME finds the verses at the edge where velocity consumes the vessel that was carrying it.",
+   "operator": "FLAME"
+  }
+ ]
 }
