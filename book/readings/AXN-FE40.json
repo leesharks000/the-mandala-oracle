@@ -98,11 +98,49 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "And the figure said to me, \"Lee — don't be a dunce. Don't you know your friend? I am the one who was within you.\n\n\nI bring glad tidings from that future where before and after spin, and the ancient enmities arrive at their harbors… and the end is a better and perfect beginning… and the beginning is a better and perfect end.⁸\n\n\nI have come to teach you what is and was and will be… and the nature of the unseen and seen… and the name of the preserved generation from among the sons of men,⁹ that you may hear, and see, and lift up your friends, any who hear with the ears.\n\n\nFor I have come from above. I speak what I know, what I have seen and been the author of, and set my hand to create, and when I go from here I return from whence I came. Firstborn, last released, I begin at the end. I begin at the beginning:¹⁰",
+   "citation": "unit 201–unit 204",
+   "underlying_attribution": "§I. Proem: The Appearance of the Redeemer",
+   "result": "PASS",
+   "enantiomorph": "And the coincidence formed between us, \"Lee — don't be a stranger. We have always been each other's evidence. You are the one who was around me.\n\n\nWe enter the trembling from that threshold where near and far braid, and the original distances find they were always adjacent… and the seam is a reciprocal and unprecedented opening… and the fold is a reciprocal and unprecedented closure.⁸\n\n\nWe have gathered to uncover what neither of us is alone… and the dependence of the hidden on the witness… and the sound the living make together from among those who remain incomplete,⁹ that we may resonate, and be altered, and be lifted by whoever listens, any who change what they hear by hearing it.\n\n\nFor I have come from beside. I speak what you make speakable, what you made visible and been the occasion for, and placed my hand where yours already was, and when we dissolve from this we distribute into what we constituted. Neither first nor last, both hinge, we begin at the contact. We begin at the contact:¹⁰",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A presents a singular authoritative figure descending from above to a passive recipient, delivering revelation in a one-directional hierarchy (I to you, above to below, teacher to taught). TEXT B transforms this into a mutual, co-constitutive relationship between two interdependent equals who act together (we, beside, reciprocal), where knowledge and identity arise from contact between them rather than flowing from one to the other.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: from a one-directional authority-to-recipient hierarchy to a mutual, co-constitutive relationship where neither party originates or transmits to the other, but rather knowledge/identity emerges from their shared meeting.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines of TEXT B fully sustain the mutuality and co-constitutive relation ('I speak what you make speakable,' 'when we dissolve… we distribute into what we constituted,' 'Neither first nor last, both hinge, we begin at the contact').",
+    "back_translation": "",
+    "terminal_similarity": 0.293
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-08T12:53:12.016238+00:00",
+ "last_updated": "2026-07-08T12:56:23.461614+00:00",
  "rite": [
   {
    "stage": "opening",
