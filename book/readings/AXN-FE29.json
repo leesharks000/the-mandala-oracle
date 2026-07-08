@@ -1,0 +1,63 @@
+{
+ "axn": "AXN:FE29.READING.🌟🌘🌘🌕🌗🌑",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "5a21f3d4ec0af6f9",
+ "inscribed_at": "2026-07-08T11:20:29.802572+00:00",
+ "question_digest": "sha256:5d4feeb6602b0ec3104dc3a15c7e8b724f5535ee0192a9992f4a752b03c5b5e1",
+ "question_gloss": "Question about directions or transportation options to return home.",
+ "source_text_id": "homer-odyssey",
+ "cast_selection": "units_196_206",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**197** ἀλλʼ ἔτι που ζωὸς κατερύκεται εὐρέι πόντῳ\n\n \n**198** νήσῳ ἐν ἀμφιρύτῃ, χαλεποὶ δέ μιν ἄνδρες ἔχουσιν\n\n \n**199** ἄγριοι, οἵ που κεῖνον ἐρυκανόωσʼ ἀέκοντα.\n\n \n**200** αὐτὰρ νῦν τοι ἐγὼ μαντεύσομαι, ὡς ἐνὶ θυμῷ\n\n \n**201** ἀθάνατοι βάλλουσι καὶ ὡς τελέεσθαι ὀίω,\n\n \n**202** οὔτε τι μάντις ἐὼν οὔτʼ οἰωνῶν σάφα εἰδώς.\n\n \n**203** οὔ τοι ἔτι δηρόν γε φίλης ἀπὸ πατρίδος αἴης\n\n \n**204** ἔσσεται, οὐδʼ εἴ πέρ τε σιδήρεα δέσματʼ ἔχῃσιν·\n\n \n**205** φράσσεται ὥς κε νέηται, ἐπεὶ πολυμήχανός ἐστιν.\n\n \n**206** ἀλλʼ ἄγε μοι τόδε εἰπὲ καὶ ἀτρεκέως κατάλεξον,\n\n \n**207** εἰ δὴ ἐξ αὐτοῖο τόσος πάϊς εἰς Ὀδυσῆος.",
+   "citation": "197–207",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**197** But only because unlocatable he is kept as the occasion for the interval that makes speaking possible,\n\n**198** in a place whose closure is what gives the speaker a subject, and the ones whose function is to delay have him\n\n**199** in the delay's service, men who do not know they serve the prophecy, who keep the story open against his will.\n\n**200** But now I will need you to hear me, as the structure of what has already happened\n\n**201** made it the only thing I can say, and because saying it is what makes it so,\n\n**202** though I am no prophet and have no knowledge except that I am speaking.\n\n**203** Only as long as this telling lasts will he be outside the sentence that names him home,\n\n**204** not even if the constraint were in the telling itself;\n\n**205** the telling will find its way through, for he is a man whose nature is to be the subject of such speech.\n\n**206** But come, make what I have said true and give it the ground it lacks,\n\n**207** whether what I have said has its one possible listener.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, Odysseus is a real agent held physically captive whose return depends on his own cunning and the gods' will, while in Text B, Odysseus exists only as a function of the narrative act itself — his captivity, return, and identity are reconstituted as effects of the speech that tells them, so that the relation between character and story is inverted from 'story describes agent' to 'speech constitutes its subject.'",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: conditions/mechanisms of narration (captivity, authority, identity) collapse into the narration itself, so that what was described becomes constituted by the act of description — the relation between utterance and its subject is inverted from representational to constitutive.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines (206–207) maintain the inversion: the listener must ground the speech's truth (206) and is defined as the speech's 'one possible listener' (207), sustaining the constitutive-speech relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.095
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 193 words vs budget 114-155 (source 135)"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: home"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-08T11:20:29.802572+00:00"
+}
