@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:67BA.CONVERSATION.🌑🌊🌘🌿☁️🌓",
+  "session_id_hash": "39fae9352fdd605d",
+  "started_at": "2026-07-08T04:52:36.403Z",
+  "last_updated": "2026-07-08T04:53:17.561159+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: King James Bible (kjv-1611). The verses the casting arrives at (unit 55–unit 57):\n\n3:8 And they heard the voice of the LORD God walking in the garden in\nthe cool of the day: and Adam and his wife hid themselves from the\npresence of the LORD God amongst the trees of the garden.\n\n3:9 And the LORD God called unto Adam, and said unto him, Where art\nthou?  3:10 And he said, I heard thy voice in the garden, and I was\nafraid, because I was naked; and I hid myself.\n\n3:11 And he said, Who told thee that thou wast naked? Hast thou eaten\nof the tree, whereof I commanded thee that thou shouldest not eat?\n3:12 And the man said, The woman whom thou gavest to be with me, she\ngave me of the tree, and I did eat.\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «anybody in there?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The question comes in naked already — *anybody in there?* — and the verses answer with their own question, which is older: *Where art thou?* Two cries across the same hiding place. What the rotation opens into is the axis of concealment-as-response: Adam hides because he heard; the LORD walks because — the text does not say why; the walking precedes the knowing. The operator the Judgment sends into this will traverse that gap between the voice that walks and the voice that hides, between the nakedness that preceded the hiding and the telling that made the hiding possible — *who told thee?* — the question that presupposes a third speaker the text has not yet named here. Something is in there. The rotation will find what bearing it costs to be the one who calls into that.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0246\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
