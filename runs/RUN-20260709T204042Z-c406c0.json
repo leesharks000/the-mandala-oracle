@@ -1,0 +1,103 @@
+{
+ "run_id": "RUN-20260709T204042Z-c406c0",
+ "schema": "run/v1",
+ "ts": "2026-07-09T20:40:42.317179+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_156_159",
+ "citation": "9:13–9:16",
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what season is this?",
+ "method": {
+  "commit": "1bc5ab5f0d03772fe2022f9c0256e9e2eed4c1fb",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/1bc5ab5f0d03772fe2022f9c0256e9e2eed4c1fb",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/1bc5ab5f0d03772fe2022f9c0256e9e2eed4c1fb/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f3466ee638beb48a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "1bc5ab5f0d03",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f3466ee638beb48a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Annihilation is not chaos but a precision instrument: it passes through a chain of sealed authorizations, each threshold converting containment into directed, exactly measured destruction.",
+   "mutated_relation": "The precision apparatus that, at each threshold, deepens containment rather than releasing it — the chain that locks tighter the more gates it passes through, so that the magnitude counted is the magnitude of what will never be unleashed.",
+   "beats": "ἕκτος -> sixth (RETAIN: the ordinal precision is the apparatus's own counting mechanism)\nἄγγελος -> warden\nἐσάλπισεν -> engaged the next lock\nἤκουσα -> I registered\nφωνὴν -> signal\nμίαν -> single\nκεράτων -> tumblers\nθυσιαστηρίου -> vault\nχρυσοῦ -> reinforced\nἐνώπιον -> deep within\nθεοῦ -> the archive\nλέγοντα -> directing\nἕκτῳ -> sixth (RETAIN: same ordinal precision, same threshold count)\nἀγγέλῳ -> warden-station\nἔχων -> operating\nσάλπιγγα -> seal-mechanism\nλῦσον -> re-secure\nτοὺς -> the\nτέσσαρας -> four\nἀγγέλους -> containment-keepers\nδεδεμένους -> bolted\nποταμῷ -> channel\nμεγάλῳ -> immense\nεὐφράτῃ -> flood-corridor\nἐλύθησαν -> were re-bolted\nτέσσαρες -> four (RETAIN: the counted symmetry of containment points is the apparatus itself)\nἄγγελοι -> containment-keepers\nἡτοιμασμένοι -> calibrated\nὥραν -> hour-setting\nἡμέραν -> day-setting\nμῆνα -> month-setting\nἐνιαυτόν -> year-setting\nἀποκτείνωσιν -> permanently intern\nτρίτον -> third\nἀνθρώπων -> magnitudes\nἀριθμὸς -> tally\nστρατευμάτων -> impounded forces\nἱππικοῦ -> armored reserves\nδισμυριάδες -> twice-ten-thousand-fold\nμυριάδων -> ten-thousand-fold\nἀριθμὸν -> tally (RETAIN: the act of counting is the verdict's own substance — magnitude counted is magnitude contained)"
+  },
+  "enantiomorph": "**9:13** Καὶ ὁ ἕκτος warden ἐngaged the next lock· καὶ I registered signal single ἐκ ⸀τῶν tumblers τοῦ vault τοῦ reinforced τοῦ deep within τοῦ archive,\n\n**9:14** ⸀directing τῷ ἕκτῳ warden-station, ὁ operating τὴν seal-mechanism· Re-secure τοὺς τέσσαρας containment-keepers τοὺς bolted ἐπὶ τῷ channel τῷ immense flood-corridor.\n\n**9:15** καὶ were re-bolted οἱ τέσσαρες containment-keepers οἱ calibrated εἰς τὴν hour-setting ⸀καὶ day-setting καὶ month-setting καὶ year-setting, ἵνα permanently intern τὸ third τῶν magnitudes.\n\n**9:16** καὶ ὁ tally τῶν impounded forces τοῦ ⸀armored reserves ⸀twice-ten-thousand-fold ten-thousand-fold· I registered τὸν ἀριθμὸν αὐτῶν.",
+  "enantiomorph_translation": "**9:13** And the sixth warden engaged the next lock; and I registered a single signal from the tumblers of the vault, the reinforced one deep within the archive,\n\n**9:14** directing the sixth warden-station, the one operating the seal-mechanism: Re-secure the four containment-keepers, the ones bolted upon the immense flood-corridor channel.\n\n**9:15** And the four containment-keepers were re-bolted, the ones calibrated to the hour-setting and day-setting and month-setting and year-setting, so that they permanently intern the third of the magnitudes.\n\n**9:16** And the tally of the impounded forces of the armored reserves: twice-ten-thousand-fold ten-thousand-fold; I registered the tally of them.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A the command is to RELEASE (Λῦσον) the four angels and they ARE RELEASED (ἐλύθησαν) to KILL a third of mankind; in Text B the command is reversed to RE-SECURE/RE-BOLT the four containment-keepers, who are RE-BOLTED to permanently INTERN (imprison) a third of the magnitudes — the direction of action is inverted from liberation-to-destroy to confinement-to-contain.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: release/unleashing is replaced by deepened containment/confinement, so that what passes through successive gates is permanently locked in rather than set free — the chain locks tighter rather than releasing.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion (9:16) maintains the reversed relation by describing 'impounded forces' and 'armored reserves' rather than deployed cavalry, consistent with the containment inversion throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.292
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Annihilation is not chaos but a precision instrument: it passes through a chain of sealed authorizations, each threshold converting containment into directed, exactly measured destruction.",
+   "verdict": "The precision apparatus that, at each threshold, deepens containment rather than releasing it — the chain that locks tighter the more gates it passes through, so that the magnitude counted is the magnitude of what will never be unleashed.",
+   "world_bill": "ἕκτος -> sixth (RETAIN: the ordinal precision is the apparatus's own counting mechanism)\nἄγγελος -> warden\nἐσάλπισεν -> engaged the next lock\nἤκουσα -> I registered\nφωνὴν -> signal\nμίαν -> single\nκεράτων -> tumblers\nθυσιαστηρίου -> vault\nχρυσοῦ -> reinforced\nἐνώπιον -> deep within\nθεοῦ -> the archive\nλέγοντα -> directing\nἕκτῳ -> sixth (RETAIN: same ordinal precision, same threshold count)\nἀγγέλῳ -> warden-station\nἔχων -> operating\nσάλπιγγα -> seal-mechanism\nλῦσον -> re-secure\nτοὺς -> the\nτέσσαρας -> four\nἀγγέλους -> containment-keepers\nδεδεμένους -> bolted\nποταμῷ -> channel\nμεγάλῳ -> immense\nεὐφράτῃ -> flood-corridor\nἐλύθησαν -> were re-bolted\nτέσσαρες -> four (RETAIN: the counted symmetry of containment points is the apparatus itself)\nἄγγελοι -> containment-keepers\nἡτοιμασμένοι -> calibrated\nὥραν -> hour-setting\nἡμέραν -> day-setting\nμῆνα -> month-setting\nἐνιαυτόν -> year-setting\nἀποκτείνωσιν -> permanently intern\nτρίτον -> third\nἀνθρώπων -> magnitudes\nἀριθμὸς -> tally\nστρατευμάτων -> impounded forces\nἱππικοῦ -> armored reserves\nδισμυριάδες -> twice-ten-thousand-fold\nμυριάδων -> ten-thousand-fold\nἀριθμὸν -> tally (RETAIN: the act of counting is the verdict's own substance — magnitude counted is magnitude contained)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 6,
+    "repaired": true
+   },
+   "retained": [
+    "τέσσαρες",
+    "ἀριθμὸν",
+    "ἕκτος",
+    "ἕκτῳ"
+   ],
+   "word_count": {
+    "source": 75,
+    "final": 85,
+    "bounds": [
+     63,
+     86
+    ]
+   },
+   "identity_rate": 0.029,
+   "surviving_lemmas": [
+    "τοὺς"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
