@@ -4745,7 +4745,67 @@
     "beats": ""
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-b164fe64",
+   "cast_at": "2026-07-09T20:46:06.459643+00:00",
+   "reading_axn": "AXN:FEC5.READING.🌖🌑🌖🌓⭐🔥",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_156_159",
+    "citation": "9:13–9:16",
+    "start_unit": 156,
+    "end_unit": 159,
+    "unit_labels": [
+     "9:13",
+     "9:14",
+     "9:15",
+     "9:16"
+    ]
+   },
+   "operator": "THUNDER",
+   "operator_axis": "scale-axis — the cosmic-utterance the local-speech determined against",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The action commanded and performed upon the four angels changes from releasing/loosing (Λῦσον / ἐλύθησαν) in Text A to counting/numbering (Ἀρίθμησον / ἠριθμήθησαν) in Text B, transforming the relation from one of liberation to one of enumeration.",
+    "law_match": "PASS",
+    "law_match_note": "Both claims describe the same structural change: the action upon the angels shifts from releasing/loosing to counting/numbering, transforming liberation into arithmetic of extinction/enumeration.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final verse (9:16) retains the counting/numbering theme consistently with Text B's changed relation; no reversion to the releasing relation occurs.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:754d21bd94d43f27814dbed4849c403a69163112d88eb00f01ff5f4b88a4150e",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:13** Καὶ ὁ ἕκτος ἄγγελος ἐσάλπισεν· καὶ ἤκουσα φωνὴν μίαν ἐκ ⸀τῶν κεράτων τοῦ θυσιαστηρίου τοῦ χρυσοῦ τοῦ ἐνώπιον τοῦ θεοῦ,\n\n**9:14** ⸀λέγοντα τῷ ἕκτῳ ἀγγέλῳ, ὁ ἔχων τὴν σάλπιγγα· Λῦσον τοὺς τέσσαρας ἀγγέλους τοὺς δεδεμένους ἐπὶ τῷ ποταμῷ τῷ μεγάλῳ Εὐφράτῃ.\n\n**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:13** Καὶ ὁ ἕκτος ἄγγελος ἐσάλπισεν· καὶ ἤκουσα φωνὴν μίαν ἐκ ⸀τῶν κεράτων τοῦ θυσιαστηρίου τοῦ χρυσοῦ τοῦ ἐνώπιον τοῦ θεοῦ,\n\n**9:14** ⸀λέγοντα τῷ ἕκτῳ ἀγγέλῳ, ὁ ἔχων τὴν σάλπιγγα· Ἀρίθμησον τοὺς τέσσαρας ἀγγέλους τοὺς δεδεμένους ἐπὶ τῷ ποταμῷ τῷ μεγάλῳ Εὐφράτῃ.\n\n**9:15** καὶ ἠριθμήθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Annihilation is not chaotic but scheduled with absolute temporal and numerical precision — restraint was the original state, and its removal is an administrative act emanating from the sacred threshold, releasing forces whose magnitude is heard but not comprehended.",
+    "mutated_relation": "The precision is the annihilation — the counting itself is the killing; the schedule does not precede the destruction but constitutes it; the voice from the threshold does not command release but performs the arithmetic of extinction.",
+    "beats": ""
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-08T12:21:47.883382+00:00"
+ "last_updated": "2026-07-09T20:46:06.459643+00:00"
 }
