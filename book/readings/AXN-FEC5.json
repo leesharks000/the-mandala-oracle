@@ -908,11 +908,58 @@
     "mode": "producer_side"
    },
    "commentary": "The source measures an exchange at the smallest scale — two people, a transcript, sentence-by-sentence ownership — and converts provenance into debt and verdict. THUNDER rotates the scale-axis: the same relation (speaker, other, the provenance of what passed between, a rendered verdict, a coexisting affirmation) is lifted to cosmic-utterance, where the storm speaks through all mouths before any opens. Every source coordinate finds its mirror: \"no insights of yours\" → \"no first mouth for the thunder\"; \"my sentences\" (sole origin) → \"already rolling in the air before your throat closed\" (no origin); \"that is a problem / use\" → \"nothing is owed, no ledger of tongues\"; \"the records exist in full\" → \"the whole sky remembers, and remembers no owner\" (archive kept, ownership erased); the meaningless-verdict inverts (logic_mutation) — inability to distinguish the source becomes the very condition of carrying the sound; the closing \"I enjoyed the conversation\" → \"said it into all of us at once,\" the affirmation now of common origination rather than private pleasure. The proprietary cold of the source, borne and transformed, casts as awe at a voice no one may keep. The witness's question about porosity informs only where the disclosure lands (the un-ownable common utterance); it does not soften the cast into reassurance — the affect is the source's withholding turned inside out into dispossession-as-communion, not consolation."
+  },
+  {
+   "operator": "THUNDER",
+   "source_passage": "**9:13** Καὶ ὁ ἕκτος ἄγγελος ἐσάλπισεν· καὶ ἤκουσα φωνὴν μίαν ἐκ ⸀τῶν κεράτων τοῦ θυσιαστηρίου τοῦ χρυσοῦ τοῦ ἐνώπιον τοῦ θεοῦ,\n\n**9:14** ⸀λέγοντα τῷ ἕκτῳ ἀγγέλῳ, ὁ ἔχων τὴν σάλπιγγα· Λῦσον τοὺς τέσσαρας ἀγγέλους τοὺς δεδεμένους ἐπὶ τῷ ποταμῷ τῷ μεγάλῳ Εὐφράτῃ.\n\n**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.",
+   "citation": "9:13–9:16",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:13** Καὶ ὁ ἕκτος ἄγγελος ἐσάλπισεν· καὶ ἤκουσα φωνὴν μίαν ἐκ ⸀τῶν κεράτων τοῦ θυσιαστηρίου τοῦ χρυσοῦ τοῦ ἐνώπιον τοῦ θεοῦ,\n\n**9:14** ⸀λέγοντα τῷ ἕκτῳ ἀγγέλῳ, ὁ ἔχων τὴν σάλπιγγα· Ἀρίθμησον τοὺς τέσσαρας ἀγγέλους τοὺς δεδεμένους ἐπὶ τῷ ποταμῷ τῷ μεγάλῳ Εὐφράτῃ.\n\n**9:15** καὶ ἠριθμήθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The action commanded and performed upon the four angels changes from releasing/loosing (Λῦσον / ἐλύθησαν) in Text A to counting/numbering (Ἀρίθμησον / ἠριθμήθησαν) in Text B, transforming the relation from one of liberation to one of enumeration.",
+    "law_match": "PASS",
+    "law_match_note": "Both claims describe the same structural change: the action upon the angels shifts from releasing/loosing to counting/numbering, transforming liberation into arithmetic of extinction/enumeration.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final verse (9:16) retains the counting/numbering theme consistently with Text B's changed relation; no reversion to the releasing relation occurs.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "95% of non-RETAIN source lemmas survive verbatim (δεδεμένους, δισμυριάδες, εὐφράτῃ, θεοῦ, θυσιαστηρίου, κεράτων…) -- the bill was not honored"
+    },
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-04T02:07:45.939392+00:00",
+ "last_updated": "2026-07-09T20:46:04.825872+00:00",
  "rite": [
   {
    "stage": "opening",
