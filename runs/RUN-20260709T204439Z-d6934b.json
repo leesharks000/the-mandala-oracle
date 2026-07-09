@@ -1,0 +1,137 @@
+{
+ "run_id": "RUN-20260709T204439Z-d6934b",
+ "schema": "run/v1",
+ "ts": "2026-07-09T20:44:39.330474+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_156_159",
+ "citation": "9:13–9:16",
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what season is this?",
+ "method": {
+  "commit": "1bc5ab5f0d03772fe2022f9c0256e9e2eed4c1fb",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/1bc5ab5f0d03772fe2022f9c0256e9e2eed4c1fb",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/1bc5ab5f0d03772fe2022f9c0256e9e2eed4c1fb/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f3466ee638beb48a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "1bc5ab5f0d03",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f3466ee638beb48a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Annihilation is not chaotic but scheduled with absolute temporal and numerical precision — restraint was the original state, and its removal is an administrative act emanating from the sacred threshold, releasing forces whose magnitude is heard but not comprehended.",
+   "mutated_relation": "The precision is the annihilation — the counting itself is the killing; the schedule does not precede the destruction but constitutes it; the voice from the threshold does not command release but performs the arithmetic of extinction.",
+   "beats": ""
+  },
+  "enantiomorph": "**9:13** Καὶ ὁ ἕκτος ἄγγελος ἐσάλπισεν· καὶ ἤκουσα φωνὴν μίαν ἐκ ⸀τῶν κεράτων τοῦ θυσιαστηρίου τοῦ χρυσοῦ τοῦ ἐνώπιον τοῦ θεοῦ,\n\n**9:14** ⸀λέγοντα τῷ ἕκτῳ ἀγγέλῳ, ὁ ἔχων τὴν σάλπιγγα· Ἀρίθμησον τοὺς τέσσαρας ἀγγέλους τοὺς δεδεμένους ἐπὶ τῷ ποταμῷ τῷ μεγάλῳ Εὐφράτῃ.\n\n**9:15** καὶ ἠριθμήθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.",
+  "enantiomorph_translation": "**9:13** And the sixth angel sounded; and I heard a single voice from ⸀the horns of the altar of gold before God,\n\n**9:14** ⸀saying to the sixth angel, the one having the trumpet: Number the four angels who are bound at the river, the great Euphrates.\n\n**9:15** And the four angels were numbered, those prepared for the hour ⸀and day and month and year, so that they should kill the third of humankind.\n\n**9:16** And the number of the armies of the ⸀cavalry was ⸀double-myriads of myriads; I heard the number of them.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "The action commanded and performed upon the four angels changes from releasing/loosing (Λῦσον / ἐλύθησαν) in Text A to counting/numbering (Ἀρίθμησον / ἠριθμήθησαν) in Text B, transforming the relation from one of liberation to one of enumeration.",
+   "law_match": "PASS",
+   "law_match_note": "Both claims describe the same structural change: the action upon the angels shifts from releasing/loosing to counting/numbering, transforming liberation into arithmetic of extinction/enumeration.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final verse (9:16) retains the counting/numbering theme consistently with Text B's changed relation; no reversion to the releasing relation occurs.",
+   "back_translation": "",
+   "terminal_similarity": 1.0
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "95% of non-RETAIN source lemmas survive verbatim (δεδεμένους, δισμυριάδες, εὐφράτῃ, θεοῦ, θυσιαστηρίου, κεράτων…) -- the bill was not honored"
+   },
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Annihilation is not chaotic but scheduled with absolute temporal and numerical precision — restraint was the original state, and its removal is an administrative act emanating from the sacred threshold, releasing forces whose magnitude is heard but not comprehended.",
+   "verdict": "The precision is the annihilation — the counting itself is the killing; the schedule does not precede the destruction but constitutes it; the voice from the threshold does not command release but performs the arithmetic of extinction.",
+   "world_bill": "",
+   "bill_audit": {
+    "unbilled": [
+     "δεδεμένους",
+     "δισμυριάδες",
+     "εὐφράτῃ",
+     "θεοῦ",
+     "θυσιαστηρίου",
+     "κεράτων",
+     "λέγοντα",
+     "λῦσον",
+     "μίαν",
+     "μεγάλῳ",
+     "μυριάδων",
+     "μῆνα",
+     "ποταμῷ",
+     "σάλπιγγα",
+     "στρατευμάτων",
+     "τέσσαρας"
+    ],
+    "retain_over_budget": false,
+    "retain_budget": 6,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 75,
+    "final": 75,
+    "bounds": [
+     63,
+     86
+    ]
+   },
+   "identity_rate": 0.951,
+   "surviving_lemmas": [
+    "δεδεμένους",
+    "δισμυριάδες",
+    "εὐφράτῃ",
+    "θεοῦ",
+    "θυσιαστηρίου",
+    "κεράτων",
+    "λέγοντα",
+    "μίαν",
+    "μεγάλῳ",
+    "μυριάδων",
+    "μῆνα",
+    "ποταμῷ",
+    "σάλπιγγα",
+    "στρατευμάτων"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
