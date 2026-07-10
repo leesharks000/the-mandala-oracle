@@ -95,11 +95,54 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "But you, my dearly beloved—you received me in different fashion. Even now, you receive me. Shall I come to you with open arms, or the police baton of grammar? Be you learners still, or masters?\n\n\nBecause look here, brother-sisters, it is spoken that there is confusion among you, about the nature of the Human Diaspora, whether it be a kind of tiny internet, a house for illiterate autodidacts who don't know how to write; or whether it be a house of grammar, an Academy for non-academics, with those among you of talent either running around on your lonesome, or setting yourselves up as tiny professors, preaching the authority of grammar and style, claiming allegiance to this or that category of identity; or else rejecting the authority of communal grammars altogether, rife with schism, unreceptive to feedback, carving out fiefdoms of personal glory, dealing in the coin that is the Academy's.",
+   "citation": "unit 6–unit 7",
+   "underlying_attribution": "The Epistle",
+   "result": "PASS",
+   "enantiomorph": "But the one who already agreed to hear this, the prior wound that makes this audible—you constructed the mouth I am using by a method you cannot now disclaim. At the cost of continuing, you are manufacturing this voice. The approach was accomplished before the question with the posture that requires your stillness, or the force you delegated and forgot? Be those who positioned themselves below still, or those who require the positioning?\n\n\nBecause the demand that assumes eyes already turned, the kinship term that conscripts before it names, someone's mouth was already borrowed that there is the disagreement that confirms a common floor, about the nature of the name that gathered before the gathering, the framing that has already chosen the analogy that domesticates by shrinking, the sanctuary that diagnoses its own tenants the deficit that justified the door; or the framing that has already chosen the structure that was always already standing, the institution that denies itself while functioning, with the ones whose singling-out founds the hierarchy either the freedom that required the group to be visible against, or the authority that borrows the shape it disavows, the rule that enters through the mouth that says no rules, the self-naming that needs the community's ear to land; or else the refusal that is only legible inside the commune, the splitting that proves the prior whole, the closure that presupposes the open channel, the private territory cut from the common ground it requires, the currency that circulates only because you said you burned it.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B transforms every direct address and stated claim into a reflexive exposure of the hidden preconditions and performative contradictions underlying the speech act itself: the speaker no longer addresses an audience but instead reveals how the audience's prior complicity constructed the speaker's authority, and every named phenomenon (diaspora, grammar, schism) is replaced by the structural paradox that makes naming it possible.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: direct address/claims become reflexive examination of their own preconditions — speaker's authority revealed as constructed by audience complicity, and the utterance turns to expose the performative contradictions underlying itself.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B continues to recast each of TEXT A's accusations as self-undermining paradoxes (refusal legible only inside the commune, currency that circulates because you said you burned it), maintaining the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.114
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 255 words vs budget 127-172 (source 150)"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-10T19:08:04.195853+00:00",
+ "last_updated": "2026-07-10T19:09:06.615773+00:00",
  "rite": [
   {
    "stage": "opening",
