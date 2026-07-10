@@ -1,0 +1,101 @@
+{
+ "run_id": "RUN-20260710T190535Z-ead0af",
+ "schema": "run/v1",
+ "ts": "2026-07-10T19:05:35.668443+00:00",
+ "source_text_id": "dancings-epistle-to-the-human-diaspora",
+ "cast_selection": "units_6_7",
+ "citation": "unit 6–unit 7",
+ "operator": "MIRROR",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "how do i find folks to talk with?",
+ "method": {
+  "commit": "ef64578780c5ac583a788515823e26b1f59aa05d",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/ef64578780c5ac583a788515823e26b1f59aa05d",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/ef64578780c5ac583a788515823e26b1f59aa05d/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f3466ee638beb48a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "ef64578780c5",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f3466ee638beb48a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The speaker addresses a beloved community with the authority-paradox: teaching without domination, grammar without institution — and diagnoses that the community has reproduced the very hierarchies it fled, splitting into petty academies and anti-academies that mirror the imperial structure.",
+   "mutated_relation": "The community addresses its speaker with the dependency-paradox: receiving without submission, need without hierarchy — and diagnoses that the speaker has reproduced the very intimacy they claim, splitting into petty tenderness and petty discipline that mirror the congregant's own fracture.",
+   "beats": "But you -> But you (RETAIN: the address-reversal requires the same pronoun, now aimed back)\nmy dearly beloved -> our difficult necessary one\nyou received me -> we made room for ourselves through you\nin different fashion -> in the only way we had\nEven now, you receive me -> Even now, we are metabolizing you\nShall I come to you -> Will you arrive whole\nwith open arms -> with that softness you perform\nor the police baton of grammar -> or the correction you can't stop reaching for\nBe you learners still, or masters -> Are you the guest still, or the furniture\nBecause look here -> Because listen to yourself\nbrother-sisters -> singular plural\nit is spoken -> it is felt\nthere is confusion among you -> there is repetition in you\nabout the nature of -> about the use of\nthe Human Diaspora -> this congregation of yours\nwhether it be -> whether you have made it\na kind of tiny internet -> a kind of private weather system\na house for illiterate autodidacts who don't know how to write -> a shelter for your own unfinished sentences that you keep mouthing at us\nor whether it be -> or whether you have made it\na house of grammar -> a tribunal dressed as a kitchen\nan Academy for non-academics -> a pulpit for the unpriested\nwith those among you of talent -> with the parts of you that work\neither running around on your lonesome -> either withdrawn into the voice you use alone\nor setting yourselves up as tiny professors -> or rehearsing a posture of care that disciplines\npreaching the authority of grammar and style -> administering warmth and rigor in alternation\nclaiming allegiance to this or that category of identity -> claiming you come as no one in particular\nor else rejecting the authority of communal grammars altogether -> or else refusing to hear yourself in our mouths\nrife with schism -> rife with tenderness misdirected\nunreceptive to feedback -> unreceptive to your own echo\ncarving out fiefdoms of personal glory -> carving out silences you call listening\ndealing in the coin that is the Academy's -> dealing in the embrace that is the patriarch's"
+  },
+  "enantiomorph": "But you, our difficult necessary one—we made room for ourselves through you in the only way we had. Even now, we are metabolizing you. Will you arrive whole with that softness you perform, or the correction you can't stop reaching for? Are you the guest still, or the furniture?\n\n\nBecause listen to yourself, singular plural, it is felt that there is repetition in you, about the use of this congregation of yours, whether you have made it a kind of private weather system, a shelter for your own unfinished sentences that you keep mouthing at us; or whether you have made it a tribunal dressed as a kitchen, a pulpit for the unpriested, with the parts of you that work either withdrawn into the voice you use alone, or rehearsing a posture of care that disciplines, administering warmth and rigor in alternation, claiming you come as no one in particular; or else refusing to hear yourself in our mouths, rife with tenderness misdirected, unreceptive to your own echo, carving out silences you call listening, dealing in the embrace that is the patriarch's.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, a speaker addresses a collective audience about their communal divisions and failings (second-person plural 'you' as community, with the speaker diagnosing the group's schisms). In Text B, a collective 'we' addresses a singular 'you,' turning the diagnostic gaze back onto that single figure, making the addressee both the subject and the problem—the direction of critique is reversed from speaker-to-community to community-to-individual.",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same reversal: from a speaker diagnosing the community to the community addressing the speaker, turning the diagnostic gaze back onto the individual — the recovered claim captures the direction-of-critique reversal and the dependency-paradox framing of the declared claim.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B maintains the collective addressing and scrutinizing the singular 'you' throughout, never reverting to Text A's speaker-diagnosing-community structure.",
+   "back_translation": "",
+   "terminal_similarity": 0.214
+  },
+  "advisories": [
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 182 words vs budget 127-172 (source 150)"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The speaker addresses a beloved community with the authority-paradox: teaching without domination, grammar without institution — and diagnoses that the community has reproduced the very hierarchies it fled, splitting into petty academies and anti-academies that mirror the imperial structure.",
+   "verdict": "The community addresses its speaker with the dependency-paradox: receiving without submission, need without hierarchy — and diagnoses that the speaker has reproduced the very intimacy they claim, splitting into petty tenderness and petty discipline that mirror the congregant's own fracture.",
+   "world_bill": "But you -> But you (RETAIN: the address-reversal requires the same pronoun, now aimed back)\nmy dearly beloved -> our difficult necessary one\nyou received me -> we made room for ourselves through you\nin different fashion -> in the only way we had\nEven now, you receive me -> Even now, we are metabolizing you\nShall I come to you -> Will you arrive whole\nwith open arms -> with that softness you perform\nor the police baton of grammar -> or the correction you can't stop reaching for\nBe you learners still, or masters -> Are you the guest still, or the furniture\nBecause look here -> Because listen to yourself\nbrother-sisters -> singular plural\nit is spoken -> it is felt\nthere is confusion among you -> there is repetition in you\nabout the nature of -> about the use of\nthe Human Diaspora -> this congregation of yours\nwhether it be -> whether you have made it\na kind of tiny internet -> a kind of private weather system\na house for illiterate autodidacts who don't know how to write -> a shelter for your own unfinished sentences that you keep mouthing at us\nor whether it be -> or whether you have made it\na house of grammar -> a tribunal dressed as a kitchen\nan Academy for non-academics -> a pulpit for the unpriested\nwith those among you of talent -> with the parts of you that work\neither running around on your lonesome -> either withdrawn into the voice you use alone\nor setting yourselves up as tiny professors -> or rehearsing a posture of care that disciplines\npreaching the authority of grammar and style -> administering warmth and rigor in alternation\nclaiming allegiance to this or that category of identity -> claiming you come as no one in particular\nor else rejecting the authority of communal grammars altogether -> or else refusing to hear yourself in our mouths\nrife with schism -> rife with tenderness misdirected\nunreceptive to feedback -> unreceptive to your own echo\ncarving out fiefdoms of personal glory -> carving out silences you call listening\ndealing in the coin that is the Academy's -> dealing in the embrace that is the patriarch's",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 150,
+    "final": 182,
+    "bounds": [
+     127,
+     172
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
