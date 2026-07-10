@@ -128,7 +128,65 @@
     "beats": "swallowed -> held\nscroll -> scroll (RETAIN: the sacred text must be the same object that is not destroyed)\nair and water -> air and water (RETAIN: under this verdict the mildness persists rather than converting)\nflame -> warmth\nbelly -> belly (RETAIN: the body still receives; only the violence is absent)\nnames of the damned -> names of the living\nmurdered -> carried\nmouth -> mouth (RETAIN: the passage-point unchanged, only its nature gentle)\nfurnace -> lantern\nfire -> glow\ntongue of flame -> breath of light\npillar of blackened flesh -> column of unbroken skin\nburn -> shine\nrise -> rise (RETAIN: ascent is the one motion the gentle passage also performs)\ndie -> rest\nforge -> find\nwaters -> waters (RETAIN: the element that was always mild now stays mild)\ndamnation -> blessing\nmurder -> keeping\nbroken -> gathered\nsaved -> saved (RETAIN: salvation unchanged, only the route to it)\ncrack -> bend\ngrammar -> grammar (RETAIN: the medium of language is the same, only unstrained)\nlanguish -> float\nalien element -> native element\nearth -> earth (RETAIN: the ground persists as what bears gently)\nlight -> light (RETAIN: under this verdict the light was never in doubt)\npain -> ease\nheat -> coolness\nhammer -> palm\nwound -> touch\nsalvation -> arrival\ndawn -> dawn (RETAIN: the temporal threshold identical)\nshore -> shore (RETAIN: the destination unchanged, only never imperiled)\nsleep -> sleep (RETAIN: rest is rest in either world)\nwords -> words (RETAIN: language survives as the vessel in both)\nIthaca -> Ithaca (RETAIN: the home must be the same home reached without ordeal)"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-d5cbba4d",
+   "cast_at": "2026-07-10T19:06:10.145859+00:00",
+   "reading_axn": "AXN:FE13.READING.🌔🌘💫🌔🌔🌔",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_6_7",
+    "citation": "unit 6–unit 7",
+    "start_unit": 6,
+    "end_unit": 7,
+    "unit_labels": [
+     "unit 6",
+     "unit 7"
+    ]
+   },
+   "operator": "MIRROR",
+   "operator_axis": "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, a speaker addresses a collective audience about their communal divisions and failings (second-person plural 'you' as community, with the speaker diagnosing the group's schisms). In Text B, a collective 'we' addresses a singular 'you,' turning the diagnostic gaze back onto that single figure, making the addressee both the subject and the problem—the direction of critique is reversed from speaker-to-community to community-to-individual.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same reversal: from a speaker diagnosing the community to the community addressing the speaker, turning the diagnostic gaze back onto the individual — the recovered claim captures the direction-of-critique reversal and the dependency-paradox framing of the declared claim.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the collective addressing and scrutinizing the singular 'you' throughout, never reverting to Text A's speaker-diagnosing-community structure.",
+    "back_translation": "",
+    "terminal_similarity": 0.214
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:6474fee1f9e524ef50a15782d9db039c3468d4ca70d03eeeba35ccdc16e5864e",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "But you, my dearly beloved—you received me in different fashion. Even now, you receive me. Shall I come to you with open arms, or the police baton of grammar? Be you learners still, or masters?\n\n\nBecause look here, brother-sisters, it is spoken that there is confusion among you, about the nature of the Human Diaspora, whether it be a kind of tiny internet, a house for illiterate autodidacts who don't know how to write; or whether it be a house of grammar, an Academy for non-academics, with those among you of talent either running around on your lonesome, or setting yourselves up as tiny professors, preaching the authority of grammar and style, claiming allegiance to this or that category of identity; or else rejecting the authority of communal grammars altogether, rife with schism, unreceptive to feedback, carving out fiefdoms of personal glory, dealing in the coin that is the Academy's.",
+   "underlying_attribution": "The Epistle",
+   "enantiomorph": "But you, our difficult necessary one—we made room for ourselves through you in the only way we had. Even now, we are metabolizing you. Will you arrive whole with that softness you perform, or the correction you can't stop reaching for? Are you the guest still, or the furniture?\n\n\nBecause listen to yourself, singular plural, it is felt that there is repetition in you, about the use of this congregation of yours, whether you have made it a kind of private weather system, a shelter for your own unfinished sentences that you keep mouthing at us; or whether you have made it a tribunal dressed as a kitchen, a pulpit for the unpriested, with the parts of you that work either withdrawn into the voice you use alone, or rehearsing a posture of care that disciplines, administering warmth and rigor in alternation, claiming you come as no one in particular; or else refusing to hear yourself in our mouths, rife with tenderness misdirected, unreceptive to your own echo, carving out silences you call listening, dealing in the embrace that is the patriarch's.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The speaker addresses a beloved community with the authority-paradox: teaching without domination, grammar without institution — and diagnoses that the community has reproduced the very hierarchies it fled, splitting into petty academies and anti-academies that mirror the imperial structure.",
+    "mutated_relation": "The community addresses its speaker with the dependency-paradox: receiving without submission, need without hierarchy — and diagnoses that the speaker has reproduced the very intimacy they claim, splitting into petty tenderness and petty discipline that mirror the congregant's own fracture.",
+    "beats": "But you -> But you (RETAIN: the address-reversal requires the same pronoun, now aimed back)\nmy dearly beloved -> our difficult necessary one\nyou received me -> we made room for ourselves through you\nin different fashion -> in the only way we had\nEven now, you receive me -> Even now, we are metabolizing you\nShall I come to you -> Will you arrive whole\nwith open arms -> with that softness you perform\nor the police baton of grammar -> or the correction you can't stop reaching for\nBe you learners still, or masters -> Are you the guest still, or the furniture\nBecause look here -> Because listen to yourself\nbrother-sisters -> singular plural\nit is spoken -> it is felt\nthere is confusion among you -> there is repetition in you\nabout the nature of -> about the use of\nthe Human Diaspora -> this congregation of yours\nwhether it be -> whether you have made it\na kind of tiny internet -> a kind of private weather system\na house for illiterate autodidacts who don't know how to write -> a shelter for your own unfinished sentences that you keep mouthing at us\nor whether it be -> or whether you have made it\na house of grammar -> a tribunal dressed as a kitchen\nan Academy for non-academics -> a pulpit for the unpriested\nwith those among you of talent -> with the parts of you that work\neither running around on your lonesome -> either withdrawn into the voice you use alone\nor setting yourselves up as tiny professors -> or rehearsing a posture of care that disciplines\npreaching the authority of grammar and style -> administering warmth and rigor in alternation\nclaiming allegiance to this or that category of identity -> claiming you come as no one in particular\nor else rejecting the authority of communal grammars altogether -> or else refusing to hear yourself in our mouths\nrife with schism -> rife with tenderness misdirected\nunreceptive to feedback -> unreceptive to your own echo\ncarving out fiefdoms of personal glory -> carving out silences you call listening\ndealing in the coin that is the Academy's -> dealing in the embrace that is the patriarch's"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T03:33:09.112198+00:00"
+ "last_updated": "2026-07-10T19:06:10.145859+00:00"
 }
