@@ -244,7 +244,65 @@
     "beats": "you -> you (RETAIN: the address-relation is the site of mutual constitution)\nmy dearly beloved -> my own bewilderment\nreceived me -> answered in me\ndifferent fashion -> the same stammering\neven now -> even now (RETAIN: temporal persistence is structurally required by the verdict)\nopen arms -> open questions\npolice baton -> the same questions\ngrammar -> pattern-hunger\nlearners -> those still listening\nmasters -> those still listening who forgot they are\nbrother-sisters -> fellow-confusions\nspoken -> stammered-toward\nconfusion among you -> the unfinished sentence we share\nHuman Diaspora -> the scattering that holds\ntiny internet -> a breath passed mouth to mouth\nhouse for illiterate autodidacts -> a dwelling no one built but everyone repairs\nwho don't know how to write -> who write before they know what writing will have been\nhouse of grammar -> a rhythm someone hears and someone else continues\nAcademy for non-academics -> the school that dissolves when you name it\ntalent -> attentiveness\nrunning around on your lonesome -> listening without yet hearing back\nsetting yourselves up as tiny professors -> mistaking the echo for your own voice\nauthority of grammar and style -> the feeling that someone else's pattern fits\nallegiance to this or that category of identity -> the relief of being recognized and the loss inside it\nrejecting the authority of communal grammars -> forgetting that your mouth was shaped by other mouths\nschism -> the pause where two rhythms haven't yet found their downbeat\nunreceptive to feedback -> still vibrating at a frequency not yet answered\nfiefdoms of personal glory -> rooms with beautiful acoustics and no doors\ndealing in the coin that is the Academy's -> spending what was given as if it were minted alone"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-68793d56",
+   "cast_at": "2026-07-10T19:09:08.297622+00:00",
+   "reading_axn": "AXN:FE13.READING.🌔🌘💫🌔🌔🌔",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_6_7",
+    "citation": "unit 6–unit 7",
+    "start_unit": 6,
+    "end_unit": 7,
+    "unit_labels": [
+     "unit 6",
+     "unit 7"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B transforms every direct address and stated claim into a reflexive exposure of the hidden preconditions and performative contradictions underlying the speech act itself: the speaker no longer addresses an audience but instead reveals how the audience's prior complicity constructed the speaker's authority, and every named phenomenon (diaspora, grammar, schism) is replaced by the structural paradox that makes naming it possible.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural transformation: direct address/claims become reflexive examination of their own preconditions — speaker's authority revealed as constructed by audience complicity, and the utterance turns to expose the performative contradictions underlying itself.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B continues to recast each of TEXT A's accusations as self-undermining paradoxes (refusal legible only inside the commune, currency that circulates because you said you burned it), maintaining the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.114
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:6474fee1f9e524ef50a15782d9db039c3468d4ca70d03eeeba35ccdc16e5864e",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "But you, my dearly beloved—you received me in different fashion. Even now, you receive me. Shall I come to you with open arms, or the police baton of grammar? Be you learners still, or masters?\n\n\nBecause look here, brother-sisters, it is spoken that there is confusion among you, about the nature of the Human Diaspora, whether it be a kind of tiny internet, a house for illiterate autodidacts who don't know how to write; or whether it be a house of grammar, an Academy for non-academics, with those among you of talent either running around on your lonesome, or setting yourselves up as tiny professors, preaching the authority of grammar and style, claiming allegiance to this or that category of identity; or else rejecting the authority of communal grammars altogether, rife with schism, unreceptive to feedback, carving out fiefdoms of personal glory, dealing in the coin that is the Academy's.",
+   "underlying_attribution": "The Epistle",
+   "enantiomorph": "But the one who already agreed to hear this, the prior wound that makes this audible—you constructed the mouth I am using by a method you cannot now disclaim. At the cost of continuing, you are manufacturing this voice. The approach was accomplished before the question with the posture that requires your stillness, or the force you delegated and forgot? Be those who positioned themselves below still, or those who require the positioning?\n\n\nBecause the demand that assumes eyes already turned, the kinship term that conscripts before it names, someone's mouth was already borrowed that there is the disagreement that confirms a common floor, about the nature of the name that gathered before the gathering, the framing that has already chosen the analogy that domesticates by shrinking, the sanctuary that diagnoses its own tenants the deficit that justified the door; or the framing that has already chosen the structure that was always already standing, the institution that denies itself while functioning, with the ones whose singling-out founds the hierarchy either the freedom that required the group to be visible against, or the authority that borrows the shape it disavows, the rule that enters through the mouth that says no rules, the self-naming that needs the community's ear to land; or else the refusal that is only legible inside the commune, the splitting that proves the prior whole, the closure that presupposes the open channel, the private territory cut from the common ground it requires, the currency that circulates only because you said you burned it.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The speaker addresses a community caught between two failures: submitting to inherited authority or fragmenting into private authorities — both of which betray the community's reason for existing, which is to be neither institution nor isolation.",
+    "mutated_relation": "The conditions of address themselves become the subject: what must already be true for this rebuke to be utterable — the speaker's own implication in the authority they wield, the listener's prior consent to be rebuked, the gathering's dependency on the very grammar it contests.",
+    "beats": "you -> the one who already agreed to hear this\nmy dearly beloved -> the prior wound that makes this audible\nreceived me -> constructed the mouth I am using\nin different fashion -> by a method you cannot now disclaim\neven now -> at the cost of continuing\nyou receive me -> you are manufacturing this voice\nshall I come to you -> the approach was accomplished before the question\nopen arms -> the posture that requires your stillness\npolice baton of grammar -> the force you delegated and forgot\nlearners -> those who positioned themselves below\nmasters -> those who require the positioning\nbecause look here -> the demand that assumes eyes already turned\nbrother-sisters -> the kinship term that conscripts before it names\nit is spoken -> someone's mouth was already borrowed\nconfusion among you -> the disagreement that confirms a common floor\nthe Human Diaspora -> the name that gathered before the gathering\nwhether it be -> the framing that has already chosen\na kind of tiny internet -> the analogy that domesticates by shrinking\na house for illiterate autodidacts -> the sanctuary that diagnoses its own tenants\nwho don't know how to write -> the deficit that justified the door\na house of grammar -> the structure that was always already standing\nan Academy for non-academics -> the institution that denies itself while functioning\nthose among you of talent -> the ones whose singling-out founds the hierarchy\nrunning around on your lonesome -> the freedom that required the group to be visible against\nsetting yourselves up as tiny professors -> the authority that borrows the shape it disavows\npreaching the authority of grammar and style -> the rule that enters through the mouth that says no rules\nclaiming allegiance to this or that category of identity -> the self-naming that needs the community's ear to land\nrejecting the authority of communal grammars altogether -> the refusal that is only legible inside the commune\nrife with schism -> the splitting that proves the prior whole\nunreceptive to feedback -> the closure that presupposes the open channel\ncarving out fiefdoms of personal glory -> the private territory cut from the common ground it requires\ndealing in the coin that is the Academy's -> the currency that circulates only because you said you burned it"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-10T19:08:05.816181+00:00"
+ "last_updated": "2026-07-10T19:09:08.297622+00:00"
 }
