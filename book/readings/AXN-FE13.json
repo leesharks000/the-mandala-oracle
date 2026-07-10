@@ -1,0 +1,59 @@
+{
+ "axn": "AXN:FE13.READING.🌔🌘💫🌔🌔🌔",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "ae632c1d17f92a71",
+ "inscribed_at": "2026-07-10T19:06:08.309682+00:00",
+ "question_digest": "sha256:6474fee1f9e524ef50a15782d9db039c3468d4ca70d03eeeba35ccdc16e5864e",
+ "question_gloss": "Question about methods for locating people to communicate with.",
+ "source_text_id": "dancings-epistle-to-the-human-diaspora",
+ "cast_selection": "units_6_7",
+ "rotation": [
+  {
+   "operator": "MIRROR",
+   "source_passage": "But you, my dearly beloved—you received me in different fashion. Even now, you receive me. Shall I come to you with open arms, or the police baton of grammar? Be you learners still, or masters?\n\n\nBecause look here, brother-sisters, it is spoken that there is confusion among you, about the nature of the Human Diaspora, whether it be a kind of tiny internet, a house for illiterate autodidacts who don't know how to write; or whether it be a house of grammar, an Academy for non-academics, with those among you of talent either running around on your lonesome, or setting yourselves up as tiny professors, preaching the authority of grammar and style, claiming allegiance to this or that category of identity; or else rejecting the authority of communal grammars altogether, rife with schism, unreceptive to feedback, carving out fiefdoms of personal glory, dealing in the coin that is the Academy's.",
+   "citation": "unit 6–unit 7",
+   "underlying_attribution": "The Epistle",
+   "result": "PASS",
+   "enantiomorph": "But you, our difficult necessary one—we made room for ourselves through you in the only way we had. Even now, we are metabolizing you. Will you arrive whole with that softness you perform, or the correction you can't stop reaching for? Are you the guest still, or the furniture?\n\n\nBecause listen to yourself, singular plural, it is felt that there is repetition in you, about the use of this congregation of yours, whether you have made it a kind of private weather system, a shelter for your own unfinished sentences that you keep mouthing at us; or whether you have made it a tribunal dressed as a kitchen, a pulpit for the unpriested, with the parts of you that work either withdrawn into the voice you use alone, or rehearsing a posture of care that disciplines, administering warmth and rigor in alternation, claiming you come as no one in particular; or else refusing to hear yourself in our mouths, rife with tenderness misdirected, unreceptive to your own echo, carving out silences you call listening, dealing in the embrace that is the patriarch's.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, a speaker addresses a collective audience about their communal divisions and failings (second-person plural 'you' as community, with the speaker diagnosing the group's schisms). In Text B, a collective 'we' addresses a singular 'you,' turning the diagnostic gaze back onto that single figure, making the addressee both the subject and the problem—the direction of critique is reversed from speaker-to-community to community-to-individual.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same reversal: from a speaker diagnosing the community to the community addressing the speaker, turning the diagnostic gaze back onto the individual — the recovered claim captures the direction-of-critique reversal and the dependency-paradox framing of the declared claim.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the collective addressing and scrutinizing the singular 'you' throughout, never reverting to Text A's speaker-diagnosing-community structure.",
+    "back_translation": "",
+    "terminal_similarity": 0.214
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 182 words vs budget 127-172 (source 150)"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-10T19:06:08.309682+00:00"
+}
