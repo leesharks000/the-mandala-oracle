@@ -52,11 +52,54 @@
    ],
    "commentary": "",
    "interpretation": "The mirror held up to the speaker shows his hands already closed around what he called an open door: the one who asked for reception has been the one refusing it."
+  },
+  {
+   "operator": "BRIDE",
+   "source_passage": "But you, my dearly beloved—you received me in different fashion. Even now, you receive me. Shall I come to you with open arms, or the police baton of grammar? Be you learners still, or masters?\n\n\nBecause look here, brother-sisters, it is spoken that there is confusion among you, about the nature of the Human Diaspora, whether it be a kind of tiny internet, a house for illiterate autodidacts who don't know how to write; or whether it be a house of grammar, an Academy for non-academics, with those among you of talent either running around on your lonesome, or setting yourselves up as tiny professors, preaching the authority of grammar and style, claiming allegiance to this or that category of identity; or else rejecting the authority of communal grammars altogether, rife with schism, unreceptive to feedback, carving out fiefdoms of personal glory, dealing in the coin that is the Academy's.",
+   "citation": "unit 6–unit 7",
+   "underlying_attribution": "The Epistle",
+   "result": "PASS",
+   "enantiomorph": "But you, my own bewilderment—you answered in me in the same stammering. Even now, you answer in me. Shall I come to you with open questions, or the same questions? Be you those still listening, or those still listening who forgot they are?\n\n\nBecause look here, fellow-confusions, it is stammered-toward that there is the unfinished sentence we share, about the nature of the scattering that holds, whether it be a kind of a breath passed mouth to mouth, a dwelling no one built but everyone repairs who write before they know what writing will have been; or whether it be a rhythm someone hears and someone else continues, the school that dissolves when you name it, with those among you of attentiveness either listening without yet hearing back, or mistaking the echo for your own voice, preaching the feeling that someone else's pattern fits, claiming the relief of being recognized and the loss inside it; or else forgetting that your mouth was shaped by other mouths altogether, rife with the pause where two rhythms haven't yet found their downbeat, still vibrating at a frequency not yet answered, carving out rooms with beautiful acoustics and no doors, spending what was given as if it were minted alone.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A presents the Human Diaspora as an external community with distinct members acting upon each other (receiving, preaching, rejecting authority), structured by opposition between grammar/authority and individual autonomy. TEXT B transforms all external communal relations into internal, shared, reciprocal processes — reception becomes answering-within, community becomes mutual confusion, authority becomes echo and rhythm, and autonomous action becomes forgetting one's interdependence — so that every relation flows inward and between rather than outward and against.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: external, oppositional community relations become internal, mutual, reciprocally constituted ones — diagnosis is within the condition, submission/rebellion are each other's incomplete self-recognition, and all relations become shared and intertwined rather than separate and adversarial.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B ('forgetting that your mouth was shaped by other mouths,' 'rooms with beautiful acoustics and no doors,' 'spending what was given as if it were minted alone') sustains the internalized, reciprocal relational logic rather than reverting to TEXT A's oppositional community structure.",
+    "back_translation": "",
+    "terminal_similarity": 0.229
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 206 words vs budget 127-172 (source 150)"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-10T19:06:24.854643+00:00",
+ "last_updated": "2026-07-10T19:08:04.195853+00:00",
  "rite": [
   {
    "stage": "opening",
