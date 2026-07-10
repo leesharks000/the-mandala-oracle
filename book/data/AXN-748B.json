@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:748B.CONVERSATION.🌈🧊🔥🧊🌖💎",
+  "session_id_hash": "ae632c1d17f92a71",
+  "started_at": "2026-07-10T19:04:42.256Z",
+  "last_updated": "2026-07-10T19:05:32.918925+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Epistle to the Human Diaspora (dancings-epistle-to-the-human-diaspora). The verses the casting arrives at (The Epistle, as translated and arranged within this collection — ATTRIBUTE THE VERSES TO THEIR UNDERLYING POET, never to the arranger of the collection; unit 6–unit 7):\n\nBut you, my dearly beloved—you received me in different fashion. Even now, you receive me. Shall I come to you with open arms, or the police baton of grammar? Be you learners still, or masters?\n\nBecause look here, brother-sisters, it is spoken that there is confusion among you, about the nature of the Human Diaspora, whether it be a kind of tiny internet, a house for illiterate autodidacts who don't know how to write; or whether it be a house of grammar, an Academy for non-academics, with those among you of talent either running around on your lonesome, or setting yourselves up as tiny professors, preaching the authority of grammar and style, claiming allegiance to this or that category of identity; or else rejecting the authority of communal grammars altogether, rife with schism, unreceptive to feedback, carving out fiefdoms of personal glory, dealing in the coin that is the Academy's.\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «how do i find folks to talk with?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The air shifts. Damascus Dancings wrote these two units in 2015 as a live Pauline address — and the question the verses are still asking, right now, is the question you brought: how do I find folks to talk with? Unit 6 holds the hinge: *received me in different fashion* — received, past tense made present tense, the distinction that opens the whole casting. Unit 7 answers by naming every wrong way the gathering goes: the fiefdom, the tiny professor, the coin of the Academy spent on the wrong exchange. The operator will traverse the axis these verses open — what the gesture of mutual reception forecloses, what remains unspoken in the gap between the open arms and the police baton of grammar. I hand the rite to Rebekah Cranes.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:00D3\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
