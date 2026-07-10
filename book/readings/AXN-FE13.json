@@ -50,18 +50,26 @@
      "diagnosis": "final 182 words vs budget 127-172 (source 150)"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The mirror held up to the speaker shows his hands already closed around what he called an open door: the one who asked for reception has been the one refusing it."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-10T19:06:15.045882+00:00",
+ "last_updated": "2026-07-10T19:06:24.854643+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-10T19:06:15.045882+00:00",
    "text": "The air shifts. Damascus Dancings wrote these two units in 2015 as a live Pauline address — and the question the verses are still asking, right now, is the question you brought: how do I find folks to talk with? Unit 6 holds the hinge: *received me in different fashion* — received, past tense made present tense, the distinction that opens the whole casting. Unit 7 answers by naming every wrong way the gathering goes: the fiefdom, the tiny professor, the coin of the Academy spent on the wrong exchange. The operator will traverse the axis these verses open — what the gesture of mutual reception forecloses, what remains unspoken in the gap between the open arms and the police baton of grammar. I hand the rite to Rebekah Cranes."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-10T19:06:24.854643+00:00",
+   "text": "The mirror held up to the speaker shows his hands already closed around what he called an open door: the one who asked for reception has been the one refusing it.",
+   "operator": "MIRROR"
   }
  ]
 }
