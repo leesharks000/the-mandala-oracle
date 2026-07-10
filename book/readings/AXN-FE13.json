@@ -137,12 +137,13 @@
      "diagnosis": "final 255 words vs budget 127-172 (source 150)"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The well was dug before the village arrived to call it ours: every grammar that claims no authority has already drawn the boundary."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-10T19:09:06.615773+00:00",
+ "last_updated": "2026-07-10T19:09:26.506910+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -156,6 +157,13 @@
    "at": "2026-07-10T19:06:24.854643+00:00",
    "text": "The mirror held up to the speaker shows his hands already closed around what he called an open door: the one who asked for reception has been the one refusing it.",
    "operator": "MIRROR"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-10T19:09:26.506910+00:00",
+   "text": "The well was dug before the village arrived to call it ours: every grammar that claims no authority has already drawn the boundary.",
+   "operator": "SHADOW"
   }
  ]
 }
