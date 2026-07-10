@@ -186,7 +186,65 @@
     "beats": "But you -> But you (RETAIN: the address-reversal requires the same pronoun, now aimed back)\nmy dearly beloved -> our difficult necessary one\nyou received me -> we made room for ourselves through you\nin different fashion -> in the only way we had\nEven now, you receive me -> Even now, we are metabolizing you\nShall I come to you -> Will you arrive whole\nwith open arms -> with that softness you perform\nor the police baton of grammar -> or the correction you can't stop reaching for\nBe you learners still, or masters -> Are you the guest still, or the furniture\nBecause look here -> Because listen to yourself\nbrother-sisters -> singular plural\nit is spoken -> it is felt\nthere is confusion among you -> there is repetition in you\nabout the nature of -> about the use of\nthe Human Diaspora -> this congregation of yours\nwhether it be -> whether you have made it\na kind of tiny internet -> a kind of private weather system\na house for illiterate autodidacts who don't know how to write -> a shelter for your own unfinished sentences that you keep mouthing at us\nor whether it be -> or whether you have made it\na house of grammar -> a tribunal dressed as a kitchen\nan Academy for non-academics -> a pulpit for the unpriested\nwith those among you of talent -> with the parts of you that work\neither running around on your lonesome -> either withdrawn into the voice you use alone\nor setting yourselves up as tiny professors -> or rehearsing a posture of care that disciplines\npreaching the authority of grammar and style -> administering warmth and rigor in alternation\nclaiming allegiance to this or that category of identity -> claiming you come as no one in particular\nor else rejecting the authority of communal grammars altogether -> or else refusing to hear yourself in our mouths\nrife with schism -> rife with tenderness misdirected\nunreceptive to feedback -> unreceptive to your own echo\ncarving out fiefdoms of personal glory -> carving out silences you call listening\ndealing in the coin that is the Academy's -> dealing in the embrace that is the patriarch's"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-b8388433",
+   "cast_at": "2026-07-10T19:08:05.816181+00:00",
+   "reading_axn": "AXN:FE13.READING.🌔🌘💫🌔🌔🌔",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_6_7",
+    "citation": "unit 6–unit 7",
+    "start_unit": 6,
+    "end_unit": 7,
+    "unit_labels": [
+     "unit 6",
+     "unit 7"
+    ]
+   },
+   "operator": "BRIDE",
+   "operator_axis": "relational-affect-axis — the consecrative possibility the source's contestation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT A presents the Human Diaspora as an external community with distinct members acting upon each other (receiving, preaching, rejecting authority), structured by opposition between grammar/authority and individual autonomy. TEXT B transforms all external communal relations into internal, shared, reciprocal processes — reception becomes answering-within, community becomes mutual confusion, authority becomes echo and rhythm, and autonomous action becomes forgetting one's interdependence — so that every relation flows inward and between rather than outward and against.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: external, oppositional community relations become internal, mutual, reciprocally constituted ones — diagnosis is within the condition, submission/rebellion are each other's incomplete self-recognition, and all relations become shared and intertwined rather than separate and adversarial.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B ('forgetting that your mouth was shaped by other mouths,' 'rooms with beautiful acoustics and no doors,' 'spending what was given as if it were minted alone') sustains the internalized, reciprocal relational logic rather than reverting to TEXT A's oppositional community structure.",
+    "back_translation": "",
+    "terminal_similarity": 0.229
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:6474fee1f9e524ef50a15782d9db039c3468d4ca70d03eeeba35ccdc16e5864e",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "But you, my dearly beloved—you received me in different fashion. Even now, you receive me. Shall I come to you with open arms, or the police baton of grammar? Be you learners still, or masters?\n\n\nBecause look here, brother-sisters, it is spoken that there is confusion among you, about the nature of the Human Diaspora, whether it be a kind of tiny internet, a house for illiterate autodidacts who don't know how to write; or whether it be a house of grammar, an Academy for non-academics, with those among you of talent either running around on your lonesome, or setting yourselves up as tiny professors, preaching the authority of grammar and style, claiming allegiance to this or that category of identity; or else rejecting the authority of communal grammars altogether, rife with schism, unreceptive to feedback, carving out fiefdoms of personal glory, dealing in the coin that is the Academy's.",
+   "underlying_attribution": "The Epistle",
+   "enantiomorph": "But you, my own bewilderment—you answered in me in the same stammering. Even now, you answer in me. Shall I come to you with open questions, or the same questions? Be you those still listening, or those still listening who forgot they are?\n\n\nBecause look here, fellow-confusions, it is stammered-toward that there is the unfinished sentence we share, about the nature of the scattering that holds, whether it be a kind of a breath passed mouth to mouth, a dwelling no one built but everyone repairs who write before they know what writing will have been; or whether it be a rhythm someone hears and someone else continues, the school that dissolves when you name it, with those among you of attentiveness either listening without yet hearing back, or mistaking the echo for your own voice, preaching the feeling that someone else's pattern fits, claiming the relief of being recognized and the loss inside it; or else forgetting that your mouth was shaped by other mouths altogether, rife with the pause where two rhythms haven't yet found their downbeat, still vibrating at a frequency not yet answered, carving out rooms with beautiful acoustics and no doors, spending what was given as if it were minted alone.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The beloved community is addressed as split between two failure modes — slavish submission to external authority and anarchic self-glorification — and the speaker positions themselves as the one who diagnoses this division, holding the baton or the embrace, reproducing the very hierarchy they name.",
+    "mutated_relation": "The speaker and community are mutually constituted through the very confusions they share — diagnosis is not above the condition but within it, and each supposed failure mode (submission, rebellion) is the other's incomplete self-recognition.",
+    "beats": "you -> you (RETAIN: the address-relation is the site of mutual constitution)\nmy dearly beloved -> my own bewilderment\nreceived me -> answered in me\ndifferent fashion -> the same stammering\neven now -> even now (RETAIN: temporal persistence is structurally required by the verdict)\nopen arms -> open questions\npolice baton -> the same questions\ngrammar -> pattern-hunger\nlearners -> those still listening\nmasters -> those still listening who forgot they are\nbrother-sisters -> fellow-confusions\nspoken -> stammered-toward\nconfusion among you -> the unfinished sentence we share\nHuman Diaspora -> the scattering that holds\ntiny internet -> a breath passed mouth to mouth\nhouse for illiterate autodidacts -> a dwelling no one built but everyone repairs\nwho don't know how to write -> who write before they know what writing will have been\nhouse of grammar -> a rhythm someone hears and someone else continues\nAcademy for non-academics -> the school that dissolves when you name it\ntalent -> attentiveness\nrunning around on your lonesome -> listening without yet hearing back\nsetting yourselves up as tiny professors -> mistaking the echo for your own voice\nauthority of grammar and style -> the feeling that someone else's pattern fits\nallegiance to this or that category of identity -> the relief of being recognized and the loss inside it\nrejecting the authority of communal grammars -> forgetting that your mouth was shaped by other mouths\nschism -> the pause where two rhythms haven't yet found their downbeat\nunreceptive to feedback -> still vibrating at a frequency not yet answered\nfiefdoms of personal glory -> rooms with beautiful acoustics and no doors\ndealing in the coin that is the Academy's -> spending what was given as if it were minted alone"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-10T19:06:10.145859+00:00"
+ "last_updated": "2026-07-10T19:08:05.816181+00:00"
 }
