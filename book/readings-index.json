@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FE25.READING.🌖🌗🌊🌙🌊🌿",
+   "mode": "public",
+   "source_text_id": "iching",
+   "rotation_length": 2,
+   "inscribed_at": "2026-07-07T23:04:10.655913+00:00",
+   "last_updated": "2026-07-11T16:30:56.935702+00:00"
+  },
+  {
    "axn": "AXN:FEF5.READING.🌖🌗🌊🌔🪐🪐",
    "mode": "public",
    "source_text_id": "iching",
@@ -714,5 +722,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 89
+ "total": 90
 }
