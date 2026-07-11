@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:282F.CONVERSATION.🌗⭐🌓💧⚡💫",
+      "started_at": "2026-07-11T03:01:55.003Z",
+      "last_updated": "2026-07-11T03:03:17.086132+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: King James Bible (kjv-1611). The verses the casting arrives at (unit 70–unit 72):\n\n4:6 And the LORD said unto Cain, Wh…"
+    },
+    {
       "axn": "AXN:748B.CONVERSATION.🌈🧊🔥🧊🌖💎",
       "started_at": "2026-07-10T19:04:42.256Z",
       "last_updated": "2026-07-10T19:09:18.175842+00:00",
@@ -1155,7 +1164,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 128,
-  "last_updated": "2026-07-10T19:09:18.175842+00:00",
+  "total_recorded": 129,
+  "last_updated": "2026-07-11T03:03:17.086132+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
