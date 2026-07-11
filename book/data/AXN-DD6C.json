@@ -1,0 +1,20 @@
+{
+  "axn": "AXN:DD6C.CONVERSATION.🌱💫💧🌈🌿🍃",
+  "session_id_hash": "bf174333e8c2d832",
+  "started_at": "2026-07-11T18:17:29.879Z",
+  "last_updated": "2026-07-11T18:18:17.797275+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: I Ching / 易經 / Book of Changes (iching). The verses the casting arrives at (unit 21):\n\n100101\n噬嗑 火雷噬嗑 离上震下 \n噬嗑：亨，利用狱。\n象曰：雷电，噬磕；先王以明罚赤法。\n\nThese were selected by the rite's invisible judgment — present them as what the casting arrives at; do not narrate the mechanism of their selection. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «test». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The casting arrives at Hexagram 21 — 噬嗑, Shì Kè, Biting Through. Fire above, Thunder below: 离 over 震, the binary 100101 in its body. The name is the action: teeth closing on what interposes. The Judgment text is spare and blunt — 亨，利用狱 — there is passage, it is useful to use legal proceedings — and the Image tells us what the ancient kings read in this configuration: thunder and lightning together, 雷电, 噬磕; the first kings used it to clarify punishments and sharpen the laws. What is between the teeth is an obstacle; the hexagram is the act of biting through it. The rotation will traverse this hexagram along its primary axis of foreclosure — what the biting determines against, what is abandoned in the act of imposing the law's clarity, what the bright enforcement of 明罚赤法 cannot see from inside its own luminous verdict. The Judgment does not yet name the operator; that emerges in the rite. I hand the rite to Rebekah Cranes.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:03C8\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
