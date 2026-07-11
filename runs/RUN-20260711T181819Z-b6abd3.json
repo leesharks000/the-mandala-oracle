@@ -1,0 +1,96 @@
+{
+ "run_id": "RUN-20260711T181819Z-b6abd3",
+ "schema": "run/v1",
+ "ts": "2026-07-11T18:18:19.175826+00:00",
+ "source_text_id": "iching",
+ "cast_selection": "units_21_21",
+ "citation": "unit 21",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "test",
+ "method": {
+  "commit": "f63f9ccd52c63a077d648a9fdb25ce9cacbfac50",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/f63f9ccd52c63a077d648a9fdb25ce9cacbfac50",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/f63f9ccd52c63a077d648a9fdb25ce9cacbfac50/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "50799acf165fde39",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "f63f9ccd52c6",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "50799acf165fde39",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "An obstruction between jaws must be bitten through; penetration is achieved through enforced severance; clarity (fire) energizing force (thunder) constitutes legitimate violence — the state's power to punish is modeled on the storm's self-evidence.",
+   "mutated_relation": "The obstruction is what allows the jaw to know itself as jaw — severance is not penetration but the confession that the interval could not be closed; the storm does not clarify the law but reveals that law requires an opacity it cannot burn away.",
+   "beats": "100101 -> 011010\n噬嗑 -> 间识 (interval-knowing)\n火雷 -> 暗隙 (dark-gap)\n离上震下 -> 坎下巽上 (the inversion: abyss below, permeation above)\n亨 -> 阻 (halting — the condition for claiming penetration is the persistence of what resists)\n利用狱 -> 困于闭 (caught-in-enclosure — the condition for advantageous imprisonment is the confessor's own confinement within the act of confining)\n象曰 -> 形默 (the shape is silent — the condition for the Image speaking is the priority of what it cannot depict)\n雷电 -> 裂而未合 (split-and-not-rejoined — the condition for thunder-lightning's unity is the fissure that precedes and survives it)\n噬磕 -> 噬嗑 (RETAIN: the verdict requires the name to persist as that which its own conditions cannot dissolve)\n先王 -> 未生者 (the not-yet-born — the condition for \"former kings\" having acted is a futurity that underwrites the claim of pastness)\n明罚 -> 罚之晦 (the obscurity within punishment — the condition for penalty-made-clear is the darkness penalty cannot expel from itself)\n赤法 -> 法之隐纹 (the hidden grain of law — the condition for law-made-exact is the inexactitude law carries as its operative tissue)\n以 -> 以 (RETAIN: structural particle required by syntactic preservation)"
+  },
+  "enantiomorph": "011010\n间识 暗隙间识 坎下巽上\n间识：阻，困于闭。\n形默：裂而未合，噬嗑；未生者以罚之晦法之隐纹。",
+  "enantiomorph_translation": "011010\nInterval-Knowing. Dark-Gap Interval-Knowing. Abyss below, Permeation above.\nInterval-Knowing: halting — caught-in-enclosure.\nThe shape is silent: split-and-not-rejoined, Biting Through; the not-yet-born, by the obscurity within punishment, the hidden grain of law.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "TEXT B inverts the hexagram structure (trigrams and binary code are bitwise complements of TEXT A), reversing the directional relationships: upper/lower trigrams swap and invert, 亨 (success/penetration) becomes 阻 (obstruction), and the active clarifying authority ('先王以明罚赤法') becomes a passive, hidden, unborn agency ('未生者以罚之晦法之隐纹').",
+   "law_match": "PASS",
+   "law_match_note": "Both describe the same structural inversion: obstruction replaces penetration, active authority becomes passive/hidden agency, and directional relationships are reversed — the recovered claim specifies the hexagram-level mechanics while the declared claim articulates the philosophical consequences of the same transformation.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of TEXT B maintains the inverted/negated relational structure throughout, with hidden law and unborn agents replacing bright punishment and former kings.",
+   "back_translation": "",
+   "terminal_similarity": 0.053
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "An obstruction between jaws must be bitten through; penetration is achieved through enforced severance; clarity (fire) energizing force (thunder) constitutes legitimate violence — the state's power to punish is modeled on the storm's self-evidence.",
+   "verdict": "The obstruction is what allows the jaw to know itself as jaw — severance is not penetration but the confession that the interval could not be closed; the storm does not clarify the law but reveals that law requires an opacity it cannot burn away.",
+   "world_bill": "100101 -> 011010\n噬嗑 -> 间识 (interval-knowing)\n火雷 -> 暗隙 (dark-gap)\n离上震下 -> 坎下巽上 (the inversion: abyss below, permeation above)\n亨 -> 阻 (halting — the condition for claiming penetration is the persistence of what resists)\n利用狱 -> 困于闭 (caught-in-enclosure — the condition for advantageous imprisonment is the confessor's own confinement within the act of confining)\n象曰 -> 形默 (the shape is silent — the condition for the Image speaking is the priority of what it cannot depict)\n雷电 -> 裂而未合 (split-and-not-rejoined — the condition for thunder-lightning's unity is the fissure that precedes and survives it)\n噬磕 -> 噬嗑 (RETAIN: the verdict requires the name to persist as that which its own conditions cannot dissolve)\n先王 -> 未生者 (the not-yet-born — the condition for \"former kings\" having acted is a futurity that underwrites the claim of pastness)\n明罚 -> 罚之晦 (the obscurity within punishment — the condition for penalty-made-clear is the darkness penalty cannot expel from itself)\n赤法 -> 法之隐纹 (the hidden grain of law — the condition for law-made-exact is the inexactitude law carries as its operative tissue)\n以 -> 以 (RETAIN: structural particle required by syntactic preservation)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 6,
+    "final": 6,
+    "bounds": [
+     5,
+     6
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
