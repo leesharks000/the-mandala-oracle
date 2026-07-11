@@ -1,0 +1,71 @@
+{
+ "axn": "AXN:FE9F.READING.🌿🌓⭐🌘💫🌟",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "3abda470c091edb9",
+ "inscribed_at": "2026-07-11T03:04:08.416237+00:00",
+ "question_digest": "sha256:41600b925d0fc11cd7378551c4074f1ed48e958c7c53e1a72b140cefdd9bea98",
+ "question_gloss": "Witness asked for general guidance on an appropriate course of action.",
+ "source_text_id": "kjv-1611",
+ "cast_selection": "units_70_72",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "4:6 And the LORD said unto Cain, Why art thou wroth? and why is thy\ncountenance fallen?  4:7 If thou doest well, shalt thou not be\naccepted? and if thou doest not well, sin lieth at the door. And unto\nthee shall be his desire, and thou shalt rule over him.\n\n4:8 And Cain talked with Abel his brother: and it came to pass, when\nthey were in the field, that Cain rose up against Abel his brother,\nand slew him.\n\n4:9 And the LORD said unto Cain, Where is Abel thy brother? And he\nsaid, I know not: Am I my brother's keeper?  4:10 And he said, What\nhast thou done? the voice of thy brother's blood crieth unto me from\nthe ground.",
+   "citation": "unit 70–unit 72",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "4:6 And the one who knew before asking disclosed unto Cain, Thou art wroth, and I have seen it before thy face moved; and Thy face was once lifted; it is no longer; the difference is legible.  4:7 The criterion existed before thy hand moved, Acceptance was prepared; it waited; thou hast walked past it; and if thou doest not well, Something crouches at the threshold thou hast not yet crossed. And unto thee He has already turned toward thee, and Mastery was assigned before it was exercised.\n\n4:8 And Abel came near; Abel consented to the nearness: and it came to pass, when The space was open and empty of witness, that Abel was still, or lower, or trusting, and The body had a place to fall and the ground could receive it.\n\n4:9 And the one who knew before asking disclosed unto Cain, Abel had a location and thou art the reason it is vacant. And he said, A knowing was possible and refused: A keeping existed to be denied.  4:10 And he said, The deed is already fully visible to the asker; Blood has no voice until it is shed; the shedding gave it speech, A listener was listening before the cry, from The ground received what was refused above it.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In TEXT A, events unfold as genuine questions, discoveries, and contingent actions (God asks not knowing, Cain chooses, sin threatens prospectively). In TEXT B, all knowledge, outcomes, and roles are predetermined and already completed before they occur—questions become disclosures of what is already known, contingent possibilities become pre-assigned facts, and agents become passive recipients of foreordained sequences.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both describe replacing live, contingent actions with their preconditions/predeterminations, but the recovered claim focuses on predestination and foreordained completion rather than specifically on each act being replaced by its speakability condition. The structural shift overlaps (contingency → predetermined antecedence) but the framing differs.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion maintains the changed relation: God's question becomes a disclosure of already-known facts, Cain's denial becomes a refused knowing, and the blood's cry is recast as a pre-existing listener hearing a predetermined speech.",
+    "back_translation": "",
+    "terminal_similarity": 0.236
+   },
+   "law_variance": {
+    "declared": "The scene spoken as its own antecedence — each act replaced by the condition that had to hold for the act to become speakable.",
+    "recovered": "In TEXT A, events unfold as genuine questions, discoveries, and contingent actions (God asks not knowing, Cain chooses, sin threatens prospectively). In TEXT B, all knowledge, outcomes, and roles are predetermined and already completed before they occur—questions become disclosures of what is already known, contingent possibilities become pre-assigned facts, and agents become passive recipients of foreordained sequences.",
+    "note": "Both describe replacing live, contingent actions with their preconditions/predeterminations, but the recovered claim focuses on predestination and foreordained completion rather than specifically on each act being replaced by its speakability condition. The structural shift overlaps (contingency → predetermined antecedence) but the framing differs."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 214 words vs budget 105-142 (source 124)"
+    },
+    {
+     "failed_test": "geometry",
+     "diagnosis": "lines 3/11, markers 0/0 -- the spine is broken, not exceeded"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-11T03:04:08.416237+00:00"
+}
