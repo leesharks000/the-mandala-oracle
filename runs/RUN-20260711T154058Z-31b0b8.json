@@ -1,0 +1,117 @@
+{
+ "run_id": "RUN-20260711T154058Z-31b0b8",
+ "schema": "run/v1",
+ "ts": "2026-07-11T15:40:58.194975+00:00",
+ "source_text_id": "iching",
+ "cast_selection": "units_8_10",
+ "citation": "unit 8–unit 10",
+ "operator": "BRIDE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "how do i het the help i need to clean and make the house suitable for my daughters even when i am having a hard time w mobility?",
+ "method": {
+  "commit": "e8a0e67af7fc6c28d3df0db73df65e62414496a8",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/e8a0e67af7fc6c28d3df0db73df65e62414496a8",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/e8a0e67af7fc6c28d3df0db73df65e62414496a8/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f3466ee638beb48a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "e8a0e67af7fc",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f3466ee638beb48a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Authority coheres the peripheral by threat; restraint accumulates without release; hierarchy preserves order through the vulnerable's deference to the powerful — unity, potential, and conduct are all governed by asymmetric power.",
+   "mutated_relation": "The peripheral constitutes the center it approaches; the withheld completes the cloud that carries it; the treader's step is the tiger's gait — power and vulnerability are mutual organs of a single motion.",
+   "beats": ""
+  },
+  "enantiomorph": "000010\n比 水地比 坎上坤下\n比：吉。原筮，元永贞，无咎。不宁方来，后夫凶。\n译文：《比卦》象征亲密无间，团结互助：吉祥。探本求原，再一次卜筮占问，知道要辅佐有德行的长者，长久不变地坚守正道，不会有祸害。连不安分的诸侯现在也来朝贺，还有少数来得迟的诸侯将有凶险\n象曰：地上有水，比；先王以建万国，亲诸侯。\n译文：《象辞》说：《比卦》的卦象为坤，(地)下坎(水)上，象征地上有水。大地上百川争流，流水又浸润着大地，表明地与水亲密无间，互相依存；以前的历代君主明白这个道理，所以分封土地，建立万国，安抚亲近各地诸侯\n111011\n小畜 风天小畜 巽上乾下\n小畜：亨；密云不雨，自我西郊。\n译文：《小畜卦》象征小有积蓄：亨通顺利；天空布满浓密的积云，但还没有下雨，云气是从城西郊区升起来的\n象曰：风行天上，\"小畜\"；君子以懿文德。\n译文：《象辞》说：《小畜卦》的卦象是乾(天)下巽(风)上，是风飘行天上的表象。风在天上吹，密云不雨，气候不好不坏，收成一般，所以只能\"小有积蓄\"；君子面对这种情况，于是修养美好的品德，用心做好文章等待发达的时机\n110111\n履 天泽履 乾上兑下\n履：履虎尾，不咥人，亨。\n译文：《履卦》象征小心行动：跟在老虎尾巴后面走路，老虎却没有回头咬人，当然亨通顺利\n象曰：上天下泽，\"履\"；君子以辩上下，定民志。\n译文：《象辞》说：《履卦》的卦象是兑(泽)下乾(天)上，为天下有泽之表象。上有天，下有泽，说明要处处小心行动，如行在沼泽之上，一不注意就会陷下去；君子要深明大义，分清上下尊卑名分，坚定百姓的意志，遵循礼仪而行，必然秩序井然",
+  "enantiomorph_translation": "000010\nBi — Water over Earth: Kan above, Kun below\nBi: Auspicious. Seek the original by divination, fundamentally, enduringly, and correctly — no blame. Those in unrest now come; the laggard lord faces misfortune.\nThe Image says: Water over earth — Bi; the former kings used this to establish the ten thousand states and draw the lords close.\n\n111011\nXiao Xu — Wind over Heaven: Xun above, Qian below\nXiao Xu: Penetrating; dense clouds but no rain, coming from my western outskirts.\nThe Image says: Wind moving over heaven — Xiao Xu; the noble man uses this to cultivate and refine his virtue and conduct.\n\n110111\nLü — Heaven over Lake: Qian above, Dui below\nLü: Treading on the tiger's tail — it does not bite the man — penetrating.\nThe Image says: Heaven above, lake below — Lü; the noble man uses this to distinguish high and low and settle the will of the people.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a complex relational inversion/mutual constitution.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The texts are identical in content and relational structure; only trivial whitespace differences exist.",
+   "back_translation": "",
+   "terminal_similarity": 1.0
+  },
+  "advisories": [
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   },
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a complex relational inversion/mutual constitution.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   },
+   {
+    "failed_test": "facing_fallback",
+    "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Authority coheres the peripheral by threat; restraint accumulates without release; hierarchy preserves order through the vulnerable's deference to the powerful — unity, potential, and conduct are all governed by asymmetric power.",
+   "verdict": "The peripheral constitutes the center it approaches; the withheld completes the cloud that carries it; the treader's step is the tiger's gait — power and vulnerability are mutual organs of a single motion.",
+   "world_bill": "",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 24,
+    "final": 24,
+    "bounds": [
+     20,
+     27
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
