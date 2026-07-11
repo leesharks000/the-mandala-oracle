@@ -46,9 +46,56 @@
    "glyphic": null,
    "advisories": [],
    "commentary": ""
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "100101\n噬嗑 火雷噬嗑 离上震下 \n噬嗑：亨，利用狱。\n译文：《噬磕卦》；象征咬合：亨通无阻，有利于使用刑法\n象曰：雷电，噬磕；先王以明罚赤法。\n译文：《象辞》说：《噬磕卦》的卦象是震(雷)下离(火)上，为雷电交击之表象。雷电交击，就像咬合一样；雷有威慑力，电能放光明，古代帝王效法这一现象，明其刑法，正其法令\n101001\n贲 山火贲 艮上离下 \n贲：亨，小利，有攸往。\n译文：《贲卦》象征装饰：亨通，利于柔小者前去行事\n象曰：山下有火，贲；君子以明庶政，无敢折狱。\n译文：《象辞》说：“《贲卦》的卦象是离(火)下艮(山)上，为山下燃烧着火焰之表象。山下火焰把山上草木万物照得通明，如同披彩，这就叫装饰。君子像火焰一样，使众多的政务清明，但却不能用修饰的方法来断官司\n000001\n剥 山地剥 艮上坤下 \n剥：不利有攸往。\n译文：《剥卦》象征剥落：不利于前去行事\n象曰：山附于地，剥；上以厚下安宅。\n译文：《象辞》说：《剥卦》的卦象是坤(地)下艮(山)上，好比高山受侵蚀而风化，逐渐接近于地面之表象，因而象征剥落；位居在上的人看到这一现象，应当加强基础，使它更加厚实，只有这样才能巩固其住所而不至发生危险\n100000\n复 地雷复 坤上震下 \n复：亨。出入无疾，朋来无咎。反复其道，七日来复。利有攸往。\n译文：《复卦》象征复归：亨通顺利。阳气从下面产生而逐渐向上行进没有阻碍，朋友前来也没有灾难危害。返回复归有一定的运动规律，经过七天就会前来复归。利于前去行事\n象曰：“雷在地中，复；先王以至日闭关，商旅不行，后不省方。\n译文：《象辞》说：《复卦》的卦象是震(雷)下坤(地)上，为雷在地中、阳气微弱地活动之表象，因而象征复归；从前的君主在阳气初生的冬至这一天关闭关口，使商人旅客停止活动，不外出经商、旅行，君主自己也不巡行视察四方",
+   "citation": "unit 21–unit 24",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "100101\n噬嗑 火雷噬嗑 离上震下\n噬嗑：亨，利用狱。\n译文：《噬嗑卦》；象征咬合：障碍已横于口中，故咬合方可命名；亨通无阻，有利于使用刑法\n象曰：雷电，噬嗑；先王以明罚敕法。\n译文：《象辞》说：《噬嗑卦》的卦象是震(雷)下离(火)上，为雷电交击之表象。障碍物已先在齿间，咬合之名方从其内而出；雷有威慑力，电能放光明，古代帝王效法这一现象，明其刑法，正其法令\n101001\n贲 山火贲 艮上离下\n贲：亨，小利，有攸往。\n译文：《贲卦》象征装饰：不足已先被感知，故装饰方可施用；亨通，利于柔小者前去行事\n象曰：山下有火，贲；君子以明庶政，无敢折狱。\n译文：《象辞》说：《贲卦》的卦象是离(火)下艮(山)上，为山下燃烧着火焰之表象。不足已先在素面之中，装饰之令方从其内而发；君子像火焰一样，使众多的政务清明，但却不能用修饰的方法来断官司\n000001\n剥 山地剥 艮上坤下\n剥：不利有攸往。\n译文：《剥卦》象征剥落：高度已先矗立在上，故剥落方可进行；不利于前去行事\n象曰：山附于地，剥；上以厚下安宅。\n译文：《象辞》说：《剥卦》的卦象是坤(地)下艮(山)上，好比高山受侵蚀而风化，逐渐接近于地面之表象，因而象征剥落；高度已先立于顶端，剥落之行方从其内而下；位居在上的人看到这一现象，应当加强基础，使它更加厚实，只有这样才能巩固其住所而不至发生危险\n100000\n复 地雷复 坤上震下\n复：亨。出入无疾，朋来无咎。反复其道，七日来复。利有攸往。\n译文：《复卦》象征复归：缺失已先彻底完成，故复归方有所指；亨通顺利。阳气从下面产生而逐渐向上行进没有阻碍，朋友前来也没有灾难危害。返回复归有一定的运动规律，经过七天就会前来复归。利于前去行事\n象曰：雷在地中，复；先王以至日闭关，商旅不行，后不省方。\n译文：《象辞》说：《复卦》的卦象是震(雷)下坤(地)上，为雷在地中、阳气微弱地活动之表象，因而象征复归；缺失已先尽于寂灭之内，复归之义方从其内而生；从前的君主在阳气初生的冬至这一天关闭关口，使商人旅客停止活动，不外出经商、旅行，君主自己也不巡行视察四方",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In TEXT B, each hexagram's interpretation is augmented with an explicit causal prerequisite: the condition that the hexagram names must already exist prior to the action (e.g., 'obstacle already present, therefore biting applies'; 'deficiency already perceived, therefore adornment applies'). TEXT A treats each hexagram symbol as a direct description without this 'X must precede Y for Y to be named' logical dependency.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural change: TEXT B introduces explicit causal prerequisites — each action/phase requires a prior condition to already exist before it can be named or applied, whereas TEXT A treats descriptions directly without this logical dependency.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final hexagram (复/Return) in TEXT B maintains the same inserted prerequisite pattern ('缺失已先彻底完成，故复归方有所指') consistent with the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.783
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.78 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "facing_fallback",
+     "diagnosis": "composer omitted the English facing; supplied by the apparatus translator"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-07T23:04:10.655913+00:00"
+ "last_updated": "2026-07-11T16:30:56.935702+00:00"
 }
