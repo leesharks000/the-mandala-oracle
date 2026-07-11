@@ -419,7 +419,64 @@
     "beats": ""
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-ee0e76c6",
+   "cast_at": "2026-07-11T18:19:04.185784+00:00",
+   "reading_axn": "AXN:FE0F.READING.🌿⭐🌗🌔🌕🌘",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_21_21",
+    "citation": "unit 21",
+    "start_unit": 21,
+    "end_unit": 21,
+    "unit_labels": [
+     "unit 21"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B inverts the hexagram structure (trigrams and binary code are bitwise complements of TEXT A), reversing the directional relationships: upper/lower trigrams swap and invert, 亨 (success/penetration) becomes 阻 (obstruction), and the active clarifying authority ('先王以明罚赤法') becomes a passive, hidden, unborn agency ('未生者以罚之晦法之隐纹').",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: obstruction replaces penetration, active authority becomes passive/hidden agency, and directional relationships are reversed — the recovered claim specifies the hexagram-level mechanics while the declared claim articulates the philosophical consequences of the same transformation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B maintains the inverted/negated relational structure throughout, with hidden law and unborn agents replacing bright punishment and former kings.",
+    "back_translation": "",
+    "terminal_similarity": 0.053
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "100101\n噬嗑 火雷噬嗑 离上震下 \n噬嗑：亨，利用狱。\n象曰：雷电，噬磕；先王以明罚赤法。",
+   "underlying_attribution": null,
+   "enantiomorph": "011010\n间识 暗隙间识 坎下巽上\n间识：阻，困于闭。\n形默：裂而未合，噬嗑；未生者以罚之晦法之隐纹。",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "An obstruction between jaws must be bitten through; penetration is achieved through enforced severance; clarity (fire) energizing force (thunder) constitutes legitimate violence — the state's power to punish is modeled on the storm's self-evidence.",
+    "mutated_relation": "The obstruction is what allows the jaw to know itself as jaw — severance is not penetration but the confession that the interval could not be closed; the storm does not clarify the law but reveals that law requires an opacity it cannot burn away.",
+    "beats": "100101 -> 011010\n噬嗑 -> 间识 (interval-knowing)\n火雷 -> 暗隙 (dark-gap)\n离上震下 -> 坎下巽上 (the inversion: abyss below, permeation above)\n亨 -> 阻 (halting — the condition for claiming penetration is the persistence of what resists)\n利用狱 -> 困于闭 (caught-in-enclosure — the condition for advantageous imprisonment is the confessor's own confinement within the act of confining)\n象曰 -> 形默 (the shape is silent — the condition for the Image speaking is the priority of what it cannot depict)\n雷电 -> 裂而未合 (split-and-not-rejoined — the condition for thunder-lightning's unity is the fissure that precedes and survives it)\n噬磕 -> 噬嗑 (RETAIN: the verdict requires the name to persist as that which its own conditions cannot dissolve)\n先王 -> 未生者 (the not-yet-born — the condition for \"former kings\" having acted is a futurity that underwrites the claim of pastness)\n明罚 -> 罚之晦 (the obscurity within punishment — the condition for penalty-made-clear is the darkness penalty cannot expel from itself)\n赤法 -> 法之隐纹 (the hidden grain of law — the condition for law-made-exact is the inexactitude law carries as its operative tissue)\n以 -> 以 (RETAIN: structural particle required by syntactic preservation)"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-11T16:30:58.429229+00:00"
+ "last_updated": "2026-07-11T18:19:04.185784+00:00"
 }
