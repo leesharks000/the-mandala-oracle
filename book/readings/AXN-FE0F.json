@@ -142,11 +142,49 @@
     }
    ],
    "commentary": "The transformation costs the witness the one certainty the source guaranteed — that he heard the number — and with it the power to stand outside the event as its chronicler; what remains is an army he belongs to, breathing."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "100101\n噬嗑 火雷噬嗑 离上震下 \n噬嗑：亨，利用狱。\n象曰：雷电，噬磕；先王以明罚赤法。",
+   "citation": "unit 21",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "011010\n间识 暗隙间识 坎下巽上\n间识：阻，困于闭。\n形默：裂而未合，噬嗑；未生者以罚之晦法之隐纹。",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B inverts the hexagram structure (trigrams and binary code are bitwise complements of TEXT A), reversing the directional relationships: upper/lower trigrams swap and invert, 亨 (success/penetration) becomes 阻 (obstruction), and the active clarifying authority ('先王以明罚赤法') becomes a passive, hidden, unborn agency ('未生者以罚之晦法之隐纹').",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same structural inversion: obstruction replaces penetration, active authority becomes passive/hidden agency, and directional relationships are reversed — the recovered claim specifies the hexagram-level mechanics while the declared claim articulates the philosophical consequences of the same transformation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of TEXT B maintains the inverted/negated relational structure throughout, with hidden law and unborn agents replacing bright punishment and former kings.",
+    "back_translation": "",
+    "terminal_similarity": 0.053
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-05T21:33:14.262944+00:00",
+ "last_updated": "2026-07-11T18:19:01.467178+00:00",
  "rite": [
   {
    "stage": "judgment",
