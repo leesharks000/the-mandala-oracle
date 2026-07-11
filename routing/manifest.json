@@ -1,11 +1,11 @@
 {
   "schema_version": "v1.0",
-  "built_at": "2026-07-10T07:51:00.229169+00:00",
+  "built_at": "2026-07-11T06:25:33.100856+00:00",
   "description": "Flat, static, machine-facing routing surface for Mandala Oracle interactions. Cross-linked JSONL indexes over conversations, readings, casts (transforms), and source texts.",
   "counts": {
-    "conversations": 127,
-    "readings": 76,
-    "casts": 136,
+    "conversations": 129,
+    "readings": 78,
+    "casts": 140,
     "sources": 12
   },
   "indexes": {
