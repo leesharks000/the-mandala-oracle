@@ -92,7 +92,9 @@
       "admissible": true,
       "text_file": "original.zh",
       "unit_split": "(?m)^(?=[01]{6}\\s*$)",
-      "menu": true
+      "menu": true,
+      "unit_atomic": true,
+      "cast_exclude_line": "^译文："
     },
     {
       "id": "kjv-1611",

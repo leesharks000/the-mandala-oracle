@@ -487,12 +487,12 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
                     # from the transform; it does not bar the rite from proceeding. Apparatus
                     # units are excluded, the cast narrows to the primary remainder, and the
                     # exclusion is inscribed in the expansion record.
-                    text = "\n\n".join(u["text"] for u in primary_units)
+                    text = apply_cast_exclusions("\n\n".join(u["text"] for u in primary_units), entry)
                     meta = dict(meta)
                     meta["cast_narrowed"] = ("apparatus unit(s) " + ", ".join(str(d) for d in dropped) +
                         " excluded per MANUS ruling 2026-07-02; cast narrowed to the primary remainder")
                 else:
-                    text = text[sel_units[0]["s"]:sel_units[-1]["e"]] if "s" in sel_units[0] else "\n\n".join(u["text"] for u in sel_units)
+                    text = apply_cast_exclusions(text[sel_units[0]["s"]:sel_units[-1]["e"]] if "s" in sel_units[0] else "\n\n".join(u["text"] for u in sel_units), entry)
                 attrs = {u.get("attribution") for u in primary_units}
                 meta = dict(meta)
                 meta["underlying_attribution"] = (attrs.pop() if len(attrs) == 1 else
@@ -4110,6 +4110,23 @@ def unit_is_primary(u: dict, entry: dict) -> bool:
         return bool((a and re.search(pa, a)) or re.search(pa, u.get("text", "")[:240]))
     return not (a and _ATTR_APPARATUS_RE.search(a))
 
+def apply_cast_exclusions(text: str, entry: dict | None) -> str:
+    """Per-text display-layer exclusion (MANUS, 2026-07-11, iching workflow):
+    lines matching entry["cast_exclude_line"] are display apparatus (e.g. the
+    译文 modern-commentary layer) and never enter the cast text — the operator
+    transforms the canonical layer only. Applied at every cast-text join so
+    compiler, gates, translation, and inscription all see the same text.
+    segment_units and the expansion basis_hash are untouched: unit indices
+    and historical anchors keep their basis."""
+    pat = (entry or {}).get("cast_exclude_line")
+    if not pat:
+        return text
+    rx = re.compile(pat)
+    kept = [ln for ln in text.splitlines() if not rx.match(ln.strip())]
+    out = re.sub(r"\n{3,}", "\n\n", "\n".join(kept)).strip()
+    return out or text
+
+
 def judgment_select(question: str, source_title: str, units: list[dict],
                     full_text: str, api_key: str, _entry: dict | None = None) -> tuple[dict, str]:
     _max_u, _min_u = WINDOW_MAX_UNITS, 1
@@ -4162,7 +4179,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         # Always join by explicit stanza break — never slice raw source text
         # (which would include consumed inter-unit boundaries like "Day and
         # Night N" headers).
-        text_out = "\n\n".join(u["text"] for u in units[start:end + 1])
+        text_out = apply_cast_exclusions("\n\n".join(u["text"] for u in units[start:end + 1]), _entry)
         return {"start": start + 1, "end": end + 1,
                 "citation": units[start]["label"] if start == end else f"{units[start]['label']}–{units[end]['label']}",
                 "text": text_out,
@@ -4233,8 +4250,9 @@ def judgment_select(question: str, source_title: str, units: list[dict],
         # unit_split consumes as separators), leaking apparatus into the cast.
         # Joining by "\n\n" uses only the unit texts themselves (already correct
         # from segment_units) and inserts a canonical stanza break between them.
-        span = "\n\n".join(u["text"] for u in units[a-1:b])
-        if not (90 <= len(span) <= MAX_CAST_CHARS): raise ValueError("size")
+        span = apply_cast_exclusions("\n\n".join(u["text"] for u in units[a-1:b]), _entry)
+        _floor = 40 if (_unit_atomic or (_entry or {}).get("cast_exclude_line")) else 90
+        if not (_floor <= len(span) <= MAX_CAST_CHARS): raise ValueError("size")
         attrs = {u.get("attribution") for u in units[a-1:b]}
         if len(attrs) > 1: raise ValueError("attribution crossing")
         if not all(unit_is_primary(u, _entry) for u in units[a-1:b]):
@@ -4253,7 +4271,7 @@ def judgment_select(question: str, source_title: str, units: list[dict],
                    and unit_is_primary(units[b], _entry)
                    and chars + len(units[b]["text"]) <= WINDOW_MAX_CHARS):
                 b += 1
-                span = "\n\n".join(u["text"] for u in units[a-1:b])
+                span = apply_cast_exclusions("\n\n".join(u["text"] for u in units[a-1:b]), _entry)
                 chars = len(span)
         cit = units[a-1]["label"] if a == b else f"{units[a-1]['label']}–{units[b-1]['label']}"
         return {"start": a, "end": b, "citation": cit, "text": span,
