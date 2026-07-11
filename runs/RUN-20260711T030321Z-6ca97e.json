@@ -1,0 +1,113 @@
+{
+ "run_id": "RUN-20260711T030321Z-6ca97e",
+ "schema": "run/v1",
+ "ts": "2026-07-11T03:03:21.212374+00:00",
+ "source_text_id": "kjv-1611",
+ "cast_selection": "units_70_72",
+ "citation": "unit 70–unit 72",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what should i do?",
+ "method": {
+  "commit": "27d611638687e648e0e27572a01ed6925ff3cefe",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/27d611638687e648e0e27572a01ed6925ff3cefe",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/27d611638687e648e0e27572a01ed6925ff3cefe/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "f3466ee638beb48a",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "27d611638687",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "f3466ee638beb48a",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Every utterance in the scene — divine question, fraternal speech, murder, denial — is structurally posterior to a condition already accomplished before the utterance occurs; the drama is the surfacing of what was settled prior to its enactment.",
+   "mutated_relation": "The scene spoken as its own antecedence — each act replaced by the condition that had to hold for the act to become speakable.",
+   "beats": "the LORD said -> the one who knew before asking disclosed\nWhy art thou wroth -> Thou art wroth, and I have seen it before thy face moved\nwhy is thy countenance fallen -> Thy face was once lifted; it is no longer; the difference is legible\nIf thou doest well -> The criterion existed before thy hand moved\nshalt thou not be accepted -> Acceptance was prepared; it waited; thou hast walked past it\nsin lieth at the door -> Something crouches at the threshold thou hast not yet crossed\nhis desire -> He has already turned toward thee\nthou shalt rule over him -> Mastery was assigned before it was exercised\nCain talked with Abel his brother -> Abel came near; Abel consented to the nearness\nin the field -> The space was open and empty of witness\nCain rose up against Abel -> Abel was still, or lower, or trusting\nslew him -> The body had a place to fall and the ground could receive it\nWhere is Abel thy brother -> Abel had a location and thou art the reason it is vacant\nI know not -> A knowing was possible and refused\nAm I my brother's keeper -> A keeping existed to be denied\nWhat hast thou done -> The deed is already fully visible to the asker\nthe voice of thy brother's blood -> Blood has no voice until it is shed; the shedding gave it speech\ncrieth unto me -> A listener was listening before the cry\nfrom the ground -> The ground received what was refused above it"
+  },
+  "enantiomorph": "4:6 And the one who knew before asking disclosed unto Cain, Thou art wroth, and I have seen it before thy face moved; and Thy face was once lifted; it is no longer; the difference is legible.  4:7 The criterion existed before thy hand moved, Acceptance was prepared; it waited; thou hast walked past it; and if thou doest not well, Something crouches at the threshold thou hast not yet crossed. And unto thee He has already turned toward thee, and Mastery was assigned before it was exercised.\n\n4:8 And Abel came near; Abel consented to the nearness: and it came to pass, when The space was open and empty of witness, that Abel was still, or lower, or trusting, and The body had a place to fall and the ground could receive it.\n\n4:9 And the one who knew before asking disclosed unto Cain, Abel had a location and thou art the reason it is vacant. And he said, A knowing was possible and refused: A keeping existed to be denied.  4:10 And he said, The deed is already fully visible to the asker; Blood has no voice until it is shed; the shedding gave it speech, A listener was listening before the cry, from The ground received what was refused above it.",
+  "enantiomorph_translation": "4:6 And the one who knew before asking disclosed unto Cain, Thou art wroth, and I have seen it before thy face moved; and Thy face was once lifted; it is no longer; the difference is legible.  4:7 The criterion existed before thy hand moved, Acceptance was prepared; it waited; thou hast walked past it; and if thou doest not well, Something crouches at the threshold thou hast not yet crossed. And unto thee He has already turned toward thee, and Mastery was assigned before it was exercised.\n\n4:8 And Abel came near; Abel consented to the nearness: and it came to pass, when The space was open and empty of witness, that Abel was still, or lower, or trusting, and The body had a place to fall and the ground could receive it.\n\n4:9 And the one who knew before asking disclosed unto Cain, Abel had a location and thou art the reason it is vacant. And he said, A knowing was possible and refused: A keeping existed to be denied.  4:10 And he said, The deed is already fully visible to the asker; Blood has no voice until it is shed; the shedding gave it speech, A listener was listening before the cry, from The ground received what was refused above it.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In TEXT A, events unfold as genuine questions, discoveries, and contingent actions (God asks not knowing, Cain chooses, sin threatens prospectively). In TEXT B, all knowledge, outcomes, and roles are predetermined and already completed before they occur—questions become disclosures of what is already known, contingent possibilities become pre-assigned facts, and agents become passive recipients of foreordained sequences.",
+   "law_match": "ADJACENT",
+   "law_match_note": "Both describe replacing live, contingent actions with their preconditions/predeterminations, but the recovered claim focuses on predestination and foreordained completion rather than specifically on each act being replaced by its speakability condition. The structural shift overlaps (contingency → predetermined antecedence) but the framing differs.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion maintains the changed relation: God's question becomes a disclosure of already-known facts, Cain's denial becomes a refused knowing, and the blood's cry is recast as a pre-existing listener hearing a predetermined speech.",
+   "back_translation": "",
+   "terminal_similarity": 0.236
+  },
+  "advisories": [
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 214 words vs budget 105-142 (source 124)"
+   },
+   {
+    "failed_test": "geometry",
+    "diagnosis": "lines 3/11, markers 0/0 -- the spine is broken, not exceeded"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "The scene spoken as its own antecedence — each act replaced by the condition that had to hold for the act to become speakable.",
+   "recovered": "In TEXT A, events unfold as genuine questions, discoveries, and contingent actions (God asks not knowing, Cain chooses, sin threatens prospectively). In TEXT B, all knowledge, outcomes, and roles are predetermined and already completed before they occur—questions become disclosures of what is already known, contingent possibilities become pre-assigned facts, and agents become passive recipients of foreordained sequences.",
+   "note": "Both describe replacing live, contingent actions with their preconditions/predeterminations, but the recovered claim focuses on predestination and foreordained completion rather than specifically on each act being replaced by its speakability condition. The structural shift overlaps (contingency → predetermined antecedence) but the framing differs."
+  },
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Every utterance in the scene — divine question, fraternal speech, murder, denial — is structurally posterior to a condition already accomplished before the utterance occurs; the drama is the surfacing of what was settled prior to its enactment.",
+   "verdict": "The scene spoken as its own antecedence — each act replaced by the condition that had to hold for the act to become speakable.",
+   "world_bill": "the LORD said -> the one who knew before asking disclosed\nWhy art thou wroth -> Thou art wroth, and I have seen it before thy face moved\nwhy is thy countenance fallen -> Thy face was once lifted; it is no longer; the difference is legible\nIf thou doest well -> The criterion existed before thy hand moved\nshalt thou not be accepted -> Acceptance was prepared; it waited; thou hast walked past it\nsin lieth at the door -> Something crouches at the threshold thou hast not yet crossed\nhis desire -> He has already turned toward thee\nthou shalt rule over him -> Mastery was assigned before it was exercised\nCain talked with Abel his brother -> Abel came near; Abel consented to the nearness\nin the field -> The space was open and empty of witness\nCain rose up against Abel -> Abel was still, or lower, or trusting\nslew him -> The body had a place to fall and the ground could receive it\nWhere is Abel thy brother -> Abel had a location and thou art the reason it is vacant\nI know not -> A knowing was possible and refused\nAm I my brother's keeper -> A keeping existed to be denied\nWhat hast thou done -> The deed is already fully visible to the asker\nthe voice of thy brother's blood -> Blood has no voice until it is shed; the shedding gave it speech\ncrieth unto me -> A listener was listening before the cry\nfrom the ground -> The ground received what was refused above it",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 124,
+    "final": 214,
+    "bounds": [
+     105,
+     142
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
