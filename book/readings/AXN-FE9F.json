@@ -62,18 +62,26 @@
      "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Blood under the ground speaks first: the keeper who denied keeping has already been answered before he forms the question."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-11T03:04:13.704371+00:00",
+ "last_updated": "2026-07-11T03:04:21.394714+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-11T03:04:13.704371+00:00",
    "text": "The rite opens here — on the field, after the fact, in the negative space between a question God has already answered and a murder that has already occurred. What fell to the invisible Judgment is the axis of foreclosed response: the place where the text has sealed shut against every direction but one. God asks *why is thy countenance fallen* knowing. God asks *where is Abel* knowing. The operator that comes first into a rotation is the one the text most fiercely resists — and what these three verses resist is the possibility that being spoken to changes anything. What the casting will traverse is that resistance: the cost that the speaking bore, the foreclosure the text performs in each of its questions, the weight held in *crieth unto me from the ground* — a voice that required the ground to carry it because the living could not. The rite is Cranes's now."
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-11T03:04:21.394714+00:00",
+   "text": "Blood under the ground speaks first: the keeper who denied keeping has already been answered before he forms the question.",
+   "operator": "SHADOW"
   }
  ]
 }
