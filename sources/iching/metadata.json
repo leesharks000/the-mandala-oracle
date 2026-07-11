@@ -13,5 +13,51 @@
   "transform_classification": "primary_literary",
   "content_subtype": "divinatory-classic",
   "classification_note": "Named by Lee for transform availability 2026-07-01. Foundational Chinese divinatory-philosophical classic. Zodiacal assignment: Sen Kuro / Virgo per Lee's adjudication 2026-07-01. Chinese original with hexagram judgments (卦辞), Image commentaries (象曰), Duan commentaries (彖曰), and line commentaries (爻辞) — plus modern Chinese line-by-line paraphrase. English Legge translation pending followup pass.",
-  "status": "source acquired via hontsev/OpenMomordica GitHub — 2026-07-01"
+  "status": "source acquired via hontsev/OpenMomordica GitHub — 2026-07-01",
+  "casting_workflow": {
+    "schema": "per-text-workflow-v1",
+    "unit": "hexagram",
+    "units_per_cast": 1,
+    "unit_boundary": "^[01]{6}$",
+    "unit_note": "One hexagram (卦辞 + 象辞) is the lyric unit. Ranges remain available for special casts; default cast = 1 unit. Supersedes the three-hexagram span shown in TX-60176854.",
+    "layers": {
+      "classical": {
+        "role": "canonical",
+        "transform_scope": true,
+        "note": "卦辞 and 象辞 classical text only — the operator transforms this layer (~100–200 chars)"
+      },
+      "yiwen": {
+        "role": "display",
+        "transform_scope": false,
+        "marker": "译文：",
+        "note": "modern Chinese commentary renders statically; never enters the LLM pipeline"
+      },
+      "english": {
+        "role": "display",
+        "transform_scope": false,
+        "note": "English rendering displays statically; translation pass applies to the operator's transform output only, not the source layers"
+      }
+    },
+    "figure": {
+      "renderer": "hexagram-svg",
+      "input": "unit binary string (bottom line = last bit)",
+      "style": "six bars, solid=yang broken=yin, inline SVG; trigram pair rendered small beside main figure; no external image assets — the figure is generated, license-free"
+    },
+    "display_template": "hexagram-card",
+    "card_anatomy": [
+      "figure-svg",
+      "卦名 large + pinyin + King Wen number",
+      "structure line (e.g. 水地比 · Water over Earth)",
+      "卦辞 distinguished type",
+      "象辞",
+      "collapsible 译文",
+      "collapsible English",
+      "operator transform"
+    ],
+    "moving_lines": {
+      "status": "deferred",
+      "note": "classical present→future mechanic as possible future two-unit workflow; feature decision, not part of this fix"
+    },
+    "rationale": "MANUS directive 2026-07-11: restrict casting length for non-English canonical texts; transform-then-translate over three hexagrams duplicated the full bilingual source twice per reading. Unit reduction (3→1) plus layer separation (transform classical only) cuts LLM cost ~6x and returns the reading to one card, one hexagram, one breath."
+  }
 }
