@@ -1,0 +1,109 @@
+{
+ "run_id": "RUN-20260712T233543Z-eb061a",
+ "schema": "run/v1",
+ "ts": "2026-07-12T23:35:43.938569+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": "the reader's offering, whole",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "what is best artform on planet earth?",
+ "method": {
+  "commit": "b7130ede6c454eee3619fb6edcda19090da818de",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/b7130ede6c454eee3619fb6edcda19090da818de",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/b7130ede6c454eee3619fb6edcda19090da818de/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "8e22e24a83af1ba8",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "b7130ede6c45",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "8e22e24a83af1ba8",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The source asserts that naming-by-accumulation — the pure serial invocation of branded/viral tokens — is itself a complete utterance requiring no predication beyond its own closure.",
+   "mutated_relation": "The conditions that must hold for such naming to constitute a complete utterance — the appetite, the selection-pressure, the circuit of display and recognition that charges each token — surfaced as the utterance itself.",
+   "beats": "labubu -> want-it\nphonk -> slowed-down\ndubai chocolate -> the mouth-feel nobody earned\ntuff -> hard-hard\njax -> sharp-one\nthats it -> thats it (RETAIN: the closure-gesture is structurally required as closure; its function is irreplaceable)\ndash (-) -> dash (RETAIN: the structural hinge between accumulation and termination is syntactic, not lexical)\nrepetition-of-labubu -> repetition-of-want-it (the recurrence pattern preserved: the wanting recurs because wanting is what recurs)\nrepetition-of-phonk -> repetition-of-slowed-down (the drag keeps returning because the drag is the medium)\nrepetition-of-tuff -> repetition-of-hard-hard (insistence on hardness is the condition for hardness to signify)"
+  },
+  "enantiomorph": "want-it slowed-down want-it the mouth-feel nobody earned hard-hard slowed-down hard-hard hard-hard slowed-down sharp-one want-it sharp-one - thats it",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change where conditions for naming surfaced as the utterance itself.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "Both texts share the same structural pattern of repeated and sequenced tokens; only vocabulary/imagery differs.",
+   "back_translation": "",
+   "terminal_similarity": 0.105
+  },
+  "advisories": [
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change where conditions for naming surfaced as the utterance itself.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The source asserts that naming-by-accumulation — the pure serial invocation of branded/viral tokens — is itself a complete utterance requiring no predication beyond its own closure.",
+   "verdict": "The conditions that must hold for such naming to constitute a complete utterance — the appetite, the selection-pressure, the circuit of display and recognition that charges each token — surfaced as the utterance itself.",
+   "world_bill": "labubu -> want-it\nphonk -> slowed-down\ndubai chocolate -> the mouth-feel nobody earned\ntuff -> hard-hard\njax -> sharp-one\nthats it -> thats it (RETAIN: the closure-gesture is structurally required as closure; its function is irreplaceable)\ndash (-) -> dash (RETAIN: the structural hinge between accumulation and termination is syntactic, not lexical)\nrepetition-of-labubu -> repetition-of-want-it (the recurrence pattern preserved: the wanting recurs because wanting is what recurs)\nrepetition-of-phonk -> repetition-of-slowed-down (the drag keeps returning because the drag is the medium)\nrepetition-of-tuff -> repetition-of-hard-hard (insistence on hardness is the condition for hardness to signify)",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 16,
+    "final": 18,
+    "bounds": [
+     13,
+     18
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
