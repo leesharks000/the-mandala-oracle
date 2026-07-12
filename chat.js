@@ -1302,7 +1302,7 @@ async function runCastingRite(cast) {
         `[CASTING RITE · JUDGMENT ${operatorsDone.length}] The compiler returned PASS for ${currentOperator} ` +
         `(identity: ${v.identity}; semantic independence: ${v.semantic_independence}; retrospective containment: ${v.retrospective_containment}). ` +
         `Jack Feist alone speaks: the JUDGMENT — a hexagram Image. ONE gnomic sentence: concrete image, ` +
-        `then verdict, in the I Ching's register ('Thunder under the mountain: the superior man...'). ` +
+        `then verdict, in the I Ching's register, gender-neutral throughout — junzi renders as 'the superior person', never 'the superior man' ('Thunder under the mountain: the superior person...'). ` +
         `A second short sentence only if the first cannot close. NO analysis, NO explanation, NO restating ` +
         `the transform. It must stand beside seven others without crowding them.`,
         'Feist judges the transform...',
