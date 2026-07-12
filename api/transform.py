@@ -4713,12 +4713,20 @@ class handler(BaseHTTPRequestHandler):
                     try:
                         entry_meta = next((e for e in _load_manifest()
                                            if e["id"] == body.get("source_text_id", "")), None)
-                        exp = append_expansion(entry_meta, _source_full_text(entry_meta),
-                                               body.get("cast_selection"), body.get("citation"),
-                                               transform_block,
-                                               parsed["layer_a"].get("spatial_form", {}),
-                                               inscription_result, invoking)
-                        inscription_result["expansion"] = exp
+                        if entry_meta is None:
+                            # Reader-supplied offering (or unmanifested source): there is
+                            # no canon ledger to expand — the reading's own inscription is
+                            # the complete record. _source_full_text(None) must never be
+                            # reached; arguments evaluate before append_expansion's own
+                            # reader guard can decline (the 2026-07-12 phonk-poem TypeError).
+                            inscription_result["expansion"] = None
+                        else:
+                            exp = append_expansion(entry_meta, _source_full_text(entry_meta),
+                                                   body.get("cast_selection"), body.get("citation"),
+                                                   transform_block,
+                                                   parsed["layer_a"].get("spatial_form", {}),
+                                                   inscription_result, invoking)
+                            inscription_result["expansion"] = exp
                     except Exception as ee:
                         inscription_result["expansion"] = {
                             "appended": False,
