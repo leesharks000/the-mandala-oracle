@@ -4309,7 +4309,7 @@ class handler(BaseHTTPRequestHandler):
         # admissible sources and the operator table (no client hardcoding).
         menu = [x for x in list_admissible_sources()
                 if next((e.get("menu", False) for e in _load_manifest() if e["id"] == x["id"]), False)]
-        menu.sort(key=lambda x: x["title"].lower())
+        menu.sort(key=lambda x: (x.get("title") or "").lower())
         return self._json(200, {
             "operators": OPERATORS,
             "sources": menu,   # constrained testing set (MANUS, 2026-07-02); full corpus stays in data

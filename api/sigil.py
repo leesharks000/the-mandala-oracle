@@ -712,9 +712,9 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
         if hex_code in {"abc", "ace", "add", "fad", "fee", "bed"}:
             continue
         for rec in metadata:
-            if rec.get("hex", "").lower() == hex_code:
+            if (rec.get("hex") or "").lower() == hex_code:
                 add(rec, 100)
-            elif rec.get("axn", "").lower().startswith(f"axn:{hex_code}"):
+            elif (rec.get("axn") or "").lower().startswith(f"axn:{hex_code}"):
                 add(rec, 100)
 
     # ── Strategy 2: Exact-phrase substring match (quoted) ──────────────────
@@ -727,7 +727,7 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
         for rec in metadata:
             title = (rec.get("title", "") or "").lower()
             desc = (rec.get("description", "") or "").lower()
-            kws = " ".join(rec.get("keywords", []) or []).lower()
+            kws = " ".join(k for k in (rec.get("keywords") or []) if k).lower()
             score = 0
             if phrase in title:
                 score += 50  # exact phrase in title = very strong match
@@ -748,7 +748,7 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
             for rec in metadata:
                 title = (rec.get("title", "") or "").lower()
                 desc = (rec.get("description", "") or "").lower()
-                kws = " ".join(rec.get("keywords", []) or []).lower()
+                kws = " ".join(k for k in (rec.get("keywords") or []) if k).lower()
                 score = 0
                 if phrase in title:
                     score += 40
@@ -765,7 +765,7 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
         for rec in metadata:
             title_t = tokenize(rec.get("title", ""))
             desc_t = tokenize(rec.get("description", ""))
-            kw_t = tokenize(" ".join(rec.get("keywords", []) or []))
+            kw_t = tokenize(" ".join(k for k in (rec.get("keywords") or []) if k))
             fam_t = tokenize(rec.get("family", ""))
 
             score = (
@@ -777,7 +777,7 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
 
             # Boost direct hex matches (covered above too, but token-mode catches more)
             for tok in q_tokens:
-                if rec.get("hex", "").lower() == tok:
+                if (rec.get("hex") or "").lower() == tok:
                     score += 10
 
             if score > 0:
@@ -893,7 +893,7 @@ def _resolve_axn_to_record(axn_input: str) -> dict | None:
 
     # Match against the record's stored hex field (which is already lower-case).
     for rec in metadata:
-        if rec.get("hex", "").lower() == hex_code:
+        if (rec.get("hex") or "").lower() == hex_code:
             return rec
 
     return None
@@ -982,7 +982,7 @@ def fetch_axn(axn_input: str) -> dict:
     date = rec.get("date")
     full_text_path = rec.get("full_text_path")
     deposit_number = rec.get("deposit_number")
-    hex_code = rec.get("hex", "").lower()
+    hex_code = (rec.get("hex") or "").lower()
 
     # Check the warm-state body cache first (keyed by hex, which is invariant).
     if hex_code in _fetch_body_cache:
@@ -1341,7 +1341,7 @@ class handler(BaseHTTPRequestHandler):
             length = int(self.headers.get("Content-Length", 0))
             body = json.loads(self.rfile.read(length)) if length else {}
 
-            message = body.get("message", "").strip()
+            message = (body.get("message") or "").strip()
             history = body.get("history", [])
             mode = body.get("mode", "sabbath")
             api_key = body.get("anthropic_key") or os.environ.get("ANTHROPIC_API_KEY")
