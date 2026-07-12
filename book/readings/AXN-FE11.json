@@ -1,0 +1,67 @@
+{
+ "axn": "AXN:FE11.READING.🌒🌖🌖🌖⭐🌿",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "cbe4cba417ddaf72",
+ "inscribed_at": "2026-07-12T23:36:10.843667+00:00",
+ "question_digest": "sha256:33a4d69d06a7d49f687b38dded9273bd1283e3e4969afd069db019deb6aeb127",
+ "question_gloss": "Best artform according to subjective aesthetic and cultural values varies by individual preference and tradition.",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "labubu phonk labubu dubai chocolate tuff phonk tuff tuff phonk jax labubu jax - thats it",
+   "citation": "the reader's offering, whole",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "want-it slowed-down want-it the mouth-feel nobody earned hard-hard slowed-down hard-hard hard-hard slowed-down sharp-one want-it sharp-one - thats it",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change where conditions for naming surfaced as the utterance itself.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "Both texts share the same structural pattern of repeated and sequenced tokens; only vocabulary/imagery differs.",
+    "back_translation": "",
+    "terminal_similarity": 0.105
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes a specific relational change where conditions for naming surfaced as the utterance itself.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-12T23:36:10.843667+00:00"
+}
