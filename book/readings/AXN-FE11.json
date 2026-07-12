@@ -58,10 +58,20 @@
      "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The mouth slow-opens before the thing is named: the superior man does not arrive at want by speaking it — he arrives by feeling the weight of the slowing."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-12T23:36:10.843667+00:00"
+ "last_updated": "2026-07-12T23:36:23.579148+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-12T23:36:23.579148+00:00",
+   "text": "The mouth slow-opens before the thing is named: the superior man does not arrive at want by speaking it — he arrives by feeling the weight of the slowing.",
+   "operator": "SHADOW"
+  }
+ ]
 }
