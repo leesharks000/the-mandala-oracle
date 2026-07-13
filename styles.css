@@ -880,3 +880,11 @@ body {
 .message-content a.chip{font-family:var(--mono);font-size:.72em;background:rgba(212,185,122,.08);border:1px solid var(--accent-dim);border-radius:9px;padding:1px 7px;color:var(--accent);white-space:nowrap;text-decoration:none;vertical-align:baseline;}
 .message-content a.chip:hover{border-color:var(--accent);}
 .message-content a:not(.chip){color:var(--link);}
+
+.msg-tools{margin-top:4px;}
+.copybtn{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;color:var(--text-tertiary);background:none;border:1px solid transparent;border-radius:5px;padding:2px 7px;cursor:pointer;}
+.copybtn:hover{color:var(--text-secondary);border-color:var(--border);}
+.copybtn.copied{color:#3f9e6e;}
+.axn-keyline{margin-top:8px;}
+.copybtn.key{color:var(--accent);border:1px solid var(--accent-dim);background:rgba(212,185,122,.06);font-size:10.5px;padding:5px 10px;white-space:normal;word-break:break-all;text-align:left;}
+.copybtn.key:hover{border-color:var(--accent);}

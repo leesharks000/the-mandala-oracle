@@ -334,9 +334,12 @@ function appendUserMessage(content) {
   const contentEl = document.createElement('div');
   contentEl.className = 'message-content';
   contentEl.style.whiteSpace = 'pre-wrap';
-  contentEl.innerHTML = renderVoiceMarks(content);
+  contentEl.textContent = content;  // the witness's words are not mark-processed
   wrap.appendChild(roleLabel);
   wrap.appendChild(contentEl);
+  const utools = document.createElement('div'); utools.className = 'msg-tools';
+  utools.appendChild(makeCopyBtn(content, '\u29C9 copy'));
+  wrap.appendChild(utools);
   messagesEl.appendChild(wrap);
   messagesEl.scrollTop = messagesEl.scrollHeight;
   return wrap;
@@ -361,10 +364,24 @@ function appendHeteronymMessage(speaker, content, opts = {}) {
   roleLabel.textContent = speaker;
   const contentEl = document.createElement('div');
   contentEl.className = 'message-content';
-  contentEl.textContent = content;
+  contentEl.style.whiteSpace = 'pre-wrap';
+  contentEl.innerHTML = renderVoiceMarks(content);  // the scribe's marks live here
   if (opts.dim) contentEl.style.opacity = '0.5';
   wrap.appendChild(roleLabel);
   wrap.appendChild(contentEl);
+  // ── the carry line: a Book AXN spoken here is a return key ──
+  const bookKeys = [...new Set(String(content).match(BOOK_AXN_RE) || [])].slice(0, 2);
+  for (const key of bookKeys) {
+    const kl = document.createElement('div');
+    kl.className = 'axn-keyline';
+    kl.appendChild(makeCopyBtn(key, '\u29C9 carry ' + key, 'key'));
+    wrap.appendChild(kl);
+  }
+  if (!opts.dim) {
+    const tools = document.createElement('div'); tools.className = 'msg-tools';
+    tools.appendChild(makeCopyBtn(content, '\u29C9 copy'));
+    wrap.appendChild(tools);
+  }
   messagesEl.appendChild(wrap);
   messagesEl.scrollTop = messagesEl.scrollHeight;
   return wrap;
@@ -385,6 +402,38 @@ function appendErrorMessage(content) {
   messagesEl.scrollTop = messagesEl.scrollHeight;
   return wrap;
 }
+
+function copyToClipboard(txt, btn) {
+  const done = () => {
+    if (!btn) return;
+    const prev = btn.textContent;
+    btn.textContent = '\u2713 carried';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = prev; btn.classList.remove('copied'); }, 1400);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(txt).then(done).catch(() => fallbackCopy(txt, done));
+  } else {
+    fallbackCopy(txt, done);
+  }
+}
+function fallbackCopy(txt, done) {
+  const ta = document.createElement('textarea');
+  ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); } catch (e) { /* nothing to do */ }
+  document.body.removeChild(ta); done();
+}
+function makeCopyBtn(txt, label, cls) {
+  const b = document.createElement('button');
+  b.type = 'button'; b.className = 'copybtn' + (cls ? ' ' + cls : '');
+  b.textContent = label;
+  b.setAttribute('aria-label', 'copy: ' + txt.slice(0, 60));
+  b.onclick = () => copyToClipboard(txt, b);
+  return b;
+}
+// Book AXNs (READING/CONVERSATION) in speech are return keys — pocketable.
+const BOOK_AXN_RE = /AXN:[0-9A-Fa-f]{3,6}\.(?:READING|CONVERSATION)(?:\.[^\s\])>,;!?]+)?/g;
 
 function renderVoiceMarks(text) {
   // The Marks (EA-APPARATUS-01 v0.3): Sigil's speech may carry **terminus**,
@@ -1038,6 +1087,7 @@ function renderInscriptionCard(insc) {
     sp(`INSCRIBED \u00B7 ${String(insc.mode || '').toUpperCase()}`, 'st');
     sp('OBJECT: OPEN \u2014 CANON: NOT YET ELIGIBLE', 'st');
     sp(new Date().toISOString().slice(0, 10));
+    if (insc.reading_axn) head.appendChild(makeCopyBtn(insc.reading_axn, '\u29C9 carry', 'key'));
   }
   card.appendChild(head);
   // ── apparatus: doors — the itinerarium (verbs only, three at most) ──
