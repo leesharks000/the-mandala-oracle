@@ -888,3 +888,13 @@ body {
 .axn-keyline{margin-top:8px;}
 .copybtn.key{color:var(--accent);border:1px solid var(--accent-dim);background:rgba(212,185,122,.06);font-size:10.5px;padding:5px 10px;white-space:normal;word-break:break-all;text-align:left;}
 .copybtn.key:hover{border-color:var(--accent);}
+
+/* ── final pass: chrome repairs (Chorus review 2026-07-13) ── */
+#sabbath-strip{margin:4px 14px 0;padding:5px 10px;font-size:9px;gap:5px 9px;background:rgba(12,15,20,.6);border-color:rgba(60,65,75,.3);border-bottom:1px solid var(--accent-dim);border-radius:6px;}
+#sabbath-strip .st{padding:0 6px;border-color:rgba(60,65,75,.35);}
+#share-toggle{font-family:var(--mono) !important;font-size:11px !important;letter-spacing:.08em;background:transparent !important;color:var(--text-secondary) !important;border:1px solid var(--border-bright) !important;border-radius:5px !important;padding:6px 12px !important;}
+#share-toggle:hover{color:var(--accent) !important;border-color:var(--accent-dim) !important;}
+#messages::-webkit-scrollbar{width:4px;}
+#messages::-webkit-scrollbar-thumb{background:rgba(60,65,75,.35);}
+#messages:hover::-webkit-scrollbar-thumb{background:rgba(60,65,75,.6);}
+#messages{scrollbar-width:thin;scrollbar-color:rgba(60,65,75,.4) transparent;}
