@@ -873,7 +873,7 @@ function _renderPassageInto(container, text) {
 
 function renderSourceCard(citation, passage, attribution, translation, sourceId) {
   const card = document.createElement('div');
-  card.className = 'source-card';
+  card.className = 'source-card specimen';
   const label = document.createElement('div');
   label.style.opacity = '.6';
   label.style.fontSize = '.8em';
@@ -936,6 +936,27 @@ function renderTransformCard(parentEl, t) {
   const g0 = t.geometry_check;
   if (g0) chip('geometry ' + (g0.lines_match && g0.stanzas_match ? '✓' : '✗'), (g0.lines_match && g0.stanzas_match) ? 'pass' : 'halt');
   card.appendChild(wr);
+  // ── apparatus: claim states (§3) — the wager's transition, and independent dissent shown as contested ──
+  {
+    const producerPass = [v.identity, v.semantic_independence, v.retrospective_containment]
+      .every((x) => /pass/i.test(String(x || '')));
+    const sr = document.createElement('div'); sr.className = 'staterow';
+    const st = (txt, cls) => `<span class="state ${cls}">${txt}</span>`;
+    let html = 'KERNEL CLAIM ' + st('proposed', 'prop') + ' \u2192 ' +
+      (producerPass ? st('observed', 'obs') + ' <span style="color:var(--text-tertiary)">(producer chain, machine-verified)</span>'
+                    : st('falsified', 'halt') + ' <span style="color:var(--text-tertiary)">(HALT \u2014 the wager did not survive; the failure is inscribed)</span>');
+    if (ind0.mode && /fail/i.test(String(ind0.law_match || ''))) {
+      html += '<br>LAW CLAIM ' + st('contested', 'cont') +
+        ` <span style="color:var(--text-tertiary)">(independent recovery: ${ind0.recovered_law || 'NONE'} \u00B7 both positions inscribed)</span>`;
+    }
+    sr.innerHTML = html; card.appendChild(sr);
+    const lg = document.createElement('div'); lg.className = 'app-ledger';
+    lg.textContent = `ledger: proposed\u2192${producerPass ? 'observed' : 'falsified'} \u00B7 ${new Date().toISOString()} \u00B7 evidence: verification block \u00B7 earlier state addressable`;
+    card.appendChild(lg);
+    const sa = document.createElement('div'); sa.className = 'source-anchor';
+    sa.textContent = `SOURCE ANCHOR \u00B7 ${t.citation || 'the offering'} \u00B7 units: ${t.source_units || 'whole'} \u00B7 basis: ${t.basis_hash || 'unknown'}`;
+    card.appendChild(sa);
+  }
   const lines = [];
   lines.push(`Operator: ${t.operator_specification || ''}`);
   if (sf.lines || sf.stanzas) {
@@ -990,8 +1011,16 @@ function renderInscriptionCard(insc) {
     messagesEl.scrollTop = messagesEl.scrollHeight;
     return;
   }
-  const head = document.createElement('div');
-  head.textContent = `Inscribed — ${insc.mode}. Reading ${insc.reading_axn}`;
+  const head = document.createElement('div'); head.className = 'idstrip';
+  {
+    const hexpart0 = ((insc.reading_axn || '').split(':')[1] || '').split('.')[0];
+    const glyph0 = (insc.reading_axn || '').split('.').slice(2).join('.');
+    const sp = (txt, cls) => { const e = document.createElement('span'); if (cls) e.className = cls; e.textContent = txt; head.appendChild(e); };
+    sp(`${glyph0 ? glyph0 + ' ' : ''}AXN:${hexpart0}.READING`, 'axn');
+    sp(`INSCRIBED \u00B7 ${String(insc.mode || '').toUpperCase()}`, 'st');
+    sp('OBJECT: OPEN \u2014 CANON: NOT YET ELIGIBLE', 'st');
+    sp(new Date().toISOString().slice(0, 10));
+  }
   card.appendChild(head);
   // ── apparatus: doors — the itinerarium (verbs only, three at most) ──
   const doors = document.createElement('div'); doors.className = 'doors';
@@ -1012,7 +1041,10 @@ function renderInscriptionCard(insc) {
   card.appendChild(doors);
   // ── apparatus: colophon — the scribe's closing ──
   const col = document.createElement('div'); col.className = 'colophon';
-  col.textContent = `${insc.reading_axn || ''} · inscribed ${insc.mode} · ${new Date().toISOString().slice(0,10)} · themandalaoracle.com — EA-APPARATUS-01`;
+  {
+    const hexc = ((insc.reading_axn || '').split(':')[1] || '').split('.')[0];
+    col.textContent = `colophon \u00B7 surface_id: AXN-${hexc || 'unknown'} \u00B7 canonical_url: themandalaoracle.com/book/readings/AXN-${hexc || 'unknown'} \u00B7 version: reading/v1.0 \u00B7 source_object_ids: ${insc.source_text_id || 'as inscribed'} \u00B7 source_hashes: unknown \u00B7 generator_version: producer chain v1 (verdict-derived; RETAIN-aware) \u00B7 repository_commit: unknown \u00B7 model_or_agent: producer chain v1 \u00B7 operator_sequence: as inscribed \u00B7 human_approver: none (reader rite) \u00B7 approval_timestamp: n/a \u00B7 render_hash: unknown \u00B7 correction_log: none \u2014 EA-APPARATUS-01 v0.3`;
+  }
   card.appendChild(col);
   if (insc.expansion && insc.expansion.appended) {
     const exp = document.createElement('div');
@@ -1253,6 +1285,7 @@ async function runCastingRite(cast) {
           const _isEn = _langForCranes === 'en';
           const el = appendHeteronymMessage('Rebekah Cranes', '');
           const _mc = el.querySelector('.message-content');
+          _mc.classList.add('specimen');  // §9 Specimen Rule — the frame marks nothing inside
           if (_isEn) {
             _renderPassageInto(_mc, transform.primary_output || '');
           } else {
@@ -1275,6 +1308,9 @@ async function runCastingRite(cast) {
               el.querySelector('.message-content').appendChild(face);
             }
           }
+          { const mn = document.createElement('div'); mn.className = 'membrane-note';
+            mn.textContent = 'no apparatus crosses this frame (\u00A79 \u2014 the membrane is bidirectional)';
+            el.appendChild(mn); }
           renderTransformCard(el, transform);
           if (inscription && inscription.inscribed && inscription.reading_axn) {
             const firstInscription = !readingAxn;

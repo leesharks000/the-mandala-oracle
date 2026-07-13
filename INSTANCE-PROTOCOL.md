@@ -102,3 +102,31 @@ compiler) is a dependency and follows the same rule.
 - `index.html` — shell and affordances; `t/index.html` — share viewer.
 - `scripts/local_cast.py` — zero-deployment harness; mirrors the handler's
   compiler invocation, not its adjudication.
+
+
+## The Specimen Rule (EA-APPARATUS-01 v0.3 §9 — standing doctrine, MANUS, 2026-07-13)
+
+The apparatus grammar applies to the **frame and never the interior**. The
+enantiomorph is not a claim-bearing block; a poem is already all nucleus, and
+selecting its lemma is an interpretive act that preempts the reader and
+falsifies the object. The manuscript ancestor is the glossed page — Psalter
+and Talmud layout: the text block inviolate at center, commentary in the
+margins, and the gloss never crosses into the text block.
+
+**The membrane is bidirectional.** The standing ruling of 2026-07-02 holds
+that apparatus is not transformable material; the Specimen Rule adds the
+converse: transforms are not apparatus-markable material. Nothing of the
+frame enters the specimen; nothing of the specimen is marked by the frame.
+
+Frame-side device mapping: the kernel claim is *proposed* at cast time and
+transitions to *observed* on producer-chain PASS (or stands *falsified* on
+HALT, legible as such); independent dissent (law recovery: NONE against a
+declared law) renders the law claim *contested*, both positions inscribed;
+the witness row is the rite itself, every entry an inscribed act; the lemma
+is legal in the frame only (the wager); the citation gesture is the source
+anchor (source · units · basis), not the triple helix; the doors are the
+post-seal verbs; the identity strip and the §7 colophon bracket every
+inscribed reading, with unknowns stated and never omitted.
+
+Deposit: EA-APPARATUS-01 v0.3, Alexanarch #1077,
+AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎.

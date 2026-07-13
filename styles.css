@@ -857,3 +857,22 @@ body {
 .doors a,.doors button{font-family:var(--mono,monospace);font-size:.78em;border:1px solid var(--border,#3a3630);border-radius:4px;padding:6px 12px;background:transparent;color:inherit;cursor:pointer;text-decoration:none;}
 .doors a:hover,.doors button:hover{border-color:#d4af37aa;}
 .colophon{font-family:var(--mono,monospace);font-size:.64em;color:var(--dim,#8a8578);margin-top:10px;border-top:1px solid var(--border,#3a3630);padding-top:5px;}
+
+/* ── EA-APPARATUS-01 v0.3 Phase 1 — MANUS-approved preview, 2026-07-13 (AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎) ── */
+.idstrip{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;font-family:var(--mono);font-size:10.5px;color:var(--text-tertiary);border:1px solid var(--border);border-bottom:2px solid var(--accent-dim);background:var(--bg-elevated);padding:9px 12px;border-radius:8px;margin:6px 0;}
+.idstrip .axn{color:var(--accent);font-size:11.5px;}
+.idstrip .st{border:1px solid var(--border);border-radius:9px;padding:1px 7px;white-space:nowrap;}
+.staterow{font-family:var(--mono);font-size:10.5px;color:var(--text-secondary);margin:10px 0 2px;line-height:2;}
+.state{border:1px solid var(--border);border-radius:9px;padding:1px 8px;white-space:nowrap;}
+.state.obs{color:#3f9e6e;border-color:rgba(63,158,110,.4);}
+.state.prop{color:var(--text-secondary);}
+.state.cont{color:#c9a05a;border-color:rgba(201,160,90,.45);}
+.state.halt{color:var(--error);border-color:rgba(216,138,120,.45);}
+.app-ledger{font-family:var(--mono);font-size:9.5px;color:var(--text-tertiary);margin:2px 0 0;}
+.witness-row .w.adv{color:#c9a05a;border-color:rgba(201,160,90,.45);}
+.specimen{border:1px solid var(--border-bright);border-radius:6px;padding:16px 16px !important;background:rgba(10,12,16,.4);}
+.membrane-note{font-family:var(--mono);font-size:9.5px;color:var(--text-tertiary);text-align:center;margin:6px 0 2px;}
+.source-anchor{font-family:var(--mono);font-size:9.5px;color:var(--text-tertiary);margin:10px 0 0;}
+.message.feist .message-content{border-left:2px solid var(--speaker-feist);padding-left:12px;}
+#sabbath-strip{margin:6px 14px 0;}
+#sabbath-colophon{font-family:var(--mono);font-size:9.5px;color:var(--text-tertiary);border-top:1px solid var(--border);margin:4px 14px 8px;padding-top:6px;line-height:1.8;}

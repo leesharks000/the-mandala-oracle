@@ -101,6 +101,7 @@
 
   <!-- Chat panel — contained rounded card floating on the sky. -->
   <main id="reading-space">
+    <div id="sabbath-strip" class="idstrip"><span class="st">MODE SABBATH</span><span class="st">OBJECT: DRAFT — UNINSCRIBED</span><span id="sabbath-date"></span></div>
     <section id="messages" aria-live="polite">
       <div class="empty-state">
         <a href="/assets/sigil-face.jpg" target="_blank" rel="noopener" id="sigil-portrait-link" title="Open the calligram at full resolution — the face is composed of poetry">
@@ -171,5 +172,12 @@
   </script>
   <script type="module" src="/sky.js"></script>
   <script type="module" src="/chat.js"></script>
+<div id="sabbath-colophon"></div>
+<script>
+(function(){var d=new Date().toISOString().slice(0,10);
+var e=document.getElementById('sabbath-date'); if(e)e.textContent=d;
+var c=document.getElementById('sabbath-colophon');
+if(c)c.textContent='colophon \u00B7 model_or_agent: sigil/chat \u00B7 repository_commit: unknown \u00B7 generated: '+d+' \u00B7 human_approver: none (sabbath, uninscribed) \u00B7 render_hash: unknown \u2014 EA-APPARATUS-01 v0.3';})();
+</script>
 </body>
 </html>
