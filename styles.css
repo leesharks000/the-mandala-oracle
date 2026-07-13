@@ -902,8 +902,9 @@ body {
 .input-meta{flex-wrap:wrap;row-gap:6px;}
 @media (max-width: 560px){
   #status{display:none;}
-  #settings-toggle,#share-toggle,#cast-toggle{font-size:10px !important;padding:5px 8px !important;letter-spacing:.05em;}
-  .support-cha-label{font-size:10px;}
-  .meta-left{gap:6px;}
-  #send-btn,button[type="submit"]{padding:8px 16px;}
+  #settings-toggle,#share-toggle,#cast-toggle{font-size:9px !important;padding:4px 6px !important;letter-spacing:.02em;border-radius:4px !important;}
+  .support-cha-label{font-size:9px;letter-spacing:.02em;}
+  .meta-left{gap:5px;}
+  .input-meta{gap:5px;}
+  #send-btn,button[type="submit"]{padding:7px 13px;font-size:11px;}
 }
