@@ -2,6 +2,14 @@
  "schema_version": "v1.0",
  "readings": [
   {
+   "axn": "AXN:FEFB.READING.🌙🌑🔥🌓🌓⭐",
+   "mode": "public",
+   "source_text_id": "cranes-day-and-night",
+   "rotation_length": 1,
+   "inscribed_at": "2026-07-13T21:31:27.934074+00:00",
+   "last_updated": "2026-07-13T21:31:27.934074+00:00"
+  },
+  {
    "axn": "AXN:FE75.READING.🌖🔥🌒🌟🌙🌊",
    "mode": "public",
    "source_text_id": "whitman-leaves-of-grass",
@@ -762,5 +770,5 @@
    "last_updated": "2026-07-02T20:35:14.656281+00:00"
   }
  ],
- "total": 95
+ "total": 96
 }
