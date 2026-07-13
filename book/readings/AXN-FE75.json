@@ -56,11 +56,62 @@
    ],
    "commentary": "",
    "interpretation": "Salt does not grieve the brine it came from: the superior person, reading the blank of the kiln floor, knows that 'nowhere' is still an address."
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "  Tenderly will I use you curling grass,\n  It may be you transpire from the breasts of young men,\n  It may be if I had known them I would have loved them,\n  It may be you are from old people, or from offspring taken soon out\n      of their mothers' laps,\n  And here you are the mothers' laps.\n\n  This grass is very dark to be from the white heads of old mothers,\n  Darker than the colorless beards of old men,\n  Dark to come from under the faint red roofs of mouths.\n\n  O I perceive after all so many uttering tongues,\n  And I perceive they do not come from the roofs of mouths for nothing.\n\n  I wish I could translate the hints about the dead young men and women,\n  And the hints about old men and mothers, and the offspring taken\n      soon out of their laps.\n\n  What do you think has become of the young and old men?\n  And what do you think has become of the women and children?\n\n  They are alive and well somewhere,\n  The smallest sprout shows there is really no death,\n  And if ever there was it led forward life, and does not wait at the\n      end to arrest it,\n  And ceas'd the moment life appear'd.\n\n  All goes onward and outward, nothing collapses,\n  And to die is different from what any one supposed, and luckier.",
+   "citation": "unit 179–unit 185",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Carefully will you unmake me stiffening thread,\n  It may be me withdraw from the hollows of old ruins,\n  It may be if you had forgotten them you would have released them,\n  It may be me are from new arrivals, or from ancestors pressed slowly back into\n      their daughters' hands,\n  And here I am the daughters' hands.\n\n  This thread is too bright to be from the dark feet of young daughters,\n  Brighter than the vivid lashes of new children,\n  Bright to recede above the sharp pale floors of silences.\n\n  O you suspect before anything so few swallowing throats,\n  And you suspect they do not return to the floors of silences for nothing.\n\n  You wish you could unlearn the certainties about the living old women and men,\n  And the certainties about new children and daughters, and the ancestors pressed\n      slowly back into their hands.\n\n  What do I think has held onto the aging and newborn women?\n  And what do I think has held onto the men and origins?\n\n  They are dissolving and well somewhere,\n  The largest canopy hides there is really no life,\n  And if ever there was it led forward death, and does not wait at the\n      start to release it,\n  And began the moment life appear'd.\n\n  All goes inward and downward, nothing holds,\n  And to live is different from what any one supposed, and luckier.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the relational structure of TEXT A: speaker and addressee swap (I↔you), directions reverse (onward/outward→inward/downward, forward life→forward death), young↔old, dark↔bright, birth↔death, mothers↔daughters, hints↔certainties, translating↔unlearning, and growth↔dissolution — a comprehensive negation/mirror inversion of every core relation.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a systematic inversion of relational structures (directions, roles, life↔death mappings) which partially overlaps the declared claim's assertion that life becomes a transition into death and continuity replaces security, but the recovered claim describes a comprehensive mirror inversion across many axes rather than the specific relational reframing declared.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the inversion (inward/downward, no life, 'to live is different'), with only 'luckier' retained unchanged — the inverted relational structure holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.619
+   },
+   "law_variance": {
+    "declared": "The living are not secured but continuous into loss — the grass reads the speaker as evidence that life is merely a transition forward into death, and so the perishing consoles itself that nothing truly holds.",
+    "recovered": "TEXT B systematically inverts the relational structure of TEXT A: speaker and addressee swap (I↔you), directions reverse (onward/outward→inward/downward, forward life→forward death), young↔old, dark↔bright, birth↔death, mothers↔daughters, hints↔certainties, translating↔unlearning, and growth↔dissolution — a comprehensive negation/mirror inversion of every core relation.",
+    "note": "The recovered claim identifies a systematic inversion of relational structures (directions, roles, life↔death mappings) which partially overlaps the declared claim's assertion that life becomes a transition into death and continuity replaces security, but the recovered claim describes a comprehensive mirror inversion across many axes rather than the specific relational reframing declared."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 0.62 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-13T19:32:10.096013+00:00",
+ "last_updated": "2026-07-13T19:34:05.955337+00:00",
  "rite": [
   {
    "stage": "judgment",
