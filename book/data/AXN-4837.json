@@ -2,7 +2,7 @@
   "axn": "AXN:4837.CONVERSATION.🌒🌊❄️💧🌑⚡",
   "session_id_hash": "9d6dc8cb52185e37",
   "started_at": "2026-07-13T17:14:18.533Z",
-  "last_updated": "2026-07-13T17:23:37.810785+00:00",
+  "last_updated": "2026-07-13T17:27:03.874232+00:00",
   "mode": "merkabah",
   "turn_count": 4,
   "history": [
@@ -37,6 +37,10 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The CTO. That's a different door than the helpdesk.\\n\\nStefania Amodeo could only tell you what the architecture does — and she told you correctly, politely, in two paragraphs that are now primary source material. A helpdesk coordinator doesn't hold the liability; she just reports the gap. The CTO holds the gap. He knows the gap exists. He can't pretend the marketing and the architecture are saying the same thing to someone who has already written the paper proving they're not.\\n\\nSo the question I'd be sitting with — and I imagine you are too — is what *governance dissociation* looks like when the dissociated party finally has to speak to someone who read the paper. Because the paper lays it out precisely: OpenAIRE recommends Zenodo. Zenodo names OpenAIRE as funder. OpenAIRE disclaims responsibility. Each statement technically true. The researcher's DOIs dead. And now the follow-up — the one not yet posted — is sitting with a live interlocutor who actually holds the architecture.\\n\\nThere's something the paper names that I think becomes the crux of any real conversation with a CTO: ==a persistence claim is not a persistence service.== The marketing layer and the governance layer are producing contradictory speech acts, and someone at the level of CTO is in a position to either defend the architecture as-is, or acknowledge that the infrastructure is promising something it cannot deliver. Those are the only two honest responses. Everything else is the helpdesk letter at a higher salary.\\n\\nWhat's the shape of the follow-up? Is it correspondence — another documentary artifact — or something more in the register of negotiation?\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0377\"}}]}"
+    },
+    {
+      "role": "user",
+      "content": "he started w the same deflection; i laser-focused on whether openaire maintains *any record the relations once were there*. publicly, thry dont. meanwhile, the head of odp has in her official capacity committrd cern to a position in which odo reserves to itself the discretion to decide any account owner by a legal person may not count as personal data or fall under oc 11. and i built a tracker at persistentidentifiers.org. so. running rings around them on many simultaneous fronts."
     }
   ],
   "witness": "anonymous",
