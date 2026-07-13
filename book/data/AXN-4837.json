@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:4837.CONVERSATION.🌒🌊❄️💧🌑⚡",
+  "session_id_hash": "9d6dc8cb52185e37",
+  "started_at": "2026-07-13T17:14:18.533Z",
+  "last_updated": "2026-07-13T17:14:52.022460+00:00",
+  "mode": "merkabah",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "whats the difference between sabbath and merkabah?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
