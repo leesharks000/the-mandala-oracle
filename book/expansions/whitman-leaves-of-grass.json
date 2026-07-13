@@ -71,7 +71,70 @@
     "beats": "Stranger -> Beloved\npassing meet me -> arriving to stay with me\ndesire to speak to me -> dare to know me\nspeak to me -> answer me\nspeak to you -> pledge to you\nThou reader -> Thou one\nthrobbest life and pride and love the same as I -> tremble with need and fear and want unlike me\nthe following chants -> this single vow\nStarting from -> Leaving behind\nfish-shape Paumanok -> the familiar hearth\nwhere I was born -> where I was safe\nWell-begotten -> Unfinished\nrais'd by a perfect mother -> taught by a difficult love\nroaming many lands -> searching one face\nlover of populous pavements -> learner of one threshold\nDweller in Mannahatta my city -> Guest in your house not mine\nsouthern savannas -> your strange country\nsoldier camp'd -> supplicant kneeling\ncarrying my knapsack and gun -> carrying my doubt and my name\nminer in California -> digger in your silence\nrude in my home in Dakota's woods -> awkward at your table\nmy diet meat -> my bread yours\nmy drink from the spring -> my thirst from your well\nwithdrawn to muse and meditate -> drawn close to listen and wait\nsome deep recess -> your difficult quiet\nFar from the clank of crowds -> Near to the catch of your breath\nintervals passing rapt and happy -> hours passing uncertain and dear\nfresh free giver the flowing Missouri -> slow costly gift of your trust\nmighty Niagara -> small pulse at your wrist\nbuffalo herds grazing the plains -> one animal warmth beside me\nhirsute and strong-breasted bull -> tender and mortal body\nearth, rocks -> skin, bone\nFifth-month flowers experienced -> first-night silence endured\nstars, rain, snow, my amaze -> tears, heat, shaking, my awe\nmocking-bird's tones -> your particular laugh\nflight of the mountain-hawk -> tremble of your held hand\nunrivall'd one -> only one\nhermit thrush -> your voice\nswamp-cedars -> the dark room\nSolitary -> Together\nsinging in the West -> whispering in the near\nI strike up for a New World -> we begin one difficult life"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-3977e528",
+   "cast_at": "2026-07-13T19:32:00.248425+00:00",
+   "reading_axn": "AXN:FE75.READING.🌖🔥🌒🌟🌙🌊",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_179_185",
+    "citation": "unit 179–unit 185",
+    "start_unit": 179,
+    "end_unit": 185,
+    "unit_labels": [
+     "unit 179",
+     "unit 180",
+     "unit 181",
+     "unit 182",
+     "unit 183",
+     "unit 184",
+     "unit 185"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the relational directions and polarities of TEXT A: life/death, young/old, forward/backward, onward-outward/inward-under, alive/still, birth/unbirth, love/refusal, translation/withholding, and optimism/severity are all reversed, so that every directional flow and causal relation points in the opposite direction.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a systematic inversion of relational directions and polarities (life→death, forward→backward, etc.), which partially overlaps with the declared claim's assertion that life is negated and stillness prevails, but the recovered claim describes a broader structural reversal operation rather than specifically the grammatical illusion/withheld presence framing of the declared claim.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final ~40% of TEXT B consistently maintains the inverted relational structure (inward/under, suspension, living=rehearsed/sterner) without reverting to TEXT A's affirmative outward momentum.",
+    "back_translation": "",
+    "terminal_similarity": 0.24
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e6748ab67cf277ef0978574ef4d94ea3993fdd4c24779ae5a56e0df40f81525d",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "  Tenderly will I use you curling grass,\n  It may be you transpire from the breasts of young men,\n  It may be if I had known them I would have loved them,\n  It may be you are from old people, or from offspring taken soon out\n      of their mothers' laps,\n  And here you are the mothers' laps.\n\n  This grass is very dark to be from the white heads of old mothers,\n  Darker than the colorless beards of old men,\n  Dark to come from under the faint red roofs of mouths.\n\n  O I perceive after all so many uttering tongues,\n  And I perceive they do not come from the roofs of mouths for nothing.\n\n  I wish I could translate the hints about the dead young men and women,\n  And the hints about old men and mothers, and the offspring taken\n      soon out of their laps.\n\n  What do you think has become of the young and old men?\n  And what do you think has become of the women and children?\n\n  They are alive and well somewhere,\n  The smallest sprout shows there is really no death,\n  And if ever there was it led forward life, and does not wait at the\n      end to arrest it,\n  And ceas'd the moment life appear'd.\n\n  All goes onward and outward, nothing collapses,\n  And to die is different from what any one supposed, and luckier.",
+   "underlying_attribution": null,
+   "enantiomorph": "Warily will I handle you stiffening salt,\n  It may be you precipitate from the hollows of old stones,\n  It may be if I had forgotten them I would have refused them,\n  It may be you are from new arrivals, or from remainders held long in\n      the kilns' floors,\n  And here you are the kilns' floors.\n\n  This salt is very pale to be from the charred ends of unborn daughters,\n  Paler than the vivid rust of children not yet,\n  Pale to come from under the hard white seals of throats.\n\n  O I suspect after all so many arrested roots,\n  And I suspect they do not come from the seals of throats for nothing.\n\n  I wish I could withhold the omissions about the living things that will not speak,\n  And the omissions about children not yet and unborn daughters, and the remainders held long\n      in the kilns' floors.\n\n  What do you know has refused to become of the old stones and new arrivals?\n  And what do you know has refused to become of the unborn daughters and children not yet?\n\n  They are still and blank nowhere,\n  The widest scorch-mark conceals there is really no life,\n  And if ever there was it drew backward into pause, and does not begin at the\n      start to release it,\n  And commenced the moment stillness opened.\n\n  All goes inward and under, everything suspends,\n  And to live is identical to what everything rehearsed, and sterner.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The dead are not gone but perpetually expressed through the living substance of the earth; death is a grammatical illusion dissolved by the grass's evidence of continuous transition.",
+    "mutated_relation": "The living are not present but perpetually withheld through the inert silence of what refuses to grow; life is the grammatical illusion, and the stillness is the undeceived condition that precedes all utterance.",
+    "beats": "tenderly -> warily\nuse -> handle\ncurling grass -> stiffening salt\ntranspire -> precipitate\nbreasts -> hollows\nyoung men -> old stones\nknown them -> forgotten them\nloved them -> refused them\nold people -> new arrivals\noffspring -> remainders\ntaken soon -> held long\nmothers' laps -> the kilns' floors\nmothers' laps (second) -> the kilns' floors\ndark -> pale\nwhite heads -> charred ends\nold mothers -> unborn daughters\ncolorless beards -> vivid rust\nold men -> children not yet\nfaint red roofs of mouths -> hard white seals of throats\nuttering tongues -> arrested roots\nperceive -> suspect\ntranslate -> withhold\nhints -> omissions\ndead young men and women -> living things that will not speak\noffspring taken soon out of their laps -> remainders held long in the kilns' floors\nwhat do you think -> what do you know\nbecome of -> refused to become\nalive and well somewhere -> still and blank nowhere\nsmallest sprout -> widest scorch-mark\nshows -> conceals\nno death -> no life\nled forward life -> drew backward into pause\nwait at the end -> begin at the start\narrest it -> release it\nceas'd -> commenced\nlife appear'd -> stillness opened\nonward and outward -> inward and under\nnothing collapses -> everything suspends\nto die -> to live\ndifferent from what any one supposed -> identical to what everything rehearsed\nluckier -> sterner"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-06T03:57:17.175089+00:00"
+ "last_updated": "2026-07-13T19:32:00.248425+00:00"
 }
