@@ -1,0 +1,71 @@
+{
+ "axn": "AXN:FE36.READING.🌗🌕🔥🌊🌙🔥",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "8bf091d5b7710d02",
+ "inscribed_at": "2026-07-13T04:19:55.623869+00:00",
+ "question_digest": "sha256:d851a26888ec41cb4c2adca5a86bf712d1efbdf50f6c144ec19851317291480d",
+ "question_gloss": "# Amends with C\n\n**One-line neutral gloss:**\n\nQuestions regarding amendments or modifications involving the letter C or specific provisions beginning with C.",
+ "source_text_id": "sappho-fragments",
+ "cast_selection": "units_6_6",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "ἀλλὰ πᾶν τόλματον· ἐπεί σε, Κύπρι,\nκαὶ πένητα καὶ βασιλῆα σώζεις·\nκαὶ πόλιν ὀλίγαν ὑπερέχεις ἄτας·\n     μολπὰ γράμμασι ζώοι.",
+   "citation": "unit 6",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "ἀλλὰ πᾶν τόλματον· ἐπεί σε, τὰν ἄκλητον,\nκαὶ πένητα καὶ ἄτιμον σώζεις ποκα·\nκαὶ στενὸν τόδε δῶμα ὑπερέχεις ἄτας·\n     τόδε λάϊνον ζώοι.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, Cypris (a divine figure) saves both the poor and the king and protects a small city, with song living in written letters; in Text B, the unnamed uninvited one saves the poor and dishonored (removing the king/powerful), protects a narrow house instead of a city, and a stone monument endures instead of song in writing — the direction of divine protection shifts from encompassing the full social hierarchy and the civic/poetic realm to sheltering only the lowly and the private/material domain.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies real structural changes — narrowing of divine protection from full social hierarchy to only the lowly, civic to private domain, song to stone monument — which are genuine relational mutations, but the declared claim focuses on the felicity conditions of the utterance (speaking from desperation, entreating uncertain power, expecting failure), a different structural reading than the hierarchy/domain shifts recovered.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the changed relation: 'τόδε λάϊνον ζώοι' (this stone endure) consistently replaces the civic-poetic 'μολπὰ γράμμασι ζώοι' (song live in letters), sustaining the shift to the private/material.",
+    "back_translation": "",
+    "terminal_similarity": 0.44
+   },
+   "law_variance": {
+    "declared": "The conditions that must hold for such an utterance to be spoken: the speaker stands at the threshold where daring is the only remaining option because preservation has not yet arrived — the indiscriminate power is entreated precisely because its exercise is uncertain, and the inscription exists because the voice expects to fail.",
+    "recovered": "In Text A, Cypris (a divine figure) saves both the poor and the king and protects a small city, with song living in written letters; in Text B, the unnamed uninvited one saves the poor and dishonored (removing the king/powerful), protects a narrow house instead of a city, and a stone monument endures instead of song in writing — the direction of divine protection shifts from encompassing the full social hierarchy and the civic/poetic realm to sheltering only the lowly and the private/material domain.",
+    "note": "The recovered claim identifies real structural changes — narrowing of divine protection from full social hierarchy to only the lowly, civic to private domain, song to stone monument — which are genuine relational mutations, but the declared claim focuses on the felicity conditions of the utterance (speaking from desperation, entreating uncertain power, expecting failure), a different structural reading than the hierarchy/domain shifts recovered."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "53% of non-RETAIN source lemmas survive verbatim (ζώοι, πένητα, σώζεις, τόλματον, ἀλλὰ, ἄτας…) -- the bill was not honored"
+    },
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 22 words vs budget 16-21 (source 19)"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-13T04:19:55.623869+00:00"
+}
