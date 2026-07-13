@@ -1117,8 +1117,65 @@
     "beats": "Sardis -> a name she cannot stop placing in her mouth\nshe often turns her thoughts toward you -> something has made you survivable as an image\nlike a goddess -> a scale exists between what you are and what can be worshipped\nshe loved your song like no other -> a voice had to leave a body for the hearing to begin\nnow she shines among Lydian women -> a surrounding must dim for a figure to take light\nlike the rose-fingered moon -> the sky had to empty first\nin the night -> something was removed and called darkness\noutshines all other stars -> each star had to agree to be lesser, which is: to be named second\nits silver light -> a metal had to be found that could stand for softness without breaking\nspreading over salt -> the water had to be still enough to accept what falls on it\nheavy sea -> weight is what water carries when no one is crossing it\nover the blossom -> the field had to have already opened without being asked\nthick meadows -> density is what happens when nothing is picked\nthe grass weeps -> a surface had to cool below the air to draw moisture down\nlovely dew -> beauty had to attach to the involuntary\nthe roses open wide -> a temperature had to hold through the night without dropping\nbeside flowering melilot and chervil -> lesser things had to be named to prove the attention was indiscriminate\nhow many times has she wandered -> a path had to fail to lead anywhere for the walking to become grief\naimlessly -> purpose had to be withdrawn from her like a hand\nremembering gentle Atthis -> a gentleness had to have existed first, then been taken into storage\nlonging gnaws -> a hunger had to find no food and turn on the one who carries it\nat her fragile heart -> the organ had to have already thinned from previous use\nthis mind sings -> a thought had to become unbearable before it turned to music\nto go there -> a there had to exist that the body has no method of reaching\nit's not easy for us -> a limit had to be discovered by attempting to exceed it\nto be like goddesses in loveliness of form -> a form had to fail, and the failure had to be witnessed\nAphrodite -> a power had to exist that does not need permission\npoured nectar from her golden hands -> a substance had to exist that the mortal throat can receive but not produce\npersuasion -> a resistance had to exist first, or there is nothing to persuade\ndesire -> desire (RETAIN: desire is already the condition-of-itself; it requires nothing prior but generates all that follows)\nI will come -> a distance had to be measured and accepted as crossable"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-9c603a8b",
+   "cast_at": "2026-07-13T21:31:29.318955+00:00",
+   "reading_axn": "AXN:FEFB.READING.🌙🌑🔥🌓🌓⭐",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_54_54",
+    "citation": "unit 54",
+    "start_unit": 54,
+    "end_unit": 54,
+    "unit_labels": [
+     "unit 54"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The physical violence of an arrow killing a body (weapon penetrating flesh, death, blood) is transformed into the perceptual act of a gaze fixing upon and dissolving a visual subject (attention penetrating composure, observation, color). The agent-patient relation shifts from projectile-to-body to viewer-to-viewed.",
+    "law_match": "PASS",
+    "law_match_note": "Both claims assert the same structural transformation: physical violence (arrow/weapon penetrating flesh) is reconstituted as perceptual violence (gaze/attention as the penetrating instrument), with the agent-patient relation shifting from projectile-body to viewer-viewed.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the perceptual/visual relation (spectacle, looking away, details) rather than reverting to the physical violence of TEXT A.",
+    "back_translation": "",
+    "terminal_similarity": 0.368
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:98e39e638edaf048be7ba29f214a69cd06bfbcdc993afb7677132e20a84d1bfb",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "*Stesichorus 15*\n\nLike a living thing silent\nand thirsty, the arrow bites\nsharp through skin and\nbone, to lodge vibrating\nin the middle brain,\nwhere it buries itself\nto the feathers.\n\nGeryon’s neck\nslumps gently to one side\nwhile the blood flows black\non gore-stained limbs\nand breastplate:\n\na trickle of petals\nat summer’s end,\nthe poppy’s tender\nglory.",
+   "underlying_attribution": null,
+   "enantiomorph": "*Stesichorus 15*\n\nLike a regarded thing still-unaware\nand hungry, the attention fixes\ntotal through surface and\ncomposure, to settle humming\nin the held center,\nwhere it forgets itself\nto its own lashes.\n\nThe figure's outline\ngives slowly to the frame's edge\nwhile the color deepens past naming\non light-struck planes\nand facing surface:\n\na lapse of details\nat the moment before looking away,\nthe spectacle's tender\nglory.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The violent penetration of a body is rendered as an event of strange tenderness — death aestheticizes the dying thing, converting trauma into bloom.",
+    "mutated_relation": "The conditions that must hold for this utterance to occur: a perceiver whose attention is itself the wounding instrument — whose gaze constitutes the penetration it describes, and whose aesthetic capture of the scene is the true violence being committed.",
+    "beats": "living thing -> regarded thing\nsilent -> still-unaware\nthirsty -> hungry (the gaze's hunger, not the arrow's)\narrow -> attention\nbites -> fixes\nsharp -> total\nskin -> surface\nbone -> composure\nlodge vibrating -> settle humming\nmiddle brain -> held center\nburies itself -> forgets itself\nfeathers -> its own lashes\nGeryon's neck -> the figure's outline\nslumps gently -> gives slowly\none side -> the frame's edge\nblood flows black -> color deepens past naming\ngore-stained limbs -> light-struck planes\nbreastplate -> facing surface\ntrickle -> lapse\npetals -> details\nsummer's end -> the moment before looking away\npoppy's -> spectacle's\ntender glory -> tender glory (RETAIN: the verdict requires this phrase as the site where aesthetic capture confesses itself as violence — it is the wound-word the perceiver inflicts by finding beauty)"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-13T17:47:50.830654+00:00",
+ "last_updated": "2026-07-13T21:31:29.318955+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
