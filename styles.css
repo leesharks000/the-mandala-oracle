@@ -908,3 +908,11 @@ body {
   .input-meta{gap:5px;}
   #send-btn,button[type="submit"]{padding:7px 13px;font-size:11px;}
 }
+/* ── the seals, densely typographied (MANUS directive 2026-07-13) ── */
+.reading-card .idstrip{background:linear-gradient(180deg,rgba(201,168,76,.08),rgba(12,15,20,.6));border:1px solid var(--accent-dim);border-bottom-width:2px;padding:8px 12px;margin:0 0 8px;}
+.reading-card .idstrip .axn{font-size:12.5px;color:var(--accent);letter-spacing:.04em;}
+.reading-card .idstrip .st{border-color:rgba(201,168,76,.35);color:var(--accent);background:rgba(201,168,76,.07);font-size:9.5px;letter-spacing:.08em;}
+.reading-card .idstrip .key{border-color:var(--accent);}
+.reading-card .doors button,.reading-card .doors a{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--accent);background:transparent;border:1px solid var(--accent-dim);border-radius:5px;padding:5px 11px;text-decoration:none;cursor:pointer;}
+.reading-card .doors button:hover,.reading-card .doors a:hover{background:rgba(201,168,76,.12);}
+.reading-card .colophon{font-family:var(--mono);font-size:8.5px;line-height:1.5;color:var(--text-tertiary,#6b7280);border-top:1px solid rgba(201,168,76,.18);padding-top:6px;margin-top:8px;}

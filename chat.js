@@ -1228,8 +1228,7 @@ async function runCastingRite(cast) {
         ? `Operator: ${cast.operator} — ${cast.opAxis}. `
         : `The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. `) +
       `Inscription mode: ${cast.inscriptionMode}. The witness's invoking question: «${cast.question || '(none given)'}». ` +
-      `Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse ` +
-      `in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it.`,
+      `Johannes Sigil alone speaks (4–8 sentences). A casting is a new beginning — the witness is meeting this text for the first time — so this opening is an INCIPIT and carries the full grammar: mark the question the casting opens on as the ==nucleus== (never italicized — the underlay is the mark); set the poem's name and the two or three load-bearing concepts in **bold** at their first defining use; name what this operator will traverse; and hand the rite to Rebekah Cranes — the handoff is the door. Do not produce the transform — the compiler produces it.`,
       'Sigil opens the casting...',
       true
     );
