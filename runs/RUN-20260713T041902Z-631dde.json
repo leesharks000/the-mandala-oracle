@@ -1,0 +1,127 @@
+{
+ "run_id": "RUN-20260713T041902Z-631dde",
+ "schema": "run/v1",
+ "ts": "2026-07-13T04:19:02.055895+00:00",
+ "source_text_id": "sappho-fragments",
+ "cast_selection": "units_6_6",
+ "citation": "unit 6",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "amends with c",
+ "method": {
+  "commit": "34a062b4fef90cebc10c54f4e72e4f8b5a6ed4c7",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/34a062b4fef90cebc10c54f4e72e4f8b5a6ed4c7",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/34a062b4fef90cebc10c54f4e72e4f8b5a6ed4c7/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "50cd2c3850f12ce5",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "34a062b4fef9",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "50cd2c3850f12ce5",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "The speaker stakes survival — personal, political, textual — on the fact that divine erotic power is indiscriminate in what it preserves, and that the written inscription is the vehicle of that preservation.",
+   "mutated_relation": "The conditions that must hold for such an utterance to be spoken: the speaker stands at the threshold where daring is the only remaining option because preservation has not yet arrived — the indiscriminate power is entreated precisely because its exercise is uncertain, and the inscription exists because the voice expects to fail.",
+   "beats": "πᾶν τόλματον (all must be dared) -> the mouth empties its last breath forward\nἀλλά (but) -> ἀλλά (RETAIN: adversative turn is the structural hinge between exhaustion and appeal)\nἐπεί (since) -> ἐπεί (RETAIN: the causal joint must hold; the logic of desperation requires it)\nσε (you) -> the unverified\nΚύπρι (Kypris/Aphrodite) -> you-whose-arrival-I-cannot-compel\nπένητα (the poor man) -> the one with nothing to trade\nβασιλῆα (the king) -> the one whose trade-goods are worthless here\nσώζεις (you save) -> you have sometimes carried across\nκαί...καί (both...and) -> whether...or\nπόλιν ὀλίγαν (a small city) -> this narrowing room\nὑπερέχεις (you hold above) -> you have held above before\nἄτας (ruin) -> the floor giving way\nμολπά (song) -> this cut into stone\nγράμμασι (in letters) -> because the throat will close\nζώοι (may it live) -> let it outlast the breath that fails"
+  },
+  "enantiomorph": "ἀλλὰ πᾶν τόλματον· ἐπεί σε, τὰν ἄκλητον,\nκαὶ πένητα καὶ ἄτιμον σώζεις ποκα·\nκαὶ στενὸν τόδε δῶμα ὑπερέχεις ἄτας·\n     τόδε λάϊνον ζώοι.",
+  "enantiomorph_translation": "But all must be dared: since you, the unsummoned,\nwhether the one with nothing or the one worth nothing, you have sometimes carried across;\nand this narrowing room you have held above ruin —\n     let this cut in stone outlast the breath that fails.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, Cypris (a divine figure) saves both the poor and the king and protects a small city, with song living in written letters; in Text B, the unnamed uninvited one saves the poor and dishonored (removing the king/powerful), protects a narrow house instead of a city, and a stone monument endures instead of song in writing — the direction of divine protection shifts from encompassing the full social hierarchy and the civic/poetic realm to sheltering only the lowly and the private/material domain.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim identifies real structural changes — narrowing of divine protection from full social hierarchy to only the lowly, civic to private domain, song to stone monument — which are genuine relational mutations, but the declared claim focuses on the felicity conditions of the utterance (speaking from desperation, entreating uncertain power, expecting failure), a different structural reading than the hierarchy/domain shifts recovered.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion of Text B maintains the changed relation: 'τόδε λάϊνον ζώοι' (this stone endure) consistently replaces the civic-poetic 'μολπὰ γράμμασι ζώοι' (song live in letters), sustaining the shift to the private/material.",
+   "back_translation": "",
+   "terminal_similarity": 0.44
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "53% of non-RETAIN source lemmas survive verbatim (ζώοι, πένητα, σώζεις, τόλματον, ἀλλὰ, ἄτας…) -- the bill was not honored"
+   },
+   {
+    "failed_test": "word_budget",
+    "diagnosis": "final 22 words vs budget 16-21 (source 19)"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "The conditions that must hold for such an utterance to be spoken: the speaker stands at the threshold where daring is the only remaining option because preservation has not yet arrived — the indiscriminate power is entreated precisely because its exercise is uncertain, and the inscription exists because the voice expects to fail.",
+   "recovered": "In Text A, Cypris (a divine figure) saves both the poor and the king and protects a small city, with song living in written letters; in Text B, the unnamed uninvited one saves the poor and dishonored (removing the king/powerful), protects a narrow house instead of a city, and a stone monument endures instead of song in writing — the direction of divine protection shifts from encompassing the full social hierarchy and the civic/poetic realm to sheltering only the lowly and the private/material domain.",
+   "note": "The recovered claim identifies real structural changes — narrowing of divine protection from full social hierarchy to only the lowly, civic to private domain, song to stone monument — which are genuine relational mutations, but the declared claim focuses on the felicity conditions of the utterance (speaking from desperation, entreating uncertain power, expecting failure), a different structural reading than the hierarchy/domain shifts recovered."
+  },
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "The speaker stakes survival — personal, political, textual — on the fact that divine erotic power is indiscriminate in what it preserves, and that the written inscription is the vehicle of that preservation.",
+   "verdict": "The conditions that must hold for such an utterance to be spoken: the speaker stands at the threshold where daring is the only remaining option because preservation has not yet arrived — the indiscriminate power is entreated precisely because its exercise is uncertain, and the inscription exists because the voice expects to fail.",
+   "world_bill": "πᾶν τόλματον (all must be dared) -> the mouth empties its last breath forward\nἀλλά (but) -> ἀλλά (RETAIN: adversative turn is the structural hinge between exhaustion and appeal)\nἐπεί (since) -> ἐπεί (RETAIN: the causal joint must hold; the logic of desperation requires it)\nσε (you) -> the unverified\nΚύπρι (Kypris/Aphrodite) -> you-whose-arrival-I-cannot-compel\nπένητα (the poor man) -> the one with nothing to trade\nβασιλῆα (the king) -> the one whose trade-goods are worthless here\nσώζεις (you save) -> you have sometimes carried across\nκαί...καί (both...and) -> whether...or\nπόλιν ὀλίγαν (a small city) -> this narrowing room\nὑπερέχεις (you hold above) -> you have held above before\nἄτας (ruin) -> the floor giving way\nμολπά (song) -> this cut into stone\nγράμμασι (in letters) -> because the throat will close\nζώοι (may it live) -> let it outlast the breath that fails",
+   "bill_audit": {
+    "unbilled": [
+     "μολπὰ",
+     "ἀλλὰ"
+    ],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": true
+   },
+   "retained": [
+    "ἀλλά",
+    "ἐπεί"
+   ],
+   "word_count": {
+    "source": 19,
+    "final": 22,
+    "bounds": [
+     16,
+     21
+    ]
+   },
+   "identity_rate": 0.538,
+   "surviving_lemmas": [
+    "ζώοι",
+    "πένητα",
+    "σώζεις",
+    "τόλματον",
+    "ἀλλὰ",
+    "ἄτας",
+    "ὑπερέχεις"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
