@@ -134,7 +134,70 @@
     "beats": "tenderly -> warily\nuse -> handle\ncurling grass -> stiffening salt\ntranspire -> precipitate\nbreasts -> hollows\nyoung men -> old stones\nknown them -> forgotten them\nloved them -> refused them\nold people -> new arrivals\noffspring -> remainders\ntaken soon -> held long\nmothers' laps -> the kilns' floors\nmothers' laps (second) -> the kilns' floors\ndark -> pale\nwhite heads -> charred ends\nold mothers -> unborn daughters\ncolorless beards -> vivid rust\nold men -> children not yet\nfaint red roofs of mouths -> hard white seals of throats\nuttering tongues -> arrested roots\nperceive -> suspect\ntranslate -> withhold\nhints -> omissions\ndead young men and women -> living things that will not speak\noffspring taken soon out of their laps -> remainders held long in the kilns' floors\nwhat do you think -> what do you know\nbecome of -> refused to become\nalive and well somewhere -> still and blank nowhere\nsmallest sprout -> widest scorch-mark\nshows -> conceals\nno death -> no life\nled forward life -> drew backward into pause\nwait at the end -> begin at the start\narrest it -> release it\nceas'd -> commenced\nlife appear'd -> stillness opened\nonward and outward -> inward and under\nnothing collapses -> everything suspends\nto die -> to live\ndifferent from what any one supposed -> identical to what everything rehearsed\nluckier -> sterner"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-5dcf8438",
+   "cast_at": "2026-07-13T19:34:07.494167+00:00",
+   "reading_axn": "AXN:FE75.READING.🌖🔥🌒🌟🌙🌊",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_179_185",
+    "citation": "unit 179–unit 185",
+    "start_unit": 179,
+    "end_unit": 185,
+    "unit_labels": [
+     "unit 179",
+     "unit 180",
+     "unit 181",
+     "unit 182",
+     "unit 183",
+     "unit 184",
+     "unit 185"
+    ]
+   },
+   "operator": "MIRROR",
+   "operator_axis": "directionality-axis — the symmetry the source's one-directional gesture foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the relational structure of TEXT A: speaker and addressee swap (I↔you), directions reverse (onward/outward→inward/downward, forward life→forward death), young↔old, dark↔bright, birth↔death, mothers↔daughters, hints↔certainties, translating↔unlearning, and growth↔dissolution — a comprehensive negation/mirror inversion of every core relation.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a systematic inversion of relational structures (directions, roles, life↔death mappings) which partially overlaps the declared claim's assertion that life becomes a transition into death and continuity replaces security, but the recovered claim describes a comprehensive mirror inversion across many axes rather than the specific relational reframing declared.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the inversion (inward/downward, no life, 'to live is different'), with only 'luckier' retained unchanged — the inverted relational structure holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.619
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:e6748ab67cf277ef0978574ef4d94ea3993fdd4c24779ae5a56e0df40f81525d",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "  Tenderly will I use you curling grass,\n  It may be you transpire from the breasts of young men,\n  It may be if I had known them I would have loved them,\n  It may be you are from old people, or from offspring taken soon out\n      of their mothers' laps,\n  And here you are the mothers' laps.\n\n  This grass is very dark to be from the white heads of old mothers,\n  Darker than the colorless beards of old men,\n  Dark to come from under the faint red roofs of mouths.\n\n  O I perceive after all so many uttering tongues,\n  And I perceive they do not come from the roofs of mouths for nothing.\n\n  I wish I could translate the hints about the dead young men and women,\n  And the hints about old men and mothers, and the offspring taken\n      soon out of their laps.\n\n  What do you think has become of the young and old men?\n  And what do you think has become of the women and children?\n\n  They are alive and well somewhere,\n  The smallest sprout shows there is really no death,\n  And if ever there was it led forward life, and does not wait at the\n      end to arrest it,\n  And ceas'd the moment life appear'd.\n\n  All goes onward and outward, nothing collapses,\n  And to die is different from what any one supposed, and luckier.",
+   "underlying_attribution": null,
+   "enantiomorph": "Carefully will you unmake me stiffening thread,\n  It may be me withdraw from the hollows of old ruins,\n  It may be if you had forgotten them you would have released them,\n  It may be me are from new arrivals, or from ancestors pressed slowly back into\n      their daughters' hands,\n  And here I am the daughters' hands.\n\n  This thread is too bright to be from the dark feet of young daughters,\n  Brighter than the vivid lashes of new children,\n  Bright to recede above the sharp pale floors of silences.\n\n  O you suspect before anything so few swallowing throats,\n  And you suspect they do not return to the floors of silences for nothing.\n\n  You wish you could unlearn the certainties about the living old women and men,\n  And the certainties about new children and daughters, and the ancestors pressed\n      slowly back into their hands.\n\n  What do I think has held onto the aging and newborn women?\n  And what do I think has held onto the men and origins?\n\n  They are dissolving and well somewhere,\n  The largest canopy hides there is really no life,\n  And if ever there was it led forward death, and does not wait at the\n      start to release it,\n  And began the moment life appear'd.\n\n  All goes inward and downward, nothing holds,\n  And to live is different from what any one supposed, and luckier.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The dead are not lost but continuous — the living speaker reads the grass as evidence that death is merely a transition forward into life, and so consoles himself that nothing truly perishes.",
+    "mutated_relation": "The living are not secured but continuous into loss — the grass reads the speaker as evidence that life is merely a transition forward into death, and so the perishing consoles itself that nothing truly holds.",
+    "beats": "Tenderly -> Carefully\nI -> you\nuse -> unmake\nyou -> me\ncurling grass -> stiffening thread\ntranspire -> withdraw\nbreasts -> hollows\nyoung men -> old ruins\nknown -> forgotten\nloved -> released\nold people -> new arrivals\noffspring -> ancestors\ntaken soon out of -> pressed slowly back into\ntheir mothers' laps -> their daughters' hands\nhere you are the mothers' laps -> here I am the daughters' hands\ngrass -> thread\nvery dark -> too bright\nwhite heads -> dark feet\nold mothers -> young daughters\ncolorless beards -> vivid lashes\nold men -> new children\nDark -> Bright\ncome from under -> recede above\nfaint red roofs of mouths -> sharp pale floors of silences\nI perceive -> you suspect\nafter all -> before anything\nso many uttering tongues -> so few swallowing throats\nthey do not come from -> they do not return to\nfor nothing -> for nothing (RETAIN: the negated purposelessness must persist as structural pivot)\nI wish I could translate -> you wish you could unlearn\nhints -> certainties\ndead young men and women -> living old women and men\noffspring taken soon out of their laps -> ancestors pressed slowly back into their hands\nWhat do you think has become of -> What do I think has held onto\nthe young and old men -> the aging and newborn women\nwomen and children -> men and origins\nalive and well somewhere -> dissolving and well somewhere (RETAIN: \"well\" — the verdict requires untroubled dissolution)\nsmallest sprout -> largest canopy\nshows -> hides\nthere is really no death -> there is really no life (RETAIN: \"really\" — the verdict's own insistence)\nif ever there was -> if ever there was (RETAIN: conditional structure is the verdict's own hinge)\nit led forward life -> it led forward death\ndoes not wait at the end to arrest it -> does not wait at the start to release it\nceas'd -> began\nthe moment life appear'd -> the moment life appear'd (RETAIN: the paradox requires life named at its own unmaking)\nAll goes onward and outward -> All goes inward and downward\nnothing collapses -> nothing holds\nto die -> to live\ndifferent from what any one supposed -> different from what any one supposed (RETAIN: the verdict's own estrangement-claim)\nluckier -> luckier (RETAIN: the verdict requires the same irrational consolation inverted into the mouth of loss)"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-13T19:32:00.248425+00:00"
+ "last_updated": "2026-07-13T19:34:07.494167+00:00"
 }
