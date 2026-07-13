@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:4837.CONVERSATION.🌒🌊❄️💧🌑⚡",
+      "started_at": "2026-07-13T17:14:18.533Z",
+      "last_updated": "2026-07-13T17:14:52.022460+00:00",
+      "mode": "merkabah",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "whats the difference between sabbath and merkabah?"
+    },
+    {
       "axn": "AXN:9BB1.CONVERSATION.🌓🪨🌟🌗⚡🌱",
       "started_at": "2026-07-13T17:04:04.196Z",
       "last_updated": "2026-07-13T17:06:14.379682+00:00",
@@ -1245,7 +1254,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 138,
-  "last_updated": "2026-07-13T17:06:14.379682+00:00",
+  "total_recorded": 139,
+  "last_updated": "2026-07-13T17:14:52.022460+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
