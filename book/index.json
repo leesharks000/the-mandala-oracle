@@ -500,9 +500,9 @@
     {
       "axn": "AXN:9F91.CONVERSATION.🔥🌒⭐🌙🧊🌖",
       "started_at": "2026-07-05T17:05:35.516Z",
-      "last_updated": "2026-07-13T05:48:47.005955+00:00",
+      "last_updated": "2026-07-13T05:48:56.566829+00:00",
       "mode": "sabbath",
-      "turn_count": 0,
+      "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "test"
     },
@@ -1228,6 +1228,6 @@
     }
   ],
   "total_recorded": 136,
-  "last_updated": "2026-07-13T05:48:47.005955+00:00",
+  "last_updated": "2026-07-13T05:48:56.566829+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
