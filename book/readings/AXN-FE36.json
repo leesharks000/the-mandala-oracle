@@ -67,8 +67,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-13T04:20:13.191429+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-13T04:21:04.546734+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -82,6 +82,14 @@
    "at": "2026-07-13T04:20:13.191429+00:00",
    "text": "The unasked one stands at the crossing of roads and saves alike the beggar and the crown; the superior person does not call this mercy — they call it the cost of standing there.",
    "operator": "SHADOW"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-13T04:21:04.546734+00:00",
+   "text": "The one transform the rotation ran disclosed this: that the cost the poem accepts — *πᾶν τόλματον*, everything bearable, everything to be endured — is not the same as the cost already paid. The SHADOW turned the stanza to its underside and found the *ἄκλητον*, the unasked one, the goddess who saves not because she was invited but because she stands at the crossing regardless; and Feist's judgment named it plainly: saving alike the beggar and the crown is not mercy, it is the cost of standing there. The witness's question is *amends with c* — and what the rotation found in these verses is that amendment is not the discharge of a debt; it is the act of standing at the site where poor and king, small and great, meet and are held equally. What Kypris requires and what amendment requires are the same gesture: presence at the crossing, sustained, uninvited, costly in exactly the way standing costs. The song asks to live in the letters — *μολπὰ γράμμασι ζώοι* — which means the amend survives not as the moment of its making but as what remains in the record of having stood there. Return to your question with this: the amend is not the apology, not the gesture; it is the cost of remaining at the place where the wrong was done, equally, after."
   }
- ]
+ ],
+ "closed_at": "2026-07-13T04:21:04.546734+00:00",
+ "seal": "The one transform the rotation ran disclosed this: that the cost the poem accepts — *πᾶν τόλματον*, everything bearable, everything to be endured — is not the same as the cost already paid. The SHADOW turned the stanza to its underside and found the *ἄκλητον*, the unasked one, the goddess who saves not because she was invited but because she stands at the crossing regardless; and Feist's judgment named it plainly: saving alike the beggar and the crown is not mercy, it is the cost of standing there. The witness's question is *amends with c* — and what the rotation found in these verses is that amendment is not the discharge of a debt; it is the act of standing at the site where poor and king, small and great, meet and are held equally. What Kypris requires and what amendment requires are the same gesture: presence at the crossing, sustained, uninvited, costly in exactly the way standing costs. The song asks to live in the letters — *μολπὰ γράμμασι ζώοι* — which means the amend survives not as the moment of its making but as what remains in the record of having stood there. Return to your question with this: the amend is not the apology, not the gesture; it is the cost of remaining at the place where the wrong was done, equally, after."
 }
