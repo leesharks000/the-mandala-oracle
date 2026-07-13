@@ -1,0 +1,54 @@
+{
+ "axn": "AXN:FEFB.READING.🌙🌑🔥🌓🌓⭐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "2afd53d2481c638d",
+ "inscribed_at": "2026-07-13T21:31:27.934074+00:00",
+ "question_digest": "sha256:98e39e638edaf048be7ba29f214a69cd06bfbcdc993afb7677132e20a84d1bfb",
+ "question_gloss": "I'd be happy to help, but I need more context to provide an accurate gloss. Could you clarify:\n\n1. **Which CERN situation** are you referring to? (e.g., a speci",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_54_54",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "*Stesichorus 15*\n\nLike a living thing silent\nand thirsty, the arrow bites\nsharp through skin and\nbone, to lodge vibrating\nin the middle brain,\nwhere it buries itself\nto the feathers.\n\nGeryon’s neck\nslumps gently to one side\nwhile the blood flows black\non gore-stained limbs\nand breastplate:\n\na trickle of petals\nat summer’s end,\nthe poppy’s tender\nglory.",
+   "citation": "unit 54",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Stesichorus 15*\n\nLike a regarded thing still-unaware\nand hungry, the attention fixes\ntotal through surface and\ncomposure, to settle humming\nin the held center,\nwhere it forgets itself\nto its own lashes.\n\nThe figure's outline\ngives slowly to the frame's edge\nwhile the color deepens past naming\non light-struck planes\nand facing surface:\n\na lapse of details\nat the moment before looking away,\nthe spectacle's tender\nglory.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The physical violence of an arrow killing a body (weapon penetrating flesh, death, blood) is transformed into the perceptual act of a gaze fixing upon and dissolving a visual subject (attention penetrating composure, observation, color). The agent-patient relation shifts from projectile-to-body to viewer-to-viewed.",
+    "law_match": "PASS",
+    "law_match_note": "Both claims assert the same structural transformation: physical violence (arrow/weapon penetrating flesh) is reconstituted as perceptual violence (gaze/attention as the penetrating instrument), with the agent-patient relation shifting from projectile-body to viewer-viewed.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final lines maintain the perceptual/visual relation (spectacle, looking away, details) rather than reverting to the physical violence of TEXT A.",
+    "back_translation": "",
+    "terminal_similarity": 0.368
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-13T21:31:27.934074+00:00"
+}
