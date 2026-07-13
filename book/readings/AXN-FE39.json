@@ -1,0 +1,63 @@
+{
+ "axn": "AXN:FE39.READING.🌟🌑🌗🌑🌓🪐",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "9d6dc8cb52185e37",
+ "inscribed_at": "2026-07-13T17:47:47.706811+00:00",
+ "question_digest": "sha256:072db6b1397d50c9f16588857fa0fad2db3ac9985ba73bb3a179066ec6f470c0",
+ "question_gloss": "Inquiry about how a particular situation or process transforms into a sustained, long-term progression.",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_42_42",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "*Sappho 96*\n\nfrom Sardis,\nshe often turns her thoughts toward you,\n\nlike a goddess. she loved your song\nlike no other.\n\nnow she shines among Lydian women\nlike the rose-fingered moon in the night\n\noutshines all other stars, its silver light\nspreading over salt\nheavy sea, and over the blossom\nthick meadows.\n\nthe grass weeps lovely\ndew and the roses open\nwide, beside flowering\nmelilot and chervil.\n\nhow many times has she wandered\naimlessly, remembering\ngentle Atthis? while longing gnaws\nat her fragile heart?\n\n(this mind sings\nto go there)\n\nit’s not easy for us\nto be like goddesses\nin loveliness of form.\n\nAphrodite poured nectar\nfrom her golden\nhands:\n\npersuasion\ndesire\n\nI will come.",
+   "citation": "unit 42",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 96*\n\na name she cannot stop placing in her mouth,\nsomething has made you survivable as an image,\n\na scale exists between what you are and what can be worshipped. a voice had to leave a body\nfor the hearing to begin.\n\nnow a surrounding must dim for a figure to take light\nlike the sky had to empty first in something was removed and called darkness\n\neach star had to agree to be lesser, which is: to be named second, a metal had to be found that could stand for softness without breaking\nspreading over the water had to be still enough to accept what falls on it\nweight is what water carries when no one is crossing it, and over the field had to have already opened without being asked\ndensity is what happens when nothing is picked.\n\na surface had to cool below the air to draw moisture down beauty had to attach to the involuntary\nand a temperature had to hold through the night without dropping\nbeside lesser things had to be named to prove\nthe attention was indiscriminate.\n\na path had to fail to lead anywhere for the walking to become grief\na purpose had to be withdrawn from her like a hand, a gentleness had to have existed first\nthen been taken into storage? while a hunger had to find no food and turn on the one who carries it\nthe organ had to have already thinned from previous use?\n\n(a thought had to become unbearable\nbefore it turned to music)\n\na limit had to be discovered by attempting to exceed it\na form had to fail\nand the failure had to be witnessed.\n\na power had to exist that does not need permission a substance had to exist that the mortal throat can receive but not produce\nfrom a resistance had to exist first\nor there is nothing to persuade:\n\ndesire\ndesire\n\na distance had to be measured and accepted as crossable.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Text A presents imagery and emotional experience as direct lyric states (the moon shines, the grass weeps dew, longing gnaws), while Text B converts every image and state into a precondition or prerequisite that had to be fulfilled ('a surface had to cool,' 'a path had to fail to lead anywhere'), transforming the poem from immediate experience into a causal/logical chain of necessary conditions for that experience to exist.",
+    "law_match": "PASS",
+    "law_match_note": "Both describe the same transformation: converting direct lyric statements into their underlying preconditions/prerequisites — surfacing what must already be true for each predication to be utterable.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the prerequisite/precondition structure ('a power had to exist,' 'a substance had to exist,' 'a distance had to be measured') through to the end.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 330 words vs budget 97-132 (source 115)"
+    },
+    {
+     "failed_test": "question_entity_leak",
+     "diagnosis": "witness-question entities inside the transform or commentary: become"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-13T17:47:47.706811+00:00"
+}
