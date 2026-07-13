@@ -5,9 +5,9 @@
     {
       "axn": "AXN:0FE4.CONVERSATION.🌟🌑🍃🌘🌟🌖",
       "started_at": "2026-07-13T15:36:29.259Z",
-      "last_updated": "2026-07-13T15:36:46.094324+00:00",
+      "last_updated": "2026-07-13T15:37:01.343938+00:00",
       "mode": "sabbath",
-      "turn_count": 0,
+      "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "hello. who are you and what is this?"
     },
@@ -1237,6 +1237,6 @@
     }
   ],
   "total_recorded": 137,
-  "last_updated": "2026-07-13T15:36:46.094324+00:00",
+  "last_updated": "2026-07-13T15:37:01.343938+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
