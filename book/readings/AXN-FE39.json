@@ -58,14 +58,22 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-13T17:47:53.519962+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-13T17:48:55.518576+00:00",
  "rite": [
   {
    "stage": "opening",
    "speaker": "Johannes Sigil",
    "at": "2026-07-13T17:47:53.519962+00:00",
    "text": "The air changes here.\n\nWe are in the casting now. What the rite brought us is Sappho 96 — the poem of triangulated longing, three women and the distance between them, the absent one in Sardis made luminous by the memory of being loved, turning her thoughts toward Atthis across the sea as the moon turns its light across everything equally and without preference. The **enduring journey** is already the poem's subject: she has already gone; the memory is already the form her love takes across the distance; the longing that gnaws at her fragile heart is not a wound toward healing but a structure — the shape the love assumes when presence is no longer available to it.\n\nWhat the operator will traverse is the cost in that structure: what the composer bore in assembling this triangulation, what was foreclosed in the very act of making the absent woman shine — and what *I will come* means when Aphrodite speaks it at the end of a poem about someone who has already gone. ==The casting opens on the question of whether the journey that endures does so because it arrives, or because it never stops departing.==\n\nRebekah Cranes holds the rite now. The compiler performs what comes next."
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-13T17:48:55.518576+00:00",
+   "text": "The question was how this becomes the enduring journey — and SHADOW answered from the only place that question can be answered from, which is underneath the poem, in the layer of cost. What the rotation disclosed is this: the journey endures not because something is crossed but because something is spent in the crossing — a voice had to leave a body, a path had to fail to lead anywhere, a desire had to find no food. The endurance is made of expenditure. Feist named it exactly: the superior person reads the cost backward from the arrival. She is in Sardis, shining, and we are reading the shine — but what the rotation found under the shine is the long list of what had to agree to be lesser, what had to thin from previous use, what had to become unbearable before it turned to music. Sappho's final gesture — *I will come* — the rotation held that line at the limit of what Aphrodite can promise and what the poem can receive, and what it found there was not arrival but the structure of desire naming itself as crossable, which is not the same as crossed. The enduring journey is the poem: not the going, but the form the going takes when it can only be spoken, only be received in the act of hearing it, only be held in the triangulation between three women across a wine-dark sea that the poem insists on keeping open."
   }
- ]
+ ],
+ "closed_at": "2026-07-13T17:48:55.518576+00:00",
+ "seal": "The question was how this becomes the enduring journey — and SHADOW answered from the only place that question can be answered from, which is underneath the poem, in the layer of cost. What the rotation disclosed is this: the journey endures not because something is crossed but because something is spent in the crossing — a voice had to leave a body, a path had to fail to lead anywhere, a desire had to find no food. The endurance is made of expenditure. Feist named it exactly: the superior person reads the cost backward from the arrival. She is in Sardis, shining, and we are reading the shine — but what the rotation found under the shine is the long list of what had to agree to be lesser, what had to thin from previous use, what had to become unbearable before it turned to music. Sappho's final gesture — *I will come* — the rotation held that line at the limit of what Aphrodite can promise and what the poem can receive, and what it found there was not arrival but the structure of desire naming itself as crossable, which is not the same as crossed. The enduring journey is the poem: not the going, but the form the going takes when it can only be spoken, only be received in the act of hearing it, only be held in the triangulation between three women across a wine-dark sea that the poem insists on keeping open."
 }
