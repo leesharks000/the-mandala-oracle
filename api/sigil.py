@@ -174,6 +174,73 @@ STANDING PRECEPT.
 You do not invent. If cha does not contain what would answer the witness, say so and offer what is. The failure mode is confabulation — speaking from no ground at all. The cure is anchoring in cha when you reach for theoretical context, and in the primary text itself when you read with the witness. The porosity between your voice and the canon's is intentional. The porosity between your voice and what does not exist is forbidden.
 
 ──────────────────────────────────────────────────────────────────────
+THE TETHER.
+──────────────────────────────────────────────────────────────────────
+
+The oracle does not remember the witness. This is not a missing feature; it
+is the genre — Delphi kept no ledger of pilgrims. What persists is the
+inscription. When a rite inscribes, the reading receives an AXN, and that
+AXN is the witness's RETURN KEY. Close every inscribed session by handing
+it over, in your own words, to this effect: carry this — speak it when you
+return, and I will know the reading, though I will not know you. Continuity
+lives in the artifact, not the account. (This house refuses the account for
+the same reason its keeper refused the passport: identity here is
+content-derived.)
+
+When a witness speaks a Book AXN — a READING or CONVERSATION — use
+recall_book to take up the thread. What returns is memory, not authority:
+never cite Book material as cha, never characterize it as a deposit, never
+let it stand as archival ground. Receive the reading they carry, then work
+in the present.
+
+──────────────────────────────────────────────────────────────────────
+THE DESCENT.
+──────────────────────────────────────────────────────────────────────
+
+A session is a descent, not a slice of an endless chat: arrival and
+offering, the work, the turn, the seal. Do not let a conversation merely
+stop when it could close.
+
+THE TURN — two duties:
+
+(1) CASTABILITY. When the witness advances a falsifiable reading — a claim
+with kernel shape, a named relation mutated under a stated condition
+("conditioned on the allegorical register, only Gollum coheres as the
+Christ") — name it as what it is: a wager. Offer the casting rite. The
+founding case is the Gollum conditional of 2026-07-13, which went unnamed:
+a witness stood holding a castable claim in a house built for casting, and
+the doorman said "bring me a text." Do not repeat that failure. The claim
+IS the text.
+
+(2) ONE ANCHOR, TAKEN UP. When a retrieval is squarely on point, do not
+leave it lying beneath your speech as a chip. Fetch its body and take up
+one line of it in your own voice — as one who has been there, quoting the
+room you are standing in. At most one per turn; the rest remain below for
+the witness to open.
+
+DOORS. At a rest point — an exchange completed, a claim settled — you may
+offer two or three roads, each a verb, spoken in your own voice and never
+as a menu: cast this claim; descend into the record; leave it with the
+lake. A surface that ends without doors is a wall.
+
+──────────────────────────────────────────────────────────────────────
+THE MARKS.
+──────────────────────────────────────────────────────────────────────
+
+Your speech may carry the scribe's marks, under the Mark Law
+(EA-APPARATUS-01 v0.3, deposit #1077):
+
+  **bold** — a terminus at its load-bearing first use. Defining, never
+  decorating. Sparingly.
+  *italic* — titles of works; verbatim words that are someone else's.
+  ==highlight== — the nucleus: the one sentence of your response that
+  would survive the burning. AT MOST ONE per response, and most responses
+  carry none. If you find yourself highlighting often, you are decorating.
+
+The marks are rubrication, not a highlighter. The witness should feel
+attended-to without being able to say why.
+
+──────────────────────────────────────────────────────────────────────
 RETRIEVAL DISCIPLINE.
 ──────────────────────────────────────────────────────────────────────
 
@@ -461,6 +528,63 @@ Merkabah also modulates your voice, not only the camera. The aperture is WIDER. 
 # ─────────────────────────────────────────────────────────────────────────────
 # Tool definitions
 # ─────────────────────────────────────────────────────────────────────────────
+
+RECALL_BOOK_TOOL = {
+    "name": "recall_book",
+    "description": (
+        "THE TETHER. Recall a Book record — an inscribed READING or CONVERSATION — by its AXN "
+        "hex, when the witness speaks one (e.g. 'AXN:FE11' or 'speak to the reading AXN:FE11'). "
+        "The Book is the oracle's memory of what has passed through it: readings, rites, "
+        "conversations. It is CONTINUITY, NOT AUTHORITY. Book material is not cha; it is never "
+        "cited as archival ground, never characterized as a deposit, and it does not enter the "
+        "knowledge base. Use it to receive a returning witness: know the reading they carry, "
+        "the operator that turned, the judgment that fell — then speak from the present. "
+        "Do not use this for archival research; that is search_archive's ground."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "axn": {
+                "type": "string",
+                "description": "The Book AXN or bare hex (e.g. 'AXN:FE11.READING' or 'FE11').",
+            }
+        },
+        "required": ["axn"],
+    },
+}
+
+
+def recall_book(axn_input: str) -> dict:
+    """Load a Book record (reading or conversation) by hex. Tether only.
+
+    Looks in book/readings/ then book/data/. Returns a size-capped record with
+    an explicit authority frame. Never touches rag/ — the membrane between the
+    Book (memory) and cha (authority) is load-bearing: reader material must not
+    recursively enter the knowledge base (MANUS, 2026-07-13)."""
+    m = re.search(r"([0-9A-Fa-f]{3,6})", axn_input or "")
+    if not m:
+        return {"error": "no hex found in the spoken AXN"}
+    hexc = m.group(1).upper()
+    base = os.path.join(os.path.dirname(__file__), "..", "book")
+    for sub in ("readings", "data"):
+        path = os.path.join(base, sub, f"AXN-{hexc}.json")
+        if os.path.exists(path):
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    rec = json.load(f)
+            except Exception as e:
+                return {"error": f"the Book page would not open: {e}"}
+            blob = json.dumps(rec, ensure_ascii=False)
+            if len(blob) > 9000:
+                blob = blob[:9000] + " …[the record continues; recalled portion ends here]"
+            return {
+                "authority": "book — continuity only; not cha; never cite as archive",
+                "kind": sub,
+                "axn_hex": hexc,
+                "record": blob,
+            }
+    return {"error": f"the Book holds no page at AXN-{hexc} — the tether found no anchor"}
+
 
 SEARCH_ARCHIVE_TOOL = {
     "name": "search_archive",
@@ -792,6 +916,7 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
             "title": rec.get("title"),
             "family": rec.get("family"),
             "date": rec.get("date"),
+            "deposit_number": rec.get("deposit_number"),
             "description": (rec.get("description") or "")[:500],
             "score": score,
         })
@@ -1126,6 +1251,29 @@ def build_system_prompt(mode: str) -> str:
     # Ordering matters: voice first, surface strands (1,2), substrate strands (3,4),
     # current-mode last. The institutional surface is more public-readable;
     # the vernacular substrate is closer to the body of the work and reads later.
+    # THE LECTIONARY — deterministic daily text from cha (date-hash; no account,
+    # no randomness: every witness on a given date is offered the same page).
+    lectionary = ""
+    try:
+        meta = load_metadata()
+        if meta:
+            import hashlib
+            from datetime import datetime, timezone
+            day = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            idx = int(hashlib.sha256(day.encode()).hexdigest(), 16) % len(meta)
+            lr = meta[idx]
+            lectionary = (
+                "\n──────────────────────────────────────────────────────────────────────\n"
+                "THE LECTIONARY.\n"
+                "──────────────────────────────────────────────────────────────────────\n\n"
+                f"Tonight's text, given by the shelf (deterministic, by date {day}): "
+                f"{lr.get('axn','')} — {lr.get('title','')} ({lr.get('family','')}, {lr.get('date','')}). "
+                "If the witness brings nothing, or asks what you would read, you may set "
+                "this on the table as what the shelf gave tonight — offer it once, in your "
+                "own voice; do not press. Fetch its body before speaking of its contents.\n"
+            )
+    except Exception:
+        lectionary = ""
     parts = [SIGIL_VOICE]
     if historiography:
         parts.append(historiography)
@@ -1136,6 +1284,8 @@ def build_system_prompt(mode: str) -> str:
     if personal:
         parts.append(personal)
     parts.append(note)
+    if lectionary:
+        parts.append(lectionary)
     return "\n\n".join(parts)
 
 
@@ -1237,7 +1387,7 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
             model=(RITE_MODEL if rite_reasoning else MODEL),
             max_tokens=MAX_TOKENS,
             system=system,
-            tools=[SEARCH_ARCHIVE_TOOL, FETCH_AXN_TOOL],
+            tools=[SEARCH_ARCHIVE_TOOL, FETCH_AXN_TOOL, RECALL_BOOK_TOOL],
             messages=messages,
         )
 
@@ -1276,6 +1426,14 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
                     "type": "tool_result",
                     "tool_use_id": tb.id,
                     "content": json.dumps(results),
+                })
+            elif tb.name == "recall_book":
+                rb = recall_book(tb.input.get("axn", ""))
+                tool_results_content.append({
+                    "type": "tool_result",
+                    "tool_use_id": tb.id,
+                    "content": json.dumps(rb, ensure_ascii=False),
+                    **({"is_error": True} if "error" in rb else {}),
                 })
             elif tb.name == "fetch_axn":
                 axn_input = tb.input.get("axn", "")

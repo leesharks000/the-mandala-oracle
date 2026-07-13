@@ -333,7 +333,8 @@ function appendUserMessage(content) {
   roleLabel.textContent = 'You';
   const contentEl = document.createElement('div');
   contentEl.className = 'message-content';
-  contentEl.textContent = content;
+  contentEl.style.whiteSpace = 'pre-wrap';
+  contentEl.innerHTML = renderVoiceMarks(content);
   wrap.appendChild(roleLabel);
   wrap.appendChild(contentEl);
   messagesEl.appendChild(wrap);
@@ -383,6 +384,18 @@ function appendErrorMessage(content) {
   messagesEl.appendChild(wrap);
   messagesEl.scrollTop = messagesEl.scrollHeight;
   return wrap;
+}
+
+function renderVoiceMarks(text) {
+  // The Marks (EA-APPARATUS-01 v0.3): Sigil's speech may carry **terminus**,
+  // *italic provenance*, and at most one ==nucleus== per response. Escape
+  // first; the marks are the only HTML that enters the voice.
+  const esc = String(text)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return esc
+    .replace(/==([^=\n][^=]*?)==/g, '<span class="app-lemma">$1</span>')
+    .replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*\n]+?)\*/g, '<em>$1</em>');
 }
 
 function appendRetrievals(messageEl, retrievals) {
