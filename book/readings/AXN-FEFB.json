@@ -45,10 +45,20 @@
    "law_variance": null,
    "glyphic": null,
    "advisories": [],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "The lens held steady while the light moved through it: the superior person knows that the arrow was already the eye before it became the wound."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-13T21:31:27.934074+00:00"
+ "last_updated": "2026-07-13T21:31:40.768970+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-13T21:31:40.768970+00:00",
+   "text": "The lens held steady while the light moved through it: the superior person knows that the arrow was already the eye before it became the wound.",
+   "operator": "SHADOW"
+  }
+ ]
 }
