@@ -1,0 +1,72 @@
+{
+ "schema_version": "expansion/v1.0",
+ "source_text_id": "sappho-fragments",
+ "source_title": "Sappho",
+ "unit_basis": {
+  "segmentation": "stanza",
+  "primary_after": "ΣΑΠΦΩ 31",
+  "units_total": 21,
+  "basis_hash": "b0b91b6aba582c05affbc8afbb0310565e166e04abf58c348c625da7ed1a47f3",
+  "basis_note": "unit indices refer to segment_units() over primary text; if basis_hash changes, historical anchors are interpreted against the basis they were cast under"
+ },
+ "transforms": [
+  {
+   "transform_id": "TX-1e35ed7e",
+   "cast_at": "2026-07-13T04:19:57.224466+00:00",
+   "reading_axn": "AXN:FE36.READING.🌗🌕🔥🌊🌙🔥",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_6_6",
+    "citation": "unit 6",
+    "start_unit": 6,
+    "end_unit": 6,
+    "unit_labels": [
+     "unit 6"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, Cypris (a divine figure) saves both the poor and the king and protects a small city, with song living in written letters; in Text B, the unnamed uninvited one saves the poor and dishonored (removing the king/powerful), protects a narrow house instead of a city, and a stone monument endures instead of song in writing — the direction of divine protection shifts from encompassing the full social hierarchy and the civic/poetic realm to sheltering only the lowly and the private/material domain.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies real structural changes — narrowing of divine protection from full social hierarchy to only the lowly, civic to private domain, song to stone monument — which are genuine relational mutations, but the declared claim focuses on the felicity conditions of the utterance (speaking from desperation, entreating uncertain power, expecting failure), a different structural reading than the hierarchy/domain shifts recovered.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the changed relation: 'τόδε λάϊνον ζώοι' (this stone endure) consistently replaces the civic-poetic 'μολπὰ γράμμασι ζώοι' (song live in letters), sustaining the shift to the private/material.",
+    "back_translation": "",
+    "terminal_similarity": 0.44
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:d851a26888ec41cb4c2adca5a86bf712d1efbdf50f6c144ec19851317291480d",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "ἀλλὰ πᾶν τόλματον· ἐπεί σε, Κύπρι,\nκαὶ πένητα καὶ βασιλῆα σώζεις·\nκαὶ πόλιν ὀλίγαν ὑπερέχεις ἄτας·\n     μολπὰ γράμμασι ζώοι.",
+   "underlying_attribution": null,
+   "enantiomorph": "ἀλλὰ πᾶν τόλματον· ἐπεί σε, τὰν ἄκλητον,\nκαὶ πένητα καὶ ἄτιμον σώζεις ποκα·\nκαὶ στενὸν τόδε δῶμα ὑπερέχεις ἄτας·\n     τόδε λάϊνον ζώοι.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The speaker stakes survival — personal, political, textual — on the fact that divine erotic power is indiscriminate in what it preserves, and that the written inscription is the vehicle of that preservation.",
+    "mutated_relation": "The conditions that must hold for such an utterance to be spoken: the speaker stands at the threshold where daring is the only remaining option because preservation has not yet arrived — the indiscriminate power is entreated precisely because its exercise is uncertain, and the inscription exists because the voice expects to fail.",
+    "beats": "πᾶν τόλματον (all must be dared) -> the mouth empties its last breath forward\nἀλλά (but) -> ἀλλά (RETAIN: adversative turn is the structural hinge between exhaustion and appeal)\nἐπεί (since) -> ἐπεί (RETAIN: the causal joint must hold; the logic of desperation requires it)\nσε (you) -> the unverified\nΚύπρι (Kypris/Aphrodite) -> you-whose-arrival-I-cannot-compel\nπένητα (the poor man) -> the one with nothing to trade\nβασιλῆα (the king) -> the one whose trade-goods are worthless here\nσώζεις (you save) -> you have sometimes carried across\nκαί...καί (both...and) -> whether...or\nπόλιν ὀλίγαν (a small city) -> this narrowing room\nὑπερέχεις (you hold above) -> you have held above before\nἄτας (ruin) -> the floor giving way\nμολπά (song) -> this cut into stone\nγράμμασι (in letters) -> because the throat will close\nζώοι (may it live) -> let it outlast the breath that fails"
+   },
+   "commentary": ""
+  }
+ ],
+ "last_updated": "2026-07-13T04:19:57.224466+00:00"
+}
