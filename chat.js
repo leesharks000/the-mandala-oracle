@@ -393,6 +393,11 @@ function renderVoiceMarks(text) {
   const esc = String(text)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   return esc
+    .replace(/\[([^\]\n]+?)\]\((https:\/\/(?:www\.alexanarch\.org|github\.com\/leesharks000)[^)\s]*)\)/g,
+      (mm, label, url) => {
+        const isAxn = /^AXN:/.test(label);
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer"${isAxn ? ' class="chip"' : ''}>${label}</a>`;
+      })
     .replace(/==([^=\n][^=]*?)==/g, '<span class="app-lemma">$1</span>')
     .replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*\n]+?)\*/g, '<em>$1</em>');

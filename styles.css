@@ -876,3 +876,7 @@ body {
 .message.feist .message-content{border-left:2px solid var(--speaker-feist);padding-left:12px;}
 #sabbath-strip{margin:6px 14px 0;}
 #sabbath-colophon{font-family:var(--mono);font-size:9.5px;color:var(--text-tertiary);border-top:1px solid var(--border);margin:4px 14px 8px;padding-top:6px;line-height:1.8;}
+
+.message-content a.chip{font-family:var(--mono);font-size:.72em;background:rgba(212,185,122,.08);border:1px solid var(--accent-dim);border-radius:9px;padding:1px 7px;color:var(--accent);white-space:nowrap;text-decoration:none;vertical-align:baseline;}
+.message-content a.chip:hover{border-color:var(--accent);}
+.message-content a:not(.chip){color:var(--link);}
