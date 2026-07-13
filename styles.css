@@ -898,3 +898,12 @@ body {
 #messages::-webkit-scrollbar-thumb{background:rgba(60,65,75,.35);}
 #messages:hover::-webkit-scrollbar-thumb{background:rgba(60,65,75,.6);}
 #messages{scrollbar-width:thin;scrollbar-color:rgba(60,65,75,.4) transparent;}
+/* ── palette bar: narrow-viewport repair (SEND must never leave the screen) ── */
+.input-meta{flex-wrap:wrap;row-gap:6px;}
+@media (max-width: 560px){
+  #status{display:none;}
+  #settings-toggle,#share-toggle,#cast-toggle{font-size:10px !important;padding:5px 8px !important;letter-spacing:.05em;}
+  .support-cha-label{font-size:10px;}
+  .meta-left{gap:6px;}
+  #send-btn,button[type="submit"]{padding:8px 16px;}
+}
