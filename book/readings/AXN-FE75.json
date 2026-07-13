@@ -1,0 +1,63 @@
+{
+ "axn": "AXN:FE75.READING.🌖🔥🌒🌟🌙🌊",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "24b883e8124a5efe",
+ "inscribed_at": "2026-07-13T19:31:58.822388+00:00",
+ "question_digest": "sha256:e6748ab67cf277ef0978574ef4d94ea3993fdd4c24779ae5a56e0df40f81525d",
+ "question_gloss": "Question about experiencing loss of relationships and social connections.",
+ "source_text_id": "whitman-leaves-of-grass",
+ "cast_selection": "units_179_185",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "  Tenderly will I use you curling grass,\n  It may be you transpire from the breasts of young men,\n  It may be if I had known them I would have loved them,\n  It may be you are from old people, or from offspring taken soon out\n      of their mothers' laps,\n  And here you are the mothers' laps.\n\n  This grass is very dark to be from the white heads of old mothers,\n  Darker than the colorless beards of old men,\n  Dark to come from under the faint red roofs of mouths.\n\n  O I perceive after all so many uttering tongues,\n  And I perceive they do not come from the roofs of mouths for nothing.\n\n  I wish I could translate the hints about the dead young men and women,\n  And the hints about old men and mothers, and the offspring taken\n      soon out of their laps.\n\n  What do you think has become of the young and old men?\n  And what do you think has become of the women and children?\n\n  They are alive and well somewhere,\n  The smallest sprout shows there is really no death,\n  And if ever there was it led forward life, and does not wait at the\n      end to arrest it,\n  And ceas'd the moment life appear'd.\n\n  All goes onward and outward, nothing collapses,\n  And to die is different from what any one supposed, and luckier.",
+   "citation": "unit 179–unit 185",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "Warily will I handle you stiffening salt,\n  It may be you precipitate from the hollows of old stones,\n  It may be if I had forgotten them I would have refused them,\n  It may be you are from new arrivals, or from remainders held long in\n      the kilns' floors,\n  And here you are the kilns' floors.\n\n  This salt is very pale to be from the charred ends of unborn daughters,\n  Paler than the vivid rust of children not yet,\n  Pale to come from under the hard white seals of throats.\n\n  O I suspect after all so many arrested roots,\n  And I suspect they do not come from the seals of throats for nothing.\n\n  I wish I could withhold the omissions about the living things that will not speak,\n  And the omissions about children not yet and unborn daughters, and the remainders held long\n      in the kilns' floors.\n\n  What do you know has refused to become of the old stones and new arrivals?\n  And what do you know has refused to become of the unborn daughters and children not yet?\n\n  They are still and blank nowhere,\n  The widest scorch-mark conceals there is really no life,\n  And if ever there was it drew backward into pause, and does not begin at the\n      start to release it,\n  And commenced the moment stillness opened.\n\n  All goes inward and under, everything suspends,\n  And to live is identical to what everything rehearsed, and sterner.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "TEXT B systematically inverts the relational directions and polarities of TEXT A: life/death, young/old, forward/backward, onward-outward/inward-under, alive/still, birth/unbirth, love/refusal, translation/withholding, and optimism/severity are all reversed, so that every directional flow and causal relation points in the opposite direction.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a systematic inversion of relational directions and polarities (life→death, forward→backward, etc.), which partially overlaps with the declared claim's assertion that life is negated and stillness prevails, but the recovered claim describes a broader structural reversal operation rather than specifically the grammatical illusion/withheld presence framing of the declared claim.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final ~40% of TEXT B consistently maintains the inverted relational structure (inward/under, suspension, living=rehearsed/sterner) without reverting to TEXT A's affirmative outward momentum.",
+    "back_translation": "",
+    "terminal_similarity": 0.24
+   },
+   "law_variance": {
+    "declared": "The living are not present but perpetually withheld through the inert silence of what refuses to grow; life is the grammatical illusion, and the stillness is the undeceived condition that precedes all utterance.",
+    "recovered": "TEXT B systematically inverts the relational directions and polarities of TEXT A: life/death, young/old, forward/backward, onward-outward/inward-under, alive/still, birth/unbirth, love/refusal, translation/withholding, and optimism/severity are all reversed, so that every directional flow and causal relation points in the opposite direction.",
+    "note": "The recovered claim identifies a systematic inversion of relational directions and polarities (life→death, forward→backward, etc.), which partially overlaps with the declared claim's assertion that life is negated and stillness prevails, but the recovered claim describes a broader structural reversal operation rather than specifically the grammatical illusion/withheld presence framing of the declared claim."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-13T19:31:58.822388+00:00"
+}
