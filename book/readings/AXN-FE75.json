@@ -54,10 +54,20 @@
      "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Salt does not grieve the brine it came from: the superior person, reading the blank of the kiln floor, knows that 'nowhere' is still an address."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-13T19:31:58.822388+00:00"
+ "last_updated": "2026-07-13T19:32:10.096013+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-13T19:32:10.096013+00:00",
+   "text": "Salt does not grieve the brine it came from: the superior person, reading the blank of the kiln floor, knows that 'nowhere' is still an address.",
+   "operator": "SHADOW"
+  }
+ ]
 }
