@@ -915,26 +915,36 @@ function renderTransformCard(parentEl, t) {
   card.className = 'transform-card';
   const v = t.verification_results || {};
   const sf = t.spatial_form || {};
+  // ── apparatus: the lemma — the cast's falsifiable claim (kernel.mutated_relation) ──
+  const K = t.kernel || {};
+  if (K.mutated_relation) {
+    const ll = document.createElement('div'); ll.className = 'app-lemma-label'; ll.textContent = 'the wager';
+    const lm = document.createElement('div');
+    const sp = document.createElement('span'); sp.className = 'app-lemma'; sp.textContent = K.mutated_relation;
+    lm.appendChild(sp); card.appendChild(ll); card.appendChild(lm);
+  }
+  // ── apparatus: witness-row — itemized verdicts as chips ──
+  const wr = document.createElement('div'); wr.className = 'witness-row';
+  const chip = (txt, cls) => { const c = document.createElement('span'); c.className = 'w' + (cls ? ' ' + cls : ''); c.textContent = txt; wr.appendChild(c); };
+  const verdict = (x) => /pass|true|✓/i.test(String(x)) ? 'pass' : (/fail|halt|✗/i.test(String(x)) ? 'halt' : '');
+  if (t.operator) chip(t.operator + (t.operator_axis ? ' · ' + String(t.operator_axis).split('—')[0].trim() : ''), 'op');
+  chip('identity ' + (v.identity || '?'), verdict(v.identity));
+  chip('independence ' + (v.semantic_independence || '?'), verdict(v.semantic_independence));
+  chip('containment ' + (v.retrospective_containment || '?'), verdict(v.retrospective_containment));
+  const ind0 = t.independent_verification || {};
+  if (ind0.mode) { chip('blacklist ' + (ind0.blacklist || '?'), verdict(ind0.blacklist)); chip('law ' + (ind0.law_match || '?'), verdict(ind0.law_match)); }
+  const g0 = t.geometry_check;
+  if (g0) chip('geometry ' + (g0.lines_match && g0.stanzas_match ? '✓' : '✗'), (g0.lines_match && g0.stanzas_match) ? 'pass' : 'halt');
+  card.appendChild(wr);
   const lines = [];
   lines.push(`Operator: ${t.operator_specification || ''}`);
-  lines.push(`Verification — identity: ${v.identity || '?'} · semantic independence: ${v.semantic_independence || '?'} · retrospective containment: ${v.retrospective_containment || '?'} (${v.mode || 'producer_side'})`);
   if (sf.lines || sf.stanzas) {
     lines.push(`Spatial form — lines: ${sf.lines ?? '?'} · stanzas: ${sf.stanzas ?? '?'}${Array.isArray(sf.indent_profile) ? ' · indent profile preserved' : ''}`);
-  }
-  const ind = t.independent_verification || {};
-  if (ind.mode) {
-    lines.push(`Independent — blacklist: ${ind.blacklist || '?'} · recovered law: ${(ind.recovered_law || '—').slice(0, 110)} · law match: ${ind.law_match || '?'} · terminal: ${ind.terminal_consistency || '?'}`);
   }
   const adv = t.advisories || [];
   if (adv.length) {
     lines.push(`Advisories (${adv.length}) — verdicts recorded, nothing halted: ` +
                adv.map(a => a.failed_test).join(' · '));
-  }
-  const g = t.geometry_check;
-  if (g) {
-    lines.push(`Geometry (recounted) — lines ${g.output.lines}/${g.source.lines} ${g.lines_match ? '✓' : '✗'} · ` +
-               `stanzas ${g.output.stanzas}/${g.source.stanzas} ${g.stanzas_match ? '✓' : '✗'}` +
-               (g.source.indented_lines > 0 ? ` · indentation ${g.indentation_carried ? 'carried ✓' : 'LOST ✗'}` : ''));
   }
   card.textContent = lines.join('\n');
   if ((t.advisories || []).length) {
@@ -983,6 +993,27 @@ function renderInscriptionCard(insc) {
   const head = document.createElement('div');
   head.textContent = `Inscribed — ${insc.mode}. Reading ${insc.reading_axn}`;
   card.appendChild(head);
+  // ── apparatus: doors — the itinerarium (verbs only, three at most) ──
+  const doors = document.createElement('div'); doors.className = 'doors';
+  const turn = document.createElement('button'); turn.type = 'button';
+  turn.textContent = '⟳ Cast again';
+  turn.onclick = () => { const b = document.getElementById('cast-toggle'); if (b) { b.hidden = false; b.click(); } };
+  doors.appendChild(turn);
+  const ask = document.createElement('button'); ask.type = 'button';
+  ask.textContent = '✍ Ask Sigil about this reading';
+  ask.onclick = () => { const inp = document.getElementById('message-input') || document.querySelector('textarea'); if (inp) { inp.value = `Speak to the reading ${insc.reading_axn} — what did the rotation disclose that the seal did not say?`; inp.focus(); } };
+  doors.appendChild(ask);
+  if (insc.reading_axn) {
+    const hexpart = (insc.reading_axn.split(':')[1] || '').split('.')[0];
+    if (hexpart) { const bk = document.createElement('a'); bk.textContent = '📖 The Book record';
+      bk.href = `https://github.com/leesharks000/the-mandala-oracle/blob/main/book/readings/AXN-${hexpart}.json`;
+      bk.target = '_blank'; bk.rel = 'noopener'; doors.appendChild(bk); }
+  }
+  card.appendChild(doors);
+  // ── apparatus: colophon — the scribe's closing ──
+  const col = document.createElement('div'); col.className = 'colophon';
+  col.textContent = `${insc.reading_axn || ''} · inscribed ${insc.mode} · ${new Date().toISOString().slice(0,10)} · themandalaoracle.com — EA-APPARATUS-01`;
+  card.appendChild(col);
   if (insc.expansion && insc.expansion.appended) {
     const exp = document.createElement('div');
     exp.style.marginTop = '4px';

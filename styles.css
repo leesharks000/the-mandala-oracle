@@ -844,3 +844,16 @@ body {
   outline-offset: 2px;
   border-radius: 1px;
 }
+
+/* ── EA-APPARATUS-01: the apparatus grammar (lemma · termini · witness · doors · colophon) ── */
+.app-lemma-label{font-family:var(--mono,monospace);font-size:.62em;letter-spacing:.14em;color:var(--dim,#8a8578);text-transform:uppercase;margin-bottom:2px;}
+.app-lemma{background:linear-gradient(transparent 58%, rgba(212,175,55,.38) 58%);padding:0 2px;font-style:italic;}
+.witness-row{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 4px;font-family:var(--mono,monospace);font-size:.7em;}
+.witness-row .w{border:1px solid var(--border,#3a3630);border-radius:9px;padding:2px 8px;color:var(--dim,#8a8578);white-space:nowrap;}
+.witness-row .w.pass{color:#3f9e6e;border-color:#3f9e6e55;}
+.witness-row .w.halt{color:#c96a5a;border-color:#c96a5a66;}
+.witness-row .w.op{color:var(--fg,#ddd);border-style:double;}
+.doors{margin:12px 0 2px;display:flex;flex-wrap:wrap;gap:8px;}
+.doors a,.doors button{font-family:var(--mono,monospace);font-size:.78em;border:1px solid var(--border,#3a3630);border-radius:4px;padding:6px 12px;background:transparent;color:inherit;cursor:pointer;text-decoration:none;}
+.doors a:hover,.doors button:hover{border-color:#d4af37aa;}
+.colophon{font-family:var(--mono,monospace);font-size:.64em;color:var(--dim,#8a8578);margin-top:10px;border-top:1px solid var(--border,#3a3630);padding-top:5px;}
