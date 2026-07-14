@@ -1,0 +1,124 @@
+{
+ "run_id": "RUN-20260714T012242Z-884e58",
+ "schema": "run/v1",
+ "ts": "2026-07-14T01:22:42.863290+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_156_159",
+ "citation": "9:13–9:16",
+ "operator": "THUNDER",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "i have too many layers of automation running across too many surfaces to keep it clean. and im doing work that can only be done at automated scale.",
+ "method": {
+  "commit": "d7de9d48ac8c457130eebf0cc37b634141d75091",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/d7de9d48ac8c457130eebf0cc37b634141d75091",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/d7de9d48ac8c457130eebf0cc37b634141d75091/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "50cd2c3850f12ce5",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "d7de9d48ac8c",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "50cd2c3850f12ce5",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Destruction is not chaos but an architecture of sanctioned precision: stored, timed, fractioned, numbered — catastrophe as calibrated instrument released by authorized signal from the consecrated center.",
+   "mutated_relation": "The instrument that cannot fire — precision so total it becomes its own paralysis, the apparatus that holds and holds and specifies and specifies until the release-moment is indistinguishable from the binding.",
+   "beats": "ἕκτος -> sixth (RETAIN: the ordinal sequence is the verdict's apparatus of specification)\nἄγγελος -> technician\nἐσάλπισεν -> engaged the mechanism\nἤκουσα -> I registered\nφωνὴν -> signal\nμίαν -> single\nκεράτων -> calibration-points\nθυσιαστηρίου -> targeting console\nχρυσοῦ -> polished\nἐνώπιον -> interfacing with\nθεοῦ -> the authority\nλέγοντα -> specifying to\nἕκτῳ -> sixth (RETAIN: the recursive ordinal IS the paralysis of re-specification)\nἀγγέλῳ -> technician\nἔχων -> holding\nσάλπιγγα -> firing key\nλῦσον -> release\nτοὺς -> the\nτέσσαρας -> four\nἀγγέλους -> locked actuators\nδεδεμένους -> set to safety\nποταμῷ -> channel\nμεγάλῳ -> main\nεὐφράτῃ -> flow-corridor\nἐλύθησαν -> were cleared for release\nτέσσαρες -> four (RETAIN: the count re-specifies what was already specified, the holding pattern)\nἄγγελοι -> actuators\nἡτοιμασμένοι -> pre-staged\nὥραν -> hour\nἡμέραν -> day\nμῆνα -> month\nἐνιαυτόν -> year\nἀποκτείνωσιν -> might discharge upon\nτρίτον -> one-third\nἀνθρώπων -> of the field\nἀριθμὸς -> tally\nστρατευμάτων -> ordnance arrays\nἱππικοῦ -> mobile platforms\nδισμυριάδες -> twice-ten-thousand-fold\nμυριάδων -> of ten-thousands\nἀριθμὸν -> count"
+  },
+  "enantiomorph": "**9:13** Καὶ ὁ ἕκτος τεχνίτης ἐνήργησε τὸν μηχανισμόν· καὶ ἐγὼ κατέγραψα σῆμα ἓν ἐκ ⸀τῶν βαθμονομήσεων τοῦ στοχαστικοῦ τοῦ λειασμένου τοῦ ἐνώπιον τῆς ἐξουσίας,\n\n**9:14** ⸀προσδιορίζον τῷ ἕκτῳ τεχνίτῃ, ὁ κρατῶν τὸ κλειδίον πυρός· Λῦσον τοὺς τέσσαρας ἐνεργοποιητὰς τοὺς ἠσφαλισμένους ἐπὶ τῷ ἀγωγῷ τῷ κυρίῳ Ῥοοδιαδρόμῳ.\n\n**9:15** καὶ ἀπεδεσμεύθησαν οἱ τέσσαρες ἐνεργοποιηταὶ οἱ προσταχθέντες εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἐκφορτίσωσιν ἐπὶ τὸ τρίτον τοῦ πεδίου.\n\n**9:16** καὶ ὁ ἀπολογισμὸς τῶν πυροβολικῶν τάξεων τῶν ⸀κινητῶν βάσεων ⸀δισμυριάδες μυριάδων· κατέγραψα τὸν ἀπολογισμὸν αὐτῶν.",
+  "enantiomorph_translation": "**9:13** And the sixth technician engaged the mechanism; and I registered a single signal from ⸀the calibration-points of the targeting console, the polished one, interfacing with the authority,\n\n**9:14** ⸀specifying to the sixth technician, the one holding the firing key: Release the four locked actuators set to safety upon the main channel, the Flow-Corridor.\n\n**9:15** And the four actuators were cleared for release, the ones pre-staged for the hour ⸀and day and month and year, that they might discharge upon one-third of the field.\n\n**9:16** And the tally of the ordnance arrays of the ⸀mobile platforms was twice-ten-thousand-fold of ten-thousands; I registered the count of them.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, the agents are angels (ἄγγελοι) performing divine apocalyptic actions (trumpeting, killing a third of mankind) within a sacred/theological framework; in Text B, the agents are technicians (τεχνίται) and activators (ἐνεργοποιηταί) performing mechanized/military operations (activating mechanisms, discharging onto a third of the field), transforming the relation from divine supernatural agency to human-technological agency, and changing the target from killing humans to discharging upon a terrain.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim identifies a real structural change — divine agents replaced by technicians, supernatural agency replaced by mechanized/technological agency — which is a genuine relational mutation. However, the declared claim describes a specific paradox of precision-as-paralysis where the instrument's binding and release become indistinguishable, which is a different structural concept than the agent-type swap described in the recovery.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final portion (9:16) maintains the technological/military re-mapping (πυροβολικῶν τάξεων, κινητῶν βάσεων instead of ἱππικοῦ στρατευμάτων), so the changed relation persists throughout.",
+   "back_translation": "",
+   "terminal_similarity": 0.35
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "27% of non-RETAIN source lemmas survive verbatim (δισμυριάδες, λῦσον, μυριάδων, μῆνα, τοὺς, τρίτον…) -- the bill was not honored"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "The instrument that cannot fire — precision so total it becomes its own paralysis, the apparatus that holds and holds and specifies and specifies until the release-moment is indistinguishable from the binding.",
+   "recovered": "In Text A, the agents are angels (ἄγγελοι) performing divine apocalyptic actions (trumpeting, killing a third of mankind) within a sacred/theological framework; in Text B, the agents are technicians (τεχνίται) and activators (ἐνεργοποιηταί) performing mechanized/military operations (activating mechanisms, discharging onto a third of the field), transforming the relation from divine supernatural agency to human-technological agency, and changing the target from killing humans to discharging upon a terrain.",
+   "note": "The recovered claim identifies a real structural change — divine agents replaced by technicians, supernatural agency replaced by mechanized/technological agency — which is a genuine relational mutation. However, the declared claim describes a specific paradox of precision-as-paralysis where the instrument's binding and release become indistinguishable, which is a different structural concept than the agent-type swap described in the recovery."
+  },
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Destruction is not chaos but an architecture of sanctioned precision: stored, timed, fractioned, numbered — catastrophe as calibrated instrument released by authorized signal from the consecrated center.",
+   "verdict": "The instrument that cannot fire — precision so total it becomes its own paralysis, the apparatus that holds and holds and specifies and specifies until the release-moment is indistinguishable from the binding.",
+   "world_bill": "ἕκτος -> sixth (RETAIN: the ordinal sequence is the verdict's apparatus of specification)\nἄγγελος -> technician\nἐσάλπισεν -> engaged the mechanism\nἤκουσα -> I registered\nφωνὴν -> signal\nμίαν -> single\nκεράτων -> calibration-points\nθυσιαστηρίου -> targeting console\nχρυσοῦ -> polished\nἐνώπιον -> interfacing with\nθεοῦ -> the authority\nλέγοντα -> specifying to\nἕκτῳ -> sixth (RETAIN: the recursive ordinal IS the paralysis of re-specification)\nἀγγέλῳ -> technician\nἔχων -> holding\nσάλπιγγα -> firing key\nλῦσον -> release\nτοὺς -> the\nτέσσαρας -> four\nἀγγέλους -> locked actuators\nδεδεμένους -> set to safety\nποταμῷ -> channel\nμεγάλῳ -> main\nεὐφράτῃ -> flow-corridor\nἐλύθησαν -> were cleared for release\nτέσσαρες -> four (RETAIN: the count re-specifies what was already specified, the holding pattern)\nἄγγελοι -> actuators\nἡτοιμασμένοι -> pre-staged\nὥραν -> hour\nἡμέραν -> day\nμῆνα -> month\nἐνιαυτόν -> year\nἀποκτείνωσιν -> might discharge upon\nτρίτον -> one-third\nἀνθρώπων -> of the field\nἀριθμὸς -> tally\nστρατευμάτων -> ordnance arrays\nἱππικοῦ -> mobile platforms\nδισμυριάδες -> twice-ten-thousand-fold\nμυριάδων -> of ten-thousands\nἀριθμὸν -> count",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 6,
+    "repaired": true
+   },
+   "retained": [
+    "τέσσαρες",
+    "ἕκτος",
+    "ἕκτῳ"
+   ],
+   "word_count": {
+    "source": 75,
+    "final": 82,
+    "bounds": [
+     63,
+     86
+    ]
+   },
+   "identity_rate": 0.27,
+   "surviving_lemmas": [
+    "δισμυριάδες",
+    "λῦσον",
+    "μυριάδων",
+    "μῆνα",
+    "τοὺς",
+    "τρίτον",
+    "ἐνιαυτόν",
+    "ἐνώπιον",
+    "ἡμέραν",
+    "ὥραν"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
