@@ -88,11 +88,62 @@
    },
    "commentary": "The source appraises a woman's life from outside, at its two thresholds, and finds sweetness precisely where a man takes her up — at the altar and at the bier, she is twice the borne object of another's act. SHADOW rotates the bearing's direction: the borne becomes the bearer. What the epigram forecloses is the undated middle — the days with no ceremony, no man arriving to carry anything off. There the woman is not lifted but lifting, and the metric flips from sweetness (delectation of the appraiser) to weight (endured by the carrier). Every image sits at the mirror coordinate: the two festal thresholds become two unwitnessed labors; \"carry her corpse away\" (someone lifts her burden at the end) becomes \"no one comes to lift it from her\" (the discharge that never arrives). Non-superimposable — the source's proprietary sweetness cannot be recovered from a text about weight no one relieves — yet in contact at every beat. The bearing-cost encoded by the utterance is the life it valued only at its handles.",
    "interpretation": "Water gathers where the ground already broke; the SHADOW found what the source compressed into ceremony — the weight that falls before the first day and keeps falling after the last."
+  },
+  {
+   "operator": "THUNDER",
+   "source_passage": "**9:13** Καὶ ὁ ἕκτος ἄγγελος ἐσάλπισεν· καὶ ἤκουσα φωνὴν μίαν ἐκ ⸀τῶν κεράτων τοῦ θυσιαστηρίου τοῦ χρυσοῦ τοῦ ἐνώπιον τοῦ θεοῦ,\n\n**9:14** ⸀λέγοντα τῷ ἕκτῳ ἀγγέλῳ, ὁ ἔχων τὴν σάλπιγγα· Λῦσον τοὺς τέσσαρας ἀγγέλους τοὺς δεδεμένους ἐπὶ τῷ ποταμῷ τῷ μεγάλῳ Εὐφράτῃ.\n\n**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.",
+   "citation": "9:13–9:16",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**9:13** Καὶ ὁ ἕκτος τεχνίτης ἐνήργησε τὸν μηχανισμόν· καὶ ἐγὼ κατέγραψα σῆμα ἓν ἐκ ⸀τῶν βαθμονομήσεων τοῦ στοχαστικοῦ τοῦ λειασμένου τοῦ ἐνώπιον τῆς ἐξουσίας,\n\n**9:14** ⸀προσδιορίζον τῷ ἕκτῳ τεχνίτῃ, ὁ κρατῶν τὸ κλειδίον πυρός· Λῦσον τοὺς τέσσαρας ἐνεργοποιητὰς τοὺς ἠσφαλισμένους ἐπὶ τῷ ἀγωγῷ τῷ κυρίῳ Ῥοοδιαδρόμῳ.\n\n**9:15** καὶ ἀπεδεσμεύθησαν οἱ τέσσαρες ἐνεργοποιηταὶ οἱ προσταχθέντες εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἐκφορτίσωσιν ἐπὶ τὸ τρίτον τοῦ πεδίου.\n\n**9:16** καὶ ὁ ἀπολογισμὸς τῶν πυροβολικῶν τάξεων τῶν ⸀κινητῶν βάσεων ⸀δισμυριάδες μυριάδων· κατέγραψα τὸν ἀπολογισμὸν αὐτῶν.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the agents are angels (ἄγγελοι) performing divine apocalyptic actions (trumpeting, killing a third of mankind) within a sacred/theological framework; in Text B, the agents are technicians (τεχνίται) and activators (ἐνεργοποιηταί) performing mechanized/military operations (activating mechanisms, discharging onto a third of the field), transforming the relation from divine supernatural agency to human-technological agency, and changing the target from killing humans to discharging upon a terrain.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change — divine agents replaced by technicians, supernatural agency replaced by mechanized/technological agency — which is a genuine relational mutation. However, the declared claim describes a specific paradox of precision-as-paralysis where the instrument's binding and release become indistinguishable, which is a different structural concept than the agent-type swap described in the recovery.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (9:16) maintains the technological/military re-mapping (πυροβολικῶν τάξεων, κινητῶν βάσεων instead of ἱππικοῦ στρατευμάτων), so the changed relation persists throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.35
+   },
+   "law_variance": {
+    "declared": "The instrument that cannot fire — precision so total it becomes its own paralysis, the apparatus that holds and holds and specifies and specifies until the release-moment is indistinguishable from the binding.",
+    "recovered": "In Text A, the agents are angels (ἄγγελοι) performing divine apocalyptic actions (trumpeting, killing a third of mankind) within a sacred/theological framework; in Text B, the agents are technicians (τεχνίται) and activators (ἐνεργοποιηταί) performing mechanized/military operations (activating mechanisms, discharging onto a third of the field), transforming the relation from divine supernatural agency to human-technological agency, and changing the target from killing humans to discharging upon a terrain.",
+    "note": "The recovered claim identifies a real structural change — divine agents replaced by technicians, supernatural agency replaced by mechanized/technological agency — which is a genuine relational mutation. However, the declared claim describes a specific paradox of precision-as-paralysis where the instrument's binding and release become indistinguishable, which is a different structural concept than the agent-type swap described in the recovery."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "27% of non-RETAIN source lemmas survive verbatim (δισμυριάδες, λῦσον, μυριάδων, μῆνα, τοὺς, τρίτον…) -- the bill was not honored"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-03T07:58:01.182069+00:00",
+ "last_updated": "2026-07-14T01:23:54.324722+00:00",
  "rite": [
   {
    "stage": "judgment",
