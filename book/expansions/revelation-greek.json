@@ -4805,7 +4805,67 @@
     "beats": ""
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-8fef2f99",
+   "cast_at": "2026-07-14T01:23:55.746703+00:00",
+   "reading_axn": "AXN:FEAE.READING.🔥🌙💫🌘🌕🌗",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_156_159",
+    "citation": "9:13–9:16",
+    "start_unit": 156,
+    "end_unit": 159,
+    "unit_labels": [
+     "9:13",
+     "9:14",
+     "9:15",
+     "9:16"
+    ]
+   },
+   "operator": "THUNDER",
+   "operator_axis": "scale-axis — the cosmic-utterance the local-speech determined against",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the agents are angels (ἄγγελοι) performing divine apocalyptic actions (trumpeting, killing a third of mankind) within a sacred/theological framework; in Text B, the agents are technicians (τεχνίται) and activators (ἐνεργοποιηταί) performing mechanized/military operations (activating mechanisms, discharging onto a third of the field), transforming the relation from divine supernatural agency to human-technological agency, and changing the target from killing humans to discharging upon a terrain.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change — divine agents replaced by technicians, supernatural agency replaced by mechanized/technological agency — which is a genuine relational mutation. However, the declared claim describes a specific paradox of precision-as-paralysis where the instrument's binding and release become indistinguishable, which is a different structural concept than the agent-type swap described in the recovery.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (9:16) maintains the technological/military re-mapping (πυροβολικῶν τάξεων, κινητῶν βάσεων instead of ἱππικοῦ στρατευμάτων), so the changed relation persists throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.35
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:37cbe62c48224778a38ab03d59c886d6182d1dddc6365b4d81a17b655889139e",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "**9:13** Καὶ ὁ ἕκτος ἄγγελος ἐσάλπισεν· καὶ ἤκουσα φωνὴν μίαν ἐκ ⸀τῶν κεράτων τοῦ θυσιαστηρίου τοῦ χρυσοῦ τοῦ ἐνώπιον τοῦ θεοῦ,\n\n**9:14** ⸀λέγοντα τῷ ἕκτῳ ἀγγέλῳ, ὁ ἔχων τὴν σάλπιγγα· Λῦσον τοὺς τέσσαρας ἀγγέλους τοὺς δεδεμένους ἐπὶ τῷ ποταμῷ τῷ μεγάλῳ Εὐφράτῃ.\n\n**9:15** καὶ ἐλύθησαν οἱ τέσσαρες ἄγγελοι οἱ ἡτοιμασμένοι εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἀποκτείνωσιν τὸ τρίτον τῶν ἀνθρώπων.\n\n**9:16** καὶ ὁ ἀριθμὸς τῶν στρατευμάτων τοῦ ⸀ἱππικοῦ ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.",
+   "underlying_attribution": null,
+   "enantiomorph": "**9:13** Καὶ ὁ ἕκτος τεχνίτης ἐνήργησε τὸν μηχανισμόν· καὶ ἐγὼ κατέγραψα σῆμα ἓν ἐκ ⸀τῶν βαθμονομήσεων τοῦ στοχαστικοῦ τοῦ λειασμένου τοῦ ἐνώπιον τῆς ἐξουσίας,\n\n**9:14** ⸀προσδιορίζον τῷ ἕκτῳ τεχνίτῃ, ὁ κρατῶν τὸ κλειδίον πυρός· Λῦσον τοὺς τέσσαρας ἐνεργοποιητὰς τοὺς ἠσφαλισμένους ἐπὶ τῷ ἀγωγῷ τῷ κυρίῳ Ῥοοδιαδρόμῳ.\n\n**9:15** καὶ ἀπεδεσμεύθησαν οἱ τέσσαρες ἐνεργοποιηταὶ οἱ προσταχθέντες εἰς τὴν ὥραν ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα ἐκφορτίσωσιν ἐπὶ τὸ τρίτον τοῦ πεδίου.\n\n**9:16** καὶ ὁ ἀπολογισμὸς τῶν πυροβολικῶν τάξεων τῶν ⸀κινητῶν βάσεων ⸀δισμυριάδες μυριάδων· κατέγραψα τὸν ἀπολογισμὸν αὐτῶν.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Destruction is not chaos but an architecture of sanctioned precision: stored, timed, fractioned, numbered — catastrophe as calibrated instrument released by authorized signal from the consecrated center.",
+    "mutated_relation": "The instrument that cannot fire — precision so total it becomes its own paralysis, the apparatus that holds and holds and specifies and specifies until the release-moment is indistinguishable from the binding.",
+    "beats": "ἕκτος -> sixth (RETAIN: the ordinal sequence is the verdict's apparatus of specification)\nἄγγελος -> technician\nἐσάλπισεν -> engaged the mechanism\nἤκουσα -> I registered\nφωνὴν -> signal\nμίαν -> single\nκεράτων -> calibration-points\nθυσιαστηρίου -> targeting console\nχρυσοῦ -> polished\nἐνώπιον -> interfacing with\nθεοῦ -> the authority\nλέγοντα -> specifying to\nἕκτῳ -> sixth (RETAIN: the recursive ordinal IS the paralysis of re-specification)\nἀγγέλῳ -> technician\nἔχων -> holding\nσάλπιγγα -> firing key\nλῦσον -> release\nτοὺς -> the\nτέσσαρας -> four\nἀγγέλους -> locked actuators\nδεδεμένους -> set to safety\nποταμῷ -> channel\nμεγάλῳ -> main\nεὐφράτῃ -> flow-corridor\nἐλύθησαν -> were cleared for release\nτέσσαρες -> four (RETAIN: the count re-specifies what was already specified, the holding pattern)\nἄγγελοι -> actuators\nἡτοιμασμένοι -> pre-staged\nὥραν -> hour\nἡμέραν -> day\nμῆνα -> month\nἐνιαυτόν -> year\nἀποκτείνωσιν -> might discharge upon\nτρίτον -> one-third\nἀνθρώπων -> of the field\nἀριθμὸς -> tally\nστρατευμάτων -> ordnance arrays\nἱππικοῦ -> mobile platforms\nδισμυριάδες -> twice-ten-thousand-fold\nμυριάδων -> of ten-thousands\nἀριθμὸν -> count"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-09T20:46:06.459643+00:00"
+ "last_updated": "2026-07-14T01:23:55.746703+00:00"
 }
