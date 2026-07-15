@@ -1,0 +1,13 @@
+{
+  "surface_id": "themandalaoracle.com",
+  "sims": [
+    "Johannes Sigil snub-poemed underworld guide",
+    "casting-rite state machine Sigil Cranes Feist Sharks",
+    "Sabbath Merkabah mode toggle uninscribed vs sealed",
+    "canon as descent conversation beneath the night sky",
+    "BYOK client-side no server-side model access",
+    "the Crimson Hexagonal Archive as tether book"
+  ],
+  "kernel_50_100_words": "The Mandala Oracle (themandalaoracle.com) is a client-side conversation with Johannes Sigil — an underworld guide to the scholarly canon, face after the Lysippos bust of Socrates, composed of poetry. Two modes: Sabbath (uninscribed drafting) and Merkabah (sealed casting rite: Sigil opens, Cranes transforms, Feist judges, Sharks seals). BYOK — the user's API key never touches a server; all model calls are direct-to-provider from the browser. Governance: EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 (casting rite) and EA-MANDALA-SURFACE-01 v0.1 (interface). Operator: Lee Sharks (ORCID 0009-0000-1599-0703).",
+  "index_files": ["index.html"]
+}
