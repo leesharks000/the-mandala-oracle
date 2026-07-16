@@ -1174,8 +1174,67 @@
     "beats": "living thing -> regarded thing\nsilent -> still-unaware\nthirsty -> hungry (the gaze's hunger, not the arrow's)\narrow -> attention\nbites -> fixes\nsharp -> total\nskin -> surface\nbone -> composure\nlodge vibrating -> settle humming\nmiddle brain -> held center\nburies itself -> forgets itself\nfeathers -> its own lashes\nGeryon's neck -> the figure's outline\nslumps gently -> gives slowly\none side -> the frame's edge\nblood flows black -> color deepens past naming\ngore-stained limbs -> light-struck planes\nbreastplate -> facing surface\ntrickle -> lapse\npetals -> details\nsummer's end -> the moment before looking away\npoppy's -> spectacle's\ntender glory -> tender glory (RETAIN: the verdict requires this phrase as the site where aesthetic capture confesses itself as violence — it is the wound-word the perceiver inflicts by finding beauty)"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-fa0cd95c",
+   "cast_at": "2026-07-16T02:38:41.072449+00:00",
+   "reading_axn": "AXN:FE37.READING.🌘🌔🌙🌿🔥🌕",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_46_46",
+    "citation": "unit 46",
+    "start_unit": 46,
+    "end_unit": 46,
+    "unit_labels": [
+     "unit 46"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "transform"
+    ],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes specific relational and structural changes about conditions of utterance being made primary.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the same amplified, existential-philosophical register and the same relational structure (Hipponax petitioning Hermes for relief from suffering) as throughout; no reversion to Text A's plain style or altered direction of relation.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:4f15df2f4d9a59c23b88b241ed7b397aeb7a751a2130941dcccad9bf16815b97",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "*Hipponax 32*\n\nDear Hermes, Cyllenian Hermes, son of Maia,\n    I’m praying to you\n    while my teeth are clattering\n    in my skull, and I’m shaking\n    like a seizure: give poor Hipponax\n    a sweater, and a nice coat to keep warm,\n    and nice warm shoes, and a pair of sandals,\n    and, while you’re at it, a pile of\n    coins, to balance the books.\n\n      Thanks,\n\n      Hipponax\n\n*Hipponax 34*\n\nDear Hermes,\n    You haven’t given me\n    a nice warm coat yet\n    as a cure for the freezing\n    winter. You haven’t covered my feet\n    with fur-lined shoes yet, so my chilblains don’t\n    pop.\n\n      Thanks,\n\n      Your friend Hipponax\n\n*Hipponax 39*\n\nDear Hermes,\n    Soon I’ll give my tortured soul over\n    to hanging, if you don’t hurry up and send\n    some barley, about a bushel,\n    so I can brew up a cure\n    for all my boundless suffering.\n\n      Thanks,\n      Sincerely,",
+   "underlying_attribution": null,
+   "enantiomorph": "*Hipponax 32*\n\nDear Hermes, born-at-the-edge Hermes, child-of-what-barely-was,\n    I have used up every other listener\n    while the jaw has become its own percussion, involuntary\n    in the bone I will outlast my face in, and the body deciding things without me\n    like something that owns me and I rent: restore what was structurally presupposed to already-subtracted Hipponax\n    the layer between my skin and the fact of air, and the distance between my chest and the night,\n    and the membrane that would prove the ground is not my body, and a pair of the second skin I can't grow,\n    and, while you're at it, the solid form of other people's\n    belief I deserve to continue, to make the ledger between my breathing and the city's tolerance come out even.\n\n      The word that names a debt where no exchange occurred,\n\n      Hipponax\n\n*Hipponax 34*\n\nDear Hermes,\n    The silence has become a second weather\n    the absence that now has its own weight on me\n    as what would make the outside not a diagnosis for the season\n    that is also an argument against me. You haven't acknowledged I stand somewhere\n    with the proof that an animal died for something kinder than I receive alive yet, so the body's own ledger of unanswered requests, written in the feet don't\n    agree with the cold that I am open.\n\n      The word that names a debt where no exchange occurred,\n\n      The claim that is also a condition: if I am not your friend then no relation holds between any being and me Hipponax\n\n*Hipponax 39*\n\nDear Hermes,\n    Soon I'll give the self that has been made into evidence over\n    to the final petition, addressed to the crossbeam, which unlike you answers immediately with its weight, if you don't even mercy has a deadline and mine is the body's and send\n    the simplest thing the earth yields that I cannot reach, about the minimum unit of continued existence,\n    so I can transform by the only means left: heat and waiting into what would make the outside not a diagnosis\n    for all the one thing I have in surplus, my only abundance.\n\n      The word that names a debt where no exchange occurred,\n      The signature of someone who has only sincerity left as currency,",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "The sacred address is instrumentalized as begging; the divine is conscripted as patron of the abject body; prayer is complaint, complaint is invoice, and the poet's signature converts supplication into bureaucratic comedy — the god's silence across repeated petitions is the poem's engine.",
+    "mutated_relation": "The conditions of utterance made primary: what must be true for such a prayer to be spoken — the body that has already failed its own maintenance, the social order that has already expelled the speaker, the god who must exist as addressable precisely because nothing else remains addressable, the repetition that proves the address is its own purpose since no answer comes.",
+    "beats": "Hipponax -> Hipponax (RETAIN: the condition-of-utterance requires the speaker to name himself as proof he still exists to be named)\nHermes -> Hermes (RETAIN: the addressee's identity is itself a condition — only the god of thresholds and thieves is structurally available to a speaker this far outside)\nCyllenian -> born-at-the-edge\nson of Maia -> child-of-what-barely-was\nI'm praying to you -> I have used up every other listener\nteeth are clattering -> the jaw has become its own percussion, involuntary\nskull -> the bone I will outlast my face in\nshaking -> the body deciding things without me\nlike a seizure -> like something that owns me and I rent\ngive -> restore what was structurally presupposed\npoor -> already-subtracted\nsweater -> the layer between my skin and the fact of air\nnice coat -> the distance between my chest and the night\nwarm shoes -> the membrane that would prove the ground is not my body\nsandals -> the second skin I can't grow\npile of coins -> the solid form of other people's belief I deserve to continue\nbalance the books -> make the ledger between my breathing and the city's tolerance come out even\nhaven't given me -> the silence has become a second weather\nnice warm coat yet -> the absence that now has its own weight on me\ncure -> what would make the outside not a diagnosis\nfreezing winter -> the season that is also an argument against me\ncovered my feet -> acknowledged I stand somewhere\nfur-lined shoes -> the proof that an animal died for something kinder than I receive alive\nchilblains -> the body's own ledger of unanswered requests, written in the feet\npop -> the skin agreeing with the cold that I am open\ntortured soul -> the self that has been made into evidence\nhanging -> the final petition, addressed to the crossbeam, which unlike you answers immediately with its weight\nhurry up -> even mercy has a deadline and mine is the body's\nbarley -> the simplest thing the earth yields that I cannot reach\nbushel -> the minimum unit of continued existence\nbrew up -> transform by the only means left: heat and waiting\nboundless suffering -> the one thing I have in surplus, my only abundance\nThanks -> the word that names a debt where no exchange occurred\nSincerely -> the signature of someone who has only sincerity left as currency\nYour friend -> the claim that is also a condition: if I am not your friend then no relation holds between any being and me"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-13T21:31:29.318955+00:00",
+ "last_updated": "2026-07-16T02:38:41.072449+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
