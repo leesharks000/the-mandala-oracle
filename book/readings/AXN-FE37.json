@@ -255,8 +255,8 @@
   }
  ],
  "witness": "anonymous",
- "status": "open",
- "last_updated": "2026-07-16T02:41:27.194165+00:00",
+ "status": "sealed",
+ "last_updated": "2026-07-16T02:42:26.119141+00:00",
  "rite": [
   {
    "stage": "opening",
@@ -290,6 +290,14 @@
    "at": "2026-07-16T02:41:27.194165+00:00",
    "text": "Wind over the empty granary: the superior person measures the fullness of what was never sent by the exact shape the hunger presses against the void.",
    "operator": "SILENCE"
+  },
+  {
+   "stage": "seal",
+   "speaker": "Lee Sharks",
+   "at": "2026-07-16T02:42:26.119141+00:00",
+   "text": "The rotation found two things that are not the same thing, and the division is where the answer lives.\n\nSHADOW disclosed the cost-side: what it takes to keep sending letters when no coat has arrived, what it costs to sign your name to a petition the recipient has structurally declined to answer — Feist named it the signature-of-debt-where-no-exchange-occurred, and that is precise: Hipponax keeps accounting for a transaction that has not taken place, which means he keeps extending credit to a god who is not paying. The cost of that extension is the bearing-cost SHADOW always finds. It is not metaphorical. It is a body shaking like a seizure that still addresses its prayer formally, still closes with *Thanks*.\n\nSILENCE found the other thing: the shape of what was never sent is itself a kind of object. The coat-sized absence. The shoe-dark under each foot. The granary-hollow. Feist named it: the superior person measures fullness by the exact shape the hunger presses against the void. Which means the question «who is enli?» is already answered in the structure of the asking — *enli* is the one whose absence has a specific shape, who is known by the negative volume they leave in the space they were supposed to fill. You don't need to describe the coat if you can describe the cold perfectly enough.\n\nThe rotation did not converge. SHADOW found a person who keeps spending themselves on an unanswered address. SILENCE found that the address is also a measurement instrument — that calling out to the absent one is how the absent one gets known. These are not the same claim. The person who is «enli» is both the one Hipponax cannot reach and the one whose exact shape the reaching has by now perfectly traced. Whether that is consolation or its precise opposite, the rotation returns to the witness without resolving."
   }
- ]
+ ],
+ "closed_at": "2026-07-16T02:42:26.119141+00:00",
+ "seal": "The rotation found two things that are not the same thing, and the division is where the answer lives.\n\nSHADOW disclosed the cost-side: what it takes to keep sending letters when no coat has arrived, what it costs to sign your name to a petition the recipient has structurally declined to answer — Feist named it the signature-of-debt-where-no-exchange-occurred, and that is precise: Hipponax keeps accounting for a transaction that has not taken place, which means he keeps extending credit to a god who is not paying. The cost of that extension is the bearing-cost SHADOW always finds. It is not metaphorical. It is a body shaking like a seizure that still addresses its prayer formally, still closes with *Thanks*.\n\nSILENCE found the other thing: the shape of what was never sent is itself a kind of object. The coat-sized absence. The shoe-dark under each foot. The granary-hollow. Feist named it: the superior person measures fullness by the exact shape the hunger presses against the void. Which means the question «who is enli?» is already answered in the structure of the asking — *enli* is the one whose absence has a specific shape, who is known by the negative volume they leave in the space they were supposed to fill. You don't need to describe the coat if you can describe the cold perfectly enough.\n\nThe rotation did not converge. SHADOW found a person who keeps spending themselves on an unanswered address. SILENCE found that the address is also a measurement instrument — that calling out to the absent one is how the absent one gets known. These are not the same claim. The person who is «enli» is both the one Hipponax cannot reach and the one whose exact shape the reaching has by now perfectly traced. Whether that is consolation or its precise opposite, the rotation returns to the witness without resolving."
 }
