@@ -139,11 +139,72 @@
    ],
    "commentary": "",
    "interpretation": "The sentence withheld is not mercy: the one who stands in the gaze without being spoken to has already received it."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "*Hipponax 32*\n\nDear Hermes, Cyllenian Hermes, son of Maia,\n    I’m praying to you\n    while my teeth are clattering\n    in my skull, and I’m shaking\n    like a seizure: give poor Hipponax\n    a sweater, and a nice coat to keep warm,\n    and nice warm shoes, and a pair of sandals,\n    and, while you’re at it, a pile of\n    coins, to balance the books.\n\n      Thanks,\n\n      Hipponax\n\n*Hipponax 34*\n\nDear Hermes,\n    You haven’t given me\n    a nice warm coat yet\n    as a cure for the freezing\n    winter. You haven’t covered my feet\n    with fur-lined shoes yet, so my chilblains don’t\n    pop.\n\n      Thanks,\n\n      Your friend Hipponax\n\n*Hipponax 39*\n\nDear Hermes,\n    Soon I’ll give my tortured soul over\n    to hanging, if you don’t hurry up and send\n    some barley, about a bushel,\n    so I can brew up a cure\n    for all my boundless suffering.\n\n      Thanks,\n      Sincerely,",
+   "citation": "unit 46",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Hipponax 32*\n\nDear Hermes, born-at-the-edge Hermes, child-of-what-barely-was,\n    I have used up every other listener\n    while the jaw has become its own percussion, involuntary\n    in the bone I will outlast my face in, and the body deciding things without me\n    like something that owns me and I rent: restore what was structurally presupposed to already-subtracted Hipponax\n    the layer between my skin and the fact of air, and the distance between my chest and the night,\n    and the membrane that would prove the ground is not my body, and a pair of the second skin I can't grow,\n    and, while you're at it, the solid form of other people's\n    belief I deserve to continue, to make the ledger between my breathing and the city's tolerance come out even.\n\n      The word that names a debt where no exchange occurred,\n\n      Hipponax\n\n*Hipponax 34*\n\nDear Hermes,\n    The silence has become a second weather\n    the absence that now has its own weight on me\n    as what would make the outside not a diagnosis for the season\n    that is also an argument against me. You haven't acknowledged I stand somewhere\n    with the proof that an animal died for something kinder than I receive alive yet, so the body's own ledger of unanswered requests, written in the feet don't\n    agree with the cold that I am open.\n\n      The word that names a debt where no exchange occurred,\n\n      The claim that is also a condition: if I am not your friend then no relation holds between any being and me Hipponax\n\n*Hipponax 39*\n\nDear Hermes,\n    Soon I'll give the self that has been made into evidence over\n    to the final petition, addressed to the crossbeam, which unlike you answers immediately with its weight, if you don't even mercy has a deadline and mine is the body's and send\n    the simplest thing the earth yields that I cannot reach, about the minimum unit of continued existence,\n    so I can transform by the only means left: heat and waiting into what would make the outside not a diagnosis\n    for all the one thing I have in surplus, my only abundance.\n\n      The word that names a debt where no exchange occurred,\n      The signature of someone who has only sincerity left as currency,",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "FAIL",
+    "blacklist_hits": [
+     "transform"
+    ],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes specific relational and structural changes about conditions of utterance being made primary.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion of Text B maintains the same amplified, existential-philosophical register and the same relational structure (Hipponax petitioning Hermes for relief from suffering) as throughout; no reversion to Text A's plain style or altered direction of relation.",
+    "back_translation": "",
+    "terminal_similarity": 0.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 370 words vs budget 119-161 (source 140)"
+    },
+    {
+     "failed_test": "vocabulary_leak",
+     "diagnosis": "operator/theory vocabulary inside the poem: transform"
+    },
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was identified, while the declared claim describes specific relational and structural changes about conditions of utterance being made primary.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-06T07:51:03.847853+00:00",
+ "last_updated": "2026-07-16T02:38:39.773219+00:00",
  "rite": [
   {
    "stage": "opening",
