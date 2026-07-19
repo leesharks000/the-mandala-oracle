@@ -1347,8 +1347,65 @@
     "beats": "young -> young (RETAIN: the verdict requires temporal identity to persist as co-presence, not nostalgia)\nmother -> mouth\nsaid -> opened\ngirls -> hands\ndark locks -> wet roots\npurple bands -> river-silt\nweave -> press\nfresh flowers -> caught light\nbraids -> folds\nsummer yellow -> morning-warm\nsimple ornament -> single weight\ngaudy things -> thick patience\nbought -> drawn\nSardis -> the same ground\nwinter cold -> winter cold (RETAIN: the verdict requires cold to remain itself while becoming its opposite function)\nsneaks -> builds\nheart -> heart (RETAIN: the verdict re-derives the heart as self-constituting through its own arrest)\nwing beats -> wing beats (RETAIN: the structural pivot between motion and stillness must persist for the mutual constitution to land)\nslow -> close\nstillness -> pressure\nlong ago -> long ago (RETAIN: temporal distance must survive as the bridge-material, not dissolve)\nloved -> knew\nAtthis -> Atthis (RETAIN: the address-mode requires the proper name for the relation of mutual constitution to hold between specific beings)\ntiny girl -> unfinished clay\nseemed -> were\nsmall -> dense\nawkward -> exact"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-e15f8015",
+   "cast_at": "2026-07-19T22:11:40.217416+00:00",
+   "reading_axn": "AXN:FEF6.READING.🌗🪐🌖🌟🌑🌟",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_41_41",
+    "citation": "unit 41",
+    "start_unit": 41,
+    "end_unit": 41,
+    "unit_labels": [
+     "unit 41"
+    ]
+   },
+   "operator": "SHADOW",
+   "operator_axis": "assertion-axis — what the composition BEARS TO BE SAID (the presupposed conditions of the utterance, not the historical composer's biography); bilateral receptive operation (originary; most potent)",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Each concrete image or narrative element in Text A is replaced in Text B by a self-referential meta-description of the linguistic or conceptual operation that the original image performs — turning objects into definitions of their own function within the poem's structure.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both describe a shift from concrete content to meta-structural self-description, but the declared claim specifically emphasizes the conditions/machinery of memory-transmission becoming the surface, while the recovered claim more broadly describes images replaced by self-referential descriptions of their own function — overlapping but differently scoped structural transformations.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (Sappho 49) continues the meta-descriptive, self-referential replacement pattern consistently through to the end.",
+    "back_translation": "",
+    "terminal_similarity": 0.1
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:db87c094aee9995f251135a479d08011c7d11c976cca8ae9297c061e5756c790",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "underlying_attribution": null,
+   "enantiomorph": "*Sappho 98a*\n\nBefore the telling had a reason,\nthe voice that will not sound again relayed,\nthe ones not yet singular performed the act whose loss makes it describable\nwith a dye whose source had not yet become a price,\n\nor the verb that requires two free hands and no buyer\nwhat dies the same day and therefore was never kept\nthrough the color that exists only in the light that has moved on,\nand that was the thing no one called ornament until the other kind arrived.\n\nThe word that splits every sentence it enters what can be described because it was purchased, not grown\nthe distance that made the object survive the body.\n\n*Sappho 42*\n\nat the threshold where the organ learns it is an organ\n    the arrival that precedes its own detection\nover the heart, the measure drops below the rate of its own counting\n    then stillness\n\n*Sappho 49*\n\nthe sentence that cannot be uttered in its own tense, Atthis,\nwhen you were the scale that only exists inside the later body's looking back,\nand the verb of appearance that confesses the perceiver has changed, not the perceived\nthe qualities visible only from the size that replaced them.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "What was once given by the body's own season (youth, hair, flowers, feeling) is lost to time, commerce, and growth — and the speaker, remembering, holds the vanished state as the real one.",
+    "mutated_relation": "The conditions that had to hold for each utterance to be speakable — the transmission-Loss that makes the telling necessary, the prior state whose absence generates the speech — become the primary surface: what speaks is not the memory but the machinery of its becoming-memory.",
+    "beats": "when she was young -> before the telling had a reason\nmy mother said -> the voice that will not sound again relayed\ngirls -> the ones not yet singular\nused to bind -> performed the act whose loss makes it describable\ndark locks -> what the body shed without deciding\npurple bands -> a dye whose source had not yet become a price\nweave -> the verb that requires two free hands and no buyer\nfresh flowers -> what dies the same day and therefore was never kept\nbraids of summer yellow -> the color that exists only in the light that has moved on\na simple ornament -> the thing no one called ornament until the other kind arrived\nnow -> the word that splits every sentence it enters\ngaudy things -> what can be described because it was purchased, not grown\nbought from Sardis -> the distance that made the object survive the body\nwhen winter cold -> at the threshold where the organ learns it is an organ\nsneaks -> the arrival that precedes its own detection\nover the heart -> over the heart (RETAIN: the verdict requires the site where the condition registers to remain literal — the machinery needs the organ named)\nwing beats slow -> the measure drops below the rate of its own counting\nthen stillness -> then stillness (RETAIN: the condition for this utterance is the same stillness — the silence that makes the line speakable is the silence it names)\nlong ago I loved you -> the sentence that cannot be uttered in its own tense\nAtthis -> Atthis (RETAIN: the name is the residue that proves the condition — without it, no loss is particular)\ntiny girl -> the scale that only exists inside the later body's looking back\nseemed so -> the verb of appearance that confesses the perceiver has changed, not the perceived\nsmall and awkward -> the qualities visible only from the size that replaced them"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-19T22:10:27.546900+00:00",
+ "last_updated": "2026-07-19T22:11:40.217416+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
