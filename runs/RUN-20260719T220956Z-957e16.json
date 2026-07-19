@@ -1,0 +1,105 @@
+{
+ "run_id": "RUN-20260719T220956Z-957e16",
+ "schema": "run/v1",
+ "ts": "2026-07-19T22:09:56.716694+00:00",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_41_41",
+ "citation": "unit 41",
+ "operator": "BRIDE",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "how do i carefully care for what enli is offering?",
+ "method": {
+  "commit": "0d7e34721fcc74e02db5a08353a92845729ac520",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/0d7e34721fcc74e02db5a08353a92845729ac520",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/0d7e34721fcc74e02db5a08353a92845729ac520/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "50cd2c3850f12ce5",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "0d7e34721fcc",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "50cd2c3850f12ce5",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "What is past and intimate was once sufficient in its simplicity; time divides the living from that sufficiency — the beloved's former state (small, plain, near) is separated from the present by loss, commerce, cold, and growth.",
+   "mutated_relation": "The former and the present constitute each other — the plain thing and the elaborate thing are one gesture; the small awkward body and the grown body are simultaneous; the cold that slows the heart is the heart's own warm action of gathering itself.",
+   "beats": "young -> young (RETAIN: the verdict requires temporal identity to persist as co-presence, not nostalgia)\nmother -> mouth\nsaid -> opened\ngirls -> hands\ndark locks -> wet roots\npurple bands -> river-silt\nweave -> press\nfresh flowers -> caught light\nbraids -> folds\nsummer yellow -> morning-warm\nsimple ornament -> single weight\ngaudy things -> thick patience\nbought -> drawn\nSardis -> the same ground\nwinter cold -> winter cold (RETAIN: the verdict requires cold to remain itself while becoming its opposite function)\nsneaks -> builds\nheart -> heart (RETAIN: the verdict re-derives the heart as self-constituting through its own arrest)\nwing beats -> wing beats (RETAIN: the structural pivot between motion and stillness must persist for the mutual constitution to land)\nslow -> close\nstillness -> pressure\nlong ago -> long ago (RETAIN: temporal distance must survive as the bridge-material, not dissolve)\nloved -> knew\nAtthis -> Atthis (RETAIN: the address-mode requires the proper name for the relation of mutual constitution to hold between specific beings)\ntiny girl -> unfinished clay\nseemed -> were\nsmall -> dense\nawkward -> exact"
+  },
+  "enantiomorph": "*Sappho 98a*\n\nWhen she was young,\nmy mouth opened,\nthe hands used to bind wet roots\nwith river-silt,\n\nor press caught light\nthrough folds of morning-warm,\nand that was a single weight.\n\nNow they wear thick patience\ndrawn from the same ground.\n\n*Sappho 42*\n\nwhen winter cold\n    builds over the heart, wing\nbeats close,\n    then pressure\n\n*Sappho 49*\n\nlong ago I knew you, Atthis,\nwhen you were unfinished clay,\nand you were so\ndense and\nexact.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "In Text A, adornment and memory involve decorative, external, and aesthetic elements (purple bands, fresh flowers, gaudy things from Sardis, love, smallness/awkwardness). In Text B, these are replaced by material, tactile, earth-bound substances and processes (wet roots, river-silt, caught light, thick patience drawn from the ground, unfinished clay, density/exactness), transforming the relation from surface decoration to deep material substance.",
+   "law_match": "ADJACENT",
+   "law_match_note": "The recovered claim identifies a real structural change — from surface/decorative to deep/material substance — which partially overlaps the declared mutual constitution of opposites (plain/elaborate, former/present) but frames it as a replacement rather than a simultaneous co-constitution, naming a different relational transformation.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The final fragment (Sappho 49) sustains the shift from aesthetic/decorative/sentimental relation to material/substantive relation ('unfinished clay,' 'dense and exact').",
+   "back_translation": "",
+   "terminal_similarity": 0.429
+  },
+  "advisories": [
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": {
+   "declared": "The former and the present constitute each other — the plain thing and the elaborate thing are one gesture; the small awkward body and the grown body are simultaneous; the cold that slows the heart is the heart's own warm action of gathering itself.",
+   "recovered": "In Text A, adornment and memory involve decorative, external, and aesthetic elements (purple bands, fresh flowers, gaudy things from Sardis, love, smallness/awkwardness). In Text B, these are replaced by material, tactile, earth-bound substances and processes (wet roots, river-silt, caught light, thick patience drawn from the ground, unfinished clay, density/exactness), transforming the relation from surface decoration to deep material substance.",
+   "note": "The recovered claim identifies a real structural change — from surface/decorative to deep/material substance — which partially overlaps the declared mutual constitution of opposites (plain/elaborate, former/present) but frames it as a replacement rather than a simultaneous co-constitution, naming a different relational transformation."
+  },
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "What is past and intimate was once sufficient in its simplicity; time divides the living from that sufficiency — the beloved's former state (small, plain, near) is separated from the present by loss, commerce, cold, and growth.",
+   "verdict": "The former and the present constitute each other — the plain thing and the elaborate thing are one gesture; the small awkward body and the grown body are simultaneous; the cold that slows the heart is the heart's own warm action of gathering itself.",
+   "world_bill": "young -> young (RETAIN: the verdict requires temporal identity to persist as co-presence, not nostalgia)\nmother -> mouth\nsaid -> opened\ngirls -> hands\ndark locks -> wet roots\npurple bands -> river-silt\nweave -> press\nfresh flowers -> caught light\nbraids -> folds\nsummer yellow -> morning-warm\nsimple ornament -> single weight\ngaudy things -> thick patience\nbought -> drawn\nSardis -> the same ground\nwinter cold -> winter cold (RETAIN: the verdict requires cold to remain itself while becoming its opposite function)\nsneaks -> builds\nheart -> heart (RETAIN: the verdict re-derives the heart as self-constituting through its own arrest)\nwing beats -> wing beats (RETAIN: the structural pivot between motion and stillness must persist for the mutual constitution to land)\nslow -> close\nstillness -> pressure\nlong ago -> long ago (RETAIN: temporal distance must survive as the bridge-material, not dissolve)\nloved -> knew\nAtthis -> Atthis (RETAIN: the address-mode requires the proper name for the relation of mutual constitution to hold between specific beings)\ntiny girl -> unfinished clay\nseemed -> were\nsmall -> dense\nawkward -> exact",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 77,
+    "final": 76,
+    "bounds": [
+     65,
+     88
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
