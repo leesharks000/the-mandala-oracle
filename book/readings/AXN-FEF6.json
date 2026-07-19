@@ -56,11 +56,62 @@
    ],
    "commentary": "",
    "interpretation": "Dense and exact where ornament was: the superior person does not consecrate the gift but learns the weight of the ground it came from."
+  },
+  {
+   "operator": "SHADOW",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "citation": "unit 41",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 98a*\n\nBefore the telling had a reason,\nthe voice that will not sound again relayed,\nthe ones not yet singular performed the act whose loss makes it describable\nwith a dye whose source had not yet become a price,\n\nor the verb that requires two free hands and no buyer\nwhat dies the same day and therefore was never kept\nthrough the color that exists only in the light that has moved on,\nand that was the thing no one called ornament until the other kind arrived.\n\nThe word that splits every sentence it enters what can be described because it was purchased, not grown\nthe distance that made the object survive the body.\n\n*Sappho 42*\n\nat the threshold where the organ learns it is an organ\n    the arrival that precedes its own detection\nover the heart, the measure drops below the rate of its own counting\n    then stillness\n\n*Sappho 49*\n\nthe sentence that cannot be uttered in its own tense, Atthis,\nwhen you were the scale that only exists inside the later body's looking back,\nand the verb of appearance that confesses the perceiver has changed, not the perceived\nthe qualities visible only from the size that replaced them.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Each concrete image or narrative element in Text A is replaced in Text B by a self-referential meta-description of the linguistic or conceptual operation that the original image performs — turning objects into definitions of their own function within the poem's structure.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both describe a shift from concrete content to meta-structural self-description, but the declared claim specifically emphasizes the conditions/machinery of memory-transmission becoming the surface, while the recovered claim more broadly describes images replaced by self-referential descriptions of their own function — overlapping but differently scoped structural transformations.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final portion (Sappho 49) continues the meta-descriptive, self-referential replacement pattern consistently through to the end.",
+    "back_translation": "",
+    "terminal_similarity": 0.1
+   },
+   "law_variance": {
+    "declared": "The conditions that had to hold for each utterance to be speakable — the transmission-Loss that makes the telling necessary, the prior state whose absence generates the speech — become the primary surface: what speaks is not the memory but the machinery of its becoming-memory.",
+    "recovered": "Each concrete image or narrative element in Text A is replaced in Text B by a self-referential meta-description of the linguistic or conceptual operation that the original image performs — turning objects into definitions of their own function within the poem's structure.",
+    "note": "Both describe a shift from concrete content to meta-structural self-description, but the declared claim specifically emphasizes the conditions/machinery of memory-transmission becoming the surface, while the recovered claim more broadly describes images replaced by self-referential descriptions of their own function — overlapping but differently scoped structural transformations."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "word_budget",
+     "diagnosis": "final 201 words vs budget 65-88 (source 77)"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-19T22:10:36.060513+00:00",
+ "last_updated": "2026-07-19T22:11:38.831791+00:00",
  "rite": [
   {
    "stage": "judgment",
