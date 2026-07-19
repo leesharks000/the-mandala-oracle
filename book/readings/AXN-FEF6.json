@@ -54,10 +54,20 @@
      "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Dense and exact where ornament was: the superior person does not consecrate the gift but learns the weight of the ground it came from."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-19T22:10:26.189663+00:00"
+ "last_updated": "2026-07-19T22:10:36.060513+00:00",
+ "rite": [
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-19T22:10:36.060513+00:00",
+   "text": "Dense and exact where ornament was: the superior person does not consecrate the gift but learns the weight of the ground it came from.",
+   "operator": "BRIDE"
+  }
+ ]
 }
