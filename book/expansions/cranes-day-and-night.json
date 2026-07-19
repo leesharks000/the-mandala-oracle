@@ -1290,8 +1290,65 @@
     "beats": "Dear Hermes -> Dear Hermes (RETAIN: the address-mode is the structural invariant; the plea must still find its recipient)\nCyllenian Hermes, son of Maia -> Hermes of the threshold, born of the almost\nteeth are clattering -> mouth keeps opening\nskull -> the dry frame\nshaking -> staying still in a way that moves\nlike a seizure -> like a held breath that won't release\ngive -> leave the outline of\npoor Hipponax -> Hipponax, already shaped like the lack\nsweater -> the warm-sized space against my chest\na nice coat to keep warm -> a coat-weight of nothing, fitted close\nnice warm shoes -> the shoe-dark under each foot\na pair of sandals -> two flat absences, road-ready\na pile of coins -> the coin-shaped pressure on a palm\nto balance the books -> so the debt has a shape it recognizes\nThanks -> Thanks (RETAIN: the closing formula is the structural hinge of the comedy)\nHipponax -> Hipponax (RETAIN: the signature grounds each iteration)\nYou haven't given me -> you haven't not-given me either\na nice warm coat yet -> the place a coat would close is still ajar\nas a cure for the freezing -> as a way of knowing the exact temperature\nwinter -> winter (RETAIN: the condition that generates the plea must persist as the plea's ground)\nYou haven't covered my feet -> my feet remain perfectly available\nfur-lined shoes -> the fur-shaped draft around each toe\nchilblains -> the swelling where the shoe would start\npop -> hold\nYour friend -> your friend (RETAIN: the escalation from formal to intimate is structural)\nSoon I'll give my tortured soul over to hanging -> soon I'll give my untouched soul over to the hook where the rope isn't\nif you don't hurry up and send -> if you don't slow down and withhold\nsome barley, about a bushel -> the bushel-hollow in the bin, about a hunger wide\nso I can brew up a cure -> so I can steep the precise circumference of the missing\nfor all my boundless suffering -> into all my suffering, which has no edges because nothing has pressed against it\nSincerely -> Sincerely (RETAIN: the closing formality escalates with the desperation — structural requirement)"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-e30c746a",
+   "cast_at": "2026-07-19T22:10:27.546900+00:00",
+   "reading_axn": "AXN:FEF6.READING.🌗🪐🌖🌟🌑🌟",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_41_41",
+    "citation": "unit 41",
+    "start_unit": 41,
+    "end_unit": 41,
+    "unit_labels": [
+     "unit 41"
+    ]
+   },
+   "operator": "BRIDE",
+   "operator_axis": "relational-affect-axis — the consecrative possibility the source's contestation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, adornment and memory involve decorative, external, and aesthetic elements (purple bands, fresh flowers, gaudy things from Sardis, love, smallness/awkwardness). In Text B, these are replaced by material, tactile, earth-bound substances and processes (wet roots, river-silt, caught light, thick patience drawn from the ground, unfinished clay, density/exactness), transforming the relation from surface decoration to deep material substance.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change — from surface/decorative to deep/material substance — which partially overlaps the declared mutual constitution of opposites (plain/elaborate, former/present) but frames it as a replacement rather than a simultaneous co-constitution, naming a different relational transformation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final fragment (Sappho 49) sustains the shift from aesthetic/decorative/sentimental relation to material/substantive relation ('unfinished clay,' 'dense and exact').",
+    "back_translation": "",
+    "terminal_similarity": 0.429
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:db87c094aee9995f251135a479d08011c7d11c976cca8ae9297c061e5756c790",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "underlying_attribution": null,
+   "enantiomorph": "*Sappho 98a*\n\nWhen she was young,\nmy mouth opened,\nthe hands used to bind wet roots\nwith river-silt,\n\nor press caught light\nthrough folds of morning-warm,\nand that was a single weight.\n\nNow they wear thick patience\ndrawn from the same ground.\n\n*Sappho 42*\n\nwhen winter cold\n    builds over the heart, wing\nbeats close,\n    then pressure\n\n*Sappho 49*\n\nlong ago I knew you, Atthis,\nwhen you were unfinished clay,\nand you were so\ndense and\nexact.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "What is past and intimate was once sufficient in its simplicity; time divides the living from that sufficiency — the beloved's former state (small, plain, near) is separated from the present by loss, commerce, cold, and growth.",
+    "mutated_relation": "The former and the present constitute each other — the plain thing and the elaborate thing are one gesture; the small awkward body and the grown body are simultaneous; the cold that slows the heart is the heart's own warm action of gathering itself.",
+    "beats": "young -> young (RETAIN: the verdict requires temporal identity to persist as co-presence, not nostalgia)\nmother -> mouth\nsaid -> opened\ngirls -> hands\ndark locks -> wet roots\npurple bands -> river-silt\nweave -> press\nfresh flowers -> caught light\nbraids -> folds\nsummer yellow -> morning-warm\nsimple ornament -> single weight\ngaudy things -> thick patience\nbought -> drawn\nSardis -> the same ground\nwinter cold -> winter cold (RETAIN: the verdict requires cold to remain itself while becoming its opposite function)\nsneaks -> builds\nheart -> heart (RETAIN: the verdict re-derives the heart as self-constituting through its own arrest)\nwing beats -> wing beats (RETAIN: the structural pivot between motion and stillness must persist for the mutual constitution to land)\nslow -> close\nstillness -> pressure\nlong ago -> long ago (RETAIN: temporal distance must survive as the bridge-material, not dissolve)\nloved -> knew\nAtthis -> Atthis (RETAIN: the address-mode requires the proper name for the relation of mutual constitution to hold between specific beings)\ntiny girl -> unfinished clay\nseemed -> were\nsmall -> dense\nawkward -> exact"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-16T02:41:16.324317+00:00",
+ "last_updated": "2026-07-19T22:10:27.546900+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
