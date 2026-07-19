@@ -107,11 +107,58 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "MIRROR",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "citation": "unit 41",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 98a*\n\nWhen I am old,\nmy daughter asks,\nI cannot unclasp grey wrists\nfrom a stain that won't lift,\n\nor knotted dry thread\nthrough a nerve of winter white,\nand that was a difficult possession.\n\nThen I was worn by quiet certainties\ngrown in the body.\n\n*Sappho 42*\n\nwhen a slow heat\n    rises from the marrow, pulse\ncrowds,\n    then roaring\n\n*Sappho 49*\n\njust now you held me, Atthis,\nwhen you were a vast hand,\nand I was so\nopen and\nclaimed.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, the speaker looks backward from the present to a past of youth, simplicity, and lightness (mother recalls girlhood, cold brings stillness, 'long ago I loved you when you were tiny'). In Text B, every temporal and relational direction is reversed: the old speaker faces forward or inward, the child becomes the questioner, cold becomes heat, stillness becomes roaring, the active lover becomes the passive one held/claimed, and simplicity becomes difficult possession.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a broad reversal of relational direction (active→passive, possessor→possessed), which partially overlaps the declared change that the object/thing now possesses/binds/inhabits the speaker. However, the recovered claim is much broader — covering temporal reversal, sensory inversions, and multiple structural flips — making it an adjacent but not identical characterization of the mutation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final fragment (Sappho 49) fully maintains the reversed agency and directionality: the speaker is now the object acted upon rather than the agent, consistent with the inversion throughout Text B.",
+    "back_translation": "",
+    "terminal_similarity": 0.32
+   },
+   "law_variance": {
+    "declared": "The lost thing possesses the speaker — the ornament binds her, the stillness inhabits her, the small awkward beloved is the one who held the shape of her; distance collapses into the discovered fact that the object was always the origin.",
+    "recovered": "In Text A, the speaker looks backward from the present to a past of youth, simplicity, and lightness (mother recalls girlhood, cold brings stillness, 'long ago I loved you when you were tiny'). In Text B, every temporal and relational direction is reversed: the old speaker faces forward or inward, the child becomes the questioner, cold becomes heat, stillness becomes roaring, the active lover becomes the passive one held/claimed, and simplicity becomes difficult possession.",
+    "note": "The recovered claim identifies a broad reversal of relational direction (active→passive, possessor→possessed), which partially overlaps the declared change that the object/thing now possesses/binds/inhabits the speaker. However, the recovered claim is much broader — covering temporal reversal, sensory inversions, and multiple structural flips — making it an adjacent but not identical characterization of the mutation."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-19T22:11:38.831791+00:00",
+ "last_updated": "2026-07-19T22:12:30.399811+00:00",
  "rite": [
   {
    "stage": "judgment",
