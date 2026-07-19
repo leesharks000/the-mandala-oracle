@@ -203,11 +203,62 @@
    ],
    "commentary": "",
    "interpretation": "Wind through the hollow bone: the superior person knows the gift by what the body carries away from the holding, not from the holding itself."
+  },
+  {
+   "operator": "SILENCE",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "citation": "unit 41",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to press unfastened humidity\nwith the width of late afternoon,\n\nor press dust from the threshold\nthrough corridors that brighten unevenly,\nand that was the interval before the door.\n\n*Sappho 42*\n\nwhen a gap in the saying\n    halts at the naming, the mouth's\nalmost,\n    then stillness\n\n*Sappho 49*\n\nlong ago I addressed you, Atthis,\nwhen you were a near outline,\nand you seemed so\nbrief and\nnot yet the shape of.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Concrete sensory and emotional referents (ornaments, cold, love, physical descriptions) are replaced by abstract spatial, temporal, and linguistic gap-referents (intervals, outlines, the act of naming), transforming relations between persons and tangible things into relations between a subject and the threshold or incompleteness of perception itself.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a structural withholding, but the declared claim focuses on the non-delivery of an expected loss/arrival (approach without landing), while the recovered claim identifies a concrete-to-abstract substitution transforming tangible relational referents into threshold/gap-referents — a related but distinct structural mutation concerning the nature of what occupies the text rather than the deferral pattern itself.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final fragment (Sappho 49) sustains the shift from concrete embodied description to abstract near-absence ('near outline,' 'brief,' 'not yet the shape of'), maintaining the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.44
+   },
+   "law_variance": {
+    "declared": "The expected return — the arrival of loss, the named displacement — is structurally withheld: the utterance organizes around the site where loss was owed but does not deliver it; what remains is the architecture of approach with no landing.",
+    "recovered": "Concrete sensory and emotional referents (ornaments, cold, love, physical descriptions) are replaced by abstract spatial, temporal, and linguistic gap-referents (intervals, outlines, the act of naming), transforming relations between persons and tangible things into relations between a subject and the threshold or incompleteness of perception itself.",
+    "note": "Both identify a structural withholding, but the declared claim focuses on the non-delivery of an expected loss/arrival (approach without landing), while the recovered claim identifies a concrete-to-abstract substitution transforming tangible relational referents into threshold/gap-referents — a related but distinct structural mutation concerning the nature of what occupies the text rather than the deferral pattern itself."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "geometry",
+     "diagnosis": "lines 19/21, markers 0/0 -- the spine is broken, not exceeded"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-19T22:13:30.769109+00:00",
+ "last_updated": "2026-07-19T22:14:18.375692+00:00",
  "rite": [
   {
    "stage": "judgment",
