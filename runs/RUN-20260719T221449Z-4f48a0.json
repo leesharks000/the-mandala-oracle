@@ -1,0 +1,109 @@
+{
+ "run_id": "RUN-20260719T221449Z-4f48a0",
+ "schema": "run/v1",
+ "ts": "2026-07-19T22:14:49.380207+00:00",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_41_41",
+ "citation": "unit 41",
+ "operator": "FLAME",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "how do i carefully care for what enli is offering?",
+ "method": {
+  "commit": "070daa64ac244031b51a9d80c71ba20c81b7d22c",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/070daa64ac244031b51a9d80c71ba20c81b7d22c",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/070daa64ac244031b51a9d80c71ba20c81b7d22c/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "50cd2c3850f12ce5",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "070daa64ac24",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "50cd2c3850f12ce5",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "Intimacy is preserved in the medium of distance; what was near persists only as the structure of its recession.",
+   "mutated_relation": "Distance, driven past its own capacity, collapses into material — the recession itself calcifies into the near, and intimacy is no longer remembered but deposited.",
+   "beats": "mother -> bedrock\nshe (the mother young) -> the first pressure\nsaid -> compressed\ngirls -> grains\ndark locks ->ite veins\npurple bands -> iron-oxide bands\nbind -> lithify\nweave -> accrete\nfresh flowers -> gas-pockets\nbraids of summer yellow -> blonde calcium layers\nsimple ornament -> original lamination\ngaudy things -> imported silicates\nbought from Sardis -> traded from deeper formations\nwhen winter cold -> when the overburden\nsneaks over the heart -> loads past the heart-rock\nwing -> fracture\nbeats slow -> creeps\nstillness -> stillness (RETAIN: past p, stillness is what lithification and lyric arrest share; the verdict deposits this word as its own fossil)\nlong ago -> deep down\nI loved you -> I held you\nAtthis -> Atthis (RETAIN: the proper name is the one thing deposition cannot translate; it persists as a foreign inclusion in the strata)\ntiny girl -> thin layer\nsmall -> slight\nawkward -> unconsolidated"
+  },
+  "enantiomorph": "*Sappho 98a*\n\nWhen the first pressure,\nbedrock compressed,\nthe grains used to lithify ite veins\nwith iron-oxide bands,\n\nor accrete gas-pockets\nthrough blonde calcium layers,\nand that was an original lamination.\n\nNow they wear imported silicates\ntraded from deeper formations.\n\n*Sappho 42*\n\nwhen the overburden\n    loads past the heart-rock, fracture\ncreeps,\n    then stillness\n\n*Sappho 49*\n\ndeep down I held you, Atthis,\nwhen you were a thin layer,\nand you seemed so\nslight and\nunconsolidated.",
+  "enantiomorph_translation": "",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "No structural change was recovered; the recovered claim is NONE.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The geological metaphor remaps vocabulary and imagery throughout but preserves the same relational structure (past simplicity vs. present change, cold causing stillness, speaker's affection for a small/young entity).",
+   "back_translation": "",
+   "terminal_similarity": 0.391
+  },
+  "advisories": [
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (No structural change was recovered; the recovered claim is NONE.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "Intimacy is preserved in the medium of distance; what was near persists only as the structure of its recession.",
+   "verdict": "Distance, driven past its own capacity, collapses into material — the recession itself calcifies into the near, and intimacy is no longer remembered but deposited.",
+   "world_bill": "mother -> bedrock\nshe (the mother young) -> the first pressure\nsaid -> compressed\ngirls -> grains\ndark locks ->ite veins\npurple bands -> iron-oxide bands\nbind -> lithify\nweave -> accrete\nfresh flowers -> gas-pockets\nbraids of summer yellow -> blonde calcium layers\nsimple ornament -> original lamination\ngaudy things -> imported silicates\nbought from Sardis -> traded from deeper formations\nwhen winter cold -> when the overburden\nsneaks over the heart -> loads past the heart-rock\nwing -> fracture\nbeats slow -> creeps\nstillness -> stillness (RETAIN: past p, stillness is what lithification and lyric arrest share; the verdict deposits this word as its own fossil)\nlong ago -> deep down\nI loved you -> I held you\nAtthis -> Atthis (RETAIN: the proper name is the one thing deposition cannot translate; it persists as a foreign inclusion in the strata)\ntiny girl -> thin layer\nsmall -> slight\nawkward -> unconsolidated",
+   "bill_audit": {
+    "unbilled": [],
+    "retain_over_budget": false,
+    "retain_budget": 2,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 77,
+    "final": 74,
+    "bounds": [
+     65,
+     88
+    ]
+   },
+   "identity_rate": 0.0,
+   "surviving_lemmas": []
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
