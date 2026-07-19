@@ -1461,8 +1461,65 @@
     "beats": "mother -> daughter\nsaid -> asks\nshe was young -> I am old\ngirls -> I\nused to bind -> cannot unclasp\ndark locks -> grey wrists\npurple bands -> a stain that won't lift\nweave -> knotted\nfresh flowers -> dry thread\nbraids of summer yellow -> a nerve of winter white\nsimple ornament -> difficult possession\nnow -> then\nthey wear -> I was worn by\ngaudy things -> quiet certainties\nbought from Sardis -> grown in the body\nwinter cold -> a slow heat\nsneaks over -> rises from\nthe heart -> the marrow\nwing beats slow -> pulse crowds\nthen stillness -> then roaring\nlong ago -> just now\nI loved you -> you held me\nAtthis -> Atthis (RETAIN: the verdict requires the named beloved to be the origin-point, the one who held)\ntiny girl -> vast hand\nyou seemed so -> I was so\nsmall -> open\nawkward -> claimed"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-663ae907",
+   "cast_at": "2026-07-19T22:13:22.368435+00:00",
+   "reading_axn": "AXN:FEF6.READING.🌗🪐🌖🌟🌑🌟",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_41_41",
+    "citation": "unit 41",
+    "start_unit": 41,
+    "end_unit": 41,
+    "unit_labels": [
+     "unit 41"
+    ]
+   },
+   "operator": "BEAST",
+   "operator_axis": "species-register-axis — the creaturely substrate the anthropic determination foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The external, visual, and social world of TEXT A (decorations, appearances, social customs, seeing another person) is systematically relocated into the internal, somatic, and tactile body of TEXT B (nerves, sinew, chest-wall, weight), so that every relation flows inward toward bodily sensation rather than outward toward observable adornment or appearance.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a shift toward the interior body as the locus of meaning, but the declared claim frames this as temporal framing being a mask over the body's knowledge of its own perishability, while the recovered claim describes a systematic relocation from external/social/visual to internal/somatic/tactile — overlapping in the body-inward direction but differing in what structural principle governs the change.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final fragment (Sappho 49) sustains the inward-somatic relocation: visual smallness/awkwardness becomes haptic weight and the impossibility of physical holding.",
+    "back_translation": "",
+    "terminal_similarity": 0.296
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:db87c094aee9995f251135a479d08011c7d11c976cca8ae9297c061e5756c790",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "underlying_attribution": null,
+   "enantiomorph": "*Sappho 98a*\n\nWhen the mouth still knew,\nmy mouth tasted,\nthe nerves used to press their own salt\nwith the first bruising,\n\nor pull raw heat\nthrough sinew of flush,\nand that was an honest ache.\n\nNow the nerves carry numbness\narrived without asking.\n\n*Sappho 42*\n\nwhen a thinning\n    works over the wall of the chest, the knock\nthere faint,\n    then density\n\n*Sappho 49*\n\nalready I wore against you, Atthis,\nwhen you were a brief warmth,\nand you weighed so\nalmost nothing and\nimpossible to hold.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "What is lost in time — ornament, warmth, intimacy — was never truly possessed; the speaker frames presence as already-past to make the past's texture sayable, using temporal distance as the instrument of sensory immediacy.",
+    "mutated_relation": "The beneath-layer: temporal framing is not the instrument but the mask — what runs under these is the body's own knowledge of itself as perishable material, addressing not memory but the present fact of being a substance that alters.",
+    "beats": "mother -> mouth\nsaid -> tasted\ngirls -> nerves\ndark locks -> their own salt\npurple bands -> the first bruising\nbind -> press\nweave -> pull\nfresh flowers -> raw heat\nbraids -> sinew\nsummer yellow -> flush\nsimple ornament -> an honest ache\ngaudy things -> numbness\nbought from Sardis -> arrived without asking\nwinter cold -> a thinning\nsneaks -> works\nheart -> wall of the chest\nwing beats -> the knock there\nslow -> faint\nstillness -> density\nlong ago -> already\nloved -> wore against\nAtthis -> Atthis (RETAIN: the verdict requires the specific body addressed, as perishable material must be named to be felt perishing)\ntiny girl -> brief warmth\nseemed -> weighed\nsmall -> almost nothing\nawkward -> impossible to hold\nwhen she was young -> when the mouth still knew\nnow they wear -> now the nerves carry"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-19T22:12:31.746223+00:00",
+ "last_updated": "2026-07-19T22:13:22.368435+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
