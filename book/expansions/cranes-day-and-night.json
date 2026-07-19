@@ -1518,8 +1518,65 @@
     "beats": "mother -> mouth\nsaid -> tasted\ngirls -> nerves\ndark locks -> their own salt\npurple bands -> the first bruising\nbind -> press\nweave -> pull\nfresh flowers -> raw heat\nbraids -> sinew\nsummer yellow -> flush\nsimple ornament -> an honest ache\ngaudy things -> numbness\nbought from Sardis -> arrived without asking\nwinter cold -> a thinning\nsneaks -> works\nheart -> wall of the chest\nwing beats -> the knock there\nslow -> faint\nstillness -> density\nlong ago -> already\nloved -> wore against\nAtthis -> Atthis (RETAIN: the verdict requires the specific body addressed, as perishable material must be named to be felt perishing)\ntiny girl -> brief warmth\nseemed -> weighed\nsmall -> almost nothing\nawkward -> impossible to hold\nwhen she was young -> when the mouth still knew\nnow they wear -> now the nerves carry"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-21e7f7ba",
+   "cast_at": "2026-07-19T22:14:19.865295+00:00",
+   "reading_axn": "AXN:FEF6.READING.🌗🪐🌖🌟🌑🌟",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_41_41",
+    "citation": "unit 41",
+    "start_unit": 41,
+    "end_unit": 41,
+    "unit_labels": [
+     "unit 41"
+    ]
+   },
+   "operator": "SILENCE",
+   "operator_axis": "response-axis — the non-response the source's engagement-expectation foreclosed",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "Concrete sensory and emotional referents (ornaments, cold, love, physical descriptions) are replaced by abstract spatial, temporal, and linguistic gap-referents (intervals, outlines, the act of naming), transforming relations between persons and tangible things into relations between a subject and the threshold or incompleteness of perception itself.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a structural withholding, but the declared claim focuses on the non-delivery of an expected loss/arrival (approach without landing), while the recovered claim identifies a concrete-to-abstract substitution transforming tangible relational referents into threshold/gap-referents — a related but distinct structural mutation concerning the nature of what occupies the text rather than the deferral pattern itself.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final fragment (Sappho 49) sustains the shift from concrete embodied description to abstract near-absence ('near outline,' 'brief,' 'not yet the shape of'), maintaining the changed relation throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.44
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:db87c094aee9995f251135a479d08011c7d11c976cca8ae9297c061e5756c790",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "underlying_attribution": null,
+   "enantiomorph": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to press unfastened humidity\nwith the width of late afternoon,\n\nor press dust from the threshold\nthrough corridors that brighten unevenly,\nand that was the interval before the door.\n\n*Sappho 42*\n\nwhen a gap in the saying\n    halts at the naming, the mouth's\nalmost,\n    then stillness\n\n*Sappho 49*\n\nlong ago I addressed you, Atthis,\nwhen you were a near outline,\nand you seemed so\nbrief and\nnot yet the shape of.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "What was once native and sufficient (the body's own adornment, the heart's own season, the beloved's own smallness) has been displaced or stilled by time, distance, or commerce — and the speaker marks that displacement as loss.",
+    "mutated_relation": "The expected return — the arrival of loss, the named displacement — is structurally withheld: the utterance organizes around the site where loss was owed but does not deliver it; what remains is the architecture of approach with no landing.",
+    "beats": "young -> young (RETAIN: the temporal frame is the scaffold around which absence is built)\nmother -> mother (RETAIN: the address-source persists as the voice that opens toward what will not arrive)\ngirls -> girls (RETAIN: the plural subject remains as the site expecting its predicate of loss)\ndark locks -> unfastened humidity\npurple bands -> the width of late afternoon\nweave -> press\nfresh flowers -> dust from the threshold\nbraids of summer yellow -> corridors that brighten unevenly\nsimple ornament -> the interval before the door\ngaudy things -> —\nbought from Sardis -> —\nwinter cold -> a gap in the saying\nsneaks over the heart -> halts at the naming\nwing beats -> the mouth's\nslow -> almost\nstillness -> stillness (RETAIN: the structural absence and the word converge — withholding stillness from the reader would deliver the expected return by other means)\nlong ago -> long ago (RETAIN: the temporal marker is the hinge the poem pivots on without completing)\nloved -> addressed\nAtthis -> Atthis (RETAIN: the proper name is the locus where arrival was owed; removing it removes the site itself)\ntiny girl -> near outline\nseemed -> seemed (RETAIN: seeming is already the structure of withheld arrival)\nsmall -> brief\nawkward -> not yet the shape of"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-19T22:13:22.368435+00:00",
+ "last_updated": "2026-07-19T22:14:19.865295+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
