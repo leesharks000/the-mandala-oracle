@@ -155,11 +155,58 @@
    ],
    "commentary": "",
    "interpretation": "Lake above, mountain below: the superior person receives the claim and finds the self was already open before the claiming arrived."
+  },
+  {
+   "operator": "BEAST",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "citation": "unit 41",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 98a*\n\nWhen the mouth still knew,\nmy mouth tasted,\nthe nerves used to press their own salt\nwith the first bruising,\n\nor pull raw heat\nthrough sinew of flush,\nand that was an honest ache.\n\nNow the nerves carry numbness\narrived without asking.\n\n*Sappho 42*\n\nwhen a thinning\n    works over the wall of the chest, the knock\nthere faint,\n    then density\n\n*Sappho 49*\n\nalready I wore against you, Atthis,\nwhen you were a brief warmth,\nand you weighed so\nalmost nothing and\nimpossible to hold.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The external, visual, and social world of TEXT A (decorations, appearances, social customs, seeing another person) is systematically relocated into the internal, somatic, and tactile body of TEXT B (nerves, sinew, chest-wall, weight), so that every relation flows inward toward bodily sensation rather than outward toward observable adornment or appearance.",
+    "law_match": "ADJACENT",
+    "law_match_note": "Both identify a shift toward the interior body as the locus of meaning, but the declared claim frames this as temporal framing being a mask over the body's knowledge of its own perishability, while the recovered claim describes a systematic relocation from external/social/visual to internal/somatic/tactile — overlapping in the body-inward direction but differing in what structural principle governs the change.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final fragment (Sappho 49) sustains the inward-somatic relocation: visual smallness/awkwardness becomes haptic weight and the impossibility of physical holding.",
+    "back_translation": "",
+    "terminal_similarity": 0.296
+   },
+   "law_variance": {
+    "declared": "The beneath-layer: temporal framing is not the instrument but the mask — what runs under these is the body's own knowledge of itself as perishable material, addressing not memory but the present fact of being a substance that alters.",
+    "recovered": "The external, visual, and social world of TEXT A (decorations, appearances, social customs, seeing another person) is systematically relocated into the internal, somatic, and tactile body of TEXT B (nerves, sinew, chest-wall, weight), so that every relation flows inward toward bodily sensation rather than outward toward observable adornment or appearance.",
+    "note": "Both identify a shift toward the interior body as the locus of meaning, but the declared claim frames this as temporal framing being a mask over the body's knowledge of its own perishability, while the recovered claim describes a systematic relocation from external/social/visual to internal/somatic/tactile — overlapping in the body-inward direction but differing in what structural principle governs the change."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-19T22:12:42.491673+00:00",
+ "last_updated": "2026-07-19T22:13:21.029604+00:00",
  "rite": [
   {
    "stage": "judgment",
