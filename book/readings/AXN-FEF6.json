@@ -305,11 +305,58 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "THUNDER",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "citation": "unit 41",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 98a*\n\nNow that she is here,\nmy daughter withholds,\nI am winding damp thread\nwith undyed cord,\n\nor pulling small bones\nthrough the crook of her elbow,\nand that is a difficult measure.\n\nNow they wear quiet things\ngrown in the body.\n\n*Sappho 42*\n\nwhen nearness\n    crowds against the ribs, breath\ncatches fast,\n    then distance\n\n*Sappho 49*\n\nI love you now, Atthis,\nwhile you stand full-grown before me,\nand you seem so\nvast and\nuntouchable.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "The temporal orientation is reversed: TEXT A places beauty, love, and sensation in the past (memory, youth, 'long ago'), while TEXT B relocates them into the present or into immediate proximity, and directional flows are inverted (e.g., mother tells daughter becomes daughter withholds from speaker; adornment comes from outside/Sardis becomes something grown from within the body; cold creeping in becomes nearness crowding in producing distance).",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies multiple relational inversions including the specific observation that nearness/proximity produces distance, which partially overlaps the declared claim that intimacy manufactures distance. However, the recovered claim is broader, centering on temporal reversal and directional inversion as the primary structural changes, making this adjacent rather than a full match.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final fragment (Sappho 49) sustains the temporal inversion — 'long ago I loved you' becomes 'I love you now' — and the relational reversal holds throughout.",
+    "back_translation": "",
+    "terminal_similarity": 0.185
+   },
+   "law_variance": {
+    "declared": "The intimate manufactures distance — closeness is the act that produces the unreachable.",
+    "recovered": "The temporal orientation is reversed: TEXT A places beauty, love, and sensation in the past (memory, youth, 'long ago'), while TEXT B relocates them into the present or into immediate proximity, and directional flows are inverted (e.g., mother tells daughter becomes daughter withholds from speaker; adornment comes from outside/Sardis becomes something grown from within the body; cold creeping in becomes nearness crowding in producing distance).",
+    "note": "The recovered claim identifies multiple relational inversions including the specific observation that nearness/proximity produces distance, which partially overlaps the declared claim that intimacy manufactures distance. However, the recovered claim is broader, centering on temporal reversal and directional inversion as the primary structural changes, making this adjacent rather than a full match."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-19T22:15:24.391656+00:00",
+ "last_updated": "2026-07-19T22:16:47.626338+00:00",
  "rite": [
   {
    "stage": "judgment",
