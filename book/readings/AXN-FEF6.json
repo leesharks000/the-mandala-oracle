@@ -254,11 +254,62 @@
     }
    ],
    "commentary": ""
+  },
+  {
+   "operator": "FLAME",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "citation": "unit 41",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 98a*\n\nWhen the first pressure,\nbedrock compressed,\nthe grains used to lithify ite veins\nwith iron-oxide bands,\n\nor accrete gas-pockets\nthrough blonde calcium layers,\nand that was an original lamination.\n\nNow they wear imported silicates\ntraded from deeper formations.\n\n*Sappho 42*\n\nwhen the overburden\n    loads past the heart-rock, fracture\ncreeps,\n    then stillness\n\n*Sappho 49*\n\ndeep down I held you, Atthis,\nwhen you were a thin layer,\nand you seemed so\nslight and\nunconsolidated.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "No structural change was recovered; the recovered claim is NONE.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The geological metaphor remaps vocabulary and imagery throughout but preserves the same relational structure (past simplicity vs. present change, cold causing stillness, speaker's affection for a small/young entity).",
+    "back_translation": "",
+    "terminal_similarity": 0.391
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (No structural change was recovered; the recovered claim is NONE.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-19T22:14:18.375692+00:00",
+ "last_updated": "2026-07-19T22:15:24.391656+00:00",
  "rite": [
   {
    "stage": "judgment",
