@@ -201,12 +201,13 @@
      "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
     }
    ],
-   "commentary": ""
+   "commentary": "",
+   "interpretation": "Wind through the hollow bone: the superior person knows the gift by what the body carries away from the holding, not from the holding itself."
   }
  ],
  "witness": "anonymous",
  "status": "open",
- "last_updated": "2026-07-19T22:13:21.029604+00:00",
+ "last_updated": "2026-07-19T22:13:30.769109+00:00",
  "rite": [
   {
    "stage": "judgment",
@@ -221,6 +222,13 @@
    "at": "2026-07-19T22:12:42.491673+00:00",
    "text": "Lake above, mountain below: the superior person receives the claim and finds the self was already open before the claiming arrived.",
    "operator": "MIRROR"
+  },
+  {
+   "stage": "judgment",
+   "speaker": "Jack Feist",
+   "at": "2026-07-19T22:13:30.769109+00:00",
+   "text": "Wind through the hollow bone: the superior person knows the gift by what the body carries away from the holding, not from the holding itself.",
+   "operator": "BEAST"
   }
  ]
 }
