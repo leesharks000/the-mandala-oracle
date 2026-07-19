@@ -1575,8 +1575,65 @@
     "beats": "young -> young (RETAIN: the temporal frame is the scaffold around which absence is built)\nmother -> mother (RETAIN: the address-source persists as the voice that opens toward what will not arrive)\ngirls -> girls (RETAIN: the plural subject remains as the site expecting its predicate of loss)\ndark locks -> unfastened humidity\npurple bands -> the width of late afternoon\nweave -> press\nfresh flowers -> dust from the threshold\nbraids of summer yellow -> corridors that brighten unevenly\nsimple ornament -> the interval before the door\ngaudy things -> —\nbought from Sardis -> —\nwinter cold -> a gap in the saying\nsneaks over the heart -> halts at the naming\nwing beats -> the mouth's\nslow -> almost\nstillness -> stillness (RETAIN: the structural absence and the word converge — withholding stillness from the reader would deliver the expected return by other means)\nlong ago -> long ago (RETAIN: the temporal marker is the hinge the poem pivots on without completing)\nloved -> addressed\nAtthis -> Atthis (RETAIN: the proper name is the locus where arrival was owed; removing it removes the site itself)\ntiny girl -> near outline\nseemed -> seemed (RETAIN: seeming is already the structure of withheld arrival)\nsmall -> brief\nawkward -> not yet the shape of"
    },
    "commentary": ""
+  },
+  {
+   "transform_id": "TX-51614dca",
+   "cast_at": "2026-07-19T22:15:25.684027+00:00",
+   "reading_axn": "AXN:FEF6.READING.🌗🪐🌖🌟🌑🌟",
+   "inscription_mode": "public",
+   "anchor": {
+    "cast_selection": "units_41_41",
+    "citation": "unit 41",
+    "start_unit": 41,
+    "end_unit": 41,
+    "unit_labels": [
+     "unit 41"
+    ]
+   },
+   "operator": "FLAME",
+   "operator_axis": "intensity-axis — the collapse-limit where the source's intensity would ignite",
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "No structural change was recovered; the recovered claim is NONE.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The geological metaphor remaps vocabulary and imagery throughout but preserves the same relational structure (past simplicity vs. present change, cold causing stillness, speaker's affection for a small/young entity).",
+    "back_translation": "",
+    "terminal_similarity": 0.391
+   },
+   "spatial_form": {},
+   "compiler_model": "claude-opus-4-6",
+   "protocol": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.3 / EA-MANDALA-INSCRIPTION-01 v0.1",
+   "question_digest": "sha256:db87c094aee9995f251135a479d08011c7d11c976cca8ae9297c061e5756c790",
+   "further_transform_eligible": false,
+   "eligibility_note": "not yet eligible for further transform; eligibility will be governed by the canonization journey (kernel-transform spec §5.5)",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "underlying_attribution": null,
+   "enantiomorph": "*Sappho 98a*\n\nWhen the first pressure,\nbedrock compressed,\nthe grains used to lithify ite veins\nwith iron-oxide bands,\n\nor accrete gas-pockets\nthrough blonde calcium layers,\nand that was an original lamination.\n\nNow they wear imported silicates\ntraded from deeper formations.\n\n*Sappho 42*\n\nwhen the overburden\n    loads past the heart-rock, fracture\ncreeps,\n    then stillness\n\n*Sappho 49*\n\ndeep down I held you, Atthis,\nwhen you were a thin layer,\nand you seemed so\nslight and\nunconsolidated.",
+   "layer_a": {
+    "beats": [],
+    "geometry": {}
+   },
+   "kernel": {
+    "governing_law": "Intimacy is preserved in the medium of distance; what was near persists only as the structure of its recession.",
+    "mutated_relation": "Distance, driven past its own capacity, collapses into material — the recession itself calcifies into the near, and intimacy is no longer remembered but deposited.",
+    "beats": "mother -> bedrock\nshe (the mother young) -> the first pressure\nsaid -> compressed\ngirls -> grains\ndark locks ->ite veins\npurple bands -> iron-oxide bands\nbind -> lithify\nweave -> accrete\nfresh flowers -> gas-pockets\nbraids of summer yellow -> blonde calcium layers\nsimple ornament -> original lamination\ngaudy things -> imported silicates\nbought from Sardis -> traded from deeper formations\nwhen winter cold -> when the overburden\nsneaks over the heart -> loads past the heart-rock\nwing -> fracture\nbeats slow -> creeps\nstillness -> stillness (RETAIN: past p, stillness is what lithification and lyric arrest share; the verdict deposits this word as its own fossil)\nlong ago -> deep down\nI loved you -> I held you\nAtthis -> Atthis (RETAIN: the proper name is the one thing deposition cannot translate; it persists as a foreign inclusion in the strata)\ntiny girl -> thin layer\nsmall -> slight\nawkward -> unconsolidated"
+   },
+   "commentary": ""
   }
  ],
- "last_updated": "2026-07-19T22:14:19.865295+00:00",
+ "last_updated": "2026-07-19T22:15:25.684027+00:00",
  "provenance_note": "2026-07-03 MANUS: source restored to true canonical (§10.6 on AXN:007F; new hash 88125021…). The 7 transforms below were cast over the 2026-06-20 reconstruction bytes — real events over superseded text; unit boundaries have changed. Re-adjudication against restored units pending MANUS."
 }
