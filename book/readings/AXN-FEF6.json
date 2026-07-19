@@ -1,0 +1,63 @@
+{
+ "axn": "AXN:FEF6.READING.🌗🪐🌖🌟🌑🌟",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "fb5a642077d7314f",
+ "inscribed_at": "2026-07-19T22:10:26.189663+00:00",
+ "question_digest": "sha256:db87c094aee9995f251135a479d08011c7d11c976cca8ae9297c061e5756c790",
+ "question_gloss": "# Gloss\n\nQuestion about proper care and maintenance procedures for a specific product or service offering.",
+ "source_text_id": "cranes-day-and-night",
+ "cast_selection": "units_41_41",
+ "rotation": [
+  {
+   "operator": "BRIDE",
+   "source_passage": "*Sappho 98a*\n\nWhen she was young,\nmy mother said,\nthe girls used to bind dark locks\nwith purple bands,\n\nor weave fresh flowers\nthrough braids of summer yellow,\nand that was a simple ornament.\n\nNow they wear gaudy things\nbought from Sardis.\n\n*Sappho 42*\n\nwhen winter cold\n    sneaks over the heart, wing\nbeats slow,\n    then stillness\n\n*Sappho 49*\n\nlong ago I loved you, Atthis,\nwhen you were a tiny girl,\nand you seemed so\nsmall and\nawkward.",
+   "citation": "unit 41",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "*Sappho 98a*\n\nWhen she was young,\nmy mouth opened,\nthe hands used to bind wet roots\nwith river-silt,\n\nor press caught light\nthrough folds of morning-warm,\nand that was a single weight.\n\nNow they wear thick patience\ndrawn from the same ground.\n\n*Sappho 42*\n\nwhen winter cold\n    builds over the heart, wing\nbeats close,\n    then pressure\n\n*Sappho 49*\n\nlong ago I knew you, Atthis,\nwhen you were unfinished clay,\nand you were so\ndense and\nexact.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "In Text A, adornment and memory involve decorative, external, and aesthetic elements (purple bands, fresh flowers, gaudy things from Sardis, love, smallness/awkwardness). In Text B, these are replaced by material, tactile, earth-bound substances and processes (wet roots, river-silt, caught light, thick patience drawn from the ground, unfinished clay, density/exactness), transforming the relation from surface decoration to deep material substance.",
+    "law_match": "ADJACENT",
+    "law_match_note": "The recovered claim identifies a real structural change — from surface/decorative to deep/material substance — which partially overlaps the declared mutual constitution of opposites (plain/elaborate, former/present) but frames it as a replacement rather than a simultaneous co-constitution, naming a different relational transformation.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The final fragment (Sappho 49) sustains the shift from aesthetic/decorative/sentimental relation to material/substantive relation ('unfinished clay,' 'dense and exact').",
+    "back_translation": "",
+    "terminal_similarity": 0.429
+   },
+   "law_variance": {
+    "declared": "The former and the present constitute each other — the plain thing and the elaborate thing are one gesture; the small awkward body and the grown body are simultaneous; the cold that slows the heart is the heart's own warm action of gathering itself.",
+    "recovered": "In Text A, adornment and memory involve decorative, external, and aesthetic elements (purple bands, fresh flowers, gaudy things from Sardis, love, smallness/awkwardness). In Text B, these are replaced by material, tactile, earth-bound substances and processes (wet roots, river-silt, caught light, thick patience drawn from the ground, unfinished clay, density/exactness), transforming the relation from surface decoration to deep material substance.",
+    "note": "The recovered claim identifies a real structural change — from surface/decorative to deep/material substance — which partially overlaps the declared mutual constitution of opposites (plain/elaborate, former/present) but frames it as a replacement rather than a simultaneous co-constitution, naming a different relational transformation."
+   },
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match ADJACENT -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-07-19T22:10:26.189663+00:00"
+}
