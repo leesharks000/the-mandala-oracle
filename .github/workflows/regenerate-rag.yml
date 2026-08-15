@@ -78,3 +78,15 @@ jobs:
           Inscriptions: $(jq -r .counts.inscriptions sky/config.json)
           Edges: $(jq -r .counts.edges sky/config.json)"
           git push
+
+# ── Cadence note (2026-08-15) ────────────────────────────────────────────────
+# This runs weekly (Sunday 03:00 UTC). Between runs, Sigil reasons over a corpus
+# that is up to seven days behind alexanarch — by design, not by fault. On
+# 2026-08-15 the index held 1,437 deposits against the archive's 1,486: the
+# pointer was pinned at the 2026-08-09 04:19 run and 49 deposits, including that
+# day's principal work, were outside Sigil's knowledge.
+#
+# The RAG build is faithful to its input; the input is a submodule pointer that
+# only advances inside this job. So "is the knowledge base current?" is really
+# "when did this last run?" — and nothing surfaces that. If same-day currency is
+# wanted, either raise the cadence or dispatch this workflow after a mint.
