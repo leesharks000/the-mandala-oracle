@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:5D24.CONVERSATION.⚡☁️❄️🌱⚡🌖",
+  "session_id_hash": "d0de01ac4a0b6370",
+  "started_at": "2026-08-15T23:22:53.352Z",
+  "last_updated": "2026-08-15T23:25:29.569039+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "tell me about metadata packets"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
