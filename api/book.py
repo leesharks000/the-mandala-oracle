@@ -66,6 +66,10 @@ BOOK_INDEX_PATH = "book/index.json"
 BOOK_FAMILY = "CONVERSATION"  # Family designation for Book AXNs
 
 
+class BookCredentialsInvalid(RuntimeError):
+    """The storage token is present but rejected by GitHub (expired/revoked)."""
+
+
 # ──────────────────────────────────────────────────────────────────────
 # AXN minting
 # ──────────────────────────────────────────────────────────────────────
@@ -132,6 +136,20 @@ def _gh_request(method: str, path: str, body: dict | None = None) -> dict:
         if e.code == 404:
             return {"_not_found": True}
         body = e.read().decode("utf-8", errors="replace")
+        # 401/403 mean the token is present but no longer valid — expired,
+        # revoked, or scope-narrowed. This is NOT a transient error and must be
+        # distinguished from one: on 2026-07-19 the fine-grained PAT expired and
+        # every append failed with 401 for four weeks while the client swallowed
+        # the 500 and retried on every turn. The Oracle looked healthy and
+        # recorded nothing. Raised as a distinct type so the handler can answer
+        # 503 (which stops the client retrying) with an actionable reason.
+        if e.code in (401, 403):
+            raise BookCredentialsInvalid(
+                f"GitHub rejected the {GITHUB_TOKEN_ENV} credential ({e.code}). "
+                f"The token is present but not valid — most likely expired. "
+                f"Mint a new fine-grained PAT (contents:write on {GITHUB_REPO}) "
+                f"and set {GITHUB_TOKEN_ENV} in the Vercel project."
+            )
         raise RuntimeError(f"GitHub API {method} {path} failed: {e.code} {body}")
 
 
@@ -321,8 +339,16 @@ class handler(BaseHTTPRequestHandler):
             # because GitHub's contents API is eventually consistent). That
             # bug left two single-turn conversations orphaned on disk without
             # index entries; the canonical fix is to skip the re-fetch.
-            committed = upsert_conversation(axn, payload)
-            update_index(axn, committed)
+            try:
+                committed = upsert_conversation(axn, payload)
+                update_index(axn, committed)
+            except BookCredentialsInvalid as e:
+                # 503 so the client marks appendingEnabled=false and stops
+                # hammering; the detail names the exact remedy.
+                return self._send_json(503, {
+                    "error": "book_storage_credentials_invalid",
+                    "detail": str(e),
+                })
 
             self._send_json(200, {
                 "axn": axn,

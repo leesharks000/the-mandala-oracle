@@ -515,9 +515,28 @@ async function bookAppend(currentHistory) {
   });
 
   if (res.status === 503) {
+    // Storage unavailable or its credential is invalid. Stop retrying for this
+    // session and say so once in the console -- silence here is what let a
+    // four-week credential expiry go unnoticed (2026-07-19 to 2026-08-15).
     sessionState.appendingEnabled = false;
+    try {
+      const d = await res.json();
+      console.warn('[book] appending disabled for this session:', d.error, '\n', d.detail || '');
+    } catch { console.warn('[book] appending disabled for this session (503).'); }
     return;
   }
+
+  if (!res.ok) {
+    // Any other non-OK is counted; three in a row disables appending rather
+    // than retrying on every turn forever against a fault that will not clear.
+    sessionState.bookFailures = (sessionState.bookFailures || 0) + 1;
+    if (sessionState.bookFailures >= 3) {
+      sessionState.appendingEnabled = false;
+      console.warn('[book] appending disabled after 3 consecutive failures (last status ' + res.status + ').');
+    }
+    return;
+  }
+  sessionState.bookFailures = 0;
   if (!res.ok) return;
   const data = await res.json();
   if (data.axn && !sessionState.axn) {
