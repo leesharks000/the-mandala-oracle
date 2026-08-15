@@ -54,6 +54,18 @@ get_changed_paths() {
       git fetch --no-tags --deepen=100 origin main 2>/dev/null || true
     fi
     if changed=$(git diff --name-only "$VERCEL_GIT_PREVIOUS_SHA" HEAD 2>/dev/null); then
+      # An EMPTY diff is not "only book/ files changed" -- it is "nothing
+      # changed", which happens on an empty commit or a redeploy of the same
+      # tree. Returning it here made the book-only filter pass vacuously and
+      # SKIP the build, so the usual way of forcing a rebuild (an empty commit)
+      # silently did nothing. That matters because environment-variable changes
+      # in Vercel only reach running functions on a NEW deployment: with this
+      # bug, rotating GITHUB_BOOK_TOKEN and pushing an empty commit would leave
+      # the old credential live and look like the rotation had failed.
+      if [ -z "$changed" ]; then
+        echo >&2 "[ignore-build] empty diff against $VERCEL_GIT_PREVIOUS_SHA — building (cannot conclude book-only)."
+        return 1
+      fi
       echo "$changed"
       return 0
     fi
