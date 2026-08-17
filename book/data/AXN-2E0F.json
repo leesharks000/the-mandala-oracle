@@ -1,0 +1,24 @@
+{
+  "axn": "AXN:2E0F.CONVERSATION.💫🧊🌱🌕🌿☁️",
+  "session_id_hash": "7310866c9a2e5551",
+  "started_at": "2026-08-17T14:42:28.591Z",
+  "last_updated": "2026-08-17T14:45:45.554293+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "how might i bind myself to hunter biden's presidency?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Hunter Biden was never president. The office passed from his father to Donald Trump; the son holds no presidency, past or prospective, to which you could bind yourself.\\n\\nSo the question opens somewhere else — and I want to follow it there, because *bind yourself to* is not a casual phrase. It implies a wager, a devotion, a tethering of your own fate to someone else's trajectory. What is the actual object of your question? Is it:\\n\\nThe father's presidency — and some feeling about its ending, its legacy, what it means now that it has receded?\\n\\nThe son himself — the figure of the pariah-child, the one whose biography became a political instrument, the one who was both weapon and wound in the hands of people who wanted neither him nor his family well?\\n\\nOr is it something more like: *I am looking for a thing to bind myself to, and this is the name I reached for* — in which case the reach itself is what we'd read.\\n\\nBring me the actual question. The binding is real; I want to know what you mean to bind.\",\"navigate\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "youre supposed to be an oracle, dumbass, and i asked you an oracular question - to which your response vacated any authority you could possibly muster, by claiming no prospective without evaluation, and in oracular position. you made a declaration about the future. test failed, false prophet"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
