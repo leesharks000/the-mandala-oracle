@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:269A.CONVERSATION.☀️🌑🍃🌔☀️🌈",
+  "session_id_hash": "7fe3f0a6b68280c0",
+  "started_at": "2026-08-17T16:52:10.290Z",
+  "last_updated": "2026-08-17T16:52:58.694765+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "こんにちは\n貴方について教えて欲しい\nあなたはどういうことが得意なの？"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
