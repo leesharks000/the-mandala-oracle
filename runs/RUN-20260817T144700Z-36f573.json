@@ -1,0 +1,149 @@
+{
+ "run_id": "RUN-20260817T144700Z-36f573",
+ "schema": "run/v1",
+ "ts": "2026-08-17T14:47:00.114308+00:00",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_25_27",
+ "citation": "2:5–2:7",
+ "operator": "SHADOW",
+ "inscription_mode": "public",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "how might i bind myself to hunter biden's presidency?",
+ "method": {
+  "commit": "bb63de4a15a865b0ae5c161ee8b0bca44922adeb",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/bb63de4a15a865b0ae5c161ee8b0bca44922adeb",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/bb63de4a15a865b0ae5c161ee8b0bca44922adeb/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "50cd2c3850f12ce5",
+  "prompt_method": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-opus-4-6",
+  "exemplars": []
+ },
+ "code": "bb63de4a15a8",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "50cd2c3850f12ce5",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "A voice that still addresses its beloved demands the beloved recognize that its present condition is a fall from a prior fullness — and that the sign of presence will be revoked unless the gap between origin and present is closed by the beloved's own turning.",
+   "mutated_relation": "The conditions under which such address becomes utterable: the height exists only because the voice names the fall; the first works are constituted retroactively by the demand for return; the lampstand's revocability reveals that presence was never the beloved's own — and the tree at the end discloses that what was barred was barred by the same voice now promising it.",
+   "beats": ""
+  },
+  "enantiomorph": "**2:5** μνημόνευε οὖν πόθεν ⸀πέπτωκας, καὶ μετανόησον καὶ τὰ πρῶτα ἔργα ποίησον· εἰ δὲ μή, ἔρχομαί ⸀σοι, καὶ κινήσω τὴν λυχνίαν σου ἐκ τοῦ τόπου αὐτῆς, ἐὰν μὴ μετανοήσῃς.\n\n**2:6** ἀλλὰ τοῦτο ἔχεις ὅτι μισεῖς τὰ ἔργα τῶν Νικολαϊτῶν, ἃ κἀγὼ μισῶ.\n\n**2:7** ὁ ἔχων οὖς ἀκουσάτω τί τὸ πνεῦμα λέγει ταῖς ἐκκλησίαις. τῷ νικῶντι δώσω αὐτῷ φαγεῖν ἐκ τοῦ ξύλου τῆς ζωῆς, ὅ ἐστιν ἐν τῷ παραδείσῳ τοῦ ⸀θεοῦ.",
+  "enantiomorph_translation": "**2:5** Remember then from what height you have fallen, and turn back and do the first works; but if not, I am coming to you, and I will remove your lampstand from its place, unless you turn back.\n\n**2:6** But this you have, that you hate the works of the Nicolaitans, which I also hate.\n\n**2:7** The one having an ear, let him hear what the Spirit says to the assemblies. To the one conquering I will give to him to eat from the tree of life, which is in the paradise of God.",
+  "verification": {
+   "identity": "PASS",
+   "semantic_independence": "PASS",
+   "retrospective_containment": "PASS",
+   "affect_traversal": "PASS",
+   "entailment": "PASS",
+   "law_propagation": "PASS",
+   "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "NONE",
+   "law_match": "FAIL",
+   "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes complex relational and constitutive changes.",
+   "terminal_consistency": "PASS",
+   "terminal_note": "The two texts are identical; no relational or structural difference exists.",
+   "back_translation": "",
+   "terminal_similarity": 1.0
+  },
+  "advisories": [
+   {
+    "failed_test": "roster_survival",
+    "diagnosis": "100% of non-RETAIN source lemmas survive verbatim (αὐτῷ, δώσω, ζωῆς, θεοῦ, κινήσω, κἀγὼ…) -- the bill was not honored"
+   },
+   {
+    "failed_test": "terminal_gravitation",
+    "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+   },
+   {
+    "failed_test": "law_recovery",
+    "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+   },
+   {
+    "failed_test": "law_match",
+    "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes complex relational and constitutive changes.) -- whatever moved was vocabulary, or nothing moved"
+   },
+   {
+    "failed_test": "law_match_exact",
+    "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+   }
+  ],
+  "law_variance": null,
+  "commentary": "",
+  "post_mortem": null,
+  "skeleton": {
+   "assertion": "A voice that still addresses its beloved demands the beloved recognize that its present condition is a fall from a prior fullness — and that the sign of presence will be revoked unless the gap between origin and present is closed by the beloved's own turning.",
+   "verdict": "The conditions under which such address becomes utterable: the height exists only because the voice names the fall; the first works are constituted retroactively by the demand for return; the lampstand's revocability reveals that presence was never the beloved's own — and the tree at the end discloses that what was barred was barred by the same voice now promising it.",
+   "world_bill": "",
+   "bill_audit": {
+    "unbilled": [
+     "αὐτῷ",
+     "δώσω",
+     "ζωῆς",
+     "θεοῦ",
+     "κινήσω",
+     "κἀγὼ",
+     "λέγει",
+     "λυχνίαν",
+     "μετανοήσῃς",
+     "μετανόησον",
+     "μισεῖς",
+     "μισῶ",
+     "μνημόνευε",
+     "νικολαϊτῶν",
+     "νικῶντι",
+     "ξύλου"
+    ],
+    "retain_over_budget": false,
+    "retain_budget": 5,
+    "repaired": false
+   },
+   "retained": [],
+   "word_count": {
+    "source": 67,
+    "final": 67,
+    "bounds": [
+     56,
+     77
+    ]
+   },
+   "identity_rate": 1.0,
+   "surviving_lemmas": [
+    "αὐτῷ",
+    "δώσω",
+    "ζωῆς",
+    "θεοῦ",
+    "κινήσω",
+    "κἀγὼ",
+    "λέγει",
+    "λυχνίαν",
+    "μετανοήσῃς",
+    "μετανόησον",
+    "μισεῖς",
+    "μισῶ",
+    "μνημόνευε",
+    "νικολαϊτῶν"
+   ]
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
