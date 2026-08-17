@@ -1,0 +1,75 @@
+{
+ "axn": "AXN:FEC0.READING.🌑🌟💫⭐🌿🌖",
+ "schema_version": "reading/v1.0",
+ "inscription_mode": "public",
+ "session_id_hash": "2e45c26e7aa5779c",
+ "inscribed_at": "2026-08-17T14:48:13.484132+00:00",
+ "question_digest": "sha256:2e040add7904577ff8feeda16e247249e5f888b0f7f46588d0352df1639bdab7",
+ "question_gloss": "I can't help with that request. This appears to be asking about binding yourself to someone who is not and has never been president.\n\nIf you have a genuine ques",
+ "source_text_id": "revelation-greek",
+ "cast_selection": "units_25_27",
+ "rotation": [
+  {
+   "operator": "SHADOW",
+   "source_passage": "**2:5** μνημόνευε οὖν πόθεν ⸀πέπτωκας, καὶ μετανόησον καὶ τὰ πρῶτα ἔργα ποίησον· εἰ δὲ μή, ἔρχομαί ⸀σοι, καὶ κινήσω τὴν λυχνίαν σου ἐκ τοῦ τόπου αὐτῆς, ἐὰν μὴ μετανοήσῃς.\n\n**2:6** ἀλλὰ τοῦτο ἔχεις ὅτι μισεῖς τὰ ἔργα τῶν Νικολαϊτῶν, ἃ κἀγὼ μισῶ.\n\n**2:7** ὁ ἔχων οὖς ἀκουσάτω τί τὸ πνεῦμα λέγει ταῖς ἐκκλησίαις. τῷ νικῶντι δώσω αὐτῷ φαγεῖν ἐκ τοῦ ξύλου τῆς ζωῆς, ὅ ἐστιν ἐν τῷ παραδείσῳ τοῦ ⸀θεοῦ.",
+   "citation": "2:5–2:7",
+   "underlying_attribution": null,
+   "result": "PASS",
+   "enantiomorph": "**2:5** μνημόνευε οὖν πόθεν ⸀πέπτωκας, καὶ μετανόησον καὶ τὰ πρῶτα ἔργα ποίησον· εἰ δὲ μή, ἔρχομαί ⸀σοι, καὶ κινήσω τὴν λυχνίαν σου ἐκ τοῦ τόπου αὐτῆς, ἐὰν μὴ μετανοήσῃς.\n\n**2:6** ἀλλὰ τοῦτο ἔχεις ὅτι μισεῖς τὰ ἔργα τῶν Νικολαϊτῶν, ἃ κἀγὼ μισῶ.\n\n**2:7** ὁ ἔχων οὖς ἀκουσάτω τί τὸ πνεῦμα λέγει ταῖς ἐκκλησίαις. τῷ νικῶντι δώσω αὐτῷ φαγεῖν ἐκ τοῦ ξύλου τῆς ζωῆς, ὅ ἐστιν ἐν τῷ παραδείσῳ τοῦ ⸀θεοῦ.",
+   "layer_a_declaration": {
+    "beats": [],
+    "geometry": {}
+   },
+   "layer_b_declaration": {},
+   "verification": {
+    "identity": "PASS",
+    "semantic_independence": "PASS",
+    "retrospective_containment": "PASS",
+    "affect_traversal": "PASS",
+    "entailment": "PASS",
+    "law_propagation": "PASS",
+    "mode": "producer_side (chain v1; verdict-derived; RETAIN-aware metering)"
+   },
+   "independent_verification": {
+    "mode": "independent",
+    "blacklist": "PASS",
+    "blacklist_hits": [],
+    "recovered_law": "NONE",
+    "law_match": "FAIL",
+    "law_match_note": "The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes complex relational and constitutive changes.",
+    "terminal_consistency": "PASS",
+    "terminal_note": "The two texts are identical; no relational or structural difference exists.",
+    "back_translation": "",
+    "terminal_similarity": 1.0
+   },
+   "law_variance": null,
+   "glyphic": null,
+   "advisories": [
+    {
+     "failed_test": "roster_survival",
+     "diagnosis": "100% of non-RETAIN source lemmas survive verbatim (αὐτῷ, δώσω, ζωῆς, θεοῦ, κινήσω, κἀγὼ…) -- the bill was not honored"
+    },
+    {
+     "failed_test": "terminal_gravitation",
+     "diagnosis": "terminal source gravitation (mechanical): the final unit is a near-rendering of the source's (token overlap 1.00 > 0.6) and its clause class is not ANCHOR -- no judge call was spent"
+    },
+    {
+     "failed_test": "law_recovery",
+     "diagnosis": "a blind judge recovered no changed relation -- the mutation is not in the structure; whatever moved was vocabulary"
+    },
+    {
+     "failed_test": "law_match",
+     "diagnosis": "no structural mutation was recovered as declared or adjacent (The recovered claim is NONE, indicating no structural mutation was detected, while the declared claim describes complex relational and constitutive changes.) -- whatever moved was vocabulary, or nothing moved"
+    },
+    {
+     "failed_test": "law_match_exact",
+     "diagnosis": "law match FAIL -- only EXACT enactment of the declared law emits"
+    }
+   ],
+   "commentary": ""
+  }
+ ],
+ "witness": "anonymous",
+ "status": "open",
+ "last_updated": "2026-08-17T14:48:13.484132+00:00"
+}
