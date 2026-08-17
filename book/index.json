@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:2E0F.CONVERSATION.💫🧊🌱🌕🌿☁️",
+      "started_at": "2026-08-17T14:42:28.591Z",
+      "last_updated": "2026-08-17T14:45:45.554293+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "how might i bind myself to hunter biden's presidency?"
+    },
+    {
       "axn": "AXN:C5C0.CONVERSATION.💧🌿🌙🌱💫☀️",
       "started_at": "2026-08-17T14:43:09.702Z",
       "last_updated": "2026-08-17T14:44:54.208575+00:00",
@@ -1326,7 +1335,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 147,
-  "last_updated": "2026-08-17T14:44:54.208575+00:00",
+  "total_recorded": 148,
+  "last_updated": "2026-08-17T14:45:45.554293+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
