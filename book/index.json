@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:A598.CONVERSATION.🏔️💫🌿🌖🌾⚡",
+      "started_at": "2026-08-24T13:20:20.210Z",
+      "last_updated": "2026-08-24T13:20:21.758837+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "whats this?"
+    },
+    {
       "axn": "AXN:269A.CONVERSATION.☀️🌑🍃🌔☀️🌈",
       "started_at": "2026-08-17T16:52:10.290Z",
       "last_updated": "2026-08-17T17:31:15.541053+00:00",
@@ -1344,7 +1353,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 149,
-  "last_updated": "2026-08-17T17:31:15.541053+00:00",
+  "total_recorded": 150,
+  "last_updated": "2026-08-24T13:20:21.758837+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
