@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:3E1D.CONVERSATION.💫⚡🌔🍃⭐🪐",
+      "started_at": "2026-08-30T23:31:03.507Z",
+      "last_updated": "2026-08-30T23:40:57.993658+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Epistle to the Human Diaspora (dancings-epistle-to-the-human-diaspora). Selection: X:11-X:13. Operator: MIRROR — direc…"
+    },
+    {
       "axn": "AXN:5EA9.CONVERSATION.🔥🌒🌑🌈🪐🍃",
       "started_at": "2026-08-27T06:32:21.457Z",
       "last_updated": "2026-08-27T07:04:04.273440+00:00",
@@ -1362,7 +1371,7 @@
       "opening_snippet": "Hello"
     }
   ],
-  "total_recorded": 151,
-  "last_updated": "2026-08-27T07:04:04.273440+00:00",
+  "total_recorded": 152,
+  "last_updated": "2026-08-30T23:40:57.993658+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
