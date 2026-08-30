@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Pull canonical index and commit if changed
         run: |
-          curl -sf https://raw.githubusercontent.com/leesharks000/alexanarch/main/api/axn-index.json -o /tmp/axn-index.json
+          curl -sf https://raw.githubusercontent.com/leesharks000/alexanarch/main/data/api/axn-index.json -o /tmp/axn-index.json
           test -s /tmp/axn-index.json
           if ! cmp -s /tmp/axn-index.json data/axn-index.json; then
             mkdir -p $(dirname data/axn-index.json)
