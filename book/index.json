@@ -5,9 +5,9 @@
     {
       "axn": "AXN:E152.CONVERSATION.🌒🌱🌒🌿🌾🌑",
       "started_at": "2026-09-03T09:05:05.977Z",
-      "last_updated": "2026-09-03T09:06:03.722007+00:00",
+      "last_updated": "2026-09-03T09:06:20.584839+00:00",
       "mode": "sabbath",
-      "turn_count": 0,
+      "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "take me into a text"
     },
@@ -1381,6 +1381,6 @@
     }
   ],
   "total_recorded": 153,
-  "last_updated": "2026-09-03T09:06:03.722007+00:00",
+  "last_updated": "2026-09-03T09:06:20.584839+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
