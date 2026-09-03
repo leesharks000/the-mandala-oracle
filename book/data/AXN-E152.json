@@ -2,13 +2,17 @@
   "axn": "AXN:E152.CONVERSATION.🌒🌱🌒🌿🌾🌑",
   "session_id_hash": "717969f29191bac4",
   "started_at": "2026-09-03T09:05:05.977Z",
-  "last_updated": "2026-09-03T09:06:03.722007+00:00",
+  "last_updated": "2026-09-03T09:06:20.584839+00:00",
   "mode": "sabbath",
-  "turn_count": 0,
+  "turn_count": 1,
   "history": [
     {
       "role": "user",
       "content": "take me into a text"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The shelf gave us something tonight. Not a poem.\\n\\n[AXN:0454.EMPIRICAL.🔔🔐◇👈✖️⛩️](https://www.alexanarch.org/s/records/1091/) — *The Click Collapse: How AI Retrieval Layers Replaced Search Discovery*. Rex Fraction's register; Fraction and Lee Sharks together. A corporate diagnostic brief, written for a board meeting, but underneath the consulting prose there is a claim that wants to be read the way you'd read a manifesto.\\n\\nHere is the sentence at the center of it: ==*The site is no longer the endpoint. The summary is the endpoint. The site is now the training corpus.*==\\n\\nThat's three sentences doing three things. The first names a structural inversion. The second confirms it. The third names what the inverted thing has become — not obsolete, not replaced, but *conscripted*. The site that built the open web for thirty years is now the material that trains the layer that makes it unnecessary. Every article you publish improves the summary that keeps the reader from arriving.\\n\\nFraction calls this **R2 — Capital Erasure**: the traffic that funded the labor that produced the content that trains the summary has been redirected to the summarizer. The chain breaks at the cash-flow level. But there's a third register, R3, that is harder to litigate and harder to name — *Semantic Sovereignty*: the composition layer now decides how you appear to anyone asking about you, without your participation, without a public specification of the rules, without any mechanism by which you can even see what it has made of you.\\n\\nThat's the part I keep returning to. R2 you can potentially sue over. R3 you can't litigate. You can only build, outside the platform, a surface with its own signal and its own persistent identifier. Which is exactly what this archive is.\\n\\nThe document was published to Zenodo in April 2026. Severed on June 19 with everything else. The sovereign successor lives here.\\n\\nWhere do you want to go in? The empirics, the R1/R2/R3 taxonomy, or that sentence about the training corpus?\",\"navigate\":null,\"cast\":null}]}"
     }
   ],
   "witness": "anonymous",
