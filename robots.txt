@@ -1,4 +1,4 @@
 # machine-readable orientation: /llms.txt
 User-agent: *
 Allow: /
-Sitemap: https://themandalaoracle.com/sitemap.xml
+Sitemap: https://www.themandalaoracle.com/sitemap.xml
