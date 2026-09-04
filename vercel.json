@@ -1,62 +1,64 @@
 {
- "$schema": "https://openapi.vercel.sh/vercel.json",
- "framework": null,
- "ignoreCommand": "bash vercel-ignore-build.sh",
- "functions": {
-  "api/**/*.py": {
-   "maxDuration": 300
-  }
- },
- "headers": [
-  {
-   "source": "/sky/(.*)",
-   "headers": [
-    {
-     "key": "Cache-Control",
-     "value": "public, max-age=300, s-maxage=300"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "ignoreCommand": "bash vercel-ignore-build.sh",
+  "functions": {
+    "api/**/*.py": {
+      "maxDuration": 300
     }
-   ]
   },
-  {
-   "source": "/rag/metadata.json",
-   "headers": [
+  "headers": [
     {
-     "key": "Cache-Control",
-     "value": "public, max-age=300, s-maxage=300"
-    }
-   ]
-  },
-  {
-   "source": "/(.*\\.(?:html|css|js))",
-   "headers": [
+      "source": "/sky/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=300"
+        }
+      ]
+    },
     {
-     "key": "Cache-Control",
-     "value": "no-cache, must-revalidate"
-    }
-   ]
-  },
-  {
-   "source": "/",
-   "headers": [
+      "source": "/rag/metadata.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=300"
+        }
+      ]
+    },
     {
-     "key": "Cache-Control",
-     "value": "no-cache, must-revalidate"
+      "source": "/(.*\\.(?:html|css|js))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, must-revalidate"
+        }
+      ]
     }
-   ]
-  }
- ],
- "rewrites": [
-  {
-   "source": "/llms.txt",
-   "destination": "/llms.txt"
-  },
-  {
-   "source": "/robots.txt",
-   "destination": "/robots.txt"
-  },
-  {
-   "source": "/t/:id",
-   "destination": "/t/index.html"
-  }
- ]
+  ],
+  "rewrites": [
+    {
+      "source": "/llms.txt",
+      "destination": "/llms.txt"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/robots.txt"
+    },
+    {
+      "source": "/t/:id",
+      "destination": "/t/index.html"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
