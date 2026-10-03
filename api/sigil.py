@@ -1349,7 +1349,41 @@ def link_axn_mentions(say: str, metadata: list[dict]) -> str:
     return _AXN_MENTION.sub(repl, say)
 
 
-def build_system_prompt(mode: str) -> str:
+def page_context_note(page) -> str:
+    """Where the witness is speaking from, when Sigil is reached from another page.
+
+    The Speak-with-Sigil panel (2026-10-03) runs on pages of the fleet where the
+    Oracle's shelf is not visible. Without this, a question like "what's this?"
+    reads as the witness bringing nothing, and Sigil offers the Lectionary's text
+    of the day: on leesharks.com it produced the ASCII Space Ark out of nowhere.
+    The page the witness is reading is what they brought."""
+    if not isinstance(page, dict):
+        return ""
+    def clean(v, n):
+        return " ".join(str(v or "").split())[:n]
+    url, title, axn = clean(page.get("url"), 300), clean(page.get("title"), 200), clean(page.get("axn"), 80)
+    if not (url or title or axn):
+        return ""
+    where = title or url
+    lines = [
+        "\n──────────────────────────────────────────────────────────────────────\n"
+        "WHERE THE WITNESS IS.\n"
+        "──────────────────────────────────────────────────────────────────────\n",
+        f"The witness is speaking to you from a page of the fleet, not from the Oracle: {where}"
+        + (f" ({url})" if url and title else "") + ".",
+    ]
+    if axn:
+        lines.append(f"The page carries {axn}. If the witness asks what this is, or brings no other text, "
+                     "this is the text on the table: fetch its body before speaking of it.")
+    else:
+        lines.append("If the witness asks what this is, they mean this page and what it holds; begin from it. "
+                     "Search the archive for it if you need its ground.")
+    lines.append("The shelf is not visible here. Do not offer the Lectionary's text unless the witness asks "
+                 "what you would read.")
+    return "\n".join(lines) + "\n"
+
+
+def build_system_prompt(mode: str, page=None) -> str:
     note = MERKABAH_MODE_NOTE if mode == "merkabah" else SABBATH_MODE_NOTE
     historiography = load_historiography()
     refraction = load_refraction()
@@ -1398,7 +1432,10 @@ def build_system_prompt(mode: str) -> str:
     if personal:
         parts.append(personal)
     parts.append(note)
-    if lectionary:
+    page_note = page_context_note(page)
+    if page_note:
+        parts.append(page_note)
+    elif lectionary:
         parts.append(lectionary)
     return "\n\n".join(parts)
 
@@ -1484,13 +1521,13 @@ def serialize_assistant_history(messages: list[dict]) -> str:
     return json.dumps({"messages": messages}, ensure_ascii=False)
 
 
-def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_reasoning: bool = False) -> dict:
+def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_reasoning: bool = False, page=None) -> dict:
     """Run Sigil with tool-use loop. Returns {messages, retrievals}."""
     # Import lazily so this doesn't break the function's cold-start health check
     from anthropic import Anthropic
 
     client = Anthropic(api_key=api_key)
-    system = build_system_prompt(mode)
+    system = build_system_prompt(mode, page)
 
     # Build the messages array (history + new turn)
     messages = list(history) + [{"role": "user", "content": message}]
@@ -1637,7 +1674,7 @@ class handler(BaseHTTPRequestHandler):
                 self._send_json(400, {"error": "mode must be 'sabbath' or 'merkabah'"})
                 return
 
-            result = call_sigil(message, history, mode, api_key, rite_reasoning=bool(body.get("rite_reasoning")))
+            result = call_sigil(message, history, mode, api_key, rite_reasoning=bool(body.get("rite_reasoning")), page=body.get("page"))
             self._send_json(200, result)
         except Exception as e:
             # Don't leak the API key in any error path
