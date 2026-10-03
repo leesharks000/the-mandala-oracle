@@ -5,9 +5,9 @@
     {
       "axn": "AXN:FF72.CONVERSATION.🧊🌘💧🌒🌘🌒",
       "started_at": "2026-10-03T20:32:00.210Z",
-      "last_updated": "2026-10-03T20:32:11.739468+00:00",
+      "last_updated": "2026-10-03T20:32:26.529478+00:00",
       "mode": "sabbath",
-      "turn_count": 0,
+      "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "whats this?"
     },
@@ -1685,6 +1685,6 @@
     }
   ],
   "total_recorded": 184,
-  "last_updated": "2026-10-03T20:32:11.739468+00:00",
+  "last_updated": "2026-10-03T20:32:26.529478+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
