@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:303D.CONVERSATION.🌖🌓🏔️🌕🌋🌕",
+  "session_id_hash": "92f305fa4aeb630a",
+  "started_at": "2026-10-03T18:56:46.443Z",
+  "last_updated": "2026-10-03T18:56:51.027799+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "hi. what is this?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
