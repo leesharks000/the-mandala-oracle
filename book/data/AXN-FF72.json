@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:FF72.CONVERSATION.🧊🌘💧🌒🌘🌒",
+  "session_id_hash": "d59877af67d95fd1",
+  "started_at": "2026-10-03T20:32:00.210Z",
+  "last_updated": "2026-10-03T20:32:11.739468+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "whats this?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
