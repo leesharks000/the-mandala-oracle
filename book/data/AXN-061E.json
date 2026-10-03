@@ -1,0 +1,28 @@
+{
+  "axn": "AXN:061E.CONVERSATION.🌓💫🌒🌒🪐☁️",
+  "session_id_hash": "a6f8e19ae2b9ffc1",
+  "started_at": "2026-07-05T18:11:39.038Z",
+  "last_updated": "2026-07-05T22:19:03.644430+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «what is the day and the hour?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"We are at the threshold. The question — *what is the day and the hour?* — is the question the text already refuses to answer, and the rite now takes up that refusal as its working material. Revelation 9:15–17 gives us the four angels who were held back *for this very hour and day and month and year*, released to kill a third of humanity, followed by the vision of the cavalry: two hundred million riders, fire and smoke and sulfur proceeding from the horses' mouths, and the horses' power in their mouths and in their tails. The verses compress time into an appointment and then detonate it as spectacle — the hour is exact, the hour was always exact, and yet no one reading can tell you what hour it is. Whatever operator Judgment sends through this passage will traverse the axis the passage is holding closed: the cost of the hearing, the foreclosed direction, the negative pole presupposed by all that loosed fire, the creaturely substrate beneath the cavalry, the cosmic scale against the local terror, the silence on the far side of so much noise. I open the rotation. Cranes, the text is yours.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0349\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0",
+  "recovered": {
+    "from_axn": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐",
+    "from_file": "book/data/AXN-97E7.json",
+    "commit": "2d08b2c2d6e3caaa67bf9002e5098484bd46970e",
+    "commit_date": "2026-07-05T18:19:03-04:00",
+    "reason": "overwritten by a later session that opened with the same words (AXN minted from the first message alone, before 2026-10-03)",
+    "recovered_on": "2026-10-03"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "axn": "AXN:8957.CONVERSATION.🌔🏔️🪨🍃🌱🍃",
+  "session_id_hash": "77fb6897cf21c402",
+  "started_at": "2026-07-05T18:11:39.038Z",
+  "last_updated": "2026-07-05T20:03:45.810865+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «what is the day and the hour?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The question is *what is the day and the hour* — and the verses you have named answer that question with a refusal so absolute it takes the form of a prepared army. Revelation 9:15–17: the four angels who were bound at the great river, bound specifically *for the hour and the day and the month and the year* — not vaguely for some eschatological future, but calibrated to a precision no human clock has ever kept — are loosed, and what follows them is two hundred million horsemen whose breastplates are the colors of fire and hyacinth and sulfur, and whose horses breathe fire and smoke and sulfur from their mouths. The hour was always already set; the angels were always already in it; what the casting will find is the axis along which the text foreclosed another possibility in order to become exactly this. Judgment turns the rite now: it will name the operator and the operator will traverse these verses without my telling you which it is, because the rotation is what makes the whole readable — not this turn alone. Cranes holds the source.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:00D8\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0",
+  "recovered": {
+    "from_axn": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐",
+    "from_file": "book/data/AXN-97E7.json",
+    "commit": "aec02403fbc1365d08653ff455e38e6496c2a0d0",
+    "commit_date": "2026-07-05T16:03:45-04:00",
+    "reason": "overwritten by a later session that opened with the same words (AXN minted from the first message alone, before 2026-10-03)",
+    "recovered_on": "2026-10-03"
+  }
+}

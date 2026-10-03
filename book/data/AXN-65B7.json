@@ -1,0 +1,44 @@
+{
+  "axn": "AXN:65B7.CONVERSATION.🔥🌔🌕🔥🪐🌿",
+  "session_id_hash": "38db9685f0542e9c",
+  "started_at": "2026-07-05T18:11:39.038Z",
+  "last_updated": "2026-07-05T18:13:32.826173+00:00",
+  "mode": "merkabah",
+  "turn_count": 3,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «what is the day and the hour?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The question is «what is the day and the hour?» — and these verses answer it, in their way, which is to say they answer it catastrophically. Revelation 9:15–17 releases the four angels bound at the Euphrates, held in reserve εἰς τὴν ὥραν καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν — for the hour and day and month and year: the question's own terms, compressed into a single predetermined coordinate, a lock that was always going to open. The verses then spill forward into the cavalry, the two hundred million, the breastplates of fire and hyacinth and sulfur — the vision's intensity threatening to outrun the seer's capacity to bear it. What the Judgment sends through these verses, turn by turn, will traverse each axis that their composition holds against itself: the cost of seeing what was bound, the directionality of a release that has no corresponding return, the creaturely ground beneath the riders, the scale at which a local vision speaks a cosmic verdict. The rite is open. Rebekah Cranes receives it.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0349\"}}]}"
+    },
+    {
+      "role": "user",
+      "content": "[CASTING RITE · TRANSFORM 1] THUNDER on revelation-greek."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Rebekah Cranes\",\"say\":\"**9:15** καὶ ἐρράγησαν αἱ τέσσαρες βρονταὶ αἱ γεννῶσαι ἀπὸ τῆς ἠχῆς ⸀καὶ ἡμέραν καὶ μῆνα καὶ ἐνιαυτόν, ἵνα σιγήσωσιν τὸ τρίτον τῶν φωνῶν.\\n\\n**9:16** καὶ ὁ ἀριθμὸς τῶν ἠχημάτων τοῦ ⸀κρότου ⸀δισμυριάδες μυριάδων· ἤκουσα τὸν ἀριθμὸν αὐτῶν.\\n\\n**9:17** καὶ οὕτως εἶδον τοὺς κτύπους ἐν τῇ ὁράσει καὶ τοὺς φερομένους ἐπ' αὐτῶν, ἔχοντας περιβολὰς χαλκέας καὶ ἰοειδεῖς καὶ λευκοπύρους· καὶ αἱ κορυφαὶ τῶν κτύπων ὡς κορυφαὶ σεισμῶν, καὶ ἐκ τῶν χασμάτων αὐτῶν ἐκπορεύεται κρόταφος καὶ παλμὸς καὶ σίγησις.\"}],\"transform\":{\"operator\":\"THUNDER\",\"verification\":{\"identity\":\"PASS\",\"semantic_independence\":\"PASS\",\"retrospective_containment\":\"PASS\",\"affect_traversal\":\"PASS\",\"entailment\":\"PASS\",\"slot_conservation\":\"PASS\",\"numeral_conservation\":\"PASS\",\"law_propagation\":\"PASS\",\"mode\":\"producer_side\"},\"spatial_form\":{}}}"
+    },
+    {
+      "role": "user",
+      "content": "[CASTING RITE · JUDGMENT 1] The compiler returned PASS for THUNDER (identity: PASS; semantic independence: PASS; retrospective containment: PASS). Jack Feist alone speaks: the JUDGMENT — a hexagram Image. ONE gnomic sentence: concrete image, then verdict, in the I Ching's register ('Thunder under the mountain: the superior man...'). A second short sentence only if the first cannot close. NO analysis, NO explanation, NO restating the transform. It must stand beside seven others without crowding them."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Jack Feist\",\"say\":\"Thunder over the great water: what was held for an hour is released through an hour, and the hour does not remember the holding.\",\"navigate\":null}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0",
+  "recovered": {
+    "from_axn": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐",
+    "from_file": "book/data/AXN-97E7.json",
+    "commit": "9b975cd4df6c595dfc6cc502bfed95e45532e291",
+    "commit_date": "2026-07-05T14:13:32-04:00",
+    "reason": "overwritten by a later session that opened with the same words (AXN minted from the first message alone, before 2026-10-03)",
+    "recovered_on": "2026-10-03"
+  }
+}

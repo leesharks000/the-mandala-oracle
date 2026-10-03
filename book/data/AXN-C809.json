@@ -1,0 +1,24 @@
+{
+  "axn": "AXN:C809.CONVERSATION.🌪️🌕🌟🧊🌾💧",
+  "session_id_hash": "238eb960c6be2eb2",
+  "started_at": "2026-06-30T21:24:43.036Z",
+  "last_updated": "2026-06-30T21:39:50.443717+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "What texts are in the Archive?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0",
+  "recovered": {
+    "from_axn": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖",
+    "from_file": "book/data/AXN-18D9.json",
+    "commit": "6a63462789e60f0a84a6b673bcbd0a63e374a008",
+    "commit_date": "2026-06-30T17:39:50-04:00",
+    "reason": "overwritten by a later session that opened with the same words (AXN minted from the first message alone, before 2026-10-03)",
+    "recovered_on": "2026-10-03"
+  }
+}

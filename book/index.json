@@ -67,12 +67,22 @@
     },
     {
       "axn": "AXN:A598.CONVERSATION.🏔️💫🌿🌖🌾⚡",
-      "started_at": "2026-08-24T13:20:20.210Z",
+      "started_at": "2026-10-03T14:43:43-04:00",
       "last_updated": "2026-10-03T18:44:04.219733+00:00",
       "mode": "sabbath",
       "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "whats this?"
+    },
+    {
+      "axn": "AXN:C21C.CONVERSATION.🌟🌓💎🌪️🌖🏔️",
+      "started_at": "2026-08-24T13:20:20.210Z",
+      "last_updated": "2026-08-24T13:20:45.828821+00:00",
+      "mode": "sabbath",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "whats this?",
+      "recovered_from": "AXN:A598.CONVERSATION.🏔️💫🌿🌖🌾⚡"
     },
     {
       "axn": "AXN:269A.CONVERSATION.☀️🌑🍃🌔☀️🌈",
@@ -390,6 +400,16 @@
       "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: — Paste your own text (your words as the source) — (__reader__). The verses the casting arrives at (the witness, as tr…"
     },
     {
+      "axn": "AXN:89AE.CONVERSATION.💫🌒🌑⚡🪨🌒",
+      "started_at": "2026-07-07T23:02:26.903Z",
+      "last_updated": "2026-07-07T23:05:15.848431+00:00",
+      "mode": "merkabah",
+      "turn_count": 3,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: — Paste your own text (your words as the source) — (__reader__). The verses the casting arrives at (the witness, as tr…",
+      "recovered_from": "AXN:8D9B.CONVERSATION.🌘❄️💧🌋🌕💧"
+    },
+    {
       "axn": "AXN:6123.CONVERSATION.🌈🌈🌖💫💧🌿",
       "started_at": "2026-07-07T22:14:38.073Z",
       "last_updated": "2026-07-07T22:25:03.656332+00:00",
@@ -669,6 +689,126 @@
       "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…"
     },
     {
+      "axn": "AXN:65B7.CONVERSATION.🔥🌔🌕🔥🪐🌿",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T18:13:32.826173+00:00",
+      "mode": "merkabah",
+      "turn_count": 3,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:09A7.CONVERSATION.☀️🪨🌑🌙🌘🌓",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T18:49:37.641885+00:00",
+      "mode": "merkabah",
+      "turn_count": 16,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:E3D2.CONVERSATION.🌿☀️🌘🌗🍃🧊",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T19:47:17.647485+00:00",
+      "mode": "merkabah",
+      "turn_count": 6,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:8957.CONVERSATION.🌔🏔️🪨🍃🌱🍃",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T20:03:45.810865+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:110F.CONVERSATION.🪐🌋🌕🌖🌗🌿",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T20:18:01.503812+00:00",
+      "mode": "merkabah",
+      "turn_count": 3,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:4ACD.CONVERSATION.💫🌱🌕⚡🌖🌋",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T20:46:05.059573+00:00",
+      "mode": "merkabah",
+      "turn_count": 5,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:1F39.CONVERSATION.🏔️🌋🌊🪨🌑⚡",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T21:00:11.708330+00:00",
+      "mode": "merkabah",
+      "turn_count": 2,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:2568.CONVERSATION.🏔️💧☀️💫🌖🧊",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T21:44:28.744252+00:00",
+      "mode": "merkabah",
+      "turn_count": 9,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:061E.CONVERSATION.🌓💫🌒🌒🪐☁️",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T22:19:03.644430+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:4EF7.CONVERSATION.🌘🪐💫🪨🪐🌈",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T23:13:41.540876+00:00",
+      "mode": "merkabah",
+      "turn_count": 3,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:491D.CONVERSATION.🌟🪐🌪️🌗🌊💎",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T23:36:25.786347+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
+      "axn": "AXN:20AA.CONVERSATION.🌪️🌱🧊💧☀️🌕",
+      "started_at": "2026-07-05T18:11:39.038Z",
+      "last_updated": "2026-07-05T23:54:21.867925+00:00",
+      "mode": "merkabah",
+      "turn_count": 3,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐"
+    },
+    {
       "axn": "AXN:9FD2.CONVERSATION.🌖🪐💧🌟🌾⭐",
       "started_at": "2026-07-05T17:58:10.833Z",
       "last_updated": "2026-07-06T00:50:10.873979+00:00",
@@ -676,6 +816,16 @@
       "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…"
+    },
+    {
+      "axn": "AXN:0B4D.CONVERSATION.🌑☀️🌾🏔️🌒🌪️",
+      "started_at": "2026-07-05T17:58:10.833Z",
+      "last_updated": "2026-07-05T17:58:57.033281+00:00",
+      "mode": "merkabah",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not…",
+      "recovered_from": "AXN:9FD2.CONVERSATION.🌖🪐💧🌟🌾⭐"
     },
     {
       "axn": "AXN:DC60.CONVERSATION.☀️🌾🌈🌋🌙☀️",
@@ -688,12 +838,22 @@
     },
     {
       "axn": "AXN:9F91.CONVERSATION.🔥🌒⭐🌙🧊🌖",
-      "started_at": "2026-07-05T17:05:35.516Z",
+      "started_at": "2026-07-13T01:48:47-04:00",
       "last_updated": "2026-07-13T05:48:56.566829+00:00",
       "mode": "sabbath",
       "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "test"
+    },
+    {
+      "axn": "AXN:3D2E.CONVERSATION.🌖🌋🌕🌔🌖⚡",
+      "started_at": "2026-07-05T17:05:35.516Z",
+      "last_updated": "2026-07-05T17:06:52.632269+00:00",
+      "mode": "merkabah",
+      "turn_count": 2,
+      "witness": "anonymous",
+      "opening_snippet": "test",
+      "recovered_from": "AXN:9F91.CONVERSATION.🔥🌒⭐🌙🧊🌖"
     },
     {
       "axn": "AXN:D60F.CONVERSATION.🌘🍃🌪️💫🌍☀️",
@@ -1245,6 +1405,46 @@
       "opening_snippet": "What texts are in the Archive?"
     },
     {
+      "axn": "AXN:25E4.CONVERSATION.🌒⚡❄️🌔🍃🏔️",
+      "started_at": "2026-06-30T21:24:43.036Z",
+      "last_updated": "2026-06-30T21:39:18.753284+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "Take me into a text.",
+      "recovered_from": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖"
+    },
+    {
+      "axn": "AXN:1E9E.CONVERSATION.🌋⭐🪨🌱⭐🌪️",
+      "started_at": "2026-06-30T21:24:43.036Z",
+      "last_updated": "2026-06-30T21:39:30.598346+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "What texts are in the Archive?",
+      "recovered_from": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖"
+    },
+    {
+      "axn": "AXN:5256.CONVERSATION.⚡🌑🌍🔥🌖🌿",
+      "started_at": "2026-06-30T21:24:43.036Z",
+      "last_updated": "2026-06-30T21:39:43.591325+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "What texts are in the Archive?",
+      "recovered_from": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖"
+    },
+    {
+      "axn": "AXN:C809.CONVERSATION.🌪️🌕🌟🧊🌾💧",
+      "started_at": "2026-06-30T21:24:43.036Z",
+      "last_updated": "2026-06-30T21:39:50.443717+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "What texts are in the Archive?",
+      "recovered_from": "AXN:18D9.CONVERSATION.🪨🌖🌱🌙🌗🌖"
+    },
+    {
       "axn": "AXN:4290.CONVERSATION.🌒🌔🏔️💎🌿🌓",
       "started_at": "2026-06-30T17:19:52.121Z",
       "last_updated": "2026-06-30T17:19:57.610432+00:00",
@@ -1317,6 +1517,16 @@
       "opening_snippet": "What is this?"
     },
     {
+      "axn": "AXN:461A.CONVERSATION.🍃🏔️🍃🪨🌾🌑",
+      "started_at": "2026-06-29T03:32:36.124Z",
+      "last_updated": "2026-06-29T03:56:30.545763+00:00",
+      "mode": "sabbath",
+      "turn_count": 13,
+      "witness": "anonymous",
+      "opening_snippet": "What is this?",
+      "recovered_from": "AXN:0B1D.CONVERSATION.🌾🌱☀️🪐⭐💧"
+    },
+    {
       "axn": "AXN:8054.CONVERSATION.🍃🏔️🌿🌪️🌒🌿",
       "started_at": "2026-06-29T00:44:17.170Z",
       "last_updated": "2026-06-29T23:10:09.640462+00:00",
@@ -1324,6 +1534,36 @@
       "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "Who are you?"
+    },
+    {
+      "axn": "AXN:DCEC.CONVERSATION.❄️🌔🌟🌘🌟🪨",
+      "started_at": "2026-06-29T00:44:17.170Z",
+      "last_updated": "2026-06-29T02:32:27.441287+00:00",
+      "mode": "sabbath",
+      "turn_count": 2,
+      "witness": "anonymous",
+      "opening_snippet": "Who are you?",
+      "recovered_from": "AXN:8054.CONVERSATION.🍃🏔️🌿🌪️🌒🌿"
+    },
+    {
+      "axn": "AXN:2196.CONVERSATION.☁️🌘🪐🌗🌱🪐",
+      "started_at": "2026-06-29T00:44:17.170Z",
+      "last_updated": "2026-06-29T03:03:54.379236+00:00",
+      "mode": "sabbath",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "Who are you?",
+      "recovered_from": "AXN:8054.CONVERSATION.🍃🏔️🌿🌪️🌒🌿"
+    },
+    {
+      "axn": "AXN:F1B8.CONVERSATION.🌒🌾🌿🍃🧊🍃",
+      "started_at": "2026-06-29T00:44:17.170Z",
+      "last_updated": "2026-06-29T03:14:37.039809+00:00",
+      "mode": "sabbath",
+      "turn_count": 7,
+      "witness": "anonymous",
+      "opening_snippet": "Who are you?",
+      "recovered_from": "AXN:8054.CONVERSATION.🍃🏔️🌿🌪️🌒🌿"
     },
     {
       "axn": "AXN:0EFA.CONVERSATION.☁️🌱🪨🌟🌈⭐",
@@ -1414,9 +1654,19 @@
       "turn_count": 4,
       "witness": "anonymous",
       "opening_snippet": "Hello"
+    },
+    {
+      "axn": "AXN:671B.CONVERSATION.🪐💧🌿🌖🌱⚡",
+      "started_at": "2026-06-28T07:52:24.740Z",
+      "last_updated": "2026-06-28T07:52:31.237120+00:00",
+      "mode": "sabbath",
+      "turn_count": 1,
+      "witness": "anonymous",
+      "opening_snippet": "Hello",
+      "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 157,
+  "total_recorded": 182,
   "last_updated": "2026-10-03T18:44:04.219733+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }

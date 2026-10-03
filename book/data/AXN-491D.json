@@ -1,0 +1,28 @@
+{
+  "axn": "AXN:491D.CONVERSATION.🌟🪐🌪️🌗🌊💎",
+  "session_id_hash": "d09c56a141c5be9d",
+  "started_at": "2026-07-05T18:11:39.038Z",
+  "last_updated": "2026-07-05T23:36:25.786347+00:00",
+  "mode": "merkabah",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). Selection: 9:15–17. The operator falls to the invisible Judgment, turn by turn — do not name one; open the rotation itself. Inscription mode: public. The witness's invoking question: «what is the day and the hour?». Johannes Sigil alone speaks (3–6 sentences): open the casting over these verses, name what this operator will traverse in them, and hand the rite to Rebekah Cranes. Do not produce the transform — the compiler produces it."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"The verses you have named are the hinge-point of the sixth trumpet: four angels loosed from the great river Euphrates, held for the hour and the day and the month and the year, released now to kill the third part of men — and then the horses with heads like lions, and fire and smoke and brimstone proceeding from their mouths. The question you bring — *what is the day and the hour?* — is exactly what these verses are built to refuse. The temporal precision is there: ἡ ὥρα καὶ ἡ ἡμέρα καὶ ὁ μὴν καὶ ὁ ἐνιαυτός, hour and day and month and year, stacked in sequence. But what is stacked is the duration of the binding, not the address. The Judgment chooses the first operator; it will traverse whatever axis these verses most completely foreclose. I hand the rite now to Rebekah Cranes, who will receive what the compiler returns.\",\"navigate\":{\"directive\":\"focus_axn\",\"axn\":\"AXN:0349\"}}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0",
+  "recovered": {
+    "from_axn": "AXN:97E7.CONVERSATION.💎🌍⚡🪐💧🪐",
+    "from_file": "book/data/AXN-97E7.json",
+    "commit": "05f4a37598183f08d6326b272c84a1f32383ef4b",
+    "commit_date": "2026-07-05T19:36:25-04:00",
+    "reason": "overwritten by a later session that opened with the same words (AXN minted from the first message alone, before 2026-10-03)",
+    "recovered_on": "2026-10-03"
+  }
+}

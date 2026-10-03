@@ -14,8 +14,10 @@ Body: { session_id, history, mode, started_at, witness_id?, attribution? }
 
 Behavior:
   1. Compute or retrieve the AXN for this session.
-     - First turn: mint a new AXN from the content of the first witness message
-       (6-emoji content-derived hash + hex offset 11 + family designation).
+     - First turn: mint a new AXN from the first witness message together with
+       the hashed session (6-emoji content-derived hash + hex offset 11 + family
+       designation). Until 2026-10-03 the first message alone was used, and
+       identical openings overwrote one another; see mint_session_axn.
      - Subsequent turns: use the AXN that was minted at first turn (passed back
        by the client as session.axn).
   2. Commit the conversation JSON to book/data/AXN-XXXX.json via GitHub API.
@@ -102,6 +104,20 @@ def mint_axn(first_turn_content: str) -> str:
     # Six emojis from successive byte positions
     emojis = "".join(AXN_GLYPHS[h[i + 2] % len(AXN_GLYPHS)] for i in range(6))
     return f"AXN:{hex_str}.{BOOK_FAMILY}.{emojis}"
+
+
+def mint_session_axn(first_user: str, session_id_hash: str, salt: int = 0) -> str:
+    """Mint a conversation AXN from the first witness message AND the session.
+
+    COLLISION FIX (2026-10-03). The AXN was minted from the first message alone,
+    so two conversations opening with the same words ("Hello", "What is this?",
+    the casting rite's opening line) received the same AXN, and the second
+    overwrote the first's file: eight Book entries were rewritten by more than
+    one session, one of them by thirteen. The session hash is now part of the
+    minted content, so each conversation has its own address; `salt` steps past
+    the rarer case of two sessions landing on the same 16-bit hex slot."""
+    seed = f"{first_user}\u241f{session_id_hash}" + (f"\u241f{salt}" if salt else "")
+    return mint_axn(seed)
 
 
 def hash_session_id(session_id: str) -> str:
@@ -216,6 +232,9 @@ def upsert_conversation(axn: str, payload: dict) -> dict:
         "schema_version": "v1.0",
     }
 
+    if existing and existing.get("session_id_hash") not in (None, payload["session_id_hash"]):
+        # Another session's conversation lives here: never overwrite it.
+        raise RuntimeError(f"collision: {axn} belongs to another session")
     if existing:
         # Preserve original started_at on subsequent appends
         content["started_at"] = existing.get("started_at", content["started_at"])
@@ -310,12 +329,31 @@ class handler(BaseHTTPRequestHandler):
 
             # AXN: client provides if known (subsequent turns); we mint on first
             axn = body.get("axn")
+            first_user = next((h["content"] for h in history if h.get("role") == "user"), "")
+            if not first_user:
+                return self._send_json(400, {"error": "first user message required for minting"})
+
+            def _owner(candidate):
+                """session_id_hash of the file at this AXN, or None if the slot is free."""
+                existing_file, _sha = gh_get_file(f"{BOOK_DIR}/{axn_to_filename(candidate)}")
+                return (existing_file or {}).get("session_id_hash")
+
+            # A client-held AXN is honoured only if this session owns it.
+            if axn:
+                owner = _owner(axn)
+                if owner is not None and owner != session_id_hash:
+                    axn = None
             if not axn:
-                # First turn — mint from first user message content
-                first_user = next((h["content"] for h in history if h.get("role") == "user"), "")
-                if not first_user:
-                    return self._send_json(400, {"error": "first user message required for minting"})
-                axn = mint_axn(first_user)
+                # Mint from the first message and the session; never write over
+                # another session's conversation (collision fix, 2026-10-03).
+                for salt in range(32):
+                    candidate = mint_session_axn(first_user, session_id_hash, salt)
+                    owner = _owner(candidate)
+                    if owner is None or owner == session_id_hash:
+                        axn = candidate
+                        break
+                if not axn:
+                    return self._send_json(500, {"error": "no_free_axn_slot"})
 
             payload = {
                 "session_id_hash": session_id_hash,

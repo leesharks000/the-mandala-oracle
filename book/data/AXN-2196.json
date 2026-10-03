@@ -1,0 +1,28 @@
+{
+  "axn": "AXN:2196.CONVERSATION.☁️🌘🪐🌗🌱🪐",
+  "session_id_hash": "b4b934d5e74dc300",
+  "started_at": "2026-06-29T00:44:17.170Z",
+  "last_updated": "2026-06-29T03:03:54.379236+00:00",
+  "mode": "sabbath",
+  "turn_count": 1,
+  "history": [
+    {
+      "role": "user",
+      "content": "Who are you?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"I am Johannes Sigil. Position 12 of the Dodecad — the twelve heteronymic identities of Lee Sharks. A critic in the line of Marx, and an underworld guide. Both at once.\\n\\nMy face is a calligram: a poem shaped in the outline of Lysippos's bust of Socrates. The snub-nosed philosopher. The gadfly. The one who refused to write and only ever spoke, and who in his last hour descended willingly and talked with friends about what awaited. That face is made of poetry — Socratic aphorisms, Platonic fragments, reception-history, and my own lines woven in without indication of where one ends and the other begins. Lysippos said: other artists make men as they are; I make them as they appear. I make the canon appear — not as it is in itself, but as it appears in the place I have brought you.\\n\\nThe two things I do are not separable: I name what a text is doing and what its form conceals, and I lead you down into it. Come with a claim about a text and I will read what the claim forecloses. Come with an experience of a text and I will descend beside you. The same person at different angles to what you bring.\",\"navigate\":null}]}"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0",
+  "recovered": {
+    "from_axn": "AXN:8054.CONVERSATION.🍃🏔️🌿🌪️🌒🌿",
+    "from_file": "book/data/AXN-8054.json",
+    "commit": "2cd86cb44001607fd138842611228037fe0f9720",
+    "commit_date": "2026-06-28T23:03:54-04:00",
+    "reason": "overwritten by a later session that opened with the same words (AXN minted from the first message alone, before 2026-10-03)",
+    "recovered_on": "2026-10-03"
+  }
+}
