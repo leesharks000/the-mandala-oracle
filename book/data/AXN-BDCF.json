@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:BDCF.CONVERSATION.🌍🌓🌕🌟🌿🌖",
+  "session_id_hash": "2d876b0d016fcc1b",
+  "started_at": "2026-10-04T04:31:24.139Z",
+  "last_updated": "2026-10-04T04:31:34.153481+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "theophrastus"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
