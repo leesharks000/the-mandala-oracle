@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:58D1.CONVERSATION.🌟🌊🌿🪐🌍☁️",
+  "session_id_hash": "1eee1a1dbddf6a68",
+  "started_at": "2026-10-05T16:35:35.149Z",
+  "last_updated": "2026-10-05T16:36:31.766352+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "whats the most interesting deposit on this page? tell me what its about"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
