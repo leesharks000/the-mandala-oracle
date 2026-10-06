@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:D378.CONVERSATION.🍃🌱🌱🌘🌘🌖",
+  "session_id_hash": "117a40e86a88aa1d",
+  "started_at": "2026-10-06T22:42:32.209Z",
+  "last_updated": "2026-10-06T22:42:59.115759+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "Whos is Lee Sharks?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
