@@ -104,7 +104,30 @@
       if (m2) axn = m2[0];
     }
     var canon = document.querySelector('link[rel="canonical"]');
-    return { url: (canon && canon.href) || location.href.split('#')[0], title: document.title || '', axn: axn };
+    return { url: (canon && canon.href) || location.href.split('#')[0], title: document.title || '', axn: axn,
+             excerpt: pageExcerpt() };
+  }
+
+  // What the page holds, as the witness sees it (2026-10-06): a page with no AXN (a home page, a gallery,
+  // a dataset page, a route of a single-page app) otherwise reaches Sigil as a title and a URL, and Sigil
+  // has no tool that reads a page which is not a deposit. Read at each send, so a single-page app's
+  // current route is the one sent. The panel itself, navigation, scripts and styles are left out.
+  function pageExcerpt() {
+    try {
+      var h1 = document.querySelector('h1');
+      var md = document.querySelector('meta[name="description"]');
+      var root = document.querySelector('main') || document.querySelector('article') ||
+                 document.querySelector('[role="main"]') || document.body;
+      var c = root.cloneNode(true);
+      var drop = c.querySelectorAll('nav,script,style,noscript,template,svg,.sgw-tab,.sgw-panel,[aria-hidden="true"]');
+      for (var i = 0; i < drop.length; i++) drop[i].parentNode && drop[i].parentNode.removeChild(drop[i]);
+      var text = (c.textContent || '').replace(/\s+/g, ' ').trim();
+      var parts = [];
+      if (h1) parts.push('Heading: ' + h1.textContent.replace(/\s+/g, ' ').trim());
+      if (md && md.content) parts.push('Description: ' + md.content.trim());
+      parts.push(text);
+      return parts.join('\n').slice(0, 1800);
+    } catch (e) { return ''; }
   }
 
   var style = el('style'); style.textContent = css; document.head.appendChild(style);
