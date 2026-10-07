@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:03B8.CONVERSATION.🪨🪨⚡☀️🌾🌕",
+      "started_at": "2026-10-07T00:00:48.085Z",
+      "last_updated": "2026-10-07T00:03:17.126812+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "with your interpretation translade this: O poeta é um fingidor\n\nFinge tão completamente\n\nQue chega a fingir que é dor\n\nA dor que deveras sente.\n\n\nE os que lêem o que escreve,\n\nNa dor lida sentem bem,\n…"
+    },
+    {
       "axn": "AXN:D378.CONVERSATION.🍃🌱🌱🌘🌘🌖",
       "started_at": "2026-10-06T22:42:32.209Z",
       "last_updated": "2026-10-06T22:43:12.846587+00:00",
@@ -1765,7 +1774,7 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 193,
-  "last_updated": "2026-10-06T22:43:12.846587+00:00",
+  "total_recorded": 194,
+  "last_updated": "2026-10-07T00:03:17.126812+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
