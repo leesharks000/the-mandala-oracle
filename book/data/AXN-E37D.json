@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:E37D.CONVERSATION.☁️🌿🌕🔥🪐💎",
+  "session_id_hash": "521db30675bd55d3",
+  "started_at": "2026-10-08T14:03:47.929Z",
+  "last_updated": "2026-10-08T14:04:18.763110+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "what does the archive have to say about anne carson?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
