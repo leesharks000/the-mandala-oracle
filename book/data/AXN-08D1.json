@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:08D1.CONVERSATION.🌊🌙💫🌓🌘❄️",
+  "session_id_hash": "29131edff3b4ca3f",
+  "started_at": "2026-10-08T21:02:11.247Z",
+  "last_updated": "2026-10-08T21:02:37.524337+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "whats this?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
