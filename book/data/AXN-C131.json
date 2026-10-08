@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:C131.CONVERSATION.☁️⭐🌋☁️☁️🪨",
+  "session_id_hash": "85a655aba1200e43",
+  "started_at": "2026-10-08T21:09:02.467Z",
+  "last_updated": "2026-10-08T21:09:05.390925+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "whats fhis"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
