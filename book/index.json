@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:E9E5.CONVERSATION.🌿💫🌾💧🧊💫",
+      "started_at": "2026-10-08T17:34:20.773Z",
+      "last_updated": "2026-10-08T17:34:28.869412+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "what is lee sharks' best poem?"
+    },
+    {
       "axn": "AXN:E37D.CONVERSATION.☁️🌿🌕🔥🪐💎",
       "started_at": "2026-10-08T14:03:47.929Z",
       "last_updated": "2026-10-08T14:28:20.243661+00:00",
@@ -1792,7 +1801,7 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 196,
-  "last_updated": "2026-10-08T14:28:20.243661+00:00",
+  "total_recorded": 197,
+  "last_updated": "2026-10-08T17:34:28.869412+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
