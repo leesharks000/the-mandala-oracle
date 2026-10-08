@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:DB9D.CONVERSATION.🌍🌍💎🌊🌊🔥",
+  "session_id_hash": "5b7ab5f659ae9e2c",
+  "started_at": "2026-10-08T21:08:57.172Z",
+  "last_updated": "2026-10-08T21:12:18.582927+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "who is rhys owens to this archive?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
