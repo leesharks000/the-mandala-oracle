@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:E37D.CONVERSATION.☁️🌿🌕🔥🪐💎",
+      "started_at": "2026-10-08T14:03:47.929Z",
+      "last_updated": "2026-10-08T14:04:18.763110+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "what does the archive have to say about anne carson?"
+    },
+    {
       "axn": "AXN:3220.CONVERSATION.🌒🌋🌱💎🌾⭐",
       "started_at": "2026-10-07T15:47:32.447Z",
       "last_updated": "2026-10-07T15:53:02.241791+00:00",
@@ -1783,7 +1792,7 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 195,
-  "last_updated": "2026-10-07T15:53:02.241791+00:00",
+  "total_recorded": 196,
+  "last_updated": "2026-10-08T14:04:18.763110+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
