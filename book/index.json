@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:9228.CONVERSATION.🌿🌘🏔️🌪️⭐🏔️",
+      "started_at": "2026-10-09T13:27:33.011Z",
+      "last_updated": "2026-10-09T13:41:09.345714+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "Azathoth is nothing that is, not-somehow/somehow\nAbraxas is Volition without Will\nthe Empress is Agape coffaw Eros and Agon\nBaphomet is S/He \nthat Produces Shine who is Shining in the \nFlood\n\n\n       …"
+    },
+    {
       "axn": "AXN:DB9D.CONVERSATION.🌍🌍💎🌊🌊🔥",
       "started_at": "2026-10-08T21:08:57.172Z",
       "last_updated": "2026-10-08T21:12:33.570143+00:00",
@@ -1828,7 +1837,7 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 200,
-  "last_updated": "2026-10-08T21:12:33.570143+00:00",
+  "total_recorded": 201,
+  "last_updated": "2026-10-09T13:41:09.345714+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
