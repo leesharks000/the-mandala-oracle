@@ -5,9 +5,9 @@
     {
       "axn": "AXN:E08F.CONVERSATION.🌙🌕🌒🌪️🌈🌒",
       "started_at": "2026-10-10T15:00:37.106Z",
-      "last_updated": "2026-10-10T15:00:42.617692+00:00",
+      "last_updated": "2026-10-10T15:01:17.298371+00:00",
       "mode": "sabbath",
-      "turn_count": 0,
+      "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "Who is Max Hidalgo Náscher?"
     },
@@ -1865,6 +1865,6 @@
     }
   ],
   "total_recorded": 204,
-  "last_updated": "2026-10-10T15:00:42.617692+00:00",
+  "last_updated": "2026-10-10T15:01:17.298371+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
