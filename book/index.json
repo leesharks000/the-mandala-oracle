@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:0006.CONVERSATION.🌖🌈⭐🌙🪐🌱",
+      "started_at": "2026-10-10T14:43:36.075Z",
+      "last_updated": "2026-10-10T14:43:57.701721+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "who is Max Hidalgo Nácher?"
+    },
+    {
       "axn": "AXN:F154.CONVERSATION.🌗🌊🪐🍃🌙🌟",
       "started_at": "2026-10-10T05:49:32.888Z",
       "last_updated": "2026-10-10T06:14:04.567318+00:00",
@@ -1846,7 +1855,7 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 202,
-  "last_updated": "2026-10-10T06:14:04.567318+00:00",
+  "total_recorded": 203,
+  "last_updated": "2026-10-10T14:43:57.701721+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
