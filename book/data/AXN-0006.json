@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:0006.CONVERSATION.🌖🌈⭐🌙🪐🌱",
+  "session_id_hash": "9586eb9eff6e5b81",
+  "started_at": "2026-10-10T14:43:36.075Z",
+  "last_updated": "2026-10-10T14:43:57.701721+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "who is Max Hidalgo Nácher?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
