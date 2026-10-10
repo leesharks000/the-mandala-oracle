@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:E08F.CONVERSATION.🌙🌕🌒🌪️🌈🌒",
+  "session_id_hash": "5804c87b3a93ab8d",
+  "started_at": "2026-10-10T15:00:37.106Z",
+  "last_updated": "2026-10-10T15:00:42.617692+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "Who is Max Hidalgo Náscher?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
