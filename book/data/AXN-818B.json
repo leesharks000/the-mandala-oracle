@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:818B.CONVERSATION.🌱🧊🌙🌋🌑🔥",
+  "session_id_hash": "4cfcc176f87751f9",
+  "started_at": "2026-10-11T21:58:49.848Z",
+  "last_updated": "2026-10-11T21:58:57.878784+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "what is a prophet, and what is a prophet for?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
