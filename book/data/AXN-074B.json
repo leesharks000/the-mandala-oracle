@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:074B.CONVERSATION.⚡🏔️🌋🌙🌈🌟",
+  "session_id_hash": "2b4e2b44b408772d",
+  "started_at": "2026-10-11T21:50:18.171Z",
+  "last_updated": "2026-10-11T21:50:34.297345+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "what does it mean to be a poet? what is a poet for?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
