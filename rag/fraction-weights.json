@@ -1,0 +1,10467 @@
+{
+"name": "Rex Fraction — orientation and roles over the archive (draft 0.2)",
+"rule": "Orientation, never a bound. search: score * (1 + K*w) * (ROLE_BOOST if the asked role is among the record's roles).",
+"K": 1.0,
+"ROLE_BOOST": 1.6,
+"recipe": {
+"seeds": "records linked from spxi.dev and semanticeconomy.org pages (3.0; +1.0 if both), Rex Fraction as creator (+1.0)",
+"walk": "restart 0.25; forward 0.8 split by out-degree; back 0.2 per citer, divided by max(1, citer out-degree/10); 40 iterations",
+"score": "lift = ppr * sqrt(ppr / uniform-start walk)",
+"versions": "superseded keeps 0.4, successor +0.6",
+"normalise": "rank among non-zero records -> 1 - rank/count",
+"reception": "role 'observed' only; no weight"
+},
+"sources": {
+"alexanarch": "ca9e0dcc53",
+"spxi-dev": "7b3451c",
+"semanticeconomy.org_fetched": "2026-10-14T21:09:12Z",
+"oracle_metadata_records": 1675,
+"oracle_metadata_max_deposit": 1675
+},
+"inputs": {
+"spxi.dev_links": 134,
+"semanticeconomy.org_links": 61,
+"rex_fraction_deposits": 105,
+"citation_edges": 10273,
+"observed_deposits": 228
+},
+"distribution": {
+"0.0-0.1": 236,
+"0.1-0.2": 160,
+"0.2-0.3": 160,
+"0.3-0.4": 160,
+"0.4-0.5": 159,
+"0.5-0.6": 160,
+"0.6-0.7": 160,
+"0.7-0.8": 160,
+"0.8-0.9": 160,
+"0.9-1.0": 160
+},
+"role_counts": {
+"theory": 1074,
+"specification": 242,
+"observed": 228,
+"instrument": 168,
+"case": 157,
+"definition": 102,
+"record": 66,
+"service": 3
+},
+"records": {
+"671": {
+"w": 1.0,
+"roles": [
+"case",
+"observed"
+]
+},
+"1222": {
+"w": 0.9994,
+"roles": [
+"definition",
+"instrument",
+"service"
+]
+},
+"576": {
+"w": 0.9987,
+"roles": [
+"definition",
+"observed",
+"specification"
+]
+},
+"676": {
+"w": 0.9981,
+"roles": [
+"case"
+]
+},
+"677": {
+"w": 0.9975,
+"roles": [
+"case",
+"instrument"
+]
+},
+"72": {
+"w": 0.9969,
+"roles": [
+"case",
+"definition",
+"instrument",
+"observed",
+"specification",
+"theory"
+]
+},
+"1655": {
+"w": 0.9962,
+"roles": [
+"instrument",
+"theory"
+]
+},
+"1626": {
+"w": 0.9956,
+"roles": [
+"specification",
+"theory"
+]
+},
+"1618": {
+"w": 0.995,
+"roles": [
+"specification",
+"theory"
+]
+},
+"349": {
+"w": 0.9944,
+"roles": [
+"specification",
+"theory"
+]
+},
+"61": {
+"w": 0.9937,
+"roles": [
+"observed",
+"theory"
+]
+},
+"63": {
+"w": 0.9931,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1622": {
+"w": 0.9925,
+"roles": [
+"definition",
+"theory"
+]
+},
+"636": {
+"w": 0.9919,
+"roles": [
+"theory"
+]
+},
+"1666": {
+"w": 0.9912,
+"roles": [
+"theory"
+]
+},
+"1621": {
+"w": 0.9906,
+"roles": [
+"specification",
+"theory"
+]
+},
+"1619": {
+"w": 0.99,
+"roles": [
+"instrument",
+"record",
+"specification",
+"theory"
+]
+},
+"1": {
+"w": 0.9894,
+"roles": [
+"theory"
+]
+},
+"660": {
+"w": 0.9887,
+"roles": [
+"case",
+"definition",
+"specification",
+"theory"
+]
+},
+"1623": {
+"w": 0.9881,
+"roles": [
+"theory"
+]
+},
+"1657": {
+"w": 0.9875,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1617": {
+"w": 0.9869,
+"roles": [
+"instrument",
+"theory"
+]
+},
+"561": {
+"w": 0.9862,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1625": {
+"w": 0.9856,
+"roles": [
+"theory"
+]
+},
+"1651": {
+"w": 0.985,
+"roles": [
+"theory"
+]
+},
+"655": {
+"w": 0.9844,
+"roles": [
+"definition",
+"theory"
+]
+},
+"62": {
+"w": 0.9837,
+"roles": [
+"case",
+"definition",
+"specification"
+]
+},
+"1616": {
+"w": 0.9831,
+"roles": [
+"instrument",
+"theory"
+]
+},
+"1091": {
+"w": 0.9825,
+"roles": [
+"definition"
+]
+},
+"790": {
+"w": 0.9819,
+"roles": [
+"instrument",
+"specification",
+"theory"
+]
+},
+"1631": {
+"w": 0.9812,
+"roles": [
+"theory"
+]
+},
+"1620": {
+"w": 0.9806,
+"roles": [
+"instrument",
+"theory"
+]
+},
+"1406": {
+"w": 0.98,
+"roles": [
+"case",
+"definition",
+"specification"
+]
+},
+"643": {
+"w": 0.9793,
+"roles": [
+"theory"
+]
+},
+"159": {
+"w": 0.9787,
+"roles": [
+"specification",
+"theory"
+]
+},
+"1654": {
+"w": 0.9781,
+"roles": [
+"case",
+"definition",
+"instrument",
+"theory"
+]
+},
+"610": {
+"w": 0.9775,
+"roles": [
+"theory"
+]
+},
+"18": {
+"w": 0.9768,
+"roles": [
+"definition",
+"observed"
+]
+},
+"148": {
+"w": 0.9762,
+"roles": [
+"theory"
+]
+},
+"43": {
+"w": 0.9756,
+"roles": [
+"observed",
+"specification"
+]
+},
+"1613": {
+"w": 0.975,
+"roles": [
+"instrument",
+"theory"
+]
+},
+"60": {
+"w": 0.9743,
+"roles": [
+"definition"
+]
+},
+"291": {
+"w": 0.9737,
+"roles": [
+"definition",
+"instrument",
+"observed"
+]
+},
+"4": {
+"w": 0.9731,
+"roles": [
+"observed",
+"record"
+]
+},
+"675": {
+"w": 0.9725,
+"roles": [
+"case"
+]
+},
+"1608": {
+"w": 0.9718,
+"roles": [
+"theory"
+]
+},
+"1627": {
+"w": 0.9712,
+"roles": [
+"observed",
+"theory"
+]
+},
+"21": {
+"w": 0.9706,
+"roles": [
+"theory"
+]
+},
+"295": {
+"w": 0.97,
+"roles": [
+"theory"
+]
+},
+"505": {
+"w": 0.9693,
+"roles": [
+"theory"
+]
+},
+"1638": {
+"w": 0.9687,
+"roles": [
+"case",
+"definition",
+"theory"
+]
+},
+"25": {
+"w": 0.9681,
+"roles": [
+"theory"
+]
+},
+"143": {
+"w": 0.9675,
+"roles": [
+"instrument",
+"observed",
+"specification"
+]
+},
+"1355": {
+"w": 0.9668,
+"roles": [
+"case"
+]
+},
+"498": {
+"w": 0.9662,
+"roles": [
+"theory"
+]
+},
+"157": {
+"w": 0.9656,
+"roles": [
+"case",
+"instrument"
+]
+},
+"173": {
+"w": 0.965,
+"roles": [
+"case",
+"definition",
+"observed",
+"specification"
+]
+},
+"161": {
+"w": 0.9643,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"197": {
+"w": 0.9637,
+"roles": [
+"instrument"
+]
+},
+"1634": {
+"w": 0.9631,
+"roles": [
+"theory"
+]
+},
+"784": {
+"w": 0.9625,
+"roles": [
+"theory"
+]
+},
+"1432": {
+"w": 0.9618,
+"roles": [
+"specification"
+]
+},
+"662": {
+"w": 0.9612,
+"roles": [
+"specification"
+]
+},
+"227": {
+"w": 0.9606,
+"roles": [
+"specification"
+]
+},
+"260": {
+"w": 0.9599,
+"roles": [
+"observed",
+"theory"
+]
+},
+"499": {
+"w": 0.9593,
+"roles": [
+"theory"
+]
+},
+"302": {
+"w": 0.9587,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"657": {
+"w": 0.9581,
+"roles": [
+"definition",
+"service"
+]
+},
+"654": {
+"w": 0.9574,
+"roles": [
+"definition"
+]
+},
+"529": {
+"w": 0.9568,
+"roles": [
+"instrument"
+]
+},
+"118": {
+"w": 0.9562,
+"roles": [
+"specification"
+]
+},
+"520": {
+"w": 0.9556,
+"roles": [
+"theory"
+]
+},
+"127": {
+"w": 0.9549,
+"roles": [
+"case",
+"specification"
+]
+},
+"546": {
+"w": 0.9543,
+"roles": [
+"theory"
+]
+},
+"781": {
+"w": 0.9537,
+"roles": [
+"instrument"
+]
+},
+"521": {
+"w": 0.9531,
+"roles": [
+"observed",
+"theory"
+]
+},
+"274": {
+"w": 0.9524,
+"roles": [
+"specification"
+]
+},
+"637": {
+"w": 0.9518,
+"roles": [
+"definition",
+"instrument"
+]
+},
+"193": {
+"w": 0.9512,
+"roles": [
+"specification"
+]
+},
+"195": {
+"w": 0.9506,
+"roles": [
+"observed",
+"theory"
+]
+},
+"673": {
+"w": 0.9499,
+"roles": [
+"observed",
+"specification"
+]
+},
+"1443": {
+"w": 0.9493,
+"roles": [
+"case"
+]
+},
+"308": {
+"w": 0.9487,
+"roles": [
+"theory"
+]
+},
+"1444": {
+"w": 0.9481,
+"roles": [
+"case"
+]
+},
+"328": {
+"w": 0.9474,
+"roles": [
+"theory"
+]
+},
+"336": {
+"w": 0.9468,
+"roles": [
+"specification",
+"theory"
+]
+},
+"1529": {
+"w": 0.9462,
+"roles": [
+"specification",
+"theory"
+]
+},
+"20": {
+"w": 0.9456,
+"roles": [
+"theory"
+]
+},
+"1154": {
+"w": 0.9449,
+"roles": [
+"instrument"
+]
+},
+"783": {
+"w": 0.9443,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"137": {
+"w": 0.9437,
+"roles": [
+"theory"
+]
+},
+"1409": {
+"w": 0.9431,
+"roles": [
+"case",
+"observed"
+]
+},
+"661": {
+"w": 0.9424,
+"roles": [
+"case",
+"definition",
+"observed"
+]
+},
+"1652": {
+"w": 0.9418,
+"roles": [
+"observed",
+"theory"
+]
+},
+"316": {
+"w": 0.9412,
+"roles": [
+"observed",
+"specification",
+"theory"
+]
+},
+"1628": {
+"w": 0.9406,
+"roles": [
+"theory"
+]
+},
+"645": {
+"w": 0.9399,
+"roles": [
+"definition",
+"observed",
+"specification"
+]
+},
+"471": {
+"w": 0.9393,
+"roles": [
+"theory"
+]
+},
+"88": {
+"w": 0.9387,
+"roles": [
+"theory"
+]
+},
+"628": {
+"w": 0.938,
+"roles": [
+"specification"
+]
+},
+"89": {
+"w": 0.9374,
+"roles": [
+"case",
+"instrument",
+"theory"
+]
+},
+"791": {
+"w": 0.9368,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"1545": {
+"w": 0.9362,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1648": {
+"w": 0.9355,
+"roles": [
+"definition",
+"instrument",
+"theory"
+]
+},
+"770": {
+"w": 0.9349,
+"roles": [
+"theory"
+]
+},
+"697": {
+"w": 0.9343,
+"roles": [
+"definition",
+"specification"
+]
+},
+"64": {
+"w": 0.9337,
+"roles": [
+"case",
+"observed"
+]
+},
+"794": {
+"w": 0.933,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"310": {
+"w": 0.9324,
+"roles": [
+"theory"
+]
+},
+"699": {
+"w": 0.9318,
+"roles": [
+"theory"
+]
+},
+"164": {
+"w": 0.9312,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1653": {
+"w": 0.9305,
+"roles": [
+"observed",
+"theory"
+]
+},
+"825": {
+"w": 0.9299,
+"roles": [
+"observed",
+"record"
+]
+},
+"154": {
+"w": 0.9293,
+"roles": [
+"theory"
+]
+},
+"166": {
+"w": 0.9287,
+"roles": [
+"definition",
+"instrument",
+"specification"
+]
+},
+"167": {
+"w": 0.928,
+"roles": [
+"instrument"
+]
+},
+"695": {
+"w": 0.9274,
+"roles": [
+"theory"
+]
+},
+"683": {
+"w": 0.9268,
+"roles": [
+"case",
+"observed",
+"theory"
+]
+},
+"165": {
+"w": 0.9262,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1636": {
+"w": 0.9255,
+"roles": [
+"theory"
+]
+},
+"516": {
+"w": 0.9249,
+"roles": [
+"theory"
+]
+},
+"444": {
+"w": 0.9243,
+"roles": [
+"specification"
+]
+},
+"705": {
+"w": 0.9237,
+"roles": [
+"case",
+"specification"
+]
+},
+"976": {
+"w": 0.923,
+"roles": [
+"case",
+"definition",
+"instrument",
+"specification",
+"theory"
+]
+},
+"1380": {
+"w": 0.9224,
+"roles": [
+"theory"
+]
+},
+"1465": {
+"w": 0.9218,
+"roles": [
+"definition",
+"instrument"
+]
+},
+"741": {
+"w": 0.9212,
+"roles": [
+"theory"
+]
+},
+"1039": {
+"w": 0.9205,
+"roles": [
+"instrument",
+"theory"
+]
+},
+"75": {
+"w": 0.9199,
+"roles": [
+"theory"
+]
+},
+"1384": {
+"w": 0.9193,
+"roles": [
+"theory"
+]
+},
+"725": {
+"w": 0.9186,
+"roles": [
+"case",
+"definition",
+"specification"
+]
+},
+"496": {
+"w": 0.918,
+"roles": [
+"case"
+]
+},
+"788": {
+"w": 0.9174,
+"roles": [
+"instrument"
+]
+},
+"1528": {
+"w": 0.9168,
+"roles": [
+"specification"
+]
+},
+"612": {
+"w": 0.9161,
+"roles": [
+"theory"
+]
+},
+"821": {
+"w": 0.9155,
+"roles": [
+"definition",
+"theory"
+]
+},
+"823": {
+"w": 0.9149,
+"roles": [
+"theory"
+]
+},
+"1527": {
+"w": 0.9143,
+"roles": [
+"specification"
+]
+},
+"1470": {
+"w": 0.9136,
+"roles": [
+"case",
+"instrument"
+]
+},
+"1407": {
+"w": 0.913,
+"roles": [
+"theory"
+]
+},
+"145": {
+"w": 0.9124,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"691": {
+"w": 0.9118,
+"roles": [
+"case"
+]
+},
+"170": {
+"w": 0.9111,
+"roles": [
+"theory"
+]
+},
+"755": {
+"w": 0.9105,
+"roles": [
+"specification"
+]
+},
+"474": {
+"w": 0.9099,
+"roles": [
+"theory"
+]
+},
+"727": {
+"w": 0.9093,
+"roles": [
+"case",
+"definition",
+"observed",
+"specification"
+]
+},
+"522": {
+"w": 0.9086,
+"roles": [
+"theory"
+]
+},
+"670": {
+"w": 0.908,
+"roles": [
+"case",
+"observed"
+]
+},
+"215": {
+"w": 0.9074,
+"roles": [
+"case"
+]
+},
+"939": {
+"w": 0.9068,
+"roles": [
+"observed",
+"theory"
+]
+},
+"693": {
+"w": 0.9061,
+"roles": [
+"specification"
+]
+},
+"1379": {
+"w": 0.9055,
+"roles": [
+"instrument"
+]
+},
+"869": {
+"w": 0.9049,
+"roles": [
+"case",
+"record"
+]
+},
+"1121": {
+"w": 0.9043,
+"roles": [
+"observed",
+"theory"
+]
+},
+"359": {
+"w": 0.9036,
+"roles": [
+"observed",
+"specification"
+]
+},
+"461": {
+"w": 0.903,
+"roles": [
+"case"
+]
+},
+"792": {
+"w": 0.9024,
+"roles": [
+"observed",
+"theory"
+]
+},
+"76": {
+"w": 0.9018,
+"roles": [
+"observed",
+"specification"
+]
+},
+"759": {
+"w": 0.9011,
+"roles": [
+"specification"
+]
+},
+"24": {
+"w": 0.9005,
+"roles": [
+"observed",
+"theory"
+]
+},
+"457": {
+"w": 0.8999,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1644": {
+"w": 0.8992,
+"roles": [
+"definition",
+"observed",
+"specification"
+]
+},
+"704": {
+"w": 0.8986,
+"roles": [
+"definition"
+]
+},
+"685": {
+"w": 0.898,
+"roles": [
+"record"
+]
+},
+"1605": {
+"w": 0.8974,
+"roles": [
+"instrument",
+"specification",
+"theory"
+]
+},
+"17": {
+"w": 0.8967,
+"roles": [
+"case",
+"record",
+"specification"
+]
+},
+"1084": {
+"w": 0.8961,
+"roles": [
+"specification"
+]
+},
+"514": {
+"w": 0.8955,
+"roles": [
+"observed",
+"theory"
+]
+},
+"186": {
+"w": 0.8949,
+"roles": [
+"case"
+]
+},
+"97": {
+"w": 0.8942,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"158": {
+"w": 0.8936,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1606": {
+"w": 0.893,
+"roles": [
+"observed",
+"theory"
+]
+},
+"87": {
+"w": 0.8924,
+"roles": [
+"theory"
+]
+},
+"49": {
+"w": 0.8917,
+"roles": [
+"case"
+]
+},
+"264": {
+"w": 0.8911,
+"roles": [
+"observed",
+"theory"
+]
+},
+"680": {
+"w": 0.8905,
+"roles": [
+"case"
+]
+},
+"58": {
+"w": 0.8899,
+"roles": [
+"instrument"
+]
+},
+"1632": {
+"w": 0.8892,
+"roles": [
+"theory"
+]
+},
+"39": {
+"w": 0.8886,
+"roles": [
+"theory"
+]
+},
+"37": {
+"w": 0.888,
+"roles": [
+"theory"
+]
+},
+"540": {
+"w": 0.8874,
+"roles": [
+"theory"
+]
+},
+"1446": {
+"w": 0.8867,
+"roles": [
+"specification"
+]
+},
+"689": {
+"w": 0.8861,
+"roles": [
+"case",
+"specification"
+]
+},
+"559": {
+"w": 0.8855,
+"roles": [
+"instrument"
+]
+},
+"162": {
+"w": 0.8849,
+"roles": [
+"theory"
+]
+},
+"221": {
+"w": 0.8842,
+"roles": [
+"definition"
+]
+},
+"223": {
+"w": 0.8836,
+"roles": [
+"theory"
+]
+},
+"224": {
+"w": 0.883,
+"roles": [
+"theory"
+]
+},
+"225": {
+"w": 0.8824,
+"roles": [
+"theory"
+]
+},
+"728": {
+"w": 0.8817,
+"roles": [
+"instrument"
+]
+},
+"730": {
+"w": 0.8811,
+"roles": [
+"theory"
+]
+},
+"204": {
+"w": 0.8805,
+"roles": [
+"observed",
+"specification"
+]
+},
+"1044": {
+"w": 0.8798,
+"roles": [
+"record",
+"specification"
+]
+},
+"722": {
+"w": 0.8792,
+"roles": [
+"instrument",
+"theory"
+]
+},
+"1649": {
+"w": 0.8786,
+"roles": [
+"instrument",
+"theory"
+]
+},
+"650": {
+"w": 0.878,
+"roles": [
+"theory"
+]
+},
+"229": {
+"w": 0.8773,
+"roles": [
+"theory"
+]
+},
+"1054": {
+"w": 0.8767,
+"roles": [
+"case",
+"definition",
+"observed"
+]
+},
+"83": {
+"w": 0.8761,
+"roles": [
+"theory"
+]
+},
+"1656": {
+"w": 0.8755,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1612": {
+"w": 0.8748,
+"roles": [
+"record"
+]
+},
+"92": {
+"w": 0.8742,
+"roles": [
+"theory"
+]
+},
+"68": {
+"w": 0.8736,
+"roles": [
+"specification"
+]
+},
+"935": {
+"w": 0.873,
+"roles": [
+"instrument"
+]
+},
+"1068": {
+"w": 0.8723,
+"roles": [
+"case",
+"observed"
+]
+},
+"1671": {
+"w": 0.8717,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1615": {
+"w": 0.8711,
+"roles": [
+"case"
+]
+},
+"947": {
+"w": 0.8705,
+"roles": [
+"instrument"
+]
+},
+"870": {
+"w": 0.8698,
+"roles": [
+"theory"
+]
+},
+"510": {
+"w": 0.8692,
+"roles": [
+"theory"
+]
+},
+"502": {
+"w": 0.8686,
+"roles": [
+"theory"
+]
+},
+"103": {
+"w": 0.868,
+"roles": [
+"definition",
+"specification"
+]
+},
+"213": {
+"w": 0.8673,
+"roles": [
+"theory"
+]
+},
+"740": {
+"w": 0.8667,
+"roles": [
+"theory"
+]
+},
+"1611": {
+"w": 0.8661,
+"roles": [
+"case"
+]
+},
+"317": {
+"w": 0.8655,
+"roles": [
+"theory"
+]
+},
+"297": {
+"w": 0.8648,
+"roles": [
+"case"
+]
+},
+"122": {
+"w": 0.8642,
+"roles": [
+"theory"
+]
+},
+"163": {
+"w": 0.8636,
+"roles": [
+"theory"
+]
+},
+"1637": {
+"w": 0.863,
+"roles": [
+"case",
+"observed"
+]
+},
+"1094": {
+"w": 0.8623,
+"roles": [
+"theory"
+]
+},
+"332": {
+"w": 0.8617,
+"roles": [
+"theory"
+]
+},
+"329": {
+"w": 0.8611,
+"roles": [
+"observed",
+"theory"
+]
+},
+"74": {
+"w": 0.8605,
+"roles": [
+"theory"
+]
+},
+"1413": {
+"w": 0.8598,
+"roles": [
+"theory"
+]
+},
+"116": {
+"w": 0.8592,
+"roles": [
+"theory"
+]
+},
+"126": {
+"w": 0.8586,
+"roles": [
+"theory"
+]
+},
+"1630": {
+"w": 0.8579,
+"roles": [
+"theory"
+]
+},
+"974": {
+"w": 0.8573,
+"roles": [
+"specification"
+]
+},
+"531": {
+"w": 0.8567,
+"roles": [
+"observed",
+"theory"
+]
+},
+"716": {
+"w": 0.8561,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"751": {
+"w": 0.8554,
+"roles": [
+"theory"
+]
+},
+"565": {
+"w": 0.8548,
+"roles": [
+"theory"
+]
+},
+"519": {
+"w": 0.8542,
+"roles": [
+"case",
+"observed"
+]
+},
+"187": {
+"w": 0.8536,
+"roles": [
+"theory"
+]
+},
+"1643": {
+"w": 0.8529,
+"roles": [
+"observed",
+"theory"
+]
+},
+"269": {
+"w": 0.8523,
+"roles": [
+"theory"
+]
+},
+"59": {
+"w": 0.8517,
+"roles": [
+"instrument"
+]
+},
+"112": {
+"w": 0.8511,
+"roles": [
+"theory"
+]
+},
+"1095": {
+"w": 0.8504,
+"roles": [
+"theory"
+]
+},
+"1525": {
+"w": 0.8498,
+"roles": [
+"theory"
+]
+},
+"115": {
+"w": 0.8492,
+"roles": [
+"theory"
+]
+},
+"1624": {
+"w": 0.8486,
+"roles": [
+"case"
+]
+},
+"239": {
+"w": 0.8479,
+"roles": [
+"theory"
+]
+},
+"633": {
+"w": 0.8473,
+"roles": [
+"theory"
+]
+},
+"1669": {
+"w": 0.8467,
+"roles": [
+"case"
+]
+},
+"356": {
+"w": 0.8461,
+"roles": [
+"theory"
+]
+},
+"91": {
+"w": 0.8454,
+"roles": [
+"specification"
+]
+},
+"337": {
+"w": 0.8448,
+"roles": [
+"case"
+]
+},
+"572": {
+"w": 0.8442,
+"roles": [
+"theory"
+]
+},
+"44": {
+"w": 0.8436,
+"roles": [
+"theory"
+]
+},
+"1090": {
+"w": 0.8429,
+"roles": [
+"theory"
+]
+},
+"1629": {
+"w": 0.8423,
+"roles": [
+"theory"
+]
+},
+"1604": {
+"w": 0.8417,
+"roles": [
+"definition"
+]
+},
+"172": {
+"w": 0.8411,
+"roles": [
+"theory"
+]
+},
+"1530": {
+"w": 0.8404,
+"roles": [
+"instrument"
+]
+},
+"155": {
+"w": 0.8398,
+"roles": [
+"theory"
+]
+},
+"1180": {
+"w": 0.8392,
+"roles": [
+"definition"
+]
+},
+"2": {
+"w": 0.8385,
+"roles": [
+"case"
+]
+},
+"573": {
+"w": 0.8379,
+"roles": [
+"theory"
+]
+},
+"1434": {
+"w": 0.8373,
+"roles": [
+"theory"
+]
+},
+"369": {
+"w": 0.8367,
+"roles": [
+"theory"
+]
+},
+"656": {
+"w": 0.836,
+"roles": [
+"definition",
+"observed",
+"specification"
+]
+},
+"311": {
+"w": 0.8354,
+"roles": [
+"observed",
+"theory"
+]
+},
+"530": {
+"w": 0.8348,
+"roles": [
+"instrument"
+]
+},
+"550": {
+"w": 0.8342,
+"roles": [
+"observed",
+"theory"
+]
+},
+"57": {
+"w": 0.8335,
+"roles": [
+"theory"
+]
+},
+"1526": {
+"w": 0.8329,
+"roles": [
+"theory"
+]
+},
+"564": {
+"w": 0.8323,
+"roles": [
+"theory"
+]
+},
+"1614": {
+"w": 0.8317,
+"roles": [
+"record"
+]
+},
+"244": {
+"w": 0.831,
+"roles": [
+"specification"
+]
+},
+"1362": {
+"w": 0.8304,
+"roles": [
+"theory"
+]
+},
+"936": {
+"w": 0.8298,
+"roles": [
+"case",
+"record"
+]
+},
+"160": {
+"w": 0.8292,
+"roles": [
+"theory"
+]
+},
+"1492": {
+"w": 0.8285,
+"roles": [
+"theory"
+]
+},
+"568": {
+"w": 0.8279,
+"roles": [
+"theory"
+]
+},
+"106": {
+"w": 0.8273,
+"roles": [
+"instrument"
+]
+},
+"1002": {
+"w": 0.8267,
+"roles": [
+"observed",
+"record",
+"specification"
+]
+},
+"950": {
+"w": 0.826,
+"roles": [
+"instrument"
+]
+},
+"528": {
+"w": 0.8254,
+"roles": [
+"theory"
+]
+},
+"1462": {
+"w": 0.8248,
+"roles": [
+"instrument"
+]
+},
+"194": {
+"w": 0.8242,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1326": {
+"w": 0.8235,
+"roles": [
+"theory"
+]
+},
+"913": {
+"w": 0.8229,
+"roles": [
+"instrument"
+]
+},
+"707": {
+"w": 0.8223,
+"roles": [
+"specification"
+]
+},
+"36": {
+"w": 0.8217,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"198": {
+"w": 0.821,
+"roles": [
+"specification"
+]
+},
+"1438": {
+"w": 0.8204,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1392": {
+"w": 0.8198,
+"roles": [
+"definition",
+"instrument"
+]
+},
+"325": {
+"w": 0.8191,
+"roles": [
+"case"
+]
+},
+"1394": {
+"w": 0.8185,
+"roles": [
+"instrument"
+]
+},
+"820": {
+"w": 0.8179,
+"roles": [
+"theory"
+]
+},
+"100": {
+"w": 0.8173,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1585": {
+"w": 0.8166,
+"roles": [
+"theory"
+]
+},
+"1368": {
+"w": 0.816,
+"roles": [
+"instrument"
+]
+},
+"1087": {
+"w": 0.8154,
+"roles": [
+"specification"
+]
+},
+"641": {
+"w": 0.8148,
+"roles": [
+"theory"
+]
+},
+"1556": {
+"w": 0.8141,
+"roles": [
+"observed",
+"theory"
+]
+},
+"55": {
+"w": 0.8135,
+"roles": [
+"observed",
+"theory"
+]
+},
+"659": {
+"w": 0.8129,
+"roles": [
+"theory"
+]
+},
+"1234": {
+"w": 0.8123,
+"roles": [
+"definition",
+"observed",
+"specification"
+]
+},
+"1491": {
+"w": 0.8116,
+"roles": [
+"theory"
+]
+},
+"1670": {
+"w": 0.811,
+"roles": [
+"theory"
+]
+},
+"13": {
+"w": 0.8104,
+"roles": [
+"theory"
+]
+},
+"698": {
+"w": 0.8098,
+"roles": [
+"theory"
+]
+},
+"482": {
+"w": 0.8091,
+"roles": [
+"observed",
+"theory"
+]
+},
+"22": {
+"w": 0.8085,
+"roles": [
+"case",
+"observed"
+]
+},
+"85": {
+"w": 0.8079,
+"roles": [
+"theory"
+]
+},
+"335": {
+"w": 0.8073,
+"roles": [
+"observed",
+"theory"
+]
+},
+"634": {
+"w": 0.8066,
+"roles": [
+"specification"
+]
+},
+"658": {
+"w": 0.806,
+"roles": [
+"service"
+]
+},
+"191": {
+"w": 0.8054,
+"roles": [
+"theory"
+]
+},
+"69": {
+"w": 0.8048,
+"roles": [
+"case"
+]
+},
+"1541": {
+"w": 0.8041,
+"roles": [
+"definition"
+]
+},
+"1543": {
+"w": 0.8035,
+"roles": [
+"theory"
+]
+},
+"319": {
+"w": 0.8029,
+"roles": [
+"theory"
+]
+},
+"135": {
+"w": 0.8023,
+"roles": [
+"specification"
+]
+},
+"975": {
+"w": 0.8016,
+"roles": [
+"theory"
+]
+},
+"795": {
+"w": 0.801,
+"roles": [
+"instrument"
+]
+},
+"1463": {
+"w": 0.8004,
+"roles": [
+"instrument"
+]
+},
+"52": {
+"w": 0.7997,
+"roles": [
+"specification"
+]
+},
+"1079": {
+"w": 0.7991,
+"roles": [
+"case"
+]
+},
+"1437": {
+"w": 0.7985,
+"roles": [
+"theory"
+]
+},
+"1439": {
+"w": 0.7979,
+"roles": [
+"definition",
+"specification"
+]
+},
+"687": {
+"w": 0.7972,
+"roles": [
+"theory"
+]
+},
+"188": {
+"w": 0.7966,
+"roles": [
+"observed",
+"theory"
+]
+},
+"147": {
+"w": 0.796,
+"roles": [
+"theory"
+]
+},
+"1239": {
+"w": 0.7954,
+"roles": [
+"record"
+]
+},
+"819": {
+"w": 0.7947,
+"roles": [
+"theory"
+]
+},
+"1225": {
+"w": 0.7941,
+"roles": [
+"theory"
+]
+},
+"82": {
+"w": 0.7935,
+"roles": [
+"theory"
+]
+},
+"8": {
+"w": 0.7929,
+"roles": [
+"theory"
+]
+},
+"845": {
+"w": 0.7922,
+"roles": [
+"theory"
+]
+},
+"1009": {
+"w": 0.7916,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1668": {
+"w": 0.791,
+"roles": [
+"case"
+]
+},
+"190": {
+"w": 0.7904,
+"roles": [
+"theory"
+]
+},
+"1464": {
+"w": 0.7897,
+"roles": [
+"theory"
+]
+},
+"986": {
+"w": 0.7891,
+"roles": [
+"theory"
+]
+},
+"362": {
+"w": 0.7885,
+"roles": [
+"theory"
+]
+},
+"766": {
+"w": 0.7879,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"1665": {
+"w": 0.7872,
+"roles": [
+"definition",
+"specification"
+]
+},
+"273": {
+"w": 0.7866,
+"roles": [
+"specification"
+]
+},
+"80": {
+"w": 0.786,
+"roles": [
+"theory"
+]
+},
+"642": {
+"w": 0.7854,
+"roles": [
+"observed",
+"theory"
+]
+},
+"123": {
+"w": 0.7847,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1479": {
+"w": 0.7841,
+"roles": [
+"theory"
+]
+},
+"1316": {
+"w": 0.7835,
+"roles": [
+"theory"
+]
+},
+"1107": {
+"w": 0.7829,
+"roles": [
+"theory"
+]
+},
+"171": {
+"w": 0.7822,
+"roles": [
+"theory"
+]
+},
+"339": {
+"w": 0.7816,
+"roles": [
+"specification"
+]
+},
+"509": {
+"w": 0.781,
+"roles": [
+"theory"
+]
+},
+"27": {
+"w": 0.7804,
+"roles": [
+"observed",
+"theory"
+]
+},
+"731": {
+"w": 0.7797,
+"roles": [
+"observed",
+"theory"
+]
+},
+"855": {
+"w": 0.7791,
+"roles": [
+"instrument"
+]
+},
+"493": {
+"w": 0.7785,
+"roles": [
+"theory"
+]
+},
+"871": {
+"w": 0.7778,
+"roles": [
+"theory"
+]
+},
+"977": {
+"w": 0.7772,
+"roles": [
+"theory"
+]
+},
+"1429": {
+"w": 0.7766,
+"roles": [
+"record"
+]
+},
+"833": {
+"w": 0.776,
+"roles": [
+"observed",
+"record"
+]
+},
+"71": {
+"w": 0.7753,
+"roles": [
+"case"
+]
+},
+"192": {
+"w": 0.7747,
+"roles": [
+"theory"
+]
+},
+"31": {
+"w": 0.7741,
+"roles": [
+"record"
+]
+},
+"615": {
+"w": 0.7735,
+"roles": [
+"theory"
+]
+},
+"1540": {
+"w": 0.7728,
+"roles": [
+"theory"
+]
+},
+"1359": {
+"w": 0.7722,
+"roles": [
+"theory"
+]
+},
+"1658": {
+"w": 0.7716,
+"roles": [
+"case"
+]
+},
+"174": {
+"w": 0.771,
+"roles": [
+"definition",
+"observed",
+"specification"
+]
+},
+"214": {
+"w": 0.7703,
+"roles": [
+"specification"
+]
+},
+"1040": {
+"w": 0.7697,
+"roles": [
+"theory"
+]
+},
+"136": {
+"w": 0.7691,
+"roles": [
+"theory"
+]
+},
+"424": {
+"w": 0.7685,
+"roles": [
+"case"
+]
+},
+"476": {
+"w": 0.7678,
+"roles": [
+"case"
+]
+},
+"1361": {
+"w": 0.7672,
+"roles": [
+"theory"
+]
+},
+"1232": {
+"w": 0.7666,
+"roles": [
+"theory"
+]
+},
+"1395": {
+"w": 0.766,
+"roles": [
+"specification"
+]
+},
+"263": {
+"w": 0.7653,
+"roles": [
+"theory"
+]
+},
+"1272": {
+"w": 0.7647,
+"roles": [
+"specification"
+]
+},
+"121": {
+"w": 0.7641,
+"roles": [
+"theory"
+]
+},
+"1303": {
+"w": 0.7635,
+"roles": [
+"observed",
+"theory"
+]
+},
+"212": {
+"w": 0.7628,
+"roles": [
+"definition",
+"specification"
+]
+},
+"713": {
+"w": 0.7622,
+"roles": [
+"theory"
+]
+},
+"90": {
+"w": 0.7616,
+"roles": [
+"record"
+]
+},
+"1093": {
+"w": 0.761,
+"roles": [
+"theory"
+]
+},
+"501": {
+"w": 0.7603,
+"roles": [
+"theory"
+]
+},
+"341": {
+"w": 0.7597,
+"roles": [
+"case",
+"observed"
+]
+},
+"7": {
+"w": 0.7591,
+"roles": [
+"theory"
+]
+},
+"1589": {
+"w": 0.7584,
+"roles": [
+"instrument"
+]
+},
+"566": {
+"w": 0.7578,
+"roles": [
+"specification"
+]
+},
+"1659": {
+"w": 0.7572,
+"roles": [
+"theory"
+]
+},
+"835": {
+"w": 0.7566,
+"roles": [
+"theory"
+]
+},
+"588": {
+"w": 0.7559,
+"roles": [
+"theory"
+]
+},
+"53": {
+"w": 0.7553,
+"roles": [
+"theory"
+]
+},
+"1472": {
+"w": 0.7547,
+"roles": [
+"instrument"
+]
+},
+"1229": {
+"w": 0.7541,
+"roles": [
+"theory"
+]
+},
+"1660": {
+"w": 0.7534,
+"roles": [
+"case"
+]
+},
+"202": {
+"w": 0.7528,
+"roles": [
+"definition",
+"observed"
+]
+},
+"1435": {
+"w": 0.7522,
+"roles": [
+"theory"
+]
+},
+"242": {
+"w": 0.7516,
+"roles": [
+"specification"
+]
+},
+"449": {
+"w": 0.7509,
+"roles": [
+"theory"
+]
+},
+"828": {
+"w": 0.7503,
+"roles": [
+"theory"
+]
+},
+"109": {
+"w": 0.7497,
+"roles": [
+"instrument"
+]
+},
+"796": {
+"w": 0.7491,
+"roles": [
+"theory"
+]
+},
+"545": {
+"w": 0.7484,
+"roles": [
+"theory"
+]
+},
+"1471": {
+"w": 0.7478,
+"roles": [
+"instrument"
+]
+},
+"1425": {
+"w": 0.7472,
+"roles": [
+"theory"
+]
+},
+"577": {
+"w": 0.7466,
+"roles": [
+"case"
+]
+},
+"436": {
+"w": 0.7459,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1489": {
+"w": 0.7453,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1242": {
+"w": 0.7447,
+"roles": [
+"theory"
+]
+},
+"560": {
+"w": 0.7441,
+"roles": [
+"theory"
+]
+},
+"1389": {
+"w": 0.7434,
+"roles": [
+"theory"
+]
+},
+"937": {
+"w": 0.7428,
+"roles": [
+"theory"
+]
+},
+"1661": {
+"w": 0.7422,
+"roles": [
+"theory"
+]
+},
+"1588": {
+"w": 0.7416,
+"roles": [
+"definition",
+"observed",
+"specification"
+]
+},
+"6": {
+"w": 0.7409,
+"roles": [
+"case",
+"observed"
+]
+},
+"1238": {
+"w": 0.7403,
+"roles": [
+"theory"
+]
+},
+"1024": {
+"w": 0.7397,
+"roles": [
+"observed",
+"theory"
+]
+},
+"296": {
+"w": 0.739,
+"roles": [
+"theory"
+]
+},
+"682": {
+"w": 0.7384,
+"roles": [
+"case"
+]
+},
+"757": {
+"w": 0.7378,
+"roles": [
+"theory"
+]
+},
+"1427": {
+"w": 0.7372,
+"roles": [
+"observed",
+"theory"
+]
+},
+"243": {
+"w": 0.7365,
+"roles": [
+"definition",
+"instrument",
+"specification"
+]
+},
+"1100": {
+"w": 0.7359,
+"roles": [
+"theory"
+]
+},
+"1092": {
+"w": 0.7353,
+"roles": [
+"theory"
+]
+},
+"1101": {
+"w": 0.7347,
+"roles": [
+"theory"
+]
+},
+"345": {
+"w": 0.734,
+"roles": [
+"instrument"
+]
+},
+"1408": {
+"w": 0.7334,
+"roles": [
+"theory"
+]
+},
+"402": {
+"w": 0.7328,
+"roles": [
+"theory"
+]
+},
+"578": {
+"w": 0.7322,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1045": {
+"w": 0.7315,
+"roles": [
+"instrument",
+"observed",
+"record"
+]
+},
+"856": {
+"w": 0.7309,
+"roles": [
+"definition"
+]
+},
+"980": {
+"w": 0.7303,
+"roles": [
+"record"
+]
+},
+"981": {
+"w": 0.7297,
+"roles": [
+"record"
+]
+},
+"168": {
+"w": 0.729,
+"roles": [
+"theory"
+]
+},
+"138": {
+"w": 0.7284,
+"roles": [
+"observed",
+"theory"
+]
+},
+"797": {
+"w": 0.7278,
+"roles": [
+"definition"
+]
+},
+"604": {
+"w": 0.7272,
+"roles": [
+"theory"
+]
+},
+"133": {
+"w": 0.7265,
+"roles": [
+"theory"
+]
+},
+"50": {
+"w": 0.7259,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1607": {
+"w": 0.7253,
+"roles": [
+"theory"
+]
+},
+"1386": {
+"w": 0.7247,
+"roles": [
+"definition",
+"instrument"
+]
+},
+"338": {
+"w": 0.724,
+"roles": [
+"specification"
+]
+},
+"1270": {
+"w": 0.7234,
+"roles": [
+"observed",
+"theory"
+]
+},
+"153": {
+"w": 0.7228,
+"roles": [
+"specification"
+]
+},
+"800": {
+"w": 0.7222,
+"roles": [
+"observed",
+"theory"
+]
+},
+"104": {
+"w": 0.7215,
+"roles": [
+"specification"
+]
+},
+"210": {
+"w": 0.7209,
+"roles": [
+"instrument"
+]
+},
+"718": {
+"w": 0.7203,
+"roles": [
+"record"
+]
+},
+"789": {
+"w": 0.7196,
+"roles": [
+"instrument"
+]
+},
+"543": {
+"w": 0.719,
+"roles": [
+"case"
+]
+},
+"437": {
+"w": 0.7184,
+"roles": [
+"observed",
+"theory"
+]
+},
+"156": {
+"w": 0.7178,
+"roles": [
+"theory"
+]
+},
+"387": {
+"w": 0.7171,
+"roles": [
+"theory"
+]
+},
+"1534": {
+"w": 0.7165,
+"roles": [
+"theory"
+]
+},
+"1594": {
+"w": 0.7159,
+"roles": [
+"instrument"
+]
+},
+"208": {
+"w": 0.7153,
+"roles": [
+"theory"
+]
+},
+"1433": {
+"w": 0.7146,
+"roles": [
+"theory"
+]
+},
+"1642": {
+"w": 0.714,
+"roles": [
+"theory"
+]
+},
+"513": {
+"w": 0.7134,
+"roles": [
+"observed",
+"theory"
+]
+},
+"850": {
+"w": 0.7128,
+"roles": [
+"theory"
+]
+},
+"1635": {
+"w": 0.7121,
+"roles": [
+"case"
+]
+},
+"47": {
+"w": 0.7115,
+"roles": [
+"theory"
+]
+},
+"1209": {
+"w": 0.7109,
+"roles": [
+"theory"
+]
+},
+"367": {
+"w": 0.7103,
+"roles": [
+"observed",
+"theory"
+]
+},
+"196": {
+"w": 0.7096,
+"roles": [
+"theory"
+]
+},
+"1208": {
+"w": 0.709,
+"roles": [
+"theory"
+]
+},
+"988": {
+"w": 0.7084,
+"roles": [
+"theory"
+]
+},
+"451": {
+"w": 0.7078,
+"roles": [
+"theory"
+]
+},
+"266": {
+"w": 0.7071,
+"roles": [
+"theory"
+]
+},
+"149": {
+"w": 0.7065,
+"roles": [
+"theory"
+]
+},
+"729": {
+"w": 0.7059,
+"roles": [
+"theory"
+]
+},
+"1367": {
+"w": 0.7053,
+"roles": [
+"instrument"
+]
+},
+"925": {
+"w": 0.7046,
+"roles": [
+"specification"
+]
+},
+"993": {
+"w": 0.704,
+"roles": [
+"specification"
+]
+},
+"1580": {
+"w": 0.7034,
+"roles": [
+"theory"
+]
+},
+"81": {
+"w": 0.7028,
+"roles": [
+"theory"
+]
+},
+"1573": {
+"w": 0.7021,
+"roles": [
+"instrument"
+]
+},
+"1405": {
+"w": 0.7015,
+"roles": [
+"theory"
+]
+},
+"745": {
+"w": 0.7009,
+"roles": [
+"theory"
+]
+},
+"541": {
+"w": 0.7003,
+"roles": [
+"theory"
+]
+},
+"618": {
+"w": 0.6996,
+"roles": [
+"observed",
+"specification"
+]
+},
+"342": {
+"w": 0.699,
+"roles": [
+"case"
+]
+},
+"617": {
+"w": 0.6984,
+"roles": [
+"theory"
+]
+},
+"852": {
+"w": 0.6977,
+"roles": [
+"theory"
+]
+},
+"1535": {
+"w": 0.6971,
+"roles": [
+"observed",
+"theory"
+]
+},
+"38": {
+"w": 0.6965,
+"roles": [
+"theory"
+]
+},
+"763": {
+"w": 0.6959,
+"roles": [
+"observed",
+"theory"
+]
+},
+"710": {
+"w": 0.6952,
+"roles": [
+"definition"
+]
+},
+"826": {
+"w": 0.6946,
+"roles": [
+"case"
+]
+},
+"113": {
+"w": 0.694,
+"roles": [
+"definition"
+]
+},
+"556": {
+"w": 0.6934,
+"roles": [
+"theory"
+]
+},
+"1088": {
+"w": 0.6927,
+"roles": [
+"theory"
+]
+},
+"857": {
+"w": 0.6921,
+"roles": [
+"theory"
+]
+},
+"1488": {
+"w": 0.6915,
+"roles": [
+"theory"
+]
+},
+"1574": {
+"w": 0.6909,
+"roles": [
+"instrument"
+]
+},
+"250": {
+"w": 0.6902,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"95": {
+"w": 0.6896,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"1423": {
+"w": 0.689,
+"roles": [
+"observed",
+"record"
+]
+},
+"738": {
+"w": 0.6884,
+"roles": [
+"theory"
+]
+},
+"846": {
+"w": 0.6877,
+"roles": [
+"instrument"
+]
+},
+"585": {
+"w": 0.6871,
+"roles": [
+"theory"
+]
+},
+"152": {
+"w": 0.6865,
+"roles": [
+"theory"
+]
+},
+"1067": {
+"w": 0.6859,
+"roles": [
+"observed",
+"theory"
+]
+},
+"898": {
+"w": 0.6852,
+"roles": [
+"theory"
+]
+},
+"288": {
+"w": 0.6846,
+"roles": [
+"observed",
+"theory"
+]
+},
+"129": {
+"w": 0.684,
+"roles": [
+"instrument"
+]
+},
+"1012": {
+"w": 0.6834,
+"roles": [
+"theory"
+]
+},
+"1168": {
+"w": 0.6827,
+"roles": [
+"theory"
+]
+},
+"1460": {
+"w": 0.6821,
+"roles": [
+"case"
+]
+},
+"786": {
+"w": 0.6815,
+"roles": [
+"theory"
+]
+},
+"377": {
+"w": 0.6809,
+"roles": [
+"specification"
+]
+},
+"1547": {
+"w": 0.6802,
+"roles": [
+"specification"
+]
+},
+"1461": {
+"w": 0.6796,
+"roles": [
+"observed",
+"record"
+]
+},
+"73": {
+"w": 0.679,
+"roles": [
+"theory"
+]
+},
+"1645": {
+"w": 0.6783,
+"roles": [
+"specification"
+]
+},
+"382": {
+"w": 0.6777,
+"roles": [
+"definition",
+"instrument",
+"specification"
+]
+},
+"1473": {
+"w": 0.6771,
+"roles": [
+"theory"
+]
+},
+"315": {
+"w": 0.6765,
+"roles": [
+"observed",
+"specification"
+]
+},
+"1170": {
+"w": 0.6758,
+"roles": [
+"theory"
+]
+},
+"175": {
+"w": 0.6752,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1190": {
+"w": 0.6746,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"1536": {
+"w": 0.674,
+"roles": [
+"theory"
+]
+},
+"651": {
+"w": 0.6733,
+"roles": [
+"instrument"
+]
+},
+"760": {
+"w": 0.6727,
+"roles": [
+"theory"
+]
+},
+"398": {
+"w": 0.6721,
+"roles": [
+"specification"
+]
+},
+"185": {
+"w": 0.6715,
+"roles": [
+"instrument"
+]
+},
+"1066": {
+"w": 0.6708,
+"roles": [
+"observed",
+"theory"
+]
+},
+"717": {
+"w": 0.6702,
+"roles": [
+"specification"
+]
+},
+"1011": {
+"w": 0.6696,
+"roles": [
+"instrument"
+]
+},
+"1646": {
+"w": 0.669,
+"roles": [
+"specification"
+]
+},
+"732": {
+"w": 0.6683,
+"roles": [
+"theory"
+]
+},
+"524": {
+"w": 0.6677,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1371": {
+"w": 0.6671,
+"roles": [
+"theory"
+]
+},
+"1077": {
+"w": 0.6665,
+"roles": [
+"specification"
+]
+},
+"1055": {
+"w": 0.6658,
+"roles": [
+"definition"
+]
+},
+"1174": {
+"w": 0.6652,
+"roles": [
+"instrument"
+]
+},
+"709": {
+"w": 0.6646,
+"roles": [
+"definition"
+]
+},
+"1155": {
+"w": 0.664,
+"roles": [
+"theory"
+]
+},
+"720": {
+"w": 0.6633,
+"roles": [
+"theory"
+]
+},
+"1393": {
+"w": 0.6627,
+"roles": [
+"observed",
+"theory"
+]
+},
+"130": {
+"w": 0.6621,
+"roles": [
+"theory"
+]
+},
+"326": {
+"w": 0.6615,
+"roles": [
+"theory"
+]
+},
+"1275": {
+"w": 0.6608,
+"roles": [
+"theory"
+]
+},
+"150": {
+"w": 0.6602,
+"roles": [
+"case"
+]
+},
+"621": {
+"w": 0.6596,
+"roles": [
+"specification"
+]
+},
+"416": {
+"w": 0.6589,
+"roles": [
+"observed",
+"theory"
+]
+},
+"151": {
+"w": 0.6583,
+"roles": [
+"theory"
+]
+},
+"346": {
+"w": 0.6577,
+"roles": [
+"case"
+]
+},
+"1377": {
+"w": 0.6571,
+"roles": [
+"observed",
+"theory"
+]
+},
+"9": {
+"w": 0.6564,
+"roles": [
+"theory"
+]
+},
+"1262": {
+"w": 0.6558,
+"roles": [
+"theory"
+]
+},
+"1570": {
+"w": 0.6552,
+"roles": [
+"instrument"
+]
+},
+"748": {
+"w": 0.6546,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"1202": {
+"w": 0.6539,
+"roles": [
+"specification"
+]
+},
+"30": {
+"w": 0.6533,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1171": {
+"w": 0.6527,
+"roles": [
+"record"
+]
+},
+"1021": {
+"w": 0.6521,
+"roles": [
+"record"
+]
+},
+"1069": {
+"w": 0.6514,
+"roles": [
+"theory"
+]
+},
+"1210": {
+"w": 0.6508,
+"roles": [
+"theory"
+]
+},
+"972": {
+"w": 0.6502,
+"roles": [
+"theory"
+]
+},
+"640": {
+"w": 0.6496,
+"roles": [
+"theory"
+]
+},
+"41": {
+"w": 0.6489,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1114": {
+"w": 0.6483,
+"roles": [
+"theory"
+]
+},
+"475": {
+"w": 0.6477,
+"roles": [
+"theory"
+]
+},
+"1549": {
+"w": 0.6471,
+"roles": [
+"definition"
+]
+},
+"94": {
+"w": 0.6464,
+"roles": [
+"instrument"
+]
+},
+"708": {
+"w": 0.6458,
+"roles": [
+"theory"
+]
+},
+"119": {
+"w": 0.6452,
+"roles": [
+"specification"
+]
+},
+"903": {
+"w": 0.6446,
+"roles": [
+"theory"
+]
+},
+"518": {
+"w": 0.6439,
+"roles": [
+"theory"
+]
+},
+"694": {
+"w": 0.6433,
+"roles": [
+"definition",
+"specification"
+]
+},
+"736": {
+"w": 0.6427,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"84": {
+"w": 0.6421,
+"roles": [
+"definition"
+]
+},
+"1201": {
+"w": 0.6414,
+"roles": [
+"theory"
+]
+},
+"1003": {
+"w": 0.6408,
+"roles": [
+"theory"
+]
+},
+"959": {
+"w": 0.6402,
+"roles": [
+"theory"
+]
+},
+"376": {
+"w": 0.6395,
+"roles": [
+"specification"
+]
+},
+"1348": {
+"w": 0.6389,
+"roles": [
+"specification"
+]
+},
+"299": {
+"w": 0.6383,
+"roles": [
+"specification"
+]
+},
+"1034": {
+"w": 0.6377,
+"roles": [
+"theory"
+]
+},
+"184": {
+"w": 0.637,
+"roles": [
+"theory"
+]
+},
+"558": {
+"w": 0.6364,
+"roles": [
+"theory"
+]
+},
+"460": {
+"w": 0.6358,
+"roles": [
+"record"
+]
+},
+"141": {
+"w": 0.6352,
+"roles": [
+"specification"
+]
+},
+"994": {
+"w": 0.6345,
+"roles": [
+"record"
+]
+},
+"914": {
+"w": 0.6339,
+"roles": [
+"theory"
+]
+},
+"1099": {
+"w": 0.6333,
+"roles": [
+"case"
+]
+},
+"985": {
+"w": 0.6327,
+"roles": [
+"theory"
+]
+},
+"199": {
+"w": 0.632,
+"roles": [
+"theory"
+]
+},
+"478": {
+"w": 0.6314,
+"roles": [
+"theory"
+]
+},
+"10": {
+"w": 0.6308,
+"roles": [
+"theory"
+]
+},
+"5": {
+"w": 0.6302,
+"roles": [
+"theory"
+]
+},
+"1052": {
+"w": 0.6295,
+"roles": [
+"definition",
+"instrument"
+]
+},
+"1223": {
+"w": 0.6289,
+"roles": [
+"theory"
+]
+},
+"1246": {
+"w": 0.6283,
+"roles": [
+"theory"
+]
+},
+"1010": {
+"w": 0.6277,
+"roles": [
+"theory"
+]
+},
+"29": {
+"w": 0.627,
+"roles": [
+"theory"
+]
+},
+"1152": {
+"w": 0.6264,
+"roles": [
+"theory"
+]
+},
+"201": {
+"w": 0.6258,
+"roles": [
+"theory"
+]
+},
+"1233": {
+"w": 0.6252,
+"roles": [
+"specification"
+]
+},
+"611": {
+"w": 0.6245,
+"roles": [
+"theory"
+]
+},
+"3": {
+"w": 0.6239,
+"roles": [
+"observed",
+"record"
+]
+},
+"28": {
+"w": 0.6233,
+"roles": [
+"case"
+]
+},
+"1583": {
+"w": 0.6227,
+"roles": [
+"case"
+]
+},
+"817": {
+"w": 0.622,
+"roles": [
+"theory"
+]
+},
+"1402": {
+"w": 0.6214,
+"roles": [
+"definition"
+]
+},
+"99": {
+"w": 0.6208,
+"roles": [
+"theory"
+]
+},
+"1005": {
+"w": 0.6202,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1081": {
+"w": 0.6195,
+"roles": [
+"theory"
+]
+},
+"622": {
+"w": 0.6189,
+"roles": [
+"observed",
+"theory"
+]
+},
+"711": {
+"w": 0.6183,
+"roles": [
+"specification"
+]
+},
+"15": {
+"w": 0.6176,
+"roles": [
+"theory"
+]
+},
+"314": {
+"w": 0.617,
+"roles": [
+"theory"
+]
+},
+"102": {
+"w": 0.6164,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1023": {
+"w": 0.6158,
+"roles": [
+"theory"
+]
+},
+"1555": {
+"w": 0.6151,
+"roles": [
+"theory"
+]
+},
+"120": {
+"w": 0.6145,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1378": {
+"w": 0.6139,
+"roles": [
+"theory"
+]
+},
+"948": {
+"w": 0.6133,
+"roles": [
+"theory"
+]
+},
+"679": {
+"w": 0.6126,
+"roles": [
+"theory"
+]
+},
+"801": {
+"w": 0.612,
+"roles": [
+"definition",
+"observed"
+]
+},
+"943": {
+"w": 0.6114,
+"roles": [
+"case"
+]
+},
+"754": {
+"w": 0.6108,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"425": {
+"w": 0.6101,
+"roles": [
+"theory"
+]
+},
+"486": {
+"w": 0.6095,
+"roles": [
+"theory"
+]
+},
+"240": {
+"w": 0.6089,
+"roles": [
+"theory"
+]
+},
+"1480": {
+"w": 0.6083,
+"roles": [
+"record"
+]
+},
+"462": {
+"w": 0.6076,
+"roles": [
+"specification"
+]
+},
+"298": {
+"w": 0.607,
+"roles": [
+"theory"
+]
+},
+"1569": {
+"w": 0.6064,
+"roles": [
+"theory"
+]
+},
+"946": {
+"w": 0.6058,
+"roles": [
+"instrument"
+]
+},
+"523": {
+"w": 0.6051,
+"roles": [
+"theory"
+]
+},
+"692": {
+"w": 0.6045,
+"roles": [
+"theory"
+]
+},
+"1013": {
+"w": 0.6039,
+"roles": [
+"specification"
+]
+},
+"1576": {
+"w": 0.6033,
+"roles": [
+"case"
+]
+},
+"854": {
+"w": 0.6026,
+"roles": [
+"theory"
+]
+},
+"48": {
+"w": 0.602,
+"roles": [
+"theory"
+]
+},
+"12": {
+"w": 0.6014,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1390": {
+"w": 0.6008,
+"roles": [
+"theory"
+]
+},
+"1048": {
+"w": 0.6001,
+"roles": [
+"theory"
+]
+},
+"131": {
+"w": 0.5995,
+"roles": [
+"specification"
+]
+},
+"1544": {
+"w": 0.5989,
+"roles": [
+"theory"
+]
+},
+"42": {
+"w": 0.5982,
+"roles": [
+"observed",
+"theory"
+]
+},
+"874": {
+"w": 0.5976,
+"roles": [
+"definition"
+]
+},
+"998": {
+"w": 0.597,
+"roles": [
+"theory"
+]
+},
+"14": {
+"w": 0.5964,
+"roles": [
+"observed",
+"specification"
+]
+},
+"834": {
+"w": 0.5957,
+"roles": [
+"definition"
+]
+},
+"176": {
+"w": 0.5951,
+"roles": [
+"theory"
+]
+},
+"247": {
+"w": 0.5945,
+"roles": [
+"theory"
+]
+},
+"1343": {
+"w": 0.5939,
+"roles": [
+"theory"
+]
+},
+"390": {
+"w": 0.5932,
+"roles": [
+"theory"
+]
+},
+"1633": {
+"w": 0.5926,
+"roles": [
+"theory"
+]
+},
+"915": {
+"w": 0.592,
+"roles": [
+"record"
+]
+},
+"822": {
+"w": 0.5914,
+"roles": [
+"theory"
+]
+},
+"261": {
+"w": 0.5907,
+"roles": [
+"observed",
+"theory"
+]
+},
+"830": {
+"w": 0.5901,
+"roles": [
+"instrument"
+]
+},
+"912": {
+"w": 0.5895,
+"roles": [
+"theory"
+]
+},
+"1581": {
+"w": 0.5889,
+"roles": [
+"case"
+]
+},
+"45": {
+"w": 0.5882,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1178": {
+"w": 0.5876,
+"roles": [
+"definition",
+"specification"
+]
+},
+"56": {
+"w": 0.587,
+"roles": [
+"theory"
+]
+},
+"848": {
+"w": 0.5864,
+"roles": [
+"theory"
+]
+},
+"570": {
+"w": 0.5857,
+"roles": [
+"theory"
+]
+},
+"769": {
+"w": 0.5851,
+"roles": [
+"instrument"
+]
+},
+"785": {
+"w": 0.5845,
+"roles": [
+"specification"
+]
+},
+"793": {
+"w": 0.5839,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1664": {
+"w": 0.5832,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1673": {
+"w": 0.5826,
+"roles": [
+"instrument"
+]
+},
+"1466": {
+"w": 0.582,
+"roles": [
+"instrument"
+]
+},
+"51": {
+"w": 0.5814,
+"roles": [
+"case"
+]
+},
+"1140": {
+"w": 0.5807,
+"roles": [
+"specification"
+]
+},
+"557": {
+"w": 0.5801,
+"roles": [
+"observed",
+"theory"
+]
+},
+"804": {
+"w": 0.5795,
+"roles": [
+"theory"
+]
+},
+"1440": {
+"w": 0.5788,
+"roles": [
+"specification"
+]
+},
+"330": {
+"w": 0.5782,
+"roles": [
+"case"
+]
+},
+"961": {
+"w": 0.5776,
+"roles": [
+"theory"
+]
+},
+"1584": {
+"w": 0.577,
+"roles": [
+"record"
+]
+},
+"805": {
+"w": 0.5763,
+"roles": [
+"theory"
+]
+},
+"144": {
+"w": 0.5757,
+"roles": [
+"theory"
+]
+},
+"927": {
+"w": 0.5751,
+"roles": [
+"case",
+"observed"
+]
+},
+"544": {
+"w": 0.5745,
+"roles": [
+"observed",
+"record"
+]
+},
+"1373": {
+"w": 0.5738,
+"roles": [
+"instrument"
+]
+},
+"843": {
+"w": 0.5732,
+"roles": [
+"observed",
+"theory"
+]
+},
+"422": {
+"w": 0.5726,
+"roles": [
+"theory"
+]
+},
+"1151": {
+"w": 0.572,
+"roles": [
+"theory"
+]
+},
+"1518": {
+"w": 0.5713,
+"roles": [
+"instrument"
+]
+},
+"992": {
+"w": 0.5707,
+"roles": [
+"theory"
+]
+},
+"305": {
+"w": 0.5701,
+"roles": [
+"specification"
+]
+},
+"847": {
+"w": 0.5695,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"906": {
+"w": 0.5688,
+"roles": [
+"theory"
+]
+},
+"1546": {
+"w": 0.5682,
+"roles": [
+"case"
+]
+},
+"1369": {
+"w": 0.5676,
+"roles": [
+"theory"
+]
+},
+"1089": {
+"w": 0.567,
+"roles": [
+"theory"
+]
+},
+"1441": {
+"w": 0.5663,
+"roles": [
+"theory"
+]
+},
+"592": {
+"w": 0.5657,
+"roles": [
+"theory"
+]
+},
+"872": {
+"w": 0.5651,
+"roles": [
+"specification"
+]
+},
+"926": {
+"w": 0.5645,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"1200": {
+"w": 0.5638,
+"roles": [
+"instrument"
+]
+},
+"1364": {
+"w": 0.5632,
+"roles": [
+"theory"
+]
+},
+"1330": {
+"w": 0.5626,
+"roles": [
+"theory"
+]
+},
+"780": {
+"w": 0.562,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"179": {
+"w": 0.5613,
+"roles": [
+"theory"
+]
+},
+"98": {
+"w": 0.5607,
+"roles": [
+"definition"
+]
+},
+"189": {
+"w": 0.5601,
+"roles": [
+"specification"
+]
+},
+"995": {
+"w": 0.5594,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"1469": {
+"w": 0.5588,
+"roles": [
+"theory"
+]
+},
+"853": {
+"w": 0.5582,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1436": {
+"w": 0.5576,
+"roles": [
+"definition",
+"specification"
+]
+},
+"46": {
+"w": 0.5569,
+"roles": [
+"theory"
+]
+},
+"134": {
+"w": 0.5563,
+"roles": [
+"observed",
+"theory"
+]
+},
+"124": {
+"w": 0.5557,
+"roles": [
+"instrument"
+]
+},
+"1647": {
+"w": 0.5551,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1445": {
+"w": 0.5544,
+"roles": [
+"theory"
+]
+},
+"93": {
+"w": 0.5538,
+"roles": [
+"specification"
+]
+},
+"500": {
+"w": 0.5532,
+"roles": [
+"theory"
+]
+},
+"579": {
+"w": 0.5526,
+"roles": [
+"theory"
+]
+},
+"625": {
+"w": 0.5519,
+"roles": [
+"theory"
+]
+},
+"916": {
+"w": 0.5513,
+"roles": [
+"theory"
+]
+},
+"1578": {
+"w": 0.5507,
+"roles": [
+"definition"
+]
+},
+"749": {
+"w": 0.5501,
+"roles": [
+"theory"
+]
+},
+"533": {
+"w": 0.5494,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"313": {
+"w": 0.5488,
+"roles": [
+"case"
+]
+},
+"931": {
+"w": 0.5482,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1422": {
+"w": 0.5476,
+"roles": [
+"case",
+"observed"
+]
+},
+"837": {
+"w": 0.5469,
+"roles": [
+"definition",
+"observed"
+]
+},
+"1431": {
+"w": 0.5463,
+"roles": [
+"theory"
+]
+},
+"304": {
+"w": 0.5457,
+"roles": [
+"theory"
+]
+},
+"863": {
+"w": 0.5451,
+"roles": [
+"theory"
+]
+},
+"1051": {
+"w": 0.5444,
+"roles": [
+"observed",
+"theory"
+]
+},
+"536": {
+"w": 0.5438,
+"roles": [
+"theory"
+]
+},
+"932": {
+"w": 0.5432,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"1552": {
+"w": 0.5426,
+"roles": [
+"case"
+]
+},
+"1516": {
+"w": 0.5419,
+"roles": [
+"instrument"
+]
+},
+"684": {
+"w": 0.5413,
+"roles": [
+"theory"
+]
+},
+"400": {
+"w": 0.5407,
+"roles": [
+"theory"
+]
+},
+"252": {
+"w": 0.5401,
+"roles": [
+"instrument"
+]
+},
+"1243": {
+"w": 0.5394,
+"roles": [
+"theory"
+]
+},
+"1640": {
+"w": 0.5388,
+"roles": [
+"theory"
+]
+},
+"105": {
+"w": 0.5382,
+"roles": [
+"definition",
+"specification"
+]
+},
+"101": {
+"w": 0.5375,
+"roles": [
+"definition",
+"observed",
+"specification"
+]
+},
+"1221": {
+"w": 0.5369,
+"roles": [
+"theory"
+]
+},
+"702": {
+"w": 0.5363,
+"roles": [
+"theory"
+]
+},
+"352": {
+"w": 0.5357,
+"roles": [
+"specification"
+]
+},
+"548": {
+"w": 0.535,
+"roles": [
+"theory"
+]
+},
+"739": {
+"w": 0.5344,
+"roles": [
+"instrument"
+]
+},
+"1468": {
+"w": 0.5338,
+"roles": [
+"instrument"
+]
+},
+"587": {
+"w": 0.5332,
+"roles": [
+"theory"
+]
+},
+"737": {
+"w": 0.5325,
+"roles": [
+"instrument"
+]
+},
+"255": {
+"w": 0.5319,
+"roles": [
+"theory"
+]
+},
+"1467": {
+"w": 0.5313,
+"roles": [
+"instrument"
+]
+},
+"1199": {
+"w": 0.5307,
+"roles": [
+"theory"
+]
+},
+"1537": {
+"w": 0.53,
+"roles": [
+"specification"
+]
+},
+"938": {
+"w": 0.5294,
+"roles": [
+"theory"
+]
+},
+"1076": {
+"w": 0.5288,
+"roles": [
+"theory"
+]
+},
+"1049": {
+"w": 0.5282,
+"roles": [
+"theory"
+]
+},
+"1032": {
+"w": 0.5275,
+"roles": [
+"observed",
+"theory"
+]
+},
+"307": {
+"w": 0.5269,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"350": {
+"w": 0.5263,
+"roles": [
+"definition"
+]
+},
+"232": {
+"w": 0.5257,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"978": {
+"w": 0.525,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1184": {
+"w": 0.5244,
+"roles": [
+"theory"
+]
+},
+"1187": {
+"w": 0.5238,
+"roles": [
+"theory"
+]
+},
+"140": {
+"w": 0.5232,
+"roles": [
+"specification"
+]
+},
+"627": {
+"w": 0.5225,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"1179": {
+"w": 0.5219,
+"roles": [
+"theory"
+]
+},
+"599": {
+"w": 0.5213,
+"roles": [
+"instrument"
+]
+},
+"65": {
+"w": 0.5207,
+"roles": [
+"theory"
+]
+},
+"945": {
+"w": 0.52,
+"roles": [
+"theory"
+]
+},
+"169": {
+"w": 0.5194,
+"roles": [
+"specification"
+]
+},
+"928": {
+"w": 0.5188,
+"roles": [
+"case"
+]
+},
+"1571": {
+"w": 0.5181,
+"roles": [
+"record"
+]
+},
+"1538": {
+"w": 0.5175,
+"roles": [
+"theory"
+]
+},
+"228": {
+"w": 0.5169,
+"roles": [
+"specification"
+]
+},
+"646": {
+"w": 0.5163,
+"roles": [
+"theory"
+]
+},
+"320": {
+"w": 0.5156,
+"roles": [
+"record"
+]
+},
+"16": {
+"w": 0.515,
+"roles": [
+"observed",
+"specification"
+]
+},
+"1217": {
+"w": 0.5144,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1038": {
+"w": 0.5138,
+"roles": [
+"case"
+]
+},
+"1127": {
+"w": 0.5131,
+"roles": [
+"observed",
+"theory"
+]
+},
+"940": {
+"w": 0.5125,
+"roles": [
+"theory"
+]
+},
+"934": {
+"w": 0.5119,
+"roles": [
+"instrument"
+]
+},
+"1577": {
+"w": 0.5113,
+"roles": [
+"theory"
+]
+},
+"1478": {
+"w": 0.5106,
+"roles": [
+"theory"
+]
+},
+"1315": {
+"w": 0.51,
+"roles": [
+"theory"
+]
+},
+"933": {
+"w": 0.5094,
+"roles": [
+"theory"
+]
+},
+"1449": {
+"w": 0.5088,
+"roles": [
+"instrument"
+]
+},
+"1185": {
+"w": 0.5081,
+"roles": [
+"theory"
+]
+},
+"715": {
+"w": 0.5075,
+"roles": [
+"theory"
+]
+},
+"900": {
+"w": 0.5069,
+"roles": [
+"theory"
+]
+},
+"989": {
+"w": 0.5063,
+"roles": [
+"theory"
+]
+},
+"1070": {
+"w": 0.5056,
+"roles": [
+"theory"
+]
+},
+"901": {
+"w": 0.505,
+"roles": [
+"theory"
+]
+},
+"333": {
+"w": 0.5044,
+"roles": [
+"theory"
+]
+},
+"200": {
+"w": 0.5038,
+"roles": [
+"theory"
+]
+},
+"1008": {
+"w": 0.5031,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1188": {
+"w": 0.5025,
+"roles": [
+"instrument"
+]
+},
+"1028": {
+"w": 0.5019,
+"roles": [
+"theory"
+]
+},
+"1224": {
+"w": 0.5013,
+"roles": [
+"specification"
+]
+},
+"1370": {
+"w": 0.5006,
+"roles": [
+"definition",
+"observed"
+]
+},
+"771": {
+"w": 0.5,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"1353": {
+"w": 0.4994,
+"roles": [
+"theory"
+]
+},
+"234": {
+"w": 0.4987,
+"roles": [
+"observed",
+"theory"
+]
+},
+"968": {
+"w": 0.4981,
+"roles": [
+"theory"
+]
+},
+"583": {
+"w": 0.4975,
+"roles": [
+"theory"
+]
+},
+"306": {
+"w": 0.4969,
+"roles": [
+"case",
+"observed"
+]
+},
+"1083": {
+"w": 0.4962,
+"roles": [
+"theory"
+]
+},
+"589": {
+"w": 0.4956,
+"roles": [
+"theory"
+]
+},
+"1183": {
+"w": 0.495,
+"roles": [
+"specification"
+]
+},
+"1554": {
+"w": 0.4944,
+"roles": [
+"theory"
+]
+},
+"203": {
+"w": 0.4937,
+"roles": [
+"definition"
+]
+},
+"11": {
+"w": 0.4931,
+"roles": [
+"record"
+]
+},
+"365": {
+"w": 0.4925,
+"roles": [
+"specification"
+]
+},
+"591": {
+"w": 0.4919,
+"roles": [
+"theory"
+]
+},
+"464": {
+"w": 0.4912,
+"roles": [
+"theory"
+]
+},
+"920": {
+"w": 0.4906,
+"roles": [
+"theory"
+]
+},
+"96": {
+"w": 0.49,
+"roles": [
+"theory"
+]
+},
+"1459": {
+"w": 0.4894,
+"roles": [
+"definition",
+"record"
+]
+},
+"842": {
+"w": 0.4887,
+"roles": [
+"definition"
+]
+},
+"1177": {
+"w": 0.4881,
+"roles": [
+"theory"
+]
+},
+"1132": {
+"w": 0.4875,
+"roles": [
+"theory"
+]
+},
+"207": {
+"w": 0.4869,
+"roles": [
+"observed",
+"theory"
+]
+},
+"233": {
+"w": 0.4862,
+"roles": [
+"theory"
+]
+},
+"1381": {
+"w": 0.4856,
+"roles": [
+"specification"
+]
+},
+"1058": {
+"w": 0.485,
+"roles": [
+"theory"
+]
+},
+"1601": {
+"w": 0.4844,
+"roles": [
+"theory"
+]
+},
+"1110": {
+"w": 0.4837,
+"roles": [
+"theory"
+]
+},
+"996": {
+"w": 0.4831,
+"roles": [
+"theory"
+]
+},
+"1027": {
+"w": 0.4825,
+"roles": [
+"theory"
+]
+},
+"752": {
+"w": 0.4819,
+"roles": [
+"theory"
+]
+},
+"1450": {
+"w": 0.4812,
+"roles": [
+"instrument"
+]
+},
+"753": {
+"w": 0.4806,
+"roles": [
+"observed",
+"theory"
+]
+},
+"921": {
+"w": 0.48,
+"roles": [
+"theory"
+]
+},
+"418": {
+"w": 0.4793,
+"roles": [
+"theory"
+]
+},
+"799": {
+"w": 0.4787,
+"roles": [
+"theory"
+]
+},
+"1327": {
+"w": 0.4781,
+"roles": [
+"theory"
+]
+},
+"1175": {
+"w": 0.4775,
+"roles": [
+"theory"
+]
+},
+"967": {
+"w": 0.4768,
+"roles": [
+"observed",
+"specification"
+]
+},
+"178": {
+"w": 0.4762,
+"roles": [
+"theory"
+]
+},
+"1086": {
+"w": 0.4756,
+"roles": [
+"theory"
+]
+},
+"1022": {
+"w": 0.475,
+"roles": [
+"theory"
+]
+},
+"574": {
+"w": 0.4743,
+"roles": [
+"instrument"
+]
+},
+"818": {
+"w": 0.4737,
+"roles": [
+"definition"
+]
+},
+"1474": {
+"w": 0.4731,
+"roles": [
+"theory"
+]
+},
+"108": {
+"w": 0.4725,
+"roles": [
+"instrument"
+]
+},
+"78": {
+"w": 0.4718,
+"roles": [
+"theory"
+]
+},
+"1274": {
+"w": 0.4712,
+"roles": [
+"specification"
+]
+},
+"445": {
+"w": 0.4706,
+"roles": [
+"specification"
+]
+},
+"1046": {
+"w": 0.47,
+"roles": [
+"instrument"
+]
+},
+"696": {
+"w": 0.4693,
+"roles": [
+"specification"
+]
+},
+"586": {
+"w": 0.4687,
+"roles": [
+"theory"
+]
+},
+"1582": {
+"w": 0.4681,
+"roles": [
+"case"
+]
+},
+"590": {
+"w": 0.4675,
+"roles": [
+"theory"
+]
+},
+"1205": {
+"w": 0.4668,
+"roles": [
+"theory"
+]
+},
+"111": {
+"w": 0.4662,
+"roles": [
+"theory"
+]
+},
+"768": {
+"w": 0.4656,
+"roles": [
+"specification"
+]
+},
+"563": {
+"w": 0.465,
+"roles": [
+"instrument"
+]
+},
+"1189": {
+"w": 0.4643,
+"roles": [
+"definition",
+"observed"
+]
+},
+"941": {
+"w": 0.4637,
+"roles": [
+"theory"
+]
+},
+"614": {
+"w": 0.4631,
+"roles": [
+"theory"
+]
+},
+"427": {
+"w": 0.4625,
+"roles": [
+"theory"
+]
+},
+"86": {
+"w": 0.4618,
+"roles": [
+"theory"
+]
+},
+"128": {
+"w": 0.4612,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"1357": {
+"w": 0.4606,
+"roles": [
+"theory"
+]
+},
+"584": {
+"w": 0.4599,
+"roles": [
+"case"
+]
+},
+"334": {
+"w": 0.4593,
+"roles": [
+"case"
+]
+},
+"19": {
+"w": 0.4587,
+"roles": [
+"case"
+]
+},
+"1251": {
+"w": 0.4581,
+"roles": [
+"record"
+]
+},
+"1430": {
+"w": 0.4574,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1072": {
+"w": 0.4568,
+"roles": [
+"theory"
+]
+},
+"746": {
+"w": 0.4562,
+"roles": [
+"theory"
+]
+},
+"1207": {
+"w": 0.4556,
+"roles": [
+"theory"
+]
+},
+"1173": {
+"w": 0.4549,
+"roles": [
+"observed",
+"theory"
+]
+},
+"331": {
+"w": 0.4543,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1579": {
+"w": 0.4537,
+"roles": [
+"case"
+]
+},
+"1215": {
+"w": 0.4531,
+"roles": [
+"theory"
+]
+},
+"1333": {
+"w": 0.4524,
+"roles": [
+"theory"
+]
+},
+"463": {
+"w": 0.4518,
+"roles": [
+"specification"
+]
+},
+"473": {
+"w": 0.4512,
+"roles": [
+"theory"
+]
+},
+"1399": {
+"w": 0.4506,
+"roles": [
+"definition"
+]
+},
+"35": {
+"w": 0.4499,
+"roles": [
+"theory"
+]
+},
+"406": {
+"w": 0.4493,
+"roles": [
+"theory"
+]
+},
+"719": {
+"w": 0.4487,
+"roles": [
+"specification"
+]
+},
+"929": {
+"w": 0.4481,
+"roles": [
+"specification"
+]
+},
+"1250": {
+"w": 0.4474,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1082": {
+"w": 0.4468,
+"roles": [
+"theory"
+]
+},
+"624": {
+"w": 0.4462,
+"roles": [
+"theory"
+]
+},
+"426": {
+"w": 0.4456,
+"roles": [
+"specification"
+]
+},
+"32": {
+"w": 0.4449,
+"roles": [
+"theory"
+]
+},
+"1119": {
+"w": 0.4443,
+"roles": [
+"theory"
+]
+},
+"40": {
+"w": 0.4437,
+"roles": [
+"theory"
+]
+},
+"481": {
+"w": 0.4431,
+"roles": [
+"theory"
+]
+},
+"1586": {
+"w": 0.4424,
+"roles": [
+"instrument"
+]
+},
+"477": {
+"w": 0.4418,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1014": {
+"w": 0.4412,
+"roles": [
+"theory"
+]
+},
+"146": {
+"w": 0.4406,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1196": {
+"w": 0.4399,
+"roles": [
+"theory"
+]
+},
+"873": {
+"w": 0.4393,
+"roles": [
+"case"
+]
+},
+"353": {
+"w": 0.4387,
+"roles": [
+"specification"
+]
+},
+"1116": {
+"w": 0.438,
+"roles": [
+"theory"
+]
+},
+"1458": {
+"w": 0.4374,
+"roles": [
+"theory"
+]
+},
+"571": {
+"w": 0.4368,
+"roles": [
+"theory"
+]
+},
+"54": {
+"w": 0.4362,
+"roles": [
+"theory"
+]
+},
+"597": {
+"w": 0.4355,
+"roles": [
+"theory"
+]
+},
+"917": {
+"w": 0.4349,
+"roles": [
+"specification"
+]
+},
+"678": {
+"w": 0.4343,
+"roles": [
+"theory"
+]
+},
+"1562": {
+"w": 0.4337,
+"roles": [
+"theory"
+]
+},
+"876": {
+"w": 0.433,
+"roles": [
+"theory"
+]
+},
+"450": {
+"w": 0.4324,
+"roles": [
+"case"
+]
+},
+"1118": {
+"w": 0.4318,
+"roles": [
+"specification"
+]
+},
+"1001": {
+"w": 0.4312,
+"roles": [
+"theory"
+]
+},
+"1350": {
+"w": 0.4305,
+"roles": [
+"theory"
+]
+},
+"1675": {
+"w": 0.4299,
+"roles": [
+"theory"
+]
+},
+"969": {
+"w": 0.4293,
+"roles": [
+"theory"
+]
+},
+"1519": {
+"w": 0.4287,
+"roles": [
+"instrument"
+]
+},
+"1302": {
+"w": 0.428,
+"roles": [
+"observed",
+"theory"
+]
+},
+"248": {
+"w": 0.4274,
+"roles": [
+"specification"
+]
+},
+"1053": {
+"w": 0.4268,
+"roles": [
+"theory"
+]
+},
+"1312": {
+"w": 0.4262,
+"roles": [
+"theory"
+]
+},
+"1590": {
+"w": 0.4255,
+"roles": [
+"case"
+]
+},
+"970": {
+"w": 0.4249,
+"roles": [
+"theory"
+]
+},
+"971": {
+"w": 0.4243,
+"roles": [
+"theory"
+]
+},
+"829": {
+"w": 0.4237,
+"roles": [
+"definition"
+]
+},
+"177": {
+"w": 0.423,
+"roles": [
+"observed",
+"theory"
+]
+},
+"892": {
+"w": 0.4224,
+"roles": [
+"theory"
+]
+},
+"535": {
+"w": 0.4218,
+"roles": [
+"theory"
+]
+},
+"987": {
+"w": 0.4212,
+"roles": [
+"observed",
+"theory"
+]
+},
+"653": {
+"w": 0.4205,
+"roles": [
+"instrument"
+]
+},
+"1396": {
+"w": 0.4199,
+"roles": [
+"record"
+]
+},
+"1331": {
+"w": 0.4193,
+"roles": [
+"theory"
+]
+},
+"1587": {
+"w": 0.4186,
+"roles": [
+"definition",
+"specification"
+]
+},
+"357": {
+"w": 0.418,
+"roles": [
+"theory"
+]
+},
+"922": {
+"w": 0.4174,
+"roles": [
+"theory"
+]
+},
+"838": {
+"w": 0.4168,
+"roles": [
+"observed",
+"specification"
+]
+},
+"327": {
+"w": 0.4161,
+"roles": [
+"record"
+]
+},
+"1240": {
+"w": 0.4155,
+"roles": [
+"theory"
+]
+},
+"596": {
+"w": 0.4149,
+"roles": [
+"theory"
+]
+},
+"893": {
+"w": 0.4143,
+"roles": [
+"theory"
+]
+},
+"1375": {
+"w": 0.4136,
+"roles": [
+"theory"
+]
+},
+"142": {
+"w": 0.413,
+"roles": [
+"theory"
+]
+},
+"1063": {
+"w": 0.4124,
+"roles": [
+"theory"
+]
+},
+"385": {
+"w": 0.4118,
+"roles": [
+"record"
+]
+},
+"132": {
+"w": 0.4111,
+"roles": [
+"theory"
+]
+},
+"924": {
+"w": 0.4105,
+"roles": [
+"theory"
+]
+},
+"1397": {
+"w": 0.4099,
+"roles": [
+"record"
+]
+},
+"1401": {
+"w": 0.4093,
+"roles": [
+"record"
+]
+},
+"652": {
+"w": 0.4086,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"351": {
+"w": 0.408,
+"roles": [
+"theory"
+]
+},
+"598": {
+"w": 0.4074,
+"roles": [
+"theory"
+]
+},
+"1220": {
+"w": 0.4068,
+"roles": [
+"theory"
+]
+},
+"1256": {
+"w": 0.4061,
+"roles": [
+"definition",
+"specification"
+]
+},
+"1550": {
+"w": 0.4055,
+"roles": [
+"theory"
+]
+},
+"1521": {
+"w": 0.4049,
+"roles": [
+"theory"
+]
+},
+"1599": {
+"w": 0.4043,
+"roles": [
+"specification"
+]
+},
+"1600": {
+"w": 0.4036,
+"roles": [
+"theory"
+]
+},
+"180": {
+"w": 0.403,
+"roles": [
+"theory"
+]
+},
+"324": {
+"w": 0.4024,
+"roles": [
+"case"
+]
+},
+"323": {
+"w": 0.4018,
+"roles": [
+"record"
+]
+},
+"875": {
+"w": 0.4011,
+"roles": [
+"theory"
+]
+},
+"1391": {
+"w": 0.4005,
+"roles": [
+"theory"
+]
+},
+"1568": {
+"w": 0.3999,
+"roles": [
+"theory"
+]
+},
+"1194": {
+"w": 0.3992,
+"roles": [
+"theory"
+]
+},
+"363": {
+"w": 0.3986,
+"roles": [
+"record"
+]
+},
+"884": {
+"w": 0.398,
+"roles": [
+"theory"
+]
+},
+"1485": {
+"w": 0.3974,
+"roles": [
+"theory"
+]
+},
+"1595": {
+"w": 0.3967,
+"roles": [
+"theory"
+]
+},
+"1061": {
+"w": 0.3961,
+"roles": [
+"theory"
+]
+},
+"787": {
+"w": 0.3955,
+"roles": [
+"observed",
+"specification"
+]
+},
+"1162": {
+"w": 0.3949,
+"roles": [
+"theory"
+]
+},
+"1033": {
+"w": 0.3942,
+"roles": [
+"definition",
+"observed"
+]
+},
+"982": {
+"w": 0.3936,
+"roles": [
+"theory"
+]
+},
+"1411": {
+"w": 0.393,
+"roles": [
+"case"
+]
+},
+"1365": {
+"w": 0.3924,
+"roles": [
+"theory"
+]
+},
+"1428": {
+"w": 0.3917,
+"roles": [
+"theory"
+]
+},
+"289": {
+"w": 0.3911,
+"roles": [
+"specification"
+]
+},
+"1641": {
+"w": 0.3905,
+"roles": [
+"theory"
+]
+},
+"1085": {
+"w": 0.3899,
+"roles": [
+"theory"
+]
+},
+"1258": {
+"w": 0.3892,
+"roles": [
+"theory"
+]
+},
+"384": {
+"w": 0.3886,
+"roles": [
+"theory"
+]
+},
+"807": {
+"w": 0.388,
+"roles": [
+"theory"
+]
+},
+"868": {
+"w": 0.3874,
+"roles": [
+"definition"
+]
+},
+"1404": {
+"w": 0.3867,
+"roles": [
+"theory"
+]
+},
+"831": {
+"w": 0.3861,
+"roles": [
+"instrument"
+]
+},
+"1483": {
+"w": 0.3855,
+"roles": [
+"theory"
+]
+},
+"253": {
+"w": 0.3849,
+"roles": [
+"definition"
+]
+},
+"1026": {
+"w": 0.3842,
+"roles": [
+"observed",
+"theory"
+]
+},
+"562": {
+"w": 0.3836,
+"roles": [
+"case",
+"observed"
+]
+},
+"1025": {
+"w": 0.383,
+"roles": [
+"definition",
+"observed"
+]
+},
+"608": {
+"w": 0.3824,
+"roles": [
+"specification"
+]
+},
+"526": {
+"w": 0.3817,
+"roles": [
+"specification"
+]
+},
+"951": {
+"w": 0.3811,
+"roles": [
+"theory"
+]
+},
+"952": {
+"w": 0.3805,
+"roles": [
+"theory"
+]
+},
+"953": {
+"w": 0.3798,
+"roles": [
+"theory"
+]
+},
+"954": {
+"w": 0.3792,
+"roles": [
+"theory"
+]
+},
+"955": {
+"w": 0.3786,
+"roles": [
+"theory"
+]
+},
+"956": {
+"w": 0.378,
+"roles": [
+"theory"
+]
+},
+"542": {
+"w": 0.3773,
+"roles": [
+"specification"
+]
+},
+"942": {
+"w": 0.3767,
+"roles": [
+"specification"
+]
+},
+"1161": {
+"w": 0.3761,
+"roles": [
+"instrument"
+]
+},
+"271": {
+"w": 0.3755,
+"roles": [
+"specification"
+]
+},
+"1496": {
+"w": 0.3748,
+"roles": [
+"theory"
+]
+},
+"246": {
+"w": 0.3742,
+"roles": [
+"specification"
+]
+},
+"958": {
+"w": 0.3736,
+"roles": [
+"theory"
+]
+},
+"1237": {
+"w": 0.373,
+"roles": [
+"theory"
+]
+},
+"230": {
+"w": 0.3723,
+"roles": [
+"theory"
+]
+},
+"231": {
+"w": 0.3717,
+"roles": [
+"theory"
+]
+},
+"1575": {
+"w": 0.3711,
+"roles": [
+"case"
+]
+},
+"623": {
+"w": 0.3705,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1490": {
+"w": 0.3698,
+"roles": [
+"theory"
+]
+},
+"1071": {
+"w": 0.3692,
+"roles": [
+"record"
+]
+},
+"649": {
+"w": 0.3686,
+"roles": [
+"observed",
+"theory"
+]
+},
+"990": {
+"w": 0.368,
+"roles": [
+"record"
+]
+},
+"492": {
+"w": 0.3673,
+"roles": [
+"theory"
+]
+},
+"107": {
+"w": 0.3667,
+"roles": [
+"theory"
+]
+},
+"1042": {
+"w": 0.3661,
+"roles": [
+"record"
+]
+},
+"181": {
+"w": 0.3655,
+"roles": [
+"theory"
+]
+},
+"303": {
+"w": 0.3648,
+"roles": [
+"theory"
+]
+},
+"33": {
+"w": 0.3642,
+"roles": [
+"specification"
+]
+},
+"380": {
+"w": 0.3636,
+"roles": [
+"observed",
+"theory"
+]
+},
+"735": {
+"w": 0.363,
+"roles": [
+"instrument"
+]
+},
+"1226": {
+"w": 0.3623,
+"roles": [
+"definition",
+"observed"
+]
+},
+"885": {
+"w": 0.3617,
+"roles": [
+"theory"
+]
+},
+"923": {
+"w": 0.3611,
+"roles": [
+"theory"
+]
+},
+"567": {
+"w": 0.3605,
+"roles": [
+"theory"
+]
+},
+"1291": {
+"w": 0.3598,
+"roles": [
+"theory"
+]
+},
+"603": {
+"w": 0.3592,
+"roles": [
+"theory"
+]
+},
+"321": {
+"w": 0.3586,
+"roles": [
+"theory"
+]
+},
+"322": {
+"w": 0.3579,
+"roles": [
+"theory"
+]
+},
+"1360": {
+"w": 0.3573,
+"roles": [
+"observed",
+"theory"
+]
+},
+"806": {
+"w": 0.3567,
+"roles": [
+"theory"
+]
+},
+"765": {
+"w": 0.3561,
+"roles": [
+"theory"
+]
+},
+"767": {
+"w": 0.3554,
+"roles": [
+"specification"
+]
+},
+"919": {
+"w": 0.3548,
+"roles": [
+"theory"
+]
+},
+"517": {
+"w": 0.3542,
+"roles": [
+"theory"
+]
+},
+"281": {
+"w": 0.3536,
+"roles": [
+"theory"
+]
+},
+"117": {
+"w": 0.3529,
+"roles": [
+"record",
+"specification"
+]
+},
+"1524": {
+"w": 0.3523,
+"roles": [
+"theory"
+]
+},
+"1230": {
+"w": 0.3517,
+"roles": [
+"observed",
+"theory"
+]
+},
+"217": {
+"w": 0.3511,
+"roles": [
+"theory"
+]
+},
+"551": {
+"w": 0.3504,
+"roles": [
+"theory"
+]
+},
+"1486": {
+"w": 0.3498,
+"roles": [
+"theory"
+]
+},
+"1031": {
+"w": 0.3492,
+"roles": [
+"theory"
+]
+},
+"366": {
+"w": 0.3486,
+"roles": [
+"case"
+]
+},
+"1117": {
+"w": 0.3479,
+"roles": [
+"specification"
+]
+},
+"527": {
+"w": 0.3473,
+"roles": [
+"specification"
+]
+},
+"552": {
+"w": 0.3467,
+"roles": [
+"theory"
+]
+},
+"413": {
+"w": 0.3461,
+"roles": [
+"case"
+]
+},
+"364": {
+"w": 0.3454,
+"roles": [
+"theory"
+]
+},
+"1129": {
+"w": 0.3448,
+"roles": [
+"theory"
+]
+},
+"644": {
+"w": 0.3442,
+"roles": [
+"specification"
+]
+},
+"1515": {
+"w": 0.3436,
+"roles": [
+"theory"
+]
+},
+"1372": {
+"w": 0.3429,
+"roles": [
+"specification"
+]
+},
+"1320": {
+"w": 0.3423,
+"roles": [
+"theory"
+]
+},
+"525": {
+"w": 0.3417,
+"roles": [
+"theory"
+]
+},
+"139": {
+"w": 0.3411,
+"roles": [
+"specification"
+]
+},
+"378": {
+"w": 0.3404,
+"roles": [
+"case"
+]
+},
+"1304": {
+"w": 0.3398,
+"roles": [
+"theory"
+]
+},
+"1195": {
+"w": 0.3392,
+"roles": [
+"theory"
+]
+},
+"1674": {
+"w": 0.3385,
+"roles": [
+"theory"
+]
+},
+"1667": {
+"w": 0.3379,
+"roles": [
+"theory"
+]
+},
+"515": {
+"w": 0.3373,
+"roles": [
+"specification"
+]
+},
+"235": {
+"w": 0.3367,
+"roles": [
+"theory"
+]
+},
+"1075": {
+"w": 0.336,
+"roles": [
+"specification"
+]
+},
+"1293": {
+"w": 0.3354,
+"roles": [
+"theory"
+]
+},
+"1403": {
+"w": 0.3348,
+"roles": [
+"theory"
+]
+},
+"67": {
+"w": 0.3342,
+"roles": [
+"theory"
+]
+},
+"1363": {
+"w": 0.3335,
+"roles": [
+"specification"
+]
+},
+"832": {
+"w": 0.3329,
+"roles": [
+"theory"
+]
+},
+"431": {
+"w": 0.3323,
+"roles": [
+"theory"
+]
+},
+"26": {
+"w": 0.3317,
+"roles": [
+"observed",
+"specification"
+]
+},
+"237": {
+"w": 0.331,
+"roles": [
+"theory"
+]
+},
+"286": {
+"w": 0.3304,
+"roles": [
+"theory"
+]
+},
+"782": {
+"w": 0.3298,
+"roles": [
+"theory"
+]
+},
+"984": {
+"w": 0.3292,
+"roles": [
+"theory"
+]
+},
+"879": {
+"w": 0.3285,
+"roles": [
+"case"
+]
+},
+"386": {
+"w": 0.3279,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1105": {
+"w": 0.3273,
+"roles": [
+"theory"
+]
+},
+"257": {
+"w": 0.3267,
+"roles": [
+"specification"
+]
+},
+"816": {
+"w": 0.326,
+"roles": [
+"theory"
+]
+},
+"1080": {
+"w": 0.3254,
+"roles": [
+"theory"
+]
+},
+"851": {
+"w": 0.3248,
+"roles": [
+"case"
+]
+},
+"506": {
+"w": 0.3242,
+"roles": [
+"theory"
+]
+},
+"507": {
+"w": 0.3235,
+"roles": [
+"theory"
+]
+},
+"508": {
+"w": 0.3229,
+"roles": [
+"theory"
+]
+},
+"494": {
+"w": 0.3223,
+"roles": [
+"theory"
+]
+},
+"1387": {
+"w": 0.3217,
+"roles": [
+"theory"
+]
+},
+"944": {
+"w": 0.321,
+"roles": [
+"theory"
+]
+},
+"1400": {
+"w": 0.3204,
+"roles": [
+"theory"
+]
+},
+"1322": {
+"w": 0.3198,
+"roles": [
+"theory"
+]
+},
+"895": {
+"w": 0.3191,
+"roles": [
+"theory"
+]
+},
+"370": {
+"w": 0.3185,
+"roles": [
+"theory"
+]
+},
+"1073": {
+"w": 0.3179,
+"roles": [
+"theory"
+]
+},
+"908": {
+"w": 0.3173,
+"roles": [
+"theory"
+]
+},
+"459": {
+"w": 0.3166,
+"roles": [
+"case"
+]
+},
+"1120": {
+"w": 0.316,
+"roles": [
+"theory"
+]
+},
+"394": {
+"w": 0.3154,
+"roles": [
+"specification"
+]
+},
+"1328": {
+"w": 0.3148,
+"roles": [
+"observed",
+"theory"
+]
+},
+"910": {
+"w": 0.3141,
+"roles": [
+"case"
+]
+},
+"962": {
+"w": 0.3135,
+"roles": [
+"theory"
+]
+},
+"896": {
+"w": 0.3129,
+"roles": [
+"theory"
+]
+},
+"897": {
+"w": 0.3123,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1261": {
+"w": 0.3116,
+"roles": [
+"theory"
+]
+},
+"877": {
+"w": 0.311,
+"roles": [
+"instrument"
+]
+},
+"441": {
+"w": 0.3104,
+"roles": [
+"theory"
+]
+},
+"1065": {
+"w": 0.3098,
+"roles": [
+"theory"
+]
+},
+"283": {
+"w": 0.3091,
+"roles": [
+"observed",
+"theory"
+]
+},
+"580": {
+"w": 0.3085,
+"roles": [
+"theory"
+]
+},
+"1145": {
+"w": 0.3079,
+"roles": [
+"theory"
+]
+},
+"415": {
+"w": 0.3073,
+"roles": [
+"observed",
+"specification"
+]
+},
+"918": {
+"w": 0.3066,
+"roles": [
+"specification"
+]
+},
+"1317": {
+"w": 0.306,
+"roles": [
+"theory"
+]
+},
+"1354": {
+"w": 0.3054,
+"roles": [
+"theory"
+]
+},
+"703": {
+"w": 0.3048,
+"roles": [
+"specification"
+]
+},
+"417": {
+"w": 0.3041,
+"roles": [
+"theory"
+]
+},
+"262": {
+"w": 0.3035,
+"roles": [
+"theory"
+]
+},
+"1216": {
+"w": 0.3029,
+"roles": [
+"theory"
+]
+},
+"1484": {
+"w": 0.3023,
+"roles": [
+"observed",
+"theory"
+]
+},
+"724": {
+"w": 0.3016,
+"roles": [
+"case"
+]
+},
+"997": {
+"w": 0.301,
+"roles": [
+"theory"
+]
+},
+"1342": {
+"w": 0.3004,
+"roles": [
+"observed",
+"theory"
+]
+},
+"205": {
+"w": 0.2997,
+"roles": [
+"theory"
+]
+},
+"218": {
+"w": 0.2991,
+"roles": [
+"specification"
+]
+},
+"700": {
+"w": 0.2985,
+"roles": [
+"theory"
+]
+},
+"360": {
+"w": 0.2979,
+"roles": [
+"case"
+]
+},
+"1523": {
+"w": 0.2972,
+"roles": [
+"theory"
+]
+},
+"860": {
+"w": 0.2966,
+"roles": [
+"theory"
+]
+},
+"1417": {
+"w": 0.296,
+"roles": [
+"theory"
+]
+},
+"861": {
+"w": 0.2954,
+"roles": [
+"theory"
+]
+},
+"1551": {
+"w": 0.2947,
+"roles": [
+"case"
+]
+},
+"772": {
+"w": 0.2941,
+"roles": [
+"instrument"
+]
+},
+"290": {
+"w": 0.2935,
+"roles": [
+"theory"
+]
+},
+"125": {
+"w": 0.2929,
+"roles": [
+"theory"
+]
+},
+"1211": {
+"w": 0.2922,
+"roles": [
+"theory"
+]
+},
+"674": {
+"w": 0.2916,
+"roles": [
+"theory"
+]
+},
+"258": {
+"w": 0.291,
+"roles": [
+"specification"
+]
+},
+"1567": {
+"w": 0.2904,
+"roles": [
+"instrument"
+]
+},
+"1672": {
+"w": 0.2897,
+"roles": [
+"instrument"
+]
+},
+"638": {
+"w": 0.2891,
+"roles": [
+"theory"
+]
+},
+"1255": {
+"w": 0.2885,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1603": {
+"w": 0.2879,
+"roles": [
+"theory"
+]
+},
+"1015": {
+"w": 0.2872,
+"roles": [
+"theory"
+]
+},
+"1018": {
+"w": 0.2866,
+"roles": [
+"theory"
+]
+},
+"1019": {
+"w": 0.286,
+"roles": [
+"theory"
+]
+},
+"1020": {
+"w": 0.2854,
+"roles": [
+"theory"
+]
+},
+"1115": {
+"w": 0.2847,
+"roles": [
+"specification"
+]
+},
+"1457": {
+"w": 0.2841,
+"roles": [
+"record"
+]
+},
+"979": {
+"w": 0.2835,
+"roles": [
+"record"
+]
+},
+"1639": {
+"w": 0.2829,
+"roles": [
+"theory"
+]
+},
+"1477": {
+"w": 0.2822,
+"roles": [
+"theory"
+]
+},
+"1047": {
+"w": 0.2816,
+"roles": [
+"theory"
+]
+},
+"1265": {
+"w": 0.281,
+"roles": [
+"theory"
+]
+},
+"1572": {
+"w": 0.2804,
+"roles": [
+"instrument"
+]
+},
+"666": {
+"w": 0.2797,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1254": {
+"w": 0.2791,
+"roles": [
+"theory"
+]
+},
+"1451": {
+"w": 0.2785,
+"roles": [
+"instrument"
+]
+},
+"256": {
+"w": 0.2778,
+"roles": [
+"theory"
+]
+},
+"859": {
+"w": 0.2772,
+"roles": [
+"case"
+]
+},
+"930": {
+"w": 0.2766,
+"roles": [
+"specification"
+]
+},
+"1475": {
+"w": 0.276,
+"roles": [
+"theory"
+]
+},
+"878": {
+"w": 0.2753,
+"roles": [
+"instrument"
+]
+},
+"354": {
+"w": 0.2747,
+"roles": [
+"case"
+]
+},
+"803": {
+"w": 0.2741,
+"roles": [
+"theory"
+]
+},
+"665": {
+"w": 0.2735,
+"roles": [
+"theory"
+]
+},
+"1050": {
+"w": 0.2728,
+"roles": [
+"observed",
+"theory"
+]
+},
+"368": {
+"w": 0.2722,
+"roles": [
+"instrument"
+]
+},
+"301": {
+"w": 0.2716,
+"roles": [
+"case",
+"observed"
+]
+},
+"206": {
+"w": 0.271,
+"roles": [
+"specification"
+]
+},
+"569": {
+"w": 0.2703,
+"roles": [
+"theory"
+]
+},
+"849": {
+"w": 0.2697,
+"roles": [
+"case"
+]
+},
+"455": {
+"w": 0.2691,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"775": {
+"w": 0.2685,
+"roles": [
+"instrument"
+]
+},
+"1448": {
+"w": 0.2678,
+"roles": [
+"theory"
+]
+},
+"1349": {
+"w": 0.2672,
+"roles": [
+"theory"
+]
+},
+"358": {
+"w": 0.2666,
+"roles": [
+"theory"
+]
+},
+"1650": {
+"w": 0.266,
+"roles": [
+"theory"
+]
+},
+"1186": {
+"w": 0.2653,
+"roles": [
+"theory"
+]
+},
+"1241": {
+"w": 0.2647,
+"roles": [
+"specification"
+]
+},
+"626": {
+"w": 0.2641,
+"roles": [
+"observed",
+"theory"
+]
+},
+"412": {
+"w": 0.2635,
+"roles": [
+"theory"
+]
+},
+"1593": {
+"w": 0.2628,
+"roles": [
+"specification"
+]
+},
+"1412": {
+"w": 0.2622,
+"roles": [
+"theory"
+]
+},
+"371": {
+"w": 0.2616,
+"roles": [
+"theory"
+]
+},
+"374": {
+"w": 0.261,
+"roles": [
+"theory"
+]
+},
+"375": {
+"w": 0.2603,
+"roles": [
+"observed",
+"theory"
+]
+},
+"983": {
+"w": 0.2597,
+"roles": [
+"theory"
+]
+},
+"472": {
+"w": 0.2591,
+"roles": [
+"theory"
+]
+},
+"1288": {
+"w": 0.2584,
+"roles": [
+"theory"
+]
+},
+"1289": {
+"w": 0.2578,
+"roles": [
+"theory"
+]
+},
+"1336": {
+"w": 0.2572,
+"roles": [
+"theory"
+]
+},
+"714": {
+"w": 0.2566,
+"roles": [
+"theory"
+]
+},
+"1277": {
+"w": 0.2559,
+"roles": [
+"theory"
+]
+},
+"468": {
+"w": 0.2553,
+"roles": [
+"theory"
+]
+},
+"381": {
+"w": 0.2547,
+"roles": [
+"specification"
+]
+},
+"1167": {
+"w": 0.2541,
+"roles": [
+"theory"
+]
+},
+"965": {
+"w": 0.2534,
+"roles": [
+"theory"
+]
+},
+"668": {
+"w": 0.2528,
+"roles": [
+"theory"
+]
+},
+"605": {
+"w": 0.2522,
+"roles": [
+"case"
+]
+},
+"1227": {
+"w": 0.2516,
+"roles": [
+"definition"
+]
+},
+"1334": {
+"w": 0.2509,
+"roles": [
+"theory"
+]
+},
+"1321": {
+"w": 0.2503,
+"roles": [
+"theory"
+]
+},
+"1339": {
+"w": 0.2497,
+"roles": [
+"theory"
+]
+},
+"1597": {
+"w": 0.2491,
+"roles": [
+"theory"
+]
+},
+"249": {
+"w": 0.2484,
+"roles": [
+"theory"
+]
+},
+"438": {
+"w": 0.2478,
+"roles": [
+"theory"
+]
+},
+"1142": {
+"w": 0.2472,
+"roles": [
+"theory"
+]
+},
+"1007": {
+"w": 0.2466,
+"roles": [
+"observed",
+"theory"
+]
+},
+"344": {
+"w": 0.2459,
+"roles": [
+"theory"
+]
+},
+"1111": {
+"w": 0.2453,
+"roles": [
+"theory"
+]
+},
+"1284": {
+"w": 0.2447,
+"roles": [
+"theory"
+]
+},
+"1542": {
+"w": 0.2441,
+"roles": [
+"theory"
+]
+},
+"1144": {
+"w": 0.2434,
+"roles": [
+"theory"
+]
+},
+"1228": {
+"w": 0.2428,
+"roles": [
+"definition"
+]
+},
+"824": {
+"w": 0.2422,
+"roles": [
+"instrument",
+"record"
+]
+},
+"1159": {
+"w": 0.2416,
+"roles": [
+"theory"
+]
+},
+"1531": {
+"w": 0.2409,
+"roles": [
+"theory"
+]
+},
+"1004": {
+"w": 0.2403,
+"roles": [
+"theory"
+]
+},
+"1376": {
+"w": 0.2397,
+"roles": [
+"observed",
+"specification"
+]
+},
+"1266": {
+"w": 0.239,
+"roles": [
+"theory"
+]
+},
+"79": {
+"w": 0.2384,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1260": {
+"w": 0.2378,
+"roles": [
+"theory"
+]
+},
+"1287": {
+"w": 0.2372,
+"roles": [
+"theory"
+]
+},
+"549": {
+"w": 0.2365,
+"roles": [
+"theory"
+]
+},
+"512": {
+"w": 0.2359,
+"roles": [
+"theory"
+]
+},
+"1030": {
+"w": 0.2353,
+"roles": [
+"theory"
+]
+},
+"211": {
+"w": 0.2347,
+"roles": [
+"instrument"
+]
+},
+"23": {
+"w": 0.234,
+"roles": [
+"observed",
+"theory"
+]
+},
+"34": {
+"w": 0.2334,
+"roles": [
+"theory"
+]
+},
+"1426": {
+"w": 0.2328,
+"roles": [
+"case",
+"observed"
+]
+},
+"726": {
+"w": 0.2322,
+"roles": [
+"theory"
+]
+},
+"395": {
+"w": 0.2315,
+"roles": [
+"specification"
+]
+},
+"1338": {
+"w": 0.2309,
+"roles": [
+"theory"
+]
+},
+"575": {
+"w": 0.2303,
+"roles": [
+"theory"
+]
+},
+"292": {
+"w": 0.2297,
+"roles": [
+"theory"
+]
+},
+"1332": {
+"w": 0.229,
+"roles": [
+"theory"
+]
+},
+"1041": {
+"w": 0.2284,
+"roles": [
+"case"
+]
+},
+"1043": {
+"w": 0.2278,
+"roles": [
+"record"
+]
+},
+"1366": {
+"w": 0.2272,
+"roles": [
+"theory"
+]
+},
+"911": {
+"w": 0.2265,
+"roles": [
+"theory"
+]
+},
+"1476": {
+"w": 0.2259,
+"roles": [
+"theory"
+]
+},
+"1352": {
+"w": 0.2253,
+"roles": [
+"theory"
+]
+},
+"1511": {
+"w": 0.2247,
+"roles": [
+"theory"
+]
+},
+"241": {
+"w": 0.224,
+"roles": [
+"record"
+]
+},
+"1213": {
+"w": 0.2234,
+"roles": [
+"definition",
+"observed"
+]
+},
+"238": {
+"w": 0.2228,
+"roles": [
+"theory"
+]
+},
+"1218": {
+"w": 0.2222,
+"roles": [
+"theory"
+]
+},
+"361": {
+"w": 0.2215,
+"roles": [
+"record"
+]
+},
+"1295": {
+"w": 0.2209,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"379": {
+"w": 0.2203,
+"roles": [
+"theory"
+]
+},
+"1306": {
+"w": 0.2196,
+"roles": [
+"theory"
+]
+},
+"902": {
+"w": 0.219,
+"roles": [
+"theory"
+]
+},
+"764": {
+"w": 0.2184,
+"roles": [
+"observed",
+"theory"
+]
+},
+"907": {
+"w": 0.2178,
+"roles": [
+"case"
+]
+},
+"1098": {
+"w": 0.2171,
+"roles": [
+"case"
+]
+},
+"251": {
+"w": 0.2165,
+"roles": [
+"theory"
+]
+},
+"593": {
+"w": 0.2159,
+"roles": [
+"theory"
+]
+},
+"1388": {
+"w": 0.2153,
+"roles": [
+"instrument"
+]
+},
+"245": {
+"w": 0.2146,
+"roles": [
+"theory"
+]
+},
+"620": {
+"w": 0.214,
+"roles": [
+"theory"
+]
+},
+"1553": {
+"w": 0.2134,
+"roles": [
+"theory"
+]
+},
+"1532": {
+"w": 0.2128,
+"roles": [
+"theory"
+]
+},
+"480": {
+"w": 0.2121,
+"roles": [
+"observed",
+"theory"
+]
+},
+"254": {
+"w": 0.2115,
+"roles": [
+"theory"
+]
+},
+"1203": {
+"w": 0.2109,
+"roles": [
+"theory"
+]
+},
+"408": {
+"w": 0.2103,
+"roles": [
+"theory"
+]
+},
+"1276": {
+"w": 0.2096,
+"roles": [
+"theory"
+]
+},
+"1108": {
+"w": 0.209,
+"roles": [
+"theory"
+]
+},
+"300": {
+"w": 0.2084,
+"roles": [
+"theory"
+]
+},
+"1164": {
+"w": 0.2078,
+"roles": [
+"theory"
+]
+},
+"458": {
+"w": 0.2071,
+"roles": [
+"case"
+]
+},
+"1078": {
+"w": 0.2065,
+"roles": [
+"theory"
+]
+},
+"1109": {
+"w": 0.2059,
+"roles": [
+"theory"
+]
+},
+"1452": {
+"w": 0.2053,
+"roles": [
+"case"
+]
+},
+"1454": {
+"w": 0.2046,
+"roles": [
+"theory"
+]
+},
+"1064": {
+"w": 0.204,
+"roles": [
+"theory"
+]
+},
+"276": {
+"w": 0.2034,
+"roles": [
+"specification"
+]
+},
+"278": {
+"w": 0.2028,
+"roles": [
+"theory"
+]
+},
+"284": {
+"w": 0.2021,
+"roles": [
+"observed",
+"specification"
+]
+},
+"1269": {
+"w": 0.2015,
+"roles": [
+"specification"
+]
+},
+"1548": {
+"w": 0.2009,
+"roles": [
+"theory"
+]
+},
+"581": {
+"w": 0.2003,
+"roles": [
+"theory"
+]
+},
+"881": {
+"w": 0.1996,
+"roles": [
+"theory"
+]
+},
+"1112": {
+"w": 0.199,
+"roles": [
+"theory"
+]
+},
+"1113": {
+"w": 0.1984,
+"roles": [
+"theory"
+]
+},
+"1533": {
+"w": 0.1977,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"1271": {
+"w": 0.1971,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1498": {
+"w": 0.1965,
+"roles": [
+"specification"
+]
+},
+"432": {
+"w": 0.1959,
+"roles": [
+"theory"
+]
+},
+"1494": {
+"w": 0.1952,
+"roles": [
+"theory"
+]
+},
+"1106": {
+"w": 0.1946,
+"roles": [
+"theory"
+]
+},
+"886": {
+"w": 0.194,
+"roles": [
+"theory"
+]
+},
+"1286": {
+"w": 0.1934,
+"roles": [
+"specification"
+]
+},
+"1335": {
+"w": 0.1927,
+"roles": [
+"theory"
+]
+},
+"1147": {
+"w": 0.1921,
+"roles": [
+"theory"
+]
+},
+"1198": {
+"w": 0.1915,
+"roles": [
+"record"
+]
+},
+"1156": {
+"w": 0.1909,
+"roles": [
+"theory"
+]
+},
+"397": {
+"w": 0.1902,
+"roles": [
+"theory"
+]
+},
+"503": {
+"w": 0.1896,
+"roles": [
+"instrument"
+]
+},
+"439": {
+"w": 0.189,
+"roles": [
+"definition"
+]
+},
+"1163": {
+"w": 0.1884,
+"roles": [
+"theory"
+]
+},
+"1279": {
+"w": 0.1877,
+"roles": [
+"theory"
+]
+},
+"841": {
+"w": 0.1871,
+"roles": [
+"definition"
+]
+},
+"1398": {
+"w": 0.1865,
+"roles": [
+"observed",
+"record"
+]
+},
+"483": {
+"w": 0.1859,
+"roles": [
+"specification"
+]
+},
+"1596": {
+"w": 0.1852,
+"roles": [
+"theory"
+]
+},
+"750": {
+"w": 0.1846,
+"roles": [
+"theory"
+]
+},
+"343": {
+"w": 0.184,
+"roles": [
+"case"
+]
+},
+"1301": {
+"w": 0.1834,
+"roles": [
+"theory"
+]
+},
+"1414": {
+"w": 0.1827,
+"roles": [
+"observed",
+"specification"
+]
+},
+"547": {
+"w": 0.1821,
+"roles": [
+"specification"
+]
+},
+"553": {
+"w": 0.1815,
+"roles": [
+"observed",
+"theory"
+]
+},
+"554": {
+"w": 0.1809,
+"roles": [
+"theory"
+]
+},
+"182": {
+"w": 0.1802,
+"roles": [
+"theory"
+]
+},
+"1456": {
+"w": 0.1796,
+"roles": [
+"theory"
+]
+},
+"960": {
+"w": 0.179,
+"roles": [
+"specification"
+]
+},
+"1347": {
+"w": 0.1783,
+"roles": [
+"theory"
+]
+},
+"1157": {
+"w": 0.1777,
+"roles": [
+"specification"
+]
+},
+"1520": {
+"w": 0.1771,
+"roles": [
+"case"
+]
+},
+"348": {
+"w": 0.1765,
+"roles": [
+"case",
+"observed"
+]
+},
+"1000": {
+"w": 0.1758,
+"roles": [
+"theory"
+]
+},
+"1455": {
+"w": 0.1752,
+"roles": [
+"record"
+]
+},
+"1153": {
+"w": 0.1746,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1102": {
+"w": 0.174,
+"roles": [
+"theory"
+]
+},
+"442": {
+"w": 0.1733,
+"roles": [
+"theory"
+]
+},
+"1487": {
+"w": 0.1727,
+"roles": [
+"theory"
+]
+},
+"844": {
+"w": 0.1721,
+"roles": [
+"theory"
+]
+},
+"1557": {
+"w": 0.1715,
+"roles": [
+"instrument"
+]
+},
+"396": {
+"w": 0.1708,
+"roles": [
+"theory"
+]
+},
+"539": {
+"w": 0.1702,
+"roles": [
+"observed",
+"theory"
+]
+},
+"602": {
+"w": 0.1696,
+"roles": [
+"case"
+]
+},
+"647": {
+"w": 0.169,
+"roles": [
+"theory"
+]
+},
+"648": {
+"w": 0.1683,
+"roles": [
+"theory"
+]
+},
+"1016": {
+"w": 0.1677,
+"roles": [
+"theory"
+]
+},
+"1017": {
+"w": 0.1671,
+"roles": [
+"theory"
+]
+},
+"485": {
+"w": 0.1665,
+"roles": [
+"theory"
+]
+},
+"1057": {
+"w": 0.1658,
+"roles": [
+"theory"
+]
+},
+"867": {
+"w": 0.1652,
+"roles": [
+"theory"
+]
+},
+"495": {
+"w": 0.1646,
+"roles": [
+"theory"
+]
+},
+"1212": {
+"w": 0.164,
+"roles": [
+"instrument"
+]
+},
+"1346": {
+"w": 0.1633,
+"roles": [
+"specification"
+]
+},
+"372": {
+"w": 0.1627,
+"roles": [
+"theory"
+]
+},
+"373": {
+"w": 0.1621,
+"roles": [
+"theory"
+]
+},
+"282": {
+"w": 0.1615,
+"roles": [
+"case"
+]
+},
+"1193": {
+"w": 0.1608,
+"roles": [
+"observed",
+"theory"
+]
+},
+"882": {
+"w": 0.1602,
+"roles": [
+"theory"
+]
+},
+"616": {
+"w": 0.1596,
+"roles": [
+"theory"
+]
+},
+"1126": {
+"w": 0.1589,
+"roles": [
+"theory"
+]
+},
+"1296": {
+"w": 0.1583,
+"roles": [
+"theory"
+]
+},
+"555": {
+"w": 0.1577,
+"roles": [
+"observed",
+"theory"
+]
+},
+"403": {
+"w": 0.1571,
+"roles": [
+"theory"
+]
+},
+"421": {
+"w": 0.1564,
+"roles": [
+"specification"
+]
+},
+"963": {
+"w": 0.1558,
+"roles": [
+"theory"
+]
+},
+"1268": {
+"w": 0.1552,
+"roles": [
+"observed",
+"theory"
+]
+},
+"894": {
+"w": 0.1546,
+"roles": [
+"theory"
+]
+},
+"1323": {
+"w": 0.1539,
+"roles": [
+"theory"
+]
+},
+"430": {
+"w": 0.1533,
+"roles": [
+"theory"
+]
+},
+"1253": {
+"w": 0.1527,
+"roles": [
+"theory"
+]
+},
+"1290": {
+"w": 0.1521,
+"roles": [
+"theory"
+]
+},
+"434": {
+"w": 0.1514,
+"roles": [
+"instrument"
+]
+},
+"909": {
+"w": 0.1508,
+"roles": [
+"instrument"
+]
+},
+"1341": {
+"w": 0.1502,
+"roles": [
+"theory"
+]
+},
+"1602": {
+"w": 0.1496,
+"roles": [
+"specification"
+]
+},
+"279": {
+"w": 0.1489,
+"roles": [
+"specification"
+]
+},
+"280": {
+"w": 0.1483,
+"roles": [
+"theory"
+]
+},
+"1309": {
+"w": 0.1477,
+"roles": [
+"theory"
+]
+},
+"1310": {
+"w": 0.1471,
+"roles": [
+"theory"
+]
+},
+"756": {
+"w": 0.1464,
+"roles": [
+"theory"
+]
+},
+"407": {
+"w": 0.1458,
+"roles": [
+"case"
+]
+},
+"1282": {
+"w": 0.1452,
+"roles": [
+"theory"
+]
+},
+"1283": {
+"w": 0.1446,
+"roles": [
+"theory"
+]
+},
+"1285": {
+"w": 0.1439,
+"roles": [
+"specification"
+]
+},
+"1166": {
+"w": 0.1433,
+"roles": [
+"theory"
+]
+},
+"865": {
+"w": 0.1427,
+"roles": [
+"theory"
+]
+},
+"1415": {
+"w": 0.1421,
+"roles": [
+"case",
+"observed"
+]
+},
+"758": {
+"w": 0.1414,
+"roles": [
+"theory"
+]
+},
+"1558": {
+"w": 0.1408,
+"roles": [
+"theory"
+]
+},
+"1060": {
+"w": 0.1402,
+"roles": [
+"theory"
+]
+},
+"778": {
+"w": 0.1395,
+"roles": [
+"theory"
+]
+},
+"779": {
+"w": 0.1389,
+"roles": [
+"observed",
+"theory"
+]
+},
+"864": {
+"w": 0.1383,
+"roles": [
+"theory"
+]
+},
+"1340": {
+"w": 0.1377,
+"roles": [
+"theory"
+]
+},
+"1150": {
+"w": 0.137,
+"roles": [
+"theory"
+]
+},
+"1138": {
+"w": 0.1364,
+"roles": [
+"theory"
+]
+},
+"226": {
+"w": 0.1358,
+"roles": [
+"theory"
+]
+},
+"635": {
+"w": 0.1352,
+"roles": [
+"theory"
+]
+},
+"840": {
+"w": 0.1345,
+"roles": [
+"definition"
+]
+},
+"1416": {
+"w": 0.1339,
+"roles": [
+"case"
+]
+},
+"452": {
+"w": 0.1333,
+"roles": [
+"theory"
+]
+},
+"453": {
+"w": 0.1327,
+"roles": [
+"theory"
+]
+},
+"454": {
+"w": 0.132,
+"roles": [
+"theory"
+]
+},
+"456": {
+"w": 0.1314,
+"roles": [
+"record"
+]
+},
+"1318": {
+"w": 0.1308,
+"roles": [
+"theory"
+]
+},
+"629": {
+"w": 0.1302,
+"roles": [
+"specification"
+]
+},
+"447": {
+"w": 0.1295,
+"roles": [
+"theory"
+]
+},
+"667": {
+"w": 0.1289,
+"roles": [
+"theory"
+]
+},
+"1236": {
+"w": 0.1283,
+"roles": [
+"theory"
+]
+},
+"270": {
+"w": 0.1277,
+"roles": [
+"instrument"
+]
+},
+"1418": {
+"w": 0.127,
+"roles": [
+"case"
+]
+},
+"504": {
+"w": 0.1264,
+"roles": [
+"theory"
+]
+},
+"1219": {
+"w": 0.1258,
+"roles": [
+"theory"
+]
+},
+"1231": {
+"w": 0.1252,
+"roles": [
+"theory"
+]
+},
+"1273": {
+"w": 0.1245,
+"roles": [
+"theory"
+]
+},
+"1493": {
+"w": 0.1239,
+"roles": [
+"theory"
+]
+},
+"409": {
+"w": 0.1233,
+"roles": [
+"theory"
+]
+},
+"410": {
+"w": 0.1227,
+"roles": [
+"case"
+]
+},
+"858": {
+"w": 0.122,
+"roles": [
+"theory"
+]
+},
+"1124": {
+"w": 0.1214,
+"roles": [
+"theory"
+]
+},
+"883": {
+"w": 0.1208,
+"roles": [
+"instrument"
+]
+},
+"905": {
+"w": 0.1202,
+"roles": [
+"theory"
+]
+},
+"216": {
+"w": 0.1195,
+"roles": [
+"case"
+]
+},
+"1324": {
+"w": 0.1189,
+"roles": [
+"theory"
+]
+},
+"1235": {
+"w": 0.1183,
+"roles": [
+"theory"
+]
+},
+"1344": {
+"w": 0.1176,
+"roles": [
+"theory"
+]
+},
+"1345": {
+"w": 0.117,
+"roles": [
+"definition"
+]
+},
+"1563": {
+"w": 0.1164,
+"roles": [
+"theory"
+]
+},
+"1214": {
+"w": 0.1158,
+"roles": [
+"record"
+]
+},
+"466": {
+"w": 0.1151,
+"roles": [
+"theory"
+]
+},
+"688": {
+"w": 0.1145,
+"roles": [
+"case"
+]
+},
+"440": {
+"w": 0.1139,
+"roles": [
+"theory"
+]
+},
+"798": {
+"w": 0.1133,
+"roles": [
+"theory"
+]
+},
+"1165": {
+"w": 0.1126,
+"roles": [
+"theory"
+]
+},
+"880": {
+"w": 0.112,
+"roles": [
+"theory"
+]
+},
+"669": {
+"w": 0.1114,
+"roles": [
+"theory"
+]
+},
+"1497": {
+"w": 0.1108,
+"roles": [
+"theory"
+]
+},
+"1481": {
+"w": 0.1101,
+"roles": [
+"instrument"
+]
+},
+"1609": {
+"w": 0.1095,
+"roles": [
+"instrument",
+"observed"
+]
+},
+"1610": {
+"w": 0.1089,
+"roles": [
+"instrument"
+]
+},
+"1662": {
+"w": 0.1083,
+"roles": [
+"theory"
+]
+},
+"1181": {
+"w": 0.1076,
+"roles": [
+"specification"
+]
+},
+"1351": {
+"w": 0.107,
+"roles": [
+"specification"
+]
+},
+"388": {
+"w": 0.1064,
+"roles": [
+"theory"
+]
+},
+"1143": {
+"w": 0.1058,
+"roles": [
+"theory"
+]
+},
+"1257": {
+"w": 0.1051,
+"roles": [
+"theory"
+]
+},
+"423": {
+"w": 0.1045,
+"roles": [
+"instrument"
+]
+},
+"1125": {
+"w": 0.1039,
+"roles": [
+"theory"
+]
+},
+"839": {
+"w": 0.1033,
+"roles": [
+"theory"
+]
+},
+"219": {
+"w": 0.1026,
+"roles": [
+"theory"
+]
+},
+"220": {
+"w": 0.102,
+"roles": [
+"case"
+]
+},
+"1264": {
+"w": 0.1014,
+"roles": [
+"theory"
+]
+},
+"862": {
+"w": 0.1008,
+"roles": [
+"instrument"
+]
+},
+"1329": {
+"w": 0.1001,
+"roles": [
+"theory"
+]
+},
+"497": {
+"w": 0.0995,
+"roles": [
+"observed",
+"theory"
+]
+},
+"389": {
+"w": 0.0989,
+"roles": [
+"theory"
+]
+},
+"1206": {
+"w": 0.0982,
+"roles": [
+"observed",
+"theory"
+]
+},
+"433": {
+"w": 0.0976,
+"roles": [
+"theory"
+]
+},
+"1172": {
+"w": 0.097,
+"roles": [
+"specification"
+]
+},
+"532": {
+"w": 0.0964,
+"roles": [
+"case",
+"observed"
+]
+},
+"1294": {
+"w": 0.0957,
+"roles": [
+"theory"
+]
+},
+"1059": {
+"w": 0.0951,
+"roles": [
+"theory"
+]
+},
+"1453": {
+"w": 0.0945,
+"roles": [
+"theory"
+]
+},
+"429": {
+"w": 0.0939,
+"roles": [
+"case"
+]
+},
+"1495": {
+"w": 0.0932,
+"roles": [
+"instrument"
+]
+},
+"411": {
+"w": 0.0926,
+"roles": [
+"case"
+]
+},
+"744": {
+"w": 0.092,
+"roles": [
+"case"
+]
+},
+"1592": {
+"w": 0.0914,
+"roles": [
+"case"
+]
+},
+"268": {
+"w": 0.0907,
+"roles": [
+"theory"
+]
+},
+"1267": {
+"w": 0.0901,
+"roles": [
+"theory"
+]
+},
+"404": {
+"w": 0.0895,
+"roles": [
+"theory"
+]
+},
+"405": {
+"w": 0.0889,
+"roles": [
+"theory"
+]
+},
+"1252": {
+"w": 0.0882,
+"roles": [
+"theory"
+]
+},
+"964": {
+"w": 0.0876,
+"roles": [
+"theory"
+]
+},
+"630": {
+"w": 0.087,
+"roles": [
+"specification"
+]
+},
+"742": {
+"w": 0.0864,
+"roles": [
+"theory"
+]
+},
+"259": {
+"w": 0.0857,
+"roles": [
+"theory"
+]
+},
+"1482": {
+"w": 0.0851,
+"roles": [
+"instrument"
+]
+},
+"1385": {
+"w": 0.0845,
+"roles": [
+"theory"
+]
+},
+"534": {
+"w": 0.0839,
+"roles": [
+"theory"
+]
+},
+"1297": {
+"w": 0.0832,
+"roles": [
+"theory"
+]
+},
+"1259": {
+"w": 0.0826,
+"roles": [
+"instrument"
+]
+},
+"1512": {
+"w": 0.082,
+"roles": [
+"theory"
+]
+},
+"1123": {
+"w": 0.0814,
+"roles": [
+"theory"
+]
+},
+"1191": {
+"w": 0.0807,
+"roles": [
+"observed",
+"theory"
+]
+},
+"762": {
+"w": 0.0801,
+"roles": [
+"case"
+]
+},
+"1006": {
+"w": 0.0795,
+"roles": [
+"theory"
+]
+},
+"66": {
+"w": 0.0788,
+"roles": [
+"specification"
+]
+},
+"1314": {
+"w": 0.0782,
+"roles": [
+"theory"
+]
+},
+"183": {
+"w": 0.0776,
+"roles": [
+"theory"
+]
+},
+"1176": {
+"w": 0.077,
+"roles": [
+"theory"
+]
+},
+"1197": {
+"w": 0.0763,
+"roles": [
+"theory"
+]
+},
+"1160": {
+"w": 0.0757,
+"roles": [
+"specification"
+]
+},
+"1249": {
+"w": 0.0751,
+"roles": [
+"theory"
+]
+},
+"1131": {
+"w": 0.0745,
+"roles": [
+"specification"
+]
+},
+"808": {
+"w": 0.0738,
+"roles": [
+"theory"
+]
+},
+"809": {
+"w": 0.0732,
+"roles": [
+"theory"
+]
+},
+"810": {
+"w": 0.0726,
+"roles": [
+"theory"
+]
+},
+"811": {
+"w": 0.072,
+"roles": [
+"theory"
+]
+},
+"812": {
+"w": 0.0713,
+"roles": [
+"theory"
+]
+},
+"813": {
+"w": 0.0707,
+"roles": [
+"theory"
+]
+},
+"814": {
+"w": 0.0701,
+"roles": [
+"theory"
+]
+},
+"815": {
+"w": 0.0695,
+"roles": [
+"theory"
+]
+},
+"1337": {
+"w": 0.0688,
+"roles": [
+"theory"
+]
+},
+"77": {
+"w": 0.0682,
+"roles": [
+"record"
+]
+},
+"1137": {
+"w": 0.0676,
+"roles": [
+"theory"
+]
+},
+"1278": {
+"w": 0.067,
+"roles": [
+"theory"
+]
+},
+"1103": {
+"w": 0.0663,
+"roles": [
+"specification"
+]
+},
+"265": {
+"w": 0.0657,
+"roles": [
+"theory"
+]
+},
+"663": {
+"w": 0.0651,
+"roles": [
+"theory"
+]
+},
+"1319": {
+"w": 0.0645,
+"roles": [
+"record"
+]
+},
+"761": {
+"w": 0.0638,
+"roles": [
+"record"
+]
+},
+"1356": {
+"w": 0.0632,
+"roles": [
+"theory"
+]
+},
+"1358": {
+"w": 0.0626,
+"roles": [
+"theory"
+]
+},
+"114": {
+"w": 0.062,
+"roles": [
+"theory"
+]
+},
+"1096": {
+"w": 0.0613,
+"roles": [
+"case"
+]
+},
+"1263": {
+"w": 0.0607,
+"roles": [
+"theory"
+]
+},
+"1122": {
+"w": 0.0601,
+"roles": [
+"theory"
+]
+},
+"1037": {
+"w": 0.0594,
+"roles": [
+"theory"
+]
+},
+"399": {
+"w": 0.0588,
+"roles": [
+"theory"
+]
+},
+"712": {
+"w": 0.0582,
+"roles": [
+"theory"
+]
+},
+"595": {
+"w": 0.0576,
+"roles": [
+"theory"
+]
+},
+"1139": {
+"w": 0.0569,
+"roles": [
+"theory"
+]
+},
+"393": {
+"w": 0.0563,
+"roles": [
+"theory"
+]
+},
+"1280": {
+"w": 0.0557,
+"roles": [
+"theory"
+]
+},
+"1281": {
+"w": 0.0551,
+"roles": [
+"theory"
+]
+},
+"1292": {
+"w": 0.0544,
+"roles": [
+"theory"
+]
+},
+"1382": {
+"w": 0.0538,
+"roles": [
+"theory"
+]
+},
+"1383": {
+"w": 0.0532,
+"roles": [
+"theory"
+]
+},
+"110": {
+"w": 0.0526,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1062": {
+"w": 0.0519,
+"roles": [
+"theory"
+]
+},
+"866": {
+"w": 0.0513,
+"roles": [
+"theory"
+]
+},
+"1447": {
+"w": 0.0507,
+"roles": [
+"case"
+]
+},
+"1130": {
+"w": 0.0501,
+"roles": [
+"theory"
+]
+},
+"1029": {
+"w": 0.0494,
+"roles": [
+"theory"
+]
+},
+"1442": {
+"w": 0.0488,
+"roles": [
+"theory"
+]
+},
+"236": {
+"w": 0.0482,
+"roles": [
+"theory"
+]
+},
+"275": {
+"w": 0.0476,
+"roles": [
+"case"
+]
+},
+"277": {
+"w": 0.0469,
+"roles": [
+"theory"
+]
+},
+"1104": {
+"w": 0.0463,
+"roles": [
+"specification"
+]
+},
+"1128": {
+"w": 0.0457,
+"roles": [
+"theory"
+]
+},
+"487": {
+"w": 0.0451,
+"roles": [
+"theory"
+]
+},
+"1300": {
+"w": 0.0444,
+"roles": [
+"theory"
+]
+},
+"1305": {
+"w": 0.0438,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1298": {
+"w": 0.0432,
+"roles": [
+"theory"
+]
+},
+"1299": {
+"w": 0.0426,
+"roles": [
+"theory"
+]
+},
+"1307": {
+"w": 0.0419,
+"roles": [
+"specification"
+]
+},
+"1182": {
+"w": 0.0413,
+"roles": [
+"record",
+"specification"
+]
+},
+"1325": {
+"w": 0.0407,
+"roles": [
+"theory"
+]
+},
+"600": {
+"w": 0.0401,
+"roles": [
+"theory"
+]
+},
+"1514": {
+"w": 0.0394,
+"roles": [
+"record"
+]
+},
+"1566": {
+"w": 0.0388,
+"roles": [
+"theory"
+]
+},
+"1308": {
+"w": 0.0382,
+"roles": [
+"theory"
+]
+},
+"446": {
+"w": 0.0375,
+"roles": [
+"theory"
+]
+},
+"999": {
+"w": 0.0369,
+"roles": [
+"theory"
+]
+},
+"747": {
+"w": 0.0363,
+"roles": [
+"theory"
+]
+},
+"537": {
+"w": 0.0357,
+"roles": [
+"specification"
+]
+},
+"538": {
+"w": 0.035,
+"roles": [
+"theory"
+]
+},
+"1074": {
+"w": 0.0344,
+"roles": [
+"theory"
+]
+},
+"1136": {
+"w": 0.0338,
+"roles": [
+"theory"
+]
+},
+"1374": {
+"w": 0.0332,
+"roles": [
+"theory"
+]
+},
+"1204": {
+"w": 0.0325,
+"roles": [
+"theory"
+]
+},
+"1522": {
+"w": 0.0319,
+"roles": [
+"theory"
+]
+},
+"1508": {
+"w": 0.0313,
+"roles": [
+"theory"
+]
+},
+"488": {
+"w": 0.0307,
+"roles": [
+"theory"
+]
+},
+"489": {
+"w": 0.03,
+"roles": [
+"theory"
+]
+},
+"490": {
+"w": 0.0294,
+"roles": [
+"theory"
+]
+},
+"664": {
+"w": 0.0288,
+"roles": [
+"theory"
+]
+},
+"1192": {
+"w": 0.0282,
+"roles": [
+"theory"
+]
+},
+"1598": {
+"w": 0.0275,
+"roles": [
+"theory"
+]
+},
+"723": {
+"w": 0.0269,
+"roles": [
+"case"
+]
+},
+"1169": {
+"w": 0.0263,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1133": {
+"w": 0.0257,
+"roles": [
+"theory"
+]
+},
+"222": {
+"w": 0.025,
+"roles": [
+"theory"
+]
+},
+"479": {
+"w": 0.0244,
+"roles": [
+"instrument"
+]
+},
+"777": {
+"w": 0.0238,
+"roles": [
+"theory"
+]
+},
+"1421": {
+"w": 0.0232,
+"roles": [
+"case"
+]
+},
+"355": {
+"w": 0.0225,
+"roles": [
+"case"
+]
+},
+"391": {
+"w": 0.0219,
+"roles": [
+"case"
+]
+},
+"392": {
+"w": 0.0213,
+"roles": [
+"specification"
+]
+},
+"957": {
+"w": 0.0207,
+"roles": [
+"theory"
+]
+},
+"836": {
+"w": 0.02,
+"roles": [
+"observed",
+"record"
+]
+},
+"1097": {
+"w": 0.0194,
+"roles": [
+"theory"
+]
+},
+"1513": {
+"w": 0.0188,
+"roles": [
+"theory"
+]
+},
+"272": {
+"w": 0.0181,
+"roles": [
+"theory"
+]
+},
+"383": {
+"w": 0.0175,
+"roles": [
+"case"
+]
+},
+"639": {
+"w": 0.0169,
+"roles": [
+"theory"
+]
+},
+"420": {
+"w": 0.0163,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1141": {
+"w": 0.0156,
+"roles": [
+"theory"
+]
+},
+"1311": {
+"w": 0.015,
+"roles": [
+"observed",
+"theory"
+]
+},
+"1313": {
+"w": 0.0144,
+"roles": [
+"theory"
+]
+},
+"1149": {
+"w": 0.0138,
+"roles": [
+"theory"
+]
+},
+"1146": {
+"w": 0.0131,
+"roles": [
+"theory"
+]
+},
+"414": {
+"w": 0.0125,
+"roles": [
+"theory"
+]
+},
+"511": {
+"w": 0.0119,
+"roles": [
+"case"
+]
+},
+"1158": {
+"w": 0.0113,
+"roles": [
+"specification"
+]
+},
+"904": {
+"w": 0.0106,
+"roles": [
+"specification"
+]
+},
+"1148": {
+"w": 0.01,
+"roles": [
+"theory"
+]
+},
+"1134": {
+"w": 0.0094,
+"roles": [
+"specification"
+]
+},
+"1499": {
+"w": 0.0088,
+"roles": [
+"theory"
+]
+},
+"1056": {
+"w": 0.0081,
+"roles": [
+"theory"
+]
+},
+"733": {
+"w": 0.0075,
+"roles": [
+"theory"
+]
+},
+"1135": {
+"w": 0.0069,
+"roles": [
+"theory"
+]
+},
+"1500": {
+"w": 0.0063,
+"roles": [
+"theory"
+]
+},
+"1501": {
+"w": 0.0056,
+"roles": [
+"theory"
+]
+},
+"1502": {
+"w": 0.005,
+"roles": [
+"theory"
+]
+},
+"1503": {
+"w": 0.0044,
+"roles": [
+"theory"
+]
+},
+"1504": {
+"w": 0.0038,
+"roles": [
+"theory"
+]
+},
+"1505": {
+"w": 0.0031,
+"roles": [
+"theory"
+]
+},
+"1506": {
+"w": 0.0025,
+"roles": [
+"theory"
+]
+},
+"1507": {
+"w": 0.0019,
+"roles": [
+"theory"
+]
+},
+"1509": {
+"w": 0.0013,
+"roles": [
+"theory"
+]
+},
+"1510": {
+"w": 0.0006,
+"roles": [
+"theory"
+]
+},
+"70": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"209": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"267": {
+"w": 0.0,
+"roles": [
+"instrument"
+]
+},
+"285": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"287": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"293": {
+"w": 0.0,
+"roles": [
+"case",
+"observed"
+]
+},
+"294": {
+"w": 0.0,
+"roles": [
+"case"
+]
+},
+"309": {
+"w": 0.0,
+"roles": [
+"case"
+]
+},
+"312": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"318": {
+"w": 0.0,
+"roles": [
+"case"
+]
+},
+"340": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"347": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"401": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"419": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"428": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"435": {
+"w": 0.0,
+"roles": [
+"case"
+]
+},
+"443": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"448": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"465": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"467": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"469": {
+"w": 0.0,
+"roles": [
+"observed",
+"theory"
+]
+},
+"470": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"484": {
+"w": 0.0,
+"roles": [
+"observed",
+"theory"
+]
+},
+"491": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"582": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"594": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"601": {
+"w": 0.0,
+"roles": [
+"observed",
+"theory"
+]
+},
+"606": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"607": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"609": {
+"w": 0.0,
+"roles": [
+"specification"
+]
+},
+"613": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"619": {
+"w": 0.0,
+"roles": [
+"instrument",
+"specification"
+]
+},
+"631": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"632": {
+"w": 0.0,
+"roles": [
+"specification"
+]
+},
+"672": {
+"w": 0.0,
+"roles": [
+"case"
+]
+},
+"681": {
+"w": 0.0,
+"roles": [
+"case"
+]
+},
+"686": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"690": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"701": {
+"w": 0.0,
+"roles": [
+"case"
+]
+},
+"706": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"721": {
+"w": 0.0,
+"roles": [
+"specification"
+]
+},
+"734": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"743": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"773": {
+"w": 0.0,
+"roles": [
+"instrument"
+]
+},
+"774": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"776": {
+"w": 0.0,
+"roles": [
+"definition",
+"observed"
+]
+},
+"802": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"827": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"887": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"888": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"889": {
+"w": 0.0,
+"roles": [
+"observed",
+"theory"
+]
+},
+"890": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"891": {
+"w": 0.0,
+"roles": [
+"instrument"
+]
+},
+"899": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"949": {
+"w": 0.0,
+"roles": [
+"specification"
+]
+},
+"966": {
+"w": 0.0,
+"roles": [
+"specification"
+]
+},
+"973": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"991": {
+"w": 0.0,
+"roles": [
+"instrument"
+]
+},
+"1035": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1036": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1244": {
+"w": 0.0,
+"roles": [
+"record"
+]
+},
+"1245": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1247": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1248": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1410": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1419": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1420": {
+"w": 0.0,
+"roles": [
+"case",
+"observed"
+]
+},
+"1424": {
+"w": 0.0,
+"roles": [
+"observed",
+"record"
+]
+},
+"1517": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1539": {
+"w": 0.0,
+"roles": [
+"case"
+]
+},
+"1559": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1560": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1561": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1564": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1565": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1591": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+},
+"1663": {
+"w": 0.0,
+"roles": [
+"theory"
+]
+}
+}
+}
