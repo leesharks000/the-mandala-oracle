@@ -1530,7 +1530,7 @@ def parse_sigil_response(text: str) -> dict:
 # whole archive stays searchable; rag/fraction-weights.json orients his search (w, a prior) and says what work each
 # record does (roles), and rag/fraction-sites.json holds his primary ground, the two sites, as text. His voice is
 # rag/fraction-voice.md. None of Sigil's four strands, the lectionary or the rite enter this mode. His
-# conversations are not logged to the Book (the panel says so) until the operator rules otherwise.
+# conversations are logged to the Book with mode 'fraction' (operator, 2026-10-14: logged, disclosed, so use and cost can be read).
 
 _ROOT = Path(__file__).resolve().parent.parent
 _fraction_cache: dict = {}
@@ -1737,7 +1737,7 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
     for _ in range(MAX_TOOL_TURNS):
         response = client.messages.create(
             model=(RITE_MODEL if rite_reasoning else MODEL),
-            max_tokens=MAX_TOKENS,
+            max_tokens=(1200 if fraction else MAX_TOKENS),
             system=system,
             tools=tools,
             messages=messages,
