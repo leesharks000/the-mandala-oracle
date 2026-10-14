@@ -2,10 +2,11 @@
  *
  * The Mandala Oracle's own endpoint (themandalaoracle.com/api/sigil) in mode 'fraction': the same function, archive
  * and installed key as Sigil, with Rex Fraction's voice (rag/fraction-voice.md), his orientation over the whole
- * archive (rag/fraction-weights.json) and his two sites as primary ground (rag/fraction-sites.json). Anonymous; not
- * logged to the Book of Books like Sigil's (mode 'fraction'; the panel says so). Built from embed/sigil.js.
+ * archive (rag/fraction-weights.json) and his two sites as primary ground (rag/fraction-sites.json). Anonymous,
+ * and logged to the Book of Books, as the panel discloses. Built from embed/sigil.js.
  *
  * Usage:  <script src="https://www.themandalaoracle.com/embed/fraction.js" defer></script>
+ *         data-accent="#d88860" on the tag sets the site's accent (default: spxi.dev gold, #c9a227).
  */
 (function () {
   'use strict';
@@ -13,6 +14,8 @@
   window.__fractionWidget = true;
 
   var ORACLE = 'https://www.themandalaoracle.com';
+  var TAG = document.currentScript;
+  var ACC = (TAG && /^#[0-9a-fA-F]{3,8}$/.test(TAG.getAttribute('data-accent') || '')) ? TAG.getAttribute('data-accent') : '#c9a227';
   var MODE = 'fraction';
   var history = [];
   var sending = false;
@@ -27,41 +30,41 @@
 
   var css = [
     '.fxw-tab{position:fixed!important;right:18px!important;bottom:18px!important;left:auto!important;top:auto!important;z-index:2147483000!important;margin:0!important;font:600 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;',
-    'background:#111114;color:#e8e6e3;border:1px solid #c9a227;border-radius:999px;padding:11px 16px;cursor:pointer;',
+    'background:#111114;color:#e8e6e3;border:1px solid ' + ACC + ';border-radius:999px;padding:11px 16px;cursor:pointer;',
     'box-shadow:0 4px 18px rgba(0,0,0,.25);letter-spacing:.02em}',
     '.fxw-tab:hover{background:#1e1e24}',
     '.fxw-panel{position:fixed!important;right:18px!important;bottom:18px!important;left:auto!important;top:auto!important;z-index:2147483001!important;margin:0!important;width:min(360px,calc(100vw - 24px));',
     'height:min(500px,calc(100vh - 36px));display:flex;flex-direction:column;background:#0a0a0c;color:#e8e6e3;',
-    'border:1px solid #c9a227;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.3);',
+    'border:1px solid ' + ACC + ';border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.3);',
     'font:15px/1.55 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;overflow:hidden}',
     '.fxw-panel[hidden]{display:none}',
     '.fxw-head{display:flex;align-items:baseline;gap:8px;padding:12px 14px 10px;border-bottom:1px solid #1e1e24;background:#111114}',
-    '.fxw-face{width:26px;height:26px;border-radius:50%;object-fit:cover;vertical-align:middle;margin:-6px 8px -6px -6px;border:1px solid #c9a227;background:#111}',
+    '.fxw-face{width:26px;height:26px;border-radius:50%;object-fit:cover;vertical-align:middle;margin:-6px 8px -6px -6px;border:1px solid ' + ACC + ';background:#111}',
     '.fxw-face-l{width:34px;height:34px;margin:-8px 2px -8px 0;align-self:center}',
     '.fxw-head{align-items:center!important}',
     '.fxw-title{font-weight:700;font-variant:small-caps;letter-spacing:.05em;font-size:16px}',
     '.fxw-mode{font:11px/1 var(--mono,Consolas,monospace);color:#8a8a8e;text-transform:uppercase;letter-spacing:.08em}',
     '.fxw-sp{flex:1}',
-    '.fxw-head a{font-size:12px;color:#c9a227}',
+    '.fxw-head a{font-size:12px;color:' + ACC + '}',
     '.fxw-x{background:none;border:0;font-size:20px;line-height:1;color:#8a8a8e;cursor:pointer;padding:0 0 0 6px}',
     '.fxw-notice{font-size:12.5px;line-height:1.45;color:#8a8a8e;padding:8px 14px;background:#0f0f12;border-bottom:1px solid #1e1e24}',
-    '.fxw-notice a{color:#c9a227}',
+    '.fxw-notice a{color:' + ACC + '}',
     '.fxw-log{flex:1;overflow-y:auto;padding:12px 14px}',
     '.fxw-msg{margin:0 0 12px}',
-    '.fxw-who{font:11px/1 var(--mono,Consolas,monospace);text-transform:uppercase;letter-spacing:.08em;color:#c9a227;margin-bottom:4px}',
+    '.fxw-who{font:11px/1 var(--mono,Consolas,monospace);text-transform:uppercase;letter-spacing:.08em;color:' + ACC + ';margin-bottom:4px}',
     '.fxw-you .fxw-body{background:#1e1e24;border-radius:8px;padding:8px 10px}',
     '.fxw-body p{margin:0 0 .55em}.fxw-body p:last-child{margin:0}',
-    '.fxw-body a{color:#c9a227}',
+    '.fxw-body a{color:' + ACC + '}',
     '.fxw-body mark{background:rgba(201,162,39,.22);color:inherit;padding:0 2px}',
     '.fxw-cha{font-size:12.5px;margin-top:6px}.fxw-cha summary{cursor:pointer;color:#8a8a8e}',
-    '.fxw-cha ul{margin:4px 0 0;padding-left:18px}.fxw-cha a{color:#c9a227}',
-    '.fxw-err{color:#c9a227;font-style:italic}',
+    '.fxw-cha ul{margin:4px 0 0;padding-left:18px}.fxw-cha a{color:' + ACC + '}',
+    '.fxw-err{color:' + ACC + ';font-style:italic}',
     '.fxw-form{display:flex;gap:8px;padding:10px 12px;border-top:1px solid #1e1e24;background:#111114}',
     '.fxw-in{flex:1;resize:none;height:44px;font:inherit;font-size:14.5px;padding:8px 10px;border:1px solid #2a2a32;border-radius:6px;background:#0a0a0c;color:#e8e6e3}',
-    '.fxw-send{font:600 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;background:#c9a227;color:#0a0a0c;border:0;border-radius:6px;padding:0 14px;cursor:pointer}',
+    '.fxw-send{font:600 14px/1 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;background:' + ACC + ';color:#0a0a0c;border:0;border-radius:6px;padding:0 14px;cursor:pointer}',
     '.fxw-send[disabled]{opacity:.5;cursor:default}',
     '.fxw-foot{font-size:12px;color:#8a8a8e;padding:6px 14px 10px;background:#111114;text-align:center}',
-    '.fxw-foot a{color:#c9a227}'
+    '.fxw-foot a{color:' + ACC + '}'
   ].join('');
 
   function el(tag, cls, html) {
