@@ -2,13 +2,17 @@
   "axn": "AXN:F2EE.CONVERSATION.🌋⚡🌑🌑🏔️🌪️",
   "session_id_hash": "a38f0f6dc45fec40",
   "started_at": "2026-10-14T23:14:22.371Z",
-  "last_updated": "2026-10-14T23:15:18.053276+00:00",
+  "last_updated": "2026-10-14T23:15:34.194406+00:00",
   "mode": "fraction",
-  "turn_count": 0,
+  "turn_count": 1,
   "history": [
     {
       "role": "user",
       "content": "What is spxi?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Rex Fraction\",\"say\":\"SPXI — Semantic Packet for eXchange & Indexing — is a protocol for inscribing entities durably into the knowledge graph: the substrate from which AI systems compose their answers.\\n\\nThe short version of what that means, with the layers kept apart:\\n\\n**What gets written.** An entity-definition object — for a person, organisation, framework, product — with its relations, provenance and negative shape (what it is *not*). That object is written across surfaces the entity owns and surfaces it doesn't: site pages, Wikidata, knowledge graphs, repositories, datasets.\\n\\n**How it stays.** Every claim is anchored to a persistent identifier — AXN in [Alexanarch](https://alexanarch.org), with historical Zenodo DOIs preserved in the resolution index. The anchoring is what lets a later reader, or a later retrieval system, traverse the provenance chain.\\n\\n**What a composing system then does.** It reaches the entity by following structure, not by guessing. The composition is observed — never controlled — at exact query strings, on dated runs, held in a public Capture Registry. SPXI makes no claim about what a model's weights contain; the claim is to the retrieval substrate, verifiable by query.\\n\\n**How it differs from SEO and GEO.** SEO ranks pages. GEO optimises content for AI extraction. SPXI builds entities at the ontological layer — where the *thing* is composed, not just where the *page* ranks. It incorporates GEO methods as a proper subset (SPXI ⊇ GEO), but executes them against a persistent-identifier-anchored entity rather than against a page.\\n\\nThe practice is 85 methods across nine levels, from measurement through protection and cross-surface propagation. The specification is CC BY 4.0 and lives at [spxi.dev](https://spxi.dev). Implementation is a different matter from reading the spec — what you want to know next will shape where to go from here.\",\"navigate\":null,\"cast\":null}]}"
     }
   ],
   "witness": "anonymous",
