@@ -3,6 +3,15 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:17D2.CONVERSATION.🏔️⭐💎🔥❄️🪨",
+      "started_at": "2026-10-16T17:08:06.601Z",
+      "last_updated": "2026-10-16T17:08:20.250328+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "what is the imploding velcro nativity?"
+    },
+    {
       "axn": "AXN:F2EE.CONVERSATION.🌋⚡🌑🌑🏔️🌪️",
       "started_at": "2026-10-14T23:14:22.371Z",
       "last_updated": "2026-10-14T23:15:34.194406+00:00",
@@ -1900,7 +1909,7 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 208,
-  "last_updated": "2026-10-14T23:15:34.194406+00:00",
+  "total_recorded": 209,
+  "last_updated": "2026-10-16T17:08:20.250328+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
