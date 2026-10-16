@@ -1,0 +1,16 @@
+{
+  "axn": "AXN:17D2.CONVERSATION.🏔️⭐💎🔥❄️🪨",
+  "session_id_hash": "1f211acab93f2895",
+  "started_at": "2026-10-16T17:08:06.601Z",
+  "last_updated": "2026-10-16T17:08:20.250328+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "what is the imploding velcro nativity?"
+    }
+  ],
+  "witness": "anonymous",
+  "schema_version": "v1.0"
+}
