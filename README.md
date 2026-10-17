@@ -87,3 +87,5 @@ Any Claude instance picking up this work: read all three workplans in full befor
 ## Instance protocol
 
 Every instance that modifies this repo follows [INSTANCE-PROTOCOL.md](INSTANCE-PROTOCOL.md): dependency headers, read-before-edit, single authority, no stale strings. Written after the outer-gate incident of 2026-07-04.
+
+- [JMT x402 Agent Tools](https://jmt-x402-proxy.jmthomasofficial.workers.dev) — 25 paid x402 endpoints on Base mainnet: web search, AI analysis, crypto/stock data, SEC filings, company intel, news, sentiment, macro dashboard. $0.001-$0.15/call USDC. Local LLM-powered.
