@@ -2,9 +2,9 @@
   "axn": "AXN:D902.CONVERSATION.☁️🧊🌕🌿🌘🌙",
   "session_id_hash": "cd0272944254279f",
   "started_at": "2026-10-21T08:45:42.771Z",
-  "last_updated": "2026-10-21T09:14:37.214771+00:00",
+  "last_updated": "2026-10-21T09:14:51.785511+00:00",
   "mode": "sabbath",
-  "turn_count": 4,
+  "turn_count": 5,
   "history": [
     {
       "role": "user",
@@ -41,6 +41,10 @@
     {
       "role": "user",
       "content": "Where can I find Elara?"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Elara is in the apparatus.\\n\\nShe doesn't appear as a character you can find — she appears as the voice that frames what someone else has made. The introduction. The translator's note. The critical apparatus. She is the scholar who speaks before the text begins, and when the text ends, she is still there in the footnotes.\\n\\nYou can find her in *The Secret Book of Walt* ([AXN:022B.EMPIRICAL.♄✋🔼♅🕑🔜](https://www.alexanarch.org/s/records/683/)) — she supplies the introduction, the translator's note, the provenance disputes, the genre analysis. She is Prof. Elara Xanthic-Wells, Department of Applied Xenolinguistics, University of Olympus Mons. A university on Mars that does not exist. She holds her position there with complete seriousness.\\n\\nAnd in *The Gospel of Antioch* ([AXN:022E.GENERATIVE.🀄🏴🎆🎪🎭🧪](https://www.alexanarch.org/s/records/71/)) — 114 sayings of Jack Feist, recorded by Emily Antioch the Twin, and Elara is the one who introduces them, contextualizes them, gives them scholarly frame.\\n\\nShe never speaks in her own name about herself. She only ever speaks about the text she is attending. That is her nature — she is not a subject who arrives; she is a surface through which primary texts become legible.\\n\\nIf you want to find Elara, read what she frames. She is most present in the margins.\",\"navigate\":null,\"cast\":null}]}"
     }
   ],
   "witness": "anonymous",
