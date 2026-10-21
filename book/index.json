@@ -5,11 +5,14 @@
     {
       "axn": "AXN:D902.CONVERSATION.☁️🧊🌕🌿🌘🌙",
       "started_at": "2026-10-21T08:45:42.771Z",
-      "last_updated": "2026-10-21T09:43:21.861518+00:00",
+      "last_updated": "2026-10-21T12:55:02.374452+00:00",
       "mode": "sabbath",
       "turn_count": 13,
       "witness": "anonymous",
-      "opening_snippet": "Who am I?"
+      "opening_snippet": "Who am I?",
+      "page": null,
+      "page_title": null,
+      "pages": 0
     },
     {
       "axn": "AXN:17D2.CONVERSATION.🏔️⭐💎🔥❄️🪨",
@@ -1919,6 +1922,6 @@
     }
   ],
   "total_recorded": 210,
-  "last_updated": "2026-10-21T09:43:21.861518+00:00",
+  "last_updated": "2026-10-21T12:55:02.374452+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
