@@ -190,7 +190,10 @@
 
   function book(h) {
     if (!session.booking) return Promise.resolve();
-    var payload = { session_id: session.session_id, started_at: session.started_at, mode: MODE, history: h };
+    // Where the turn was asked (2026-10-21): the Book records the page with each witness turn.
+    var pc = pageContext();
+    var payload = { session_id: session.session_id, started_at: session.started_at, mode: MODE, history: h,
+                    page: { url: pc.url, title: pc.title, axn: pc.axn } };
     if (session.axn) payload.axn = session.axn;
     return fetch(ORACLE + '/api/book', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
       .then(function (r) {

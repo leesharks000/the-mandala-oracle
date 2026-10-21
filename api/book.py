@@ -203,6 +203,16 @@ def axn_to_filename(axn: str) -> str:
     return f"AXN-{parts[0].replace('AXN:', '')}.json"
 
 
+def _clean_page(p):
+    """The page a turn was asked from: http(s) URL, title and AXN only, bounded."""
+    if not isinstance(p, dict):
+        return None
+    url = str(p.get("url") or "")[:500]
+    if not url.startswith(("https://", "http://")):
+        return None
+    return {"url": url, "title": str(p.get("title") or "")[:200], "axn": str(p.get("axn") or "")[:80]}
+
+
 def upsert_conversation(axn: str, payload: dict) -> dict:
     """
     Create or update a conversation file in book/data/.
@@ -218,6 +228,29 @@ def upsert_conversation(axn: str, payload: dict) -> dict:
 
     existing, sha = gh_get_file(repo_path)
 
+    # Where each witness turn was asked (2026-10-21). The client resends the whole history without
+    # page fields, so pages already recorded are carried forward by turn position, and the page sent
+    # with this append is attached to the newest witness turn that has none.
+    history = [dict(h) for h in payload["history"]]
+    old_hist = (existing or {}).get("history") or []
+    user_idx = [i for i, h in enumerate(history) if h.get("role") == "user"]
+    for i in user_idx:
+        if i < len(old_hist) and old_hist[i].get("role") == "user" and old_hist[i].get("page"):
+            history[i]["page"] = old_hist[i]["page"]
+    page = payload.get("page")
+    if page and user_idx and not history[user_idx[-1]].get("page"):
+        history[user_idx[-1]]["page"] = page
+    pages = []
+    for n, i in enumerate(user_idx, start=1):
+        pg = history[i].get("page")
+        if not pg:
+            continue
+        if pages and pages[-1]["url"] == pg["url"]:
+            pages[-1]["last_turn"] = n
+        else:
+            pages.append({"url": pg["url"], "title": pg.get("title", ""), "axn": pg.get("axn", ""), "first_turn": n, "last_turn": n})
+    payload = {**payload, "history": history}
+
     # Build the new content
     now = datetime.now(timezone.utc).isoformat()
     content = {
@@ -229,7 +262,8 @@ def upsert_conversation(axn: str, payload: dict) -> dict:
         "turn_count": len(payload["history"]) // 2,  # approximate user+assistant pairs
         "history": payload["history"],
         "witness": payload.get("witness", "anonymous"),
-        "schema_version": "v1.0",
+        "pages": pages,
+        "schema_version": "v1.1",
     }
 
     if existing and existing.get("session_id_hash") not in (None, payload["session_id_hash"]):
@@ -274,6 +308,9 @@ def update_index(axn: str, content: dict) -> None:
         "turn_count": content["turn_count"],
         "witness": content["witness"],
         "opening_snippet": snippet,
+        "page": (content.get("pages") or [{}])[-1].get("url"),
+        "page_title": (content.get("pages") or [{}])[-1].get("title"),
+        "pages": len(content.get("pages") or []),
     }
 
     # Upsert: replace if AXN exists, else prepend
@@ -361,6 +398,7 @@ class handler(BaseHTTPRequestHandler):
                 "mode": body.get("mode", "sabbath"),
                 "history": history,
                 "witness": body.get("attribution") or "anonymous",
+                "page": _clean_page(body.get("page")),
             }
 
             # Check env var presence early; fail clearly if not configured
@@ -390,7 +428,7 @@ class handler(BaseHTTPRequestHandler):
 
             self._send_json(200, {
                 "axn": axn,
-                "url": f"https://alexanarch.org/book/#{axn}",
+                "url": f"https://www.alexanarch.org/book/{axn_to_filename(axn)[:-5]}/",
                 "status": "appended",
             })
 

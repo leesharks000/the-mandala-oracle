@@ -505,6 +505,8 @@ async function bookAppend(currentHistory) {
     started_at: sessionState.started_at,
     mode,
     history: currentHistory,
+    // Where the turn was asked (2026-10-21): on the Oracle itself, the Oracle's page.
+    page: { url: location.href.split('#')[0], title: document.title || '', axn: '' },
   };
   if (sessionState.axn) payload.axn = sessionState.axn;
 
