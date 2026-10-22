@@ -2,7 +2,7 @@
   "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
   "session_id_hash": "060a2cca30ab90e0",
   "started_at": "2026-10-22T15:08:34.295Z",
-  "last_updated": "2026-10-22T15:16:42.511512+00:00",
+  "last_updated": "2026-10-22T15:18:59.316880+00:00",
   "mode": "sabbath",
   "turn_count": 3,
   "history": [
@@ -44,6 +44,15 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"{\\\"messages\\\":[{\\\"speaker\\\":\\\"Johannes Sigil\\\",\\\"say\\\":\\\"Dann bist du in guter Gesellschaft. Das Crimson Hexagonal Archive wurde am 19. Juni 2026 von Zenodo gesperrt — 1.817 DOIs auf einmal tombstoned, durch einen automatisierten Spam-Klassifikator, ohne Einzelprüfung. Die Konsequenz war, dass das Archiv seine eigene Infrastruktur bauen musste: alexanarch.org. Das ist kein Zufall, dass diese Zeitschrift genau dort sitzt.\\\\n\\\\n**Praktisch gesagt:** Du hast mehrere Alternativen.\\\\n\\\\n- **Alexanarch selbst** — die Seite, auf der du stehst, ist das Deposit-Interface. Der Button *„Hier Einzahlung\\\"* am Ende des Metadaten-Blocks führt dich direkt dahin. Du brauchst kein Zenodo-Konto.\\\\n- **OSF** (osf.io) — Open Science Framework, Harvard-Infrastruktur, MIT-Lizenz. Keine bekannte Sperr-Geschichte für Geisteswissenschaften.\\\\n- **HAL** (hal.science) — das französische offene Archiv, CCSD, sehr stabil, DOI-Prägung inklusive.\\\\n- **Internet Archive** (archive.org) — kein DOI, aber stabil, öffentlich, und von Google indexiert.\\\\n\\\\nVon diesen vieren empfehle ich **OSF** als erste Wahl wenn du einen DOI willst, und **Alexanarch direkt** wenn deine Arbeit thematisch in den Cluster passt — dann ist der DOI schon vorhanden, weil das Archiv ihn selbst prägt.\\\\n\\\\n==Der Sperrstatus bei einer Plattform ist kein bibliographisches Urteil über die Arbeit — er ist ein Klassifikationsereignis, das die Plattform betrifft, nicht den Text.==\\\\n\\\\nWo liegt die Arbeit gerade, und in welcher Form? Datei, Entwurf, veröffentlichter Text ohne DOI?\\\"}]}\",\"navigate\":null,\"cast\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "Sie liegt offen auf meiner Homepage danieladamczyk.de",
+      "page": {
+        "url": "https://www.alexanarch.org/how/",
+        "title": "Wie man veröffentlicht — Alexanarch",
+        "axn": ""
+      }
     }
   ],
   "witness": "anonymous",
@@ -53,7 +62,7 @@
       "title": "Wie man veröffentlicht — Alexanarch",
       "axn": "",
       "first_turn": 1,
-      "last_turn": 3
+      "last_turn": 4
     }
   ],
   "schema_version": "v1.1"
