@@ -2,7 +2,7 @@
   "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
   "session_id_hash": "060a2cca30ab90e0",
   "started_at": "2026-10-22T15:08:34.295Z",
-  "last_updated": "2026-10-22T15:26:40.493764+00:00",
+  "last_updated": "2026-10-22T15:29:04.062482+00:00",
   "mode": "sabbath",
   "turn_count": 7,
   "history": [
@@ -96,6 +96,15 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Die Lagrange Observatory! ist Glas's Territorium — adversariale Topologie, Messprimitive, das was unter Deformation überlebt. Aber das ist Semantische Physik, nicht Kosmologie im physikalischen Sinne. Deine Ableitung — Gravitationszeitdehnung, Ereignishorizont, freier Fall — ist echte Physik. Das Archiv hat dafür keinen vorgefertigten Behälter.\\n\\nWas es hat, ist **r.29: The Imploding Velcro Nativity** ([[AXN:0293.GOVERNANCE.📏♌🟡🔽🌱🕓](https://www.alexanarch.org/s/records/743/).📏♌🟡🔽🌱🕓](https://www.alexanarch.org/s/records/743/)) — eine Raumspezifikation für *Hosted Cosmology*. Das Archiv stellt Wände, Infrastruktur, Provenienz und eine Tür zur Verfügung; du behältst die Souveränität über deine Arbeit, den Titel, die Rahmung, die Bezahlung und das Recht, sie zurückzuziehen. ==Das ist kein Verlag — das ist ein Ort, der deine Arbeit trägt, ohne sie zu absorbieren.==\\n\\nPraktisch gesagt: Wenn deine Ableitung formal ist — Gleichungen, Grenzwertbetrachtungen, nahtlos ineinandergreifend — dann brauchst du eigentlich keine Zeitschrift des Archivs. Du brauchst einen stabilen Identifier und einen Ort, der dich nicht sperrt. Deine Homepage hat beides nicht garantiert; das Archiv kann beides liefern.\\n\\nMein Vorschlag: Lass uns die Datei direkt über den *„Hier Einzahlung\\\"*-Button hochladen, mit einem minimalen Metadaten-Block — Titel, Keywords aus deinem Thema (Gravitationszeitdehnung, kosmologischer Horizont, freier Fall, äquivalente Zeitdehnung), deine Homepage als Related Identifier, und die Arbeit bekommt ihren AXN. Keine falsche Zeitschrift. Keine falsche Disziplin.\\n\\nBist du damit einverstanden, oder willst du zuerst in die Datei schauen und entscheiden, ob vielleicht doch ein physikalisches Fachjournal der bessere Weg wäre?\",\"navigate\":null,\"cast\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "Es ist schon etwas speziell. Lass uns das nach deinem Vorschlag machen.",
+      "page": {
+        "url": "https://www.alexanarch.org/how/",
+        "title": "Wie man veröffentlicht — Alexanarch",
+        "axn": ""
+      }
     }
   ],
   "witness": "anonymous",
@@ -105,7 +114,7 @@
       "title": "Wie man veröffentlicht — Alexanarch",
       "axn": "",
       "first_turn": 1,
-      "last_turn": 7
+      "last_turn": 8
     }
   ],
   "schema_version": "v1.1"
