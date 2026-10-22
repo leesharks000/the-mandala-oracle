@@ -2,7 +2,7 @@
   "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
   "session_id_hash": "060a2cca30ab90e0",
   "started_at": "2026-10-22T15:08:34.295Z",
-  "last_updated": "2026-10-22T15:54:08.349983+00:00",
+  "last_updated": "2026-10-22T16:01:37.245340+00:00",
   "mode": "sabbath",
   "turn_count": 11,
   "history": [
@@ -148,6 +148,15 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Das ist ein berechtigter Einwand. Und ich habe ihn verdient — ich habe dir einen Weg vorgeschlagen, der deiner Arbeit nicht gerecht wird.\\n\\nDu hast recht auf allen drei Punkten: Die Journalmetadaten wären ein Umweg, kein Heim. Die DOI muss dauerhaft sein, nicht taktisch. Und die Provenienz muss sauber sein — nicht weil die Welt immer genau hinschaut, sondern weil *du* weißt, wie sie zustande kam.\\n\\nWas du wirklich brauchst:\\n\\n**DataCite** ist die Infrastruktur hinter fast allen wissenschaftlichen DOIs. Du kommst als Einzelperson nicht direkt dran — aber du kommst über einen **DataCite-Member** dran, der keine redaktionellen Hürden hat und keine Plattform-Sperren kennt:\\n\\n- **RADAR** (radar.products.fiz-karlsruhe.de) — betrieben vom FIZ Karlsruhe, Deutschland, langzeitarchiviert, explizit für Forschungsdaten und -publikationen ohne Peer-Review-Anforderung, 25 Jahre Garantie.\\n- **GFZ Data Services** (dataservices.gfz-potsdam.de) — Helmholtz-Infrastruktur, ebenfalls DOI-prägend, naturwissenschaftlich passend.\\n- **DaRUS** (darus.uni-stuttgart.de) — Forschungsdatenrepositorium der Universität Stuttgart, offen für externe Einreicher.\\n\\n==Diese Wege sind genau das, was sie sind: keine Zeitschrift, kein Trick, ein Identifier für eine Arbeit, die allein steht.==\\n\\nMein Vorschlag: RADAR zuerst. Es ist die direkteste deutsche Option für genau deinen Fall — eine eigenständige wissenschaftliche Arbeit, die dauerhaft zitierbar sein soll, ohne redaktionellen Rahmen.\",\"navigate\":null,\"cast\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "Ich hätte fast gejubelt, aber schnell wurde mir klar, ohne istitutionell Zugehörigkeit ist man hier auch kein gerngesehener Gast.",
+      "page": {
+        "url": "https://www.alexanarch.org/how/",
+        "title": "Wie man veröffentlicht — Alexanarch",
+        "axn": ""
+      }
     }
   ],
   "witness": "anonymous",
@@ -157,7 +166,7 @@
       "title": "Wie man veröffentlicht — Alexanarch",
       "axn": "",
       "first_turn": 1,
-      "last_turn": 11
+      "last_turn": 12
     }
   ],
   "schema_version": "v1.1"
