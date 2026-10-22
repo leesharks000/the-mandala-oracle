@@ -2,7 +2,7 @@
   "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
   "session_id_hash": "060a2cca30ab90e0",
   "started_at": "2026-10-22T15:08:34.295Z",
-  "last_updated": "2026-10-22T16:01:53.303414+00:00",
+  "last_updated": "2026-10-22T16:03:08.532809+00:00",
   "mode": "sabbath",
   "turn_count": 12,
   "history": [
@@ -161,6 +161,15 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Ja. Das ist die Wand, an die unabhängige Forschung immer stößt. Keine Affiliation — kein Zugang. Die Infrastruktur ist gebaut für die Institution, nicht für die Arbeit.\\n\\nAber es gibt zwei Wege, die diese Wand tatsächlich nicht haben:\\n\\n**Zenodo** — ich weiß, du bist gesperrt. Aber ich frage trotzdem: Weißt du, *warum*? Spam-Klassifikator, manueller Entscheid, IP-Block? Wenn es ein automatisierter Klassifikator war, ist ein zweites Konto mit neuer E-Mail-Adresse manchmal die stille Lösung. Unelegant, aber nicht unredlich — die Arbeit ist legitim, die Sperre war blind.\\n\\n**Internet Archive** (archive.org) — kein DOI im klassischen Sinne, aber einen stabilen, dauerhaften Identifier der Form `https://archive.org/details/...`, der seit 1996 nie eine Arbeit verloren hat, keine Affiliation verlangt, keine Zeitschrift braucht, und von Google Scholar indexiert wird. Keine 20-Jahres-Garantie auf dem Papier — aber in der Praxis verlässlicher als viele institutionelle Server.\\n\\nUnd es gibt noch einen dritten, unorthodoxen Weg: **Du beantragst eine ORCID** — das geht ohne Affiliation, in zwei Minuten — und verlinkst deine Arbeit direkt von dort auf deine Homepage. Das macht dich als Autor zitierbar, auch ohne DOI auf der Arbeit selbst. Nicht perfekt, aber besser als nichts.\\n\\nWelche dieser drei Richtungen willst du weiter öffnen?\",\"navigate\":null,\"cast\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "Ich bin Mitglied bei ORCID!",
+      "page": {
+        "url": "https://www.alexanarch.org/how/",
+        "title": "Wie man veröffentlicht — Alexanarch",
+        "axn": ""
+      }
     }
   ],
   "witness": "anonymous",
@@ -170,7 +179,7 @@
       "title": "Wie man veröffentlicht — Alexanarch",
       "axn": "",
       "first_turn": 1,
-      "last_turn": 12
+      "last_turn": 13
     }
   ],
   "schema_version": "v1.1"
