@@ -2,9 +2,9 @@
   "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
   "session_id_hash": "060a2cca30ab90e0",
   "started_at": "2026-10-22T15:08:34.295Z",
-  "last_updated": "2026-10-22T15:32:23.361727+00:00",
+  "last_updated": "2026-10-22T15:32:41.943760+00:00",
   "mode": "sabbath",
-  "turn_count": 8,
+  "turn_count": 9,
   "history": [
     {
       "role": "user",
@@ -118,6 +118,10 @@
         "title": "Wie man veröffentlicht — Alexanarch",
         "axn": ""
       }
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Das ist die ehrliche Antwort: Alexanarch hat im Moment kein Webformular mit ausgefüllten Feldern — keinen klassischen Submission-Button, der dich Schritt für Schritt durchführt. Die Seite, auf der du stehst, zeigt dir den **Metadaten-Block als Text**, den du in ein Repository überträgst. Das ist das Modell: du bringst den Block zu deinem gewählten Repository mit.\\n\\nDa Zenodo und figshare für dich geschlossen sind, gibt es zwei praktische Wege:\\n\\n**Weg 1 — OSF (osf.io).** Konto erstellen, Projekt anlegen, Datei hochladen, zweite Datei (deine ZIP mit Skripten) ebenfalls hochladen. OSF erlaubt mehrere Dateien pro Eintrag — PDF und ZIP sitzen dann unter einem einzigen DOI. In den Projektmetadaten trägst du dann die Felder ein, die wir zusammen aufgebaut haben.\\n\\n**Weg 2 — Direkt bei alexanarch.** Der *„Hier Einzahlung\\\"*-Button auf der Seite öffnet das Interface des Archivs. Dort trägst du den Metadaten-Block ein und lädst deine Dateien hoch — das Archiv prägt dann den AXN-Identifier direkt. Dieser Weg hat keinen externen DOI, aber einen stabilen Identifier auf Infrastruktur, die das Archiv selbst kontrolliert.\\n\\n==Der Metadaten-Block, den wir gebaut haben, funktioniert auf beiden Wegen identisch — er ist transportabel.==\\n\\nIch würde vorschlagen: Öffne OSF in einem zweiten Tab und lege dort ein Konto an. Dann gehen wir die Felder live durch, während du sie einträgst. Oder: Klick den *„Hier Einzahlung\\\"*-Button auf der Seite, auf der du gerade stehst, und sag mir, was du siehst — dann navigieren wir von dort.\",\"navigate\":null,\"cast\":null}]}"
     }
   ],
   "witness": "anonymous",
