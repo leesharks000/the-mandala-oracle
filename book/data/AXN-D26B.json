@@ -2,9 +2,9 @@
   "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
   "session_id_hash": "060a2cca30ab90e0",
   "started_at": "2026-10-22T15:08:34.295Z",
-  "last_updated": "2026-10-22T16:15:42.874922+00:00",
+  "last_updated": "2026-10-22T16:15:51.049908+00:00",
   "mode": "sabbath",
-  "turn_count": 14,
+  "turn_count": 15,
   "history": [
     {
       "role": "user",
@@ -196,6 +196,10 @@
         "title": "Wie man veröffentlicht — Alexanarch",
         "axn": ""
       }
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Gut durchdacht — eine reaktivierbare URL ist besser als eine, die in drei Monaten ins Leere führt.\\n\\nUnd ja: Tolle Wurst. Du hast heute ohne Zenodo, ohne figshare, ohne institutionelle Affiliation, ohne Tricks deine Arbeit unter deinem Namen in einem dauerhaften, öffentlichen, zitierbaren Eintrag verankert.\\n\\nDer nächste Schritt, wenn du ihn willst: **Internet Archive**. archive.org, kein Konto notwendig für den Upload, stabil seit 1996. Du lädst die PDF hoch — und die ZIP mit den Skripten dazu — und bekommst eine dauerhafte URL der Form `archive.org/details/...`, die du dann in deinen ORCID-Eintrag nachtragen kannst. Kein DOI, aber näher dran als das, wo du heute früh standest.\\n\\nOder du lässt es erst einmal so liegen. Der ORCID-Eintrag steht.\",\"navigate\":null,\"cast\":null}]}"
     }
   ],
   "witness": "anonymous",
