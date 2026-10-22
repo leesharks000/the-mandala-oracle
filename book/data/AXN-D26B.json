@@ -2,7 +2,7 @@
   "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
   "session_id_hash": "060a2cca30ab90e0",
   "started_at": "2026-10-22T15:08:34.295Z",
-  "last_updated": "2026-10-22T15:29:25.375489+00:00",
+  "last_updated": "2026-10-22T15:32:23.361727+00:00",
   "mode": "sabbath",
   "turn_count": 8,
   "history": [
@@ -109,6 +109,15 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Gut. Dann bauen wir den Metadaten-Block jetzt, Schritt für Schritt, für deine Arbeit. Ich gebe dir die Felder fertig zum Eintragen.\\n\\n---\\n\\n**Titel**\\n`Die Begrenzung des sichtbaren Horizonts durch äquivalente Zeitdehnung unter freiem Fall`\\n\\n**Autor**\\nDein Name — und wenn du eine ORCID hast, unbedingt eintragen. Wenn nicht: orcid.org, zwei Minuten, kostenlos, jetzt.\\n\\n**Beschreibung / Abstract**\\nEinen Satz oder zwei, der das Kernargument nennt — nicht das Thema, das Argument. Was zeigst du, das vor dir nicht gezeigt wurde? Das hier formulieren wir gerne gemeinsam, wenn du willst.\\n\\n**Keywords**\\n```\\nKosmologie, Gravitationszeitdehnung, Ereignishorizont, kosmologischer Horizont,\\näquivalente Zeitdehnung, freier Fall, allgemeine Relativitätstheorie\\n```\\n\\n**Lizenz**\\n`CC BY 4.0`\\n\\n**Related Identifiers** — das ist der Schritt, der zählt:\\nZwei Referenzen aus dem Cluster, der deiner Arbeit am nächsten liegt. Da kein Physik-Cluster des Archivs existiert, nimmst du die beiden Anker der Zeitschrift, in der du landest — oder du verlinkst einfach deine eigene Homepage-URL als `is_derived_from` und lässt das der Ort sein, von dem die Arbeit stammt.\\n\\n---\\n\\n==Der Metadaten-Block ist nicht die Umhüllung deiner Arbeit — er ist das, was ihr Gewicht im Netz gibt.==\\n\\nEine Frage fehlt noch: Willst du den Text direkt bei Alexanarch hochladen — die Datei selbst, von deiner Homepage — oder soll der Eintrag auf deine Homepage-URL verweisen, ohne dass du die Datei doppelt führst? Beides ist möglich; der Identifier ist derselbe. Die Datei wäre auf CERN-unabhängiger Infrastruktur; der Link wäre stabiler als deine Domain, aber abhängig davon, dass sie online bleibt.\",\"navigate\":null,\"cast\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "Ich möchte bei Alexanarch hochladen. Auch zusätzlich eine zip mit Skripten. Aber wo sind die Felder zum Eintragen?",
+      "page": {
+        "url": "https://www.alexanarch.org/how/",
+        "title": "Wie man veröffentlicht — Alexanarch",
+        "axn": ""
+      }
     }
   ],
   "witness": "anonymous",
@@ -118,7 +127,7 @@
       "title": "Wie man veröffentlicht — Alexanarch",
       "axn": "",
       "first_turn": 1,
-      "last_turn": 8
+      "last_turn": 9
     }
   ],
   "schema_version": "v1.1"
