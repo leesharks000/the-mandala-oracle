@@ -213,6 +213,17 @@ def _clean_page(p):
     return {"url": url, "title": str(p.get("title") or "")[:200], "axn": str(p.get("axn") or "")[:80]}
 
 
+def join_history(old: list, new: list) -> list:
+    """The recorded history followed by what the resend adds: the longest suffix of the recorded
+    history that the resend begins with is the overlap. With no overlap the resend stands as sent."""
+    key = lambda h: (h.get("role"), h.get("content"))
+    ok, nk = [key(h) for h in old], [key(h) for h in new]
+    for k in range(min(len(ok), len(nk)), 0, -1):
+        if ok[len(ok) - k:] == nk[:k]:
+            return [dict(h) for h in old] + [dict(h) for h in new[k:]]
+    return new
+
+
 def upsert_conversation(axn: str, payload: dict) -> dict:
     """
     Create or update a conversation file in book/data/.
@@ -233,6 +244,10 @@ def upsert_conversation(axn: str, payload: dict) -> dict:
     # with this append is attached to the newest witness turn that has none.
     history = [dict(h) for h in payload["history"]]
     old_hist = (existing or {}).get("history") or []
+    # The clients keep only the last 32 entries for the model (2026-10-22), and a long conversation's
+    # resend therefore began partway in; written as sent, the Book lost its opening turns. The resend
+    # is joined to the recorded history where the two overlap.
+    history = join_history(old_hist, history)
     user_idx = [i for i, h in enumerate(history) if h.get("role") == "user"]
     for i in user_idx:
         if i < len(old_hist) and old_hist[i].get("role") == "user" and old_hist[i].get("page"):

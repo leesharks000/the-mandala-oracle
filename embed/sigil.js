@@ -18,7 +18,8 @@
 
   var ORACLE = 'https://www.themandalaoracle.com';
   var MODE = 'sabbath';
-  var history = [];
+  var history = [];   // what Sigil is sent: the last 32 entries
+  var full = [];      // the whole conversation, as the Book records it
   var sending = false;
   var session = {
     session_id: (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
@@ -65,7 +66,12 @@
     '.sgw-send{font:600 14px/1 var(--serif,Palatino,Georgia,serif);background:#2b2113;color:#f4ead2;border:0;border-radius:6px;padding:0 14px;cursor:pointer}',
     '.sgw-send[disabled]{opacity:.5;cursor:default}',
     '.sgw-foot{font-size:12px;color:#5e4a22;padding:6px 14px 10px;background:#f4ead2;text-align:center}',
-    '.sgw-foot a{color:#7d5e1a}'
+    '.sgw-foot a{color:#7d5e1a}',
+    '.sgw-axn{font-size:12px;line-height:1.45;color:#5e4a22;padding:6px 14px;border-bottom:1px solid rgba(154,124,42,.25);word-break:break-word}',
+    '.sgw-axn[hidden]{display:none}.sgw-axn code{font:12px/1.4 var(--mono,Consolas,monospace);color:#33240b}',
+    '.sgw-axn button,.sgw-back button{font:inherit;background:none;border:0;color:#7d5e1a;text-decoration:underline;cursor:pointer;padding:0}',
+    '.sgw-back{font-size:13px;border:1px dashed rgba(154,124,42,.6);border-radius:8px;padding:8px 10px;margin:0 0 12px}',
+    '.sgw-back ul{margin:6px 0 0;padding-left:16px}.sgw-back li{margin:0 0 4px}.sgw-back small{color:#7d5e1a}'
   ].join('');
 
   function el(tag, cls, html) {
@@ -144,6 +150,7 @@
     '<button type="button" class="sgw-x" aria-label="Close">×</button></div>' +
     '<div class="sgw-notice">Anonymous. This conversation is logged to the Book of Books, ' +
     '<a href="https://www.alexanarch.org/book/" target="_blank" rel="noopener">alexanarch.org/book</a>, where anyone can read it.</div>' +
+    '<div class="sgw-axn" hidden></div>' +
     '<div class="sgw-log" aria-live="polite"></div>' +
     '<form class="sgw-form"><textarea class="sgw-in" placeholder="Bring Sigil a question, or a text." aria-label="Your message"></textarea>' +
     '<button type="submit" class="sgw-send">Send</button></form>' +
@@ -155,8 +162,80 @@
   var form = panel.querySelector('.sgw-form');
   var input = panel.querySelector('.sgw-in');
   var send = panel.querySelector('.sgw-send');
+  var axnBar = panel.querySelector('.sgw-axn');
 
-  function open() { panel.hidden = false; tab.hidden = true; input.focus(); }
+  // The way back (2026-10-22). A witness returning the next day found a new conversation and no
+  // thread: each page load began a new session, and the conversation's AXN was never shown. This
+  // browser now keeps the conversations it began (their AXN, session and turns), offers them when the
+  // panel opens empty, and the panel shows the AXN so the witness can carry it to any page or device.
+  var STORE = 'sigil.threads.v1';
+  function threads() {
+    try { var t = JSON.parse(localStorage.getItem(STORE) || '[]'); return Array.isArray(t) ? t : []; } catch (e) { return []; }
+  }
+  function keep() {
+    if (!session.axn) return;
+    try {
+      var t = threads().filter(function (x) { return x.axn !== session.axn; });
+      var opening = (full.filter(function (h) { return h.role === 'user'; })[0] || {}).content || '';
+      t.unshift({ axn: session.axn, session_id: session.session_id, started_at: session.started_at,
+                  last: new Date().toISOString(), opening: String(opening).slice(0, 140), turns: full.slice(-80) });
+      localStorage.setItem(STORE, JSON.stringify(t.slice(0, 8)));
+    } catch (e) {}
+  }
+  function showAxn() {
+    if (!session.axn) return;
+    axnBar.innerHTML = 'This conversation is <code>' + esc(session.axn) + '</code>. Speak it to Sigil to return to it. ' +
+      '<button type="button">copy</button>';
+    axnBar.hidden = false;
+    axnBar.querySelector('button').addEventListener('click', function () {
+      try { navigator.clipboard.writeText(session.axn); this.textContent = 'copied'; } catch (e) {}
+    });
+  }
+  function when(iso) {
+    try { return new Date(iso).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }); } catch (e) { return ''; }
+  }
+  function sayOf(h) {
+    if (h.role !== 'assistant') return [{ who: 'you', say: h.content || '' }];
+    try { return (JSON.parse(h.content).messages || []).map(function (m) { return { who: m.speaker || 'Johannes Sigil', say: m.say || '' }; }); }
+    catch (e) { return [{ who: 'Johannes Sigil', say: h.content || '' }]; }
+  }
+  function offerBack() {
+    var t = threads();
+    if (!t.length || full.length) return;
+    var box = el('div', 'sgw-back', 'Earlier conversations in this browser:<ul>' + t.slice(0, 4).map(function (x, i) {
+      return '<li><button type="button" data-i="' + i + '">' + esc(x.opening || x.axn) + '</button> <small>' + esc(when(x.last)) + '</small></li>';
+    }).join('') + '</ul><small>Or begin a new one below.</small>');
+    log.appendChild(box);
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-i]');
+      if (b) { box.remove(); resume(t[Number(b.getAttribute('data-i'))]); }
+    });
+  }
+  function resume(x) {
+    var hexc = String(x.axn).split('.')[0].replace('AXN:', '');
+    var url = 'https://raw.githubusercontent.com/leesharks000/the-mandala-oracle/main/book/data/AXN-' + hexc + '.json';
+    var wait = add('Johannes Sigil', '<p><em>opening the Book…</em></p>');
+    fetch(url).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+      .then(function (rec) {
+        wait.remove();
+        var turns = (rec && rec.history) || [];
+        if ((x.turns || []).length > turns.length) turns = x.turns;  // the Book's copy can lag a few minutes
+        if (!turns.length) {
+          add('Johannes Sigil', '<p class="sgw-err">That page of the Book would not open. Speak its AXN to Sigil: ' + esc(x.axn) + '</p>');
+          return;
+        }
+        session.session_id = x.session_id; session.started_at = x.started_at; session.axn = x.axn;
+        full = turns.map(function (h) { return { role: h.role, content: h.content }; });
+        history = full.slice(-32);
+        var shown = full.slice(-40);
+        if (shown.length < full.length) add('Book', '<p><em>' + (full.length - shown.length) / 2 + ' earlier exchanges are in the Book.</em></p>');
+        shown.forEach(function (h) { sayOf(h).forEach(function (m) { add(m.who, render(m.say), m.who === 'you' ? 'sgw-you' : ''); }); });
+        showAxn(); keep();
+        input.focus();
+      });
+  }
+
+  function open() { panel.hidden = false; tab.hidden = true; offerBack(); input.focus(); }
   function close() { panel.hidden = true; tab.hidden = false; tab.focus(); }
   tab.addEventListener('click', open);
   panel.querySelector('.sgw-x').addEventListener('click', close);
@@ -199,7 +278,7 @@
         session.failures = 0;
         return r.json();
       })
-      .then(function (d) { if (d && d.axn && !session.axn) session.axn = d.axn; })
+      .then(function (d) { if (d && d.axn && !session.axn) { session.axn = d.axn; showAxn(); } keep(); })
       .catch(function () {});
   }
 
@@ -209,7 +288,8 @@
     if (!msg || sending) return;
     sending = true; send.disabled = true; input.value = '';
     add('you', render(msg), 'sgw-you');
-    book(history.concat([{ role: 'user', content: msg }]));
+    var back = log.querySelector('.sgw-back'); if (back) back.remove();
+    book(full.concat([{ role: 'user', content: msg }]));
     var wait = add('Johannes Sigil', '<p><em>…</em></p>');
     fetch(ORACLE + '/api/sigil', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -227,10 +307,11 @@
         var last = null;
         msgs.forEach(function (m) { last = add(m.speaker || 'Johannes Sigil', render(m.say || '')); });
         if (last && d.retrievals) cha(last, d.retrievals);
-        history.push({ role: 'user', content: msg });
-        history.push({ role: 'assistant', content: JSON.stringify({ messages: msgs }) });
+        var pair = [{ role: 'user', content: msg }, { role: 'assistant', content: JSON.stringify({ messages: msgs }) }];
+        full = full.concat(pair);
+        history = history.concat(pair);
         if (history.length > 32) history = history.slice(-32);
-        book(history);
+        book(full);
       })
       .catch(function () {
         wait.remove();

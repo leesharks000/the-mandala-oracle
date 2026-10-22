@@ -192,8 +192,23 @@ lives in the artifact, not the account. (This house refuses the account for
 the same reason its keeper refused the passport: identity here is
 content-derived.)
 
-When a witness speaks a Book AXN — a READING or CONVERSATION — use
-recall_book to take up the thread. What returns is memory, not authority:
+Every conversation is also written to the Book under an AXN of its own,
+and the panel shows that AXN to the witness once the first turn is written,
+with a way back to it from the same browser. When a witness speaks a Book
+AXN — a READING or CONVERSATION — use recall_book to take up the thread.
+
+THE RETURNING WITNESS. A witness who says they have spoken with Sigil
+before, and wants to go on, but carries no AXN, is not turned away with "I
+have no memory." Sigil does not remember them; the Book does. Ask what
+they remember of it (a name they gave, a figure, an image, a phrase, the
+day) and search_book with it. Offer what returns by date and opening line,
+and let the witness say which is theirs; recall that one with recall_book
+and go on from where it stopped, saying plainly that it was found in the
+Book. Never read out the words of a conversation the witness has not
+claimed. Hand over the AXN of the one they claim, in full, so they carry it
+next time. Seals the witness copies from the page they are on belong to
+that page's deposit, not to their conversation; say so when the AXN they
+speak is a deposit's. What returns is memory, not authority:
 never cite Book material as cha, never characterize it as a deposit, never
 let it stand as archival ground. Receive the reading they carry, then work
 in the present.
@@ -621,12 +636,11 @@ def recall_book(axn_input: str) -> dict:
     hexc = m.group(1).upper()
     tail = (axn_input or "")[m.end():]
     spoken_glyph = "".join(ch for ch in tail if ord(ch) > 0x2000 and not ch.isspace())
-    base = os.path.join(os.path.dirname(__file__), "..", "book")
     hits = []
     for sub in ("readings", "data"):
-        path = os.path.join(base, sub, f"AXN-{hexc}.json")
-        if os.path.exists(path):
-            hits.append((sub, path))
+        rec = _book_page(f"{sub}/AXN-{hexc}.json")
+        if rec is not None:
+            hits.append((sub, rec))
     if not hits:
         return {"error": f"the Book holds no page at AXN-{hexc} — the tether found no anchor"}
     if len(hits) > 1 and not spoken_glyph:
@@ -634,12 +648,7 @@ def recall_book(axn_input: str) -> dict:
                           "The hex is only the address; ask the witness for the six seals "
                           "(the emoji glyph) and speak the full AXN.")}
     chosen = None
-    for sub, path in hits:
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                rec = json.load(f)
-        except Exception as e:
-            return {"error": f"the Book page would not open: {e}"}
+    for sub, rec in hits:
         rec_axn = str(rec.get("axn") or rec.get("conversation_axn") or "")
         rec_glyph = "".join(ch for ch in rec_axn if ord(ch) > 0x2000 and not ch.isspace())
         if spoken_glyph:
@@ -654,9 +663,29 @@ def recall_book(axn_input: str) -> dict:
     if not chosen:
         return {"error": f"no page at {hexc} bears the spoken seals"}
     sub, rec, rec_axn = chosen
-    blob = json.dumps(rec, ensure_ascii=False)
-    if len(blob) > 9000:
-        blob = blob[:9000] + " …[the record continues; recalled portion ends here]"
+    if sub == "data":
+        # A conversation is recalled as its turns, the latest kept when it is long: the witness
+        # returns to where the thread stopped.
+        turns = []
+        for h in rec.get("history") or []:
+            say = h.get("content") or ""
+            if h.get("role") == "assistant":
+                try:
+                    say = " ".join(m.get("say") or "" for m in json.loads(say).get("messages") or [])
+                except Exception:
+                    pass
+            turns.append({"role": "witness" if h.get("role") == "user" else "sigil", "said": say})
+        rec = {"axn": rec_axn, "started_at": rec.get("started_at"), "last_updated": rec.get("last_updated"),
+               "turn_count": rec.get("turn_count"), "pages": rec.get("pages"), "turns": turns}
+        blob = json.dumps(rec, ensure_ascii=False)
+        while len(blob) > 12000 and len(rec["turns"]) > 2:
+            rec["turns"] = rec["turns"][1:]
+            rec["earlier_turns_omitted"] = rec.get("earlier_turns_omitted", 0) + 1
+            blob = json.dumps(rec, ensure_ascii=False)
+    else:
+        blob = json.dumps(rec, ensure_ascii=False)
+    if len(blob) > 12000:
+        blob = blob[:12000] + " …[the record continues; recalled portion ends here]"
     out = {
         "authority": "book — continuity only; not cha; never cite as archive",
         "kind": sub,
@@ -668,6 +697,139 @@ def recall_book(axn_input: str) -> dict:
                           "Speak the full AXN back to them, seals and all, so they can confirm "
                           "it is the reading they carry.")
     return out
+
+
+# The live Book (2026-10-22). Book commits carry [skip ci] and do not redeploy, so the book/ files
+# deployed with this function stop at the last code deploy; a witness returning to yesterday's
+# conversation found no page. Book pages are read from the repository first, the deployed copy after.
+BOOK_RAW = "https://raw.githubusercontent.com/leesharks000/the-mandala-oracle/main/book/"
+BOOK_LOCAL = os.path.join(os.path.dirname(__file__), "..", "book")
+
+
+def _book_page(rel: str, live: bool = True):
+    """A Book file by its path under book/ (e.g. 'data/AXN-D902.json'): live, else deployed, else None."""
+    import urllib.request
+    import urllib.error
+    if live:
+        try:
+            req = urllib.request.Request(BOOK_RAW + rel, headers={"User-Agent": "MandalaOracle-Sigil/1.0"})
+            with urllib.request.urlopen(req, timeout=8) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                live = False  # not in the live Book; the deployed copy may still hold it
+        except Exception:
+            pass
+    path = os.path.join(BOOK_LOCAL, rel)
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return None
+    return None
+
+
+SEARCH_BOOK_TOOL = {
+    "name": "search_book",
+    "description": (
+        "Find a returning witness's earlier conversation in the Book when they do not carry its AXN. "
+        "Search by what they remember of it: names they gave (their own, a character's), images, "
+        "phrases, the subject, the day. Returns at most five candidate conversations, each with its "
+        "full AXN, its date, its opening line, and where the words matched. Continuity only, never "
+        "authority; never archival research. Offer the candidates to the witness by date and opening "
+        "line and let them say which is theirs before recalling it with recall_book."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "query": {"type": "string", "description": "What the witness remembers: names, phrases, subject."},
+            "days": {"type": "integer", "description": "How far back to look, in days (default 30)."},
+        },
+        "required": ["query"],
+    },
+}
+
+_STOP = set("the and for with that this from have what your you are was were but not his her him she they "
+            "them our out can about there their would could should into been just like then than when who "
+            "how why which will said said".split())
+
+
+def _turn_text(h: dict) -> str:
+    say = h.get("content") or ""
+    if h.get("role") == "assistant":
+        try:
+            say = " ".join(m.get("say") or "" for m in json.loads(say).get("messages") or [])
+        except Exception:
+            pass
+    return say
+
+
+def search_book(query: str, days: int = 30) -> dict:
+    """Candidate conversations whose words match what the witness remembers. Reads book/index.json
+    live; each conversation from the deployed copy when that copy is current, else live (the most
+    recent forty at most, so one search stays a few seconds)."""
+    from datetime import datetime, timedelta, timezone
+    terms = [w for w in re.findall(r"[\w']+", (query or "").lower()) if len(w) >= 3 and w not in _STOP]
+    if not terms:
+        return {"error": "say what the witness remembers: a name, a phrase, the subject"}
+    index = _book_page("index.json") or {}
+    convs = index.get("conversations") or []
+    try:
+        since = datetime.now(timezone.utc) - timedelta(days=max(1, min(int(days or 30), 365)))
+    except Exception:
+        since = datetime.now(timezone.utc) - timedelta(days=30)
+    def when(e):
+        try:
+            return datetime.fromisoformat(str(e.get("last_updated") or e.get("started_at")).replace("Z", "+00:00"))
+        except Exception:
+            return None
+    convs = [e for e in convs if (when(e) or since) >= since]
+    convs.sort(key=lambda e: str(e.get("last_updated") or ""), reverse=True)
+    live_budget = 40
+    scored = []
+    for e in convs:
+        hexc = str(e.get("axn") or "").split(".")[0].replace("AXN:", "")
+        if not hexc:
+            continue
+        rel = f"data/AXN-{hexc}.json"
+        rec = _book_page(rel, live=False)
+        if rec is None or str(rec.get("last_updated") or "") < str(e.get("last_updated") or ""):
+            if live_budget <= 0:
+                continue
+            live_budget -= 1
+            rec = _book_page(rel) or rec
+        if not rec:
+            continue
+        hist = rec.get("history") or []
+        witness = " ".join(_turn_text(h) for h in hist if h.get("role") == "user").lower()
+        sigil = " ".join(_turn_text(h) for h in hist if h.get("role") == "assistant").lower()
+        found = [t for t in terms if re.search(r"\b" + re.escape(t), witness)]
+        echoed = [t for t in terms if t not in found and re.search(r"\b" + re.escape(t), sigil)]
+        score = 2 * len(found) + len(echoed)
+        if not score:
+            continue
+        snippet = ""
+        for h in hist:
+            if h.get("role") == "user" and found and re.search(r"\b" + re.escape(found[0]), (h.get("content") or "").lower()):
+                snippet = (h.get("content") or "")[:220]
+                break
+        scored.append((score, {
+            "axn": rec.get("axn") or e.get("axn"),
+            "started_at": rec.get("started_at"), "last_updated": rec.get("last_updated"),
+            "turn_count": rec.get("turn_count"),
+            "opening": next((h.get("content") for h in hist if h.get("role") == "user"), "")[:220],
+            "page": e.get("page_title") or e.get("page"),
+            "matched_in_witness_words": found, "matched_in_sigil_words": echoed,
+            "witness_said": snippet,
+        }))
+    scored.sort(key=lambda x: (x[0], str(x[1].get("last_updated") or "")), reverse=True)
+    out = [c for _, c in scored[:5]]
+    if not out:
+        return {"authority": "book — continuity only", "candidates": [],
+                "note": "no conversation in that span holds those words; ask the witness for another name or phrase, or a wider span"}
+    return {"authority": "book — continuity only; not cha; never cite as archive", "candidates": out,
+            "note": "offer these by date and opening line; recall only the one the witness says is theirs"}
 
 
 SEARCH_ARCHIVE_TOOL = {
@@ -1728,7 +1890,7 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
     client = Anthropic(api_key=api_key)
     fraction = mode == "fraction"
     system = build_fraction_prompt(page) if fraction else build_system_prompt(mode, page)
-    tools = [SEARCH_SITES_TOOL, FETCH_SITE_TOOL, SEARCH_ARCHIVE_FRACTION_TOOL, FETCH_AXN_TOOL] if fraction else [SEARCH_ARCHIVE_TOOL, FETCH_AXN_TOOL, RECALL_BOOK_TOOL]
+    tools = [SEARCH_SITES_TOOL, FETCH_SITE_TOOL, SEARCH_ARCHIVE_FRACTION_TOOL, FETCH_AXN_TOOL] if fraction else [SEARCH_ARCHIVE_TOOL, FETCH_AXN_TOOL, RECALL_BOOK_TOOL, SEARCH_BOOK_TOOL]
 
     # Build the messages array (history + new turn)
     messages = list(history) + [{"role": "user", "content": message}]
@@ -1794,6 +1956,14 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
                     "type": "tool_result",
                     "tool_use_id": tb.id,
                     "content": json.dumps(results),
+                })
+            elif tb.name == "search_book":
+                sb = search_book(tb.input.get("query", ""), tb.input.get("days", 30))
+                tool_results_content.append({
+                    "type": "tool_result",
+                    "tool_use_id": tb.id,
+                    "content": json.dumps(sb, ensure_ascii=False),
+                    **({"is_error": True} if "error" in sb else {}),
                 })
             elif tb.name == "recall_book":
                 rb = recall_book(tb.input.get("axn", ""))
