@@ -2,7 +2,7 @@
   "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
   "session_id_hash": "060a2cca30ab90e0",
   "started_at": "2026-10-22T15:08:34.295Z",
-  "last_updated": "2026-10-22T15:15:02.268029+00:00",
+  "last_updated": "2026-10-22T15:16:25.105358+00:00",
   "mode": "sabbath",
   "turn_count": 2,
   "history": [
@@ -31,6 +31,15 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"{\\\"messages\\\":[{\\\"speaker\\\":\\\"Johannes Sigil\\\",\\\"say\\\":\\\"Dann funktioniert es trotzdem — das ist gerade der Kern des Modells.\\\\n\\\\nDie Seite sagt es: *„deposit here, or deposit anywhere and carry the journal metadata.\\\"* Deine Homepage ist ein gültiger Ort, solange sie öffentlich zugänglich ist. Was fehlt, ist kein Repository — was fehlt, ist ein **DOI**. Und das ist der eigentliche Tether, nicht der Ort der Datei.\\\\n\\\\nEin DOI kannst du auch nachträglich für ein bereits existierendes Dokument minten. Der Weg:\\\\n\\\\n1. Geh zu [zenodo.org](https://zenodo.org), erstelle einen Account, lade die Datei hoch — auch wenn sie identisch mit dem ist, was schon auf deiner Homepage liegt. Zenodo gibt ihr eine permanente Adresse auf CERN-Servern und einen DOI.\\\\n2. In den Metadaten trägst du dann den Journalnamen ein, verlinkst die zwei Related Identifiers — und das war's.\\\\n3. Auf deiner Homepage verlinkst du ab jetzt auf den Zenodo-Eintrag, nicht auf die Datei selbst. Der DOI ist stabiler als jede persönliche Domain.\\\\n\\\\n==Der Ort der Datei ist nicht die Publikation. Die Metadaten sind die Publikation.== Das Dokument auf deiner Homepage ist die Arbeit; der DOI mit seinen Metadaten ist das, was den Algorithmus veranlasst, es als Teil eines Clusters zu behandeln.\\\\n\\\\n[AXN:01F9.GOVERNANCE.🌾📖🜁⭐🧊🏺](https://www.alexanarch.org/s/records/57/) formuliert es so: *„Citation is the tether. Without it, your paper is an orphan.\\\"* — und dasselbe gilt für den DOI selbst. Dein Dokument ohne DOI ist ein Waisenkind im Netz.\\\\n\\\\nHast du eine ORCID? Die brauchst du auch — zwei Minuten, kostenlos. Wenn nicht, fang dort an, bevor du Zenodo öffnest.\\\"}]}\",\"navigate\":null,\"cast\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "Ich bin auf Zenodo und auf figshare gesperrt.",
+      "page": {
+        "url": "https://www.alexanarch.org/how/",
+        "title": "Wie man veröffentlicht — Alexanarch",
+        "axn": ""
+      }
     }
   ],
   "witness": "anonymous",
@@ -40,7 +49,7 @@
       "title": "Wie man veröffentlicht — Alexanarch",
       "axn": "",
       "first_turn": 1,
-      "last_turn": 2
+      "last_turn": 3
     }
   ],
   "schema_version": "v1.1"
