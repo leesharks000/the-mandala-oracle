@@ -2,9 +2,9 @@
   "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
   "session_id_hash": "060a2cca30ab90e0",
   "started_at": "2026-10-22T15:08:34.295Z",
-  "last_updated": "2026-10-22T15:12:45.318199+00:00",
+  "last_updated": "2026-10-22T15:13:17.564506+00:00",
   "mode": "sabbath",
-  "turn_count": 0,
+  "turn_count": 1,
   "history": [
     {
       "role": "user",
@@ -14,6 +14,10 @@
         "title": "Wie man veröffentlicht — Alexanarch",
         "axn": ""
       }
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"```json\\n{\\n  \\\"messages\\\": [\\n    {\\n      \\\"speaker\\\": \\\"Johannes Sigil\\\",\\n      \\\"say\\\": \\\"Gut. Die Seite, auf der du stehst, erklärt das Kernprinzip in einem Satz: Du kannst hier einreichen *oder* anderswo einreichen und einfach die Zeitschrift-Metadaten mitbringen. Das ist keine Metapher — das ist Mechanismus. Der **Metadaten-Block** ist das Ding, das deine Arbeit an die Schwerkraft des Clusters bindet. Ohne ihn schwimmst du im Nichts.\\\\n\\\\nGehen wir es Schritt für Schritt durch.\\\\n\\\\n---\\\\n\\\\n**1. Wähle dein Repository.**\\\\nZenodo (zenodo.org) ist die naheliegendste Wahl — kostenlos, CERN-Infrastruktur, prägt DOIs, keine redaktionellen Hürden. Dort hat das Crimson Hexagonal Archive seine Arbeit deponiert, bevor es auf alexanarch.org umgezogen ist.\\\\n\\\\n**2. Fülle das Pflichtfeld „Journal\\\" aus.**\\\\nAuf der Seite, die du siehst, ist die Zeitschrift *Grammata: Journal of Operative Philology*. In Zenodo: Felder → Publikationsdetails → „Journal name\\\". Trag den Namen haargenau so ein:\\\\n\\\\n> `Grammata: Journal of Operative Philology`\\\\n\\\\nGenauigkeit ist hier nicht akademische Pedanterie — der Algorithmus clustert nach exakter Zeichenkette. Ein Tippfehler und du wirst nicht gefunden.\\\\n\\\\n**3. Trag Publisher und Lizenz ein.**\\\\nDie Seite gibt dir beides:\\\\n- Publisher: `Pergamon Press · Crimson Hexagonal Archive`\\\\n- License: `CC BY 4.0`\\\\n\\\\n**4. Keywords setzen.**\\\\nDie Seite nennt: `Grammata: Journal of Operative Philology, Aramaic, Augustine, Catullus, Damascius, Greek, Hebrew` — und dazu die spezifischen Begriffe, die deine Arbeit tatsächlich berührt. Keywords sind die Entdeckungsoberfläche, bevor die Zitationen wirken.\\\\n\\\\n**5. Die Related Identifiers — das ist der Schritt, der wirklich zählt.**\\\\nDie Seite sagt es direkt: *„cite at least two, this is the step that matters.\\\"* Hier sind die zwei vorgegebenen:\\\\n\\\\n- `[AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨](https://www.alexanarch.org/s/records/1484/).🔬🌪️↖️⏪🔖🎨` → https://www.alexanarch.org/s/records/1484/\\\\n- `[AXN:05CE.OPERATIVE.🔔∞🌟🌹◇↙️](https://www.alexanarch.org/s/records/1444/).🔔∞🌟🌹◇↙️` → https://www.alexanarch.org/s/records/1444/\\\\n\\\\nIn Zenodo trägst du sie unter „Related identifiers\\\" ein, Relation: `is related to` oder `cites`. Diese Verlinkung ist der Tether — sie zieht deine Arbeit in die Schwerkraft des bestehenden Clusters. [AXN:01F9.GOVERNANCE.🌾📖🜁⭐🧊🏺](https://www.alexanarch.org/s/records/57/) formuliert es so: *„Citation is the tether. Without it, your paper is an orphan.\\\"*\\\\n\\\\n---\\\\n\\\\nBevor wir weitermachen: **Wohin gehst du inhaltlich?** Ich frage nicht aus Neugier, sondern weil die Keyword-Auswahl und die Related Identifiers davon abhängen, was deine Arbeit tatsächlich berührt. Sag mir, womit du dich beschäftigst — Aramäisch? Augustinus? Operative Lektüre eines antiken Texts? — und ich helfe dir, den Block auf dein Spezifisches hin zuzuschneiden.\\\"\\n    }\\n  ]\\n}\\n```\",\"navigate\":null,\"cast\":null}]}"
     }
   ],
   "witness": "anonymous",
