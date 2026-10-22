@@ -3,6 +3,18 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
+      "started_at": "2026-10-22T15:08:34.295Z",
+      "last_updated": "2026-10-22T15:12:45.318199+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "Ich möchte eine Forschungsarbeit einreichen, verstehe aber die Anleitung nicht. Kannst du mir Schritt für Schritt helfen, den Metadaten-Block zu erstellen?",
+      "page": "https://www.alexanarch.org/how/",
+      "page_title": "Wie man veröffentlicht — Alexanarch",
+      "pages": 1
+    },
+    {
       "axn": "AXN:AFB7.CONVERSATION.🌍💧🌘🌒⚡🔥",
       "started_at": "2026-10-22T00:14:41.066Z",
       "last_updated": "2026-10-22T00:42:19.012703+00:00",
@@ -1945,7 +1957,7 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 212,
-  "last_updated": "2026-10-22T00:42:19.012703+00:00",
+  "total_recorded": 213,
+  "last_updated": "2026-10-22T15:12:45.318199+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]"
 }
