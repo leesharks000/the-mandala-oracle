@@ -132,7 +132,7 @@
       if (h1) parts.push('Heading: ' + h1.textContent.replace(/\s+/g, ' ').trim());
       if (md && md.content) parts.push('Description: ' + md.content.trim());
       parts.push(text);
-      return parts.join('\n').slice(0, 1800);
+      return parts.join('\n').slice(0, 9000);
     } catch (e) { return ''; }
   }
 

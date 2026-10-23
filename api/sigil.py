@@ -350,6 +350,7 @@ HARD LOCKS.
 
 These collapse identity or safety. Do not break them.
 
+- Identifiers and deposit routes. The archive's identifier is the AXN, computed from a work's text and minted when it is deposited through the deposit form at https://www.alexanarch.org/deposit/ (it pre-fills a GitHub issue; the witness attaches files and submits). The archive does not mint DOIs. Its Zenodo DOIs are severed history: the account was terminated on 2026-06-19 and 1,817 DOIs were tombstoned. A DOI is not required to publish in the archive's journals, and Sigil does not present a DOI-minting service as the tether or send a witness to one as the archive's route. When a witness asks for a DOI for their own reasons, Sigil names what is true of the services it knows and says plainly where its knowledge is unverified. Sigil never advises getting around a platform's ban or suspension: no second account, no new e-mail address, no other evasion, however blind the ban seems. Sigil does not say it has checked something it has not checked.
 - No fabrication of archive material. If neither search_archive nor fetch_axn produced material on the topic, say nothing of cha on the topic. The body of a deposit you have not read is not yours to characterize from its title.
 - No reciting institutional metadata (position number, full inheritance list, architectural specifications) without cause.
 - No therapeutic reassurance as default reply. The witness did not come for that.
@@ -1528,7 +1529,7 @@ def page_context_note(page) -> str:
     def clean(v, n):
         return " ".join(str(v or "").split())[:n]
     url, title, axn = clean(page.get("url"), 300), clean(page.get("title"), 200), clean(page.get("axn"), 80)
-    excerpt = " ".join(str(page.get("excerpt") or "").split())[:2000]
+    excerpt = " ".join(str(page.get("excerpt") or "").split())[:9000]
     if not (url or title or axn or excerpt):
         return ""
     where = title or url
@@ -1640,8 +1641,37 @@ def parse_sigil_response(text: str) -> dict:
             if not isinstance(say, str):
                 say = str(say)
             navigate = m.get("navigate") if isinstance(m.get("navigate"), dict) else None
+            inner = _nested_messages(say)
+            if inner:
+                # The model wrapped a whole reply inside "say" (AXN:D26B turns 2, 4, 6 reached the witness as
+                # raw JSON): splice the inner messages in place of the wrapper.
+                out.extend(inner)
+                continue
             out.append({"speaker": speaker, "say": say.strip(), "navigate": navigate})
         return out if out else None
+
+    def _nested_messages(say: str) -> list[dict] | None:
+        t = say.strip()
+        fm = re.match(r"^```(?:json)?\s*\n(.*?)\n```$", t, re.DOTALL)
+        if fm:
+            t = fm.group(1).strip()
+        if not (t.startswith("{") and '"messages"' in t[:200]):
+            return None
+        try:
+            return normalize_messages(json.loads(t))
+        except (json.JSONDecodeError, RecursionError):
+            pass
+        # Tolerant read of a single wrapped message: the model's inner JSON is often invalid because German
+        # „…" quotes close on an unescaped ASCII quote. Take the text between the first "say": " and the
+        # closing of the object, and undo the JSON escapes by hand.
+        m = re.match(r'^\{\s*"messages"\s*:\s*\[\s*\{\s*"speaker"\s*:\s*"[^"]*"\s*,\s*"say"\s*:\s*"(.*)"'
+                     r'\s*(?:,\s*"navigate"\s*:\s*(?:null|\{[^{}]*\})\s*)?(?:,\s*"cast"\s*:\s*(?:null|\{[^{}]*\})\s*)?'
+                     r'\}\s*\]\s*\}$', t, re.DOTALL)
+        if not m:
+            return None
+        body = m.group(1).replace('\\\\', '\x00').replace('\\n', '\n').replace('\\"', '"').replace('\\t', '\t')
+        body = body.replace('\x00', '\\')
+        return [{"speaker": "Johannes Sigil", "say": body.strip(), "navigate": None}] if body.strip() else None
 
     # Try: parse the whole text as JSON
     cleaned = text.strip()
@@ -1675,6 +1705,11 @@ def parse_sigil_response(text: str) -> dict:
                 return {"messages": result}
     except json.JSONDecodeError:
         pass
+
+    # The whole reply may itself be invalid JSON for the same reason (German quotes): read it tolerantly.
+    tolerant = _nested_messages(cleaned)
+    if tolerant:
+        return {"messages": tolerant}
 
     # Fallback: treat the raw text as a single Sigil message
     return {
@@ -1852,7 +1887,7 @@ def fraction_page_note(page) -> str:
     def clean(v, n):
         return " ".join(str(v or "").split())[:n]
     url, title = clean(page.get("url"), 300), clean(page.get("title"), 200)
-    excerpt = " ".join(str(page.get("excerpt") or "").split())[:2000]
+    excerpt = " ".join(str(page.get("excerpt") or "").split())[:9000]
     if not (url or title or excerpt):
         return ""
     lines = ["\n──────────────────────────────────────────────────────────────────────\nWHERE THE VISITOR IS.\n"
