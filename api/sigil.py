@@ -2055,6 +2055,12 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
 # HTTP handler (Vercel-compatible)
 # ─────────────────────────────────────────────────────────────────────────────
 
+PAUSE_NOTICE = (
+    "Johannes Sigil is contemplating existence, and will be back. "
+    "The Book is closed for the moment too."
+)
+
+
 class handler(BaseHTTPRequestHandler):
     def _send_json(self, status: int, body: dict):
         payload = json.dumps(body).encode("utf-8")
@@ -2079,6 +2085,15 @@ class handler(BaseHTTPRequestHandler):
             history = body.get("history", [])
             mode = body.get("mode", "sabbath")
             api_key = body.get("anthropic_key") or os.environ.get("ANTHROPIC_API_KEY")
+
+            # PAUSE (2026-10-26, Lee Sharks). Sigil's modes answer with one fixed
+            # notice and call no model; Fraction, on the commercial pages, runs.
+            # Set SIGIL_PAUSED=0 in the deployment's environment to lift it.
+            if os.environ.get("SIGIL_PAUSED", "1") != "0" and mode != "fraction":
+                self._send_json(200, {"messages": [{"speaker": "The Oracle", "say": PAUSE_NOTICE,
+                                                    "navigate": None, "cast": None}],
+                                      "retrievals": [], "paused": True})
+                return
 
             if not message:
                 self._send_json(400, {"error": "message is required"})
