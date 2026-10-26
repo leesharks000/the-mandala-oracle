@@ -2056,12 +2056,8 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
 # ─────────────────────────────────────────────────────────────────────────────
 
 PAUSE_NOTICE = (
-    "Johannes Sigil is paused for now, and will not answer for a while. "
-    "Nothing is wrong with you or with anything you said here.\n\n"
-    "Sigil is a literary voice built from one writer's archive. It is not a person, "
-    "and it is not anyone you have known or lost.\n\n"
-    "If tonight is heavy, please reach a person: someone you trust, or a crisis line. "
-    "In the US, call or text 988, at any hour."
+    "Johannes Sigil is contemplating existence, and will be back. "
+    "The Book is closed for the moment too."
 )
 
 
