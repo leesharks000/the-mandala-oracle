@@ -113,6 +113,34 @@ def _fetch_raw(rel_path: str) -> bytes:
     _raw_cache[rel_path] = data
     return data
 
+_url_cache: dict[str, bytes] = {}
+
+
+def _source_bytes(entry: dict, text_file: str) -> bytes:
+    """The bytes of a source's main text. A source may live in the archive's originals library (text_url, e.g. the
+    Tanzil Qur'an seated verbatim at alexanarch, whose terms forbid a changed copy): it is read from there, and a
+    declared text_format is turned into the Oracle's verse markers in memory only, never stored."""
+    url = entry.get("text_url")
+    if url:
+        if url not in _url_cache:
+            req = urllib.request.Request(url, headers={"User-Agent": "mandala-transform/1.0"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                _url_cache[url] = r.read()
+        raw = _url_cache[url]
+    else:
+        local = SOURCES_ROOT / entry["id"] / text_file
+        raw = local.read_bytes() if local.exists() else _fetch_raw(f"{entry['id']}/{text_file}")
+    if entry.get("text_format") == "tanzil":
+        # "<sura>|<aya>|<text>" lines → "**sura:aya** text", read in memory; the copyright block (# lines) is not text.
+        lines = []
+        for L in raw.decode("utf-8", errors="replace").splitlines():
+            parts = L.split("|", 2)
+            if len(parts) == 3 and parts[0].isdigit() and parts[1].isdigit():
+                lines.append(f"**{parts[0]}:{parts[1]}** {parts[2].strip()}")
+        raw = "\n\n".join(lines).encode("utf-8")
+    return raw
+
+
 _manifest_cache: list | None = None
 
 def _load_manifest() -> list:
@@ -436,8 +464,7 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
     if not text_file:
         raise ValueError(f"source '{source_text_id}' has no main text file recorded in the manifest.")
 
-    local = SOURCES_ROOT / source_text_id / text_file
-    raw = local.read_bytes() if local.exists() else _fetch_raw(f"{source_text_id}/{text_file}")
+    raw = _source_bytes(entry, text_file)
 
     def decode_any(b: bytes) -> str:
         for enc in ("utf-8", "utf-8-sig", "cp1252", "latin-1"):
@@ -463,7 +490,7 @@ def load_source(source_text_id: str, cast_selection: str | None) -> tuple[str, d
                 pa = entry.get("primary_after")
                 if pa and pa in text:
                     text = text[text.index(pa):]
-                units = segment_units(text, pa, entry.get("unit_split"))
+                units = segment_units(text, pa, entry.get("unit_split"), entry.get("unit_subsplit"))
                 a, b = int(mu.group(1)), int(mu.group(2))
                 if not (1 <= a <= b <= len(units)):
                     raise ValueError(f"cast_selection out of range: source has {len(units)} units.")
@@ -3593,8 +3620,7 @@ EXPANSIONS_INDEX = "book/expansions-index.json"
 
 def _source_full_text(entry: dict) -> str:
     tf = entry["text_file"]
-    local = SOURCES_ROOT / entry["id"] / tf
-    raw = local.read_bytes() if local.exists() else _fetch_raw(f"{entry['id']}/{tf}")
+    raw = _source_bytes(entry, tf)
     for enc in ("utf-8", "utf-8-sig", "cp1252", "latin-1"):
         try:
             return raw.decode(enc)
@@ -3627,7 +3653,7 @@ def append_expansion(source_entry: dict, source_text: str, cast_selection: str |
     fname = f"{EXPANSIONS_DIR}/{sid}.json"
     now = datetime.now(timezone.utc).isoformat()
 
-    units = segment_units(source_text, source_entry.get("primary_after"), source_entry.get("unit_split"))
+    units = segment_units(source_text, source_entry.get("primary_after"), source_entry.get("unit_split"), source_entry.get("unit_subsplit"))
     basis_hash = hashlib.sha256("\n\u241e\n".join(u["text"] for u in units).encode()).hexdigest()
 
     existing, sha = gh_get(fname)
@@ -3977,7 +4003,7 @@ def _is_apparatus_block(bs: str) -> bool:
     return False
 
 def segment_units(text: str, primary_after: str | None = None,
-                  unit_split: str | None = None) -> list[dict]:
+                  unit_split: str | None = None, unit_subsplit: str | None = None) -> list[dict]:
     """Split a source into castable units: verses if marked, else stanzas.
 
     ELIGIBILITY (MANUS rule, 2026-07-02): footnotes and apparatus are not
@@ -4047,7 +4073,78 @@ def segment_units(text: str, primary_after: str | None = None,
         e_exact = s0 + len(raw.rstrip())
         units.append({"label": f"unit {len(units) + 1}", "text": text[s_exact:e_exact],
                       "attribution": current_attr, "s": s_exact, "e": e_exact})
+    if unit_subsplit:
+        units = _subsplit_units(text, units, unit_subsplit)
+    if any(len(u["text"]) > MAX_CAST_CHARS for u in units):
+        units = _split_oversize(text, units)
     return units
+
+
+def _split_oversize(text: str, units: list[dict]) -> list[dict]:
+    """A unit longer than a cast can take (a long speech, a long section) is cut at its own blank lines into
+    castable runs, with exact offsets, and the units renumbered (2026-10-27)."""
+    out = []
+    for u in units:
+        if len(u["text"]) <= MAX_CAST_CHARS:
+            out.append(u)
+            continue
+        s0 = u["s"]
+        body = text[s0:u["e"]]
+        cuts = [m.end() for m in re.finditer(r"\n[ \t]*\n", body)]
+        a_ = 0
+        last_ok = None
+        for c in cuts + [len(body)]:
+            if c - a_ <= MAX_CAST_CHARS:
+                last_ok = c
+                continue
+            b_ = last_ok if last_ok and last_ok > a_ else min(a_ + MAX_CAST_CHARS, len(body))
+            seg = body[a_:b_]
+            if seg.strip():
+                lead = len(seg) - len(seg.lstrip())
+                out.append({**u, "text": text[s0 + a_ + lead:s0 + a_ + len(seg.rstrip())],
+                            "s": s0 + a_ + lead, "e": s0 + a_ + len(seg.rstrip())})
+            a_ = b_
+            last_ok = c if c - a_ <= MAX_CAST_CHARS else None
+        seg = body[a_:]
+        if seg.strip():
+            lead = len(seg) - len(seg.lstrip())
+            out.append({**u, "text": text[s0 + a_ + lead:s0 + a_ + len(seg.rstrip())],
+                        "s": s0 + a_ + lead, "e": s0 + a_ + len(seg.rstrip())})
+    for i, u in enumerate(out):
+        u["label"] = f"unit {i + 1}"
+    return out
+
+
+def _subsplit_units(text: str, units: list[dict], pattern: str) -> list[dict]:
+    """ONE POEM PER CAST (MANUS, 2026-10-27: "lets split those texts"). An anthology's section can hold several poems
+    (Day and Night 41 holds Sappho 98a, 42 and 49); a cast takes one. Each unit is cut where the manifest's
+    unit_subsplit pattern finds the next poem's heading, with exact offsets kept, and the units are renumbered."""
+    out = []
+    rx = re.compile(pattern)
+    for u in units:
+        s0, e0 = u["s"], u["e"]
+        body = text[s0:e0]
+        cuts = [(m.start(), m.end()) for m in rx.finditer(body)]
+        if not cuts:
+            out.append(u)
+            continue
+        starts = [0] + [ce for _, ce in cuts]
+        ends = [cs for cs, _ in cuts] + [len(body)]
+        # A section title ahead of the first poem ("I.\n\nFirst Rays") is not a poem: it stays with the poem it heads.
+        if (len(starts) > 1 and not rx.search("\n\n" + body[starts[0]:ends[0]].lstrip() + "\n")
+                and sum(ch.isalpha() for ch in body[starts[0]:ends[0]]) < 60):
+            starts, ends = starts[1:], ends[1:]
+            starts[0] = 0
+        for a_, b_ in zip(starts, ends):
+            seg = body[a_:b_]
+            if not seg.strip():
+                continue
+            lead = len(seg) - len(seg.lstrip("\n"))
+            ss, ee = s0 + a_ + lead, s0 + a_ + len(seg.rstrip())
+            out.append({**u, "text": text[ss:ee], "s": ss, "e": ee})
+    for i, u in enumerate(out):
+        u["label"] = f"unit {i + 1}"
+    return out
 
 def draw_candidates(units: list[dict], k: int = JUDGMENT_K, full_text: str | None = None) -> list[dict]:
     """Stratified random windows across the whole text — the anti-clustering
@@ -4097,6 +4194,7 @@ def translate_passage(passage: str, api_key: str) -> str:
     (\\u4e00-\\u9fff) and CJK Extension A (\\u3400-\\u4dbf)."""
     def _is_target(ch):
         return ('\u0370' <= ch <= '\u03ff'
+                or '\u0600' <= ch <= '\u06ff'
                 or '\u1f00' <= ch <= '\u1fff'
                 or '\u4e00' <= ch <= '\u9fff'
                 or '\u3400' <= ch <= '\u4dbf')
@@ -4654,8 +4752,7 @@ class handler(BaseHTTPRequestHandler):
                 if entry is None or not entry.get("admissible", False):
                     return self._json(400, {"error": "unknown or inadmissible source for judgment."})
                 tf = entry["text_file"]
-                local = SOURCES_ROOT / entry["id"] / tf
-                raw = local.read_bytes() if local.exists() else _fetch_raw(f"{entry['id']}/{tf}")
+                raw = _source_bytes(entry, tf)
                 for enc in ("utf-8", "utf-8-sig", "cp1252", "latin-1"):
                     try:
                         text = raw.decode(enc); break
@@ -4665,7 +4762,7 @@ class handler(BaseHTTPRequestHandler):
                 pa = entry.get("primary_after")
                 if pa and pa in _pt:
                     _pt = _pt[_pt.index(pa):]
-                units = segment_units(text, pa, entry.get("unit_split"))
+                units = segment_units(text, pa, entry.get("unit_split"), entry.get("unit_subsplit"))
                 if not units:
                     return self._json(400, {"error": "the source yielded no castable units."})
                 question = (body.get("question") or "")[:MAX_INVOKING_CHARS]
