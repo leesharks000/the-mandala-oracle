@@ -4355,6 +4355,12 @@ class handler(BaseHTTPRequestHandler):
             except Exception:
                 return self._json(400, {"error": "invalid JSON body"})
 
+        # CONSENT (MANUS, 2026-10-27): access to the Oracle requires consent to building the Book (terms at /terms/).
+        _c = body.get("consent") if isinstance(body.get("consent"), dict) else {}
+        if not (_c.get("terms") == "2026-10-27" and _c.get("accepted_at") and _c.get("book") is True):
+            return self._json(403, {"error": "consent required: the Oracle is open to those who build the Book with it. "
+                                             "Read the terms at /terms/ and give your consent.", "consent_required": True})
+
         api_key = body.get("anthropic_key") or os.environ.get("ANTHROPIC_API_KEY")
         if not api_key:
             return self._json(401, {"error": "no key: provide anthropic_key (BYOK) — "

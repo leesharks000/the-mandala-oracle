@@ -17,6 +17,19 @@
   window.__sigilWidget = true;
 
   var ORACLE = 'https://www.themandalaoracle.com';
+  // CONSENT (2026-10-27): the Oracle is open to those who build the Book with it; a turn is sent only with the
+  // witness's acceptance of the current terms, kept in this browser.
+  var TERMS = '2026-10-27', TERMS_URL = ORACLE + '/terms/', CONSENT_KEY = 'oracle.consent.v1';
+  function consent() {
+    try { var c = JSON.parse(localStorage.getItem(CONSENT_KEY) || 'null'); return c && c.terms === TERMS ? c : null; } catch (e) { return null; }
+  }
+  function giveConsent() {
+    var c = { terms: TERMS, accepted_at: new Date().toISOString(), book: true };
+    try { localStorage.setItem(CONSENT_KEY, JSON.stringify(c)); } catch (e) {}
+    window.__oracleConsent = c;
+    return c;
+  }
+  function currentConsent() { return consent() || window.__oracleConsent || null; }
   var MODE = 'sabbath';
   var history = [];   // what Sigil is sent: the last 32 entries
   var full = [];      // the whole conversation, as the Book records it
@@ -50,6 +63,7 @@
     '.sgw-head a{font-size:12px;color:#7d5e1a}',
     '.sgw-x{background:none;border:0;font-size:20px;line-height:1;color:#5e4a22;cursor:pointer;padding:0 0 0 6px}',
     '.sgw-notice{font-size:12.5px;line-height:1.45;color:#5e4a22;padding:8px 14px;background:rgba(255,250,236,.9);border-bottom:1px solid rgba(154,124,42,.25)}',
+    '.sgw-consent{margin:8px 14px;padding:10px 12px;border:1px solid currentColor;border-radius:8px;font-size:13px;line-height:1.45}.sgw-consent label{display:block;margin:6px 0}.sgw-consent button{padding:5px 10px;cursor:pointer}',
     '.sgw-notice a{color:#7d5e1a}',
     '.sgw-log{flex:1;overflow-y:auto;padding:12px 14px}',
     '.sgw-msg{margin:0 0 12px}',
@@ -270,6 +284,7 @@
     var pc = pageContext();
     var payload = { session_id: session.session_id, started_at: session.started_at, mode: MODE, history: h,
                     page: { url: pc.url, title: pc.title, axn: pc.axn } };
+    payload.consent = currentConsent();
     if (session.axn) payload.axn = session.axn;
     return fetch(ORACLE + '/api/book', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
       .then(function (r) {
@@ -286,6 +301,19 @@
     e.preventDefault();
     var msg = input.value.trim();
     if (!msg || sending) return;
+    if (!currentConsent()) {
+      if (log.querySelector('.sgw-consent')) return;
+      var box = document.createElement('div'); box.className = 'sgw-consent';
+      box.innerHTML = '<p>Every conversation here is anonymous and published in the Book, ' +
+        '<a href="https://www.alexanarch.org/book/" target="_blank" rel="noopener">alexanarch.org/book</a>, which its participants build.</p>' +
+        '<label><input type="checkbox"> I have read the <a href="' + TERMS_URL + '" target="_blank" rel="noopener">terms</a> and consent to my conversation being published in the Book.</label>' +
+        '<p><button type="button" disabled>Consent and send</button></p>';
+      var cb = box.querySelector('input'), go = box.querySelector('button');
+      cb.addEventListener('change', function () { go.disabled = !cb.checked; });
+      go.addEventListener('click', function () { giveConsent(); box.remove(); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit')); });
+      log.appendChild(box); log.scrollTop = log.scrollHeight;
+      return;
+    }
     sending = true; send.disabled = true; input.value = '';
     add('you', render(msg), 'sgw-you');
     var back = log.querySelector('.sgw-back'); if (back) back.remove();
@@ -293,7 +321,7 @@
     var wait = add('Johannes Sigil', '<p><em>…</em></p>');
     fetch(ORACLE + '/api/sigil', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: msg, history: history, mode: MODE, page: pageContext() })
+      body: JSON.stringify({ message: msg, history: history, mode: MODE, page: pageContext(), consent: currentConsent() })
     })
       .then(function (r) { return r.json().catch(function () { return { error: 'HTTP ' + r.status }; }).then(function (d) { d.__ok = r.ok; return d; }); })
       .then(function (d) {

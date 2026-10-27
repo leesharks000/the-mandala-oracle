@@ -66,6 +66,7 @@ GITHUB_TOKEN_ENV = "GITHUB_BOOK_TOKEN"
 BOOK_DIR = "book/data"
 BOOK_INDEX_PATH = "book/index.json"
 BOOK_FAMILY = "CONVERSATION"  # Family designation for Book AXNs
+TERMS_VERSION = "2026-10-27"  # the terms at /terms/; must match api/sigil.py
 
 
 class BookCredentialsInvalid(RuntimeError):
@@ -278,7 +279,8 @@ def upsert_conversation(axn: str, payload: dict) -> dict:
         "history": payload["history"],
         "witness": payload.get("witness", "anonymous"),
         "pages": pages,
-        "schema_version": "v1.1",
+        "consent": (existing or {}).get("consent") or payload.get("consent"),
+        "schema_version": "v1.2",
     }
 
     if existing and existing.get("session_id_hash") not in (None, payload["session_id_hash"]):
@@ -377,6 +379,14 @@ class handler(BaseHTTPRequestHandler):
                 return self._send_json(503, {"error": "book_paused",
                                              "detail": "The Book is not taking new pages while Sigil is paused."})
 
+            # CONSENT (MANUS, 2026-10-27): the Book is "an anonymous public book constructed by participants";
+            # nothing enters it without the witness's acceptance of the current terms (/terms/). 403 makes the
+            # clients stop appending for the session.
+            consent = body.get("consent") if isinstance(body.get("consent"), dict) else {}
+            if not (consent.get("terms") == TERMS_VERSION and consent.get("accepted_at") and consent.get("book") is True):
+                return self._send_json(403, {"error": "consent_required",
+                                             "detail": "Nothing enters the Book without consent to the terms at /terms/."})
+
             # Validate required fields
             session_id = body.get("session_id")
             history = body.get("history")
@@ -420,6 +430,7 @@ class handler(BaseHTTPRequestHandler):
                 "history": history,
                 "witness": body.get("attribution") or "anonymous",
                 "page": _clean_page(body.get("page")),
+                "consent": {"terms": TERMS_VERSION, "accepted_at": str(consent.get("accepted_at"))[:40], "book": True},
             }
 
             # Check env var presence early; fail clearly if not configured

@@ -302,7 +302,15 @@
       "name": "Is my API key sent to a server?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The Oracle is BYOK (Bring Your Own Key) and client-side. Your API key is stored in your browser and used to call the model provider directly from your browser; no request routes through any server operated by themandalaoracle.com or Lee Sharks. The Oracle has no server-side model access. If you would like to verify this, all client-side code is public and inspectable."
+        "text": "If you bring your own key, it is sent with each turn over TLS to the Oracle's server, used for that single call to the model provider, and never stored or logged. Without a key, the Oracle's own key answers a conversation for 12 turns. The code is public and inspectable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my conversation public?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Oracle is open to those who build the Book with it: every conversation is anonymous and published in the Book at alexanarch.org/book/, which its participants construct. Nothing is sent until you consent to the terms at themandalaoracle.com/terms/."
       }
     },
     {

@@ -16,6 +16,40 @@
 // When Sigil yields, the response contains two messages: his brief
 // acknowledgment, then the other heteronym's response.
 
+// CONSENT (MANUS, 2026-10-27): "access to the service requires consent to building /book. that is the whole idea: it
+// is an anonymous public book constructed by participants." Every request to the Oracle's own endpoints carries the
+// witness's acceptance of the current terms; the server answers nothing without it.
+const TERMS = '2026-10-27';
+const CONSENT_KEY = 'oracle.consent.v1';
+function currentConsent() {
+  try { const c = JSON.parse(localStorage.getItem(CONSENT_KEY) || 'null'); if (c && c.terms === TERMS) return c; } catch {}
+  return window.__oracleConsent || null;
+}
+function giveConsent() {
+  const c = { terms: TERMS, accepted_at: new Date().toISOString(), book: true };
+  try { localStorage.setItem(CONSENT_KEY, JSON.stringify(c)); } catch {}
+  window.__oracleConsent = c;
+  return c;
+}
+(function wrapFetch() {
+  const orig = window.fetch.bind(window);
+  window.fetch = (input, init) => {
+    try {
+      const url = typeof input === 'string' ? input : (input && input.url) || '';
+      if (/^\/api\//.test(url) && init && typeof init.body === 'string' && init.body.startsWith('{')) {
+        const b = JSON.parse(init.body);
+        if (!currentConsent()) {
+          if (typeof showConsent === 'function') showConsent();
+          return Promise.resolve(new Response(JSON.stringify({ error: 'Consent is required: the Oracle is open to those who build the Book with it.', consent_required: true }),
+            { status: 403, headers: { 'Content-Type': 'application/json' } }));
+        }
+        if (!b.consent) { b.consent = currentConsent(); init = { ...init, body: JSON.stringify(b) }; }
+      }
+    } catch { /* leave the request as it was */ }
+    return orig(input, init);
+  };
+})();
+
 const messagesEl = document.getElementById('messages');
 const formEl = document.getElementById('chat-form');
 const inputEl = document.getElementById('message-input');
@@ -179,6 +213,7 @@ window.addEventListener('sky-ready', () => {
 formEl.addEventListener('submit', async (e) => {
   e.preventDefault();
   if (isSending) return;
+  if (!currentConsent()) { showConsent(); return; }
 
   const message = inputEl.value.trim();
   if (!message) return;
@@ -385,6 +420,27 @@ function appendHeteronymMessage(speaker, content, opts = {}) {
   messagesEl.appendChild(wrap);
   messagesEl.scrollTop = messagesEl.scrollHeight;
   return wrap;
+}
+
+function showConsent() {
+  if (messagesEl.querySelector('.consent-card')) return;
+  removeEmptyState();
+  const box = document.createElement('div');
+  box.className = 'message consent-card';
+  box.innerHTML =
+    '<div class="message-role">The Oracle</div><div class="message-content">' +
+    '<p>The Oracle is open to those who build the Book with it. Every conversation here is anonymous and published ' +
+    'in the Book, <a href="https://www.alexanarch.org/book/" target="_blank" rel="noopener">alexanarch.org/book</a>, ' +
+    'which its participants construct.</p>' +
+    '<label style="display:block;margin:.5em 0"><input type="checkbox"> I have read the ' +
+    '<a href="/terms/" target="_blank" rel="noopener">terms</a> and consent to my conversation being published in the Book.</label>' +
+    '<button type="button" disabled>Consent and send</button></div>';
+  const cb = box.querySelector('input');
+  const go = box.querySelector('button');
+  cb.addEventListener('change', () => { go.disabled = !cb.checked; });
+  go.addEventListener('click', () => { giveConsent(); box.remove(); formEl.requestSubmit ? formEl.requestSubmit() : formEl.dispatchEvent(new Event('submit')); });
+  messagesEl.appendChild(box);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
 }
 
 function appendErrorMessage(content) {

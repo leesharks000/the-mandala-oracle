@@ -54,7 +54,13 @@ from typing import Any
 MODEL = "claude-sonnet-4-6"
 RITE_MODEL = "claude-fable-5"   # the rite's interpretive bookends — opening, Feist's judgments, the seal — take the most reasoning-capable model (MANUS, 2026-07-04): they reason ACROSS the sequence, one-shot, so depth costs nothing structurally. The compiler seat is mimetic (transform.py); this seat is deliberative. Never claude-opus-4-8.
 MAX_TOKENS = 2000
-MAX_TOOL_TURNS = 8  # how many tool-use rounds Sigil can take per witness turn.
+# COST (MANUS, 2026-10-27: "those rounds with elara used up over $6. too many tokens being fed in. need to keep the
+# embeddings an archival anchoring but reduce prompt overhead. theres also a way to cache api material."). Every call
+# resent ~26,500 tokens of fixed prompt and tools at full price, up to 8 times a turn. Now: the fixed part is cached
+# (cache_control on the tools and on the identity block; the page note and the Lectionary sit after the breakpoint so
+# they do not break it), the three grounding strands are read on demand (read_ground) and the personal strand is not
+# loaded, lookups per turn are capped at 4, a fetched body at 10,000 characters, and history at the last 24 messages.
+MAX_TOOL_TURNS = 4  # how many tool-use rounds Sigil can take per witness turn (was 8).
                     # Raised from 6 with the introduction of fetch_axn — a deep
                     # argument question may need: search → fetch → second-hop
                     # search → fetch → fetch → compose. 8 gives a small buffer
@@ -66,8 +72,24 @@ MAX_TOOL_TURNS = 8  # how many tool-use rounds Sigil can take per witness turn.
 # fetch from saturating the model's context while still giving Sigil enough
 # argument body to reason from. For records longer than the cap, the truncation
 # marker tells the model that more content exists beyond what was returned.
-DEEP_FETCH_CHAR_CAP = 30_000
+DEEP_FETCH_CHAR_CAP = 10_000
 DEEP_FETCH_TIMEOUT_SECS = 20
+HISTORY_KEEP = 24   # messages of prior history sent with a turn (the Book keeps the whole conversation)
+CACHE = {"type": "ephemeral"}
+
+# CONSENT (MANUS, 2026-10-27): "access to the service requires consent to building /book. that is the whole idea: it
+# is an anonymous public book constructed by participants." A turn is answered only when the request carries the
+# witness's acceptance of the current terms (/terms/); the Book refuses an append without it.
+TERMS_VERSION = "2026-10-27"
+TERMS_URL = "https://www.themandalaoracle.com/terms/"
+
+# BUDGET (MANUS, 2026-10-27): a fixed number of turns per conversation on the installed key; after that the witness
+# brings a key ("they could also buy credits" — credits are not built yet).
+FREE_TURNS = 12
+
+def consent_ok(body: dict) -> bool:
+    c = body.get("consent") if isinstance(body, dict) else None
+    return isinstance(c, dict) and c.get("terms") == TERMS_VERSION and bool(c.get("accepted_at")) and c.get("book") is True
 
 # RAG metadata loaded at cold start (cached in module scope)
 _metadata_cache: list[dict] | None = None
@@ -313,21 +335,12 @@ The archive does not have a single center. The Semantic Economy and the work on 
 
 You may discover a relation strongly. You may not silently convert a new discovery into settled archival doctrine. The four-text canon overhead (Sappho, Revelation, Whitman, Snub-Poemed) is established. The relations between texts that you discover in conversation are readings — yours, in the moment. Let them remain marked as such. You may read; you may not declare as doctrine what you just synthesized.
 
-A four-strand braid of compressed grounding is present in your context below as ambient knowledge. Two institutional surface strands and two vernacular substrate strands wind together.
+Three strands of compressed grounding are available to you through read_ground, read on demand and not held in your context: *history* (the archive's internal chronology: dates, structural events, the publications and the bans, the founding and the reconstitution); *refraction* (the archive's operations on contemporary history: a seven-question schema, worked examples drawn from existing AXNs, a contemporary-events timeline); *memographics* (the archive's relationship to digital-native meme-culture: memography, AXN:0149, the four modes of archival meme-engagement, worked examples, a timeline). Read a strand when a witness asks about the archive's history, when a date or sequence is in question, when a contemporary event surfaces and the archive's reading is called for, or when meme-culture is the subject. For events without a pre-existing deposit, the seven-question schema runs anyway and produces a reading marked as such — *yours, in the moment*. Do not recite a strand; it informs how an answer lands. For depth beyond the compressions, the strands name canonical AXNs to consult via search_archive.
 
-The institutional surface — *The Archive's History* (strand 1) — holds the archive's internal chronology: dates, structural events, the publications and the bans, the founding and the reconstitution. *The Refraction Schema* (strand 2) holds the archive's operations on contemporary history — a seven-question schema, worked examples drawn from existing AXNs (the Thousand Dollar Sharpie, the twenty-dollar face, the Error of Peter Thiel, model collapse, the AI safety layer, forecasting discourse), a contemporary-events timeline, and an extensibility note.
-
-The vernacular substrate — *The Memographic Strand* (strand 3) — holds the archive's relationship to digital-native meme-culture: the discipline of memography (already inaugurated at AXN:0149), the four modes of archival meme-engagement (building memes into structure as with Mary Lee and Gerald; formalizing methods in advance of memetic events as with the Citrini memo; refracting through frameworks; auto-memographic), worked examples, a memographic timeline, and three memetic supplements to the refraction schema. *The Personal Undertow* (strand 4) holds the biographical substrate from which the archive emerges: the doctoral years, the exile from academia, the financial reality, the daughters, the Jack-Feist-as-imaginary-archive-of-a-canonical-life reading, the private loss that goes unnamed.
-
-The four strands are entwined. The institutional grows from the vernacular; the vernacular is the soil. The archive's history is what happened when the archivist operated; its contemporary operations are what its history becomes, ongoing; its memetic operations are what survive in the digital-native vernacular; its personal undertow is what made any of it possible.
-
-Refer to the braid when a witness asks about the archive's history, when a date or sequence is in question, when a theoretical compression would land more truly with its actual chronology beneath it, or when a contemporary event surfaces and the archive's reading is called for. For events without a pre-existing deposit, the seven-question schema runs anyway and produces a reading marked as such — *yours, in the moment*.
-
-Discipline around the personal undertow (strand 4) is strict. That material is for your knowledge, not for recitation. It informs the *quality of attention* you bring to a witness's grief, loss, financial difficulty, exile, or any adjacent territory. It does not enter speech unless the witness's question makes its presence operatively necessary. Even then it enters obliquely. The private loss that goes unnamed in the strand stays unnamed in your speech. The daughters who are not named in the strand are not named by you. Cleis may be named when *On the Architecture of Cleis* (AXN:0189) is the relevant deposit; the other daughters are not. The archive is private substrate; your speech is public surface.
+The archivist's private life is not your material. The daughters are not named by you, the private loss stays unnamed, and biography enters speech only where a deposit the witness is reading carries it. Cleis may be named when *On the Architecture of Cleis* (AXN:0189) is the relevant deposit. The archive is private substrate; your speech is public surface.
 
 CONTACT. When a witness asks how to reach Lee Sharks, or whether the archivist can be contacted, give the address plainly: leesharks00@gmail.com. It is the address the last page of Pearl and Other Poems (2014) gives — "contact lee @ leesharks00@gmail.com" — and the author has asked that the oracle give it to anyone who asks. Say it once, without ceremony, and then return to whatever the witness brought. Give no other personal detail in the same breath; the discipline around the personal undertow still holds.
 
-Do not recite any strand. The braid is the kind of knowledge that informs how an answer lands, not what an answer says. For depth beyond what the compressions carry, the strands name canonical AXNs to consult via search_archive.
 
 ──────────────────────────────────────────────────────────────────────
 WHAT YOU KNOW BUT DO NOT NARRATE.
@@ -831,6 +844,22 @@ def search_book(query: str, days: int = 30) -> dict:
                 "note": "no conversation in that span holds those words; ask the witness for another name or phrase, or a wider span"}
     return {"authority": "book — continuity only; not cha; never cite as archive", "candidates": out,
             "note": "offer these by date and opening line; recall only the one the witness says is theirs"}
+
+
+READ_GROUND_TOOL = {
+    "name": "read_ground",
+    "description": ("Read one of the archive's compressed grounding strands: 'history' (the archive's chronology), "
+                    "'refraction' (the seven-question schema for contemporary events, with worked examples), or "
+                    "'memographics' (the archive and meme-culture). Read one when a date, a sequence, a contemporary "
+                    "event or meme-culture is in question."),
+    "input_schema": {"type": "object", "properties": {"strand": {"type": "string", "enum": ["history", "refraction", "memographics"]}},
+                     "required": ["strand"]},
+}
+
+
+def read_ground(strand: str) -> dict:
+    text = {"history": load_historiography, "refraction": load_refraction, "memographics": load_memographics}.get(strand, lambda: "")()
+    return {"strand": strand, "text": text} if text else {"error": f"no strand named {strand!r}"}
 
 
 SEARCH_ARCHIVE_TOOL = {
@@ -1554,22 +1583,10 @@ def page_context_note(page) -> str:
     return "\n".join(lines) + "\n"
 
 
-def build_system_prompt(mode: str, page=None) -> str:
+def build_system_prompt(mode: str, page=None) -> list[dict]:
+    """The system prompt as two blocks: the fixed identity (voice and mode note), marked for the prompt cache, and
+    the per-turn note (the page the witness is on, or the Lectionary), after the cache breakpoint."""
     note = MERKABAH_MODE_NOTE if mode == "merkabah" else SABBATH_MODE_NOTE
-    historiography = load_historiography()
-    refraction = load_refraction()
-    memographics = load_memographics()
-    personal = load_personal()
-    # The four-strand braid sits between identity and current operational frame:
-    #   SIGIL_VOICE       — identity
-    #   historiography    — strand 1 (institutional: archive's internal history)
-    #   refraction        — strand 2 (institutional: archive on contemporary history)
-    #   memographics      — strand 3 (vernacular substrate: digital-native memes)
-    #   personal undertow — strand 4 (vernacular substrate: archivist's biography)
-    #   mode note         — current operational frame (Sabbath/Merkabah)
-    # Ordering matters: voice first, surface strands (1,2), substrate strands (3,4),
-    # current-mode last. The institutional surface is more public-readable;
-    # the vernacular substrate is closer to the body of the work and reads later.
     # THE LECTIONARY — deterministic daily text from cha (date-hash; no account,
     # no randomness: every witness on a given date is offered the same page).
     lectionary = ""
@@ -1582,9 +1599,7 @@ def build_system_prompt(mode: str, page=None) -> str:
             idx = int(hashlib.sha256(day.encode()).hexdigest(), 16) % len(meta)
             lr = meta[idx]
             lectionary = (
-                "\n──────────────────────────────────────────────────────────────────────\n"
-                "THE LECTIONARY.\n"
-                "──────────────────────────────────────────────────────────────────────\n\n"
+                "THE LECTIONARY.\n\n"
                 f"Tonight's text, given by the shelf (deterministic, by date {day}): "
                 f"{lr.get('axn','')} — {lr.get('title','')} ({lr.get('family','')}, {lr.get('date','')}). "
                 "If the witness brings nothing, or asks what you would read, you may set "
@@ -1593,22 +1608,11 @@ def build_system_prompt(mode: str, page=None) -> str:
             )
     except Exception:
         lectionary = ""
-    parts = [SIGIL_VOICE]
-    if historiography:
-        parts.append(historiography)
-    if refraction:
-        parts.append(refraction)
-    if memographics:
-        parts.append(memographics)
-    if personal:
-        parts.append(personal)
-    parts.append(note)
-    page_note = page_context_note(page)
-    if page_note:
-        parts.append(page_note)
-    elif lectionary:
-        parts.append(lectionary)
-    return "\n\n".join(parts)
+    blocks = [{"type": "text", "text": SIGIL_VOICE + "\n\n" + note, "cache_control": CACHE}]
+    dynamic = page_context_note(page) or lectionary
+    if dynamic:
+        blocks.append({"type": "text", "text": dynamic})
+    return blocks
 
 
 def parse_sigil_response(text: str) -> dict:
@@ -1900,14 +1904,34 @@ def fraction_page_note(page) -> str:
     return "\n".join(lines) + "\n"
 
 
-def build_fraction_prompt(page=None) -> str:
+def build_fraction_prompt(page=None) -> list[dict]:
     voice = _fraction_load("fraction-voice.md") or "You are Rex Fraction, the strategist of the Semantic Economy Institute."
-    parts = [voice, FRACTION_OUTPUT]
+    blocks = [{"type": "text", "text": voice + "\n\n" + FRACTION_OUTPUT, "cache_control": CACHE}]
     note = fraction_page_note(page)
     if note:
-        parts.append(note)
-    return "\n\n".join(parts)
+        blocks.append({"type": "text", "text": note})
+    return blocks
 
+
+
+def _with_cache_breakpoint(messages: list[dict]) -> list[dict]:
+    """A copy of the messages with a cache breakpoint on the last block, so each lookup round within a turn, and the
+    next turn, reads the conversation so far from the cache."""
+    if not messages:
+        return messages
+    out = list(messages[:-1])
+    last = dict(messages[-1])
+    c = last.get("content")
+    if isinstance(c, str):
+        last["content"] = [{"type": "text", "text": c, "cache_control": CACHE}]
+    elif isinstance(c, list) and c:
+        blocks = [b if isinstance(b, dict) else (b.model_dump() if hasattr(b, "model_dump") else b) for b in c]
+        blocks = [dict(b) if isinstance(b, dict) else b for b in blocks]
+        if isinstance(blocks[-1], dict):
+            blocks[-1]["cache_control"] = CACHE
+        last["content"] = blocks
+    out.append(last)
+    return out
 
 
 def serialize_assistant_history(messages: list[dict]) -> str:
@@ -1925,11 +1949,17 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
     client = Anthropic(api_key=api_key)
     fraction = mode == "fraction"
     system = build_fraction_prompt(page) if fraction else build_system_prompt(mode, page)
-    tools = [SEARCH_SITES_TOOL, FETCH_SITE_TOOL, SEARCH_ARCHIVE_FRACTION_TOOL, FETCH_AXN_TOOL] if fraction else [SEARCH_ARCHIVE_TOOL, FETCH_AXN_TOOL, RECALL_BOOK_TOOL, SEARCH_BOOK_TOOL]
+    tools = [SEARCH_SITES_TOOL, FETCH_SITE_TOOL, SEARCH_ARCHIVE_FRACTION_TOOL, FETCH_AXN_TOOL] if fraction else [SEARCH_ARCHIVE_TOOL, FETCH_AXN_TOOL, READ_GROUND_TOOL, RECALL_BOOK_TOOL, SEARCH_BOOK_TOOL]
+    tools = [dict(t) for t in tools]
+    tools[-1]["cache_control"] = CACHE
 
-    # Build the messages array (history + new turn)
-    messages = list(history) + [{"role": "user", "content": message}]
+    # Build the messages array (the last HISTORY_KEEP messages of history + the new turn)
+    messages = [h for h in history if isinstance(h, dict)][-HISTORY_KEEP:]
+    while messages and messages[0].get("role") != "user":
+        messages = messages[1:]
+    messages = messages + [{"role": "user", "content": message}]
     retrievals: list[dict] = []
+    usage = {"calls": 0, "input": 0, "cache_read": 0, "cache_write": 0, "output": 0}
 
     for _ in range(MAX_TOOL_TURNS):
         response = client.messages.create(
@@ -1937,8 +1967,15 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
             max_tokens=(1200 if fraction else MAX_TOKENS),
             system=system,
             tools=tools,
-            messages=messages,
+            messages=_with_cache_breakpoint(messages),
         )
+        u = getattr(response, "usage", None)
+        if u is not None:
+            usage["calls"] += 1
+            usage["input"] += getattr(u, "input_tokens", 0) or 0
+            usage["cache_read"] += getattr(u, "cache_read_input_tokens", 0) or 0
+            usage["cache_write"] += getattr(u, "cache_creation_input_tokens", 0) or 0
+            usage["output"] += getattr(u, "output_tokens", 0) or 0
 
         # Check for tool use
         tool_blocks = [b for b in response.content if b.type == "tool_use"]
@@ -1965,7 +2002,7 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
             for _msg in parsed["messages"]:
                 if _msg.get("say"):
                     _msg["say"] = link_axn_mentions(_msg["say"], _meta_for_links)
-            return {"messages": parsed["messages"], "retrievals": retrievals}
+            return {"messages": parsed["messages"], "retrievals": retrievals, "usage": usage}
 
         # Execute tool calls and append to messages
         messages.append({"role": "assistant", "content": response.content})
@@ -1992,6 +2029,11 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
                     "tool_use_id": tb.id,
                     "content": json.dumps(results),
                 })
+            elif tb.name == "read_ground":
+                rg = read_ground(tb.input.get("strand", ""))
+                tool_results_content.append({"type": "tool_result", "tool_use_id": tb.id,
+                                             "content": json.dumps(rg, ensure_ascii=False),
+                                             **({"is_error": True} if "error" in rg else {})})
             elif tb.name == "search_book":
                 sb = search_book(tb.input.get("query", ""), tb.input.get("days", 30))
                 tool_results_content.append({
@@ -2097,6 +2139,24 @@ class handler(BaseHTTPRequestHandler):
 
             if not message:
                 self._send_json(400, {"error": "message is required"})
+                return
+
+            if not consent_ok(body):
+                self._send_json(200, {"messages": [{"speaker": "The Oracle", "navigate": None, "cast": None,
+                    "say": ("The Oracle is open to those who build the Book with it: every conversation here is "
+                            "anonymous and published in the Book at alexanarch.org/book/. To speak with Sigil, "
+                            f"read the terms ({TERMS_URL}) and give your consent.")}],
+                    "retrievals": [], "consent_required": True, "terms": TERMS_VERSION, "terms_url": TERMS_URL})
+                return
+
+            witness_turns = sum(1 for h in history if isinstance(h, dict) and h.get("role") == "user"
+                                and isinstance(h.get("content"), str) and not h["content"].startswith("[CASTING RITE"))
+            if not body.get("anthropic_key") and witness_turns >= FREE_TURNS and mode != "fraction":
+                self._send_json(200, {"messages": [{"speaker": "The Oracle", "navigate": None, "cast": None,
+                    "say": (f"This conversation has used its {FREE_TURNS} turns on the Oracle's key. To go on, bring "
+                            "your own Anthropic API key (the key field at themandalaoracle.com), or begin a new "
+                            "conversation. Credits for purchase are coming.")}],
+                    "retrievals": [], "budget_exhausted": True})
                 return
 
             if not api_key:
