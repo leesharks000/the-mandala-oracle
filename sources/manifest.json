@@ -23,7 +23,9 @@
       "primary_attribution": "\\*(Sappho|Alcman|Anacreon|Anacreontea|Simonides|Stesichorus|Hipponax|Corinna|Catullus|Archilochus|Ibycus|Alcaeus)",
       "unit_split": "\\n[ \\t]*\\nDay and Night \\d+[ \\t]*\\n[ \\t]*\\n",
       "restoration": "2026-07-03 MANUS §10.6: true canonical restored from author-supplied file; recovery-window reconstruction superseded. Sappho 31 = five-stanza reconstruction (per AXN:0346 erratum); new Sappho 1 at Day and Night 39. INTRODUCTION GATE: the Brief Preface is excluded from casting via primary_after per MANUS — eligible only 'once in a blue moon' (rare-eligibility mechanic reserved as a future JUDGMENT whim; until built, exclusion is total).",
-      "unit_atomic": true
+      "unit_atomic": true,
+      "unit_subsplit": "\\n[ \\t]*\\n(?=\\*(?:Sappho|Alcman|Anacreon|Anacreontea|Simonides|Stesichorus|Hipponax|Corinna|Catullus|Archilochus|Ibycus|Alcaeus)[^*\\n]*\\*[ \\t]*\\n)",
+      "unit_subsplit_note": "2026-10-27 MANUS: one poem per cast (\"lets split those texts\"); a Day and Night section holding several fragments casts them one at a time. Unit numbers are renumbered by the split; readings keep the passage they cast."
     },
     {
       "id": "dancings-epistle-to-the-human-diaspora",
@@ -176,11 +178,12 @@
       "creator": "",
       "zodiac": "",
       "admissible": true,
-      "text_file": "original.ar",
-      "menu": false,
-      "unit_split": "(?=بِسْمِ\\ ٱللَّهِ\\ ٱلرَّحْمَٰنِ\\ ٱلرَّحِيمِ)",
-      "primary_after": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-      "menu_note": "pulled 2026-07-02: source file is a SQL export without reliable sura/verse markers; re-source from Tanzil (verse-marked) before restoring"
+      "text_file": "quran-uthmani-tanzil-1.1.txt",
+      "menu": true,
+      "menu_note": "restored 2026-10-27: re-sourced from the Tanzil verse-marked text as the 2026-07-02 note required (the seat at alexanarch, read verbatim); cast by sura:aya citation, e.g. 112:1-4.",
+      "text_url": "https://www.alexanarch.org/data/corpora/quran/original/quran-uthmani-tanzil-1.1.txt",
+      "text_format": "tanzil",
+      "attribution_note": "Tanzil Project Uthmani text v1.1 (tanzil.net), CC BY 3.0, verbatim; read from the archive's seat EA-CORPORA-02/08 (AXN:0630.ORIGINAL) and turned into sura:aya markers in memory only."
     },
     {
       "id": "revelation-greek",
