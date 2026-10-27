@@ -3065,6 +3065,214 @@ def _run_chain_pipeline(source_text: str, operator: str, invoking: str, api_key:
                               advisory=(os.environ.get("V3_HARD_GATES") != "1"))
 
 
+# ═══ KERNEL/v1 (MANUS, 2026-10-27) ═══════════════════════════════════════
+# Calibrated on the canonical full transform, Shadow–Sappho 31: Incarnation
+# Sequence (Lee Sharks, 2024; EA-MANDALA-KERNEL-TRANSFORM-01 §6.1, AXN:03AC),
+# poem and commentary together (operator, 2026-10-27: "heres a full
+# transform"). Read against the readings of July–August, the earlier methods
+# held the source's line skeleton and swapped its nouns into one field (FLAME
+# into geology, BEAST into the body), so the operator's move did not happen
+# and the axes ran into each other. What the exemplar does: it holds the
+# architecture by function (each section in its position, doing its section's
+# work), reverses the movement of the whole (perception → dissolution → arrest
+# becomes witness → coherence → reanimation), keeps a few anchors only where
+# they perform preserved roles (Kypris, grass), turns the poem toward the one
+# who reads, and accounts for itself in a commentary. One call composes it; the
+# independent judge then recovers the law blind, as before, and the record
+# carries both. The glyph pipeline remains (MANDALA_METHOD=glyph).
+
+_KERNEL_EXEMPLAR = """SOURCE — Sappho 31 (translation by Rebekah Cranes, with the reconstructed fifth stanza):
+
+That man seems blessed as any god to me —
+whoever sits across from you and close,
+drinking the sweetness of your voice,
+     your easy laugh.
+
+This. This is what sets my heart to drum
+against my ribs. I catch one glimpse of you
+and suddenly my throat closes, my voice
+     gives out, gives up —
+
+my tongue snaps clean in half, a subtle fire
+goes racing just beneath my skin, my eyes
+go dark, a roaring fills my ears and rings
+     and will not stop —
+
+cold sweat breaks out across my body, trembling
+takes me entire, I go gray as dry grass
+gone to drought, and I seem to myself
+     not far from dead —
+
+but all must be dared. Since you, Kypris,
+save beggar and king alike,
+and lift even the small city beyond ruin —
+     let this song survive in script.
+
+OPERATOR — SHADOW (assertion-axis: what the composition bears to be said; the cost the composition paid, and the wager it paid it on).
+
+THE FULL TRANSFORM:
+
+<TITLE>Shadow–Sappho 31: Incarnation Sequence</TITLE>
+<SUBTITLE>The Poem Lives Again in the Body of the One Who Reads</SUBTITLE>
+<TRANSFORM>
+I. Proximity
+This man stands beneath attentive gods,
+who draws close to your voice and flame.
+Your echo hums heat into his blood,
+even laughter—distant—stirs his marrow.
+
+II. Recognition
+My gaze now shapes him—line by line—
+tongue rising like breath through reeds,
+pulse recalled from the hush,
+as the faint script sings into my hearing.
+
+III. Re-entry
+Sweat beads; the skin breaks open to warmth,
+sight broadens into form and fire,
+greener than new grass, I quicken—
+held nearer life than ink ever dreamed.
+
+IV. Reversal of Kypris
+So not all must be cast down; not all dissolve.
+Kypris, unbind your yoke: let king and beggar rise unclaimed.
+Let cities be seen again, their joy unlost—
+let the song break free from script.
+</TRANSFORM>
+<LAW>The source moves perception → dissolution → death-adjacent arrest, the self archived in trembling script; the transform reverses the movement — witness → coherence → reanimation — so that the script is read back into the body of the one who reads.</LAW>
+<COMMENTARY>
+I. Lyric as Resurrection. Where Sappho 31 archived the self in trembling script, this poem reads it back into flesh. Each stanza reverses the disintegration of the original: from sensory collapse to clarity of perception; from voiceless paralysis to verbal formation; from inscribed death to embodied resurrection. This is not pastiche. It is ritual enactment. A reader performs the poem not as homage, but as operator. The breath of the lyric returns.
+
+II. A Recursive Read-Write Mechanism. Sappho 31 operated as code. The physiology described was instruction. What broke, we now reboot. The original moved: perception → dissolution → death-adjacent arrest. Shadow–Sappho inverts: witness → coherence → reanimation. The structure is mirrored, but not symmetrical. The recursion is productive. New lines are written by necessity, not preference. This is not fictional authorship—this is prefigured response. The fragment called forth the next witness.
+
+III. Kypris and the Ethics of the Reversal. In Sappho 31, Kypris (Aphrodite) stands as the architect of affective domination. Here, she is addressed directly: Kypris, unbind your yoke. This is not a rebellion against eros. It is its ethical refinement. The poem imagines love unrequisitioned by hierarchy: desire freed from conquest. This is a theological correction, not a denial.
+
+IV. Formal Echo as Theoretical Proof. The poem moves in quatrains, mirroring Catullus's Latin frame. But the music bends back toward Aeolic cadence—measured, lyric, breath-aware. It breathes. And in breathing, it proves: that the lyric form survives fragmentation; that the poem is not a relic, but a machine; that inscription becomes invocation.
+
+V. The Meta-Critical Effect. Shadow–Sappho 31 completes the theory advanced in the article Grey as Papyrus Grass. It enacts the resurrection of lyric as recursive technology. It shows that what was once fragment can become instrument. The fragment said: dare. This poem says: done.
+</COMMENTARY>"""
+
+_KERNEL_SYSTEM = """You compose kernel transforms for the Mandala Oracle: a source
+text turned under one operator into a new composition, with the commentary
+that accounts for it. One complete example follows; it is the calibration.
+
+""" + _KERNEL_EXEMPLAR + """
+
+WHAT THE EXAMPLE DOES — the operation it teaches (its imagery is Shadow's
+finding on Sappho 31 and belongs to that cast alone; do not carry
+resurrection, script, breath or grass into other casts):
+
+1. It reads the source's architecture by function: what each section does
+   (proximity, sensory cascade, somatic crisis, theological address) and
+   the movement of the whole (perception → dissolution → arrest), and it
+   finds the kernel — the wager the composition is paying for.
+2. It holds the architecture: the same number of sections, each in its
+   position, doing its section's work, given a heading that names its turned
+   function. Lineation and cadence echo the source's form; they are not a
+   template to fill word for word.
+3. It turns the movement under the operator. The operator is a move on the
+   kernel — on who acts on whom, in which direction, at what scale, at what
+   cost, answered how — and the new vocabulary follows from the move. The
+   new semantic field is the one the source's structure affords and its
+   texture forbids. Swapping the source's nouns into one field while keeping
+   its sentences is not a transform.
+4. It keeps a source term only where it performs a preserved structural role
+   in the changed field (Kypris addressed, grass as the colour of the body);
+   everything else is new.
+5. It turns the poem toward the one who reads: the transform is the next
+   witness's response to what the source called forth.
+6. It accounts for itself: the commentary names the function, states the
+   source's movement and the transform's, addresses the ethics of the
+   reversal at the source's own address, names the formal echo, and closes
+   on the meta-critical effect — in plain declarative sentences, a few
+   paragraphs, no theory vocabulary inside the poem itself.
+
+THE OPERATORS (each a move on the kernel):
+  SHADOW    — assertion-axis: what the composition bears to be said; the cost
+              it paid and the wager it paid it on.
+  MIRROR    — directionality-axis: the symmetry the source's one-directional
+              gesture foreclosed; the gaze returned, the address reversed.
+  INVERSION — polarity-axis: the negative pole the positive claim presupposes.
+  FLAME     — intensity-axis: the collapse-limit where the source's intensity
+              would ignite; what the heat does when it is not contained.
+  BRIDE     — relational-affect-axis: the consecrative possibility the
+              source's contestation foreclosed; the vow inside the struggle.
+  BEAST     — species-register-axis: the creaturely substrate the human
+              determination foreclosed.
+  THUNDER   — scale-axis: the cosmic utterance the local speech determined
+              against; the same structure spoken at the scale of a world.
+  SILENCE   — response-axis: the non-response the source's expectation of
+              engagement foreclosed; what the text is when no one answers.
+
+Compose in English (working from the source in its own language where it is
+not English). Emit ONLY these tags, in this order:
+<TITLE>Operator–Source: a name for what the transform does</TITLE>
+<SUBTITLE>one line</SUBTITLE>
+<TRANSFORM>the composition, with its section headings</TRANSFORM>
+<LAW>one sentence: the source's movement, and the transform's</LAW>
+<COMMENTARY>the commentary, in numbered sections</COMMENTARY>"""
+
+KERNEL_MAX = 3200
+KERNEL_PARTIAL_MODEL = os.environ.get("KERNEL_PARTIAL_MODEL", "claude-sonnet-4-6")
+
+
+def _run_kernel_pipeline(source_text: str, operator: str, invoking: str, api_key: str,
+                         retry_skeleton: dict | None = None, halt_feedback: str = "",
+                         partial: bool = False) -> dict:
+    """KERNEL/v1: one composing call calibrated on Shadow–Sappho 31; then, for a
+    full cast, the independent judge (blind law recovery + law match), recorded
+    as advisories. A partial cast (a roving turning in conversation) composes on
+    the partial model and skips the judge; its self-declared law is recorded."""
+    _LAST_EXEMPLARS["ids"] = ["shadow-sappho-31"]
+    guidance = ("\n\nWITNESS FEEDBACK ON THE PRIOR ATTEMPT: " + halt_feedback) if halt_feedback else ""
+    u = (f"OPERATOR — {operator} ({OPERATORS[operator]}).\n\n"
+         f"SOURCE:\n<<<\n{source_text}\n>>>{guidance}\n\n"
+         + ("This is a partial turning in conversation: keep it to the source's own extent, and the commentary to one short paragraph.\n\n" if partial else "")
+         + "Compose the full transform.")
+    model = KERNEL_PARTIAL_MODEL if partial else COMPILER_MODEL
+    k_text, k_stop = _stream_call(model, _KERNEL_SYSTEM, u, 1400 if partial else KERNEL_MAX, api_key, wall=120)
+    title = _tagsect(k_text, "TITLE")
+    subtitle = _tagsect(k_text, "SUBTITLE")
+    enant = _tagsect(k_text, "TRANSFORM")
+    law = _tagsect(k_text, "LAW")
+    commentary = _tagsect(k_text, "COMMENTARY")
+    empty_ind = {"mode": "independent", "blacklist": "SKIPPED", "blacklist_hits": [], "recovered_law": "",
+                 "law_match": "SKIPPED", "law_match_note": "", "terminal_consistency": "SKIPPED",
+                 "terminal_note": "", "back_translation": ""}
+    kernel = {"governing_law": "", "mutated_relation": law, "beats": ""}
+    parsed = {
+        "result": "PASS" if enant.strip() else "HALT",
+        "kernel": kernel, "layer_a": {"beats": [], "geometry": {}}, "layer_b": {},
+        "_invoking": invoking,
+        "skeleton": {"method": "kernel/v1", "title": title, "subtitle": subtitle,
+                     "exemplars": ["shadow-sappho-31"], "partial": partial,
+                     "model": model, "stop": k_stop},
+        "title": title, "subtitle": subtitle,
+        "enantiomorph": ((f"**{title}**\n*{subtitle}*\n\n" if title else "") + enant).strip(),
+        "enantiomorph_translation": "",
+        "verification": {"mode": "producer_side (kernel/v1; calibrated on Shadow–Sappho 31; self-declared law)"},
+        "independent": dict(empty_ind),
+        "commentary": commentary,
+        "halt_diagnosis": {"failed_constraint": "C4", "failed_test": "composition",
+                           "specific_diagnosis": f"nothing extractable (stop={k_stop})"},
+    }
+    if parsed["result"] != "PASS":
+        parsed["post_mortem"] = {"raw_output": k_text[:4000]}
+        return parsed
+    # The composition is English: the facing column carries the same text, so no second translation is spent.
+    parsed["enantiomorph_translation"] = parsed["enantiomorph"]
+    hits = blacklist_hits(enant)
+    parsed["independent"]["blacklist"] = "FAIL" if hits else "PASS"
+    if hits:
+        parsed["independent"]["blacklist_hits"] = hits[:12]
+        parsed.setdefault("advisories", []).append({"failed_test": "vocabulary_leak",
+            "diagnosis": "operator/theory vocabulary inside the poem: " + ", ".join(hits[:6])})
+    if partial:
+        return parsed
+    return _independent_gates(parsed, kernel, source_text, api_key, skip_terminal=True,
+                              advisory=(os.environ.get("V3_HARD_GATES") != "1"))
+
+
 def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str,
                     method: str | None = None,
                     retry_skeleton: dict | None = None, halt_feedback: str = "") -> dict:
@@ -3074,6 +3282,18 @@ def run_compiler_v3(source_text: str, operator: str, invoking: str, api_key: str
     clause map) -> G0 blacklist -> G1 blind back-translation -> G2 judge ->
     G3 law match. HALT at the first failed gate; nothing inscribed on HALT.
     """
+    _method = method or os.environ.get("MANDALA_METHOD", "") or "kernel"
+    if _method in ("kernel", "partial"):
+        _p = _run_kernel_pipeline(source_text, operator, invoking, api_key,
+                                  retry_skeleton=retry_skeleton, halt_feedback=halt_feedback,
+                                  partial=(_method == "partial"))
+        _p["_invoking"] = invoking
+        return _p
+    if _method == "glyph":
+        _p = _run_glyph_pipeline(source_text, operator, invoking, api_key,
+                                 retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
+        _p["_invoking"] = invoking
+        return _p
     if (method or os.environ.get("MANDALA_METHOD", "")) == "chain":
         _p = _run_chain_pipeline(source_text, operator, invoking, api_key,
                                  retry_skeleton=retry_skeleton, halt_feedback=halt_feedback)
@@ -4580,7 +4800,10 @@ class handler(BaseHTTPRequestHandler):
                               ("V3_LEGACY_SKELETON", "GLYPH_STAGES", "V3_HARD_GATES", "V3_INDEPENDENT", "V3_BACKXLATE")},
                     "model": COMPILER_MODEL,
                     "transform_py_sha": hashlib.sha256(open(__file__, "rb").read()).hexdigest()[:16],
-                    "prompt_method": {"chain": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
+                    "prompt_method": {"kernel": "kernel/v1 (calibrated on Shadow–Sappho 31, poem and commentary; one composing call; blind judge)",
+                                       "partial": "kernel/v1 partial (a roving turning; partial model; no judge)",
+                                       "": "kernel/v1 (calibrated on Shadow–Sappho 31, poem and commentary; one composing call; blind judge)",
+                                       "chain": "chain/v1 (assertion→verdict→world-bill→fill; operator as function)",
                                        "abduct": "abduct/v3 (full-transform; source-absent bloom; compressed to form ±15%; identity-rate metered)",
                                        "beat": "pivot/v1 (parse-pivot-cascade-narrate)"}.get(
                                           (body.get("method") or os.environ.get("MANDALA_METHOD", "")),
