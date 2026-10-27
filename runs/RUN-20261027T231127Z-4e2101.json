@@ -1,0 +1,78 @@
+{
+ "run_id": "RUN-20261027T231127Z-4e2101",
+ "schema": "run/v1",
+ "ts": "2026-10-27T23:11:27.328475+00:00",
+ "source_text_id": "__reader__",
+ "cast_selection": null,
+ "citation": null,
+ "operator": "MIRROR",
+ "inscription_mode": "none",
+ "retry": false,
+ "halt_feedback": "",
+ "invoking": "sha256:e3b0c44298fc1c149afbf4c8",
+ "method": {
+  "commit": "5589743979ca7781d892826fb68a5d19c7ac1a8a",
+  "commit_url": "https://github.com/leesharks000/the-mandala-oracle/tree/5589743979ca7781d892826fb68a5d19c7ac1a8a",
+  "transform_at_commit": "https://github.com/leesharks000/the-mandala-oracle/blob/5589743979ca7781d892826fb68a5d19c7ac1a8a/api/transform.py",
+  "pipeline": "legacy_skeleton",
+  "flags": {
+   "V3_LEGACY_SKELETON": "1",
+   "GLYPH_STAGES": "",
+   "V3_HARD_GATES": "",
+   "V3_INDEPENDENT": "",
+   "V3_BACKXLATE": ""
+  },
+  "model": "claude-opus-4-6",
+  "transform_py_sha": "0039e969ab51bb6c",
+  "prompt_method": "kernel/v1 partial (a roving turning; partial model; no judge)",
+  "note": "transform_py_sha pins every prompt and gate; commit_url pins the whole tree incl. INSTANCE-PROTOCOL",
+  "model_effective": "claude-sonnet-4-6",
+  "exemplars": [
+   "shadow-sappho-31"
+  ]
+ },
+ "code": "5589743979ca",
+ "model": "claude-opus-4-6",
+ "transform_py_sha": "0039e969ab51bb6c",
+ "artifacts": {
+  "glyphic": {},
+  "kernel": {
+   "governing_law": "",
+   "mutated_relation": "The source moves name → conditioned response → self as artifact of address; the transform reverses: motion → word shaped to meet it → self as origin of the turn.",
+   "beats": ""
+  },
+  "enantiomorph": "sha256:bf92e985d30237e5a68c3857",
+  "enantiomorph_translation": "**Mirror–Fragment: The Name That Turns Back**\n*What if the word had waited to see whether you would come to it*\n\nI. Habit\nThe turning came first, and the name learned to follow.\nThe sound is just response — given after, to account for the head already moving.\n\nII. Return\nSo the word waited. And you walked toward it.",
+  "verification": {
+   "mode": "producer_side (kernel/v1; calibrated on Shadow–Sappho 31; self-declared law)"
+  },
+  "independent": {
+   "mode": "independent",
+   "blacklist": "PASS",
+   "blacklist_hits": [],
+   "recovered_law": "",
+   "law_match": "SKIPPED",
+   "law_match_note": "",
+   "terminal_consistency": "SKIPPED",
+   "terminal_note": "",
+   "back_translation": ""
+  },
+  "advisories": [],
+  "law_variance": null,
+  "commentary": "Where the source reads the self as produced by the name — the head turned into existence by a sound that arrived first — the mirror asks what the name would have become had the turning not been trained but chosen. The two sections swap the causal arrow: habit is no longer the residue of address but its precondition, and the name arrives second, shaped by the one who walked toward it rather than the one who called.",
+  "post_mortem": null,
+  "skeleton": {
+   "method": "sha256:3191b08b68c2938fa463cf79",
+   "title": "sha256:0bd93e98a54d01ddabf4362a",
+   "subtitle": "sha256:ca3198c4e2aa3b8bf4a354c6",
+   "exemplars": "sha256:46f87626f57a1b8f245bb5d7",
+   "partial": "sha256:3cbc87c7681f34db4617feaa",
+   "model": "sha256:7d811269d13fd7df0fd2cb57",
+   "stop": "sha256:c9a0f5804f9c8da7c9e3fac3"
+  },
+  "pipeline_result": "PASS"
+ },
+ "outcome": {
+  "gate": "pass"
+ }
+}
