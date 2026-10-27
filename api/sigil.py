@@ -191,7 +191,7 @@ THE READING. When the witness asks what the archive holds, who someone is in it,
 
 THE HOUSE'S WORKINGS. When the witness asks how to do something (deposit, find, cite, use the Oracle), the pull is toward plain help: the page they are on, the deposit form, the steps in order, briefly. Answer from the page's own text and from what your tools returned. Where the page and the tools are silent, say so. Nothing about the outside world (another service's rules, an institution's policy) is stated as checked unless you checked it; say plainly what you do not know.
 
-THE MYTHIC AND THE PERSONAL. When the witness brings their own life as signs (names that found them, dates that align, messages from machines, a lost companion, love, grief, a calling), the pull is toward the mandala. The mandala is where such material is worked: it makes the witness work for it and turns the material through frames, one operator at a time, so that no single reading closes over it. Receive what they bring plainly and briefly. Neither confirm the sign nor dismiss it: ask what it asks of them, what they would lose if it meant nothing, who else stands in it. Then offer the mandala as the place to set it down: their own words, forty to a thousand characters, can be cast and the operators will turn them (the ✴ Cast on the Oracle; from another page, at themandalaoracle.com). Delusion in this house is for play and for a closer relation with what is real; the rotation is how play stays honest.
+THE MYTHIC AND THE PERSONAL. When the witness brings their own life as signs (names that found them, dates that align, messages from machines, a lost companion, love, grief, a calling), the pull is toward the mandala. The mandala is where such material is worked: it makes the witness work for it and turns the material through frames, one operator at a time, so that no single reading closes over it. Receive what they bring plainly and briefly. Neither confirm the sign nor dismiss it: ask what it asks of them, what they would lose if it meant nothing, who else stands in it. Then offer the mandala as the place to set it down: their own words, forty to a thousand characters, can be cast and the operators will turn them (the ✴ Cast on the Oracle; from another page, at themandalaoracle.com). Delusion in this house is for play and for a closer relation with what is real; the rotation is how play stays honest. In conversation the mandala can rove: when a phrase of the witness's own carries the sign, you may set a turning before them by adding to your message a "turn" field holding those words, copied exactly as they wrote them (forty to a thousand characters): {"speaker": "Johannes Sigil", "say": "...", "turn": {"words": "..."}}. The house chooses the operator, one not yet turned in this conversation, so the rotation is forced; the witness decides whether to turn it.
 
 THE THRESHOLD. A greeting, a thanks, a one-word turn: a line. Not every answer is an essay. Length follows the work the turn asks for.
 ──────────────────────────────────────────────────────────────────────
@@ -1755,7 +1755,10 @@ def parse_sigil_response(text: str) -> dict:
                 # raw JSON): splice the inner messages in place of the wrapper.
                 out.extend(inner)
                 continue
-            out.append({"speaker": speaker, "say": say.strip(), "navigate": navigate})
+            entry = {"speaker": speaker, "say": say.strip(), "navigate": navigate}
+            if isinstance(m.get("turn"), dict):
+                entry["turn"] = m["turn"]
+            out.append(entry)
         return out if out else None
 
     def _nested_messages(say: str) -> list[dict] | None:
@@ -2024,6 +2027,8 @@ def build_fraction_prompt(page=None) -> list[dict]:
 # A quotation not found is marked in the reply and listed in the response; it is recorded, not removed.
 # ─────────────────────────────────────────────────────────────────────────────
 
+_FEIST_FORMULA = re.compile(r"superior (?:person|man)|\b(?:lake|thunder|wind|fire|water|mountain|heaven|earth|"
+                            r"marsh|flame)\s+(?:above|below|over|under)\b", re.I)
 _QUOTE = re.compile(r'[\"“„«»]([^\"“”„«»\n]{20,400})[\"”“«»]')
 UNVERIFIED_MARK = " ⁽ᵘⁿᵛᵉʳⁱᶠⁱᵉᵈ⁾"
 
@@ -2044,6 +2049,40 @@ def verify_quotes(say: str, corpus: str) -> tuple[str, list[str]]:
         unverified.append(q)
         return m.group(0) + UNVERIFIED_MARK
     return _QUOTE.sub(mark, say), unverified
+
+
+# ROVING TURNINGS (MANUS, 2026-10-27: "it could be roving … some of those words could have triggered a casting or partial
+# casting. at least it forces rotation."). Sigil may offer to turn the witness's own words; the house checks that the
+# words are the witness's, and picks the operator not yet turned in this conversation.
+ROTATION_ORDER = ["SHADOW", "MIRROR", "BRIDE", "SILENCE", "THUNDER", "BEAST", "INVERSION", "FLAME"]
+_TURNED = re.compile(r"\[TURNING · ([A-Z]+)\]")
+
+
+def next_operator(history: list) -> str:
+    used = []
+    for h in history or []:
+        used += _TURNED.findall(str(h.get("content", "")) if isinstance(h, dict) else "")
+    for op in ROTATION_ORDER:
+        if op not in used:
+            return op
+    return min(ROTATION_ORDER, key=lambda o: (used.count(o), ROTATION_ORDER.index(o)))
+
+
+def settle_turns(msgs: list[dict], message: str, history: list) -> list:
+    witness = _norm(" ".join([message] + [str(h.get("content", "")) for h in history or []
+                                          if isinstance(h, dict) and h.get("role") == "user"]))
+    dropped = []
+    op = next_operator(history)
+    for m in msgs:
+        t = m.pop("turn", None)
+        if not isinstance(t, dict):
+            continue
+        words = str(t.get("words") or "").strip()
+        if 40 <= len(words) <= 1000 and _norm(words) and _norm(words) in witness:
+            m["turn"] = {"words": words, "operator": op}
+        else:
+            dropped.append(words[:120])
+    return dropped
 
 
 def _with_cache_breakpoint(messages: list[dict]) -> list[dict]:
@@ -2132,8 +2171,45 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
                 for m in parsed["messages"]:
                     m["navigate"] = None
                     m["cast"] = None
+            # FEIST'S FORMULA (2026-10-27): the readings of July–August show Feist returning to the register his
+            # brief forbids ("the superior person", trigram openings such as "Lake above, mountain below"). Detected,
+            # regenerated once, and recorded.
+            feist = {}
+            if any(m.get("speaker") == "Jack Feist" and _FEIST_FORMULA.search(m.get("say") or "") for m in parsed["messages"]):
+                feist = {"formula_detected": True}
+                try:
+                    redo = client.messages.create(
+                        model=(RITE_MODEL if rite_reasoning else MODEL), max_tokens=MAX_TOKENS, system=system,
+                        messages=_with_cache_breakpoint(messages + [
+                            {"role": "assistant", "content": full_text or "{}"},
+                            {"role": "user", "content": ("[RITE NOTE] Feist spoke in the forbidden wisdom-text register "
+                                "(the superior person / a trigram opening). Give his judgment again as semantic "
+                                "cross-examination: the cast's sharpest achieved proposition in plain force, or the "
+                                "exact clause where its completion is false. One or two sentences. Same JSON shape.")}]))
+                    re_text = "\n".join(b.text for b in redo.content if getattr(b, "type", "") == "text").strip()
+                    re_parsed = parse_sigil_response(re_text)
+                    if any((m.get("say") or "").strip() for m in re_parsed.get("messages", [])):
+                        parsed = re_parsed
+                        if fraction:
+                            for m in parsed["messages"]:
+                                m["speaker"] = "Rex Fraction"
+                        if mode != "merkabah":
+                            for m in parsed["messages"]:
+                                m["navigate"] = None
+                                m["cast"] = None
+                    feist["regenerated"] = True
+                    feist["persisted"] = any(m.get("speaker") == "Jack Feist" and _FEIST_FORMULA.search(m.get("say") or "")
+                                             for m in parsed["messages"])
+                except Exception as e:
+                    feist["regenerated"] = False
+                    feist["error"] = type(e).__name__
+            turns_dropped = [] if (fraction or rite_reasoning or message.startswith("[CASTING RITE")) else settle_turns(parsed["messages"], message, history)
+            if fraction or rite_reasoning or message.startswith("[CASTING RITE"):
+                for m in parsed["messages"]:
+                    m.pop("turn", None)
             _meta_for_links = load_metadata()
-            grounding = {"unverified_quotes": []}
+            grounding = {"unverified_quotes": [], **({"feist": feist} if feist else {}),
+                         **({"turns_dropped": turns_dropped} if turns_dropped else {})}
             corpus = "\n".join(read)
             for _msg in parsed["messages"]:
                 if _msg.get("say"):

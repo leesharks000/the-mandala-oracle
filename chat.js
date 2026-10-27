@@ -283,6 +283,7 @@ formEl.addEventListener('submit', async (e) => {
       const speaker = m.speaker || 'Johannes Sigil';
       const say = m.say || '';
       lastEl = appendHeteronymMessage(speaker, say);
+      if (m.turn && m.turn.words && m.turn.operator) renderTurnOffer(lastEl, m.turn);
       if (m.navigate) lastNavigate = m.navigate;
       if (m.cast) lastCast = m.cast;
     }
@@ -420,6 +421,42 @@ function appendHeteronymMessage(speaker, content, opts = {}) {
   messagesEl.appendChild(wrap);
   messagesEl.scrollTop = messagesEl.scrollHeight;
   return wrap;
+}
+
+// ROVING TURNINGS (2026-10-27): Sigil may set the witness's own words before them to be turned by the operator the
+// house chose (one not yet turned in this conversation). One tap casts a partial turning; the turning enters the
+// conversation, and so the Book, marked [TURNING · OPERATOR] so the next turning takes another operator.
+function renderTurnOffer(afterEl, turn) {
+  const wrap = document.createElement('div');
+  wrap.className = 'turn-offer';
+  wrap.style.cssText = 'margin:6px 0 12px;font-size:.92em;opacity:.9';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.textContent = `\u2734 Turn these words \u00B7 ${turn.operator}`;
+  btn.title = turn.words;
+  wrap.appendChild(btn);
+  afterEl.insertAdjacentElement('afterend', wrap);
+  btn.addEventListener('click', async () => {
+    btn.disabled = true; btn.textContent = `\u2734 ${turn.operator} is turning\u2026`;
+    try {
+      const res = await fetch('/api/transform', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ source_text_id: '__reader__', reader_text: turn.words, operator: turn.operator,
+                               method: 'partial', inscription: { mode: 'none' },
+                               witness_context: { session_id: sessionState.session_id, invoking_message: '' },
+                               anthropic_key: (apiKeyEl && apiKeyEl.value.trim()) || null }),
+      });
+      const d = await res.json().catch(() => ({}));
+      const t = d.transform || {};
+      if (!res.ok || !t.primary_output) { btn.disabled = false; btn.textContent = `\u2734 Turn these words \u00B7 ${turn.operator}`; appendErrorMessage(d.error || 'The turning did not come.'); return; }
+      const text = `[TURNING \u00B7 ${turn.operator}]\n\n${t.primary_output}` + (t.commentary_apparatus ? `\n\n${t.commentary_apparatus}` : '');
+      appendHeteronymMessage('Rebekah Cranes', text);
+      wrap.remove();
+      history.push({ role: 'assistant', content: JSON.stringify({ messages: [{ speaker: 'Rebekah Cranes', say: text }] }) });
+      if (history.length > 32) history = history.slice(-32);
+      if (sessionState.appendingEnabled) bookAppend(history).catch(() => {});
+    } catch (e) { btn.disabled = false; appendErrorMessage('The turning did not come.'); }
+  });
 }
 
 function showConsent() {
@@ -1111,7 +1148,8 @@ function renderTransformCard(parentEl, t) {
     lines.push(`Advisories (${adv.length}) — verdicts recorded, nothing halted: ` +
                adv.map(a => a.failed_test).join(' · '));
   }
-  card.textContent = lines.join('\n');
+  // (2026-10-27) appended, no longer assigned: assigning textContent erased the lemma, the chips and the states above.
+  { const ln = document.createElement('div'); ln.style.whiteSpace = 'pre-wrap'; ln.textContent = lines.join('\n'); card.appendChild(ln); }
   if ((t.advisories || []).length) {
     const adet = document.createElement('details');
     const asum = document.createElement('summary');
@@ -1126,7 +1164,8 @@ function renderTransformCard(parentEl, t) {
   if (t.commentary_apparatus) {
     const det = document.createElement('details');
     const sum = document.createElement('summary');
-    sum.textContent = 'Commentary apparatus';
+    sum.textContent = 'Commentary';
+    det.open = true;  // a full transform accounts for itself (kernel/v1, 2026-10-27)
     det.appendChild(sum);
     const pre = document.createElement('div');
     pre.style.whiteSpace = 'pre-wrap';
