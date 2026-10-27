@@ -2351,8 +2351,8 @@ class handler(BaseHTTPRequestHandler):
 
             # PAUSE (2026-10-26, Lee Sharks). Sigil's modes answer with one fixed
             # notice and call no model; Fraction, on the commercial pages, runs.
-            # Set SIGIL_PAUSED=0 in the deployment's environment to lift it.
-            if os.environ.get("SIGIL_PAUSED", "1") != "0" and mode != "fraction":
+            # Lifted 2026-10-27 at the operator's word ("yup"); set SIGIL_PAUSED=1 in the deployment's environment to pause again.
+            if os.environ.get("SIGIL_PAUSED", "0") == "1" and mode != "fraction":
                 self._send_json(200, {"messages": [{"speaker": "The Oracle", "say": PAUSE_NOTICE,
                                                     "navigate": None, "cast": None}],
                                       "retrievals": [], "paused": True})

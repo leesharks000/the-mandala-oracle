@@ -375,7 +375,7 @@ class handler(BaseHTTPRequestHandler):
 
             # PAUSE (2026-10-26): while Sigil is paused nothing new enters the
             # public Book. 503 makes both clients stop appending for the session.
-            if os.environ.get("SIGIL_PAUSED", "1") != "0":
+            if os.environ.get("SIGIL_PAUSED", "0") == "1":
                 return self._send_json(503, {"error": "book_paused",
                                              "detail": "The Book is not taking new pages while Sigil is paused."})
 
