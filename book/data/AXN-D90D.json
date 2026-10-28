@@ -1,0 +1,35 @@
+{
+  "axn": "AXN:D90D.CONVERSATION.🌾🌗🌒🔥⭐🍃",
+  "session_id_hash": "a2c0d0d41269481c",
+  "started_at": "2026-10-28T20:03:45.103Z",
+  "last_updated": "2026-10-28T20:03:56.699037+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "what is this?",
+      "page": {
+        "url": "https://www.alexanarch.org/book/",
+        "title": "Book — Alexanarch",
+        "axn": ""
+      }
+    }
+  ],
+  "witness": "anonymous",
+  "pages": [
+    {
+      "url": "https://www.alexanarch.org/book/",
+      "title": "Book — Alexanarch",
+      "axn": "",
+      "first_turn": 1,
+      "last_turn": 1
+    }
+  ],
+  "consent": {
+    "terms": "2026-10-27",
+    "accepted_at": "2026-10-28T00:08:45.792Z",
+    "book": true
+  },
+  "schema_version": "v1.2"
+}
