@@ -5,9 +5,9 @@
     {
       "axn": "AXN:F868.CONVERSATION.❄️🌱🌖🧊🌔🌍",
       "started_at": "2026-10-28T00:08:25.981Z",
-      "last_updated": "2026-10-28T00:08:44.808070+00:00",
+      "last_updated": "2026-10-28T00:08:50.450548+00:00",
       "mode": "sabbath",
-      "turn_count": 0,
+      "turn_count": 1,
       "witness": "anonymous",
       "opening_snippet": "hello",
       "page": "https://www.alexanarch.org/",
@@ -1934,7 +1934,7 @@
     }
   ],
   "total_recorded": 211,
-  "last_updated": "2026-10-28T00:08:44.808070+00:00",
+  "last_updated": "2026-10-28T00:08:50.450548+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]",
   "withheld_note": "Five conversations withheld from the public Book by the operator, 2026-10-27, for liability (emotional exposure; a third party identified): AXN B027, 57E4, AFB7, D902, D26B. Kept by the operator, not served."
 }
