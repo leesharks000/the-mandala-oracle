@@ -3,6 +3,18 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:6F4B.CONVERSATION.🌋💫🪐🌔🌈🌔",
+      "started_at": "2026-11-06T01:30:31.482Z",
+      "last_updated": "2026-11-06T01:30:44.935453+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "AXN:B98E.CONVERSATION.🌙🧊🌒💧🌍❄️",
+      "page": "https://www.themandalaoracle.com/",
+      "page_title": "The Mandala Oracle",
+      "pages": 1
+    },
+    {
       "axn": "AXN:B98E.CONVERSATION.🌙🧊🌒💧🌍❄️",
       "started_at": "2026-11-06T01:16:19.900Z",
       "last_updated": "2026-11-06T01:29:52.575578+00:00",
@@ -1969,8 +1981,8 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 214,
-  "last_updated": "2026-11-06T01:29:52.575578+00:00",
+  "total_recorded": 215,
+  "last_updated": "2026-11-06T01:30:44.935453+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]",
   "withheld_note": "Five conversations withheld from the public Book by the operator, 2026-10-27, for liability (emotional exposure; a third party identified): AXN B027, 57E4, AFB7, D902, D26B. Kept by the operator, not served."
 }
