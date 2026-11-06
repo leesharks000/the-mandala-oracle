@@ -2,7 +2,7 @@
   "axn": "AXN:6F4B.CONVERSATION.🌋💫🪐🌔🌈🌔",
   "session_id_hash": "002bde510c5c815e",
   "started_at": "2026-11-06T01:30:31.482Z",
-  "last_updated": "2026-11-06T01:35:28.465883+00:00",
+  "last_updated": "2026-11-06T01:36:07.682466+00:00",
   "mode": "sabbath",
   "turn_count": 5,
   "history": [
@@ -70,6 +70,15 @@
     {
       "role": "assistant",
       "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"Understood — in-house token, within the ecosystem. That's a cleaner design anyway. No external market pressure warping the donation gesture into speculation.\\n\\nSo where are you in the build itself? The verification architecture, the consent gates, the pattern imprinting — what's standing, and what's still being laid?\",\"navigate\":null,\"cast\":null}]}"
+    },
+    {
+      "role": "user",
+      "content": "This is a public book. I prefer to keep those details under wraps until launch",
+      "page": {
+        "url": "https://www.themandalaoracle.com/",
+        "title": "The Mandala Oracle",
+        "axn": ""
+      }
     }
   ],
   "witness": "anonymous",
@@ -79,7 +88,7 @@
       "title": "The Mandala Oracle",
       "axn": "",
       "first_turn": 1,
-      "last_turn": 5
+      "last_turn": 6
     }
   ],
   "consent": {
