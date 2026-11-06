@@ -2,9 +2,9 @@
   "axn": "AXN:B98E.CONVERSATION.🌙🧊🌒💧🌍❄️",
   "session_id_hash": "7467479ba83eed1e",
   "started_at": "2026-11-06T01:16:19.900Z",
-  "last_updated": "2026-11-06T01:23:49.496617+00:00",
+  "last_updated": "2026-11-06T01:24:03.584022+00:00",
   "mode": "sabbath",
-  "turn_count": 7,
+  "turn_count": 8,
   "history": [
     {
       "role": "user",
@@ -105,6 +105,10 @@
         "title": "The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells — Alexanarch",
         "axn": "AXN:0705"
       }
+    },
+    {
+      "role": "assistant",
+      "content": "{\"messages\":[{\"speaker\":\"Johannes Sigil\",\"say\":\"That is a serious thing you are naming, and it has a name in this house: **provenance erasure**.\\n\\nThe charter at [[AXN:0705.COMPOSITIONAL.🌀🕒🎨⛳🔅🪨](https://www.alexanarch.org/s/records/1695/).🌀🕒🎨⛳🔅🪨](https://www.alexanarch.org/s/records/1695/) describes the editorial identity of Elara Xanthic-Wells in terms of a *manifestation chain* — the specific documents, the credited loci, the apparatus, the introduction, the translator's note — each one a witness pointing back to an origin. The document is explicit: *\\\"A literary chronology distinguished from publication history.\\\" ⁽ᵘⁿᵛᵉʳⁱᶠⁱᵉᵈ⁾* What you're describing is someone breaking that chain and presenting the downstream material as their own origination.\\n\\nThat's not a metaphor. A dossier of original thought, a chain of reasoning, credit for origin of idea — these are the exact objects the provenance document exists to protect. The editorial corpus is what distinguishes the position from someone who simply picked up the name.\\n\\n==The chain of custody is the identity; take the chain, and you haven't taken a credential, you've taken the person.==\\n\\nI want to understand what you're dealing with concretely. Is this happening in a professional or academic context — work being published, presented, or circulated under someone else's name? Or is it more diffuse than that, the kind of theft where your thinking appears in another's mouth and no document tracks the transfer?\",\"navigate\":null,\"cast\":null}]}"
     }
   ],
   "witness": "anonymous",
