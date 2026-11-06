@@ -1,0 +1,35 @@
+{
+  "axn": "AXN:B98E.CONVERSATION.🌙🧊🌒💧🌍❄️",
+  "session_id_hash": "7467479ba83eed1e",
+  "started_at": "2026-11-06T01:16:19.900Z",
+  "last_updated": "2026-11-06T01:16:39.044519+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "hello",
+      "page": {
+        "url": "https://www.alexanarch.org/s/records/1695/",
+        "title": "The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells — Alexanarch",
+        "axn": "AXN:0705"
+      }
+    }
+  ],
+  "witness": "anonymous",
+  "pages": [
+    {
+      "url": "https://www.alexanarch.org/s/records/1695/",
+      "title": "The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells — Alexanarch",
+      "axn": "AXN:0705",
+      "first_turn": 1,
+      "last_turn": 1
+    }
+  ],
+  "consent": {
+    "terms": "2026-10-27",
+    "accepted_at": "2026-11-06T01:16:38.492Z",
+    "book": true
+  },
+  "schema_version": "v1.2"
+}
