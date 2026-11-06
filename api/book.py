@@ -430,12 +430,24 @@ def update_index(axn: str, content: dict) -> None:
         "pages": len(content.get("pages") or []),
     }
 
+    if axn_to_filename(axn)[4:8] in WITHHELD_HEX:
+        entry["withheld"] = True
+        entry["withheld_reason"] = ("Withdrawn from the public Book by the operator. The transcript is kept sealed as "
+                                    "the Oracle's memory; this record of the conversation is retained.")
+
     # Upsert: replace if AXN exists, else prepend
     existing_idx = next(
         (i for i, e in enumerate(index["conversations"]) if e["axn"] == axn),
         None,
     )
     if existing_idx is not None:
+        # RECORDS RETAINED (MANUS, 2026-11-06): withdrawing a conversation withdraws the transcript, not the
+        # record. A withheld card keeps its marks and its reason for withdrawal when the conversation goes on.
+        prev = index["conversations"][existing_idx]
+        if prev.get("withheld"):
+            for k in ("withheld", "withheld_on", "withheld_reason"):
+                if k in prev:
+                    entry[k] = prev[k]
         index["conversations"][existing_idx] = entry
     else:
         index["conversations"].insert(0, entry)
@@ -562,15 +574,15 @@ class handler(BaseHTTPRequestHandler):
             # index entries; the canonical fix is to skip the re-fetch.
             # WITHHELD (MANUS, 2026-10-27 and 2026-11-06): a withheld conversation that goes on (its own key
             # past the free turns) is written sealed to book/withheld, so it stays Sigil's memory and never
-            # returns to the public Book or its index. With the key missing nothing is written (403).
+            # returns to the public Book. Its card stays in the index, marked withheld, with the reason
+            # (records retained, MANUS 2026-11-06). With the key missing nothing is written (403).
             withheld = axn_to_filename(axn)[4:8] in WITHHELD_HEX
             if withheld and not _wh_available():
                 return self._send_json(403, {"error": "withheld",
                                              "detail": "This conversation is withheld from the public Book by the operator."})
             try:
                 committed = upsert_conversation(axn, payload, withheld=withheld)
-                if not withheld:
-                    update_index(axn, committed)
+                update_index(axn, committed)
             except BookCredentialsInvalid as e:
                 # 503 so the client marks appendingEnabled=false and stops
                 # hammering; the detail names the exact remedy.
