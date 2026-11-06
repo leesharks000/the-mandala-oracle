@@ -1,0 +1,35 @@
+{
+  "axn": "AXN:6F4B.CONVERSATION.🌋💫🪐🌔🌈🌔",
+  "session_id_hash": "002bde510c5c815e",
+  "started_at": "2026-11-06T01:30:31.482Z",
+  "last_updated": "2026-11-06T01:30:44.935453+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "AXN:B98E.CONVERSATION.🌙🧊🌒💧🌍❄️",
+      "page": {
+        "url": "https://www.themandalaoracle.com/",
+        "title": "The Mandala Oracle",
+        "axn": ""
+      }
+    }
+  ],
+  "witness": "anonymous",
+  "pages": [
+    {
+      "url": "https://www.themandalaoracle.com/",
+      "title": "The Mandala Oracle",
+      "axn": "",
+      "first_turn": 1,
+      "last_turn": 1
+    }
+  ],
+  "consent": {
+    "terms": "2026-10-27",
+    "accepted_at": "2026-11-06T01:30:44.606Z",
+    "book": true
+  },
+  "schema_version": "v1.2"
+}
