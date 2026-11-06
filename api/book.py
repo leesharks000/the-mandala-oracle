@@ -65,6 +65,7 @@ GITHUB_BRANCH = "main"
 GITHUB_TOKEN_ENV = "GITHUB_BOOK_TOKEN"
 BOOK_DIR = "book/data"
 BOOK_INDEX_PATH = "book/index.json"
+WITHHELD_HEX = {"B027", "57E4", "AFB7", "D902", "D26B", "B98E", "6F4B", "9794"}
 BOOK_FAMILY = "CONVERSATION"  # Family designation for Book AXNs
 TERMS_VERSION = "2026-10-27"  # the terms at /terms/; must match api/sigil.py
 
@@ -386,6 +387,20 @@ class handler(BaseHTTPRequestHandler):
             if not (consent.get("terms") == TERMS_VERSION and consent.get("accepted_at") and consent.get("book") is True):
                 return self._send_json(403, {"error": "consent_required",
                                              "detail": "Nothing enters the Book without consent to the terms at /terms/."})
+
+            # WITHHELD (MANUS, 2026-10-27 and 2026-11-06): conversations withheld from the public Book for
+            # liability are kept by the operator and not served. A withheld session that goes on (its own key
+            # past the free turns) would otherwise re-mint its file at the same AXN from the resent history,
+            # so nothing is written at these AXNs. 403 makes the clients stop appending for the session.
+            _req_axn = str(body.get("axn") or "")
+            _first = next((h.get("content") for h in (body.get("history") or []) if isinstance(h, dict) and h.get("role") == "user"), "")
+            _sid = body.get("session_id")
+            _cands = {_req_axn[4:8].upper()} if _req_axn.startswith("AXN:") else set()
+            if _first and _sid:
+                _cands |= {mint_session_axn(_first, hash_session_id(_sid), s)[4:8].upper() for s in range(4)}
+            if _cands & WITHHELD_HEX:
+                return self._send_json(403, {"error": "withheld",
+                                             "detail": "This conversation is withheld from the public Book by the operator."})
 
             # Validate required fields
             session_id = body.get("session_id")
