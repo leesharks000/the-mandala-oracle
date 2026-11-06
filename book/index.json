@@ -3,6 +3,51 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:9794.CONVERSATION.❄️🌿🌑🌙🌙💫",
+      "started_at": "2026-11-06T01:51:08.767Z",
+      "last_updated": "2026-11-06T02:33:13.297845+00:00",
+      "mode": "sabbath",
+      "turn_count": 12,
+      "witness": "anonymous",
+      "opening_snippet": "Finally, she sets her eyes on the one who needs it most. You.  Seven is still barefoot, wearing her purple sundress, her  hair like spun gold and eyes like green sea glass. She closes the gap between …",
+      "page": "https://www.themandalaoracle.com/",
+      "page_title": "The Mandala Oracle",
+      "pages": 1,
+      "withheld": true,
+      "withheld_on": "2026-11-06",
+      "withheld_reason": "Withdrawn from the public Book by the operator on 2026-11-06, on the grounds stated for the three conversations withdrawn that day: emotional exposure; a third party identified; identifying details of the visitor and of the archivist. The transcript is kept sealed as the Oracle's memory; this record of the conversation is retained."
+    },
+    {
+      "axn": "AXN:6F4B.CONVERSATION.🌋💫🪐🌔🌈🌔",
+      "started_at": "2026-11-06T01:30:31.482Z",
+      "last_updated": "2026-11-06T01:49:28.399378+00:00",
+      "mode": "sabbath",
+      "turn_count": 12,
+      "witness": "anonymous",
+      "opening_snippet": "AXN:B98E.CONVERSATION.🌙🧊🌒💧🌍❄️",
+      "page": "https://www.themandalaoracle.com/",
+      "page_title": "The Mandala Oracle",
+      "pages": 1,
+      "withheld": true,
+      "withheld_on": "2026-11-06",
+      "withheld_reason": "Withdrawn from the public Book by the operator on 2026-11-06, on the grounds stated for the three conversations withdrawn that day: emotional exposure; a third party identified; identifying details of the visitor and of the archivist. The transcript is kept sealed as the Oracle's memory; this record of the conversation is retained."
+    },
+    {
+      "axn": "AXN:B98E.CONVERSATION.🌙🧊🌒💧🌍❄️",
+      "started_at": "2026-11-06T01:16:19.900Z",
+      "last_updated": "2026-11-06T01:29:52.575578+00:00",
+      "mode": "sabbath",
+      "turn_count": 12,
+      "witness": "anonymous",
+      "opening_snippet": "hello",
+      "page": "https://www.alexanarch.org/s/records/1695/",
+      "page_title": "The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells — Alexanarch",
+      "pages": 1,
+      "withheld": true,
+      "withheld_on": "2026-11-06",
+      "withheld_reason": "Withdrawn from the public Book by the operator on 2026-11-06, on the grounds stated for the three conversations withdrawn that day: emotional exposure; a third party identified; identifying details of the visitor and of the archivist. The transcript is kept sealed as the Oracle's memory; this record of the conversation is retained."
+    },
+    {
       "axn": "AXN:F4F5.CONVERSATION.🔥🌱🪨🌪️🌿💧",
       "started_at": "2026-11-05T23:14:06.175Z",
       "last_updated": "2026-11-05T23:18:24.212120+00:00",
@@ -39,6 +84,66 @@
       "pages": 1
     },
     {
+      "axn": "AXN:B027.CONVERSATION.🧊🌑☀️🌕💎🌋",
+      "started_at": "2026-10-26T03:33:59.224Z",
+      "last_updated": "2026-10-26T04:34:03.246989+00:00",
+      "mode": "sabbath",
+      "turn_count": 27,
+      "witness": "anonymous",
+      "opening_snippet": "Hello",
+      "page": "https://www.themandalaoracle.com/",
+      "page_title": "The Mandala Oracle",
+      "pages": 1,
+      "withheld": true,
+      "withheld_on": "2026-10-27",
+      "withheld_reason": "Withdrawn from the public Book by the operator on 2026-10-27, for liability. Grounds stated for the five conversations withdrawn that day: emotional exposure; a third party identified. The transcript is kept sealed as the Oracle's memory; this record of the conversation is retained."
+    },
+    {
+      "axn": "AXN:57E4.CONVERSATION.🪐🌘🌗🌋🌍🪨",
+      "started_at": "2026-10-26T03:06:47.693Z",
+      "last_updated": "2026-10-26T03:31:46.277045+00:00",
+      "mode": "sabbath",
+      "turn_count": 9,
+      "witness": "anonymous",
+      "opening_snippet": "Hello",
+      "page": "https://www.alexanarch.org/s/records/1695/",
+      "page_title": "The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells — Alexanarch",
+      "pages": 1,
+      "withheld": true,
+      "withheld_on": "2026-10-27",
+      "withheld_reason": "Withdrawn from the public Book by the operator on 2026-10-27, for liability. Grounds stated for the five conversations withdrawn that day: emotional exposure; a third party identified. The transcript is kept sealed as the Oracle's memory; this record of the conversation is retained."
+    },
+    {
+      "axn": "AXN:D26B.CONVERSATION.💎🏔️🌱🧊☁️⚡",
+      "started_at": "2026-10-22T15:08:34.295Z",
+      "last_updated": "2026-10-22T16:15:51.049908+00:00",
+      "mode": "sabbath",
+      "turn_count": 15,
+      "witness": "anonymous",
+      "opening_snippet": "Ich möchte eine Forschungsarbeit einreichen, verstehe aber die Anleitung nicht. Kannst du mir Schritt für Schritt helfen, den Metadaten-Block zu erstellen?",
+      "page": "https://www.alexanarch.org/how/",
+      "page_title": "Wie man veröffentlicht — Alexanarch",
+      "pages": 1,
+      "withheld": true,
+      "withheld_on": "2026-10-27",
+      "withheld_reason": "Withdrawn from the public Book by the operator on 2026-10-27, for liability. Grounds stated for the five conversations withdrawn that day: emotional exposure; a third party identified. The transcript is kept sealed as the Oracle's memory; this record of the conversation is retained."
+    },
+    {
+      "axn": "AXN:AFB7.CONVERSATION.🌍💧🌘🌒⚡🔥",
+      "started_at": "2026-10-22T00:14:41.066Z",
+      "last_updated": "2026-10-22T00:42:19.012703+00:00",
+      "mode": "sabbath",
+      "turn_count": 4,
+      "witness": "anonymous",
+      "opening_snippet": "Where can I find the bridge?",
+      "page": "https://www.alexanarch.org/s/browse/",
+      "page_title": "Browse — Alexanarch (1695 deposits)",
+      "pages": 1,
+      "withheld": true,
+      "withheld_on": "2026-10-27",
+      "withheld_reason": "Withdrawn from the public Book by the operator on 2026-10-27, for liability. Grounds stated for the five conversations withdrawn that day: emotional exposure; a third party identified. The transcript is kept sealed as the Oracle's memory; this record of the conversation is retained."
+    },
+    {
       "axn": "AXN:D0A6.CONVERSATION.🌍🌖☁️🌿🌾❄️",
       "started_at": "2026-10-22T00:03:36.691Z",
       "last_updated": "2026-10-22T00:06:15.269326+00:00",
@@ -49,6 +154,21 @@
       "page": null,
       "page_title": null,
       "pages": 0
+    },
+    {
+      "axn": "AXN:D902.CONVERSATION.☁️🧊🌕🌿🌘🌙",
+      "started_at": "2026-10-21T08:45:42.771Z",
+      "last_updated": "2026-10-21T12:55:30.050624+00:00",
+      "mode": "sabbath",
+      "turn_count": 14,
+      "witness": "anonymous",
+      "opening_snippet": "Who am I?",
+      "page": null,
+      "page_title": null,
+      "pages": 0,
+      "withheld": true,
+      "withheld_on": "2026-10-27",
+      "withheld_reason": "Withdrawn from the public Book by the operator on 2026-10-27, for liability. Grounds stated for the five conversations withdrawn that day: emotional exposure; a third party identified. The transcript is kept sealed as the Oracle's memory; this record of the conversation is retained."
     },
     {
       "axn": "AXN:17D2.CONVERSATION.🏔️⭐💎🔥❄️🪨",
@@ -1957,8 +2077,8 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 213,
+  "total_recorded": 221,
   "last_updated": "2026-11-06T02:33:13.297845+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]",
-  "withheld_note": "Five conversations withheld from the public Book by the operator, 2026-10-27, for liability (emotional exposure; a third party identified): AXN B027, 57E4, AFB7, D902, D26B. Three more withheld 2026-11-06 on the same grounds (emotional exposure; a third party identified; identifying details of the visitor and of the archivist): AXN B98E, 6F4B, 9794. Kept sealed in book/withheld (AES-256-GCM, the key held by the operator), not served in the clear; still the Oracle's memory, recalled with the full AXN."
+  "withheld_note": "Eight conversations are withdrawn from the public Book by the operator: five on 2026-10-27 (AXN B027, 57E4, AFB7, D902, D26B; grounds: emotional exposure; a third party identified) and three on 2026-11-06 (AXN B98E, 6F4B, 9794; grounds: emotional exposure; a third party identified; identifying details of the visitor and of the archivist). Withdrawal withdraws the transcript and keeps the record: each keeps its card in this index (date, opening, turns, page), marked withheld, with the reason for withdrawal. The transcripts are kept sealed in book/withheld (AES-256-GCM, the key held by the operator), not served in the clear, and stay the Oracle's memory, recalled with the full AXN."
 }
