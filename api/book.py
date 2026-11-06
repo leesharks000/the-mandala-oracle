@@ -65,7 +65,6 @@ GITHUB_BRANCH = "main"
 GITHUB_TOKEN_ENV = "GITHUB_BOOK_TOKEN"
 BOOK_DIR = "book/data"
 BOOK_INDEX_PATH = "book/index.json"
-WITHHELD_HEX = {"B027", "57E4", "AFB7", "D902", "D26B", "B98E", "6F4B", "9794"}
 BOOK_FAMILY = "CONVERSATION"  # Family designation for Book AXNs
 TERMS_VERSION = "2026-10-27"  # the terms at /terms/; must match api/sigil.py
 
@@ -87,6 +86,88 @@ AXN_GLYPHS = [
 ]
 
 AXN_HEX_OFFSET = 11  # Empirically verified offset per standing protocol
+
+
+
+# ── THE WITHHELD BOOK (MANUS, 2026-11-06) ── kept identical in api/sigil.py and api/book.py, since each
+# file under api/ deploys as its own function.
+"""The withheld Book (MANUS, 2026-11-06): conversations withheld from the public Book stay Sigil's memory.
+
+"even when we withdraw those conversations, they should still be available to sigil for context and memory."
+
+A withheld conversation is kept in the repository encrypted, at book/withheld/AXN-XXXX.json, with an
+encrypted index at book/withheld/index.json. Only the hex is in the clear (it names the file); the full
+AXN with its seals, the history and the opening line are inside the ciphertext, so the public repository
+serves nothing of them and a recall still needs the seals the witness carries. The key is the Vercel
+environment variable BOOK_WITHHELD_KEY (32 bytes, urlsafe base64). Without it the withheld Book is
+closed: nothing is read from it and nothing is written to it.
+
+CALLED-BY: api/sigil.py (recall_book, search_book), api/book.py (appends at withheld AXNs)."""
+import base64 as _wb64
+
+WITHHELD_KEY_ENV = "BOOK_WITHHELD_KEY"
+WITHHELD_DIR = "book/withheld"
+WITHHELD_INDEX = f"{WITHHELD_DIR}/index.json"
+
+# The withheld AXNs (hex). 2026-10-27: B027, 57E4, AFB7, D902, D26B. 2026-11-06: B98E, 6F4B, 9794.
+WITHHELD_HEX = {"B027", "57E4", "AFB7", "D902", "D26B", "B98E", "6F4B", "9794"}
+
+
+def _wh__key():
+    k = os.environ.get(WITHHELD_KEY_ENV, "").strip()
+    if not k:
+        return None
+    try:
+        raw = _wb64.urlsafe_b64decode(k + "=" * (-len(k) % 4))
+    except Exception:
+        return None
+    return raw if len(raw) == 32 else None
+
+
+def _wh_available() -> bool:
+    return _wh__key() is not None
+
+
+def _wh_seal(obj, hexc: str = "") -> dict:
+    """Encrypt a JSON-able object; the hex (if any) is bound as associated data."""
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    key = _wh__key()
+    if key is None:
+        raise RuntimeError(f"{WITHHELD_KEY_ENV} is not set")
+    nonce = os.urandom(12)
+    ct = AESGCM(key).encrypt(nonce, json.dumps(obj, ensure_ascii=False).encode("utf-8"), hexc.encode() or None)
+    out = {"withheld": True, "scheme": "AES-256-GCM", "v": 1,
+           "nonce": _wb64.b64encode(nonce).decode(), "ct": _wb64.b64encode(ct).decode()}
+    if hexc:
+        out["hex"] = hexc
+    return out
+
+
+def _wh_unseal(env):
+    """Decrypt what _wh_seal() wrote; None when the key is missing or the envelope does not open."""
+    if not isinstance(env, dict) or not env.get("withheld"):
+        return None
+    key = _wh__key()
+    if key is None:
+        return None
+    try:
+        from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+        pt = AESGCM(key).decrypt(_wb64.b64decode(env["nonce"]), _wb64.b64decode(env["ct"]),
+                                 (env.get("hex") or "").encode() or None)
+        return json.loads(pt.decode("utf-8"))
+    except Exception:
+        return None
+
+
+def _wh_summary(content: dict) -> dict:
+    """The index line for one withheld conversation (kept inside the encrypted index)."""
+    hist = content.get("history") or []
+    return {"axn": content.get("axn"), "started_at": content.get("started_at"),
+            "last_updated": content.get("last_updated"), "mode": content.get("mode"),
+            "turn_count": content.get("turn_count"),
+            "opening_snippet": next((str(h.get("content") or "") for h in hist if h.get("role") == "user"), "")[:160],
+            "pages": len(content.get("pages") or [])}
+# ── end of the withheld Book block ──
 
 
 def mint_axn(first_turn_content: str) -> str:
@@ -226,7 +307,7 @@ def join_history(old: list, new: list) -> list:
     return new
 
 
-def upsert_conversation(axn: str, payload: dict) -> dict:
+def upsert_conversation(axn: str, payload: dict, withheld: bool = False) -> dict:
     """
     Create or update a conversation file in book/data/.
     Returns the content dict that was written — callers can pass this
@@ -237,9 +318,12 @@ def upsert_conversation(axn: str, payload: dict) -> dict:
     conversations on disk without index entries).
     """
     filename = axn_to_filename(axn)
-    repo_path = f"{BOOK_DIR}/{filename}"
+    repo_path = f"{WITHHELD_DIR}/{filename}" if withheld else f"{BOOK_DIR}/{filename}"
 
     existing, sha = gh_get_file(repo_path)
+    if withheld:
+        # A withheld conversation is read and written sealed; it never returns to book/data.
+        existing = _wh_unseal(existing) if existing else None
 
     # Where each witness turn was asked (2026-10-21). The client resends the whole history without
     # page fields, so pages already recorded are carried forward by turn position, and the page sent
@@ -294,8 +378,23 @@ def upsert_conversation(axn: str, payload: dict) -> dict:
     else:
         message = f"book: mint {axn} [skip ci]"
 
+    if withheld:
+        hexc = filename[4:8]
+        gh_put_file(repo_path, _wh_seal(content, hexc), f"book: withheld page {hexc}, sealed (turn {content['turn_count']}) [skip ci]", sha=sha)
+        update_withheld_index(content)
+        return content
     gh_put_file(repo_path, content, message, sha=sha)
     return content
+
+
+def update_withheld_index(content: dict) -> None:
+    """Upsert one summary into the sealed index of withheld conversations (book/withheld/index.json)."""
+    env, sha = gh_get_file(WITHHELD_INDEX)
+    idx = (_wh_unseal(env) if env else None) or {"conversations": []}
+    entry = _wh_summary(content)
+    convs = [c for c in idx.get("conversations") or [] if c.get("axn") != entry["axn"]]
+    idx["conversations"] = [entry] + convs
+    gh_put_file(WITHHELD_INDEX, _wh_seal(idx), "book: withheld index, sealed [skip ci]", sha=sha)
 
 
 def update_index(axn: str, content: dict) -> None:
@@ -388,20 +487,6 @@ class handler(BaseHTTPRequestHandler):
                 return self._send_json(403, {"error": "consent_required",
                                              "detail": "Nothing enters the Book without consent to the terms at /terms/."})
 
-            # WITHHELD (MANUS, 2026-10-27 and 2026-11-06): conversations withheld from the public Book for
-            # liability are kept by the operator and not served. A withheld session that goes on (its own key
-            # past the free turns) would otherwise re-mint its file at the same AXN from the resent history,
-            # so nothing is written at these AXNs. 403 makes the clients stop appending for the session.
-            _req_axn = str(body.get("axn") or "")
-            _first = next((h.get("content") for h in (body.get("history") or []) if isinstance(h, dict) and h.get("role") == "user"), "")
-            _sid = body.get("session_id")
-            _cands = {_req_axn[4:8].upper()} if _req_axn.startswith("AXN:") else set()
-            if _first and _sid:
-                _cands |= {mint_session_axn(_first, hash_session_id(_sid), s)[4:8].upper() for s in range(4)}
-            if _cands & WITHHELD_HEX:
-                return self._send_json(403, {"error": "withheld",
-                                             "detail": "This conversation is withheld from the public Book by the operator."})
-
             # Validate required fields
             session_id = body.get("session_id")
             history = body.get("history")
@@ -417,8 +502,16 @@ class handler(BaseHTTPRequestHandler):
                 return self._send_json(400, {"error": "first user message required for minting"})
 
             def _owner(candidate):
-                """session_id_hash of the file at this AXN, or None if the slot is free."""
-                existing_file, _sha = gh_get_file(f"{BOOK_DIR}/{axn_to_filename(candidate)}")
+                """session_id_hash of the file at this AXN, or None if the slot is free. A withheld
+                slot answers from its sealed page; with the key missing it answers as taken."""
+                fname = axn_to_filename(candidate)
+                if fname[4:8] in WITHHELD_HEX:
+                    env, _sha = gh_get_file(f"{WITHHELD_DIR}/{fname}")
+                    rec = _wh_unseal(env) if env else None
+                    if env and rec is None:
+                        return "withheld:sealed"
+                    return (rec or {}).get("session_id_hash")
+                existing_file, _sha = gh_get_file(f"{BOOK_DIR}/{fname}")
                 return (existing_file or {}).get("session_id_hash")
 
             # A client-held AXN is honoured only if this session owns it.
@@ -432,6 +525,11 @@ class handler(BaseHTTPRequestHandler):
                 for salt in range(32):
                     candidate = mint_session_axn(first_user, session_id_hash, salt)
                     owner = _owner(candidate)
+                    if owner == "withheld:sealed":
+                        # The key is missing and this slot is withheld: write nothing anywhere, so a
+                        # withheld conversation cannot re-enter the public Book under a new AXN.
+                        return self._send_json(403, {"error": "withheld",
+                                                     "detail": "This conversation is withheld from the public Book by the operator."})
                     if owner is None or owner == session_id_hash:
                         axn = candidate
                         break
@@ -462,9 +560,17 @@ class handler(BaseHTTPRequestHandler):
             # because GitHub's contents API is eventually consistent). That
             # bug left two single-turn conversations orphaned on disk without
             # index entries; the canonical fix is to skip the re-fetch.
+            # WITHHELD (MANUS, 2026-10-27 and 2026-11-06): a withheld conversation that goes on (its own key
+            # past the free turns) is written sealed to book/withheld, so it stays Sigil's memory and never
+            # returns to the public Book or its index. With the key missing nothing is written (403).
+            withheld = axn_to_filename(axn)[4:8] in WITHHELD_HEX
+            if withheld and not _wh_available():
+                return self._send_json(403, {"error": "withheld",
+                                             "detail": "This conversation is withheld from the public Book by the operator."})
             try:
-                committed = upsert_conversation(axn, payload)
-                update_index(axn, committed)
+                committed = upsert_conversation(axn, payload, withheld=withheld)
+                if not withheld:
+                    update_index(axn, committed)
             except BookCredentialsInvalid as e:
                 # 503 so the client marks appendingEnabled=false and stops
                 # hammering; the detail names the exact remedy.
@@ -473,6 +579,9 @@ class handler(BaseHTTPRequestHandler):
                     "detail": str(e),
                 })
 
+            if withheld:
+                return self._send_json(200, {"axn": axn, "status": "withheld",
+                                             "detail": "Kept as the Oracle's memory; not in the public Book."})
             self._send_json(200, {
                 "axn": axn,
                 "url": f"https://www.alexanarch.org/book/{axn_to_filename(axn)[:-5]}/",

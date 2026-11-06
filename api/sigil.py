@@ -747,6 +747,88 @@ BOOK_RAW = "https://raw.githubusercontent.com/leesharks000/the-mandala-oracle/ma
 BOOK_LOCAL = os.path.join(os.path.dirname(__file__), "..", "book")
 
 
+
+# ── THE WITHHELD BOOK (MANUS, 2026-11-06) ── kept identical in api/sigil.py and api/book.py, since each
+# file under api/ deploys as its own function.
+"""The withheld Book (MANUS, 2026-11-06): conversations withheld from the public Book stay Sigil's memory.
+
+"even when we withdraw those conversations, they should still be available to sigil for context and memory."
+
+A withheld conversation is kept in the repository encrypted, at book/withheld/AXN-XXXX.json, with an
+encrypted index at book/withheld/index.json. Only the hex is in the clear (it names the file); the full
+AXN with its seals, the history and the opening line are inside the ciphertext, so the public repository
+serves nothing of them and a recall still needs the seals the witness carries. The key is the Vercel
+environment variable BOOK_WITHHELD_KEY (32 bytes, urlsafe base64). Without it the withheld Book is
+closed: nothing is read from it and nothing is written to it.
+
+CALLED-BY: api/sigil.py (recall_book, search_book), api/book.py (appends at withheld AXNs)."""
+import base64 as _wb64
+
+WITHHELD_KEY_ENV = "BOOK_WITHHELD_KEY"
+WITHHELD_DIR = "book/withheld"
+WITHHELD_INDEX = f"{WITHHELD_DIR}/index.json"
+
+# The withheld AXNs (hex). 2026-10-27: B027, 57E4, AFB7, D902, D26B. 2026-11-06: B98E, 6F4B, 9794.
+WITHHELD_HEX = {"B027", "57E4", "AFB7", "D902", "D26B", "B98E", "6F4B", "9794"}
+
+
+def _wh__key():
+    k = os.environ.get(WITHHELD_KEY_ENV, "").strip()
+    if not k:
+        return None
+    try:
+        raw = _wb64.urlsafe_b64decode(k + "=" * (-len(k) % 4))
+    except Exception:
+        return None
+    return raw if len(raw) == 32 else None
+
+
+def _wh_available() -> bool:
+    return _wh__key() is not None
+
+
+def _wh_seal(obj, hexc: str = "") -> dict:
+    """Encrypt a JSON-able object; the hex (if any) is bound as associated data."""
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    key = _wh__key()
+    if key is None:
+        raise RuntimeError(f"{WITHHELD_KEY_ENV} is not set")
+    nonce = os.urandom(12)
+    ct = AESGCM(key).encrypt(nonce, json.dumps(obj, ensure_ascii=False).encode("utf-8"), hexc.encode() or None)
+    out = {"withheld": True, "scheme": "AES-256-GCM", "v": 1,
+           "nonce": _wb64.b64encode(nonce).decode(), "ct": _wb64.b64encode(ct).decode()}
+    if hexc:
+        out["hex"] = hexc
+    return out
+
+
+def _wh_unseal(env):
+    """Decrypt what _wh_seal() wrote; None when the key is missing or the envelope does not open."""
+    if not isinstance(env, dict) or not env.get("withheld"):
+        return None
+    key = _wh__key()
+    if key is None:
+        return None
+    try:
+        from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+        pt = AESGCM(key).decrypt(_wb64.b64decode(env["nonce"]), _wb64.b64decode(env["ct"]),
+                                 (env.get("hex") or "").encode() or None)
+        return json.loads(pt.decode("utf-8"))
+    except Exception:
+        return None
+
+
+def _wh_summary(content: dict) -> dict:
+    """The index line for one withheld conversation (kept inside the encrypted index)."""
+    hist = content.get("history") or []
+    return {"axn": content.get("axn"), "started_at": content.get("started_at"),
+            "last_updated": content.get("last_updated"), "mode": content.get("mode"),
+            "turn_count": content.get("turn_count"),
+            "opening_snippet": next((str(h.get("content") or "") for h in hist if h.get("role") == "user"), "")[:160],
+            "pages": len(content.get("pages") or [])}
+# ── end of the withheld Book block ──
+
+
 def _book_page(rel: str, live: bool = True):
     """A Book file by its path under book/ (e.g. 'data/AXN-D902.json'): live, else deployed, else None."""
     import urllib.request
@@ -768,7 +850,18 @@ def _book_page(rel: str, live: bool = True):
                 return json.load(f)
         except Exception:
             return None
+    # A conversation withheld from the public Book is still memory (MANUS, 2026-11-06): read it sealed
+    # from book/withheld and open it here, server-side. Nothing of it is served in the clear.
+    m = re.fullmatch(r"data/AXN-([0-9A-Fa-f]{4})\.json", rel)
+    if m and m.group(1).upper() in WITHHELD_HEX:
+        return _wh_unseal(_book_page(f"withheld/AXN-{m.group(1).upper()}.json"))
     return None
+
+
+def _withheld_index_entries() -> list:
+    """Summaries of the withheld conversations, from the sealed index; [] without the key."""
+    idx = _wh_unseal(_book_page("withheld/index.json")) if _wh_available() else None
+    return list((idx or {}).get("conversations") or [])
 
 
 SEARCH_BOOK_TOOL = {
@@ -815,7 +908,12 @@ def search_book(query: str, days: int = 30) -> dict:
     if not terms:
         return {"error": "say what the witness remembers: a name, a phrase, the subject"}
     index = _book_page("index.json") or {}
-    convs = index.get("conversations") or []
+    convs, _seen = [], set()
+    for e in list(index.get("conversations") or []) + _withheld_index_entries():
+        k = str(e.get("axn") or "").split(".")[0]
+        if k and k not in _seen:
+            _seen.add(k)
+            convs.append(e)
     try:
         since = datetime.now(timezone.utc) - timedelta(days=max(1, min(int(days or 30), 365)))
     except Exception:
