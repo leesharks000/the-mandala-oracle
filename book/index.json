@@ -3,6 +3,18 @@
   "description": "Index of auto-appended Mandala Oracle conversations. Each entry summarizes one session; full content is at book/data/AXN-XXXX.json.",
   "conversations": [
     {
+      "axn": "AXN:BEFF.CONVERSATION.🌾🔥🌕☀️⭐🧊",
+      "started_at": "2026-11-10T07:26:09.163Z",
+      "last_updated": "2026-11-10T07:27:00.436884+00:00",
+      "mode": "sabbath",
+      "turn_count": 0,
+      "witness": "anonymous",
+      "opening_snippet": "I’m looking for the paper titled what does the system pay people for",
+      "page": "https://www.alexanarch.org/s/records/1742/",
+      "page_title": "What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search (EA-3I-ATLAS-NOTEBOOK-01 v1.2) — Alexanarch",
+      "pages": 1
+    },
+    {
       "axn": "AXN:9794.CONVERSATION.❄️🌿🌑🌙🌙💫",
       "started_at": "2026-11-06T01:51:08.767Z",
       "last_updated": "2026-11-06T02:33:13.297845+00:00",
@@ -2077,8 +2089,8 @@
       "recovered_from": "AXN:186A.CONVERSATION.🪐⚡🌓💧🌈🌖"
     }
   ],
-  "total_recorded": 221,
-  "last_updated": "2026-11-06T02:33:13.297845+00:00",
+  "total_recorded": 222,
+  "last_updated": "2026-11-10T07:27:00.436884+00:00",
   "redaction_note": "[REDACTED — private correspondence removed by MANUS instruction, 2026-07-02]",
   "withheld_note": "Eight conversations are withdrawn from the public Book by the operator: five on 2026-10-27 (AXN B027, 57E4, AFB7, D902, D26B; grounds: emotional exposure; a third party identified) and three on 2026-11-06 (AXN B98E, 6F4B, 9794; grounds: emotional exposure; a third party identified; identifying details of the visitor and of the archivist). Withdrawal withdraws the transcript and keeps the record: each keeps its card in this index (date, opening, turns, page), marked withheld, with the reason for withdrawal. The transcripts are kept sealed in book/withheld (AES-256-GCM, the key held by the operator), not served in the clear, and stay the Oracle's memory, recalled with the full AXN."
 }
