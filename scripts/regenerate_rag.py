@@ -23,6 +23,7 @@ Author: leesharks000 (co-drafted with TACHYON)
 import json
 import re
 import sys
+sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
 import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
@@ -275,6 +276,12 @@ def main() -> int:
     with config_path.open("w", encoding="utf-8") as f:
         json.dump(config, f, **JSON_KWARGS)
     print(f"  size: {config_path.stat().st_size} B")
+
+    # Every other AXN position (captures, /non, releases, symbolon), for Sigil's search (2026-11-10)
+    import regenerate_positions
+    rc = regenerate_positions.main([str(ALEXANARCH)])
+    if rc:
+        print("WARN: positions.json not regenerated", file=sys.stderr)
 
     print("\nDone.")
     print(f"  vectors:  {vectors.shape[0]} × {vectors.shape[1]}")

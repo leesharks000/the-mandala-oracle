@@ -94,6 +94,10 @@ def consent_ok(body: dict) -> bool:
 # RAG metadata loaded at cold start (cached in module scope)
 _metadata_cache: list[dict] | None = None
 _metadata_path = Path(__file__).resolve().parent.parent / "rag" / "metadata.json"
+# Every AXN position that is not a formal deposit (captures, /non entries and panels, releases, symbolon
+# witnessings), built by scripts/regenerate_positions.py (MANUS, 2026-11-10: "anything with an axn").
+_positions_path = Path(__file__).resolve().parent.parent / "rag" / "positions.json"
+_positions_cache = None
 
 # Historiographic timeline — ambient grounding loaded into the system prompt.
 # This is the compressed narrative of the archive's own history (the bans,
@@ -1019,7 +1023,12 @@ SEARCH_ARCHIVE_TOOL = {
         "When an entity is dispersed across the archive under multiple identifiers (a person who "
         "appears as both Viola Arquette and Bedouin Princess, a concept that travels under several "
         "names), search each identifier once and combine. The witness wants speech, not a "
-        "bibliography. Returns AXN, title, family, date, and description."
+        "bibliography. Returns AXN, title, family, date, kind, url and description.\n\n"
+        "WHAT IT REACHES. Every AXN in the archive (MANUS, 2026-11-10: 'anything with an axn'): the deposits; the "
+        "Capture Registry's addresses (kind 'capture': a machine composition the archive recorded at a query, with "
+        "its reading); the /non entries and panels (kind 'non-entry', 'non-register': a surface's composition read "
+        "against its field and the archive's kernel); the releases; the symbolon witnessings. A capture is what a "
+        "surface composed, as the archive read it; speak of it as that, and cite its AXN like any other."
     ),
     "input_schema": {
         "type": "object",
@@ -1053,6 +1062,23 @@ def load_metadata() -> list[dict]:
         with _metadata_path.open(encoding="utf-8") as f:
             _metadata_cache = json.load(f)
     return _metadata_cache
+
+
+def load_positions() -> list[dict]:
+    """The non-deposit AXN positions, once per cold start. Kept apart from the deposits, which the lectionary reads."""
+    global _positions_cache
+    if _positions_cache is None:
+        try:
+            with _positions_path.open(encoding="utf-8") as f:
+                _positions_cache = json.load(f)
+        except (OSError, ValueError):
+            _positions_cache = []
+    return _positions_cache
+
+
+def load_all_records() -> list[dict]:
+    """Deposits and every other AXN position: what search, AXN resolution and citation links reach."""
+    return load_metadata() + load_positions()
 
 
 def load_historiography() -> str:
@@ -1216,7 +1242,7 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
     4. **Token-overlap scoring (fallback)**: the previous behavior. Tokens
        are now stopword-filtered (see tokenize()).
     """
-    metadata = load_metadata()
+    metadata = load_all_records()
     if not metadata:
         return []
 
@@ -1322,6 +1348,8 @@ def search_archive(query: str, limit: int = 10) -> list[dict]:
             "family": rec.get("family"),
             "date": rec.get("date"),
             "deposit_number": rec.get("deposit_number"),
+            "kind": rec.get("kind") or "deposit",
+            "url": rec.get("record_url") or (f"https://www.alexanarch.org/s/records/{rec['deposit_number']}/" if rec.get("deposit_number") else None),
             "description": (rec.get("description") or "")[:500],
             "score": score,
         })
@@ -1407,9 +1435,9 @@ def _resolve_axn_to_record(axn_input: str) -> dict | None:
       - Short form: 'AXN:0349' or 'axn:0349'
       - Bare hex:   '0349'
 
-    Returns the record dict from metadata.json, or None if not found.
+    Returns the record dict from metadata.json or positions.json, or None if not found.
     """
-    metadata = load_metadata()
+    metadata = load_all_records()
     if not axn_input:
         return None
 
@@ -1696,6 +1724,8 @@ def link_axn_mentions(say: str, metadata: list[dict]) -> str:
         if rec and rec.get("deposit_number"):
             label = rec.get("axn") or whole
             return f"[{label}](https://www.alexanarch.org/s/records/{rec['deposit_number']}/)"
+        if rec and rec.get("record_url"):
+            return f"[{whole}]({rec['record_url']})"
         for sub in ("readings", "data"):
             if os.path.exists(os.path.join(book_base, sub, f"AXN-{hexc}.json")):
                 return (f"[{whole}](https://github.com/leesharks000/the-mandala-oracle/"
@@ -2321,7 +2351,7 @@ def call_sigil(message: str, history: list[dict], mode: str, api_key: str, rite_
             if fraction or rite_reasoning or message.startswith("[CASTING RITE"):
                 for m in parsed["messages"]:
                     m.pop("turn", None)
-            _meta_for_links = load_metadata()
+            _meta_for_links = load_all_records()
             grounding = {"unverified_quotes": [], **({"feist": feist} if feist else {}),
                          **({"turns_dropped": turns_dropped} if turns_dropped else {})}
             corpus = "\n".join(read)
