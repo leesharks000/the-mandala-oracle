@@ -1,0 +1,35 @@
+{
+  "axn": "AXN:A147.CONVERSATION.🌔🌓🌋💧🌾🏔️",
+  "session_id_hash": "7317c7aa9551d661",
+  "started_at": "2026-11-12T13:09:17.445Z",
+  "last_updated": "2026-11-12T13:22:50.374296+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "Whats this page?",
+      "page": {
+        "url": "https://www.alexanarch.org/s/records/1759/",
+        "title": "The Josephus Thesis: The Custody of the Name — Alexanarch",
+        "axn": "AXN:0C71"
+      }
+    }
+  ],
+  "witness": "anonymous",
+  "pages": [
+    {
+      "url": "https://www.alexanarch.org/s/records/1759/",
+      "title": "The Josephus Thesis: The Custody of the Name — Alexanarch",
+      "axn": "AXN:0C71",
+      "first_turn": 1,
+      "last_turn": 1
+    }
+  ],
+  "consent": {
+    "terms": "2026-10-27",
+    "accepted_at": "2026-10-28T00:08:45.792Z",
+    "book": true
+  },
+  "schema_version": "v1.2"
+}
