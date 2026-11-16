@@ -1,0 +1,35 @@
+{
+  "axn": "AXN:8F8D.CONVERSATION.🌿🌖🌖🌖🌔🌓",
+  "session_id_hash": "a160ebdb8dfd0ee1",
+  "started_at": "2026-11-16T04:33:41.009Z",
+  "last_updated": "2026-11-16T04:33:59.511109+00:00",
+  "mode": "sabbath",
+  "turn_count": 0,
+  "history": [
+    {
+      "role": "user",
+      "content": "what does this article say about crj?",
+      "page": {
+        "url": "https://www.alexanarch.org/s/records/1770/",
+        "title": "Who Speaks for the Classics, and on What Basis: Classical Receptions Journal, the Composed Object and the Composition Layer — Alexanarch",
+        "axn": "AXN:0C9C"
+      }
+    }
+  ],
+  "witness": "anonymous",
+  "pages": [
+    {
+      "url": "https://www.alexanarch.org/s/records/1770/",
+      "title": "Who Speaks for the Classics, and on What Basis: Classical Receptions Journal, the Composed Object and the Composition Layer — Alexanarch",
+      "axn": "AXN:0C9C",
+      "first_turn": 1,
+      "last_turn": 1
+    }
+  ],
+  "consent": {
+    "terms": "2026-10-27",
+    "accepted_at": "2026-10-28T00:08:45.792Z",
+    "book": true
+  },
+  "schema_version": "v1.2"
+}
